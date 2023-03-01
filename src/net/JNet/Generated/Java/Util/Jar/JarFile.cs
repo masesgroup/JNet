@@ -160,6 +160,15 @@ namespace Java.Util.Jar
         {
             return IExecute<Java.Util.Jar.JarEntry>("getJarEntry", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream VersionedStream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("versionedStream");
+        }
         
         #endregion
 

@@ -66,6 +66,15 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        public static Java.Time.Format.TextStyle ValueOf(string arg0)
+        {
+            return SExecute<Java.Time.Format.TextStyle>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#values()"/>
         /// </summary>
         
@@ -86,6 +95,24 @@ namespace Java.Time.Format
         public bool IsStandalone()
         {
             return IExecute<bool>("isStandalone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asNormal()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        public Java.Time.Format.TextStyle AsNormal()
+        {
+            return IExecute<Java.Time.Format.TextStyle>("asNormal");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asStandalone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        public Java.Time.Format.TextStyle AsStandalone()
+        {
+            return IExecute<Java.Time.Format.TextStyle>("asStandalone");
         }
         
         #endregion

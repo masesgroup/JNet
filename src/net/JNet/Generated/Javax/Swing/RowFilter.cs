@@ -41,11 +41,79 @@ namespace Javax.Swing
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#andFilter(java.lang.Iterable%3C? extends javax.swing.RowFilter%3C? super M, ? super I%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter AndFilterMethod(Java.Lang.Iterable arg0)
+        {
+            return SExecute<Javax.Swing.RowFilter>("andFilter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter$ComparisonType,java.util.Date,int...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute<Javax.Swing.RowFilter>("dateFilter", arg0, arg1); else return SExecute<Javax.Swing.RowFilter>("dateFilter", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#notFilter(javax.swing.RowFilter%3CM, I%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowFilter"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter NotFilterMethod(Javax.Swing.RowFilter arg0)
+        {
+            return SExecute<Javax.Swing.RowFilter>("notFilter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter$ComparisonType,java.lang.Number,int...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute<Javax.Swing.RowFilter>("numberFilter", arg0, arg1); else return SExecute<Javax.Swing.RowFilter>("numberFilter", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable%3C? extends javax.swing.RowFilter%3C? super M, ? super I%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter OrFilterMethod(Java.Lang.Iterable arg0)
+        {
+            return SExecute<Javax.Swing.RowFilter>("orFilter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        public static Javax.Swing.RowFilter RegexFilterMethod(string arg0, params int[] arg1)
+        {
+            if (arg1.Length == 0) return SExecute<Javax.Swing.RowFilter>("regexFilter", arg0); else return SExecute<Javax.Swing.RowFilter>("regexFilter", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#include(javax.swing.RowFilter$Entry%3C? extends M, ? extends I%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.Entry"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Include(Javax.Swing.RowFilter.Entry arg0)
+        {
+            return IExecute<bool>("include", arg0);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -81,6 +149,15 @@ namespace Javax.Swing
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
+            public static Javax.Swing.RowFilter.ComparisonType ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.RowFilter.ComparisonType>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()"/>
             /// </summary>

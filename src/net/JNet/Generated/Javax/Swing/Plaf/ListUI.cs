@@ -45,7 +45,38 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#locationToIndex(javax.swing.JList%3C?%3E,java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int LocationToIndex(Javax.Swing.JList arg0, Java.Awt.Point arg1)
+        {
+            return IExecute<int>("locationToIndex", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#indexToLocation(javax.swing.JList%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Point"/></returns>
+        public Java.Awt.Point IndexToLocation(Javax.Swing.JList arg0, int arg1)
+        {
+            return IExecute<Java.Awt.Point>("indexToLocation", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#getCellBounds(javax.swing.JList%3C?%3E,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        public Java.Awt.Rectangle GetCellBounds(Javax.Swing.JList arg0, int arg1, int arg2)
+        {
+            return IExecute<Java.Awt.Rectangle>("getCellBounds", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Nested classes

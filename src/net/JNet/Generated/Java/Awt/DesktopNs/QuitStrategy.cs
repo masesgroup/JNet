@@ -50,6 +50,15 @@ namespace Java.Awt.DesktopNs
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Awt.DesktopNs.QuitStrategy"/></returns>
+        public static Java.Awt.DesktopNs.QuitStrategy ValueOf(string arg0)
+        {
+            return SExecute<Java.Awt.DesktopNs.QuitStrategy>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#values()"/>
         /// </summary>
         

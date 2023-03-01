@@ -29,7 +29,18 @@ namespace Javax.Management.Relation
     public partial class RoleUnresolved
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#%3Cinit%3E(java.lang.String,java.util.List%3Cjavax.management.ObjectName%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public RoleUnresolved(string arg0, Java.Util.List arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,6 +73,13 @@ namespace Javax.Management.Relation
         public string RoleName
         {
             get { return IExecute<string>("getRoleName"); } set { IExecute("setRoleName", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#setRoleValue(java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        public Java.Util.List RoleValue
+        {
+            get { return IExecute<Java.Util.List>("getRoleValue"); } set { IExecute("setRoleValue", value); }
         }
         
         #endregion

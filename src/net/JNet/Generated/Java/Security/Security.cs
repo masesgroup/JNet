@@ -49,6 +49,15 @@ namespace Java.Security
             get { return SExecuteArray<Java.Security.Provider>("getProviders"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#addProvider(java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int AddProvider(Java.Security.Provider arg0)
+        {
+            return SExecute<int>("addProvider", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -58,6 +67,15 @@ namespace Java.Security
             return SExecute<string>("getProperty", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProvider(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public static Java.Security.Provider GetProvider(string arg0)
+        {
+            return SExecute<Java.Security.Provider>("getProvider", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProviders(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -65,6 +83,34 @@ namespace Java.Security
         public static Java.Security.Provider[] GetProviders(string arg0)
         {
             return SExecuteArray<Java.Security.Provider>("getProviders", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProviders(java.util.Map%3Cjava.lang.String, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public static Java.Security.Provider[] GetProviders(Java.Util.Map arg0)
+        {
+            return SExecuteArray<Java.Security.Provider>("getProviders", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getAlgorithms(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set GetAlgorithms(string arg0)
+        {
+            return SExecute<Java.Util.Set>("getAlgorithms", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#insertProviderAt(java.security.Provider,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int InsertProviderAt(Java.Security.Provider arg0, int arg1)
+        {
+            return SExecute<int>("insertProviderAt", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#removeProvider(java.lang.String)"/>

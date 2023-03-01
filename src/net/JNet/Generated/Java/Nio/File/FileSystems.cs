@@ -58,6 +58,29 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>("getFileSystem", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map%3Cjava.lang.String, ?%3E,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map arg1, Java.Lang.ClassLoader arg2)
+        {
+            return SExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map arg1)
+        {
+            return SExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>

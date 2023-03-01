@@ -183,6 +183,25 @@ namespace Javax.Swing
             return IExecute<Java.Awt.Insets>("getInsets", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetUIClass(string arg0, Java.Lang.ClassLoader arg1)
+        {
+            return IExecute<Java.Lang.Class>("getUIClass", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetUIClass(string arg0)
+        {
+            return IExecute<Java.Lang.Class>("getUIClass", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#get(java.lang.Object,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -322,7 +341,16 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ActiveValue.html#createValue(javax.swing.UIDefaults)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.UIDefaults"/></param>
+            /// <returns><see langword="object"/></returns>
+            public object CreateValue(Javax.Swing.UIDefaults arg0)
+            {
+                return IExecute("createValue", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -349,7 +377,16 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyInputMap.html#createValue(javax.swing.UIDefaults)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.UIDefaults"/></param>
+            /// <returns><see langword="object"/></returns>
+            public object CreateValue(Javax.Swing.UIDefaults arg0)
+            {
+                return IExecute("createValue", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -376,7 +413,16 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyValue.html#createValue(javax.swing.UIDefaults)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.UIDefaults"/></param>
+            /// <returns><see langword="object"/></returns>
+            public object CreateValue(Javax.Swing.UIDefaults arg0)
+            {
+                return IExecute("createValue", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -420,7 +466,16 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#createValue(javax.swing.UIDefaults)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.UIDefaults"/></param>
+            /// <returns><see langword="object"/></returns>
+            public object CreateValue(Javax.Swing.UIDefaults arg0)
+            {
+                return IExecute("createValue", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class

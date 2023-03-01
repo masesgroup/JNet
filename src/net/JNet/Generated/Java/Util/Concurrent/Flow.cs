@@ -105,7 +105,15 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow$Subscriber%3C? super T%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
+            {
+                IExecute("subscribe", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class

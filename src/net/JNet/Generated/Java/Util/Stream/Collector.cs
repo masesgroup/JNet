@@ -41,11 +41,81 @@ namespace Java.Util.Stream
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier%3CA%3E,java.util.function.BiConsumer%3CA, T%3E,java.util.function.BinaryOperator%3CA%3E,java.util.function.Function%3CA, R%3E,java.util.stream.Collector$Characteristics...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Stream.Collector.Characteristics"/></param>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, Java.Util.Function.Function arg3, params Java.Util.Stream.Collector.Characteristics[] arg4)
+        {
+            if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector>("of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector>("of", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier%3CR%3E,java.util.function.BiConsumer%3CR, T%3E,java.util.function.BinaryOperator%3CR%3E,java.util.stream.Collector$Characteristics...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Stream.Collector.Characteristics"/></param>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, params Java.Util.Stream.Collector.Characteristics[] arg3)
+        {
+            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector>("of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector>("of", arg0, arg1, arg2, arg3);
+        }
+        
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        public Java.Util.Function.BiConsumer Accumulator()
+        {
+            return IExecute<Java.Util.Function.BiConsumer>("accumulator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        public Java.Util.Function.BinaryOperator Combiner()
+        {
+            return IExecute<Java.Util.Function.BinaryOperator>("combiner");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public Java.Util.Function.Function Finisher()
+        {
+            return IExecute<Java.Util.Function.Function>("finisher");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
+        public Java.Util.Function.Supplier Supplier()
+        {
+            return IExecute<Java.Util.Function.Supplier>("supplier");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set CharacteristicsMethod()
+        {
+            return IExecute<Java.Util.Set>("characteristics");
+        }
+        
         #endregion
 
         #region Nested classes
@@ -77,6 +147,15 @@ namespace Java.Util.Stream
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
+            public static Java.Util.Stream.Collector.Characteristics ValueOf(string arg0)
+            {
+                return SExecute<Java.Util.Stream.Collector.Characteristics>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()"/>
             /// </summary>

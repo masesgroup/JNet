@@ -29,7 +29,30 @@ namespace Javax.Net.Ssl
     public partial class SSLEngineResult
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#%3Cinit%3E(javax.net.ssl.SSLEngineResult$Status,javax.net.ssl.SSLEngineResult$HandshakeStatus,int,int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></param>
+        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="long"/></param>
+        public SSLEngineResult(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3, long arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#%3Cinit%3E(javax.net.ssl.SSLEngineResult$Status,javax.net.ssl.SSLEngineResult$HandshakeStatus,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></param>
+        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        public SSLEngineResult(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,6 +85,24 @@ namespace Javax.Net.Ssl
         public int BytesProduced()
         {
             return IExecute<int>("bytesProduced");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#getHandshakeStatus()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
+        public Javax.Net.Ssl.SSLEngineResult.HandshakeStatus GetHandshakeStatus()
+        {
+            return IExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#getStatus()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
+        public Javax.Net.Ssl.SSLEngineResult.Status GetStatus()
+        {
+            return IExecute<Javax.Net.Ssl.SSLEngineResult.Status>("getStatus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
@@ -117,6 +158,15 @@ namespace Javax.Net.Ssl
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
+            public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus ValueOf(string arg0)
+            {
+                return SExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("valueOf", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values()"/>
             /// </summary>
             
@@ -168,6 +218,15 @@ namespace Javax.Net.Ssl
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
+            public static Javax.Net.Ssl.SSLEngineResult.Status ValueOf(string arg0)
+            {
+                return SExecute<Javax.Net.Ssl.SSLEngineResult.Status>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()"/>
             /// </summary>

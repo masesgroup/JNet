@@ -97,6 +97,19 @@ namespace Java.Util.Concurrent
             return IExecute<int>("await");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public int Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<int>("await", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#reset()"/>
         /// </summary>
         public void Reset()

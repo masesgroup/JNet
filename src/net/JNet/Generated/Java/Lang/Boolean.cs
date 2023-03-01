@@ -37,6 +37,10 @@ namespace Java.Lang
         /// Converter from <see cref="bool?"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(bool? t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="bool?"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(bool? t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 

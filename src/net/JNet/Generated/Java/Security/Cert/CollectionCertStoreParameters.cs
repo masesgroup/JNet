@@ -29,7 +29,15 @@ namespace Java.Security.Cert
     public partial class CollectionCertStoreParameters
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html#%3Cinit%3E(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public CollectionCertStoreParameters(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +57,14 @@ namespace Java.Security.Cert
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html#getCollection()"/> 
+        /// </summary>
+        public Java.Util.Collection Collection
+        {
+            get { return IExecute<Java.Util.Collection>("getCollection"); }
+        }
+        
         #endregion
 
         #region Nested classes

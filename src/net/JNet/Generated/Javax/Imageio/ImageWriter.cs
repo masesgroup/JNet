@@ -314,6 +314,21 @@ namespace Javax.Imageio
             IExecute("endWriteSequence");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareInsertEmpty(int,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List%3C? extends java.awt.image.BufferedImage%3E,javax.imageio.ImageWriteParam)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg5"><see cref="Java.Util.List"/></param>
+        /// <param name="arg6"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void PrepareInsertEmpty(int arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List arg5, Javax.Imageio.ImageWriteParam arg6)
+        {
+            IExecute("prepareInsertEmpty", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareReplacePixels(int,java.awt.Rectangle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -322,6 +337,21 @@ namespace Javax.Imageio
         public void PrepareReplacePixels(int arg0, Java.Awt.Rectangle arg1)
         {
             IExecute("prepareReplacePixels", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareWriteEmpty(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List%3C? extends java.awt.image.BufferedImage%3E,javax.imageio.ImageWriteParam)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg5"><see cref="Java.Util.List"/></param>
+        /// <param name="arg6"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void PrepareWriteEmpty(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List arg5, Javax.Imageio.ImageWriteParam arg6)
+        {
+            IExecute("prepareWriteEmpty", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareWriteSequence(javax.imageio.metadata.IIOMetadata)"/>

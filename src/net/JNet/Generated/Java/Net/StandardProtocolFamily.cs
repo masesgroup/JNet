@@ -54,6 +54,15 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
+        public static Java.Net.StandardProtocolFamily ValueOf(string arg0)
+        {
+            return SExecute<Java.Net.StandardProtocolFamily>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()"/>
         /// </summary>
         

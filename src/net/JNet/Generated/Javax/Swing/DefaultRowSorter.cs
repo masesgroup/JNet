@@ -53,6 +53,13 @@ namespace Javax.Swing
             get { return IExecute<int>("getMaxSortKeys"); } set { IExecute("setMaxSortKeys", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getRowFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setRowFilter(javax.swing.RowFilter%3C? super M, ? super I%3E)"/>
+        /// </summary>
+        public Javax.Swing.RowFilter RowFilter
+        {
+            get { return IExecute<Javax.Swing.RowFilter>("getRowFilter"); } set { IExecute("setRowFilter", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getSortsOnUpdates()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortsOnUpdates(boolean)"/>
         /// </summary>
         public bool SortsOnUpdates
@@ -67,6 +74,24 @@ namespace Javax.Swing
         public bool IsSortable(int arg0)
         {
             return IExecute<bool>("isSortable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getComparator(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator GetComparator(int arg0)
+        {
+            return IExecute<Java.Util.Comparator>("getComparator", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setComparator(int,java.util.Comparator%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        public void SetComparator(int arg0, Java.Util.Comparator arg1)
+        {
+            IExecute("setComparator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortable(int,boolean)"/>

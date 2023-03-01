@@ -45,7 +45,30 @@ namespace Javax.Security.Sasl
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html#getMechanismNames(java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="string"/></returns>
+        public string[] GetMechanismNames(Java.Util.Map arg0)
+        {
+            return IExecuteArray<string>("getMechanismNames", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html#createSaslServer(java.lang.String,java.lang.String,java.lang.String,java.util.Map%3Cjava.lang.String, ?%3E,javax.security.auth.callback.CallbackHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
+        public Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        {
+            return IExecute<Javax.Security.Sasl.SaslServer>("createSaslServer", arg0, arg1, arg2, arg3, arg4);
+        }
+        
         #endregion
 
         #region Nested classes

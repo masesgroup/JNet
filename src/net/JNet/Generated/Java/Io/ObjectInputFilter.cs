@@ -45,7 +45,16 @@ namespace Java.Io
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html#checkInput(java.io.ObjectInputFilter$FilterInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInputFilter.FilterInfo"/></param>
+        /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+        public Java.Io.ObjectInputFilter.Status CheckInput(Java.Io.ObjectInputFilter.FilterInfo arg0)
+        {
+            return IExecute<Java.Io.ObjectInputFilter.Status>("checkInput", arg0);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -112,6 +121,15 @@ namespace Java.Io
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#serialClass()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class SerialClass()
+            {
+                return IExecute<Java.Lang.Class>("serialClass");
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
             /// </summary>
@@ -183,6 +201,15 @@ namespace Java.Io
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+            public static Java.Io.ObjectInputFilter.Status ValueOf(string arg0)
+            {
+                return SExecute<Java.Io.ObjectInputFilter.Status>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/>
             /// </summary>

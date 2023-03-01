@@ -45,7 +45,37 @@ namespace Java.Lang.Ref
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
+        public Java.Lang.Ref.Reference Poll()
+        {
+            return IExecute<Java.Lang.Ref.Reference>("poll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Lang.Ref.Reference Remove()
+        {
+            return IExecute<Java.Lang.Ref.Reference>("remove");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Lang.Ref.Reference Remove(long arg0)
+        {
+            return IExecute<Java.Lang.Ref.Reference>("remove", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

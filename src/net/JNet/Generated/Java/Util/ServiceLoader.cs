@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ServiceLoader"/> to <see cref="Java.Lang.Iterable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Iterable(Java.Util.ServiceLoader t) => t.Cast<Java.Lang.Iterable>();
+        
         #endregion
 
         #region Fields
@@ -41,10 +45,75 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class%3CS%3E,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
+        {
+            return SExecute<Java.Util.ServiceLoader>("load", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class%3CS%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.ServiceLoader>("load", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class%3CS%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleLayer"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.ServiceLoader>("load", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class%3CS%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        public static Java.Util.ServiceLoader LoadInstalled(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.ServiceLoader>("loadInstalled", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FindFirst()
+        {
+            return IExecute<Java.Util.Optional>("findFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream.Stream%3Cjava.util.ServiceLoader$Provider%3CS%3E%3E java.util.ServiceLoader.stream()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Stream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("stream");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
@@ -64,7 +133,11 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Util.ServiceLoader.Provider"/> to <see cref="Java.Util.Function.Supplier"/>
+            /// </summary>
+            public static implicit operator Java.Util.Function.Supplier(Java.Util.ServiceLoader.Provider t) => t.Cast<Java.Util.Function.Supplier>();
+            
             #endregion
 
             #region Fields
@@ -76,6 +149,15 @@ namespace Java.Util
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class Type()
+            {
+                return IExecute<Java.Lang.Class>("type");
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
             /// </summary>

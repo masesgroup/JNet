@@ -76,6 +76,24 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<string>("getDescription", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
+        public Javax.Management.Openmbean.OpenType GetType(string arg0)
+        {
+            return IExecute<Javax.Management.Openmbean.OpenType>("getType", arg0);
+        }
         
         #endregion
 

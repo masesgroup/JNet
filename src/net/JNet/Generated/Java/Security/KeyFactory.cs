@@ -54,6 +54,17 @@ namespace Java.Security
             return SExecute<Java.Security.KeyFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.KeyFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.KeyFactory GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Java.Security.KeyFactory>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -73,6 +84,24 @@ namespace Java.Security
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getKeySpec(java.security.Key,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Security.Spec.KeySpec"/></returns>
+        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
+        public Java.Security.Spec.KeySpec GetKeySpec(Java.Security.Key arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<Java.Security.Spec.KeySpec>("getKeySpec", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#translateKey(java.security.Key)"/>

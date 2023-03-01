@@ -33,7 +33,11 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6"/> to <see cref="Javax.Lang.Model.Type.TypeVisitor"/>
+        /// </summary>
+        public static implicit operator Javax.Lang.Model.Type.TypeVisitor(Javax.Lang.Model.Util.AbstractTypeVisitor6 t) => t.Cast<Javax.Lang.Model.Type.TypeVisitor>();
+        
         #endregion
 
         #region Fields

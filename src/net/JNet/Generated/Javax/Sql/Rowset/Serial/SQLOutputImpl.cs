@@ -29,7 +29,17 @@ namespace Javax.Sql.Rowset.Serial
     public partial class SQLOutputImpl
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLOutputImpl.html#%3Cinit%3E(java.util.Vector%3C?%3E,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public SQLOutputImpl(Java.Util.Vector arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

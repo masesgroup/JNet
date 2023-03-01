@@ -45,7 +45,14 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/FilesEvent.html#getFiles()"/> 
+        /// </summary>
+        public Java.Util.List Files
+        {
+            get { return IExecute<Java.Util.List>("getFiles"); }
+        }
+        
         #endregion
 
         #region Nested classes

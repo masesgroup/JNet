@@ -33,7 +33,11 @@ namespace Java.Nio.Charset
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Charset.Charset"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Nio.Charset.Charset t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -67,6 +71,15 @@ namespace Java.Nio.Charset
         public static Java.Nio.Charset.Charset ForName(string arg0)
         {
             return SExecute<Java.Nio.Charset.Charset>("forName", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#availableCharsets()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap AvailableCharsets()
+        {
+            return SExecute<Java.Util.SortedMap>("availableCharsets");
         }
         
         #endregion
@@ -161,6 +174,15 @@ namespace Java.Nio.Charset
         public Java.Nio.CharBuffer Decode(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<Java.Nio.CharBuffer>("decode", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#aliases()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Aliases()
+        {
+            return IExecute<Java.Util.Set>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.lang.Object)"/>

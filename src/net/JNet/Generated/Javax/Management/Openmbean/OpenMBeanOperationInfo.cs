@@ -67,6 +67,13 @@ namespace Javax.Management.Openmbean
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.OpenType ReturnOpenType
+        {
+            get { return IExecute<Javax.Management.Openmbean.OpenType>("getReturnOpenType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 
         /// </summary>
         public string ReturnType

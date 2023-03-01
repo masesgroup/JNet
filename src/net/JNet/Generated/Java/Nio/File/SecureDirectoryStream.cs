@@ -33,7 +33,11 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.SecureDirectoryStream"/> to <see cref="Java.Nio.File.DirectoryStream"/>
+        /// </summary>
+        public static implicit operator Java.Nio.File.DirectoryStream(Java.Nio.File.SecureDirectoryStream t) => t.Cast<Java.Nio.File.DirectoryStream>();
+        
         #endregion
 
         #region Fields
@@ -45,6 +49,49 @@ namespace Java.Nio.File
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
+        public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(T,java.lang.Class%3CV%3E,java.nio.file.LinkOption...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
+        public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(object arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1); else return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#newByteChannel(T,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.SeekableByteChannel NewByteChannel(object arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(T,java.nio.file.LinkOption...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.SecureDirectoryStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.SecureDirectoryStream NewDirectoryStream(object arg0, params Java.Nio.File.LinkOption[] arg1)
+        {
+            if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0, arg1);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(T)"/>
         /// </summary>
@@ -62,6 +109,17 @@ namespace Java.Nio.File
         public void DeleteFile(object arg0)
         {
             IExecute("deleteFile", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#move(T,java.nio.file.SecureDirectoryStream%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.SecureDirectoryStream"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void Move(object arg0, Java.Nio.File.SecureDirectoryStream arg1, object arg2)
+        {
+            IExecute("move", arg0, arg1, arg2);
         }
         
         #endregion

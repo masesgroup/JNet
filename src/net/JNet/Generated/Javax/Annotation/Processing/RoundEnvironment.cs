@@ -46,6 +46,13 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getRootElements()"/> 
+        /// </summary>
+        public Java.Util.Set RootElements
+        {
+            get { return IExecute<Java.Util.Set>("getRootElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/>
         /// </summary>
         
@@ -62,6 +69,42 @@ namespace Javax.Annotation.Processing
         public bool ProcessingOver()
         {
             return IExecute<bool>("processingOver");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(java.lang.Class%3C? extends java.lang.annotation.Annotation%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetElementsAnnotatedWith(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Util.Set>("getElementsAnnotatedWith", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(javax.lang.model.element.TypeElement)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetElementsAnnotatedWith(Javax.Lang.Model.Element.TypeElement arg0)
+        {
+            return IExecute<Java.Util.Set>("getElementsAnnotatedWith", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(java.util.Set%3Cjava.lang.Class%3C? extends java.lang.annotation.Annotation%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetElementsAnnotatedWithAny(Java.Util.Set arg0)
+        {
+            return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetElementsAnnotatedWithAny(params Javax.Lang.Model.Element.TypeElement[] arg0)
+        {
+            if (arg0.Length == 0) return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny"); else return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny", arg0);
         }
         
         #endregion

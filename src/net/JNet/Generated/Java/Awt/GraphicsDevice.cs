@@ -132,6 +132,15 @@ namespace Java.Awt
             return IExecute<bool>("isFullScreenSupported");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isWindowTranslucencySupported(java.awt.GraphicsDevice$WindowTranslucency)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsWindowTranslucencySupported(Java.Awt.GraphicsDevice.WindowTranslucency arg0)
+        {
+            return IExecute<bool>("isWindowTranslucencySupported", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfigTemplate"/></param>
@@ -172,6 +181,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
+            public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/>
             /// </summary>

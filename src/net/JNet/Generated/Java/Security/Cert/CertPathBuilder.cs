@@ -61,6 +61,17 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertPathBuilder>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPathBuilder"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.Cert.CertPathBuilder GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Java.Security.Cert.CertPathBuilder>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -80,6 +91,13 @@ namespace Java.Security.Cert
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getRevocationChecker()"/> 

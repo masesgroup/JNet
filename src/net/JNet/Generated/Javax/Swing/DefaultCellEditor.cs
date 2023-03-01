@@ -38,6 +38,14 @@ namespace Javax.Swing
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#%3Cinit%3E(javax.swing.JComboBox%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        public DefaultCellEditor(Javax.Swing.JComboBox arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#%3Cinit%3E(javax.swing.JTextField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTextField"/></param>

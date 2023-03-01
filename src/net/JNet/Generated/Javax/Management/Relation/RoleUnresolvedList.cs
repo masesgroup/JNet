@@ -37,6 +37,15 @@ namespace Javax.Management.Relation
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#%3Cinit%3E(java.util.List%3Cjavax.management.relation.RoleUnresolved%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public RoleUnresolvedList(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -53,6 +62,37 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(int,javax.management.relation.RoleUnresolvedList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        public bool AddAll(int arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
+        {
+            return IExecute<bool>("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(javax.management.relation.RoleUnresolvedList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        public bool AddAll(Javax.Management.Relation.RoleUnresolvedList arg0)
+        {
+            return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#asList()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List AsList()
+        {
+            return IExecute<Java.Util.List>("asList");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#add(int,javax.management.relation.RoleUnresolved)"/>
         /// </summary>

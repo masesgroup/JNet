@@ -46,10 +46,22 @@ namespace Java.Util
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public Hashtable(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.Hashtable t) => t.Cast<Java.Util.Map>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -78,6 +90,33 @@ namespace Java.Util
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySetMethod()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySetMethod()
+        {
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
@@ -119,6 +158,36 @@ namespace Java.Util
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(K,java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("compute", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(K,java.util.function.Function%3C? super K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute("computeIfAbsent", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(K,java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("computeIfPresent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -127,6 +196,17 @@ namespace Java.Util
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecute("getOrDefault", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(K,V,java.util.function.BiFunction%3C? super V, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("merge", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(K,V)"/>
@@ -154,6 +234,30 @@ namespace Java.Util
         public void Clear()
         {
             IExecute("clear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer%3C? super K, ? super V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        public void ForEach(Java.Util.Function.BiConsumer arg0)
+        {
+            IExecute("forEach", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void PutAll(Java.Util.Map arg0)
+        {
+            IExecute("putAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        public void ReplaceAll(Java.Util.Function.BiFunction arg0)
+        {
+            IExecute("replaceAll", arg0);
         }
         
         #endregion

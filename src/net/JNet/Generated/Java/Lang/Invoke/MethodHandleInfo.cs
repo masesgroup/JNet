@@ -86,10 +86,29 @@ namespace Java.Lang.Invoke
         {
             return SExecute<string>("referenceKindToString", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class%3C?%3E,java.lang.String,java.lang.invoke.MethodType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string ToString(int arg0, Java.Lang.Class arg1, string arg2, Java.Lang.Invoke.MethodType arg3)
+        {
+            return SExecute<string>("toString", arg0, arg1, arg2, arg3);
+        }
         
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DeclaringClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
         /// </summary>
@@ -117,6 +136,16 @@ namespace Java.Lang.Invoke
         public int ReferenceKind
         {
             get { return IExecute<int>("getReferenceKind"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class%3CT%3E,java.lang.invoke.MethodHandles$Lookup)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <returns><see cref="Java.Lang.Reflect.Member"/></returns>
+        public Java.Lang.Reflect.Member ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1)
+        {
+            return IExecute<Java.Lang.Reflect.Member>("reflectAs", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>

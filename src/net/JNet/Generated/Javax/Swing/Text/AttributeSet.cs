@@ -61,6 +61,13 @@ namespace Javax.Swing.Text
             get { return IExecute<int>("getAttributeCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getAttributeNames()"/> 
+        /// </summary>
+        public Java.Util.Enumeration AttributeNames
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getResolveParent()"/> 
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent

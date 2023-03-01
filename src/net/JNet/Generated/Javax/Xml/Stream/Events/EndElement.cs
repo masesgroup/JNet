@@ -56,6 +56,13 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<Javax.Xml.Namespace.QName>("getName"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getNamespaces()"/> 
+        /// </summary>
+        public Java.Util.Iterator Namespaces
+        {
+            get { return IExecute<Java.Util.Iterator>("getNamespaces"); }
+        }
         
         #endregion
 

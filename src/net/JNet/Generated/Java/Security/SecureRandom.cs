@@ -78,6 +78,17 @@ namespace Java.Security
             return SExecute<Java.Security.SecureRandom>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Java.Security.SecureRandom>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -87,6 +98,18 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.SecureRandomParameters arg1, string arg2)
+        {
+            return SExecute<Java.Security.SecureRandom>("getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.SecureRandomParameters arg1, Java.Security.Provider arg2)
         {
             return SExecute<Java.Security.SecureRandom>("getInstance", arg0, arg1, arg2);
         }
@@ -128,6 +151,13 @@ namespace Java.Security
         public Java.Security.SecureRandomParameters Parameters
         {
             get { return IExecute<Java.Security.SecureRandomParameters>("getParameters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#generateSeed(int)"/>

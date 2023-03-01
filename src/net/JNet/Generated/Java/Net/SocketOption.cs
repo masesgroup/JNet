@@ -46,6 +46,15 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class Type()
+        {
+            return IExecute<Java.Lang.Class>("type");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
         

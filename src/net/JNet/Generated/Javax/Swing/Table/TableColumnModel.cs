@@ -60,6 +60,13 @@ namespace Javax.Swing.Table
             get { return IExecute<int>("getColumnMargin"); } set { IExecute("setColumnMargin", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumns()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Columns
+        {
+            get { return IExecute<Java.Util.Enumeration>("getColumns"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#setColumnSelectionAllowed(boolean)"/>
         /// </summary>
         public bool ColumnSelectionAllowed

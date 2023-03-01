@@ -29,7 +29,15 @@ namespace Javax.Swing
     public partial class SpinnerListModel
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#%3Cinit%3E(java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public SpinnerListModel(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +57,14 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#getList()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#setList(java.util.List%3C?%3E)"/>
+        /// </summary>
+        public Java.Util.List List
+        {
+            get { return IExecute<Java.Util.List>("getList"); } set { IExecute("setList", value); }
+        }
+        
         #endregion
 
         #region Nested classes

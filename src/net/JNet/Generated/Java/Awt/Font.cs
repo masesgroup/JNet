@@ -39,6 +39,14 @@ namespace Java.Awt
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#%3Cinit%3E(java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public Font(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -187,6 +195,15 @@ namespace Java.Awt
             return SExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        public static Java.Awt.Font GetFont(Java.Util.Map arg0)
+        {
+            return SExecute<Java.Awt.Font>("getFont", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -212,6 +229,13 @@ namespace Java.Awt
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAttributes()"/> 
+        /// </summary>
+        public Java.Util.Map Attributes
+        {
+            get { return IExecute<Java.Util.Map>("getAttributes"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAvailableAttributes()"/> 
         /// </summary>
@@ -452,6 +476,15 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(Java.Awt.Geom.AffineTransform arg0)
+        {
+            return IExecute<Java.Awt.Font>("deriveFont", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        public Java.Awt.Font DeriveFont(Java.Util.Map arg0)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }

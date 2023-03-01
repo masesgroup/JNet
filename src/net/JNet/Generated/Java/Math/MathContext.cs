@@ -30,6 +30,15 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#%3Cinit%3E(int,java.math.RoundingMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Math.RoundingMode"/></param>
+        public MathContext(int arg0, Java.Math.RoundingMode arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -87,6 +96,13 @@ namespace Java.Math
         public int Precision
         {
             get { return IExecute<int>("getPrecision"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#getRoundingMode()"/> 
+        /// </summary>
+        public Java.Math.RoundingMode RoundingMode
+        {
+            get { return IExecute<Java.Math.RoundingMode>("getRoundingMode"); }
         }
         
         #endregion

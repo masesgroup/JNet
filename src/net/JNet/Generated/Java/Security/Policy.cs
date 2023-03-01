@@ -59,6 +59,18 @@ namespace Java.Security
             return SExecute<Java.Security.Policy>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.Policy"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.Policy GetInstance(string arg0, Java.Security.Policy.Parameters arg1, Java.Security.Provider arg2)
+        {
+            return SExecute<Java.Security.Policy>("getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -90,6 +102,13 @@ namespace Java.Security
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getType()"/> 
         /// </summary>

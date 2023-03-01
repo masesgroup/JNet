@@ -41,7 +41,27 @@ namespace Java.Text
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#isNormalized(java.lang.CharSequence,java.text.Normalizer$Form)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public static bool IsNormalized(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
+        {
+            return SExecute<bool>("isNormalized", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer$Form)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string Normalize(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
+        {
+            return SExecute<string>("normalize", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -81,6 +101,15 @@ namespace Java.Text
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
+            public static Java.Text.Normalizer.Form ValueOf(string arg0)
+            {
+                return SExecute<Java.Text.Normalizer.Form>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/>
             /// </summary>

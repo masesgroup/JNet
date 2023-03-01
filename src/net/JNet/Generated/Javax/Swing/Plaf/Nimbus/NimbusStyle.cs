@@ -69,7 +69,34 @@ namespace Javax.Swing.Plaf.Nimbus
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getBackgroundPainter(javax.swing.plaf.synth.SynthContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Javax.Swing.Painter"/></returns>
+        public Javax.Swing.Painter GetBackgroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        {
+            return IExecute<Javax.Swing.Painter>("getBackgroundPainter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getBorderPainter(javax.swing.plaf.synth.SynthContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Javax.Swing.Painter"/></returns>
+        public Javax.Swing.Painter GetBorderPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        {
+            return IExecute<Javax.Swing.Painter>("getBorderPainter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getForegroundPainter(javax.swing.plaf.synth.SynthContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Javax.Swing.Painter"/></returns>
+        public Javax.Swing.Painter GetForegroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        {
+            return IExecute<Javax.Swing.Painter>("getForegroundPainter", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

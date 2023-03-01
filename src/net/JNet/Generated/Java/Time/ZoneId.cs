@@ -50,6 +50,13 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getAvailableZoneIds()"/> 
+        /// </summary>
+        public static Java.Util.Set AvailableZoneIds
+        {
+            get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -57,6 +64,16 @@ namespace Java.Time
         public static Java.Time.ZoneId From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.ZoneId>("from", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String,java.util.Map%3Cjava.lang.String, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
+        public static Java.Time.ZoneId Of(string arg0, Java.Util.Map arg1)
+        {
+            return SExecute<Java.Time.ZoneId>("of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String)"/>
@@ -103,6 +120,16 @@ namespace Java.Time
         public Java.Time.Zone.ZoneRules Rules
         {
             get { return IExecute<Java.Time.Zone.ZoneRules>("getRules"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
+        {
+            return IExecute<string>("getDisplayName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/>

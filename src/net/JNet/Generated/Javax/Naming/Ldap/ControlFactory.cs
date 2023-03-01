@@ -41,7 +41,19 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control,javax.naming.Context,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable arg2)
+        {
+            return SExecute<Javax.Naming.Ldap.Control>("getControlInstance", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Instance methods

@@ -71,6 +71,13 @@ namespace Javax.Xml.Crypto.Dsig
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getReferences()"/> 
+        /// </summary>
+        public Java.Util.List References
+        {
+            get { return IExecute<Java.Util.List>("getReferences"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getSignatureMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignatureMethod SignatureMethod

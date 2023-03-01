@@ -63,7 +63,16 @@ namespace Javax.Xml.Catalog
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#get(javax.xml.catalog.CatalogFeatures$Feature)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string Get(Javax.Xml.Catalog.CatalogFeatures.Feature arg0)
+        {
+            return IExecute<string>("get", arg0);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -95,6 +104,16 @@ namespace Javax.Xml.Catalog
             public Javax.Xml.Catalog.CatalogFeatures Build()
             {
                 return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#with(javax.xml.catalog.CatalogFeatures$Feature,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
+            public Javax.Xml.Catalog.CatalogFeatures.Builder With(Javax.Xml.Catalog.CatalogFeatures.Feature arg0, string arg1)
+            {
+                return IExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>("with", arg0, arg1);
             }
             
             #endregion
@@ -135,6 +154,15 @@ namespace Javax.Xml.Catalog
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature ValueOf(string arg0)
+            {
+                return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/>
             /// </summary>

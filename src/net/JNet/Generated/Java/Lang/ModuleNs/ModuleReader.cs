@@ -50,6 +50,26 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#find(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Optional Find(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("find", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Stream.Stream List()
+        {
+            return IExecute<Java.Util.Stream.Stream>("list");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
         /// </summary>
         
@@ -57,6 +77,26 @@ namespace Java.Lang.ModuleNs
         public void Close()
         {
             IExecute("close");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#open(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Optional Open(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("open", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#read(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Optional Read(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#release(java.nio.ByteBuffer)"/>

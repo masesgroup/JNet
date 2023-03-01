@@ -50,6 +50,13 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getExclusiveQueuedThreads()"/> 
+        /// </summary>
+        public Java.Util.Collection ExclusiveQueuedThreads
+        {
+            get { return IExecute<Java.Util.Collection>("getExclusiveQueuedThreads"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getFirstQueuedThread()"/> 
         /// </summary>
         public Java.Lang.Thread FirstQueuedThread
@@ -57,11 +64,25 @@ namespace Java.Util.Concurrent.Locks
             get { return IExecute<Java.Lang.Thread>("getFirstQueuedThread"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueuedThreads()"/> 
+        /// </summary>
+        public Java.Util.Collection QueuedThreads
+        {
+            get { return IExecute<Java.Util.Collection>("getQueuedThreads"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueueLength()"/> 
         /// </summary>
         public int QueueLength
         {
             get { return IExecute<int>("getQueueLength"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getSharedQueuedThreads()"/> 
+        /// </summary>
+        public Java.Util.Collection SharedQueuedThreads
+        {
+            get { return IExecute<Java.Util.Collection>("getSharedQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasContended()"/>
@@ -167,6 +188,15 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<int>("getWaitQueueLength", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection GetWaitingThreads(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject arg0)
+        {
+            return IExecute<Java.Util.Collection>("getWaitingThreads", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquire(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -240,6 +270,17 @@ namespace Java.Util.Concurrent.Locks
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await(long,java.util.concurrent.TimeUnit)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+            /// <returns><see langword="bool"/></returns>
+            /// <exception cref="Java.Lang.InterruptedException"/>
+            public bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+            {
+                return IExecute<bool>("await", arg0, arg1);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>
             /// </summary>

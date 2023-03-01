@@ -37,6 +37,22 @@ namespace Javax.Management
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(java.util.List%3Cjavax.management.Attribute%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public AttributeList(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        public AttributeList(Javax.Management.AttributeList arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -53,6 +69,34 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(int,javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(int arg0, Javax.Management.AttributeList arg1)
+        {
+            return IExecute<bool>("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(Javax.Management.AttributeList arg0)
+        {
+            return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List AsList()
+        {
+            return IExecute<Java.Util.List>("asList");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)"/>
         /// </summary>

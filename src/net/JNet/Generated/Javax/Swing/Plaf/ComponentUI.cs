@@ -86,6 +86,15 @@ namespace Javax.Swing.Plaf
             return IExecute<int>("getBaseline", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getBaselineResizeBehavior(javax.swing.JComponent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
+        public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior(Javax.Swing.JComponent arg0)
+        {
+            return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getMaximumSize(javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>

@@ -49,11 +49,140 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#allOf(java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet AllOf(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("allOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#complementOf(java.util.EnumSet%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet ComplementOf(Java.Util.EnumSet arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("complementOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#copyOf(java.util.Collection%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet CopyOf(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("copyOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#copyOf(java.util.EnumSet%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet CopyOf(Java.Util.EnumSet arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("copyOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#noneOf(java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet NoneOf(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("noneOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0, Java.Lang.Enum arg1, Java.Lang.Enum arg2, Java.Lang.Enum arg3, Java.Lang.Enum arg4)
+        {
+            return SExecute<Java.Util.EnumSet>("of", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0, Java.Lang.Enum arg1, Java.Lang.Enum arg2, Java.Lang.Enum arg3)
+        {
+            return SExecute<Java.Util.EnumSet>("of", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0, Java.Lang.Enum arg1, Java.Lang.Enum arg2)
+        {
+            return SExecute<Java.Util.EnumSet>("of", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E,E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0, params Java.Lang.Enum[] arg1)
+        {
+            if (arg1.Length == 0) return SExecute<Java.Util.EnumSet>("of", arg0); else return SExecute<Java.Util.EnumSet>("of", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0, Java.Lang.Enum arg1)
+        {
+            return SExecute<Java.Util.EnumSet>("of", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Of(Java.Lang.Enum arg0)
+        {
+            return SExecute<Java.Util.EnumSet>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#range(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public static Java.Util.EnumSet Range(Java.Lang.Enum arg0, Java.Lang.Enum arg1)
+        {
+            return SExecute<Java.Util.EnumSet>("range", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#clone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public Java.Util.EnumSet Clone()
+        {
+            return IExecute<Java.Util.EnumSet>("clone");
+        }
+        
         #endregion
 
         #region Nested classes

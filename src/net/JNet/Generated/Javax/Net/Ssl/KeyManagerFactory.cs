@@ -61,6 +61,17 @@ namespace Javax.Net.Ssl
             return SExecute<Javax.Net.Ssl.KeyManagerFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.KeyManagerFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Net.Ssl.KeyManagerFactory GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Javax.Net.Ssl.KeyManagerFactory>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -87,6 +98,13 @@ namespace Javax.Net.Ssl
         public Javax.Net.Ssl.KeyManager[] KeyManagers
         {
             get { return IExecuteArray<Javax.Net.Ssl.KeyManager>("getKeyManagers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(java.security.KeyStore,char[])"/>

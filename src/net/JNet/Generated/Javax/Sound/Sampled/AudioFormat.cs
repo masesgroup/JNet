@@ -42,6 +42,21 @@ namespace Javax.Sound.Sampled
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean,java.util.Map%3Cjava.lang.String, java.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg7"><see cref="Java.Util.Map"/></param>
+        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
@@ -132,6 +147,15 @@ namespace Javax.Sound.Sampled
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#properties()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map Properties()
+        {
+            return IExecute<Java.Util.Map>("properties");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()"/>

@@ -45,7 +45,17 @@ namespace Javax.Xml.Xpath
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
+        public object Evaluate(Java.Util.List arg0)
+        {
+            return IExecute("evaluate", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

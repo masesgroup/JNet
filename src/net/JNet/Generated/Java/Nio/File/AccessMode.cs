@@ -54,6 +54,15 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
+        public static Java.Nio.File.AccessMode ValueOf(string arg0)
+        {
+            return SExecute<Java.Nio.File.AccessMode>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()"/>
         /// </summary>
         

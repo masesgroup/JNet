@@ -30,6 +30,23 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int,java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory,java.lang.Thread$UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate%3C? super java.util.concurrent.ForkJoinPool%3E,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <param name="arg8"><see cref="long"/></param>
+        /// <param name="arg9"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        public ForkJoinPool(int arg0, Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1, Java.Lang.Thread.UncaughtExceptionHandler arg2, bool arg3, int arg4, int arg5, int arg6, Java.Util.Function.Predicate arg7, long arg8, Java.Util.Concurrent.TimeUnit arg9)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int,java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory,java.lang.Thread$UncaughtExceptionHandler,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -164,6 +181,34 @@ namespace Java.Util.Concurrent
             get { return IExecute<Java.Lang.Thread.UncaughtExceptionHandler>("getUncaughtExceptionHandler"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public Java.Util.Concurrent.ForkJoinTask Submit(Java.Util.Concurrent.ForkJoinTask arg0)
+        {
+            return IExecute<Java.Util.Concurrent.ForkJoinTask>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Invoke(Java.Util.Concurrent.ForkJoinTask arg0)
+        {
+            return IExecute("invoke", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AwaitQuiescence(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<bool>("awaitQuiescence", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>
         /// </summary>
         
@@ -189,6 +234,14 @@ namespace Java.Util.Concurrent
         public bool IsTerminating()
         {
             return IExecute<bool>("isTerminating");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        public void Execute(Java.Util.Concurrent.ForkJoinTask arg0)
+        {
+            IExecute("execute", arg0);
         }
         
         #endregion

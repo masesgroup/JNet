@@ -59,6 +59,13 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLoggerNames()"/> 
+        /// </summary>
+        public Java.Util.Enumeration LoggerNames
+        {
+            get { return IExecute<Java.Util.Enumeration>("getLoggerNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Logger"/></param>
@@ -139,6 +146,25 @@ namespace Java.Util.Logging
         public void Reset()
         {
             IExecute("reset");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#updateConfiguration(java.io.InputStream,java.util.function.Function%3Cjava.lang.String, java.util.function.BiFunction%3Cjava.lang.String, java.lang.String, java.lang.String%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function arg1)
+        {
+            IExecute("updateConfiguration", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#updateConfiguration(java.util.function.Function%3Cjava.lang.String, java.util.function.BiFunction%3Cjava.lang.String, java.lang.String, java.lang.String%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void UpdateConfiguration(Java.Util.Function.Function arg0)
+        {
+            IExecute("updateConfiguration", arg0);
         }
         
         #endregion

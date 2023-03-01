@@ -133,6 +133,14 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setProperties(java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        public void SetProperties(Java.Util.Hashtable arg0)
+        {
+            IExecute("setProperties", arg0);
+        }
         
         #endregion
 

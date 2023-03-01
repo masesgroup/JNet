@@ -135,6 +135,14 @@ namespace Java.Awt
             return IExecute("getRenderingHint", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#addRenderingHints(java.util.Map%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void AddRenderingHints(Java.Util.Map arg0)
+        {
+            IExecute("addRenderingHints", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>

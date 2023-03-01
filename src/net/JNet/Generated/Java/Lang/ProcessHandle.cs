@@ -33,7 +33,11 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.ProcessHandle"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Lang.ProcessHandle t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -49,6 +53,24 @@ namespace Java.Lang
         public static Java.Lang.ProcessHandle Current()
         {
             return SExecute<Java.Lang.ProcessHandle>("current");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#of(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public static Java.Util.Optional Of(long arg0)
+        {
+            return SExecute<Java.Util.Optional>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#allProcesses()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public static Java.Util.Stream.Stream AllProcesses()
+        {
+            return SExecute<Java.Util.Stream.Stream>("allProcesses");
         }
         
         #endregion
@@ -109,6 +131,42 @@ namespace Java.Lang
             return IExecute<Java.Lang.ProcessHandle.Info>("info");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#onExit()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
+        public Java.Util.Concurrent.CompletableFuture OnExit()
+        {
+            return IExecute<Java.Util.Concurrent.CompletableFuture>("onExit");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#parent()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Parent()
+        {
+            return IExecute<Java.Util.Optional>("parent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#children()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Children()
+        {
+            return IExecute<Java.Util.Stream.Stream>("children");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#descendants()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Descendants()
+        {
+            return IExecute<Java.Util.Stream.Stream>("descendants");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()"/>
         /// </summary>
         
@@ -150,7 +208,61 @@ namespace Java.Lang
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#arguments()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional Arguments()
+            {
+                return IExecute<Java.Util.Optional>("arguments");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#command()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional Command()
+            {
+                return IExecute<Java.Util.Optional>("command");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#commandLine()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional CommandLine()
+            {
+                return IExecute<Java.Util.Optional>("commandLine");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#user()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional User()
+            {
+                return IExecute<Java.Util.Optional>("user");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#totalCpuDuration()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional TotalCpuDuration()
+            {
+                return IExecute<Java.Util.Optional>("totalCpuDuration");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#startInstant()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional StartInstant()
+            {
+                return IExecute<Java.Util.Optional>("startInstant");
+            }
+            
             #endregion
 
             // TODO: complete the class

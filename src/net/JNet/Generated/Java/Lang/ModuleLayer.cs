@@ -59,6 +59,39 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.ModuleLayer>("empty");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List%3Cjava.lang.ModuleLayer%3E,java.util.function.Function%3Cjava.lang.String, java.lang.ClassLoader%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
+        public static Java.Lang.ModuleLayer.Controller DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Util.Function.Function arg2)
+        {
+            return SExecute<Java.Lang.ModuleLayer.Controller>("defineModules", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.util.List%3Cjava.lang.ModuleLayer%3E,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
+        public static Java.Lang.ModuleLayer.Controller DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Lang.ClassLoader arg2)
+        {
+            return SExecute<Java.Lang.ModuleLayer.Controller>("defineModulesWithManyLoaders", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.util.List%3Cjava.lang.ModuleLayer%3E,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
+        public static Java.Lang.ModuleLayer.Controller DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Lang.ClassLoader arg2)
+        {
+            return SExecute<Java.Lang.ModuleLayer.Controller>("defineModulesWithOneLoader", arg0, arg1, arg2);
+        }
         
         #endregion
 
@@ -82,6 +115,16 @@ namespace Java.Lang
             return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.function.Function%3Cjava.lang.String, java.lang.ClassLoader%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
+        public Java.Lang.ModuleLayer DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute<Java.Lang.ModuleLayer>("defineModules", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
@@ -100,6 +143,33 @@ namespace Java.Lang
         public Java.Lang.ModuleLayer DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Lang.ClassLoader arg1)
         {
             return IExecute<Java.Lang.ModuleLayer>("defineModulesWithOneLoader", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List Parents()
+        {
+            return IExecute<Java.Util.List>("parents");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findModule(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FindModule(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("findModule", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Modules()
+        {
+            return IExecute<Java.Util.Set>("modules");
         }
         
         #endregion

@@ -41,10 +41,65 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public static Java.Util.Optional Empty()
+        {
+            return SExecute<Java.Util.Optional>("empty");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#of(T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public static Java.Util.Optional Of(object arg0)
+        {
+            return SExecute<Java.Util.Optional>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ofNullable(T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public static Java.Util.Optional OfNullable(object arg0)
+        {
+            return SExecute<Java.Util.Optional>("ofNullable", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#flatMap(java.util.function.Function%3C? super T, ? extends java.util.Optional%3C? extends U%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FlatMap(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Optional>("flatMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#map(java.util.function.Function%3C? super T, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Map(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Optional>("map", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow(java.util.function.Supplier%3C? extends X%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public object OrElseThrow(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute("orElseThrow", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
         /// </summary>
@@ -62,6 +117,33 @@ namespace Java.Util
         public bool IsPresent()
         {
             return IExecute<bool>("isPresent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#filter(java.util.function.Predicate%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Filter(Java.Util.Function.Predicate arg0)
+        {
+            return IExecute<Java.Util.Optional>("filter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#or(java.util.function.Supplier%3C? extends java.util.Optional%3C? extends T%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Or(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute<Java.Util.Optional>("or", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream.Stream%3CT%3E java.util.Optional.stream()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Stream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
@@ -82,6 +164,15 @@ namespace Java.Util
             return IExecute("orElse", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseGet(java.util.function.Supplier%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object OrElseGet(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute("orElseGet", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
         
@@ -89,6 +180,23 @@ namespace Java.Util
         public object OrElseThrow()
         {
             return IExecute("orElseThrow");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresent(java.util.function.Consumer%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void IfPresent(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("ifPresent", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer%3C? super T%3E,java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        public void IfPresentOrElse(Java.Util.Function.Consumer arg0, Java.Lang.Runnable arg1)
+        {
+            IExecute("ifPresentOrElse", arg0, arg1);
         }
         
         #endregion

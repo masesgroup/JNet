@@ -54,6 +54,24 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#of(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
+        public static Java.Time.Chrono.IsoEra Of(int arg0)
+        {
+            return SExecute<Java.Time.Chrono.IsoEra>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
+        public static Java.Time.Chrono.IsoEra ValueOf(string arg0)
+        {
+            return SExecute<Java.Time.Chrono.IsoEra>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/>
         /// </summary>
         

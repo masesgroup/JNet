@@ -61,6 +61,13 @@ namespace Javax.Sql.Rowset.Spi
             get { return SExecute<Java.Util.Logging.Logger>("getLogger"); } set { SExecute("setLogger", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getRegisteredProviders()"/> 
+        /// </summary>
+        public static Java.Util.Enumeration RegisteredProviders
+        {
+            get { return SExecute<Java.Util.Enumeration>("getRegisteredProviders"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getSyncFactory()"/>
         /// </summary>
         

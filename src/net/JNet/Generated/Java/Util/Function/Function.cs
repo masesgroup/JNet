@@ -41,7 +41,16 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public static Java.Util.Function.Function Identity()
+        {
+            return SExecute<Java.Util.Function.Function>("identity");
+        }
+        
         #endregion
 
         #region Instance methods
@@ -53,6 +62,24 @@ namespace Java.Util.Function
         public object Apply(object arg0)
         {
             return IExecute("apply", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function%3C? super R, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.Function>("andThen", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function%3C? super V, ? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.Function>("compose", arg0);
         }
         
         #endregion

@@ -70,6 +70,15 @@ namespace Javax.Swing.Table
             return IExecute<bool>("isCellEditable", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableModel.html#getColumnClass(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetColumnClass(int arg0)
+        {
+            return IExecute<Java.Lang.Class>("getColumnClass", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableModel.html#getValueAt(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

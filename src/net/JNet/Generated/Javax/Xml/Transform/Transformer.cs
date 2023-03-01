@@ -53,6 +53,13 @@ namespace Javax.Xml.Transform
             get { return IExecute<Javax.Xml.Transform.ErrorListener>("getErrorListener"); } set { IExecute("setErrorListener", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperties(java.util.Properties)"/>
+        /// </summary>
+        public Java.Util.Properties OutputProperties
+        {
+            get { return IExecute<Java.Util.Properties>("getOutputProperties"); } set { IExecute("setOutputProperties", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getURIResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
         /// </summary>
         public Javax.Xml.Transform.URIResolver URIResolver

@@ -61,6 +61,20 @@ namespace Javax.Swing.Text
             get { return IExecute<Java.Text.Format>("getFormat"); } set { IExecute("setFormat", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMaximum(java.lang.Comparable%3C?%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable Maximum
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMaximum"); } set { IExecute("setMaximum", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMinimum(java.lang.Comparable%3C?%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable Minimum
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMinimum"); } set { IExecute("setMinimum", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

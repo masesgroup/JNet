@@ -45,7 +45,17 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html#getInitialContext(java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see cref="Javax.Naming.Context"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public Javax.Naming.Context GetInitialContext(Java.Util.Hashtable arg0)
+        {
+            return IExecute<Javax.Naming.Context>("getInitialContext", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

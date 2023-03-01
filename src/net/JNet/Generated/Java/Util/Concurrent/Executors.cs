@@ -42,6 +42,61 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable Callable(Java.Lang.Runnable arg0, object arg1)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("callable", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable PrivilegedCallableMethod(Java.Util.Concurrent.Callable arg0)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("privilegedCallable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable PrivilegedCallableUsingCurrentClassLoaderMethod(Java.Util.Concurrent.Callable arg0)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("privilegedCallableUsingCurrentClassLoader", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable Callable(Java.Lang.Runnable arg0)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("callable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable Callable(Java.Security.PrivilegedAction arg0)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("callable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable Callable(Java.Security.PrivilegedExceptionAction arg0)
+        {
+            return SExecute<Java.Util.Concurrent.Callable>("callable", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()"/>
         /// </summary>
         

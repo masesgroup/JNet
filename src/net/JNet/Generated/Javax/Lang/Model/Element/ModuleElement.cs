@@ -54,6 +54,20 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getDirectives()"/> 
+        /// </summary>
+        public Java.Util.List Directives
+        {
+            get { return IExecute<Java.Util.List>("getDirectives"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosedElements()"/> 
+        /// </summary>
+        public Java.Util.List EnclosedElements
+        {
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
@@ -116,7 +130,24 @@ namespace Javax.Lang.Model.Element
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#getKind()"/> 
+            /// </summary>
+            public Javax.Lang.Model.Element.ModuleElement.DirectiveKind Kind
+            {
+                get { return IExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("getKind"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement$DirectiveVisitor%3CR, P%3E,P)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
+            /// <returns><see langword="object"/></returns>
+            public object Accept(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor arg0, object arg1)
+            {
+                return IExecute("accept", arg0, arg1);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -159,6 +190,15 @@ namespace Javax.Lang.Model.Element
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(string arg0)
+            {
+                return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
             /// </summary>
@@ -312,6 +352,13 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getTargetModules()"/> 
+            /// </summary>
+            public Java.Util.List TargetModules
+            {
+                get { return IExecute<Java.Util.List>("getTargetModules"); }
+            }
             
             #endregion
 
@@ -346,6 +393,13 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getTargetModules()"/> 
+            /// </summary>
+            public Java.Util.List TargetModules
+            {
+                get { return IExecute<Java.Util.List>("getTargetModules"); }
+            }
             
             #endregion
 
@@ -373,6 +427,13 @@ namespace Javax.Lang.Model.Element
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getImplementations()"/> 
+            /// </summary>
+            public Java.Util.List Implementations
+            {
+                get { return IExecute<Java.Util.List>("getImplementations"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService()"/> 
             /// </summary>

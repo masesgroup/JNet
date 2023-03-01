@@ -29,7 +29,15 @@ namespace Javax.Imageio.Plugins.Tiff
     public partial class TIFFTagSet
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#%3Cinit%3E(java.util.List%3Cjavax.imageio.plugins.tiff.TIFFTag%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public TIFFTagSet(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +53,20 @@ namespace Javax.Imageio.Plugins.Tiff
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNames()"/> 
+        /// </summary>
+        public Java.Util.SortedSet TagNames
+        {
+            get { return IExecute<Java.Util.SortedSet>("getTagNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNumbers()"/> 
+        /// </summary>
+        public Java.Util.SortedSet TagNumbers
+        {
+            get { return IExecute<Java.Util.SortedSet>("getTagNumbers"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(int)"/>
         /// </summary>

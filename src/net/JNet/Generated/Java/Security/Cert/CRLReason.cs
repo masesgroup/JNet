@@ -86,6 +86,15 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
+        public static Java.Security.Cert.CRLReason ValueOf(string arg0)
+        {
+            return SExecute<Java.Security.Cert.CRLReason>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#values()"/>
         /// </summary>
         

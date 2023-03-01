@@ -41,7 +41,34 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#toString(java.util.Set%3Cjava.nio.file.attribute.PosixFilePermission%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string ToString(Java.Util.Set arg0)
+        {
+            return SExecute<string>("toString", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#asFileAttribute(java.util.Set%3Cjava.nio.file.attribute.PosixFilePermission%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileAttribute"/></returns>
+        public static Java.Nio.File.Attribute.FileAttribute AsFileAttribute(Java.Util.Set arg0)
+        {
+            return SExecute<Java.Nio.File.Attribute.FileAttribute>("asFileAttribute", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#fromString(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set FromString(string arg0)
+        {
+            return SExecute<Java.Util.Set>("fromString", arg0);
+        }
+        
         #endregion
 
         #region Instance methods

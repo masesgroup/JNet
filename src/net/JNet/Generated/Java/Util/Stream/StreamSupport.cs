@@ -41,7 +41,91 @@ namespace Java.Util.Stream
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#stream.Stream%3CT%3E java.util.stream.StreamSupport.stream(java.util.function.Supplier%3C? extends java.util.Spliterator%3CT%3E%3E,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public static Java.Util.Stream.Stream Stream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        {
+            return SExecute<Java.Util.Stream.Stream>("stream", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#stream.Stream%3CT%3E java.util.stream.StreamSupport.stream(java.util.Spliterator%3CT%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Spliterator"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public static Java.Util.Stream.Stream Stream(Java.Util.Spliterator arg0, bool arg1)
+        {
+            return SExecute<Java.Util.Stream.Stream>("stream", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#doubleStream(java.util.function.Supplier%3C? extends java.util.Spliterator$OfDouble%3E,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        {
+            return SExecute<Java.Util.Stream.DoubleStream>("doubleStream", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#doubleStream(java.util.Spliterator$OfDouble,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfDouble"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Spliterator.OfDouble arg0, bool arg1)
+        {
+            return SExecute<Java.Util.Stream.DoubleStream>("doubleStream", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#intStream(java.util.function.Supplier%3C? extends java.util.Spliterator$OfInt%3E,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public static Java.Util.Stream.IntStream IntStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        {
+            return SExecute<Java.Util.Stream.IntStream>("intStream", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#intStream(java.util.Spliterator$OfInt,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfInt"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public static Java.Util.Stream.IntStream IntStream(Java.Util.Spliterator.OfInt arg0, bool arg1)
+        {
+            return SExecute<Java.Util.Stream.IntStream>("intStream", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#longStream(java.util.function.Supplier%3C? extends java.util.Spliterator$OfLong%3E,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public static Java.Util.Stream.LongStream LongStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        {
+            return SExecute<Java.Util.Stream.LongStream>("longStream", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#longStream(java.util.Spliterator$OfLong,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfLong"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public static Java.Util.Stream.LongStream LongStream(Java.Util.Spliterator.OfLong arg0, bool arg1)
+        {
+            return SExecute<Java.Util.Stream.LongStream>("longStream", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods

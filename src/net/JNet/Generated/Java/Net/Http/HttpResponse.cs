@@ -55,6 +55,15 @@ namespace Java.Net.Http
             return IExecute<int>("statusCode");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#version()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        public Java.Net.Http.HttpClient.Version Version()
+        {
+            return IExecute<Java.Net.Http.HttpClient.Version>("version");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/>
         /// </summary>
         
@@ -80,6 +89,24 @@ namespace Java.Net.Http
         public Java.Net.URI Uri()
         {
             return IExecute<Java.Net.URI>("uri");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#previousResponse()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional PreviousResponse()
+        {
+            return IExecute<Java.Util.Optional>("previousResponse");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#sslSession()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional SslSession()
+        {
+            return IExecute<Java.Util.Optional>("sslSession");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
@@ -114,7 +141,16 @@ namespace Java.Net.Http
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html#apply(java.net.http.HttpResponse$ResponseInfo)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.ResponseInfo"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public Java.Net.Http.HttpResponse.BodySubscriber Apply(Java.Net.Http.HttpResponse.ResponseInfo arg0)
+            {
+                return IExecute<Java.Net.Http.HttpResponse.BodySubscriber>("apply", arg0);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -137,7 +173,166 @@ namespace Java.Net.Http
             #endregion
 
             #region Static methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(S,java.util.function.Function%3C? super S, ? extends T%3E,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0, Java.Util.Function.Function arg1, string arg2)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("fromLineSubscriber", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(S,java.util.function.Function%3C? super S, ? extends T%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0, Java.Util.Function.Function arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("fromSubscriber", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#buffering(java.net.http.HttpResponse$BodyHandler%3CT%3E,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Buffering(Java.Net.Http.HttpResponse.BodyHandler arg0, int arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("buffering", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#replacing(U)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Replacing(object arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("replacing", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArray()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfByteArray()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofByteArray");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofInputStream()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfInputStream()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofInputStream");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofString()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfString()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofString");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofString(java.nio.charset.Charset)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfString(Java.Nio.Charset.Charset arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofString", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#discarding()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Discarding()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("discarding");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow$Subscriber%3C? super java.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("fromLineSubscriber", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow$Subscriber%3C? super java.util.List%3Cjava.nio.ByteBuffer%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("fromSubscriber", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArrayConsumer(java.util.function.Consumer%3Cjava.util.Optional%3Cbyte[]%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfByteArrayConsumer(Java.Util.Function.Consumer arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofByteArrayConsumer", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            {
+                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofFile", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofFile", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFile(Java.Nio.File.Path arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofFile", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFileDownload(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            {
+                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofFileDownload", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofFileDownload", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofPublisher()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfPublisher()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofPublisher");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofLines()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfLines()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>("ofLines");
+            }
+            
             #endregion
 
             #region Instance methods
@@ -168,7 +363,14 @@ namespace Java.Net.Http
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html#getBody()"/> 
+            /// </summary>
+            public Java.Util.Concurrent.CompletionStage Body
+            {
+                get { return IExecute<Java.Util.Concurrent.CompletionStage>("getBody"); }
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -191,7 +393,158 @@ namespace Java.Net.Http
             #endregion
 
             #region Static methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(S,java.util.function.Function%3C? super S, ? extends T%3E,java.nio.charset.Charset,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+            /// <param name="arg3"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0, Java.Util.Function.Function arg1, Java.Nio.Charset.Charset arg2, string arg3)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("fromLineSubscriber", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(S,java.util.function.Function%3C? super S, ? extends T%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0, Java.Util.Function.Function arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("fromSubscriber", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#mapping(java.net.http.HttpResponse$BodySubscriber%3CT%3E,java.util.function.Function%3C? super T, ? extends U%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Mapping(Java.Net.Http.HttpResponse.BodySubscriber arg0, Java.Util.Function.Function arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("mapping", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#buffering(java.net.http.HttpResponse$BodySubscriber%3CT%3E,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Buffering(Java.Net.Http.HttpResponse.BodySubscriber arg0, int arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("buffering", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#replacing(U)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Replacing(object arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("replacing", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofByteArray()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfByteArray()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofByteArray");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofInputStream()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfInputStream()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofInputStream");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofString(java.nio.charset.Charset)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfString(Java.Nio.Charset.Charset arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofString", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#discarding()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Discarding()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("discarding");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow$Subscriber%3C? super java.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("fromLineSubscriber", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(java.util.concurrent.Flow$Subscriber%3C? super java.util.List%3Cjava.nio.ByteBuffer%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("fromSubscriber", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofByteArrayConsumer(java.util.function.Consumer%3Cjava.util.Optional%3Cbyte[]%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfByteArrayConsumer(Java.Util.Function.Consumer arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofByteArrayConsumer", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            {
+                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofFile", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofFile", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfFile(Java.Nio.File.Path arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofFile", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofPublisher()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfPublisher()
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofPublisher");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofLines(java.nio.charset.Charset)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfLines(Java.Nio.Charset.Charset arg0)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>("ofLines", arg0);
+            }
+            
             #endregion
 
             #region Instance methods
@@ -218,11 +571,31 @@ namespace Java.Net.Http
             #endregion
 
             #region Static methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#of(java.util.function.Function%3Cjava.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler%3CT%3E%3E,java.util.concurrent.ConcurrentMap%3Cjava.net.http.HttpRequest, java.util.concurrent.CompletableFuture%3Cjava.net.http.HttpResponse%3CT%3E%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.ConcurrentMap"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></returns>
+            public static Java.Net.Http.HttpResponse.PushPromiseHandler Of(Java.Util.Function.Function arg0, Java.Util.Concurrent.ConcurrentMap arg1)
+            {
+                return SExecute<Java.Net.Http.HttpResponse.PushPromiseHandler>("of", arg0, arg1);
+            }
+            
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.util.function.Function%3Cjava.net.http.HttpResponse$BodyHandler%3CT%3E, java.util.concurrent.CompletableFuture%3Cjava.net.http.HttpResponse%3CT%3E%3E%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
+            /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest"/></param>
+            /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
+            public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function arg2)
+            {
+                IExecute("applyPushPromise", arg0, arg1, arg2);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -257,6 +630,15 @@ namespace Java.Net.Http
             public int StatusCode()
             {
                 return IExecute<int>("statusCode");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#version()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+            public Java.Net.Http.HttpClient.Version Version()
+            {
+                return IExecute<Java.Net.Http.HttpClient.Version>("version");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()"/>

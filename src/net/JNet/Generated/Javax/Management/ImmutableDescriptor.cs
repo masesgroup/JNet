@@ -37,6 +37,14 @@ namespace Javax.Management
             : base()
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public ImmutableDescriptor(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 

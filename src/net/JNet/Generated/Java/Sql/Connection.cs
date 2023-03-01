@@ -88,6 +88,13 @@ namespace Java.Sql
             get { return IExecute<string>("getCatalog"); } set { IExecute("setCatalog", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
+        /// </summary>
+        public Java.Util.Properties ClientInfo
+        {
+            get { return IExecute<Java.Util.Properties>("getClientInfo"); } set { IExecute("setClientInfo", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getHoldability()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setHoldability(int)"/>
         /// </summary>
         public int Holdability
@@ -121,6 +128,13 @@ namespace Java.Sql
         public int TransactionIsolation
         {
             get { return IExecute<int>("getTransactionIsolation"); } set { IExecute("setTransactionIsolation", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        public Java.Util.Map TypeMap
+        {
+            get { return IExecute<Java.Util.Map>("getTypeMap"); } set { IExecute("setTypeMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getWarnings()"/> 

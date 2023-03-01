@@ -61,6 +61,13 @@ namespace Javax.Script
             get { return IExecute<Javax.Script.Bindings>("getBindings"); } set { IExecute("setBindings", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineFactories()"/> 
+        /// </summary>
+        public Java.Util.List EngineFactories
+        {
+            get { return IExecute<Java.Util.List>("getEngineFactories"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#get(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

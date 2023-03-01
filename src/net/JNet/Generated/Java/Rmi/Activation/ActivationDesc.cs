@@ -29,7 +29,53 @@ namespace Java.Rmi.Activation
     public partial class ActivationDesc
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.lang.String,java.lang.String,java.rmi.MarshalledObject%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.lang.String,java.lang.String,java.rmi.MarshalledObject%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,6 +95,13 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getData()"/> 
+        /// </summary>
+        public Java.Rmi.MarshalledObject Data
+        {
+            get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getGroupID()"/> 
         /// </summary>

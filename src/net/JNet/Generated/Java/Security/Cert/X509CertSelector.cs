@@ -78,6 +78,13 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Date>("getCertificateValid"); } set { IExecute("setCertificateValid", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        public Java.Util.Set ExtendedKeyUsage
+        {
+            get { return IExecute<Java.Util.Set>("getExtendedKeyUsage"); } set { IExecute("setExtendedKeyUsage", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuer()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal Issuer
@@ -120,6 +127,20 @@ namespace Java.Security.Cert
             get { return IExecuteArray<byte>("getNameConstraints"); } set { IExecute("setNameConstraints", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection%3Cjava.util.List%3C?%3E%3E)"/>
+        /// </summary>
+        public Java.Util.Collection PathToNames
+        {
+            get { return IExecute<Java.Util.Collection>("getPathToNames"); } set { IExecute("setPathToNames", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        public Java.Util.Set Policy
+        {
+            get { return IExecute<Java.Util.Set>("getPolicy"); } set { IExecute("setPolicy", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date PrivateKeyValid
@@ -139,6 +160,13 @@ namespace Java.Security.Cert
         public Javax.Security.Auth.X500.X500Principal Subject
         {
             get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getSubject"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection%3Cjava.util.List%3C?%3E%3E)"/>
+        /// </summary>
+        public Java.Util.Collection SubjectAlternativeNames
+        {
+            get { return IExecute<Java.Util.Collection>("getSubjectAlternativeNames"); } set { IExecute("setSubjectAlternativeNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsBytes()"/> 

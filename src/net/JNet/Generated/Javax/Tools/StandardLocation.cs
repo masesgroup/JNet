@@ -103,6 +103,15 @@ namespace Javax.Tools
             return SExecute<Javax.Tools.JavaFileManager.Location>("locationFor", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
+        public static Javax.Tools.StandardLocation ValueOf(string arg0)
+        {
+            return SExecute<Javax.Tools.StandardLocation>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
         /// </summary>
         

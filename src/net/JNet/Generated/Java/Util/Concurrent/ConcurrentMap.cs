@@ -33,7 +33,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentMap"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.Concurrent.ConcurrentMap t) => t.Cast<Java.Util.Map>();
+        
         #endregion
 
         #region Fields
@@ -87,6 +91,36 @@ namespace Java.Util.Concurrent
             return IExecute("replace", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#compute(K,java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("compute", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfAbsent(K,java.util.function.Function%3C? super K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute("computeIfAbsent", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfPresent(K,java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("computeIfPresent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#getOrDefault(java.lang.Object,V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -95,6 +129,33 @@ namespace Java.Util.Concurrent
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecute("getOrDefault", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#merge(K,V,java.util.function.BiFunction%3C? super V, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("merge", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#forEach(java.util.function.BiConsumer%3C? super K, ? super V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        public void ForEach(Java.Util.Function.BiConsumer arg0)
+        {
+            IExecute("forEach", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction%3C? super K, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        public void ReplaceAll(Java.Util.Function.BiFunction arg0)
+        {
+            IExecute("replaceAll", arg0);
         }
         
         #endregion

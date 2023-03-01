@@ -588,6 +588,13 @@ namespace Java.Sql
             get { return IExecute<int>("getResultSetHoldability"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getRowIdLifetime()"/> 
+        /// </summary>
+        public Java.Sql.RowIdLifetime RowIdLifetime
+        {
+            get { return IExecute<Java.Sql.RowIdLifetime>("getRowIdLifetime"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemas()"/> 
         /// </summary>
         public Java.Sql.ResultSet Schemas

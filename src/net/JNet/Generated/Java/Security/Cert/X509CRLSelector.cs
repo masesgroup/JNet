@@ -64,6 +64,20 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Date>("getDateAndTime"); } set { IExecute("setDateAndTime", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuerNames(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        public Java.Util.Collection IssuerNames
+        {
+            get { return IExecute<Java.Util.Collection>("getIssuerNames"); } set { IExecute("setIssuerNames", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuers(java.util.Collection%3Cjavax.security.auth.x500.X500Principal%3E)"/>
+        /// </summary>
+        public Java.Util.Collection Issuers
+        {
+            get { return IExecute<Java.Util.Collection>("getIssuers"); } set { IExecute("setIssuers", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL()"/> 
         /// </summary>
         public Java.Math.BigInteger MaxCRL

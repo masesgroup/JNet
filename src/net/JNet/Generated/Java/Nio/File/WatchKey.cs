@@ -73,6 +73,15 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.Watchable>("watchable");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List PollEvents()
+        {
+            return IExecute<Java.Util.List>("pollEvents");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
         public void Cancel()

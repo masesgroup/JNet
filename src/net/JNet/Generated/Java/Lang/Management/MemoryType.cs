@@ -50,6 +50,15 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
+        public static Java.Lang.Management.MemoryType ValueOf(string arg0)
+        {
+            return SExecute<Java.Lang.Management.MemoryType>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()"/>
         /// </summary>
         

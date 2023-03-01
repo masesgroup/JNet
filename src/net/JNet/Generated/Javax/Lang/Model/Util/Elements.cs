@@ -46,6 +46,13 @@ namespace Javax.Lang.Model.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllModuleElements()"/> 
+        /// </summary>
+        public Java.Util.Set AllModuleElements
+        {
+            get { return IExecute<Java.Util.Set>("getAllModuleElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
@@ -101,6 +108,33 @@ namespace Javax.Lang.Model.Util
         public string GetDocComment(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<string>("getDocComment", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllAnnotationMirrors(javax.lang.model.element.Element)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetAllAnnotationMirrors(Javax.Lang.Model.Element.Element arg0)
+        {
+            return IExecute<Java.Util.List>("getAllAnnotationMirrors", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllMembers(javax.lang.model.element.TypeElement)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetAllMembers(Javax.Lang.Model.Element.TypeElement arg0)
+        {
+            return IExecute<Java.Util.List>("getAllMembers", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map GetElementValuesWithDefaults(Javax.Lang.Model.Element.AnnotationMirror arg0)
+        {
+            return IExecute<Java.Util.Map>("getElementValuesWithDefaults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
@@ -166,6 +200,24 @@ namespace Javax.Lang.Model.Util
             return IExecute<bool>("isBridge", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllPackageElements(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetAllPackageElements(Java.Lang.CharSequence arg0)
+        {
+            return IExecute<Java.Util.Set>("getAllPackageElements", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetAllTypeElements(Java.Lang.CharSequence arg0)
+        {
+            return IExecute<Java.Util.Set>("getAllTypeElements", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -203,6 +255,35 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<Javax.Lang.Model.Element.TypeElement>("getTypeElement", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.AnnotatedConstruct,javax.lang.model.element.AnnotationMirror)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.AnnotatedConstruct"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.AnnotatedConstruct arg0, Javax.Lang.Model.Element.AnnotationMirror arg1)
+        {
+            return IExecute<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.Element)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.Element arg0)
+        {
+            return IExecute<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.ModuleElement,javax.lang.model.element.ModuleElement$Directive)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.ModuleElement arg0, Javax.Lang.Model.Element.ModuleElement.Directive arg1)
+        {
+            return IExecute<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", arg0, arg1);
+        }
         
         #endregion
 
@@ -235,6 +316,15 @@ namespace Javax.Lang.Model.Util
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+            public static Javax.Lang.Model.Util.Elements.Origin ValueOf(string arg0)
+            {
+                return SExecute<Javax.Lang.Model.Util.Elements.Origin>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/>
             /// </summary>

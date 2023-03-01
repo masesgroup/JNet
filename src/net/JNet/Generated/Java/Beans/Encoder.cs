@@ -53,6 +53,15 @@ namespace Java.Beans
             get { return IExecute<Java.Beans.ExceptionListener>("getExceptionListener"); } set { IExecute("setExceptionListener", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#getPersistenceDelegate(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Beans.PersistenceDelegate"/></returns>
+        public Java.Beans.PersistenceDelegate GetPersistenceDelegate(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Beans.PersistenceDelegate>("getPersistenceDelegate", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -69,6 +78,15 @@ namespace Java.Beans
         public object Remove(object arg0)
         {
             return IExecute("remove", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#setPersistenceDelegate(java.lang.Class%3C?%3E,java.beans.PersistenceDelegate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PersistenceDelegate"/></param>
+        public void SetPersistenceDelegate(Java.Lang.Class arg0, Java.Beans.PersistenceDelegate arg1)
+        {
+            IExecute("setPersistenceDelegate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeExpression(java.beans.Expression)"/>

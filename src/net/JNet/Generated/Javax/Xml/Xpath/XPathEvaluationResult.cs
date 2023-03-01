@@ -46,6 +46,15 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
+        {
+            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
         
@@ -98,6 +107,24 @@ namespace Javax.Xml.Xpath
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#getQNameType(java.lang.Class%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
+            public static Javax.Xml.Namespace.QName GetQNameType(Java.Lang.Class arg0)
+            {
+                return SExecute<Javax.Xml.Namespace.QName>("getQNameType", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(string arg0)
+            {
+                return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/>
             /// </summary>

@@ -117,6 +117,24 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#keys()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Keys()
+        {
+            return IExecute<Java.Util.Set>("keys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectedKeys()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set SelectedKeys()
+        {
+            return IExecute<Java.Util.Set>("selectedKeys");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#close()"/>
         /// </summary>
         
@@ -124,6 +142,37 @@ namespace Java.Nio.Channels
         public void Close()
         {
             IExecute("close");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer%3Cjava.nio.channels.SelectionKey%3E,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int Select(Java.Util.Function.Consumer arg0, long arg1)
+        {
+            return IExecute<int>("select", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer%3Cjava.nio.channels.SelectionKey%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int Select(Java.Util.Function.Consumer arg0)
+        {
+            return IExecute<int>("select", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectNow(java.util.function.Consumer%3Cjava.nio.channels.SelectionKey%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int SelectNow(Java.Util.Function.Consumer arg0)
+        {
+            return IExecute<int>("selectNow", arg0);
         }
         
         #endregion

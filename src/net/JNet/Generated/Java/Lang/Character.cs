@@ -37,6 +37,10 @@ namespace Java.Lang
         /// Converter from <see cref="char?"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(char? t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="char?"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(char? t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
@@ -2891,6 +2895,33 @@ namespace Java.Lang
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#forName(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
+            public static Java.Lang.Character.UnicodeScript ForName(string arg0)
+            {
+                return SExecute<Java.Lang.Character.UnicodeScript>("forName", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#of(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
+            public static Java.Lang.Character.UnicodeScript Of(int arg0)
+            {
+                return SExecute<Java.Lang.Character.UnicodeScript>("of", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
+            public static Java.Lang.Character.UnicodeScript ValueOf(string arg0)
+            {
+                return SExecute<Java.Lang.Character.UnicodeScript>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()"/>
             /// </summary>

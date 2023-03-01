@@ -29,7 +29,25 @@ namespace Javax.Management.Remote.Rmi
     public partial class RMIConnector
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        public RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#%3Cinit%3E(javax.management.remote.rmi.RMIServer,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.Rmi.RMIServer"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        public RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -96,6 +114,15 @@ namespace Javax.Management.Remote.Rmi
         public void Close()
         {
             IExecute("close");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect(java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void Connect(Java.Util.Map arg0)
+        {
+            IExecute("connect", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>

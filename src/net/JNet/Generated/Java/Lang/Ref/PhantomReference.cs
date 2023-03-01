@@ -29,7 +29,16 @@ namespace Java.Lang.Ref
     public partial class PhantomReference
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(T,java.lang.ref.ReferenceQueue%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
+        public PhantomReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

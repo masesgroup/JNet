@@ -49,7 +49,14 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html#getBounds()"/> 
+        /// </summary>
+        public Java.Util.List Bounds
+        {
+            get { return IExecute<Java.Util.List>("getBounds"); }
+        }
+        
         #endregion
 
         #region Nested classes

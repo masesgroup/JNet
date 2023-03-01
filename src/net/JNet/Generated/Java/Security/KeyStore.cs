@@ -89,6 +89,17 @@ namespace Java.Security
             return SExecute<Java.Security.KeyStore>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.KeyStore"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        public static Java.Security.KeyStore GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Java.Security.KeyStore>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -102,6 +113,13 @@ namespace Java.Security
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType()"/> 
         /// </summary>
@@ -118,6 +136,17 @@ namespace Java.Security
         public bool ContainsAlias(string arg0)
         {
             return IExecute<bool>("containsAlias", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class%3C? extends java.security.KeyStore$Entry%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        public bool EntryInstanceOf(string arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<bool>("entryInstanceOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
@@ -214,6 +243,16 @@ namespace Java.Security
         public Java.Util.Date GetCreationDate(string arg0)
         {
             return IExecute<Java.Util.Date>("getCreationDate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        public Java.Util.Enumeration Aliases()
+        {
+            return IExecute<Java.Util.Enumeration>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
@@ -347,6 +386,29 @@ namespace Java.Security
                 return SExecute<Java.Security.KeyStore.Builder>("newInstance", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore$ProtectionParameter)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+            /// <param name="arg2"><see cref="Java.Io.File"/></param>
+            /// <param name="arg3"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+            /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
+            public static Java.Security.KeyStore.Builder NewInstance(string arg0, Java.Security.Provider arg1, Java.Io.File arg2, Java.Security.KeyStore.ProtectionParameter arg3)
+            {
+                return SExecute<Java.Security.KeyStore.Builder>("newInstance", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore$ProtectionParameter)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+            /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+            /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
+            public static Java.Security.KeyStore.Builder NewInstance(string arg0, Java.Security.Provider arg1, Java.Security.KeyStore.ProtectionParameter arg2)
+            {
+                return SExecute<Java.Security.KeyStore.Builder>("newInstance", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore$ProtectionParameter)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
@@ -449,7 +511,14 @@ namespace Java.Security
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.html#getAttributes()"/> 
+            /// </summary>
+            public Java.Util.Set Attributes
+            {
+                get { return IExecute<Java.Util.Set>("getAttributes"); }
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -585,6 +654,16 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[],java.util.Set%3Cjava.security.KeyStore$Entry$Attribute%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
+            /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
+            /// <param name="arg2"><see cref="Java.Util.Set"/></param>
+            public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
@@ -609,6 +688,13 @@ namespace Java.Security
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getAttributes()"/> 
+            /// </summary>
+            public Java.Util.Set Attributes
+            {
+                get { return IExecute<Java.Util.Set>("getAttributes"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/> 
             /// </summary>
@@ -669,6 +755,15 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey,java.util.Set%3Cjava.security.KeyStore$Entry$Attribute%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+            public SecretKeyEntry(Javax.Crypto.SecretKey arg0, Java.Util.Set arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
@@ -693,6 +788,13 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getAttributes()"/> 
+            /// </summary>
+            public Java.Util.Set Attributes
+            {
+                get { return IExecute<Java.Util.Set>("getAttributes"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/> 
             /// </summary>
             public Javax.Crypto.SecretKey SecretKey
@@ -710,6 +812,15 @@ namespace Java.Security
         public partial class TrustedCertificateEntry
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate,java.util.Set%3Cjava.security.KeyStore$Entry$Attribute%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+            public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0, Java.Util.Set arg1)
+                : base(arg0, arg1)
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate)"/>
             /// </summary>
@@ -734,6 +845,13 @@ namespace Java.Security
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getAttributes()"/> 
+            /// </summary>
+            public Java.Util.Set Attributes
+            {
+                get { return IExecute<Java.Util.Set>("getAttributes"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/> 
             /// </summary>

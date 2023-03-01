@@ -45,7 +45,34 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isFocusTraversable(javax.swing.JComboBox%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsFocusTraversable(Javax.Swing.JComboBox arg0)
+        {
+            return IExecute<bool>("isFocusTraversable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isPopupVisible(javax.swing.JComboBox%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsPopupVisible(Javax.Swing.JComboBox arg0)
+        {
+            return IExecute<bool>("isPopupVisible", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#setPopupVisible(javax.swing.JComboBox%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        public void SetPopupVisible(Javax.Swing.JComboBox arg0, bool arg1)
+        {
+            IExecute("setPopupVisible", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

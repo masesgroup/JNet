@@ -92,6 +92,13 @@ namespace Java.Lang.Management
             get { return IExecute<Java.Lang.Management.MemoryUsage>("getPeakUsage"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getType()"/> 
+        /// </summary>
+        public Java.Lang.Management.MemoryType Type
+        {
+            get { return IExecute<Java.Lang.Management.MemoryType>("getType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage Usage

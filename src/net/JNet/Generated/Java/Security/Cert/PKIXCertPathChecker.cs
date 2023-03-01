@@ -54,6 +54,13 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/> 
+        /// </summary>
+        public Java.Util.Set SupportedExtensions
+        {
+            get { return IExecute<Java.Util.Set>("getSupportedExtensions"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
         
@@ -61,6 +68,16 @@ namespace Java.Security.Cert
         public bool IsForwardCheckingSupported()
         {
             return IExecute<bool>("isForwardCheckingSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection arg1)
+        {
+            IExecute("check", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>

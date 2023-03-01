@@ -49,6 +49,111 @@ namespace Java.Security
             get { return SExecute<Java.Security.AccessControlContext>("getContext"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction%3CT%3E,java.security.AccessControlContext,java.security.Permission...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoPrivileged(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute("doPrivileged", arg0, arg1); else return SExecute("doPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction%3CT%3E,java.security.AccessControlContext,java.security.Permission...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoPrivileged(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute("doPrivileged", arg0, arg1); else return SExecute("doPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction%3CT%3E,java.security.AccessControlContext,java.security.Permission...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoPrivilegedWithCombiner(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute("doPrivilegedWithCombiner", arg0, arg1); else return SExecute("doPrivilegedWithCombiner", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoPrivilegedWithCombiner(Java.Security.PrivilegedAction arg0)
+        {
+            return SExecute("doPrivilegedWithCombiner", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction%3CT%3E,java.security.AccessControlContext,java.security.Permission...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoPrivilegedWithCombiner(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute("doPrivilegedWithCombiner", arg0, arg1); else return SExecute("doPrivilegedWithCombiner", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoPrivilegedWithCombiner(Java.Security.PrivilegedExceptionAction arg0)
+        {
+            return SExecute("doPrivilegedWithCombiner", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction%3CT%3E,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoPrivileged(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1)
+        {
+            return SExecute("doPrivileged", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoPrivileged(Java.Security.PrivilegedAction arg0)
+        {
+            return SExecute("doPrivileged", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction%3CT%3E,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoPrivileged(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1)
+        {
+            return SExecute("doPrivileged", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoPrivileged(Java.Security.PrivilegedExceptionAction arg0)
+        {
+            return SExecute("doPrivileged", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>

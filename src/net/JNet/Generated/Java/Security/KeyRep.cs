@@ -29,7 +29,18 @@ namespace Java.Security
     public partial class KeyRep
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html#%3Cinit%3E(java.security.KeyRep$Type,java.lang.String,java.lang.String,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyRep.Type"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        public KeyRep(Java.Security.KeyRep.Type arg0, string arg1, string arg2, byte[] arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -81,6 +92,15 @@ namespace Java.Security
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
+            public static Java.Security.KeyRep.Type ValueOf(string arg0)
+            {
+                return SExecute<Java.Security.KeyRep.Type>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()"/>
             /// </summary>

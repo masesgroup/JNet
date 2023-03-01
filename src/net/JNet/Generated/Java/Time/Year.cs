@@ -42,6 +42,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Year t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.Year"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.Year t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.Year"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Year t) => t.Cast<Java.Io.Serializable>();
@@ -144,6 +148,15 @@ namespace Java.Time
         public int Value
         {
             get { return IExecute<int>("getValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#isAfter(java.time.Year)"/>
@@ -361,6 +374,15 @@ namespace Java.Time
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.YearMonth"/></returns>
         public Java.Time.YearMonth AtMonth(int arg0)
+        {
+            return IExecute<Java.Time.YearMonth>("atMonth", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#atMonth(java.time.Month)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Month"/></param>
+        /// <returns><see cref="Java.Time.YearMonth"/></returns>
+        public Java.Time.YearMonth AtMonth(Java.Time.Month arg0)
         {
             return IExecute<Java.Time.YearMonth>("atMonth", arg0);
         }

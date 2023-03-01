@@ -67,6 +67,13 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getEntries()"/> 
+        /// </summary>
+        public Java.Util.Map Entries
+        {
+            get { return IExecute<Java.Util.Map>("getEntries"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getMainAttributes()"/> 
         /// </summary>
         public Java.Util.Jar.Attributes MainAttributes

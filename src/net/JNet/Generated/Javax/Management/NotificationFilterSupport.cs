@@ -50,6 +50,13 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#getEnabledTypes()"/> 
+        /// </summary>
+        public Java.Util.Vector EnabledTypes
+        {
+            get { return IExecute<Java.Util.Vector>("getEnabledTypes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>

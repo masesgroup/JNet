@@ -42,12 +42,33 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#compare(T,T,java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int Compare(object arg0, object arg1, Java.Util.Comparator arg2)
+        {
+            return SExecute<int>("compare", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(T,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public static object RequireNonNull(object arg0, string arg1)
+        {
+            return SExecute("requireNonNull", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(T,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object RequireNonNull(object arg0, Java.Util.Function.Supplier arg1)
         {
             return SExecute("requireNonNull", arg0, arg1);
         }
@@ -69,6 +90,16 @@ namespace Java.Util
         public static object RequireNonNullElse(object arg0, object arg1)
         {
             return SExecute("requireNonNullElse", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElseGet(T,java.util.function.Supplier%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object RequireNonNullElseGet(object arg0, Java.Util.Function.Supplier arg1)
+        {
+            return SExecute("requireNonNullElseGet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>

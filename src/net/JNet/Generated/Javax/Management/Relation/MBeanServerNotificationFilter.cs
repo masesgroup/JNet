@@ -46,6 +46,20 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getDisabledObjectNames()"/> 
+        /// </summary>
+        public Java.Util.Vector DisabledObjectNames
+        {
+            get { return IExecute<Java.Util.Vector>("getDisabledObjectNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getEnabledObjectNames()"/> 
+        /// </summary>
+        public Java.Util.Vector EnabledObjectNames
+        {
+            get { return IExecute<Java.Util.Vector>("getEnabledObjectNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableAllObjectNames()"/>
         /// </summary>
         public void DisableAllObjectNames()

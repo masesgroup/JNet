@@ -63,6 +63,18 @@ namespace Java.Net
         {
             return IExecute<Java.Net.CacheRequest>("put", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#get(java.net.URI,java.lang.String,java.util.Map%3Cjava.lang.String, java.util.List%3Cjava.lang.String%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Net.CacheResponse"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.CacheResponse Get(Java.Net.URI arg0, string arg1, Java.Util.Map arg2)
+        {
+            return IExecute<Java.Net.CacheResponse>("get", arg0, arg1, arg2);
+        }
         
         #endregion
 

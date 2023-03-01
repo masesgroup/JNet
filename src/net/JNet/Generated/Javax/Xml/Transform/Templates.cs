@@ -46,6 +46,13 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#getOutputProperties()"/> 
+        /// </summary>
+        public Java.Util.Properties OutputProperties
+        {
+            get { return IExecute<Java.Util.Properties>("getOutputProperties"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
         

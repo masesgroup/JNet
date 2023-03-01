@@ -58,6 +58,15 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
+        public static Java.Nio.File.Attribute.AclEntryType ValueOf(string arg0)
+        {
+            return SExecute<Java.Nio.File.Attribute.AclEntryType>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#values()"/>
         /// </summary>
         

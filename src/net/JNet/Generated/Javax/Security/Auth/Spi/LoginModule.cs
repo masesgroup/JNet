@@ -85,6 +85,17 @@ namespace Javax.Security.Auth.Spi
         {
             return IExecute<bool>("logout");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map%3Cjava.lang.String, ?%3E,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map arg2, Java.Util.Map arg3)
+        {
+            IExecute("initialize", arg0, arg1, arg2, arg3);
+        }
         
         #endregion
 

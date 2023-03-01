@@ -49,6 +49,10 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Date"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Date t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Date"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Util.Date t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 

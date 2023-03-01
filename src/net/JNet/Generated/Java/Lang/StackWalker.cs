@@ -50,11 +50,63 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.StackWalker>("getInstance");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.lang.StackWalker$Option)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.StackWalker.Option"/></param>
+        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
+        public static Java.Lang.StackWalker GetInstance(Java.Lang.StackWalker.Option arg0)
+        {
+            return SExecute<Java.Lang.StackWalker>("getInstance", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set%3Cjava.lang.StackWalker$Option%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0, int arg1)
+        {
+            return SExecute<Java.Lang.StackWalker>("getInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set%3Cjava.lang.StackWalker$Option%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0)
+        {
+            return SExecute<Java.Lang.StackWalker>("getInstance", arg0);
+        }
         
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getCallerClass()"/> 
+        /// </summary>
+        public Java.Lang.Class CallerClass
+        {
+            get { return IExecute<Java.Lang.Class>("getCallerClass"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#walk(java.util.function.Function%3C? super java.util.stream.Stream%3Cjava.lang.StackWalker$StackFrame%3E, ? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Walk(Java.Util.Function.Function arg0)
+        {
+            return IExecute("walk", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#forEach(java.util.function.Consumer%3C? super java.lang.StackWalker$StackFrame%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEach(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("forEach", arg0);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -86,6 +138,15 @@ namespace Java.Lang
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
+            public static Java.Lang.StackWalker.Option ValueOf(string arg0)
+            {
+                return SExecute<Java.Lang.StackWalker.Option>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/>
             /// </summary>
@@ -132,6 +193,13 @@ namespace Java.Lang
             public int ByteCodeIndex
             {
                 get { return IExecute<int>("getByteCodeIndex"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getDeclaringClass()"/> 
+            /// </summary>
+            public Java.Lang.Class DeclaringClass
+            {
+                get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getDescriptor()"/> 

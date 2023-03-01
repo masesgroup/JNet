@@ -29,7 +29,17 @@ namespace Javax.Management.Openmbean
     public partial class CompositeDataSupport
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#%3Cinit%3E(javax.management.openmbean.CompositeType,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,6 +63,13 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#getCompositeType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.CompositeType CompositeType
+        {
+            get { return IExecute<Javax.Management.Openmbean.CompositeType>("getCompositeType"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsKey(java.lang.String)"/>
         /// </summary>
@@ -88,6 +105,15 @@ namespace Javax.Management.Openmbean
         public object[] GetAll(string[] arg0)
         {
             return IExecuteArray<object>("getAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
         }
         
         #endregion

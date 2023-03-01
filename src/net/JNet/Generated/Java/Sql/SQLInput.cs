@@ -315,6 +315,16 @@ namespace Java.Sql
         {
             return IExecute<short>("readShort");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readObject(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object ReadObject(Java.Lang.Class arg0)
+        {
+            return IExecute("readObject", arg0);
+        }
         
         #endregion
 

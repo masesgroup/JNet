@@ -46,6 +46,19 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List%3Cjava.time.zone.ZoneOffsetTransition%3E,java.util.List%3Cjava.time.zone.ZoneOffsetTransition%3E,java.util.List%3Cjava.time.zone.ZoneOffsetTransitionRule%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <param name="arg2"><see cref="Java.Util.List"/></param>
+        /// <param name="arg3"><see cref="Java.Util.List"/></param>
+        /// <param name="arg4"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
+        public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List arg2, Java.Util.List arg3, Java.Util.List arg4)
+        {
+            return SExecute<Java.Time.Zone.ZoneRules>("of", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
@@ -58,6 +71,20 @@ namespace Java.Time.Zone
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitionRules()"/> 
+        /// </summary>
+        public Java.Util.List TransitionRules
+        {
+            get { return IExecute<Java.Util.List>("getTransitionRules"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitions()"/> 
+        /// </summary>
+        public Java.Util.List Transitions
+        {
+            get { return IExecute<Java.Util.List>("getTransitions"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
         /// </summary>
@@ -148,6 +175,15 @@ namespace Java.Time.Zone
         public Java.Time.ZoneOffset GetStandardOffset(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.ZoneOffset>("getStandardOffset", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getValidOffsets(java.time.LocalDateTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetValidOffsets(Java.Time.LocalDateTime arg0)
+        {
+            return IExecute<Java.Util.List>("getValidOffsets", arg0);
         }
         
         #endregion

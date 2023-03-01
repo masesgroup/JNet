@@ -29,7 +29,18 @@ namespace Javax.Management.Loading
     public partial class MLetContent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#%3Cinit%3E(java.net.URL,java.util.Map%3Cjava.lang.String, java.lang.String%3E,java.util.List%3Cjava.lang.String%3E,java.util.List%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg2"><see cref="Java.Util.List"/></param>
+        /// <param name="arg3"><see cref="Java.Util.List"/></param>
+        public MLetContent(Java.Net.URL arg0, Java.Util.Map arg1, Java.Util.List arg2, Java.Util.List arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +56,13 @@ namespace Javax.Management.Loading
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getAttributes()"/> 
+        /// </summary>
+        public Java.Util.Map Attributes
+        {
+            get { return IExecute<Java.Util.Map>("getAttributes"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode()"/> 
         /// </summary>
@@ -79,6 +97,20 @@ namespace Javax.Management.Loading
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterTypes()"/> 
+        /// </summary>
+        public Java.Util.List ParameterTypes
+        {
+            get { return IExecute<Java.Util.List>("getParameterTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterValues()"/> 
+        /// </summary>
+        public Java.Util.List ParameterValues
+        {
+            get { return IExecute<Java.Util.List>("getParameterValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject()"/> 

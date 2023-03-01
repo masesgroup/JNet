@@ -60,6 +60,13 @@ namespace Javax.Script
             get { return IExecute<string>("getEngineVersion"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getExtensions()"/> 
+        /// </summary>
+        public Java.Util.List Extensions
+        {
+            get { return IExecute<Java.Util.List>("getExtensions"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName()"/> 
         /// </summary>
         public string LanguageName
@@ -72,6 +79,20 @@ namespace Javax.Script
         public string LanguageVersion
         {
             get { return IExecute<string>("getLanguageVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMimeTypes()"/> 
+        /// </summary>
+        public Java.Util.List MimeTypes
+        {
+            get { return IExecute<Java.Util.List>("getMimeTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getNames()"/> 
+        /// </summary>
+        public Java.Util.List Names
+        {
+            get { return IExecute<Java.Util.List>("getNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine()"/> 

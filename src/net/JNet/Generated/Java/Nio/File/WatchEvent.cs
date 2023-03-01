@@ -55,6 +55,15 @@ namespace Java.Nio.File
             return IExecute<int>("count");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
+        public Java.Nio.File.WatchEvent.Kind KindMethod()
+        {
+            return IExecute<Java.Nio.File.WatchEvent.Kind>("kind");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
         
@@ -87,6 +96,15 @@ namespace Java.Nio.File
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class Type()
+            {
+                return IExecute<Java.Lang.Class>("type");
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>

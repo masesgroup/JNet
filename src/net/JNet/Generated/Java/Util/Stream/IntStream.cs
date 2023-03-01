@@ -33,7 +33,11 @@ namespace Java.Util.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Stream.IntStream"/> to <see cref="Java.Util.Stream.BaseStream"/>
+        /// </summary>
+        public static implicit operator Java.Util.Stream.BaseStream(Java.Util.Stream.IntStream t) => t.Cast<Java.Util.Stream.BaseStream>();
+        
         #endregion
 
         #region Fields
@@ -141,6 +145,26 @@ namespace Java.Util.Stream
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier%3CR%3E,java.util.function.ObjIntConsumer%3CR%3E,java.util.function.BiConsumer%3CR, R%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ObjIntConsumer"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjIntConsumer arg1, Java.Util.Function.BiConsumer arg2)
+        {
+            return IExecute("collect", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction%3C? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream MapToObj(Java.Util.Function.IntFunction arg0)
+        {
+            return IExecute<Java.Util.Stream.Stream>("mapToObj", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -296,6 +320,15 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.IntStream>("filter", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#flatMap(java.util.function.IntFunction%3C? extends java.util.stream.IntStream%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream FlatMap(Java.Util.Function.IntFunction arg0)
+        {
+            return IExecute<Java.Util.Stream.IntStream>("flatMap", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#limit(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -359,6 +392,15 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Boxed()
+        {
+            return IExecute<Java.Util.Stream.Stream>("boxed");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/>
         /// </summary>
         
@@ -382,6 +424,42 @@ namespace Java.Util.Stream
         public void ForEachOrdered(Java.Util.Function.IntConsumer arg0)
         {
             IExecute("forEachOrdered", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Parallel()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("parallel");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Sequential()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("sequential");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)"/>

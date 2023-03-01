@@ -29,7 +29,15 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicComboPopup
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#%3Cinit%3E(javax.swing.JComboBox%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        public BasicComboPopup(Javax.Swing.JComboBox arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,6 +63,13 @@ namespace Javax.Swing.Plaf.Basic
         public Java.Awt.EventNs.KeyListener KeyListener
         {
             get { return IExecute<Java.Awt.EventNs.KeyListener>("getKeyListener"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getList()"/> 
+        /// </summary>
+        public Javax.Swing.JList List
+        {
+            get { return IExecute<Javax.Swing.JList>("getList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener()"/> 

@@ -40,6 +40,16 @@ namespace Java.Security.Cert
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.util.Set%3Cjava.security.cert.TrustAnchor%3E,java.security.cert.CertSelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        public PKIXBuilderParameters(Java.Util.Set arg0, Java.Security.Cert.CertSelector arg1)
+            : base(arg0, arg1)
+        {
+        }
         
         #endregion
 

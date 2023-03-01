@@ -53,6 +53,15 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        public Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
+        {
+            return IExecute<Java.Util.Function.Consumer>("andThen", arg0);
+        }
         
         #endregion
 

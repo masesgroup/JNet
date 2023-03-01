@@ -49,7 +49,14 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Parameterizable.html#getTypeParameters()"/> 
+        /// </summary>
+        public Java.Util.List TypeParameters
+        {
+            get { return IExecute<Java.Util.List>("getTypeParameters"); }
+        }
+        
         #endregion
 
         #region Nested classes

@@ -54,6 +54,13 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getEnclosedElements()"/> 
+        /// </summary>
+        public Java.Util.List EnclosedElements
+        {
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement

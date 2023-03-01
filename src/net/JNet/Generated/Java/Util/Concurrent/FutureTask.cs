@@ -38,11 +38,23 @@ namespace Java.Util.Concurrent
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.util.concurrent.Callable%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        public FutureTask(Java.Util.Concurrent.Callable arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.FutureTask"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.FutureTask t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
+        
         #endregion
 
         #region Fields
@@ -91,6 +103,19 @@ namespace Java.Util.Concurrent
         public object Get()
         {
             return IExecute("get");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute("get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html#run()"/>

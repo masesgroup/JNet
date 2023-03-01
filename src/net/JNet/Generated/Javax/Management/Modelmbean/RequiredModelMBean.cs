@@ -107,6 +107,24 @@ namespace Javax.Management.Modelmbean
             return IExecute("invoke", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#getAttributes(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList GetAttributes(string[] arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setAttributes(javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList SetAttributes(Javax.Management.AttributeList arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>

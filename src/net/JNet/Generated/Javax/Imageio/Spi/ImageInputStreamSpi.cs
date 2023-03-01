@@ -29,7 +29,17 @@ namespace Javax.Imageio.Spi
     public partial class ImageInputStreamSpi
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        public ImageInputStreamSpi(string arg0, string arg1, Java.Lang.Class arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +55,13 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#getInputClass()"/> 
+        /// </summary>
+        public Java.Lang.Class InputClass
+        {
+            get { return IExecute<Java.Lang.Class>("getInputClass"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object,boolean,java.io.File)"/>
         /// </summary>

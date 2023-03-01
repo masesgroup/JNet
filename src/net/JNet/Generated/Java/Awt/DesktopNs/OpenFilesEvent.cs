@@ -29,7 +29,16 @@ namespace Java.Awt.DesktopNs
     public partial class OpenFilesEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesEvent.html#%3Cinit%3E(java.util.List%3Cjava.io.File%3E,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        public OpenFilesEvent(Java.Util.List arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

@@ -113,6 +113,17 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#accumulateAndGet(int,E,java.util.function.BinaryOperator%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object AccumulateAndGet(int arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
+        {
+            return IExecute("accumulateAndGet", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchange(int,E,E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -164,6 +175,17 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("getAcquire", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,E,java.util.function.BinaryOperator%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndAccumulate(int arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
+        {
+            return IExecute("getAndAccumulate", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndSet(int,E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -172,6 +194,16 @@ namespace Java.Util.Concurrent.Atomic
         public object GetAndSet(int arg0, object arg1)
         {
             return IExecute("getAndSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndUpdate(int,java.util.function.UnaryOperator%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndUpdate(int arg0, Java.Util.Function.UnaryOperator arg1)
+        {
+            return IExecute("getAndUpdate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getOpaque(int)"/>
@@ -190,6 +222,16 @@ namespace Java.Util.Concurrent.Atomic
         public object GetPlain(int arg0)
         {
             return IExecute("getPlain", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#updateAndGet(int,java.util.function.UnaryOperator%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object UpdateAndGet(int arg0, Java.Util.Function.UnaryOperator arg1)
+        {
+            return IExecute("updateAndGet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/>

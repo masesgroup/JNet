@@ -29,7 +29,31 @@ namespace Java.Util
     public partial class EnumMap
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class%3CK%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        public EnumMap(Java.Lang.Class arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap%3CK, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
+        public EnumMap(Java.Util.EnumMap arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map%3CK, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public EnumMap(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +77,26 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.EnumMap"/></returns>
+        public Java.Util.EnumMap Clone()
+        {
+            return IExecute<Java.Util.EnumMap>("clone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(K,V)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Put(Java.Lang.Enum arg0, object arg1)
+        {
+            return IExecute("put", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

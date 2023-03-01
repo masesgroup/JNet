@@ -95,6 +95,55 @@ namespace Java.Beans.Beancontext
             get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getBeanContextServicesPeer"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceClasses()"/> 
+        /// </summary>
+        public Java.Util.Iterator CurrentServiceClasses
+        {
+            get { return IExecute<Java.Util.Iterator>("getCurrentServiceClasses"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addService(java.lang.Class%3C?%3E,java.beans.beancontext.BeanContextServiceProvider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextServiceProvider"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddService(Java.Lang.Class arg0, Java.Beans.Beancontext.BeanContextServiceProvider arg1)
+        {
+            return IExecute<bool>("addService", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class%3C?%3E,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedListener"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Util.TooManyListenersException"/>
+        public object GetService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, Java.Lang.Class arg2, object arg3, Java.Beans.Beancontext.BeanContextServiceRevokedListener arg4)
+        {
+            return IExecute("getService", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceSelectors(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator GetCurrentServiceSelectors(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Util.Iterator>("getCurrentServiceSelectors", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#hasService(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool HasService(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("hasService", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServicesListener"/></param>
@@ -126,6 +175,16 @@ namespace Java.Beans.Beancontext
         public void RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener arg0)
         {
             IExecute("removeBeanContextServicesListener", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#revokeService(java.lang.Class%3C?%3E,java.beans.beancontext.BeanContextServiceProvider,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextServiceProvider"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public void RevokeService(Java.Lang.Class arg0, Java.Beans.Beancontext.BeanContextServiceProvider arg1, bool arg2)
+        {
+            IExecute("revokeService", arg0, arg1, arg2);
         }
         
         #endregion

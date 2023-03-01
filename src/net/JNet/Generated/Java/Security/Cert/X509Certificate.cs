@@ -57,6 +57,20 @@ namespace Java.Security.Cert
             get { return IExecute<int>("getBasicConstraints"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
+        /// </summary>
+        public Java.Util.List ExtendedKeyUsage
+        {
+            get { return IExecute<Java.Util.List>("getExtendedKeyUsage"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
+        /// </summary>
+        public Java.Util.Collection IssuerAlternativeNames
+        {
+            get { return IExecute<Java.Util.Collection>("getIssuerAlternativeNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
         /// </summary>
         public Java.Security.Principal IssuerDN
@@ -132,6 +146,13 @@ namespace Java.Security.Cert
         public byte[] Signature
         {
             get { return IExecuteArray<byte>("getSignature"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/> 
+        /// </summary>
+        public Java.Util.Collection SubjectAlternativeNames
+        {
+            get { return IExecute<Java.Util.Collection>("getSubjectAlternativeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 

@@ -54,6 +54,20 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getDeclaredPrefixes()"/> 
+        /// </summary>
+        public Java.Util.Enumeration DeclaredPrefixes
+        {
+            get { return IExecute<Java.Util.Enumeration>("getDeclaredPrefixes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Prefixes
+        {
+            get { return IExecute<Java.Util.Enumeration>("getPrefixes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -100,6 +114,15 @@ namespace Org.Xml.Sax.Helpers
         public string[] ProcessName(string arg0, string[] arg1, bool arg2)
         {
             return IExecuteArray<string>("processName", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration GetPrefixes(string arg0)
+        {
+            return IExecute<Java.Util.Enumeration>("getPrefixes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>

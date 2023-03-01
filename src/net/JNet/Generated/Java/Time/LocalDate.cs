@@ -108,6 +108,17 @@ namespace Java.Time
             return SExecute<Java.Time.LocalDate>("of", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#of(int,java.time.Month,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Month"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.LocalDate"/></returns>
+        public static Java.Time.LocalDate Of(int arg0, Java.Time.Month arg1, int arg2)
+        {
+            return SExecute<Java.Time.LocalDate>("of", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#ofEpochDay(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -174,6 +185,13 @@ namespace Java.Time
             get { return IExecute<int>("getDayOfMonth"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getDayOfWeek()"/> 
+        /// </summary>
+        public Java.Time.DayOfWeek DayOfWeek
+        {
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getDayOfYear()"/> 
         /// </summary>
         public int DayOfYear
@@ -188,6 +206,13 @@ namespace Java.Time
             get { return IExecute<Java.Time.Chrono.Era>("getEra"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getMonth()"/> 
+        /// </summary>
+        public Java.Time.Month Month
+        {
+            get { return IExecute<Java.Time.Month>("getMonth"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getMonthValue()"/> 
         /// </summary>
         public int MonthValue
@@ -200,6 +225,15 @@ namespace Java.Time
         public int Year
         {
             get { return IExecute<int>("getYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>
@@ -308,6 +342,15 @@ namespace Java.Time
         public string Format(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<string>("format", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(java.time.LocalTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
+        public Java.Time.Chrono.ChronoLocalDateTime AtTime(Java.Time.LocalTime arg0)
+        {
+            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("atTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#until(java.time.chrono.ChronoLocalDate)"/>
@@ -503,6 +546,25 @@ namespace Java.Time
         public Java.Time.ZonedDateTime AtStartOfDay(Java.Time.ZoneId arg0)
         {
             return IExecute<Java.Time.ZonedDateTime>("atStartOfDay", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#datesUntil(java.time.LocalDate,java.time.Period)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Period"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream DatesUntil(Java.Time.LocalDate arg0, Java.Time.Period arg1)
+        {
+            return IExecute<Java.Util.Stream.Stream>("datesUntil", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#datesUntil(java.time.LocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream DatesUntil(Java.Time.LocalDate arg0)
+        {
+            return IExecute<Java.Util.Stream.Stream>("datesUntil", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getLong(java.time.temporal.TemporalField)"/>

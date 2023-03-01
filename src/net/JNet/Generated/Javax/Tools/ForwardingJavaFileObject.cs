@@ -49,7 +49,38 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getAccessLevel()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Element.Modifier AccessLevel
+        {
+            get { return IExecute<Javax.Lang.Model.Element.Modifier>("getAccessLevel"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getKind()"/> 
+        /// </summary>
+        public Javax.Tools.JavaFileObject.Kind Kind
+        {
+            get { return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getNestingKind()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Element.NestingKind NestingKind
+        {
+            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject$Kind)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsNameCompatible(string arg0, Javax.Tools.JavaFileObject.Kind arg1)
+        {
+            return IExecute<bool>("isNameCompatible", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

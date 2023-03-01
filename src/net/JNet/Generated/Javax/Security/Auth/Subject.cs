@@ -29,7 +29,18 @@ namespace Javax.Security.Auth
     public partial class Subject
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#%3Cinit%3E(boolean,java.util.Set%3C? extends java.security.Principal%3E,java.util.Set%3C?%3E,java.util.Set%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Set"/></param>
+        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set arg2, Java.Util.Set arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,6 +57,50 @@ namespace Javax.Security.Auth
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1)
+        {
+            return SExecute("doAs", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1)
+        {
+            return SExecute("doAs", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction%3CT%3E,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1, Java.Security.AccessControlContext arg2)
+        {
+            return SExecute("doAsPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction%3CT%3E,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static object DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1, Java.Security.AccessControlContext arg2)
+        {
+            return SExecute("doAsPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
@@ -58,6 +113,54 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals()"/> 
+        /// </summary>
+        public Java.Util.Set Principals
+        {
+            get { return IExecute<Java.Util.Set>("getPrincipals"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials()"/> 
+        /// </summary>
+        public Java.Util.Set PrivateCredentials
+        {
+            get { return IExecute<Java.Util.Set>("getPrivateCredentials"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials()"/> 
+        /// </summary>
+        public Java.Util.Set PublicCredentials
+        {
+            get { return IExecute<Java.Util.Set>("getPublicCredentials"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetPrincipals(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Util.Set>("getPrincipals", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetPrivateCredentials(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Util.Set>("getPrivateCredentials", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetPublicCredentials(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Util.Set>("getPublicCredentials", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>

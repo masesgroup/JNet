@@ -45,7 +45,20 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList%3C? extends E%3E,E,int,boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
+        public Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList arg0, object arg1, int arg2, bool arg3, bool arg4)
+        {
+            return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
+        }
+        
         #endregion
 
         #region Nested classes

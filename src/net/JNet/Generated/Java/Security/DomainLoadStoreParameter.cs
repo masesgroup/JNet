@@ -29,7 +29,16 @@ namespace Java.Security
     public partial class DomainLoadStoreParameter
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#%3Cinit%3E(java.net.URI,java.util.Map%3Cjava.lang.String, java.security.KeyStore$ProtectionParameter%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        public DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,6 +67,13 @@ namespace Java.Security
         public Java.Security.KeyStore.ProtectionParameter ProtectionParameter
         {
             get { return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/> 
+        /// </summary>
+        public Java.Util.Map ProtectionParams
+        {
+            get { return IExecute<Java.Util.Map>("getProtectionParams"); }
         }
         
         #endregion

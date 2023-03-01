@@ -129,6 +129,16 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(V,java.util.function.BinaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object AccumulateAndGet(object arg0, Java.Util.Function.BinaryOperator arg1)
+        {
+            return IExecute("accumulateAndGet", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(V,V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -168,6 +178,16 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("get");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(V,java.util.function.BinaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndAccumulate(object arg0, Java.Util.Function.BinaryOperator arg1)
+        {
+            return IExecute("getAndAccumulate", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndSet(V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -175,6 +195,24 @@ namespace Java.Util.Concurrent.Atomic
         public object GetAndSet(object arg0)
         {
             return IExecute("getAndSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndUpdate(Java.Util.Function.UnaryOperator arg0)
+        {
+            return IExecute("getAndUpdate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object UpdateAndGet(Java.Util.Function.UnaryOperator arg0)
+        {
+            return IExecute("updateAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(V)"/>

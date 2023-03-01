@@ -38,6 +38,14 @@ namespace Javax.Naming.Ldap
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List%3Cjavax.naming.ldap.Rdn%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public LdapName(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -59,6 +67,29 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getAll()"/> 
+        /// </summary>
+        public Java.Util.Enumeration All
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getRdns()"/> 
+        /// </summary>
+        public Java.Util.List Rdns
+        {
+            get { return IExecute<Java.Util.List>("getRdns"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool EndsWith(Java.Util.List arg0)
+        {
+            return IExecute<bool>("endsWith", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
@@ -75,6 +106,15 @@ namespace Javax.Naming.Ldap
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool StartsWith(Java.Util.List arg0)
+        {
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(javax.naming.Name)"/>
@@ -172,6 +212,16 @@ namespace Javax.Naming.Ldap
             return IExecute<Javax.Naming.Name>("add", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List%3Cjavax.naming.ldap.Rdn%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        public Javax.Naming.Name AddAll(int arg0, Java.Util.List arg1)
+        {
+            return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -181,6 +231,15 @@ namespace Javax.Naming.Ldap
         public Javax.Naming.Name AddAll(int arg0, Javax.Naming.Name arg1)
         {
             return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List%3Cjavax.naming.ldap.Rdn%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        public Javax.Naming.Name AddAll(Java.Util.List arg0)
+        {
+            return IExecute<Javax.Naming.Name>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(javax.naming.Name)"/>

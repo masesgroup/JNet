@@ -81,6 +81,24 @@ namespace Javax.Print
             get { return IExecuteArray<Javax.Print.DocFlavor>("getSupportedDocFlavors"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttribute(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttribute"/></returns>
+        public Javax.Print.Attribute.PrintServiceAttribute GetAttribute(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Print.Attribute.PrintServiceAttribute>("getAttribute", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeCategorySupported(java.lang.Class%3C? extends javax.print.attribute.Attribute%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsAttributeCategorySupported(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("isAttributeCategorySupported", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeValueSupported(javax.print.attribute.Attribute,javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
@@ -99,6 +117,26 @@ namespace Javax.Print
         public bool IsDocFlavorSupported(Javax.Print.DocFlavor arg0)
         {
             return IExecute<bool>("isDocFlavorSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getDefaultAttributeValue(java.lang.Class%3C? extends javax.print.attribute.Attribute%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetDefaultAttributeValue(Java.Lang.Class arg0)
+        {
+            return IExecute("getDefaultAttributeValue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedAttributeValues(java.lang.Class%3C? extends javax.print.attribute.Attribute%3E,javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg2"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetSupportedAttributeValues(Java.Lang.Class arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
+        {
+            return IExecute("getSupportedAttributeValues", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getUnsupportedAttributes(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>

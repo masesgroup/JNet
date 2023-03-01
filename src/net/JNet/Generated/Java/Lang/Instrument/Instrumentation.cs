@@ -53,6 +53,15 @@ namespace Java.Lang.Instrument
             get { return IExecuteArray<Java.Lang.Class>("getAllLoadedClasses"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsModifiableClass(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("isModifiableClass", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
@@ -157,6 +166,19 @@ namespace Java.Lang.Instrument
         public void RedefineClasses(params Java.Lang.Instrument.ClassDefinition[] arg0)
         {
             if (arg0.Length == 0) IExecute("redefineClasses"); else IExecute("redefineClasses", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set%3Cjava.lang.Module%3E,java.util.Map%3Cjava.lang.String, java.util.Set%3Cjava.lang.Module%3E%3E,java.util.Map%3Cjava.lang.String, java.util.Set%3Cjava.lang.Module%3E%3E,java.util.Set%3Cjava.lang.Class%3C?%3E%3E,java.util.Map%3Cjava.lang.Class%3C?%3E, java.util.List%3Cjava.lang.Class%3C?%3E%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Map"/></param>
+        public void RedefineModule(Java.Lang.Module arg0, Java.Util.Set arg1, Java.Util.Map arg2, Java.Util.Map arg3, Java.Util.Set arg4, Java.Util.Map arg5)
+        {
+            IExecute("redefineModule", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class%3C?%3E...)"/>

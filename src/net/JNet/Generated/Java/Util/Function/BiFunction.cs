@@ -55,6 +55,15 @@ namespace Java.Util.Function
         {
             return IExecute("apply", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function%3C? super R, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.BiFunction>("andThen", arg0);
+        }
         
         #endregion
 

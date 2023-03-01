@@ -139,6 +139,13 @@ namespace Java.Lang.Management
             get { return IExecute<string>("getThreadName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadState()"/> 
+        /// </summary>
+        public Java.Lang.Thread.State ThreadState
+        {
+            get { return IExecute<Java.Lang.Thread.State>("getThreadState"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getWaitedCount()"/> 
         /// </summary>
         public long WaitedCount
