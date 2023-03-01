@@ -115,6 +115,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.DisableGenerics,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to disable any generic type",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
                         Help = "Execute everything, but do not write anything to disk",
@@ -181,6 +187,9 @@ namespace MASES.JNetReflector
 
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
+
+        static bool _DisableGenerics;
+        public static bool DisableGenerics => _DisableGenerics;
 
         static bool _DryRun;
         public static bool DryRun => _DryRun;
@@ -280,6 +289,7 @@ namespace MASES.JNetReflector
 
             _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
+            _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
