@@ -58,11 +58,6 @@ namespace Java.Util
         /// <returns></returns>
         public static Comparator ComparingLong<SuperT>(ToLongFunction<SuperT> keyExtractor) => SExecute<Comparator>("comparingLong", keyExtractor);
         /// <summary>
-        /// Returns a comparator that compares Comparable objects in natural order.
-        /// </summary>
-        /// <returns></returns>
-        public static Comparator NaturalOrder() => SExecute<Comparator>("naturalOrder");
-        /// <summary>
         /// Returns a null-friendly comparator that considers null to be less than non-null.
         /// </summary>
         public static Comparator NullsFirst<SuperT>(Comparator<SuperT> comparator) => SExecute<Comparator>("nullsFirst", comparator);
@@ -70,11 +65,6 @@ namespace Java.Util
         /// Returns a null-friendly comparator that considers null to be greater than non-null.
         /// </summary>
         public static Comparator NullsLast<SuperT>(Comparator<SuperT> comparator) => SExecute<Comparator>("nullsLast", comparator);
-        /// <summary>
-        /// Returns a comparator that imposes the reverse of the natural ordering.
-        /// </summary>
-        /// <returns></returns>
-        public static Comparator ReverseOrder() => SExecute<Comparator>("reverseOrder");
     }
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>

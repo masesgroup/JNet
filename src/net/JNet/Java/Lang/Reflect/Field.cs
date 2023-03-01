@@ -70,16 +70,6 @@ namespace Java.Lang.Reflect
     public partial class Field
     {
         /// <summary>
-        /// Returns the <see cref="Class"/> object representing the class or interface that declares the field represented by this <see cref="Field"/> object.
-        /// </summary>
-        public Class DeclaringClass => IExecute<Class>("getDeclaringClass");
-
-        /// <summary>
-        /// Returns a <see cref="Class"/> object that identifies the declared type for the field represented by this <see cref="Field"/> object.
-        /// </summary>
-        public Class Type => IExecute<Class>("getType");
-
-        /// <summary>
         /// Returns a string describing this Field, including its generic type.
         /// </summary>
         public string GenericString => IExecute<string>("toGenericString");

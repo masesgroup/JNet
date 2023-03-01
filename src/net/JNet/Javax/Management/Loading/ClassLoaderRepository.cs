@@ -24,17 +24,6 @@ namespace Javax.Management.Loading
     public partial class ClassLoaderRepository
     {
         // can be extended with methods not reflected or not available in Java;
-        /// <summary>
-        /// Load the given class name through the list of class loaders.
-        /// </summary>
-        public Class LoadClass(string className) => IExecute<Class>("loadClass", className);
-        /// <summary>
-        /// Load the given class name through the list of class loaders, stopping at the given one.
-        /// </summary>
-        public Class LoadClassBefore(ClassLoader stop, string className) => IExecute<Class>("loadClassBefore", stop, className);
-        /// <summary>
-        /// Load the given class name through the list of class loaders, excluding the given one.
-        /// </summary>
-        public Class LoadClassWithout(ClassLoader exclude, string className) => IExecute<Class>("loadClassWithout", exclude, className);
+
     }
 }

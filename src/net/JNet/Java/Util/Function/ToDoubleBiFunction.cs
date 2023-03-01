@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java ToDoubleBiFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
     /// </summary>
     /// <typeparam name="T">The data type associated to the event</typeparam>
     /// <typeparam name="U">The data type associated to the event</typeparam>
@@ -38,17 +38,23 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ToDoubleBiFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data type associated to the event</typeparam>
-    /// <typeparam name="U">The data type associated to the event</typeparam>
-    public class ToDoubleBiFunction<T, U> : JVMBridgeListener, IToDoubleBiFunction<T, U>
+    public abstract class ToDoubleBiFunction : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetToDoubleBiFunction";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html"/>. Extends <see cref="ToDoubleBiFunction"/>
+    /// </summary>
+    /// <typeparam name="T">The data type associated to the event</typeparam>
+    /// <typeparam name="U">The data type associated to the event</typeparam>
+    public class ToDoubleBiFunction<T, U> : ToDoubleBiFunction, IToDoubleBiFunction<T, U>
+    {
         Func<T, U, double> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, U, Double}"/> to be executed

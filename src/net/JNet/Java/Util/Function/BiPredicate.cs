@@ -38,17 +38,23 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java BiPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data associated to the event</typeparam>
-    /// <typeparam name="U">The data associated to the event</typeparam> 
-    public class BiPredicate<T, U> : JVMBridgeListener, IBiPredicate<T, U>
+    public abstract class BiPredicate : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetBiPredicate";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>. Extends <see cref="BiPredicate"/>
+    /// </summary>
+    /// <typeparam name="T">The data associated to the event</typeparam>
+    /// <typeparam name="U">The data associated to the event</typeparam> 
+    public class BiPredicate<T, U> : BiPredicate, IBiPredicate<T, U>
+    {
         Func<T, U, bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, U, Boolean}"/> to be executed

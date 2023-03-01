@@ -27,6 +27,6 @@ namespace Javax.Management
         /// <summary>
         /// Gets all the enabled notification types for this filter.
         /// </summary>
-        public Java.Util.Vector<string> EnabledTypes => IExecute<Java.Util.Vector<string>>("getEnabledTypes");
+        public Java.Util.Vector<string> EnabledTypes2 => EnabledTypes.Cast<Java.Util.Vector<string>>();
     }
 }

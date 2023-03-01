@@ -35,16 +35,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java Supplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
-    public class Supplier<TReturn> : JVMBridgeListener, ISupplier<TReturn>
+    public abstract class Supplier : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetSupplier";
+    }
 
+    /// <summary>
+    /// Listener for Java Supplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html"/>. Extends <see cref="Supplier"/>
+    /// </summary>
+    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
+    public class Supplier<TReturn> : Supplier, ISupplier<TReturn>
+    {
         Func<TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TReturn}"/> to be executed

@@ -192,9 +192,76 @@ namespace Java.Lang
         /// </summary>
         public void Start() => IExecute("start");
 
+        #region Thread.State
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html"/>
+        /// </summary>
+        public class State : Java.Lang.Enum
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
+            public override string ClassName => "java.lang.Thread$State";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
+            public override bool IsStatic => true;
+
+            #region Fields
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED"/>
+            /// </summary>
+            public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW"/>
+            /// </summary>
+            public static Java.Lang.Thread.State NEW => Clazz.GetField<Java.Lang.Thread.State>("NEW");
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE"/>
+            /// </summary>
+            public static Java.Lang.Thread.State RUNNABLE => Clazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED"/>
+            /// </summary>
+            public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
+            /// </summary>
+            public static Java.Lang.Thread.State TIMED_WAITING => Clazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
+            /// </summary>
+            public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            public static Java.Lang.Thread.State ValueOf(string arg0)
+            {
+                return SExecute<Java.Lang.Thread.State>("valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            public static Java.Lang.Thread.State[] Values()
+            {
+                return SExecuteArray<Java.Lang.Thread.State>("values");
+            }
+
+            #endregion
+        }
+
+        #endregion
+
         #region Thread.UncaughtExceptionHandler
         /// <summary>
-        /// Listener for Thread.UncaughtExceptionHandler. Extends <see cref="JVMBridgeListener"/>
+        /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html"/>. Extends <see cref="JVMBridgeListener"/>
         /// </summary>
         /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
         public class UncaughtExceptionHandler : JVMBridgeListener
@@ -229,10 +296,8 @@ namespace Java.Lang
                 OnUncaughtException(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             }
             /// <summary>
-            /// Method invoked when the given thread terminates due to the given uncaught exception. 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="t">the thread</param>
-            /// <param name="e">the exception</param>
             public virtual void UncaughtException(Thread t, JVMBridgeException e) { }
         }
         #endregion

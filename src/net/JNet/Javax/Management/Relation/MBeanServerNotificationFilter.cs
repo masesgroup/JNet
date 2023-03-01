@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
@@ -27,10 +28,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// Gets all the <see cref="ObjectName"/>s disabled.
         /// </summary>
-        public Vector<ObjectName> DisabledObjectNames => IExecute<Vector<ObjectName>>("getDisabledObjectNames");
+        public Vector<ObjectName> DisabledObjectNames2 => DisabledObjectNames.Cast<Vector<ObjectName>>();
         /// <summary>
         /// Gets all the <see cref="ObjectName"/>s enabled.
         /// </summary>
-        public Vector<ObjectName> EnabledObjectNames => IExecute<Vector<ObjectName>>("getEnabledObjectNames");
+        public Vector<ObjectName> EnabledObjectNames2 => EnabledObjectNames.Cast<Vector<ObjectName>>();
     }
 }

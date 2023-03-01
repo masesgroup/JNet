@@ -27,20 +27,12 @@ namespace Javax.Management
         // can be extended with methods not reflected or not available in Java;
 
         /// <summary>
-        /// Retrieves the values of several attributes of a named MBean.
-        /// </summary>
-        public AttributeList GetAttributes(ObjectName name, string[] attributes) => IExecute<AttributeList>("getAttributes", name, attributes);
-        /// <summary>
         /// Gets MBeans controlled by the MBean server.
         /// </summary>
-        public Set<ObjectInstance> QueryMBeans(ObjectName name, QueryExp query) => IExecute<Set<ObjectInstance>>("queryMBeans", name, query);
+        public Set<ObjectInstance> QueryMBeans2(ObjectName name, QueryExp query) => QueryMBeans(name, query).Cast<Set<ObjectInstance>>();
         /// <summary>
         /// Gets the names of MBeans controlled by the MBean server.
         /// </summary>
-        public Set<ObjectName> QueryNames(ObjectName name, QueryExp query) => IExecute<Set<ObjectName>>("queryNames", name, query);
-        /// <summary>
-        /// Sets the values of several attributes of a named MBean.
-        /// </summary>
-        public AttributeList SetAttributes(ObjectName name, AttributeList attributes) => IExecute<AttributeList>("setAttributes", name, attributes);
+        public Set<ObjectName> QueryNames2(ObjectName name, QueryExp query) => QueryNames(name, query).Cast<Set<ObjectName>>();
     }
 }
