@@ -162,12 +162,12 @@ namespace MASES.JNetReflector
             }
         }
 
-        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
+        public static async void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Namespace {0} *******************", ns);
             var classes = JNetReflectorHelper.Find(ns, false);
 
-            foreach (var entry in classes)
+            await foreach (var entry in classes)
             {
                 ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.Name);
                 if (entry.IsSpecialClass()) continue; // do not reflect this classes

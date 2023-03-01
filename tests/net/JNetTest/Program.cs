@@ -48,7 +48,23 @@ namespace MASES.JNetTest
                 catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
             }
 
+            TestIterator();
+
             TestExtensions();
+        }
+
+        static void TestIterator()
+        {
+            const int execution = 10000;
+            Stopwatch w = Stopwatch.StartNew();
+            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            for (int i = 0; i < execution; i++)
+            {
+                alist.Add(i.ToString());
+            }
+            w.Stop();
+
+
         }
 
         static void TestExtensions()

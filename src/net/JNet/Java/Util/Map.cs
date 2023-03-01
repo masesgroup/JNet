@@ -75,6 +75,10 @@ namespace Java.Util
         {
         }
         /// <summary>
+        /// Converter from <see cref="Map{K, V}"/> to <see cref="Lang.Iterable{T}"/>
+        /// </summary>
+        public static implicit operator Lang.Iterable<Entry<K, V>>(Map<K, V> instance) => instance.EntrySet;
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
         public Set<Entry<K, V>> EntrySet => IExecute<Set<Entry<K, V>>>("entrySet");
