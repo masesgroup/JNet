@@ -46,7 +46,7 @@ namespace Java.Lang
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/></typeparam>
-    public class Iterable<T> : MASES.JNet.Specific.JVMBridgeBaseAsyncEnumerable<Iterable<T>, T>
+    public class Iterable<T> : MASES.JNet.Specific.JNetAsyncEnumerable<Iterable<T>, T>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

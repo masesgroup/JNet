@@ -20,6 +20,7 @@ package org.mases.jnet;
 
 import org.burningwave.core.assembler.ComponentContainer;
 import org.burningwave.core.assembler.ComponentSupplier;
+import org.burningwave.core.assembler.StaticComponentContainer;
 import org.burningwave.core.classes.ClassCriteria;
 import org.burningwave.core.classes.ClassHunter;
 import org.burningwave.core.classes.SearchConfig;
@@ -29,6 +30,18 @@ import org.burningwave.core.io.PathHelper;
 import java.util.Collection;
 
 public class JNetReflectorHelper {
+    public static boolean getLoggingState() {
+        return StaticComponentContainer.ManagedLoggerRepository.isEnabled();
+    }
+
+    public static void setLoggingState(boolean value) {
+        if (value) {
+            StaticComponentContainer.ManagedLoggerRepository.enableLogging();
+        } else {
+            StaticComponentContainer.ManagedLoggerRepository.disableLogging();
+        }
+    }
+
     public static Collection<Class<?>> find() {
         ComponentSupplier componentSupplier = ComponentContainer.getInstance();
         PathHelper pathHelper = componentSupplier.getPathHelper();

@@ -28,6 +28,7 @@ using System.Linq;
 using Org.Mases.Jnet;
 using System.Diagnostics;
 using System.Threading;
+using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -50,6 +51,7 @@ namespace MASES.JNetReflector
         {
             TraceReportHandler = traceReport;
             Level = level;
+            JNetReflectorHelper.EnableLogging = Level >= (int)ReflectionTraceLevel.Debug;
         }
 
         static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
@@ -162,12 +164,46 @@ namespace MASES.JNetReflector
             }
         }
 
-        public static async void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
+        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Namespace {0} *******************", ns);
             var classes = JNetReflectorHelper.Find(ns, false);
+/*
+            Console.WriteLine($"Total: {classes.Count()}");
 
-            await foreach (var entry in classes)
+            Stopwatch w = Stopwatch.StartNew();
+            foreach (var entry in classes)
+            {
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.CanonicalName);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnnotation);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnonymousClass);
+            }
+            w.Stop();
+            Console.WriteLine($"Normal: {w.Elapsed}");
+            w.Restart();
+            foreach (var entry in classes.WithConvert((o) => { return (o.CanonicalName, o.GenericString, o.IsAnnotation, o.IsAnonymousClass); }))
+            {
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.CanonicalName);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnnotation);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnonymousClass);
+            }
+            w.Stop();
+            Console.WriteLine($"Convert: {w.Elapsed}");
+            w.Restart();
+            foreach (var entry in classes.WithConvert((o) => { return (o.CanonicalName, o.GenericString, o.IsAnnotation, o.IsAnonymousClass); }).WithPrefetch())
+            {
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.CanonicalName);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnnotation);
+                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.IsAnonymousClass);
+            }
+            w.Stop();
+            Console.WriteLine($"Convert-Prefetch: {w.Elapsed}");
+*/
+
+            foreach (var entry in classes.WithPrefetch())
             {
                 ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.Name);
                 if (entry.IsSpecialClass()) continue; // do not reflect this classes
@@ -181,7 +217,6 @@ namespace MASES.JNetReflector
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
             AnalyzeItems(data, rootDesinationFolder, ns);
         }
-
         static void AnalyzeItems(IDictionary<string, IDictionary<string, IDictionary<string, string>>> items, string rootDesinationFolder, string jarOrModuleName)
         {
             var allPackageClasses = Template.GetTemplate(Template.AllPackageClassesTemplate);

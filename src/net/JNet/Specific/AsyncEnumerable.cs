@@ -22,7 +22,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Collections.Concurrent;
 
 namespace MASES.JNet.Specific
 {
@@ -30,84 +29,50 @@ namespace MASES.JNet.Specific
     /// An extension of <see cref="JVMBridgeBaseEnumerator{TObject}"/> implementing <see cref="IAsyncEnumerator{TObject}"/> used to manage Java Iterator in async way
     /// </summary>
     /// <typeparam name="TObject">The returning type of the iterator</typeparam>
-    public class JVMBridgeBaseAsyncEnumerator<TObject> : JVMBridgeBaseEnumerator<TObject>, IAsyncEnumerator<TObject>
+    public class JNetAsyncEnumerator<TObject> : JVMBridgeBasePrefetchableEnumerator<TObject>, IAsyncEnumerator<TObject>
     {
-        CancellationToken _cancellationToken = default;
-        IJavaObject _refObj = null;
-        ManualResetEvent startObj = new ManualResetEvent(false);
-        ConcurrentQueue<(bool, TObject)> dataQueue = new ConcurrentQueue<(bool, TObject)>();
-        (bool, TObject) _currentValue;
-        bool disposing = false;
-        bool advancingThreadRun = false;
-        Thread advancingThread = null;
+        readonly ManualResetEvent _sync = new ManualResetEvent(false);
+        readonly IEnumerator<TObject> enumeratorBase = default;
+        readonly CancellationToken _cancellationToken = default;
         /// <summary>
-        /// Initialize a new <see cref="JVMBridgeBaseAsyncEnumerator{TObject}"/>
+        /// Initialize a new <see cref="JNetAsyncEnumerator{TObject}"/>
         /// </summary>
         /// <param name="refObj">Reference to <see cref="IJavaObject"/> implementing Java Iterator</param>
+        /// <param name="extension">Extension from <see cref="JVMBridgeBaseEnumerable{TClass}"/></param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/> to use in the iteration</param>
-        public JVMBridgeBaseAsyncEnumerator(IJavaObject refObj, CancellationToken cancellationToken)
-            : base(refObj)
+        public JNetAsyncEnumerator(IJavaObject refObj, IEnumerableExtension extension, CancellationToken cancellationToken)
+            : base(refObj, extension)
         {
-            _refObj = refObj;
             _cancellationToken = cancellationToken;
-            if (Advance())
-            {
-                advancingThread = new Thread(() =>
-                {
-                    try
-                    {
-                        advancingThreadRun = true; startObj.Set();
-                        while (_cancellationToken == null || !_cancellationToken.IsCancellationRequested)
-                        {
-                            if (disposing) return;
-                            if (!Advance())
-                            {
-                                return;
-                            }
-                        }
-                    }
-                    finally { advancingThreadRun = false; }
-                });
-                advancingThread.Start();
-                startObj.WaitOne();
-            }
+            enumeratorBase = this;
         }
-        bool Advance()
+        /// <inheritdoc cref="JVMBridgeBasePrefetchEnumerator.DoWorkCycle"/>
+        protected override bool DoWorkCycle()
         {
-            TObject data = default;
-            bool hasNext = _refObj.Invoke<bool>("hasNext");
-            if (hasNext)
-            {
-                data = _refObj.Invoke<TObject>("next");
-            }
-            dataQueue.Enqueue((hasNext, data));
-            return hasNext;
-        }
-        /// <inheritdoc cref="IAsyncEnumerator{T}.Current"/>
-        public TObject Current
-        {
-            get
-            {
-                return _currentValue.Item2;
-            }
+            _sync.WaitOne();
+            _sync.Reset();
+            return !_cancellationToken.IsCancellationRequested;
         }
 
+        /// <inheritdoc cref="IAsyncEnumerator{T}.Current"/>
+        TObject IAsyncEnumerator<TObject>.Current => enumeratorBase.Current;
+
         /// <inheritdoc cref="IAsyncDisposable.DisposeAsync"/>
-        public ValueTask DisposeAsync()
+        ValueTask IAsyncDisposable.DisposeAsync()
         {
-            disposing = true;
-            advancingThread?.Join();
+            _sync.Set();
+            enumeratorBase.Dispose();
+            _sync.Dispose();
+            GC.SuppressFinalize(this);
             return new ValueTask();
         }
         /// <inheritdoc cref="IAsyncEnumerator{T}.MoveNextAsync"/>
         public ValueTask<bool> MoveNextAsync()
         {
+            _sync.Set();
             if (_cancellationToken.IsCancellationRequested) return new ValueTask<bool>(false);
-            lock (startObj)
-            {
-                if (!dataQueue.TryDequeue(out _currentValue) && !advancingThreadRun) return new ValueTask<bool>(false);
-            }
-            return new ValueTask<bool>(_currentValue.Item1);
+            var retVal = enumeratorBase.MoveNext();
+            return new ValueTask<bool>(retVal);
         }
     }
 
@@ -116,13 +81,13 @@ namespace MASES.JNet.Specific
     /// </summary>
     /// <typeparam name="TClass">The class implementing <see cref="IJVMBridgeBase"/></typeparam>
     /// <typeparam name="TObject">The type of objects to enumerate implementing <see cref="IJVMBridgeBase"/></typeparam>
-    public abstract class JVMBridgeBaseAsyncEnumerable<TClass, TObject> : JVMBridgeBaseEnumerable<TClass, TObject>, IAsyncEnumerable<TObject>
+    public abstract class JNetAsyncEnumerable<TClass, TObject> : JVMBridgeBaseEnumerable<TClass, TObject>, IAsyncEnumerable<TObject>
         where TClass : JVMBridgeBase, new()
     {
         /// <inheritdoc cref="IAsyncEnumerable{TObject}.GetAsyncEnumerator(CancellationToken)"/>
         public IAsyncEnumerator<TObject> GetAsyncEnumerator(CancellationToken cancellationToken = default)
         {
-            return new JVMBridgeBaseAsyncEnumerator<TObject>(IExecute("iterator") as IJavaObject, cancellationToken);
+            return new JNetAsyncEnumerator<TObject>(IExecute("iterator") as IJavaObject, this, cancellationToken);
         }
     }
 }
