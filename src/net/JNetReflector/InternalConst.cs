@@ -40,6 +40,7 @@ namespace MASES.JNetReflector
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";
+        public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
         public const string DisableGenerics = "DisableGenerics";
         public const string DryRun = "DryRun";
         public const string TraceLevel = "TraceLevel";
@@ -65,6 +66,8 @@ namespace MASES.JNetReflector
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
+        public const string JavaLangDeprecated = "java.lang.Deprecated";
+        public const string JavaLangIterable = "java.lang.Iterable";
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
@@ -77,7 +80,7 @@ namespace MASES.JNetReflector
             return JavaLangExceptions.Contains(canonicalName);
         }
 
-        public static IEnumerable<string> JavaLangExceptions = new string[]
+        static readonly IEnumerable<string> JavaLangExceptions = new string[]
         {
             "java.lang.Throwable",
             "java.lang.ArithmeticException",

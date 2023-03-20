@@ -99,8 +99,10 @@ namespace MASES.JNetReflector.Templates
         {
             public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER";
             public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
+            public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER";
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
+            public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_WHERECLAUSES_PLACEHOLDER";
             public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
             public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER";
             public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER";
@@ -152,6 +154,7 @@ namespace MASES.JNetReflector.Templates
                 public const string RETURNTYPE = "METHOD_STUB_RETURN_TYPE_PLACEHOLDER";
                 public const string NAME = "METHOD_STUB_METHOD_NAME_PLACEHOLDER";
                 public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
+                public const string WHERECLAUSES = "METHOD_STUB_WHERECLAUSES_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
                 public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
@@ -160,7 +163,7 @@ namespace MASES.JNetReflector.Templates
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
                 public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see cref=\"{1}\"/></param>";
-                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see {0}=\"{1}\"/></returns>";
+                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see cref=\"{0}\"/></returns>";
                 public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
@@ -204,8 +207,10 @@ namespace MASES.JNetReflector.Templates
             {
                 public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
                 public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
+                public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_SIMPLECLASS_PLACEHOLDER";
                 public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
                 public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
+                public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_NESTED_WHERECLAUSES_PLACEHOLDER";
                 public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
                 public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
                 public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";

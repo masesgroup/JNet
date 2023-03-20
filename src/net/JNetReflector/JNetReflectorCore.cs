@@ -115,6 +115,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.AvoidCSharpGenericDefinition,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to reflect generics without create the C# generic definition",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DisableGenerics,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable any generic type",
@@ -187,6 +193,9 @@ namespace MASES.JNetReflector
 
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
+
+        static bool _AvoidCSharpGenericDefinition;
+        public static bool AvoidCSharpGenericDefinition => _AvoidCSharpGenericDefinition;
 
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
@@ -289,6 +298,7 @@ namespace MASES.JNetReflector
 
             _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
+            _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
