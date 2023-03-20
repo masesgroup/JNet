@@ -74,7 +74,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsHorizontal()
         {
             return IExecute<bool>("isHorizontal");
@@ -83,7 +83,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLeftToRight()
         {
             return IExecute<bool>("isLeftToRight");

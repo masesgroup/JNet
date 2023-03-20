@@ -61,7 +61,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAccelerated()
         {
             return IExecute<bool>("isAccelerated");
@@ -70,7 +70,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTrueVolatile()
         {
             return IExecute<bool>("isTrueVolatile");

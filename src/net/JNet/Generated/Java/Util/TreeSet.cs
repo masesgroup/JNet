@@ -85,7 +85,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#ceiling(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Ceiling(object arg0)
         {
             return IExecute("ceiling", arg0);
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object First()
         {
             return IExecute("first");
@@ -103,7 +103,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#floor(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Floor(object arg0)
         {
             return IExecute("floor", arg0);
@@ -112,7 +112,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#higher(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Higher(object arg0)
         {
             return IExecute("higher", arg0);
@@ -121,7 +121,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Last()
         {
             return IExecute("last");
@@ -130,7 +130,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#lower(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Lower(object arg0)
         {
             return IExecute("lower", arg0);
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
             return IExecute("pollFirst");
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
             return IExecute("pollLast");

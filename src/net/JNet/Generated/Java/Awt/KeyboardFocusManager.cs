@@ -136,7 +136,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             return IExecute<bool>("dispatchEvent", arg0);
@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#dispatchKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DispatchKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return IExecute<bool>("dispatchKeyEvent", arg0);
@@ -154,7 +154,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#postProcessKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return IExecute<bool>("postProcessKeyEvent", arg0);

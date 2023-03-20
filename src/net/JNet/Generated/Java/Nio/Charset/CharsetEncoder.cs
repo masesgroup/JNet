@@ -49,7 +49,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanEncode(char arg0)
         {
             return IExecute<bool>("canEncode", arg0);
@@ -58,7 +58,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanEncode(Java.Lang.CharSequence arg0)
         {
             return IExecute<bool>("canEncode", arg0);
@@ -67,7 +67,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#isLegalReplacement(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLegalReplacement(byte[] arg0)
         {
             return IExecute<bool>("isLegalReplacement", arg0);
@@ -85,7 +85,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#averageBytesPerChar()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float AverageBytesPerChar()
         {
             return IExecute<float>("averageBytesPerChar");
@@ -94,7 +94,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#maxBytesPerChar()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float MaxBytesPerChar()
         {
             return IExecute<float>("maxBytesPerChar");

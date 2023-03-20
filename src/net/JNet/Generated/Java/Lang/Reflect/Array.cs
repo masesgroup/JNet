@@ -46,7 +46,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.NegativeArraySizeException"/>
         public static object NewInstance(Java.Lang.Class arg0, params int[] arg1)
@@ -58,7 +58,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.NegativeArraySizeException"/>
         public static object NewInstance(Java.Lang.Class arg0, int arg1)
         {
@@ -69,7 +69,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static bool GetBoolean(object arg0, int arg1)
@@ -81,7 +81,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static byte GetByte(object arg0, int arg1)
@@ -93,7 +93,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static char GetChar(object arg0, int arg1)
@@ -105,7 +105,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static double GetDouble(object arg0, int arg1)
@@ -117,7 +117,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static float GetFloat(object arg0, int arg1)
@@ -129,7 +129,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static int GetInt(object arg0, int arg1)
@@ -140,7 +140,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static int GetLength(object arg0)
         {
@@ -151,7 +151,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static object Get(object arg0, int arg1)
@@ -163,7 +163,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static long GetLong(object arg0, int arg1)
@@ -175,7 +175,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static short GetShort(object arg0, int arg1)

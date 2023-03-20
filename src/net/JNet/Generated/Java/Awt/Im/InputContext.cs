@@ -72,7 +72,7 @@ namespace Java.Awt.Im
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#isCompositionEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCompositionEnabled()
         {
             return IExecute<bool>("isCompositionEnabled");
@@ -81,7 +81,7 @@ namespace Java.Awt.Im
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#selectInputMethod(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool SelectInputMethod(Java.Util.Locale arg0)
         {
             return IExecute<bool>("selectInputMethod", arg0);

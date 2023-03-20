@@ -53,7 +53,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ForRemoval()
         {
             return IExecute<bool>("forRemoval");
@@ -62,7 +62,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Since()
         {
             return IExecute<string>("since");

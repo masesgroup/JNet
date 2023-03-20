@@ -123,7 +123,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
             return IExecute<bool>("hasUniformLineMetrics");
@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int BytesWidth(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("bytesWidth", arg0, arg1, arg2);
@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CharsWidth(char[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("charsWidth", arg0, arg1, arg2);
@@ -154,7 +154,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CharWidth(char arg0)
         {
             return IExecute<int>("charWidth", arg0);
@@ -163,7 +163,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CharWidth(int arg0)
         {
             return IExecute<int>("charWidth", arg0);
@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int StringWidth(string arg0)
         {
             return IExecute<int>("stringWidth", arg0);

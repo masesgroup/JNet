@@ -49,7 +49,7 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCurrent()
         {
             return IExecute<bool>("isCurrent");

@@ -53,7 +53,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsParallel()
         {
             return IExecute<bool>("isParallel");

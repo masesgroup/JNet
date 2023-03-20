@@ -49,7 +49,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Count()
         {
             return IExecute<int>("count");
@@ -67,7 +67,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Context()
         {
             return IExecute("context");
@@ -109,7 +109,7 @@ namespace Java.Nio.File
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Name()
             {
                 return IExecute<string>("name");
@@ -145,7 +145,7 @@ namespace Java.Nio.File
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Name()
             {
                 return IExecute<string>("name");

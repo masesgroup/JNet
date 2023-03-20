@@ -333,7 +333,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isAlphabetic(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsAlphabetic(int arg0)
         {
             return SExecute<bool>("isAlphabetic", arg0);
@@ -342,7 +342,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isBmpCodePoint(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsBmpCodePoint(int arg0)
         {
             return SExecute<bool>("isBmpCodePoint", arg0);
@@ -351,7 +351,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDefined(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDefined(char arg0)
         {
             return SExecute<bool>("isDefined", arg0);
@@ -360,7 +360,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDefined(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDefined(int arg0)
         {
             return SExecute<bool>("isDefined", arg0);
@@ -369,7 +369,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDigit(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDigit(char arg0)
         {
             return SExecute<bool>("isDigit", arg0);
@@ -378,7 +378,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDigit(int arg0)
         {
             return SExecute<bool>("isDigit", arg0);
@@ -387,7 +387,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isHighSurrogate(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsHighSurrogate(char arg0)
         {
             return SExecute<bool>("isHighSurrogate", arg0);
@@ -396,7 +396,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdentifierIgnorable(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifierIgnorable(char arg0)
         {
             return SExecute<bool>("isIdentifierIgnorable", arg0);
@@ -405,7 +405,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdentifierIgnorable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifierIgnorable(int arg0)
         {
             return SExecute<bool>("isIdentifierIgnorable", arg0);
@@ -414,7 +414,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdeographic(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsIdeographic(int arg0)
         {
             return SExecute<bool>("isIdeographic", arg0);
@@ -423,7 +423,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isISOControl(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsISOControl(char arg0)
         {
             return SExecute<bool>("isISOControl", arg0);
@@ -432,7 +432,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isISOControl(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsISOControl(int arg0)
         {
             return SExecute<bool>("isISOControl", arg0);
@@ -441,7 +441,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierPart(char arg0)
         {
             return SExecute<bool>("isJavaIdentifierPart", arg0);
@@ -450,7 +450,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierPart(int arg0)
         {
             return SExecute<bool>("isJavaIdentifierPart", arg0);
@@ -459,7 +459,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierStart(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierStart(char arg0)
         {
             return SExecute<bool>("isJavaIdentifierStart", arg0);
@@ -468,7 +468,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierStart(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierStart(int arg0)
         {
             return SExecute<bool>("isJavaIdentifierStart", arg0);
@@ -477,7 +477,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetter(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLetter(char arg0)
         {
             return SExecute<bool>("isLetter", arg0);
@@ -486,7 +486,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLetter(int arg0)
         {
             return SExecute<bool>("isLetter", arg0);
@@ -495,7 +495,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetterOrDigit(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLetterOrDigit(char arg0)
         {
             return SExecute<bool>("isLetterOrDigit", arg0);
@@ -504,7 +504,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetterOrDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLetterOrDigit(int arg0)
         {
             return SExecute<bool>("isLetterOrDigit", arg0);
@@ -513,7 +513,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowerCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLowerCase(char arg0)
         {
             return SExecute<bool>("isLowerCase", arg0);
@@ -522,7 +522,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowerCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLowerCase(int arg0)
         {
             return SExecute<bool>("isLowerCase", arg0);
@@ -531,7 +531,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowSurrogate(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLowSurrogate(char arg0)
         {
             return SExecute<bool>("isLowSurrogate", arg0);
@@ -540,7 +540,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isMirrored(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsMirrored(char arg0)
         {
             return SExecute<bool>("isMirrored", arg0);
@@ -549,7 +549,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isMirrored(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsMirrored(int arg0)
         {
             return SExecute<bool>("isMirrored", arg0);
@@ -558,7 +558,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSpaceChar(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsSpaceChar(char arg0)
         {
             return SExecute<bool>("isSpaceChar", arg0);
@@ -567,7 +567,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSpaceChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsSpaceChar(int arg0)
         {
             return SExecute<bool>("isSpaceChar", arg0);
@@ -576,7 +576,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSupplementaryCodePoint(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsSupplementaryCodePoint(int arg0)
         {
             return SExecute<bool>("isSupplementaryCodePoint", arg0);
@@ -585,7 +585,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSurrogate(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsSurrogate(char arg0)
         {
             return SExecute<bool>("isSurrogate", arg0);
@@ -595,7 +595,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsSurrogatePair(char arg0, char arg1)
         {
             return SExecute<bool>("isSurrogatePair", arg0, arg1);
@@ -604,7 +604,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isTitleCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsTitleCase(char arg0)
         {
             return SExecute<bool>("isTitleCase", arg0);
@@ -613,7 +613,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isTitleCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsTitleCase(int arg0)
         {
             return SExecute<bool>("isTitleCase", arg0);
@@ -622,7 +622,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierPart(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierPart(char arg0)
         {
             return SExecute<bool>("isUnicodeIdentifierPart", arg0);
@@ -631,7 +631,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierPart(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierPart(int arg0)
         {
             return SExecute<bool>("isUnicodeIdentifierPart", arg0);
@@ -640,7 +640,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierStart(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierStart(char arg0)
         {
             return SExecute<bool>("isUnicodeIdentifierStart", arg0);
@@ -649,7 +649,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierStart(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierStart(int arg0)
         {
             return SExecute<bool>("isUnicodeIdentifierStart", arg0);
@@ -658,7 +658,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUpperCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUpperCase(char arg0)
         {
             return SExecute<bool>("isUpperCase", arg0);
@@ -667,7 +667,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUpperCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsUpperCase(int arg0)
         {
             return SExecute<bool>("isUpperCase", arg0);
@@ -676,7 +676,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isValidCodePoint(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsValidCodePoint(int arg0)
         {
             return SExecute<bool>("isValidCodePoint", arg0);
@@ -685,7 +685,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsWhitespace(char arg0)
         {
             return SExecute<bool>("isWhitespace", arg0);
@@ -694,7 +694,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsWhitespace(int arg0)
         {
             return SExecute<bool>("isWhitespace", arg0);
@@ -703,7 +703,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getDirectionality(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public static byte GetDirectionality(char arg0)
         {
             return SExecute<byte>("getDirectionality", arg0);
@@ -712,7 +712,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getDirectionality(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public static byte GetDirectionality(int arg0)
         {
             return SExecute<byte>("getDirectionality", arg0);
@@ -722,7 +722,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char ForDigit(int arg0, int arg1)
         {
             return SExecute<char>("forDigit", arg0, arg1);
@@ -731,7 +731,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#highSurrogate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char HighSurrogate(int arg0)
         {
             return SExecute<char>("highSurrogate", arg0);
@@ -740,7 +740,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#lowSurrogate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char LowSurrogate(int arg0)
         {
             return SExecute<char>("lowSurrogate", arg0);
@@ -749,7 +749,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#reverseBytes(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char ReverseBytes(char arg0)
         {
             return SExecute<char>("reverseBytes", arg0);
@@ -758,7 +758,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toLowerCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char ToLowerCase(char arg0)
         {
             return SExecute<char>("toLowerCase", arg0);
@@ -767,7 +767,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toTitleCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char ToTitleCase(char arg0)
         {
             return SExecute<char>("toTitleCase", arg0);
@@ -776,7 +776,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toUpperCase(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char ToUpperCase(char arg0)
         {
             return SExecute<char>("toUpperCase", arg0);
@@ -794,7 +794,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CharCount(int arg0)
         {
             return SExecute<int>("charCount", arg0);
@@ -805,7 +805,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1, int arg2)
         {
             return SExecute<int>("codePointAt", arg0, arg1, arg2);
@@ -815,7 +815,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1)
         {
             return SExecute<int>("codePointAt", arg0, arg1);
@@ -825,7 +825,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointAt(Java.Lang.CharSequence arg0, int arg1)
         {
             return SExecute<int>("codePointAt", arg0, arg1);
@@ -836,7 +836,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1, int arg2)
         {
             return SExecute<int>("codePointBefore", arg0, arg1, arg2);
@@ -846,7 +846,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1)
         {
             return SExecute<int>("codePointBefore", arg0, arg1);
@@ -856,7 +856,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(Java.Lang.CharSequence arg0, int arg1)
         {
             return SExecute<int>("codePointBefore", arg0, arg1);
@@ -867,7 +867,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointCount(char[] arg0, int arg1, int arg2)
         {
             return SExecute<int>("codePointCount", arg0, arg1, arg2);
@@ -878,7 +878,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointCount(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return SExecute<int>("codePointCount", arg0, arg1, arg2);
@@ -887,7 +887,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CodePointOf(string arg0)
         {
             return SExecute<int>("codePointOf", arg0);
@@ -897,7 +897,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(char arg0, char arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -907,7 +907,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Digit(char arg0, int arg1)
         {
             return SExecute<int>("digit", arg0, arg1);
@@ -917,7 +917,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Digit(int arg0, int arg1)
         {
             return SExecute<int>("digit", arg0, arg1);
@@ -926,7 +926,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getNumericValue(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetNumericValue(char arg0)
         {
             return SExecute<int>("getNumericValue", arg0);
@@ -935,7 +935,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getNumericValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetNumericValue(int arg0)
         {
             return SExecute<int>("getNumericValue", arg0);
@@ -944,7 +944,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getType(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetType(char arg0)
         {
             return SExecute<int>("getType", arg0);
@@ -953,7 +953,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetType(int arg0)
         {
             return SExecute<int>("getType", arg0);
@@ -962,7 +962,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#hashCode(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(char arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -975,7 +975,7 @@ namespace Java.Lang
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(char[] arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return SExecute<int>("offsetByCodePoints", arg0, arg1, arg2, arg3, arg4);
@@ -986,7 +986,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return SExecute<int>("offsetByCodePoints", arg0, arg1, arg2);
@@ -997,7 +997,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="char"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToChars(int arg0, char[] arg1, int arg2)
         {
             return SExecute<int>("toChars", arg0, arg1, arg2);
@@ -1007,7 +1007,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToCodePoint(char arg0, char arg1)
         {
             return SExecute<int>("toCodePoint", arg0, arg1);
@@ -1016,7 +1016,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toLowerCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToLowerCase(int arg0)
         {
             return SExecute<int>("toLowerCase", arg0);
@@ -1025,7 +1025,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toTitleCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToTitleCase(int arg0)
         {
             return SExecute<int>("toTitleCase", arg0);
@@ -1034,7 +1034,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toUpperCase(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToUpperCase(int arg0)
         {
             return SExecute<int>("toUpperCase", arg0);
@@ -1043,7 +1043,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#valueOf(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="char?"/></returns>
+        /// <returns><see cref="char"/></returns>
         public static char? ValueOf(char arg0)
         {
             return SExecute<char?>("valueOf", arg0);
@@ -1052,7 +1052,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetName(int arg0)
         {
             return SExecute<string>("getName", arg0);
@@ -1061,7 +1061,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toString(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(char arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1070,7 +1070,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1083,7 +1083,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charValue()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char CharValue()
         {
             return IExecute<char>("charValue");
@@ -1092,7 +1092,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Character)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(char? arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -1101,7 +1101,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

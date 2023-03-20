@@ -74,7 +74,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#purge()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Purge()
         {
             return IExecute<int>("purge");

@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float GetStringWidth(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2)
         {
             return SExecute<float>("getStringWidth", arg0, arg1, arg2);
@@ -83,7 +83,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetClippedString(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2, int arg3)
         {
             return SExecute<string>("getClippedString", arg0, arg1, arg2, arg3);

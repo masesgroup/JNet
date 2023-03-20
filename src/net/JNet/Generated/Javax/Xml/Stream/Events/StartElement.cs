@@ -81,7 +81,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNamespaceURI(string arg0)
         {
             return IExecute<string>("getNamespaceURI", arg0);

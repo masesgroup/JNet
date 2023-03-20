@@ -56,7 +56,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html#accept(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Accept(Java.Io.File arg0)
         {
             return IExecute<bool>("accept", arg0);

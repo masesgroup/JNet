@@ -112,7 +112,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Reduce(long arg0, Java.Util.Function.BiFunction arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecute("reduce", arg0, arg1, arg2);
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ReduceEntries(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecute("reduceEntries", arg0, arg1, arg2);
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ReduceKeys(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecute("reduceKeys", arg0, arg1, arg2);
@@ -145,7 +145,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ReduceValues(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecute("reduceValues", arg0, arg1, arg2);
@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Search(long arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("search", arg0, arg1);
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object SearchEntries(long arg0, Java.Util.Function.Function arg1)
         {
             return IExecute("searchEntries", arg0, arg1);
@@ -175,7 +175,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object SearchKeys(long arg0, Java.Util.Function.Function arg1)
         {
             return IExecute("searchKeys", arg0, arg1);
@@ -185,7 +185,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object SearchValues(long arg0, Java.Util.Function.Function arg1)
         {
             return IExecute("searchValues", arg0, arg1);
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double ReduceEntriesToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
             return IExecute<double>("reduceEntriesToDouble", arg0, arg1, arg2, arg3);
@@ -258,7 +258,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double ReduceKeysToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
             return IExecute<double>("reduceKeysToDouble", arg0, arg1, arg2, arg3);
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleBiFunction"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double ReduceToDouble(long arg0, Java.Util.Function.ToDoubleBiFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
             return IExecute<double>("reduceToDouble", arg0, arg1, arg2, arg3);
@@ -282,7 +282,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double ReduceValuesToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
             return IExecute<double>("reduceValuesToDouble", arg0, arg1, arg2, arg3);
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ReduceEntriesToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
             return IExecute<int>("reduceEntriesToInt", arg0, arg1, arg2, arg3);
@@ -306,7 +306,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ReduceKeysToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
             return IExecute<int>("reduceKeysToInt", arg0, arg1, arg2, arg3);
@@ -318,7 +318,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToIntBiFunction"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ReduceToInt(long arg0, Java.Util.Function.ToIntBiFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
             return IExecute<int>("reduceToInt", arg0, arg1, arg2, arg3);
@@ -330,7 +330,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ReduceValuesToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
             return IExecute<int>("reduceValuesToInt", arg0, arg1, arg2, arg3);
@@ -377,7 +377,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ReduceKeys(long arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("reduceKeys", arg0, arg1);
@@ -386,7 +386,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long MappingCount()
         {
             return IExecute<long>("mappingCount");
@@ -398,7 +398,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ReduceEntriesToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
             return IExecute<long>("reduceEntriesToLong", arg0, arg1, arg2, arg3);
@@ -410,7 +410,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ReduceKeysToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
             return IExecute<long>("reduceKeysToLong", arg0, arg1, arg2, arg3);
@@ -422,7 +422,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToLongBiFunction"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ReduceToLong(long arg0, Java.Util.Function.ToLongBiFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
             return IExecute<long>("reduceToLong", arg0, arg1, arg2, arg3);
@@ -434,7 +434,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ReduceValuesToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
             return IExecute<long>("reduceValuesToLong", arg0, arg1, arg2, arg3);
@@ -444,7 +444,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ReduceValues(long arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("reduceValues", arg0, arg1);

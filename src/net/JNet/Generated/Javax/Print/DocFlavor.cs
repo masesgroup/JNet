@@ -98,7 +98,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetParameter(string arg0)
         {
             return IExecute<string>("getParameter", arg0);

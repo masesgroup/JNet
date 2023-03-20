@@ -89,7 +89,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecute<bool>("isDaylightSavings", arg0);
@@ -98,7 +98,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFixedOffset()
         {
             return IExecute<bool>("isFixedOffset");
@@ -108,7 +108,7 @@ namespace Java.Time.Zone
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidOffset(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1)
         {
             return IExecute<bool>("isValidOffset", arg0, arg1);

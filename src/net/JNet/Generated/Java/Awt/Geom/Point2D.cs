@@ -52,7 +52,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Distance(double arg0, double arg1, double arg2, double arg3)
         {
             return SExecute<double>("distance", arg0, arg1, arg2, arg3);
@@ -64,7 +64,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double DistanceSq(double arg0, double arg1, double arg2, double arg3)
         {
             return SExecute<double>("distanceSq", arg0, arg1, arg2, arg3);
@@ -101,7 +101,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double Distance(double arg0, double arg1)
         {
             return IExecute<double>("distance", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distance(java.awt.geom.Point2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double Distance(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<double>("distance", arg0);
@@ -120,7 +120,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double DistanceSq(double arg0, double arg1)
         {
             return IExecute<double>("distanceSq", arg0, arg1);
@@ -129,7 +129,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(java.awt.geom.Point2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double DistanceSq(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<double>("distanceSq", arg0);

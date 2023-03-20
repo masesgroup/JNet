@@ -165,7 +165,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getProperty(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(object arg0)
         {
             return IExecute("getProperty", arg0);
@@ -198,7 +198,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetText(int arg0, int arg1)
         {
@@ -460,7 +460,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsLeaf()
             {
                 return IExecute<bool>("isLeaf");
@@ -469,7 +469,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementIndex(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int GetElementIndex(int arg0)
             {
                 return IExecute<int>("getElementIndex", arg0);
@@ -497,7 +497,7 @@ namespace Javax.Swing.Text
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
                 return IExecute<bool>("containsAttribute", arg0, arg1);
@@ -506,7 +506,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecute<bool>("containsAttributes", arg0);
@@ -515,7 +515,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isDefined(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsDefined(object arg0)
             {
                 return IExecute<bool>("isDefined", arg0);
@@ -524,7 +524,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isEqual(javax.swing.text.AttributeSet)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecute<bool>("isEqual", arg0);
@@ -533,7 +533,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getIndex(javax.swing.tree.TreeNode)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
             {
                 return IExecute<int>("getIndex", arg0);
@@ -542,7 +542,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttribute(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object GetAttribute(object arg0)
             {
                 return IExecute("getAttribute", arg0);
@@ -795,7 +795,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Length()
             {
                 return IExecute<int>("length");
@@ -805,7 +805,7 @@ namespace Javax.Swing.Text
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public string GetString(int arg0, int arg1)
             {

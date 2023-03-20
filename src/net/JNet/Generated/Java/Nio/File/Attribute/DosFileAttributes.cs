@@ -53,7 +53,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsArchive()
         {
             return IExecute<bool>("isArchive");
@@ -62,7 +62,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
             return IExecute<bool>("isHidden");
@@ -71,7 +71,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
@@ -80,7 +80,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSystem()
         {
             return IExecute<bool>("isSystem");

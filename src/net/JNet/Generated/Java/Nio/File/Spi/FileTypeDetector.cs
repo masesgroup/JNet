@@ -49,7 +49,7 @@ namespace Java.Nio.File.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileTypeDetector.html#probeContentType(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string ProbeContentType(Java.Nio.File.Path arg0)
         {

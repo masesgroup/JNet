@@ -70,7 +70,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
@@ -81,7 +81,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1)
         {
@@ -112,7 +112,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Length()
         {
@@ -123,7 +123,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(byte[] arg0, long arg1)
         {
@@ -134,7 +134,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {

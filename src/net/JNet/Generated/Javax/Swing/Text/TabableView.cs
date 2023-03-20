@@ -50,7 +50,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetPartialSpan(int arg0, int arg1)
         {
             return IExecute<float>("getPartialSpan", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.TabExpander"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetTabbedSpan(float arg0, Javax.Swing.Text.TabExpander arg1)
         {
             return IExecute<float>("getTabbedSpan", arg0, arg1);

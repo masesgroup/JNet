@@ -87,7 +87,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ClearProperty(string arg0)
         {
             return SExecute<string>("clearProperty", arg0);
@@ -96,7 +96,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Getenv(string arg0)
         {
             return SExecute<string>("getenv", arg0);
@@ -106,7 +106,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetProperty(string arg0, string arg1)
         {
             return SExecute<string>("getProperty", arg0, arg1);
@@ -115,7 +115,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetProperty(string arg0)
         {
             return SExecute<string>("getProperty", arg0);
@@ -124,7 +124,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string LineSeparator()
         {
             return SExecute<string>("lineSeparator");
@@ -134,7 +134,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string SetProperty(string arg0, string arg1)
         {
             return SExecute<string>("setProperty", arg0, arg1);
@@ -172,7 +172,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int IdentityHashCode(object arg0)
         {
             return SExecute<int>("identityHashCode", arg0);
@@ -181,7 +181,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#mapLibraryName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string MapLibraryName(string arg0)
         {
             return SExecute<string>("mapLibraryName", arg0);
@@ -190,7 +190,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long CurrentTimeMillis()
         {
             return SExecute<long>("currentTimeMillis");
@@ -199,7 +199,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long NanoTime()
         {
             return SExecute<long>("nanoTime");
@@ -317,7 +317,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#isLoggable(java.lang.System$Logger$Level)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsLoggable(Java.Lang.System.Logger.Level arg0)
             {
                 return IExecute<bool>("isLoggable", arg0);

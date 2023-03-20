@@ -78,7 +78,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecute<bool>("addEdit", arg0);
@@ -87,7 +87,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanRedo()
         {
             return IExecute<bool>("canRedo");
@@ -96,7 +96,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanUndo()
         {
             return IExecute<bool>("canUndo");
@@ -105,7 +105,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSignificant()
         {
             return IExecute<bool>("isSignificant");
@@ -114,7 +114,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecute<bool>("replaceEdit", arg0);

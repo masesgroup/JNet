@@ -175,7 +175,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isInboundDone()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsInboundDone()
         {
             return IExecute<bool>("isInboundDone");
@@ -184,7 +184,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isOutboundDone()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOutboundDone()
         {
             return IExecute<bool>("isOutboundDone");

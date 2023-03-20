@@ -70,7 +70,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short arg0, short arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -89,7 +89,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(short arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -98,7 +98,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToUnsignedInt(short arg0)
         {
             return SExecute<int>("toUnsignedInt", arg0);
@@ -107,7 +107,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="short?"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? Decode(string arg0)
         {
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="short?"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0, int arg1)
         {
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="short?"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0)
         {
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="short?"/></returns>
+        /// <returns><see cref="short"/></returns>
         public static short? ValueOf(short arg0)
         {
             return SExecute<short?>("valueOf", arg0);
@@ -147,7 +147,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(short arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(short arg0)
         {
             return SExecute<long>("toUnsignedLong", arg0);
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0, int arg1)
         {
@@ -176,7 +176,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0)
         {
@@ -186,7 +186,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public static short ReverseBytes(short arg0)
         {
             return SExecute<short>("reverseBytes", arg0);
@@ -199,7 +199,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -208,7 +208,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(short? arg0)
         {
             return IExecute<int>("compareTo", arg0);

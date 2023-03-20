@@ -66,7 +66,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#size()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
@@ -75,7 +75,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public string ToString(string arg0)
         {
@@ -85,7 +85,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToString(Java.Nio.Charset.Charset arg0)
         {
             return IExecute<string>("toString", arg0);

@@ -62,7 +62,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecute<bool>("shouldAccept", arg0, arg1);

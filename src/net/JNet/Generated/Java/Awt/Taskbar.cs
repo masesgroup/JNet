@@ -45,7 +45,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsTaskbarSupported()
         {
             return SExecute<bool>("isTaskbarSupported");
@@ -81,7 +81,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar$Feature)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Taskbar.Feature"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Awt.Taskbar.Feature arg0)
         {
             return IExecute<bool>("isSupported", arg0);

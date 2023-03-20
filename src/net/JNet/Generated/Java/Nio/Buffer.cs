@@ -49,7 +49,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasArray()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasArray()
         {
             return IExecute<bool>("hasArray");
@@ -58,7 +58,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isDirect()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDirect()
         {
             return IExecute<bool>("isDirect");
@@ -67,7 +67,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isReadOnly()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
@@ -76,7 +76,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#arrayOffset()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ArrayOffset()
         {
             return IExecute<int>("arrayOffset");
@@ -85,7 +85,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#array()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Array()
         {
             return IExecute("array");
@@ -112,7 +112,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasRemaining()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasRemaining()
         {
             return IExecute<bool>("hasRemaining");
@@ -121,7 +121,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#capacity()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
             return IExecute<int>("capacity");
@@ -130,7 +130,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Limit()
         {
             return IExecute<int>("limit");
@@ -139,7 +139,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Position()
         {
             return IExecute<int>("position");
@@ -148,7 +148,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#remaining()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Remaining()
         {
             return IExecute<int>("remaining");

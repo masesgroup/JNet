@@ -62,7 +62,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(string arg0)
         {
             return IExecute<bool>("containsKey", arg0);
@@ -71,7 +71,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDescription(string arg0)
         {
             return IExecute<string>("getDescription", arg0);

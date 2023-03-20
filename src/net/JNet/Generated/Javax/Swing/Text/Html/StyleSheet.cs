@@ -45,7 +45,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getIndexOfSize(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetIndexOfSize(float arg0)
         {
             return SExecute<int>("getIndexOfSize", arg0);
@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
         {
             return IExecute<bool>("addCSSAttributeFromHTML", arg0, arg1, arg2);
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetPointSize(int arg0)
         {
             return IExecute<float>("getPointSize", arg0);
@@ -92,7 +92,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetPointSize(string arg0)
         {
             return IExecute<float>("getPointSize", arg0);
@@ -263,7 +263,7 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
-            /// <returns><see langword="float"/></returns>
+            /// <returns><see cref="float"/></returns>
             public float GetInset(int arg0, Javax.Swing.Text.View arg1)
             {
                 return IExecute<float>("getInset", arg0, arg1);

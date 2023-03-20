@@ -54,7 +54,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read(string arg0, Java.Nio.ByteBuffer arg1)
         {
@@ -64,7 +64,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#size(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Size(string arg0)
         {
@@ -75,7 +75,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Write(string arg0, Java.Nio.ByteBuffer arg1)
         {
@@ -85,7 +85,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");

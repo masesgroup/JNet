@@ -101,7 +101,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0)
         {
@@ -111,7 +111,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0)
         {
@@ -121,7 +121,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetUsage(Org.Ietf.Jgss.Oid arg0)
         {

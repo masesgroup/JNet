@@ -121,7 +121,7 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         /// <param name="arg1"><see cref="Java.Security.Permission"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.ProtectionDomain arg0, Java.Security.Permission arg1)
         {
             return IExecute<bool>("implies", arg0, arg1);

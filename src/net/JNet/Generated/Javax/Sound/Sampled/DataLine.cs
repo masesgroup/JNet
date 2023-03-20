@@ -95,7 +95,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
@@ -104,7 +104,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRunning()
         {
             return IExecute<bool>("isRunning");
@@ -113,7 +113,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Available()
         {
             return IExecute<int>("available");
@@ -225,7 +225,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#isFormatSupported(javax.sound.sampled.AudioFormat)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsFormatSupported(Javax.Sound.Sampled.AudioFormat arg0)
             {
                 return IExecute<bool>("isFormatSupported", arg0);

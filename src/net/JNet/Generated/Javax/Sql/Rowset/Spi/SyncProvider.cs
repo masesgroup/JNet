@@ -142,7 +142,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#supportsUpdatableView()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int SupportsUpdatableView()
         {
             return IExecute<int>("supportsUpdatableView");

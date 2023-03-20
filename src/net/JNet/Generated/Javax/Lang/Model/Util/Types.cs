@@ -57,7 +57,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
@@ -67,7 +67,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAssignable(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecute<bool>("isAssignable", arg0, arg1);
@@ -77,7 +77,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSameType(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecute<bool>("isSameType", arg0, arg1);
@@ -87,7 +87,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSubsignature(Javax.Lang.Model.Type.ExecutableType arg0, Javax.Lang.Model.Type.ExecutableType arg1)
         {
             return IExecute<bool>("isSubsignature", arg0, arg1);
@@ -97,7 +97,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSubtype(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecute<bool>("isSubtype", arg0, arg1);

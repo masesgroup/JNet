@@ -74,7 +74,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier%3C? extends X%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
         public int OrElseThrow(Java.Util.Function.Supplier arg0)
         {
@@ -84,7 +84,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
@@ -93,7 +93,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
             return IExecute<bool>("isPresent");
@@ -102,7 +102,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int OrElse(int arg0)
         {
             return IExecute<int>("orElse", arg0);
@@ -111,7 +111,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntSupplier"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int OrElseGet(Java.Util.Function.IntSupplier arg0)
         {
             return IExecute<int>("orElseGet", arg0);
@@ -120,7 +120,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int OrElseThrow()
         {
             return IExecute<int>("orElseThrow");

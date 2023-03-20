@@ -53,7 +53,7 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Comments()
         {
             return IExecute<string>("comments");
@@ -62,7 +62,7 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Date()
         {
             return IExecute<string>("date");

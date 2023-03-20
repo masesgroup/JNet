@@ -49,7 +49,7 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool HasInitialContextFactoryBuilder()
         {
             return SExecute<bool>("hasInitialContextFactoryBuilder");
@@ -61,7 +61,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
         {
@@ -74,7 +74,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
         {

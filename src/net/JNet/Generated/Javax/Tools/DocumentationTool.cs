@@ -126,7 +126,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call()"/>
             /// </summary>
             
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Lang.Exception"/>
             public object Call()
             {
@@ -200,7 +200,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsOutputLocation()
             {
                 return IExecute<bool>("isOutputLocation");

@@ -49,7 +49,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#primaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int PrimaryOrder(int arg0)
         {
             return SExecute<int>("primaryOrder", arg0);
@@ -58,7 +58,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#secondaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public static short SecondaryOrder(int arg0)
         {
             return SExecute<short>("secondaryOrder", arg0);
@@ -67,7 +67,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#tertiaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public static short TertiaryOrder(int arg0)
         {
             return SExecute<short>("tertiaryOrder", arg0);
@@ -87,7 +87,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#getMaxExpansion(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetMaxExpansion(int arg0)
         {
             return IExecute<int>("getMaxExpansion", arg0);
@@ -96,7 +96,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#next()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Next()
         {
             return IExecute<int>("next");
@@ -105,7 +105,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#previous()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Previous()
         {
             return IExecute<int>("previous");
@@ -118,10 +118,10 @@ namespace Java.Text
             IExecute("reset");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        public void SetText(Java.Text.CharacterIterator arg0)
+        /// <param name="arg0"><see cref="string"/></param>
+        public void SetText(string arg0)
         {
             IExecute("setText", arg0);
         }

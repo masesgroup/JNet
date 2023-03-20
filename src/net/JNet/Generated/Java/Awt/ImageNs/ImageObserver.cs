@@ -86,7 +86,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);

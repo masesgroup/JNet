@@ -69,7 +69,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#bitCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BitCount(int arg0)
         {
             return SExecute<int>("bitCount", arg0);
@@ -79,7 +79,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(int arg0, int arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -89,7 +89,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int arg0, int arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -99,7 +99,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int DivideUnsigned(int arg0, int arg1)
         {
             return SExecute<int>("divideUnsigned", arg0, arg1);
@@ -108,7 +108,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#hashCode(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(int arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -117,7 +117,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#highestOneBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HighestOneBit(int arg0)
         {
             return SExecute<int>("highestOneBit", arg0);
@@ -126,7 +126,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#lowestOneBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int LowestOneBit(int arg0)
         {
             return SExecute<int>("lowestOneBit", arg0);
@@ -136,7 +136,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Max(int arg0, int arg1)
         {
             return SExecute<int>("max", arg0, arg1);
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Min(int arg0, int arg1)
         {
             return SExecute<int>("min", arg0, arg1);
@@ -155,7 +155,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#numberOfLeadingZeros(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int NumberOfLeadingZeros(int arg0)
         {
             return SExecute<int>("numberOfLeadingZeros", arg0);
@@ -164,7 +164,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#numberOfTrailingZeros(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int NumberOfTrailingZeros(int arg0)
         {
             return SExecute<int>("numberOfTrailingZeros", arg0);
@@ -176,7 +176,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
@@ -187,7 +187,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(string arg0, int arg1)
         {
@@ -197,7 +197,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#parseInt(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(string arg0)
         {
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
@@ -221,7 +221,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(string arg0, int arg1)
         {
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#parseUnsignedInt(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(string arg0)
         {
@@ -242,7 +242,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int RemainderUnsigned(int arg0, int arg1)
         {
             return SExecute<int>("remainderUnsigned", arg0, arg1);
@@ -251,7 +251,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#reverse(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Reverse(int arg0)
         {
             return SExecute<int>("reverse", arg0);
@@ -260,7 +260,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#reverseBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ReverseBytes(int arg0)
         {
             return SExecute<int>("reverseBytes", arg0);
@@ -270,7 +270,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int RotateLeft(int arg0, int arg1)
         {
             return SExecute<int>("rotateLeft", arg0, arg1);
@@ -280,7 +280,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int RotateRight(int arg0, int arg1)
         {
             return SExecute<int>("rotateRight", arg0, arg1);
@@ -289,7 +289,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#signum(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Signum(int arg0)
         {
             return SExecute<int>("signum", arg0);
@@ -299,7 +299,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Sum(int arg0, int arg1)
         {
             return SExecute<int>("sum", arg0, arg1);
@@ -308,7 +308,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int? Decode(string arg0)
         {
@@ -319,7 +319,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int? GetInteger(string arg0, int arg1)
         {
             return SExecute<int?>("getInteger", arg0, arg1);
@@ -329,7 +329,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int? GetInteger(string arg0, int? arg1)
         {
             return SExecute<int?>("getInteger", arg0, arg1);
@@ -338,7 +338,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int? GetInteger(string arg0)
         {
             return SExecute<int?>("getInteger", arg0);
@@ -347,7 +347,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int? ValueOf(int arg0)
         {
             return SExecute<int?>("valueOf", arg0);
@@ -357,7 +357,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int? ValueOf(string arg0, int arg1)
         {
@@ -367,7 +367,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int? ValueOf(string arg0)
         {
@@ -377,7 +377,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toBinaryString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToBinaryString(int arg0)
         {
             return SExecute<string>("toBinaryString", arg0);
@@ -386,7 +386,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toHexString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToHexString(int arg0)
         {
             return SExecute<string>("toHexString", arg0);
@@ -395,7 +395,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toOctalString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToOctalString(int arg0)
         {
             return SExecute<string>("toOctalString", arg0);
@@ -405,7 +405,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0, int arg1)
         {
             return SExecute<string>("toString", arg0, arg1);
@@ -414,7 +414,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -424,7 +424,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToUnsignedString(int arg0, int arg1)
         {
             return SExecute<string>("toUnsignedString", arg0, arg1);
@@ -433,7 +433,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toUnsignedString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToUnsignedString(int arg0)
         {
             return SExecute<string>("toUnsignedString", arg0);
@@ -442,7 +442,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toUnsignedLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(int arg0)
         {
             return SExecute<long>("toUnsignedLong", arg0);
@@ -455,7 +455,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compareTo(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(int? arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -464,7 +464,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

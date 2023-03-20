@@ -71,7 +71,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewProxyInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecute("newProxyInstance", arg0, arg1, arg2, arg3);
@@ -98,7 +98,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMXBean()
         {
             return IExecute<bool>("isMXBean");
@@ -109,7 +109,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {

@@ -719,7 +719,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html"/>
     /// </summary>
-    public partial class Collection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Collection>
+    public partial class Collection : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3485,7 +3485,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html"/>
     /// </summary>
-    public partial class ServiceLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServiceLoader>
+    public partial class ServiceLoader : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

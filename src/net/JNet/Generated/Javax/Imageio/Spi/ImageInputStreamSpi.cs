@@ -78,7 +78,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanUseCacheFile()
         {
             return IExecute<bool>("canUseCacheFile");
@@ -87,7 +87,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool NeedsCacheFile()
         {
             return IExecute<bool>("needsCacheFile");

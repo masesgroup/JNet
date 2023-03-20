@@ -114,7 +114,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Get()
         {
             return IExecute<char>("get");
@@ -123,7 +123,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Get(int arg0)
         {
             return IExecute<char>("get", arg0);
@@ -178,7 +178,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char CharAt(int arg0)
         {
             return IExecute<char>("charAt", arg0);
@@ -187,7 +187,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
@@ -214,7 +214,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -223,7 +223,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compareTo(java.nio.CharBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.CharBuffer arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -232,7 +232,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#mismatch(java.nio.CharBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Mismatch(Java.Nio.CharBuffer arg0)
         {
             return IExecute<int>("mismatch", arg0);
@@ -241,7 +241,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#read(java.nio.CharBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.CharBuffer arg0)
         {

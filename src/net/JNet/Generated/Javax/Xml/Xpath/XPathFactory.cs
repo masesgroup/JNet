@@ -97,7 +97,7 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public bool GetFeature(string arg0)
         {
@@ -107,7 +107,7 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsObjectModelSupported(string arg0)
         {
             return IExecute<bool>("isObjectModelSupported", arg0);

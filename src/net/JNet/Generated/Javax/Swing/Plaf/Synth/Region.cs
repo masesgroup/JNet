@@ -284,7 +284,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#isSubregion()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSubregion()
         {
             return IExecute<bool>("isSubregion");

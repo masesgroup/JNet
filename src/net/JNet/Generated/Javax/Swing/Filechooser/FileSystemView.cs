@@ -96,7 +96,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isComputerNode(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsComputerNode(Java.Io.File arg0)
         {
             return IExecute<bool>("isComputerNode", arg0);
@@ -105,7 +105,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isDrive(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDrive(Java.Io.File arg0)
         {
             return IExecute<bool>("isDrive", arg0);
@@ -114,7 +114,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystem(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFileSystem(Java.Io.File arg0)
         {
             return IExecute<bool>("isFileSystem", arg0);
@@ -123,7 +123,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystemRoot(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFileSystemRoot(Java.Io.File arg0)
         {
             return IExecute<bool>("isFileSystemRoot", arg0);
@@ -132,7 +132,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFloppyDrive(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFloppyDrive(Java.Io.File arg0)
         {
             return IExecute<bool>("isFloppyDrive", arg0);
@@ -141,7 +141,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isHiddenFile(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsHiddenFile(Java.Io.File arg0)
         {
             return IExecute<bool>("isHiddenFile", arg0);
@@ -150,7 +150,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isLink(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLink(Java.Io.File arg0)
         {
             return IExecute<bool>("isLink", arg0);
@@ -160,7 +160,7 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsParent(Java.Io.File arg0, Java.Io.File arg1)
         {
             return IExecute<bool>("isParent", arg0, arg1);
@@ -169,7 +169,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isRoot(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRoot(Java.Io.File arg0)
         {
             return IExecute<bool>("isRoot", arg0);
@@ -236,7 +236,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isTraversable(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool?"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool? IsTraversable(Java.Io.File arg0)
         {
             return IExecute<bool?>("isTraversable", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetSystemDisplayName(Java.Io.File arg0)
         {
             return IExecute<string>("getSystemDisplayName", arg0);
@@ -254,7 +254,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemTypeDescription(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetSystemTypeDescription(Java.Io.File arg0)
         {
             return IExecute<string>("getSystemTypeDescription", arg0);

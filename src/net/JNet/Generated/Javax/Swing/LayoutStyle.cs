@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetContainerGap(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2)
         {
             return IExecute<int>("getContainerGap", arg0, arg1, arg2);
@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2, int arg3, Java.Awt.Container arg4)
         {
             return IExecute<int>("getPreferredGap", arg0, arg1, arg2, arg3, arg4);

@@ -105,7 +105,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#isSet(javax.xml.datatype.DatatypeConstants$Field)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.DatatypeConstants.Field"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSet(Javax.Xml.Datatype.DatatypeConstants.Field arg0)
         {
             return IExecute<bool>("isSet", arg0);
@@ -114,7 +114,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#compare(javax.xml.datatype.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.Duration"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Compare(Javax.Xml.Datatype.Duration arg0)
         {
             return IExecute<int>("compare", arg0);
@@ -176,7 +176,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#isLongerThan(javax.xml.datatype.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.Duration"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLongerThan(Javax.Xml.Datatype.Duration arg0)
         {
             return IExecute<bool>("isLongerThan", arg0);
@@ -185,7 +185,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#isShorterThan(javax.xml.datatype.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.Duration"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsShorterThan(Javax.Xml.Datatype.Duration arg0)
         {
             return IExecute<bool>("isShorterThan", arg0);
@@ -212,7 +212,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#getTimeInMillis(java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Calendar"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetTimeInMillis(Java.Util.Calendar arg0)
         {
             return IExecute<long>("getTimeInMillis", arg0);
@@ -221,7 +221,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#getTimeInMillis(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetTimeInMillis(Java.Util.Date arg0)
         {
             return IExecute<long>("getTimeInMillis", arg0);

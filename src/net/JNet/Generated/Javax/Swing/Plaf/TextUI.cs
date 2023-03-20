@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ViewToModel2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1, Javax.Swing.Text.Position.Bias[] arg2)
         {
             return IExecute<int>("viewToModel2D", arg0, arg1, arg2);
@@ -127,7 +127,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetToolTipText2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecute<string>("getToolTipText2D", arg0, arg1);

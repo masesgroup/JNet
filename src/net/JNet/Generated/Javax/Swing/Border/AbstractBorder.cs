@@ -71,7 +71,7 @@ namespace Javax.Swing.Border
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#isBorderOpaque()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBorderOpaque()
         {
             return IExecute<bool>("isBorderOpaque");
@@ -82,7 +82,7 @@ namespace Javax.Swing.Border
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetBaseline(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return IExecute<int>("getBaseline", arg0, arg1, arg2);

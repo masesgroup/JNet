@@ -242,7 +242,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool AddAll(Java.Util.Collection arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return SExecute<bool>("addAll", arg0); else return SExecute<bool>("addAll", arg0, arg1);
@@ -253,7 +253,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool ReplaceAll(Java.Util.List arg0, object arg1, object arg2)
         {
             return SExecute<bool>("replaceAll", arg0, arg1, arg2);
@@ -263,7 +263,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(Java.Util.List arg0, object arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(Java.Util.List arg0, object arg1, Java.Util.Comparator arg2)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2);
@@ -474,7 +474,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Max(Java.Util.Collection arg0, Java.Util.Comparator arg1)
         {
             return SExecute("max", arg0, arg1);
@@ -483,7 +483,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection%3C? extends T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Max(Java.Util.Collection arg0)
         {
             return SExecute("max", arg0);
@@ -493,7 +493,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Min(Java.Util.Collection arg0, Java.Util.Comparator arg1)
         {
             return SExecute("min", arg0, arg1);
@@ -502,7 +502,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection%3C? extends T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Min(Java.Util.Collection arg0)
         {
             return SExecute("min", arg0);
@@ -547,7 +547,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Disjoint(Java.Util.Collection arg0, Java.Util.Collection arg1)
         {
             return SExecute<bool>("disjoint", arg0, arg1);
@@ -602,7 +602,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Frequency(Java.Util.Collection arg0, object arg1)
         {
             return SExecute<int>("frequency", arg0, arg1);
@@ -612,7 +612,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int IndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
         {
             return SExecute<int>("indexOfSubList", arg0, arg1);
@@ -622,7 +622,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int LastIndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
         {
             return SExecute<int>("lastIndexOfSubList", arg0, arg1);

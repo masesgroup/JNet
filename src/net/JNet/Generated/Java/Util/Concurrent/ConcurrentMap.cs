@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecute<bool>("remove", arg0, arg1);
@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
             return IExecute<bool>("replace", arg0, arg1, arg2);
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
             return IExecute("putIfAbsent", arg0, arg1);
@@ -85,7 +85,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Replace(object arg0, object arg1)
         {
             return IExecute("replace", arg0, arg1);
@@ -95,7 +95,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("compute", arg0, arg1);
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
             return IExecute("computeIfAbsent", arg0, arg1);
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("computeIfPresent", arg0, arg1);
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecute("getOrDefault", arg0, arg1);
@@ -136,7 +136,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecute("merge", arg0, arg1, arg2);

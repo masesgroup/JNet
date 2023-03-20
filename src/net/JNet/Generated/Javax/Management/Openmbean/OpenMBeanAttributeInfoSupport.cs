@@ -147,7 +147,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasDefaultValue()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasDefaultValue()
         {
             return IExecute<bool>("hasDefaultValue");
@@ -156,7 +156,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasLegalValues()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasLegalValues()
         {
             return IExecute<bool>("hasLegalValues");
@@ -165,7 +165,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasMaxValue()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasMaxValue()
         {
             return IExecute<bool>("hasMaxValue");
@@ -174,7 +174,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasMinValue()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasMinValue()
         {
             return IExecute<bool>("hasMinValue");
@@ -183,7 +183,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#isValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValue(object arg0)
         {
             return IExecute<bool>("isValue", arg0);

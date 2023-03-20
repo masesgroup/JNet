@@ -233,7 +233,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasAttributes()
         {
             return IExecute<bool>("hasAttributes");
@@ -242,7 +242,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasChildNodes()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasChildNodes()
         {
             return IExecute<bool>("hasChildNodes");
@@ -251,7 +251,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDefaultNamespace(string arg0)
         {
             return IExecute<bool>("isDefaultNamespace", arg0);
@@ -260,7 +260,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isEqualNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEqualNode(Org.W3c.Dom.Node arg0)
         {
             return IExecute<bool>("isEqualNode", arg0);
@@ -269,7 +269,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isSameNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSameNode(Org.W3c.Dom.Node arg0)
         {
             return IExecute<bool>("isSameNode", arg0);
@@ -279,7 +279,7 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSupported(string arg0, string arg1)
         {
             return IExecute<bool>("isSupported", arg0, arg1);
@@ -289,7 +289,7 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetFeature(string arg0, string arg1)
         {
             return IExecute("getFeature", arg0, arg1);
@@ -298,7 +298,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetUserData(string arg0)
         {
             return IExecute("getUserData", arg0);
@@ -309,7 +309,7 @@ namespace Org.W3c.Dom
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.UserDataHandler"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object SetUserData(string arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
         {
             return IExecute("setUserData", arg0, arg1, arg2);
@@ -318,7 +318,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string LookupNamespaceURI(string arg0)
         {
             return IExecute<string>("lookupNamespaceURI", arg0);
@@ -327,7 +327,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string LookupPrefix(string arg0)
         {
             return IExecute<string>("lookupPrefix", arg0);
@@ -387,7 +387,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#compareDocumentPosition(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareDocumentPosition(Org.W3c.Dom.Node arg0)
         {

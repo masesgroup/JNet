@@ -82,7 +82,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool After(Java.Sql.Timestamp arg0)
         {
             return IExecute<bool>("after", arg0);
@@ -91,7 +91,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#before(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Before(Java.Sql.Timestamp arg0)
         {
             return IExecute<bool>("before", arg0);
@@ -100,7 +100,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#compareTo(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Sql.Timestamp arg0)
         {
             return IExecute<int>("compareTo", arg0);

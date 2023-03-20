@@ -107,7 +107,7 @@ namespace Javax.Crypto
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int GenerateSecret(byte[] arg0, int arg1)

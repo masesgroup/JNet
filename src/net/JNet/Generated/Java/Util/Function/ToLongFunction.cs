@@ -49,7 +49,7 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ApplyAsLong(object arg0)
         {
             return IExecute<long>("applyAsLong", arg0);

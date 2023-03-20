@@ -61,7 +61,7 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(int arg0)
         {
             return IExecute<bool>("isDeclared", arg0);
@@ -71,7 +71,7 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(string arg0, string arg1)
         {
             return IExecute<bool>("isDeclared", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(string arg0)
         {
             return IExecute<bool>("isDeclared", arg0);
@@ -89,7 +89,7 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
             return IExecute<bool>("isSpecified", arg0);
@@ -99,7 +99,7 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(string arg0, string arg1)
         {
             return IExecute<bool>("isSpecified", arg0, arg1);
@@ -108,7 +108,7 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(string arg0)
         {
             return IExecute<bool>("isSpecified", arg0);

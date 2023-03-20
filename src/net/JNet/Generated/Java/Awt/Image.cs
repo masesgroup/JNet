@@ -94,7 +94,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getHeight(java.awt.image.ImageObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetHeight(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecute<int>("getHeight", arg0);
@@ -103,7 +103,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getWidth(java.awt.image.ImageObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetWidth(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecute<int>("getWidth", arg0);
@@ -113,7 +113,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(string arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecute("getProperty", arg0, arg1);

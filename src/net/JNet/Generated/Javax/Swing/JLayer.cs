@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
@@ -133,7 +133,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);

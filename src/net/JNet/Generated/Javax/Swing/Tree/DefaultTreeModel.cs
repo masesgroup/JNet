@@ -97,7 +97,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#asksAllowsChildren()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AsksAllowsChildren()
         {
             return IExecute<bool>("asksAllowsChildren");
@@ -106,7 +106,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#isLeaf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLeaf(object arg0)
         {
             return IExecute<bool>("isLeaf", arg0);
@@ -115,7 +115,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getChildCount(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetChildCount(object arg0)
         {
             return IExecute<int>("getChildCount", arg0);
@@ -125,7 +125,7 @@ namespace Javax.Swing.Tree
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetIndexOfChild(object arg0, object arg1)
         {
             return IExecute<int>("getIndexOfChild", arg0, arg1);
@@ -135,7 +135,7 @@ namespace Javax.Swing.Tree
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetChild(object arg0, int arg1)
         {
             return IExecute("getChild", arg0, arg1);

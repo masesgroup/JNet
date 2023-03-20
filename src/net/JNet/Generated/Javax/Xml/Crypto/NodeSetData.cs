@@ -37,10 +37,6 @@ namespace Javax.Xml.Crypto
         /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData"/> to <see cref="Javax.Xml.Crypto.Data"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.Data>();
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData"/> to <see cref="Java.Lang.Iterable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Iterable(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Java.Lang.Iterable>();
         
         #endregion
 

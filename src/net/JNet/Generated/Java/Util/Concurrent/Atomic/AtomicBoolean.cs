@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchange(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchange", arg0, arg1);
@@ -103,7 +103,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchangeAcquire(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchangeAcquire", arg0, arg1);
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchangeRelease(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchangeRelease", arg0, arg1);
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1);
@@ -132,7 +132,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Get()
         {
             return IExecute<bool>("get");
@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool GetAndSet(bool arg0)
         {
             return IExecute<bool>("getAndSet", arg0);
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);

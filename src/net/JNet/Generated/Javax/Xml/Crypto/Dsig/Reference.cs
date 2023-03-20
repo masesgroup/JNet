@@ -106,7 +106,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {

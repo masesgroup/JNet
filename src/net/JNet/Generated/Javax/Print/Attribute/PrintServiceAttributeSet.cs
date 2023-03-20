@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecute<bool>("add", arg0);
@@ -62,7 +62,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddAll(Javax.Print.Attribute.AttributeSet arg0)
         {
             return IExecute<bool>("addAll", arg0);

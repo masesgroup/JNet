@@ -82,7 +82,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
@@ -92,7 +92,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
@@ -101,7 +101,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -110,7 +110,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -122,7 +122,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
@@ -131,7 +131,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("intersects", arg0);
@@ -140,7 +140,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
@@ -149,7 +149,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isPolygonal()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPolygonal()
         {
             return IExecute<bool>("isPolygonal");
@@ -158,7 +158,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isRectangular()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRectangular()
         {
             return IExecute<bool>("isRectangular");
@@ -167,7 +167,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isSingular()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSingular()
         {
             return IExecute<bool>("isSingular");

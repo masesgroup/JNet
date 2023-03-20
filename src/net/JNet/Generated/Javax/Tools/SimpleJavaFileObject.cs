@@ -88,7 +88,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#delete()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Delete()
         {
             return IExecute<bool>("delete");
@@ -98,7 +98,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNameCompatible(string arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
             return IExecute<bool>("isNameCompatible", arg0, arg1);

@@ -49,7 +49,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Class%3CT%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetInterface(Java.Lang.Class arg0)
         {
             return IExecute("getInterface", arg0);
@@ -59,7 +59,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetInterface(object arg0, Java.Lang.Class arg1)
         {
             return IExecute("getInterface", arg0, arg1);
@@ -69,7 +69,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeFunction(string arg0, params object[] arg1)
@@ -82,7 +82,7 @@ namespace Javax.Script
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeMethod(object arg0, string arg1, params object[] arg2)

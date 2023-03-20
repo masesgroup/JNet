@@ -93,7 +93,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeCategorySupported(java.lang.Class%3C? extends javax.print.attribute.Attribute%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAttributeCategorySupported(Java.Lang.Class arg0)
         {
             return IExecute<bool>("isAttributeCategorySupported", arg0);
@@ -104,7 +104,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
         /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
         /// <param name="arg2"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAttributeValueSupported(Javax.Print.Attribute.Attribute arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
         {
             return IExecute<bool>("isAttributeValueSupported", arg0, arg1, arg2);
@@ -113,7 +113,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isDocFlavorSupported(javax.print.DocFlavor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDocFlavorSupported(Javax.Print.DocFlavor arg0)
         {
             return IExecute<bool>("isDocFlavorSupported", arg0);
@@ -122,7 +122,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getDefaultAttributeValue(java.lang.Class%3C? extends javax.print.attribute.Attribute%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDefaultAttributeValue(Java.Lang.Class arg0)
         {
             return IExecute("getDefaultAttributeValue", arg0);
@@ -133,7 +133,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
         /// <param name="arg2"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetSupportedAttributeValues(Java.Lang.Class arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
         {
             return IExecute("getSupportedAttributeValues", arg0, arg1, arg2);

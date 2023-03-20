@@ -93,7 +93,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#walk(java.util.function.Function%3C? super java.util.stream.Stream%3Cjava.lang.StackWalker$StackFrame%3E, ? extends T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Walk(Java.Util.Function.Function arg0)
         {
             return IExecute("walk", arg0);
@@ -240,7 +240,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsNativeMethod()
             {
                 return IExecute<bool>("isNativeMethod");
@@ -258,7 +258,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string GetClassName()
             {
                 return IExecute<string>("getClassName");

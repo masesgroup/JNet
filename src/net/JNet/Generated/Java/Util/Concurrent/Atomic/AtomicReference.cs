@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1);
@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(object arg0, object arg1)
         {
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
@@ -103,7 +103,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(object arg0, object arg1)
         {
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(object arg0, object arg1)
         {
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(object arg0, object arg1)
         {
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
@@ -133,7 +133,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object AccumulateAndGet(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
             return IExecute("accumulateAndGet", arg0, arg1);
@@ -143,7 +143,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object CompareAndExchange(object arg0, object arg1)
         {
             return IExecute("compareAndExchange", arg0, arg1);
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeAcquire(object arg0, object arg1)
         {
             return IExecute("compareAndExchangeAcquire", arg0, arg1);
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeRelease(object arg0, object arg1)
         {
             return IExecute("compareAndExchangeRelease", arg0, arg1);
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get()
         {
             return IExecute("get");
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndAccumulate(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
             return IExecute("getAndAccumulate", arg0, arg1);
@@ -191,7 +191,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndSet(V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndSet(object arg0)
         {
             return IExecute("getAndSet", arg0);
@@ -200,7 +200,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator%3CV%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndUpdate(Java.Util.Function.UnaryOperator arg0)
         {
             return IExecute("getAndUpdate", arg0);
@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator%3CV%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object UpdateAndGet(Java.Util.Function.UnaryOperator arg0)
         {
             return IExecute("updateAndGet", arg0);

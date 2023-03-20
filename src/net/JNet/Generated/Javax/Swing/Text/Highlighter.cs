@@ -58,7 +58,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Highlighter.HighlightPainter"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public object AddHighlight(int arg0, int arg1, Javax.Swing.Text.Highlighter.HighlightPainter arg2)
         {

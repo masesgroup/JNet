@@ -281,7 +281,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectedIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecute<bool>("isSelectedIndex", arg0);
@@ -290,7 +290,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecute<bool>("isSelectionEmpty");
@@ -310,7 +310,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetNextMatch(string arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecute<int>("getNextMatch", arg0, arg1, arg2);
@@ -321,7 +321,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
@@ -332,7 +332,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
@@ -341,7 +341,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#locationToIndex(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LocationToIndex(Java.Awt.Point arg0)
         {
             return IExecute<int>("locationToIndex", arg0);
@@ -483,7 +483,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsInsert()
             {
                 return IExecute<bool>("isInsert");

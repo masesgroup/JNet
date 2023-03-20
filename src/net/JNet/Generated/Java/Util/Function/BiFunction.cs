@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Apply(object arg0, object arg1)
         {
             return IExecute("apply", arg0, arg1);

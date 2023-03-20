@@ -49,7 +49,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
@@ -58,7 +58,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Value()
         {
             return IExecute("value");

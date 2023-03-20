@@ -84,7 +84,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLocallyDefined(Javax.Swing.KeyStroke arg0)
         {
             return IExecute<bool>("isLocallyDefined", arg0);

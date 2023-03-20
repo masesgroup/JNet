@@ -147,7 +147,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector%3C? super T, A, R%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.Collector"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Collect(Java.Util.Stream.Collector arg0)
         {
             return IExecute("collect", arg0);
@@ -176,7 +176,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BiConsumer arg2)
         {
             return IExecute("collect", arg0, arg1, arg2);
@@ -187,7 +187,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Reduce(object arg0, Java.Util.Function.BiFunction arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecute("reduce", arg0, arg1, arg2);
@@ -196,7 +196,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#allMatch(java.util.function.Predicate%3C? super T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AllMatch(Java.Util.Function.Predicate arg0)
         {
             return IExecute<bool>("allMatch", arg0);
@@ -205,7 +205,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#anyMatch(java.util.function.Predicate%3C? super T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AnyMatch(Java.Util.Function.Predicate arg0)
         {
             return IExecute<bool>("anyMatch", arg0);
@@ -214,7 +214,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#noneMatch(java.util.function.Predicate%3C? super T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool NoneMatch(Java.Util.Function.Predicate arg0)
         {
             return IExecute<bool>("noneMatch", arg0);
@@ -394,7 +394,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Count()
         {
             return IExecute<long>("count");
@@ -404,7 +404,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Reduce(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
             return IExecute("reduce", arg0, arg1);

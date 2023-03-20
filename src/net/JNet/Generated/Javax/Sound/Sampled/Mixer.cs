@@ -88,7 +88,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line$Info)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecute<bool>("isLineSupported", arg0);
@@ -98,7 +98,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             return IExecute<bool>("isSynchronizationSupported", arg0, arg1);
@@ -107,7 +107,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line$Info)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetMaxLines(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecute<int>("getMaxLines", arg0);

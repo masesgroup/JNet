@@ -175,7 +175,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string CopyValueOf(char[] arg0, int arg1, int arg2)
         {
             return SExecute<string>("copyValueOf", arg0, arg1, arg2);
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#copyValueOf(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string CopyValueOf(char[] arg0)
         {
             return SExecute<string>("copyValueOf", arg0);
@@ -194,7 +194,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Format(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return SExecute<string>("format", arg0); else return SExecute<string>("format", arg0, arg1);
@@ -205,7 +205,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Format(Java.Util.Locale arg0, string arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return SExecute<string>("format", arg0, arg1); else return SExecute<string>("format", arg0, arg1, arg2);
@@ -215,7 +215,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Join(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
             if (arg1.Length == 0) return SExecute<string>("join", arg0); else return SExecute<string>("join", arg0, arg1);
@@ -225,7 +225,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Join(Java.Lang.CharSequence arg0, Java.Lang.Iterable arg1)
         {
             return SExecute<string>("join", arg0, arg1);
@@ -234,7 +234,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(bool arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -243,7 +243,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(char arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -254,7 +254,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(char[] arg0, int arg1, int arg2)
         {
             return SExecute<string>("valueOf", arg0, arg1, arg2);
@@ -263,7 +263,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(char[] arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(double arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -281,7 +281,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(float arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -290,7 +290,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(int arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -299,7 +299,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(object arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -308,7 +308,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ValueOf(long arg0)
         {
             return SExecute<string>("valueOf", arg0);
@@ -328,7 +328,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contains(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Lang.CharSequence arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -337,7 +337,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContentEquals(Java.Lang.CharSequence arg0)
         {
             return IExecute<bool>("contentEquals", arg0);
@@ -346,7 +346,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contentEquals(java.lang.StringBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContentEquals(Java.Lang.StringBuffer arg0)
         {
             return IExecute<bool>("contentEquals", arg0);
@@ -355,7 +355,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#endsWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool EndsWith(string arg0)
         {
             return IExecute<bool>("endsWith", arg0);
@@ -364,7 +364,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#equalsIgnoreCase(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool EqualsIgnoreCase(string arg0)
         {
             return IExecute<bool>("equalsIgnoreCase", arg0);
@@ -373,7 +373,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isBlank()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBlank()
         {
             return IExecute<bool>("isBlank");
@@ -382,7 +382,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
@@ -391,7 +391,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#matches(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Matches(string arg0)
         {
             return IExecute<bool>("matches", arg0);
@@ -404,7 +404,7 @@ namespace Java.Lang
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RegionMatches(bool arg0, int arg1, string arg2, int arg3, int arg4)
         {
             return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3, arg4);
@@ -416,7 +416,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RegionMatches(int arg0, string arg1, int arg2, int arg3)
         {
             return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3);
@@ -426,7 +426,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool StartsWith(string arg0, int arg1)
         {
             return IExecute<bool>("startsWith", arg0, arg1);
@@ -435,7 +435,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#startsWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool StartsWith(string arg0)
         {
             return IExecute<bool>("startsWith", arg0);
@@ -463,7 +463,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char CharAt(int arg0)
         {
             return IExecute<char>("charAt", arg0);
@@ -481,7 +481,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CodePointAt(int arg0)
         {
             return IExecute<int>("codePointAt", arg0);
@@ -490,7 +490,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointBefore(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CodePointBefore(int arg0)
         {
             return IExecute<int>("codePointBefore", arg0);
@@ -500,7 +500,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CodePointCount(int arg0, int arg1)
         {
             return IExecute<int>("codePointCount", arg0, arg1);
@@ -509,7 +509,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -518,7 +518,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(string arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -527,7 +527,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareToIgnoreCase(string arg0)
         {
             return IExecute<int>("compareToIgnoreCase", arg0);
@@ -537,7 +537,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int IndexOf(int arg0, int arg1)
         {
             return IExecute<int>("indexOf", arg0, arg1);
@@ -546,7 +546,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int IndexOf(int arg0)
         {
             return IExecute<int>("indexOf", arg0);
@@ -556,7 +556,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int IndexOf(string arg0, int arg1)
         {
             return IExecute<int>("indexOf", arg0, arg1);
@@ -565,7 +565,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int IndexOf(string arg0)
         {
             return IExecute<int>("indexOf", arg0);
@@ -575,7 +575,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LastIndexOf(int arg0, int arg1)
         {
             return IExecute<int>("lastIndexOf", arg0, arg1);
@@ -584,7 +584,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LastIndexOf(int arg0)
         {
             return IExecute<int>("lastIndexOf", arg0);
@@ -594,7 +594,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LastIndexOf(string arg0, int arg1)
         {
             return IExecute<int>("lastIndexOf", arg0, arg1);
@@ -603,7 +603,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LastIndexOf(string arg0)
         {
             return IExecute<int>("lastIndexOf", arg0);
@@ -612,7 +612,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
@@ -622,7 +622,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int OffsetByCodePoints(int arg0, int arg1)
         {
             return IExecute<int>("offsetByCodePoints", arg0, arg1);
@@ -641,7 +641,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#concat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Concat(string arg0)
         {
             return IExecute<string>("concat", arg0);
@@ -650,7 +650,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#repeat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Repeat(int arg0)
         {
             return IExecute<string>("repeat", arg0);
@@ -660,7 +660,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Replace(char arg0, char arg1)
         {
             return IExecute<string>("replace", arg0, arg1);
@@ -670,7 +670,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Replace(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
             return IExecute<string>("replace", arg0, arg1);
@@ -680,7 +680,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ReplaceAll(string arg0, string arg1)
         {
             return IExecute<string>("replaceAll", arg0, arg1);
@@ -690,7 +690,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ReplaceFirst(string arg0, string arg1)
         {
             return IExecute<string>("replaceFirst", arg0, arg1);
@@ -699,7 +699,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#strip()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Strip()
         {
             return IExecute<string>("strip");
@@ -708,7 +708,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripLeading()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string StripLeading()
         {
             return IExecute<string>("stripLeading");
@@ -717,7 +717,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripTrailing()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string StripTrailing()
         {
             return IExecute<string>("stripTrailing");
@@ -727,7 +727,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Substring(int arg0, int arg1)
         {
             return IExecute<string>("substring", arg0, arg1);
@@ -736,7 +736,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#substring(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Substring(int arg0)
         {
             return IExecute<string>("substring", arg0);
@@ -745,7 +745,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toLowerCase()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToLowerCase()
         {
             return IExecute<string>("toLowerCase");
@@ -754,7 +754,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toLowerCase(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToLowerCase(Java.Util.Locale arg0)
         {
             return IExecute<string>("toLowerCase", arg0);
@@ -763,7 +763,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toUpperCase()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToUpperCase()
         {
             return IExecute<string>("toUpperCase");
@@ -772,7 +772,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toUpperCase(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToUpperCase(Java.Util.Locale arg0)
         {
             return IExecute<string>("toUpperCase", arg0);
@@ -781,7 +781,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#trim()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Trim()
         {
             return IExecute<string>("trim");
@@ -836,7 +836,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#intern()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Intern()
         {
             return IExecute<string>("intern");

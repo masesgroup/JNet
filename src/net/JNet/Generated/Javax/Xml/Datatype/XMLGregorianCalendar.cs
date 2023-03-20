@@ -137,7 +137,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#isValid()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
@@ -146,7 +146,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#compare(javax.xml.datatype.XMLGregorianCalendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Compare(Javax.Xml.Datatype.XMLGregorianCalendar arg0)
         {
             return IExecute<int>("compare", arg0);
@@ -155,7 +155,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toXMLFormat()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToXMLFormat()
         {
             return IExecute<string>("toXMLFormat");

@@ -60,7 +60,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCData()
         {
             return IExecute<bool>("isCData");
@@ -69,7 +69,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIgnorableWhiteSpace()
         {
             return IExecute<bool>("isIgnorableWhiteSpace");
@@ -78,7 +78,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsWhiteSpace()
         {
             return IExecute<bool>("isWhiteSpace");

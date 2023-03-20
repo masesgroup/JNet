@@ -95,7 +95,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDynamic()
         {
             return IExecute<bool>("isDynamic");
@@ -133,7 +133,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);

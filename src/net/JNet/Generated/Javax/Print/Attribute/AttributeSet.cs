@@ -49,7 +49,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecute<bool>("add", arg0);
@@ -58,7 +58,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddAll(Javax.Print.Attribute.AttributeSet arg0)
         {
             return IExecute<bool>("addAll", arg0);
@@ -67,7 +67,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#containsKey(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(Java.Lang.Class arg0)
         {
             return IExecute<bool>("containsKey", arg0);
@@ -76,7 +76,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#containsValue(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecute<bool>("containsValue", arg0);
@@ -85,7 +85,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#isEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
@@ -94,7 +94,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#remove(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Remove(Java.Lang.Class arg0)
         {
             return IExecute<bool>("remove", arg0);
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#remove(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Remove(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecute<bool>("remove", arg0);
@@ -112,7 +112,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#size()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");

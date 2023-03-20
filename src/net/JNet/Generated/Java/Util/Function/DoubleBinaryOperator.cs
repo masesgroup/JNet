@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double ApplyAsDouble(double arg0, double arg1)
         {
             return IExecute<double>("applyAsDouble", arg0, arg1);

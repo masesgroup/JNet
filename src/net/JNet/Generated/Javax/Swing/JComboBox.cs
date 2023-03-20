@@ -179,7 +179,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
             return IExecute<bool>("isEditable");
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
             return IExecute<bool>("isLightWeightPopupEnabled");
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible()
         {
             return IExecute<bool>("isPopupVisible");
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#selectWithKeyChar(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool SelectWithKeyChar(char arg0)
         {
             return IExecute<bool>("selectWithKeyChar", arg0);
@@ -215,7 +215,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetItemAt(int arg0)
         {
             return IExecute("getItemAt", arg0);
@@ -470,7 +470,7 @@ namespace Javax.Swing
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.ComboBoxModel"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int SelectionForKey(char arg0, Javax.Swing.ComboBoxModel arg1)
             {
                 return IExecute<int>("selectionForKey", arg0, arg1);

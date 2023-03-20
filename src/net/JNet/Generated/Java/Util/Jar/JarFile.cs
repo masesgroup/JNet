@@ -146,7 +146,7 @@ namespace Java.Util.Jar
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#isMultiRelease()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMultiRelease()
         {
             return IExecute<bool>("isMultiRelease");

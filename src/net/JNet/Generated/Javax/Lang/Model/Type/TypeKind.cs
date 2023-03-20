@@ -155,7 +155,7 @@ namespace Javax.Lang.Model.Type
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#isPrimitive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
             return IExecute<bool>("isPrimitive");

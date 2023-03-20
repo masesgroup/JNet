@@ -85,7 +85,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassAnnotation(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetClassAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<string>("getClassAnnotation", arg0);

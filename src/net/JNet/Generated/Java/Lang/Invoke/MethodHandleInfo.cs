@@ -81,7 +81,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ReferenceKindToString(int arg0)
         {
             return SExecute<string>("referenceKindToString", arg0);
@@ -93,7 +93,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0, Java.Lang.Class arg1, string arg2, Java.Lang.Invoke.MethodType arg3)
         {
             return SExecute<string>("toString", arg0, arg1, arg2, arg3);
@@ -151,7 +151,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
             return IExecute<bool>("isVarArgs");

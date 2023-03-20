@@ -49,7 +49,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#add(javax.sound.midi.MidiEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Sound.Midi.MidiEvent arg0)
         {
             return IExecute<bool>("add", arg0);
@@ -58,7 +58,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#remove(javax.sound.midi.MidiEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Remove(Javax.Sound.Midi.MidiEvent arg0)
         {
             return IExecute<bool>("remove", arg0);
@@ -67,7 +67,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#size()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
@@ -86,7 +86,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#ticks()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Ticks()
         {
             return IExecute<long>("ticks");

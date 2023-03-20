@@ -60,7 +60,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#isJavaMIMEType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsJavaMIMEType(string arg0)
         {
             return SExecute<bool>("isJavaMIMEType", arg0);
@@ -79,7 +79,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeJavaMIMEType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string DecodeJavaMIMEType(string arg0)
         {
             return SExecute<string>("decodeJavaMIMEType", arg0);
@@ -88,7 +88,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeDataFlavor(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string EncodeDataFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return SExecute<string>("encodeDataFlavor", arg0);
@@ -97,7 +97,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeJavaMIMEType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string EncodeJavaMIMEType(string arg0)
         {
             return SExecute<string>("encodeJavaMIMEType", arg0);

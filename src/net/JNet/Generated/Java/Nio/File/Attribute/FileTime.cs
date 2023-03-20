@@ -81,7 +81,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -90,7 +90,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -108,7 +108,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long To(Java.Util.Concurrent.TimeUnit arg0)
         {
             return IExecute<long>("to", arg0);
@@ -117,7 +117,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ToMillis()
         {
             return IExecute<long>("toMillis");

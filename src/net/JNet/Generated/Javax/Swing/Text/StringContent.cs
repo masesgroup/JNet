@@ -61,7 +61,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
@@ -71,7 +71,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetString(int arg0, int arg1)
         {

@@ -49,7 +49,7 @@ namespace Javax.Xml.Catalog
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchPublic(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string MatchPublic(string arg0)
         {
             return IExecute<string>("matchPublic", arg0);
@@ -58,7 +58,7 @@ namespace Javax.Xml.Catalog
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchSystem(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string MatchSystem(string arg0)
         {
             return IExecute<string>("matchSystem", arg0);
@@ -67,7 +67,7 @@ namespace Javax.Xml.Catalog
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string MatchURI(string arg0)
         {
             return IExecute<string>("matchURI", arg0);

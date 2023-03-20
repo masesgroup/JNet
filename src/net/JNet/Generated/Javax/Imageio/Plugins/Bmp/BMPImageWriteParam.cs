@@ -57,7 +57,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTopDown()
         {
             return IExecute<bool>("isTopDown");

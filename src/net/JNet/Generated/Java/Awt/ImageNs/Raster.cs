@@ -314,7 +314,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetSampleDouble(int arg0, int arg1, int arg2)
         {
             return IExecute<double>("getSampleDouble", arg0, arg1, arg2);
@@ -363,7 +363,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetSampleFloat(int arg0, int arg1, int arg2)
         {
             return IExecute<float>("getSampleFloat", arg0, arg1, arg2);
@@ -412,7 +412,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetSample(int arg0, int arg1, int arg2)
         {
             return IExecute<int>("getSample", arg0, arg1, arg2);
@@ -528,7 +528,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4)
         {
             return IExecute("getDataElements", arg0, arg1, arg2, arg3, arg4);
@@ -539,7 +539,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, int arg1, object arg2)
         {
             return IExecute("getDataElements", arg0, arg1, arg2);

@@ -53,7 +53,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double Sum()
         {
             return IExecute<double>("sum");
@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double SumThenReset()
         {
             return IExecute<double>("sumThenReset");

@@ -49,7 +49,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#format(java.util.logging.LogRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Format(Java.Util.Logging.LogRecord arg0)
         {
             return IExecute<string>("format", arg0);
@@ -58,7 +58,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#formatMessage(java.util.logging.LogRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string FormatMessage(Java.Util.Logging.LogRecord arg0)
         {
             return IExecute<string>("formatMessage", arg0);
@@ -67,7 +67,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getHead(java.util.logging.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetHead(Java.Util.Logging.Handler arg0)
         {
             return IExecute<string>("getHead", arg0);
@@ -76,7 +76,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getTail(java.util.logging.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetTail(Java.Util.Logging.Handler arg0)
         {
             return IExecute<string>("getTail", arg0);

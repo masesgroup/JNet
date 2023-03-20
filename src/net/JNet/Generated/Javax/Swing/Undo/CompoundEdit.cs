@@ -49,7 +49,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#isInProgress()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsInProgress()
         {
             return IExecute<bool>("isInProgress");

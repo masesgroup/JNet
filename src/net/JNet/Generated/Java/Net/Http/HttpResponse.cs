@@ -49,7 +49,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int StatusCode()
         {
             return IExecute<int>("statusCode");
@@ -112,7 +112,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Body()
         {
             return IExecute("body");
@@ -626,7 +626,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int StatusCode()
             {
                 return IExecute<int>("statusCode");

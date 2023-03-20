@@ -138,7 +138,7 @@ namespace Org.W3c.Dom.Ranges
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Ranges.Range"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareBoundaryPoints(short arg0, Org.W3c.Dom.Ranges.Range arg1)
         {

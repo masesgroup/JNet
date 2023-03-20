@@ -68,7 +68,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanDock(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return IExecute<bool>("canDock", arg0, arg1);
@@ -77,7 +77,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFloating()
         {
             return IExecute<bool>("isFloating");
@@ -86,7 +86,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRolloverBorders()
         {
             return IExecute<bool>("isRolloverBorders");

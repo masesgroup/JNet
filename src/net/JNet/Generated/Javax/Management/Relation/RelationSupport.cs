@@ -119,7 +119,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/>
         /// </summary>
         
-        /// <returns><see langword="bool?"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool? IsInRelationService()
         {
             return IExecute<bool?>("isInRelationService");
@@ -128,7 +128,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
         public int? GetRoleCardinality(string arg0)

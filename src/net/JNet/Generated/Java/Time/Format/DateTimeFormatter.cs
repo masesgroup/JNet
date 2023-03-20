@@ -226,7 +226,7 @@ namespace Java.Time.Format
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Parse(Java.Lang.CharSequence arg0, Java.Time.Temporal.TemporalQuery arg1)
         {
             return IExecute("parse", arg0, arg1);
@@ -235,7 +235,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#format.DateTimeFormatter.format(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Format(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecute<string>("format", arg0);

@@ -75,7 +75,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isError()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsError()
         {
             return IExecute<bool>("isError");
@@ -84,7 +84,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isMalformed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMalformed()
         {
             return IExecute<bool>("isMalformed");
@@ -93,7 +93,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isOverflow()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOverflow()
         {
             return IExecute<bool>("isOverflow");
@@ -102,7 +102,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnderflow()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsUnderflow()
         {
             return IExecute<bool>("isUnderflow");
@@ -111,7 +111,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnmappable()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsUnmappable()
         {
             return IExecute<bool>("isUnmappable");
@@ -120,7 +120,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");

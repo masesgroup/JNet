@@ -50,7 +50,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitExecutableAsConstructor(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecute("visitExecutableAsConstructor", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitExecutableAsInstanceInit(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecute("visitExecutableAsInstanceInit", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitExecutableAsMethod(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecute("visitExecutableAsMethod", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitExecutableAsStaticInit(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecute("visitExecutableAsStaticInit", arg0, arg1);
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitTypeAsAnnotationType(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecute("visitTypeAsAnnotationType", arg0, arg1);
@@ -100,7 +100,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitTypeAsClass(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecute("visitTypeAsClass", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitTypeAsEnum(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecute("visitTypeAsEnum", arg0, arg1);
@@ -120,7 +120,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitTypeAsInterface(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecute("visitTypeAsInterface", arg0, arg1);
@@ -130,7 +130,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsEnumConstant(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsEnumConstant", arg0, arg1);
@@ -140,7 +140,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsExceptionParameter(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsExceptionParameter", arg0, arg1);
@@ -150,7 +150,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsField(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsField", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsLocalVariable(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsLocalVariable", arg0, arg1);
@@ -170,7 +170,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsParameter(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsParameter", arg0, arg1);
@@ -180,7 +180,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariableAsResourceVariable(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariableAsResourceVariable", arg0, arg1);

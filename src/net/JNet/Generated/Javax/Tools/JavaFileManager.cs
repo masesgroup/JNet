@@ -62,7 +62,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HandleOption(string arg0, Java.Util.Iterator arg1)
         {
             return IExecute<bool>("handleOption", arg0, arg1);
@@ -71,7 +71,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasLocation(Javax.Tools.JavaFileManager.Location arg0)
         {
             return IExecute<bool>("hasLocation", arg0);
@@ -81,7 +81,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("isSameFile", arg0, arg1);
@@ -113,7 +113,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string InferBinaryName(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
             return IExecute<string>("inferBinaryName", arg0, arg1);
@@ -202,7 +202,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool Contains(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.FileObject arg1)
         {
@@ -222,7 +222,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string InferModuleName(Javax.Tools.JavaFileManager.Location arg0)
         {
@@ -285,7 +285,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsOutputLocation()
             {
                 return IExecute<bool>("isOutputLocation");
@@ -294,7 +294,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsModuleOrientedLocation()
             {
                 return IExecute<bool>("isModuleOrientedLocation");

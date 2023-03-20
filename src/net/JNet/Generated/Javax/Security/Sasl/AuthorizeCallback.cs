@@ -87,7 +87,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAuthorized()
         {
             return IExecute<bool>("isAuthorized");

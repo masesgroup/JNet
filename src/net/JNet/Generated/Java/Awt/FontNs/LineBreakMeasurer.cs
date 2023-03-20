@@ -77,7 +77,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int NextOffset(float arg0, int arg1, bool arg2)
         {
             return IExecute<int>("nextOffset", arg0, arg1, arg2);
@@ -86,7 +86,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#nextOffset(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int NextOffset(float arg0)
         {
             return IExecute<int>("nextOffset", arg0);

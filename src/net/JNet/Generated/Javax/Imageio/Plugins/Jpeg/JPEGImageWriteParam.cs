@@ -85,7 +85,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AreTablesSet()
         {
             return IExecute<bool>("areTablesSet");

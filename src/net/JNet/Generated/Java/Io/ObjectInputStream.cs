@@ -73,7 +73,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readBoolean()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
         {
@@ -83,7 +83,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readByte()"/>
         /// </summary>
         
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
         {
@@ -93,7 +93,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readChar()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
         {
@@ -103,7 +103,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readDouble()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
         {
@@ -113,7 +113,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readObject()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadObject()
@@ -124,7 +124,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFloat()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
         {
@@ -134,7 +134,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readInt()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
         {
@@ -144,7 +144,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedByte()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
         {
@@ -154,7 +154,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedShort()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
         {
@@ -164,7 +164,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#skipBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
         {
@@ -185,7 +185,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnshared()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadUnshared()
@@ -196,7 +196,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUTF()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string ReadUTF()
         {
@@ -206,7 +206,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readLong()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
         {
@@ -216,7 +216,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readShort()"/>
         /// </summary>
         
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()
         {
@@ -298,7 +298,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public bool Defaulted(string arg0)
             {
@@ -309,7 +309,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public bool Get(string arg0, bool arg1)
             {
@@ -320,7 +320,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
-            /// <returns><see langword="byte"/></returns>
+            /// <returns><see cref="byte"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public byte Get(string arg0, byte arg1)
             {
@@ -331,7 +331,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="char"/></param>
-            /// <returns><see langword="char"/></returns>
+            /// <returns><see cref="char"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public char Get(string arg0, char arg1)
             {
@@ -342,7 +342,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="double"/></param>
-            /// <returns><see langword="double"/></returns>
+            /// <returns><see cref="double"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public double Get(string arg0, double arg1)
             {
@@ -353,7 +353,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="float"/></param>
-            /// <returns><see langword="float"/></returns>
+            /// <returns><see cref="float"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public float Get(string arg0, float arg1)
             {
@@ -364,7 +364,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public int Get(string arg0, int arg1)
             {
@@ -375,7 +375,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public object Get(string arg0, object arg1)
             {
@@ -386,7 +386,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="long"/></param>
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public long Get(string arg0, long arg1)
             {
@@ -397,7 +397,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="short"/></param>
-            /// <returns><see langword="short"/></returns>
+            /// <returns><see cref="short"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public short Get(string arg0, short arg1)
             {

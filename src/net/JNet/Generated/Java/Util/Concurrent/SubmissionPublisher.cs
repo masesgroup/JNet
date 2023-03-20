@@ -107,7 +107,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
         {
             return IExecute<bool>("hasSubscribers");
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
             return IExecute<bool>("isClosed");
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow$Subscriber%3C? super T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSubscribed(Java.Util.Concurrent.Flow.Subscriber arg0)
         {
             return IExecute<bool>("isSubscribed", arg0);
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
         {
             return IExecute<int>("estimateMaximumLag");
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Offer(object arg0, Java.Util.Function.BiPredicate arg1)
         {
             return IExecute<int>("offer", arg0, arg1);
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.BiPredicate"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate arg3)
         {
             return IExecute<int>("offer", arg0, arg1, arg2, arg3);
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Submit(object arg0)
         {
             return IExecute<int>("submit", arg0);
@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
         {
             return IExecute<long>("estimateMinimumDemand");

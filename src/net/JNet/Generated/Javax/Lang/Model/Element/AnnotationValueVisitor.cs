@@ -50,7 +50,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visit", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror arg0, object arg1)
         {
             return IExecute("visitAnnotation", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitArray(Java.Util.List arg0, object arg1)
         {
             return IExecute("visitArray", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitBoolean(bool arg0, object arg1)
         {
             return IExecute("visitBoolean", arg0, arg1);
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitByte(byte arg0, object arg1)
         {
             return IExecute("visitByte", arg0, arg1);
@@ -100,7 +100,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitChar(char arg0, object arg1)
         {
             return IExecute("visitChar", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitDouble(double arg0, object arg1)
         {
             return IExecute("visitDouble", arg0, arg1);
@@ -120,7 +120,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitEnumConstant(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitEnumConstant", arg0, arg1);
@@ -130,7 +130,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitFloat(float arg0, object arg1)
         {
             return IExecute("visitFloat", arg0, arg1);
@@ -140,7 +140,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitInt(int arg0, object arg1)
         {
             return IExecute("visitInt", arg0, arg1);
@@ -150,7 +150,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitLong(long arg0, object arg1)
         {
             return IExecute("visitLong", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitShort(short arg0, object arg1)
         {
             return IExecute("visitShort", arg0, arg1);
@@ -170,7 +170,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitString(string arg0, object arg1)
         {
             return IExecute("visitString", arg0, arg1);
@@ -180,7 +180,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitType(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
             return IExecute("visitType", arg0, arg1);
@@ -190,7 +190,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visitUnknown", arg0, arg1);
@@ -199,7 +199,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecute("visit", arg0);

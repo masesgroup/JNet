@@ -232,7 +232,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCS_sRGB()
         {
             return IExecute<bool>("isCS_sRGB");
@@ -241,7 +241,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetMaxValue(int arg0)
         {
             return IExecute<float>("getMaxValue", arg0);
@@ -250,7 +250,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMinValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetMinValue(int arg0)
         {
             return IExecute<float>("getMinValue", arg0);
@@ -259,7 +259,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetName(int arg0)
         {
             return IExecute<string>("getName", arg0);

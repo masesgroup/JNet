@@ -151,7 +151,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjLongConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjLongConsumer arg1, Java.Util.Function.BiConsumer arg2)
         {
             return IExecute("collect", arg0, arg1, arg2);
@@ -169,7 +169,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AllMatch(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<bool>("allMatch", arg0);
@@ -178,7 +178,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AnyMatch(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<bool>("anyMatch", arg0);
@@ -187,7 +187,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool NoneMatch(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<bool>("noneMatch", arg0);
@@ -367,7 +367,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#count()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Count()
         {
             return IExecute<long>("count");
@@ -377,7 +377,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Reduce(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
             return IExecute<long>("reduce", arg0, arg1);
@@ -386,7 +386,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#sum()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Sum()
         {
             return IExecute<long>("sum");

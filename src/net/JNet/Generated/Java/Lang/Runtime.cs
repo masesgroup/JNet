@@ -67,7 +67,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RemoveShutdownHook(Java.Lang.Thread arg0)
         {
             return IExecute<bool>("removeShutdownHook", arg0);
@@ -142,7 +142,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int AvailableProcessors()
         {
             return IExecute<int>("availableProcessors");
@@ -151,7 +151,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#freeMemory()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long FreeMemory()
         {
             return IExecute<long>("freeMemory");
@@ -160,7 +160,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#maxMemory()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long MaxMemory()
         {
             return IExecute<long>("maxMemory");
@@ -169,7 +169,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#totalMemory()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long TotalMemory()
         {
             return IExecute<long>("totalMemory");
@@ -269,7 +269,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#equalsIgnoreOptional(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool EqualsIgnoreOptional(object arg0)
             {
                 return IExecute<bool>("equalsIgnoreOptional", arg0);
@@ -278,7 +278,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -287,7 +287,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareTo(java.lang.Runtime$Version)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runtime.Version"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.Runtime.Version arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -296,7 +296,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareToIgnoreOptional(java.lang.Runtime$Version)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runtime.Version"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareToIgnoreOptional(Java.Lang.Runtime.Version arg0)
             {
                 return IExecute<int>("compareToIgnoreOptional", arg0);
@@ -305,7 +305,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Feature()
             {
                 return IExecute<int>("feature");
@@ -314,7 +314,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#interim()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Interim()
             {
                 return IExecute<int>("interim");
@@ -323,7 +323,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Patch()
             {
                 return IExecute<int>("patch");
@@ -332,7 +332,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Update()
             {
                 return IExecute<int>("update");

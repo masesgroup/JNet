@@ -72,7 +72,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(string arg0, object arg1, Javax.Xml.Namespace.QName arg2)
         {
@@ -84,7 +84,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <param name="arg2"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(string arg0, Org.Xml.Sax.InputSource arg1, Javax.Xml.Namespace.QName arg2)
         {
@@ -95,7 +95,7 @@ namespace Javax.Xml.Xpath
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public string Evaluate(string arg0, object arg1)
         {
@@ -106,7 +106,7 @@ namespace Javax.Xml.Xpath
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public string Evaluate(string arg0, Org.Xml.Sax.InputSource arg1)
         {
@@ -135,7 +135,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object EvaluateExpression(string arg0, object arg1, Java.Lang.Class arg2)
         {
@@ -147,7 +147,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object EvaluateExpression(string arg0, Org.Xml.Sax.InputSource arg1, Java.Lang.Class arg2)
         {

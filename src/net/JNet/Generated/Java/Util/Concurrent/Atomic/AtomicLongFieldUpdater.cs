@@ -61,7 +61,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, long arg1, long arg2)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, long arg1, long arg2)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
@@ -81,7 +81,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#get(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long Get(object arg0)
         {
             return IExecute<long>("get", arg0);
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long AccumulateAndGet(object arg0, long arg1, Java.Util.Function.LongBinaryOperator arg2)
         {
             return IExecute<long>("accumulateAndGet", arg0, arg1, arg2);
@@ -121,7 +121,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndAccumulate(object arg0, long arg1, Java.Util.Function.LongBinaryOperator arg2)
         {
             return IExecute<long>("getAndAccumulate", arg0, arg1, arg2);
@@ -131,7 +131,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndUpdate(object arg0, Java.Util.Function.LongUnaryOperator arg1)
         {
             return IExecute<long>("getAndUpdate", arg0, arg1);
@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long UpdateAndGet(object arg0, Java.Util.Function.LongUnaryOperator arg1)
         {
             return IExecute<long>("updateAndGet", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long AddAndGet(object arg0, long arg1)
         {
             return IExecute<long>("addAndGet", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#decrementAndGet(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long DecrementAndGet(object arg0)
         {
             return IExecute<long>("decrementAndGet", arg0);
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndAdd(object arg0, long arg1)
         {
             return IExecute<long>("getAndAdd", arg0, arg1);
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndDecrement(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndDecrement(object arg0)
         {
             return IExecute<long>("getAndDecrement", arg0);
@@ -188,7 +188,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndIncrement(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndIncrement(object arg0)
         {
             return IExecute<long>("getAndIncrement", arg0);
@@ -198,7 +198,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetAndSet(object arg0, long arg1)
         {
             return IExecute<long>("getAndSet", arg0, arg1);
@@ -207,7 +207,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#incrementAndGet(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long IncrementAndGet(object arg0)
         {
             return IExecute<long>("incrementAndGet", arg0);

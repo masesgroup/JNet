@@ -74,7 +74,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
             return IExecute<bool>("isCellEditable", arg0, arg1);
@@ -83,7 +83,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#findColumn(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int FindColumn(string arg0)
         {
             return IExecute<int>("findColumn", arg0);
@@ -101,7 +101,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetColumnName(int arg0)
         {
             return IExecute<string>("getColumnName", arg0);

@@ -156,7 +156,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isLeftToRight()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLeftToRight()
         {
             return IExecute<bool>("isLeftToRight");
@@ -165,7 +165,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isVertical()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsVertical()
         {
             return IExecute<bool>("isVertical");
@@ -174,7 +174,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterLevel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public byte GetCharacterLevel(int arg0)
         {
             return IExecute<byte>("getCharacterLevel", arg0);

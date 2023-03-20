@@ -67,7 +67,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetIconHeight(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<int>("getIconHeight", arg0);
@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetIconWidth(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<int>("getIconWidth", arg0);

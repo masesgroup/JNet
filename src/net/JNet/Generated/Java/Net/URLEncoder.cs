@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public static string Encode(string arg0, string arg1)
         {
@@ -57,7 +57,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Encode(string arg0, Java.Nio.Charset.Charset arg1)
         {
             return SExecute<string>("encode", arg0, arg1);

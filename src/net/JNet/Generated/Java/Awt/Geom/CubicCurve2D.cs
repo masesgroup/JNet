@@ -60,7 +60,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="double"/></param>
         /// <param name="arg7"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
             return SExecute<double>("getFlatness", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -70,7 +70,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double[] arg0, int arg1)
         {
             return SExecute<double>("getFlatness", arg0, arg1);
@@ -86,7 +86,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="double"/></param>
         /// <param name="arg7"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
             return SExecute<double>("getFlatnessSq", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -96,7 +96,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double[] arg0, int arg1)
         {
             return SExecute<double>("getFlatnessSq", arg0, arg1);
@@ -106,7 +106,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int SolveCubic(double[] arg0, double[] arg1)
         {
             return SExecute<int>("solveCubic", arg0, arg1);
@@ -115,7 +115,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int SolveCubic(double[] arg0)
         {
             return SExecute<int>("solveCubic", arg0);
@@ -274,7 +274,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
@@ -284,7 +284,7 @@ namespace Java.Awt.Geom
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
@@ -293,7 +293,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -302,7 +302,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -314,7 +314,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
@@ -323,7 +323,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("intersects", arg0);

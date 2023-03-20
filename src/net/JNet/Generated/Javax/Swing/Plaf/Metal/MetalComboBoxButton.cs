@@ -86,7 +86,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#isIconOnly()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIconOnly()
         {
             return IExecute<bool>("isIconOnly");

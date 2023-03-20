@@ -66,7 +66,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, string arg1, int arg2, int arg3)
         {
@@ -77,7 +77,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, string arg1)
         {
@@ -119,7 +119,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetSubString(long arg0, int arg1)
         {
@@ -129,7 +129,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#length()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Length()
         {
@@ -140,7 +140,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(string arg0, long arg1)
         {
@@ -151,7 +151,7 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Clob arg0, long arg1)
         {

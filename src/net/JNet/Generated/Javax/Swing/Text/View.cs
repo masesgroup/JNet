@@ -155,7 +155,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getPreferredSpan(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetPreferredSpan(int arg0)
         {
             return IExecute<float>("getPreferredSpan", arg0);
@@ -167,7 +167,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ViewToModel(float arg0, float arg1, Java.Awt.Shape arg2, Javax.Swing.Text.Position.Bias[] arg3)
         {
             return IExecute<int>("viewToModel", arg0, arg1, arg2, arg3);
@@ -197,7 +197,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#isVisible()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
             return IExecute<bool>("isVisible");
@@ -206,7 +206,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getAlignment(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetAlignment(int arg0)
         {
             return IExecute<float>("getAlignment", arg0);
@@ -215,7 +215,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMaximumSpan(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetMaximumSpan(int arg0)
         {
             return IExecute<float>("getMaximumSpan", arg0);
@@ -224,7 +224,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMinimumSpan(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetMinimumSpan(int arg0)
         {
             return IExecute<float>("getMinimumSpan", arg0);
@@ -235,7 +235,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetBreakWeight(int arg0, float arg1, float arg2)
         {
             return IExecute<int>("getBreakWeight", arg0, arg1, arg2);
@@ -248,7 +248,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(int arg0, Javax.Swing.Text.Position.Bias arg1, Java.Awt.Shape arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
@@ -258,7 +258,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getResizeWeight(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetResizeWeight(int arg0)
         {
             return IExecute<int>("getResizeWeight", arg0);
@@ -269,7 +269,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetViewIndex(float arg0, float arg1, Java.Awt.Shape arg2)
         {
             return IExecute<int>("getViewIndex", arg0, arg1, arg2);
@@ -279,7 +279,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetViewIndex(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
             return IExecute<int>("getViewIndex", arg0, arg1);
@@ -314,7 +314,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetToolTipText(float arg0, float arg1, Java.Awt.Shape arg2)
         {
             return IExecute<string>("getToolTipText", arg0, arg1, arg2);

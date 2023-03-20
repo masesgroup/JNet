@@ -52,7 +52,7 @@ namespace Java.Util.Spi
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(string arg0, bool arg1, int arg2, Java.Util.Locale arg3)
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2, arg3);
@@ -63,7 +63,7 @@ namespace Java.Util.Spi
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetGenericDisplayName(string arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getGenericDisplayName", arg0, arg1, arg2);

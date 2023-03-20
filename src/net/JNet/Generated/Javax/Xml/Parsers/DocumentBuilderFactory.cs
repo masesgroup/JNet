@@ -84,7 +84,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public bool GetFeature(string arg0)
         {
@@ -94,7 +94,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetAttribute(string arg0)
         {
@@ -134,7 +134,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCoalescing()
         {
             return IExecute<bool>("isCoalescing");
@@ -143,7 +143,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsExpandEntityReferences()
         {
             return IExecute<bool>("isExpandEntityReferences");
@@ -152,7 +152,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringComments()
         {
             return IExecute<bool>("isIgnoringComments");
@@ -161,7 +161,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringElementContentWhitespace()
         {
             return IExecute<bool>("isIgnoringElementContentWhitespace");
@@ -170,7 +170,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
             return IExecute<bool>("isNamespaceAware");
@@ -179,7 +179,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
             return IExecute<bool>("isValidating");
@@ -188,7 +188,7 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {
             return IExecute<bool>("isXIncludeAware");

@@ -92,7 +92,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0, Javax.Script.Bindings arg1)
         {
@@ -103,7 +103,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0, Javax.Script.ScriptContext arg1)
         {
@@ -113,7 +113,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0)
         {
@@ -124,7 +124,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0, Javax.Script.Bindings arg1)
         {
@@ -135,7 +135,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0, Javax.Script.ScriptContext arg1)
         {
@@ -145,7 +145,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0)
         {
@@ -155,7 +155,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get(string arg0)
         {
             return IExecute("get", arg0);

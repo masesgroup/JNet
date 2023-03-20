@@ -91,7 +91,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanNodeAppear(string arg0, Javax.Imageio.ImageTypeSpecifier arg1)
         {
             return IExecute<bool>("canNodeAppear", arg0, arg1);
@@ -101,7 +101,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAttributeRequired(string arg0, string arg1)
         {
             return IExecute<bool>("isAttributeRequired", arg0, arg1);
@@ -111,7 +111,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAttributeDataType(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeDataType", arg0, arg1);
@@ -121,7 +121,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAttributeListMaxLength(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeListMaxLength", arg0, arg1);
@@ -131,7 +131,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAttributeListMinLength(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeListMinLength", arg0, arg1);
@@ -141,7 +141,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAttributeValueType(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeValueType", arg0, arg1);
@@ -150,7 +150,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getChildPolicy(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetChildPolicy(string arg0)
         {
             return IExecute<int>("getChildPolicy", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getElementMaxChildren(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetElementMaxChildren(string arg0)
         {
             return IExecute<int>("getElementMaxChildren", arg0);
@@ -168,7 +168,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getElementMinChildren(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetElementMinChildren(string arg0)
         {
             return IExecute<int>("getElementMinChildren", arg0);
@@ -177,7 +177,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectArrayMaxLength(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetObjectArrayMaxLength(string arg0)
         {
             return IExecute<int>("getObjectArrayMaxLength", arg0);
@@ -186,7 +186,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectArrayMinLength(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetObjectArrayMinLength(string arg0)
         {
             return IExecute<int>("getObjectArrayMinLength", arg0);
@@ -195,7 +195,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectValueType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetObjectValueType(string arg0)
         {
             return IExecute<int>("getObjectValueType", arg0);
@@ -231,7 +231,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectDefaultValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetObjectDefaultValue(string arg0)
         {
             return IExecute("getObjectDefaultValue", arg0);
@@ -250,7 +250,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeDefaultValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeDefaultValue", arg0, arg1);
@@ -261,7 +261,7 @@ namespace Javax.Imageio.Metadata
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeDescription(string arg0, string arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getAttributeDescription", arg0, arg1, arg2);
@@ -271,7 +271,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeMaxValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeMaxValue", arg0, arg1);
@@ -281,7 +281,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeMinValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeMinValue", arg0, arg1);
@@ -291,7 +291,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetElementDescription(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getElementDescription", arg0, arg1);

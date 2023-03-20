@@ -112,7 +112,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetSample(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<int>("getSample", arg0, arg1, arg2, arg3);
@@ -121,7 +121,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetSampleSize(int arg0)
         {
             return IExecute<int>("getSampleSize", arg0);
@@ -161,7 +161,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, int arg1, object arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute("getDataElements", arg0, arg1, arg2, arg3);
@@ -196,7 +196,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetSampleDouble(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<double>("getSampleDouble", arg0, arg1, arg2, arg3);
@@ -249,7 +249,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetSampleFloat(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<float>("getSampleFloat", arg0, arg1, arg2, arg3);
@@ -345,7 +345,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="object"/></param>
         /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecute("getDataElements", arg0, arg1, arg2, arg3, arg4, arg5);

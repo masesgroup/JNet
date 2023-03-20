@@ -109,7 +109,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public byte GetByteParameter(int arg0)
         {
             return IExecute<byte>("getByteParameter", arg0);
@@ -118,7 +118,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getCharParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char GetCharParameter(int arg0)
         {
             return IExecute<char>("getCharParameter", arg0);
@@ -127,7 +127,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getDoubleParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetDoubleParameter(int arg0)
         {
             return IExecute<double>("getDoubleParameter", arg0);
@@ -136,7 +136,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getFloatParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetFloatParameter(int arg0)
         {
             return IExecute<float>("getFloatParameter", arg0);
@@ -145,7 +145,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getIntParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetIntParameter(int arg0)
         {
             return IExecute<int>("getIntParameter", arg0);
@@ -343,7 +343,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getObjectParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetObjectParameter(int arg0)
         {
             return IExecute("getObjectParameter", arg0);
@@ -352,7 +352,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetSource(int arg0)
         {
             return IExecute("getSource", arg0);
@@ -361,7 +361,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object ShallowClone()
         {
             return IExecute("shallowClone");
@@ -370,7 +370,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getLongParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetLongParameter(int arg0)
         {
             return IExecute<long>("getLongParameter", arg0);
@@ -379,7 +379,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getShortParameter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public short GetShortParameter(int arg0)
         {
             return IExecute<short>("getShortParameter", arg0);

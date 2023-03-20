@@ -117,7 +117,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanImport(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
             return IExecute<bool>("canImport", arg0, arg1);
@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.TransferHandler$TransferSupport)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanImport(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecute<bool>("canImport", arg0);
@@ -136,7 +136,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ImportData(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             return IExecute<bool>("importData", arg0, arg1);
@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.TransferHandler$TransferSupport)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ImportData(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecute<bool>("importData", arg0);
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getSourceActions(javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetSourceActions(Javax.Swing.JComponent arg0)
         {
             return IExecute<int>("getSourceActions", arg0);
@@ -302,7 +302,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
             {
                 return IExecute<bool>("isDataFlavorSupported", arg0);
@@ -311,7 +311,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsDrop()
             {
                 return IExecute<bool>("isDrop");

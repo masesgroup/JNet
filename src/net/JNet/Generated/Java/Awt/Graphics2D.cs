@@ -100,7 +100,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         /// <param name="arg2"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, Java.Awt.Geom.AffineTransform arg1, Java.Awt.ImageNs.ImageObserver arg2)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2);
@@ -111,7 +111,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Hit(Java.Awt.Rectangle arg0, Java.Awt.Shape arg1, bool arg2)
         {
             return IExecute<bool>("hit", arg0, arg1, arg2);
@@ -129,7 +129,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints$Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.RenderingHints.Key"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetRenderingHint(Java.Awt.RenderingHints.Key arg0)
         {
             return IExecute("getRenderingHint", arg0);

@@ -63,7 +63,7 @@ namespace Java.Awt.Im.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#isCompositionEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCompositionEnabled()
         {
             return IExecute<bool>("isCompositionEnabled");
@@ -72,7 +72,7 @@ namespace Java.Awt.Im.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setLocale(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool SetLocale(Java.Util.Locale arg0)
         {
             return IExecute<bool>("setLocale", arg0);

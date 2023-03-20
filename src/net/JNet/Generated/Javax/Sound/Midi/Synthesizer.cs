@@ -102,7 +102,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#isSoundbankSupported(javax.sound.midi.Soundbank)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSoundbankSupported(Javax.Sound.Midi.Soundbank arg0)
         {
             return IExecute<bool>("isSoundbankSupported", arg0);
@@ -111,7 +111,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadAllInstruments(javax.sound.midi.Soundbank)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool LoadAllInstruments(Javax.Sound.Midi.Soundbank arg0)
         {
             return IExecute<bool>("loadAllInstruments", arg0);
@@ -120,7 +120,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstrument(javax.sound.midi.Instrument)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool LoadInstrument(Javax.Sound.Midi.Instrument arg0)
         {
             return IExecute<bool>("loadInstrument", arg0);
@@ -130,7 +130,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool LoadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1)
         {
             return IExecute<bool>("loadInstruments", arg0, arg1);
@@ -140,7 +140,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RemapInstrument(Javax.Sound.Midi.Instrument arg0, Javax.Sound.Midi.Instrument arg1)
         {
             return IExecute<bool>("remapInstrument", arg0, arg1);

@@ -67,7 +67,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#expectContinue()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ExpectContinue()
         {
             return IExecute<bool>("expectContinue");
@@ -76,7 +76,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Method()
         {
             return IExecute<string>("method");
@@ -154,7 +154,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long ContentLength()
             {
                 return IExecute<long>("contentLength");

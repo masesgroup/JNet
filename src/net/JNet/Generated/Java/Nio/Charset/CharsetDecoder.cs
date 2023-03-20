@@ -49,7 +49,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#isAutoDetecting()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAutoDetecting()
         {
             return IExecute<bool>("isAutoDetecting");
@@ -58,7 +58,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#isCharsetDetected()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCharsetDetected()
         {
             return IExecute<bool>("isCharsetDetected");
@@ -67,7 +67,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#averageCharsPerByte()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float AverageCharsPerByte()
         {
             return IExecute<float>("averageCharsPerByte");
@@ -76,7 +76,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#maxCharsPerByte()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float MaxCharsPerByte()
         {
             return IExecute<float>("maxCharsPerByte");
@@ -85,7 +85,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replacement()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Replacement()
         {
             return IExecute<string>("replacement");

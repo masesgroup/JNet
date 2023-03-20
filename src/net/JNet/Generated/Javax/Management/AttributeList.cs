@@ -74,7 +74,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Management.AttributeList"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddAll(int arg0, Javax.Management.AttributeList arg1)
         {
             return IExecute<bool>("addAll", arg0, arg1);
@@ -83,7 +83,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(javax.management.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddAll(Javax.Management.AttributeList arg0)
         {
             return IExecute<bool>("addAll", arg0);

@@ -102,7 +102,7 @@ namespace Javax.Swing.Colorchooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#isColorTransparencySelectionEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsColorTransparencySelectionEnabled()
         {
             return IExecute<bool>("isColorTransparencySelectionEnabled");

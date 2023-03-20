@@ -82,7 +82,7 @@ namespace Javax.Print
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetUI(int arg0, string arg1)
         {
             return IExecute("getUI", arg0, arg1);

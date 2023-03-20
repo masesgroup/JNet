@@ -418,7 +418,7 @@ namespace Javax.Xml.Xpath
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html"/>
     /// </summary>
-    public partial class XPathNodes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathNodes>
+    public partial class XPathNodes : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

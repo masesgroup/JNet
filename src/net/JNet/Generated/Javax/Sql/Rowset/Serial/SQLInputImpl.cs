@@ -53,7 +53,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBoolean()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool ReadBoolean()
         {
@@ -63,7 +63,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#wasNull()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool WasNull()
         {
@@ -73,7 +73,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readByte()"/>
         /// </summary>
         
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public byte ReadByte()
         {
@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readDouble()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public double ReadDouble()
         {
@@ -103,7 +103,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readFloat()"/>
         /// </summary>
         
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public float ReadFloat()
         {
@@ -113,7 +113,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readInt()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int ReadInt()
         {
@@ -153,7 +153,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readObject()"/>
         /// </summary>
         
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object ReadObject()
         {
@@ -163,7 +163,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readNString()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string ReadNString()
         {
@@ -173,7 +173,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readString()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string ReadString()
         {
@@ -303,7 +303,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readLong()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long ReadLong()
         {
@@ -313,7 +313,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readShort()"/>
         /// </summary>
         
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public short ReadShort()
         {

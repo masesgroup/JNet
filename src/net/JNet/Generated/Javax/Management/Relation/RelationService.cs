@@ -90,7 +90,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#hasRelation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool?"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public bool? HasRelation(string arg0)
         {
@@ -101,7 +101,7 @@ namespace Javax.Management.Relation
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
         public int? CheckRoleReading(string arg0, string arg1)
@@ -114,7 +114,7 @@ namespace Javax.Management.Relation
         /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
         public int? CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, bool? arg2)
@@ -126,7 +126,7 @@ namespace Javax.Management.Relation
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
@@ -138,7 +138,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getRelationTypeName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public string GetRelationTypeName(string arg0)
@@ -149,7 +149,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#isRelation(javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public string IsRelation(Javax.Management.ObjectName arg0)
         {

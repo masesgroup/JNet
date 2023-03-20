@@ -200,7 +200,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static object NewPlatformMXBeanProxy(Javax.Management.MBeanServerConnection arg0, string arg1, Java.Lang.Class arg2)
         {

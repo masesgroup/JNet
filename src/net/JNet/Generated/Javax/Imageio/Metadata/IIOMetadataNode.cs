@@ -205,7 +205,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasAttribute(string arg0)
         {
             return IExecute<bool>("hasAttribute", arg0);
@@ -215,7 +215,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasAttributeNS(string arg0, string arg1)
         {
             return IExecute<bool>("hasAttributeNS", arg0, arg1);
@@ -224,7 +224,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttributes()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasAttributes()
         {
             return IExecute<bool>("hasAttributes");
@@ -233,7 +233,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasChildNodes()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasChildNodes()
         {
             return IExecute<bool>("hasChildNodes");
@@ -242,7 +242,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isDefaultNamespace(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsDefaultNamespace(string arg0)
         {
@@ -252,7 +252,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isEqualNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsEqualNode(Org.W3c.Dom.Node arg0)
         {
@@ -262,7 +262,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isSameNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsSameNode(Org.W3c.Dom.Node arg0)
         {
@@ -273,7 +273,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSupported(string arg0, string arg1)
         {
             return IExecute<bool>("isSupported", arg0, arg1);
@@ -283,7 +283,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object GetFeature(string arg0, string arg1)
         {
@@ -293,7 +293,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getUserData(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object GetUserData(string arg0)
         {
@@ -305,7 +305,7 @@ namespace Javax.Imageio.Metadata
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.UserDataHandler"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object SetUserData(string arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
         {
@@ -315,7 +315,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttribute(string arg0)
         {
             return IExecute<string>("getAttribute", arg0);
@@ -325,7 +325,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeNS(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeNS", arg0, arg1);
@@ -334,7 +334,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public string LookupNamespaceURI(string arg0)
         {
@@ -344,7 +344,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#lookupPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public string LookupPrefix(string arg0)
         {
@@ -476,7 +476,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#compareDocumentPosition(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareDocumentPosition(Org.W3c.Dom.Node arg0)
         {

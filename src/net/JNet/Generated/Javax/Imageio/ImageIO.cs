@@ -103,7 +103,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.File arg2)
         {
@@ -115,7 +115,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.OutputStream arg2)
         {
@@ -127,7 +127,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Imageio.Stream.ImageOutputStream"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Javax.Imageio.Stream.ImageOutputStream arg2)
         {

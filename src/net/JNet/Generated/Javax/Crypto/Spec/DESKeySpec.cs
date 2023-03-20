@@ -73,7 +73,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
         {
@@ -84,7 +84,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsWeak(byte[] arg0, int arg1)
         {

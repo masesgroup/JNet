@@ -81,7 +81,7 @@ namespace Org.W3c.Dom.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getClassName()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");

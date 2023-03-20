@@ -65,7 +65,7 @@ namespace Javax.Sound.Midi.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#isDeviceSupported(javax.sound.midi.MidiDevice$Info)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDeviceSupported(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return IExecute<bool>("isDeviceSupported", arg0);

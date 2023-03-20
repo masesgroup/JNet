@@ -192,7 +192,7 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getFloatValue(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public float GetFloatValue(short arg0)
         {

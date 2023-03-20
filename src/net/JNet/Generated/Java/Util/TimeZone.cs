@@ -134,7 +134,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#inDaylightTime(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool InDaylightTime(Java.Util.Date arg0)
         {
             return IExecute<bool>("inDaylightTime", arg0);
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#useDaylightTime()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool UseDaylightTime()
         {
             return IExecute<bool>("useDaylightTime");
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return IExecute<int>("getOffset", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#hasSameRules(java.util.TimeZone)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasSameRules(Java.Util.TimeZone arg0)
         {
             return IExecute<bool>("hasSameRules", arg0);
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#observesDaylightTime()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ObservesDaylightTime()
         {
             return IExecute<bool>("observesDaylightTime");
@@ -185,7 +185,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(bool arg0, int arg1)
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
@@ -194,7 +194,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecute<string>("getDisplayName", arg0);
@@ -203,7 +203,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getOffset(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetOffset(long arg0)
         {
             return IExecute<int>("getOffset", arg0);
@@ -214,7 +214,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2);

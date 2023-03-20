@@ -60,7 +60,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#get(javax.swing.KeyStroke)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get(Javax.Swing.KeyStroke arg0)
         {
             return IExecute("get", arg0);

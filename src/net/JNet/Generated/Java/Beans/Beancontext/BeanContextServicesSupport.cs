@@ -106,7 +106,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextServiceProvider"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddService(Java.Lang.Class arg0, Java.Beans.Beancontext.BeanContextServiceProvider arg1)
         {
             return IExecute<bool>("addService", arg0, arg1);
@@ -119,7 +119,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="object"/></param>
         /// <param name="arg4"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedListener"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Util.TooManyListenersException"/>
         public object GetService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, Java.Lang.Class arg2, object arg3, Java.Beans.Beancontext.BeanContextServiceRevokedListener arg4)
         {
@@ -138,7 +138,7 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#hasService(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasService(Java.Lang.Class arg0)
         {
             return IExecute<bool>("hasService", arg0);

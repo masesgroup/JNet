@@ -60,7 +60,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsInputClosed()
         {
             return IExecute<bool>("isInputClosed");
@@ -69,7 +69,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOutputClosed()
         {
             return IExecute<bool>("isOutputClosed");

@@ -102,7 +102,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#current()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Current()
         {
             return IExecute<char>("current");
@@ -111,7 +111,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#first()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char First()
         {
             return IExecute<char>("first");
@@ -120,7 +120,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#last()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Last()
         {
             return IExecute<char>("last");
@@ -129,7 +129,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#next()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Next()
         {
             return IExecute<char>("next");
@@ -138,7 +138,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#previous()"/>
         /// </summary>
         
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char Previous()
         {
             return IExecute<char>("previous");
@@ -147,7 +147,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="char"/></returns>
+        /// <returns><see cref="char"/></returns>
         public char SetIndex(int arg0)
         {
             return IExecute<char>("setIndex", arg0);

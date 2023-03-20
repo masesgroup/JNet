@@ -99,7 +99,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#isAnnotationPresent(java.lang.Class%3C? extends java.lang.annotation.Annotation%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAnnotationPresent(Java.Lang.Class arg0)
         {
             return IExecute<bool>("isAnnotationPresent", arg0);

@@ -91,7 +91,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Put(Java.Lang.Enum arg0, object arg1)
         {
             return IExecute("put", arg0, arg1);

@@ -49,7 +49,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMErrorHandler.html#handleError(org.w3c.dom.DOMError)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.DOMError"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HandleError(Org.W3c.Dom.DOMError arg0)
         {
             return IExecute<bool>("handleError", arg0);

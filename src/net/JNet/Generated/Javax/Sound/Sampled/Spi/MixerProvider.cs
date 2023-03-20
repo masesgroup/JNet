@@ -65,7 +65,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#isMixerSupported(javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMixerSupported(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return IExecute<bool>("isMixerSupported", arg0);

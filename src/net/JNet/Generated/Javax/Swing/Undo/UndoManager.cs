@@ -67,7 +67,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanUndoOrRedo()
         {
             return IExecute<bool>("canUndoOrRedo");

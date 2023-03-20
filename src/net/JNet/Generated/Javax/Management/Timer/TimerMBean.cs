@@ -70,7 +70,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isActive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
@@ -79,7 +79,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isEmpty()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
@@ -88,7 +88,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getFixedRate(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool?"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool? GetFixedRate(int? arg0)
         {
             return IExecute<bool?>("getFixedRate", arg0);
@@ -103,7 +103,7 @@ namespace Javax.Management.Timer
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="long"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
         {
@@ -118,7 +118,7 @@ namespace Javax.Management.Timer
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="long"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
         {
@@ -132,7 +132,7 @@ namespace Javax.Management.Timer
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4)
         {
@@ -145,7 +145,7 @@ namespace Javax.Management.Timer
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3)
         {
@@ -155,7 +155,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNbOccurences(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="long?"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long? GetNbOccurences(int? arg0)
         {
             return IExecute<long?>("getNbOccurences", arg0);
@@ -164,7 +164,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getPeriod(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="long?"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long? GetPeriod(int? arg0)
         {
             return IExecute<long?>("getPeriod", arg0);
@@ -173,7 +173,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationUserData(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetNotificationUserData(int? arg0)
         {
             return IExecute("getNotificationUserData", arg0);
@@ -182,7 +182,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationMessage(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNotificationMessage(int? arg0)
         {
             return IExecute<string>("getNotificationMessage", arg0);
@@ -191,7 +191,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationType(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNotificationType(int? arg0)
         {
             return IExecute<string>("getNotificationType", arg0);

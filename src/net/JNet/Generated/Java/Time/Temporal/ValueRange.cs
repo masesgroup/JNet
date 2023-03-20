@@ -114,7 +114,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFixed()
         {
             return IExecute<bool>("isFixed");
@@ -123,7 +123,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIntValue()
         {
             return IExecute<bool>("isIntValue");
@@ -132,7 +132,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidIntValue(long arg0)
         {
             return IExecute<bool>("isValidIntValue", arg0);
@@ -141,7 +141,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidValue(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidValue(long arg0)
         {
             return IExecute<bool>("isValidValue", arg0);
@@ -151,7 +151,7 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CheckValidIntValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecute<int>("checkValidIntValue", arg0, arg1);
@@ -161,7 +161,7 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecute<long>("checkValidValue", arg0, arg1);

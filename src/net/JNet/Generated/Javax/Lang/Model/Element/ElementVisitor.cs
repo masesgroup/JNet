@@ -50,7 +50,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
             return IExecute("visit", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitExecutable(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecute("visitExecutable", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.PackageElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPackage(Javax.Lang.Model.Element.PackageElement arg0, object arg1)
         {
             return IExecute("visitPackage", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitType(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecute("visitType", arg0, arg1);
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeParameterElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitTypeParameter(Javax.Lang.Model.Element.TypeParameterElement arg0, object arg1)
         {
             return IExecute("visitTypeParameter", arg0, arg1);
@@ -100,7 +100,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
             return IExecute("visitUnknown", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitVariable(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecute("visitVariable", arg0, arg1);
@@ -119,7 +119,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute("visit", arg0);
@@ -129,7 +129,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, object arg1)
         {
             return IExecute("visitModule", arg0, arg1);

@@ -57,7 +57,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBoolean()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
         {
             return IExecute<bool>("nextBoolean");
@@ -66,7 +66,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double NextDouble()
         {
             return IExecute<double>("nextDouble");
@@ -76,7 +76,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0, double arg1)
         {
             return IExecute<double>("nextDouble", arg0, arg1);
@@ -85,7 +85,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0)
         {
             return IExecute<double>("nextDouble", arg0);
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
             return IExecute<int>("nextInt");
@@ -104,7 +104,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int NextInt(int arg0, int arg1)
         {
             return IExecute<int>("nextInt", arg0, arg1);
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int NextInt(int arg0)
         {
             return IExecute<int>("nextInt", arg0);
@@ -248,7 +248,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long NextLong()
         {
             return IExecute<long>("nextLong");
@@ -258,7 +258,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0, long arg1)
         {
             return IExecute<long>("nextLong", arg0, arg1);
@@ -267,7 +267,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0)
         {
             return IExecute<long>("nextLong", arg0);

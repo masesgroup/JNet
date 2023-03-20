@@ -65,7 +65,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool Contains(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.FileObject arg1)
         {
@@ -76,7 +76,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HandleOption(string arg0, Java.Util.Iterator arg1)
         {
             return IExecute<bool>("handleOption", arg0, arg1);
@@ -85,7 +85,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#hasLocation(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasLocation(Javax.Tools.JavaFileManager.Location arg0)
         {
             return IExecute<bool>("hasLocation", arg0);
@@ -95,7 +95,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("isSameFile", arg0, arg1);
@@ -104,7 +104,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#isSupportedOption(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int IsSupportedOption(string arg0)
         {
             return IExecute<int>("isSupportedOption", arg0);
@@ -146,7 +146,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string InferBinaryName(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
             return IExecute<string>("inferBinaryName", arg0, arg1);
@@ -155,7 +155,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#inferModuleName(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string InferModuleName(Javax.Tools.JavaFileManager.Location arg0)
         {

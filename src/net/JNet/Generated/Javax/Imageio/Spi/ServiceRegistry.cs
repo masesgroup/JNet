@@ -84,7 +84,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DeregisterServiceProvider(object arg0, Java.Lang.Class arg1)
         {
             return IExecute<bool>("deregisterServiceProvider", arg0, arg1);
@@ -94,7 +94,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RegisterServiceProvider(object arg0, Java.Lang.Class arg1)
         {
             return IExecute<bool>("registerServiceProvider", arg0, arg1);
@@ -105,7 +105,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool SetOrdering(Java.Lang.Class arg0, object arg1, object arg2)
         {
             return IExecute<bool>("setOrdering", arg0, arg1, arg2);
@@ -116,7 +116,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool UnsetOrdering(Java.Lang.Class arg0, object arg1, object arg2)
         {
             return IExecute<bool>("unsetOrdering", arg0, arg1, arg2);
@@ -146,7 +146,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviderByClass(java.lang.Class%3CT%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetServiceProviderByClass(Java.Lang.Class arg0)
         {
             return IExecute("getServiceProviderByClass", arg0);
@@ -155,7 +155,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -227,7 +227,7 @@ namespace Javax.Imageio.Spi
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.Filter.html#filter(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool FilterMethod(object arg0)
             {
                 return IExecute<bool>("filter", arg0);

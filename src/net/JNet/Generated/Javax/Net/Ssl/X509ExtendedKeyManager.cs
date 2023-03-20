@@ -55,7 +55,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Javax.Net.Ssl.SSLEngine"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ChooseEngineClientAlias(string[] arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
             return IExecute<string>("chooseEngineClientAlias", arg0, arg1, arg2);
@@ -66,7 +66,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Javax.Net.Ssl.SSLEngine"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ChooseEngineServerAlias(string arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
             return IExecute<string>("chooseEngineServerAlias", arg0, arg1, arg2);

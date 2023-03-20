@@ -56,7 +56,7 @@ namespace Java.Awt.Im.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#hasDynamicLocaleList()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasDynamicLocaleList()
         {
             return IExecute<bool>("hasDynamicLocaleList");
@@ -85,7 +85,7 @@ namespace Java.Awt.Im.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetInputMethodDisplayName(Java.Util.Locale arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getInputMethodDisplayName", arg0, arg1);

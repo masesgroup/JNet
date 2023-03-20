@@ -519,7 +519,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool HasPrivateAccess()
             {
                 return IExecute<bool>("hasPrivateAccess");
@@ -528,7 +528,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int LookupModes()
             {
                 return IExecute<int>("lookupModes");

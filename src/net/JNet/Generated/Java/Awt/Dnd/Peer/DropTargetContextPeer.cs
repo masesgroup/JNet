@@ -77,7 +77,7 @@ namespace Java.Awt.Dnd.Peer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTransferableJVMLocal()
         {
             return IExecute<bool>("isTransferableJVMLocal");

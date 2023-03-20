@@ -117,7 +117,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAlpha(int arg0)
         {
             return IExecute<int>("getAlpha", arg0);
@@ -126,7 +126,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetBlue(int arg0)
         {
             return IExecute<int>("getBlue", arg0);
@@ -135,7 +135,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetGreen(int arg0)
         {
             return IExecute<int>("getGreen", arg0);
@@ -144,7 +144,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRed(int arg0)
         {
             return IExecute<int>("getRed", arg0);
@@ -153,7 +153,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleRaster(java.awt.image.Raster)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCompatibleRaster(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<bool>("isCompatibleRaster", arg0);
@@ -162,7 +162,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleSampleModel(java.awt.image.SampleModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.SampleModel"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCompatibleSampleModel(Java.Awt.ImageNs.SampleModel arg0)
         {
             return IExecute<bool>("isCompatibleSampleModel", arg0);
@@ -171,7 +171,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasAlpha()
         {
             return IExecute<bool>("hasAlpha");
@@ -180,7 +180,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {
             return IExecute<bool>("isAlphaPremultiplied");
@@ -212,7 +212,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetAlpha(object arg0)
         {
             return IExecute<int>("getAlpha", arg0);
@@ -221,7 +221,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetBlue(object arg0)
         {
             return IExecute<int>("getBlue", arg0);
@@ -230,7 +230,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetComponentSize(int arg0)
         {
             return IExecute<int>("getComponentSize", arg0);
@@ -240,7 +240,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetDataElement(float[] arg0, int arg1)
         {
             return IExecute<int>("getDataElement", arg0, arg1);
@@ -250,7 +250,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetDataElement(int[] arg0, int arg1)
         {
             return IExecute<int>("getDataElement", arg0, arg1);
@@ -259,7 +259,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetGreen(object arg0)
         {
             return IExecute<int>("getGreen", arg0);
@@ -268,7 +268,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRed(object arg0)
         {
             return IExecute<int>("getRed", arg0);
@@ -277,7 +277,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRGB(int arg0)
         {
             return IExecute<int>("getRGB", arg0);
@@ -286,7 +286,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRGB(object arg0)
         {
             return IExecute<int>("getRGB", arg0);
@@ -370,7 +370,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(float[] arg0, int arg1, object arg2)
         {
             return IExecute("getDataElements", arg0, arg1, arg2);
@@ -380,7 +380,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, object arg1)
         {
             return IExecute("getDataElements", arg0, arg1);
@@ -391,7 +391,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDataElements(int[] arg0, int arg1, object arg2)
         {
             return IExecute("getDataElements", arg0, arg1, arg2);

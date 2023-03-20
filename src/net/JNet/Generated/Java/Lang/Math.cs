@@ -53,7 +53,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Abs(double arg0)
         {
             return SExecute<double>("abs", arg0);
@@ -62,7 +62,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#acos(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Acos(double arg0)
         {
             return SExecute<double>("acos", arg0);
@@ -71,7 +71,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#asin(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Asin(double arg0)
         {
             return SExecute<double>("asin", arg0);
@@ -80,7 +80,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#atan(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Atan(double arg0)
         {
             return SExecute<double>("atan", arg0);
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Atan2(double arg0, double arg1)
         {
             return SExecute<double>("atan2", arg0, arg1);
@@ -99,7 +99,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cbrt(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Cbrt(double arg0)
         {
             return SExecute<double>("cbrt", arg0);
@@ -108,7 +108,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ceil(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Ceil(double arg0)
         {
             return SExecute<double>("ceil", arg0);
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double CopySign(double arg0, double arg1)
         {
             return SExecute<double>("copySign", arg0, arg1);
@@ -127,7 +127,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cos(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Cos(double arg0)
         {
             return SExecute<double>("cos", arg0);
@@ -136,7 +136,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cosh(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Cosh(double arg0)
         {
             return SExecute<double>("cosh", arg0);
@@ -145,7 +145,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#exp(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Exp(double arg0)
         {
             return SExecute<double>("exp", arg0);
@@ -154,7 +154,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#expm1(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Expm1(double arg0)
         {
             return SExecute<double>("expm1", arg0);
@@ -163,7 +163,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floor(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Floor(double arg0)
         {
             return SExecute<double>("floor", arg0);
@@ -174,7 +174,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
         /// <param name="arg2"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Fma(double arg0, double arg1, double arg2)
         {
             return SExecute<double>("fma", arg0, arg1, arg2);
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Hypot(double arg0, double arg1)
         {
             return SExecute<double>("hypot", arg0, arg1);
@@ -194,7 +194,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double IEEEremainder(double arg0, double arg1)
         {
             return SExecute<double>("IEEEremainder", arg0, arg1);
@@ -203,7 +203,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Log(double arg0)
         {
             return SExecute<double>("log", arg0);
@@ -212,7 +212,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log10(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Log10(double arg0)
         {
             return SExecute<double>("log10", arg0);
@@ -221,7 +221,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log1p(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Log1p(double arg0)
         {
             return SExecute<double>("log1p", arg0);
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
             return SExecute<double>("max", arg0, arg1);
@@ -241,7 +241,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
             return SExecute<double>("min", arg0, arg1);
@@ -251,7 +251,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double NextAfter(double arg0, double arg1)
         {
             return SExecute<double>("nextAfter", arg0, arg1);
@@ -260,7 +260,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double NextDown(double arg0)
         {
             return SExecute<double>("nextDown", arg0);
@@ -269,7 +269,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextUp(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double NextUp(double arg0)
         {
             return SExecute<double>("nextUp", arg0);
@@ -279,7 +279,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Pow(double arg0, double arg1)
         {
             return SExecute<double>("pow", arg0, arg1);
@@ -288,7 +288,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#random()"/>
         /// </summary>
         
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Random()
         {
             return SExecute<double>("random");
@@ -297,7 +297,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#rint(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Rint(double arg0)
         {
             return SExecute<double>("rint", arg0);
@@ -307,7 +307,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Scalb(double arg0, int arg1)
         {
             return SExecute<double>("scalb", arg0, arg1);
@@ -316,7 +316,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Signum(double arg0)
         {
             return SExecute<double>("signum", arg0);
@@ -325,7 +325,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sin(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Sin(double arg0)
         {
             return SExecute<double>("sin", arg0);
@@ -334,7 +334,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sinh(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Sinh(double arg0)
         {
             return SExecute<double>("sinh", arg0);
@@ -343,7 +343,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sqrt(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Sqrt(double arg0)
         {
             return SExecute<double>("sqrt", arg0);
@@ -352,7 +352,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#tan(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Tan(double arg0)
         {
             return SExecute<double>("tan", arg0);
@@ -361,7 +361,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#tanh(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Tanh(double arg0)
         {
             return SExecute<double>("tanh", arg0);
@@ -370,7 +370,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toDegrees(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double ToDegrees(double arg0)
         {
             return SExecute<double>("toDegrees", arg0);
@@ -379,7 +379,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toRadians(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double ToRadians(double arg0)
         {
             return SExecute<double>("toRadians", arg0);
@@ -388,7 +388,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ulp(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public static double Ulp(double arg0)
         {
             return SExecute<double>("ulp", arg0);
@@ -397,7 +397,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Abs(float arg0)
         {
             return SExecute<float>("abs", arg0);
@@ -407,7 +407,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float CopySign(float arg0, float arg1)
         {
             return SExecute<float>("copySign", arg0, arg1);
@@ -418,7 +418,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Fma(float arg0, float arg1, float arg2)
         {
             return SExecute<float>("fma", arg0, arg1, arg2);
@@ -428,7 +428,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
             return SExecute<float>("max", arg0, arg1);
@@ -438,7 +438,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
             return SExecute<float>("min", arg0, arg1);
@@ -448,7 +448,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float NextAfter(float arg0, double arg1)
         {
             return SExecute<float>("nextAfter", arg0, arg1);
@@ -457,7 +457,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float NextDown(float arg0)
         {
             return SExecute<float>("nextDown", arg0);
@@ -466,7 +466,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextUp(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float NextUp(float arg0)
         {
             return SExecute<float>("nextUp", arg0);
@@ -476,7 +476,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Scalb(float arg0, int arg1)
         {
             return SExecute<float>("scalb", arg0, arg1);
@@ -485,7 +485,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Signum(float arg0)
         {
             return SExecute<float>("signum", arg0);
@@ -494,7 +494,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ulp(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public static float Ulp(float arg0)
         {
             return SExecute<float>("ulp", arg0);
@@ -503,7 +503,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Abs(int arg0)
         {
             return SExecute<int>("abs", arg0);
@@ -513,7 +513,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int AddExact(int arg0, int arg1)
         {
             return SExecute<int>("addExact", arg0, arg1);
@@ -522,7 +522,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int DecrementExact(int arg0)
         {
             return SExecute<int>("decrementExact", arg0);
@@ -532,7 +532,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int FloorDiv(int arg0, int arg1)
         {
             return SExecute<int>("floorDiv", arg0, arg1);
@@ -542,7 +542,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int FloorMod(int arg0, int arg1)
         {
             return SExecute<int>("floorMod", arg0, arg1);
@@ -552,7 +552,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int FloorMod(long arg0, int arg1)
         {
             return SExecute<int>("floorMod", arg0, arg1);
@@ -561,7 +561,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#getExponent(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetExponent(double arg0)
         {
             return SExecute<int>("getExponent", arg0);
@@ -570,7 +570,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#getExponent(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetExponent(float arg0)
         {
             return SExecute<int>("getExponent", arg0);
@@ -579,7 +579,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#incrementExact(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int IncrementExact(int arg0)
         {
             return SExecute<int>("incrementExact", arg0);
@@ -589,7 +589,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Max(int arg0, int arg1)
         {
             return SExecute<int>("max", arg0, arg1);
@@ -599,7 +599,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Min(int arg0, int arg1)
         {
             return SExecute<int>("min", arg0, arg1);
@@ -609,7 +609,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int MultiplyExact(int arg0, int arg1)
         {
             return SExecute<int>("multiplyExact", arg0, arg1);
@@ -618,7 +618,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int NegateExact(int arg0)
         {
             return SExecute<int>("negateExact", arg0);
@@ -627,7 +627,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#round(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Round(float arg0)
         {
             return SExecute<int>("round", arg0);
@@ -637,7 +637,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int SubtractExact(int arg0, int arg1)
         {
             return SExecute<int>("subtractExact", arg0, arg1);
@@ -646,7 +646,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toIntExact(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToIntExact(long arg0)
         {
             return SExecute<int>("toIntExact", arg0);
@@ -655,7 +655,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long Abs(long arg0)
         {
             return SExecute<long>("abs", arg0);
@@ -665,7 +665,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long AddExact(long arg0, long arg1)
         {
             return SExecute<long>("addExact", arg0, arg1);
@@ -674,7 +674,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long DecrementExact(long arg0)
         {
             return SExecute<long>("decrementExact", arg0);
@@ -684,7 +684,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, int arg1)
         {
             return SExecute<long>("floorDiv", arg0, arg1);
@@ -694,7 +694,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, long arg1)
         {
             return SExecute<long>("floorDiv", arg0, arg1);
@@ -704,7 +704,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long FloorMod(long arg0, long arg1)
         {
             return SExecute<long>("floorMod", arg0, arg1);
@@ -713,7 +713,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#incrementExact(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long IncrementExact(long arg0)
         {
             return SExecute<long>("incrementExact", arg0);
@@ -723,7 +723,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
             return SExecute<long>("max", arg0, arg1);
@@ -733,7 +733,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
             return SExecute<long>("min", arg0, arg1);
@@ -743,7 +743,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, int arg1)
         {
             return SExecute<long>("multiplyExact", arg0, arg1);
@@ -753,7 +753,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, long arg1)
         {
             return SExecute<long>("multiplyExact", arg0, arg1);
@@ -763,7 +763,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long MultiplyFull(int arg0, int arg1)
         {
             return SExecute<long>("multiplyFull", arg0, arg1);
@@ -773,7 +773,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long MultiplyHigh(long arg0, long arg1)
         {
             return SExecute<long>("multiplyHigh", arg0, arg1);
@@ -782,7 +782,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long NegateExact(long arg0)
         {
             return SExecute<long>("negateExact", arg0);
@@ -791,7 +791,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#round(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long Round(double arg0)
         {
             return SExecute<long>("round", arg0);
@@ -801,7 +801,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long SubtractExact(long arg0, long arg1)
         {
             return SExecute<long>("subtractExact", arg0, arg1);

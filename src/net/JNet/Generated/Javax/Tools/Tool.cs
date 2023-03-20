@@ -59,7 +59,7 @@ namespace Javax.Tools
         /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.InputStream arg0, Java.Io.OutputStream arg1, Java.Io.OutputStream arg2, params string[] arg3)
         {
             if (arg3.Length == 0) return IExecute<int>("run", arg0, arg1, arg2); else return IExecute<int>("run", arg0, arg1, arg2, arg3);
@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");

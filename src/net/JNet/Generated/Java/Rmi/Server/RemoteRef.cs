@@ -61,7 +61,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0)
         {
             return IExecute<bool>("remoteEquals", arg0);
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int RemoteHashCode()
         {
             return IExecute<int>("remoteHashCode");
@@ -82,7 +82,7 @@ namespace Java.Rmi.Server
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3)
         {
@@ -92,7 +92,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetRefClass(Java.Io.ObjectOutput arg0)
         {
             return IExecute<string>("getRefClass", arg0);
@@ -101,7 +101,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string RemoteToString()
         {
             return IExecute<string>("remoteToString");

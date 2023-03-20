@@ -49,7 +49,7 @@ namespace Javax.Security.Auth.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Abort()
         {
@@ -59,7 +59,7 @@ namespace Javax.Security.Auth.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Commit()
         {
@@ -69,7 +69,7 @@ namespace Javax.Security.Auth.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Login()
         {
@@ -79,7 +79,7 @@ namespace Javax.Security.Auth.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Logout()
         {

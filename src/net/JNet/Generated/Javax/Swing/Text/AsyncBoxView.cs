@@ -134,7 +134,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="float"/></param>
             /// <param name="arg1"><see cref="float"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
             {
                 return IExecute<int>("getViewIndexAtPoint", arg0, arg1, arg2);
@@ -244,7 +244,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsLayoutValid()
             {
                 return IExecute<bool>("isLayoutValid");

@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int BytesConsumed()
         {
             return IExecute<int>("bytesConsumed");
@@ -81,7 +81,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int BytesProduced()
         {
             return IExecute<int>("bytesProduced");
@@ -108,7 +108,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long SequenceNumber()
         {
             return IExecute<long>("sequenceNumber");

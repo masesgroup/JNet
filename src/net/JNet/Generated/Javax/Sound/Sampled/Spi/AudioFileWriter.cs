@@ -58,7 +58,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.File arg2)
         {
@@ -70,7 +70,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.OutputStream arg2)
         {
@@ -90,7 +90,7 @@ namespace Javax.Sound.Sampled.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return IExecute<bool>("isFileTypeSupported", arg0, arg1);
@@ -99,7 +99,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0)
         {
             return IExecute<bool>("isFileTypeSupported", arg0);

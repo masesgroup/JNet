@@ -74,7 +74,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5, Java.Util.Comparator arg6)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -85,7 +85,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, object[] arg1, Java.Util.Comparator arg2)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2);
@@ -98,7 +98,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="object"/></param>
         /// <param name="arg4"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, int arg1, int arg2, object arg3, Java.Util.Comparator arg4)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3, arg4);
@@ -109,7 +109,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, object arg1, Java.Util.Comparator arg2)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2);
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5, Java.Util.Comparator arg6)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Lang.Comparable"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(Java.Lang.Comparable[] arg0, int arg1, int arg2, Java.Lang.Comparable[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(object[] arg0, object[] arg1, Java.Util.Comparator arg2)
         {
             return SExecute<int>("compare", arg0, arg1, arg2);
@@ -159,7 +159,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Comparable"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(Java.Lang.Comparable[] arg0, Java.Lang.Comparable[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -174,7 +174,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5, Java.Util.Comparator arg6)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -185,7 +185,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, object[] arg1, Java.Util.Comparator arg2)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2);
@@ -361,7 +361,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool DeepEquals(object[] arg0, object[] arg1)
         {
             return SExecute<bool>("deepEquals", arg0, arg1);
@@ -371,7 +371,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(bool[] arg0, bool[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -385,7 +385,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -395,7 +395,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(byte[] arg0, byte[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -409,7 +409,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -419,7 +419,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(char[] arg0, char[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -433,7 +433,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="char"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -443,7 +443,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(double[] arg0, double[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="double"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -467,7 +467,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(float[] arg0, float[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -481,7 +481,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -495,7 +495,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -505,7 +505,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(int[] arg0, int[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -519,7 +519,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="object"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -529,7 +529,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, object[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -543,7 +543,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -553,7 +553,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(long[] arg0, long[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -567,7 +567,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="short"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -577,7 +577,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(short[] arg0, short[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -692,7 +692,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(byte[] arg0, byte arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -704,7 +704,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(byte[] arg0, int arg1, int arg2, byte arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -714,7 +714,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(char[] arg0, char arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -726,7 +726,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(char[] arg0, int arg1, int arg2, char arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -736,7 +736,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(double[] arg0, double arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -748,7 +748,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(double[] arg0, int arg1, int arg2, double arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -758,7 +758,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(float[] arg0, float arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -770,7 +770,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(float[] arg0, int arg1, int arg2, float arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -782,7 +782,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -792,7 +792,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -804,7 +804,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, int arg1, int arg2, object arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -814,7 +814,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, object arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -826,7 +826,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(long[] arg0, int arg1, int arg2, long arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -836,7 +836,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(long[] arg0, long arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -848,7 +848,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(short[] arg0, int arg1, int arg2, short arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
@@ -858,7 +858,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int BinarySearch(short[] arg0, short arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
@@ -868,7 +868,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(bool[] arg0, bool[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -882,7 +882,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -892,7 +892,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -906,7 +906,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -916,7 +916,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(char[] arg0, char[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -930,7 +930,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="char"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -940,7 +940,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(double[] arg0, double[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -954,7 +954,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="double"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -964,7 +964,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(float[] arg0, float[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -978,7 +978,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -992,7 +992,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1002,7 +1002,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(int[] arg0, int[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -1016,7 +1016,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1026,7 +1026,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(long[] arg0, long[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -1040,7 +1040,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="short"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1050,7 +1050,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(short[] arg0, short[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -1060,7 +1060,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -1074,7 +1074,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1088,7 +1088,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1098,7 +1098,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -1112,7 +1112,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1122,7 +1122,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long[] arg0, long[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -1136,7 +1136,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="short"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1146,7 +1146,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short[] arg0, short[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -1155,7 +1155,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepHashCode(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int DeepHashCode(object[] arg0)
         {
             return SExecute<int>("deepHashCode", arg0);
@@ -1164,7 +1164,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(bool[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1173,7 +1173,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(byte[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1182,7 +1182,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(char[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1191,7 +1191,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(double[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1200,7 +1200,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(float[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1209,7 +1209,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(int[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1218,7 +1218,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(object[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1227,7 +1227,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(long[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1236,7 +1236,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(short[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -1246,7 +1246,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(bool[] arg0, bool[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1260,7 +1260,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1270,7 +1270,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1284,7 +1284,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1294,7 +1294,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(char[] arg0, char[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1308,7 +1308,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="char"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1318,7 +1318,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(double[] arg0, double[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1332,7 +1332,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="double"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1342,7 +1342,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(float[] arg0, float[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1356,7 +1356,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1370,7 +1370,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1380,7 +1380,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(int[] arg0, int[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1394,7 +1394,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="object"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1404,7 +1404,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, object[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1418,7 +1418,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1428,7 +1428,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(long[] arg0, long[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1442,7 +1442,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="short"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1452,7 +1452,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Mismatch(short[] arg0, short[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
@@ -1482,7 +1482,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string DeepToString(object[] arg0)
         {
             return SExecute<string>("deepToString", arg0);
@@ -1491,7 +1491,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(bool[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1500,7 +1500,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(byte[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1509,7 +1509,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(char[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1518,7 +1518,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(double[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1527,7 +1527,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(float[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1536,7 +1536,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(int[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1545,7 +1545,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(object[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1554,7 +1554,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(long[] arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -1563,7 +1563,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(short[] arg0)
         {
             return SExecute<string>("toString", arg0);

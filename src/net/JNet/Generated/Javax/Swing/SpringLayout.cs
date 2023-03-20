@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
             return IExecute<float>("getLayoutAlignmentX", arg0);
@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
             return IExecute<float>("getLayoutAlignmentY", arg0);

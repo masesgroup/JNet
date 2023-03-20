@@ -103,7 +103,7 @@ namespace Javax.Sound.Sampled.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return IExecute<bool>("isConversionSupported", arg0, arg1);
@@ -113,7 +113,7 @@ namespace Javax.Sound.Sampled.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return IExecute<bool>("isConversionSupported", arg0, arg1);
@@ -122,7 +122,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isSourceEncodingSupported(javax.sound.sampled.AudioFormat$Encoding)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSourceEncodingSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
             return IExecute<bool>("isSourceEncodingSupported", arg0);
@@ -131,7 +131,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isTargetEncodingSupported(javax.sound.sampled.AudioFormat$Encoding)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTargetEncodingSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
             return IExecute<bool>("isTargetEncodingSupported", arg0);

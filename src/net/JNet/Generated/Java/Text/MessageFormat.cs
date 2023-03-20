@@ -63,7 +63,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Format(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return SExecute<string>("format", arg0); else return SExecute<string>("format", arg0, arg1);
@@ -128,7 +128,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToPattern()
         {
             return IExecute<string>("toPattern");

@@ -196,7 +196,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFlavorJavaFileListType()
         {
             return IExecute<bool>("isFlavorJavaFileListType");
@@ -205,7 +205,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFlavorRemoteObjectType()
         {
             return IExecute<bool>("isFlavorRemoteObjectType");
@@ -214,7 +214,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFlavorSerializedObjectType()
         {
             return IExecute<bool>("isFlavorSerializedObjectType");
@@ -223,7 +223,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorTextType()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFlavorTextType()
         {
             return IExecute<bool>("isFlavorTextType");
@@ -232,7 +232,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeEqual(string arg0)
         {
             return IExecute<bool>("isMimeTypeEqual", arg0);
@@ -241,7 +241,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeSerializedObject()
         {
             return IExecute<bool>("isMimeTypeSerializedObject");
@@ -250,7 +250,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassByteBuffer()
         {
             return IExecute<bool>("isRepresentationClassByteBuffer");
@@ -259,7 +259,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassCharBuffer()
         {
             return IExecute<bool>("isRepresentationClassCharBuffer");
@@ -268,7 +268,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassInputStream()
         {
             return IExecute<bool>("isRepresentationClassInputStream");
@@ -277,7 +277,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassReader()
         {
             return IExecute<bool>("isRepresentationClassReader");
@@ -286,7 +286,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassRemote()
         {
             return IExecute<bool>("isRepresentationClassRemote");
@@ -295,7 +295,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassSerializable()
         {
             return IExecute<bool>("isRepresentationClassSerializable");
@@ -304,7 +304,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#match(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Match(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("match", arg0);
@@ -313,7 +313,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeEqual(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("isMimeTypeEqual", arg0);
@@ -333,7 +333,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetParameter(string arg0)
         {
             return IExecute<string>("getParameter", arg0);

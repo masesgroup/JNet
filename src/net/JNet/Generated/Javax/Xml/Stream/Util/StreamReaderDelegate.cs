@@ -201,7 +201,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasName()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasName()
         {
             return IExecute<bool>("hasName");
@@ -210,7 +210,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasNext()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public bool HasNext()
         {
@@ -220,7 +220,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasText()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasText()
         {
             return IExecute<bool>("hasText");
@@ -229,7 +229,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isAttributeSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAttributeSpecified(int arg0)
         {
             return IExecute<bool>("isAttributeSpecified", arg0);
@@ -238,7 +238,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isCharacters()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCharacters()
         {
             return IExecute<bool>("isCharacters");
@@ -247,7 +247,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isEndElement()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEndElement()
         {
             return IExecute<bool>("isEndElement");
@@ -256,7 +256,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStandalone()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
             return IExecute<bool>("isStandalone");
@@ -265,7 +265,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStartElement()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStartElement()
         {
             return IExecute<bool>("isStartElement");
@@ -274,7 +274,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isWhiteSpace()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsWhiteSpace()
         {
             return IExecute<bool>("isWhiteSpace");
@@ -283,7 +283,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#standaloneSet()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool StandaloneSet()
         {
             return IExecute<bool>("standaloneSet");
@@ -295,7 +295,7 @@ namespace Javax.Xml.Stream.Util
         /// <param name="arg1"><see cref="char"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int GetTextCharacters(int arg0, char[] arg1, int arg2, int arg3)
         {
@@ -305,7 +305,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#next()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int Next()
         {
@@ -315,7 +315,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#nextTag()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int NextTag()
         {
@@ -325,7 +325,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
@@ -334,7 +334,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeLocalName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeLocalName(int arg0)
         {
             return IExecute<string>("getAttributeLocalName", arg0);
@@ -343,7 +343,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeNamespace(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeNamespace(int arg0)
         {
             return IExecute<string>("getAttributeNamespace", arg0);
@@ -352,7 +352,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributePrefix(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributePrefix(int arg0)
         {
             return IExecute<string>("getAttributePrefix", arg0);
@@ -361,7 +361,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeType(int arg0)
         {
             return IExecute<string>("getAttributeType", arg0);
@@ -370,7 +370,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeValue(int arg0)
         {
             return IExecute<string>("getAttributeValue", arg0);
@@ -380,7 +380,7 @@ namespace Javax.Xml.Stream.Util
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetAttributeValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeValue", arg0, arg1);
@@ -389,7 +389,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespacePrefix(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNamespacePrefix(int arg0)
         {
             return IExecute<string>("getNamespacePrefix", arg0);
@@ -398,7 +398,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceURI(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNamespaceURI(int arg0)
         {
             return IExecute<string>("getNamespaceURI", arg0);
@@ -407,7 +407,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNamespaceURI(string arg0)
         {
             return IExecute<string>("getNamespaceURI", arg0);

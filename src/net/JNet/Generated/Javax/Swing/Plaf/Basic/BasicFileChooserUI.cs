@@ -92,7 +92,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetApproveButtonMnemonic(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<int>("getApproveButtonMnemonic", arg0);
@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetApproveButtonToolTipText(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<string>("getApproveButtonToolTipText", arg0);

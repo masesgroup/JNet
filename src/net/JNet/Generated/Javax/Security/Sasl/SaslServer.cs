@@ -63,7 +63,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsComplete()
         {
             return IExecute<bool>("isComplete");
@@ -106,7 +106,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getNegotiatedProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetNegotiatedProperty(string arg0)
         {
             return IExecute("getNegotiatedProperty", arg0);

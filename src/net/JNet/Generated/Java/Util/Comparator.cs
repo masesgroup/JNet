@@ -132,7 +132,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Compare(object arg0, object arg1)
         {
             return IExecute<int>("compare", arg0, arg1);

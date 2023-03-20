@@ -53,7 +53,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetProperty(string arg0, string arg1)
         {
             return SExecute<string>("getProperty", arg0, arg1);
@@ -149,7 +149,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalExclusionTypeSupported(java.awt.Dialog$ModalExclusionType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalExclusionType"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsModalExclusionTypeSupported(Java.Awt.Dialog.ModalExclusionType arg0)
         {
             return IExecute<bool>("isModalExclusionTypeSupported", arg0);
@@ -158,7 +158,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalityTypeSupported(java.awt.Dialog$ModalityType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalityType"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsModalityTypeSupported(Java.Awt.Dialog.ModalityType arg0)
         {
             return IExecute<bool>("isModalityTypeSupported", arg0);
@@ -170,7 +170,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool PrepareImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
             return IExecute<bool>("prepareImage", arg0, arg1, arg2, arg3);
@@ -182,7 +182,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CheckImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
             return IExecute<int>("checkImage", arg0, arg1, arg2, arg3);
@@ -282,7 +282,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#areExtraMouseButtonsEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool AreExtraMouseButtonsEnabled()
         {
@@ -292,7 +292,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getLockingKeyState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public bool GetLockingKeyState(int arg0)
         {
@@ -302,7 +302,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isAlwaysOnTopSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
             return IExecute<bool>("isAlwaysOnTopSupported");
@@ -311,7 +311,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isDynamicLayoutActive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsDynamicLayoutActive()
         {
@@ -321,7 +321,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isFrameStateSupported(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsFrameStateSupported(int arg0)
         {
@@ -331,7 +331,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getDesktopProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetDesktopProperty(string arg0)
         {
             return IExecute("getDesktopProperty", arg0);

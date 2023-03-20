@@ -65,7 +65,7 @@ namespace Javax.Swing.Text.Html
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetIntegerAttributeValue(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.Html.HTML.Attribute arg1, int arg2)
         {
             return SExecute<int>("getIntegerAttributeValue", arg0, arg1, arg2);
@@ -771,7 +771,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#breaksFlow()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool BreaksFlow()
             {
                 return IExecute<bool>("breaksFlow");
@@ -780,7 +780,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsBlock()
             {
                 return IExecute<bool>("isBlock");
@@ -789,7 +789,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsPreformatted()
             {
                 return IExecute<bool>("isPreformatted");

@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool OnExceptionalCompletion(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter arg1)
         {
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
             return IExecute<int>("decrementPendingCountUnlessZero");

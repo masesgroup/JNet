@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Test(object arg0, object arg1)
         {
             return IExecute<bool>("test", arg0, arg1);

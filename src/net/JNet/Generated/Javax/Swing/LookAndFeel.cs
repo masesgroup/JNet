@@ -46,7 +46,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object GetDesktopPropertyValue(string arg0, object arg1)
         {
             return SExecute("getDesktopPropertyValue", arg0, arg1);
@@ -56,7 +56,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object MakeIcon(Java.Lang.Class arg0, string arg1)
         {
             return SExecute("makeIcon", arg0, arg1);
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isNativeLookAndFeel()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNativeLookAndFeel()
         {
             return IExecute<bool>("isNativeLookAndFeel");
@@ -205,7 +205,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isSupportedLookAndFeel()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSupportedLookAndFeel()
         {
             return IExecute<bool>("isSupportedLookAndFeel");

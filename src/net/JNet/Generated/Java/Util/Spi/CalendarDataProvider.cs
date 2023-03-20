@@ -49,7 +49,7 @@ namespace Java.Util.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarDataProvider.html#getFirstDayOfWeek(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetFirstDayOfWeek(Java.Util.Locale arg0)
         {
             return IExecute<int>("getFirstDayOfWeek", arg0);
@@ -58,7 +58,7 @@ namespace Java.Util.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarDataProvider.html#getMinimalDaysInFirstWeek(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetMinimalDaysInFirstWeek(Java.Util.Locale arg0)
         {
             return IExecute<int>("getMinimalDaysInFirstWeek", arg0);

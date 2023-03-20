@@ -60,7 +60,7 @@ namespace Java.Util.Spi
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params string[] arg2)
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
@@ -69,7 +69,7 @@ namespace Java.Util.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
@@ -80,7 +80,7 @@ namespace Java.Util.Spi
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params string[] arg2)
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);

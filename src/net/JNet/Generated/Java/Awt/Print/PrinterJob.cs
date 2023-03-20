@@ -104,7 +104,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
             return IExecute<bool>("isCancelled");
@@ -113,7 +113,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog()
         {
@@ -193,7 +193,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {

@@ -128,7 +128,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStandardImageMetadataFormatSupported()
         {
             return IExecute<bool>("isStandardImageMetadataFormatSupported");
@@ -137,7 +137,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStandardStreamMetadataFormatSupported()
         {
             return IExecute<bool>("isStandardStreamMetadataFormatSupported");

@@ -70,7 +70,7 @@ namespace Javax.Management.Monitor
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("containsObservedObject", arg0);
@@ -79,7 +79,7 @@ namespace Javax.Management.Monitor
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");

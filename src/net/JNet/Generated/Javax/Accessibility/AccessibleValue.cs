@@ -70,7 +70,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool SetCurrentAccessibleValue(Java.Lang.Number arg0)
         {
             return IExecute<bool>("setCurrentAccessibleValue", arg0);

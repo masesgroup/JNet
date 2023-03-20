@@ -53,7 +53,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html#match(java.security.cert.CRL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Match(Java.Security.Cert.CRL arg0)
         {
             return IExecute<bool>("match", arg0);

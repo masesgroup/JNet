@@ -221,7 +221,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
-    public partial class DirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectoryStream>
+    public partial class DirectoryStream : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -856,7 +856,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html"/>
     /// </summary>
-    public partial class Path : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Path>
+    public partial class Path : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -95,7 +95,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer%3C? super T%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool TryAdvance(Java.Util.Function.Consumer arg0)
         {
             return IExecute<bool>("tryAdvance", arg0);
@@ -104,7 +104,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Characteristics()
         {
             return IExecute<int>("characteristics");
@@ -122,7 +122,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long EstimateSize()
         {
             return IExecute<long>("estimateSize");
@@ -131,7 +131,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasCharacteristics(int arg0)
         {
             return IExecute<bool>("hasCharacteristics", arg0);
@@ -172,7 +172,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.DoubleConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -181,7 +181,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -190,7 +190,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Double%3E)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -259,7 +259,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.IntConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.IntConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -268,7 +268,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -277,7 +277,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Integer%3E)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -346,7 +346,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.LongConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.LongConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -355,7 +355,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -364,7 +364,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Long%3E)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
@@ -437,7 +437,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(T_CONS)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);

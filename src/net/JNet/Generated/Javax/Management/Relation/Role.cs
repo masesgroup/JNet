@@ -59,7 +59,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#roleValueToString(java.util.List%3Cjavax.management.ObjectName%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static string RoleValueToString(Java.Util.List arg0)
         {

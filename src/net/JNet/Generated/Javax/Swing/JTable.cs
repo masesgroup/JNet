@@ -417,7 +417,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.EventObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool EditCellAt(int arg0, int arg1, Java.Util.EventObject arg2)
         {
             return IExecute<bool>("editCellAt", arg0, arg1, arg2);
@@ -427,7 +427,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool EditCellAt(int arg0, int arg1)
         {
             return IExecute<bool>("editCellAt", arg0, arg1);
@@ -437,7 +437,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
             return IExecute<bool>("isCellEditable", arg0, arg1);
@@ -447,7 +447,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCellSelected(int arg0, int arg1)
         {
             return IExecute<bool>("isCellSelected", arg0, arg1);
@@ -456,7 +456,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isColumnSelected(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsColumnSelected(int arg0)
         {
             return IExecute<bool>("isColumnSelected", arg0);
@@ -465,7 +465,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isEditing()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEditing()
         {
             return IExecute<bool>("isEditing");
@@ -474,7 +474,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isRowSelected(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
             return IExecute<bool>("isRowSelected", arg0);
@@ -483,7 +483,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
         {
@@ -499,7 +499,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="Javax.Print.PrintService"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5, Javax.Print.PrintService arg6)
@@ -515,7 +515,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5)
@@ -528,7 +528,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
         /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
         /// <param name="arg2"><see cref="Java.Text.MessageFormat"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2)
         {
@@ -538,7 +538,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0)
         {
@@ -557,7 +557,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnAtPoint(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ColumnAtPoint(Java.Awt.Point arg0)
         {
             return IExecute<int>("columnAtPoint", arg0);
@@ -566,7 +566,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertColumnIndexToModel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertColumnIndexToModel(int arg0)
         {
             return IExecute<int>("convertColumnIndexToModel", arg0);
@@ -575,7 +575,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertColumnIndexToView(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertColumnIndexToView(int arg0)
         {
             return IExecute<int>("convertColumnIndexToView", arg0);
@@ -584,7 +584,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertRowIndexToModel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
             return IExecute<int>("convertRowIndexToModel", arg0);
@@ -593,7 +593,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertRowIndexToView(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
             return IExecute<int>("convertRowIndexToView", arg0);
@@ -602,7 +602,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRowHeight(int arg0)
         {
             return IExecute<int>("getRowHeight", arg0);
@@ -613,7 +613,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
@@ -624,7 +624,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
@@ -633,7 +633,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#rowAtPoint(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int RowAtPoint(Java.Awt.Point arg0)
         {
             return IExecute<int>("rowAtPoint", arg0);
@@ -696,7 +696,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetValueAt(int arg0, int arg1)
         {
             return IExecute("getValueAt", arg0, arg1);
@@ -705,7 +705,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetColumnName(int arg0)
         {
             return IExecute<string>("getColumnName", arg0);
@@ -1066,7 +1066,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertColumn()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsInsertColumn()
             {
                 return IExecute<bool>("isInsertColumn");
@@ -1075,7 +1075,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertRow()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsInsertRow()
             {
                 return IExecute<bool>("isInsertRow");

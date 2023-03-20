@@ -132,7 +132,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#deleteTrack(javax.sound.midi.Track)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DeleteTrack(Javax.Sound.Midi.Track arg0)
         {
             return IExecute<bool>("deleteTrack", arg0);

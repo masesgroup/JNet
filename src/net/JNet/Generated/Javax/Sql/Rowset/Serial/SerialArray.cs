@@ -110,7 +110,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(Java.Util.Map arg0)
         {
@@ -122,7 +122,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(long arg0, int arg1, Java.Util.Map arg2)
         {
@@ -133,7 +133,7 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(long arg0, int arg1)
         {

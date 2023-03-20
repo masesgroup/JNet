@@ -49,7 +49,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isFocusTraversable(javax.swing.JComboBox%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversable(Javax.Swing.JComboBox arg0)
         {
             return IExecute<bool>("isFocusTraversable", arg0);
@@ -58,7 +58,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isPopupVisible(javax.swing.JComboBox%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible(Javax.Swing.JComboBox arg0)
         {
             return IExecute<bool>("isPopupVisible", arg0);

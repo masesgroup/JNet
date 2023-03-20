@@ -110,7 +110,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsGap()
         {
             return IExecute<bool>("isGap");
@@ -119,7 +119,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOverlap()
         {
             return IExecute<bool>("isOverlap");
@@ -128,7 +128,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidOffset(Java.Time.ZoneOffset arg0)
         {
             return IExecute<bool>("isValidOffset", arg0);
@@ -137,7 +137,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -146,7 +146,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Zone.ZoneOffsetTransition"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Zone.ZoneOffsetTransition arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -155,7 +155,7 @@ namespace Java.Time.Zone
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()
         {
             return IExecute<long>("toEpochSecond");

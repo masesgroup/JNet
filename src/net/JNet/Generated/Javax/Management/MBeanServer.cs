@@ -82,7 +82,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1)
         {
@@ -92,7 +92,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#isRegistered(javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRegistered(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("isRegistered", arg0);
@@ -122,7 +122,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -137,7 +137,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         public object Instantiate(string arg0, object[] arg1, string[] arg2)
@@ -151,7 +151,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -164,7 +164,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -176,7 +176,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         public object Instantiate(string arg0)
@@ -190,7 +190,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>

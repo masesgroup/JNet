@@ -67,7 +67,7 @@ namespace Javax.Xml.Catalog
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#get(javax.xml.catalog.CatalogFeatures$Feature)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Get(Javax.Xml.Catalog.CatalogFeatures.Feature arg0)
         {
             return IExecute<string>("get", arg0);
@@ -187,7 +187,7 @@ namespace Javax.Xml.Catalog
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string DefaultValue()
             {
                 return IExecute<string>("defaultValue");

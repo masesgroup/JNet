@@ -56,7 +56,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsModifiableClass(Java.Lang.Class arg0)
         {
             return IExecute<bool>("isModifiableClass", arg0);
@@ -65,7 +65,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsModifiableModule(Java.Lang.Module arg0)
         {
             return IExecute<bool>("isModifiableModule", arg0);
@@ -74,7 +74,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethodPrefixSupported()
         {
             return IExecute<bool>("isNativeMethodPrefixSupported");
@@ -83,7 +83,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRedefineClassesSupported()
         {
             return IExecute<bool>("isRedefineClassesSupported");
@@ -92,7 +92,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRetransformClassesSupported()
         {
             return IExecute<bool>("isRetransformClassesSupported");
@@ -101,7 +101,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer arg0)
         {
             return IExecute<bool>("removeTransformer", arg0);
@@ -119,7 +119,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetObjectSize(object arg0)
         {
             return IExecute<long>("getObjectSize", arg0);

@@ -88,7 +88,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#canDecodeInput(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanDecodeInput(object arg0)
         {
@@ -108,7 +108,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#isOwnReader(javax.imageio.ImageReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOwnReader(Javax.Imageio.ImageReader arg0)
         {
             return IExecute<bool>("isOwnReader", arg0);

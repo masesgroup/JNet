@@ -64,7 +64,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Create(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
         {
             return SExecute("create", arg0, arg1, arg2, arg3, arg4);
@@ -76,7 +76,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Create(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
         {
             return SExecute("create", arg0, arg1, arg2, arg3);
@@ -87,7 +87,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object Create(Java.Lang.Class arg0, object arg1, string arg2)
         {
             return SExecute("create", arg0, arg1, arg2);
@@ -130,7 +130,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);

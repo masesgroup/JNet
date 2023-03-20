@@ -54,7 +54,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
         /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("isSameFile", arg0, arg1);

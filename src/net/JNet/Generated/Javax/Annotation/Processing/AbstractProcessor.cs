@@ -75,7 +75,7 @@ namespace Javax.Annotation.Processing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Javax.Annotation.Processing.RoundEnvironment"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Process(Java.Util.Set arg0, Javax.Annotation.Processing.RoundEnvironment arg1)
         {
             return IExecute<bool>("process", arg0, arg1);

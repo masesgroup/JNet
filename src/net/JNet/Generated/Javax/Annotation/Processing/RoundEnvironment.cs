@@ -56,7 +56,7 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ErrorRaised()
         {
             return IExecute<bool>("errorRaised");
@@ -65,7 +65,7 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ProcessingOver()
         {
             return IExecute<bool>("processingOver");

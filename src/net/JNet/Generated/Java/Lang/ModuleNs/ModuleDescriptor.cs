@@ -130,7 +130,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isAutomatic()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAutomatic()
         {
             return IExecute<bool>("isAutomatic");
@@ -139,7 +139,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isOpen()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
             return IExecute<bool>("isOpen");
@@ -148,7 +148,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#compareTo(java.lang.module.ModuleDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -157,7 +157,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -166,7 +166,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
@@ -175,7 +175,7 @@ namespace Java.Lang.ModuleNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#toNameAndVersion()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ToNameAndVersion()
         {
             return IExecute<string>("toNameAndVersion");
@@ -539,7 +539,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#isQualified()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsQualified()
             {
                 return IExecute<bool>("isQualified");
@@ -548,7 +548,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.module.ModuleDescriptor$Exports)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -557,7 +557,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -566,7 +566,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#source()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Source()
             {
                 return IExecute<string>("source");
@@ -685,7 +685,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#isQualified()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsQualified()
             {
                 return IExecute<bool>("isQualified");
@@ -694,7 +694,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#compareTo(java.lang.module.ModuleDescriptor$Opens)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Opens arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -703,7 +703,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -712,7 +712,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#source()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Source()
             {
                 return IExecute<string>("source");
@@ -770,7 +770,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#compareTo(java.lang.module.ModuleDescriptor$Provides)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Provides"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Provides arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -779,7 +779,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -788,7 +788,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#service()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Service()
             {
                 return IExecute<string>("service");
@@ -837,7 +837,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.module.ModuleDescriptor$Requires)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -846,7 +846,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -855,7 +855,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#name()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string Name()
             {
                 return IExecute<string>("name");
@@ -931,7 +931,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html#compareTo(java.lang.module.ModuleDescriptor$Version)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Version arg0)
             {
                 return IExecute<int>("compareTo", arg0);
@@ -940,7 +940,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html#compareTo(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);

@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasContended()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasContended()
         {
             return IExecute<bool>("hasContended");
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedPredecessors()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasQueuedPredecessors()
         {
             return IExecute<bool>("hasQueuedPredecessors");
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedThreads()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
             return IExecute<bool>("hasQueuedThreads");
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasWaiters(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
             return IExecute<bool>("hasWaiters", arg0);
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#isQueued(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsQueued(Java.Lang.Thread arg0)
         {
             return IExecute<bool>("isQueued", arg0);
@@ -133,7 +133,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#owns(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Owns(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
             return IExecute<bool>("owns", arg0);
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#release(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Release(int arg0)
         {
             return IExecute<bool>("release", arg0);
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#releaseShared(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ReleaseShared(int arg0)
         {
             return IExecute<bool>("releaseShared", arg0);
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireNanos(int arg0, long arg1)
         {
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireSharedNanos(int arg0, long arg1)
         {
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
             return IExecute<int>("getWaitQueueLength", arg0);
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent.Locks
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
             {
@@ -285,7 +285,7 @@ namespace Java.Util.Concurrent.Locks
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool AwaitUntil(Java.Util.Date arg0)
             {
@@ -295,7 +295,7 @@ namespace Java.Util.Concurrent.Locks
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html#awaitNanos(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public long AwaitNanos(long arg0)
             {

@@ -88,7 +88,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(javax.imageio.ImageTypeSpecifier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanEncodeImage(Javax.Imageio.ImageTypeSpecifier arg0)
         {
             return IExecute<bool>("canEncodeImage", arg0);
@@ -107,7 +107,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(java.awt.image.RenderedImage)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanEncodeImage(Java.Awt.ImageNs.RenderedImage arg0)
         {
             return IExecute<bool>("canEncodeImage", arg0);
@@ -116,7 +116,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFormatLossless()
         {
             return IExecute<bool>("isFormatLossless");
@@ -125,7 +125,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isOwnWriter(javax.imageio.ImageWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOwnWriter(Javax.Imageio.ImageWriter arg0)
         {
             return IExecute<bool>("isOwnWriter", arg0);

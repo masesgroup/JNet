@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1, object arg2)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, object arg2)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
@@ -82,7 +82,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object AccumulateAndGet(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecute("accumulateAndGet", arg0, arg1, arg2);
@@ -122,7 +122,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndAccumulate(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecute("getAndAccumulate", arg0, arg1, arg2);
@@ -132,7 +132,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndUpdate(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecute("getAndUpdate", arg0, arg1);
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object UpdateAndGet(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecute("updateAndGet", arg0, arg1);
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAndSet(object arg0, object arg1)
         {
             return IExecute("getAndSet", arg0, arg1);

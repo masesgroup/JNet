@@ -73,7 +73,7 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedKeyLength(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(string arg0)
         {
@@ -245,7 +245,7 @@ namespace Javax.Crypto
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
@@ -260,7 +260,7 @@ namespace Javax.Crypto
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
@@ -273,7 +273,7 @@ namespace Javax.Crypto
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
@@ -286,7 +286,7 @@ namespace Javax.Crypto
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
@@ -298,7 +298,7 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getOutputSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetOutputSize(int arg0)
         {
             return IExecute<int>("getOutputSize", arg0);
@@ -311,7 +311,7 @@ namespace Javax.Crypto
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
         {
@@ -324,7 +324,7 @@ namespace Javax.Crypto
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(byte[] arg0, int arg1, int arg2, byte[] arg3)
         {
@@ -335,7 +335,7 @@ namespace Javax.Crypto
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {

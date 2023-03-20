@@ -148,7 +148,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Decode(byte[] arg0, byte[] arg1)
             {
                 return IExecute<int>("decode", arg0, arg1);
@@ -212,7 +212,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Encode(byte[] arg0, byte[] arg1)
             {
                 return IExecute<int>("encode", arg0, arg1);
@@ -230,7 +230,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encodeToString(byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string EncodeToString(byte[] arg0)
             {
                 return IExecute<string>("encodeToString", arg0);

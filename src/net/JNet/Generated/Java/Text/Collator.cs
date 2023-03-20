@@ -125,7 +125,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Compare(string arg0, string arg1)
         {
             return IExecute<int>("compare", arg0, arg1);
@@ -144,7 +144,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Equals(string arg0, string arg1)
         {
             return IExecute<bool>("equals", arg0, arg1);
@@ -154,7 +154,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Compare(object arg0, object arg1)
         {
             return IExecute<int>("compare", arg0, arg1);

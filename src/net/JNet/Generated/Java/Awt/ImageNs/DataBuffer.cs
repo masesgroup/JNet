@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getDataTypeSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetDataTypeSize(int arg0)
         {
             return SExecute<int>("getDataTypeSize", arg0);
@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetElem(int arg0, int arg1)
         {
             return IExecute<int>("getElem", arg0, arg1);
@@ -142,7 +142,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetElemDouble(int arg0, int arg1)
         {
             return IExecute<double>("getElemDouble", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemDouble(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetElemDouble(int arg0)
         {
             return IExecute<double>("getElemDouble", arg0);
@@ -161,7 +161,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetElemFloat(int arg0, int arg1)
         {
             return IExecute<float>("getElemFloat", arg0, arg1);
@@ -170,7 +170,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemFloat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetElemFloat(int arg0)
         {
             return IExecute<float>("getElemFloat", arg0);
@@ -179,7 +179,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElem(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetElem(int arg0)
         {
             return IExecute<int>("getElem", arg0);

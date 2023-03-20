@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasWaiters(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecute<bool>("hasWaiters", arg0);
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsHeldByCurrentThread()
         {
             return IExecute<bool>("isHeldByCurrentThread");
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLocked()
         {
             return IExecute<bool>("isLocked");
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool TryLock()
         {
             return IExecute<bool>("tryLock");
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThread(Java.Lang.Thread arg0)
         {
             return IExecute<bool>("hasQueuedThread", arg0);
@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
             return IExecute<bool>("hasQueuedThreads");
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFair()
         {
             return IExecute<bool>("isFair");
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecute<int>("getWaitQueueLength", arg0);

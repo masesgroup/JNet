@@ -93,7 +93,7 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isIdentifier", arg0);
@@ -103,7 +103,7 @@ namespace Javax.Lang.Model
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.SourceVersion"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
             return SExecute<bool>("isKeyword", arg0, arg1);
@@ -112,7 +112,7 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isKeyword", arg0);
@@ -122,7 +122,7 @@ namespace Javax.Lang.Model
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.SourceVersion"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
             return SExecute<bool>("isName", arg0, arg1);
@@ -131,7 +131,7 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isName", arg0);

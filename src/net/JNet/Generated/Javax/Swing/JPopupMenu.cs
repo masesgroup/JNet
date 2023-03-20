@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isBorderPainted()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
             return IExecute<bool>("isBorderPainted");
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isLightWeightPopupEnabled()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
             return IExecute<bool>("isLightWeightPopupEnabled");
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isPopupTrigger(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPopupTrigger(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecute<bool>("isPopupTrigger", arg0);
@@ -155,7 +155,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#getComponentIndex(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetComponentIndex(Java.Awt.Component arg0)
         {
             return IExecute<int>("getComponentIndex", arg0);

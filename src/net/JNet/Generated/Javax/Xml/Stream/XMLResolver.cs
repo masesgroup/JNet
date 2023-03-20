@@ -52,7 +52,7 @@ namespace Javax.Xml.Stream
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public object ResolveEntity(string arg0, string arg1, string arg2, string arg3)
         {

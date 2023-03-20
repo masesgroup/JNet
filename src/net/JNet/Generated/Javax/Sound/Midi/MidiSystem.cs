@@ -88,7 +88,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
         {
             return SExecute<bool>("isFileTypeSupported", arg0, arg1);
@@ -97,7 +97,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0)
         {
             return SExecute<bool>("isFileTypeSupported", arg0);
@@ -108,7 +108,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.File arg2)
         {
@@ -120,7 +120,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.OutputStream arg2)
         {

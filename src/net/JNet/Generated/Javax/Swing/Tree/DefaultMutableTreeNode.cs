@@ -229,7 +229,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isLeaf()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLeaf()
         {
             return IExecute<bool>("isLeaf");
@@ -238,7 +238,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeAncestor(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNodeAncestor(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecute<bool>("isNodeAncestor", arg0);
@@ -247,7 +247,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeChild(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNodeChild(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecute<bool>("isNodeChild", arg0);
@@ -256,7 +256,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeDescendant(javax.swing.tree.DefaultMutableTreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNodeDescendant(Javax.Swing.Tree.DefaultMutableTreeNode arg0)
         {
             return IExecute<bool>("isNodeDescendant", arg0);
@@ -265,7 +265,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeRelated(javax.swing.tree.DefaultMutableTreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNodeRelated(Javax.Swing.Tree.DefaultMutableTreeNode arg0)
         {
             return IExecute<bool>("isNodeRelated", arg0);
@@ -274,7 +274,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeSibling(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNodeSibling(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecute<bool>("isNodeSibling", arg0);
@@ -283,7 +283,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isRoot()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsRoot()
         {
             return IExecute<bool>("isRoot");
@@ -292,7 +292,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecute<int>("getIndex", arg0);

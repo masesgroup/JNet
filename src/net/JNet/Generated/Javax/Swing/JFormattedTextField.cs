@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEditValid()
         {
             return IExecute<bool>("isEditValid");
@@ -180,7 +180,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Text.ParseException"/>
             public object StringToValue(string arg0)
             {
@@ -190,7 +190,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             /// <exception cref="Java.Text.ParseException"/>
             public string ValueToString(object arg0)
             {

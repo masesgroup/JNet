@@ -74,7 +74,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#isSelected(javax.swing.ButtonModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ButtonModel"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSelected(Javax.Swing.ButtonModel arg0)
         {
             return IExecute<bool>("isSelected", arg0);

@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object GetBlocker(Java.Lang.Thread arg0)
         {
             return SExecute("getBlocker", arg0);

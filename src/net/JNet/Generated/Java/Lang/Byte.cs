@@ -70,7 +70,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0, int arg1)
         {
@@ -80,7 +80,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0)
         {
@@ -91,7 +91,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(byte arg0, byte arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
@@ -101,7 +101,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte arg0, byte arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(byte arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -119,7 +119,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedInt(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ToUnsignedInt(byte arg0)
         {
             return SExecute<int>("toUnsignedInt", arg0);
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="byte?"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? Decode(string arg0)
         {
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="byte?"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public static byte? ValueOf(byte arg0)
         {
             return SExecute<byte?>("valueOf", arg0);
@@ -148,7 +148,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="byte?"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0, int arg1)
         {
@@ -158,7 +158,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="byte?"/></returns>
+        /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0)
         {
@@ -168,7 +168,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(byte arg0)
         {
             return SExecute<string>("toString", arg0);
@@ -177,7 +177,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedLong(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(byte arg0)
         {
             return SExecute<long>("toUnsignedLong", arg0);
@@ -190,7 +190,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(byte? arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -199,7 +199,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

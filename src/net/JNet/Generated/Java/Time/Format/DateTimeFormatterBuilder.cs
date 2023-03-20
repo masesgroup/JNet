@@ -48,7 +48,7 @@ namespace Java.Time.Format
         /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
         /// <param name="arg2"><see cref="Java.Time.Chrono.Chronology"/></param>
         /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetLocalizedDateTimePattern(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1, Java.Time.Chrono.Chronology arg2, Java.Util.Locale arg3)
         {
             return SExecute<string>("getLocalizedDateTimePattern", arg0, arg1, arg2, arg3);

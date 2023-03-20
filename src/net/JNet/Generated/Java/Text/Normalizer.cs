@@ -46,7 +46,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsNormalized(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
             return SExecute<bool>("isNormalized", arg0, arg1);
@@ -56,7 +56,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string Normalize(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
             return SExecute<string>("normalize", arg0, arg1);

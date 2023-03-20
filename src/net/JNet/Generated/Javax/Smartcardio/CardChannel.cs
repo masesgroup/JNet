@@ -64,7 +64,7 @@ namespace Javax.Smartcardio
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public int Transmit(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {

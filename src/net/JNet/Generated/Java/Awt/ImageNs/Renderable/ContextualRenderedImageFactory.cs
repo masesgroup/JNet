@@ -60,7 +60,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDynamic()
         {
             return IExecute<bool>("isDynamic");
@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, string arg1)
         {
             return IExecute("getProperty", arg0, arg1);

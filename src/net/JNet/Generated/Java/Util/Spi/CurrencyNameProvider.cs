@@ -50,7 +50,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetSymbol(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getSymbol", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayName", arg0, arg1);

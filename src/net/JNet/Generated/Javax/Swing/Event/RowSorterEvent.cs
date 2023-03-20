@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#convertPreviousRowIndexToModel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertPreviousRowIndexToModel(int arg0)
         {
             return IExecute<int>("convertPreviousRowIndexToModel", arg0);

@@ -45,7 +45,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#toString(java.util.Set%3Cjava.nio.file.attribute.PosixFilePermission%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(Java.Util.Set arg0)
         {
             return SExecute<string>("toString", arg0);

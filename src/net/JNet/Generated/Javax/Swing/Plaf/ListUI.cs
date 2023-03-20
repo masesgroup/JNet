@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int LocationToIndex(Javax.Swing.JList arg0, Java.Awt.Point arg1)
         {
             return IExecute<int>("locationToIndex", arg0, arg1);

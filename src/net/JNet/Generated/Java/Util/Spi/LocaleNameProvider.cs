@@ -50,7 +50,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayCountry(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayCountry", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayLanguage(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayLanguage", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayVariant(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayVariant", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayScript(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayScript", arg0, arg1);
@@ -90,7 +90,7 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayUnicodeExtensionKey(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayUnicodeExtensionKey", arg0, arg1);
@@ -101,7 +101,7 @@ namespace Java.Util.Spi
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayUnicodeExtensionType(string arg0, string arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getDisplayUnicodeExtensionType", arg0, arg1, arg2);

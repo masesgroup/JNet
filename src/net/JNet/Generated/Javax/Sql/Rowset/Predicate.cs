@@ -50,7 +50,7 @@ namespace Javax.Sql.Rowset
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Evaluate(object arg0, int arg1)
         {
@@ -61,7 +61,7 @@ namespace Javax.Sql.Rowset
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Evaluate(object arg0, string arg1)
         {
@@ -71,7 +71,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(javax.sql.RowSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Evaluate(Javax.Sql.RowSet arg0)
         {
             return IExecute<bool>("evaluate", arg0);

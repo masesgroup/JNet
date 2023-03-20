@@ -50,7 +50,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDescendingFrom(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
             return SExecute<bool>("isDescendingFrom", arg0, arg1);
@@ -59,7 +59,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsEventDispatchThread()
         {
             return SExecute<bool>("isEventDispatchThread");
@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isLeftMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsLeftMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isLeftMouseButton", arg0);
@@ -77,7 +77,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isMiddleMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsMiddleMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isMiddleMouseButton", arg0);
@@ -86,7 +86,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isRightMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsRightMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isRightMouseButton", arg0);
@@ -99,7 +99,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         /// <param name="arg3"><see cref="object"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool NotifyAction(Javax.Swing.Action arg0, Javax.Swing.KeyStroke arg1, Java.Awt.EventNs.KeyEvent arg2, object arg3, int arg4)
         {
             return SExecute<bool>("notifyAction", arg0, arg1, arg2, arg3, arg4);
@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#processKeyBindings(java.awt.event.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool ProcessKeyBindings(Java.Awt.EventNs.KeyEvent arg0)
         {
             return SExecute<bool>("processKeyBindings", arg0);
@@ -118,7 +118,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsRectangleContainingRectangle(Java.Awt.Rectangle arg0, Java.Awt.Rectangle arg1)
         {
             return SExecute<bool>("isRectangleContainingRectangle", arg0, arg1);
@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontMetrics"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int ComputeStringWidth(Java.Awt.FontMetrics arg0, string arg1)
         {
             return SExecute<int>("computeStringWidth", arg0, arg1);
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChildrenCount(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetAccessibleChildrenCount(Java.Awt.Component arg0)
         {
             return SExecute<int>("getAccessibleChildrenCount", arg0);
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleIndexInParent(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetAccessibleIndexInParent(Java.Awt.Component arg0)
         {
             return SExecute<int>("getAccessibleIndexInParent", arg0);
@@ -341,7 +341,7 @@ namespace Javax.Swing
         /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg10"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string LayoutCompoundLabel(Java.Awt.FontMetrics arg0, string arg1, Javax.Swing.Icon arg2, int arg3, int arg4, int arg5, int arg6, Java.Awt.Rectangle arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, int arg10)
         {
             return SExecute<string>("layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
@@ -361,7 +361,7 @@ namespace Javax.Swing
         /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg10"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg11"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string LayoutCompoundLabel(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, Java.Awt.Rectangle arg10, int arg11)
         {
             return SExecute<string>("layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);

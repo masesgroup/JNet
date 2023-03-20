@@ -53,7 +53,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
         
-        /// <returns><see langword="bool?"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool? IsInRelationService()
         {
             return IExecute<bool?>("isInRelationService");

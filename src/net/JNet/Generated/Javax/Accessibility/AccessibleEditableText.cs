@@ -54,7 +54,7 @@ namespace Javax.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetTextRange(int arg0, int arg1)
         {
             return IExecute<string>("getTextRange", arg0, arg1);

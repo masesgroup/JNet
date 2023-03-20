@@ -108,7 +108,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Class arg3)
         {
             return SExecute("getStaticFinal", arg0, arg1, arg2, arg3);
@@ -119,7 +119,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
             return SExecute("getStaticFinal", arg0, arg1, arg2);
@@ -132,7 +132,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
         public static object Invoke(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Invoke.MethodHandle arg3, params object[] arg4)
         {
@@ -144,7 +144,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NullConstant(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
             return SExecute("nullConstant", arg0, arg1, arg2);

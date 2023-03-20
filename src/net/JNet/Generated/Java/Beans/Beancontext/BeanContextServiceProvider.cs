@@ -52,7 +52,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, Java.Lang.Class arg2, object arg3)
         {
             return IExecute("getService", arg0, arg1, arg2, arg3);

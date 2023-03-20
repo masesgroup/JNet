@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ApplyAsLong(object arg0, object arg1)
         {
             return IExecute<long>("applyAsLong", arg0, arg1);

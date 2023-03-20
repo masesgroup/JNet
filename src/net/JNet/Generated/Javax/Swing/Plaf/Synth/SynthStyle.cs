@@ -51,7 +51,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, bool arg2)
         {
             return IExecute<bool>("getBoolean", arg0, arg1, arg2);
@@ -60,7 +60,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#isOpaque(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOpaque(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<bool>("isOpaque", arg0);
@@ -71,7 +71,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetInt(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, int arg2)
         {
             return IExecute<int>("getInt", arg0, arg1, arg2);
@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
             return IExecute("get", arg0, arg1);
@@ -121,7 +121,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetString(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, string arg2)
         {
             return IExecute<string>("getString", arg0, arg1, arg2);

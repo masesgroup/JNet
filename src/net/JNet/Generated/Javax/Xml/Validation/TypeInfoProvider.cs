@@ -56,7 +56,7 @@ namespace Javax.Xml.Validation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsIdAttribute(int arg0)
         {
             return IExecute<bool>("isIdAttribute", arg0);
@@ -65,7 +65,7 @@ namespace Javax.Xml.Validation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
             return IExecute<bool>("isSpecified", arg0);

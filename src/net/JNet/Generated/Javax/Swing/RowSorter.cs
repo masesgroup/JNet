@@ -77,7 +77,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToModel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
             return IExecute<int>("convertRowIndexToModel", arg0);
@@ -86,7 +86,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToView(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
             return IExecute<int>("convertRowIndexToView", arg0);

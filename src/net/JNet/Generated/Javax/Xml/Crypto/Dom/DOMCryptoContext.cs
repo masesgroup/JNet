@@ -81,7 +81,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
@@ -100,7 +100,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecute("put", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object SetProperty(string arg0, object arg1)
         {
             return IExecute("setProperty", arg0, arg1);
@@ -120,7 +120,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetNamespacePrefix(string arg0, string arg1)
         {
             return IExecute<string>("getNamespacePrefix", arg0, arg1);
@@ -130,7 +130,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string PutNamespacePrefix(string arg0, string arg1)
         {
             return IExecute<string>("putNamespacePrefix", arg0, arg1);

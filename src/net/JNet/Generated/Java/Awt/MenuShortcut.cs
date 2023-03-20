@@ -77,7 +77,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool UsesShiftModifier()
         {
             return IExecute<bool>("usesShiftModifier");

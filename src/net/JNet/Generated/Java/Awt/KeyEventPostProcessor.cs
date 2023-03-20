@@ -49,7 +49,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventPostProcessor.html#postProcessKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return IExecute<bool>("postProcessKeyEvent", arg0);

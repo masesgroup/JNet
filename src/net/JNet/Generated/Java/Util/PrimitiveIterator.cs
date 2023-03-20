@@ -89,7 +89,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
             /// </summary>
             
-            /// <returns><see langword="double"/></returns>
+            /// <returns><see cref="double"/></returns>
             public double NextDouble()
             {
                 return IExecute<double>("nextDouble");
@@ -98,7 +98,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
             /// </summary>
             
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object Next()
             {
                 return IExecute("next");
@@ -162,7 +162,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int NextInt()
             {
                 return IExecute<int>("nextInt");
@@ -171,7 +171,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
             /// </summary>
             
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object Next()
             {
                 return IExecute("next");
@@ -235,7 +235,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long NextLong()
             {
                 return IExecute<long>("nextLong");
@@ -244,7 +244,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
             /// </summary>
             
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object Next()
             {
                 return IExecute("next");

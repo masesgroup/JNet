@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isAncestorOf(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAncestorOf(Java.Awt.Component arg0)
         {
             return IExecute<bool>("isAncestorOf", arg0);
@@ -100,7 +100,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusCycleRoot()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFocusCycleRoot()
         {
             return IExecute<bool>("isFocusCycleRoot");
@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicySet()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversalPolicySet()
         {
             return IExecute<bool>("isFocusTraversalPolicySet");
@@ -118,7 +118,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isValidateRoot()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsValidateRoot()
         {
             return IExecute<bool>("isValidateRoot");
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicyProvider()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversalPolicyProvider()
         {
             return IExecute<bool>("isFocusTraversalPolicyProvider");
@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#getComponentZOrder(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetComponentZOrder(Java.Awt.Component arg0)
         {
             return IExecute<int>("getComponentZOrder", arg0);

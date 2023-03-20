@@ -60,7 +60,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#cancel()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Cancel()
         {
             return IExecute<bool>("cancel");
@@ -69,7 +69,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#scheduledExecutionTime()"/>
         /// </summary>
         
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long ScheduledExecutionTime()
         {
             return IExecute<long>("scheduledExecutionTime");

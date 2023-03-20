@@ -67,7 +67,7 @@ namespace Javax.Management.Relation
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public bool AddAll(int arg0, Javax.Management.Relation.RoleList arg1)
@@ -78,7 +78,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#addAll(javax.management.relation.RoleList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public bool AddAll(Javax.Management.Relation.RoleList arg0)
         {

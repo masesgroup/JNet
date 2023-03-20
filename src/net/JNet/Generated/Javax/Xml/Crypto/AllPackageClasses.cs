@@ -263,7 +263,7 @@ namespace Javax.Xml.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
-    public partial class NodeSetData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NodeSetData>
+    public partial class NodeSetData : Java.Lang.Iterable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

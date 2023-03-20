@@ -68,7 +68,7 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public int InsertRule(string arg0, int arg1)
         {

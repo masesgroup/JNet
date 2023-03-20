@@ -327,7 +327,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#characteristics()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
@@ -345,7 +345,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#estimateSize()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
                 return IExecute<long>("estimateSize");
@@ -381,7 +381,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
@@ -399,7 +399,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
                 return IExecute<long>("estimateSize");
@@ -435,7 +435,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#characteristics()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
@@ -453,7 +453,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#estimateSize()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
                 return IExecute<long>("estimateSize");
@@ -493,7 +493,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#characteristics()"/>
             /// </summary>
             
-            /// <returns><see langword="int"/></returns>
+            /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
@@ -511,7 +511,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#estimateSize()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
                 return IExecute<long>("estimateSize");

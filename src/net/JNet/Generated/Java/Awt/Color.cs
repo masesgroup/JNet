@@ -240,7 +240,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HSBtoRGB(float arg0, float arg1, float arg2)
         {
             return SExecute<int>("HSBtoRGB", arg0, arg1, arg2);

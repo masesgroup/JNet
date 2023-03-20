@@ -78,7 +78,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1, Javax.Security.Auth.Subject arg2)
@@ -90,7 +90,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsRegistered(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
@@ -100,7 +100,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="int?"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int? GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
@@ -125,7 +125,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -143,7 +143,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
@@ -156,7 +156,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDefaultDomain(javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string GetDefaultDomain(Javax.Security.Auth.Subject arg0)
         {

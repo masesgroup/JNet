@@ -113,7 +113,7 @@ namespace Org.W3c.Dom.Traversal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
             return IExecute<short>("acceptNode", arg0);

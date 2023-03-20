@@ -49,7 +49,7 @@ namespace Javax.Swing.Border
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBorderOpaque()
         {
             return IExecute<bool>("isBorderOpaque");

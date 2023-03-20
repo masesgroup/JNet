@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#isHTMLString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsHTMLString(string arg0)
         {
             return SExecute<bool>("isHTMLString", arg0);
@@ -64,7 +64,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int GetHTMLBaseline(Javax.Swing.Text.View arg0, int arg1, int arg2)
         {
             return SExecute<int>("getHTMLBaseline", arg0, arg1, arg2);

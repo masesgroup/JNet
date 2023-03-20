@@ -77,7 +77,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsConfigured()
         {
             return IExecute<bool>("isConfigured");
@@ -156,7 +156,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#supportsParameter(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool SupportsParameter(object arg0)
             {
                 return IExecute<bool>("supportsParameter", arg0);
@@ -165,7 +165,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getAttribute(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string GetAttribute(string arg0)
             {
                 return IExecute<string>("getAttribute", arg0);
@@ -174,7 +174,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getClassName()"/>
             /// </summary>
             
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string GetClassName()
             {
                 return IExecute<string>("getClassName");
@@ -192,7 +192,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#newInstance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
             public object NewInstance(object arg0)
             {

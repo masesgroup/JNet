@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndex(javax.swing.text.TabStop)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.TabStop"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetTabIndex(Javax.Swing.Text.TabStop arg0)
         {
             return IExecute<int>("getTabIndex", arg0);
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndexAfter(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetTabIndexAfter(float arg0)
         {
             return IExecute<int>("getTabIndexAfter", arg0);

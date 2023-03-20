@@ -49,7 +49,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsProxyClass(Java.Lang.Class arg0)
         {
             return SExecute<bool>("isProxyClass", arg0);
@@ -60,7 +60,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.InvocationHandler"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
             return SExecute("newProxyInstance", arg0, arg1, arg2);

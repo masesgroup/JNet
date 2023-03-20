@@ -46,7 +46,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {

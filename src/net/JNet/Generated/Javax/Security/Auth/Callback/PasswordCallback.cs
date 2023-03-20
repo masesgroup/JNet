@@ -80,7 +80,7 @@ namespace Javax.Security.Auth.Callback
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEchoOn()
         {
             return IExecute<bool>("isEchoOn");

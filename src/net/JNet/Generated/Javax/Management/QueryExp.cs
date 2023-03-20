@@ -53,7 +53,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.BadStringOperationException"/>
         /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
         /// <exception cref="Javax.Management.BadAttributeValueExpException"/>

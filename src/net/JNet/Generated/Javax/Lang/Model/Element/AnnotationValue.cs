@@ -57,7 +57,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Accept(Javax.Lang.Model.Element.AnnotationValueVisitor arg0, object arg1)
         {
             return IExecute("accept", arg0, arg1);

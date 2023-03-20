@@ -49,7 +49,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html#activate(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Activate(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
             return IExecute<bool>("activate", arg0);

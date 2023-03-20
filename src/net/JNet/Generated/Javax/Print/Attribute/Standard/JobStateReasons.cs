@@ -92,7 +92,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#add(javax.print.attribute.standard.JobStateReason)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.JobStateReason"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Print.Attribute.Standard.JobStateReason arg0)
         {
             return IExecute<bool>("add", arg0);

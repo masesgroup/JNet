@@ -108,7 +108,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EventObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(Java.Util.EventObject arg0)
         {
             return IExecute<bool>("isCellEditable", arg0);
@@ -117,7 +117,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#shouldSelectCell(java.util.EventObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EventObject"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool ShouldSelectCell(Java.Util.EventObject arg0)
         {
             return IExecute<bool>("shouldSelectCell", arg0);
@@ -126,7 +126,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool StopCellEditing()
         {
             return IExecute<bool>("stopCellEditing");

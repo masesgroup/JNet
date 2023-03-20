@@ -61,7 +61,7 @@ namespace Javax.Security.Auth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1)
         {
             return SExecute("doAs", arg0, arg1);
@@ -71,7 +71,7 @@ namespace Javax.Security.Auth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static object DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1)
         {
@@ -83,7 +83,7 @@ namespace Javax.Security.Auth
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute("doAsPrivileged", arg0, arg1, arg2);
@@ -94,7 +94,7 @@ namespace Javax.Security.Auth
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static object DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1, Java.Security.AccessControlContext arg2)
         {
@@ -165,7 +165,7 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");

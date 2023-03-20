@@ -52,7 +52,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#addProvider(java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int AddProvider(Java.Security.Provider arg0)
         {
             return SExecute<int>("addProvider", arg0);
@@ -61,7 +61,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string GetProperty(string arg0)
         {
             return SExecute<string>("getProperty", arg0);
@@ -107,7 +107,7 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int InsertProviderAt(Java.Security.Provider arg0, int arg1)
         {
             return SExecute<int>("insertProviderAt", arg0, arg1);

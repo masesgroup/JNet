@@ -60,7 +60,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasTileWriters()
         {
             return IExecute<bool>("hasTileWriters");
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
             return IExecute<bool>("isTileWritable", arg0, arg1);

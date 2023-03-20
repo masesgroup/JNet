@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool TextRequiresLayout(char[] arg0, int arg1, int arg2)
         {
             return SExecute<bool>("textRequiresLayout", arg0, arg1, arg2);
@@ -324,7 +324,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanDisplay(char arg0)
         {
             return IExecute<bool>("canDisplay", arg0);
@@ -333,7 +333,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool CanDisplay(int arg0)
         {
             return IExecute<bool>("canDisplay", arg0);
@@ -342,7 +342,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasLayoutAttributes()
         {
             return IExecute<bool>("hasLayoutAttributes");
@@ -351,7 +351,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
             return IExecute<bool>("hasUniformLineMetrics");
@@ -360,7 +360,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBold()
         {
             return IExecute<bool>("isBold");
@@ -369,7 +369,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsItalic()
         {
             return IExecute<bool>("isItalic");
@@ -378,7 +378,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsPlain()
         {
             return IExecute<bool>("isPlain");
@@ -387,7 +387,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsTransformed()
         {
             return IExecute<bool>("isTransformed");
@@ -396,7 +396,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getBaselineFor(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see langword="byte"/></returns>
+        /// <returns><see cref="byte"/></returns>
         public byte GetBaselineFor(char arg0)
         {
             return IExecute<byte>("getBaselineFor", arg0);
@@ -407,7 +407,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CanDisplayUpTo(char[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
@@ -416,7 +416,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CanDisplayUpTo(string arg0)
         {
             return IExecute<int>("canDisplayUpTo", arg0);
@@ -427,7 +427,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CanDisplayUpTo(Java.Text.CharacterIterator arg0, int arg1, int arg2)
         {
             return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
@@ -646,7 +646,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetFamily(Java.Util.Locale arg0)
         {
             return IExecute<string>("getFamily", arg0);
@@ -655,7 +655,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFontName(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetFontName(Java.Util.Locale arg0)
         {
             return IExecute<string>("getFontName", arg0);

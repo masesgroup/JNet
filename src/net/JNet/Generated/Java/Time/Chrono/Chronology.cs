@@ -101,7 +101,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#isLeapYear(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear(long arg0)
         {
             return IExecute<bool>("isLeapYear", arg0);
@@ -110,7 +110,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Chronology"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Chrono.Chronology arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -120,7 +120,7 @@ namespace Java.Time.Chrono
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int ProlepticYear(Java.Time.Chrono.Era arg0, int arg1)
         {
             return IExecute<int>("prolepticYear", arg0, arg1);
@@ -205,7 +205,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
@@ -215,7 +215,7 @@ namespace Java.Time.Chrono
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
@@ -319,7 +319,7 @@ namespace Java.Time.Chrono
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long EpochSecond(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Java.Time.ZoneOffset arg6)
         {
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -335,7 +335,7 @@ namespace Java.Time.Chrono
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long EpochSecond(Java.Time.Chrono.Era arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Time.ZoneOffset arg7)
         {
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

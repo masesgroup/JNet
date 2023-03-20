@@ -45,7 +45,7 @@ namespace Java.Rmi.Activation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#inactive(java.rmi.activation.ActivationID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
@@ -58,7 +58,7 @@ namespace Java.Rmi.Activation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {

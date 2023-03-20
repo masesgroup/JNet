@@ -106,7 +106,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1, int arg2)
         {
             return IExecute<int>("getOffset", arg0, arg1, arg2);
@@ -116,7 +116,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1)
         {
             return IExecute<int>("getOffset", arg0, arg1);

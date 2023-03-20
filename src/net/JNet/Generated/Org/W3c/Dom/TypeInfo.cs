@@ -81,7 +81,7 @@ namespace Org.W3c.Dom
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDerivedFrom(string arg0, string arg1, int arg2)
         {
             return IExecute<bool>("isDerivedFrom", arg0, arg1, arg2);

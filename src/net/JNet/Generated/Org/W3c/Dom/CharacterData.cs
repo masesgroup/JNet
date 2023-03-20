@@ -68,7 +68,7 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public string SubstringData(int arg0, int arg1)
         {

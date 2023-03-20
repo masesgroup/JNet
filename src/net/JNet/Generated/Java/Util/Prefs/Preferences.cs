@@ -108,7 +108,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(string arg0, bool arg1)
         {
             return IExecute<bool>("getBoolean", arg0, arg1);
@@ -117,7 +117,7 @@ namespace Java.Util.Prefs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsUserNode()
         {
             return IExecute<bool>("isUserNode");
@@ -126,7 +126,7 @@ namespace Java.Util.Prefs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#nodeExists(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public bool NodeExists(string arg0)
         {
@@ -147,7 +147,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see langword="double"/></returns>
+        /// <returns><see cref="double"/></returns>
         public double GetDouble(string arg0, double arg1)
         {
             return IExecute<double>("getDouble", arg0, arg1);
@@ -157,7 +157,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see langword="float"/></returns>
+        /// <returns><see cref="float"/></returns>
         public float GetFloat(string arg0, float arg1)
         {
             return IExecute<float>("getFloat", arg0, arg1);
@@ -167,7 +167,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetInt(string arg0, int arg1)
         {
             return IExecute<int>("getInt", arg0, arg1);
@@ -176,7 +176,7 @@ namespace Java.Util.Prefs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string AbsolutePath()
         {
             return IExecute<string>("absolutePath");
@@ -186,7 +186,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Get(string arg0, string arg1)
         {
             return IExecute<string>("get", arg0, arg1);
@@ -195,7 +195,7 @@ namespace Java.Util.Prefs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
@@ -243,7 +243,7 @@ namespace Java.Util.Prefs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see langword="long"/></returns>
+        /// <returns><see cref="long"/></returns>
         public long GetLong(string arg0, long arg1)
         {
             return IExecute<long>("getLong", arg0, arg1);

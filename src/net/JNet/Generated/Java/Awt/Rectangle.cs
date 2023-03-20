@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
@@ -153,7 +153,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
@@ -162,7 +162,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -171,7 +171,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(java.awt.Rectangle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Rectangle arg0)
         {
             return IExecute<bool>("contains", arg0);
@@ -180,7 +180,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#intersects(java.awt.Rectangle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Rectangle arg0)
         {
             return IExecute<bool>("intersects", arg0);

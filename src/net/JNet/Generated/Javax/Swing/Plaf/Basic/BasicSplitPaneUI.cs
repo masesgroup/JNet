@@ -84,7 +84,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsContinuousLayout()
         {
             return IExecute<bool>("isContinuousLayout");
@@ -147,7 +147,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentX(java.awt.Container)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see langword="float"/></returns>
+            /// <returns><see cref="float"/></returns>
             public float GetLayoutAlignmentX(Java.Awt.Container arg0)
             {
                 return IExecute<float>("getLayoutAlignmentX", arg0);
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentY(java.awt.Container)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see langword="float"/></returns>
+            /// <returns><see cref="float"/></returns>
             public float GetLayoutAlignmentY(Java.Awt.Container arg0)
             {
                 return IExecute<float>("getLayoutAlignmentY", arg0);

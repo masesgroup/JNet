@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetParameter(string arg0)
         {
             return IExecute("getParameter", arg0);
@@ -79,7 +79,7 @@ namespace Javax.Xml.Transform
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public string GetOutputProperty(string arg0)
         {

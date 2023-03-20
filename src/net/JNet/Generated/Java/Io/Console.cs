@@ -110,7 +110,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ReadLine()
         {
             return IExecute<string>("readLine");
@@ -120,7 +120,7 @@ namespace Java.Io
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ReadLine(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<string>("readLine", arg0); else return IExecute<string>("readLine", arg0, arg1);

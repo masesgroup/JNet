@@ -57,7 +57,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Hides(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.Element arg1)
         {
             return IExecute<bool>("hides", arg0, arg1);
@@ -66,7 +66,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isDeprecated(javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsDeprecated(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<bool>("isDeprecated", arg0);
@@ -75,7 +75,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsFunctionalInterface(Javax.Lang.Model.Element.TypeElement arg0)
         {
             return IExecute<bool>("isFunctionalInterface", arg0);
@@ -86,7 +86,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
         /// <param name="arg2"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Overrides(Javax.Lang.Model.Element.ExecutableElement arg0, Javax.Lang.Model.Element.ExecutableElement arg1, Javax.Lang.Model.Element.TypeElement arg2)
         {
             return IExecute<bool>("overrides", arg0, arg1, arg2);
@@ -95,7 +95,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getConstantExpression(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetConstantExpression(object arg0)
         {
             return IExecute<string>("getConstantExpression", arg0);
@@ -104,7 +104,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetDocComment(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<string>("getDocComment", arg0);
@@ -194,7 +194,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsBridge(Javax.Lang.Model.Element.ExecutableElement arg0)
         {
             return IExecute<bool>("isBridge", arg0);
@@ -342,7 +342,7 @@ namespace Javax.Lang.Model.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/>
             /// </summary>
             
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool IsDeclared()
             {
                 return IExecute<bool>("isDeclared");

@@ -55,7 +55,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ChooseClientAlias(string[] arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
             return IExecute<string>("chooseClientAlias", arg0, arg1, arg2);
@@ -66,7 +66,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string ChooseServerAlias(string arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
             return IExecute<string>("chooseServerAlias", arg0, arg1, arg2);

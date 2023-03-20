@@ -50,7 +50,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitNoTypeAsModule(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsModule", arg0, arg1);
@@ -60,7 +60,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitNoTypeAsNone(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsNone", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitNoTypeAsPackage(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsPackage", arg0, arg1);
@@ -80,7 +80,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitNoTypeAsVoid(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsVoid", arg0, arg1);
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsBoolean(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsBoolean", arg0, arg1);
@@ -100,7 +100,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsByte(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsByte", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsChar(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsChar", arg0, arg1);
@@ -120,7 +120,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsDouble(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsDouble", arg0, arg1);
@@ -130,7 +130,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsFloat(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsFloat", arg0, arg1);
@@ -140,7 +140,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsInt(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsInt", arg0, arg1);
@@ -150,7 +150,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsLong(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsLong", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitPrimitiveAsShort(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsShort", arg0, arg1);

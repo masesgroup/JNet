@@ -47,7 +47,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Compare(object arg0, object arg1, Java.Util.Comparator arg2)
         {
             return SExecute<int>("compare", arg0, arg1, arg2);
@@ -57,7 +57,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object RequireNonNull(object arg0, string arg1)
         {
             return SExecute("requireNonNull", arg0, arg1);
@@ -67,7 +67,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object RequireNonNull(object arg0, Java.Util.Function.Supplier arg1)
         {
             return SExecute("requireNonNull", arg0, arg1);
@@ -76,7 +76,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object RequireNonNull(object arg0)
         {
             return SExecute("requireNonNull", arg0);
@@ -86,7 +86,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object RequireNonNullElse(object arg0, object arg1)
         {
             return SExecute("requireNonNullElse", arg0, arg1);
@@ -96,7 +96,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object RequireNonNullElseGet(object arg0, Java.Util.Function.Supplier arg1)
         {
             return SExecute("requireNonNullElseGet", arg0, arg1);
@@ -106,7 +106,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool DeepEquals(object arg0, object arg1)
         {
             return SExecute<bool>("deepEquals", arg0, arg1);
@@ -116,7 +116,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool Equals(object arg0, object arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#isNull(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsNull(object arg0)
         {
             return SExecute<bool>("isNull", arg0);
@@ -134,7 +134,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#nonNull(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool NonNull(object arg0)
         {
             return SExecute<bool>("nonNull", arg0);
@@ -145,7 +145,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CheckFromIndexSize(int arg0, int arg1, int arg2)
         {
             return SExecute<int>("checkFromIndexSize", arg0, arg1, arg2);
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CheckFromToIndex(int arg0, int arg1, int arg2)
         {
             return SExecute<int>("checkFromToIndex", arg0, arg1, arg2);
@@ -166,7 +166,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int CheckIndex(int arg0, int arg1)
         {
             return SExecute<int>("checkIndex", arg0, arg1);
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#hash(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int Hash(params object[] arg0)
         {
             if (arg0.Length == 0) return SExecute<int>("hash"); else return SExecute<int>("hash", arg0);
@@ -184,7 +184,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#hashCode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public static int HashCode(object arg0)
         {
             return SExecute<int>("hashCode", arg0);
@@ -194,7 +194,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(object arg0, string arg1)
         {
             return SExecute<string>("toString", arg0, arg1);
@@ -203,7 +203,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#toString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public static string ToString(object arg0)
         {
             return SExecute<string>("toString", arg0);

@@ -94,7 +94,7 @@ namespace Java.Awt
         /// <param name="arg8"><see cref="int"/></param>
         /// <param name="arg9"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg10"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Java.Awt.Color arg9, Java.Awt.ImageNs.ImageObserver arg10)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
@@ -112,7 +112,7 @@ namespace Java.Awt
         /// <param name="arg7"><see cref="int"/></param>
         /// <param name="arg8"><see cref="int"/></param>
         /// <param name="arg9"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Java.Awt.ImageNs.ImageObserver arg9)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg6"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.ImageNs.ImageObserver arg6)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -141,7 +141,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.ImageNs.ImageObserver arg5)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -154,7 +154,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg4"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.Color arg3, Java.Awt.ImageNs.ImageObserver arg4)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4);
@@ -166,7 +166,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3);
@@ -419,7 +419,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool HitClip(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<bool>("hitClip", arg0, arg1, arg2, arg3);

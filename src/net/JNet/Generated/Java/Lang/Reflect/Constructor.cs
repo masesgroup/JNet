@@ -49,7 +49,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InstantiationException"/>
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>

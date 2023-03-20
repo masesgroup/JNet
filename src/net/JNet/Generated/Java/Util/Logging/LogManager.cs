@@ -69,7 +69,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Logger"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool AddLogger(Java.Util.Logging.Logger arg0)
         {
             return IExecute<bool>("addLogger", arg0);
@@ -78,7 +78,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetProperty(string arg0)
         {
             return IExecute<string>("getProperty", arg0);

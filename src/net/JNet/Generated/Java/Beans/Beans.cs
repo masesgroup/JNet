@@ -45,7 +45,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDesignTime()
         {
             return SExecute<bool>("isDesignTime");
@@ -54,7 +54,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsGuiAvailable()
         {
             return SExecute<bool>("isGuiAvailable");
@@ -64,7 +64,7 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsInstanceOf(object arg0, Java.Lang.Class arg1)
         {
             return SExecute<bool>("isInstanceOf", arg0, arg1);
@@ -74,7 +74,7 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object GetInstanceOf(object arg0, Java.Lang.Class arg1)
         {
             return SExecute("getInstanceOf", arg0, arg1);
@@ -85,7 +85,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1, Java.Beans.Beancontext.BeanContext arg2)
@@ -97,7 +97,7 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1)

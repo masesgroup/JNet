@@ -105,7 +105,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetParameter(string arg0)
         {
             return IExecute("getParameter", arg0);
@@ -116,7 +116,7 @@ namespace Javax.Script
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetMethodCallSyntax(string arg0, string arg1, params string[] arg2)
         {
             if (arg2.Length == 0) return IExecute<string>("getMethodCallSyntax", arg0, arg1); else return IExecute<string>("getMethodCallSyntax", arg0, arg1, arg2);
@@ -125,7 +125,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetOutputStatement(string arg0)
         {
             return IExecute<string>("getOutputStatement", arg0);
@@ -134,7 +134,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetProgram(params string[] arg0)
         {
             if (arg0.Length == 0) return IExecute<string>("getProgram"); else return IExecute<string>("getProgram", arg0);

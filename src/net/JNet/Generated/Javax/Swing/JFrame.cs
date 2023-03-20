@@ -83,7 +83,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#isDefaultLookAndFeelDecorated()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsDefaultLookAndFeelDecorated()
         {
             return SExecute<bool>("isDefaultLookAndFeelDecorated");

@@ -49,7 +49,7 @@ namespace Org.W3c.Dom.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.W3c.Dom.Events.EventException"/>
         public bool DispatchEvent(Org.W3c.Dom.Events.Event arg0)
         {

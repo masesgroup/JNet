@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
             return IExecute<short>("acceptNode", arg0);
@@ -81,7 +81,7 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <returns><see langword="short"/></returns>
+        /// <returns><see cref="short"/></returns>
         public short StartElement(Org.W3c.Dom.Element arg0)
         {
             return IExecute<short>("startElement", arg0);

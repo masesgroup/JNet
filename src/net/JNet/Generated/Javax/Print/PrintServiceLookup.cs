@@ -45,7 +45,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#registerService(javax.print.PrintService)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.PrintService"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool RegisterService(Javax.Print.PrintService arg0)
         {
             return SExecute<bool>("registerService", arg0);
@@ -54,7 +54,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#registerServiceProvider(javax.print.PrintServiceLookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.PrintServiceLookup"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool RegisterServiceProvider(Javax.Print.PrintServiceLookup arg0)
         {
             return SExecute<bool>("registerServiceProvider", arg0);

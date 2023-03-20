@@ -134,7 +134,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long ArrayLength()
             {
                 return IExecute<long>("arrayLength");
@@ -143,7 +143,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long Depth()
             {
                 return IExecute<long>("depth");
@@ -152,7 +152,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long References()
             {
                 return IExecute<long>("references");
@@ -161,7 +161,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/>
             /// </summary>
             
-            /// <returns><see langword="long"/></returns>
+            /// <returns><see cref="long"/></returns>
             public long StreamBytes()
             {
                 return IExecute<long>("streamBytes");

@@ -81,7 +81,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute<int>("getRunLimit", arg0);
@@ -90,7 +90,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set%3C? extends java.text.AttributedCharacterIterator$Attribute%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRunLimit(Java.Util.Set arg0)
         {
             return IExecute<int>("getRunLimit", arg0);
@@ -99,7 +99,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute<int>("getRunStart", arg0);
@@ -108,7 +108,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set%3C? extends java.text.AttributedCharacterIterator$Attribute%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GetRunStart(Java.Util.Set arg0)
         {
             return IExecute<int>("getRunStart", arg0);
@@ -117,7 +117,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute("getAttribute", arg0);

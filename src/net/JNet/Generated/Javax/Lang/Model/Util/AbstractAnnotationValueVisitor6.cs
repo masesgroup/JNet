@@ -54,7 +54,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visit", arg0, arg1);
@@ -63,7 +63,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecute("visit", arg0);
@@ -73,7 +73,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visitUnknown", arg0, arg1);

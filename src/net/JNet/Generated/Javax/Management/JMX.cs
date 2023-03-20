@@ -84,7 +84,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewMBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecute("newMBeanProxy", arg0, arg1, arg2, arg3);
@@ -95,7 +95,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewMBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
             return SExecute("newMBeanProxy", arg0, arg1, arg2);
@@ -107,7 +107,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewMXBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecute("newMXBeanProxy", arg0, arg1, arg2, arg3);
@@ -118,7 +118,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         public static object NewMXBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
             return SExecute("newMXBeanProxy", arg0, arg1, arg2);
@@ -127,7 +127,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#isMXBeanInterface(java.lang.Class%3C?%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public static bool IsMXBeanInterface(Java.Lang.Class arg0)
         {
             return SExecute<bool>("isMXBeanInterface", arg0);

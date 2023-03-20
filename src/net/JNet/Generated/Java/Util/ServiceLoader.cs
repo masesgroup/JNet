@@ -33,11 +33,7 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.ServiceLoader"/> to <see cref="Java.Lang.Iterable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Iterable(Java.Util.ServiceLoader t) => t.Cast<Java.Lang.Iterable>();
-        
+
         #endregion
 
         #region Fields
@@ -162,7 +158,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
             /// </summary>
             
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object Get()
             {
                 return IExecute("get");

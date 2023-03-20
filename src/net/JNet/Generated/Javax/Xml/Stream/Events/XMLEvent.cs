@@ -74,7 +74,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isAttribute()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsAttribute()
         {
             return IExecute<bool>("isAttribute");
@@ -83,7 +83,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isCharacters()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsCharacters()
         {
             return IExecute<bool>("isCharacters");
@@ -92,7 +92,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndDocument()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEndDocument()
         {
             return IExecute<bool>("isEndDocument");
@@ -101,7 +101,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndElement()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEndElement()
         {
             return IExecute<bool>("isEndElement");
@@ -110,7 +110,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEntityReference()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsEntityReference()
         {
             return IExecute<bool>("isEntityReference");
@@ -119,7 +119,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isNamespace()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNamespace()
         {
             return IExecute<bool>("isNamespace");
@@ -128,7 +128,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isProcessingInstruction()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsProcessingInstruction()
         {
             return IExecute<bool>("isProcessingInstruction");
@@ -137,7 +137,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartDocument()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStartDocument()
         {
             return IExecute<bool>("isStartDocument");
@@ -146,7 +146,7 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartElement()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsStartElement()
         {
             return IExecute<bool>("isStartElement");

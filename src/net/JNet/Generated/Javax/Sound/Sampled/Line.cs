@@ -67,7 +67,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control$Type)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecute<bool>("isControlSupported", arg0);
@@ -76,7 +76,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
             return IExecute<bool>("isOpen");
@@ -165,7 +165,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line$Info)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-            /// <returns><see langword="bool"/></returns>
+            /// <returns><see cref="bool"/></returns>
             public bool Matches(Javax.Sound.Sampled.Line.Info arg0)
             {
                 return IExecute<bool>("matches", arg0);

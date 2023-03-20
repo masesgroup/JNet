@@ -49,7 +49,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <returns><see langword="object"/></returns>
+        /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3, Javax.Naming.Directory.Attributes arg4)
         {

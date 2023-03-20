@@ -49,7 +49,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int End()
         {
             return IExecute<int>("end");
@@ -58,7 +58,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int End(int arg0)
         {
             return IExecute<int>("end", arg0);
@@ -67,7 +67,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int GroupCount()
         {
             return IExecute<int>("groupCount");
@@ -76,7 +76,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start()"/>
         /// </summary>
         
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Start()
         {
             return IExecute<int>("start");
@@ -85,7 +85,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="int"/></returns>
+        /// <returns><see cref="int"/></returns>
         public int Start(int arg0)
         {
             return IExecute<int>("start", arg0);
@@ -94,7 +94,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group()"/>
         /// </summary>
         
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Group()
         {
             return IExecute<string>("group");
@@ -103,7 +103,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string Group(int arg0)
         {
             return IExecute<string>("group", arg0);

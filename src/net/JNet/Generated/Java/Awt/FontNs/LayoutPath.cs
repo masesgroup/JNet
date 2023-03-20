@@ -50,7 +50,7 @@ namespace Java.Awt.FontNs
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool PointToPath(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecute<bool>("pointToPath", arg0, arg1);

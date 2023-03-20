@@ -72,7 +72,7 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool DeclarePrefix(string arg0, string arg1)
         {
             return IExecute<bool>("declarePrefix", arg0, arg1);
@@ -81,7 +81,7 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/>
         /// </summary>
         
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceDeclUris()
         {
             return IExecute<bool>("isNamespaceDeclUris");
@@ -90,7 +90,7 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetPrefix(string arg0)
         {
             return IExecute<string>("getPrefix", arg0);
@@ -99,7 +99,7 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see langword="string"/></returns>
+        /// <returns><see cref="string"/></returns>
         public string GetURI(string arg0)
         {
             return IExecute<string>("getURI", arg0);

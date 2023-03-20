@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#include(javax.swing.RowFilter$Entry%3C? extends M, ? extends I%3E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.Entry"/></param>
-        /// <returns><see langword="bool"/></returns>
+        /// <returns><see cref="bool"/></returns>
         public bool Include(Javax.Swing.RowFilter.Entry arg0)
         {
             return IExecute<bool>("include", arg0);
@@ -223,7 +223,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see langword="object"/></returns>
+            /// <returns><see cref="object"/></returns>
             public object GetValue(int arg0)
             {
                 return IExecute("getValue", arg0);
@@ -232,7 +232,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see langword="string"/></returns>
+            /// <returns><see cref="string"/></returns>
             public string GetStringValue(int arg0)
             {
                 return IExecute<string>("getStringValue", arg0);
