@@ -127,6 +127,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.AvoidParallelBuild,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to disable parallel execution",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
                         Help = "Execute everything, but do not write anything to disk",
@@ -199,6 +205,9 @@ namespace MASES.JNetReflector
 
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
+
+        static bool _AvoidParallelBuild;
+        public static bool AvoidParallelBuild => _AvoidParallelBuild;
 
         static bool _DryRun;
         public static bool DryRun => _DryRun;
@@ -300,6 +309,7 @@ namespace MASES.JNetReflector
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
+            _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);

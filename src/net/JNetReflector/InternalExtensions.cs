@@ -25,7 +25,6 @@ using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
 using MASES.JNetReflector.Templates;
-using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -427,13 +426,18 @@ namespace MASES.JNetReflector
             if (isListener) return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
             try
             {
-                if (entry.SuperClass == null
-                    || !entry.SuperClass.IsPublic()
-                    || (JNetReflectorCore.ReflectDeprecated ? false : entry.SuperClass.IsDeprecated())
-                    || entry.SuperClass.MustBeAvoided()
-                    || entry.SuperClass.TypeName == SpecialNames.JavaLangObject)
+                var superCls = entry.SuperClass;
+                if (superCls != null && SpecialNames.IsJavaLangException(superCls.TypeName))
                 {
-                    if ((entry.SuperClass == null || entry.SuperClass.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
+                    return ToFullQualifiedClassName(superCls, false, camel);
+                }
+                else if (superCls == null
+                    || !superCls.IsPublic()
+                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                    || superCls.MustBeAvoided()
+                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                {
+                    if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
                     {
                         var method = entry.GetMethod("iterator");
                         string innerName = method.GenericReturnType.ApplyGenerics();
@@ -445,17 +449,13 @@ namespace MASES.JNetReflector
                         return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                     }
                 }
-                else if (entry.SuperClass == null || SpecialNames.IsJavaLangException(entry.SuperClass.TypeName))
+                else if (superCls.IsJVMGenericClass())
                 {
-                    return ToFullQualifiedClassName(entry.SuperClass, false, camel);
-                }
-                else if (entry.SuperClass.IsJVMGenericClass())
-                {
-                    var cName = ToFullQualifiedClassName(entry.SuperClass, true, camel);
+                    var cName = ToFullQualifiedClassName(superCls, true, camel);
                     cName += entry.GenericSuperClass.ApplyGenerics(camel);
                     return cName;
                 }
-                return ToFullQualifiedClassName(entry.SuperClass, false, camel);
+                return ToFullQualifiedClassName(superCls, false, camel);
             }
             catch
             {

@@ -118,8 +118,8 @@ namespace MASES.JNetReflector.Templates
 
             public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER";
 
-            public const string DEFAULT_DECORATION = "    #region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
-            public const string OBSOLETE_DECORATION = "    [System.Obsolete()]";
+            public const string DEFAULT_DECORATION = "#region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
             public class ConstructorStub
             {
@@ -203,31 +203,31 @@ namespace MASES.JNetReflector.Templates
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
-            public class NestedClassStub
-            {
-                public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
-                public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
-                public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_SIMPLECLASS_PLACEHOLDER";
-                public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
-                public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_NESTED_WHERECLAUSES_PLACEHOLDER";
-                public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
-                public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
-                public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";
-                public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER";
-                public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER";
-                public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER";
+            //public class NestedClassStub
+            //{
+            //    public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
+            //    public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
+            //    public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_SIMPLECLASS_PLACEHOLDER";
+            //    public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+            //    public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
+            //    public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_NESTED_WHERECLAUSES_PLACEHOLDER";
+            //    public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+            //    public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
+            //    public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";
+            //    public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER";
+            //    public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER";
+            //    public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER";
 
-                public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
-                public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
-                public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
-                public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+            //    public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
+            //    public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
+            //    public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
+            //    public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
 
-                public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER";
+            //    public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER";
 
-                public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";
-            }
+            //    public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+            //    public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";
+            //}
         }
     }
 }
