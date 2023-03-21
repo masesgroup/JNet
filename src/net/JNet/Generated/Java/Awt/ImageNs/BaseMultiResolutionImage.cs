@@ -35,7 +35,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
         public BaseMultiResolutionImage(int arg0, params Java.Awt.Image[] arg1)
-            : base(arg0)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public BaseMultiResolutionImage(params Java.Awt.Image[] arg0)
-            : base()
+            : base(arg0)
         {
         }
         

@@ -35,7 +35,7 @@ namespace Javax.Swing.Filechooser
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         public FileNameExtensionFilter(string arg0, params string[] arg1)
-            : base(arg0)
+            : base(arg0, arg1)
         {
         }
         

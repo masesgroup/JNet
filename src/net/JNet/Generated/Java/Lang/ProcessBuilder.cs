@@ -34,7 +34,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public ProcessBuilder(params string[] arg0)
-            : base()
+            : base(arg0)
         {
         }
         /// <summary>

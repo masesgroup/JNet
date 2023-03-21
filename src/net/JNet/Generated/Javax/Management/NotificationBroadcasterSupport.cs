@@ -35,7 +35,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
         public NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
-            : base(arg0)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -51,7 +51,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
         public NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)
-            : base()
+            : base(arg0)
         {
         }
         

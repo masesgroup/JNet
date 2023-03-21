@@ -44,7 +44,7 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public DescriptorSupport(params string[] arg0)
-            : base()
+            : base(arg0)
         {
         }
         /// <summary>

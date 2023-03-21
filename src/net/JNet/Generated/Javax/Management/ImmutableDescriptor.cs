@@ -34,7 +34,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public ImmutableDescriptor(params string[] arg0)
-            : base()
+            : base(arg0)
         {
         }
         /// <summary>
