@@ -36,6 +36,7 @@ namespace MASES.JNetReflector.Templates
                 AllPackageClassesStubNestedExceptionTemplate,
 
                 SingleClassTemplate,
+                SingleClassFileTemplate,
                 SingleConstructorTemplate,
                 SingleFieldTemplate,
                 SingleMethodTemplate,
@@ -79,6 +80,7 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
+        public const string SingleClassFileTemplate = "SingleClassFile.template";
         public const string SingleConstructorTemplate = "SingleConstructor.template";
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
