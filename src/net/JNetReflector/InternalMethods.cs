@@ -184,6 +184,7 @@ namespace MASES.JNetReflector
         }
 
         static string JarOrModuleName { get; set; }
+        static CancellationTokenSource CancellationTokenSource { get; set; }
 
         static void AnalyzeItems(IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items, string jarOrModuleName)
         {
@@ -191,9 +192,21 @@ namespace MASES.JNetReflector
 
             if (!JNetReflectorCore.AvoidParallelBuild)
             {
-                ParallelOptions po = new ParallelOptions();
-                po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;
-                Parallel.ForEach(items, po, AnalyzeSubItemsParallel);
+                try
+                {
+                    ParallelOptions po = new ParallelOptions();
+                    Console.CancelKeyPress += Console_CancelKeyPress;
+                    CancellationTokenSource = new CancellationTokenSource();
+                    CancellationTokenSource.Token.ThrowIfCancellationRequested();
+                    po.CancellationToken = CancellationTokenSource.Token;
+                    po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;
+                    Parallel.ForEach(items, po, AnalyzeSubItemsParallel);
+                }
+                finally
+                {
+                    CancellationTokenSource = null;
+                    Console.CancelKeyPress -= Console_CancelKeyPress;
+                }
             }
             else
             {
@@ -202,6 +215,11 @@ namespace MASES.JNetReflector
                     AnalyzeSubItems(item.Key, item.Value, JarOrModuleName);
                 }
             }
+        }
+
+        private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
+        {
+            CancellationTokenSource.Cancel();
         }
 
         static void AnalyzeSubItemsParallel(KeyValuePair<string, IDictionary<string, IDictionary<string, Class>>> items)
@@ -531,10 +549,9 @@ namespace MASES.JNetReflector
                 string constructorName = constructor.Name();
                 bool bypass = false;
                 bool hasVarArg = false;
+                List<Parameter> parameters = new List<Parameter>();
                 Parameter varArg = null;
-                StringBuilder constructorHelpBuilder = new StringBuilder();
-                StringBuilder constructorParamsBuilder = new StringBuilder();
-                StringBuilder constructorExecutionParamsBuilder = new StringBuilder();
+
                 foreach (var parameter in constructor.Parameters)
                 {
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
@@ -542,11 +559,7 @@ namespace MASES.JNetReflector
                     if (parameter.Type() == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
-                        var typeStr = parameter.Type();
-                        constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                           typeStr.ConvertToJavadoc()));
-                        constructorParamsBuilder.AppendFormat($"{typeStr} {parameter.Name}, ");
-                        constructorExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                        parameters.Add(parameter);
                     }
                     else // store var arg becuase it is not clear that results are ordered
                     {
@@ -561,12 +574,30 @@ namespace MASES.JNetReflector
                     continue;
                 }
                 if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kinf of constructor is managed from AllClasses template as default for any JCOBridge reflected class
+
                 if (hasVarArg)
                 {
-                    var typeStr = varArg.Type();
-                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, varArg.Name,
+                    parameters.Add(varArg);
+                }
+
+                StringBuilder constructorHelpBuilder = new StringBuilder();
+                StringBuilder constructorParamsBuilder = new StringBuilder();
+                StringBuilder constructorExecutionParamsBuilder = new StringBuilder();
+
+                foreach (var item in parameters)
+                {
+                    var typeStr = item.Type();
+                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name,
                                                                                                                                        typeStr.ConvertToJavadoc()));
-                    constructorParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
+                    if (item.IsVarArgs)
+                    {
+                        constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name}, ");
+                    }
+                    else
+                    {
+                        constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name}, ");
+                    }
+                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name}, ");
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
@@ -898,21 +929,16 @@ namespace MASES.JNetReflector
 
                 bool bypass = false;
                 bool hasVarArg = false;
+                List<Parameter> parameters = new List<Parameter>();
                 Parameter varArg = null;
-                StringBuilder methodHelpBuilder = new StringBuilder();
-                StringBuilder methodParamsBuilder = new StringBuilder();
-                StringBuilder methodExecutionParamsBuilder = new StringBuilder();
+
                 foreach (var parameter in method.Parameters)
                 {
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
-                        var typeStr = parameter.Type();
-                        methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                 typeStr.ConvertToJavadoc()));
-                        methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name}, ");
-                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                        parameters.Add(parameter);
                     }
                     else // store var arg becuase it is not clear that results are ordered
                     {
@@ -928,10 +954,27 @@ namespace MASES.JNetReflector
                 }
                 if (hasVarArg)
                 {
-                    var typeStr = varArg.Type();
-                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, varArg.Name,
-                                                                                                                             typeStr.ConvertToJavadoc()));
-                    methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name}, ");
+                    parameters.Add(varArg);
+                }
+
+                StringBuilder methodHelpBuilder = new StringBuilder();
+                StringBuilder methodParamsBuilder = new StringBuilder();
+                StringBuilder methodExecutionParamsBuilder = new StringBuilder();
+
+                foreach (var parameter in parameters)
+                {
+                    var typeStr = parameter.Type();
+                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
+                                                                                                                                  typeStr.ConvertToJavadoc()));
+                    if (parameter.IsVarArgs)
+                    {
+                        methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name}, ");
+                    }
+                    else
+                    {
+                        methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name}, ");
+                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                    }
                 }
 
                 string paramsString = methodParamsBuilder.ToString();
