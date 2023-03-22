@@ -368,7 +368,7 @@ namespace MASES.JNetReflector
                     subClassAutonoumous.AppendLine();
                 }
 
-                if (!JNetReflectorCore.AvoidCSharpGenericDefinition)
+                if (!JNetReflectorCore.AvoidCSharpGenericDefinition && entry.IsJVMGenericClass())
                 {
                     entry.PrepareSingleClass(classDefinitions, true, 3, allPackageStubNestedException, allPackageStubNestedClassListener, allPackageStubNestedClass, singleNestedClassTemplate, out nestedClassBlock, out singleNestedClassStr);
 
@@ -400,14 +400,16 @@ namespace MASES.JNetReflector
 
             string classGenericBlock;
             string singleClassGenericStr;
-            if (!JNetReflectorCore.AvoidCSharpGenericDefinition)
+            if (!JNetReflectorCore.AvoidCSharpGenericDefinition && jClass.IsJVMGenericClass())
             {
                 jClass.PrepareSingleClass(classDefinitions, true, 2, allPackageStubException, allPackageStubClassListener, allPackageStubClass, singleClassTemplate, out classGenericBlock, out singleClassGenericStr);
-                singleClassGenericStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericAutonoumous.ToString());
+                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericAutonoumous.ToString());
+                singleFileBlock.AppendLine();
                 singleFileBlock.AppendLine();
                 singleFileBlock.Append(singleClassGenericStr);
                 var subClassGenericStr = subClassGenericBlock.ToString();
                 classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericStr.Length != 0 ? subClassGenericStr : string.Empty);
+                allClassBlock.AppendLine();
                 allClassBlock.AppendLine();
                 allClassBlock.Append(classGenericBlock);
             }
@@ -422,7 +424,7 @@ namespace MASES.JNetReflector
                                                          .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace())
                                                          .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
 
-                var clsName = jClass.JVMClassName(true);
+                var clsName = jClass.JVMClassName(false);
                 var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
                 WriteFile(classPath, fileContent);
             }
@@ -441,39 +443,38 @@ namespace MASES.JNetReflector
             bool jClassIsDepracated = jClass.IsDeprecated();
             bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
             bool jClassIsListener = jClass.IsJVMListenerClass();
-            classBlock = string.Empty;
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
             if (jClass.IsJVMException())
             {
                 classBlock = stubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                          .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(true))
-                                          .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(false))
+                                          .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(false))
+                                          .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(isGeneric))
                                           .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
-                                          .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false))
+                                          .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false))
                                           .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty)
                                           .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
             }
             else
             {
-                bool isSubClassCloseable = jClass.IsCloseable();
-                bool isSubClassAbstract = jClass.IsAbstract();
-                bool isSubClassInterface = jClass.IsInterface();
-                bool isSubClassStatic = jClass.IsStatic();
+                bool isClassCloseable = jClass.IsCloseable();
+                bool isClassAbstract = jClass.IsAbstract();
+                bool isClassInterface = jClass.IsInterface();
+                bool isClassStatic = jClass.IsStatic();
 
                 string template = jClassIsListener ? stubListener : stubClass;
 
                 classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(true))
-                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(false))
+                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(false))
+                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(isGeneric))
                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
-                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(jClassIsListener))
-                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses())
-                                     .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isSubClassAbstract ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isSubClassCloseable ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isSubClassInterface ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isSubClassStatic ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener))
+                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric))
+                                     .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
 
                 if (!jClassIsListener)
@@ -499,7 +500,7 @@ namespace MASES.JNetReflector
                 }
 
                 singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
-                                            .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(false))
+                                            .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(isGeneric))
                                             .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
                                             .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
                                             .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
@@ -554,9 +555,10 @@ namespace MASES.JNetReflector
 
                 foreach (var parameter in constructor.Parameters)
                 {
+                    IEnumerable<string> genString;
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
-                    if (parameter.Type() == "object[]") { bypass = true; break; }
+                    if (parameter.Type(isGeneric, out genString) == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         parameters.Add(parameter);
@@ -586,7 +588,8 @@ namespace MASES.JNetReflector
 
                 foreach (var item in parameters)
                 {
-                    var typeStr = item.Type();
+                    IEnumerable<string> genString;
+                    var typeStr = item.Type(isGeneric, out genString);
                     constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name,
                                                                                                                                        typeStr.ConvertToJavadoc()));
                     if (item.IsVarArgs)
@@ -772,10 +775,10 @@ namespace MASES.JNetReflector
 
                 if (method.IsProperty())
                 {
-                    var propertyName = method.PropertyName(classDefinitions);
+                    var propertyName = method.PropertyName(classDefinitions, isGeneric);
                     if (propertyName.IsReservedName()
-                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
-                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions))
+                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions, isGeneric)
+                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions, isGeneric))
                     {
                         methods.Add(genString, method);
                     }
@@ -845,7 +848,8 @@ namespace MASES.JNetReflector
 
                 foreach (var item in propToCheck)
                 {
-                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(); }
+                    IEnumerable<string> genString;
+                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(isGeneric, out genString); }
                     if (item.IsSetProperty()) { setMethod = item; }
                 }
 
@@ -920,9 +924,10 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
 
+                IEnumerable<string> retGenString;
                 string modifier = method.IsStatic() ? " static" : string.Empty;
-                string returnType = method.ReturnType();
-                string methodName = method.MethodName(classDefinitions);
+                string returnType = method.ReturnType(isGeneric, out retGenString);
+                string methodName = method.MethodName(classDefinitions, isGeneric);
 
                 if (methodName == "Clone" && returnType == "object") continue;
                 if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
@@ -963,7 +968,8 @@ namespace MASES.JNetReflector
 
                 foreach (var parameter in parameters)
                 {
-                    var typeStr = parameter.Type();
+                    IEnumerable<string> paramGenString;
+                    var typeStr = parameter.Type(isGeneric, out paramGenString);
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
                                                                                                                                   typeStr.ConvertToJavadoc()));
                     if (parameter.IsVarArgs)
@@ -1077,7 +1083,7 @@ namespace MASES.JNetReflector
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
-                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, method.WhereClauses())
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, method.WhereClauses(isGeneric))
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl());
 
@@ -1125,10 +1131,11 @@ namespace MASES.JNetReflector
                 {
                     //  modifier += field.IsFinal() ? " readonly" : string.Empty; // avoid till now because seems not compile the test project
                 }
-                string fieldType = field.Type();
+                IEnumerable<string> genString;
+                string fieldType = field.Type(isGeneric, out genString);
                 string fieldName = field.Name(false);
 
-                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
+                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions, isGeneric))
                 {
                     fieldName += "Field";
                 }
