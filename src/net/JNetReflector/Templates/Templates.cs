@@ -95,7 +95,10 @@ namespace MASES.JNetReflector.Templates
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
         public const string CLASSES = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
 
-        public const string HREF_URL = "<see href=\"{0}\"/>";
+        public static string DocTemplate => JNetReflectorCore.OriginJavadocUrl != null ? HREF_URL : CREF_URL;
+
+        const string CREF_URL = "<see cref=\"{0}\"/>";
+        const string HREF_URL = "<see href=\"{0}\"/>";
 
         public class ClassStub
         {

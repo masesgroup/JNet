@@ -764,7 +764,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        public static string JavadocUrl(this Class entry)
+        public static string JavadocUrl(this Class entry, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
 
@@ -799,12 +799,12 @@ namespace MASES.JNetReflector
                 return newURl;
             }
 
-            return entry.TypeName;
+            return entry.ToNetType(camel);
         }
 
-        public static string JavadocHrefUrl(this Class entry)
+        public static string JavadocHrefUrl(this Class entry, bool camel = true)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -862,9 +862,9 @@ namespace MASES.JNetReflector
             return constructorName.Contains(SpecialNames.NestedClassSeparator) ? constructorName.Remove(0, constructorName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1) : constructorName;
         }
 
-        public static string JavadocUrl(this Constructor entry)
+        public static string JavadocUrl(this Constructor entry, bool camel = true)
         {
-            var newURl = entry.DeclaringClass.JavadocUrl();
+            var newURl = entry.DeclaringClass.JavadocUrl(camel);
             if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
@@ -888,12 +888,12 @@ namespace MASES.JNetReflector
                 return newURl;
             }
 
-            return entry.Name;
+            return entry.Name(camel);
         }
 
-        public static string JavadocHrefUrl(this Constructor entry)
+        public static string JavadocHrefUrl(this Constructor entry, bool camel = true)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1119,9 +1119,9 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static string JavadocUrl(this Method entry)
+        public static string JavadocUrl(this Method entry, bool camel = true)
         {
-            var newURl = entry.DeclaringClass.JavadocUrl();
+            var newURl = entry.DeclaringClass.JavadocUrl(camel);
             if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
@@ -1140,12 +1140,12 @@ namespace MASES.JNetReflector
                 return newURl;
             }
 
-            return entry.Name;
+            return entry.Name(null, false, camel);
         }
 
-        public static string JavadocHrefUrl(this Method entry)
+        public static string JavadocHrefUrl(this Method entry, bool camel = true)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1228,9 +1228,9 @@ namespace MASES.JNetReflector
             return entry.Type.ToNetType(camel) == "object";
         }
 
-        public static string JavadocUrl(this Field entry)
+        public static string JavadocUrl(this Field entry, bool camel = true)
         {
-            var newURl = entry.DeclaringClass.JavadocUrl();
+            var newURl = entry.DeclaringClass.JavadocUrl(camel);
             if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.Name;
@@ -1238,12 +1238,12 @@ namespace MASES.JNetReflector
                 return newURl;
             }
 
-            return entry.Name;
+            return entry.Name(false);
         }
 
-        public static string JavadocHrefUrl(this Field entry)
+        public static string JavadocHrefUrl(this Field entry, bool camel = true)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
