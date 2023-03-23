@@ -57,14 +57,14 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithClassOrNestedClass(this string entry, ICollection<Class> classDefinitions, bool usedInGenerics)
+        public static bool CollapseWithClassOrNestedClass(this string entry, ICollection<Class> classDefinitions)
         {
             foreach (var classDefinition in classDefinitions)
             {
-                bool collpase = false;
+                bool collpase;
                 if (classDefinition.IsJVMNestedClass())
                 {
-                    collpase = entry == classDefinition.JVMNestedClassName(usedInGenerics);
+                    collpase = entry == classDefinition.JVMNestedClassName(false);
                 }
                 else
                 {
@@ -75,11 +75,11 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithOtherMethods(this string entry, ICollection<Method> methodToBeReflected, ICollection<Class> classDefinitions, bool usedInGenerics)
+        public static bool CollapseWithOtherMethods(this string entry, ICollection<Method> methodToBeReflected, ICollection<Class> classDefinitions)
         {
             foreach (var method in methodToBeReflected)
             {
-                var testName = method.MethodName(classDefinitions, usedInGenerics);
+                var testName = method.MethodName(classDefinitions, false);
                 testName = testName.Contains('<') ? testName.Substring(0, testName.IndexOf('<')) : testName;
                 if (entry == testName)
                 {
@@ -132,7 +132,7 @@ namespace MASES.JNetReflector
             return ns;
         }
 
-        static string Camel(string str)
+        public static string Camel(this string str)
         {
             if (str.Length == 0 || str.Length == 1) return str;
             else return char.ToUpper(str[0]) + str.Substring(1);
@@ -140,7 +140,7 @@ namespace MASES.JNetReflector
 
         static string ToFullQualifiedClassName(string canonicalName, bool camel = true)
         {
-            string className = canonicalName.Substring(canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+            string className = canonicalName.Contains(SpecialNames.NamespaceSeparator) ? canonicalName.Substring(canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1) : canonicalName;
             className = Namespace(canonicalName, camel) + SpecialNames.NamespaceSeparator + className.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
             return className;
         }
@@ -255,17 +255,21 @@ namespace MASES.JNetReflector
 
         #region TypeVariable[] extension
 
-        static string ApplyGenerics(this TypeVariable[] entry, string name)
+        public static IEnumerable<string> GetGenerics(this Java.Lang.Reflect.TypeVariable[] entries, string prefix, bool camel = true)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in entry)
+            List<string> lst = new List<string>();
+            foreach (var entry in entries)
             {
-                sb.AppendFormat("{0}, ", item.Name);
+                lst.AddRange(entry.GetGenerics(prefix, camel));
             }
-            var parameters = sb.ToString();
+            return lst;
+        }
+
+        static string ApplyGenerics(this TypeVariable[] entry, string prefix, string name, bool camel = true)
+        {
+            var parameters = entry.GetGenerics(prefix, camel).ConvertGenerics(camel);
             if (!string.IsNullOrEmpty(parameters))
             {
-                parameters = parameters.Substring(0, parameters.LastIndexOf(", "));
                 return $"{name}<{parameters}>";
             }
             return name;
@@ -296,23 +300,37 @@ namespace MASES.JNetReflector
 
         #region Type extension
 
-        static string ApplyGenerics(this Java.Lang.Reflect.Type entry, bool camel = true)
+        static string ApplyGenerics(this Java.Lang.Reflect.Type entry, string prefix, bool camel = true)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in entry.GetGenerics(camel))
-            {
-                sb.AppendFormat("{0}, ", item);
-            }
-            var parameters = sb.ToString();
+            var parameters = entry.GetGenerics(prefix, camel).ConvertGenerics(camel);
             if (!string.IsNullOrEmpty(parameters))
             {
-                parameters = parameters.Substring(0, parameters.LastIndexOf(", "));
                 return $"<{parameters}>";
             }
             return string.Empty;
         }
 
-        static string ApplyGenerics(this IEnumerable<string> entry, bool camel = true)
+        static string ApplyGenerics(this Java.Lang.Reflect.Type[] entries, string prefix, bool camel = true)
+        {
+            var parameters = entries.GetGenerics(prefix, camel).ConvertGenerics(camel);
+            if (!string.IsNullOrEmpty(parameters))
+            {
+                return $"<{parameters}>";
+            }
+            return string.Empty;
+        }
+
+        public static string ApplyGenerics(this IEnumerable<string> entry, bool camel = true)
+        {
+            var parameters = entry.ConvertGenerics(camel);
+            if (!string.IsNullOrEmpty(parameters))
+            {
+                return $"<{parameters}>";
+            }
+            return string.Empty;
+        }
+
+        static string ConvertGenerics(this IEnumerable<string> entry, bool camel = true)
         {
             StringBuilder sb = new StringBuilder();
             foreach (var item in entry)
@@ -323,46 +341,79 @@ namespace MASES.JNetReflector
             if (!string.IsNullOrEmpty(parameters))
             {
                 parameters = parameters.Substring(0, parameters.LastIndexOf(", "));
-                return $"<{parameters}>";
+                return parameters;
             }
             return string.Empty;
         }
 
-        static IEnumerable<string> GetGenerics(this Java.Lang.Reflect.Type entry, bool camel = true)
-        {
-            if (entry.IsInstanceOf<ParameterizedType>())
-            {
-                return GetGenerics(entry.CastTo<ParameterizedType>(), camel);
-            }
-            else if (entry.IsInstanceOf<GenericArrayType>())
-            {
-                return GetGenerics(entry.CastTo<GenericArrayType>(), camel);
-            }
-            else if (entry.IsInstanceOf<WildcardType>())
-            {
-                return GetGenerics(entry.CastTo<WildcardType>(), camel);
-            }
-            return new string[] { ToFullQualifiedClassName(entry.TypeName, camel) };
-        }
-
-        static IEnumerable<string> GetGenerics(this GenericArrayType entry, bool camel = true)
-        {
-            return new string[] { ToFullQualifiedClassName(entry.TypeName, camel) };
-        }
-
-        static IEnumerable<string> GetGenerics(this ParameterizedType entry, bool camel = true)
+        static IEnumerable<string> GetGenerics(this Java.Lang.Reflect.Type[] entries, string prefix, bool camel = true)
         {
             List<string> lst = new List<string>();
-            foreach (var item in entry.ActualTypeArguments)
+            foreach (var entry in entries)
             {
-                lst.Add(ToFullQualifiedClassName(item.TypeName, camel));
+                lst.AddRange(entry.GetGenerics(prefix, camel));
             }
             return lst;
         }
 
-        static IEnumerable<string> GetGenerics(this WildcardType entry, bool camel = true)
+        static IEnumerable<string> GetGenerics(this Java.Lang.Reflect.Type entry, string prefix, bool camel = true)
+        {
+            if (entry.IsInstanceOf<TypeVariable>())
+            {
+                return GetGenerics(entry.CastTo<TypeVariable>(), prefix, camel);
+            }
+            else if (entry.IsInstanceOf<ParameterizedType>())
+            {
+                return GetGenerics(entry.CastTo<ParameterizedType>(), prefix, camel);
+            }
+            else if (entry.IsInstanceOf<GenericArrayType>())
+            {
+                return GetGenerics(entry.CastTo<GenericArrayType>(), prefix, camel);
+            }
+            else if (entry.IsInstanceOf<WildcardType>())
+            {
+                return GetGenerics(entry.CastTo<WildcardType>(), prefix, camel);
+            }
+            return new string[] {  };
+        }
+
+        static IEnumerable<string> GetGenerics(this GenericArrayType entry, string prefix, bool camel = true)
         {
             return new string[] { ToFullQualifiedClassName(entry.TypeName, camel) };
+        }
+
+        static IEnumerable<string> GetGenerics(this ParameterizedType entry, string prefix, bool camel = true)
+        {
+            List<string> lst = new List<string>();
+            foreach (var item in entry.ActualTypeArguments)
+            {
+                lst.AddRange(GetGenerics(item, prefix, camel));
+            }
+            return lst;
+        }
+
+        static IEnumerable<string> GetGenerics(this TypeVariable entry, string prefix, bool camel = true)
+        {
+            return new string[] { entry.Name };
+        }
+
+        static IEnumerable<string> GetGenerics(this WildcardType entry, string prefix, bool camel = true)
+        {
+            List<string> lst = new List<string>();
+            for (int i = 0; i < entry.LowerBounds.Length; i++)
+            {
+                var upper = GetGenerics(entry.UpperBounds[i], prefix, camel);
+                var lower = GetGenerics(entry.LowerBounds[i], prefix, camel);
+                if (prefix == null)
+                {
+                    lst.Add($"{lower.ConvertGenerics(camel)}");
+                }
+                else
+                {
+                    lst.Add($"{prefix}{upper.ConvertGenerics(camel)}Super{lower.ConvertGenerics(camel)}");
+                }
+            }
+            return lst;
         }
 
         #endregion
@@ -407,7 +458,7 @@ namespace MASES.JNetReflector
         static string JVMNestedClassName(this Class entry, bool usedInGenerics, bool onlyName = false)
         {
             var cName = entry.TypeName;
-            cName = cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
+            cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1) : cName;
             if (!onlyName) cName = entry.ApplyGenerics(usedInGenerics, cName);
             return cName;
         }
@@ -415,14 +466,20 @@ namespace MASES.JNetReflector
         public static string JVMSimpleClassName(this Class entry)
         {
             var cName = entry.TypeName;
-            cName = cName.Remove(0, cName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+            cName = cName.Contains(SpecialNames.NamespaceSeparator) ? cName.Remove(0, cName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1) : cName;
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+        }
+
+        public static IEnumerable<string> GetGenerics(this Class entry, string prefix, bool camel = true)
+        {
+            if (!entry.IsJVMGenericClass()) return null;
+            return entry.TypeParameters.GetGenerics(prefix, camel);
         }
 
         static string ApplyGenerics(this Class entry, bool usedInGenerics, string name)
         {
             if (!usedInGenerics || !entry.IsJVMGenericClass()) return name;
-            return entry.TypeParameters.ApplyGenerics(name);
+            return entry.TypeParameters.ApplyGenerics(null, name);
         }
 
         public static string WhereClauses(this Class entry, bool usedInGenerics, bool camel = true)
@@ -437,7 +494,7 @@ namespace MASES.JNetReflector
             return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
         }
 
-        static string ToFullQualifiedClassName(Class cls, bool usedInGenerics, bool camel = true)
+        public static string ToFullQualifiedClassName(this Class cls, bool usedInGenerics, bool camel = true)
         {
             var cName = cls.TypeName;
             cName = ToFullQualifiedClassName(cName, camel);
@@ -467,7 +524,7 @@ namespace MASES.JNetReflector
                         if (usedInGenerics)
                         {
                             var method = entry.GetMethod("iterator");
-                            innerName = method.GenericReturnType.ApplyGenerics(camel);
+                            innerName = method.GenericReturnType.ApplyGenerics(string.Empty, camel);
                         }
                         return string.Format("Java.Lang.Iterable{0}", innerName);
                     }
@@ -479,15 +536,15 @@ namespace MASES.JNetReflector
                 }
                 else if (usedInGenerics && superCls.IsJVMGenericClass())
                 {
-                    var cName = ToFullQualifiedClassName(superCls, true, camel);
-                    cName += entry.GenericSuperClass.ApplyGenerics(camel);
+                    var cName = ToFullQualifiedClassName(superCls, false, camel);
+                    cName += entry.GenericSuperClass.ApplyGenerics(null, camel);
                     return cName;
                 }
                 return ToFullQualifiedClassName(superCls, false, camel);
             }
             catch
             {
-                string className = entry.JVMClassName(false);
+                string className = entry.JVMClassName(usedInGenerics);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
         }
@@ -972,10 +1029,9 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        static string ApplyGenerics(this Method entry, bool usedInGenerics, string name)
+        public static IEnumerable<string> GetGenerics(this Method entry, string prefix, bool camel = true)
         {
-            if (!usedInGenerics) return name;
-            return entry.TypeParameters.ApplyGenerics(name);
+            return entry.GenericParameterTypes.GetGenerics(prefix, camel);
         }
 
         public static string WhereClauses(this Method entry, bool usedInGenerics, bool camel = true)
@@ -984,7 +1040,7 @@ namespace MASES.JNetReflector
             return entry.TypeParameters.WhereClauses(camel);
         }
 
-        public static string Name(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel = true)
+        public static string Name(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, string prefix, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -992,41 +1048,40 @@ namespace MASES.JNetReflector
             {
                 foreach (var classDefinition in classDefinitions)
                 {
-                    if (classDefinition.JVMNestedClassName(usedInGenerics) == entry.Name(null, usedInGenerics))
+                    if (classDefinition.JVMSimpleClassName() == entry.Name(null, false, string.Empty))
                     {
                         methodName += SpecialNames.MethodSuffix;
                         break;
                     }
                 }
             }
-            methodName = entry.ApplyGenerics(usedInGenerics, methodName);
+            if (usedInGenerics)
+            {
+                var genData = entry.GetGenerics(prefix, camel);
+                methodName += genData.ApplyGenerics(camel);
+            }
             return camel ? Camel(methodName) : methodName;
         }
 
         public static string PropertyName(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            var methodName = entry.Name;
-            if (methodName.StartsWith("get") && methodName.Length > 3 && entry.ParameterCount == 0) methodName = methodName.Substring(3);
-            if (methodName.StartsWith("set") && methodName.Length > 3 && entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) methodName = methodName.Substring(3);
-            if (classDefinitions != null)
+            var methodName = entry.Name(classDefinitions, usedInGenerics, string.Empty, camel);
+            string methodName2 = string.Empty;
+            if (methodName.StartsWith("Get") && methodName.Length > 3 && entry.ParameterCount == 0) methodName2 = methodName.Substring(3).Camel();
+            if (methodName.StartsWith("Set") && methodName.Length > 3 && entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) methodName2 = methodName.Substring(3);      
+            if (camel) methodName2 = methodName2.Camel();
+            if (methodName2.IsReservedName() || methodName2.CollapseWithClassOrNestedClass(classDefinitions))
             {
-                foreach (var classDefinition in classDefinitions)
-                {
-                    if (classDefinition.JVMNestedClassName(usedInGenerics) == entry.Name(null, usedInGenerics))
-                    {
-                        methodName += SpecialNames.PropertySuffix;
-                        break;
-                    }
-                }
+                return methodName;
             }
-            return camel ? Camel(methodName) : methodName;
+            return methodName2;
         }
 
         public static string MethodName(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel = true)
         {
-            string nameToReport = entry.Name(classDefinitions, usedInGenerics, camel);
-            if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(classDefinitions, usedInGenerics))
+            string nameToReport = entry.Name(classDefinitions, usedInGenerics, string.Empty, camel);
+            if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(classDefinitions))
             {
                 nameToReport += SpecialNames.MethodSuffix;
             }
@@ -1039,11 +1094,11 @@ namespace MASES.JNetReflector
             return entry.ReturnType.IsJVMException();
         }
 
-        public static string ReturnType(this Method entry, bool usedInGenerics, out IEnumerable<string> genType, bool camel = true)
+        public static string ReturnType(this Method entry, bool usedInGenerics, string prefix, out IEnumerable<string> genType, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             genType = null;
-            if (!usedInGenerics)
+            if (!usedInGenerics || !entry.ReturnType.IsJVMGenericClass())
             {
                 return entry.ReturnType.ToNetType(camel);
             }
@@ -1063,8 +1118,8 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
-                    genType = entry.GenericReturnType.GetGenerics(camel);
-                    return entry.ReturnType.ToNetType(camel) + genType.ApplyGenerics(camel);
+                    genType = entry.GenericReturnType.GetGenerics(prefix, camel);
+                    return entry.ReturnType.ToNetType(camel);
                 }
             }
         }
@@ -1140,7 +1195,7 @@ namespace MASES.JNetReflector
                 return newURl;
             }
 
-            return entry.Name(null, false, camel);
+            return entry.Name(null, false, string.Empty, camel);
         }
 
         public static string JavadocHrefUrl(this Method entry, bool camel = true)
@@ -1217,7 +1272,7 @@ namespace MASES.JNetReflector
             }
             else
             {
-                genType = entry.GenericType.GetGenerics(camel);
+                genType = entry.GenericType.GetGenerics(string.Empty, camel);
                 return entry.Type.ToNetType(camel) + genType.ApplyGenerics(camel);
             }
         }
@@ -1293,31 +1348,29 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
-        public static string Type(this Parameter entry, bool usedInGenerics, out IEnumerable<string> genType, bool camel = true)
+        public static string Type(this Parameter entry, bool usedInGenerics, string prefix, out IEnumerable<string> genType, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             genType = null;
-            string entryType;
-            if (usedInGenerics && entry.Type.IsJVMGenericClass())
-            {
-                entryType = ToFullQualifiedClassName(entry.Type, true, camel);
-                genType = entry.ParameterizedType.GetGenerics(camel);
-                entryType += genType.ApplyGenerics(camel);
-            }
-            else entryType = entry.Type.ToNetType(camel);
 
-            if (!usedInGenerics)
+            if (!usedInGenerics || !entry.Type.IsJVMGenericClass())
             {
-                return entryType;
+                return entry.Type.ToNetType(camel);
             }
             else
             {
+                var entryType = ToFullQualifiedClassName(entry.Type, false, camel);
                 if (entry.ParameterizedType != null && (entryType == "object" || entryType == "object[]"))
                 {
-                    genType = entry.ParameterizedType.GetGenerics(camel) ;
+                    genType = entry.ParameterizedType.GetGenerics(prefix, camel);
                     return genType.ApplyGenerics(camel);
                 }
-                else return entryType;
+                else
+                {
+                    genType = entry.ParameterizedType.GetGenerics(prefix, camel);
+                    entryType += genType.ApplyGenerics(camel);
+                    return entryType;
+                }
             }
         }
 

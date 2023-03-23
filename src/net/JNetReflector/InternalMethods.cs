@@ -374,14 +374,14 @@ namespace MASES.JNetReflector
 
                     if (!string.IsNullOrEmpty(nestedClassBlock))
                     {
-                        subClassGenericBlock.AppendLine(nestedClassBlock);
-                        subClassGenericBlock.AppendLine();
+                        subClassBlock.AppendLine(nestedClassBlock);
+                        subClassBlock.AppendLine();
                     }
 
                     if (!string.IsNullOrEmpty(singleNestedClassStr))
                     {
-                        subClassGenericAutonoumous.AppendLine(singleNestedClassStr);
-                        subClassGenericAutonoumous.AppendLine();
+                        subClassAutonoumous.AppendLine(singleNestedClassStr);
+                        subClassAutonoumous.AppendLine();
                     }
                 }
             }
@@ -539,6 +539,8 @@ namespace MASES.JNetReflector
                 sortedFilteredCtors.Add(constructor.GenericString, constructor);
             }
 
+            var classGenerics = classDefinition.GetGenerics(string.Empty);
+
             StringBuilder subClassBlock = new StringBuilder();
             foreach (var constructor in sortedFilteredCtors.Values)
             {
@@ -558,7 +560,7 @@ namespace MASES.JNetReflector
                     IEnumerable<string> genString;
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
-                    if (parameter.Type(isGeneric, out genString) == "object[]") { bypass = true; break; }
+                    if (parameter.Type(isGeneric, string.Empty, out genString) == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         parameters.Add(parameter);
@@ -575,7 +577,7 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded constructor {0}", constructor.GenericString);
                     continue;
                 }
-                if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kinf of constructor is managed from AllClasses template as default for any JCOBridge reflected class
+                if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kind of constructor is managed from AllClasses template as default for any JCOBridge reflected class
 
                 if (hasVarArg)
                 {
@@ -588,8 +590,20 @@ namespace MASES.JNetReflector
 
                 foreach (var item in parameters)
                 {
-                    IEnumerable<string> genString;
-                    var typeStr = item.Type(isGeneric, out genString);
+                    IEnumerable<string> genStrings;
+                    var typeStr = item.Type(false, item.Name.Camel(), out genStrings);
+                    if (isGeneric && genStrings != null && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        foreach (var genString in genStrings)
+                        {
+                            if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                        }
+                        if (usableGenStrings && typeStr != "Java.Lang.Class")
+                        {
+                            typeStr += genStrings.ApplyGenerics();
+                        }
+                    }
                     constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name,
                                                                                                                                        typeStr.ConvertToJavadoc()));
                     if (item.IsVarArgs)
@@ -682,12 +696,14 @@ namespace MASES.JNetReflector
                     continue;
                 }
 
-                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implementedInterface.ToNetType(),
-                                                                                                                    classDefinition.ToNetType());
+                var implClass = implementedInterface.ToFullQualifiedClassName(isGeneric);
+                var classDef = classDefinition.ToFullQualifiedClassName(isGeneric);
+
+                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
+                                                                                                                    classDef.ConvertToJavadoc());
                 subOperatorBlock.AppendLine(singleOperatorHelp);
 
-                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implementedInterface.ToNetType(),
-                                                                                                                       classDefinition.ToNetType());
+                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
                 subOperatorBlock.AppendLine(singleOperator);
             }
 
@@ -775,10 +791,10 @@ namespace MASES.JNetReflector
 
                 if (method.IsProperty())
                 {
-                    var propertyName = method.PropertyName(classDefinitions, isGeneric);
+                    var propertyName = method.PropertyName(classDefinitions, false);
                     if (propertyName.IsReservedName()
-                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions, isGeneric)
-                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions, isGeneric))
+                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
+                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions))
                     {
                         methods.Add(genString, method);
                     }
@@ -849,7 +865,7 @@ namespace MASES.JNetReflector
                 foreach (var item in propToCheck)
                 {
                     IEnumerable<string> genString;
-                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(isGeneric, out genString); }
+                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(isGeneric, string.Empty, out genString); }
                     if (item.IsSetProperty()) { setMethod = item; }
                 }
 
@@ -917,6 +933,8 @@ namespace MASES.JNetReflector
                 subClassBlock.AppendLine(singleProperty);
             }
 
+            var classGenerics = classDefinition.GetGenerics(string.Empty);
+
             foreach (var item in methods)
             {
                 var method = item.Value;
@@ -924,10 +942,12 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
 
+                List<string> genericArguments = new List<string>();
                 IEnumerable<string> retGenString;
                 string modifier = method.IsStatic() ? " static" : string.Empty;
-                string returnType = method.ReturnType(isGeneric, out retGenString);
-                string methodName = method.MethodName(classDefinitions, isGeneric);
+                string returnType = method.ReturnType(isGeneric, "Return", out retGenString);
+                if (retGenString != null) genericArguments.AddRange(retGenString);
+                string methodName = method.MethodName(classDefinitions, false);
 
                 if (methodName == "Clone" && returnType == "object") continue;
                 if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
@@ -968,8 +988,21 @@ namespace MASES.JNetReflector
 
                 foreach (var parameter in parameters)
                 {
-                    IEnumerable<string> paramGenString;
-                    var typeStr = parameter.Type(isGeneric, out paramGenString);
+                    IEnumerable<string> paramGenStrings;
+                    var typeStr = parameter.Type(false, parameter.Name.Camel(), out paramGenStrings);
+                    if (isGeneric && paramGenStrings != null && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        foreach (var paramGenString in paramGenStrings)
+                        {
+                            if (!classGenerics.Contains(paramGenString)) usableGenStrings = false;
+                        }
+                        if (usableGenStrings && typeStr != "Java.Lang.Class")
+                        {
+                            typeStr += paramGenStrings.ApplyGenerics();
+                        }
+                    }
+                    if (paramGenStrings != null) genericArguments.AddRange(paramGenStrings);
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
                                                                                                                                   typeStr.ConvertToJavadoc()));
                     if (parameter.IsVarArgs)
@@ -981,6 +1014,42 @@ namespace MASES.JNetReflector
                         methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name}, ");
                         methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
                     }
+                }
+
+                if (isGeneric)
+                {
+                    string[] argArray = genericArguments.ToArray();
+                    for (int i = 0; i < argArray.Length; i++)
+                    {
+                        int counter = 0;
+                        foreach (var genericArgument in genericArguments)
+                        {
+                            if (genericArgument == argArray[i]) counter++;
+                        }
+                        if (counter > 1)
+                        {
+                            for (int i2 = i + 1; i2 < argArray.Length; i2++)
+                            {
+                                if (argArray[i] == argArray[i2]) argArray[i2] = null;
+                            }
+                        }
+                    }
+                    genericArguments.Clear();
+                    foreach (var argInArray in argArray)
+                    {
+                        if (argInArray != null) genericArguments.Add(argInArray);
+                    }
+
+                    if (classGenerics != null)
+                    {
+                        foreach (var classGeneric in classGenerics)
+                        {
+                            if (genericArguments.Contains(classGeneric)) genericArguments.Remove(classGeneric);
+                        }
+                    }
+
+                    returnType += retGenString != null ? retGenString.ApplyGenerics() : string.Empty;
+                    methodName += genericArguments.ApplyGenerics();
                 }
 
                 string paramsString = methodParamsBuilder.ToString();
@@ -1135,7 +1204,7 @@ namespace MASES.JNetReflector
                 string fieldType = field.Type(isGeneric, out genString);
                 string fieldName = field.Name(false);
 
-                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions, isGeneric))
+                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
                 {
                     fieldName += "Field";
                 }
