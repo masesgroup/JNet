@@ -34,13 +34,13 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="bool?"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref="Java.Lang.Boolean"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(bool? t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Lang.Boolean t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="bool?"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref="Java.Lang.Boolean"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(bool? t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Boolean t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 

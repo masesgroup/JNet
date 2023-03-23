@@ -34,9 +34,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="long?"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(long? t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Long t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 

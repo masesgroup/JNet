@@ -34,13 +34,13 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="char?"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(char? t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Lang.Character t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="char?"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(char? t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Character t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 

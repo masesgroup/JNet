@@ -34,9 +34,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="int?"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref="Java.Lang.Integer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(int? t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Integer t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
