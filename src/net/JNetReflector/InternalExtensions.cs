@@ -408,6 +408,9 @@ namespace MASES.JNetReflector
 
         static IEnumerable<string> GetGenerics(this GenericArrayType entry, string prefix, bool reportNative, bool camel)
         {
+            return entry.GenericComponentType.GetGenerics(prefix, reportNative, camel);
+
+
             return new string[] { ToFullQualifiedClassName(entry.TypeName, camel) };
         }
 
@@ -429,18 +432,36 @@ namespace MASES.JNetReflector
         static IEnumerable<string> GetGenerics(this WildcardType entry, string prefix, bool reportNative, bool camel)
         {
             List<string> lst = new List<string>();
-            for (int i = 0; i < entry.LowerBounds.Length; i++)
+            if (entry.LowerBounds.Length == 0)
             {
-                var upper = GetGenerics(entry.UpperBounds[i], prefix, reportNative, camel);
-                var lower = GetGenerics(entry.LowerBounds[i], prefix, reportNative, camel);
-                if (prefix == null)
+                for (int i = 0; i < entry.UpperBounds.Length; i++)
                 {
-                    lst.Add($"{lower.ConvertGenerics()}");
+                    var upper = GetGenerics(entry.UpperBounds[i], prefix, reportNative, camel);
+                    if (prefix == null)
+                    {
+                        lst.Add($"{upper.ConvertGenerics()}");
+                    }
+                    else
+                    {
+                        lst.Add($"{prefix}Extends{upper.ConvertGenerics()}");
+                    }
                 }
-                else
+            }
+            else if (entry.LowerBounds.Length != 0 && entry.LowerBounds.Length == entry.UpperBounds.Length)
+            {
+                for (int i = 0; i < entry.LowerBounds.Length; i++)
                 {
-                    lst.Add($"{prefix}{upper.ConvertGenerics()}Super{lower.ConvertGenerics()}");
-                }
+                    var upper = GetGenerics(entry.UpperBounds[i], prefix, reportNative, camel);
+                    var lower = GetGenerics(entry.LowerBounds[i], prefix, reportNative, camel);
+                    if (prefix == null)
+                    {
+                        lst.Add($"{lower.ConvertGenerics()}");
+                    }
+                    else
+                    {
+                        lst.Add($"{prefix}{upper.ConvertGenerics()}Super{lower.ConvertGenerics()}");
+                    }
+                }    
             }
             return lst;
         }

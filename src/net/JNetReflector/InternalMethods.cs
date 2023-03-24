@@ -1024,10 +1024,11 @@ namespace MASES.JNetReflector
                     if (isGeneric && paramGenStrings != null && classGenerics != null)
                     {
                         bool usableGenStrings = true;
-                        //foreach (var paramGenString in paramGenStrings)
-                        //{
-                        //    if (!classGenerics.Contains(paramGenString)) usableGenStrings = false;
-                        //}
+                        if (typeStr.IsNetNativeType()) usableGenStrings = false;
+                        else if (typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
+                        {
+                            typeStr = typeStr.Substring(0, typeStr.IndexOf(SpecialNames.ArrayTypeTrailer));
+                        }
                         if (usableGenStrings && typeStr != "Java.Lang.Class" && !typeStr.IsNetNativeType())
                         {
                             typeStr += paramGenStrings.ApplyGenerics();
