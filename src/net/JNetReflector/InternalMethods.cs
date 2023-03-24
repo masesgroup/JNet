@@ -415,7 +415,7 @@ namespace MASES.JNetReflector
             }
 
             var singleFileBlockStr = singleFileBlock.ToString();
-            if (!string.IsNullOrEmpty(singleFileBlockStr))
+            if (!string.IsNullOrWhiteSpace(singleFileBlockStr))
             {
                 var singleClassFileTemplate = Template.GetTemplate(Template.SingleClassFileTemplate);
 
@@ -470,7 +470,7 @@ namespace MASES.JNetReflector
                                      .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(isGeneric))
                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
                                      .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener))
-                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric))
+                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty) // jClass.WhereClauses(isGeneric))
                                      .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
@@ -672,6 +672,8 @@ namespace MASES.JNetReflector
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
 
+            var classGenerics = classDefinition.GetGenerics(string.Empty);
+
             StringBuilder subOperatorBlock = new StringBuilder();
             foreach (var implementedInterface in classDefinition.Interfaces)
             {
@@ -696,8 +698,37 @@ namespace MASES.JNetReflector
                     continue;
                 }
 
-                var implClass = implementedInterface.ToFullQualifiedClassName(isGeneric);
+                var implClassGenerics = implementedInterface.GetGenerics(string.Empty);
+                var implClass = implementedInterface.ToFullQualifiedClassName(false);
+                if (isGeneric && implClassGenerics != null && classGenerics != null)
+                {
+                    bool usableGenStrings = true;
+                    foreach (var genString in implClassGenerics)
+                    {
+                        if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                    }
+                    if (usableGenStrings && implClass != "Java.Lang.Class")
+                    {
+                        implClass += implClassGenerics.ApplyGenerics();
+                    }
+                }
+
                 var classDef = classDefinition.ToFullQualifiedClassName(isGeneric);
+
+                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
+                                                                                                                    classDef.ConvertToJavadoc());
+                subOperatorBlock.AppendLine(singleOperatorHelp);
+
+                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
+                subOperatorBlock.AppendLine(singleOperator);
+            }
+
+            if (isGeneric)
+            {
+                // auto cast to non generic 
+
+                var implClass = classDefinition.ToFullQualifiedClassName(false);
+                var classDef = classDefinition.ToFullQualifiedClassName(true);
 
                 var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
                                                                                                                     classDef.ConvertToJavadoc());
@@ -989,20 +1020,21 @@ namespace MASES.JNetReflector
                 foreach (var parameter in parameters)
                 {
                     IEnumerable<string> paramGenStrings;
-                    var typeStr = parameter.Type(false, parameter.Name.Camel(), out paramGenStrings);
+                    var typeStr = parameter.Type(isGeneric, parameter.Name.Camel(), out paramGenStrings);
                     if (isGeneric && paramGenStrings != null && classGenerics != null)
                     {
                         bool usableGenStrings = true;
-                        foreach (var paramGenString in paramGenStrings)
-                        {
-                            if (!classGenerics.Contains(paramGenString)) usableGenStrings = false;
-                        }
-                        if (usableGenStrings && typeStr != "Java.Lang.Class")
+                        //foreach (var paramGenString in paramGenStrings)
+                        //{
+                        //    if (!classGenerics.Contains(paramGenString)) usableGenStrings = false;
+                        //}
+                        if (usableGenStrings && typeStr != "Java.Lang.Class" && !typeStr.IsNetNativeType())
                         {
                             typeStr += paramGenStrings.ApplyGenerics();
+                            genericArguments.AddRange(paramGenStrings);
                         }
                     }
-                    if (paramGenStrings != null) genericArguments.AddRange(paramGenStrings);
+
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
                                                                                                                                   typeStr.ConvertToJavadoc()));
                     if (parameter.IsVarArgs)
@@ -1037,7 +1069,18 @@ namespace MASES.JNetReflector
                     genericArguments.Clear();
                     foreach (var argInArray in argArray)
                     {
-                        if (argInArray != null) genericArguments.Add(argInArray);
+                        if (argInArray != null)
+                        {
+                            if (argInArray.IsNetNativeType()) continue;
+                            else if (argInArray.EndsWith(SpecialNames.ArrayTypeTrailer))
+                            {
+                                genericArguments.Add(argInArray.Substring(0, argInArray.IndexOf(SpecialNames.ArrayTypeTrailer)));
+                            }
+                            else
+                            {
+                                genericArguments.Add(argInArray);
+                            }
+                        }
                     }
 
                     if (classGenerics != null)
@@ -1152,7 +1195,7 @@ namespace MASES.JNetReflector
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
-                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, method.WhereClauses(isGeneric))
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, string.Empty) // method.WhereClauses(isGeneric))
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl());
 
