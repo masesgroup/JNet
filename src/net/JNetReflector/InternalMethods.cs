@@ -95,7 +95,11 @@ namespace MASES.JNetReflector
             {
                 AnalyzeNamespaces();
             }
-            else throw new ArgumentException("At least one of NamespacesToParse or OriginRootPath must be set");
+            else if (JNetReflectorCore.ClassesToAnaylyze != null)
+            {
+                AnalyzeClasses();
+            }
+            else throw new ArgumentException("At least one of ClassesToAnaylyze, NamespacesToParse or OriginRootPath must be set");
             w.Stop();
             Console.WriteLine();
             Console.WriteLine($"Operation completed in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
@@ -107,6 +111,16 @@ namespace MASES.JNetReflector
             {
                 AnalyzeJar(item);
             }
+        }
+
+        public static void AnalyzeClasses()
+        {
+            SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
+            foreach (var item in JNetReflectorCore.ClassesToAnaylyze)
+            {
+                AddItem(resultingArguments, item.JVMClass());
+            }
+            AnalyzeItems(resultingArguments, "CustomSelection");
         }
 
         public static void AddItem(IDictionary<string, IDictionary<string, IDictionary<string, Class>>> data, Class cls)

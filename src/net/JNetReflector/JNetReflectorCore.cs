@@ -67,6 +67,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ClassesToAnaylyze,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of full qualified class names to be analyzed",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.JarList,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of JAR to be analyzed or folders containing the JARs",
@@ -176,6 +182,9 @@ namespace MASES.JNetReflector
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath;
 
+        static IEnumerable<string> _ClassesToAnaylyze;
+        public static IEnumerable<string> ClassesToAnaylyze => _ClassesToAnaylyze;
+
         static IEnumerable<string> _JarsToAnaylyze;
         public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
 
@@ -222,6 +231,18 @@ namespace MASES.JNetReflector
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
+
+            List<string> classesToAnaylyze = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAnaylyze))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAnaylyze).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAnaylyze.Contains(item)) classesToAnaylyze.Add(item);
+                }
+                _ClassesToAnaylyze = classesToAnaylyze;
+            }
+
             if (ParsedArgs.Exist(CLIParam.OriginRootPath))
             {
                 var originalRootPath = ParsedArgs.Get<string>(CLIParam.OriginRootPath);
@@ -252,8 +273,8 @@ namespace MASES.JNetReflector
                 {
                     if (!modulesToParse.Contains(item)) modulesToParse.Add(item);
                 }
+                _ModulesToParse = modulesToParse;
             }
-            _ModulesToParse = modulesToParse;
 
             List<string> classesToBeListener = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToBeListener))
