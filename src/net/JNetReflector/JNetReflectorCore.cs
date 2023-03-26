@@ -67,7 +67,7 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
-                        Name = CLIParam.ClassesToAnaylyze,
+                        Name = CLIParam.ClassesToAnalyze,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of full qualified class names to be analyzed",
                     },
@@ -143,6 +143,12 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Single,
                         Help = "Execute everything, but do not write anything to disk",
                     },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DoNotCamel,
+                        Type = ArgumentType.Single,
+                        Help = "Does not use camelized names in methods, class and so on",
+                    },
                     new ArgumentMetadata<int>()
                     {
                         Name = CLIParam.TraceLevel,
@@ -182,8 +188,8 @@ namespace MASES.JNetReflector
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath;
 
-        static IEnumerable<string> _ClassesToAnaylyze;
-        public static IEnumerable<string> ClassesToAnaylyze => _ClassesToAnaylyze;
+        static IEnumerable<string> _ClassesToAnalyze;
+        public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze;
 
         static IEnumerable<string> _JarsToAnaylyze;
         public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
@@ -221,6 +227,9 @@ namespace MASES.JNetReflector
         static bool _DryRun;
         public static bool DryRun => _DryRun;
 
+        static bool _UseCamel;
+        public static bool UseCamel => _UseCamel;
+
         static int _TraceLevel;
         public static int TraceLevel => _TraceLevel;
 
@@ -232,15 +241,15 @@ namespace MASES.JNetReflector
         {
             var result = base.ProcessCommandLine();
 
-            List<string> classesToAnaylyze = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.ClassesToAnaylyze))
+            List<string> classesToAnalyze = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAnalyze))
             {
-                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAnaylyze).Split(',', ';');
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAnalyze).Split(',', ';');
                 foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
                 {
-                    if (!classesToAnaylyze.Contains(item)) classesToAnaylyze.Add(item);
+                    if (!classesToAnalyze.Contains(item)) classesToAnalyze.Add(item);
                 }
-                _ClassesToAnaylyze = classesToAnaylyze;
+                _ClassesToAnalyze = classesToAnalyze;
             }
 
             if (ParsedArgs.Exist(CLIParam.OriginRootPath))
@@ -332,6 +341,7 @@ namespace MASES.JNetReflector
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
             _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
+            _UseCamel = !ParsedArgs.Exist(CLIParam.DoNotCamel);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 

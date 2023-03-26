@@ -21,6 +21,7 @@ _jnr_ accepts the following command-line switch:
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
+* **ClassesToAnalyze**: A CSV list of full qualified class names to be analyzed
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
 * **DoNotAddJarsInClasspath**: The option inform the tool to not add the Jars in classpath
 * **ModulesToParse**: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath
@@ -32,6 +33,7 @@ _jnr_ accepts the following command-line switch:
 * **DisableGenerics**: The option forces the tool to disable any generic type
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
+* **DoNotCamel**: Does not use camelized names in methods, class and so on
 * **TraceLevel**: The level of traces to be reported: 0 - Critical ... 5 - Verbose
 * **TraceTo**: The file name where traces will be write, default write to console
 
@@ -41,7 +43,7 @@ Many JNet classes are generated using JNetReflector. The JVM used to build the c
 The command line interface used is:
 
 > jnetreflector -ModulesToParse org.*,java.* -DestinationRootPath .\src\net\JNet\Generated -OriginJavadocUrl "https://docs.oracle.com/en/java/javase/11/docs/api/" -JavadocVersion 11 \
-> -ClassesToBeListener javax.management.NotificationFilter \
+> -ClassesToBeListener java.util.Comparator,javax.management.NotificationFilter \
 > -ClassesToAvoid javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler \
 > -NamespacesToAvoid org.jcp.xml.dsig.internal,com.oracle,com.sun,org.mases,org.junit,org.hamcrest,org.burningwave,org.graalvm,org.slf4j,java.awt.peer \
 > -NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font

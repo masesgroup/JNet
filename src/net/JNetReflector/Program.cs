@@ -49,11 +49,19 @@ namespace MASES.JNetReflector
             {
                 StringBuilder sb = new StringBuilder();
                 Exception e = tie.InnerException;
+#if DEBUG
+                sb.AppendLine(e.ToString());
+#else
                 sb.AppendLine(e.Message);
+#endif
                 Exception innerException = e.InnerException;
                 while (innerException != null)
                 {
+#if DEBUG
+                    sb.AppendLine(innerException.ToString());
+#else
                     sb.AppendLine(innerException.Message);
+#endif
                     innerException = innerException.InnerException;
                 }
                 ShowHelp(sb.ToString());
@@ -61,11 +69,19 @@ namespace MASES.JNetReflector
             catch (Exception e)
             {
                 StringBuilder sb = new StringBuilder();
+#if DEBUG
+                sb.AppendLine(e.ToString());
+#else
                 sb.AppendLine(e.Message);
+#endif
                 Exception innerException = e.InnerException;
                 while (innerException != null)
                 {
+#if DEBUG
+                    sb.AppendLine(innerException.ToString());
+#else
                     sb.AppendLine(innerException.Message);
+#endif
                     innerException = innerException.InnerException;
                 }
                 ShowHelp(sb.ToString());

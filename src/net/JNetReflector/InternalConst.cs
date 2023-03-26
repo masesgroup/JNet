@@ -32,7 +32,7 @@ namespace MASES.JNetReflector
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
         public const string DestinationRootPath = "DestinationRootPath";
-        public const string ClassesToAnaylyze = "ClassesToAnaylyze";
+        public const string ClassesToAnalyze = "ClassesToAnalyze";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesToBeListener = "ClassesToBeListener";
@@ -45,6 +45,7 @@ namespace MASES.JNetReflector
         public const string DisableGenerics = "DisableGenerics";
         public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";
+        public const string DoNotCamel = "DoNotCamel";
         public const string TraceLevel = "TraceLevel";
         public const string TraceTo = "TraceTo";
     }
