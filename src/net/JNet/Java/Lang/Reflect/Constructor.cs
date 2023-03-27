@@ -35,7 +35,7 @@ namespace Java.Lang.Reflect
     {
 #endif
 }
-
+#if JNETREFLECTOR
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
     /// </summary>
@@ -45,5 +45,9 @@ namespace Java.Lang.Reflect
         /// Uses the constructor represented by this <see cref="Constructor"/> object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters.
         /// </summary>
         public T NewInstance(params object[] initargs) => initargs.Length == 0 ? IExecute<T>("newInstance") : IExecute<T>("newInstance", initargs);
+#else
+    public partial class Constructor<T>
+    {
+#endif
     }
 }

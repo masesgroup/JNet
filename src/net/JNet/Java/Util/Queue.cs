@@ -18,34 +18,8 @@
 
 namespace Java.Util
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
-    /// </summary>
-    public class Queue<E> : Collection<E>
+    public partial class Queue<E>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-        /// </summary>
-        public override string ClassName => "java.util.Queue";
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
-        /// </summary>
-        public E Element() => IExecute<E>("element");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(E)"/>
-        /// </summary>
-        public bool Offer​(E e) => IExecute<bool>("offer​", e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
-        /// </summary>
-        public E Peek() => IExecute<E>("peek");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
-        /// </summary>
-        public E Poll() => IExecute<E>("poll");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
-        /// </summary>
-        public E Remove() => IExecute<E>("remove");
+
     }
 }

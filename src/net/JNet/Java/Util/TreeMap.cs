@@ -18,18 +18,8 @@
 
 namespace Java.Util
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html"/>
-    /// </summary>
-    public class TreeMap<K, V> : AbstractMap<K, V>
+    public partial class TreeMap<K, V>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-        /// </summary>
-        public override bool IsAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-        /// </summary>
-        public override string ClassName => "java.util.TreeMap";
+
     }
 }

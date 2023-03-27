@@ -56,15 +56,9 @@ namespace Java.Lang.Reflect
 #endif
     }
 #if !JNETREFLECTOR
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
-    /// </summary>
-    public class TypeVariable<D> : TypeVariable where D : GenericDeclaration
+    public partial class TypeVariable<D>
     {
-        /// <summary>
-        /// Returns the <see cref="GenericDeclaration"/> object representing the generic declaration declared this type variable.
-        /// </summary>
-        public D GenericDeclaration2 => GenericDeclaration.Cast<D>();
+
     }
 #endif
 }
