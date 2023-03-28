@@ -73,6 +73,7 @@ namespace MASES.JNetReflector
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangDeprecated = "java.lang.Deprecated";
         public const string JavaLangIterable = "java.lang.Iterable";
+        public const string JavaUtilCollection = "java.util.Collection";
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";

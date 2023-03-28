@@ -699,88 +699,90 @@ namespace MASES.JNetReflector
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
 
-            if (!classDefinition.NeedsOperators(isGeneric)) return string.Empty;
+            StringBuilder subOperatorBlock = new StringBuilder();
 
-            List<string> classGenerics = new List<string>();
-            List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
-
-            List<Class> filteredInterfaces = new List<Class>();
-            foreach (var implementedInterface in classDefinition.Interfaces)
+            if (classDefinition.NeedsOperators(isGeneric))
             {
-                var superCls = classDefinition.SuperClass;
-                if (superCls == null
-                    || !superCls.IsPublic()
-                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
-                    || superCls.MustBeAvoided()
-                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                List<string> classGenerics = new List<string>();
+                List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+
+                List<Class> filteredInterfaces = new List<Class>();
+                foreach (var implementedInterface in classDefinition.Interfaces)
                 {
-                    filteredInterfaces.Add(implementedInterface);
-                }
-                else
-                {
-                    bool foundInSuperClass = false;
-                    foreach(var supInterface in superCls.Interfaces)
+                    var superCls = classDefinition.SuperClass;
+                    if (superCls == null
+                        || !superCls.IsPublic()
+                        || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                        || superCls.MustBeAvoided()
+                        || superCls.TypeName == SpecialNames.JavaLangObject)
                     {
-                        if (supInterface.TypeName == implementedInterface.TypeName)
+                        filteredInterfaces.Add(implementedInterface);
+                    }
+                    else
+                    {
+                        bool foundInSuperClass = false;
+                        foreach (var supInterface in superCls.Interfaces)
                         {
-                            foundInSuperClass = true; break;
+                            if (supInterface.TypeName == implementedInterface.TypeName)
+                            {
+                                foundInSuperClass = true; break;
+                            }
+                        }
+                        if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                    }
+                }
+
+                foreach (var implementedInterface in filteredInterfaces)
+                {
+                    if (implementedInterface.IsIterable())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded iterable {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (implementedInterface.MustBeAvoided())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded avoided {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (implementedInterface.IsStatic())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (JNetReflectorCore.DisableGenerics && implementedInterface.IsOrInheritFromJVMGenericClass())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+
+                    List<string> implClassGenerics = new List<string>();
+                    List<KeyValuePair<string, string>> implClassClauses = new List<KeyValuePair<string, string>>();
+                    implementedInterface.GetGenerics(implClassGenerics, implClassClauses, string.Empty, JNetReflectorCore.UseCamel);
+
+                    var implClass = implementedInterface.ToFullQualifiedClassName(false, JNetReflectorCore.UseCamel);
+                    if (isGeneric && implClassGenerics != null && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        foreach (var genString in implClassGenerics)
+                        {
+                            if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                        }
+                        if (usableGenStrings && implClass != "Java.Lang.Class")
+                        {
+                            implClass += implClassGenerics.ApplyGenerics();
                         }
                     }
-                    if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
-                }
-            }
 
-            StringBuilder subOperatorBlock = new StringBuilder();
-            foreach (var implementedInterface in filteredInterfaces)
-            {
-                if (implementedInterface.IsIterable())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded iterable {0}", implementedInterface.GenericString);
-                    continue;
-                }
-                if (implementedInterface.MustBeAvoided())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded avoided {0}", implementedInterface.GenericString);
-                    continue;
-                }
-                if (implementedInterface.IsStatic())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
-                    continue;
-                }
-                if (JNetReflectorCore.DisableGenerics && implementedInterface.IsOrInheritFromJVMGenericClass())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
-                    continue;
-                }
+                    var classDef = classDefinition.ToFullQualifiedClassName(isGeneric, JNetReflectorCore.UseCamel);
 
-                List<string> implClassGenerics = new List<string>();
-                List<KeyValuePair<string, string>> implClassClauses = new List<KeyValuePair<string, string>>();
-                implementedInterface.GetGenerics(implClassGenerics, implClassClauses, string.Empty, JNetReflectorCore.UseCamel);
+                    var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
+                                                                                                                        classDef.ConvertToJavadoc());
+                    subOperatorBlock.AppendLine(singleOperatorHelp);
 
-                var implClass = implementedInterface.ToFullQualifiedClassName(false, JNetReflectorCore.UseCamel);
-                if (isGeneric && implClassGenerics != null && classGenerics != null)
-                {
-                    bool usableGenStrings = true;
-                    foreach (var genString in implClassGenerics)
-                    {
-                        if (!classGenerics.Contains(genString)) usableGenStrings = false;
-                    }
-                    if (usableGenStrings && implClass != "Java.Lang.Class")
-                    {
-                        implClass += implClassGenerics.ApplyGenerics();
-                    }
+                    var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
+                    subOperatorBlock.AppendLine(singleOperator);
                 }
-
-                var classDef = classDefinition.ToFullQualifiedClassName(isGeneric, JNetReflectorCore.UseCamel);
-
-                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
-                                                                                                                    classDef.ConvertToJavadoc());
-                subOperatorBlock.AppendLine(singleOperatorHelp);
-
-                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
-                subOperatorBlock.AppendLine(singleOperator);
             }
 
             if (isGeneric)

@@ -782,6 +782,11 @@ namespace MASES.JNetReflector
                     {
                         return false;
                     }
+                    else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsCollection())
+                    {
+                        // if there is single super interface Collection use it as superclass, it will be avoided in operators
+                        return false;
+                    }
                     else
                     {
                         return true;
@@ -828,6 +833,14 @@ namespace MASES.JNetReflector
                         return string.Format("Java.Lang.Iterable{0}", innerName);
                     }
                     else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    {
+                        if (usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
+                        {
+                            return entry.GenericInterfaces[0].ApplyGenerics(null, null, null, true, camel);
+                        }
+                        return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
+                    }
+                    else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsCollection())
                     {
                         if (usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
                         {
@@ -914,6 +927,16 @@ namespace MASES.JNetReflector
                 {
                     return true;
                 }
+            }
+            return false;
+        }
+
+        public static bool IsCollection(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilCollection)) // direct name is Collection
+            {
+                return true;
             }
             return false;
         }
