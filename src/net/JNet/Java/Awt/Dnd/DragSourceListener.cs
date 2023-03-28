@@ -57,7 +57,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.awt.dnd.JNetDragSourceAdapter"; // <-- the implementing class is this one
+        public override string ClassName => "org.mases.jnet.awt.dnd.JNetDragSourceAdapter"; // <-- the implementing class is this one
 
         readonly Action<DragSourceDragEvent> DragEnterFunction = null;
         readonly Action<DragSourceDragEvent> DragOverFunction = null;

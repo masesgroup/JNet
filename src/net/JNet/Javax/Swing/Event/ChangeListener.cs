@@ -41,7 +41,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.swing.event.JNetChangeListener";
+        public override string ClassName => "org.mases.jnet.swing.event.JNetChangeListener";
 
         readonly Action<ChangeEvent> StateChangedFunction = null;
         /// <summary>

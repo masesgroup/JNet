@@ -45,7 +45,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.sql.JNetConnectionEventListener";
+        public override string ClassName => "org.mases.jnet.sql.JNetConnectionEventListener";
 
         readonly Action<ConnectionEvent> ConnectionClosedFunction = null;
         readonly Action<ConnectionEvent> ConnectionErrorOccurredFunction = null;
