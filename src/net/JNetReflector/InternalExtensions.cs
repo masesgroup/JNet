@@ -64,7 +64,7 @@ namespace MASES.JNetReflector
                 bool collpase;
                 if (classDefinition.IsJVMNestedClass())
                 {
-                    collpase = entry == classDefinition.JVMNestedClassName(false);
+                    collpase = entry == classDefinition.JVMNestedClassName(null, false);
                 }
                 else
                 {
@@ -262,22 +262,42 @@ namespace MASES.JNetReflector
 
         #region TypeVariable[] extension
 
-        public static IEnumerable<string> GetGenerics(this Java.Lang.Reflect.TypeVariable[] entries, string prefix, bool reportNative, bool camel)
+        public static void GetGenerics(this Java.Lang.Reflect.TypeVariable[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool camel)
         {
-            List<string> lst = new List<string>();
             foreach (var entry in entries)
             {
-                List<string> genArguments = new List<string>();
-                List<(string, string)> genClause = new List<(string, string)>();
-                entry.GetGenerics(genArguments, genClause, prefix, reportNative, camel);
-                lst.Add(genArguments.ConvertGenerics());
+                List<string> genArgumentsLocal = new List<string>();
+                List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
+                entry.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, camel);
+                foreach (var item in genArgumentsLocal)
+                {
+                    if (genArguments != null && !genArguments.Contains(item))
+                    {
+                        genArguments?.Add(item);
+                    }
+                }
+                foreach (var item in genClauseLocal)
+                {
+                    if (genClauses != null)
+                    {
+                        bool hasKey = false;
+                        foreach (var genClause in genClauses)
+                        {
+                            if (genClause.Key == item.Key) { hasKey = true; break; }
+                        }
+                        if (!hasKey) genClauses?.Add(item);
+                    }
+                }
+
+                // genArguments?.Add(genArgumentsLocal.ConvertGenerics());
             }
-            return lst;
         }
 
-        static string ApplyGenerics(this TypeVariable[] entries, string prefix, string name, bool camel)
+        static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool camel)
         {
-            var parameters = entries.GetGenerics(prefix, true, camel).ConvertGenerics();
+            List<string> genArguments = new List<string>();
+            entries.GetGenerics(genArguments, genClause, prefix, true, camel);
+            var parameters = genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
             {
                 return $"{name}<{parameters}>";
@@ -310,6 +330,44 @@ namespace MASES.JNetReflector
 
         #region Type extension
 
+        public static string Type(this Java.Lang.Reflect.Type type, Class clazz, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
+        {
+            var retString = type.GetGenerics(genArguments, genClauses, prefix, true, camel);
+            if (clazz.IsJVMGenericClass() && genClauses != null)
+            {
+                List<string> classArguments = new List<string>();
+                List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                clazz.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                int classNeedsConstraints = 0;
+                foreach (var item in classClauses)
+                {
+                    if (!string.IsNullOrWhiteSpace(item.Value)) { classNeedsConstraints++; }
+                }
+                if (classNeedsConstraints > 0) // the return class have some constraint
+                {
+                    int genClausesConstraint = 0;
+                    // check if genClauses has something in it near to the one expected from the class
+                    foreach (var genClause in genClauses)
+                    {
+                        foreach (var classClause in classClauses)
+                        {
+                            if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
+                            {
+                                genClausesConstraint++; // found matched constraint
+                            }
+                        }
+                    }
+                    if (classNeedsConstraints != genClausesConstraint) // constraints does not match
+                    {
+                        genArguments.Clear();
+                        genClauses.Clear();
+                        return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
+                    }
+                }
+            }
+            return retString;
+        }
+
         static bool IsGenerics(this Java.Lang.Reflect.Type entry)
         {
             if (entry.IsInstanceOf<TypeVariable>())
@@ -331,10 +389,8 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        static string ApplyGenerics(this Java.Lang.Reflect.Type entry, string prefix, bool reportNative, bool camel)
+        static string ApplyGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
-            List<string> genArguments = new List<string>();
-            List<(string, string)> genClause = new List<(string, string)>();
             var retClass = entry.GetGenerics(genArguments, genClause, prefix, reportNative, camel);
             return retClass;
         }
@@ -342,7 +398,7 @@ namespace MASES.JNetReflector
         static string ApplyGenerics(this Java.Lang.Reflect.Type[] entries, string prefix, bool reportNative, bool camel)
         {
             List<string> genArguments = new List<string>();
-            List<(string, string)> genClause = new List<(string, string)>();
+            List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
             entries.GetGenerics(genArguments, genClause, prefix, reportNative, camel);
             var parameters = genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
@@ -378,7 +434,23 @@ namespace MASES.JNetReflector
             return string.Empty;
         }
 
-        static void GetGenerics(this Java.Lang.Reflect.Type[] entries, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        public static string ConvertClauses(this IEnumerable<KeyValuePair<string, string>> entries, bool isGeneric)
+        {
+            if (JNetReflectorCore.AvoidCSharpGenericClauseDefinition || !isGeneric) return string.Empty;
+            StringBuilder sbWhere = new StringBuilder();
+            foreach (var clause in entries)
+            {
+                if (!string.IsNullOrEmpty(clause.Value)
+                    && clause.Key != clause.Value) // this avoids circular clauses
+                {
+                    sbWhere.AppendFormat(" where {0}: {1}", clause.Key, clause.Value);
+                }
+            }
+            var parameters = sbWhere.ToString();
+            return parameters;
+        }
+
+        static void GetGenerics(this Java.Lang.Reflect.Type[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             foreach (var entry in entries)
             {
@@ -386,7 +458,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string GetGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        static string GetGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             if (entry.IsInstanceOf<TypeVariable>())
             {
@@ -412,15 +484,31 @@ namespace MASES.JNetReflector
             return retVal;
         }
 
-        static string GetGenerics(this GenericArrayType entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        static string GetGenerics(this GenericArrayType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool camel)
         {
             List<string> genArgumentsLocal = new List<string>();
-            List<(string, string)> genClauseLocal = new List<(string, string)>();
+            List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
             var result = entry.GenericComponentType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, camel);
             foreach (var item in genArgumentsLocal)
             {
-                genArguments?.Add(item);
+                if (genArguments != null && !genArguments.Contains(item))
+                {
+                    genArguments?.Add(item);
+                }
             }
+            foreach (var item in genClauseLocal)
+            {
+                if (genClauses != null)
+                {
+                    bool hasKey = false;
+                    foreach (var genClause in genClauses)
+                    {
+                        if (genClause.Key == item.Key) { hasKey = true; break; }
+                    }
+                    if (!hasKey) genClauses?.Add(item);
+                }
+            }
+            return result;
             var retVal = entry.ToNetType(camel);
             if (retVal.EndsWith(SpecialNames.ArrayTypeTrailer))
             {
@@ -432,59 +520,163 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             List<string> types = new List<string>();
             foreach (var item in entry.ActualTypeArguments)
             {
                 types.Add(item.GetGenerics(genArguments, genClause, prefix, reportNative, camel));
             }
+            if (entry.IsClassToAvoidInGenerics()) entry.ToNetType(camel);
             return entry.ToNetType(camel) + types?.ApplyGenerics();
         }
 
-        static string GetGenerics(this TypeVariable entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        static string GetGenerics(this TypeVariable entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             genArguments?.Add(entry.Name);
+            List<string> bounds = null;
+            /*** this piece of code crashes the JVM
+             
+            if (entry.Bounds.Length != 0)
+            {
+                bounds = new List<string>();
+                foreach (var bound in entry.Bounds)
+                {
+                    var result = bound.GetGenerics(null, null, null, true, camel);
+                    if (!(result == "object" || result == "object[]")) bounds.Add(result);
+                }
+            }
+
+            so try to limit it to the not generic value
+            *****/
+
+            if (entry.Bounds.Length != 0)
+            {
+                bounds = new List<string>();
+                foreach (var bound in entry.Bounds)
+                {
+                    var result = ToNetType(bound.TypeName, false, camel);
+                    if (!(result == "object" || result == "object[]"
+                        || result.Contains("?"))) // type used in Java to define any-type
+                    {
+                        bounds.Add(result);
+                    }
+                }
+            }
+
+            genClause?.Add(new KeyValuePair<string, string>(entry.Name, bounds?.ConvertGenerics()));
             return entry.Name;
         }
 
-        static string GetGenerics(this WildcardType entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        static string GetGenerics(this WildcardType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             string retVal = string.Empty;
             if (entry.LowerBounds.Length == 0)
             {
                 for (int i = 0; i < entry.UpperBounds.Length; i++)
                 {
-                    var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, camel);
-                    upper = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
+                    List<string> innerGenArguments = new List<string>();
+                    List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
+                    var upper = GetGenerics(entry.UpperBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, camel);
+                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
                     if (prefix == null)
                     {
-                        retVal = upper;
+                        retVal = upperConverted;
                     }
                     else
                     {
-                        retVal = $"{prefix}Extends{upper}";
+                        retVal = $"{prefix}Extends{upperConverted}";
                     }
                     genArguments?.Add(retVal);
+                    genClause?.Add(new KeyValuePair<string, string>(retVal, (upper == "object" || upper == "object[]") ? null : upper));
+                    if (entry.UpperBounds[i].IsInstanceOf<TypeVariable>())
+                    {
+                        if (genArguments != null && !genArguments.Contains(upper))
+                        {
+                            genArguments?.Add(upper);
+                        }
+                        if (genClause != null)
+                        {
+                            bool hasKey = false;
+                            foreach (var item in genClause)
+                            {
+                                if (item.Key == upper) { hasKey = true; break; }
+                            }
+                            if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(upper, null));
+                        }
+                    }
+                    if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
+                    {
+                        foreach (var item in innerGenArguments)
+                        {
+                            if (item != upper && genArguments != null && !genArguments.Contains(item))
+                            {
+                                genArguments?.Add(item);
+                            }
+                        }
+                        foreach (var item in innerGenClauses)
+                        {
+                            if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                            {
+                                genClause?.Add(item);
+                            }
+                        }
+                    }
                 }
             }
             else if (entry.LowerBounds.Length != 0 && entry.LowerBounds.Length == entry.UpperBounds.Length)
             {
                 for (int i = 0; i < entry.LowerBounds.Length; i++)
                 {
+                    List<string> innerGenArguments = new List<string>();
+                    List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
                     var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, camel);
-                    var lower = GetGenerics(entry.LowerBounds[i], null, null, prefix, reportNative, camel);
-                    upper = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
-                    lower = lower.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
+                    var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, camel);
+                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
+                    var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
                     if (prefix == null)
                     {
-                        retVal = lower;
+                        retVal = lowerConverted;
                     }
                     else
                     {
-                        retVal = $"{prefix}{upper}Super{lower}";
+                        retVal = $"{prefix}{upperConverted}Super{lowerConverted}";
                     }
                     genArguments?.Add(retVal);
+                    genClause?.Add(new KeyValuePair<string, string>(retVal, (lower == "object" || lower == "object[]") ? null : lower));
+                    if (entry.LowerBounds[i].IsInstanceOf<TypeVariable>())
+                    {
+                        if (genArguments != null && !genArguments.Contains(lower))
+                        {
+                            genArguments?.Add(lower);
+                        }
+                        if (genClause != null)
+                        {
+                            bool hasKey = false;
+                            foreach (var item in genClause)
+                            {
+                                if (item.Key == lower) { hasKey = true; break; }
+                            }
+                            if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(lower, null));
+                        }
+                    }
+                    if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
+                    {
+                        foreach (var item in innerGenArguments)
+                        {
+                            if (item != upper && genArguments != null && !genArguments.Contains(item))
+                            {
+                                genArguments?.Add(item);
+                            }
+                        }
+                        foreach (var item in innerGenClauses)
+                        {
+                            if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                            {
+                                genClause?.Add(item);
+                            }
+                        }
+                    }
                 }
             }
             else throw new NotImplementedException($"Condition for {entry.TypeName} not implemented yet.");
@@ -515,12 +707,12 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static string JVMClassName(this Class entry, bool usedInGenerics)
+        public static string JVMClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics)
         {
-            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(usedInGenerics);
+            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(genClause, usedInGenerics);
             var cName = entry.SimpleName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
-            if (usedInGenerics) cName = entry.ApplyGenerics(usedInGenerics, cName);
+            if (usedInGenerics) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
 
@@ -530,11 +722,11 @@ namespace MASES.JNetReflector
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
-        static string JVMNestedClassName(this Class entry, bool usedInGenerics, bool onlyName = false)
+        static string JVMNestedClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool onlyName = false)
         {
             var cName = entry.TypeName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1) : cName;
-            if (!onlyName) cName = entry.ApplyGenerics(usedInGenerics, cName);
+            if (!onlyName) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
 
@@ -545,21 +737,21 @@ namespace MASES.JNetReflector
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
-        public static IEnumerable<string> GetGenerics(this Class entry, string prefix, bool camel)
+        public static void GetGenerics(this Class entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool camel)
         {
-            if (!entry.IsJVMGenericClass()) return null;
-            return entry.TypeParameters.GetGenerics(prefix, true, camel);
+            if (!entry.IsJVMGenericClass()) return;
+            entry.TypeParameters.GetGenerics(genArguments, genClause, prefix, true, camel);
         }
 
-        static string ApplyGenerics(this Class entry, bool usedInGenerics, string name)
+        static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name)
         {
             if (!usedInGenerics || !entry.IsJVMGenericClass()) return name;
-            return entry.TypeParameters.ApplyGenerics(null, name, true);
+            return entry.TypeParameters.ApplyGenerics(genClause, null, name, true);
         }
 
         public static string WhereClauses(this Class entry, bool usedInGenerics, bool camel)
         {
-            if (!usedInGenerics || !entry.IsJVMGenericClass()) return string.Empty;
+            if (JNetReflectorCore.AvoidCSharpGenericClauseDefinition || !usedInGenerics || !entry.IsJVMGenericClass()) return string.Empty;
             return entry.TypeParameters.WhereClauses(camel);
         }
 
@@ -573,8 +765,49 @@ namespace MASES.JNetReflector
         {
             var cName = cls.TypeName;
             cName = ToFullQualifiedClassName(cName, camel);
-            if (usedInGenerics) cName = cls.ApplyGenerics(usedInGenerics, cName);
+            if (usedInGenerics) cName = cls.ApplyGenerics(null, usedInGenerics, cName);
             return cName;
+        }
+
+        public static bool NeedsOperators(this Class entry, bool usedInGenerics)
+        {
+            if (entry.IsJVMListenerClass()) return true;
+            try
+            {
+                var superCls = entry.SuperClass;
+                if (superCls != null && SpecialNames.IsJavaLangException(superCls.TypeName))
+                {
+                    return true;
+                }
+                else if (superCls == null
+                    || !superCls.IsPublic()
+                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                    || superCls.MustBeAvoided()
+                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                {
+                    if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
+                    {
+                        return true;
+                    }
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else if (usedInGenerics && superCls.IsJVMGenericClass())
+                {
+                    return true;
+                }
+                return true;
+            }
+            catch
+            {
+                return true;
+            }
         }
 
         public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
@@ -605,23 +838,29 @@ namespace MASES.JNetReflector
                         }
                         return string.Format("Java.Lang.Iterable{0}", innerName);
                     }
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    {
+                        if (usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
+                        {
+                            return entry.GenericInterfaces[0].ApplyGenerics(null, null, null, true, camel);
+                        }
+                        return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
+                    }
                     else
                     {
-                        string innerName = entry.JVMClassName(usedInGenerics);
+                        string innerName = entry.JVMClassName(null, usedInGenerics);
                         return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                     }
                 }
                 else if (usedInGenerics && superCls.IsJVMGenericClass())
                 {
-                    //var cName = ToFullQualifiedClassName(superCls, false, camel);
-                    //cName += entry.GenericSuperClass.ApplyGenerics(null, true, camel);
-                    return entry.GenericSuperClass.ApplyGenerics(null, true, camel);
+                    return entry.GenericSuperClass.ApplyGenerics(null, null, null, true, camel);
                 }
                 return ToFullQualifiedClassName(superCls, false, camel);
             }
             catch
             {
-                string className = entry.JVMClassName(usedInGenerics);
+                string className = entry.JVMClassName(null, usedInGenerics);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
         }
@@ -640,10 +879,26 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static bool IsClassToAvoidInGenerics(this Class entry)
+        {
+            var typeName = entry.TypeName;
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
+            if (JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
+            return false;
+        }
+
+        public static bool IsClassToAvoidInGenerics(this Java.Lang.Reflect.Type entry)
+        {
+            var typeName = entry.TypeName;
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
+            if (JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
+            return false;
+        }
+
         public static bool IsSpecialClass(this Class entry)
         {
             if (!entry.IsJVMNestedClass()) return false;
-            string className = entry.JVMNestedClassName(true);
+            string className = entry.JVMNestedClassName(null, true);
 
             if (entry.IsJVMNestedClass()
                 && SpecialNames.SpecialNumberedNames.Any((o) => className.StartsWith(o))) return true;
@@ -1157,7 +1412,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static void GetGenerics(this Method entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool reportNative, bool camel)
+        public static void GetGenerics(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             entry.GenericParameterTypes.GetGenerics(genArguments, genClause, prefix, reportNative, camel);
         }
@@ -1168,7 +1423,7 @@ namespace MASES.JNetReflector
             return entry.TypeParameters.WhereClauses(camel);
         }
 
-        public static string Name(this Method entry, ICollection<Class> classDefinitions, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool usedInGenerics, bool camel)
+        public static string Name(this Method entry, ICollection<Class> classDefinitions, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -1222,7 +1477,7 @@ namespace MASES.JNetReflector
             return entry.ReturnType.IsJVMException();
         }
 
-        public static string ReturnType(this Method entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool usedInGenerics, bool camel)
+        public static string ReturnType(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             if (!usedInGenerics || !entry.GenericReturnType.IsGenerics())
@@ -1246,7 +1501,42 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
-                    return entry.GenericReturnType.GetGenerics(genArguments, genClause, prefix, true, camel);
+                    return entry.GenericReturnType.Type(entry.ReturnType, genArguments, genClauses, prefix, true, camel);
+
+                    var retString = entry.GenericReturnType.GetGenerics(genArguments, genClauses, prefix, true, camel);
+                    if (entry.ReturnType.IsJVMGenericClass() && genClauses != null)
+                    {
+                        List<string> classArguments = new List<string>();
+                        List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                        entry.ReturnType.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                        int classNeedsConstraints = 0;
+                        foreach (var item in classClauses)
+                        {
+                            if (item.Value != null) { classNeedsConstraints++; }
+                        }
+                        if (classNeedsConstraints > 0) // the return class have some constraint
+                        {
+                            int genClausesConstraint = 0;
+                            // check if genClauses has something in it near to the one expected from the class
+                            foreach (var genClause in genClauses)
+                            {
+                                foreach (var classClause in classClauses)
+                                {
+                                    if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
+                                    {
+                                        genClausesConstraint++; // found matched constraint
+                                    }
+                                }
+                            }
+                            if (classNeedsConstraints != genClausesConstraint) // constraints does not match
+                            {
+                                genArguments.Clear();
+                                genClauses.Clear();
+                                return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
+                            }
+                        }
+                    }
+                    return retString;
                 }
             }
         }
@@ -1408,7 +1698,7 @@ namespace MASES.JNetReflector
             return entry.Type.IsJVMNativeType();
         }
 
-        public static string Type(this Field entry, IList<string> genArguments, IList<(string, string)> genClause, bool usedInGenerics, bool camel)
+        public static string Type(this Field entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             if (!usedInGenerics || !entry.GenericType.IsGenerics())
@@ -1417,8 +1707,42 @@ namespace MASES.JNetReflector
             }
             else
             {
-                return entry.GenericType.GetGenerics(genArguments, genClause, string.Empty, true, camel);
-                // return entry.Type.ToNetType(camel) + genArguments.ApplyGenerics();
+                return entry.GenericType.Type(entry.Type, genArguments, genClauses, string.Empty, true, camel);
+
+                var retString = entry.GenericType.GetGenerics(genArguments, genClauses, string.Empty, true, camel);
+                if (entry.Type.IsJVMGenericClass() && genClauses != null)
+                {
+                    List<string> classArguments = new List<string>();
+                    List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                    entry.Type.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                    int classNeedsConstraints = 0;
+                    foreach (var item in classClauses)
+                    {
+                        if (item.Value != null) { classNeedsConstraints++; }
+                    }
+                    if (classNeedsConstraints > 0) // the return class have some constraint
+                    {
+                        int genClausesConstraint = 0;
+                        // check if genClauses has something in it near to the one expected from the class
+                        foreach (var genClause in genClauses)
+                        {
+                            foreach (var classClause in classClauses)
+                            {
+                                if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
+                                {
+                                    genClausesConstraint++; // found matched constraint
+                                }
+                            }
+                        }
+                        if (classNeedsConstraints != genClausesConstraint) // constraints does not match
+                        {
+                            genArguments.Clear();
+                            genClauses.Clear();
+                            return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
+                        }
+                    }
+                }
+                return retString;
             }
         }
 
@@ -1493,7 +1817,7 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
-        public static string Type(this Parameter entry, IList<string> genArguments, IList<(string, string)> genClause, string prefix, bool usedInGenerics, bool camel)
+        public static string Type(this Parameter entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             if (!usedInGenerics || !entry.ParameterizedType.IsGenerics())
@@ -1505,14 +1829,49 @@ namespace MASES.JNetReflector
                 var entryType = entry.Type.ToNetType(camel);// ToFullQualifiedClassName(entry.Type, false, camel);
                 if (entry.ParameterizedType.IsGenerics() && (entryType == "object" || entryType == "object[]"))
                 {
-                    entry.ParameterizedType.GetGenerics(genArguments, genClause, prefix, true, camel);
+                    entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
                     var retVal = genArguments.ConvertGenerics();
                     genArguments.Clear();
                     return retVal;
                 }
                 else
                 {
-                    return entry.ParameterizedType.GetGenerics(genArguments, genClause, prefix, true, camel);
+                    return entry.ParameterizedType.Type(entry.Type, genArguments, genClauses, prefix, true, camel);
+
+                    var retString = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
+                    if (entry.Type.IsJVMGenericClass() && genClauses != null)
+                    {
+                        List<string> classArguments = new List<string>();
+                        List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                        entry.Type.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                        int classNeedsConstraints = 0;
+                        foreach (var item in classClauses)
+                        {
+                            if (item.Value != null) { classNeedsConstraints++; }
+                        }
+                        if (classNeedsConstraints > 0) // the return class have some constraint
+                        {
+                            int genClausesConstraint = 0;
+                            // check if genClauses has something in it near to the one expected from the class
+                            foreach (var genClause in genClauses)
+                            {
+                                foreach (var classClause in classClauses)
+                                {
+                                    if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
+                                    {
+                                        genClausesConstraint++; // found matched constraint
+                                    }
+                                }
+                            }
+                            if (classNeedsConstraints != genClausesConstraint) // constraints does not match
+                            {
+                                genArguments.Clear();
+                                genClauses.Clear();
+                                return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
+                            }
+                        }
+                    }
+                    return retString;
                 }
             }
         }

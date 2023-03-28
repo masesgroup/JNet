@@ -39,9 +39,11 @@ namespace MASES.JNetReflector
         public const string NamespacesInConflict = "NamespacesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
+        public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
         public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
+        public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
         public const string DisableGenerics = "DisableGenerics";
         public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";

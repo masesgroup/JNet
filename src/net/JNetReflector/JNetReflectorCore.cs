@@ -107,6 +107,12 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Double,
                         Help = "A CSV list of classes to be removed during analysis",
                     },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAvoidInGenerics,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of classes to be removed during analysis from the classes which have generics types",
+                    },
                     new ArgumentMetadata<object>()
                     {
                         Name = CLIParam.DoNotAddJarsInClasspath,
@@ -124,6 +130,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.AvoidCSharpGenericDefinition,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to reflect generics without create the C# generic definition",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.AvoidCSharpGenericClauseDefinition,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to reflect generics without create the clauses of C# generic definition",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -209,6 +221,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToAvoid;
         public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid;
 
+        static IEnumerable<string> _ClassesToAvoidInGenerics;
+        public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics;
+
         static bool _DoNotAddJarsInClasspath;
         public static bool DoNotAddJarsInClasspath => _DoNotAddJarsInClasspath;
 
@@ -217,6 +232,9 @@ namespace MASES.JNetReflector
 
         static bool _AvoidCSharpGenericDefinition;
         public static bool AvoidCSharpGenericDefinition => _AvoidCSharpGenericDefinition;
+
+        static bool _AvoidCSharpGenericClauseDefinition;
+        public static bool AvoidCSharpGenericClauseDefinition => _AvoidCSharpGenericClauseDefinition;
 
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
@@ -329,6 +347,17 @@ namespace MASES.JNetReflector
             }
             _ClassesToAvoid = classesToAvoid;
 
+            List<string> classesToAvoidInGenerics = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAvoidInGenerics))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAvoidInGenerics).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAvoidInGenerics.Contains(item)) classesToAvoidInGenerics.Add(item);
+                }
+            }
+            _ClassesToAvoidInGenerics = classesToAvoidInGenerics;
+
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
 
@@ -338,6 +367,7 @@ namespace MASES.JNetReflector
             _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
+            _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
             _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
