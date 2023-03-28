@@ -27,7 +27,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html"/>
     /// </summary>
-    public partial class AbstractCollection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractCollection>
+    public partial class AbstractCollection : Java.Util.Collection
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -68,7 +68,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html"/>
     /// </summary>
-    public partial class AbstractCollection<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractCollection<E>>
+    public partial class AbstractCollection<E> : Java.Util.Collection<E>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

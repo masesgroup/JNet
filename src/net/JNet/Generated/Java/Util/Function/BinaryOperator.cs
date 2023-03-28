@@ -82,7 +82,11 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Function.BinaryOperator{T}"/> to <see cref="Java.Util.Function.BinaryOperator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Function.BinaryOperator(Java.Util.Function.BinaryOperator<T> t) => t.Cast<Java.Util.Function.BinaryOperator>();
+        
         #endregion
 
         #region Fields

@@ -425,7 +425,11 @@ namespace Java.Net.Http
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Net.Http.HttpResponse.BodySubscriber{T}"/> to <see cref="Java.Net.Http.HttpResponse.BodySubscriber"/>
+            /// </summary>
+            public static implicit operator Java.Net.Http.HttpResponse.BodySubscriber(Java.Net.Http.HttpResponse.BodySubscriber<T> t) => t.Cast<Java.Net.Http.HttpResponse.BodySubscriber>();
+            
             #endregion
 
             #region Fields

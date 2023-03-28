@@ -172,7 +172,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentMap"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.ConcurrentMap(Java.Util.Concurrent.ConcurrentMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentMap>();
+        
         #endregion
 
         #region Fields

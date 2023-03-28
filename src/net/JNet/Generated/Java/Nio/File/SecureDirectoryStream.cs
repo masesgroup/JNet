@@ -136,7 +136,11 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.SecureDirectoryStream{T}"/> to <see cref="Java.Nio.File.SecureDirectoryStream"/>
+        /// </summary>
+        public static implicit operator Java.Nio.File.SecureDirectoryStream(Java.Nio.File.SecureDirectoryStream<T> t) => t.Cast<Java.Nio.File.SecureDirectoryStream>();
+        
         #endregion
 
         #region Fields

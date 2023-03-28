@@ -170,7 +170,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.BlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.BlockingQueue<E> t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
+        
         #endregion
 
         #region Fields

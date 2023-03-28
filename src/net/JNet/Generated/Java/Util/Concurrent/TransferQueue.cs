@@ -110,7 +110,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.TransferQueue{E}"/> to <see cref="Java.Util.Concurrent.TransferQueue"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.TransferQueue(Java.Util.Concurrent.TransferQueue<E> t) => t.Cast<Java.Util.Concurrent.TransferQueue>();
+        
         #endregion
 
         #region Fields

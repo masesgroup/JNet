@@ -205,7 +205,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.NavigableSet{E}"/> to <see cref="Java.Util.NavigableSet"/>
+        /// </summary>
+        public static implicit operator Java.Util.NavigableSet(Java.Util.NavigableSet<E> t) => t.Cast<Java.Util.NavigableSet>();
+        
         #endregion
 
         #region Fields

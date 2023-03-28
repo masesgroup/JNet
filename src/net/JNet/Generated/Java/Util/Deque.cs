@@ -309,7 +309,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Deque{E}"/> to <see cref="Java.Util.Deque"/>
+        /// </summary>
+        public static implicit operator Java.Util.Deque(Java.Util.Deque<E> t) => t.Cast<Java.Util.Deque>();
+        
         #endregion
 
         #region Fields

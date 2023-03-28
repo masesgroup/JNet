@@ -279,7 +279,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.PrimitiveIterator{T, T_CONS}"/> to <see cref="Java.Util.PrimitiveIterator"/>
+        /// </summary>
+        public static implicit operator Java.Util.PrimitiveIterator(Java.Util.PrimitiveIterator<T, T_CONS> t) => t.Cast<Java.Util.PrimitiveIterator>();
+        
         #endregion
 
         #region Fields

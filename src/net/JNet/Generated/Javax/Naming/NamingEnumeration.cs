@@ -93,7 +93,11 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.NamingEnumeration{T}"/> to <see cref="Javax.Naming.NamingEnumeration"/>
+        /// </summary>
+        public static implicit operator Javax.Naming.NamingEnumeration(Javax.Naming.NamingEnumeration<T> t) => t.Cast<Javax.Naming.NamingEnumeration>();
+        
         #endregion
 
         #region Fields

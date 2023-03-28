@@ -33,11 +33,7 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractCollection"/> to <see cref="Java.Util.Collection"/>
-        /// </summary>
-        public static implicit operator Java.Util.Collection(Java.Util.AbstractCollection t) => t.Cast<Java.Util.Collection>();
-        
+
         #endregion
 
         #region Fields
@@ -183,10 +179,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractCollection{E}"/> to <see cref="Java.Util.Collection{E}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Collection<E>(Java.Util.AbstractCollection<E> t) => t.Cast<Java.Util.Collection<E>>();
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractCollection{E}"/> to <see cref="Java.Util.AbstractCollection"/>
         /// </summary>

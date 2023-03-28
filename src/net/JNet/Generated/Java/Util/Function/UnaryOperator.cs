@@ -64,7 +64,11 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Function.UnaryOperator{T}"/> to <see cref="Java.Util.Function.UnaryOperator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Function.UnaryOperator(Java.Util.Function.UnaryOperator<T> t) => t.Cast<Java.Util.Function.UnaryOperator>();
+        
         #endregion
 
         #region Fields

@@ -458,7 +458,11 @@ namespace Java.Util.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Stream.Stream{T}"/> to <see cref="Java.Util.Stream.Stream"/>
+        /// </summary>
+        public static implicit operator Java.Util.Stream.Stream(Java.Util.Stream.Stream<T> t) => t.Cast<Java.Util.Stream.Stream>();
+        
         #endregion
 
         #region Fields

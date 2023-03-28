@@ -459,7 +459,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.List{E}"/> to <see cref="Java.Util.List"/>
+        /// </summary>
+        public static implicit operator Java.Util.List(Java.Util.List<E> t) => t.Cast<Java.Util.List>();
+        
         #endregion
 
         #region Fields

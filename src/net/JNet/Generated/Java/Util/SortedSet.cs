@@ -128,7 +128,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.SortedSet{E}"/> to <see cref="Java.Util.SortedSet"/>
+        /// </summary>
+        public static implicit operator Java.Util.SortedSet(Java.Util.SortedSet<E> t) => t.Cast<Java.Util.SortedSet>();
+        
         #endregion
 
         #region Fields
