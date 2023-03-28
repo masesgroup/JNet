@@ -29,7 +29,6 @@ using Org.Mases.Jnet;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Reflection.Emit;
 
 namespace MASES.JNetReflector
 {
@@ -1129,7 +1128,6 @@ namespace MASES.JNetReflector
                         }
                         if (usableGenStrings && !typeStr.IsNetNativeType())
                         {
-                            // typeStr += paramGenArguments.ApplyGenerics();
                             genericArguments.AddRange(paramGenArguments);
                             genericClauses.AddRange(paramGenClause);
                         }
@@ -1211,7 +1209,6 @@ namespace MASES.JNetReflector
                         }
                     }
 
-                    // returnType += retGenArguments.ApplyGenerics();
                     methodName += genericArguments.ApplyGenerics();
                 }
 

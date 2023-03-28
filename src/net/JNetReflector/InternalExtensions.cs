@@ -288,8 +288,6 @@ namespace MASES.JNetReflector
                         if (!hasKey) genClauses?.Add(item);
                     }
                 }
-
-                // genArguments?.Add(genArgumentsLocal.ConvertGenerics());
             }
         }
 
@@ -509,15 +507,6 @@ namespace MASES.JNetReflector
                 }
             }
             return result;
-            var retVal = entry.ToNetType(camel);
-            if (retVal.EndsWith(SpecialNames.ArrayTypeTrailer))
-            {
-                return retVal;
-            }
-            else
-            {
-                return retVal + genArgumentsLocal.ApplyGenerics();
-            }
         }
 
         static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
@@ -1137,7 +1126,6 @@ namespace MASES.JNetReflector
             var cName = type.TypeName;
             cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
             cName = ToNetType(cName, false, camel);
-            // cName = type.ApplyGenerics(cName);
             return cName;
         }
 
@@ -1187,8 +1175,6 @@ namespace MASES.JNetReflector
                 case "java.lang.Object":
                     return "object";
                 default:
-                    //var splitted = typeName.Split(SpecialNames.NamespaceSeparator, SpecialNames.NestedClassSeparator);
-                    //typeName = string.Join(SpecialNames.NamespaceSeparator.ToString(), splitted.Select((o) => camel ? Camel(o) : o));
                     return ToFullQualifiedClassName(typeName, camel);
             }
         }
@@ -1502,41 +1488,6 @@ namespace MASES.JNetReflector
                 else
                 {
                     return entry.GenericReturnType.Type(entry.ReturnType, genArguments, genClauses, prefix, true, camel);
-
-                    var retString = entry.GenericReturnType.GetGenerics(genArguments, genClauses, prefix, true, camel);
-                    if (entry.ReturnType.IsJVMGenericClass() && genClauses != null)
-                    {
-                        List<string> classArguments = new List<string>();
-                        List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-                        entry.ReturnType.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
-                        int classNeedsConstraints = 0;
-                        foreach (var item in classClauses)
-                        {
-                            if (item.Value != null) { classNeedsConstraints++; }
-                        }
-                        if (classNeedsConstraints > 0) // the return class have some constraint
-                        {
-                            int genClausesConstraint = 0;
-                            // check if genClauses has something in it near to the one expected from the class
-                            foreach (var genClause in genClauses)
-                            {
-                                foreach (var classClause in classClauses)
-                                {
-                                    if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
-                                    {
-                                        genClausesConstraint++; // found matched constraint
-                                    }
-                                }
-                            }
-                            if (classNeedsConstraints != genClausesConstraint) // constraints does not match
-                            {
-                                genArguments.Clear();
-                                genClauses.Clear();
-                                return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
-                            }
-                        }
-                    }
-                    return retString;
                 }
             }
         }
@@ -1708,41 +1659,6 @@ namespace MASES.JNetReflector
             else
             {
                 return entry.GenericType.Type(entry.Type, genArguments, genClauses, string.Empty, true, camel);
-
-                var retString = entry.GenericType.GetGenerics(genArguments, genClauses, string.Empty, true, camel);
-                if (entry.Type.IsJVMGenericClass() && genClauses != null)
-                {
-                    List<string> classArguments = new List<string>();
-                    List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-                    entry.Type.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
-                    int classNeedsConstraints = 0;
-                    foreach (var item in classClauses)
-                    {
-                        if (item.Value != null) { classNeedsConstraints++; }
-                    }
-                    if (classNeedsConstraints > 0) // the return class have some constraint
-                    {
-                        int genClausesConstraint = 0;
-                        // check if genClauses has something in it near to the one expected from the class
-                        foreach (var genClause in genClauses)
-                        {
-                            foreach (var classClause in classClauses)
-                            {
-                                if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
-                                {
-                                    genClausesConstraint++; // found matched constraint
-                                }
-                            }
-                        }
-                        if (classNeedsConstraints != genClausesConstraint) // constraints does not match
-                        {
-                            genArguments.Clear();
-                            genClauses.Clear();
-                            return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
-                        }
-                    }
-                }
-                return retString;
             }
         }
 
@@ -1826,7 +1742,7 @@ namespace MASES.JNetReflector
             }
             else
             {
-                var entryType = entry.Type.ToNetType(camel);// ToFullQualifiedClassName(entry.Type, false, camel);
+                var entryType = entry.Type.ToNetType(camel);
                 if (entry.ParameterizedType.IsGenerics() && (entryType == "object" || entryType == "object[]"))
                 {
                     entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
@@ -1837,41 +1753,6 @@ namespace MASES.JNetReflector
                 else
                 {
                     return entry.ParameterizedType.Type(entry.Type, genArguments, genClauses, prefix, true, camel);
-
-                    var retString = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
-                    if (entry.Type.IsJVMGenericClass() && genClauses != null)
-                    {
-                        List<string> classArguments = new List<string>();
-                        List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-                        entry.Type.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
-                        int classNeedsConstraints = 0;
-                        foreach (var item in classClauses)
-                        {
-                            if (item.Value != null) { classNeedsConstraints++; }
-                        }
-                        if (classNeedsConstraints > 0) // the return class have some constraint
-                        {
-                            int genClausesConstraint = 0;
-                            // check if genClauses has something in it near to the one expected from the class
-                            foreach (var genClause in genClauses)
-                            {
-                                foreach (var classClause in classClauses)
-                                {
-                                    if (classClause.Value != null && genClause.Value != null && classClause.Value == genClause.Value)
-                                    {
-                                        genClausesConstraint++; // found matched constraint
-                                    }
-                                }
-                            }
-                            if (classNeedsConstraints != genClausesConstraint) // constraints does not match
-                            {
-                                genArguments.Clear();
-                                genClauses.Clear();
-                                return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
-                            }
-                        }
-                    }
-                    return retString;
                 }
             }
         }

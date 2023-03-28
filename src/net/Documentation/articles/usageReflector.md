@@ -27,9 +27,12 @@ _jnr_ accepts the following command-line switch:
 * **ModulesToParse**: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **ClassesToAvoid**: A CSV list of classes to be removed during analysis
+* **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
+* **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition
+* **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
 * **DisableGenerics**: The option forces the tool to disable any generic type
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
@@ -43,10 +46,11 @@ Many JNet classes are generated using JNetReflector. The JVM used to build the c
 The command line interface used is:
 
 > jnetreflector -ModulesToParse org.*,java.* -DestinationRootPath .\src\net\JNet\Generated -OriginJavadocUrl "https://docs.oracle.com/en/java/javase/11/docs/api/" -JavadocVersion 11 \
-> -ClassesToBeListener java.util.Comparator,javax.management.NotificationFilter \
-> -ClassesToAvoid javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler \
+> -ClassesToBeListener java.util.Comparator,java.util.ServiceLoader$Provider,java.util.stream.DoubleStream$Builder,java.util.stream.IntStream$Builder,java.util.stream.LongStream$Builder,java.util.stream.Stream$Builder,javax.swing.Action,javax.management.NotificationFilter \
+> -ClassesToAvoid java.time.chrono.Chronology,javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler \
 > -NamespacesToAvoid org.jcp.xml.dsig.internal,com.oracle,com.sun,org.mases,org.junit,org.hamcrest,org.burningwave,org.graalvm,org.slf4j,java.awt.peer \
-> -NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font
+> -NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font \
+> -ClassesToAvoidInGenerics java.time.chrono.ChronoLocalDateTime,java.time.chrono.ChronoZonedDateTime
 
 ### Running environment for PowerShell users
 
