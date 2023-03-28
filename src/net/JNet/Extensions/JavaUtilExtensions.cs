@@ -68,12 +68,12 @@ namespace MASES.JNet.Extensions
         public static Collection<T> ToJCollection<T>(this ICollection<T> collection)
         {
             ArrayList<T> list = new();
-            if (collection.Count == 0) return list;
+            if (collection.Count == 0) return list.CastTo<Collection<T>>();
             foreach (var item in collection)
             {
                 list.Add(item);
             }
-            return list;
+            return list.CastTo<Collection<T>>();
         }
         /// <summary>
         /// Converts a <see cref="ICollection{T}"/> to <see cref="Java.Util.List{T}"/>
@@ -106,7 +106,7 @@ namespace MASES.JNet.Extensions
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
             if (map.IsEmpty()) return dictionary;
-            foreach (var item in (Collection<Map.Entry<K, V>>)map.EntrySet())
+            foreach (var item in map.EntrySet())
             {
                 dictionary.Add(item.Key, item.Value);
             }
