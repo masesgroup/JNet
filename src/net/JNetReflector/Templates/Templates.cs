@@ -30,9 +30,11 @@ namespace MASES.JNetReflector.Templates
                 AllPackageClassesTemplate,
                 AllPackageClassesStubClassTemplate,
                 AllPackageClassesStubClassListenerTemplate,
+                AllPackageClassesStubClassMainClassTemplate,
                 AllPackageClassesStubExceptionTemplate,
                 AllPackageClassesStubNestedClassTemplate,
                 AllPackageClassesStubNestedClassListenerTemplate,
+                AllPackageClassesStubNestedClassMainClassTemplate,
                 AllPackageClassesStubNestedExceptionTemplate,
 
                 SingleClassTemplate,
@@ -74,9 +76,11 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesTemplate = "AllPackageClasses.template";
         public const string AllPackageClassesStubClassTemplate = "AllPackageClassesStubClass.template";
         public const string AllPackageClassesStubClassListenerTemplate = "AllPackageClassesStubClassListener.template";
+        public const string AllPackageClassesStubClassMainClassTemplate = "AllPackageClassesStubClassMainClass.template";
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
         public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
         public const string AllPackageClassesStubNestedClassListenerTemplate = "AllPackageClassesStubNestedClassListener.template";
+        public const string AllPackageClassesStubNestedClassMainClassTemplate = "AllPackageClassesStubNestedClassMainClass.template";
         public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
