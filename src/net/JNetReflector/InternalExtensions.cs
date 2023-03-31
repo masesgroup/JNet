@@ -89,7 +89,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static Class JVMClass(this string entry)
+        public static Class JVMClass(this string entry, bool throwOnError = false)
         {
             try
             {
@@ -97,6 +97,7 @@ namespace MASES.JNetReflector
             }
             catch
             {
+                if (throwOnError) throw;
                 return null;
             }
         }
@@ -194,8 +195,10 @@ namespace MASES.JNetReflector
 
         public static bool IsSpecialClass(this ZipArchiveEntry entry)
         {
-            if (entry.IsJVMNestedClass()
-                && SpecialNames.SpecialNumberedNames.Any((o) => entry.JVMNestedClassName().StartsWith(o))) return true;
+            if (entry.Name.EndsWith(SpecialNames.NestedClassSeparator.ToString()) // special class defined from Scala conversion
+                || (entry.IsJVMNestedClass()
+                    && SpecialNames.SpecialNumberedNames.Any((o) => entry.JVMNestedClassName().StartsWith(o)))
+                ) return true;
             return false;
         }
 
@@ -241,15 +244,16 @@ namespace MASES.JNetReflector
 
         public static string JVMFullQualifiedClassName(this ZipArchiveEntry entry)
         {
-            var cName = entry.FullName.Substring(0, entry.FullName.LastIndexOf(SpecialNames.ClassExtension));
+            var cName = entry.FullName;
+            cName = cName.Contains(SpecialNames.ClassExtension) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.ClassExtension)) : cName;
             return cName.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
         }
 
         public static Class JVMClass(this ZipArchiveEntry entry)
         {
-            var cName = entry.JVMFullQualifiedClassName();
             try
             {
+                var cName = entry.JVMFullQualifiedClassName();
                 return Class.ForName(cName, true, SystemClassLoader);
             }
             catch
@@ -900,6 +904,13 @@ namespace MASES.JNetReflector
         public static bool IsSpecialClass(this Class entry)
         {
             if (!entry.IsJVMNestedClass()) return false;
+
+            if (entry.Name.EndsWith(SpecialNames.NestedClassSeparator.ToString()))
+            {
+                // special class defined from Scala conversion
+                return true;
+            }
+
             string className = entry.JVMNestedClassName(null, true);
 
             if (entry.IsJVMNestedClass()
@@ -1227,8 +1238,11 @@ namespace MASES.JNetReflector
 #endif
                     {
                         var name = module.ToString();
-                        name = name.Remove(0, "module ".Length);
-                        newURl += name + "/";
+                        if (!string.IsNullOrEmpty(name) && !name.StartsWith("unnamed"))
+                        {
+                            name = name.Remove(0, "module ".Length);
+                            newURl += name + "/";
+                        }
                     }
                 }
 

@@ -40,7 +40,6 @@ namespace MASES.JNetReflector
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
-        public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";

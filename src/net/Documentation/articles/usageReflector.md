@@ -17,13 +17,12 @@ To use JNetReflector runs a command like the following:
 
 _jnr_ accepts the following command-line switch:
 
-* **OriginRootPath**: The origin path where Jars to be analyzed are stored
+* **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
 * **ClassesToAnalyze**: A CSV list of full qualified class names to be analyzed
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
-* **DoNotAddJarsInClasspath**: The option inform the tool to not add the Jars in classpath
 * **ModulesToParse**: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **ClassesToAvoid**: A CSV list of classes to be removed during analysis
