@@ -60,6 +60,13 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.OriginJavadocJARVersionAndUrls,
+                        Type = ArgumentType.Double,
+                        Default = null,
+                        Help = "A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.DestinationRootPath,
                         Type = ArgumentType.Double,
                         Default = SpecialNames.JNetReflectorGeneratedFolder,
@@ -188,6 +195,9 @@ namespace MASES.JNetReflector
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl;
 
+        static IEnumerable<(int, string)> _OriginJavadocJARVersionAndUrls;
+        public static IEnumerable<(int, string)> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls;
+
         static int _JavadocVersion;
         public static int JavadocVersion => _JavadocVersion;
 
@@ -290,6 +300,23 @@ namespace MASES.JNetReflector
                     if (!modulesToParse.Contains(item)) modulesToParse.Add(item);
                 }
                 _ModulesToParse = modulesToParse;
+            }
+
+            List<(int, string)> jarURLsToAnaylyze = new List<(int, string)>();
+            if (ParsedArgs.Exist(CLIParam.OriginJavadocJARVersionAndUrls))
+            {
+                var jarURLs = ParsedArgs.Get<string>(CLIParam.OriginJavadocJARVersionAndUrls).Split(',', ';');
+                foreach (var item in jarURLs)
+                {
+                    var items = item.Split('|');
+                    if (items.Length < 2) throw new System.InvalidOperationException($"{item} does not conform to expected pattern.");
+                    var version = int.Parse(items[0]);
+                    var url = string.Join(string.Empty, items.Skip(1));
+                    jarURLsToAnaylyze.Add((version, url));
+                }
+                _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
+                if (_JarsToAnalyze.Count() != _OriginJavadocJARVersionAndUrls.Count())
+                    throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
             }
 
             List<string> classesToBeListener = new List<string>();

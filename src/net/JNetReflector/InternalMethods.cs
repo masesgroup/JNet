@@ -107,9 +107,19 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJars()
         {
-            foreach (var item in JNetReflectorCore.JarsToAnalyze)
+            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze);
+            for (int i = 0; i < jarNames.Count; i++)
             {
-                AnalyzeJar(item);
+                string javadocUrl = JNetReflectorCore.OriginJavadocUrl;
+                int javadocVersion = JNetReflectorCore.JavadocVersion;
+                if (JNetReflectorCore.OriginJavadocJARVersionAndUrls != null)
+                {
+                    var data = JNetReflectorCore.OriginJavadocJARVersionAndUrls.ElementAt(i);
+                    javadocVersion = data.Item1;
+                    javadocUrl = data.Item2;
+                }
+
+                AnalyzeJar(jarNames[i], javadocUrl, javadocVersion);
             }
         }
 
@@ -121,7 +131,10 @@ namespace MASES.JNetReflector
                 var jClass = item.JVMClass(true);
                 if (jClass != null) resultingArguments.AddItem(jClass);
             }
-            resultingArguments.AnalyzeItems("CustomSelection");
+            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
+            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JarOrModuleName = "CustomSelection";
+            resultingArguments.AnalyzeItems();
         }
 
         public static void AddItem(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> data, Class cls)
@@ -149,7 +162,7 @@ namespace MASES.JNetReflector
             subEntries.Add(cls.Name, cls);
         }
 
-        public static void AnalyzeJar(string pathToJar)
+        public static void AnalyzeJar(string pathToJar, string javadocUrl, int javadocVersion)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
@@ -170,8 +183,10 @@ namespace MASES.JNetReflector
                 }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", resultingArguments.Count);
-                var jarName = Path.GetFileName(pathToJar);
-                resultingArguments.AnalyzeItems(jarName);
+                JavadocBaseUrl = javadocUrl;
+                JavadocVersion = javadocVersion;
+                JarOrModuleName = Path.GetFileName(pathToJar);
+                resultingArguments.AnalyzeItems();
             }
         }
 
@@ -195,16 +210,19 @@ namespace MASES.JNetReflector
             }
 
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
-            data.AnalyzeItems(ns);
+            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
+            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JarOrModuleName = ns;
+            data.AnalyzeItems();
         }
 
+        static string JavadocBaseUrl { get; set; }
+        static int JavadocVersion { get; set; }
         static string JarOrModuleName { get; set; }
         static CancellationTokenSource CancellationTokenSource { get; set; }
 
-        static void AnalyzeItems(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items, string jarOrModuleName)
+        static void AnalyzeItems(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items)
         {
-            JarOrModuleName = jarOrModuleName;
-
             if (!JNetReflectorCore.AvoidParallelBuild)
             {
                 try
@@ -617,7 +635,7 @@ namespace MASES.JNetReflector
                 {
                     List<string> paramGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
-                    var typeStr = item.Type(paramGenArguments, paramGenClause, item.Name.Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    var typeStr = item.Type(paramGenArguments, paramGenClause, item.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
                     var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
                     if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
                     {
@@ -640,13 +658,13 @@ namespace MASES.JNetReflector
                                                                                                                                        typeStrForDoc.ConvertToJavadoc()));
                     if (item.IsVarArgs)
                     {
-                        constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name}, ");
+                        constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
                     }
                     else
                     {
-                        constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name}, ");
+                        constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name()}, ");
                     }
-                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name}, ");
+                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
@@ -826,7 +844,7 @@ namespace MASES.JNetReflector
                     continue;
                 }
 
-                if (methodNameOrigin == "main")
+                if (methodNameOrigin == "main" && method.IsStatic())
                 {
                     isMainClass = true;
                     prefilteredMethods.Clear();
@@ -1132,7 +1150,7 @@ namespace MASES.JNetReflector
                 {
                     List<string> paramGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
-                    var typeStr = parameter.Type(paramGenArguments, paramGenClause, parameter.Name.Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    var typeStr = parameter.Type(paramGenArguments, paramGenClause, parameter.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
                     var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
                     if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
                     {
@@ -1159,12 +1177,12 @@ namespace MASES.JNetReflector
                     if (parameter.IsVarArgs)
                     {
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
-                        methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name}, ");
+                        methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
                     }
                     else
                     {
-                        methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name}, ");
-                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                        methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name()}, ");
+                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name()}, ");
                     }
                 }
 
@@ -1277,7 +1295,7 @@ namespace MASES.JNetReflector
                         executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
                                                                                                                                    methodNameOrigin,
                                                                                                                                    (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                                   + executionParamsString + ", " + varArg.Name,
+                                                                                                                                   + executionParamsString + ", " + varArg.Name(),
                                                                                                                                    returnType);
                     }
                     else
@@ -1287,9 +1305,9 @@ namespace MASES.JNetReflector
                                                                                                                          isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                                                                          methodNameOrigin,
                                                                                                                          (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                         + executionParamsString + ", " + varArg.Name);
+                                                                                                                         + executionParamsString + ", " + varArg.Name());
                     }
-                    executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
+                    executionStub = $"if ({varArg.Name()}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);

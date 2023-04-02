@@ -1770,6 +1770,12 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
+        public static string Name(this Parameter entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            return entry.Name.Replace(SpecialNames.NestedClassSeparator, '_');
+        }
+
         public static string Type(this Parameter entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
