@@ -57,6 +57,13 @@ namespace Java.Awt
             get { return IExecute<int>("getCaretPosition"); } set { IExecute("setCaretPosition", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()"/> 
+        /// </summary>
+        public bool IsEditable
+        {
+            get { return IExecute<bool>("isEditable"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectedText()"/> 
         /// </summary>
         public string SelectedText
@@ -90,15 +97,6 @@ namespace Java.Awt
         public Java.Awt.EventNs.TextListener[] TextListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.TextListener>("getTextListeners"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEditable()
-        {
-            return IExecute<bool>("isEditable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#addTextListener(java.awt.event.TextListener)"/>

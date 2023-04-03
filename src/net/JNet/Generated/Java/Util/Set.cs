@@ -208,6 +208,34 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator Iterator
+        {
+            get { return IExecute<Java.Util.Iterator>("iterator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/> 
+        /// </summary>
+        public Java.Util.Spliterator Spliterator
+        {
+            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -253,15 +281,6 @@ namespace Java.Util
             return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -289,15 +308,6 @@ namespace Java.Util
             return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray()"/>
         /// </summary>
         
@@ -307,29 +317,11 @@ namespace Java.Util
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
-        {
-            return IExecute<Java.Util.Iterator>("iterator");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator Spliterator()
-        {
-            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         
         #endregion
@@ -529,6 +521,34 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator<E> Iterator
+        {
+            get { return IExecute<Java.Util.Iterator<E>>("iterator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/> 
+        /// </summary>
+        public Java.Util.Spliterator<E> Spliterator
+        {
+            get { return IExecute<Java.Util.Spliterator<E>>("spliterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="T"/></param>
@@ -574,15 +594,6 @@ namespace Java.Util
             return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -610,15 +621,6 @@ namespace Java.Util
             return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray()"/>
         /// </summary>
         
@@ -628,29 +630,11 @@ namespace Java.Util
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
-        {
-            return IExecute<Java.Util.Iterator<E>>("iterator");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<E> Spliterator()
-        {
-            return IExecute<Java.Util.Spliterator<E>>("spliterator");
         }
         
         #endregion

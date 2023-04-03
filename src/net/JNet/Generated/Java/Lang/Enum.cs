@@ -71,6 +71,20 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/> 
+        /// </summary>
+        public int Ordinal
+        {
+            get { return IExecute<int>("ordinal"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
@@ -78,24 +92,6 @@ namespace Java.Lang
         public int CompareTo(Java.Lang.Enum arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Ordinal()
-        {
-            return IExecute<int>("ordinal");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
@@ -167,6 +163,20 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/> 
+        /// </summary>
+        public int Ordinal
+        {
+            get { return IExecute<int>("ordinal"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="E"/></param>
@@ -174,24 +184,6 @@ namespace Java.Lang
         public int CompareTo(E arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Ordinal()
-        {
-            return IExecute<int>("ordinal");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>

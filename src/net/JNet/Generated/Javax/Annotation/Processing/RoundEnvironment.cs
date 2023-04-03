@@ -46,29 +46,25 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/> 
+        /// </summary>
+        public bool ErrorRaised
+        {
+            get { return IExecute<bool>("errorRaised"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()"/> 
+        /// </summary>
+        public bool ProcessingOver
+        {
+            get { return IExecute<bool>("processingOver"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getRootElements()"/> 
         /// </summary>
         public Java.Util.Set RootElements
         {
             get { return IExecute<Java.Util.Set>("getRootElements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ErrorRaised()
-        {
-            return IExecute<bool>("errorRaised");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ProcessingOver()
-        {
-            return IExecute<bool>("processingOver");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(java.lang.Class)"/>

@@ -82,11 +82,46 @@ namespace Org.Ietf.Jgss
             get { return IExecute<Org.Ietf.Jgss.GSSCredential>("getDelegCred"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/> 
+        /// </summary>
+        public byte[] Export
+        {
+            get { return IExecuteArray<byte>("export"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getIntegState()"/> 
         /// </summary>
         public bool IntegState
         {
             get { return IExecute<bool>("getIntegState"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/> 
+        /// </summary>
+        public bool IsEstablished
+        {
+            get { return IExecute<bool>("isEstablished"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/> 
+        /// </summary>
+        public bool IsInitiator
+        {
+            get { return IExecute<bool>("isInitiator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/> 
+        /// </summary>
+        public bool IsProtReady
+        {
+            get { return IExecute<bool>("isProtReady"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/> 
+        /// </summary>
+        public bool IsTransferable
+        {
+            get { return IExecute<bool>("isTransferable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getLifetime()"/> 
@@ -138,44 +173,6 @@ namespace Org.Ietf.Jgss
             get { return IExecute<Org.Ietf.Jgss.GSSName>("getTargName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEstablished()
-        {
-            return IExecute<bool>("isEstablished");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
-        public bool IsInitiator()
-        {
-            return IExecute<bool>("isInitiator");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsProtReady()
-        {
-            return IExecute<bool>("isProtReady");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
-        public bool IsTransferable()
-        {
-            return IExecute<bool>("isTransferable");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -186,16 +183,6 @@ namespace Org.Ietf.Jgss
         public byte[] AcceptSecContext(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("acceptSecContext", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/>
-        /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
-        public byte[] Export()
-        {
-            return IExecuteArray<byte>("export");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(byte[],int,int,org.ietf.jgss.MessageProp)"/>

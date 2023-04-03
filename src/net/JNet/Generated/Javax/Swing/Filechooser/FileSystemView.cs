@@ -42,13 +42,11 @@ namespace Javax.Swing.Filechooser
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getFileSystemView()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getFileSystemView()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Filechooser.FileSystemView"/></returns>
-        public static Javax.Swing.Filechooser.FileSystemView GetFileSystemView()
+        public static Javax.Swing.Filechooser.FileSystemView GetFileSystemView
         {
-            return SExecute<Javax.Swing.Filechooser.FileSystemView>("getFileSystemView");
+            get { return SExecute<Javax.Swing.Filechooser.FileSystemView>("getFileSystemView"); }
         }
         
         #endregion

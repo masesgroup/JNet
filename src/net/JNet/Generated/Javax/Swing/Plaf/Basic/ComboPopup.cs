@@ -46,6 +46,13 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/> 
+        /// </summary>
+        public bool IsVisible
+        {
+            get { return IExecute<bool>("isVisible"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getKeyListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.KeyListener KeyListener
@@ -72,15 +79,6 @@ namespace Javax.Swing.Plaf.Basic
         public Java.Awt.EventNs.MouseMotionListener MouseMotionListener
         {
             get { return IExecute<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListener"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVisible()
-        {
-            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#hide()"/>

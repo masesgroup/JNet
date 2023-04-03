@@ -46,13 +46,11 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class AnnotationType()
+        public Java.Lang.Class AnnotationType
         {
-            return IExecute<Java.Lang.Class>("annotationType");
+            get { return IExecute<Java.Lang.Class>("annotationType"); }
         }
         
         #endregion

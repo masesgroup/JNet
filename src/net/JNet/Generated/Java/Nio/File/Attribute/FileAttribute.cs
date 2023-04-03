@@ -46,22 +46,18 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public string Name
         {
-            return IExecute<string>("name");
+            get { return IExecute<string>("name"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Value()
+        public object Value
         {
-            return IExecute("value");
+            get { return IExecute("value"); }
         }
         
         #endregion
@@ -99,22 +95,18 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public string Name
         {
-            return IExecute<string>("name");
+            get { return IExecute<string>("name"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        public T Value()
+        public T Value
         {
-            return IExecute<T>("value");
+            get { return IExecute<T>("value"); }
         }
         
         #endregion

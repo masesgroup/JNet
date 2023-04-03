@@ -57,6 +57,34 @@ namespace Javax.Imageio
             get { return IExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceStreamMetadata()"/> 
+        /// </summary>
+        public bool CanReplaceStreamMetadata
+        {
+            get { return IExecute<bool>("canReplaceStreamMetadata"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteEmpty()"/> 
+        /// </summary>
+        public bool CanWriteEmpty
+        {
+            get { return IExecute<bool>("canWriteEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteRasters()"/> 
+        /// </summary>
+        public bool CanWriteRasters
+        {
+            get { return IExecute<bool>("canWriteRasters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteSequence()"/> 
+        /// </summary>
+        public bool CanWriteSequence
+        {
+            get { return IExecute<bool>("canWriteSequence"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getDefaultWriteParam()"/> 
         /// </summary>
         public Javax.Imageio.ImageWriteParam DefaultWriteParam
@@ -184,44 +212,6 @@ namespace Javax.Imageio
         public bool CanReplacePixels(int arg0)
         {
             return IExecute<bool>("canReplacePixels", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceStreamMetadata()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public bool CanReplaceStreamMetadata()
-        {
-            return IExecute<bool>("canReplaceStreamMetadata");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public bool CanWriteEmpty()
-        {
-            return IExecute<bool>("canWriteEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteRasters()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWriteRasters()
-        {
-            return IExecute<bool>("canWriteRasters");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteSequence()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWriteSequence()
-        {
-            return IExecute<bool>("canWriteSequence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getNumThumbnailsSupported(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam,javax.imageio.metadata.IIOMetadata,javax.imageio.metadata.IIOMetadata)"/>

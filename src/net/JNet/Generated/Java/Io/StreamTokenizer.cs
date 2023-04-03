@@ -82,23 +82,18 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lineno()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lineno()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Lineno()
+        public int Lineno
         {
-            return IExecute<int>("lineno");
+            get { return IExecute<int>("lineno"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public int NextToken()
+        public int NextToken
         {
-            return IExecute<int>("nextToken");
+            get { return IExecute<int>("nextToken"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>

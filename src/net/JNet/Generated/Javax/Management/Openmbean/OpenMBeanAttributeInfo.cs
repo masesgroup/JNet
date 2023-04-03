@@ -46,31 +46,25 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIs()
+        public bool IsIs
         {
-            return IExecute<bool>("isIs");
+            get { return IExecute<bool>("isIs"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsReadable()
+        public bool IsReadable
         {
-            return IExecute<bool>("isReadable");
+            get { return IExecute<bool>("isReadable"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsWritable()
+        public bool IsWritable
         {
-            return IExecute<bool>("isWritable");
+            get { return IExecute<bool>("isWritable"); }
         }
         
         #endregion

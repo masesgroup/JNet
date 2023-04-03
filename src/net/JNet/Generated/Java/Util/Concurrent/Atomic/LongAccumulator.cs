@@ -59,20 +59,18 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/> 
+        /// </summary>
+        public long Get
+        {
+            get { return IExecute<long>("get"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#getThenReset()"/> 
         /// </summary>
         public long ThenReset
         {
             get { return IExecute<long>("getThenReset"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long Get()
-        {
-            return IExecute<long>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>

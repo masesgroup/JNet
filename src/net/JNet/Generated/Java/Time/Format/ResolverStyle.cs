@@ -54,6 +54,13 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Format.ResolverStyle[] Values
+        {
+            get { return SExecuteArray<Java.Time.Format.ResolverStyle>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -61,15 +68,6 @@ namespace Java.Time.Format
         public static Java.Time.Format.ResolverStyle ValueOf(string arg0)
         {
             return SExecute<Java.Time.Format.ResolverStyle>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
-        public static Java.Time.Format.ResolverStyle[] Values()
-        {
-            return SExecuteArray<Java.Time.Format.ResolverStyle>("values");
         }
         
         #endregion

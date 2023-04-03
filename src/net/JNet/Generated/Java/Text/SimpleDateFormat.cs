@@ -79,31 +79,25 @@ namespace Java.Text
             get { return IExecute<Java.Text.DateFormatSymbols>("getDateFormatSymbols"); } set { IExecute("setDateFormatSymbols", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#get2DigitYearStart()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToLocalizedPattern()
+        public Java.Util.Date Get2DigitYearStart
         {
-            return IExecute<string>("toLocalizedPattern");
+            get { return IExecute<Java.Util.Date>("get2DigitYearStart"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToPattern()
+        public string ToLocalizedPattern
         {
-            return IExecute<string>("toPattern");
+            get { return IExecute<string>("toLocalizedPattern"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#get2DigitYearStart()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Date"/></returns>
-        public Java.Util.Date Get2DigitYearStart()
+        public string ToPattern
         {
-            return IExecute<Java.Util.Date>("get2DigitYearStart");
+            get { return IExecute<string>("toPattern"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)"/>

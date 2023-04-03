@@ -42,13 +42,11 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public static Java.Util.Function.Function Identity()
+        public static Java.Util.Function.Function Identity
         {
-            return SExecute<Java.Util.Function.Function>("identity");
+            get { return SExecute<Java.Util.Function.Function>("identity"); }
         }
         
         #endregion
@@ -113,13 +111,11 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public static Java.Util.Function.Function<T, T> Identity()
+        public static Java.Util.Function.Function<T, T> Identity
         {
-            return SExecute<Java.Util.Function.Function<T, T>>("identity");
+            get { return SExecute<Java.Util.Function.Function<T, T>>("identity"); }
         }
         
         #endregion

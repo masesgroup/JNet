@@ -55,6 +55,13 @@ namespace Java.Util.Spi
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
@@ -64,15 +71,6 @@ namespace Java.Util.Spi
         public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params string[] arg2)
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>

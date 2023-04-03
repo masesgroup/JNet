@@ -84,13 +84,11 @@ namespace Java.Awt.Dnd
             get { return SExecute<int>("getDragThreshold"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#isDragImageSupported()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#isDragImageSupported()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsDragImageSupported()
+        public static bool IsDragImageSupported
         {
-            return SExecute<bool>("isDragImageSupported");
+            get { return SExecute<bool>("isDragImageSupported"); }
         }
         
         #endregion

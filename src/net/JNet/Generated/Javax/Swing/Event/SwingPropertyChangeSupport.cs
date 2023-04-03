@@ -63,13 +63,11 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#isNotifyOnEDT()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#isNotifyOnEDT()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNotifyOnEDT()
+        public bool IsNotifyOnEDT
         {
-            return IExecute<bool>("isNotifyOnEDT");
+            get { return IExecute<bool>("isNotifyOnEDT"); }
         }
         
         #endregion

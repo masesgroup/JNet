@@ -58,6 +58,13 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/> 
+        /// </summary>
+        public static Java.Nio.File.StandardCopyOption[] Values
+        {
+            get { return SExecuteArray<Java.Nio.File.StandardCopyOption>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -65,15 +72,6 @@ namespace Java.Nio.File
         public static Java.Nio.File.StandardCopyOption ValueOf(string arg0)
         {
             return SExecute<Java.Nio.File.StandardCopyOption>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
-        public static Java.Nio.File.StandardCopyOption[] Values()
-        {
-            return SExecuteArray<Java.Nio.File.StandardCopyOption>("values");
         }
         
         #endregion

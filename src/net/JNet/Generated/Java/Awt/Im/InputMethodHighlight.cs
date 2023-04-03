@@ -100,6 +100,13 @@ namespace Java.Awt.Im
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()"/> 
+        /// </summary>
+        public bool IsSelected
+        {
+            get { return IExecute<bool>("isSelected"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getState()"/> 
         /// </summary>
         public int State
@@ -119,15 +126,6 @@ namespace Java.Awt.Im
         public int Variation
         {
             get { return IExecute<int>("getVariation"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSelected()
-        {
-            return IExecute<bool>("isSelected");
         }
         
         #endregion

@@ -97,6 +97,20 @@ namespace Javax.Imageio.Spi
             get { return IExecuteArray<string>("getFormatNames"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/> 
+        /// </summary>
+        public bool IsStandardImageMetadataFormatSupported
+        {
+            get { return IExecute<bool>("isStandardImageMetadataFormatSupported"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()"/> 
+        /// </summary>
+        public bool IsStandardStreamMetadataFormatSupported
+        {
+            get { return IExecute<bool>("isStandardStreamMetadataFormatSupported"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getMIMETypes()"/> 
         /// </summary>
         public string[] MIMETypes
@@ -123,24 +137,6 @@ namespace Javax.Imageio.Spi
         public string PluginClassName
         {
             get { return IExecute<string>("getPluginClassName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsStandardImageMetadataFormatSupported()
-        {
-            return IExecute<bool>("isStandardImageMetadataFormatSupported");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsStandardStreamMetadataFormatSupported()
-        {
-            return IExecute<bool>("isStandardStreamMetadataFormatSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)"/>

@@ -46,22 +46,18 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Value()
+        public string Delegate
         {
-            return IExecute<bool>("value");
+            get { return IExecute<string>("delegate"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Delegate()
+        public bool Value
         {
-            return IExecute<string>("delegate");
+            get { return IExecute<bool>("value"); }
         }
         
         #endregion

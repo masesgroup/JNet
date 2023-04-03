@@ -71,6 +71,13 @@ namespace Javax.Xml.Transform.Stax
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
@@ -90,15 +97,6 @@ namespace Javax.Xml.Transform.Stax
         public Javax.Xml.Stream.XMLStreamReader XMLStreamReader
         {
             get { return IExecute<Javax.Xml.Stream.XMLStreamReader>("getXMLStreamReader"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
         }
         
         #endregion

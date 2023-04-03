@@ -58,6 +58,13 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Format.FormatStyle[] Values
+        {
+            get { return SExecuteArray<Java.Time.Format.FormatStyle>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -65,15 +72,6 @@ namespace Java.Time.Format
         public static Java.Time.Format.FormatStyle ValueOf(string arg0)
         {
             return SExecute<Java.Time.Format.FormatStyle>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
-        public static Java.Time.Format.FormatStyle[] Values()
-        {
-            return SExecuteArray<Java.Time.Format.FormatStyle>("values");
         }
         
         #endregion

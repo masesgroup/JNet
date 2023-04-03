@@ -102,22 +102,18 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
-        public static Java.Time.Temporal.TemporalQuery ParsedLeapSecond()
+        public static Java.Time.Temporal.TemporalQuery ParsedExcessDays
         {
-            return SExecute<Java.Time.Temporal.TemporalQuery>("parsedLeapSecond");
+            get { return SExecute<Java.Time.Temporal.TemporalQuery>("parsedExcessDays"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
-        public static Java.Time.Temporal.TemporalQuery ParsedExcessDays()
+        public static Java.Time.Temporal.TemporalQuery ParsedLeapSecond
         {
-            return SExecute<Java.Time.Temporal.TemporalQuery>("parsedExcessDays");
+            get { return SExecute<Java.Time.Temporal.TemporalQuery>("parsedLeapSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDate(java.time.format.FormatStyle)"/>

@@ -53,11 +53,32 @@ namespace Java.Nio.File
             get { return IExecute<long>("getBlockSize"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#isReadOnly()"/> 
+        /// </summary>
+        public bool IsReadOnly
+        {
+            get { return IExecute<bool>("isReadOnly"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getTotalSpace()"/> 
         /// </summary>
         public long TotalSpace
         {
             get { return IExecute<long>("getTotalSpace"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#type()"/> 
+        /// </summary>
+        public string Type
+        {
+            get { return IExecute<string>("type"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getUnallocatedSpace()"/> 
@@ -81,15 +102,6 @@ namespace Java.Nio.File
         public Java.Nio.File.Attribute.FileStoreAttributeView GetFileStoreAttributeView(Java.Lang.Class arg0)
         {
             return IExecute<Java.Nio.File.Attribute.FileStoreAttributeView>("getFileStoreAttributeView", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#isReadOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsReadOnly()
-        {
-            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>
@@ -118,24 +130,6 @@ namespace Java.Nio.File
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#type()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Type()
-        {
-            return IExecute<string>("type");
         }
         
         #endregion

@@ -58,6 +58,13 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/> 
+        /// </summary>
+        public static Javax.Lang.Model.Element.NestingKind[] Values
+        {
+            get { return SExecuteArray<Javax.Lang.Model.Element.NestingKind>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -66,27 +73,16 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.NestingKind>("valueOf", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
-        public static Javax.Lang.Model.Element.NestingKind[] Values()
-        {
-            return SExecuteArray<Javax.Lang.Model.Element.NestingKind>("values");
-        }
         
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNested()
+        public bool IsNested
         {
-            return IExecute<bool>("isNested");
+            get { return IExecute<bool>("isNested"); }
         }
         
         #endregion

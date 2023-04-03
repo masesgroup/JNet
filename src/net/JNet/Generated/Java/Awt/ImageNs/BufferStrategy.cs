@@ -53,29 +53,25 @@ namespace Java.Awt.ImageNs
             get { return IExecute<Java.Awt.BufferCapabilities>("getCapabilities"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsLost()"/> 
+        /// </summary>
+        public bool ContentsLost
+        {
+            get { return IExecute<bool>("contentsLost"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsRestored()"/> 
+        /// </summary>
+        public bool ContentsRestored
+        {
+            get { return IExecute<bool>("contentsRestored"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#getDrawGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics DrawGraphics
         {
             get { return IExecute<Java.Awt.Graphics>("getDrawGraphics"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsLost()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ContentsLost()
-        {
-            return IExecute<bool>("contentsLost");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsRestored()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ContentsRestored()
-        {
-            return IExecute<bool>("contentsRestored");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#show()"/>

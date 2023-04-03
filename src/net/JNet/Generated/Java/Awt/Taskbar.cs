@@ -42,22 +42,18 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsTaskbarSupported()
+        public static Java.Awt.Taskbar GetTaskbar
         {
-            return SExecute<bool>("isTaskbarSupported");
+            get { return SExecute<Java.Awt.Taskbar>("getTaskbar"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Taskbar"/></returns>
-        public static Java.Awt.Taskbar GetTaskbar()
+        public static bool IsTaskbarSupported
         {
-            return SExecute<Java.Awt.Taskbar>("getTaskbar");
+            get { return SExecute<bool>("isTaskbarSupported"); }
         }
         
         #endregion
@@ -207,6 +203,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.Taskbar.Feature[] Values
+            {
+                get { return SExecuteArray<Java.Awt.Taskbar.Feature>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -214,15 +217,6 @@ namespace Java.Awt
             public static Java.Awt.Taskbar.Feature ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Taskbar.Feature>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
-            public static Java.Awt.Taskbar.Feature[] Values()
-            {
-                return SExecuteArray<Java.Awt.Taskbar.Feature>("values");
             }
             
             #endregion
@@ -272,6 +266,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.Taskbar.State[] Values
+            {
+                get { return SExecuteArray<Java.Awt.Taskbar.State>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -279,15 +280,6 @@ namespace Java.Awt
             public static Java.Awt.Taskbar.State ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Taskbar.State>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
-            public static Java.Awt.Taskbar.State[] Values()
-            {
-                return SExecuteArray<Java.Awt.Taskbar.State>("values");
             }
             
             #endregion

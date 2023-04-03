@@ -183,6 +183,13 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Color>("getForeground"); } set { IExecute("setForeground", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaselineResizeBehavior()"/> 
+        /// </summary>
+        public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior
+        {
+            get { return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
@@ -195,6 +202,13 @@ namespace Java.Awt
         public Java.Awt.GraphicsConfiguration GraphicsConfiguration
         {
             get { return IExecute<Java.Awt.GraphicsConfiguration>("getGraphicsConfiguration"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()"/> 
+        /// </summary>
+        public bool HasFocus
+        {
+            get { return IExecute<bool>("hasFocus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHeight()"/> 
@@ -244,6 +258,125 @@ namespace Java.Awt
         public Java.Awt.Im.InputMethodRequests InputMethodRequests
         {
             get { return IExecute<Java.Awt.Im.InputMethodRequests>("getInputMethodRequests"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isBackgroundSet()"/> 
+        /// </summary>
+        public bool IsBackgroundSet
+        {
+            get { return IExecute<bool>("isBackgroundSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()"/> 
+        /// </summary>
+        public bool IsCursorSet
+        {
+            get { return IExecute<bool>("isCursorSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()"/> 
+        /// </summary>
+        public bool IsDisplayable
+        {
+            get { return IExecute<bool>("isDisplayable"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()"/> 
+        /// </summary>
+        public bool IsDoubleBuffered
+        {
+            get { return IExecute<bool>("isDoubleBuffered"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()"/> 
+        /// </summary>
+        public bool IsEnabled
+        {
+            get { return IExecute<bool>("isEnabled"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()"/> 
+        /// </summary>
+        public bool IsFocusable
+        {
+            get { return IExecute<bool>("isFocusable"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()"/> 
+        /// </summary>
+        public bool IsFocusOwner
+        {
+            get { return IExecute<bool>("isFocusOwner"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()"/> 
+        /// </summary>
+        public bool IsFontSet
+        {
+            get { return IExecute<bool>("isFontSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()"/> 
+        /// </summary>
+        public bool IsForegroundSet
+        {
+            get { return IExecute<bool>("isForegroundSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()"/> 
+        /// </summary>
+        public bool IsLightweight
+        {
+            get { return IExecute<bool>("isLightweight"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()"/> 
+        /// </summary>
+        public bool IsMaximumSizeSet
+        {
+            get { return IExecute<bool>("isMaximumSizeSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()"/> 
+        /// </summary>
+        public bool IsMinimumSizeSet
+        {
+            get { return IExecute<bool>("isMinimumSizeSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()"/> 
+        /// </summary>
+        public bool IsOpaque
+        {
+            get { return IExecute<bool>("isOpaque"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()"/> 
+        /// </summary>
+        public bool IsPreferredSizeSet
+        {
+            get { return IExecute<bool>("isPreferredSizeSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()"/> 
+        /// </summary>
+        public bool IsShowing
+        {
+            get { return IExecute<bool>("isShowing"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()"/> 
+        /// </summary>
+        public bool IsValid
+        {
+            get { return IExecute<bool>("isValid"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()"/> 
+        /// </summary>
+        public bool IsVisible
+        {
+            get { return IExecute<bool>("isVisible"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getKeyListeners()"/> 
@@ -423,15 +556,6 @@ namespace Java.Awt
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasFocus()
-        {
-            return IExecute<bool>("hasFocus");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#imageUpdate(java.awt.Image,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
@@ -446,60 +570,6 @@ namespace Java.Awt
             return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isBackgroundSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBackgroundSet()
-        {
-            return IExecute<bool>("isBackgroundSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCursorSet()
-        {
-            return IExecute<bool>("isCursorSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDisplayable()
-        {
-            return IExecute<bool>("isDisplayable");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDoubleBuffered()
-        {
-            return IExecute<bool>("isDoubleBuffered");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEnabled()
-        {
-            return IExecute<bool>("isEnabled");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFocusable()
-        {
-            return IExecute<bool>("isFocusable");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusCycleRoot(java.awt.Container)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
@@ -507,105 +577,6 @@ namespace Java.Awt
         public bool IsFocusCycleRoot(Java.Awt.Container arg0)
         {
             return IExecute<bool>("isFocusCycleRoot", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFocusOwner()
-        {
-            return IExecute<bool>("isFocusOwner");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFontSet()
-        {
-            return IExecute<bool>("isFontSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsForegroundSet()
-        {
-            return IExecute<bool>("isForegroundSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLightweight()
-        {
-            return IExecute<bool>("isLightweight");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMaximumSizeSet()
-        {
-            return IExecute<bool>("isMaximumSizeSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMinimumSizeSet()
-        {
-            return IExecute<bool>("isMinimumSizeSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOpaque()
-        {
-            return IExecute<bool>("isOpaque");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPreferredSizeSet()
-        {
-            return IExecute<bool>("isPreferredSizeSet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsShowing()
-        {
-            return IExecute<bool>("isShowing");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsValid()
-        {
-            return IExecute<bool>("isValid");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVisible()
-        {
-            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -705,15 +676,6 @@ namespace Java.Awt
         public Java.Awt.Component GetComponentAt(Java.Awt.Point arg0)
         {
             return IExecute<Java.Awt.Component>("getComponentAt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaselineResizeBehavior()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
-        public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior()
-        {
-            return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize(java.awt.Dimension)"/>
@@ -1384,6 +1346,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.Component.BaselineResizeBehavior[] Values
+            {
+                get { return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -1391,15 +1360,6 @@ namespace Java.Awt
             public static Java.Awt.Component.BaselineResizeBehavior ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Component.BaselineResizeBehavior>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
-            public static Java.Awt.Component.BaselineResizeBehavior[] Values()
-            {
-                return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>("values");
             }
             
             #endregion

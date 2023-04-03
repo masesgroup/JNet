@@ -46,22 +46,18 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
-        public Java.Util.Concurrent.Locks.Lock ReadLock()
+        public Java.Util.Concurrent.Locks.Lock ReadLock
         {
-            return IExecute<Java.Util.Concurrent.Locks.Lock>("readLock");
+            get { return IExecute<Java.Util.Concurrent.Locks.Lock>("readLock"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
-        public Java.Util.Concurrent.Locks.Lock WriteLock()
+        public Java.Util.Concurrent.Locks.Lock WriteLock
         {
-            return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock");
+            get { return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock"); }
         }
         
         #endregion

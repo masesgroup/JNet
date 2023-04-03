@@ -46,76 +46,60 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Bound()
+        public bool Bound
         {
-            return IExecute<bool>("bound");
+            get { return IExecute<bool>("bound"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Expert()
+        public string Description
         {
-            return IExecute<bool>("expert");
+            get { return IExecute<string>("description"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Hidden()
+        public string[] EnumerationValues
         {
-            return IExecute<bool>("hidden");
+            get { return IExecuteArray<string>("enumerationValues"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Preferred()
+        public bool Expert
         {
-            return IExecute<bool>("preferred");
+            get { return IExecute<bool>("expert"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Required()
+        public bool Hidden
         {
-            return IExecute<bool>("required");
+            get { return IExecute<bool>("hidden"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool VisualUpdate()
+        public bool Preferred
         {
-            return IExecute<bool>("visualUpdate");
+            get { return IExecute<bool>("preferred"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Description()
+        public bool Required
         {
-            return IExecute<string>("description");
+            get { return IExecute<bool>("required"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string[] EnumerationValues()
+        public bool VisualUpdate
         {
-            return IExecuteArray<string>("enumerationValues");
+            get { return IExecute<bool>("visualUpdate"); }
         }
         
         #endregion

@@ -46,22 +46,18 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        public Java.Util.Iterator Iterator
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            get { return IExecute<Java.Util.Iterator>("iterator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#spliterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#spliterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator Spliterator()
+        public Java.Util.Spliterator Spliterator
         {
-            return IExecute<Java.Util.Spliterator>("spliterator");
+            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#forEach(java.util.function.Consumer)"/>
@@ -107,22 +103,18 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        public Java.Util.Iterator<T> Iterator
         {
-            return IExecute<Java.Util.Iterator<T>>("iterator");
+            get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#spliterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#spliterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<T> Spliterator()
+        public Java.Util.Spliterator<T> Spliterator
         {
-            return IExecute<Java.Util.Spliterator<T>>("spliterator");
+            get { return IExecute<Java.Util.Spliterator<T>>("spliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#forEach(java.util.function.Consumer)"/>

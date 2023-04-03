@@ -95,11 +95,53 @@ namespace Java.Sql
             get { return IExecute<Java.Util.Properties>("getClientInfo"); } set { IExecute("setClientInfo", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/> 
+        /// </summary>
+        public Java.Sql.Blob CreateBlob
+        {
+            get { return IExecute<Java.Sql.Blob>("createBlob"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/> 
+        /// </summary>
+        public Java.Sql.Clob CreateClob
+        {
+            get { return IExecute<Java.Sql.Clob>("createClob"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/> 
+        /// </summary>
+        public Java.Sql.NClob CreateNClob
+        {
+            get { return IExecute<Java.Sql.NClob>("createNClob"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/> 
+        /// </summary>
+        public Java.Sql.SQLXML CreateSQLXML
+        {
+            get { return IExecute<Java.Sql.SQLXML>("createSQLXML"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getHoldability()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setHoldability(int)"/>
         /// </summary>
         public int Holdability
         {
             get { return IExecute<int>("getHoldability"); } set { IExecute("setHoldability", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/> 
+        /// </summary>
+        public bool IsClosed
+        {
+            get { return IExecute<bool>("isClosed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/> 
+        /// </summary>
+        public bool IsReadOnly
+        {
+            get { return IExecute<bool>("isReadOnly"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getMetaData()"/> 
@@ -144,26 +186,6 @@ namespace Java.Sql
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool IsClosed()
-        {
-            return IExecute<bool>("isClosed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool IsReadOnly()
-        {
-            return IExecute<bool>("isReadOnly");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isValid(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -205,16 +227,6 @@ namespace Java.Sql
             return IExecute<Java.Sql.Array>("createArrayOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.Blob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Blob CreateBlob()
-        {
-            return IExecute<Java.Sql.Blob>("createBlob");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -248,26 +260,6 @@ namespace Java.Sql
         public Java.Sql.CallableStatement PrepareCall(string arg0)
         {
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.Clob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Clob CreateClob()
-        {
-            return IExecute<Java.Sql.Clob>("createClob");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.NClob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.NClob CreateNClob()
-        {
-            return IExecute<Java.Sql.NClob>("createNClob");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
@@ -356,16 +348,6 @@ namespace Java.Sql
         public Java.Sql.Savepoint SetSavepoint(string arg0)
         {
             return IExecute<Java.Sql.Savepoint>("setSavepoint", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.SQLXML CreateSQLXML()
-        {
-            return IExecute<Java.Sql.SQLXML>("createSQLXML");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>

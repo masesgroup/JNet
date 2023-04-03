@@ -150,6 +150,20 @@ namespace Java.Text
             get { return IExecute<Java.Util.Currency>("getCurrency"); } set { IExecute("setCurrency", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()"/> 
+        /// </summary>
+        public bool IsGroupingUsed
+        {
+            get { return IExecute<bool>("isGroupingUsed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/> 
+        /// </summary>
+        public bool IsParseIntegerOnly
+        {
+            get { return IExecute<bool>("isParseIntegerOnly"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumFractionDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumFractionDigits(int)"/>
         /// </summary>
         public int MaximumFractionDigits
@@ -215,24 +229,6 @@ namespace Java.Text
         public Java.Lang.StringBuffer Format(long arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsGroupingUsed()
-        {
-            return IExecute<bool>("isGroupingUsed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsParseIntegerOnly()
-        {
-            return IExecute<bool>("isParseIntegerOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double)"/>

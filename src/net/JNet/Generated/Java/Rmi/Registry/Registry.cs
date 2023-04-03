@@ -50,15 +50,11 @@ namespace Java.Rmi.Registry
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        /// <exception cref="Java.Rmi.AccessException"/>
-        public string[] List()
+        public string[] List
         {
-            return IExecuteArray<string>("list");
+            get { return IExecuteArray<string>("list"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>

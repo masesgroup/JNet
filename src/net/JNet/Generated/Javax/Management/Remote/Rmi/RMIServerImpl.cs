@@ -76,21 +76,18 @@ namespace Javax.Management.Remote.Rmi
             get { return IExecute<Javax.Management.MBeanServer>("getMBeanServer"); } set { IExecute("setMBeanServer", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#toStub()"/> 
+        /// </summary>
+        public Java.Rmi.Remote ToStub
+        {
+            get { return IExecute<Java.Rmi.Remote>("toStub"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#getVersion()"/> 
         /// </summary>
         public string Version
         {
             get { return IExecute<string>("getVersion"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#toStub()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Rmi.Remote ToStub()
-        {
-            return IExecute<Java.Rmi.Remote>("toStub");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#newClient(java.lang.Object)"/>

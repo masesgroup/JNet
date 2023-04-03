@@ -50,6 +50,13 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignatureValue()"/> 
+        /// </summary>
+        public Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue GetSignatureValue
+        {
+            get { return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue>("getSignatureValue"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getId()"/> 
         /// </summary>
         public string Id
@@ -93,15 +100,6 @@ namespace Javax.Xml.Crypto.Dsig
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
             return IExecute<bool>("validate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignatureValue()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue"/></returns>
-        public Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue GetSignatureValue()
-        {
-            return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue>("getSignatureValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#sign(javax.xml.crypto.dsig.XMLSignContext)"/>

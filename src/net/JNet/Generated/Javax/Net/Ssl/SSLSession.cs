@@ -74,6 +74,13 @@ namespace Javax.Net.Ssl
             get { return IExecuteArray<byte>("getId"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/> 
+        /// </summary>
+        public bool IsValid
+        {
+            get { return IExecute<bool>("isValid"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLastAccessedTime()"/> 
         /// </summary>
         public long LastAccessedTime
@@ -149,15 +156,6 @@ namespace Javax.Net.Ssl
         public string[] ValueNames
         {
             get { return IExecuteArray<string>("getValueNames"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsValid()
-        {
-            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValue(java.lang.String)"/>

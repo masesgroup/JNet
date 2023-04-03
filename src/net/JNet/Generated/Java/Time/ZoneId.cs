@@ -57,6 +57,13 @@ namespace Java.Time
             get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()"/> 
+        /// </summary>
+        public static Java.Time.ZoneId SystemDefault
+        {
+            get { return SExecute<Java.Time.ZoneId>("systemDefault"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -94,15 +101,6 @@ namespace Java.Time
         {
             return SExecute<Java.Time.ZoneId>("ofOffset", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public static Java.Time.ZoneId SystemDefault()
-        {
-            return SExecute<Java.Time.ZoneId>("systemDefault");
-        }
         
         #endregion
 
@@ -113,6 +111,13 @@ namespace Java.Time
         public string Id
         {
             get { return IExecute<string>("getId"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/> 
+        /// </summary>
+        public Java.Time.ZoneId Normalized
+        {
+            get { return IExecute<Java.Time.ZoneId>("normalized"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getRules()"/> 
@@ -130,15 +135,6 @@ namespace Java.Time
         public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public Java.Time.ZoneId Normalized()
-        {
-            return IExecute<Java.Time.ZoneId>("normalized");
         }
         
         #endregion

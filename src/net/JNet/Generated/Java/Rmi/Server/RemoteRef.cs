@@ -54,6 +54,20 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/> 
+        /// </summary>
+        public int RemoteHashCode
+        {
+            get { return IExecute<int>("remoteHashCode"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/> 
+        /// </summary>
+        public string RemoteToString
+        {
+            get { return IExecute<string>("remoteToString"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
@@ -61,15 +75,6 @@ namespace Java.Rmi.Server
         public bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0)
         {
             return IExecute<bool>("remoteEquals", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemoteHashCode()
-        {
-            return IExecute<int>("remoteHashCode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
@@ -92,15 +97,6 @@ namespace Java.Rmi.Server
         public string GetRefClass(Java.Io.ObjectOutput arg0)
         {
             return IExecute<string>("getRefClass", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string RemoteToString()
-        {
-            return IExecute<string>("remoteToString");
         }
         
         #endregion

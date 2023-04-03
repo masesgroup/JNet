@@ -50,6 +50,13 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/> 
+        /// </summary>
+        public bool Delete
+        {
+            get { return IExecute<bool>("delete"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
@@ -64,33 +71,32 @@ namespace Javax.Tools
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Delete()
+        public Java.Io.InputStream OpenInputStream
         {
-            return IExecute<bool>("delete");
+            get { return IExecute<Java.Io.InputStream>("openInputStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.InputStream OpenInputStream()
+        public Java.Io.OutputStream OpenOutputStream
         {
-            return IExecute<Java.Io.InputStream>("openInputStream");
+            get { return IExecute<Java.Io.OutputStream>("openOutputStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.OutputStream OpenOutputStream()
+        public Java.Io.Writer OpenWriter
         {
-            return IExecute<Java.Io.OutputStream>("openOutputStream");
+            get { return IExecute<Java.Io.Writer>("openWriter"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/> 
+        /// </summary>
+        public Java.Net.URI ToUri
+        {
+            get { return IExecute<Java.Net.URI>("toUri"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
@@ -103,16 +109,6 @@ namespace Javax.Tools
             return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.Writer OpenWriter()
-        {
-            return IExecute<Java.Io.Writer>("openWriter");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -121,15 +117,6 @@ namespace Javax.Tools
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        public Java.Net.URI ToUri()
-        {
-            return IExecute<Java.Net.URI>("toUri");
         }
         
         #endregion
@@ -171,6 +158,13 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/> 
+        /// </summary>
+        public bool Delete
+        {
+            get { return IExecute<bool>("delete"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
@@ -185,33 +179,32 @@ namespace Javax.Tools
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Delete()
+        public Java.Io.InputStream OpenInputStream
         {
-            return IExecute<bool>("delete");
+            get { return IExecute<Java.Io.InputStream>("openInputStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.InputStream OpenInputStream()
+        public Java.Io.OutputStream OpenOutputStream
         {
-            return IExecute<Java.Io.InputStream>("openInputStream");
+            get { return IExecute<Java.Io.OutputStream>("openOutputStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.OutputStream OpenOutputStream()
+        public Java.Io.Writer OpenWriter
         {
-            return IExecute<Java.Io.OutputStream>("openOutputStream");
+            get { return IExecute<Java.Io.Writer>("openWriter"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/> 
+        /// </summary>
+        public Java.Net.URI ToUri
+        {
+            get { return IExecute<Java.Net.URI>("toUri"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
@@ -224,16 +217,6 @@ namespace Javax.Tools
             return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.Writer OpenWriter()
-        {
-            return IExecute<Java.Io.Writer>("openWriter");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -242,15 +225,6 @@ namespace Javax.Tools
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        public Java.Net.URI ToUri()
-        {
-            return IExecute<Java.Net.URI>("toUri");
         }
         
         #endregion

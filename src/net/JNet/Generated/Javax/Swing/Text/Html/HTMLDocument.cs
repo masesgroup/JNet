@@ -349,6 +349,13 @@ namespace Javax.Swing.Text.Html
                 get { return IExecute<int>("getEndOffset"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#isValid()"/> 
+            /// </summary>
+            public bool IsValid
+            {
+                get { return IExecute<bool>("isValid"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
@@ -361,15 +368,6 @@ namespace Javax.Swing.Text.Html
             public Javax.Swing.Text.Html.HTML.Tag Tag
             {
                 get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getTag"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#isValid()"/>
-            /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsValid()
-            {
-                return IExecute<bool>("isValid");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#next()"/>

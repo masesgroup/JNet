@@ -46,13 +46,18 @@ namespace Javax.Xml.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newDefaultFactory()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newDefaultFactory()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
-        public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory()
+        public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory
         {
-            return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newDefaultFactory");
+            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newDefaultFactory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/> 
+        /// </summary>
+        public static Javax.Xml.Stream.XMLOutputFactory NewInstance
+        {
+            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
@@ -74,16 +79,6 @@ namespace Javax.Xml.Stream
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newFactory", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
-        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
-        public static Javax.Xml.Stream.XMLOutputFactory NewInstance()
-        {
-            return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newInstance");
         }
         
         #endregion

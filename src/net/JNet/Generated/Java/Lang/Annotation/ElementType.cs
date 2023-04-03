@@ -86,6 +86,13 @@ namespace Java.Lang.Annotation
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#values()"/> 
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType[] Values
+        {
+            get { return SExecuteArray<Java.Lang.Annotation.ElementType>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -93,15 +100,6 @@ namespace Java.Lang.Annotation
         public static Java.Lang.Annotation.ElementType ValueOf(string arg0)
         {
             return SExecute<Java.Lang.Annotation.ElementType>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
-        public static Java.Lang.Annotation.ElementType[] Values()
-        {
-            return SExecuteArray<Java.Lang.Annotation.ElementType>("values");
         }
         
         #endregion

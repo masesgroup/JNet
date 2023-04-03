@@ -72,13 +72,11 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#toLocalTime()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#toLocalTime()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
-        public Java.Time.LocalTime ToLocalTime()
+        public Java.Time.LocalTime ToLocalTime
         {
-            return IExecute<Java.Time.LocalTime>("toLocalTime");
+            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
         }
         
         #endregion

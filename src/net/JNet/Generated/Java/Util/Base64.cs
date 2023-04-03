@@ -42,6 +42,20 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getDecoder()"/> 
+        /// </summary>
+        public static Java.Util.Base64.Decoder GetDecoder
+        {
+            get { return SExecute<Java.Util.Base64.Decoder>("getDecoder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getEncoder()"/> 
+        /// </summary>
+        public static Java.Util.Base64.Encoder GetEncoder
+        {
+            get { return SExecute<Java.Util.Base64.Encoder>("getEncoder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeDecoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Decoder MimeDecoder
@@ -68,24 +82,6 @@ namespace Java.Util
         public static Java.Util.Base64.Encoder UrlEncoder
         {
             get { return SExecute<Java.Util.Base64.Encoder>("getUrlEncoder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getDecoder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Base64.Decoder"/></returns>
-        public static Java.Util.Base64.Decoder GetDecoder()
-        {
-            return SExecute<Java.Util.Base64.Decoder>("getDecoder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getEncoder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
-        public static Java.Util.Base64.Encoder GetEncoder()
-        {
-            return SExecute<Java.Util.Base64.Encoder>("getEncoder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder(int,byte[])"/>
@@ -199,6 +195,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#withoutPadding()"/> 
+            /// </summary>
+            public Java.Util.Base64.Encoder WithoutPadding
+            {
+                get { return IExecute<Java.Util.Base64.Encoder>("withoutPadding"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
@@ -243,15 +246,6 @@ namespace Java.Util
             public Java.Nio.ByteBuffer Encode(Java.Nio.ByteBuffer arg0)
             {
                 return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#withoutPadding()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
-            public Java.Util.Base64.Encoder WithoutPadding()
-            {
-                return IExecute<Java.Util.Base64.Encoder>("withoutPadding");
             }
             
             #endregion

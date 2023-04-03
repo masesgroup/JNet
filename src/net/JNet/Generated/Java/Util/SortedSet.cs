@@ -46,31 +46,32 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object First()
+        public Java.Util.Comparator Comparator
         {
-            return IExecute("first");
+            get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Last()
+        public object First
         {
-            return IExecute("last");
+            get { return IExecute("first"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator Comparator()
+        public object Last
         {
-            return IExecute<Java.Util.Comparator>("comparator");
+            get { return IExecute("last"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/> 
+        /// </summary>
+        public Java.Util.Spliterator Spliterator
+        {
+            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
@@ -99,15 +100,6 @@ namespace Java.Util
         public Java.Util.SortedSet TailSet(object arg0)
         {
             return IExecute<Java.Util.SortedSet>("tailSet", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator Spliterator()
-        {
-            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         
         #endregion
@@ -145,31 +137,32 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E First()
+        public Java.Util.Comparator Comparator
         {
-            return IExecute<E>("first");
+            get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Last()
+        public E First
         {
-            return IExecute<E>("last");
+            get { return IExecute<E>("first"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E
+        public E Last
         {
-            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
+            get { return IExecute<E>("last"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/> 
+        /// </summary>
+        public Java.Util.Spliterator<E> Spliterator
+        {
+            get { return IExecute<Java.Util.Spliterator<E>>("spliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
@@ -198,15 +191,6 @@ namespace Java.Util
         public Java.Util.SortedSet<E> TailSet(E arg0)
         {
             return IExecute<Java.Util.SortedSet<E>>("tailSet", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<E> Spliterator()
-        {
-            return IExecute<Java.Util.Spliterator<E>>("spliterator");
         }
         
         #endregion

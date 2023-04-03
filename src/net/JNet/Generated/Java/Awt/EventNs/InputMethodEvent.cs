@@ -114,6 +114,13 @@ namespace Java.Awt.EventNs
             get { return IExecute<int>("getCommittedCharacterCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()"/> 
+        /// </summary>
+        public bool IsConsumed
+        {
+            get { return IExecute<bool>("isConsumed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getText()"/> 
         /// </summary>
         public Java.Text.AttributedCharacterIterator Text
@@ -133,15 +140,6 @@ namespace Java.Awt.EventNs
         public long When
         {
             get { return IExecute<long>("getWhen"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsConsumed()
-        {
-            return IExecute<bool>("isConsumed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#consume()"/>

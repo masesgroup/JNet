@@ -42,13 +42,11 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#identity()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#identity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
-        public static Java.Util.Function.DoubleUnaryOperator Identity()
+        public static Java.Util.Function.DoubleUnaryOperator Identity
         {
-            return SExecute<Java.Util.Function.DoubleUnaryOperator>("identity");
+            get { return SExecute<Java.Util.Function.DoubleUnaryOperator>("identity"); }
         }
         
         #endregion

@@ -53,6 +53,13 @@ namespace Java.Net
             get { return IExecute<Java.Util.List>("getCookies"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/> 
+        /// </summary>
+        public bool RemoveAll
+        {
+            get { return IExecute<bool>("removeAll"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
         public Java.Util.List URIs
@@ -68,15 +75,6 @@ namespace Java.Net
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecute<bool>("remove", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool RemoveAll()
-        {
-            return IExecute<bool>("removeAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>

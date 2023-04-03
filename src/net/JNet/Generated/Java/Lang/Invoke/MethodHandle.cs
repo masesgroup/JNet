@@ -46,13 +46,25 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#isVarargsCollector()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asFixedArity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVarargsCollector()
+        public Java.Lang.Invoke.MethodHandle AsFixedArity
         {
-            return IExecute<bool>("isVarargsCollector");
+            get { return IExecute<Java.Lang.Invoke.MethodHandle>("asFixedArity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#isVarargsCollector()"/> 
+        /// </summary>
+        public bool IsVarargsCollector
+        {
+            get { return IExecute<bool>("isVarargsCollector"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#type()"/> 
+        /// </summary>
+        public Java.Lang.Invoke.MethodType Type
+        {
+            get { return IExecute<Java.Lang.Invoke.MethodType>("type"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invoke(java.lang.Object[])"/>
@@ -94,15 +106,6 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodHandle AsCollector(Java.Lang.Class arg0, int arg1)
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asFixedArity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public Java.Lang.Invoke.MethodHandle AsFixedArity()
-        {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asFixedArity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(int,java.lang.Class,int)"/>
@@ -160,15 +163,6 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodHandle WithVarargs(bool arg0)
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("withVarargs", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#type()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
-        public Java.Lang.Invoke.MethodType Type()
-        {
-            return IExecute<Java.Lang.Invoke.MethodType>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.lang.Object[])"/>

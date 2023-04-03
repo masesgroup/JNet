@@ -74,6 +74,13 @@ namespace Javax.Swing.Text
             get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()"/> 
+        /// </summary>
+        public bool IsLeaf
+        {
+            get { return IExecute<bool>("isLeaf"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getName()"/> 
         /// </summary>
         public string Name
@@ -93,15 +100,6 @@ namespace Javax.Swing.Text
         public int StartOffset
         {
             get { return IExecute<int>("getStartOffset"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeaf()
-        {
-            return IExecute<bool>("isLeaf");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementIndex(int)"/>

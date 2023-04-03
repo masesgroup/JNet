@@ -113,13 +113,18 @@ namespace Javax.Naming
             get { return IExecute<string>("getFactoryClassName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#size()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getClassName()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
+        public string GetClassName
         {
-            return IExecute<int>("size");
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#remove(int)"/>
@@ -129,15 +134,6 @@ namespace Javax.Naming
         public object Remove(int arg0)
         {
             return IExecute("remove", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getClassName()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string GetClassName()
-        {
-            return IExecute<string>("getClassName");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#get(int)"/>

@@ -54,6 +54,13 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Chrono.IsoEra[] Values
+        {
+            get { return SExecuteArray<Java.Time.Chrono.IsoEra>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -70,15 +77,6 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.IsoEra ValueOf(string arg0)
         {
             return SExecute<Java.Time.Chrono.IsoEra>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
-        public static Java.Time.Chrono.IsoEra[] Values()
-        {
-            return SExecuteArray<Java.Time.Chrono.IsoEra>("values");
         }
         
         #endregion

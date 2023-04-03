@@ -212,22 +212,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.IOException"/></returns>
-        public Java.Io.IOException IoException()
+        public Java.Io.IOException IoException
         {
-            var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        public Java.Lang.Appendable Out()
+        public Java.Util.Locale Locale
         {
-            return IExecute<Java.Lang.Appendable>("out");
+            get { return IExecute<Java.Util.Locale>("locale"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/> 
+        /// </summary>
+        public Java.Lang.Appendable Out
+        {
+            get { return IExecute<Java.Lang.Appendable>("out"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object[])"/>
@@ -249,15 +252,6 @@ namespace Java.Util
         public Java.Util.Formatter Format(Java.Util.Locale arg0, string arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0, arg1); else return IExecute<Java.Util.Formatter>("format", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Locale"/></returns>
-        public Java.Util.Locale Locale()
-        {
-            return IExecute<Java.Util.Locale>("locale");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#close()"/>
@@ -302,6 +296,13 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/> 
+            /// </summary>
+            public static Java.Util.Formatter.BigDecimalLayoutForm[] Values
+            {
+                get { return SExecuteArray<Java.Util.Formatter.BigDecimalLayoutForm>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -309,15 +310,6 @@ namespace Java.Util
             public static Java.Util.Formatter.BigDecimalLayoutForm ValueOf(string arg0)
             {
                 return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
-            public static Java.Util.Formatter.BigDecimalLayoutForm[] Values()
-            {
-                return SExecuteArray<Java.Util.Formatter.BigDecimalLayoutForm>("values");
             }
             
             #endregion

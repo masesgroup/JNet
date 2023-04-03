@@ -88,6 +88,20 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JViewport>("getColumnHeader"); } set { IExecute("setColumnHeader", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createHorizontalScrollBar()"/> 
+        /// </summary>
+        public Javax.Swing.JScrollBar CreateHorizontalScrollBar
+        {
+            get { return IExecute<Javax.Swing.JScrollBar>("createHorizontalScrollBar"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createVerticalScrollBar()"/> 
+        /// </summary>
+        public Javax.Swing.JScrollBar CreateVerticalScrollBar
+        {
+            get { return IExecute<Javax.Swing.JScrollBar>("createVerticalScrollBar"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#getHorizontalScrollBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setHorizontalScrollBar(javax.swing.JScrollBar)"/>
         /// </summary>
         public Javax.Swing.JScrollBar HorizontalScrollBar
@@ -100,6 +114,13 @@ namespace Javax.Swing
         public int HorizontalScrollBarPolicy
         {
             get { return IExecute<int>("getHorizontalScrollBarPolicy"); } set { IExecute("setHorizontalScrollBarPolicy", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#isWheelScrollingEnabled()"/> 
+        /// </summary>
+        public bool IsWheelScrollingEnabled
+        {
+            get { return IExecute<bool>("isWheelScrollingEnabled"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#getRowHeader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setRowHeader(javax.swing.JViewport)"/>
@@ -144,15 +165,6 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Rectangle>("getViewportBorderBounds"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#isWheelScrollingEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsWheelScrollingEnabled()
-        {
-            return IExecute<bool>("isWheelScrollingEnabled");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#getCorner(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -160,24 +172,6 @@ namespace Javax.Swing
         public Java.Awt.Component GetCorner(string arg0)
         {
             return IExecute<Java.Awt.Component>("getCorner", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createHorizontalScrollBar()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
-        public Javax.Swing.JScrollBar CreateHorizontalScrollBar()
-        {
-            return IExecute<Javax.Swing.JScrollBar>("createHorizontalScrollBar");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createVerticalScrollBar()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
-        public Javax.Swing.JScrollBar CreateVerticalScrollBar()
-        {
-            return IExecute<Javax.Swing.JScrollBar>("createVerticalScrollBar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setColumnHeaderView(java.awt.Component)"/>

@@ -110,6 +110,13 @@ namespace Java.Lang.Invoke
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/> 
+        /// </summary>
+        public bool IsVarArgs
+        {
+            get { return IExecute<bool>("isVarArgs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
         /// </summary>
         public Java.Lang.Invoke.MethodType MethodType
@@ -146,15 +153,6 @@ namespace Java.Lang.Invoke
         public Java.Lang.Reflect.Member ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1)
         {
             return IExecute<Java.Lang.Reflect.Member>("reflectAs", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVarArgs()
-        {
-            return IExecute<bool>("isVarArgs");
         }
         
         #endregion

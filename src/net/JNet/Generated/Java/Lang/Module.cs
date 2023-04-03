@@ -78,6 +78,13 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("getDescriptor"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()"/> 
+        /// </summary>
+        public bool IsNamed
+        {
+            get { return IExecute<bool>("isNamed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getLayer()"/> 
         /// </summary>
         public Java.Lang.ModuleLayer Layer
@@ -143,15 +150,6 @@ namespace Java.Lang
         public bool IsExported(string arg0)
         {
             return IExecute<bool>("isExported", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNamed()
-        {
-            return IExecute<bool>("isNamed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)"/>

@@ -46,13 +46,11 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorKey.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorKey.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Value()
+        public string Value
         {
-            return IExecute<string>("value");
+            get { return IExecute<string>("value"); }
         }
         
         #endregion

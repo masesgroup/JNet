@@ -130,6 +130,13 @@ namespace Javax.Lang.Model.Type
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/> 
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind[] Values
+        {
+            get { return SExecuteArray<Javax.Lang.Model.Type.TypeKind>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -138,27 +145,16 @@ namespace Javax.Lang.Model.Type
         {
             return SExecute<Javax.Lang.Model.Type.TypeKind>("valueOf", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
-        public static Javax.Lang.Model.Type.TypeKind[] Values()
-        {
-            return SExecuteArray<Javax.Lang.Model.Type.TypeKind>("values");
-        }
         
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#isPrimitive()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#isPrimitive()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPrimitive()
+        public bool IsPrimitive
         {
-            return IExecute<bool>("isPrimitive");
+            get { return IExecute<bool>("isPrimitive"); }
         }
         
         #endregion

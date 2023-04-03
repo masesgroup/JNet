@@ -42,13 +42,11 @@ namespace Java.Nio.File.Spi
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List InstalledProviders()
+        public static Java.Util.List InstalledProviders
         {
-            return SExecute<Java.Util.List>("installedProviders");
+            get { return SExecute<Java.Util.List>("installedProviders"); }
         }
         
         #endregion

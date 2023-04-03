@@ -42,6 +42,13 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#networkInterfaces()"/> 
+        /// </summary>
+        public static Java.Util.Stream.Stream NetworkInterfaces
+        {
+            get { return SExecute<Java.Util.Stream.Stream>("networkInterfaces"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,16 +88,6 @@ namespace Java.Net
         {
             return SExecute<Java.Util.Enumeration>("getNetworkInterfaces");
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#networkInterfaces()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public static Java.Util.Stream.Stream NetworkInterfaces()
-        {
-            return SExecute<Java.Util.Stream.Stream>("networkInterfaces");
-        }
         
         #endregion
 
@@ -117,11 +114,46 @@ namespace Java.Net
             get { return IExecute<int>("getIndex"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#inetAddresses()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream InetAddresses
+        {
+            get { return IExecute<Java.Util.Stream.Stream>("inetAddresses"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInterfaceAddresses()"/> 
         /// </summary>
         public Java.Util.List InterfaceAddresses
         {
             get { return IExecute<Java.Util.List>("getInterfaceAddresses"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback()"/> 
+        /// </summary>
+        public bool IsLoopback
+        {
+            get { return IExecute<bool>("isLoopback"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint()"/> 
+        /// </summary>
+        public bool IsPointToPoint
+        {
+            get { return IExecute<bool>("isPointToPoint"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp()"/> 
+        /// </summary>
+        public bool IsUp
+        {
+            get { return IExecute<bool>("isUp"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()"/> 
+        /// </summary>
+        public bool IsVirtual
+        {
+            get { return IExecute<bool>("isVirtual"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getMTU()"/> 
@@ -145,53 +177,18 @@ namespace Java.Net
             get { return IExecute<Java.Net.NetworkInterface>("getParent"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#subInterfaces()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool IsLoopback()
+        public Java.Util.Stream.Stream SubInterfaces
         {
-            return IExecute<bool>("isLoopback");
+            get { return IExecute<Java.Util.Stream.Stream>("subInterfaces"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool IsPointToPoint()
+        public bool SupportsMulticast
         {
-            return IExecute<bool>("isPointToPoint");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool IsUp()
-        {
-            return IExecute<bool>("isUp");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVirtual()
-        {
-            return IExecute<bool>("isVirtual");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool SupportsMulticast()
-        {
-            return IExecute<bool>("supportsMulticast");
+            get { return IExecute<bool>("supportsMulticast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInetAddresses()"/>
@@ -210,24 +207,6 @@ namespace Java.Net
         public Java.Util.Enumeration GetSubInterfaces()
         {
             return IExecute<Java.Util.Enumeration>("getSubInterfaces");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#inetAddresses()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream InetAddresses()
-        {
-            return IExecute<Java.Util.Stream.Stream>("inetAddresses");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#subInterfaces()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream SubInterfaces()
-        {
-            return IExecute<Java.Util.Stream.Stream>("subInterfaces");
         }
         
         #endregion

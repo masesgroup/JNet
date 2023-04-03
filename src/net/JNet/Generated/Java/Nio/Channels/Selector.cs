@@ -46,27 +46,50 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#open()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#open()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.Selector Open()
+        public static Java.Nio.Channels.Selector Open
         {
-            return SExecute<Java.Nio.Channels.Selector>("open");
+            get { return SExecute<Java.Nio.Channels.Selector>("open"); }
         }
         
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#isOpen()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#isOpen()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOpen()
+        public bool IsOpen
         {
-            return IExecute<bool>("isOpen");
+            get { return IExecute<bool>("isOpen"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#keys()"/> 
+        /// </summary>
+        public Java.Util.Set Keys
+        {
+            get { return IExecute<Java.Util.Set>("keys"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#provider()"/> 
+        /// </summary>
+        public Java.Nio.Channels.Spi.SelectorProvider Provider
+        {
+            get { return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectedKeys()"/> 
+        /// </summary>
+        public Java.Util.Set SelectedKeys
+        {
+            get { return IExecute<Java.Util.Set>("selectedKeys"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#wakeup()"/> 
+        /// </summary>
+        public Java.Nio.Channels.Selector Wakeup
+        {
+            get { return IExecute<Java.Nio.Channels.Selector>("wakeup"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select()"/>
@@ -97,42 +120,6 @@ namespace Java.Nio.Channels
         public int SelectNow()
         {
             return IExecute<int>("selectNow");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#wakeup()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
-        public Java.Nio.Channels.Selector Wakeup()
-        {
-            return IExecute<Java.Nio.Channels.Selector>("wakeup");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#provider()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
-        public Java.Nio.Channels.Spi.SelectorProvider Provider()
-        {
-            return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#keys()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set Keys()
-        {
-            return IExecute<Java.Util.Set>("keys");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectedKeys()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set SelectedKeys()
-        {
-            return IExecute<Java.Util.Set>("selectedKeys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#close()"/>

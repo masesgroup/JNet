@@ -54,13 +54,18 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBoolean()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBoolean()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool NextBoolean()
+        public bool NextBoolean
         {
-            return IExecute<bool>("nextBoolean");
+            get { return IExecute<bool>("nextBoolean"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#split()"/> 
+        /// </summary>
+        public Java.Util.SplittableRandom Split
+        {
+            get { return IExecute<Java.Util.SplittableRandom>("split"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble()"/>
@@ -117,15 +122,6 @@ namespace Java.Util
         public int NextInt(int arg0)
         {
             return IExecute<int>("nextInt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#split()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.SplittableRandom"/></returns>
-        public Java.Util.SplittableRandom Split()
-        {
-            return IExecute<Java.Util.SplittableRandom>("split");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles()"/>

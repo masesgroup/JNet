@@ -136,20 +136,18 @@ namespace Java.Awt
             get { return IExecuteArray<Java.Io.File>("getFiles"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#isMultipleMode()"/> 
+        /// </summary>
+        public bool IsMultipleMode
+        {
+            get { return IExecute<bool>("isMultipleMode"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setMode(int)"/>
         /// </summary>
         public int Mode
         {
             get { return IExecute<int>("getMode"); } set { IExecute("setMode", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#isMultipleMode()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMultipleMode()
-        {
-            return IExecute<bool>("isMultipleMode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setMultipleMode(boolean)"/>

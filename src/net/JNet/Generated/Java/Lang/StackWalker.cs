@@ -139,6 +139,13 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/> 
+            /// </summary>
+            public static Java.Lang.StackWalker.Option[] Values
+            {
+                get { return SExecuteArray<Java.Lang.StackWalker.Option>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -146,15 +153,6 @@ namespace Java.Lang
             public static Java.Lang.StackWalker.Option ValueOf(string arg0)
             {
                 return SExecute<Java.Lang.StackWalker.Option>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
-            public static Java.Lang.StackWalker.Option[] Values()
-            {
-                return SExecuteArray<Java.Lang.StackWalker.Option>("values");
             }
             
             #endregion
@@ -216,6 +214,20 @@ namespace Java.Lang
                 get { return IExecute<string>("getFileName"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/> 
+            /// </summary>
+            public string GetClassName
+            {
+                get { return IExecute<string>("getClassName"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/> 
+            /// </summary>
+            public bool IsNativeMethod
+            {
+                get { return IExecute<bool>("isNativeMethod"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getLineNumber()"/> 
             /// </summary>
             public int LineNumber
@@ -237,31 +249,11 @@ namespace Java.Lang
                 get { return IExecute<Java.Lang.Invoke.MethodType>("getMethodType"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsNativeMethod()
+            public Java.Lang.StackTraceElement ToStackTraceElement
             {
-                return IExecute<bool>("isNativeMethod");
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Lang.StackTraceElement"/></returns>
-            public Java.Lang.StackTraceElement ToStackTraceElement()
-            {
-                return IExecute<Java.Lang.StackTraceElement>("toStackTraceElement");
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/>
-            /// </summary>
-            
-            /// <returns><see cref="string"/></returns>
-            public string GetClassName()
-            {
-                return IExecute<string>("getClassName");
+                get { return IExecute<Java.Lang.StackTraceElement>("toStackTraceElement"); }
             }
             
             #endregion

@@ -54,6 +54,13 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getSyncFactory()"/> 
+        /// </summary>
+        public static Javax.Sql.Rowset.Spi.SyncFactory GetSyncFactory
+        {
+            get { return SExecute<Javax.Sql.Rowset.Spi.SyncFactory>("getSyncFactory"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getLogger()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger)"/>
         /// </summary>
         public static Java.Util.Logging.Logger Logger
@@ -66,15 +73,6 @@ namespace Javax.Sql.Rowset.Spi
         public static Java.Util.Enumeration RegisteredProviders
         {
             get { return SExecute<Java.Util.Enumeration>("getRegisteredProviders"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getSyncFactory()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.Rowset.Spi.SyncFactory"/></returns>
-        public static Javax.Sql.Rowset.Spi.SyncFactory GetSyncFactory()
-        {
-            return SExecute<Javax.Sql.Rowset.Spi.SyncFactory>("getSyncFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String)"/>

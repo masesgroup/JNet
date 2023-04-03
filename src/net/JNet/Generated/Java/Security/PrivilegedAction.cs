@@ -46,13 +46,11 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Run()
+        public object Run
         {
-            return IExecute("run");
+            get { return IExecute("run"); }
         }
         
         #endregion
@@ -90,13 +88,11 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/> 
         /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        public T Run()
+        public T Run
         {
-            return IExecute<T>("run");
+            get { return IExecute<T>("run"); }
         }
         
         #endregion

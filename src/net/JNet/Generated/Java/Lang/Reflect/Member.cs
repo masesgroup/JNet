@@ -61,6 +61,13 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#isSynthetic()"/> 
+        /// </summary>
+        public bool IsSynthetic
+        {
+            get { return IExecute<bool>("isSynthetic"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
@@ -73,15 +80,6 @@ namespace Java.Lang.Reflect
         public string Name
         {
             get { return IExecute<string>("getName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#isSynthetic()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSynthetic()
-        {
-            return IExecute<bool>("isSynthetic");
         }
         
         #endregion

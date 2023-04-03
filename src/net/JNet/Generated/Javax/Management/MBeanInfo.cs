@@ -115,6 +115,13 @@ namespace Javax.Management
             get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getClassName()"/> 
+        /// </summary>
+        public string GetClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getNotifications()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] Notifications
@@ -127,15 +134,6 @@ namespace Javax.Management
         public Javax.Management.MBeanOperationInfo[] Operations
         {
             get { return IExecuteArray<Javax.Management.MBeanOperationInfo>("getOperations"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getClassName()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string GetClassName()
-        {
-            return IExecute<string>("getClassName");
         }
         
         #endregion

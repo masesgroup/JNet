@@ -42,13 +42,18 @@ namespace Javax.Xml.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newDefaultFactory()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newDefaultFactory()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
-        public static Javax.Xml.Stream.XMLEventFactory NewDefaultFactory()
+        public static Javax.Xml.Stream.XMLEventFactory NewDefaultFactory
         {
-            return SExecute<Javax.Xml.Stream.XMLEventFactory>("newDefaultFactory");
+            get { return SExecute<Javax.Xml.Stream.XMLEventFactory>("newDefaultFactory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newInstance()"/> 
+        /// </summary>
+        public static Javax.Xml.Stream.XMLEventFactory NewInstance
+        {
+            get { return SExecute<Javax.Xml.Stream.XMLEventFactory>("newInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newFactory()"/>
@@ -71,20 +76,17 @@ namespace Javax.Xml.Stream
         {
             return SExecute<Javax.Xml.Stream.XMLEventFactory>("newFactory", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newInstance()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
-        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
-        public static Javax.Xml.Stream.XMLEventFactory NewInstance()
-        {
-            return SExecute<Javax.Xml.Stream.XMLEventFactory>("newInstance");
-        }
         
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndDocument()"/> 
+        /// </summary>
+        public Javax.Xml.Stream.Events.EndDocument CreateEndDocument
+        {
+            get { return IExecute<Javax.Xml.Stream.Events.EndDocument>("createEndDocument"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
@@ -170,15 +172,6 @@ namespace Javax.Xml.Stream
         public Javax.Xml.Stream.Events.DTD CreateDTD(string arg0)
         {
             return IExecute<Javax.Xml.Stream.Events.DTD>("createDTD", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndDocument()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Stream.Events.EndDocument"/></returns>
-        public Javax.Xml.Stream.Events.EndDocument CreateEndDocument()
-        {
-            return IExecute<Javax.Xml.Stream.Events.EndDocument>("createEndDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator)"/>

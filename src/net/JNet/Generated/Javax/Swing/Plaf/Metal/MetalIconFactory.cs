@@ -54,83 +54,144 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetCheckBoxIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getCheckBoxIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxMenuItemIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetCheckBoxMenuItemIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getCheckBoxMenuItemIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserDetailViewIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetFileChooserDetailViewIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getFileChooserDetailViewIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserHomeFolderIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetFileChooserHomeFolderIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getFileChooserHomeFolderIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserListViewIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetFileChooserListViewIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getFileChooserListViewIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserNewFolderIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetFileChooserNewFolderIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getFileChooserNewFolderIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserUpFolderIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetFileChooserUpFolderIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getFileChooserUpFolderIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getHorizontalSliderThumbIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetHorizontalSliderThumbIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getHorizontalSliderThumbIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameDefaultMenuIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetInternalFrameDefaultMenuIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getInternalFrameDefaultMenuIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuArrowIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetMenuArrowIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getMenuArrowIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemArrowIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetMenuItemArrowIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getMenuItemArrowIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetRadioButtonIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getRadioButtonIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonMenuItemIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetRadioButtonMenuItemIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getRadioButtonMenuItemIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeComputerIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetTreeComputerIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getTreeComputerIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFloppyDriveIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetTreeFloppyDriveIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getTreeFloppyDriveIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFolderIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetTreeFolderIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getTreeFolderIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeHardDriveIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetTreeHardDriveIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getTreeHardDriveIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeLeafIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetTreeLeafIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getTreeLeafIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getVerticalSliderThumbIcon()"/> 
+        /// </summary>
+        public static Javax.Swing.Icon GetVerticalSliderThumbIcon
+        {
+            get { return SExecute<Javax.Swing.Icon>("getVerticalSliderThumbIcon"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemCheckIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon MenuItemCheckIcon
         {
             get { return SExecute<Javax.Swing.Icon>("getMenuItemCheckIcon"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetCheckBoxIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getCheckBoxIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxMenuItemIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetCheckBoxMenuItemIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getCheckBoxMenuItemIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserDetailViewIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetFileChooserDetailViewIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getFileChooserDetailViewIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserHomeFolderIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetFileChooserHomeFolderIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getFileChooserHomeFolderIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserListViewIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetFileChooserListViewIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getFileChooserListViewIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserNewFolderIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetFileChooserNewFolderIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getFileChooserNewFolderIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserUpFolderIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetFileChooserUpFolderIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getFileChooserUpFolderIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getHorizontalSliderThumbIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetHorizontalSliderThumbIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getHorizontalSliderThumbIcon");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameAltMaximizeIcon(int)"/>
@@ -151,15 +212,6 @@ namespace Javax.Swing.Plaf.Metal
             return SExecute<Javax.Swing.Icon>("getInternalFrameCloseIcon", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameDefaultMenuIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetInternalFrameDefaultMenuIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getInternalFrameDefaultMenuIcon");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMaximizeIcon(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -178,51 +230,6 @@ namespace Javax.Swing.Plaf.Metal
             return SExecute<Javax.Swing.Icon>("getInternalFrameMinimizeIcon", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuArrowIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetMenuArrowIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getMenuArrowIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemArrowIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetMenuItemArrowIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getMenuItemArrowIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetRadioButtonIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getRadioButtonIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonMenuItemIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetRadioButtonMenuItemIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getRadioButtonMenuItemIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeComputerIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetTreeComputerIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getTreeComputerIcon");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeControlIcon(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -230,51 +237,6 @@ namespace Javax.Swing.Plaf.Metal
         public static Javax.Swing.Icon GetTreeControlIcon(bool arg0)
         {
             return SExecute<Javax.Swing.Icon>("getTreeControlIcon", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFloppyDriveIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetTreeFloppyDriveIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getTreeFloppyDriveIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFolderIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetTreeFolderIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getTreeFolderIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeHardDriveIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetTreeHardDriveIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getTreeHardDriveIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeLeafIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetTreeLeafIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getTreeLeafIcon");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getVerticalSliderThumbIcon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
-        public static Javax.Swing.Icon GetVerticalSliderThumbIcon()
-        {
-            return SExecute<Javax.Swing.Icon>("getVerticalSliderThumbIcon");
         }
         
         #endregion

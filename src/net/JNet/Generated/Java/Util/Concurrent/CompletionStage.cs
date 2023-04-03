@@ -46,6 +46,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CompletableFuture ToCompletableFuture
+        {
+            get { return IExecute<Java.Util.Concurrent.CompletableFuture>("toCompletableFuture"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
@@ -221,15 +228,6 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.CompletionStage ThenComposeAsync(Java.Util.Function.Function arg0)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture ToCompletableFuture()
-        {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("toCompletableFuture");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
@@ -453,6 +451,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture
+        {
+            get { return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("toCompletableFuture"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
@@ -628,15 +633,6 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.CompletionStage<U> ThenComposeAsync<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_> arg0) where Arg0objectSuperT: T
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<U>>("thenComposeAsync", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture()
-        {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("toCompletableFuture");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>

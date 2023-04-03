@@ -42,36 +42,29 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#open()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#open()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Pipe"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.Pipe Open()
+        public static Java.Nio.Channels.Pipe Open
         {
-            return SExecute<Java.Nio.Channels.Pipe>("open");
+            get { return SExecute<Java.Nio.Channels.Pipe>("open"); }
         }
         
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#sink()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#sink()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Pipe.SinkChannel"/></returns>
-        public Java.Nio.Channels.Pipe.SinkChannel Sink()
+        public Java.Nio.Channels.Pipe.SinkChannel Sink
         {
-            return IExecute<Java.Nio.Channels.Pipe.SinkChannel>("sink");
+            get { return IExecute<Java.Nio.Channels.Pipe.SinkChannel>("sink"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#source()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#source()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Pipe.SourceChannel"/></returns>
-        public Java.Nio.Channels.Pipe.SourceChannel Source()
+        public Java.Nio.Channels.Pipe.SourceChannel Source
         {
-            return IExecute<Java.Nio.Channels.Pipe.SourceChannel>("source");
+            get { return IExecute<Java.Nio.Channels.Pipe.SourceChannel>("source"); }
         }
         
         #endregion

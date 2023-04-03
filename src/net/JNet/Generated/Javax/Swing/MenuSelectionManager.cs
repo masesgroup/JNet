@@ -42,13 +42,11 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#defaultManager()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#defaultManager()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.MenuSelectionManager"/></returns>
-        public static Javax.Swing.MenuSelectionManager DefaultManager()
+        public static Javax.Swing.MenuSelectionManager DefaultManager
         {
-            return SExecute<Javax.Swing.MenuSelectionManager>("defaultManager");
+            get { return SExecute<Javax.Swing.MenuSelectionManager>("defaultManager"); }
         }
         
         #endregion

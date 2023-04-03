@@ -63,6 +63,34 @@ namespace Java.Time.Chrono
             get { return IExecute<Java.Time.Chrono.Chronology>("getChronology"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/> 
+        /// </summary>
+        public bool IsNegative
+        {
+            get { return IExecute<bool>("isNegative"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/> 
+        /// </summary>
+        public bool IsZero
+        {
+            get { return IExecute<bool>("isZero"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoPeriod Negated
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoPeriod>("negated"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoPeriod Normalized
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getUnits()"/> 
         /// </summary>
         public Java.Util.List Units
@@ -86,15 +114,6 @@ namespace Java.Time.Chrono
         public Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("multipliedBy", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
-        public Java.Time.Chrono.ChronoPeriod Normalized()
-        {
-            return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -131,33 +150,6 @@ namespace Java.Time.Chrono
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecute<long>("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNegative()
-        {
-            return IExecute<bool>("isNegative");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsZero()
-        {
-            return IExecute<bool>("isZero");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
-        public Java.Time.Chrono.ChronoPeriod Negated()
-        {
-            return IExecute<Java.Time.Chrono.ChronoPeriod>("negated");
         }
         
         #endregion

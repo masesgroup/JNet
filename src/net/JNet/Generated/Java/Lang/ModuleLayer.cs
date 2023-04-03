@@ -42,22 +42,18 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
-        public static Java.Lang.ModuleLayer Boot()
+        public static Java.Lang.ModuleLayer Boot
         {
-            return SExecute<Java.Lang.ModuleLayer>("boot");
+            get { return SExecute<Java.Lang.ModuleLayer>("boot"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
-        public static Java.Lang.ModuleLayer Empty()
+        public static Java.Lang.ModuleLayer Empty
         {
-            return SExecute<Java.Lang.ModuleLayer>("empty");
+            get { return SExecute<Java.Lang.ModuleLayer>("empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List,java.util.function.Function)"/>
@@ -97,6 +93,27 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()"/> 
+        /// </summary>
+        public Java.Lang.ModuleNs.Configuration Configuration
+        {
+            get { return IExecute<Java.Lang.ModuleNs.Configuration>("configuration"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/> 
+        /// </summary>
+        public Java.Util.Set Modules
+        {
+            get { return IExecute<Java.Util.Set>("modules"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/> 
+        /// </summary>
+        public Java.Util.List Parents
+        {
+            get { return IExecute<Java.Util.List>("parents"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -104,15 +121,6 @@ namespace Java.Lang
         public Java.Lang.ClassLoader FindLoader(string arg0)
         {
             return IExecute<Java.Lang.ClassLoader>("findLoader", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
-        public Java.Lang.ModuleNs.Configuration Configuration()
-        {
-            return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.function.Function)"/>
@@ -145,15 +153,6 @@ namespace Java.Lang
             return IExecute<Java.Lang.ModuleLayer>("defineModulesWithOneLoader", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List Parents()
-        {
-            return IExecute<Java.Util.List>("parents");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findModule(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -161,15 +160,6 @@ namespace Java.Lang
         public Java.Util.Optional FindModule(string arg0)
         {
             return IExecute<Java.Util.Optional>("findModule", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set Modules()
-        {
-            return IExecute<Java.Util.Set>("modules");
         }
         
         #endregion
@@ -196,13 +186,11 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#layer()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#layer()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
-            public Java.Lang.ModuleLayer Layer()
+            public Java.Lang.ModuleLayer Layer
             {
-                return IExecute<Java.Lang.ModuleLayer>("layer");
+                get { return IExecute<Java.Lang.ModuleLayer>("layer"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addExports(java.lang.Module,java.lang.String,java.lang.Module)"/>

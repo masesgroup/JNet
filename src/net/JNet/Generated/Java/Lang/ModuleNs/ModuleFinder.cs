@@ -42,6 +42,13 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/> 
+        /// </summary>
+        public static Java.Lang.ModuleNs.ModuleFinder OfSystem
+        {
+            get { return SExecute<Java.Lang.ModuleNs.ModuleFinder>("ofSystem"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
@@ -59,19 +66,17 @@ namespace Java.Lang.ModuleNs
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>("of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>("of", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
-        public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
-        {
-            return SExecute<Java.Lang.ModuleNs.ModuleFinder>("ofSystem");
-        }
         
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/> 
+        /// </summary>
+        public Java.Util.Set FindAll
+        {
+            get { return IExecute<Java.Util.Set>("findAll"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
@@ -80,15 +85,6 @@ namespace Java.Lang.ModuleNs
         public Java.Util.Optional Find(string arg0)
         {
             return IExecute<Java.Util.Optional>("find", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set FindAll()
-        {
-            return IExecute<Java.Util.Set>("findAll");
         }
         
         #endregion

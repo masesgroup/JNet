@@ -46,6 +46,13 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#getSourceVersions()"/> 
         /// </summary>
         public Java.Util.Set SourceVersions
@@ -63,15 +70,6 @@ namespace Javax.Tools
         public int Run(Java.Io.InputStream arg0, Java.Io.OutputStream arg1, Java.Io.OutputStream arg2, params string[] arg3)
         {
             if (arg3.Length == 0) return IExecute<int>("run", arg0, arg1, arg2); else return IExecute<int>("run", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
         }
         
         #endregion

@@ -65,6 +65,13 @@ namespace Javax.Swing.Text.Html
             get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#isSelected()"/> 
+        /// </summary>
+        public bool IsSelected
+        {
+            get { return IExecute<bool>("isSelected"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#setLabel(java.lang.String)"/>
         /// </summary>
         public string Label
@@ -77,15 +84,6 @@ namespace Javax.Swing.Text.Html
         public string Value
         {
             get { return IExecute<string>("getValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#isSelected()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSelected()
-        {
-            return IExecute<bool>("isSelected");
         }
         
         #endregion

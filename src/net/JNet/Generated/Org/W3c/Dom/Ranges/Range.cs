@@ -62,6 +62,20 @@ namespace Org.W3c.Dom.Ranges
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/> 
+        /// </summary>
+        public Org.W3c.Dom.DocumentFragment CloneContents
+        {
+            get { return IExecute<Org.W3c.Dom.DocumentFragment>("cloneContents"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/> 
+        /// </summary>
+        public Org.W3c.Dom.Ranges.Range CloneRange
+        {
+            get { return IExecute<Org.W3c.Dom.Ranges.Range>("cloneRange"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()"/> 
         /// </summary>
         public bool Collapsed
@@ -90,6 +104,13 @@ namespace Org.W3c.Dom.Ranges
             get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/> 
+        /// </summary>
+        public Org.W3c.Dom.DocumentFragment ExtractContents
+        {
+            get { return IExecute<Org.W3c.Dom.DocumentFragment>("extractContents"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()"/> 
         /// </summary>
         public Org.W3c.Dom.Node StartContainer
@@ -102,36 +123,6 @@ namespace Org.W3c.Dom.Ranges
         public int StartOffset
         {
             get { return IExecute<int>("getStartOffset"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.DocumentFragment CloneContents()
-        {
-            return IExecute<Org.W3c.Dom.DocumentFragment>("cloneContents");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.DocumentFragment ExtractContents()
-        {
-            return IExecute<Org.W3c.Dom.DocumentFragment>("extractContents");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Ranges.Range CloneRange()
-        {
-            return IExecute<Org.W3c.Dom.Ranges.Range>("cloneRange");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)"/>

@@ -63,20 +63,18 @@ namespace Javax.Sound.Sampled
             get { return IExecute<long>("getFramePosition"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getType()"/> 
+        /// </summary>
+        public Javax.Sound.Sampled.LineEvent.Type GetType
+        {
+            get { return IExecute<Javax.Sound.Sampled.LineEvent.Type>("getType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getLine()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line Line
         {
             get { return IExecute<Javax.Sound.Sampled.Line>("getLine"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sound.Sampled.LineEvent.Type"/></returns>
-        public Javax.Sound.Sampled.LineEvent.Type GetType()
-        {
-            return IExecute<Javax.Sound.Sampled.LineEvent.Type>("getType");
         }
         
         #endregion

@@ -83,6 +83,20 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Component>("getInvoker"); } set { IExecute("setInvoker", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isBorderPainted()"/> 
+        /// </summary>
+        public bool IsBorderPainted
+        {
+            get { return IExecute<bool>("isBorderPainted"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isLightWeightPopupEnabled()"/> 
+        /// </summary>
+        public bool IsLightWeightPopupEnabled
+        {
+            get { return IExecute<bool>("isLightWeightPopupEnabled"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#setLabel(java.lang.String)"/>
         /// </summary>
         public string Label
@@ -123,24 +137,6 @@ namespace Javax.Swing
         public Javax.Swing.MenuElement[] SubElements
         {
             get { return IExecuteArray<Javax.Swing.MenuElement>("getSubElements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isBorderPainted()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBorderPainted()
-        {
-            return IExecute<bool>("isBorderPainted");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isLightWeightPopupEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLightWeightPopupEnabled()
-        {
-            return IExecute<bool>("isLightWeightPopupEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#isPopupTrigger(java.awt.event.MouseEvent)"/>

@@ -94,6 +94,27 @@ namespace Javax.Swing
             get { return IExecute<int>("getInitialDelay"); } set { IExecute("setInitialDelay", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isCoalesce()"/> 
+        /// </summary>
+        public bool IsCoalesce
+        {
+            get { return IExecute<bool>("isCoalesce"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRepeats()"/> 
+        /// </summary>
+        public bool IsRepeats
+        {
+            get { return IExecute<bool>("isRepeats"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRunning()"/> 
+        /// </summary>
+        public bool IsRunning
+        {
+            get { return IExecute<bool>("isRunning"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -101,33 +122,6 @@ namespace Javax.Swing
         public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isCoalesce()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCoalesce()
-        {
-            return IExecute<bool>("isCoalesce");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRepeats()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepeats()
-        {
-            return IExecute<bool>("isRepeats");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRunning()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRunning()
-        {
-            return IExecute<bool>("isRunning");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#addActionListener(java.awt.event.ActionListener)"/>

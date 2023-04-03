@@ -53,6 +53,13 @@ namespace Javax.Sound.Midi
             get { return IExecute<Javax.Sound.Midi.MidiDevice.Info>("getDeviceInfo"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/> 
+        /// </summary>
+        public bool IsOpen
+        {
+            get { return IExecute<bool>("isOpen"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxReceivers()"/> 
         /// </summary>
         public int MaxReceivers
@@ -100,15 +107,6 @@ namespace Javax.Sound.Midi
         public Java.Util.List Transmitters
         {
             get { return IExecute<Java.Util.List>("getTransmitters"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOpen()
-        {
-            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>

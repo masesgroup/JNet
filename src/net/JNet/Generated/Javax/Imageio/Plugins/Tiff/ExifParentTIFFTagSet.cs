@@ -50,13 +50,11 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#getInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet"/></returns>
-        public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet GetInstance()
+        public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet GetInstance
         {
-            return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>("getInstance");
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>("getInstance"); }
         }
         
         #endregion

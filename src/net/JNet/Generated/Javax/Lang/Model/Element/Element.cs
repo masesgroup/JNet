@@ -53,6 +53,13 @@ namespace Javax.Lang.Model.Element
             get { return IExecute<Java.Util.List>("getAnnotationMirrors"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Type.TypeMirror AsType
+        {
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("asType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosedElements()"/> 
         /// </summary>
         public Java.Util.List EnclosedElements
@@ -105,15 +112,6 @@ namespace Javax.Lang.Model.Element
         public object Accept(Javax.Lang.Model.Element.ElementVisitor arg0, object arg1)
         {
             return IExecute("accept", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
-        public Javax.Lang.Model.Type.TypeMirror AsType()
-        {
-            return IExecute<Javax.Lang.Model.Type.TypeMirror>("asType");
         }
         
         #endregion

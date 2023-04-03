@@ -46,13 +46,11 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Value()
+        public bool Value
         {
-            return IExecute<bool>("value");
+            get { return IExecute<bool>("value"); }
         }
         
         #endregion

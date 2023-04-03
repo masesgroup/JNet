@@ -50,6 +50,20 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions()"/> 
+        /// </summary>
+        public Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions GetNodeDimensions
+        {
+            get { return IExecute<Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions>("getNodeDimensions"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/> 
+        /// </summary>
+        public bool IsRootVisible
+        {
+            get { return IExecute<bool>("isRootVisible"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setModel(javax.swing.tree.TreeModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeModel Model
@@ -215,15 +229,6 @@ namespace Javax.Swing.Tree
             IExecute("treeStructureChanged", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRootVisible()
-        {
-            return IExecute<bool>("isRootVisible");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
@@ -240,15 +245,6 @@ namespace Javax.Swing.Tree
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             return IExecuteArray<int>("getRowsForPaths", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions"/></returns>
-        public Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions GetNodeDimensions()
-        {
-            return IExecute<Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions>("getNodeDimensions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setNodeDimensions(javax.swing.tree.AbstractLayoutCache.NodeDimensions)"/>

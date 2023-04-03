@@ -46,13 +46,11 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool? IsInRelationService()
+        public bool? IsInRelationService
         {
-            return IExecute<bool?>("isInRelationService");
+            get { return IExecute<bool?>("isInRelationService"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>

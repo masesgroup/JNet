@@ -79,31 +79,25 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#order()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
-        public Java.Nio.ByteOrder Order()
+        public Java.Nio.LongBuffer AsReadOnlyBuffer
         {
-            return IExecute<Java.Nio.ByteOrder>("order");
+            get { return IExecute<Java.Nio.LongBuffer>("asReadOnlyBuffer"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compact()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
-        public Java.Nio.LongBuffer AsReadOnlyBuffer()
+        public Java.Nio.LongBuffer Compact
         {
-            return IExecute<Java.Nio.LongBuffer>("asReadOnlyBuffer");
+            get { return IExecute<Java.Nio.LongBuffer>("compact"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compact()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#order()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
-        public Java.Nio.LongBuffer Compact()
+        public Java.Nio.ByteOrder Order
         {
-            return IExecute<Java.Nio.LongBuffer>("compact");
+            get { return IExecute<Java.Nio.ByteOrder>("order"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(int,long)"/>

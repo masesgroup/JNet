@@ -228,13 +228,11 @@ namespace Java.Net
             get { return IExecute<string>("getResponseMessage"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool UsingProxy()
+        public bool UsingProxy
         {
-            return IExecute<bool>("usingProxy");
+            get { return IExecute<bool>("usingProxy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#disconnect()"/>
@@ -260,10 +258,10 @@ namespace Java.Net
             IExecute("setChunkedStreamingMode", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(int)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public void SetFixedLengthStreamingMode(int arg0)
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetFixedLengthStreamingMode(long arg0)
         {
             IExecute("setFixedLengthStreamingMode", arg0);
         }

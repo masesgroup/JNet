@@ -67,6 +67,13 @@ namespace Java.Lang.Management
             get { return IExecute<Java.Util.List>("getInputArguments"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/> 
+        /// </summary>
+        public bool IsBootClassPathSupported
+        {
+            get { return IExecute<bool>("isBootClassPathSupported"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
         public string LibraryPath
@@ -156,15 +163,6 @@ namespace Java.Lang.Management
         public string VmVersion
         {
             get { return IExecute<string>("getVmVersion"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBootClassPathSupported()
-        {
-            return IExecute<bool>("isBootClassPathSupported");
         }
         
         #endregion

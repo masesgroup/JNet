@@ -278,6 +278,20 @@ namespace Javax.Swing
                 get { return IExecute<int>("getDropAction"); } set { IExecute("setDropAction", value); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropLocation()"/> 
+            /// </summary>
+            public Javax.Swing.TransferHandler.DropLocation GetDropLocation
+            {
+                get { return IExecute<Javax.Swing.TransferHandler.DropLocation>("getDropLocation"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/> 
+            /// </summary>
+            public bool IsDrop
+            {
+                get { return IExecute<bool>("isDrop"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getSourceDropActions()"/> 
             /// </summary>
             public int SourceDropActions
@@ -306,24 +320,6 @@ namespace Javax.Swing
             public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
             {
                 return IExecute<bool>("isDataFlavorSupported", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/>
-            /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsDrop()
-            {
-                return IExecute<bool>("isDrop");
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropLocation()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Swing.TransferHandler.DropLocation"/></returns>
-            public Javax.Swing.TransferHandler.DropLocation GetDropLocation()
-            {
-                return IExecute<Javax.Swing.TransferHandler.DropLocation>("getDropLocation");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)"/>

@@ -46,31 +46,25 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
-        public Java.Nio.File.Attribute.GroupPrincipal Group()
+        public Java.Nio.File.Attribute.GroupPrincipal Group
         {
-            return IExecute<Java.Nio.File.Attribute.GroupPrincipal>("group");
+            get { return IExecute<Java.Nio.File.Attribute.GroupPrincipal>("group"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
-        public Java.Nio.File.Attribute.UserPrincipal Owner()
+        public Java.Nio.File.Attribute.UserPrincipal Owner
         {
-            return IExecute<Java.Nio.File.Attribute.UserPrincipal>("owner");
+            get { return IExecute<Java.Nio.File.Attribute.UserPrincipal>("owner"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set Permissions()
+        public Java.Util.Set Permissions
         {
-            return IExecute<Java.Util.Set>("permissions");
+            get { return IExecute<Java.Util.Set>("permissions"); }
         }
         
         #endregion

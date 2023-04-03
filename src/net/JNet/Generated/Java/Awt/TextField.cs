@@ -95,13 +95,11 @@ namespace Java.Awt
             get { return IExecute<char>("getEchoChar"); } set { IExecute("setEchoChar", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#echoCharIsSet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#echoCharIsSet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool EchoCharIsSet()
+        public bool EchoCharIsSet
         {
-            return IExecute<bool>("echoCharIsSet");
+            get { return IExecute<bool>("echoCharIsSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#getMinimumSize(int)"/>

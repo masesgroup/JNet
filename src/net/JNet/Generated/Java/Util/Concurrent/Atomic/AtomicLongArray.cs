@@ -66,6 +66,13 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html#length()"/> 
+        /// </summary>
+        public int Length
+        {
+            get { return IExecute<int>("length"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html#compareAndSet(int,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -119,15 +126,6 @@ namespace Java.Util.Concurrent.Atomic
         public bool WeakCompareAndSetVolatile(int arg0, long arg1, long arg2)
         {
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
-        {
-            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html#accumulateAndGet(int,long,java.util.function.LongBinaryOperator)"/>

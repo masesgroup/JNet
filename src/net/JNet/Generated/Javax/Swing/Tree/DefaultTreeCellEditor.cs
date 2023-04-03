@@ -105,6 +105,13 @@ namespace Javax.Swing.Tree
             get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/> 
+        /// </summary>
+        public bool StopCellEditing
+        {
+            get { return IExecute<bool>("stopCellEditing"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EventObject"/></param>
@@ -121,15 +128,6 @@ namespace Javax.Swing.Tree
         public bool ShouldSelectCell(Java.Util.EventObject arg0)
         {
             return IExecute<bool>("shouldSelectCell", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool StopCellEditing()
-        {
-            return IExecute<bool>("stopCellEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)"/>

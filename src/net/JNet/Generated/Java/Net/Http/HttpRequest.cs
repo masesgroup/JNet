@@ -64,49 +64,46 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#expectContinue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#expectContinue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ExpectContinue()
+        public bool ExpectContinue
         {
-            return IExecute<bool>("expectContinue");
+            get { return IExecute<bool>("expectContinue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#headers()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Method()
+        public Java.Net.Http.HttpHeaders Headers
         {
-            return IExecute<string>("method");
+            get { return IExecute<Java.Net.Http.HttpHeaders>("headers"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#headers()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
-        public Java.Net.Http.HttpHeaders Headers()
+        public string Method
         {
-            return IExecute<Java.Net.Http.HttpHeaders>("headers");
+            get { return IExecute<string>("method"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#uri()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#timeout()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        public Java.Net.URI Uri()
+        public Java.Util.Optional Timeout
         {
-            return IExecute<Java.Net.URI>("uri");
+            get { return IExecute<Java.Util.Optional>("timeout"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#version()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#uri()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional Version()
+        public Java.Net.URI Uri
         {
-            return IExecute<Java.Util.Optional>("version");
+            get { return IExecute<Java.Net.URI>("uri"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#version()"/> 
+        /// </summary>
+        public Java.Util.Optional Version
+        {
+            get { return IExecute<Java.Util.Optional>("version"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#bodyPublisher()"/>
@@ -116,15 +113,6 @@ namespace Java.Net.Http
         public Java.Util.Optional BodyPublisherMethod()
         {
             return IExecute<Java.Util.Optional>("bodyPublisher");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#timeout()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional Timeout()
-        {
-            return IExecute<Java.Util.Optional>("timeout");
         }
         
         #endregion
@@ -151,13 +139,11 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long ContentLength()
+            public long ContentLength
             {
-                return IExecute<long>("contentLength");
+                get { return IExecute<long>("contentLength"); }
             }
             
             #endregion
@@ -183,6 +169,13 @@ namespace Java.Net.Http
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()"/> 
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher NoBody
+            {
+                get { return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow.Publisher,long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
@@ -200,15 +193,6 @@ namespace Java.Net.Http
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher(Java.Util.Concurrent.Flow.Publisher arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher NoBody()
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)"/>
@@ -309,31 +293,32 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#build()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#build()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
-            public Java.Net.Http.HttpRequest Build()
+            public Java.Net.Http.HttpRequest Build
             {
-                return IExecute<Java.Net.Http.HttpRequest>("build");
+                get { return IExecute<Java.Net.Http.HttpRequest>("build"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#copy()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#copy()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder Copy()
+            public Java.Net.Http.HttpRequest.Builder Copy
             {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("copy");
+                get { return IExecute<Java.Net.Http.HttpRequest.Builder>("copy"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#DELETE()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#DELETE()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder DELETE()
+            public Java.Net.Http.HttpRequest.Builder DELETE
             {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("DELETE");
+                get { return IExecute<Java.Net.Http.HttpRequest.Builder>("DELETE"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#GET()"/> 
+            /// </summary>
+            public Java.Net.Http.HttpRequest.Builder GET
+            {
+                get { return IExecute<Java.Net.Http.HttpRequest.Builder>("GET"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#expectContinue(boolean)"/>
@@ -343,15 +328,6 @@ namespace Java.Net.Http
             public Java.Net.Http.HttpRequest.Builder ExpectContinue(bool arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("expectContinue", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#GET()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder GET()
-            {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("GET");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#header(java.lang.String,java.lang.String)"/>

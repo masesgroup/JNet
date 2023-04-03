@@ -94,6 +94,13 @@ namespace Java.Security
             get { return IExecuteArray<Java.Security.Principal>("getPrincipals"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/> 
+        /// </summary>
+        public bool StaticPermissionsOnly
+        {
+            get { return IExecute<bool>("staticPermissionsOnly"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
@@ -101,15 +108,6 @@ namespace Java.Security
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecute<bool>("implies", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool StaticPermissionsOnly()
-        {
-            return IExecute<bool>("staticPermissionsOnly");
         }
         
         #endregion

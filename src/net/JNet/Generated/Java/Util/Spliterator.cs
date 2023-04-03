@@ -78,11 +78,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/> 
+        /// </summary>
+        public int Characteristics
+        {
+            get { return IExecute<int>("characteristics"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
         /// </summary>
         public Java.Util.Comparator Comparator
         {
             get { return IExecute<Java.Util.Comparator>("getComparator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/> 
+        /// </summary>
+        public long EstimateSize
+        {
+            get { return IExecute<long>("estimateSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
@@ -92,6 +106,13 @@ namespace Java.Util
             get { return IExecute<long>("getExactSizeIfKnown"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/> 
+        /// </summary>
+        public Java.Util.Spliterator TrySplit
+        {
+            get { return IExecute<Java.Util.Spliterator>("trySplit"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
@@ -99,33 +120,6 @@ namespace Java.Util
         public bool TryAdvance(Java.Util.Function.Consumer arg0)
         {
             return IExecute<bool>("tryAdvance", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Characteristics()
-        {
-            return IExecute<int>("characteristics");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator TrySplit()
-        {
-            return IExecute<Java.Util.Spliterator>("trySplit");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long EstimateSize()
-        {
-            return IExecute<long>("estimateSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
@@ -169,6 +163,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#trySplit()"/> 
+            /// </summary>
+            public Java.Util.Spliterator.OfPrimitive TrySplit
+            {
+                get { return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
@@ -194,15 +195,6 @@ namespace Java.Util
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#trySplit()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
-            public Java.Util.Spliterator.OfPrimitive TrySplit()
-            {
-                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
@@ -256,6 +248,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#trySplit()"/> 
+            /// </summary>
+            public Java.Util.Spliterator.OfPrimitive TrySplit
+            {
+                get { return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.IntConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
@@ -281,15 +280,6 @@ namespace Java.Util
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#trySplit()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
-            public Java.Util.Spliterator.OfPrimitive TrySplit()
-            {
-                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
@@ -343,6 +333,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#trySplit()"/> 
+            /// </summary>
+            public Java.Util.Spliterator.OfPrimitive TrySplit
+            {
+                get { return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.LongConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
@@ -368,15 +365,6 @@ namespace Java.Util
             public bool TryAdvance(Java.Util.Function.Consumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#trySplit()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
-            public Java.Util.Spliterator.OfPrimitive TrySplit()
-            {
-                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
@@ -430,6 +418,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/> 
+            /// </summary>
+            public Java.Util.Spliterator TrySplit
+            {
+                get { return IExecute<Java.Util.Spliterator>("trySplit"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
@@ -437,15 +432,6 @@ namespace Java.Util
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Spliterator"/></returns>
-            public Java.Util.Spliterator TrySplit()
-            {
-                return IExecute<Java.Util.Spliterator>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(java.lang.Object)"/>
@@ -487,6 +473,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/> 
+            /// </summary>
+            public Java.Util.Spliterator TrySplit
+            {
+                get { return IExecute<Java.Util.Spliterator>("trySplit"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="T_CONS"/></param>
@@ -494,15 +487,6 @@ namespace Java.Util
             public bool TryAdvance(T_CONS arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Util.Spliterator"/></returns>
-            public Java.Util.Spliterator TrySplit()
-            {
-                return IExecute<Java.Util.Spliterator>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(java.lang.Object)"/>
@@ -583,11 +567,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/> 
+        /// </summary>
+        public int Characteristics
+        {
+            get { return IExecute<int>("characteristics"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
         /// </summary>
         public Java.Util.Comparator Comparator
         {
             get { return IExecute<Java.Util.Comparator>("getComparator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/> 
+        /// </summary>
+        public long EstimateSize
+        {
+            get { return IExecute<long>("estimateSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
@@ -597,6 +595,13 @@ namespace Java.Util
             get { return IExecute<long>("getExactSizeIfKnown"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/> 
+        /// </summary>
+        public Java.Util.Spliterator<T> TrySplit
+        {
+            get { return IExecute<Java.Util.Spliterator<T>>("trySplit"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
@@ -604,33 +609,6 @@ namespace Java.Util
         public bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return IExecute<bool>("tryAdvance", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Characteristics()
-        {
-            return IExecute<int>("characteristics");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<T> TrySplit()
-        {
-            return IExecute<Java.Util.Spliterator<T>>("trySplit");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long EstimateSize()
-        {
-            return IExecute<long>("estimateSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>

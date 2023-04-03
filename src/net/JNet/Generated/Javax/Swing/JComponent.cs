@@ -121,6 +121,13 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JPopupMenu>("getComponentPopupMenu"); } set { IExecute("setComponentPopupMenu", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()"/> 
+        /// </summary>
+        public Javax.Swing.JToolTip CreateToolTip
+        {
+            get { return IExecute<Javax.Swing.JToolTip>("createToolTip"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDebugGraphicsOptions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDebugGraphicsOptions(int)"/>
         /// </summary>
         public int DebugGraphicsOptions
@@ -147,6 +154,34 @@ namespace Javax.Swing
         public Javax.Swing.InputVerifier InputVerifier
         {
             get { return IExecute<Javax.Swing.InputVerifier>("getInputVerifier"); } set { IExecute("setInputVerifier", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isOptimizedDrawingEnabled()"/> 
+        /// </summary>
+        public bool IsOptimizedDrawingEnabled
+        {
+            get { return IExecute<bool>("isOptimizedDrawingEnabled"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingForPrint()"/> 
+        /// </summary>
+        public bool IsPaintingForPrint
+        {
+            get { return IExecute<bool>("isPaintingForPrint"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingTile()"/> 
+        /// </summary>
+        public bool IsPaintingTile
+        {
+            get { return IExecute<bool>("isPaintingTile"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isRequestFocusEnabled()"/> 
+        /// </summary>
+        public bool IsRequestFocusEnabled
+        {
+            get { return IExecute<bool>("isRequestFocusEnabled"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getRegisteredKeyStrokes()"/> 
@@ -219,33 +254,6 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Rectangle>("getVisibleRect"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isOptimizedDrawingEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOptimizedDrawingEnabled()
-        {
-            return IExecute<bool>("isOptimizedDrawingEnabled");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingTile()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPaintingTile()
-        {
-            return IExecute<bool>("isPaintingTile");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isRequestFocusEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRequestFocusEnabled()
-        {
-            return IExecute<bool>("isRequestFocusEnabled");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#requestFocus(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -253,15 +261,6 @@ namespace Javax.Swing
         public bool RequestFocus(bool arg0)
         {
             return IExecute<bool>("requestFocus", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingForPrint()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPaintingForPrint()
-        {
-            return IExecute<bool>("isPaintingForPrint");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getClientProperty(java.lang.Object)"/>
@@ -352,15 +351,6 @@ namespace Javax.Swing
         public string GetToolTipText(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecute<string>("getToolTipText", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.JToolTip"/></returns>
-        public Javax.Swing.JToolTip CreateToolTip()
-        {
-            return IExecute<Javax.Swing.JToolTip>("createToolTip");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addVetoableChangeListener(java.beans.VetoableChangeListener)"/>

@@ -77,40 +77,32 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasMoreElements()
+        public int CountTokens
         {
-            return IExecute<bool>("hasMoreElements");
+            get { return IExecute<int>("countTokens"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasMoreTokens()
+        public bool HasMoreElements
         {
-            return IExecute<bool>("hasMoreTokens");
+            get { return IExecute<bool>("hasMoreElements"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int CountTokens()
+        public bool HasMoreTokens
         {
-            return IExecute<int>("countTokens");
+            get { return IExecute<bool>("hasMoreTokens"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object NextElement()
+        public object NextElement
         {
-            return IExecute("nextElement");
+            get { return IExecute("nextElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()"/>

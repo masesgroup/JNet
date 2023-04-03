@@ -121,13 +121,11 @@ namespace Java.Beans
             get { return IExecute("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object ReadObject()
+        public object ReadObject
         {
-            return IExecute("readObject");
+            get { return IExecute("readObject"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#close()"/>

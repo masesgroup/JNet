@@ -46,22 +46,18 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class Type()
+        public string Name
         {
-            return IExecute<Java.Lang.Class>("type");
+            get { return IExecute<string>("name"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public Java.Lang.Class Type
         {
-            return IExecute<string>("name");
+            get { return IExecute<Java.Lang.Class>("type"); }
         }
         
         #endregion
@@ -99,22 +95,18 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class Type()
+        public string Name
         {
-            return IExecute<Java.Lang.Class>("type");
+            get { return IExecute<string>("name"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public Java.Lang.Class Type
         {
-            return IExecute<string>("name");
+            get { return IExecute<Java.Lang.Class>("type"); }
         }
         
         #endregion

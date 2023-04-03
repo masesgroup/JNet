@@ -53,6 +53,13 @@ namespace Javax.Tools
             get { return IExecute<Javax.Lang.Model.Element.Modifier>("getAccessLevel"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getKind()"/> 
+        /// </summary>
+        public Javax.Tools.JavaFileObject.Kind GetKind
+        {
+            get { return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getNestingKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.NestingKind NestingKind
@@ -68,15 +75,6 @@ namespace Javax.Tools
         public bool IsNameCompatible(string arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
             return IExecute<bool>("isNameCompatible", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getKind()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
-        public Javax.Tools.JavaFileObject.Kind GetKind()
-        {
-            return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind");
         }
         
         #endregion
@@ -119,6 +117,13 @@ namespace Javax.Tools
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()"/> 
+            /// </summary>
+            public static Javax.Tools.JavaFileObject.Kind[] Values
+            {
+                get { return SExecuteArray<Javax.Tools.JavaFileObject.Kind>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -126,15 +131,6 @@ namespace Javax.Tools
             public static Javax.Tools.JavaFileObject.Kind ValueOf(string arg0)
             {
                 return SExecute<Javax.Tools.JavaFileObject.Kind>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
-            public static Javax.Tools.JavaFileObject.Kind[] Values()
-            {
-                return SExecuteArray<Javax.Tools.JavaFileObject.Kind>("values");
             }
             
             #endregion

@@ -53,6 +53,13 @@ namespace Javax.Print
             get { return IExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/> 
+        /// </summary>
+        public Javax.Print.DocPrintJob CreatePrintJob
+        {
+            get { return IExecute<Javax.Print.DocPrintJob>("createPrintJob"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getName()"/> 
         /// </summary>
         public string Name
@@ -147,15 +154,6 @@ namespace Javax.Print
         public Javax.Print.Attribute.AttributeSet GetUnsupportedAttributes(Javax.Print.DocFlavor arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
             return IExecute<Javax.Print.Attribute.AttributeSet>("getUnsupportedAttributes", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Print.DocPrintJob"/></returns>
-        public Javax.Print.DocPrintJob CreatePrintJob()
-        {
-            return IExecute<Javax.Print.DocPrintJob>("createPrintJob");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)"/>

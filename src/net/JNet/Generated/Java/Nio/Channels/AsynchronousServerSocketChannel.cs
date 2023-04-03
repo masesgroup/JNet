@@ -81,6 +81,13 @@ namespace Java.Nio.Channels
             get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/> 
+        /// </summary>
+        public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider
+        {
+            get { return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -108,15 +115,6 @@ namespace Java.Nio.Channels
         public Java.Util.Concurrent.Future Accept()
         {
             return IExecute<Java.Util.Concurrent.Future>("accept");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
-        public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
-        {
-            return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>

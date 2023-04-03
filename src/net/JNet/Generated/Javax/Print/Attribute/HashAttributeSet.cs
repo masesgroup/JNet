@@ -78,6 +78,27 @@ namespace Javax.Print.Attribute
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#toArray()"/> 
+        /// </summary>
+        public Javax.Print.Attribute.Attribute[] ToArray
+        {
+            get { return IExecuteArray<Javax.Print.Attribute.Attribute>("toArray"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
@@ -114,15 +135,6 @@ namespace Javax.Print.Attribute
             return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#remove(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -141,15 +153,6 @@ namespace Javax.Print.Attribute
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#get(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -157,15 +160,6 @@ namespace Javax.Print.Attribute
         public Javax.Print.Attribute.Attribute Get(Java.Lang.Class arg0)
         {
             return IExecute<Javax.Print.Attribute.Attribute>("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#toArray()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
-        public Javax.Print.Attribute.Attribute[] ToArray()
-        {
-            return IExecuteArray<Javax.Print.Attribute.Attribute>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#clear()"/>

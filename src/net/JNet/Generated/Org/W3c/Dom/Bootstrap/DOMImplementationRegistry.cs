@@ -46,17 +46,11 @@ namespace Org.W3c.Dom.Bootstrap
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Org.W3c.Dom.Bootstrap.DOMImplementationRegistry"/></returns>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Lang.InstantiationException"/>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        /// <exception cref="Java.Lang.ClassCastException"/>
-        public static Org.W3c.Dom.Bootstrap.DOMImplementationRegistry NewInstance()
+        public static Org.W3c.Dom.Bootstrap.DOMImplementationRegistry NewInstance
         {
-            return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>("newInstance");
+            get { return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>("newInstance"); }
         }
         
         #endregion

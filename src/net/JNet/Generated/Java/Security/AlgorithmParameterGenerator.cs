@@ -86,20 +86,18 @@ namespace Java.Security
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()"/> 
+        /// </summary>
+        public Java.Security.AlgorithmParameters GenerateParameters
+        {
+            get { return IExecute<Java.Security.AlgorithmParameters>("generateParameters"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
             get { return IExecute<Java.Security.Provider>("getProvider"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
-        public Java.Security.AlgorithmParameters GenerateParameters()
-        {
-            return IExecute<Java.Security.AlgorithmParameters>("generateParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int,java.security.SecureRandom)"/>

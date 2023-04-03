@@ -42,13 +42,11 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#empty()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#empty()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
-        public static Java.Util.OptionalDouble Empty()
+        public static Java.Util.OptionalDouble Empty
         {
-            return SExecute<Java.Util.OptionalDouble>("empty");
+            get { return SExecute<Java.Util.OptionalDouble>("empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#of(double)"/>
@@ -71,6 +69,27 @@ namespace Java.Util
             get { return IExecute<double>("getAsDouble"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isPresent()"/> 
+        /// </summary>
+        public bool IsPresent
+        {
+            get { return IExecute<bool>("isPresent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#stream()"/> 
+        /// </summary>
+        public Java.Util.Stream.DoubleStream Stream
+        {
+            get { return IExecute<Java.Util.Stream.DoubleStream>("stream"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
@@ -79,24 +98,6 @@ namespace Java.Util
         public double OrElseThrow(Java.Util.Function.Supplier arg0)
         {
             return IExecute<double>("orElseThrow", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isPresent()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPresent()
-        {
-            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElse(double)"/>
@@ -124,15 +125,6 @@ namespace Java.Util
         public double OrElseThrow()
         {
             return IExecute<double>("orElseThrow");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#stream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream Stream()
-        {
-            return IExecute<Java.Util.Stream.DoubleStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#ifPresent(java.util.function.DoubleConsumer)"/>

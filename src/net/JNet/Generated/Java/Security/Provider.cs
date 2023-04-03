@@ -53,6 +53,13 @@ namespace Java.Security
             get { return IExecute<string>("getInfo"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/> 
+        /// </summary>
+        public bool IsConfigured
+        {
+            get { return IExecute<bool>("isConfigured"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getName()"/> 
         /// </summary>
         public string Name
@@ -72,15 +79,6 @@ namespace Java.Security
         public string VersionStr
         {
             get { return IExecute<string>("getVersionStr"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsConfigured()
-        {
-            return IExecute<bool>("isConfigured");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>
@@ -146,6 +144,20 @@ namespace Java.Security
                 get { return IExecute<string>("getAlgorithm"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getClassName()"/> 
+            /// </summary>
+            public string GetClassName
+            {
+                get { return IExecute<string>("getClassName"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getProvider()"/> 
+            /// </summary>
+            public Java.Security.Provider GetProvider
+            {
+                get { return IExecute<Java.Security.Provider>("getProvider"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getType()"/> 
             /// </summary>
             public string Type
@@ -169,24 +181,6 @@ namespace Java.Security
             public string GetAttribute(string arg0)
             {
                 return IExecute<string>("getAttribute", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getClassName()"/>
-            /// </summary>
-            
-            /// <returns><see cref="string"/></returns>
-            public string GetClassName()
-            {
-                return IExecute<string>("getClassName");
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getProvider()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Security.Provider"/></returns>
-            public Java.Security.Provider GetProvider()
-            {
-                return IExecute<Java.Security.Provider>("getProvider");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#newInstance(java.lang.Object)"/>

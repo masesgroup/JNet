@@ -165,6 +165,20 @@ namespace Javax.Swing
             get { return IExecute<int>("getDividerSize"); } set { IExecute("setDividerSize", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isContinuousLayout()"/> 
+        /// </summary>
+        public bool IsContinuousLayout
+        {
+            get { return IExecute<bool>("isContinuousLayout"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isOneTouchExpandable()"/> 
+        /// </summary>
+        public bool IsOneTouchExpandable
+        {
+            get { return IExecute<bool>("isOneTouchExpandable"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getLastDividerLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setLastDividerLocation(int)"/>
         /// </summary>
         public int LastDividerLocation
@@ -219,24 +233,6 @@ namespace Javax.Swing
         public Java.Awt.Component TopComponent
         {
             get { return IExecute<Java.Awt.Component>("getTopComponent"); } set { IExecute("setTopComponent", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isContinuousLayout()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsContinuousLayout()
-        {
-            return IExecute<bool>("isContinuousLayout");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isOneTouchExpandable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOneTouchExpandable()
-        {
-            return IExecute<bool>("isOneTouchExpandable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#resetToPreferredSizes()"/>

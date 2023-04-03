@@ -71,20 +71,18 @@ namespace Javax.Naming.Ldap
             get { return IExecute<string>("getAttributeID"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/> 
+        /// </summary>
+        public bool IsAscending
+        {
+            get { return IExecute<bool>("isAscending"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID()"/> 
         /// </summary>
         public string MatchingRuleID
         {
             get { return IExecute<string>("getMatchingRuleID"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAscending()
-        {
-            return IExecute<bool>("isAscending");
         }
         
         #endregion

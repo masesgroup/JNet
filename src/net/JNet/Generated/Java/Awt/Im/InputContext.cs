@@ -42,13 +42,11 @@ namespace Java.Awt.Im
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#getInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Im.InputContext"/></returns>
-        public static Java.Awt.Im.InputContext GetInstance()
+        public static Java.Awt.Im.InputContext GetInstance
         {
-            return SExecute<Java.Awt.Im.InputContext>("getInstance");
+            get { return SExecute<Java.Awt.Im.InputContext>("getInstance"); }
         }
         
         #endregion
@@ -62,20 +60,18 @@ namespace Java.Awt.Im
             get { return IExecute("getInputMethodControlObject"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#isCompositionEnabled()"/> 
+        /// </summary>
+        public bool IsCompositionEnabled
+        {
+            get { return IExecute<bool>("isCompositionEnabled"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#isCompositionEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCompositionEnabled()
-        {
-            return IExecute<bool>("isCompositionEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#selectInputMethod(java.util.Locale)"/>

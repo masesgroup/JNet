@@ -42,22 +42,18 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#getDesktop()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsDesktopSupported()
+        public static Java.Awt.Desktop GetDesktop
         {
-            return SExecute<bool>("isDesktopSupported");
+            get { return SExecute<Java.Awt.Desktop>("getDesktop"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#getDesktop()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Desktop"/></returns>
-        public static Java.Awt.Desktop GetDesktop()
+        public static bool IsDesktopSupported
         {
-            return SExecute<Java.Awt.Desktop>("getDesktop");
+            get { return SExecute<bool>("isDesktopSupported"); }
         }
         
         #endregion
@@ -369,6 +365,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.Desktop.Action[] Values
+            {
+                get { return SExecuteArray<Java.Awt.Desktop.Action>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -376,15 +379,6 @@ namespace Java.Awt
             public static Java.Awt.Desktop.Action ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Desktop.Action>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
-            public static Java.Awt.Desktop.Action[] Values()
-            {
-                return SExecuteArray<Java.Awt.Desktop.Action>("values");
             }
             
             #endregion

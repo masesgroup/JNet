@@ -75,6 +75,27 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecute<int>("getAndIncrement"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#decrementAndGet()"/> 
+        /// </summary>
+        public int DecrementAndGet
+        {
+            get { return IExecute<int>("decrementAndGet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#get()"/> 
+        /// </summary>
+        public int Get
+        {
+            get { return IExecute<int>("get"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#incrementAndGet()"/> 
+        /// </summary>
+        public int IncrementAndGet
+        {
+            get { return IExecute<int>("incrementAndGet"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#setOpaque(int)"/>
         /// </summary>
         public int Opaque
@@ -188,24 +209,6 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#decrementAndGet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int DecrementAndGet()
-        {
-            return IExecute<int>("decrementAndGet");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Get()
-        {
-            return IExecute<int>("get");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#getAndAccumulate(int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -241,15 +244,6 @@ namespace Java.Util.Concurrent.Atomic
         public int GetAndUpdate(Java.Util.Function.IntUnaryOperator arg0)
         {
             return IExecute<int>("getAndUpdate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#incrementAndGet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int IncrementAndGet()
-        {
-            return IExecute<int>("incrementAndGet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#updateAndGet(java.util.function.IntUnaryOperator)"/>

@@ -54,22 +54,18 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toByteArray()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#size()"/> 
         /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        public byte[] ToByteArray()
+        public int Size
         {
-            return IExecuteArray<byte>("toByteArray");
+            get { return IExecute<int>("size"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#size()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toByteArray()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
+        public byte[] ToByteArray
         {
-            return IExecute<int>("size");
+            get { return IExecuteArray<byte>("toByteArray"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>

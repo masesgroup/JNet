@@ -79,31 +79,25 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#order()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
-        public Java.Nio.ByteOrder Order()
+        public Java.Nio.ShortBuffer AsReadOnlyBuffer
         {
-            return IExecute<Java.Nio.ByteOrder>("order");
+            get { return IExecute<Java.Nio.ShortBuffer>("asReadOnlyBuffer"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compact()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer AsReadOnlyBuffer()
+        public Java.Nio.ShortBuffer Compact
         {
-            return IExecute<Java.Nio.ShortBuffer>("asReadOnlyBuffer");
+            get { return IExecute<Java.Nio.ShortBuffer>("compact"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compact()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#order()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Compact()
+        public Java.Nio.ByteOrder Order
         {
-            return IExecute<Java.Nio.ShortBuffer>("compact");
+            get { return IExecute<Java.Nio.ByteOrder>("order"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short)"/>

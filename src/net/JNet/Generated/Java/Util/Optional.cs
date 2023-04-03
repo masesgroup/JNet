@@ -42,13 +42,11 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public static Java.Util.Optional Empty()
+        public static Java.Util.Optional Empty
         {
-            return SExecute<Java.Util.Optional>("empty");
+            get { return SExecute<Java.Util.Optional>("empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#of(java.lang.Object)"/>
@@ -72,6 +70,34 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/> 
+        /// </summary>
+        public object Get
+        {
+            get { return IExecute("get"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/> 
+        /// </summary>
+        public bool IsPresent
+        {
+            get { return IExecute<bool>("isPresent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream Stream
+        {
+            get { return IExecute<Java.Util.Stream.Stream>("stream"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#flatMap(java.util.function.Function)"/>
         /// </summary>
@@ -101,24 +127,6 @@ namespace Java.Util
             return IExecute("orElseThrow", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPresent()
-        {
-            return IExecute<bool>("isPresent");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -135,24 +143,6 @@ namespace Java.Util
         public Java.Util.Optional Or(Java.Util.Function.Supplier arg0)
         {
             return IExecute<Java.Util.Optional>("or", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Stream()
-        {
-            return IExecute<Java.Util.Stream.Stream>("stream");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Get()
-        {
-            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>
@@ -230,13 +220,11 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public static Java.Util.Optional<T> Empty()
+        public static Java.Util.Optional<T> Empty
         {
-            return SExecute<Java.Util.Optional<T>>("empty");
+            get { return SExecute<Java.Util.Optional<T>>("empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#of(java.lang.Object)"/>
@@ -260,6 +248,34 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/> 
+        /// </summary>
+        public T Get
+        {
+            get { return IExecute<T>("get"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/> 
+        /// </summary>
+        public bool IsPresent
+        {
+            get { return IExecute<bool>("isPresent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream<T> Stream
+        {
+            get { return IExecute<Java.Util.Stream.Stream<T>>("stream"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#flatMap(java.util.function.Function)"/>
         /// </summary>
@@ -289,24 +305,6 @@ namespace Java.Util
             return IExecute<T>("orElseThrow", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPresent()
-        {
-            return IExecute<bool>("isPresent");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -323,24 +321,6 @@ namespace Java.Util
         public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_: Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT: T
         {
             return IExecute<Java.Util.Optional<T>>("or", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> Stream()
-        {
-            return IExecute<Java.Util.Stream.Stream<T>>("stream");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        public T Get()
-        {
-            return IExecute<T>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>

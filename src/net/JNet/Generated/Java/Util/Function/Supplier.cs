@@ -46,13 +46,11 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Get()
+        public object Get
         {
-            return IExecute("get");
+            get { return IExecute("get"); }
         }
         
         #endregion
@@ -90,13 +88,11 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
         /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        public T Get()
+        public T Get
         {
-            return IExecute<T>("get");
+            get { return IExecute<T>("get"); }
         }
         
         #endregion

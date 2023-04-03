@@ -71,6 +71,13 @@ namespace Javax.Tools
             get { return IExecute<long>("getEndPosition"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/> 
+        /// </summary>
+        public Javax.Tools.Diagnostic.Kind GetKind
+        {
+            get { return IExecute<Javax.Tools.Diagnostic.Kind>("getKind"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getLineNumber()"/> 
         /// </summary>
         public long LineNumber
@@ -106,15 +113,6 @@ namespace Javax.Tools
         public string GetMessage(Java.Util.Locale arg0)
         {
             return IExecute<string>("getMessage", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
-        public Javax.Tools.Diagnostic.Kind GetKind()
-        {
-            return IExecute<Javax.Tools.Diagnostic.Kind>("getKind");
         }
         
         #endregion
@@ -157,6 +155,13 @@ namespace Javax.Tools
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()"/> 
+            /// </summary>
+            public static Javax.Tools.Diagnostic.Kind[] Values
+            {
+                get { return SExecuteArray<Javax.Tools.Diagnostic.Kind>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -164,15 +169,6 @@ namespace Javax.Tools
             public static Javax.Tools.Diagnostic.Kind ValueOf(string arg0)
             {
                 return SExecute<Javax.Tools.Diagnostic.Kind>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
-            public static Javax.Tools.Diagnostic.Kind[] Values()
-            {
-                return SExecuteArray<Javax.Tools.Diagnostic.Kind>("values");
             }
             
             #endregion
@@ -242,6 +238,13 @@ namespace Javax.Tools
             get { return IExecute<long>("getEndPosition"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/> 
+        /// </summary>
+        public Javax.Tools.Diagnostic.Kind GetKind
+        {
+            get { return IExecute<Javax.Tools.Diagnostic.Kind>("getKind"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getLineNumber()"/> 
         /// </summary>
         public long LineNumber
@@ -277,15 +280,6 @@ namespace Javax.Tools
         public string GetMessage(Java.Util.Locale arg0)
         {
             return IExecute<string>("getMessage", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
-        public Javax.Tools.Diagnostic.Kind GetKind()
-        {
-            return IExecute<Javax.Tools.Diagnostic.Kind>("getKind");
         }
         
         #endregion

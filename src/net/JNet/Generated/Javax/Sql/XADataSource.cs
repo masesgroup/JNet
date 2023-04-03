@@ -46,6 +46,13 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#createXAConnectionBuilder()"/> 
+        /// </summary>
+        public Javax.Sql.XAConnectionBuilder CreateXAConnectionBuilder
+        {
+            get { return IExecute<Javax.Sql.XAConnectionBuilder>("createXAConnectionBuilder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
@@ -76,16 +83,6 @@ namespace Javax.Sql
         public Javax.Sql.XAConnection GetXAConnection(string arg0, string arg1)
         {
             return IExecute<Javax.Sql.XAConnection>("getXAConnection", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#createXAConnectionBuilder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.XAConnectionBuilder CreateXAConnectionBuilder()
-        {
-            return IExecute<Javax.Sql.XAConnectionBuilder>("createXAConnectionBuilder");
         }
         
         #endregion

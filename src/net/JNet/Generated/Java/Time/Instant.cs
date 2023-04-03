@@ -152,6 +152,13 @@ namespace Java.Time
             get { return IExecute<int>("getNano"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#toEpochMilli()"/> 
+        /// </summary>
+        public long ToEpochMilli
+        {
+            get { return IExecute<long>("toEpochMilli"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
@@ -387,15 +394,6 @@ namespace Java.Time
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<long>("getLong", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#toEpochMilli()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long ToEpochMilli()
-        {
-            return IExecute<long>("toEpochMilli");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

@@ -71,6 +71,20 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.Type>("getGenericType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()"/> 
+        /// </summary>
+        public bool IsEnumConstant
+        {
+            get { return IExecute<bool>("isEnumConstant"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"/> 
+        /// </summary>
+        public bool IsSynthetic
+        {
+            get { return IExecute<bool>("isSynthetic"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
@@ -83,6 +97,13 @@ namespace Java.Lang.Reflect
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()"/> 
+        /// </summary>
+        public string ToGenericString
+        {
+            get { return IExecute<string>("toGenericString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getType()"/> 
@@ -101,24 +122,6 @@ namespace Java.Lang.Reflect
         public bool GetBoolean(object arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEnumConstant()
-        {
-            return IExecute<bool>("isEnumConstant");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSynthetic()
-        {
-            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getByte(java.lang.Object)"/>
@@ -185,15 +188,6 @@ namespace Java.Lang.Reflect
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToGenericString()
-        {
-            return IExecute<string>("toGenericString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getLong(java.lang.Object)"/>

@@ -75,88 +75,137 @@ namespace Javax.Imageio.Stream
             get { return IExecute<long>("getFlushedPosition"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCached()"/> 
+        /// </summary>
+        public bool IsCached
+        {
+            get { return IExecute<bool>("isCached"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCachedFile()"/> 
+        /// </summary>
+        public bool IsCachedFile
+        {
+            get { return IExecute<bool>("isCachedFile"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCachedMemory()"/> 
+        /// </summary>
+        public bool IsCachedMemory
+        {
+            get { return IExecute<bool>("isCachedMemory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#length()"/> 
+        /// </summary>
+        public long Length
+        {
+            get { return IExecute<long>("length"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBit()"/> 
+        /// </summary>
+        public int ReadBit
+        {
+            get { return IExecute<int>("readBit"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBoolean()"/> 
+        /// </summary>
+        public bool ReadBoolean
+        {
+            get { return IExecute<bool>("readBoolean"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readByte()"/> 
+        /// </summary>
+        public byte ReadByte
+        {
+            get { return IExecute<byte>("readByte"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readChar()"/> 
+        /// </summary>
+        public char ReadChar
+        {
+            get { return IExecute<char>("readChar"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readDouble()"/> 
+        /// </summary>
+        public double ReadDouble
+        {
+            get { return IExecute<double>("readDouble"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFloat()"/> 
+        /// </summary>
+        public float ReadFloat
+        {
+            get { return IExecute<float>("readFloat"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readInt()"/> 
+        /// </summary>
+        public int ReadInt
+        {
+            get { return IExecute<int>("readInt"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readLine()"/> 
+        /// </summary>
+        public string ReadLine
+        {
+            get { return IExecute<string>("readLine"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readLong()"/> 
+        /// </summary>
+        public long ReadLong
+        {
+            get { return IExecute<long>("readLong"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readShort()"/> 
+        /// </summary>
+        public short ReadShort
+        {
+            get { return IExecute<short>("readShort"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedByte()"/> 
+        /// </summary>
+        public int ReadUnsignedByte
+        {
+            get { return IExecute<int>("readUnsignedByte"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedInt()"/> 
+        /// </summary>
+        public long ReadUnsignedInt
+        {
+            get { return IExecute<long>("readUnsignedInt"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedShort()"/> 
+        /// </summary>
+        public int ReadUnsignedShort
+        {
+            get { return IExecute<int>("readUnsignedShort"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUTF()"/> 
+        /// </summary>
+        public string ReadUTF
+        {
+            get { return IExecute<string>("readUTF"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#getStreamPosition()"/> 
         /// </summary>
         public long StreamPosition
         {
             get { return IExecute<long>("getStreamPosition"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCached()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCached()
-        {
-            return IExecute<bool>("isCached");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCachedFile()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCachedFile()
-        {
-            return IExecute<bool>("isCachedFile");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#isCachedMemory()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCachedMemory()
-        {
-            return IExecute<bool>("isCachedMemory");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBoolean()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public bool ReadBoolean()
-        {
-            return IExecute<bool>("readBoolean");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readByte()"/>
-        /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public byte ReadByte()
-        {
-            return IExecute<byte>("readByte");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readChar()"/>
-        /// </summary>
-        
-        /// <returns><see cref="char"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public char ReadChar()
-        {
-            return IExecute<char>("readChar");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readDouble()"/>
-        /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public double ReadDouble()
-        {
-            return IExecute<double>("readDouble");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFloat()"/>
-        /// </summary>
-        
-        /// <returns><see cref="float"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public float ReadFloat()
-        {
-            return IExecute<float>("readFloat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#read()"/>
@@ -191,46 +240,6 @@ namespace Javax.Imageio.Stream
             return IExecute<int>("read", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBit()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public int ReadBit()
-        {
-            return IExecute<int>("readBit");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readInt()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public int ReadInt()
-        {
-            return IExecute<int>("readInt");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedByte()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public int ReadUnsignedByte()
-        {
-            return IExecute<int>("readUnsignedByte");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedShort()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public int ReadUnsignedShort()
-        {
-            return IExecute<int>("readUnsignedShort");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#skipBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -239,36 +248,6 @@ namespace Javax.Imageio.Stream
         public int SkipBytes(int arg0)
         {
             return IExecute<int>("skipBytes", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readLine()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public string ReadLine()
-        {
-            return IExecute<string>("readLine");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUTF()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public string ReadUTF()
-        {
-            return IExecute<string>("readUTF");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public long Length()
-        {
-            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBits(int)"/>
@@ -281,26 +260,6 @@ namespace Javax.Imageio.Stream
             return IExecute<long>("readBits", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readLong()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public long ReadLong()
-        {
-            return IExecute<long>("readLong");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readUnsignedInt()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public long ReadUnsignedInt()
-        {
-            return IExecute<long>("readUnsignedInt");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#skipBytes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -309,16 +268,6 @@ namespace Javax.Imageio.Stream
         public long SkipBytes(long arg0)
         {
             return IExecute<long>("skipBytes", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readShort()"/>
-        /// </summary>
-        
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public short ReadShort()
-        {
-            return IExecute<short>("readShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#close()"/>

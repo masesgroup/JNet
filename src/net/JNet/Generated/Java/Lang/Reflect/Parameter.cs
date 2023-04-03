@@ -78,6 +78,34 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.Executable>("getDeclaringExecutable"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isImplicit()"/> 
+        /// </summary>
+        public bool IsImplicit
+        {
+            get { return IExecute<bool>("isImplicit"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isNamePresent()"/> 
+        /// </summary>
+        public bool IsNamePresent
+        {
+            get { return IExecute<bool>("isNamePresent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isSynthetic()"/> 
+        /// </summary>
+        public bool IsSynthetic
+        {
+            get { return IExecute<bool>("isSynthetic"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isVarArgs()"/> 
+        /// </summary>
+        public bool IsVarArgs
+        {
+            get { return IExecute<bool>("isVarArgs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
@@ -140,42 +168,6 @@ namespace Java.Lang.Reflect
         public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotationsByType(Java.Lang.Class arg0)
         {
             return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotationsByType", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isImplicit()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsImplicit()
-        {
-            return IExecute<bool>("isImplicit");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isNamePresent()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNamePresent()
-        {
-            return IExecute<bool>("isNamePresent");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isSynthetic()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSynthetic()
-        {
-            return IExecute<bool>("isSynthetic");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isVarArgs()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVarArgs()
-        {
-            return IExecute<bool>("isVarArgs");
         }
         
         #endregion

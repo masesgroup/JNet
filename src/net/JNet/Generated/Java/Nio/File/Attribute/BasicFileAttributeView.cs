@@ -46,23 +46,18 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public string Name
         {
-            return IExecute<string>("name");
+            get { return IExecute<string>("name"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
+        public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes
         {
-            return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
+            get { return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>

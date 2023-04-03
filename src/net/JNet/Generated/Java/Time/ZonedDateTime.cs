@@ -254,6 +254,55 @@ namespace Java.Time
             get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDate()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoLocalDate ToLocalDate
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDateTime()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalTime()"/> 
+        /// </summary>
+        public Java.Time.LocalTime ToLocalTime
+        {
+            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toOffsetDateTime()"/> 
+        /// </summary>
+        public Java.Time.OffsetDateTime ToOffsetDateTime
+        {
+            get { return IExecute<Java.Time.OffsetDateTime>("toOffsetDateTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withFixedOffsetZone()"/> 
+        /// </summary>
+        public Java.Time.ZonedDateTime WithFixedOffsetZone
+        {
+            get { return IExecute<Java.Time.ZonedDateTime>("withFixedOffsetZone"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getYear()"/> 
         /// </summary>
         public int Year
@@ -313,42 +362,6 @@ namespace Java.Time
             return IExecute<string>("format", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
-        {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDateTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime()
-        {
-            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap()
-        {
-            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap()
-        {
-            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
@@ -365,24 +378,6 @@ namespace Java.Time
         public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameLocal(Java.Time.ZoneId arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
-        public Java.Time.LocalTime ToLocalTime()
-        {
-            return IExecute<Java.Time.LocalTime>("toLocalTime");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toOffsetDateTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
-        public Java.Time.OffsetDateTime ToOffsetDateTime()
-        {
-            return IExecute<Java.Time.OffsetDateTime>("toOffsetDateTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#range(java.time.temporal.TemporalField)"/>
@@ -563,15 +558,6 @@ namespace Java.Time
         public Java.Time.ZonedDateTime WithDayOfYear(int arg0)
         {
             return IExecute<Java.Time.ZonedDateTime>("withDayOfYear", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withFixedOffsetZone()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
-        public Java.Time.ZonedDateTime WithFixedOffsetZone()
-        {
-            return IExecute<Java.Time.ZonedDateTime>("withFixedOffsetZone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withHour(int)"/>

@@ -63,6 +63,34 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()"/> 
+        /// </summary>
+        public bool IsDuplicateToken
+        {
+            get { return IExecute<bool>("isDuplicateToken"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()"/> 
+        /// </summary>
+        public bool IsGapToken
+        {
+            get { return IExecute<bool>("isGapToken"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()"/> 
+        /// </summary>
+        public bool IsOldToken
+        {
+            get { return IExecute<bool>("isOldToken"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()"/> 
+        /// </summary>
+        public bool IsUnseqToken
+        {
+            get { return IExecute<bool>("isUnseqToken"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorStatus()"/> 
         /// </summary>
         public int MinorStatus
@@ -89,42 +117,6 @@ namespace Org.Ietf.Jgss
         public int QOP
         {
             get { return IExecute<int>("getQOP"); } set { IExecute("setQOP", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDuplicateToken()
-        {
-            return IExecute<bool>("isDuplicateToken");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsGapToken()
-        {
-            return IExecute<bool>("isGapToken");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOldToken()
-        {
-            return IExecute<bool>("isOldToken");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsUnseqToken()
-        {
-            return IExecute<bool>("isUnseqToken");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setSupplementaryStates(boolean,boolean,boolean,boolean,int,java.lang.String)"/>

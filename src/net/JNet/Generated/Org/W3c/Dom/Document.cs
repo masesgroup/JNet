@@ -46,6 +46,13 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/> 
+        /// </summary>
+        public Org.W3c.Dom.DocumentFragment CreateDocumentFragment
+        {
+            get { return IExecute<Org.W3c.Dom.DocumentFragment>("createDocumentFragment"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDoctype()"/> 
         /// </summary>
         public Org.W3c.Dom.DocumentType Doctype
@@ -154,15 +161,6 @@ namespace Org.W3c.Dom
         public Org.W3c.Dom.Comment CreateComment(string arg0)
         {
             return IExecute<Org.W3c.Dom.Comment>("createComment", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        public Org.W3c.Dom.DocumentFragment CreateDocumentFragment()
-        {
-            return IExecute<Org.W3c.Dom.DocumentFragment>("createDocumentFragment");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElement(java.lang.String)"/>

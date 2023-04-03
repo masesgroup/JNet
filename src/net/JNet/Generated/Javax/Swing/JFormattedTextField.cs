@@ -124,20 +124,18 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatterFactory>("getFormatterFactory"); } set { IExecute("setFormatterFactory", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/> 
+        /// </summary>
+        public bool IsEditValid
+        {
+            get { return IExecute<bool>("isEditValid"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEditValid()
-        {
-            return IExecute<bool>("isEditValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>

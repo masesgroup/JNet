@@ -67,6 +67,13 @@ namespace Javax.Security.Auth.Kerberos
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()"/> 
+        /// </summary>
+        public bool IsDestroyed
+        {
+            get { return IExecute<bool>("isDestroyed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getRecipient()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Recipient
@@ -79,15 +86,6 @@ namespace Javax.Security.Auth.Kerberos
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Sender
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getSender"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDestroyed()
-        {
-            return IExecute<bool>("isDestroyed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#destroy()"/>

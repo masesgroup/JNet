@@ -54,6 +54,27 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()"/> 
+        /// </summary>
+        public bool CanRedo
+        {
+            get { return IExecute<bool>("canRedo"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()"/> 
+        /// </summary>
+        public bool CanUndo
+        {
+            get { return IExecute<bool>("canUndo"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()"/> 
+        /// </summary>
+        public bool IsSignificant
+        {
+            get { return IExecute<bool>("isSignificant"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getPresentationName()"/> 
         /// </summary>
         public string PresentationName
@@ -82,33 +103,6 @@ namespace Javax.Swing.Undo
         public bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecute<bool>("addEdit", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanRedo()
-        {
-            return IExecute<bool>("canRedo");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanUndo()
-        {
-            return IExecute<bool>("canUndo");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSignificant()
-        {
-            return IExecute<bool>("isSignificant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>

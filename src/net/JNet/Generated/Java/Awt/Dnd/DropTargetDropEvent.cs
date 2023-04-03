@@ -90,6 +90,13 @@ namespace Java.Awt.Dnd
             get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#isLocalTransfer()"/> 
+        /// </summary>
+        public bool IsLocalTransfer
+        {
+            get { return IExecute<bool>("isLocalTransfer"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#getLocation()"/> 
         /// </summary>
         public Java.Awt.Point Location
@@ -118,15 +125,6 @@ namespace Java.Awt.Dnd
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("isDataFlavorSupported", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#isLocalTransfer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLocalTransfer()
-        {
-            return IExecute<bool>("isLocalTransfer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#acceptDrop(int)"/>

@@ -46,6 +46,27 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()"/> 
+        /// </summary>
+        public bool IsShutdown
+        {
+            get { return IExecute<bool>("isShutdown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/> 
+        /// </summary>
+        public bool IsTerminated
+        {
+            get { return IExecute<bool>("isTerminated"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/> 
+        /// </summary>
+        public Java.Util.List ShutdownNow
+        {
+            get { return IExecute<Java.Util.List>("shutdownNow"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -123,24 +144,6 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("awaitTermination", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsShutdown()
-        {
-            return IExecute<bool>("isShutdown");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTerminated()
-        {
-            return IExecute<bool>("isTerminated");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -148,15 +151,6 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0)
         {
             return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List ShutdownNow()
-        {
-            return IExecute<Java.Util.List>("shutdownNow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdown()"/>

@@ -59,6 +59,13 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/> 
+        /// </summary>
+        public Java.Net.SocketAddress Address
+        {
+            get { return IExecute<Java.Net.SocketAddress>("address"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#type()"/>
         /// </summary>
         
@@ -66,15 +73,6 @@ namespace Java.Net
         public Java.Net.Proxy.Type TypeMethod()
         {
             return IExecute<Java.Net.Proxy.Type>("type");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
-        public Java.Net.SocketAddress Address()
-        {
-            return IExecute<Java.Net.SocketAddress>("address");
         }
         
         #endregion
@@ -109,6 +107,13 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()"/> 
+            /// </summary>
+            public static Java.Net.Proxy.Type[] Values
+            {
+                get { return SExecuteArray<Java.Net.Proxy.Type>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -116,15 +121,6 @@ namespace Java.Net
             public static Java.Net.Proxy.Type ValueOf(string arg0)
             {
                 return SExecute<Java.Net.Proxy.Type>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
-            public static Java.Net.Proxy.Type[] Values()
-            {
-                return SExecuteArray<Java.Net.Proxy.Type>("values");
             }
             
             #endregion

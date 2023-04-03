@@ -46,6 +46,13 @@ namespace Javax.Xml.Catalog
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream Catalogs
+        {
+            get { return IExecute<Java.Util.Stream.Stream>("catalogs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchPublic(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -71,15 +78,6 @@ namespace Javax.Xml.Catalog
         public string MatchURI(string arg0)
         {
             return IExecute<string>("matchURI", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Catalogs()
-        {
-            return IExecute<Java.Util.Stream.Stream>("catalogs");
         }
         
         #endregion

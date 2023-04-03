@@ -109,6 +109,13 @@ namespace Java.Util.Zip
             get { return IExecuteArray<byte>("getExtra"); } set { IExecute("setExtra", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#isDirectory()"/> 
+        /// </summary>
+        public bool IsDirectory
+        {
+            get { return IExecute<bool>("isDirectory"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getLastAccessTime()"/> 
         /// </summary>
         public Java.Nio.File.Attribute.FileTime LastAccessTime
@@ -156,15 +163,6 @@ namespace Java.Util.Zip
         public Java.Time.LocalDateTime TimeLocal
         {
             get { return IExecute<Java.Time.LocalDateTime>("getTimeLocal"); } set { IExecute("setTimeLocal", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#isDirectory()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDirectory()
-        {
-            return IExecute<bool>("isDirectory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)"/>

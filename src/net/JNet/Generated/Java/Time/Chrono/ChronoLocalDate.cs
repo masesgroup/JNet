@@ -54,6 +54,13 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#timeLineOrder()"/> 
+        /// </summary>
+        public static Java.Util.Comparator TimeLineOrder
+        {
+            get { return SExecute<Java.Util.Comparator>("timeLineOrder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -61,15 +68,6 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.ChronoLocalDate From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.Chrono.ChronoLocalDate>("from", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#timeLineOrder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator TimeLineOrder()
-        {
-            return SExecute<Java.Util.Comparator>("timeLineOrder");
         }
         
         #endregion
@@ -90,13 +88,32 @@ namespace Java.Time.Chrono
             get { return IExecute<Java.Time.Chrono.Era>("getEra"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isLeapYear()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int LengthOfMonth()
+        public bool IsLeapYear
         {
-            return IExecute<int>("lengthOfMonth");
+            get { return IExecute<bool>("isLeapYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/> 
+        /// </summary>
+        public int LengthOfMonth
+        {
+            get { return IExecute<int>("lengthOfMonth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfYear()"/> 
+        /// </summary>
+        public int LengthOfYear
+        {
+            get { return IExecute<int>("lengthOfYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/> 
+        /// </summary>
+        public long ToEpochDay
+        {
+            get { return IExecute<long>("toEpochDay"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#until(java.time.chrono.ChronoLocalDate)"/>
@@ -154,15 +171,6 @@ namespace Java.Time.Chrono
             return IExecute<bool>("isEqual", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isLeapYear()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeapYear()
-        {
-            return IExecute<bool>("isLeapYear");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -197,15 +205,6 @@ namespace Java.Time.Chrono
         public int CompareTo(Java.Time.Chrono.ChronoLocalDate arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfYear()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int LengthOfYear()
-        {
-            return IExecute<int>("lengthOfYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#format(java.time.format.DateTimeFormatter)"/>
@@ -290,15 +289,6 @@ namespace Java.Time.Chrono
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
             return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long ToEpochDay()
-        {
-            return IExecute<long>("toEpochDay");
         }
         
         #endregion

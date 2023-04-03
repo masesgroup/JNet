@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/> 
+        /// </summary>
+        public static Java.Util.Concurrent.TimeUnit[] Values
+        {
+            get { return SExecuteArray<Java.Util.Concurrent.TimeUnit>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.ChronoUnit"/></param>
@@ -87,27 +94,16 @@ namespace Java.Util.Concurrent
         {
             return SExecute<Java.Util.Concurrent.TimeUnit>("valueOf", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
-        public static Java.Util.Concurrent.TimeUnit[] Values()
-        {
-            return SExecuteArray<Java.Util.Concurrent.TimeUnit>("values");
-        }
         
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
-        public Java.Time.Temporal.ChronoUnit ToChronoUnit()
+        public Java.Time.Temporal.ChronoUnit ToChronoUnit
         {
-            return IExecute<Java.Time.Temporal.ChronoUnit>("toChronoUnit");
+            get { return IExecute<Java.Time.Temporal.ChronoUnit>("toChronoUnit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>

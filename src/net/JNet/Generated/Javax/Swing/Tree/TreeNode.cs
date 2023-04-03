@@ -60,20 +60,25 @@ namespace Javax.Swing.Tree
             get { return IExecute<int>("getChildCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Children
+        {
+            get { return IExecute<Java.Util.Enumeration>("children"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/> 
+        /// </summary>
+        public bool IsLeaf
+        {
+            get { return IExecute<bool>("isLeaf"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getParent()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreeNode Parent
         {
             get { return IExecute<Javax.Swing.Tree.TreeNode>("getParent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeaf()
-        {
-            return IExecute<bool>("isLeaf");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
@@ -83,15 +88,6 @@ namespace Javax.Swing.Tree
         public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecute<int>("getIndex", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration Children()
-        {
-            return IExecute<Java.Util.Enumeration>("children");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>

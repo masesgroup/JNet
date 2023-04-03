@@ -46,6 +46,34 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()"/> 
+        /// </summary>
+        public bool Execute
+        {
+            get { return IExecute<bool>("execute"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeLargeUpdate()"/> 
+        /// </summary>
+        public long ExecuteLargeUpdate
+        {
+            get { return IExecute<long>("executeLargeUpdate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeQuery()"/> 
+        /// </summary>
+        public Java.Sql.ResultSet ExecuteQuery
+        {
+            get { return IExecute<Java.Sql.ResultSet>("executeQuery"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeUpdate()"/> 
+        /// </summary>
+        public int ExecuteUpdate
+        {
+            get { return IExecute<int>("executeUpdate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#getMetaData()"/> 
         /// </summary>
         public Java.Sql.ResultSetMetaData MetaData
@@ -58,36 +86,6 @@ namespace Java.Sql
         public Java.Sql.ParameterMetaData ParameterMetaData
         {
             get { return IExecute<Java.Sql.ParameterMetaData>("getParameterMetaData"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool Execute()
-        {
-            return IExecute<bool>("execute");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeUpdate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public int ExecuteUpdate()
-        {
-            return IExecute<int>("executeUpdate");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeQuery()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ResultSet ExecuteQuery()
-        {
-            return IExecute<Java.Sql.ResultSet>("executeQuery");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#addBatch()"/>
@@ -593,16 +591,6 @@ namespace Java.Sql
         public void SetURL(int arg0, Java.Net.URL arg1)
         {
             IExecute("setURL", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeLargeUpdate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public long ExecuteLargeUpdate()
-        {
-            return IExecute<long>("executeLargeUpdate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,java.sql.SQLType,int)"/>

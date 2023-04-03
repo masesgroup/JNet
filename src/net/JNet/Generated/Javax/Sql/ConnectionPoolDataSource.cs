@@ -46,6 +46,13 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/> 
+        /// </summary>
+        public Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder
+        {
+            get { return IExecute<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
@@ -76,16 +83,6 @@ namespace Javax.Sql
         public Javax.Sql.PooledConnection GetPooledConnection(string arg0, string arg1)
         {
             return IExecute<Javax.Sql.PooledConnection>("getPooledConnection", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder()
-        {
-            return IExecute<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder");
         }
         
         #endregion

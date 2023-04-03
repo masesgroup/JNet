@@ -42,22 +42,18 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsDesignTime()
+        public static bool IsDesignTime
         {
-            return SExecute<bool>("isDesignTime");
+            get { return SExecute<bool>("isDesignTime"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsGuiAvailable()
+        public static bool IsGuiAvailable
         {
-            return SExecute<bool>("isGuiAvailable");
+            get { return SExecute<bool>("isGuiAvailable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isInstanceOf(java.lang.Object,java.lang.Class)"/>

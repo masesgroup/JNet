@@ -50,13 +50,11 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        public Java.Util.Iterator Iterator
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            get { return IExecute<Java.Util.Iterator>("iterator"); }
         }
         
         #endregion
@@ -98,13 +96,11 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        public Java.Util.Iterator<T> Iterator
         {
-            return IExecute<Java.Util.Iterator<T>>("iterator");
+            get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
         }
         
         #endregion

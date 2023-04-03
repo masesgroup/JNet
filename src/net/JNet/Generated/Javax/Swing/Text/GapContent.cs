@@ -58,13 +58,11 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#length()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#length()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
+        public int Length
         {
-            return IExecute<int>("length");
+            get { return IExecute<int>("length"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#getString(int,int)"/>

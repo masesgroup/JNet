@@ -107,29 +107,25 @@ namespace Java.Awt
             get { return IExecute<string>("getIDstring"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/> 
+        /// </summary>
+        public bool IsDisplayChangeSupported
+        {
+            get { return IExecute<bool>("isDisplayChangeSupported"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/> 
+        /// </summary>
+        public bool IsFullScreenSupported
+        {
+            get { return IExecute<bool>("isFullScreenSupported"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDisplayChangeSupported()
-        {
-            return IExecute<bool>("isDisplayChangeSupported");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFullScreenSupported()
-        {
-            return IExecute<bool>("isFullScreenSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isWindowTranslucencySupported(java.awt.GraphicsDevice.WindowTranslucency)"/>
@@ -182,6 +178,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values
+            {
+                get { return SExecuteArray<Java.Awt.GraphicsDevice.WindowTranslucency>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -189,15 +192,6 @@ namespace Java.Awt
             public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
-            public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values()
-            {
-                return SExecuteArray<Java.Awt.GraphicsDevice.WindowTranslucency>("values");
             }
             
             #endregion

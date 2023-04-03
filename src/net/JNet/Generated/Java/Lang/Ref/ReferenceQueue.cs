@@ -46,13 +46,11 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        public Java.Lang.Ref.Reference Poll()
+        public Java.Lang.Ref.Reference Poll
         {
-            return IExecute<Java.Lang.Ref.Reference>("poll");
+            get { return IExecute<Java.Lang.Ref.Reference>("poll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
@@ -111,13 +109,11 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference Poll
         {
-            return IExecute<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll");
+            get { return IExecute<Java.Lang.Ref.Reference>("poll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>

@@ -46,6 +46,13 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/> 
+        /// </summary>
+        public bool JdbcCompliant
+        {
+            get { return IExecute<bool>("jdbcCompliant"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMajorVersion()"/> 
         /// </summary>
         public int MajorVersion
@@ -75,15 +82,6 @@ namespace Java.Sql
         public bool AcceptsURL(string arg0)
         {
             return IExecute<bool>("acceptsURL", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool JdbcCompliant()
-        {
-            return IExecute<bool>("jdbcCompliant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>

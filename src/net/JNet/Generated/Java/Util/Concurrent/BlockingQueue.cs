@@ -46,6 +46,20 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#take()"/> 
+        /// </summary>
+        public object Take
+        {
+            get { return IExecute("take"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -105,16 +119,6 @@ namespace Java.Util.Concurrent
             return IExecute("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object Take()
-        {
-            return IExecute("take");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -132,15 +136,6 @@ namespace Java.Util.Concurrent
         public int DrainTo(Java.Util.Collection arg0)
         {
             return IExecute<int>("drainTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
@@ -186,6 +181,20 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#take()"/> 
+        /// </summary>
+        public E Take
+        {
+            get { return IExecute<E>("take"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
         /// </summary>
@@ -246,16 +255,6 @@ namespace Java.Util.Concurrent
             return IExecute<E>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public E Take()
-        {
-            return IExecute<E>("take");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -273,15 +272,6 @@ namespace Java.Util.Concurrent
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
         {
             return IExecute<int>("drainTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>

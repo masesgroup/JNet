@@ -124,22 +124,32 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Flags()
+        public Java.Util.Function.Predicate AsMatchPredicate
         {
-            return IExecute<int>("flags");
+            get { return IExecute<Java.Util.Function.Predicate>("asMatchPredicate"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string PatternMethod()
+        public Java.Util.Function.Predicate AsPredicate
         {
-            return IExecute<string>("pattern");
+            get { return IExecute<Java.Util.Function.Predicate>("asPredicate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/> 
+        /// </summary>
+        public int Flags
+        {
+            get { return IExecute<int>("flags"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()"/> 
+        /// </summary>
+        public string PatternMethod
+        {
+            get { return IExecute<string>("pattern"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence,int)"/>
@@ -159,24 +169,6 @@ namespace Java.Util.Regex
         public string[] Split(Java.Lang.CharSequence arg0)
         {
             return IExecuteArray<string>("split", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate AsMatchPredicate()
-        {
-            return IExecute<Java.Util.Function.Predicate>("asMatchPredicate");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate AsPredicate()
-        {
-            return IExecute<Java.Util.Function.Predicate>("asPredicate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)"/>

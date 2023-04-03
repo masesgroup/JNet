@@ -54,13 +54,11 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#nullWriter()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#nullWriter()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        public static Java.Io.Writer NullWriter()
+        public static Java.Io.Writer NullWriter
         {
-            return SExecute<Java.Io.Writer>("nullWriter");
+            get { return SExecute<Java.Io.Writer>("nullWriter"); }
         }
         
         #endregion

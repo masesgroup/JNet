@@ -250,13 +250,11 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#getInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.ExifGPSTagSet"/></returns>
-        public static Javax.Imageio.Plugins.Tiff.ExifGPSTagSet GetInstance()
+        public static Javax.Imageio.Plugins.Tiff.ExifGPSTagSet GetInstance
         {
-            return SExecute<Javax.Imageio.Plugins.Tiff.ExifGPSTagSet>("getInstance");
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifGPSTagSet>("getInstance"); }
         }
         
         #endregion

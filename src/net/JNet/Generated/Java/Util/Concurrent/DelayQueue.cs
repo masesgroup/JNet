@@ -58,6 +58,20 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/> 
+        /// </summary>
+        public object Take
+        {
+            get { return IExecute("take"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
@@ -118,15 +132,6 @@ namespace Java.Util.Concurrent
             return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -136,16 +141,6 @@ namespace Java.Util.Concurrent
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute("poll", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object Take()
-        {
-            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
@@ -212,6 +207,20 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/> 
+        /// </summary>
+        public object Take
+        {
+            get { return IExecute("take"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><see cref="E"/></param>
@@ -272,15 +281,6 @@ namespace Java.Util.Concurrent
             return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -290,16 +290,6 @@ namespace Java.Util.Concurrent
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute("poll", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object Take()
-        {
-            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>

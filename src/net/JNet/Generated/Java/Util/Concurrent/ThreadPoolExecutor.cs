@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
             get { return IExecute<int>("getActiveCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/> 
+        /// </summary>
+        public bool AllowsCoreThreadTimeOut
+        {
+            get { return IExecute<bool>("allowsCoreThreadTimeOut"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()"/> 
         /// </summary>
         public long CompletedTaskCount
@@ -117,6 +124,13 @@ namespace Java.Util.Concurrent
         public int CorePoolSize
         {
             get { return IExecute<int>("getCorePoolSize"); } set { IExecute("setCorePoolSize", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/> 
+        /// </summary>
+        public bool IsTerminating
+        {
+            get { return IExecute<bool>("isTerminating"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()"/> 
@@ -138,6 +152,20 @@ namespace Java.Util.Concurrent
         public int PoolSize
         {
             get { return IExecute<int>("getPoolSize"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/> 
+        /// </summary>
+        public int PrestartAllCoreThreads
+        {
+            get { return IExecute<int>("prestartAllCoreThreads"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/> 
+        /// </summary>
+        public bool PrestartCoreThread
+        {
+            get { return IExecute<bool>("prestartCoreThread"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
@@ -168,33 +196,6 @@ namespace Java.Util.Concurrent
             get { return IExecute<Java.Util.Concurrent.ThreadFactory>("getThreadFactory"); } set { IExecute("setThreadFactory", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool AllowsCoreThreadTimeOut()
-        {
-            return IExecute<bool>("allowsCoreThreadTimeOut");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTerminating()
-        {
-            return IExecute<bool>("isTerminating");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool PrestartCoreThread()
-        {
-            return IExecute<bool>("prestartCoreThread");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -202,15 +203,6 @@ namespace Java.Util.Concurrent
         public bool Remove(Java.Lang.Runnable arg0)
         {
             return IExecute<bool>("remove", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int PrestartAllCoreThreads()
-        {
-            return IExecute<int>("prestartAllCoreThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>

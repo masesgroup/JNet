@@ -134,6 +134,13 @@ namespace Javax.Smartcardio
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/> 
+            /// </summary>
+            public static Javax.Smartcardio.CardTerminals.State[] Values
+            {
+                get { return SExecuteArray<Javax.Smartcardio.CardTerminals.State>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -141,15 +148,6 @@ namespace Javax.Smartcardio
             public static Javax.Smartcardio.CardTerminals.State ValueOf(string arg0)
             {
                 return SExecute<Javax.Smartcardio.CardTerminals.State>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
-            public static Javax.Smartcardio.CardTerminals.State[] Values()
-            {
-                return SExecuteArray<Javax.Smartcardio.CardTerminals.State>("values");
             }
             
             #endregion

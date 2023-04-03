@@ -195,13 +195,11 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#isDefaultLookAndFeelDecorated()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#isDefaultLookAndFeelDecorated()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsDefaultLookAndFeelDecorated()
+        public static bool IsDefaultLookAndFeelDecorated
         {
-            return SExecute<bool>("isDefaultLookAndFeelDecorated");
+            get { return SExecute<bool>("isDefaultLookAndFeelDecorated"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultLookAndFeelDecorated(boolean)"/>

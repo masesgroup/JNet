@@ -70,6 +70,34 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canOffsetTiles()"/> 
+        /// </summary>
+        public bool CanOffsetTiles
+        {
+            get { return IExecute<bool>("canOffsetTiles"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteCompressed()"/> 
+        /// </summary>
+        public bool CanWriteCompressed
+        {
+            get { return IExecute<bool>("canWriteCompressed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteProgressive()"/> 
+        /// </summary>
+        public bool CanWriteProgressive
+        {
+            get { return IExecute<bool>("canWriteProgressive"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteTiles()"/> 
+        /// </summary>
+        public bool CanWriteTiles
+        {
+            get { return IExecute<bool>("canWriteTiles"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setCompressionMode(int)"/>
         /// </summary>
         public int CompressionMode
@@ -110,6 +138,13 @@ namespace Javax.Imageio
         public string[] CompressionTypes
         {
             get { return IExecuteArray<string>("getCompressionTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#isCompressionLossless()"/> 
+        /// </summary>
+        public bool IsCompressionLossless
+        {
+            get { return IExecute<bool>("isCompressionLossless"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getLocale()"/> 
@@ -173,51 +208,6 @@ namespace Javax.Imageio
         public int TilingMode
         {
             get { return IExecute<int>("getTilingMode"); } set { IExecute("setTilingMode", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canOffsetTiles()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanOffsetTiles()
-        {
-            return IExecute<bool>("canOffsetTiles");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteCompressed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWriteCompressed()
-        {
-            return IExecute<bool>("canWriteCompressed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteProgressive()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWriteProgressive()
-        {
-            return IExecute<bool>("canWriteProgressive");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteTiles()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWriteTiles()
-        {
-            return IExecute<bool>("canWriteTiles");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#isCompressionLossless()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCompressionLossless()
-        {
-            return IExecute<bool>("isCompressionLossless");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getBitRate(float)"/>

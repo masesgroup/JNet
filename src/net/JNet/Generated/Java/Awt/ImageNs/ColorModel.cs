@@ -79,6 +79,20 @@ namespace Java.Awt.ImageNs
             get { return IExecuteArray<int>("getComponentSize"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/> 
+        /// </summary>
+        public bool HasAlpha
+        {
+            get { return IExecute<bool>("hasAlpha"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/> 
+        /// </summary>
+        public bool IsAlphaPremultiplied
+        {
+            get { return IExecute<bool>("isAlphaPremultiplied"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumColorComponents()"/> 
         /// </summary>
         public int NumColorComponents
@@ -166,24 +180,6 @@ namespace Java.Awt.ImageNs
         public bool IsCompatibleSampleModel(Java.Awt.ImageNs.SampleModel arg0)
         {
             return IExecute<bool>("isCompatibleSampleModel", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasAlpha()
-        {
-            return IExecute<bool>("hasAlpha");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAlphaPremultiplied()
-        {
-            return IExecute<bool>("isAlphaPremultiplied");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(int[],int,float[],int)"/>

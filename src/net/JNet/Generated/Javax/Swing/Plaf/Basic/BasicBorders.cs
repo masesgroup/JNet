@@ -42,6 +42,48 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getButtonBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetButtonBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getButtonBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getMenuBarBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetMenuBarBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getMenuBarBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getRadioButtonBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetRadioButtonBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getRadioButtonBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetSplitPaneBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getSplitPaneBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneDividerBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetSplitPaneDividerBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getSplitPaneDividerBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getToggleButtonBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetToggleButtonBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getInternalFrameBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border InternalFrameBorder
@@ -61,60 +103,6 @@ namespace Javax.Swing.Plaf.Basic
         public static Javax.Swing.Border.Border TextFieldBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getButtonBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetButtonBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getButtonBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getMenuBarBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetMenuBarBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getMenuBarBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getRadioButtonBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetRadioButtonBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getRadioButtonBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetSplitPaneBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getSplitPaneBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneDividerBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetSplitPaneDividerBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getSplitPaneDividerBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getToggleButtonBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetToggleButtonBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder");
         }
         
         #endregion
@@ -393,13 +381,11 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsBorderOpaque()
+            public bool IsBorderOpaque
             {
-                return IExecute<bool>("isBorderOpaque");
+                get { return IExecute<bool>("isBorderOpaque"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)"/>

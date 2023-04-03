@@ -53,13 +53,11 @@ namespace Java.Nio.File.Attribute
             get { return IExecute<Java.Util.List>("getAcl"); } set { IExecute("setAcl", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        public string Name
         {
-            return IExecute<string>("name");
+            get { return IExecute<string>("name"); }
         }
         
         #endregion

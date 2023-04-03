@@ -133,85 +133,74 @@ namespace Java.Net
             get { return IExecute<string>("getHostName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAnyLocalAddress()
+        public bool IsAnyLocalAddress
         {
-            return IExecute<bool>("isAnyLocalAddress");
+            get { return IExecute<bool>("isAnyLocalAddress"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLinkLocalAddress()
+        public bool IsLinkLocalAddress
         {
-            return IExecute<bool>("isLinkLocalAddress");
+            get { return IExecute<bool>("isLinkLocalAddress"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLoopbackAddress()
+        public bool IsLoopbackAddress
         {
-            return IExecute<bool>("isLoopbackAddress");
+            get { return IExecute<bool>("isLoopbackAddress"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMCGlobal()
+        public bool IsMCGlobal
         {
-            return IExecute<bool>("isMCGlobal");
+            get { return IExecute<bool>("isMCGlobal"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMCLinkLocal()
+        public bool IsMCLinkLocal
         {
-            return IExecute<bool>("isMCLinkLocal");
+            get { return IExecute<bool>("isMCLinkLocal"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMCNodeLocal()
+        public bool IsMCNodeLocal
         {
-            return IExecute<bool>("isMCNodeLocal");
+            get { return IExecute<bool>("isMCNodeLocal"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMCOrgLocal()
+        public bool IsMCOrgLocal
         {
-            return IExecute<bool>("isMCOrgLocal");
+            get { return IExecute<bool>("isMCOrgLocal"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMCSiteLocal()
+        public bool IsMCSiteLocal
         {
-            return IExecute<bool>("isMCSiteLocal");
+            get { return IExecute<bool>("isMCSiteLocal"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMulticastAddress()
+        public bool IsMulticastAddress
         {
-            return IExecute<bool>("isMulticastAddress");
+            get { return IExecute<bool>("isMulticastAddress"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"/> 
+        /// </summary>
+        public bool IsSiteLocalAddress
+        {
+            get { return IExecute<bool>("isSiteLocalAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(int)"/>
@@ -234,15 +223,6 @@ namespace Java.Net
         public bool IsReachable(Java.Net.NetworkInterface arg0, int arg1, int arg2)
         {
             return IExecute<bool>("isReachable", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSiteLocalAddress()
-        {
-            return IExecute<bool>("isSiteLocalAddress");
         }
         
         #endregion

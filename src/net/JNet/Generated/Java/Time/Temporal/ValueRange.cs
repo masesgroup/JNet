@@ -83,6 +83,20 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/> 
+        /// </summary>
+        public bool IsFixed
+        {
+            get { return IExecute<bool>("isFixed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/> 
+        /// </summary>
+        public bool IsIntValue
+        {
+            get { return IExecute<bool>("isIntValue"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getLargestMinimum()"/> 
         /// </summary>
         public long LargestMinimum
@@ -109,24 +123,6 @@ namespace Java.Time.Temporal
         public long SmallestMaximum
         {
             get { return IExecute<long>("getSmallestMaximum"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFixed()
-        {
-            return IExecute<bool>("isFixed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIntValue()
-        {
-            return IExecute<bool>("isIntValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>

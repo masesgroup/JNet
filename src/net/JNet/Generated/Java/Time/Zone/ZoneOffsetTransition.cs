@@ -93,6 +93,20 @@ namespace Java.Time.Zone
             get { return IExecute<Java.Time.Instant>("getInstant"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/> 
+        /// </summary>
+        public bool IsGap
+        {
+            get { return IExecute<bool>("isGap"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/> 
+        /// </summary>
+        public bool IsOverlap
+        {
+            get { return IExecute<bool>("isOverlap"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetAfter
@@ -107,22 +121,11 @@ namespace Java.Time.Zone
             get { return IExecute<Java.Time.ZoneOffset>("getOffsetBefore"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsGap()
+        public long ToEpochSecond
         {
-            return IExecute<bool>("isGap");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOverlap()
-        {
-            return IExecute<bool>("isOverlap");
+            get { return IExecute<long>("toEpochSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
@@ -150,15 +153,6 @@ namespace Java.Time.Zone
         public int CompareTo(Java.Time.Zone.ZoneOffsetTransition arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long ToEpochSecond()
-        {
-            return IExecute<long>("toEpochSecond");
         }
         
         #endregion

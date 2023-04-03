@@ -46,11 +46,25 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()"/> 
+        /// </summary>
+        public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider CreateDefaultDivider
+        {
+            get { return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("createDefaultDivider"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDivider()"/> 
         /// </summary>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider Divider
         {
             get { return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("getDivider"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/> 
+        /// </summary>
+        public bool IsContinuousLayout
+        {
+            get { return IExecute<bool>("isContinuousLayout"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getLastDragLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setLastDragLocation(int)"/>
@@ -81,15 +95,6 @@ namespace Javax.Swing.Plaf.Basic
             get { return IExecute<Javax.Swing.JSplitPane>("getSplitPane"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsContinuousLayout()
-        {
-            return IExecute<bool>("isContinuousLayout");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getInsets(javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
@@ -97,15 +102,6 @@ namespace Javax.Swing.Plaf.Basic
         public Java.Awt.Insets GetInsets(Javax.Swing.JComponent arg0)
         {
             return IExecute<Java.Awt.Insets>("getInsets", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/></returns>
-        public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider CreateDefaultDivider()
-        {
-            return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("createDefaultDivider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setContinuousLayout(boolean)"/>

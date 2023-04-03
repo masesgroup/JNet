@@ -236,11 +236,25 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#createInverse()"/> 
+        /// </summary>
+        public Java.Awt.Geom.AffineTransform CreateInverse
+        {
+            get { return IExecute<Java.Awt.Geom.AffineTransform>("createInverse"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getDeterminant()"/> 
         /// </summary>
         public double Determinant
         {
             get { return IExecute<double>("getDeterminant"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#isIdentity()"/> 
+        /// </summary>
+        public bool IsIdentity
+        {
+            get { return IExecute<bool>("isIdentity"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getScaleX()"/> 
@@ -290,25 +304,6 @@ namespace Java.Awt.Geom
         public int Type
         {
             get { return IExecute<int>("getType"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#isIdentity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIdentity()
-        {
-            return IExecute<bool>("isIdentity");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#createInverse()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
-        /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
-        public Java.Awt.Geom.AffineTransform CreateInverse()
-        {
-            return IExecute<Java.Awt.Geom.AffineTransform>("createInverse");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#deltaTransform(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>

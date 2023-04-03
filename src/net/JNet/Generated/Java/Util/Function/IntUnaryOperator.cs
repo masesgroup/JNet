@@ -42,13 +42,11 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        public static Java.Util.Function.IntUnaryOperator Identity()
+        public static Java.Util.Function.IntUnaryOperator Identity
         {
-            return SExecute<Java.Util.Function.IntUnaryOperator>("identity");
+            get { return SExecute<Java.Util.Function.IntUnaryOperator>("identity"); }
         }
         
         #endregion

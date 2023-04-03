@@ -42,13 +42,11 @@ namespace Javax.Xml.Catalog
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
-        public static Javax.Xml.Catalog.CatalogFeatures Defaults()
+        public static Javax.Xml.Catalog.CatalogFeatures Defaults
         {
-            return SExecute<Javax.Xml.Catalog.CatalogFeatures>("defaults");
+            get { return SExecute<Javax.Xml.Catalog.CatalogFeatures>("defaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
@@ -97,13 +95,11 @@ namespace Javax.Xml.Catalog
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
-            public Javax.Xml.Catalog.CatalogFeatures Build()
+            public Javax.Xml.Catalog.CatalogFeatures Build
             {
-                return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build");
+                get { return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#with(javax.xml.catalog.CatalogFeatures.Feature,java.lang.String)"/>
@@ -155,6 +151,13 @@ namespace Javax.Xml.Catalog
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/> 
+            /// </summary>
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values
+            {
+                get { return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -163,34 +166,23 @@ namespace Javax.Xml.Catalog
             {
                 return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>("valueOf", arg0);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values()
-            {
-                return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>("values");
-            }
             
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/> 
+            /// </summary>
+            public string DefaultValue
+            {
+                get { return IExecute<string>("defaultValue"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#getPropertyName()"/> 
             /// </summary>
             public string PropertyName
             {
                 get { return IExecute<string>("getPropertyName"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/>
-            /// </summary>
-            
-            /// <returns><see cref="string"/></returns>
-            public string DefaultValue()
-            {
-                return IExecute<string>("defaultValue");
             }
             
             #endregion

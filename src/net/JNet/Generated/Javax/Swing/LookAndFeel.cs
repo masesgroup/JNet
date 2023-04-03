@@ -172,6 +172,20 @@ namespace Javax.Swing
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isNativeLookAndFeel()"/> 
+        /// </summary>
+        public bool IsNativeLookAndFeel
+        {
+            get { return IExecute<bool>("isNativeLookAndFeel"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isSupportedLookAndFeel()"/> 
+        /// </summary>
+        public bool IsSupportedLookAndFeel
+        {
+            get { return IExecute<bool>("isSupportedLookAndFeel"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getLayoutStyle()"/> 
         /// </summary>
         public Javax.Swing.LayoutStyle LayoutStyle
@@ -191,24 +205,6 @@ namespace Javax.Swing
         public bool SupportsWindowDecorations
         {
             get { return IExecute<bool>("getSupportsWindowDecorations"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isNativeLookAndFeel()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNativeLookAndFeel()
-        {
-            return IExecute<bool>("isNativeLookAndFeel");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isSupportedLookAndFeel()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSupportedLookAndFeel()
-        {
-            return IExecute<bool>("isSupportedLookAndFeel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDisabledIcon(javax.swing.JComponent,javax.swing.Icon)"/>

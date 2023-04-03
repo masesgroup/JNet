@@ -77,6 +77,20 @@ namespace Java.Text
             get { return IExecute<int>("getGroupingSize"); } set { IExecute("setGroupingSize", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isDecimalSeparatorAlwaysShown()"/> 
+        /// </summary>
+        public bool IsDecimalSeparatorAlwaysShown
+        {
+            get { return IExecute<bool>("isDecimalSeparatorAlwaysShown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isParseBigDecimal()"/> 
+        /// </summary>
+        public bool IsParseBigDecimal
+        {
+            get { return IExecute<bool>("isParseBigDecimal"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)"/>
         /// </summary>
         public int Multiplier
@@ -112,40 +126,18 @@ namespace Java.Text
             get { return IExecute<string>("getPositiveSuffix"); } set { IExecute("setPositiveSuffix", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isDecimalSeparatorAlwaysShown()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toLocalizedPattern()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDecimalSeparatorAlwaysShown()
+        public string ToLocalizedPattern
         {
-            return IExecute<bool>("isDecimalSeparatorAlwaysShown");
+            get { return IExecute<string>("toLocalizedPattern"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isParseBigDecimal()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toPattern()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsParseBigDecimal()
+        public string ToPattern
         {
-            return IExecute<bool>("isParseBigDecimal");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toLocalizedPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToLocalizedPattern()
-        {
-            return IExecute<string>("toLocalizedPattern");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToPattern()
-        {
-            return IExecute<string>("toPattern");
+            get { return IExecute<string>("toPattern"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#applyLocalizedPattern(java.lang.String)"/>

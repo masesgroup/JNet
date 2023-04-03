@@ -54,31 +54,25 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Enqueue()
+        public bool Enqueue
         {
-            return IExecute<bool>("enqueue");
+            get { return IExecute<bool>("enqueue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEnqueued()
+        public object Get
         {
-            return IExecute<bool>("isEnqueued");
+            get { return IExecute("get"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Get()
+        public bool IsEnqueued
         {
-            return IExecute("get");
+            get { return IExecute<bool>("isEnqueued"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#clear()"/>
@@ -131,31 +125,25 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Enqueue()
+        public bool Enqueue
         {
-            return IExecute<bool>("enqueue");
+            get { return IExecute<bool>("enqueue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEnqueued()
+        public T Get
         {
-            return IExecute<bool>("isEnqueued");
+            get { return IExecute<T>("get"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/> 
         /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        public T Get()
+        public bool IsEnqueued
         {
-            return IExecute<T>("get");
+            get { return IExecute<bool>("isEnqueued"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#clear()"/>

@@ -80,6 +80,13 @@ namespace Java.Awt
             get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isMultipleMode()"/> 
+        /// </summary>
+        public bool IsMultipleMode
+        {
+            get { return IExecute<bool>("isMultipleMode"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
@@ -157,15 +164,6 @@ namespace Java.Awt
         public bool IsIndexSelected(int arg0)
         {
             return IExecute<bool>("isIndexSelected", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isMultipleMode()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMultipleMode()
-        {
-            return IExecute<bool>("isMultipleMode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getMinimumSize(int)"/>

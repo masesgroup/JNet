@@ -165,6 +165,83 @@ namespace Java.Awt.Datatransfer
             get { return IExecute<string>("getHumanPresentableName"); } set { IExecute("setHumanPresentableName", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/> 
+        /// </summary>
+        public bool IsFlavorJavaFileListType
+        {
+            get { return IExecute<bool>("isFlavorJavaFileListType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType()"/> 
+        /// </summary>
+        public bool IsFlavorRemoteObjectType
+        {
+            get { return IExecute<bool>("isFlavorRemoteObjectType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType()"/> 
+        /// </summary>
+        public bool IsFlavorSerializedObjectType
+        {
+            get { return IExecute<bool>("isFlavorSerializedObjectType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorTextType()"/> 
+        /// </summary>
+        public bool IsFlavorTextType
+        {
+            get { return IExecute<bool>("isFlavorTextType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject()"/> 
+        /// </summary>
+        public bool IsMimeTypeSerializedObject
+        {
+            get { return IExecute<bool>("isMimeTypeSerializedObject"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer()"/> 
+        /// </summary>
+        public bool IsRepresentationClassByteBuffer
+        {
+            get { return IExecute<bool>("isRepresentationClassByteBuffer"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer()"/> 
+        /// </summary>
+        public bool IsRepresentationClassCharBuffer
+        {
+            get { return IExecute<bool>("isRepresentationClassCharBuffer"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream()"/> 
+        /// </summary>
+        public bool IsRepresentationClassInputStream
+        {
+            get { return IExecute<bool>("isRepresentationClassInputStream"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader()"/> 
+        /// </summary>
+        public bool IsRepresentationClassReader
+        {
+            get { return IExecute<bool>("isRepresentationClassReader"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote()"/> 
+        /// </summary>
+        public bool IsRepresentationClassRemote
+        {
+            get { return IExecute<bool>("isRepresentationClassRemote"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable()"/> 
+        /// </summary>
+        public bool IsRepresentationClassSerializable
+        {
+            get { return IExecute<bool>("isRepresentationClassSerializable"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getMimeType()"/> 
         /// </summary>
         public string MimeType
@@ -193,42 +270,6 @@ namespace Java.Awt.Datatransfer
             get { return IExecute<string>("getSubType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFlavorJavaFileListType()
-        {
-            return IExecute<bool>("isFlavorJavaFileListType");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFlavorRemoteObjectType()
-        {
-            return IExecute<bool>("isFlavorRemoteObjectType");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFlavorSerializedObjectType()
-        {
-            return IExecute<bool>("isFlavorSerializedObjectType");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorTextType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFlavorTextType()
-        {
-            return IExecute<bool>("isFlavorTextType");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -236,69 +277,6 @@ namespace Java.Awt.Datatransfer
         public bool IsMimeTypeEqual(string arg0)
         {
             return IExecute<bool>("isMimeTypeEqual", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMimeTypeSerializedObject()
-        {
-            return IExecute<bool>("isMimeTypeSerializedObject");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassByteBuffer()
-        {
-            return IExecute<bool>("isRepresentationClassByteBuffer");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassCharBuffer()
-        {
-            return IExecute<bool>("isRepresentationClassCharBuffer");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassInputStream()
-        {
-            return IExecute<bool>("isRepresentationClassInputStream");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassReader()
-        {
-            return IExecute<bool>("isRepresentationClassReader");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassRemote()
-        {
-            return IExecute<bool>("isRepresentationClassRemote");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRepresentationClassSerializable()
-        {
-            return IExecute<bool>("isRepresentationClassSerializable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#match(java.awt.datatransfer.DataFlavor)"/>

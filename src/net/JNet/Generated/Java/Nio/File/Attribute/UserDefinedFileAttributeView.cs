@@ -46,6 +46,20 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/> 
+        /// </summary>
+        public Java.Util.List List
+        {
+            get { return IExecute<Java.Util.List>("list"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/> 
+        /// </summary>
+        public string Name
+        {
+            get { return IExecute<string>("name"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#read(java.lang.String,java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -76,25 +90,6 @@ namespace Java.Nio.File.Attribute
         public int Write(string arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecute<int>("write", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Name()
-        {
-            return IExecute<string>("name");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.List List()
-        {
-            return IExecute<Java.Util.List>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#delete(java.lang.String)"/>

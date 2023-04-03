@@ -46,6 +46,20 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator DescendingIterator
+        {
+            get { return IExecute<Java.Util.Iterator>("descendingIterator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/> 
+        /// </summary>
+        public object Element
+        {
+            get { return IExecute("element"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#getFirst()"/> 
         /// </summary>
         public object First
@@ -53,11 +67,88 @@ namespace Java.Util
             get { return IExecute("getFirst"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator Iterator
+        {
+            get { return IExecute<Java.Util.Iterator>("iterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#getLast()"/> 
         /// </summary>
         public object Last
         {
             get { return IExecute("getLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/> 
+        /// </summary>
+        public object Peek
+        {
+            get { return IExecute("peek"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/> 
+        /// </summary>
+        public object PeekFirst
+        {
+            get { return IExecute("peekFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/> 
+        /// </summary>
+        public object PeekLast
+        {
+            get { return IExecute("peekLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/> 
+        /// </summary>
+        public object Poll
+        {
+            get { return IExecute("poll"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/> 
+        /// </summary>
+        public object PollFirst
+        {
+            get { return IExecute("pollFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/> 
+        /// </summary>
+        public object PollLast
+        {
+            get { return IExecute("pollLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/> 
+        /// </summary>
+        public object Pop
+        {
+            get { return IExecute("pop"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/> 
+        /// </summary>
+        public object RemoveFirst
+        {
+            get { return IExecute("removeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/> 
+        /// </summary>
+        public object RemoveLast
+        {
+            get { return IExecute("removeLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#add(java.lang.Object)"/>
@@ -141,78 +232,6 @@ namespace Java.Util
             return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Element()
-        {
-            return IExecute("element");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Peek()
-        {
-            return IExecute("peek");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PeekFirst()
-        {
-            return IExecute("peekFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PeekLast()
-        {
-            return IExecute("peekLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Poll()
-        {
-            return IExecute("poll");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PollFirst()
-        {
-            return IExecute("pollFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PollLast()
-        {
-            return IExecute("pollLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Pop()
-        {
-            return IExecute("pop");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
         
@@ -220,51 +239,6 @@ namespace Java.Util
         public object Remove()
         {
             return IExecute("remove");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object RemoveFirst()
-        {
-            return IExecute("removeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object RemoveLast()
-        {
-            return IExecute("removeLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator DescendingIterator()
-        {
-            return IExecute<Java.Util.Iterator>("descendingIterator");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
-        {
-            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#addFirst(java.lang.Object)"/>
@@ -326,6 +300,20 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator<E> DescendingIterator
+        {
+            get { return IExecute<Java.Util.Iterator<E>>("descendingIterator"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/> 
+        /// </summary>
+        public E Element
+        {
+            get { return IExecute<E>("element"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#getFirst()"/> 
         /// </summary>
         public E First
@@ -333,11 +321,88 @@ namespace Java.Util
             get { return IExecute<E>("getFirst"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator<E> Iterator
+        {
+            get { return IExecute<Java.Util.Iterator<E>>("iterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#getLast()"/> 
         /// </summary>
         public E Last
         {
             get { return IExecute<E>("getLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/> 
+        /// </summary>
+        public E Peek
+        {
+            get { return IExecute<E>("peek"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/> 
+        /// </summary>
+        public E PeekFirst
+        {
+            get { return IExecute<E>("peekFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/> 
+        /// </summary>
+        public E PeekLast
+        {
+            get { return IExecute<E>("peekLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/> 
+        /// </summary>
+        public E Poll
+        {
+            get { return IExecute<E>("poll"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/> 
+        /// </summary>
+        public E PollFirst
+        {
+            get { return IExecute<E>("pollFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/> 
+        /// </summary>
+        public E PollLast
+        {
+            get { return IExecute<E>("pollLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/> 
+        /// </summary>
+        public E Pop
+        {
+            get { return IExecute<E>("pop"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/> 
+        /// </summary>
+        public E RemoveFirst
+        {
+            get { return IExecute<E>("removeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/> 
+        /// </summary>
+        public E RemoveLast
+        {
+            get { return IExecute<E>("removeLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#add(java.lang.Object)"/>
@@ -421,78 +486,6 @@ namespace Java.Util
             return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Element()
-        {
-            return IExecute<E>("element");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Peek()
-        {
-            return IExecute<E>("peek");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PeekFirst()
-        {
-            return IExecute<E>("peekFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PeekLast()
-        {
-            return IExecute<E>("peekLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Poll()
-        {
-            return IExecute<E>("poll");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PollFirst()
-        {
-            return IExecute<E>("pollFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PollLast()
-        {
-            return IExecute<E>("pollLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Pop()
-        {
-            return IExecute<E>("pop");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
         
@@ -500,51 +493,6 @@ namespace Java.Util
         public E Remove()
         {
             return IExecute<E>("remove");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E RemoveFirst()
-        {
-            return IExecute<E>("removeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E RemoveLast()
-        {
-            return IExecute<E>("removeLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> DescendingIterator()
-        {
-            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
-        {
-            return IExecute<Java.Util.Iterator<E>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#addFirst(java.lang.Object)"/>

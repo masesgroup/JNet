@@ -46,6 +46,13 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Element.Element AsElement
+        {
+            get { return IExecute<Javax.Lang.Model.Element.Element>("asElement"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getEnclosingType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror EnclosingType
@@ -58,15 +65,6 @@ namespace Javax.Lang.Model.Type
         public Java.Util.List TypeArguments
         {
             get { return IExecute<Java.Util.List>("getTypeArguments"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
-        public Javax.Lang.Model.Element.Element AsElement()
-        {
-            return IExecute<Javax.Lang.Model.Element.Element>("asElement");
         }
         
         #endregion

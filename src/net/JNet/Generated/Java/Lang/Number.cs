@@ -50,58 +50,46 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public double DoubleValue()
+        public byte ByteValue
         {
-            return IExecute<double>("doubleValue");
+            get { return IExecute<byte>("byteValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="float"/></returns>
-        public float FloatValue()
+        public double DoubleValue
         {
-            return IExecute<float>("floatValue");
+            get { return IExecute<double>("doubleValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int IntValue()
+        public float FloatValue
         {
-            return IExecute<int>("intValue");
+            get { return IExecute<float>("floatValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long LongValue()
+        public int IntValue
         {
-            return IExecute<long>("longValue");
+            get { return IExecute<int>("intValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        public byte ByteValue()
+        public long LongValue
         {
-            return IExecute<byte>("byteValue");
+            get { return IExecute<long>("longValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="short"/></returns>
-        public short ShortValue()
+        public short ShortValue
         {
-            return IExecute<short>("shortValue");
+            get { return IExecute<short>("shortValue"); }
         }
         
         #endregion

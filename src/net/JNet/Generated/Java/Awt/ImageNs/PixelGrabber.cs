@@ -114,6 +114,13 @@ namespace Java.Awt.ImageNs
             get { return IExecute("getPixels"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/> 
+        /// </summary>
+        public int Status
+        {
+            get { return IExecute<int>("status"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getWidth()"/> 
         /// </summary>
         public int Width
@@ -148,15 +155,6 @@ namespace Java.Awt.ImageNs
         public int GetStatus()
         {
             return IExecute<int>("getStatus");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Status()
-        {
-            return IExecute<int>("status");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#abortGrabbing()"/>

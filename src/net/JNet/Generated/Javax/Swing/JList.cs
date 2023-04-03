@@ -131,6 +131,20 @@ namespace Javax.Swing
             get { return IExecute<int>("getFixedCellWidth"); } set { IExecute("setFixedCellWidth", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/> 
+        /// </summary>
+        public Javax.Swing.JList.DropLocation GetDropLocation
+        {
+            get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/> 
+        /// </summary>
+        public bool IsSelectionEmpty
+        {
+            get { return IExecute<bool>("isSelectionEmpty"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
         /// </summary>
         public int LastVisibleIndex
@@ -287,24 +301,6 @@ namespace Javax.Swing
             return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSelectionEmpty()
-        {
-            return IExecute<bool>("isSelectionEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.JList.DropLocation"/></returns>
-        public Javax.Swing.JList.DropLocation GetDropLocation()
-        {
-            return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -415,10 +411,10 @@ namespace Javax.Swing
             IExecute("removeSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        public void SetListData(object[] arg0)
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public void SetListData(Java.Util.Vector arg0)
         {
             IExecute("setListData", arg0);
         }
@@ -480,13 +476,11 @@ namespace Javax.Swing
                 get { return IExecute<int>("getIndex"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsInsert()
+            public bool IsInsert
             {
-                return IExecute<bool>("isInsert");
+                get { return IExecute<bool>("isInsert"); }
             }
             
             #endregion
@@ -618,6 +612,20 @@ namespace Javax.Swing
         public int FixedCellWidth
         {
             get { return IExecute<int>("getFixedCellWidth"); } set { IExecute("setFixedCellWidth", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/> 
+        /// </summary>
+        public Javax.Swing.JList.DropLocation GetDropLocation
+        {
+            get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/> 
+        /// </summary>
+        public bool IsSelectionEmpty
+        {
+            get { return IExecute<bool>("isSelectionEmpty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
@@ -776,24 +784,6 @@ namespace Javax.Swing
             return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSelectionEmpty()
-        {
-            return IExecute<bool>("isSelectionEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.JList.DropLocation"/></returns>
-        public Javax.Swing.JList.DropLocation GetDropLocation()
-        {
-            return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -904,10 +894,10 @@ namespace Javax.Swing
             IExecute("removeSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        public void SetListData(E arg0)
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public void SetListData<Arg0ExtendsE>(Java.Util.Vector<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
             IExecute("setListData", arg0);
         }

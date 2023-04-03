@@ -98,6 +98,13 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Month[] Values
+        {
+            get { return SExecuteArray<Java.Time.Month>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -124,19 +131,31 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Month>("valueOf", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Month"/></returns>
-        public static Java.Time.Month[] Values()
-        {
-            return SExecuteArray<Java.Time.Month>("values");
-        }
         
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstMonthOfQuarter()"/> 
+        /// </summary>
+        public Java.Time.Month FirstMonthOfQuarter
+        {
+            get { return IExecute<Java.Time.Month>("firstMonthOfQuarter"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#maxLength()"/> 
+        /// </summary>
+        public int MaxLength
+        {
+            get { return IExecute<int>("maxLength"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minLength()"/> 
+        /// </summary>
+        public int MinLength
+        {
+            get { return IExecute<int>("minLength"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#getValue()"/> 
         /// </summary>
@@ -190,24 +209,6 @@ namespace Java.Time
             return IExecute<int>("length", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#maxLength()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int MaxLength()
-        {
-            return IExecute<int>("maxLength");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minLength()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int MinLength()
-        {
-            return IExecute<int>("minLength");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
@@ -216,15 +217,6 @@ namespace Java.Time
         public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstMonthOfQuarter()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Month"/></returns>
-        public Java.Time.Month FirstMonthOfQuarter()
-        {
-            return IExecute<Java.Time.Month>("firstMonthOfQuarter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minus(long)"/>

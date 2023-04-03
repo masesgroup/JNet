@@ -261,6 +261,13 @@ namespace Java.Util
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/> 
+        /// </summary>
+        public static Java.Util.Set GetAvailableCalendarTypes
+        {
+            get { return SExecute<Java.Util.Set>("getAvailableCalendarTypes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/>
         /// </summary>
         
@@ -297,15 +304,6 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Calendar>("getInstance", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set GetAvailableCalendarTypes()
-        {
-            return SExecute<Java.Util.Set>("getAvailableCalendarTypes");
-        }
         
         #endregion
 
@@ -323,6 +321,20 @@ namespace Java.Util
         public int FirstDayOfWeek
         {
             get { return IExecute<int>("getFirstDayOfWeek"); } set { IExecute("setFirstDayOfWeek", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/> 
+        /// </summary>
+        public bool IsLenient
+        {
+            get { return IExecute<bool>("isLenient"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/> 
+        /// </summary>
+        public bool IsWeekDateSupported
+        {
+            get { return IExecute<bool>("isWeekDateSupported"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimalDaysInFirstWeek()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setMinimalDaysInFirstWeek(int)"/>
@@ -351,6 +363,13 @@ namespace Java.Util
         public Java.Util.TimeZone TimeZone
         {
             get { return IExecute<Java.Util.TimeZone>("getTimeZone"); } set { IExecute("setTimeZone", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/> 
+        /// </summary>
+        public Java.Time.Instant ToInstant
+        {
+            get { return IExecute<Java.Time.Instant>("toInstant"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeeksInWeekYear()"/> 
@@ -439,24 +458,6 @@ namespace Java.Util
             return IExecute<bool>("before", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLenient()
-        {
-            return IExecute<bool>("isLenient");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsWeekDateSupported()
-        {
-            return IExecute<bool>("isWeekDateSupported");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isSet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -464,15 +465,6 @@ namespace Java.Util
         public bool IsSet(int arg0)
         {
             return IExecute<bool>("isSet", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Instant"/></returns>
-        public Java.Time.Instant ToInstant()
-        {
-            return IExecute<Java.Time.Instant>("toInstant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear()"/>
@@ -652,13 +644,11 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Util.Calendar"/></returns>
-            public Java.Util.Calendar Build()
+            public Java.Util.Calendar Build
             {
-                return IExecute<Java.Util.Calendar>("build");
+                get { return IExecute<Java.Util.Calendar>("build"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#set(int,int)"/>

@@ -75,6 +75,20 @@ namespace Javax.Lang.Model.Element
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/> 
+        /// </summary>
+        public bool IsOpen
+        {
+            get { return IExecute<bool>("isOpen"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/> 
+        /// </summary>
+        public bool IsUnnamed
+        {
+            get { return IExecute<bool>("isUnnamed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
@@ -87,24 +101,6 @@ namespace Javax.Lang.Model.Element
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOpen()
-        {
-            return IExecute<bool>("isOpen");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsUnnamed()
-        {
-            return IExecute<bool>("isUnnamed");
         }
         
         #endregion
@@ -191,6 +187,13 @@ namespace Javax.Lang.Model.Element
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/> 
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values
+            {
+                get { return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -198,15 +201,6 @@ namespace Javax.Lang.Model.Element
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(string arg0)
             {
                 return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
-            {
-                return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("values");
             }
             
             #endregion
@@ -586,6 +580,13 @@ namespace Javax.Lang.Model.Element
                 get { return IExecute<Javax.Lang.Model.Element.ModuleElement>("getDependency"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/> 
+            /// </summary>
+            public bool IsTransitive
+            {
+                get { return IExecute<bool>("isTransitive"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
             /// </summary>
             
@@ -593,15 +594,6 @@ namespace Javax.Lang.Model.Element
             public bool IsStaticMethod()
             {
                 return IExecute<bool>("isStatic");
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/>
-            /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsTransitive()
-            {
-                return IExecute<bool>("isTransitive");
             }
             
             #endregion

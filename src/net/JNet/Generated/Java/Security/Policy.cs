@@ -46,6 +46,13 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPolicy()"/> 
+        /// </summary>
+        public static Java.Security.Policy GetPolicy
+        {
+            get { return SExecute<Java.Security.Policy>("getPolicy"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -82,15 +89,6 @@ namespace Java.Security
             return SExecute<Java.Security.Policy>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPolicy()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Security.Policy"/></returns>
-        public static Java.Security.Policy GetPolicy()
-        {
-            return SExecute<Java.Security.Policy>("getPolicy");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#setPolicy(java.security.Policy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Policy"/></param>
@@ -102,6 +100,13 @@ namespace Java.Security
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getParameters()"/> 
+        /// </summary>
+        public Java.Security.Policy.Parameters GetParameters
+        {
+            get { return IExecute<Java.Security.Policy.Parameters>("getParameters"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getProvider()"/> 
         /// </summary>
@@ -143,15 +148,6 @@ namespace Java.Security
         public Java.Security.PermissionCollection GetPermissions(Java.Security.ProtectionDomain arg0)
         {
             return IExecute<Java.Security.PermissionCollection>("getPermissions", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getParameters()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Security.Policy.Parameters"/></returns>
-        public Java.Security.Policy.Parameters GetParameters()
-        {
-            return IExecute<Java.Security.Policy.Parameters>("getParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#refresh()"/>

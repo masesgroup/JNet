@@ -114,6 +114,20 @@ namespace Javax.Management.Relation
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/> 
+        /// </summary>
+        public bool IsReadable
+        {
+            get { return IExecute<bool>("isReadable"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/> 
+        /// </summary>
+        public bool IsWritable
+        {
+            get { return IExecute<bool>("isWritable"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMaxDegree()"/> 
         /// </summary>
         public int MaxDegree
@@ -158,24 +172,6 @@ namespace Javax.Management.Relation
         public bool CheckMinDegree(int arg0)
         {
             return IExecute<bool>("checkMinDegree", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsReadable()
-        {
-            return IExecute<bool>("isReadable");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsWritable()
-        {
-            return IExecute<bool>("isWritable");
         }
         
         #endregion

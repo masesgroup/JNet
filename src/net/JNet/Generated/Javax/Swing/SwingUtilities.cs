@@ -46,6 +46,13 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()"/> 
+        /// </summary>
+        public static bool IsEventDispatchThread
+        {
+            get { return SExecute<bool>("isEventDispatchThread"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isDescendingFrom(java.awt.Component,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -54,15 +61,6 @@ namespace Javax.Swing
         public static bool IsDescendingFrom(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
             return SExecute<bool>("isDescendingFrom", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsEventDispatchThread()
-        {
-            return SExecute<bool>("isEventDispatchThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isLeftMouseButton(java.awt.event.MouseEvent)"/>

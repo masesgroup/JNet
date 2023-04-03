@@ -49,20 +49,18 @@ namespace Java.Awt
             get { return SExecute<Java.Awt.AWTEvent>("getCurrentEvent"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/> 
+        /// </summary>
+        public static bool IsDispatchThread
+        {
+            get { return SExecute<bool>("isDispatchThread"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getMostRecentEventTime()"/> 
         /// </summary>
         public static long MostRecentEventTime
         {
             get { return SExecute<long>("getMostRecentEventTime"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool IsDispatchThread()
-        {
-            return SExecute<bool>("isDispatchThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeAndWait(java.lang.Runnable)"/>
@@ -87,6 +85,13 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/> 
+        /// </summary>
+        public Java.Awt.SecondaryLoop CreateSecondaryLoop
+        {
+            get { return IExecute<Java.Awt.SecondaryLoop>("createSecondaryLoop"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getNextEvent()"/> 
         /// </summary>
         public Java.Awt.AWTEvent NextEvent
@@ -110,15 +115,6 @@ namespace Java.Awt
         public Java.Awt.AWTEvent PeekEvent(int arg0)
         {
             return IExecute<Java.Awt.AWTEvent>("peekEvent", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.SecondaryLoop"/></returns>
-        public Java.Awt.SecondaryLoop CreateSecondaryLoop()
-        {
-            return IExecute<Java.Awt.SecondaryLoop>("createSecondaryLoop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#postEvent(java.awt.AWTEvent)"/>

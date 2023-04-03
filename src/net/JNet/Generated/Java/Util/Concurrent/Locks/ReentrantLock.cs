@@ -62,11 +62,46 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/> 
+        /// </summary>
+        public bool HasQueuedThreads
+        {
+            get { return IExecute<bool>("hasQueuedThreads"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#getHoldCount()"/> 
         /// </summary>
         public int HoldCount
         {
             get { return IExecute<int>("getHoldCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/> 
+        /// </summary>
+        public bool IsFair
+        {
+            get { return IExecute<bool>("isFair"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/> 
+        /// </summary>
+        public bool IsHeldByCurrentThread
+        {
+            get { return IExecute<bool>("isHeldByCurrentThread"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/> 
+        /// </summary>
+        public bool IsLocked
+        {
+            get { return IExecute<bool>("isLocked"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.Locks.Condition NewCondition
+        {
+            get { return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#getQueueLength()"/> 
@@ -83,24 +118,6 @@ namespace Java.Util.Concurrent.Locks
         public bool HasWaiters(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecute<bool>("hasWaiters", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsHeldByCurrentThread()
-        {
-            return IExecute<bool>("isHeldByCurrentThread");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLocked()
-        {
-            return IExecute<bool>("isLocked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
@@ -132,24 +149,6 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("hasQueuedThread", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasQueuedThreads()
-        {
-            return IExecute<bool>("hasQueuedThreads");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFair()
-        {
-            return IExecute<bool>("isFair");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
@@ -157,15 +156,6 @@ namespace Java.Util.Concurrent.Locks
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecute<int>("getWaitQueueLength", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
-        public Java.Util.Concurrent.Locks.Condition NewCondition()
-        {
-            return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#lock()"/>

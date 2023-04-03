@@ -79,6 +79,13 @@ namespace Java.Sql
             get { return IExecute<int>("getNanos"); } set { IExecute("setNanos", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#toLocalDateTime()"/> 
+        /// </summary>
+        public Java.Time.LocalDateTime ToLocalDateTime
+        {
+            get { return IExecute<Java.Time.LocalDateTime>("toLocalDateTime"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
@@ -104,15 +111,6 @@ namespace Java.Sql
         public int CompareTo(Java.Sql.Timestamp arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#toLocalDateTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
-        public Java.Time.LocalDateTime ToLocalDateTime()
-        {
-            return IExecute<Java.Time.LocalDateTime>("toLocalDateTime");
         }
         
         #endregion

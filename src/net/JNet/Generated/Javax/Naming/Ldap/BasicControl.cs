@@ -82,13 +82,11 @@ namespace Javax.Naming.Ldap
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#isCritical()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#isCritical()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCritical()
+        public bool IsCritical
         {
-            return IExecute<bool>("isCritical");
+            get { return IExecute<bool>("isCritical"); }
         }
         
         #endregion

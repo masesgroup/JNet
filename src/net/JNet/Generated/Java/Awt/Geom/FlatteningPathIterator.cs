@@ -76,6 +76,13 @@ namespace Java.Awt.Geom
             get { return IExecute<double>("getFlatness"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()"/> 
+        /// </summary>
+        public bool IsDone
+        {
+            get { return IExecute<bool>("isDone"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getRecursionLimit()"/> 
         /// </summary>
         public int RecursionLimit
@@ -88,15 +95,6 @@ namespace Java.Awt.Geom
         public int WindingRule
         {
             get { return IExecute<int>("getWindingRule"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDone()
-        {
-            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(double[])"/>

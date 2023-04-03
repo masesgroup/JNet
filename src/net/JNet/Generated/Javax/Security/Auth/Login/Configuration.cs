@@ -42,13 +42,11 @@ namespace Javax.Security.Auth.Login
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getConfiguration()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getConfiguration()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
-        public static Javax.Security.Auth.Login.Configuration GetConfiguration()
+        public static Javax.Security.Auth.Login.Configuration GetConfiguration
         {
-            return SExecute<Javax.Security.Auth.Login.Configuration>("getConfiguration");
+            get { return SExecute<Javax.Security.Auth.Login.Configuration>("getConfiguration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters,java.lang.String)"/>
@@ -99,6 +97,13 @@ namespace Javax.Security.Auth.Login
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getParameters()"/> 
+        /// </summary>
+        public Javax.Security.Auth.Login.Configuration.Parameters GetParameters
+        {
+            get { return IExecute<Javax.Security.Auth.Login.Configuration.Parameters>("getParameters"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
@@ -120,15 +125,6 @@ namespace Javax.Security.Auth.Login
         public Javax.Security.Auth.Login.AppConfigurationEntry[] GetAppConfigurationEntry(string arg0)
         {
             return IExecuteArray<Javax.Security.Auth.Login.AppConfigurationEntry>("getAppConfigurationEntry", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getParameters()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></returns>
-        public Javax.Security.Auth.Login.Configuration.Parameters GetParameters()
-        {
-            return IExecute<Javax.Security.Auth.Login.Configuration.Parameters>("getParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#refresh()"/>

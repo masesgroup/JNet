@@ -42,13 +42,11 @@ namespace Javax.Xml.Validation
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newDefaultInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newDefaultInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
-        public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance()
+        public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance
         {
-            return SExecute<Javax.Xml.Validation.SchemaFactory>("newDefaultInstance");
+            get { return SExecute<Javax.Xml.Validation.SchemaFactory>("newDefaultInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>

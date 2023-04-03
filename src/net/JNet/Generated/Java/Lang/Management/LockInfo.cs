@@ -64,20 +64,18 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getClassName()"/> 
+        /// </summary>
+        public string GetClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getIdentityHashCode()"/> 
         /// </summary>
         public int IdentityHashCode
         {
             get { return IExecute<int>("getIdentityHashCode"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getClassName()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string GetClassName()
-        {
-            return IExecute<string>("getClassName");
         }
         
         #endregion

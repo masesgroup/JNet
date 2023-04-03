@@ -122,49 +122,39 @@ namespace Java.Io
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#serialClass()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Lang.Class"/></returns>
-            public Java.Lang.Class SerialClass()
+            public long ArrayLength
             {
-                return IExecute<Java.Lang.Class>("serialClass");
+                get { return IExecute<long>("arrayLength"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long ArrayLength()
+            public long Depth
             {
-                return IExecute<long>("arrayLength");
+                get { return IExecute<long>("depth"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long Depth()
+            public long References
             {
-                return IExecute<long>("depth");
+                get { return IExecute<long>("references"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#serialClass()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long References()
+            public Java.Lang.Class SerialClass
             {
-                return IExecute<long>("references");
+                get { return IExecute<Java.Lang.Class>("serialClass"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long StreamBytes()
+            public long StreamBytes
             {
-                return IExecute<long>("streamBytes");
+                get { return IExecute<long>("streamBytes"); }
             }
             
             #endregion
@@ -202,6 +192,13 @@ namespace Java.Io
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/> 
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status[] Values
+            {
+                get { return SExecuteArray<Java.Io.ObjectInputFilter.Status>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -209,15 +206,6 @@ namespace Java.Io
             public static Java.Io.ObjectInputFilter.Status ValueOf(string arg0)
             {
                 return SExecute<Java.Io.ObjectInputFilter.Status>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
-            public static Java.Io.ObjectInputFilter.Status[] Values()
-            {
-                return SExecuteArray<Java.Io.ObjectInputFilter.Status>("values");
             }
             
             #endregion

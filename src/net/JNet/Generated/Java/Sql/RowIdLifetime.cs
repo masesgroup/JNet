@@ -62,6 +62,13 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#values()"/> 
+        /// </summary>
+        public static Java.Sql.RowIdLifetime[] Values
+        {
+            get { return SExecuteArray<Java.Sql.RowIdLifetime>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -69,15 +76,6 @@ namespace Java.Sql
         public static Java.Sql.RowIdLifetime ValueOf(string arg0)
         {
             return SExecute<Java.Sql.RowIdLifetime>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
-        public static Java.Sql.RowIdLifetime[] Values()
-        {
-            return SExecuteArray<Java.Sql.RowIdLifetime>("values");
         }
         
         #endregion

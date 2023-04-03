@@ -74,40 +74,32 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.ImageCapabilities>("getFrontBufferCapabilities"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFlipContents()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFullScreenRequired()
+        public Java.Awt.BufferCapabilities.FlipContents GetFlipContents
         {
-            return IExecute<bool>("isFullScreenRequired");
+            get { return IExecute<Java.Awt.BufferCapabilities.FlipContents>("getFlipContents"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMultiBufferAvailable()
+        public bool IsFullScreenRequired
         {
-            return IExecute<bool>("isMultiBufferAvailable");
+            get { return IExecute<bool>("isFullScreenRequired"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPageFlipping()
+        public bool IsMultiBufferAvailable
         {
-            return IExecute<bool>("isPageFlipping");
+            get { return IExecute<bool>("isMultiBufferAvailable"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFlipContents()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.BufferCapabilities.FlipContents"/></returns>
-        public Java.Awt.BufferCapabilities.FlipContents GetFlipContents()
+        public bool IsPageFlipping
         {
-            return IExecute<Java.Awt.BufferCapabilities.FlipContents>("getFlipContents");
+            get { return IExecute<bool>("isPageFlipping"); }
         }
         
         #endregion

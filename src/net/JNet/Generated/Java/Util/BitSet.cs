@@ -98,6 +98,55 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()"/> 
+        /// </summary>
+        public int Cardinality
+        {
+            get { return IExecute<int>("cardinality"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()"/> 
+        /// </summary>
+        public int Length
+        {
+            get { return IExecute<int>("length"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream()"/> 
+        /// </summary>
+        public Java.Util.Stream.IntStream Stream
+        {
+            get { return IExecute<Java.Util.Stream.IntStream>("stream"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()"/> 
+        /// </summary>
+        public byte[] ToByteArray
+        {
+            get { return IExecuteArray<byte>("toByteArray"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()"/> 
+        /// </summary>
+        public long[] ToLongArray
+        {
+            get { return IExecuteArray<long>("toLongArray"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,42 +163,6 @@ namespace Java.Util
         public bool Intersects(Java.Util.BitSet arg0)
         {
             return IExecute<bool>("intersects", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()"/>
-        /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        public byte[] ToByteArray()
-        {
-            return IExecuteArray<byte>("toByteArray");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Cardinality()
-        {
-            return IExecute<int>("cardinality");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
-        {
-            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextClearBit(int)"/>
@@ -188,15 +201,6 @@ namespace Java.Util
             return IExecute<int>("previousSetBit", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -205,24 +209,6 @@ namespace Java.Util
         public Java.Util.BitSet Get(int arg0, int arg1)
         {
             return IExecute<Java.Util.BitSet>("get", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream Stream()
-        {
-            return IExecute<Java.Util.Stream.IntStream>("stream");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long[] ToLongArray()
-        {
-            return IExecuteArray<long>("toLongArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#and(java.util.BitSet)"/>

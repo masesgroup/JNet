@@ -49,13 +49,11 @@ namespace Javax.Net.Ssl
             get { return SExecute<Javax.Net.Ssl.SSLSocketFactory>("getDefaultSSLSocketFactory"); } set { SExecute("setDefaultSSLSocketFactory", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Net.Ssl.HostnameVerifier"/></returns>
-        public static Javax.Net.Ssl.HostnameVerifier GetDefaultHostnameVerifier()
+        public static Javax.Net.Ssl.HostnameVerifier GetDefaultHostnameVerifier
         {
-            return SExecute<Javax.Net.Ssl.HostnameVerifier>("getDefaultHostnameVerifier");
+            get { return SExecute<Javax.Net.Ssl.HostnameVerifier>("getDefaultHostnameVerifier"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>

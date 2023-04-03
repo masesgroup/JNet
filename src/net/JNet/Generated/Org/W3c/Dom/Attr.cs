@@ -46,6 +46,13 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/> 
+        /// </summary>
+        public bool IsId
+        {
+            get { return IExecute<bool>("isId"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getName()"/> 
         /// </summary>
         public string Name
@@ -79,15 +86,6 @@ namespace Org.W3c.Dom
         public string Value
         {
             get { return IExecute<string>("getValue"); } set { IExecute("setValue", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsId()
-        {
-            return IExecute<bool>("isId");
         }
         
         #endregion

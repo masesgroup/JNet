@@ -75,40 +75,32 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int FlashCount()
+        public static Java.Awt.Color FlashColor
         {
-            return SExecute<int>("flashCount");
+            get { return SExecute<Java.Awt.Color>("flashColor"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int FlashTime()
+        public static int FlashCount
         {
-            return SExecute<int>("flashTime");
+            get { return SExecute<int>("flashCount"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        public static Java.Awt.Color FlashColor()
+        public static int FlashTime
         {
-            return SExecute<Java.Awt.Color>("flashColor");
+            get { return SExecute<int>("flashTime"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Io.PrintStream"/></returns>
-        public static Java.Io.PrintStream LogStream()
+        public static Java.Io.PrintStream LogStream
         {
-            return SExecute<Java.Io.PrintStream>("logStream");
+            get { return SExecute<Java.Io.PrintStream>("logStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashColor(java.awt.Color)"/>
@@ -154,13 +146,11 @@ namespace Javax.Swing
             get { return IExecute<int>("getDebugOptions"); } set { IExecute("setDebugOptions", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDrawingBuffer()
+        public bool IsDrawingBuffer
         {
-            return IExecute<bool>("isDrawingBuffer");
+            get { return IExecute<bool>("isDrawingBuffer"); }
         }
         
         #endregion

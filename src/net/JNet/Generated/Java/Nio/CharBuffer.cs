@@ -111,6 +111,41 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#asReadOnlyBuffer()"/> 
+        /// </summary>
+        public Java.Nio.CharBuffer AsReadOnlyBuffer
+        {
+            get { return IExecute<Java.Nio.CharBuffer>("asReadOnlyBuffer"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#chars()"/> 
+        /// </summary>
+        public Java.Util.Stream.IntStream Chars
+        {
+            get { return IExecute<Java.Util.Stream.IntStream>("chars"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compact()"/> 
+        /// </summary>
+        public Java.Nio.CharBuffer Compact
+        {
+            get { return IExecute<Java.Nio.CharBuffer>("compact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#length()"/> 
+        /// </summary>
+        public int Length
+        {
+            get { return IExecute<int>("length"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#order()"/> 
+        /// </summary>
+        public Java.Nio.ByteOrder Order
+        {
+            get { return IExecute<Java.Nio.ByteOrder>("order"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get()"/>
         /// </summary>
         
@@ -127,33 +162,6 @@ namespace Java.Nio
         public char Get(int arg0)
         {
             return IExecute<char>("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#order()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
-        public Java.Nio.ByteOrder Order()
-        {
-            return IExecute<Java.Nio.ByteOrder>("order");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#asReadOnlyBuffer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
-        public Java.Nio.CharBuffer AsReadOnlyBuffer()
-        {
-            return IExecute<Java.Nio.CharBuffer>("asReadOnlyBuffer");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compact()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
-        public Java.Nio.CharBuffer Compact()
-        {
-            return IExecute<Java.Nio.CharBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char)"/>
@@ -182,15 +190,6 @@ namespace Java.Nio
         public char CharAt(int arg0)
         {
             return IExecute<char>("charAt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
-        {
-            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char[])"/>
@@ -339,15 +338,6 @@ namespace Java.Nio
         public Java.Nio.CharBuffer Put(Java.Nio.CharBuffer arg0)
         {
             return IExecute<Java.Nio.CharBuffer>("put", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#chars()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream Chars()
-        {
-            return IExecute<Java.Util.Stream.IntStream>("chars");
         }
         
         #endregion

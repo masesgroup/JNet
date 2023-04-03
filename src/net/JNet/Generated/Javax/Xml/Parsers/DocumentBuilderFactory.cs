@@ -42,13 +42,11 @@ namespace Javax.Xml.Parsers
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
-        public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultInstance()
+        public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultInstance
         {
-            return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>("newDefaultInstance");
+            get { return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>("newDefaultInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()"/>
@@ -73,6 +71,62 @@ namespace Javax.Xml.Parsers
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/> 
+        /// </summary>
+        public bool IsCoalescing
+        {
+            get { return IExecute<bool>("isCoalescing"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/> 
+        /// </summary>
+        public bool IsExpandEntityReferences
+        {
+            get { return IExecute<bool>("isExpandEntityReferences"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/> 
+        /// </summary>
+        public bool IsIgnoringComments
+        {
+            get { return IExecute<bool>("isIgnoringComments"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/> 
+        /// </summary>
+        public bool IsIgnoringElementContentWhitespace
+        {
+            get { return IExecute<bool>("isIgnoringElementContentWhitespace"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/> 
+        /// </summary>
+        public bool IsNamespaceAware
+        {
+            get { return IExecute<bool>("isNamespaceAware"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/> 
+        /// </summary>
+        public bool IsValidating
+        {
+            get { return IExecute<bool>("isValidating"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/> 
+        /// </summary>
+        public bool IsXIncludeAware
+        {
+            get { return IExecute<bool>("isXIncludeAware"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder()"/> 
+        /// </summary>
+        public Javax.Xml.Parsers.DocumentBuilder NewDocumentBuilder
+        {
+            get { return IExecute<Javax.Xml.Parsers.DocumentBuilder>("newDocumentBuilder"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getSchema()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setSchema(javax.xml.validation.Schema)"/>
         /// </summary>
@@ -101,16 +155,6 @@ namespace Javax.Xml.Parsers
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilder"/></returns>
-        /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
-        public Javax.Xml.Parsers.DocumentBuilder NewDocumentBuilder()
-        {
-            return IExecute<Javax.Xml.Parsers.DocumentBuilder>("newDocumentBuilder");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setAttribute(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -129,69 +173,6 @@ namespace Javax.Xml.Parsers
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCoalescing()
-        {
-            return IExecute<bool>("isCoalescing");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsExpandEntityReferences()
-        {
-            return IExecute<bool>("isExpandEntityReferences");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIgnoringComments()
-        {
-            return IExecute<bool>("isIgnoringComments");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIgnoringElementContentWhitespace()
-        {
-            return IExecute<bool>("isIgnoringElementContentWhitespace");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNamespaceAware()
-        {
-            return IExecute<bool>("isNamespaceAware");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsValidating()
-        {
-            return IExecute<bool>("isValidating");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsXIncludeAware()
-        {
-            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setCoalescing(boolean)"/>

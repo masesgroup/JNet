@@ -93,11 +93,25 @@ namespace Javax.Swing.Tree
             get { return IExecute<int>("getChildCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#children()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Children
+        {
+            get { return IExecute<Java.Util.Enumeration>("children"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getDepth()"/> 
         /// </summary>
         public int Depth
         {
             get { return IExecute<int>("getDepth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration()"/> 
+        /// </summary>
+        public Java.Util.Enumeration DepthFirstEnumeration
+        {
+            get { return IExecute<Java.Util.Enumeration>("depthFirstEnumeration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getFirstChild()"/> 
@@ -112,6 +126,20 @@ namespace Javax.Swing.Tree
         public Javax.Swing.Tree.DefaultMutableTreeNode FirstLeaf
         {
             get { return IExecute<Javax.Swing.Tree.DefaultMutableTreeNode>("getFirstLeaf"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isLeaf()"/> 
+        /// </summary>
+        public bool IsLeaf
+        {
+            get { return IExecute<bool>("isLeaf"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isRoot()"/> 
+        /// </summary>
+        public bool IsRoot
+        {
+            get { return IExecute<bool>("isRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getLastChild()"/> 
@@ -226,15 +254,6 @@ namespace Javax.Swing.Tree
             get { return IExecuteArray<object>("getUserObjectPath"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isLeaf()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeaf()
-        {
-            return IExecute<bool>("isLeaf");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeAncestor(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
@@ -280,15 +299,6 @@ namespace Javax.Swing.Tree
             return IExecute<bool>("isNodeSibling", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isRoot()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsRoot()
-        {
-            return IExecute<bool>("isRoot");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
@@ -305,24 +315,6 @@ namespace Javax.Swing.Tree
         public Java.Util.Enumeration BreadthFirstEnumerationMethod()
         {
             return IExecute<Java.Util.Enumeration>("breadthFirstEnumeration");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#children()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration Children()
-        {
-            return IExecute<Java.Util.Enumeration>("children");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration DepthFirstEnumeration()
-        {
-            return IExecute<Java.Util.Enumeration>("depthFirstEnumeration");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#pathFromAncestorEnumeration(javax.swing.tree.TreeNode)"/>

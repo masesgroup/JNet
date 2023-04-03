@@ -56,6 +56,13 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#map()"/> 
+        /// </summary>
+        public Java.Util.Map Map
+        {
+            get { return IExecute<Java.Util.Map>("map"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#allValues(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -63,15 +70,6 @@ namespace Java.Net.Http
         public Java.Util.List AllValues(string arg0)
         {
             return IExecute<Java.Util.List>("allValues", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#map()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map Map()
-        {
-            return IExecute<Java.Util.Map>("map");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValue(java.lang.String)"/>

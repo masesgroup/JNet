@@ -103,6 +103,13 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call()"/> 
+            /// </summary>
+            public object Call
+            {
+                get { return IExecute("call"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
@@ -117,16 +124,6 @@ namespace Javax.Tools
             public void SetLocale(Java.Util.Locale arg0)
             {
                 IExecute("setLocale", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call()"/>
-            /// </summary>
-            
-            /// <returns><see cref="object"/></returns>
-            /// <exception cref="Java.Lang.Exception"/>
-            public object Call()
-            {
-                return IExecute("call");
             }
             
             #endregion
@@ -164,6 +161,13 @@ namespace Javax.Tools
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/> 
+            /// </summary>
+            public static Javax.Tools.DocumentationTool.Location[] Values
+            {
+                get { return SExecuteArray<Javax.Tools.DocumentationTool.Location>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -172,34 +176,23 @@ namespace Javax.Tools
             {
                 return SExecute<Javax.Tools.DocumentationTool.Location>("valueOf", arg0);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
-            public static Javax.Tools.DocumentationTool.Location[] Values()
-            {
-                return SExecuteArray<Javax.Tools.DocumentationTool.Location>("values");
-            }
             
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/> 
+            /// </summary>
+            public bool IsOutputLocation
+            {
+                get { return IExecute<bool>("isOutputLocation"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/>
-            /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsOutputLocation()
-            {
-                return IExecute<bool>("isOutputLocation");
             }
             
             #endregion

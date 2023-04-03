@@ -76,6 +76,13 @@ namespace Java.Security
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#newPermissionCollection()"/> 
+        /// </summary>
+        public Java.Security.PermissionCollection NewPermissionCollection
+        {
+            get { return IExecute<Java.Security.PermissionCollection>("newPermissionCollection"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#implies(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
@@ -83,15 +90,6 @@ namespace Java.Security
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecute<bool>("implies", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#newPermissionCollection()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
-        public Java.Security.PermissionCollection NewPermissionCollection()
-        {
-            return IExecute<Java.Security.PermissionCollection>("newPermissionCollection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#checkGuard(java.lang.Object)"/>

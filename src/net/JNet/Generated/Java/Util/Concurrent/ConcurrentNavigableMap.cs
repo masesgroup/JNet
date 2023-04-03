@@ -54,31 +54,32 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet DescendingKeySet()
+        public Java.Util.NavigableSet DescendingKeySet
         {
-            return IExecute<Java.Util.NavigableSet>("descendingKeySet");
+            get { return IExecute<Java.Util.NavigableSet>("descendingKeySet"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet NavigableKeySet()
+        public Java.Util.NavigableMap DescendingMap
         {
-            return IExecute<Java.Util.NavigableSet>("navigableKeySet");
+            get { return IExecute<Java.Util.NavigableMap>("descendingMap"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public Java.Util.NavigableMap DescendingMap()
+        public Java.Util.Set KeySet
         {
-            return IExecute<Java.Util.NavigableMap>("descendingMap");
+            get { return IExecute<Java.Util.Set>("keySet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/> 
+        /// </summary>
+        public Java.Util.NavigableSet NavigableKeySet
+        {
+            get { return IExecute<Java.Util.NavigableSet>("navigableKeySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
@@ -111,15 +112,6 @@ namespace Java.Util.Concurrent
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
             return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set KeySet()
-        {
-            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
@@ -193,31 +185,32 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<K> DescendingKeySet()
+        public Java.Util.NavigableSet<K> DescendingKeySet
         {
-            return IExecute<Java.Util.NavigableSet<K>>("descendingKeySet");
+            get { return IExecute<Java.Util.NavigableSet<K>>("descendingKeySet"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<K> NavigableKeySet()
+        public Java.Util.NavigableMap DescendingMap
         {
-            return IExecute<Java.Util.NavigableSet<K>>("navigableKeySet");
+            get { return IExecute<Java.Util.NavigableMap>("descendingMap"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public Java.Util.NavigableMap DescendingMap()
+        public Java.Util.Set KeySet
         {
-            return IExecute<Java.Util.NavigableMap>("descendingMap");
+            get { return IExecute<Java.Util.Set>("keySet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/> 
+        /// </summary>
+        public Java.Util.NavigableSet<K> NavigableKeySet
+        {
+            get { return IExecute<Java.Util.NavigableSet<K>>("navigableKeySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
@@ -250,15 +243,6 @@ namespace Java.Util.Concurrent
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
             return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set KeySet()
-        {
-            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>

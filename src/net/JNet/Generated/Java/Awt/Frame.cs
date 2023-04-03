@@ -117,6 +117,20 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Image>("getIconImage"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/> 
+        /// </summary>
+        public bool IsResizable
+        {
+            get { return IExecute<bool>("isResizable"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/> 
+        /// </summary>
+        public bool IsUndecorated
+        {
+            get { return IExecute<bool>("isUndecorated"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle MaximizedBounds
@@ -143,24 +157,6 @@ namespace Java.Awt
         public string Title
         {
             get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsResizable()
-        {
-            return IExecute<bool>("isResizable");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsUndecorated()
-        {
-            return IExecute<bool>("isUndecorated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setResizable(boolean)"/>

@@ -46,6 +46,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
+        /// </summary>
+        public Java.Util.Function.BiPredicate Negate
+        {
+            get { return IExecute<Java.Util.Function.BiPredicate>("negate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -63,15 +70,6 @@ namespace Java.Util.Function
         public Java.Util.Function.BiPredicate And(Java.Util.Function.BiPredicate arg0)
         {
             return IExecute<Java.Util.Function.BiPredicate>("and", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate Negate()
-        {
-            return IExecute<Java.Util.Function.BiPredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -118,6 +116,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
+        /// </summary>
+        public Java.Util.Function.BiPredicate<T, U> Negate
+        {
+            get { return IExecute<Java.Util.Function.BiPredicate<T, U>>("negate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="T"/></param>
@@ -135,15 +140,6 @@ namespace Java.Util.Function
         public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
         {
             return IExecute<Java.Util.Function.BiPredicate<T, U>>("and", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate<T, U> Negate()
-        {
-            return IExecute<Java.Util.Function.BiPredicate<T, U>>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>

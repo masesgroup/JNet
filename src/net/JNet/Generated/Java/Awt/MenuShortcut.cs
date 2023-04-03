@@ -74,13 +74,11 @@ namespace Java.Awt
             get { return IExecute<int>("getKey"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool UsesShiftModifier()
+        public bool UsesShiftModifier
         {
-            return IExecute<bool>("usesShiftModifier");
+            get { return IExecute<bool>("usesShiftModifier"); }
         }
         
         #endregion

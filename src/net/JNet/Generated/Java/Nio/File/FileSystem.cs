@@ -57,6 +57,34 @@ namespace Java.Nio.File
             get { return IExecute<Java.Lang.Iterable>("getFileStores"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isOpen()"/> 
+        /// </summary>
+        public bool IsOpen
+        {
+            get { return IExecute<bool>("isOpen"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isReadOnly()"/> 
+        /// </summary>
+        public bool IsReadOnly
+        {
+            get { return IExecute<bool>("isReadOnly"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#newWatchService()"/> 
+        /// </summary>
+        public Java.Nio.File.WatchService NewWatchService
+        {
+            get { return IExecute<Java.Nio.File.WatchService>("newWatchService"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#provider()"/> 
+        /// </summary>
+        public Java.Nio.File.Spi.FileSystemProvider Provider
+        {
+            get { return IExecute<Java.Nio.File.Spi.FileSystemProvider>("provider"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getRootDirectories()"/> 
         /// </summary>
         public Java.Lang.Iterable RootDirectories
@@ -71,29 +99,18 @@ namespace Java.Nio.File
             get { return IExecute<string>("getSeparator"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/> 
+        /// </summary>
+        public Java.Util.Set SupportedFileAttributeViews
+        {
+            get { return IExecute<Java.Util.Set>("supportedFileAttributeViews"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getUserPrincipalLookupService()"/> 
         /// </summary>
         public Java.Nio.File.Attribute.UserPrincipalLookupService UserPrincipalLookupService
         {
             get { return IExecute<Java.Nio.File.Attribute.UserPrincipalLookupService>("getUserPrincipalLookupService"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isOpen()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsOpen()
-        {
-            return IExecute<bool>("isOpen");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isReadOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsReadOnly()
-        {
-            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getPath(java.lang.String,java.lang.String[])"/>
@@ -113,34 +130,6 @@ namespace Java.Nio.File
         public Java.Nio.File.PathMatcher GetPathMatcher(string arg0)
         {
             return IExecute<Java.Nio.File.PathMatcher>("getPathMatcher", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#provider()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.Spi.FileSystemProvider"/></returns>
-        public Java.Nio.File.Spi.FileSystemProvider Provider()
-        {
-            return IExecute<Java.Nio.File.Spi.FileSystemProvider>("provider");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#newWatchService()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.WatchService"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchService NewWatchService()
-        {
-            return IExecute<Java.Nio.File.WatchService>("newWatchService");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set SupportedFileAttributeViews()
-        {
-            return IExecute<Java.Util.Set>("supportedFileAttributeViews");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#close()"/>

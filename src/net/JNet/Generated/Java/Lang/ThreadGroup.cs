@@ -63,6 +63,34 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()"/> 
+        /// </summary>
+        public int ActiveCount
+        {
+            get { return IExecute<int>("activeCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()"/> 
+        /// </summary>
+        public int ActiveGroupCount
+        {
+            get { return IExecute<int>("activeGroupCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()"/> 
+        /// </summary>
+        public bool IsDaemon
+        {
+            get { return IExecute<bool>("isDaemon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()"/> 
+        /// </summary>
+        public bool IsDestroyed
+        {
+            get { return IExecute<bool>("isDestroyed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getMaxPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setMaxPriority(int)"/>
         /// </summary>
         public int MaxPriority
@@ -82,15 +110,6 @@ namespace Java.Lang
         public Java.Lang.ThreadGroup Parent
         {
             get { return IExecute<Java.Lang.ThreadGroup>("getParent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDaemon()
-        {
-            return IExecute<bool>("isDaemon");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)"/>
@@ -131,24 +150,6 @@ namespace Java.Lang
             IExecute("setDaemon", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int ActiveCount()
-        {
-            return IExecute<int>("activeCount");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int ActiveGroupCount()
-        {
-            return IExecute<int>("activeGroupCount");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
@@ -185,15 +186,6 @@ namespace Java.Lang
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
             return IExecute<int>("enumerate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDestroyed()
-        {
-            return IExecute<bool>("isDestroyed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#list()"/>

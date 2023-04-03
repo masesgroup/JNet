@@ -53,6 +53,27 @@ namespace Java.Util.Concurrent
             get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getCompleter"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/> 
+        /// </summary>
+        public int DecrementPendingCountUnlessZero
+        {
+            get { return IExecute<int>("decrementPendingCountUnlessZero"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CountedCompleter FirstComplete
+        {
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("firstComplete"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CountedCompleter NextComplete
+        {
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("nextComplete"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
         /// </summary>
         public int PendingCount
@@ -92,33 +113,6 @@ namespace Java.Util.Concurrent
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int DecrementPendingCountUnlessZero()
-        {
-            return IExecute<int>("decrementPendingCountUnlessZero");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
-        public Java.Util.Concurrent.CountedCompleter FirstComplete()
-        {
-            return IExecute<Java.Util.Concurrent.CountedCompleter>("firstComplete");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
-        public Java.Util.Concurrent.CountedCompleter NextComplete()
-        {
-            return IExecute<Java.Util.Concurrent.CountedCompleter>("nextComplete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
@@ -208,6 +202,27 @@ namespace Java.Util.Concurrent
             get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getCompleter"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/> 
+        /// </summary>
+        public int DecrementPendingCountUnlessZero
+        {
+            get { return IExecute<int>("decrementPendingCountUnlessZero"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CountedCompleter FirstComplete
+        {
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("firstComplete"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.CountedCompleter NextComplete
+        {
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("nextComplete"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
         /// </summary>
         public int PendingCount
@@ -247,33 +262,6 @@ namespace Java.Util.Concurrent
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int DecrementPendingCountUnlessZero()
-        {
-            return IExecute<int>("decrementPendingCountUnlessZero");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
-        public Java.Util.Concurrent.CountedCompleter<ReturnExtendsobject> FirstComplete<ReturnExtendsobject>()
-        {
-            return IExecute<Java.Util.Concurrent.CountedCompleter<ReturnExtendsobject>>("firstComplete");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
-        public Java.Util.Concurrent.CountedCompleter<ReturnExtendsobject> NextComplete<ReturnExtendsobject>()
-        {
-            return IExecute<Java.Util.Concurrent.CountedCompleter<ReturnExtendsobject>>("nextComplete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>

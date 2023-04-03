@@ -96,6 +96,48 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()"/> 
+        /// </summary>
+        public bool IsAltDown
+        {
+            get { return IExecute<bool>("isAltDown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()"/> 
+        /// </summary>
+        public bool IsAltGraphDown
+        {
+            get { return IExecute<bool>("isAltGraphDown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()"/> 
+        /// </summary>
+        public bool IsConsumed
+        {
+            get { return IExecute<bool>("isConsumed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()"/> 
+        /// </summary>
+        public bool IsControlDown
+        {
+            get { return IExecute<bool>("isControlDown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()"/> 
+        /// </summary>
+        public bool IsMetaDown
+        {
+            get { return IExecute<bool>("isMetaDown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()"/> 
+        /// </summary>
+        public bool IsShiftDown
+        {
+            get { return IExecute<bool>("isShiftDown"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersEx()"/> 
         /// </summary>
         public int ModifiersEx
@@ -108,60 +150,6 @@ namespace Java.Awt.EventNs
         public long When
         {
             get { return IExecute<long>("getWhen"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAltDown()
-        {
-            return IExecute<bool>("isAltDown");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAltGraphDown()
-        {
-            return IExecute<bool>("isAltGraphDown");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsConsumed()
-        {
-            return IExecute<bool>("isConsumed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsControlDown()
-        {
-            return IExecute<bool>("isControlDown");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMetaDown()
-        {
-            return IExecute<bool>("isMetaDown");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsShiftDown()
-        {
-            return IExecute<bool>("isShiftDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#consume()"/>

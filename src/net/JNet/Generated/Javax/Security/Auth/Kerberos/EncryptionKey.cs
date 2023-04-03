@@ -80,20 +80,18 @@ namespace Javax.Security.Auth.Kerberos
             get { return IExecute<string>("getFormat"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#isDestroyed()"/> 
+        /// </summary>
+        public bool IsDestroyed
+        {
+            get { return IExecute<bool>("isDestroyed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getKeyType()"/> 
         /// </summary>
         public int KeyType
         {
             get { return IExecute<int>("getKeyType"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#isDestroyed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDestroyed()
-        {
-            return IExecute<bool>("isDestroyed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#destroy()"/>

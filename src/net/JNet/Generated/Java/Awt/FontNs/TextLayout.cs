@@ -132,6 +132,20 @@ namespace Java.Awt.FontNs
             get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isLeftToRight()"/> 
+        /// </summary>
+        public bool IsLeftToRight
+        {
+            get { return IExecute<bool>("isLeftToRight"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isVertical()"/> 
+        /// </summary>
+        public bool IsVertical
+        {
+            get { return IExecute<bool>("isVertical"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLayoutPath()"/> 
         /// </summary>
         public Java.Awt.FontNs.LayoutPath LayoutPath
@@ -151,24 +165,6 @@ namespace Java.Awt.FontNs
         public float VisibleAdvance
         {
             get { return IExecute<float>("getVisibleAdvance"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isLeftToRight()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeftToRight()
-        {
-            return IExecute<bool>("isLeftToRight");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isVertical()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVertical()
-        {
-            return IExecute<bool>("isVertical");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterLevel(int)"/>

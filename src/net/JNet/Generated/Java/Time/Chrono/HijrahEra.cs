@@ -50,6 +50,13 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Chrono.HijrahEra[] Values
+        {
+            get { return SExecuteArray<Java.Time.Chrono.HijrahEra>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -66,15 +73,6 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.HijrahEra ValueOf(string arg0)
         {
             return SExecute<Java.Time.Chrono.HijrahEra>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
-        public static Java.Time.Chrono.HijrahEra[] Values()
-        {
-            return SExecuteArray<Java.Time.Chrono.HijrahEra>("values");
         }
         
         #endregion

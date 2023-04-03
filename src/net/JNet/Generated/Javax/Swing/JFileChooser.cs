@@ -320,6 +320,41 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.Filechooser.FileView>("getFileView"); } set { IExecute("setFileView", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isAcceptAllFileFilterUsed()"/> 
+        /// </summary>
+        public bool IsAcceptAllFileFilterUsed
+        {
+            get { return IExecute<bool>("isAcceptAllFileFilterUsed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isDirectorySelectionEnabled()"/> 
+        /// </summary>
+        public bool IsDirectorySelectionEnabled
+        {
+            get { return IExecute<bool>("isDirectorySelectionEnabled"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileHidingEnabled()"/> 
+        /// </summary>
+        public bool IsFileHidingEnabled
+        {
+            get { return IExecute<bool>("isFileHidingEnabled"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileSelectionEnabled()"/> 
+        /// </summary>
+        public bool IsFileSelectionEnabled
+        {
+            get { return IExecute<bool>("isFileSelectionEnabled"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isMultiSelectionEnabled()"/> 
+        /// </summary>
+        public bool IsMultiSelectionEnabled
+        {
+            get { return IExecute<bool>("isMultiSelectionEnabled"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#getSelectedFile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setSelectedFile(java.io.File)"/>
         /// </summary>
         public Java.Io.File SelectedFile
@@ -341,51 +376,6 @@ namespace Javax.Swing
         public bool Accept(Java.Io.File arg0)
         {
             return IExecute<bool>("accept", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isAcceptAllFileFilterUsed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAcceptAllFileFilterUsed()
-        {
-            return IExecute<bool>("isAcceptAllFileFilterUsed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isDirectorySelectionEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDirectorySelectionEnabled()
-        {
-            return IExecute<bool>("isDirectorySelectionEnabled");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileHidingEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFileHidingEnabled()
-        {
-            return IExecute<bool>("isFileHidingEnabled");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileSelectionEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFileSelectionEnabled()
-        {
-            return IExecute<bool>("isFileSelectionEnabled");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isMultiSelectionEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsMultiSelectionEnabled()
-        {
-            return IExecute<bool>("isMultiSelectionEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isTraversable(java.io.File)"/>

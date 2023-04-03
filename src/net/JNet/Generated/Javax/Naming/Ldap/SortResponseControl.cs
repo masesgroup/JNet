@@ -75,20 +75,18 @@ namespace Javax.Naming.Ldap
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#isSorted()"/> 
+        /// </summary>
+        public bool IsSorted
+        {
+            get { return IExecute<bool>("isSorted"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getResultCode()"/> 
         /// </summary>
         public int ResultCode
         {
             get { return IExecute<int>("getResultCode"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#isSorted()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSorted()
-        {
-            return IExecute<bool>("isSorted");
         }
         
         #endregion

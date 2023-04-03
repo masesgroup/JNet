@@ -46,40 +46,46 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection Values()
+        public Java.Util.Comparator Comparator
         {
-            return IExecute<Java.Util.Collection>("values");
+            get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator Comparator()
+        public Java.Util.Set EntrySet
         {
-            return IExecute<Java.Util.Comparator>("comparator");
+            get { return IExecute<Java.Util.Set>("entrySet"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set EntrySet()
+        public object FirstKey
         {
-            return IExecute<Java.Util.Set>("entrySet");
+            get { return IExecute("firstKey"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set KeySet()
+        public Java.Util.Set KeySet
         {
-            return IExecute<Java.Util.Set>("keySet");
+            get { return IExecute<Java.Util.Set>("keySet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/> 
+        /// </summary>
+        public object LastKey
+        {
+            get { return IExecute("lastKey"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/> 
+        /// </summary>
+        public Java.Util.Collection Values
+        {
+            get { return IExecute<Java.Util.Collection>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
@@ -108,24 +114,6 @@ namespace Java.Util
         public Java.Util.SortedMap TailMap(object arg0)
         {
             return IExecute<Java.Util.SortedMap>("tailMap", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object FirstKey()
-        {
-            return IExecute("firstKey");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object LastKey()
-        {
-            return IExecute("lastKey");
         }
         
         #endregion
@@ -163,40 +151,46 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<V> Values()
+        public Java.Util.Comparator Comparator
         {
-            return IExecute<Java.Util.Collection<V>>("values");
+            get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK: K
+        public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet
         {
-            return IExecute<Java.Util.Comparator<ReturnobjectSuperK>>("comparator");
+            get { return IExecute<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
+        public K FirstKey
         {
-            return IExecute<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet");
+            get { return IExecute<K>("firstKey"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<K> KeySet()
+        public Java.Util.Set<K> KeySet
         {
-            return IExecute<Java.Util.Set<K>>("keySet");
+            get { return IExecute<Java.Util.Set<K>>("keySet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/> 
+        /// </summary>
+        public K LastKey
+        {
+            get { return IExecute<K>("lastKey"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/> 
+        /// </summary>
+        public Java.Util.Collection<V> Values
+        {
+            get { return IExecute<Java.Util.Collection<V>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
@@ -225,24 +219,6 @@ namespace Java.Util
         public Java.Util.SortedMap<K, V> TailMap(K arg0)
         {
             return IExecute<Java.Util.SortedMap<K, V>>("tailMap", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
-        /// </summary>
-        
-        /// <returns><see cref="K"/></returns>
-        public K FirstKey()
-        {
-            return IExecute<K>("firstKey");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/>
-        /// </summary>
-        
-        /// <returns><see cref="K"/></returns>
-        public K LastKey()
-        {
-            return IExecute<K>("lastKey");
         }
         
         #endregion

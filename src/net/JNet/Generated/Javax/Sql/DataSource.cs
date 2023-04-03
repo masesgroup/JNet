@@ -61,6 +61,13 @@ namespace Javax.Sql
             get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/> 
+        /// </summary>
+        public Java.Sql.ConnectionBuilder CreateConnectionBuilder
+        {
+            get { return IExecute<Java.Sql.ConnectionBuilder>("createConnectionBuilder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
@@ -84,16 +91,6 @@ namespace Javax.Sql
         public Java.Sql.Connection GetConnection(string arg0, string arg1)
         {
             return IExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ConnectionBuilder CreateConnectionBuilder()
-        {
-            return IExecute<Java.Sql.ConnectionBuilder>("createConnectionBuilder");
         }
         
         #endregion

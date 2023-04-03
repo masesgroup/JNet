@@ -49,13 +49,11 @@ namespace Java.Time.Zone
             get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool Refresh()
+        public static bool Refresh
         {
-            return SExecute<bool>("refresh");
+            get { return SExecute<bool>("refresh"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>

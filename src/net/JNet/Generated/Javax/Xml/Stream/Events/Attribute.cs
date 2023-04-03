@@ -53,6 +53,13 @@ namespace Javax.Xml.Stream.Events
             get { return IExecute<string>("getDTDType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()"/> 
+        /// </summary>
+        public bool IsSpecified
+        {
+            get { return IExecute<bool>("isSpecified"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getName()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName Name
@@ -65,15 +72,6 @@ namespace Javax.Xml.Stream.Events
         public string Value
         {
             get { return IExecute<string>("getValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSpecified()
-        {
-            return IExecute<bool>("isSpecified");
         }
         
         #endregion

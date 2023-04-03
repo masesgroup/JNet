@@ -46,6 +46,13 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/> 
+        /// </summary>
+        public bool IsDefaultNamespaceDeclaration
+        {
+            get { return IExecute<bool>("isDefaultNamespaceDeclaration"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getNamespaceURI()"/> 
         /// </summary>
         public string NamespaceURI
@@ -58,15 +65,6 @@ namespace Javax.Xml.Stream.Events
         public string Prefix
         {
             get { return IExecute<string>("getPrefix"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDefaultNamespaceDeclaration()
-        {
-            return IExecute<bool>("isDefaultNamespaceDeclaration");
         }
         
         #endregion

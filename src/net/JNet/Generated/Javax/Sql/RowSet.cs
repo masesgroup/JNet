@@ -67,6 +67,13 @@ namespace Javax.Sql
             get { return IExecute<bool>("getEscapeProcessing"); } set { IExecute("setEscapeProcessing", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#isReadOnly()"/> 
+        /// </summary>
+        public bool IsReadOnly
+        {
+            get { return IExecute<bool>("isReadOnly"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getMaxFieldSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setMaxFieldSize(int)"/>
         /// </summary>
         public int MaxFieldSize
@@ -121,15 +128,6 @@ namespace Javax.Sql
         public string Username
         {
             get { return IExecute<string>("getUsername"); } set { IExecute("setUsername", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#isReadOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsReadOnly()
-        {
-            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#addRowSetListener(javax.sql.RowSetListener)"/>

@@ -53,20 +53,18 @@ namespace Java.Security.Cert
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#isCritical()"/> 
+        /// </summary>
+        public bool IsCritical
+        {
+            get { return IExecute<bool>("isCritical"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getValue()"/> 
         /// </summary>
         public byte[] Value
         {
             get { return IExecuteArray<byte>("getValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#isCritical()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCritical()
-        {
-            return IExecute<bool>("isCritical");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#encode(java.io.OutputStream)"/>

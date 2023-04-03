@@ -46,31 +46,25 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Comments()
+        public string Comments
         {
-            return IExecute<string>("comments");
+            get { return IExecute<string>("comments"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Date()
+        public string Date
         {
-            return IExecute<string>("date");
+            get { return IExecute<string>("date"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string[] Value()
+        public string[] Value
         {
-            return IExecuteArray<string>("value");
+            get { return IExecuteArray<string>("value"); }
         }
         
         #endregion

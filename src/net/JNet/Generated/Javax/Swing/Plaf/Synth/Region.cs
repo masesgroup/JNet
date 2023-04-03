@@ -274,20 +274,18 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#isSubregion()"/> 
+        /// </summary>
+        public bool IsSubregion
+        {
+            get { return IExecute<bool>("isSubregion"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#isSubregion()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsSubregion()
-        {
-            return IExecute<bool>("isSubregion");
         }
         
         #endregion

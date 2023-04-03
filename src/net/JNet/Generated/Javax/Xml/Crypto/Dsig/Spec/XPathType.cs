@@ -72,20 +72,18 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             get { return IExecute<string>("getExpression"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()"/> 
+        /// </summary>
+        public Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter GetFilter
+        {
+            get { return IExecute<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("getFilter"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getNamespaceMap()"/> 
         /// </summary>
         public Java.Util.Map NamespaceMap
         {
             get { return IExecute<Java.Util.Map>("getNamespaceMap"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter"/></returns>
-        public Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter GetFilter()
-        {
-            return IExecute<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("getFilter");
         }
         
         #endregion

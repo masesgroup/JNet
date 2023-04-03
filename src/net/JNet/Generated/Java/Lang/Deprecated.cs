@@ -46,22 +46,18 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool ForRemoval()
+        public bool ForRemoval
         {
-            return IExecute<bool>("forRemoval");
+            get { return IExecute<bool>("forRemoval"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Since()
+        public string Since
         {
-            return IExecute<string>("since");
+            get { return IExecute<string>("since"); }
         }
         
         #endregion

@@ -58,31 +58,39 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBoolean()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBoolean()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool NextBoolean()
+        public bool NextBoolean
         {
-            return IExecute<bool>("nextBoolean");
+            get { return IExecute<bool>("nextBoolean"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextDouble()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextDouble()"/> 
         /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public double NextDouble()
+        public double NextDouble
         {
-            return IExecute<double>("nextDouble");
+            get { return IExecute<double>("nextDouble"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextFloat()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextFloat()"/> 
         /// </summary>
-        
-        /// <returns><see cref="float"/></returns>
-        public float NextFloat()
+        public float NextFloat
         {
-            return IExecute<float>("nextFloat");
+            get { return IExecute<float>("nextFloat"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextGaussian()"/> 
+        /// </summary>
+        public double NextGaussian
+        {
+            get { return IExecute<double>("nextGaussian"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextLong()"/> 
+        /// </summary>
+        public long NextLong
+        {
+            get { return IExecute<long>("nextLong"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt()"/>
@@ -218,24 +226,6 @@ namespace Java.Util
         public Java.Util.Stream.LongStream Longs(long arg0)
         {
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextLong()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long NextLong()
-        {
-            return IExecute<long>("nextLong");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextGaussian()"/>
-        /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public double NextGaussian()
-        {
-            return IExecute<double>("nextGaussian");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#setSeed(long)"/>

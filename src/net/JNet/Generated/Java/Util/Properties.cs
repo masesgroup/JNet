@@ -62,6 +62,20 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#propertyNames()"/> 
+        /// </summary>
+        public Java.Util.Enumeration PropertyNames
+        {
+            get { return IExecute<Java.Util.Enumeration>("propertyNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#stringPropertyNames()"/> 
+        /// </summary>
+        public Java.Util.Set StringPropertyNames
+        {
+            get { return IExecute<Java.Util.Set>("stringPropertyNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -79,24 +93,6 @@ namespace Java.Util
         public string GetProperty(string arg0)
         {
             return IExecute<string>("getProperty", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#propertyNames()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration PropertyNames()
-        {
-            return IExecute<Java.Util.Enumeration>("propertyNames");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#stringPropertyNames()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set StringPropertyNames()
-        {
-            return IExecute<Java.Util.Set>("stringPropertyNames");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#setProperty(java.lang.String,java.lang.String)"/>

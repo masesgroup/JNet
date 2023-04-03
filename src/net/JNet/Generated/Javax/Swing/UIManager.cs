@@ -429,20 +429,18 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#getClassName()"/> 
+            /// </summary>
+            public string GetClassName
+            {
+                get { return IExecute<string>("getClassName"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#getClassName()"/>
-            /// </summary>
-            
-            /// <returns><see cref="string"/></returns>
-            public string GetClassName()
-            {
-                return IExecute<string>("getClassName");
             }
             
             #endregion

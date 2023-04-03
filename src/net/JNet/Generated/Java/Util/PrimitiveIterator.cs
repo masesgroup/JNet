@@ -78,22 +78,18 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/> 
             /// </summary>
-            
-            /// <returns><see cref="double"/></returns>
-            public double NextDouble()
+            public object Next
             {
-                return IExecute<double>("nextDouble");
+                get { return IExecute("next"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/> 
             /// </summary>
-            
-            /// <returns><see cref="object"/></returns>
-            public object Next()
+            public double NextDouble
             {
-                return IExecute("next");
+                get { return IExecute<double>("nextDouble"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
@@ -147,22 +143,18 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/> 
             /// </summary>
-            
-            /// <returns><see cref="int"/></returns>
-            public int NextInt()
+            public object Next
             {
-                return IExecute<int>("nextInt");
+                get { return IExecute("next"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/> 
             /// </summary>
-            
-            /// <returns><see cref="object"/></returns>
-            public object Next()
+            public int NextInt
             {
-                return IExecute("next");
+                get { return IExecute<int>("nextInt"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
@@ -216,22 +208,18 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/> 
             /// </summary>
-            
-            /// <returns><see cref="long"/></returns>
-            public long NextLong()
+            public object Next
             {
-                return IExecute<long>("nextLong");
+                get { return IExecute("next"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/> 
             /// </summary>
-            
-            /// <returns><see cref="object"/></returns>
-            public object Next()
+            public long NextLong
             {
-                return IExecute("next");
+                get { return IExecute<long>("nextLong"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>

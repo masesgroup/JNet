@@ -258,6 +258,48 @@ namespace Java.Awt
             get { return IExecute<string>("getFontName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()"/> 
+        /// </summary>
+        public bool HasLayoutAttributes
+        {
+            get { return IExecute<bool>("hasLayoutAttributes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()"/> 
+        /// </summary>
+        public bool HasUniformLineMetrics
+        {
+            get { return IExecute<bool>("hasUniformLineMetrics"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()"/> 
+        /// </summary>
+        public bool IsBold
+        {
+            get { return IExecute<bool>("isBold"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()"/> 
+        /// </summary>
+        public bool IsItalic
+        {
+            get { return IExecute<bool>("isItalic"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()"/> 
+        /// </summary>
+        public bool IsPlain
+        {
+            get { return IExecute<bool>("isPlain"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()"/> 
+        /// </summary>
+        public bool IsTransformed
+        {
+            get { return IExecute<bool>("isTransformed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getItalicAngle()"/> 
         /// </summary>
         public float ItalicAngle
@@ -337,60 +379,6 @@ namespace Java.Awt
         public bool CanDisplay(int arg0)
         {
             return IExecute<bool>("canDisplay", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasLayoutAttributes()
-        {
-            return IExecute<bool>("hasLayoutAttributes");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasUniformLineMetrics()
-        {
-            return IExecute<bool>("hasUniformLineMetrics");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBold()
-        {
-            return IExecute<bool>("isBold");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsItalic()
-        {
-            return IExecute<bool>("isItalic");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPlain()
-        {
-            return IExecute<bool>("isPlain");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTransformed()
-        {
-            return IExecute<bool>("isTransformed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getBaselineFor(char)"/>

@@ -66,13 +66,11 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#getInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet"/></returns>
-        public static Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet GetInstance()
+        public static Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet GetInstance
         {
-            return SExecute<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>("getInstance");
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>("getInstance"); }
         }
         
         #endregion

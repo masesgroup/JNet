@@ -46,31 +46,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasMoreElements()
+        public Java.Util.Iterator AsIterator
         {
-            return IExecute<bool>("hasMoreElements");
+            get { return IExecute<Java.Util.Iterator>("asIterator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object NextElement()
+        public bool HasMoreElements
         {
-            return IExecute("nextElement");
+            get { return IExecute<bool>("hasMoreElements"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator AsIterator()
+        public object NextElement
         {
-            return IExecute<Java.Util.Iterator>("asIterator");
+            get { return IExecute("nextElement"); }
         }
         
         #endregion
@@ -108,31 +102,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasMoreElements()
+        public Java.Util.Iterator<E> AsIterator
         {
-            return IExecute<bool>("hasMoreElements");
+            get { return IExecute<Java.Util.Iterator<E>>("asIterator"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E NextElement()
+        public bool HasMoreElements
         {
-            return IExecute<E>("nextElement");
+            get { return IExecute<bool>("hasMoreElements"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> AsIterator()
+        public E NextElement
         {
-            return IExecute<Java.Util.Iterator<E>>("asIterator");
+            get { return IExecute<E>("nextElement"); }
         }
         
         #endregion

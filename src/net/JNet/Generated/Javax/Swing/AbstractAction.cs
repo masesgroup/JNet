@@ -75,6 +75,13 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#isEnabled()"/> 
+        /// </summary>
+        public bool IsEnabled
+        {
+            get { return IExecute<bool>("isEnabled"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#getKeys()"/> 
         /// </summary>
         public object[] Keys
@@ -87,15 +94,6 @@ namespace Javax.Swing
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
             get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#isEnabled()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEnabled()
-        {
-            return IExecute<bool>("isEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#getValue(java.lang.String)"/>

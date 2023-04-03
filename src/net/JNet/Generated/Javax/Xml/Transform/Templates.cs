@@ -46,21 +46,18 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/> 
+        /// </summary>
+        public Javax.Xml.Transform.Transformer NewTransformer
+        {
+            get { return IExecute<Javax.Xml.Transform.Transformer>("newTransformer"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#getOutputProperties()"/> 
         /// </summary>
         public Java.Util.Properties OutputProperties
         {
             get { return IExecute<Java.Util.Properties>("getOutputProperties"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
-        public Javax.Xml.Transform.Transformer NewTransformer()
-        {
-            return IExecute<Javax.Xml.Transform.Transformer>("newTransformer");
         }
         
         #endregion

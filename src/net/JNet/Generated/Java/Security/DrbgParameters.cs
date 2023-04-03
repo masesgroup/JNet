@@ -110,6 +110,13 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/> 
+            /// </summary>
+            public static Java.Security.DrbgParameters.Capability[] Values
+            {
+                get { return SExecuteArray<Java.Security.DrbgParameters.Capability>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -118,36 +125,23 @@ namespace Java.Security
             {
                 return SExecute<Java.Security.DrbgParameters.Capability>("valueOf", arg0);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
-            public static Java.Security.DrbgParameters.Capability[] Values()
-            {
-                return SExecuteArray<Java.Security.DrbgParameters.Capability>("values");
-            }
             
             #endregion
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool SupportsPredictionResistance()
+            public bool SupportsPredictionResistance
             {
-                return IExecute<bool>("supportsPredictionResistance");
+                get { return IExecute<bool>("supportsPredictionResistance"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool SupportsReseeding()
+            public bool SupportsReseeding
             {
-                return IExecute<bool>("supportsReseeding");
+                get { return IExecute<bool>("supportsReseeding"); }
             }
             
             #endregion
@@ -181,6 +175,13 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getCapability()"/> 
+            /// </summary>
+            public Java.Security.DrbgParameters.Capability GetCapability
+            {
+                get { return IExecute<Java.Security.DrbgParameters.Capability>("getCapability"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getPersonalizationString()"/> 
             /// </summary>
             public byte[] PersonalizationString
@@ -193,15 +194,6 @@ namespace Java.Security
             public int Strength
             {
                 get { return IExecute<int>("getStrength"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getCapability()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
-            public Java.Security.DrbgParameters.Capability GetCapability()
-            {
-                return IExecute<Java.Security.DrbgParameters.Capability>("getCapability");
             }
             
             #endregion

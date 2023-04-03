@@ -71,6 +71,13 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#asksAllowsChildren()"/> 
+        /// </summary>
+        public bool AsksAllowsChildren
+        {
+            get { return IExecute<bool>("asksAllowsChildren"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getRoot()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#setRoot(javax.swing.tree.TreeNode)"/>
         /// </summary>
         public object Root
@@ -92,15 +99,6 @@ namespace Javax.Swing.Tree
         public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#asksAllowsChildren()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool AsksAllowsChildren()
-        {
-            return IExecute<bool>("asksAllowsChildren");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#isLeaf(java.lang.Object)"/>

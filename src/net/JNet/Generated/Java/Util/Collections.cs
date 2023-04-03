@@ -54,6 +54,34 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/> 
+        /// </summary>
+        public static Java.Util.NavigableMap EmptyNavigableMap
+        {
+            get { return SExecute<Java.Util.NavigableMap>("emptyNavigableMap"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/> 
+        /// </summary>
+        public static Java.Util.NavigableSet EmptyNavigableSet
+        {
+            get { return SExecute<Java.Util.NavigableSet>("emptyNavigableSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/> 
+        /// </summary>
+        public static Java.Util.SortedMap EmptySortedMap
+        {
+            get { return SExecute<Java.Util.SortedMap>("emptySortedMap"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/> 
+        /// </summary>
+        public static Java.Util.SortedSet EmptySortedSet
+        {
+            get { return SExecute<Java.Util.SortedSet>("emptySortedSet"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -82,15 +110,6 @@ namespace Java.Util
         public static Java.Util.NavigableSet CheckedNavigableSetMethod(Java.Util.NavigableSet arg0, Java.Lang.Class arg1)
         {
             return SExecute<Java.Util.NavigableSet>("checkedNavigableSet", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public static Java.Util.NavigableSet EmptyNavigableSet()
-        {
-            return SExecute<Java.Util.NavigableSet>("emptyNavigableSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
@@ -130,15 +149,6 @@ namespace Java.Util
         public static Java.Util.SortedSet CheckedSortedSetMethod(Java.Util.SortedSet arg0, Java.Lang.Class arg1)
         {
             return SExecute<Java.Util.SortedSet>("checkedSortedSet", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public static Java.Util.SortedSet EmptySortedSet()
-        {
-            return SExecute<Java.Util.SortedSet>("emptySortedSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
@@ -560,24 +570,6 @@ namespace Java.Util
         public static Java.Util.Map EmptyMapMethod()
         {
             return SExecute<Java.Util.Map>("emptyMap");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap EmptyNavigableMap()
-        {
-            return SExecute<Java.Util.NavigableMap>("emptyNavigableMap");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap EmptySortedMap()
-        {
-            return SExecute<Java.Util.SortedMap>("emptySortedMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>

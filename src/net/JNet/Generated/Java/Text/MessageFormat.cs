@@ -94,6 +94,13 @@ namespace Java.Text
             get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/> 
+        /// </summary>
+        public string ToPattern
+        {
+            get { return IExecute<string>("toPattern"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -123,15 +130,6 @@ namespace Java.Text
         public object[] Parse(string arg0)
         {
             return IExecuteArray<object>("parse", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToPattern()
-        {
-            return IExecute<string>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>

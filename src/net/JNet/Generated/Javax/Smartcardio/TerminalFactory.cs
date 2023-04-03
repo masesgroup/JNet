@@ -103,20 +103,18 @@ namespace Javax.Smartcardio
             get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/> 
+        /// </summary>
+        public Javax.Smartcardio.CardTerminals Terminals
+        {
+            get { return IExecute<Javax.Smartcardio.CardTerminals>("terminals"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Smartcardio.CardTerminals"/></returns>
-        public Javax.Smartcardio.CardTerminals Terminals()
-        {
-            return IExecute<Javax.Smartcardio.CardTerminals>("terminals");
         }
         
         #endregion

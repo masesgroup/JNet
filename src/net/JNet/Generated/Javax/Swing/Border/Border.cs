@@ -46,13 +46,11 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBorderOpaque()
+        public bool IsBorderOpaque
         {
-            return IExecute<bool>("isBorderOpaque");
+            get { return IExecute<bool>("isBorderOpaque"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#getBorderInsets(java.awt.Component)"/>

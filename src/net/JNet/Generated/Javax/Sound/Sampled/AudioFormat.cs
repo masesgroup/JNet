@@ -108,6 +108,27 @@ namespace Javax.Sound.Sampled
             get { return IExecute<int>("getFrameSize"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()"/> 
+        /// </summary>
+        public Javax.Sound.Sampled.AudioFormat.Encoding GetEncoding
+        {
+            get { return IExecute<Javax.Sound.Sampled.AudioFormat.Encoding>("getEncoding"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()"/> 
+        /// </summary>
+        public bool IsBigEndian
+        {
+            get { return IExecute<bool>("isBigEndian"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#properties()"/> 
+        /// </summary>
+        public Java.Util.Map Properties
+        {
+            get { return IExecute<Java.Util.Map>("properties"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleRate()"/> 
         /// </summary>
         public float SampleRate
@@ -120,15 +141,6 @@ namespace Javax.Sound.Sampled
         public int SampleSizeInBits
         {
             get { return IExecute<int>("getSampleSizeInBits"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBigEndian()
-        {
-            return IExecute<bool>("isBigEndian");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#matches(javax.sound.sampled.AudioFormat)"/>
@@ -147,24 +159,6 @@ namespace Javax.Sound.Sampled
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#properties()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map Properties()
-        {
-            return IExecute<Java.Util.Map>("properties");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
-        public Javax.Sound.Sampled.AudioFormat.Encoding GetEncoding()
-        {
-            return IExecute<Javax.Sound.Sampled.AudioFormat.Encoding>("getEncoding");
         }
         
         #endregion

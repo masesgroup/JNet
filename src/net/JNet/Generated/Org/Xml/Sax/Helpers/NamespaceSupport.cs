@@ -61,6 +61,13 @@ namespace Org.Xml.Sax.Helpers
             get { return IExecute<Java.Util.Enumeration>("getDeclaredPrefixes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/> 
+        /// </summary>
+        public bool IsNamespaceDeclUris
+        {
+            get { return IExecute<bool>("isNamespaceDeclUris"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
         /// </summary>
         public Java.Util.Enumeration Prefixes
@@ -76,15 +83,6 @@ namespace Org.Xml.Sax.Helpers
         public bool DeclarePrefix(string arg0, string arg1)
         {
             return IExecute<bool>("declarePrefix", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsNamespaceDeclUris()
-        {
-            return IExecute<bool>("isNamespaceDeclUris");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>

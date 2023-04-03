@@ -128,13 +128,11 @@ namespace Java.Awt.Dnd
             get { return IExecute<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap"); } set { IExecute("setFlavorMap", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#isActive()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#isActive()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsActive()
+        public bool IsActive
         {
-            return IExecute<bool>("isActive");
+            get { return IExecute<bool>("isActive"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#addDropTargetListener(java.awt.dnd.DropTargetListener)"/>

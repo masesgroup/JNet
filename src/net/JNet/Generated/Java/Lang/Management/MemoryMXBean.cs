@@ -53,6 +53,13 @@ namespace Java.Lang.Management
             get { return IExecute<Java.Lang.Management.MemoryUsage>("getHeapMemoryUsage"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()"/> 
+        /// </summary>
+        public bool IsVerbose
+        {
+            get { return IExecute<bool>("isVerbose"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage NonHeapMemoryUsage
@@ -65,15 +72,6 @@ namespace Java.Lang.Management
         public int ObjectPendingFinalizationCount
         {
             get { return IExecute<int>("getObjectPendingFinalizationCount"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsVerbose()
-        {
-            return IExecute<bool>("isVerbose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#gc()"/>

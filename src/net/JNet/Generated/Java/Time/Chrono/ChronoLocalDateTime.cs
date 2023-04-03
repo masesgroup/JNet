@@ -54,6 +54,13 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#timeLineOrder()"/> 
+        /// </summary>
+        public static Java.Util.Comparator TimeLineOrder
+        {
+            get { return SExecute<Java.Util.Comparator>("timeLineOrder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -61,15 +68,6 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.ChronoLocalDateTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.Chrono.ChronoLocalDateTime>("from", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#timeLineOrder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator TimeLineOrder()
-        {
-            return SExecute<Java.Util.Comparator>("timeLineOrder");
         }
         
         #endregion
@@ -83,6 +81,20 @@ namespace Java.Time.Chrono
             get { return IExecute<Java.Time.Chrono.Chronology>("getChronology"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#toLocalDate()"/> 
+        /// </summary>
+        public Java.Time.Chrono.ChronoLocalDate ToLocalDate
+        {
+            get { return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#toLocalTime()"/> 
+        /// </summary>
+        public Java.Time.LocalTime ToLocalTime
+        {
+            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -92,15 +104,6 @@ namespace Java.Time.Chrono
             return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#toLocalDate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
-        {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#atZone(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
@@ -108,15 +111,6 @@ namespace Java.Time.Chrono
         public Java.Time.Chrono.ChronoZonedDateTime AtZone(Java.Time.ZoneId arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("atZone", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#toLocalTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
-        public Java.Time.LocalTime ToLocalTime()
-        {
-            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#query(java.time.temporal.TemporalQuery)"/>

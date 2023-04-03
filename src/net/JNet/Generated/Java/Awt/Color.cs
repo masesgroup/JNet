@@ -314,11 +314,25 @@ namespace Java.Awt
             get { return IExecute<int>("getBlue"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#brighter()"/> 
+        /// </summary>
+        public Java.Awt.Color Brighter
+        {
+            get { return IExecute<Java.Awt.Color>("brighter"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorSpace()"/> 
         /// </summary>
         public Java.Awt.ColorNs.ColorSpace ColorSpace
         {
             get { return IExecute<Java.Awt.ColorNs.ColorSpace>("getColorSpace"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darker()"/> 
+        /// </summary>
+        public Java.Awt.Color Darker
+        {
+            get { return IExecute<Java.Awt.Color>("darker"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getGreen()"/> 
@@ -403,24 +417,6 @@ namespace Java.Awt
         public float[] GetRGBComponents(float[] arg0)
         {
             return IExecuteArray<float>("getRGBComponents", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#brighter()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        public Java.Awt.Color Brighter()
-        {
-            return IExecute<Java.Awt.Color>("brighter");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darker()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        public Java.Awt.Color Darker()
-        {
-            return IExecute<Java.Awt.Color>("darker");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>

@@ -81,6 +81,13 @@ namespace Javax.Management.Relation
             get { return IExecute<string>("getRelationTypeName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#retrieveAllRoles()"/> 
+        /// </summary>
+        public Javax.Management.Relation.RoleList RetrieveAllRoles
+        {
+            get { return IExecute<Javax.Management.Relation.RoleList>("retrieveAllRoles"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -102,15 +109,6 @@ namespace Javax.Management.Relation
         public Java.Util.List GetRole(string arg0)
         {
             return IExecute<Java.Util.List>("getRole", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#retrieveAllRoles()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Management.Relation.RoleList"/></returns>
-        public Javax.Management.Relation.RoleList RetrieveAllRoles()
-        {
-            return IExecute<Javax.Management.Relation.RoleList>("retrieveAllRoles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoles(java.lang.String[])"/>

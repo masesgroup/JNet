@@ -50,22 +50,18 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()"/> 
         /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public double Sum()
+        public double Sum
         {
-            return IExecute<double>("sum");
+            get { return IExecute<double>("sum"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/> 
         /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public double SumThenReset()
+        public double SumThenReset
         {
-            return IExecute<double>("sumThenReset");
+            get { return IExecute<double>("sumThenReset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#add(double)"/>

@@ -54,11 +54,46 @@ namespace Javax.Sql.Rowset
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopy()"/> 
+        /// </summary>
+        public Javax.Sql.Rowset.CachedRowSet CreateCopy
+        {
+            get { return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopy"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopyNoConstraints()"/> 
+        /// </summary>
+        public Javax.Sql.Rowset.CachedRowSet CreateCopyNoConstraints
+        {
+            get { return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopyNoConstraints"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopySchema()"/> 
+        /// </summary>
+        public Javax.Sql.Rowset.CachedRowSet CreateCopySchema
+        {
+            get { return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopySchema"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/> 
+        /// </summary>
+        public Javax.Sql.RowSet CreateShared
+        {
+            get { return IExecute<Javax.Sql.RowSet>("createShared"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getKeyColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setKeyColumns(int[])"/>
         /// </summary>
         public int[] KeyColumns
         {
             get { return IExecuteArray<int>("getKeyColumns"); } set { IExecute("setKeyColumns", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#nextPage()"/> 
+        /// </summary>
+        public bool NextPage
+        {
+            get { return IExecute<bool>("nextPage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getOriginal()"/> 
@@ -82,6 +117,13 @@ namespace Javax.Sql.Rowset
             get { return IExecute<int>("getPageSize"); } set { IExecute("setPageSize", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#previousPage()"/> 
+        /// </summary>
+        public bool PreviousPage
+        {
+            get { return IExecute<bool>("previousPage"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getRowSetWarnings()"/> 
         /// </summary>
         public Javax.Sql.Rowset.RowSetWarning RowSetWarnings
@@ -94,6 +136,13 @@ namespace Javax.Sql.Rowset
         public bool ShowDeleted
         {
             get { return IExecute<bool>("getShowDeleted"); } set { IExecute("setShowDeleted", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getSyncProvider()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setSyncProvider(java.lang.String)"/>
@@ -130,35 +179,6 @@ namespace Javax.Sql.Rowset
             return IExecute<bool>("columnUpdated", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#nextPage()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool NextPage()
-        {
-            return IExecute<bool>("nextPage");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#previousPage()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool PreviousPage()
-        {
-            return IExecute<bool>("previousPage");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
         
@@ -187,46 +207,6 @@ namespace Javax.Sql.Rowset
         public Java.Util.Collection ToCollection(string arg0)
         {
             return IExecute<Java.Util.Collection>("toCollection", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.RowSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.RowSet CreateShared()
-        {
-            return IExecute<Javax.Sql.RowSet>("createShared");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopy()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.Rowset.CachedRowSet CreateCopy()
-        {
-            return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopy");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopyNoConstraints()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.Rowset.CachedRowSet CreateCopyNoConstraints()
-        {
-            return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopyNoConstraints");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopySchema()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.Rowset.CachedRowSet CreateCopySchema()
-        {
-            return IExecute<Javax.Sql.Rowset.CachedRowSet>("createCopySchema");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>

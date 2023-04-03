@@ -63,23 +63,18 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#readLine()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public string ReadLine()
+        public Java.Util.Stream.Stream Lines
         {
-            return IExecute<string>("readLine");
+            get { return IExecute<Java.Util.Stream.Stream>("lines"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#readLine()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Lines()
+        public string ReadLine
         {
-            return IExecute<Java.Util.Stream.Stream>("lines");
+            get { return IExecute<string>("readLine"); }
         }
         
         #endregion

@@ -57,13 +57,11 @@ namespace Java.Text
             get { return IExecute<string>("getSourceString"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/> 
         /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        public byte[] ToByteArray()
+        public byte[] ToByteArray
         {
-            return IExecuteArray<byte>("toByteArray");
+            get { return IExecuteArray<byte>("toByteArray"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>

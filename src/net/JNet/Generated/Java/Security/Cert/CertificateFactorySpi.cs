@@ -46,6 +46,13 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/> 
+        /// </summary>
+        public Java.Util.Iterator EngineGetCertPathEncodings
+        {
+            get { return IExecute<Java.Util.Iterator>("engineGetCertPathEncodings"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCertificate(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -115,15 +122,6 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CertPath EngineGenerateCertPath(Java.Util.List arg0)
         {
             return IExecute<Java.Security.Cert.CertPath>("engineGenerateCertPath", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator EngineGetCertPathEncodings()
-        {
-            return IExecute<Java.Util.Iterator>("engineGetCertPathEncodings");
         }
         
         #endregion

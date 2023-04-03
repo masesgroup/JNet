@@ -99,13 +99,11 @@ namespace Javax.Management.Openmbean
             get { return IExecute<Javax.Management.Openmbean.OpenType>("getElementOpenType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPrimitiveArray()
+        public bool IsPrimitiveArray
         {
-            return IExecute<bool>("isPrimitiveArray");
+            get { return IExecute<bool>("isPrimitiveArray"); }
         }
         
         #endregion
@@ -196,13 +194,11 @@ namespace Javax.Management.Openmbean
             get { return IExecute<Javax.Management.Openmbean.OpenType>("getElementOpenType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPrimitiveArray()
+        public bool IsPrimitiveArray
         {
-            return IExecute<bool>("isPrimitiveArray");
+            get { return IExecute<bool>("isPrimitiveArray"); }
         }
         
         #endregion

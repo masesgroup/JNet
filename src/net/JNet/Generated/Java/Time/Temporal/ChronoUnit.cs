@@ -110,6 +110,13 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#values()"/> 
+        /// </summary>
+        public static Java.Time.Temporal.ChronoUnit[] Values
+        {
+            get { return SExecuteArray<Java.Time.Temporal.ChronoUnit>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -117,15 +124,6 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.ChronoUnit ValueOf(string arg0)
         {
             return SExecute<Java.Time.Temporal.ChronoUnit>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
-        public static Java.Time.Temporal.ChronoUnit[] Values()
-        {
-            return SExecuteArray<Java.Time.Temporal.ChronoUnit>("values");
         }
         
         #endregion
@@ -139,6 +137,27 @@ namespace Java.Time.Temporal
             get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDateBased()"/> 
+        /// </summary>
+        public bool IsDateBased
+        {
+            get { return IExecute<bool>("isDateBased"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDurationEstimated()"/> 
+        /// </summary>
+        public bool IsDurationEstimated
+        {
+            get { return IExecute<bool>("isDurationEstimated"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isTimeBased()"/> 
+        /// </summary>
+        public bool IsTimeBased
+        {
+            get { return IExecute<bool>("isTimeBased"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
@@ -149,24 +168,6 @@ namespace Java.Time.Temporal
             return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDateBased()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDateBased()
-        {
-            return IExecute<bool>("isDateBased");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDurationEstimated()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDurationEstimated()
-        {
-            return IExecute<bool>("isDurationEstimated");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
@@ -174,15 +175,6 @@ namespace Java.Time.Temporal
         public bool IsSupportedBy(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<bool>("isSupportedBy", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isTimeBased()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTimeBased()
-        {
-            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>

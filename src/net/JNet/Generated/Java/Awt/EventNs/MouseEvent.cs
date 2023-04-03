@@ -174,6 +174,13 @@ namespace Java.Awt.EventNs
             get { return IExecute<int>("getClickCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#isPopupTrigger()"/> 
+        /// </summary>
+        public bool IsPopupTrigger
+        {
+            get { return IExecute<bool>("isPopupTrigger"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getLocationOnScreen()"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
@@ -214,15 +221,6 @@ namespace Java.Awt.EventNs
         public int YOnScreen
         {
             get { return IExecute<int>("getYOnScreen"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#isPopupTrigger()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPopupTrigger()
-        {
-            return IExecute<bool>("isPopupTrigger");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#translatePoint(int,int)"/>

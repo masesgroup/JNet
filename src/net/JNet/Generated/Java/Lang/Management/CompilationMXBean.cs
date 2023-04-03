@@ -46,6 +46,13 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#isCompilationTimeMonitoringSupported()"/> 
+        /// </summary>
+        public bool IsCompilationTimeMonitoringSupported
+        {
+            get { return IExecute<bool>("isCompilationTimeMonitoringSupported"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#getName()"/> 
         /// </summary>
         public string Name
@@ -58,15 +65,6 @@ namespace Java.Lang.Management
         public long TotalCompilationTime
         {
             get { return IExecute<long>("getTotalCompilationTime"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#isCompilationTimeMonitoringSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCompilationTimeMonitoringSupported()
-        {
-            return IExecute<bool>("isCompilationTimeMonitoringSupported");
         }
         
         #endregion

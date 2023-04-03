@@ -83,13 +83,32 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration Elements()
+        public int Capacity
         {
-            return IExecute<Java.Util.Enumeration>("elements");
+            get { return IExecute<int>("capacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Elements
+        {
+            get { return IExecute<Java.Util.Enumeration>("elements"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/> 
+        /// </summary>
+        public object FirstElement
+        {
+            get { return IExecute("firstElement"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/> 
+        /// </summary>
+        public object LastElement
+        {
+            get { return IExecute("lastElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
@@ -108,33 +127,6 @@ namespace Java.Util
         public object ElementAt(int arg0)
         {
             return IExecute("elementAt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object FirstElement()
-        {
-            return IExecute("firstElement");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object LastElement()
-        {
-            return IExecute("lastElement");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Capacity()
-        {
-            return IExecute<int>("capacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
@@ -301,13 +293,32 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<E> Elements()
+        public int Capacity
         {
-            return IExecute<Java.Util.Enumeration<E>>("elements");
+            get { return IExecute<int>("capacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/> 
+        /// </summary>
+        public Java.Util.Enumeration<E> Elements
+        {
+            get { return IExecute<Java.Util.Enumeration<E>>("elements"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/> 
+        /// </summary>
+        public E FirstElement
+        {
+            get { return IExecute<E>("firstElement"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/> 
+        /// </summary>
+        public E LastElement
+        {
+            get { return IExecute<E>("lastElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
@@ -326,33 +337,6 @@ namespace Java.Util
         public E ElementAt(int arg0)
         {
             return IExecute<E>("elementAt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E FirstElement()
-        {
-            return IExecute<E>("firstElement");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E LastElement()
-        {
-            return IExecute<E>("lastElement");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Capacity()
-        {
-            return IExecute<int>("capacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>

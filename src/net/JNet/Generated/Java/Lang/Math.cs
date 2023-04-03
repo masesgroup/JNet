@@ -50,6 +50,13 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#random()"/> 
+        /// </summary>
+        public static double Random
+        {
+            get { return SExecute<double>("random"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
@@ -283,15 +290,6 @@ namespace Java.Lang
         public static double Pow(double arg0, double arg1)
         {
             return SExecute<double>("pow", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#random()"/>
-        /// </summary>
-        
-        /// <returns><see cref="double"/></returns>
-        public static double Random()
-        {
-            return SExecute<double>("random");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#rint(double)"/>

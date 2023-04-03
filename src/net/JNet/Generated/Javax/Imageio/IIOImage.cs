@@ -66,6 +66,13 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#hasRaster()"/> 
+        /// </summary>
+        public bool HasRaster
+        {
+            get { return IExecute<bool>("hasRaster"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getMetadata()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#setMetadata(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadata Metadata
@@ -99,15 +106,6 @@ namespace Javax.Imageio
         public Java.Util.List Thumbnails
         {
             get { return IExecute<Java.Util.List>("getThumbnails"); } set { IExecute("setThumbnails", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#hasRaster()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasRaster()
-        {
-            return IExecute<bool>("hasRaster");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getThumbnail(int)"/>

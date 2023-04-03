@@ -46,6 +46,13 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream List
+        {
+            get { return IExecute<Java.Util.Stream.Stream>("list"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#find(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -54,16 +61,6 @@ namespace Java.Lang.ModuleNs
         public Java.Util.Optional Find(string arg0)
         {
             return IExecute<Java.Util.Optional>("find", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Stream.Stream List()
-        {
-            return IExecute<Java.Util.Stream.Stream>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>

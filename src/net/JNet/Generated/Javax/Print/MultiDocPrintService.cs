@@ -46,13 +46,11 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
-        public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob()
+        public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob
         {
-            return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob");
+            get { return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob"); }
         }
         
         #endregion

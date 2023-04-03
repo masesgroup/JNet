@@ -28,6 +28,6 @@ namespace Javax.Management
         /// <summary>
         /// Return a view of this list as a <see cref="List{Attribute}"/>.
         /// </summary>
-        public List<Attribute> AsList2 => AsList().Cast< List<Attribute>>();
+        public List<Attribute> AsList2 => AsList.Cast<List<Attribute>>();
     }
 }

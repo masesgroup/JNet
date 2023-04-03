@@ -54,6 +54,20 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()"/> 
+        /// </summary>
+        public Javax.Accessibility.AccessibleRelation[] ToArray
+        {
+            get { return IExecuteArray<Javax.Accessibility.AccessibleRelation>("toArray"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#add(javax.accessibility.AccessibleRelation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
@@ -81,15 +95,6 @@ namespace Javax.Accessibility
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#get(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -97,15 +102,6 @@ namespace Javax.Accessibility
         public Javax.Accessibility.AccessibleRelation Get(string arg0)
         {
             return IExecute<Javax.Accessibility.AccessibleRelation>("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
-        public Javax.Accessibility.AccessibleRelation[] ToArray()
-        {
-            return IExecuteArray<Javax.Accessibility.AccessibleRelation>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#addAll(javax.accessibility.AccessibleRelation[])"/>

@@ -46,6 +46,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/> 
+        /// </summary>
+        public Java.Util.Function.LongPredicate Negate
+        {
+            get { return IExecute<Java.Util.Function.LongPredicate>("negate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -62,15 +69,6 @@ namespace Java.Util.Function
         public Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<Java.Util.Function.LongPredicate>("and", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        public Java.Util.Function.LongPredicate Negate()
-        {
-            return IExecute<Java.Util.Function.LongPredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>

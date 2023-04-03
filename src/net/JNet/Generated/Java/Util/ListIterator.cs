@@ -46,58 +46,46 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNext
         {
-            return IExecute<bool>("hasNext");
+            get { return IExecute<bool>("hasNext"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasPrevious()
+        public bool HasPrevious
         {
-            return IExecute<bool>("hasPrevious");
+            get { return IExecute<bool>("hasPrevious"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object Next
         {
-            return IExecute("next");
+            get { return IExecute("next"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Previous()
+        public int NextIndex
         {
-            return IExecute("previous");
+            get { return IExecute<int>("nextIndex"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int NextIndex()
+        public object Previous
         {
-            return IExecute<int>("nextIndex");
+            get { return IExecute("previous"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int PreviousIndex()
+        public int PreviousIndex
         {
-            return IExecute<int>("previousIndex");
+            get { return IExecute<int>("previousIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
@@ -158,58 +146,46 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNext
         {
-            return IExecute<bool>("hasNext");
+            get { return IExecute<bool>("hasNext"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasPrevious()
+        public bool HasPrevious
         {
-            return IExecute<bool>("hasPrevious");
+            get { return IExecute<bool>("hasPrevious"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Next()
+        public E Next
         {
-            return IExecute<E>("next");
+            get { return IExecute<E>("next"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Previous()
+        public int NextIndex
         {
-            return IExecute<E>("previous");
+            get { return IExecute<int>("nextIndex"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int NextIndex()
+        public E Previous
         {
-            return IExecute<int>("nextIndex");
+            get { return IExecute<E>("previous"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int PreviousIndex()
+        public int PreviousIndex
         {
-            return IExecute<int>("previousIndex");
+            get { return IExecute<int>("previousIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>

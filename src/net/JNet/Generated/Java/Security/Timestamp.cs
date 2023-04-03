@@ -59,20 +59,18 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getTimestamp()"/> 
+        /// </summary>
+        public Java.Util.Date GetTimestamp
+        {
+            get { return IExecute<Java.Util.Date>("getTimestamp"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getSignerCertPath()"/> 
         /// </summary>
         public Java.Security.Cert.CertPath SignerCertPath
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getSignerCertPath"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getTimestamp()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Date"/></returns>
-        public Java.Util.Date GetTimestamp()
-        {
-            return IExecute<Java.Util.Date>("getTimestamp");
         }
         
         #endregion

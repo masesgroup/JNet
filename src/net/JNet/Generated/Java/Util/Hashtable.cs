@@ -83,6 +83,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/> 
+        /// </summary>
+        public Java.Util.Collection Values
+        {
+            get { return IExecute<Java.Util.Collection>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -90,15 +97,6 @@ namespace Java.Util
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection Values()
-        {
-            return IExecute<Java.Util.Collection>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
@@ -332,6 +330,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/> 
+        /// </summary>
+        public Java.Util.Collection<V> Values
+        {
+            get { return IExecute<Java.Util.Collection<V>>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -339,15 +344,6 @@ namespace Java.Util
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<V> Values()
-        {
-            return IExecute<Java.Util.Collection<V>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>

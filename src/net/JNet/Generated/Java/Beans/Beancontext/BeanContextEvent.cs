@@ -53,20 +53,18 @@ namespace Java.Beans.Beancontext
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContext"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#isPropagated()"/> 
+        /// </summary>
+        public bool IsPropagated
+        {
+            get { return IExecute<bool>("isPropagated"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#getPropagatedFrom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#setPropagatedFrom(java.beans.beancontext.BeanContext)"/>
         /// </summary>
         public Java.Beans.Beancontext.BeanContext PropagatedFrom
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getPropagatedFrom"); } set { IExecute("setPropagatedFrom", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#isPropagated()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPropagated()
-        {
-            return IExecute<bool>("isPropagated");
         }
         
         #endregion

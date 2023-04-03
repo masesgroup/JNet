@@ -137,6 +137,34 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#atEndOfMonth()"/> 
+        /// </summary>
+        public Java.Time.LocalDate AtEndOfMonth
+        {
+            get { return IExecute<Java.Time.LocalDate>("atEndOfMonth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#isLeapYear()"/> 
+        /// </summary>
+        public bool IsLeapYear
+        {
+            get { return IExecute<bool>("isLeapYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfMonth()"/> 
+        /// </summary>
+        public int LengthOfMonth
+        {
+            get { return IExecute<int>("lengthOfMonth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfYear()"/> 
+        /// </summary>
+        public int LengthOfYear
+        {
+            get { return IExecute<int>("lengthOfYear"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
@@ -183,15 +211,6 @@ namespace Java.Time
         public bool IsBefore(Java.Time.YearMonth arg0)
         {
             return IExecute<bool>("isBefore", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#isLeapYear()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsLeapYear()
-        {
-            return IExecute<bool>("isLeapYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -248,24 +267,6 @@ namespace Java.Time
             return IExecute<int>("get", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfMonth()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int LengthOfMonth()
-        {
-            return IExecute<int>("lengthOfMonth");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfYear()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int LengthOfYear()
-        {
-            return IExecute<int>("lengthOfYear");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#format(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
@@ -282,15 +283,6 @@ namespace Java.Time
         public Java.Time.LocalDate AtDay(int arg0)
         {
             return IExecute<Java.Time.LocalDate>("atDay", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#atEndOfMonth()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalDate"/></returns>
-        public Java.Time.LocalDate AtEndOfMonth()
-        {
-            return IExecute<Java.Time.LocalDate>("atEndOfMonth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#adjustInto(java.time.temporal.Temporal)"/>

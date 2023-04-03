@@ -110,6 +110,13 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#isArmed()"/> 
+        /// </summary>
+        public bool IsArmed
+        {
+            get { return IExecute<bool>("isArmed"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#getMenuDragMouseListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.MenuDragMouseListener[] MenuDragMouseListeners
@@ -129,15 +136,6 @@ namespace Javax.Swing
         public Javax.Swing.MenuElement[] SubElements
         {
             get { return IExecuteArray<Javax.Swing.MenuElement>("getSubElements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#isArmed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsArmed()
-        {
-            return IExecute<bool>("isArmed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#addMenuDragMouseListener(javax.swing.event.MenuDragMouseListener)"/>

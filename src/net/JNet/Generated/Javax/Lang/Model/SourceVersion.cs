@@ -90,6 +90,27 @@ namespace Javax.Lang.Model
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latest()"/> 
+        /// </summary>
+        public static Javax.Lang.Model.SourceVersion Latest
+        {
+            get { return SExecute<Javax.Lang.Model.SourceVersion>("latest"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/> 
+        /// </summary>
+        public static Javax.Lang.Model.SourceVersion LatestSupported
+        {
+            get { return SExecute<Javax.Lang.Model.SourceVersion>("latestSupported"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/> 
+        /// </summary>
+        public static Javax.Lang.Model.SourceVersion[] Values
+        {
+            get { return SExecuteArray<Javax.Lang.Model.SourceVersion>("values"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -137,24 +158,6 @@ namespace Javax.Lang.Model
             return SExecute<bool>("isName", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latest()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
-        public static Javax.Lang.Model.SourceVersion Latest()
-        {
-            return SExecute<Javax.Lang.Model.SourceVersion>("latest");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
-        public static Javax.Lang.Model.SourceVersion LatestSupported()
-        {
-            return SExecute<Javax.Lang.Model.SourceVersion>("latestSupported");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -162,15 +165,6 @@ namespace Javax.Lang.Model
         public static Javax.Lang.Model.SourceVersion ValueOf(string arg0)
         {
             return SExecute<Javax.Lang.Model.SourceVersion>("valueOf", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
-        public static Javax.Lang.Model.SourceVersion[] Values()
-        {
-            return SExecuteArray<Javax.Lang.Model.SourceVersion>("values");
         }
         
         #endregion

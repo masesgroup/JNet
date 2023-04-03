@@ -220,6 +220,20 @@ namespace Javax.Imageio.Plugins.Tiff
             get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("getDirectory"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#hasDirectory()"/> 
+        /// </summary>
+        public bool HasDirectory
+        {
+            get { return IExecute<bool>("hasDirectory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#isIntegral()"/> 
+        /// </summary>
+        public bool IsIntegral
+        {
+            get { return IExecute<bool>("isIntegral"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTag()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFTag Tag
@@ -239,24 +253,6 @@ namespace Javax.Imageio.Plugins.Tiff
         public int Type
         {
             get { return IExecute<int>("getType"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#hasDirectory()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasDirectory()
-        {
-            return IExecute<bool>("hasDirectory");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#isIntegral()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIntegral()
-        {
-            return IExecute<bool>("isIntegral");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsDouble(int)"/>

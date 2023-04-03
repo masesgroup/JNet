@@ -46,44 +46,32 @@ namespace Javax.Security.Auth.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public bool Abort()
+        public bool Abort
         {
-            return IExecute<bool>("abort");
+            get { return IExecute<bool>("abort"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public bool Commit()
+        public bool Commit
         {
-            return IExecute<bool>("commit");
+            get { return IExecute<bool>("commit"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public bool Login()
+        public bool Login
         {
-            return IExecute<bool>("login");
+            get { return IExecute<bool>("login"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public bool Logout()
+        public bool Logout
         {
-            return IExecute<bool>("logout");
+            get { return IExecute<bool>("logout"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map,java.util.Map)"/>

@@ -46,24 +46,18 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public bool HasMore()
+        public bool HasMore
         {
-            return IExecute<bool>("hasMore");
+            get { return IExecute<bool>("hasMore"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public object Next()
+        public object Next
         {
-            return IExecute("next");
+            get { return IExecute("next"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
@@ -110,24 +104,18 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public bool HasMore()
+        public bool HasMore
         {
-            return IExecute<bool>("hasMore");
+            get { return IExecute<bool>("hasMore"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
         /// </summary>
-        
-        /// <returns><see cref="T"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public T Next()
+        public T Next
         {
-            return IExecute<T>("next");
+            get { return IExecute<T>("next"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>

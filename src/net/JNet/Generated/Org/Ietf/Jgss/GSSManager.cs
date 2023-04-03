@@ -42,13 +42,11 @@ namespace Org.Ietf.Jgss
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getInstance()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Org.Ietf.Jgss.GSSManager"/></returns>
-        public static Org.Ietf.Jgss.GSSManager GetInstance()
+        public static Org.Ietf.Jgss.GSSManager GetInstance
         {
-            return SExecute<Org.Ietf.Jgss.GSSManager>("getInstance");
+            get { return SExecute<Org.Ietf.Jgss.GSSManager>("getInstance"); }
         }
         
         #endregion

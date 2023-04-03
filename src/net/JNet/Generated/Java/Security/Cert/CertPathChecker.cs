@@ -46,13 +46,11 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsForwardCheckingSupported()
+        public bool IsForwardCheckingSupported
         {
-            return IExecute<bool>("isForwardCheckingSupported");
+            get { return IExecute<bool>("isForwardCheckingSupported"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>

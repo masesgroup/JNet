@@ -46,13 +46,11 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string[] Value()
+        public string[] Value
         {
-            return IExecuteArray<string>("value");
+            get { return IExecuteArray<string>("value"); }
         }
         
         #endregion

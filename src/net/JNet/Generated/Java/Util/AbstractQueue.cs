@@ -50,22 +50,18 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Element()
+        public object Element
         {
-            return IExecute("element");
+            get { return IExecute("element"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Remove()
+        public object Remove
         {
-            return IExecute("remove");
+            get { return IExecute("remove"); }
         }
         
         #endregion
@@ -107,22 +103,18 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Element()
+        public E Element
         {
-            return IExecute<E>("element");
+            get { return IExecute<E>("element"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/> 
         /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Remove()
+        public E Remove
         {
-            return IExecute<E>("remove");
+            get { return IExecute<E>("remove"); }
         }
         
         #endregion

@@ -232,13 +232,102 @@ namespace Java.Math
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#byteValueExact()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#byteValueExact()"/> 
         /// </summary>
-        
-        /// <returns><see cref="byte"/></returns>
-        public byte ByteValueExact()
+        public byte ByteValueExact
         {
-            return IExecute<byte>("byteValueExact");
+            get { return IExecute<byte>("byteValueExact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#intValueExact()"/> 
+        /// </summary>
+        public int IntValueExact
+        {
+            get { return IExecute<int>("intValueExact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#longValueExact()"/> 
+        /// </summary>
+        public long LongValueExact
+        {
+            get { return IExecute<long>("longValueExact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#precision()"/> 
+        /// </summary>
+        public int Precision
+        {
+            get { return IExecute<int>("precision"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#scale()"/> 
+        /// </summary>
+        public int Scale
+        {
+            get { return IExecute<int>("scale"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#shortValueExact()"/> 
+        /// </summary>
+        public short ShortValueExact
+        {
+            get { return IExecute<short>("shortValueExact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#signum()"/> 
+        /// </summary>
+        public int Signum
+        {
+            get { return IExecute<int>("signum"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#stripTrailingZeros()"/> 
+        /// </summary>
+        public Java.Math.BigDecimal StripTrailingZeros
+        {
+            get { return IExecute<Java.Math.BigDecimal>("stripTrailingZeros"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigInteger()"/> 
+        /// </summary>
+        public Java.Math.BigInteger ToBigInteger
+        {
+            get { return IExecute<Java.Math.BigInteger>("toBigInteger"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigIntegerExact()"/> 
+        /// </summary>
+        public Java.Math.BigInteger ToBigIntegerExact
+        {
+            get { return IExecute<Java.Math.BigInteger>("toBigIntegerExact"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toEngineeringString()"/> 
+        /// </summary>
+        public string ToEngineeringString
+        {
+            get { return IExecute<string>("toEngineeringString"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toPlainString()"/> 
+        /// </summary>
+        public string ToPlainString
+        {
+            get { return IExecute<string>("toPlainString"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ulp()"/> 
+        /// </summary>
+        public Java.Math.BigDecimal Ulp
+        {
+            get { return IExecute<Java.Math.BigDecimal>("ulp"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#unscaledValue()"/> 
+        /// </summary>
+        public Java.Math.BigInteger UnscaledValue
+        {
+            get { return IExecute<Java.Math.BigInteger>("unscaledValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#compareTo(java.lang.Object)"/>
@@ -257,60 +346,6 @@ namespace Java.Math
         public int CompareTo(Java.Math.BigDecimal arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#intValueExact()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int IntValueExact()
-        {
-            return IExecute<int>("intValueExact");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#precision()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Precision()
-        {
-            return IExecute<int>("precision");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#scale()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Scale()
-        {
-            return IExecute<int>("scale");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#signum()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Signum()
-        {
-            return IExecute<int>("signum");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toEngineeringString()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToEngineeringString()
-        {
-            return IExecute<string>("toEngineeringString");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toPlainString()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToPlainString()
-        {
-            return IExecute<string>("toPlainString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#abs()"/>
@@ -584,15 +619,6 @@ namespace Java.Math
             return IExecute<Java.Math.BigDecimal>("sqrt", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#stripTrailingZeros()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        public Java.Math.BigDecimal StripTrailingZeros()
-        {
-            return IExecute<Java.Math.BigDecimal>("stripTrailingZeros");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#subtract(java.math.BigDecimal,java.math.MathContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
@@ -612,15 +638,6 @@ namespace Java.Math
             return IExecute<Java.Math.BigDecimal>("subtract", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ulp()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        public Java.Math.BigDecimal Ulp()
-        {
-            return IExecute<Java.Math.BigDecimal>("ulp");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal,java.math.MathContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
@@ -638,51 +655,6 @@ namespace Java.Math
         public Java.Math.BigDecimal[] DivideAndRemainder(Java.Math.BigDecimal arg0)
         {
             return IExecuteArray<Java.Math.BigDecimal>("divideAndRemainder", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigInteger()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Math.BigInteger"/></returns>
-        public Java.Math.BigInteger ToBigInteger()
-        {
-            return IExecute<Java.Math.BigInteger>("toBigInteger");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigIntegerExact()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Math.BigInteger"/></returns>
-        public Java.Math.BigInteger ToBigIntegerExact()
-        {
-            return IExecute<Java.Math.BigInteger>("toBigIntegerExact");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#unscaledValue()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Math.BigInteger"/></returns>
-        public Java.Math.BigInteger UnscaledValue()
-        {
-            return IExecute<Java.Math.BigInteger>("unscaledValue");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#longValueExact()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long LongValueExact()
-        {
-            return IExecute<long>("longValueExact");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#shortValueExact()"/>
-        /// </summary>
-        
-        /// <returns><see cref="short"/></returns>
-        public short ShortValueExact()
-        {
-            return IExecute<short>("shortValueExact");
         }
         
         #endregion

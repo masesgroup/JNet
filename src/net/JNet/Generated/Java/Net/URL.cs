@@ -159,6 +159,13 @@ namespace Java.Net
             get { return IExecute<string>("getHost"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream()"/> 
+        /// </summary>
+        public Java.Io.InputStream OpenStream
+        {
+            get { return IExecute<Java.Io.InputStream>("openStream"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getPath()"/> 
         /// </summary>
         public string Path
@@ -194,6 +201,20 @@ namespace Java.Net
             get { return IExecute<string>("getRef"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()"/> 
+        /// </summary>
+        public string ToExternalForm
+        {
+            get { return IExecute<string>("toExternalForm"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI()"/> 
+        /// </summary>
+        public Java.Net.URI ToURI
+        {
+            get { return IExecute<Java.Net.URI>("toURI"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getUserInfo()"/> 
         /// </summary>
         public string UserInfo
@@ -210,16 +231,6 @@ namespace Java.Net
             return IExecute<bool>("sameFile", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Io.InputStream OpenStream()
-        {
-            return IExecute<Java.Io.InputStream>("openStream");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -228,25 +239,6 @@ namespace Java.Net
         public object GetContent(Java.Lang.Class[] arg0)
         {
             return IExecute("getContent", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToExternalForm()
-        {
-            return IExecute<string>("toExternalForm");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        /// <exception cref="Java.Net.URISyntaxException"/>
-        public Java.Net.URI ToURI()
-        {
-            return IExecute<Java.Net.URI>("toURI");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>

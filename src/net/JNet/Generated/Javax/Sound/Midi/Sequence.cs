@@ -87,6 +87,13 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()"/> 
+        /// </summary>
+        public Javax.Sound.Midi.Track CreateTrack
+        {
+            get { return IExecute<Javax.Sound.Midi.Track>("createTrack"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getDivisionType()"/> 
         /// </summary>
         public float DivisionType
@@ -136,15 +143,6 @@ namespace Javax.Sound.Midi
         public bool DeleteTrack(Javax.Sound.Midi.Track arg0)
         {
             return IExecute<bool>("deleteTrack", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Sound.Midi.Track"/></returns>
-        public Javax.Sound.Midi.Track CreateTrack()
-        {
-            return IExecute<Javax.Sound.Midi.Track>("createTrack");
         }
         
         #endregion

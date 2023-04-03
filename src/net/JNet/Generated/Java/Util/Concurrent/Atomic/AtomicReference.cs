@@ -65,6 +65,13 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecute("getAcquire"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/> 
+        /// </summary>
+        public object Get
+        {
+            get { return IExecute("get"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
         /// </summary>
         public object Opaque
@@ -167,15 +174,6 @@ namespace Java.Util.Concurrent.Atomic
         public object CompareAndExchangeRelease(object arg0, object arg1)
         {
             return IExecute("compareAndExchangeRelease", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Get()
-        {
-            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -293,6 +291,13 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecute<V>("getAcquire"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/> 
+        /// </summary>
+        public V Get
+        {
+            get { return IExecute<V>("get"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
         /// </summary>
         public V Opaque
@@ -395,15 +400,6 @@ namespace Java.Util.Concurrent.Atomic
         public V CompareAndExchangeRelease(V arg0, V arg1)
         {
             return IExecute<V>("compareAndExchangeRelease", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
-        /// </summary>
-        
-        /// <returns><see cref="V"/></returns>
-        public V Get()
-        {
-            return IExecute<V>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>

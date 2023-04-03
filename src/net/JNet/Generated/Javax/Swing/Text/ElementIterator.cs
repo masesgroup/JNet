@@ -66,49 +66,39 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#depth()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#current()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Depth()
+        public Javax.Swing.Text.Element Current
         {
-            return IExecute<int>("depth");
+            get { return IExecute<Javax.Swing.Text.Element>("current"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#current()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#depth()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element Current()
+        public int Depth
         {
-            return IExecute<Javax.Swing.Text.Element>("current");
+            get { return IExecute<int>("depth"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#first()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#first()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element First()
+        public Javax.Swing.Text.Element First
         {
-            return IExecute<Javax.Swing.Text.Element>("first");
+            get { return IExecute<Javax.Swing.Text.Element>("first"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#next()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#next()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element Next()
+        public Javax.Swing.Text.Element Next
         {
-            return IExecute<Javax.Swing.Text.Element>("next");
+            get { return IExecute<Javax.Swing.Text.Element>("next"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#previous()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#previous()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element Previous()
+        public Javax.Swing.Text.Element Previous
         {
-            return IExecute<Javax.Swing.Text.Element>("previous");
+            get { return IExecute<Javax.Swing.Text.Element>("previous"); }
         }
         
         #endregion

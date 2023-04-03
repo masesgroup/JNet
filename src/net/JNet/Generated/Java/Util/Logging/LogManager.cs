@@ -46,13 +46,11 @@ namespace Java.Util.Logging
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogManager()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogManager()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Util.Logging.LogManager"/></returns>
-        public static Java.Util.Logging.LogManager GetLogManager()
+        public static Java.Util.Logging.LogManager GetLogManager
         {
-            return SExecute<Java.Util.Logging.LogManager>("getLogManager");
+            get { return SExecute<Java.Util.Logging.LogManager>("getLogManager"); }
         }
         
         #endregion

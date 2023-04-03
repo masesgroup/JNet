@@ -768,31 +768,25 @@ namespace Javax.Swing.Text.Html
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#breaksFlow()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#breaksFlow()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool BreaksFlow()
+            public bool BreaksFlow
             {
-                return IExecute<bool>("breaksFlow");
+                get { return IExecute<bool>("breaksFlow"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsBlock()
+            public bool IsBlock
             {
-                return IExecute<bool>("isBlock");
+                get { return IExecute<bool>("isBlock"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsPreformatted()
+            public bool IsPreformatted
             {
-                return IExecute<bool>("isPreformatted");
+                get { return IExecute<bool>("isPreformatted"); }
             }
             
             #endregion

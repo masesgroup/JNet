@@ -46,20 +46,18 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/> 
+        /// </summary>
+        public bool HasTileWriters
+        {
+            get { return IExecute<bool>("hasTileWriters"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTileIndices()"/> 
         /// </summary>
         public Java.Awt.Point[] WritableTileIndices
         {
             get { return IExecuteArray<Java.Awt.Point>("getWritableTileIndices"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasTileWriters()
-        {
-            return IExecute<bool>("hasTileWriters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#isTileWritable(int,int)"/>

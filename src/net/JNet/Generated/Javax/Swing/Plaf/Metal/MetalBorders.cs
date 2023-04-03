@@ -49,38 +49,32 @@ namespace Javax.Swing.Plaf.Metal
             get { return SExecute<Javax.Swing.Border.Border>("getDesktopIconBorder"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetButtonBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getButtonBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetTextFieldBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()"/> 
+        /// </summary>
+        public static Javax.Swing.Border.Border GetToggleButtonBorder
+        {
+            get { return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getTextBorder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetButtonBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getButtonBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetTextFieldBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
-        public static Javax.Swing.Border.Border GetToggleButtonBorder()
-        {
-            return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder");
         }
         
         #endregion

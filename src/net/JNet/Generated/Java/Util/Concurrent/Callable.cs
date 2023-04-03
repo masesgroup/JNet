@@ -46,14 +46,11 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/> 
         /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
-        public object Call()
+        public object Call
         {
-            return IExecute("call");
+            get { return IExecute("call"); }
         }
         
         #endregion
@@ -91,14 +88,11 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/> 
         /// </summary>
-        
-        /// <returns><see cref="V"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
-        public V Call()
+        public V Call
         {
-            return IExecute<V>("call");
+            get { return IExecute<V>("call"); }
         }
         
         #endregion

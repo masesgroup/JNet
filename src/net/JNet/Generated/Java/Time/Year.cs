@@ -143,6 +143,13 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#length()"/> 
+        /// </summary>
+        public int Length
+        {
+            get { return IExecute<int>("length"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#getValue()"/> 
         /// </summary>
         public int Value
@@ -238,15 +245,6 @@ namespace Java.Time
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<int>("get", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
-        {
-            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#format(java.time.format.DateTimeFormatter)"/>

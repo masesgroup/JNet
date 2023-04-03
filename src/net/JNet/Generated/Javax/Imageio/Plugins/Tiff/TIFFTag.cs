@@ -164,6 +164,20 @@ namespace Javax.Imageio.Plugins.Tiff
             get { return IExecute<int>("getDataTypes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#hasValueNames()"/> 
+        /// </summary>
+        public bool HasValueNames
+        {
+            get { return IExecute<bool>("hasValueNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isIFDPointer()"/> 
+        /// </summary>
+        public bool IsIFDPointer
+        {
+            get { return IExecute<bool>("isIFDPointer"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getName()"/> 
         /// </summary>
         public string Name
@@ -192,15 +206,6 @@ namespace Javax.Imageio.Plugins.Tiff
             get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTagSet>("getTagSet"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#hasValueNames()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasValueNames()
-        {
-            return IExecute<bool>("hasValueNames");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isDataTypeOK(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -208,15 +213,6 @@ namespace Javax.Imageio.Plugins.Tiff
         public bool IsDataTypeOK(int arg0)
         {
             return IExecute<bool>("isDataTypeOK", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isIFDPointer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsIFDPointer()
-        {
-            return IExecute<bool>("isIFDPointer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getValueName(int)"/>

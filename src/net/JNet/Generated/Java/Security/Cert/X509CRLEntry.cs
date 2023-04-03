@@ -64,6 +64,13 @@ namespace Java.Security.Cert
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/> 
+        /// </summary>
+        public bool HasExtensions
+        {
+            get { return IExecute<bool>("hasExtensions"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationDate()"/> 
         /// </summary>
         public Java.Util.Date RevocationDate
@@ -83,15 +90,6 @@ namespace Java.Security.Cert
         public Java.Math.BigInteger SerialNumber
         {
             get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasExtensions()
-        {
-            return IExecute<bool>("hasExtensions");
         }
         
         #endregion

@@ -193,6 +193,13 @@ namespace Java.Time
             get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#toLocalTime()"/> 
+        /// </summary>
+        public Java.Time.LocalTime ToLocalTime
+        {
+            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
@@ -281,15 +288,6 @@ namespace Java.Time
         public string Format(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<string>("format", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#toLocalTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
-        public Java.Time.LocalTime ToLocalTime()
-        {
-            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#atDate(java.time.LocalDate)"/>

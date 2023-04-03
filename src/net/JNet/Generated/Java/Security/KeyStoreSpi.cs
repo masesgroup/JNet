@@ -46,6 +46,20 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineAliases()"/> 
+        /// </summary>
+        public Java.Util.Enumeration EngineAliases
+        {
+            get { return IExecute<Java.Util.Enumeration>("engineAliases"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSize()"/> 
+        /// </summary>
+        public int EngineSize
+        {
+            get { return IExecute<int>("engineSize"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineContainsAlias(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -71,15 +85,6 @@ namespace Java.Security
         public bool EngineIsKeyEntry(string arg0)
         {
             return IExecute<bool>("engineIsKeyEntry", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSize()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int EngineSize()
-        {
-            return IExecute<int>("engineSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificateAlias(java.security.cert.Certificate)"/>
@@ -128,15 +133,6 @@ namespace Java.Security
         public Java.Util.Date EngineGetCreationDate(string arg0)
         {
             return IExecute<Java.Util.Date>("engineGetCreationDate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineAliases()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration EngineAliases()
-        {
-            return IExecute<Java.Util.Enumeration>("engineAliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>

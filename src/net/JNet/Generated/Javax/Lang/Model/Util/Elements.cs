@@ -317,6 +317,13 @@ namespace Javax.Lang.Model.Util
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/> 
+            /// </summary>
+            public static Javax.Lang.Model.Util.Elements.Origin[] Values
+            {
+                get { return SExecuteArray<Javax.Lang.Model.Util.Elements.Origin>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -325,27 +332,16 @@ namespace Javax.Lang.Model.Util
             {
                 return SExecute<Javax.Lang.Model.Util.Elements.Origin>("valueOf", arg0);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
-            public static Javax.Lang.Model.Util.Elements.Origin[] Values()
-            {
-                return SExecuteArray<Javax.Lang.Model.Util.Elements.Origin>("values");
-            }
             
             #endregion
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/> 
             /// </summary>
-            
-            /// <returns><see cref="bool"/></returns>
-            public bool IsDeclared()
+            public bool IsDeclared
             {
-                return IExecute<bool>("isDeclared");
+                get { return IExecute<bool>("isDeclared"); }
             }
             
             #endregion

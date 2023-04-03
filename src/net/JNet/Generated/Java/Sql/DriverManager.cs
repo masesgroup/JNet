@@ -42,6 +42,13 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#drivers()"/> 
+        /// </summary>
+        public static Java.Util.Stream.Stream Drivers
+        {
+            get { return SExecute<Java.Util.Stream.Stream>("drivers"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLoginTimeout(int)"/>
         /// </summary>
         public static int LoginTimeout
@@ -106,15 +113,6 @@ namespace Java.Sql
         public static Java.Util.Enumeration GetDrivers()
         {
             return SExecute<Java.Util.Enumeration>("getDrivers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#drivers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream Drivers()
-        {
-            return SExecute<Java.Util.Stream.Stream>("drivers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>

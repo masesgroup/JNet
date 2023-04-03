@@ -46,13 +46,11 @@ namespace Javax.Naming.Spi
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public static bool HasInitialContextFactoryBuilder()
+        public static bool HasInitialContextFactoryBuilder
         {
-            return SExecute<bool>("hasInitialContextFactoryBuilder");
+            get { return SExecute<bool>("hasInitialContextFactoryBuilder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)"/>

@@ -103,6 +103,13 @@ namespace Java.Rmi.Activation
             get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getClassName()"/> 
+        /// </summary>
+        public string GetClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getGroupID()"/> 
         /// </summary>
         public Java.Rmi.Activation.ActivationGroupID GroupID
@@ -122,15 +129,6 @@ namespace Java.Rmi.Activation
         public bool RestartMode
         {
             get { return IExecute<bool>("getRestartMode"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getClassName()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string GetClassName()
-        {
-            return IExecute<string>("getClassName");
         }
         
         #endregion

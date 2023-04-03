@@ -170,6 +170,34 @@ namespace Javax.Management
             get { return IExecute<string>("getDomain"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/> 
+        /// </summary>
+        public bool IsDomainPattern
+        {
+            get { return IExecute<bool>("isDomainPattern"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/> 
+        /// </summary>
+        public bool IsPattern
+        {
+            get { return IExecute<bool>("isPattern"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/> 
+        /// </summary>
+        public bool IsPropertyListPattern
+        {
+            get { return IExecute<bool>("isPropertyListPattern"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/> 
+        /// </summary>
+        public bool IsPropertyPattern
+        {
+            get { return IExecute<bool>("isPropertyPattern"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyList()"/> 
         /// </summary>
         public Java.Util.Hashtable KeyPropertyList
@@ -191,42 +219,6 @@ namespace Javax.Management
         public bool Apply(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("apply", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDomainPattern()
-        {
-            return IExecute<bool>("isDomainPattern");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPattern()
-        {
-            return IExecute<bool>("isPattern");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPropertyListPattern()
-        {
-            return IExecute<bool>("isPropertyListPattern");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPropertyPattern()
-        {
-            return IExecute<bool>("isPropertyPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>

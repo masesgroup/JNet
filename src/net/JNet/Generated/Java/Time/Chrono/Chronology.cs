@@ -87,6 +87,13 @@ namespace Java.Time.Chrono
             get { return IExecute<string>("getCalendarType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/> 
+        /// </summary>
+        public Java.Util.List Eras
+        {
+            get { return IExecute<Java.Util.List>("eras"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getId()"/> 
         /// </summary>
         public string Id
@@ -187,15 +194,6 @@ namespace Java.Time.Chrono
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.ChronoField arg0)
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List Eras()
-        {
-            return IExecute<Java.Util.List>("eras");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>

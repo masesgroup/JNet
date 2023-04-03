@@ -60,11 +60,25 @@ namespace Java.Beans
             get { return IExecute<Java.Awt.Component>("getCustomEditor"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/> 
+        /// </summary>
+        public bool IsPaintable
+        {
+            get { return IExecute<bool>("isPaintable"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getJavaInitializationString()"/> 
         /// </summary>
         public string JavaInitializationString
         {
             get { return IExecute<string>("getJavaInitializationString"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/> 
+        /// </summary>
+        public bool SupportsCustomEditor
+        {
+            get { return IExecute<bool>("supportsCustomEditor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getTags()"/> 
@@ -79,24 +93,6 @@ namespace Java.Beans
         public object Value
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPaintable()
-        {
-            return IExecute<bool>("isPaintable");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool SupportsCustomEditor()
-        {
-            return IExecute<bool>("supportsCustomEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>

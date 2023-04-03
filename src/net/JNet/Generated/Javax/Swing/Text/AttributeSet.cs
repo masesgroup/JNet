@@ -68,6 +68,13 @@ namespace Javax.Swing.Text
             get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#copyAttributes()"/> 
+        /// </summary>
+        public Javax.Swing.Text.AttributeSet CopyAttributes
+        {
+            get { return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getResolveParent()"/> 
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent
@@ -119,15 +126,6 @@ namespace Javax.Swing.Text
         public object GetAttribute(object arg0)
         {
             return IExecute("getAttribute", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#copyAttributes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-        public Javax.Swing.Text.AttributeSet CopyAttributes()
-        {
-            return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
         }
         
         #endregion

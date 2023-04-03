@@ -99,6 +99,13 @@ namespace Java.Awt.ImageNs.Renderable
             get { return IExecute<Java.Util.Vector>("getParameters"); } set { IExecute("setParameters", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/> 
+        /// </summary>
+        public object ShallowClone
+        {
+            get { return IExecute("shallowClone"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSources()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSources(java.util.Vector)"/>
         /// </summary>
         public Java.Util.Vector Sources
@@ -356,15 +363,6 @@ namespace Java.Awt.ImageNs.Renderable
         public object GetSource(int arg0)
         {
             return IExecute("getSource", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object ShallowClone()
-        {
-            return IExecute("shallowClone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getLongParameter(int)"/>

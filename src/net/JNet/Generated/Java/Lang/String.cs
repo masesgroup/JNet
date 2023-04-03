@@ -325,6 +325,90 @@ namespace Java.Lang
             get { return IExecuteArray<byte>("getBytes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#chars()"/> 
+        /// </summary>
+        public Java.Util.Stream.IntStream Chars
+        {
+            get { return IExecute<Java.Util.Stream.IntStream>("chars"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePoints()"/> 
+        /// </summary>
+        public Java.Util.Stream.IntStream CodePoints
+        {
+            get { return IExecute<Java.Util.Stream.IntStream>("codePoints"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#intern()"/> 
+        /// </summary>
+        public string Intern
+        {
+            get { return IExecute<string>("intern"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isBlank()"/> 
+        /// </summary>
+        public bool IsBlank
+        {
+            get { return IExecute<bool>("isBlank"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#length()"/> 
+        /// </summary>
+        public int Length
+        {
+            get { return IExecute<int>("length"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lines()"/> 
+        /// </summary>
+        public Java.Util.Stream.Stream Lines
+        {
+            get { return IExecute<Java.Util.Stream.Stream>("lines"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#strip()"/> 
+        /// </summary>
+        public string Strip
+        {
+            get { return IExecute<string>("strip"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripLeading()"/> 
+        /// </summary>
+        public string StripLeading
+        {
+            get { return IExecute<string>("stripLeading"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripTrailing()"/> 
+        /// </summary>
+        public string StripTrailing
+        {
+            get { return IExecute<string>("stripTrailing"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toCharArray()"/> 
+        /// </summary>
+        public char[] ToCharArray
+        {
+            get { return IExecuteArray<char>("toCharArray"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#trim()"/> 
+        /// </summary>
+        public string Trim
+        {
+            get { return IExecute<string>("trim"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contains(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -368,24 +452,6 @@ namespace Java.Lang
         public bool EqualsIgnoreCase(string arg0)
         {
             return IExecute<bool>("equalsIgnoreCase", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isBlank()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsBlank()
-        {
-            return IExecute<bool>("isBlank");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#matches(java.lang.String)"/>
@@ -467,15 +533,6 @@ namespace Java.Lang
         public char CharAt(int arg0)
         {
             return IExecute<char>("charAt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toCharArray()"/>
-        /// </summary>
-        
-        /// <returns><see cref="char"/></returns>
-        public char[] ToCharArray()
-        {
-            return IExecuteArray<char>("toCharArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointAt(int)"/>
@@ -609,15 +666,6 @@ namespace Java.Lang
             return IExecute<int>("lastIndexOf", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Length()
-        {
-            return IExecute<int>("length");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#offsetByCodePoints(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -696,33 +744,6 @@ namespace Java.Lang
             return IExecute<string>("replaceFirst", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#strip()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Strip()
-        {
-            return IExecute<string>("strip");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripLeading()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string StripLeading()
-        {
-            return IExecute<string>("stripLeading");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripTrailing()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string StripTrailing()
-        {
-            return IExecute<string>("stripTrailing");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#substring(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -778,15 +799,6 @@ namespace Java.Lang
             return IExecute<string>("toUpperCase", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#trim()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Trim()
-        {
-            return IExecute<string>("trim");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#split(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -804,42 +816,6 @@ namespace Java.Lang
         public string[] Split(string arg0)
         {
             return IExecuteArray<string>("split", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#chars()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream Chars()
-        {
-            return IExecute<Java.Util.Stream.IntStream>("chars");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePoints()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream CodePoints()
-        {
-            return IExecute<Java.Util.Stream.IntStream>("codePoints");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lines()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Lines()
-        {
-            return IExecute<Java.Util.Stream.Stream>("lines");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#intern()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string Intern()
-        {
-            return IExecute<string>("intern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getChars(int,int,char[],int)"/>

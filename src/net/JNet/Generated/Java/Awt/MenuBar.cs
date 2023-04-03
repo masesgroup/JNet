@@ -68,6 +68,13 @@ namespace Java.Awt
             get { return IExecute<int>("getMenuCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#shortcuts()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Shortcuts
+        {
+            get { return IExecute<Java.Util.Enumeration>("shortcuts"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#add(java.awt.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Menu"/></param>
@@ -93,15 +100,6 @@ namespace Java.Awt
         public Java.Awt.MenuItem GetShortcutMenuItem(Java.Awt.MenuShortcut arg0)
         {
             return IExecute<Java.Awt.MenuItem>("getShortcutMenuItem", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#shortcuts()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration Shortcuts()
-        {
-            return IExecute<Java.Util.Enumeration>("shortcuts");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#addNotify()"/>

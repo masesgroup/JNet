@@ -108,6 +108,20 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/> 
+        /// </summary>
+        public int Size
+        {
+            get { return IExecute<int>("size"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/> 
+        /// </summary>
+        public Javax.Naming.Directory.Attributes ToAttributes
+        {
+            get { return IExecute<Javax.Naming.Directory.Attributes>("toAttributes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getType()"/> 
         /// </summary>
         public string Type
@@ -129,24 +143,6 @@ namespace Javax.Naming.Ldap
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Size()
-        {
-            return IExecute<int>("size");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
-        public Javax.Naming.Directory.Attributes ToAttributes()
-        {
-            return IExecute<Javax.Naming.Directory.Attributes>("toAttributes");
         }
         
         #endregion

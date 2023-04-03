@@ -101,14 +101,18 @@ namespace Javax.Management.Modelmbean
             get { return IExecuteArray<string>("getFields"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public bool IsValid()
+        public bool IsValid
         {
-            return IExecute<bool>("isValid");
+            get { return IExecute<bool>("isValid"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/> 
+        /// </summary>
+        public string ToXMLString
+        {
+            get { return IExecute<string>("toXMLString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValue(java.lang.String)"/>
@@ -128,15 +132,6 @@ namespace Javax.Management.Modelmbean
         public object[] GetFieldValues(params string[] arg0)
         {
             if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string ToXMLString()
-        {
-            return IExecute<string>("toXMLString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>

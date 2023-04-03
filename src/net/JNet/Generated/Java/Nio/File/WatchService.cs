@@ -46,6 +46,13 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/> 
+        /// </summary>
+        public Java.Nio.File.WatchKey Take
+        {
+            get { return IExecute<Java.Nio.File.WatchKey>("take"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll()"/>
         /// </summary>
         
@@ -64,16 +71,6 @@ namespace Java.Nio.File
         public Java.Nio.File.WatchKey Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<Java.Nio.File.WatchKey>("poll", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Nio.File.WatchKey Take()
-        {
-            return IExecute<Java.Nio.File.WatchKey>("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close()"/>

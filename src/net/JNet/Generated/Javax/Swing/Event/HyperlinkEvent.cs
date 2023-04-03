@@ -99,6 +99,13 @@ namespace Javax.Swing.Event
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getEventType()"/> 
+        /// </summary>
+        public Javax.Swing.Event.HyperlinkEvent.EventType GetEventType
+        {
+            get { return IExecute<Javax.Swing.Event.HyperlinkEvent.EventType>("getEventType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getInputEvent()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputEvent InputEvent
@@ -118,15 +125,6 @@ namespace Javax.Swing.Event
         public Java.Net.URL URL
         {
             get { return IExecute<Java.Net.URL>("getURL"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getEventType()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></returns>
-        public Javax.Swing.Event.HyperlinkEvent.EventType GetEventType()
-        {
-            return IExecute<Javax.Swing.Event.HyperlinkEvent.EventType>("getEventType");
         }
         
         #endregion

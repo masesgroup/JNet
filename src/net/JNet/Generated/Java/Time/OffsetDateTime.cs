@@ -66,6 +66,13 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#timeLineOrder()"/> 
+        /// </summary>
+        public static Java.Util.Comparator TimeLineOrder
+        {
+            get { return SExecute<Java.Util.Comparator>("timeLineOrder"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -167,15 +174,6 @@ namespace Java.Time
         {
             return SExecute<Java.Time.OffsetDateTime>("parse", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#timeLineOrder()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator TimeLineOrder()
-        {
-            return SExecute<Java.Util.Comparator>("timeLineOrder");
-        }
         
         #endregion
 
@@ -249,6 +247,55 @@ namespace Java.Time
         public int Second
         {
             get { return IExecute<int>("getSecond"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toEpochSecond()"/> 
+        /// </summary>
+        public long ToEpochSecond
+        {
+            get { return IExecute<long>("toEpochSecond"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toInstant()"/> 
+        /// </summary>
+        public Java.Time.Instant ToInstant
+        {
+            get { return IExecute<Java.Time.Instant>("toInstant"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDate()"/> 
+        /// </summary>
+        public Java.Time.LocalDate ToLocalDate
+        {
+            get { return IExecute<Java.Time.LocalDate>("toLocalDate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDateTime()"/> 
+        /// </summary>
+        public Java.Time.LocalDateTime ToLocalDateTime
+        {
+            get { return IExecute<Java.Time.LocalDateTime>("toLocalDateTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalTime()"/> 
+        /// </summary>
+        public Java.Time.LocalTime ToLocalTime
+        {
+            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toOffsetTime()"/> 
+        /// </summary>
+        public Java.Time.OffsetTime ToOffsetTime
+        {
+            get { return IExecute<Java.Time.OffsetTime>("toOffsetTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toZonedDateTime()"/> 
+        /// </summary>
+        public Java.Time.ZonedDateTime ToZonedDateTime
+        {
+            get { return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getYear()"/> 
@@ -346,42 +393,6 @@ namespace Java.Time
         public string Format(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<string>("format", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toInstant()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.Instant"/></returns>
-        public Java.Time.Instant ToInstant()
-        {
-            return IExecute<Java.Time.Instant>("toInstant");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalDate"/></returns>
-        public Java.Time.LocalDate ToLocalDate()
-        {
-            return IExecute<Java.Time.LocalDate>("toLocalDate");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDateTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
-        public Java.Time.LocalDateTime ToLocalDateTime()
-        {
-            return IExecute<Java.Time.LocalDateTime>("toLocalDateTime");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
-        public Java.Time.LocalTime ToLocalTime()
-        {
-            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#minusDays(long)"/>
@@ -627,15 +638,6 @@ namespace Java.Time
             return IExecute<Java.Time.OffsetDateTime>("withYear", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toOffsetTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.OffsetTime"/></returns>
-        public Java.Time.OffsetTime ToOffsetTime()
-        {
-            return IExecute<Java.Time.OffsetTime>("toOffsetTime");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
@@ -729,15 +731,6 @@ namespace Java.Time
             return IExecute<Java.Time.ZonedDateTime>("atZoneSimilarLocal", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toZonedDateTime()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
-        public Java.Time.ZonedDateTime ToZonedDateTime()
-        {
-            return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -745,15 +738,6 @@ namespace Java.Time
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<long>("getLong", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toEpochSecond()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long ToEpochSecond()
-        {
-            return IExecute<long>("toEpochSecond");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

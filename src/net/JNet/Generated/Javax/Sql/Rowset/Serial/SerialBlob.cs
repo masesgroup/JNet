@@ -85,6 +85,13 @@ namespace Javax.Sql.Rowset.Serial
             get { return IExecute<Java.Io.InputStream>("getBinaryStream"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#length()"/> 
+        /// </summary>
+        public long Length
+        {
+            get { return IExecute<long>("length"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBytes(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -142,16 +149,6 @@ namespace Javax.Sql.Rowset.Serial
         public Java.Io.OutputStream SetBinaryStream(long arg0)
         {
             return IExecute<Java.Io.OutputStream>("setBinaryStream", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public long Length()
-        {
-            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(byte[],long)"/>

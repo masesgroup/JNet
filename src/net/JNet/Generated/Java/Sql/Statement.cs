@@ -89,6 +89,20 @@ namespace Java.Sql
             get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeBatch()"/> 
+        /// </summary>
+        public int[] ExecuteBatch
+        {
+            get { return IExecuteArray<int>("executeBatch"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeBatch()"/> 
+        /// </summary>
+        public long[] ExecuteLargeBatch
+        {
+            get { return IExecuteArray<long>("executeLargeBatch"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)"/>
         /// </summary>
         public int FetchDirection
@@ -108,6 +122,27 @@ namespace Java.Sql
         public Java.Sql.ResultSet GeneratedKeys
         {
             get { return IExecute<Java.Sql.ResultSet>("getGeneratedKeys"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isClosed()"/> 
+        /// </summary>
+        public bool IsClosed
+        {
+            get { return IExecute<bool>("isClosed"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/> 
+        /// </summary>
+        public bool IsCloseOnCompletion
+        {
+            get { return IExecute<bool>("isCloseOnCompletion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isPoolable()"/> 
+        /// </summary>
+        public bool IsPoolable
+        {
+            get { return IExecute<bool>("isPoolable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)"/>
@@ -247,36 +282,6 @@ namespace Java.Sql
             return IExecute<bool>("getMoreResults", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isClosed()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool IsClosed()
-        {
-            return IExecute<bool>("isClosed");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool IsCloseOnCompletion()
-        {
-            return IExecute<bool>("isCloseOnCompletion");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isPoolable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool IsPoolable()
-        {
-            return IExecute<bool>("isPoolable");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -318,16 +323,6 @@ namespace Java.Sql
         public int ExecuteUpdate(string arg0)
         {
             return IExecute<int>("executeUpdate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeBatch()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public int[] ExecuteBatch()
-        {
-            return IExecuteArray<int>("executeBatch");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeQuery(java.lang.String)"/>
@@ -503,16 +498,6 @@ namespace Java.Sql
         public long ExecuteLargeUpdate(string arg0)
         {
             return IExecute<long>("executeLargeUpdate", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeBatch()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public long[] ExecuteLargeBatch()
-        {
-            return IExecuteArray<long>("executeLargeBatch");
         }
         
         #endregion

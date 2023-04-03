@@ -146,6 +146,20 @@ namespace Org.W3c.Dom
             get { return IExecute<Org.W3c.Dom.Node>("getFirstChild"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/> 
+        /// </summary>
+        public bool HasAttributes
+        {
+            get { return IExecute<bool>("hasAttributes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasChildNodes()"/> 
+        /// </summary>
+        public bool HasChildNodes
+        {
+            get { return IExecute<bool>("hasChildNodes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getLastChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Node LastChild
@@ -228,24 +242,6 @@ namespace Org.W3c.Dom
         public string TextContent
         {
             get { return IExecute<string>("getTextContent"); } set { IExecute("setTextContent", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasAttributes()
-        {
-            return IExecute<bool>("hasAttributes");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasChildNodes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool HasChildNodes()
-        {
-            return IExecute<bool>("hasChildNodes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"/>

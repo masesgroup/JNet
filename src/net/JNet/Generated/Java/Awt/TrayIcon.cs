@@ -94,6 +94,13 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Image>("getImage"); } set { IExecute("setImage", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/> 
+        /// </summary>
+        public bool IsImageAutoSize
+        {
+            get { return IExecute<bool>("isImageAutoSize"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getMouseListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener[] MouseListeners
@@ -127,15 +134,6 @@ namespace Java.Awt
         public string ToolTip
         {
             get { return IExecute<string>("getToolTip"); } set { IExecute("setToolTip", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsImageAutoSize()
-        {
-            return IExecute<bool>("isImageAutoSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -240,6 +238,13 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#values()"/> 
+            /// </summary>
+            public static Java.Awt.TrayIcon.MessageType[] Values
+            {
+                get { return SExecuteArray<Java.Awt.TrayIcon.MessageType>("values"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -247,15 +252,6 @@ namespace Java.Awt
             public static Java.Awt.TrayIcon.MessageType ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.TrayIcon.MessageType>("valueOf", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#values()"/>
-            /// </summary>
-            
-            /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
-            public static Java.Awt.TrayIcon.MessageType[] Values()
-            {
-                return SExecuteArray<Java.Awt.TrayIcon.MessageType>("values");
             }
             
             #endregion

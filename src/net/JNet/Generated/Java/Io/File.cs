@@ -100,6 +100,13 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listRoots()"/> 
+        /// </summary>
+        public static Java.Io.File[] ListRoots
+        {
+            get { return SExecuteArray<Java.Io.File>("listRoots"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -122,15 +129,6 @@ namespace Java.Io
         {
             return SExecute<Java.Io.File>("createTempFile", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listRoots()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Io.File"/></returns>
-        public static Java.Io.File[] ListRoots()
-        {
-            return SExecuteArray<Java.Io.File>("listRoots");
-        }
         
         #endregion
 
@@ -150,6 +148,13 @@ namespace Java.Io
             get { return IExecute<string>("getAbsolutePath"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canExecute()"/> 
+        /// </summary>
+        public bool CanExecute
+        {
+            get { return IExecute<bool>("canExecute"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#getCanonicalFile()"/> 
         /// </summary>
         public Java.Io.File CanonicalFile
@@ -164,11 +169,102 @@ namespace Java.Io
             get { return IExecute<string>("getCanonicalPath"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canRead()"/> 
+        /// </summary>
+        public bool CanRead
+        {
+            get { return IExecute<bool>("canRead"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canWrite()"/> 
+        /// </summary>
+        public bool CanWrite
+        {
+            get { return IExecute<bool>("canWrite"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createNewFile()"/> 
+        /// </summary>
+        public bool CreateNewFile
+        {
+            get { return IExecute<bool>("createNewFile"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#delete()"/> 
+        /// </summary>
+        public bool Delete
+        {
+            get { return IExecute<bool>("delete"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#exists()"/> 
+        /// </summary>
+        public bool Exists
+        {
+            get { return IExecute<bool>("exists"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#getFreeSpace()"/> 
         /// </summary>
         public long FreeSpace
         {
             get { return IExecute<long>("getFreeSpace"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isAbsolute()"/> 
+        /// </summary>
+        public bool IsAbsolute
+        {
+            get { return IExecute<bool>("isAbsolute"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isDirectory()"/> 
+        /// </summary>
+        public bool IsDirectory
+        {
+            get { return IExecute<bool>("isDirectory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isFile()"/> 
+        /// </summary>
+        public bool IsFile
+        {
+            get { return IExecute<bool>("isFile"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isHidden()"/> 
+        /// </summary>
+        public bool IsHidden
+        {
+            get { return IExecute<bool>("isHidden"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#lastModified()"/> 
+        /// </summary>
+        public long LastModified
+        {
+            get { return IExecute<long>("lastModified"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#length()"/> 
+        /// </summary>
+        public long Length
+        {
+            get { return IExecute<long>("length"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdir()"/> 
+        /// </summary>
+        public bool Mkdir
+        {
+            get { return IExecute<bool>("mkdir"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdirs()"/> 
+        /// </summary>
+        public bool Mkdirs
+        {
+            get { return IExecute<bool>("mkdirs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#getName()"/> 
@@ -199,6 +295,20 @@ namespace Java.Io
             get { return IExecute<string>("getPath"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadOnly()"/> 
+        /// </summary>
+        public bool SetReadOnly
+        {
+            get { return IExecute<bool>("setReadOnly"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toPath()"/> 
+        /// </summary>
+        public Java.Nio.File.Path ToPath
+        {
+            get { return IExecute<Java.Nio.File.Path>("toPath"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#getTotalSpace()"/> 
         /// </summary>
         public long TotalSpace
@@ -206,120 +316,18 @@ namespace Java.Io
             get { return IExecute<long>("getTotalSpace"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toURI()"/> 
+        /// </summary>
+        public Java.Net.URI ToURI
+        {
+            get { return IExecute<Java.Net.URI>("toURI"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#getUsableSpace()"/> 
         /// </summary>
         public long UsableSpace
         {
             get { return IExecute<long>("getUsableSpace"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canExecute()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanExecute()
-        {
-            return IExecute<bool>("canExecute");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canRead()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanRead()
-        {
-            return IExecute<bool>("canRead");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canWrite()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CanWrite()
-        {
-            return IExecute<bool>("canWrite");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createNewFile()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public bool CreateNewFile()
-        {
-            return IExecute<bool>("createNewFile");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#delete()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Delete()
-        {
-            return IExecute<bool>("delete");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#exists()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Exists()
-        {
-            return IExecute<bool>("exists");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isAbsolute()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAbsolute()
-        {
-            return IExecute<bool>("isAbsolute");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isDirectory()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsDirectory()
-        {
-            return IExecute<bool>("isDirectory");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isFile()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFile()
-        {
-            return IExecute<bool>("isFile");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isHidden()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsHidden()
-        {
-            return IExecute<bool>("isHidden");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdir()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Mkdir()
-        {
-            return IExecute<bool>("mkdir");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdirs()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool Mkdirs()
-        {
-            return IExecute<bool>("mkdirs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#renameTo(java.io.File)"/>
@@ -376,15 +384,6 @@ namespace Java.Io
         public bool SetReadable(bool arg0)
         {
             return IExecute<bool>("setReadable", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadOnly()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool SetReadOnly()
-        {
-            return IExecute<bool>("setReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setWritable(boolean,boolean)"/>
@@ -467,42 +466,6 @@ namespace Java.Io
         public string[] List(Java.Io.FilenameFilter arg0)
         {
             return IExecuteArray<string>("list", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toURI()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        public Java.Net.URI ToURI()
-        {
-            return IExecute<Java.Net.URI>("toURI");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toPath()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
-        public Java.Nio.File.Path ToPath()
-        {
-            return IExecute<Java.Nio.File.Path>("toPath");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#lastModified()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long LastModified()
-        {
-            return IExecute<long>("lastModified");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#length()"/>
-        /// </summary>
-        
-        /// <returns><see cref="long"/></returns>
-        public long Length()
-        {
-            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#deleteOnExit()"/>

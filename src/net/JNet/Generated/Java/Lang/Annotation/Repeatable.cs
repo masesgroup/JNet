@@ -46,13 +46,11 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html#value()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html#value()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class Value()
+        public Java.Lang.Class Value
         {
-            return IExecute<Java.Lang.Class>("value");
+            get { return IExecute<Java.Lang.Class>("value"); }
         }
         
         #endregion

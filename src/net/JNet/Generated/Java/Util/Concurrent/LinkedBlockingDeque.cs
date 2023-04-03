@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator DescendingIterator
+        {
+            get { return IExecute<Java.Util.Iterator>("descendingIterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#getFirst()"/> 
         /// </summary>
         public object First
@@ -82,6 +89,69 @@ namespace Java.Util.Concurrent
         public object Last
         {
             get { return IExecute("getLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/> 
+        /// </summary>
+        public object PeekFirst
+        {
+            get { return IExecute("peekFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/> 
+        /// </summary>
+        public object PeekLast
+        {
+            get { return IExecute("peekLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pop()"/> 
+        /// </summary>
+        public object Pop
+        {
+            get { return IExecute("pop"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/> 
+        /// </summary>
+        public object RemoveFirst
+        {
+            get { return IExecute("removeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/> 
+        /// </summary>
+        public object RemoveLast
+        {
+            get { return IExecute("removeLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/> 
+        /// </summary>
+        public object Take
+        {
+            get { return IExecute("take"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/> 
+        /// </summary>
+        public object TakeFirst
+        {
+            get { return IExecute("takeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/> 
+        /// </summary>
+        public object TakeLast
+        {
+            get { return IExecute("takeLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -156,24 +226,6 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PeekFirst()
-        {
-            return IExecute("peekFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object PeekLast()
-        {
-            return IExecute("peekLast");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -225,63 +277,6 @@ namespace Java.Util.Concurrent
             return IExecute("pollLast", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pop()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object Pop()
-        {
-            return IExecute("pop");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object RemoveFirst()
-        {
-            return IExecute("removeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        public object RemoveLast()
-        {
-            return IExecute("removeLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object Take()
-        {
-            return IExecute("take");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object TakeFirst()
-        {
-            return IExecute("takeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public object TakeLast()
-        {
-            return IExecute("takeLast");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -299,24 +294,6 @@ namespace Java.Util.Concurrent
         public int DrainTo(Java.Util.Collection arg0)
         {
             return IExecute<int>("drainTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator DescendingIterator()
-        {
-            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addFirst(java.lang.Object)"/>
@@ -429,6 +406,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/> 
+        /// </summary>
+        public Java.Util.Iterator<E> DescendingIterator
+        {
+            get { return IExecute<Java.Util.Iterator<E>>("descendingIterator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#getFirst()"/> 
         /// </summary>
         public E First
@@ -441,6 +425,69 @@ namespace Java.Util.Concurrent
         public E Last
         {
             get { return IExecute<E>("getLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/> 
+        /// </summary>
+        public E PeekFirst
+        {
+            get { return IExecute<E>("peekFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/> 
+        /// </summary>
+        public E PeekLast
+        {
+            get { return IExecute<E>("peekLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pop()"/> 
+        /// </summary>
+        public E Pop
+        {
+            get { return IExecute<E>("pop"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/> 
+        /// </summary>
+        public int RemainingCapacity
+        {
+            get { return IExecute<int>("remainingCapacity"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/> 
+        /// </summary>
+        public E RemoveFirst
+        {
+            get { return IExecute<E>("removeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/> 
+        /// </summary>
+        public E RemoveLast
+        {
+            get { return IExecute<E>("removeLast"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/> 
+        /// </summary>
+        public E Take
+        {
+            get { return IExecute<E>("take"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/> 
+        /// </summary>
+        public E TakeFirst
+        {
+            get { return IExecute<E>("takeFirst"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/> 
+        /// </summary>
+        public E TakeLast
+        {
+            get { return IExecute<E>("takeLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -515,24 +562,6 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PeekFirst()
-        {
-            return IExecute<E>("peekFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E PeekLast()
-        {
-            return IExecute<E>("peekLast");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -584,63 +613,6 @@ namespace Java.Util.Concurrent
             return IExecute<E>("pollLast", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pop()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E Pop()
-        {
-            return IExecute<E>("pop");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E RemoveFirst()
-        {
-            return IExecute<E>("removeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        public E RemoveLast()
-        {
-            return IExecute<E>("removeLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public E Take()
-        {
-            return IExecute<E>("take");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public E TakeFirst()
-        {
-            return IExecute<E>("takeFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/>
-        /// </summary>
-        
-        /// <returns><see cref="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public E TakeLast()
-        {
-            return IExecute<E>("takeLast");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -658,24 +630,6 @@ namespace Java.Util.Concurrent
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
         {
             return IExecute<int>("drainTo", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int RemainingCapacity()
-        {
-            return IExecute<int>("remainingCapacity");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> DescendingIterator()
-        {
-            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addFirst(java.lang.Object)"/>

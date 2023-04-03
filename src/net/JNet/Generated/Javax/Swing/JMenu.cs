@@ -78,6 +78,27 @@ namespace Javax.Swing
             get { return IExecute<int>("getDelay"); } set { IExecute("setDelay", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isPopupMenuVisible()"/> 
+        /// </summary>
+        public bool IsPopupMenuVisible
+        {
+            get { return IExecute<bool>("isPopupMenuVisible"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTearOff()"/> 
+        /// </summary>
+        public bool IsTearOff
+        {
+            get { return IExecute<bool>("isTearOff"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTopLevelMenu()"/> 
+        /// </summary>
+        public bool IsTopLevelMenu
+        {
+            get { return IExecute<bool>("isTopLevelMenu"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
@@ -120,33 +141,6 @@ namespace Javax.Swing
         public bool IsMenuComponent(Java.Awt.Component arg0)
         {
             return IExecute<bool>("isMenuComponent", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isPopupMenuVisible()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPopupMenuVisible()
-        {
-            return IExecute<bool>("isPopupMenuVisible");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTearOff()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTearOff()
-        {
-            return IExecute<bool>("isTearOff");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTopLevelMenu()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsTopLevelMenu()
-        {
-            return IExecute<bool>("isTopLevelMenu");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#getMenuComponent(int)"/>

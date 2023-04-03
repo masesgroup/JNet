@@ -170,11 +170,25 @@ namespace Javax.Swing.Text
             get { return IExecute<char>("getFocusAccelerator"); } set { IExecute("setFocusAccelerator", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropLocation()"/> 
+        /// </summary>
+        public Javax.Swing.Text.JTextComponent.DropLocation GetDropLocation
+        {
+            get { return IExecute<Javax.Swing.Text.JTextComponent.DropLocation>("getDropLocation"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getHighlighter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setHighlighter(javax.swing.text.Highlighter)"/>
         /// </summary>
         public Javax.Swing.Text.Highlighter Highlighter
         {
             get { return IExecute<Javax.Swing.Text.Highlighter>("getHighlighter"); } set { IExecute("setHighlighter", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/> 
+        /// </summary>
+        public bool IsEditable
+        {
+            get { return IExecute<bool>("isEditable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setKeymap(javax.swing.text.Keymap)"/>
@@ -261,15 +275,6 @@ namespace Javax.Swing.Text
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEditable()
-        {
-            return IExecute<bool>("isEditable");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>
         /// </summary>
         
@@ -304,15 +309,6 @@ namespace Javax.Swing.Text
         public bool Print(Java.Text.MessageFormat arg0, Java.Text.MessageFormat arg1)
         {
             return IExecute<bool>("print", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropLocation()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.JTextComponent.DropLocation"/></returns>
-        public Javax.Swing.Text.JTextComponent.DropLocation GetDropLocation()
-        {
-            return IExecute<Javax.Swing.Text.JTextComponent.DropLocation>("getDropLocation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>

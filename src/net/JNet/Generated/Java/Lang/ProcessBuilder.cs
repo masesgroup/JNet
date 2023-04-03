@@ -72,6 +72,27 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/> 
+        /// </summary>
+        public Java.Util.Map Environment
+        {
+            get { return IExecute<Java.Util.Map>("environment"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#inheritIO()"/> 
+        /// </summary>
+        public Java.Lang.ProcessBuilder InheritIO
+        {
+            get { return IExecute<Java.Lang.ProcessBuilder>("inheritIO"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#start()"/> 
+        /// </summary>
+        public Java.Lang.Process Start
+        {
+            get { return IExecute<Java.Lang.Process>("start"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectErrorStream()"/>
         /// </summary>
         
@@ -88,16 +109,6 @@ namespace Java.Lang
         public Java.Io.File Directory()
         {
             return IExecute<Java.Io.File>("directory");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#start()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Lang.Process Start()
-        {
-            return IExecute<Java.Lang.Process>("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.lang.String[])"/>
@@ -125,15 +136,6 @@ namespace Java.Lang
         public Java.Lang.ProcessBuilder Directory(Java.Io.File arg0)
         {
             return IExecute<Java.Lang.ProcessBuilder>("directory", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#inheritIO()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
-        public Java.Lang.ProcessBuilder InheritIO()
-        {
-            return IExecute<Java.Lang.ProcessBuilder>("inheritIO");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectError(java.io.File)"/>
@@ -234,15 +236,6 @@ namespace Java.Lang
         {
             return IExecute<Java.Util.List>("command");
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map Environment()
-        {
-            return IExecute<Java.Util.Map>("environment");
-        }
         
         #endregion
 
@@ -307,22 +300,18 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#type()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
-            public Java.Lang.ProcessBuilder.Redirect.Type Type()
+            public Java.Io.File File
             {
-                return IExecute<Java.Lang.ProcessBuilder.Redirect.Type>("type");
+                get { return IExecute<Java.Io.File>("file"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#type()"/> 
             /// </summary>
-            
-            /// <returns><see cref="Java.Io.File"/></returns>
-            public Java.Io.File File()
+            public Java.Lang.ProcessBuilder.Redirect.Type Type
             {
-                return IExecute<Java.Io.File>("file");
+                get { return IExecute<Java.Lang.ProcessBuilder.Redirect.Type>("type"); }
             }
             
             #endregion

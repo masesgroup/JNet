@@ -58,13 +58,11 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#getTransparency()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#getTransparency()"/> 
         /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int GetTransparency()
+        public int GetTransparency
         {
-            return IExecute<int>("getTransparency");
+            get { return IExecute<int>("getTransparency"); }
         }
         
         #endregion

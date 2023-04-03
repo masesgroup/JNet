@@ -46,6 +46,13 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/> 
+        /// </summary>
+        public int GroupCount
+        {
+            get { return IExecute<int>("groupCount"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end()"/>
         /// </summary>
         
@@ -62,15 +69,6 @@ namespace Java.Util.Regex
         public int End(int arg0)
         {
             return IExecute<int>("end", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int GroupCount()
-        {
-            return IExecute<int>("groupCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start()"/>

@@ -78,6 +78,20 @@ namespace Java.Rmi.Activation
             get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getClassName()"/> 
+        /// </summary>
+        public string GetClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()"/> 
+        /// </summary>
+        public Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment GetCommandEnvironment
+        {
+            get { return IExecute<Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment>("getCommandEnvironment"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getLocation()"/> 
         /// </summary>
         public string Location
@@ -90,24 +104,6 @@ namespace Java.Rmi.Activation
         public Java.Util.Properties PropertyOverrides
         {
             get { return IExecute<Java.Util.Properties>("getPropertyOverrides"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getClassName()"/>
-        /// </summary>
-        
-        /// <returns><see cref="string"/></returns>
-        public string GetClassName()
-        {
-            return IExecute<string>("getClassName");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/></returns>
-        public Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment GetCommandEnvironment()
-        {
-            return IExecute<Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment>("getCommandEnvironment");
         }
         
         #endregion

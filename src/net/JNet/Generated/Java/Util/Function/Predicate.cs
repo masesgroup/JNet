@@ -64,6 +64,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/> 
+        /// </summary>
+        public Java.Util.Function.Predicate Negate
+        {
+            get { return IExecute<Java.Util.Function.Predicate>("negate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -80,15 +87,6 @@ namespace Java.Util.Function
         public Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0)
         {
             return IExecute<Java.Util.Function.Predicate>("and", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate Negate()
-        {
-            return IExecute<Java.Util.Function.Predicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -153,6 +151,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/> 
+        /// </summary>
+        public Java.Util.Function.Predicate<T> Negate
+        {
+            get { return IExecute<Java.Util.Function.Predicate<T>>("negate"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="T"/></param>
@@ -169,15 +174,6 @@ namespace Java.Util.Function
         public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return IExecute<Java.Util.Function.Predicate<T>>("and", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<T> Negate()
-        {
-            return IExecute<Java.Util.Function.Predicate<T>>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>

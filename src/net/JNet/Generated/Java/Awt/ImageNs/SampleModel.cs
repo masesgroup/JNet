@@ -57,6 +57,13 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/> 
+        /// </summary>
+        public Java.Awt.ImageNs.DataBuffer CreateDataBuffer
+        {
+            get { return IExecute<Java.Awt.ImageNs.DataBuffer>("createDataBuffer"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataType()"/> 
         /// </summary>
         public int DataType
@@ -125,15 +132,6 @@ namespace Java.Awt.ImageNs
         public int GetSampleSize(int arg0)
         {
             return IExecute<int>("getSampleSize", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.ImageNs.DataBuffer"/></returns>
-        public Java.Awt.ImageNs.DataBuffer CreateDataBuffer()
-        {
-            return IExecute<Java.Awt.ImageNs.DataBuffer>("createDataBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createCompatibleSampleModel(int,int)"/>

@@ -150,13 +150,11 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#checkError()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#checkError()"/> 
         /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool CheckError()
+        public bool CheckError
         {
-            return IExecute<bool>("checkError");
+            get { return IExecute<bool>("checkError"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#format(java.lang.String,java.lang.Object[])"/>

@@ -84,6 +84,20 @@ namespace Javax.Swing.Text
             get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#copyAttributes()"/> 
+        /// </summary>
+        public Javax.Swing.Text.AttributeSet CopyAttributes
+        {
+            get { return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEmpty()"/> 
+        /// </summary>
+        public bool IsEmpty
+        {
+            get { return IExecute<bool>("isEmpty"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent
@@ -119,15 +133,6 @@ namespace Javax.Swing.Text
             return IExecute<bool>("isDefined", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEmpty()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEqual(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -144,15 +149,6 @@ namespace Javax.Swing.Text
         public object GetAttribute(object arg0)
         {
             return IExecute("getAttribute", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#copyAttributes()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-        public Javax.Swing.Text.AttributeSet CopyAttributes()
-        {
-            return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)"/>

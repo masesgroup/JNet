@@ -125,29 +125,39 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#current()"/> 
+        /// </summary>
+        public int Current
+        {
+            get { return IExecute<int>("current"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#first()"/> 
+        /// </summary>
+        public int First
+        {
+            get { return IExecute<int>("first"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#last()"/> 
+        /// </summary>
+        public int Last
+        {
+            get { return IExecute<int>("last"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#previous()"/> 
+        /// </summary>
+        public int Previous
+        {
+            get { return IExecute<int>("previous"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getText()"/> 
         /// </summary>
         public Java.Text.CharacterIterator Text
         {
             get { return IExecute<Java.Text.CharacterIterator>("getText"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#current()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Current()
-        {
-            return IExecute<int>("current");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#first()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int First()
-        {
-            return IExecute<int>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#following(int)"/>
@@ -157,15 +167,6 @@ namespace Java.Text
         public int Following(int arg0)
         {
             return IExecute<int>("following", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#last()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Last()
-        {
-            return IExecute<int>("last");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()"/>
@@ -184,15 +185,6 @@ namespace Java.Text
         public int Next(int arg0)
         {
             return IExecute<int>("next", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#previous()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public int Previous()
-        {
-            return IExecute<int>("previous");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>

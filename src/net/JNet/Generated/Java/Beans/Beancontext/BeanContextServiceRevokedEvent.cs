@@ -56,6 +56,13 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/> 
+        /// </summary>
+        public bool IsCurrentServiceInvalidNow
+        {
+            get { return IExecute<bool>("isCurrentServiceInvalidNow"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getServiceClass()"/> 
         /// </summary>
         public Java.Lang.Class ServiceClass
@@ -68,15 +75,6 @@ namespace Java.Beans.Beancontext
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool IsCurrentServiceInvalidNow()
-        {
-            return IExecute<bool>("isCurrentServiceInvalidNow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)"/>

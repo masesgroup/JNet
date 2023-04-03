@@ -90,6 +90,48 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#classModifiers()"/> 
+        /// </summary>
+        public static int ClassModifiers
+        {
+            get { return SExecute<int>("classModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#constructorModifiers()"/> 
+        /// </summary>
+        public static int ConstructorModifiers
+        {
+            get { return SExecute<int>("constructorModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()"/> 
+        /// </summary>
+        public static int FieldModifiers
+        {
+            get { return SExecute<int>("fieldModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()"/> 
+        /// </summary>
+        public static int InterfaceModifiers
+        {
+            get { return SExecute<int>("interfaceModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#methodModifiers()"/> 
+        /// </summary>
+        public static int MethodModifiers
+        {
+            get { return SExecute<int>("methodModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"/> 
+        /// </summary>
+        public static int ParameterModifiers
+        {
+            get { return SExecute<int>("parameterModifiers"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isAbstract(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -196,60 +238,6 @@ namespace Java.Lang.Reflect
         public static bool IsVolatile(int arg0)
         {
             return SExecute<bool>("isVolatile", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#classModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int ClassModifiers()
-        {
-            return SExecute<int>("classModifiers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#constructorModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int ConstructorModifiers()
-        {
-            return SExecute<int>("constructorModifiers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int FieldModifiers()
-        {
-            return SExecute<int>("fieldModifiers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int InterfaceModifiers()
-        {
-            return SExecute<int>("interfaceModifiers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#methodModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int MethodModifiers()
-        {
-            return SExecute<int>("methodModifiers");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"/>
-        /// </summary>
-        
-        /// <returns><see cref="int"/></returns>
-        public static int ParameterModifiers()
-        {
-            return SExecute<int>("parameterModifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#toString(int)"/>

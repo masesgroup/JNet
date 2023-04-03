@@ -65,6 +65,13 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#allowMultipleSelections()"/> 
+        /// </summary>
+        public bool AllowMultipleSelections
+        {
+            get { return IExecute<bool>("allowMultipleSelections"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getChoices()"/> 
         /// </summary>
         public string[] Choices
@@ -91,15 +98,6 @@ namespace Javax.Security.Auth.Callback
         public int[] SelectedIndexes
         {
             get { return IExecuteArray<int>("getSelectedIndexes"); } set { IExecute("setSelectedIndexes", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#allowMultipleSelections()"/>
-        /// </summary>
-        
-        /// <returns><see cref="bool"/></returns>
-        public bool AllowMultipleSelections()
-        {
-            return IExecute<bool>("allowMultipleSelections");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndex(int)"/>

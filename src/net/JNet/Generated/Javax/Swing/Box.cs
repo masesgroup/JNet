@@ -54,22 +54,39 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createGlue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createGlue()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        public static Java.Awt.Component CreateGlue()
+        public static Java.Awt.Component CreateGlue
         {
-            return SExecute<Java.Awt.Component>("createGlue");
+            get { return SExecute<Java.Awt.Component>("createGlue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalGlue()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalBox()"/> 
         /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        public static Java.Awt.Component CreateHorizontalGlue()
+        public static Javax.Swing.Box CreateHorizontalBox
         {
-            return SExecute<Java.Awt.Component>("createHorizontalGlue");
+            get { return SExecute<Javax.Swing.Box>("createHorizontalBox"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalGlue()"/> 
+        /// </summary>
+        public static Java.Awt.Component CreateHorizontalGlue
+        {
+            get { return SExecute<Java.Awt.Component>("createHorizontalGlue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalBox()"/> 
+        /// </summary>
+        public static Javax.Swing.Box CreateVerticalBox
+        {
+            get { return SExecute<Javax.Swing.Box>("createVerticalBox"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalGlue()"/> 
+        /// </summary>
+        public static Java.Awt.Component CreateVerticalGlue
+        {
+            get { return SExecute<Java.Awt.Component>("createVerticalGlue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalStrut(int)"/>
@@ -90,15 +107,6 @@ namespace Javax.Swing
             return SExecute<Java.Awt.Component>("createRigidArea", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalGlue()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        public static Java.Awt.Component CreateVerticalGlue()
-        {
-            return SExecute<Java.Awt.Component>("createVerticalGlue");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalStrut(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -106,24 +114,6 @@ namespace Javax.Swing
         public static Java.Awt.Component CreateVerticalStrut(int arg0)
         {
             return SExecute<Java.Awt.Component>("createVerticalStrut", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalBox()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Box"/></returns>
-        public static Javax.Swing.Box CreateHorizontalBox()
-        {
-            return SExecute<Javax.Swing.Box>("createHorizontalBox");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalBox()"/>
-        /// </summary>
-        
-        /// <returns><see cref="Javax.Swing.Box"/></returns>
-        public static Javax.Swing.Box CreateVerticalBox()
-        {
-            return SExecute<Javax.Swing.Box>("createVerticalBox");
         }
         
         #endregion
