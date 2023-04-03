@@ -56,11 +56,7 @@ namespace MASES.JNetReflector
 
     public static class SpecialNames
     {
-        static Assembly jcoBridgeAssemblyVersion = typeof(SetupJVMWrapper).Assembly;
-        static System.Diagnostics.FileVersionInfo fileVersionInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(jcoBridgeAssemblyVersion.Location);
-        public static string JCOBridgeVersion => $"{fileVersionInfo.FileMajorPart}.{fileVersionInfo.FileMinorPart}.{fileVersionInfo.FileBuildPart}";
-
-        static Assembly assembly = typeof(Program).Assembly;
+        static readonly Assembly assembly = typeof(Program).Assembly;
 
         public static string VersionPlaceHolder()
         {

@@ -14,23 +14,23 @@
         public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { }
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         /// </summary>
         public override bool IsAbstract => ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         /// </summary>
         public override bool IsCloseable => ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         /// </summary>
         public override bool IsStatic => ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER;
 

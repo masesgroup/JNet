@@ -125,8 +125,6 @@ namespace MASES.JNetReflector.Templates
             public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
             public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
 
-            public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER";
-
             public const string DEFAULT_DECORATION = "#region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
