@@ -45,6 +45,7 @@ namespace MASES.JNetReflector
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
+        public const string DisableGenericsInNonGenericClasses = "DisableGenericsInNonGenericClasses";
         public const string DisableGenerics = "DisableGenerics";
         public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";
@@ -71,6 +72,8 @@ namespace MASES.JNetReflector
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
+        public const string JavaLangClass = "Java.Lang.Class";
+        public const string JavaLangVoid = "Java.Lang.Void";
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangDeprecated = "java.lang.Deprecated";
         public const string JavaLangIterable = "java.lang.Iterable";

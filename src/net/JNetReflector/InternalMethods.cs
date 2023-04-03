@@ -644,7 +644,7 @@ namespace MASES.JNetReflector
                         {
                             if (!classGenerics.Contains(genString)) usableGenStrings = false;
                         }
-                        if (typeStr.StartsWith("Java.Lang.Class"))
+                        if (typeStr.StartsWith(SpecialNames.JavaLangClass))
                         {
                             typeStr = typeStrForDoc;
                             usableGenStrings = false;
@@ -791,7 +791,7 @@ namespace MASES.JNetReflector
                         {
                             if (!classGenerics.Contains(genString)) usableGenStrings = false;
                         }
-                        if (usableGenStrings && implClass != "Java.Lang.Class")
+                        if (usableGenStrings && implClass != SpecialNames.JavaLangClass)
                         {
                             implClass += implClassGenerics.ApplyGenerics();
                         }
@@ -851,16 +851,23 @@ namespace MASES.JNetReflector
                     return prefilteredMethods;
                 }
 
-                if (paramCount == 0 &&
-                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode"
-                    || methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == " wait")
+                if (paramCount == 0 && !method.IsVoid() &&
+                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode")
                    ) continue; // special methods managed from JCOBridge
 
-                if (paramCount == 1 &&
-                    (methodNameOrigin == "equals" || methodNameOrigin == " wait")
+                if (paramCount == 0 && method.IsVoid() &&
+                    (methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == " wait")
                    ) continue; // special methods managed from JCOBridge
 
-                if (paramCount == 2 &&
+                if (paramCount == 1 && method.IsVoid() &&
+                    (methodNameOrigin == " wait")
+                   ) continue; // special methods managed from JCOBridge
+
+                if (paramCount == 1 && !method.IsVoid() &&
+                    (methodNameOrigin == "equals")
+                   ) continue; // special methods managed from JCOBridge
+
+                if (paramCount == 2 && method.IsVoid() &&
                     (methodNameOrigin == " wait")
                    ) continue; // special methods managed from JCOBridge
 
@@ -903,6 +910,11 @@ namespace MASES.JNetReflector
         static string AnalyzeMethods(this Class classDefinition, ICollection<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool isNested, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
+
+            if (!JNetReflectorCore.DisableGenericsInNonGenericClasses && !JNetReflectorCore.DisableGenerics && !classDefinition.IsJVMGenericClass())
+            {
+                isGeneric = true; // force generic to true to build generic methods on classes that does not have generics
+            }
 
             var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
             var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
@@ -1006,7 +1018,7 @@ namespace MASES.JNetReflector
 
                 var returnTypeForDoc = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
 
-                if (returnType.StartsWith("Java.Lang.Class"))
+                if (returnType.StartsWith(SpecialNames.JavaLangClass))
                 {
                     returnType = returnTypeForDoc;
                 }
@@ -1107,7 +1119,7 @@ namespace MASES.JNetReflector
 
                 if (methodName == "Clone" && returnType == "object") continue;
                 if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
-                if (returnType.StartsWith("Java.Lang.Class"))
+                if (returnType.StartsWith(SpecialNames.JavaLangClass))
                 {
                     returnType = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
                 }
@@ -1160,7 +1172,7 @@ namespace MASES.JNetReflector
                         {
                             typeStr = typeStr.Substring(0, typeStr.IndexOf(SpecialNames.ArrayTypeTrailer));
                         }
-                        else if (typeStr.StartsWith("Java.Lang.Class"))
+                        else if (typeStr.StartsWith(SpecialNames.JavaLangClass))
                         {
                             typeStr = typeStrForDoc;
                             usableGenStrings = false;

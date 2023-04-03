@@ -1,6 +1,6 @@
 # JNet: Reflector
 
-The tool is able to build .NET classes which mimcs the JVM class (Java, Scala, Kotlin, ...) counterpart.
+The tool is able to build .NET classes which reproduce the JVM class (Java, Scala, Kotlin, ...) counterpart.
 
 ## Installation
 
@@ -36,6 +36,7 @@ _jnr_ accepts the following command-line switch:
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
+* **DisableGenericsInNonGenericClasses**: The option disables generation of generic methods in non generic classes
 * **DisableGenerics**: The option forces the tool to disable any generic type
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk

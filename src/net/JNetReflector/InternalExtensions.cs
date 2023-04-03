@@ -481,9 +481,16 @@ namespace MASES.JNetReflector
                 return entry.CastTo<WildcardType>().GetGenerics(genArguments, genClause, prefix, reportNative, camel);
             }
             string retVal = string.Empty;
-            if (reportNative && !IsVoid(entry.TypeName))
+            if (reportNative)
             {
-                retVal = ToNetType(entry.TypeName, false, camel);
+                if (IsVoid(entry.TypeName))
+                {
+                    return SpecialNames.JavaLangVoid;
+                }
+                else
+                {
+                    retVal = ToNetType(entry.TypeName, false, camel);
+                }
             }
             return retVal;
         }
@@ -512,18 +519,32 @@ namespace MASES.JNetReflector
                     if (!hasKey) genClauses?.Add(item);
                 }
             }
-            return result;
+            return result.EndsWith(SpecialNames.ArrayTypeTrailer) ? result : result + SpecialNames.ArrayTypeTrailer;
         }
 
         static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
         {
             List<string> types = new List<string>();
+            List<string> genArgumentsLocal = new List<string>();
+            List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
             foreach (var item in entry.ActualTypeArguments)
             {
-                types.Add(item.GetGenerics(genArguments, genClause, prefix, reportNative, camel));
+                types.Add(item.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, camel));
             }
-            if (entry.IsClassToAvoidInGenerics()) entry.ToNetType(camel);
-            return entry.ToNetType(camel) + types?.ApplyGenerics();
+            var type = entry.ToNetType(camel);
+            if (entry.IsClassToAvoidInGenerics())
+            {
+                return type;
+            }
+            foreach (var item in genArgumentsLocal)
+            {
+                genArguments?.Add(item);
+            }
+            foreach (var item in genClauseLocal)
+            {
+                genClause?.Add(item);
+            }
+            return type.StartsWith(SpecialNames.JavaLangClass) ? type : entry.ToNetType(camel) + types?.ApplyGenerics();
         }
 
         static string GetGenerics(this TypeVariable entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool camel)
@@ -573,7 +594,13 @@ namespace MASES.JNetReflector
                     List<string> innerGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
                     var upper = GetGenerics(entry.UpperBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, camel);
-                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
+                    upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
+                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
+                                              .Replace(", ", "_")
+                                              .Replace(",", "_")
+                                              .Replace('<', '_')
+                                              .Replace('>', '_')
+                                              .Replace('?', '_');
                     if (prefix == null)
                     {
                         retVal = upperConverted;
@@ -583,7 +610,7 @@ namespace MASES.JNetReflector
                         retVal = $"{prefix}Extends{upperConverted}";
                     }
                     genArguments?.Add(retVal);
-                    genClause?.Add(new KeyValuePair<string, string>(retVal, (upper == "object" || upper == "object[]") ? null : upper));
+                    genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(upper) ? null : upper));
                     if (entry.UpperBounds[i].IsInstanceOf<TypeVariable>())
                     {
                         if (genArguments != null && !genArguments.Contains(upper))
@@ -626,9 +653,21 @@ namespace MASES.JNetReflector
                     List<string> innerGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
                     var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, camel);
+                    upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
                     var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, camel);
-                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
-                    var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_').Replace(", ", "_").Replace(",", "_").Replace('<', '_').Replace('>', '_');
+                    lower = lower.EndsWith("?") ? lower.Substring(0, lower.LastIndexOf("?")) : lower;
+                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
+                                              .Replace(", ", "_")
+                                              .Replace(",", "_")
+                                              .Replace('<', '_')
+                                              .Replace('>', '_')
+                                              .Replace('?', '_');
+                    var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_')
+                                              .Replace(", ", "_")
+                                              .Replace(",", "_")
+                                              .Replace('<', '_')
+                                              .Replace('>', '_')
+                                              .Replace('?', '_');
                     if (prefix == null)
                     {
                         retVal = lowerConverted;
@@ -638,7 +677,7 @@ namespace MASES.JNetReflector
                         retVal = $"{prefix}{upperConverted}Super{lowerConverted}";
                     }
                     genArguments?.Add(retVal);
-                    genClause?.Add(new KeyValuePair<string, string>(retVal, (lower == "object" || lower == "object[]") ? null : lower));
+                    genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(lower) ? null : lower));
                     if (entry.LowerBounds[i].IsInstanceOf<TypeVariable>())
                     {
                         if (genArguments != null && !genArguments.Contains(lower))
@@ -899,6 +938,7 @@ namespace MASES.JNetReflector
         {
             var typeName = entry.TypeName;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
+            if (typeName.Contains('<')) typeName = typeName.Substring(0, typeName.IndexOf('<'));
             if (JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
             return false;
         }
@@ -1083,6 +1123,8 @@ namespace MASES.JNetReflector
         public static bool IsNetNativeType(this string typeName)
         {
             if (typeName == null) throw new ArgumentNullException(nameof(typeName));
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return IsNetNativeType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)));
+
             switch (typeName)
             {
                 case "void":
@@ -1811,7 +1853,7 @@ namespace MASES.JNetReflector
                 {
                     entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
                     var retVal = genArguments.ConvertGenerics();
-                    genArguments.Clear();
+                    //genArguments.Clear();
                     return retVal;
                 }
                 else

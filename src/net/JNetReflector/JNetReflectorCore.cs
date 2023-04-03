@@ -146,6 +146,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.DisableGenericsInNonGenericClasses,
+                        Type = ArgumentType.Single,
+                        Help = "The option disables generation of generic methods in non generic classes",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DisableGenerics,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable any generic type",
@@ -246,6 +252,9 @@ namespace MASES.JNetReflector
 
         static bool _AvoidCSharpGenericClauseDefinition;
         public static bool AvoidCSharpGenericClauseDefinition => _AvoidCSharpGenericClauseDefinition;
+
+        static bool _DisableGenericsInNonGenericClasses;
+        public static bool DisableGenericsInNonGenericClasses => _DisableGenericsInNonGenericClasses;
 
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
@@ -393,6 +402,7 @@ namespace MASES.JNetReflector
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
             _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);
+            _DisableGenericsInNonGenericClasses = ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
             _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
