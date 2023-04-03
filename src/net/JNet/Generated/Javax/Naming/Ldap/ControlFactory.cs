@@ -49,7 +49,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg2"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable arg2)
+        public static Javax.Naming.Ldap.Control GetControlInstance<Arg2Extendsobject>(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<Arg2Extendsobject, Arg2Extendsobject> arg2)
         {
             return SExecute<Javax.Naming.Ldap.Control>("getControlInstance", arg0, arg1, arg2);
         }

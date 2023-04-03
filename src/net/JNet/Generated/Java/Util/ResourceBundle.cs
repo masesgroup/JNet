@@ -154,16 +154,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getKeys()"/> 
         /// </summary>
-        public Java.Util.Enumeration Keys
+        public Java.Util.Enumeration<string> Keys
         {
-            get { return IExecute<Java.Util.Enumeration>("getKeys"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/> 
         /// </summary>
-        public Java.Util.Set KeySet
+        public Java.Util.Set<string> KeySet
         {
-            get { return IExecute<Java.Util.Set>("keySet"); }
+            get { return IExecute<Java.Util.Set<string>>("keySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getLocale()"/> 
@@ -253,7 +253,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
-            public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List arg0)
+            public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List<string> arg0)
             {
                 return SExecute<Java.Util.ResourceBundle.Control>("getControl", arg0);
             }
@@ -262,7 +262,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
-            public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List arg0)
+            public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List<string> arg0)
             {
                 return SExecute<Java.Util.ResourceBundle.Control>("getNoFallbackControl", arg0);
             }
@@ -309,9 +309,9 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List GetFormats(string arg0)
+            public Java.Util.List<string> GetFormats(string arg0)
             {
-                return IExecute<Java.Util.List>("getFormats", arg0);
+                return IExecute<Java.Util.List<string>>("getFormats", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getCandidateLocales(java.lang.String,java.util.Locale)"/>
@@ -319,9 +319,9 @@ namespace Java.Util
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List GetCandidateLocales(string arg0, Java.Util.Locale arg1)
+            public Java.Util.List<Java.Util.Locale> GetCandidateLocales(string arg0, Java.Util.Locale arg1)
             {
-                return IExecute<Java.Util.List>("getCandidateLocales", arg0, arg1);
+                return IExecute<Java.Util.List<Java.Util.Locale>>("getCandidateLocales", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>

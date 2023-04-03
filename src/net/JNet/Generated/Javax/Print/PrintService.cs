@@ -91,10 +91,10 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttribute(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttribute"/></returns>
-        public Javax.Print.Attribute.PrintServiceAttribute GetAttribute(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T GetAttribute<T>(Java.Lang.Class arg0) where T: Javax.Print.Attribute.PrintServiceAttribute
         {
-            return IExecute<Javax.Print.Attribute.PrintServiceAttribute>("getAttribute", arg0);
+            return IExecute<T>("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeCategorySupported(java.lang.Class)"/>

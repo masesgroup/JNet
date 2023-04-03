@@ -63,7 +63,7 @@ namespace Javax.Tools
         /// <param name="arg4"><see cref="Java.Lang.Iterable"/></param>
         /// <param name="arg5"><see cref="Java.Lang.Iterable"/></param>
         /// <returns><see cref="Javax.Tools.DocumentationTool.DocumentationTask"/></returns>
-        public Javax.Tools.DocumentationTool.DocumentationTask GetTask(Java.Io.Writer arg0, Javax.Tools.JavaFileManager arg1, Javax.Tools.DiagnosticListener arg2, Java.Lang.Class arg3, Java.Lang.Iterable arg4, Java.Lang.Iterable arg5)
+        public Javax.Tools.DocumentationTool.DocumentationTask GetTask<Arg2objectSuperJavax_Tools_JavaFileObject, Arg5ExtendsJavax_Tools_JavaFileObject>(Java.Io.Writer arg0, Javax.Tools.JavaFileManager arg1, Javax.Tools.DiagnosticListener<Arg2objectSuperJavax_Tools_JavaFileObject> arg2, Java.Lang.Class arg3, Java.Lang.Iterable<string> arg4, Java.Lang.Iterable<Arg5ExtendsJavax_Tools_JavaFileObject> arg5) where Arg2objectSuperJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject where Arg5ExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
         {
             return IExecute<Javax.Tools.DocumentationTool.DocumentationTask>("getTask", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -74,7 +74,7 @@ namespace Javax.Tools
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
         /// <returns><see cref="Javax.Tools.StandardJavaFileManager"/></returns>
-        public Javax.Tools.StandardJavaFileManager GetStandardFileManager(Javax.Tools.DiagnosticListener arg0, Java.Util.Locale arg1, Java.Nio.Charset.Charset arg2)
+        public Javax.Tools.StandardJavaFileManager GetStandardFileManager<Arg0objectSuperJavax_Tools_JavaFileObject>(Javax.Tools.DiagnosticListener<Arg0objectSuperJavax_Tools_JavaFileObject> arg0, Java.Util.Locale arg1, Java.Nio.Charset.Charset arg2) where Arg0objectSuperJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
         {
             return IExecute<Javax.Tools.StandardJavaFileManager>("getStandardFileManager", arg0, arg1, arg2);
         }
@@ -113,7 +113,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-            public void AddModules(Java.Lang.Iterable arg0)
+            public void AddModules(Java.Lang.Iterable<string> arg0)
             {
                 IExecute("addModules", arg0);
             }

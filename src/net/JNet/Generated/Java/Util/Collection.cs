@@ -275,9 +275,9 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="T"/></param>
         /// <returns><see cref="T"/></returns>
-        public T ToArray<T>(T arg0)
+        public T[] ToArray<T>(T arg0)
         {
-            return IExecute<T>("toArray", arg0);
+            return IExecuteArray<T>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(java.lang.Object)"/>
@@ -363,9 +363,9 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <returns><see cref="T"/></returns>
-        public T ToArray<T>(Java.Util.Function.IntFunction<T> arg0)
+        public T[] ToArray<T>(Java.Util.Function.IntFunction<T[]> arg0)
         {
-            return IExecute<T>("toArray", arg0);
+            return IExecuteArray<T>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>

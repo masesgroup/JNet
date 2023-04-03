@@ -71,7 +71,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Net.CacheResponse"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Net.CacheResponse Get(Java.Net.URI arg0, string arg1, Java.Util.Map arg2)
+        public Java.Net.CacheResponse Get(Java.Net.URI arg0, string arg1, Java.Util.Map<string, Java.Util.List<string>> arg2)
         {
             return IExecute<Java.Net.CacheResponse>("get", arg0, arg1, arg2);
         }

@@ -48,7 +48,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.JComponent"/></param>
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
-        public static Javax.Swing.Plaf.ComponentUI CreateUIs(Javax.Swing.Plaf.ComponentUI arg0, Java.Util.Vector arg1, Javax.Swing.JComponent arg2)
+        public static Javax.Swing.Plaf.ComponentUI CreateUIs(Javax.Swing.Plaf.ComponentUI arg0, Java.Util.Vector<Javax.Swing.Plaf.ComponentUI> arg1, Javax.Swing.JComponent arg2)
         {
             return SExecute<Javax.Swing.Plaf.ComponentUI>("createUIs", arg0, arg1, arg2);
         }

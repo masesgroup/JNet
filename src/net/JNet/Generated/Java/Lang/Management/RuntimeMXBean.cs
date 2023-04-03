@@ -62,9 +62,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
         /// </summary>
-        public Java.Util.List InputArguments
+        public Java.Util.List<string> InputArguments
         {
-            get { return IExecute<Java.Util.List>("getInputArguments"); }
+            get { return IExecute<Java.Util.List<string>>("getInputArguments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/> 
@@ -132,9 +132,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
         /// </summary>
-        public Java.Util.Map SystemProperties
+        public Java.Util.Map<string, string> SystemProperties
         {
-            get { return IExecute<Java.Util.Map>("getSystemProperties"); }
+            get { return IExecute<Java.Util.Map<string, string>>("getSystemProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 

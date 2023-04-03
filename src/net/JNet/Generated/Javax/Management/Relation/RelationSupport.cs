@@ -97,9 +97,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getReferencedMBeans()"/> 
         /// </summary>
-        public Java.Util.Map ReferencedMBeans
+        public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>> ReferencedMBeans
         {
-            get { return IExecute<Java.Util.Map>("getReferencedMBeans"); }
+            get { return IExecute<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>>>("getReferencedMBeans"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRelationId()"/> 
@@ -148,9 +148,9 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
-        public Java.Util.List GetRole(string arg0)
+        public Java.Util.List<Javax.Management.ObjectName> GetRole(string arg0)
         {
-            return IExecute<Java.Util.List>("getRole", arg0);
+            return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRole", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>

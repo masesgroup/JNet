@@ -63,9 +63,9 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.List StartPipeline(Java.Util.List arg0)
+        public static Java.Util.List<Java.Lang.Process> StartPipeline(Java.Util.List<Java.Lang.ProcessBuilder> arg0)
         {
-            return SExecute<Java.Util.List>("startPipeline", arg0);
+            return SExecute<Java.Util.List<Java.Lang.Process>>("startPipeline", arg0);
         }
         
         #endregion
@@ -74,9 +74,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/> 
         /// </summary>
-        public Java.Util.Map Environment
+        public Java.Util.Map<string, string> Environment
         {
-            get { return IExecute<Java.Util.Map>("environment"); }
+            get { return IExecute<Java.Util.Map<string, string>>("environment"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#inheritIO()"/> 
@@ -124,7 +124,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
-        public Java.Lang.ProcessBuilder Command(Java.Util.List arg0)
+        public Java.Lang.ProcessBuilder Command(Java.Util.List<string> arg0)
         {
             return IExecute<Java.Lang.ProcessBuilder>("command", arg0);
         }
@@ -232,9 +232,9 @@ namespace Java.Lang
         /// </summary>
         
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List Command()
+        public Java.Util.List<string> Command()
         {
-            return IExecute<Java.Util.List>("command");
+            return IExecute<Java.Util.List<string>>("command");
         }
         
         #endregion

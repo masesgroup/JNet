@@ -57,7 +57,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.Class>("loadClass", arg0, arg1, arg2);
         }
@@ -69,7 +69,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass(string arg0, string arg1)
+        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1)
         {
             return SExecute<Java.Lang.Class>("loadClass", arg0, arg1);
         }
@@ -81,7 +81,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass(Java.Net.URL arg0, string arg1)
+        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(Java.Net.URL arg0, string arg1)
         {
             return SExecute<Java.Lang.Class>("loadClass", arg0, arg1);
         }
@@ -94,7 +94,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
-        public static Java.Lang.Class LoadProxyClass(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.Class LoadProxyClass<ReturnExtendsobject>(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.Class>("loadProxyClass", arg0, arg1, arg2);
         }

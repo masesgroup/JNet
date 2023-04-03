@@ -83,37 +83,37 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation GetAnnotation(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Lang.Annotation.Annotation>("getAnnotation", arg0);
+            return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation GetDeclaredAnnotation(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Lang.Annotation.Annotation>("getDeclaredAnnotation", arg0);
+            return IExecute<T>("getDeclaredAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation[] GetAnnotationsByType(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
-            return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotationsByType", arg0);
+            return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotationsByType(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
-            return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotationsByType", arg0);
+            return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)"/>

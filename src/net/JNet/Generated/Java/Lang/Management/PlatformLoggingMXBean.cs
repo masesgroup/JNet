@@ -48,9 +48,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerNames()"/> 
         /// </summary>
-        public Java.Util.List LoggerNames
+        public Java.Util.List<string> LoggerNames
         {
-            get { return IExecute<Java.Util.List>("getLoggerNames"); }
+            get { return IExecute<Java.Util.List<string>>("getLoggerNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerLevel(java.lang.String)"/>

@@ -48,9 +48,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/> 
         /// </summary>
-        public Java.Util.Iterator Iterator
+        public Java.Util.Iterator<Org.W3c.Dom.Node> Iterator
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            get { return IExecute<Java.Util.Iterator<Org.W3c.Dom.Node>>("iterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#size()"/> 

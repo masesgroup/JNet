@@ -55,9 +55,9 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#location()"/> 
         /// </summary>
-        public Java.Util.Optional Location
+        public Java.Util.Optional<Java.Net.URI> Location
         {
-            get { return IExecute<Java.Util.Optional>("location"); }
+            get { return IExecute<Java.Util.Optional<Java.Net.URI>>("location"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#open()"/> 

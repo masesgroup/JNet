@@ -69,9 +69,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#getNamespaceMap()"/> 
         /// </summary>
-        public Java.Util.Map NamespaceMap
+        public Java.Util.Map<string, string> NamespaceMap
         {
-            get { return IExecute<Java.Util.Map>("getNamespaceMap"); }
+            get { return IExecute<Java.Util.Map<string, string>>("getNamespaceMap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#getXPath()"/> 

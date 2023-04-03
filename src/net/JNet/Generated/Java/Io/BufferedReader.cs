@@ -65,9 +65,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Lines
+        public Java.Util.Stream.Stream<string> Lines
         {
-            get { return IExecute<Java.Util.Stream.Stream>("lines"); }
+            get { return IExecute<Java.Util.Stream.Stream<string>>("lines"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#readLine()"/> 

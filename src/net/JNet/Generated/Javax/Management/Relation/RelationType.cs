@@ -55,9 +55,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfos()"/> 
         /// </summary>
-        public Java.Util.List RoleInfos
+        public Java.Util.List<Javax.Management.Relation.RoleInfo> RoleInfos
         {
-            get { return IExecute<Java.Util.List>("getRoleInfos"); }
+            get { return IExecute<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>

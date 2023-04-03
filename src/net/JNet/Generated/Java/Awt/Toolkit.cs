@@ -161,10 +161,10 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
-        /// <returns><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></returns>
-        public Java.Awt.Dnd.DragGestureRecognizer CreateDragGestureRecognizer(Java.Lang.Class arg0, Java.Awt.Dnd.DragSource arg1, Java.Awt.Component arg2, int arg3, Java.Awt.Dnd.DragGestureListener arg4)
+        /// <returns><see cref="T"/></returns>
+        public T CreateDragGestureRecognizer<T>(Java.Lang.Class arg0, Java.Awt.Dnd.DragSource arg1, Java.Awt.Component arg2, int arg3, Java.Awt.Dnd.DragGestureListener arg4) where T: Java.Awt.Dnd.DragGestureRecognizer
         {
-            return IExecute<Java.Awt.Dnd.DragGestureRecognizer>("createDragGestureRecognizer", arg0, arg1, arg2, arg3, arg4);
+            return IExecute<T>("createDragGestureRecognizer", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalExclusionTypeSupported(java.awt.Dialog.ModalExclusionType)"/>
@@ -281,9 +281,9 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Im.InputMethodHighlight"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Java.Util.Map MapInputMethodHighlight(Java.Awt.Im.InputMethodHighlight arg0)
+        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, ReturnExtendsobject> MapInputMethodHighlight<ReturnExtendsobject>(Java.Awt.Im.InputMethodHighlight arg0)
         {
-            return IExecute<Java.Util.Map>("mapInputMethodHighlight", arg0);
+            return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, ReturnExtendsobject>>("mapInputMethodHighlight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#beep()"/>

@@ -44,9 +44,9 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getAvailableChronologies()"/> 
         /// </summary>
-        public static Java.Util.Set AvailableChronologies
+        public static Java.Util.Set<Java.Time.Chrono.Chronology> AvailableChronologies
         {
-            get { return SExecute<Java.Util.Set>("getAvailableChronologies"); }
+            get { return SExecute<Java.Util.Set<Java.Time.Chrono.Chronology>>("getAvailableChronologies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -89,9 +89,9 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/> 
         /// </summary>
-        public Java.Util.List Eras
+        public Java.Util.List<Java.Time.Chrono.Era> Eras
         {
-            get { return IExecute<Java.Util.List>("eras"); }
+            get { return IExecute<Java.Util.List<Java.Time.Chrono.Era>>("eras"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getId()"/> 
@@ -173,7 +173,7 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map arg0, Java.Time.Format.ResolverStyle arg1)
+        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Format.ResolverStyle arg1)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
         }

@@ -100,16 +100,16 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#getSaslClientFactories()"/> 
         /// </summary>
-        public static Java.Util.Enumeration SaslClientFactories
+        public static Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory> SaslClientFactories
         {
-            get { return SExecute<Java.Util.Enumeration>("getSaslClientFactories"); }
+            get { return SExecute<Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory>>("getSaslClientFactories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#getSaslServerFactories()"/> 
         /// </summary>
-        public static Java.Util.Enumeration SaslServerFactories
+        public static Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory> SaslServerFactories
         {
-            get { return SExecute<Java.Util.Enumeration>("getSaslServerFactories"); }
+            get { return SExecute<Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory>>("getSaslServerFactories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#createSaslClient(java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
@@ -122,7 +122,7 @@ namespace Javax.Security.Sasl
         /// <param name="arg5"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <returns><see cref="Javax.Security.Sasl.SaslClient"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslClient CreateSaslClient(string[] arg0, string arg1, string arg2, string arg3, Java.Util.Map arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
+        public static Javax.Security.Sasl.SaslClient CreateSaslClient<Arg4Extendsobject>(string[] arg0, string arg1, string arg2, string arg3, Java.Util.Map<string, Arg4Extendsobject> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
         {
             return SExecute<Javax.Security.Sasl.SaslClient>("createSaslClient", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -136,7 +136,7 @@ namespace Javax.Security.Sasl
         /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        public static Javax.Security.Sasl.SaslServer CreateSaslServer<Arg3Extendsobject>(string arg0, string arg1, string arg2, Java.Util.Map<string, Arg3Extendsobject> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
             return SExecute<Javax.Security.Sasl.SaslServer>("createSaslServer", arg0, arg1, arg2, arg3, arg4);
         }

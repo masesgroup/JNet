@@ -64,10 +64,10 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.EventListener"/></returns>
-        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
-            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+            return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#isCellEditable(int,int)"/>
@@ -93,7 +93,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetColumnClass(int arg0)
+        public Java.Lang.Class GetColumnClass<ReturnExtendsobject>(int arg0)
         {
             return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }

@@ -82,9 +82,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#entrySet()"/> 
         /// </summary>
-        public Java.Util.Set EntrySet
+        public Java.Util.Set<Java.Util.Map.Entry<object, object>> EntrySet
         {
-            get { return IExecute<Java.Util.Set>("entrySet"); }
+            get { return IExecute<Java.Util.Set<Java.Util.Map.Entry<object, object>>>("entrySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#isEmpty()"/> 
@@ -96,9 +96,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#keySet()"/> 
         /// </summary>
-        public Java.Util.Set KeySet
+        public Java.Util.Set<object> KeySet
         {
-            get { return IExecute<Java.Util.Set>("keySet"); }
+            get { return IExecute<Java.Util.Set<object>>("keySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#size()"/> 
@@ -117,9 +117,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#values()"/> 
         /// </summary>
-        public Java.Util.Collection Values
+        public Java.Util.Collection<object> Values
         {
-            get { return IExecute<Java.Util.Collection>("values"); }
+            get { return IExecute<Java.Util.Collection<object>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#containsKey(java.lang.Object)"/>
@@ -231,7 +231,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public void PutAll(Java.Util.Map arg0)
+        public void PutAll<Arg0Extendsobject>(Java.Util.Map<Arg0Extendsobject, Arg0Extendsobject> arg0)
         {
             IExecute("putAll", arg0);
         }

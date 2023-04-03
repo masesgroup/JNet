@@ -69,9 +69,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getEntries()"/> 
         /// </summary>
-        public Java.Util.Map Entries
+        public Java.Util.Map<string, Java.Util.Jar.Attributes> Entries
         {
-            get { return IExecute<Java.Util.Map>("getEntries"); }
+            get { return IExecute<Java.Util.Map<string, Java.Util.Jar.Attributes>>("getEntries"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getMainAttributes()"/> 

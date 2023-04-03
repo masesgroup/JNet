@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass(string arg0, Java.Lang.ClassLoader arg1)
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
             return IExecute<Java.Lang.Class>("getUIClass", arg0, arg1);
         }
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass(string arg0)
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
             return IExecute<Java.Lang.Class>("getUIClass", arg0);
         }

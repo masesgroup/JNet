@@ -97,11 +97,11 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Security.Spec.KeySpec"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
-        public Java.Security.Spec.KeySpec GetKeySpec(Java.Security.Key arg0, Java.Lang.Class arg1)
+        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T: Java.Security.Spec.KeySpec
         {
-            return IExecute<Java.Security.Spec.KeySpec>("getKeySpec", arg0, arg1);
+            return IExecute<T>("getKeySpec", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#translateKey(java.security.Key)"/>

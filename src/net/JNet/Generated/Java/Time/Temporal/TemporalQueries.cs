@@ -44,51 +44,51 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#chronology()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery Chronology
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.Chrono.Chronology> Chronology
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("chronology"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.Chrono.Chronology>>("chronology"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localDate()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery LocalDate
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalDate> LocalDate
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("localDate"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.LocalDate>>("localDate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localTime()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery LocalTime
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalTime> LocalTime
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("localTime"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.LocalTime>>("localTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#offset()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery Offset
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneOffset> Offset
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("offset"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneOffset>>("offset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#precision()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery Precision
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.Temporal.TemporalUnit> Precision
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("precision"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.Temporal.TemporalUnit>>("precision"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zone()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery Zone
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> Zone
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("zone"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId>>("zone"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zoneId()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery ZoneId
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> ZoneId
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("zoneId"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId>>("zoneId"); }
         }
         
         #endregion

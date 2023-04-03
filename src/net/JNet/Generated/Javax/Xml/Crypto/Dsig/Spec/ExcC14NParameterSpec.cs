@@ -64,9 +64,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#getPrefixList()"/> 
         /// </summary>
-        public Java.Util.List PrefixList
+        public Java.Util.List<string> PrefixList
         {
-            get { return IExecute<Java.Util.List>("getPrefixList"); }
+            get { return IExecute<Java.Util.List<string>>("getPrefixList"); }
         }
         
         #endregion

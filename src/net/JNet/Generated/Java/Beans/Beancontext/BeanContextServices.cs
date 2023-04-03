@@ -98,9 +98,9 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator GetCurrentServiceSelectors(Java.Lang.Class arg0)
+        public Java.Util.Iterator<ReturnExtendsobject> GetCurrentServiceSelectors<ReturnExtendsobject>(Java.Lang.Class arg0)
         {
-            return IExecute<Java.Util.Iterator>("getCurrentServiceSelectors", arg0);
+            return IExecute<Java.Util.Iterator<ReturnExtendsobject>>("getCurrentServiceSelectors", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>

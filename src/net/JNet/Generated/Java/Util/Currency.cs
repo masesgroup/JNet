@@ -48,9 +48,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getAvailableCurrencies()"/> 
         /// </summary>
-        public static Java.Util.Set AvailableCurrencies
+        public static Java.Util.Set<Java.Util.Currency> AvailableCurrencies
         {
-            get { return SExecute<Java.Util.Set>("getAvailableCurrencies"); }
+            get { return SExecute<Java.Util.Set<Java.Util.Currency>>("getAvailableCurrencies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.lang.String)"/>

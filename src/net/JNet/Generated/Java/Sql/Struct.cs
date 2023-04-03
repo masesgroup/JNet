@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object[] GetAttributes(Java.Util.Map arg0)
+        public object[] GetAttributes<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
         {
             return IExecuteArray<object>("getAttributes", arg0);
         }

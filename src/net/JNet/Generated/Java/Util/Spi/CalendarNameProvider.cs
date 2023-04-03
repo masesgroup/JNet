@@ -66,9 +66,9 @@ namespace Java.Util.Spi
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map GetDisplayNames(string arg0, int arg1, int arg2, Java.Util.Locale arg3)
+        public Java.Util.Map<string, int?> GetDisplayNames(string arg0, int arg1, int arg2, Java.Util.Locale arg3)
         {
-            return IExecute<Java.Util.Map>("getDisplayNames", arg0, arg1, arg2, arg3);
+            return IExecute<Java.Util.Map<string, int?>>("getDisplayNames", arg0, arg1, arg2, arg3);
         }
         
         #endregion

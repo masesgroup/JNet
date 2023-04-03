@@ -61,9 +61,9 @@ namespace Javax.Smartcardio
         /// <param name="arg0"><see cref="Javax.Smartcardio.CardTerminals.State"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
-        public Java.Util.List List(Javax.Smartcardio.CardTerminals.State arg0)
+        public Java.Util.List<Javax.Smartcardio.CardTerminal> List(Javax.Smartcardio.CardTerminals.State arg0)
         {
-            return IExecute<Java.Util.List>("list", arg0);
+            return IExecute<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
@@ -71,9 +71,9 @@ namespace Javax.Smartcardio
         
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
-        public Java.Util.List List()
+        public Java.Util.List<Javax.Smartcardio.CardTerminal> List()
         {
-            return IExecute<Java.Util.List>("list");
+            return IExecute<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>

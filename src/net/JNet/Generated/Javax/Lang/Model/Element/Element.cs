@@ -83,9 +83,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getModifiers()"/> 
         /// </summary>
-        public Java.Util.Set Modifiers
+        public Java.Util.Set<Javax.Lang.Model.Element.Modifier> Modifiers
         {
-            get { return IExecute<Java.Util.Set>("getModifiers"); }
+            get { return IExecute<Java.Util.Set<Javax.Lang.Model.Element.Modifier>>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getSimpleName()"/> 
@@ -98,20 +98,20 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation GetAnnotation(Java.Lang.Class arg0)
+        /// <returns><see cref="A"/></returns>
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Lang.Annotation.Annotation>("getAnnotation", arg0);
+            return IExecute<A>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ElementVisitor"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Accept(Javax.Lang.Model.Element.ElementVisitor arg0, object arg1)
+        /// <param name="arg1"><see cref="P"/></param>
+        /// <returns><see cref="R"/></returns>
+        public R Accept<R, P>(Javax.Lang.Model.Element.ElementVisitor<R, P> arg0, P arg1)
         {
-            return IExecute("accept", arg0, arg1);
+            return IExecute<R>("accept", arg0, arg1);
         }
         
         #endregion

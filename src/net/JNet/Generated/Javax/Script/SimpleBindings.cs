@@ -60,9 +60,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#entrySet()"/> 
         /// </summary>
-        public Java.Util.Set EntrySet
+        public Java.Util.Set<Java.Util.Map.Entry<string, object>> EntrySet
         {
-            get { return IExecute<Java.Util.Set>("entrySet"); }
+            get { return IExecute<Java.Util.Set<Java.Util.Map.Entry<string, object>>>("entrySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#isEmpty()"/> 
@@ -74,9 +74,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#keySet()"/> 
         /// </summary>
-        public Java.Util.Set KeySet
+        public Java.Util.Set<string> KeySet
         {
-            get { return IExecute<Java.Util.Set>("keySet"); }
+            get { return IExecute<Java.Util.Set<string>>("keySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#size()"/> 
@@ -88,9 +88,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#values()"/> 
         /// </summary>
-        public Java.Util.Collection Values
+        public Java.Util.Collection<object> Values
         {
-            get { return IExecute<Java.Util.Collection>("values"); }
+            get { return IExecute<Java.Util.Collection<object>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#containsKey(java.lang.Object)"/>
@@ -159,7 +159,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public void PutAll(Java.Util.Map arg0)
+        public void PutAll<Arg0Extendsstring, Arg0Extendsobject>(Java.Util.Map<Arg0Extendsstring, Arg0Extendsobject> arg0)
         {
             IExecute("putAll", arg0);
         }

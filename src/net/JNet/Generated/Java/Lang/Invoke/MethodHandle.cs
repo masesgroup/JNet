@@ -180,7 +180,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public object InvokeWithArguments(Java.Util.List arg0)
+        public object InvokeWithArguments<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
         {
             return IExecute("invokeWithArguments", arg0);
         }

@@ -226,7 +226,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
         /// <returns><see cref="string"/></returns>
-        public static string Join(Java.Lang.CharSequence arg0, Java.Lang.Iterable arg1)
+        public static string Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
         {
             return SExecute<string>("join", arg0, arg1);
         }
@@ -369,9 +369,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lines()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Lines
+        public Java.Util.Stream.Stream<string> Lines
         {
-            get { return IExecute<Java.Util.Stream.Stream>("lines"); }
+            get { return IExecute<Java.Util.Stream.Stream<string>>("lines"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#strip()"/> 

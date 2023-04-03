@@ -258,9 +258,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/> 
             /// </summary>
-            public Java.Util.Optional Build
+            public Java.Util.Optional<int?> Build
             {
-                get { return IExecute<Java.Util.Optional>("build"); }
+                get { return IExecute<Java.Util.Optional<int?>>("build"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/> 
@@ -279,9 +279,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/> 
             /// </summary>
-            public Java.Util.Optional Optional
+            public Java.Util.Optional<string> Optional
             {
-                get { return IExecute<Java.Util.Optional>("optional"); }
+                get { return IExecute<Java.Util.Optional<string>>("optional"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/> 
@@ -293,9 +293,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#pre()"/> 
             /// </summary>
-            public Java.Util.Optional Pre
+            public Java.Util.Optional<string> Pre
             {
-                get { return IExecute<Java.Util.Optional>("pre"); }
+                get { return IExecute<Java.Util.Optional<string>>("pre"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/> 
@@ -345,9 +345,9 @@ namespace Java.Lang
             /// </summary>
             
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List VersionMethod()
+            public Java.Util.List<int?> VersionMethod()
             {
-                return IExecute<Java.Util.List>("version");
+                return IExecute<Java.Util.List<int?>>("version");
             }
             
             #endregion

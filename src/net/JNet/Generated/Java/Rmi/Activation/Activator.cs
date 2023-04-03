@@ -54,9 +54,9 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public Java.Rmi.MarshalledObject Activate(Java.Rmi.Activation.ActivationID arg0, bool arg1)
+        public Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> Activate<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, bool arg1) where ReturnExtendsJava_Rmi_Remote: Java.Rmi.Remote
         {
-            return IExecute<Java.Rmi.MarshalledObject>("activate", arg0, arg1);
+            return IExecute<Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote>>("activate", arg0, arg1);
         }
         
         #endregion

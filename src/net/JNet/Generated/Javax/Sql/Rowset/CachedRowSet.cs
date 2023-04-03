@@ -184,9 +184,9 @@ namespace Javax.Sql.Rowset
         
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection ToCollection()
+        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>()
         {
-            return IExecute<Java.Util.Collection>("toCollection");
+            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(int)"/>
@@ -194,9 +194,9 @@ namespace Javax.Sql.Rowset
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection ToCollection(int arg0)
+        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(int arg0)
         {
-            return IExecute<Java.Util.Collection>("toCollection", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(java.lang.String)"/>
@@ -204,9 +204,9 @@ namespace Javax.Sql.Rowset
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection ToCollection(string arg0)
+        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(string arg0)
         {
-            return IExecute<Java.Util.Collection>("toCollection", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>

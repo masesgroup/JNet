@@ -62,9 +62,9 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumns()"/> 
         /// </summary>
-        public Java.Util.Enumeration Columns
+        public Java.Util.Enumeration<Javax.Swing.Table.TableColumn> Columns
         {
-            get { return IExecute<Java.Util.Enumeration>("getColumns"); }
+            get { return IExecute<Java.Util.Enumeration<Javax.Swing.Table.TableColumn>>("getColumns"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#setColumnSelectionAllowed(boolean)"/>

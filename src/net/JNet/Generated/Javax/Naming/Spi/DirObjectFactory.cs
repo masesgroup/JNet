@@ -55,7 +55,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3, Javax.Naming.Directory.Attributes arg4)
+        public object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return IExecute("getObjectInstance", arg0, arg1, arg2, arg3, arg4);
         }

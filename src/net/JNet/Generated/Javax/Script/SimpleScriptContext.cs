@@ -66,9 +66,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getScopes()"/> 
         /// </summary>
-        public Java.Util.List Scopes
+        public Java.Util.List<int?> Scopes
         {
-            get { return IExecute<Java.Util.List>("getScopes"); }
+            get { return IExecute<Java.Util.List<int?>>("getScopes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#setWriter(java.io.Writer)"/>

@@ -69,9 +69,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getAll()"/> 
         /// </summary>
-        public Java.Util.Enumeration All
+        public Java.Util.Enumeration<string> All
         {
-            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()"/> 
@@ -83,9 +83,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getRdns()"/> 
         /// </summary>
-        public Java.Util.List Rdns
+        public Java.Util.List<Javax.Naming.Ldap.Rdn> Rdns
         {
-            get { return IExecute<Java.Util.List>("getRdns"); }
+            get { return IExecute<Java.Util.List<Javax.Naming.Ldap.Rdn>>("getRdns"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()"/> 
@@ -99,7 +99,7 @@ namespace Javax.Naming.Ldap
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool EndsWith(Java.Util.List arg0)
+        public bool EndsWith(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
             return IExecute<bool>("endsWith", arg0);
         }
@@ -117,7 +117,7 @@ namespace Javax.Naming.Ldap
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool StartsWith(Java.Util.List arg0)
+        public bool StartsWith(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
             return IExecute<bool>("startsWith", arg0);
         }
@@ -213,7 +213,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Javax.Naming.Name"/></returns>
-        public Javax.Naming.Name AddAll(int arg0, Java.Util.List arg1)
+        public Javax.Naming.Name AddAll(int arg0, Java.Util.List<Javax.Naming.Ldap.Rdn> arg1)
         {
             return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
         }
@@ -233,7 +233,7 @@ namespace Javax.Naming.Ldap
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Javax.Naming.Name"/></returns>
-        public Javax.Naming.Name AddAll(Java.Util.List arg0)
+        public Javax.Naming.Name AddAll(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
             return IExecute<Javax.Naming.Name>("addAll", arg0);
         }

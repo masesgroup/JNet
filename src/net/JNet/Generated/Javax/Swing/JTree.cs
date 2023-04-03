@@ -600,9 +600,9 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
+        public Java.Util.Enumeration<Javax.Swing.Tree.TreePath> GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<Java.Util.Enumeration>("getExpandedDescendants", arg0);
+            return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getExpandedDescendants", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>

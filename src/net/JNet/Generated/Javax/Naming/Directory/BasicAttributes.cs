@@ -79,16 +79,16 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#getAll()"/> 
         /// </summary>
-        public Javax.Naming.NamingEnumeration All
+        public Javax.Naming.NamingEnumeration<Javax.Naming.Directory.Attribute> All
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration>("getAll"); }
+            get { return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Directory.Attribute>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#getIDs()"/> 
         /// </summary>
-        public Javax.Naming.NamingEnumeration IDs
+        public Javax.Naming.NamingEnumeration<string> IDs
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration>("getIDs"); }
+            get { return IExecute<Javax.Naming.NamingEnumeration<string>>("getIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#isCaseIgnored()"/> 

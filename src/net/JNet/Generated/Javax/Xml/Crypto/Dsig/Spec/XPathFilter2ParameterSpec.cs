@@ -60,9 +60,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#getXPathList()"/> 
         /// </summary>
-        public Java.Util.List XPathList
+        public Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> XPathList
         {
-            get { return IExecute<Java.Util.List>("getXPathList"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType>>("getXPathList"); }
         }
         
         #endregion

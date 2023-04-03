@@ -48,9 +48,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
         /// </summary>
-        public Java.Util.Set CriticalExtensionOIDs
+        public Java.Util.Set<string> CriticalExtensionOIDs
         {
-            get { return IExecute<Java.Util.Set>("getCriticalExtensionOIDs"); }
+            get { return IExecute<Java.Util.Set<string>>("getCriticalExtensionOIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/> 
@@ -62,9 +62,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
         /// </summary>
-        public Java.Util.Set NonCriticalExtensionOIDs
+        public Java.Util.Set<string> NonCriticalExtensionOIDs
         {
-            get { return IExecute<Java.Util.Set>("getNonCriticalExtensionOIDs"); }
+            get { return IExecute<Java.Util.Set<string>>("getNonCriticalExtensionOIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>

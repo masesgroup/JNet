@@ -131,9 +131,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Results
+        public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results
         {
-            get { return IExecute<Java.Util.Stream.Stream>("results"); }
+            get { return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("results"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#toMatchResult()"/> 
@@ -255,7 +255,7 @@ namespace Java.Util.Regex
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="string"/></returns>
-        public string ReplaceAll(Java.Util.Function.Function arg0)
+        public string ReplaceAll(Java.Util.Function.Function<Java.Util.Regex.MatchResult, string> arg0)
         {
             return IExecute<string>("replaceAll", arg0);
         }
@@ -273,7 +273,7 @@ namespace Java.Util.Regex
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="string"/></returns>
-        public string ReplaceFirst(Java.Util.Function.Function arg0)
+        public string ReplaceFirst(Java.Util.Function.Function<Java.Util.Regex.MatchResult, string> arg0)
         {
             return IExecute<string>("replaceFirst", arg0);
         }

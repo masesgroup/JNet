@@ -156,9 +156,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#boxed()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Boxed
+        public Java.Util.Stream.Stream<long?> Boxed
         {
-            get { return IExecute<Java.Util.Stream.Stream>("boxed"); }
+            get { return IExecute<Java.Util.Stream.Stream<long?>>("boxed"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#count()"/> 
@@ -264,19 +264,19 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjLongConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjLongConsumer arg1, Java.Util.Function.BiConsumer arg2)
+        /// <returns><see cref="R"/></returns>
+        public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjLongConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute("collect", arg0, arg1, arg2);
+            return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream MapToObj(Java.Util.Function.LongFunction arg0)
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.LongFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
         {
-            return IExecute<Java.Util.Stream.Stream>("mapToObj", arg0);
+            return IExecute<Java.Util.Stream.Stream<U>>("mapToObj", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)"/>
@@ -346,7 +346,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream FlatMap(Java.Util.Function.LongFunction arg0)
+        public Java.Util.Stream.LongStream FlatMap<Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.LongFunction<Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream
         {
             return IExecute<Java.Util.Stream.LongStream>("flatMap", arg0);
         }

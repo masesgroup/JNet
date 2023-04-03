@@ -89,7 +89,7 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Security.Provider"/></returns>
-        public static Java.Security.Provider[] GetProviders(Java.Util.Map arg0)
+        public static Java.Security.Provider[] GetProviders(Java.Util.Map<string, string> arg0)
         {
             return SExecuteArray<Java.Security.Provider>("getProviders", arg0);
         }
@@ -98,9 +98,9 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set GetAlgorithms(string arg0)
+        public static Java.Util.Set<string> GetAlgorithms(string arg0)
         {
-            return SExecute<Java.Util.Set>("getAlgorithms", arg0);
+            return SExecute<Java.Util.Set<string>>("getAlgorithms", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#insertProviderAt(java.security.Provider,int)"/>

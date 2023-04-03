@@ -80,9 +80,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getObjects()"/> 
         /// </summary>
-        public Java.Util.List Objects
+        public Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject> Objects
         {
-            get { return IExecute<Java.Util.List>("getObjects"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject>>("getObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo()"/> 

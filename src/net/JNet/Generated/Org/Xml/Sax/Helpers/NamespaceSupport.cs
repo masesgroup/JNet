@@ -56,9 +56,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getDeclaredPrefixes()"/> 
         /// </summary>
-        public Java.Util.Enumeration DeclaredPrefixes
+        public Java.Util.Enumeration<string> DeclaredPrefixes
         {
-            get { return IExecute<Java.Util.Enumeration>("getDeclaredPrefixes"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getDeclaredPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/> 
@@ -70,9 +70,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
         /// </summary>
-        public Java.Util.Enumeration Prefixes
+        public Java.Util.Enumeration<string> Prefixes
         {
-            get { return IExecute<Java.Util.Enumeration>("getPrefixes"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
@@ -118,9 +118,9 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration GetPrefixes(string arg0)
+        public Java.Util.Enumeration<string> GetPrefixes(string arg0)
         {
-            return IExecute<Java.Util.Enumeration>("getPrefixes", arg0);
+            return IExecute<Java.Util.Enumeration<string>>("getPrefixes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>

@@ -149,9 +149,9 @@ namespace Javax.Swing.Tree
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration GetVisiblePathsFrom(Javax.Swing.Tree.TreePath arg0)
+        public Java.Util.Enumeration<Javax.Swing.Tree.TreePath> GetVisiblePathsFrom(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<Java.Util.Enumeration>("getVisiblePathsFrom", arg0);
+            return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getVisiblePathsFrom", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int,int)"/>

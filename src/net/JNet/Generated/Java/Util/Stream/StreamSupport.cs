@@ -48,9 +48,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream Stream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        public static Java.Util.Stream.Stream<T> Stream<T, Arg0ExtendsJava_Util_Spliterator_T_>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_T_> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_T_: Java.Util.Spliterator<T>
         {
-            return SExecute<Java.Util.Stream.Stream>("stream", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Stream<T>>("stream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#stream(java.util.Spliterator,boolean)"/>
@@ -58,9 +58,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Spliterator"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream Stream(Java.Util.Spliterator arg0, bool arg1)
+        public static Java.Util.Stream.Stream<T> Stream<T>(Java.Util.Spliterator<T> arg0, bool arg1)
         {
-            return SExecute<Java.Util.Stream.Stream>("stream", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream<T>>("stream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#doubleStream(java.util.function.Supplier,int,boolean)"/>
@@ -69,7 +69,7 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        public static Java.Util.Stream.DoubleStream DoubleStream<Arg0ExtendsJava_Util_Spliterator_OfDouble>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfDouble> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfDouble: Java.Util.Spliterator.OfDouble
         {
             return SExecute<Java.Util.Stream.DoubleStream>("doubleStream", arg0, arg1, arg2);
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public static Java.Util.Stream.IntStream IntStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        public static Java.Util.Stream.IntStream IntStream<Arg0ExtendsJava_Util_Spliterator_OfInt>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfInt> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfInt: Java.Util.Spliterator.OfInt
         {
             return SExecute<Java.Util.Stream.IntStream>("intStream", arg0, arg1, arg2);
         }
@@ -111,7 +111,7 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public static Java.Util.Stream.LongStream LongStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2)
+        public static Java.Util.Stream.LongStream LongStream<Arg0ExtendsJava_Util_Spliterator_OfLong>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfLong> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfLong: Java.Util.Spliterator.OfLong
         {
             return SExecute<Java.Util.Stream.LongStream>("longStream", arg0, arg1, arg2);
         }

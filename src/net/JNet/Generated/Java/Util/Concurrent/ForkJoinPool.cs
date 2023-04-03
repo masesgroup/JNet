@@ -204,18 +204,18 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
-        public Java.Util.Concurrent.ForkJoinTask Submit(Java.Util.Concurrent.ForkJoinTask arg0)
+        public Java.Util.Concurrent.ForkJoinTask<T> Submit<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
-            return IExecute<Java.Util.Concurrent.ForkJoinTask>("submit", arg0);
+            return IExecute<Java.Util.Concurrent.ForkJoinTask<T>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Invoke(Java.Util.Concurrent.ForkJoinTask arg0)
+        /// <returns><see cref="T"/></returns>
+        public T Invoke<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
-            return IExecute("invoke", arg0);
+            return IExecute<T>("invoke", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        public void Execute(Java.Util.Concurrent.ForkJoinTask arg0)
+        public void Execute<Arg0Extendsobject>(Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject> arg0)
         {
             IExecute("execute", arg0);
         }

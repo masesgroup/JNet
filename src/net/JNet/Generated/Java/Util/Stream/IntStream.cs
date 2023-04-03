@@ -163,9 +163,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Boxed
+        public Java.Util.Stream.Stream<int?> Boxed
         {
-            get { return IExecute<Java.Util.Stream.Stream>("boxed"); }
+            get { return IExecute<Java.Util.Stream.Stream<int?>>("boxed"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/> 
@@ -271,19 +271,19 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjIntConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjIntConsumer arg1, Java.Util.Function.BiConsumer arg2)
+        /// <returns><see cref="R"/></returns>
+        public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjIntConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute("collect", arg0, arg1, arg2);
+            return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream MapToObj(Java.Util.Function.IntFunction arg0)
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
         {
-            return IExecute<Java.Util.Stream.Stream>("mapToObj", arg0);
+            return IExecute<Java.Util.Stream.Stream<U>>("mapToObj", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)"/>
@@ -354,7 +354,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream FlatMap(Java.Util.Function.IntFunction arg0)
+        public Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream
         {
             return IExecute<Java.Util.Stream.IntStream>("flatMap", arg0);
         }

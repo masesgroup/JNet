@@ -206,7 +206,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="string"/></returns>
-        public static string LookupTag(Java.Util.List arg0, Java.Util.Collection arg1)
+        public static string LookupTag(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<string> arg1)
         {
             return SExecute<string>("lookupTag", arg0, arg1);
         }
@@ -217,9 +217,9 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale.FilteringMode"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List FilterTags(Java.Util.List arg0, Java.Util.Collection arg1, Java.Util.Locale.FilteringMode arg2)
+        public static Java.Util.List<string> FilterTags(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<string> arg1, Java.Util.Locale.FilteringMode arg2)
         {
-            return SExecute<Java.Util.List>("filterTags", arg0, arg1, arg2);
+            return SExecute<Java.Util.List<string>>("filterTags", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#filterTags(java.util.List,java.util.Collection)"/>
@@ -227,9 +227,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List FilterTags(Java.Util.List arg0, Java.Util.Collection arg1)
+        public static Java.Util.List<string> FilterTags(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<string> arg1)
         {
-            return SExecute<Java.Util.List>("filterTags", arg0, arg1);
+            return SExecute<Java.Util.List<string>>("filterTags", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#filter(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
@@ -238,9 +238,9 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale.FilteringMode"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List Filter(Java.Util.List arg0, Java.Util.Collection arg1, Java.Util.Locale.FilteringMode arg2)
+        public static Java.Util.List<Java.Util.Locale> Filter(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1, Java.Util.Locale.FilteringMode arg2)
         {
-            return SExecute<Java.Util.List>("filter", arg0, arg1, arg2);
+            return SExecute<Java.Util.List<Java.Util.Locale>>("filter", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#filter(java.util.List,java.util.Collection)"/>
@@ -248,9 +248,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List Filter(Java.Util.List arg0, Java.Util.Collection arg1)
+        public static Java.Util.List<Java.Util.Locale> Filter(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1)
         {
-            return SExecute<Java.Util.List>("filter", arg0, arg1);
+            return SExecute<Java.Util.List<Java.Util.Locale>>("filter", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#forLanguageTag(java.lang.String)"/>
@@ -276,7 +276,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.Locale"/></returns>
-        public static Java.Util.Locale Lookup(Java.Util.List arg0, Java.Util.Collection arg1)
+        public static Java.Util.Locale Lookup(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1)
         {
             return SExecute<Java.Util.Locale>("lookup", arg0, arg1);
         }
@@ -285,9 +285,9 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale.IsoCountryCode"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set GetISOCountries(Java.Util.Locale.IsoCountryCode arg0)
+        public static Java.Util.Set<string> GetISOCountries(Java.Util.Locale.IsoCountryCode arg0)
         {
-            return SExecute<Java.Util.Set>("getISOCountries", arg0);
+            return SExecute<Java.Util.Set<string>>("getISOCountries", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#setDefault(java.util.Locale.Category,java.util.Locale)"/>
@@ -347,9 +347,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getExtensionKeys()"/> 
         /// </summary>
-        public Java.Util.Set ExtensionKeys
+        public Java.Util.Set<char?> ExtensionKeys
         {
-            get { return IExecute<Java.Util.Set>("getExtensionKeys"); }
+            get { return IExecute<Java.Util.Set<char?>>("getExtensionKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#hasExtensions()"/> 
@@ -403,16 +403,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleAttributes()"/> 
         /// </summary>
-        public Java.Util.Set UnicodeLocaleAttributes
+        public Java.Util.Set<string> UnicodeLocaleAttributes
         {
-            get { return IExecute<Java.Util.Set>("getUnicodeLocaleAttributes"); }
+            get { return IExecute<Java.Util.Set<string>>("getUnicodeLocaleAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleKeys()"/> 
         /// </summary>
-        public Java.Util.Set UnicodeLocaleKeys
+        public Java.Util.Set<string> UnicodeLocaleKeys
         {
-            get { return IExecute<Java.Util.Set>("getUnicodeLocaleKeys"); }
+            get { return IExecute<Java.Util.Set<string>>("getUnicodeLocaleKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getVariant()"/> 
@@ -844,9 +844,9 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <param name="arg1"><see cref="Java.Util.Map"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public static Java.Util.List MapEquivalents(Java.Util.List arg0, Java.Util.Map arg1)
+            public static Java.Util.List<Java.Util.Locale.LanguageRange> MapEquivalents(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Map<string, Java.Util.List<string>> arg1)
             {
-                return SExecute<Java.Util.List>("mapEquivalents", arg0, arg1);
+                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>("mapEquivalents", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#parse(java.lang.String,java.util.Map)"/>
@@ -854,18 +854,18 @@ namespace Java.Util
             /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Map"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public static Java.Util.List Parse(string arg0, Java.Util.Map arg1)
+            public static Java.Util.List<Java.Util.Locale.LanguageRange> Parse(string arg0, Java.Util.Map<string, Java.Util.List<string>> arg1)
             {
-                return SExecute<Java.Util.List>("parse", arg0, arg1);
+                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>("parse", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#parse(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public static Java.Util.List Parse(string arg0)
+            public static Java.Util.List<Java.Util.Locale.LanguageRange> Parse(string arg0)
             {
-                return SExecute<Java.Util.List>("parse", arg0);
+                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>("parse", arg0);
             }
             
             #endregion

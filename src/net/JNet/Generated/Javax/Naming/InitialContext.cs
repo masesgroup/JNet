@@ -58,21 +58,21 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static object DoLookup(string arg0)
+        public static T DoLookup<T>(string arg0)
         {
-            return SExecute("doLookup", arg0);
+            return SExecute<T>("doLookup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static object DoLookup(Javax.Naming.Name arg0)
+        public static T DoLookup<T>(Javax.Naming.Name arg0)
         {
-            return SExecute("doLookup", arg0);
+            return SExecute<T>("doLookup", arg0);
         }
         
         #endregion
@@ -221,9 +221,9 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration ListBindings(string arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(string arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration>("listBindings", arg0);
+            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#listBindings(javax.naming.Name)"/>
@@ -231,9 +231,9 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration ListBindings(Javax.Naming.Name arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration>("listBindings", arg0);
+            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#list(java.lang.String)"/>
@@ -241,9 +241,9 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration List(string arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(string arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration>("list", arg0);
+            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#list(javax.naming.Name)"/>
@@ -251,9 +251,9 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration List(Javax.Naming.Name arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration>("list", arg0);
+            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#bind(java.lang.String,java.lang.Object)"/>

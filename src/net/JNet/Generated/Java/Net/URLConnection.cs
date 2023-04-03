@@ -191,9 +191,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFields()"/> 
         /// </summary>
-        public Java.Util.Map HeaderFields
+        public Java.Util.Map<string, Java.Util.List<string>> HeaderFields
         {
-            get { return IExecute<Java.Util.Map>("getHeaderFields"); }
+            get { return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("getHeaderFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
@@ -240,9 +240,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperties()"/> 
         /// </summary>
-        public Java.Util.Map RequestProperties
+        public Java.Util.Map<string, Java.Util.List<string>> RequestProperties
         {
-            get { return IExecute<Java.Util.Map>("getRequestProperties"); }
+            get { return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("getRequestProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL()"/> 
@@ -283,7 +283,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public object GetContent(Java.Lang.Class[] arg0)
+        public object GetContent<Arg0Extendsobject>(Java.Lang.Class arg0)
         {
             return IExecute("getContent", arg0);
         }

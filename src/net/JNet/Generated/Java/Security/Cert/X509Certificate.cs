@@ -59,9 +59,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
         /// </summary>
-        public Java.Util.List ExtendedKeyUsage
+        public Java.Util.List<string> ExtendedKeyUsage
         {
-            get { return IExecute<Java.Util.List>("getExtendedKeyUsage"); }
+            get { return IExecute<Java.Util.List<string>>("getExtendedKeyUsage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 

@@ -48,9 +48,9 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/> 
         /// </summary>
-        public Java.Util.List List
+        public Java.Util.List<string> List
         {
-            get { return IExecute<Java.Util.List>("list"); }
+            get { return IExecute<Java.Util.List<string>>("list"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/> 

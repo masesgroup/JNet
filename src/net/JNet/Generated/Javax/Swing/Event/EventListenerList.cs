@@ -67,10 +67,10 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.EventListener"/></returns>
-        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
-            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+            return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerCount(java.lang.Class)"/>
@@ -85,8 +85,8 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#add(java.lang.Class,java.util.EventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Util.EventListener"/></param>
-        public void Add(Java.Lang.Class arg0, Java.Util.EventListener arg1)
+        /// <param name="arg1"><see cref="T"/></param>
+        public void Add<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
         {
             IExecute("add", arg0, arg1);
         }
@@ -94,8 +94,8 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#remove(java.lang.Class,java.util.EventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Util.EventListener"/></param>
-        public void Remove(Java.Lang.Class arg0, Java.Util.EventListener arg1)
+        /// <param name="arg1"><see cref="T"/></param>
+        public void Remove<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
         {
             IExecute("remove", arg0, arg1);
         }

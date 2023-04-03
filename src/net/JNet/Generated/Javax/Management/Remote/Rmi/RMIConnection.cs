@@ -168,9 +168,9 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Set QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
+        public Java.Util.Set<Javax.Management.ObjectInstance> QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
-            return IExecute<Java.Util.Set>("queryMBeans", arg0, arg1, arg2);
+            return IExecute<Java.Util.Set<Javax.Management.ObjectInstance>>("queryMBeans", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
@@ -180,9 +180,9 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Set QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
+        public Java.Util.Set<Javax.Management.ObjectName> QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
-            return IExecute<Java.Util.Set>("queryNames", arg0, arg1, arg2);
+            return IExecute<Java.Util.Set<Javax.Management.ObjectName>>("queryNames", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)"/>

@@ -62,9 +62,9 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reads()"/> 
         /// </summary>
-        public Java.Util.Set Reads
+        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Reads
         {
-            get { return IExecute<Java.Util.Set>("reads"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/> 

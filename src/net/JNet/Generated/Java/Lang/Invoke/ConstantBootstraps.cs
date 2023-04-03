@@ -47,10 +47,10 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Enum"/></returns>
-        public static Java.Lang.Enum EnumConstant(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
+        /// <returns><see cref="E"/></returns>
+        public static E EnumConstant<E>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2) where E: Java.Lang.Enum<E>
         {
-            return SExecute<Java.Lang.Enum>("enumConstant", arg0, arg1, arg2);
+            return SExecute<E>("enumConstant", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#primitiveClass(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -59,7 +59,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class PrimitiveClass(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
+        public static Java.Lang.Class PrimitiveClass<ReturnExtendsobject>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
             return SExecute<Java.Lang.Class>("primitiveClass", arg0, arg1, arg2);
         }

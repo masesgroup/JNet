@@ -98,10 +98,10 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileStoreAttributeView"/></returns>
-        public Java.Nio.File.Attribute.FileStoreAttributeView GetFileStoreAttributeView(Java.Lang.Class arg0)
+        /// <returns><see cref="V"/></returns>
+        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.FileStoreAttributeView
         {
-            return IExecute<Java.Nio.File.Attribute.FileStoreAttributeView>("getFileStoreAttributeView", arg0);
+            return IExecute<V>("getFileStoreAttributeView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>

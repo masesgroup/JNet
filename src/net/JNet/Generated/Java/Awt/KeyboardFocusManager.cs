@@ -242,9 +242,9 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetDefaultFocusTraversalKeys(int arg0)
+        public Java.Util.Set<Java.Awt.AWTKeyStroke> GetDefaultFocusTraversalKeys(int arg0)
         {
-            return IExecute<Java.Util.Set>("getDefaultFocusTraversalKeys", arg0);
+            return IExecute<Java.Util.Set<Java.Awt.AWTKeyStroke>>("getDefaultFocusTraversalKeys", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getPropertyChangeListeners(java.lang.String)"/>
@@ -385,7 +385,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-        public void SetDefaultFocusTraversalKeys(int arg0, Java.Util.Set arg1)
+        public void SetDefaultFocusTraversalKeys<Arg1ExtendsJava_Awt_AWTKeyStroke>(int arg0, Java.Util.Set<Arg1ExtendsJava_Awt_AWTKeyStroke> arg1) where Arg1ExtendsJava_Awt_AWTKeyStroke: Java.Awt.AWTKeyStroke
         {
             IExecute("setDefaultFocusTraversalKeys", arg0, arg1);
         }

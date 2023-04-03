@@ -126,16 +126,16 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/> 
         /// </summary>
-        public Java.Util.Function.Predicate AsMatchPredicate
+        public Java.Util.Function.Predicate<string> AsMatchPredicate
         {
-            get { return IExecute<Java.Util.Function.Predicate>("asMatchPredicate"); }
+            get { return IExecute<Java.Util.Function.Predicate<string>>("asMatchPredicate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/> 
         /// </summary>
-        public Java.Util.Function.Predicate AsPredicate
+        public Java.Util.Function.Predicate<string> AsPredicate
         {
-            get { return IExecute<Java.Util.Function.Predicate>("asPredicate"); }
+            get { return IExecute<Java.Util.Function.Predicate<string>>("asPredicate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/> 
@@ -184,9 +184,9 @@ namespace Java.Util.Regex
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream SplitAsStream(Java.Lang.CharSequence arg0)
+        public Java.Util.Stream.Stream<string> SplitAsStream(Java.Lang.CharSequence arg0)
         {
-            return IExecute<Java.Util.Stream.Stream>("splitAsStream", arg0);
+            return IExecute<Java.Util.Stream.Stream<string>>("splitAsStream", arg0);
         }
         
         #endregion

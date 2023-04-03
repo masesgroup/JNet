@@ -63,7 +63,7 @@ namespace Javax.Tools
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool HandleOption(string arg0, Java.Util.Iterator arg1)
+        public bool HandleOption(string arg0, Java.Util.Iterator<string> arg1)
         {
             return IExecute<bool>("handleOption", arg0, arg1);
         }
@@ -104,9 +104,9 @@ namespace Javax.Tools
         /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Lang.Iterable List(Javax.Tools.JavaFileManager.Location arg0, string arg1, Java.Util.Set arg2, bool arg3)
+        public Java.Lang.Iterable<Javax.Tools.JavaFileObject> List(Javax.Tools.JavaFileManager.Location arg0, string arg1, Java.Util.Set<Javax.Tools.JavaFileObject.Kind> arg2, bool arg3)
         {
-            return IExecute<Java.Lang.Iterable>("list", arg0, arg1, arg2, arg3);
+            return IExecute<Java.Lang.Iterable<Javax.Tools.JavaFileObject>>("list", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)"/>
@@ -193,9 +193,9 @@ namespace Javax.Tools
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.ServiceLoader GetServiceLoader(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Class arg1)
+        public Java.Util.ServiceLoader<S> GetServiceLoader<S>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.ServiceLoader>("getServiceLoader", arg0, arg1);
+            return IExecute<Java.Util.ServiceLoader<S>>("getServiceLoader", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)"/>
@@ -214,9 +214,9 @@ namespace Javax.Tools
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Lang.Iterable ListLocationsForModules(Javax.Tools.JavaFileManager.Location arg0)
+        public Java.Lang.Iterable<Java.Util.Set<Javax.Tools.JavaFileManager.Location>> ListLocationsForModules(Javax.Tools.JavaFileManager.Location arg0)
         {
-            return IExecute<Java.Lang.Iterable>("listLocationsForModules", arg0);
+            return IExecute<Java.Lang.Iterable<Java.Util.Set<Javax.Tools.JavaFileManager.Location>>>("listLocationsForModules", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager.Location)"/>

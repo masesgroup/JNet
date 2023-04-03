@@ -683,7 +683,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetColumnClass(int arg0)
+        public Java.Lang.Class GetColumnClass<ReturnExtendsobject>(int arg0)
         {
             return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }

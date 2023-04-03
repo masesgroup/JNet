@@ -83,12 +83,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <param name="arg0"><see cref="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0, long arg1)
+        /// <returns><see cref="R"/></returns>
+        public R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal
         {
-            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0, arg1);
+            return IExecute<R>("adjustInto", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
@@ -133,7 +133,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <param name="arg2"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
+        public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
         {
             return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
         }

@@ -134,7 +134,7 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
-        public static Java.Time.Temporal.TemporalAdjuster OfDateAdjuster(Java.Util.Function.UnaryOperator arg0)
+        public static Java.Time.Temporal.TemporalAdjuster OfDateAdjuster(Java.Util.Function.UnaryOperator<Java.Time.LocalDate> arg0)
         {
             return SExecute<Java.Time.Temporal.TemporalAdjuster>("ofDateAdjuster", arg0);
         }

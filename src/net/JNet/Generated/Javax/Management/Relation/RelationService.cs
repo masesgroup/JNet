@@ -68,16 +68,16 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getAllRelationIds()"/> 
         /// </summary>
-        public Java.Util.List AllRelationIds
+        public Java.Util.List<string> AllRelationIds
         {
-            get { return IExecute<Java.Util.List>("getAllRelationIds"); }
+            get { return IExecute<Java.Util.List<string>>("getAllRelationIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getAllRelationTypeNames()"/> 
         /// </summary>
-        public Java.Util.List AllRelationTypeNames
+        public Java.Util.List<string> AllRelationTypeNames
         {
-            get { return IExecute<Java.Util.List>("getAllRelationTypeNames"); }
+            get { return IExecute<Java.Util.List<string>>("getAllRelationTypeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getPurgeFlag()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#setPurgeFlag(boolean)"/>
@@ -162,9 +162,9 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        public Java.Util.List FindRelationsOfType(string arg0)
+        public Java.Util.List<string> FindRelationsOfType(string arg0)
         {
-            return IExecute<Java.Util.List>("findRelationsOfType", arg0);
+            return IExecute<Java.Util.List<string>>("findRelationsOfType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getRole(java.lang.String,java.lang.String)"/>
@@ -176,9 +176,9 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        public Java.Util.List GetRole(string arg0, string arg1)
+        public Java.Util.List<Javax.Management.ObjectName> GetRole(string arg0, string arg1)
         {
-            return IExecute<Java.Util.List>("getRole", arg0, arg1);
+            return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRole", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getRoleInfos(java.lang.String)"/>
@@ -187,9 +187,9 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        public Java.Util.List GetRoleInfos(string arg0)
+        public Java.Util.List<Javax.Management.Relation.RoleInfo> GetRoleInfos(string arg0)
         {
-            return IExecute<Java.Util.List>("getRoleInfos", arg0);
+            return IExecute<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#findReferencingRelations(javax.management.ObjectName,java.lang.String,java.lang.String)"/>
@@ -199,9 +199,9 @@ namespace Javax.Management.Relation
         /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Util.Map FindReferencingRelations(Javax.Management.ObjectName arg0, string arg1, string arg2)
+        public Java.Util.Map<string, Java.Util.List<string>> FindReferencingRelations(Javax.Management.ObjectName arg0, string arg1, string arg2)
         {
-            return IExecute<Java.Util.Map>("findReferencingRelations", arg0, arg1, arg2);
+            return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("findReferencingRelations", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#findAssociatedMBeans(javax.management.ObjectName,java.lang.String,java.lang.String)"/>
@@ -211,9 +211,9 @@ namespace Javax.Management.Relation
         /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Util.Map FindAssociatedMBeans(Javax.Management.ObjectName arg0, string arg1, string arg2)
+        public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>> FindAssociatedMBeans(Javax.Management.ObjectName arg0, string arg1, string arg2)
         {
-            return IExecute<Java.Util.Map>("findAssociatedMBeans", arg0, arg1, arg2);
+            return IExecute<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>>>("findAssociatedMBeans", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getReferencedMBeans(java.lang.String)"/>
@@ -222,9 +222,9 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
-        public Java.Util.Map GetReferencedMBeans(string arg0)
+        public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>> GetReferencedMBeans(string arg0)
         {
-            return IExecute<Java.Util.Map>("getReferencedMBeans", arg0);
+            return IExecute<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>>>("getReferencedMBeans", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#isRelationMBean(java.lang.String)"/>
@@ -443,7 +443,7 @@ namespace Javax.Management.Relation
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
-        public void SendRelationRemovalNotification(string arg0, Java.Util.List arg1)
+        public void SendRelationRemovalNotification(string arg0, Java.Util.List<Javax.Management.ObjectName> arg1)
         {
             IExecute("sendRelationRemovalNotification", arg0, arg1);
         }
@@ -455,7 +455,7 @@ namespace Javax.Management.Relation
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
-        public void SendRoleUpdateNotification(string arg0, Javax.Management.Relation.Role arg1, Java.Util.List arg2)
+        public void SendRoleUpdateNotification(string arg0, Javax.Management.Relation.Role arg1, Java.Util.List<Javax.Management.ObjectName> arg2)
         {
             IExecute("sendRoleUpdateNotification", arg0, arg1, arg2);
         }
@@ -482,7 +482,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
-        public void UpdateRoleMap(string arg0, Javax.Management.Relation.Role arg1, Java.Util.List arg2)
+        public void UpdateRoleMap(string arg0, Javax.Management.Relation.Role arg1, Java.Util.List<Javax.Management.ObjectName> arg2)
         {
             IExecute("updateRoleMap", arg0, arg1, arg2);
         }

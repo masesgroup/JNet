@@ -52,7 +52,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Naming.Spi.ObjectFactory"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable arg1)
+        public Javax.Naming.Spi.ObjectFactory CreateObjectFactory<Arg1Extendsobject>(object arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1)
         {
             return IExecute<Javax.Naming.Spi.ObjectFactory>("createObjectFactory", arg0, arg1);
         }

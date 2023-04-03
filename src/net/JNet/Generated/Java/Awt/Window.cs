@@ -119,9 +119,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getIconImages()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImages(java.util.List)"/>
         /// </summary>
-        public Java.Util.List IconImages
+        public Java.Util.List<Java.Awt.Image> IconImages
         {
-            get { return IExecute<Java.Util.List>("getIconImages"); } set { IExecute("setIconImages", value); }
+            get { return IExecute<Java.Util.List<Java.Awt.Image>>("getIconImages"); } set { IExecute("setIconImages", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/> 

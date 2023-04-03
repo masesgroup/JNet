@@ -49,11 +49,11 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object Unwrap(Java.Lang.Class arg0)
+        public T Unwrap<T>(Java.Lang.Class arg0)
         {
-            return IExecute("unwrap", arg0);
+            return IExecute<T>("unwrap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>

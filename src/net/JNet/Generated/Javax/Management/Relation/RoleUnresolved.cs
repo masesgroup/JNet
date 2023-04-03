@@ -77,9 +77,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#setRoleValue(java.util.List)"/>
         /// </summary>
-        public Java.Util.List RoleValue
+        public Java.Util.List<Javax.Management.ObjectName> RoleValue
         {
-            get { return IExecute<Java.Util.List>("getRoleValue"); } set { IExecute("setRoleValue", value); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue"); } set { IExecute("setRoleValue", value); }
         }
         
         #endregion

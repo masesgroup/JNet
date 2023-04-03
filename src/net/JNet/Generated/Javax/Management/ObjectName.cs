@@ -120,7 +120,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
-        public static Javax.Management.ObjectName GetInstance(string arg0, Java.Util.Hashtable arg1)
+        public static Javax.Management.ObjectName GetInstance(string arg0, Java.Util.Hashtable<string, string> arg1)
         {
             return SExecute<Javax.Management.ObjectName>("getInstance", arg0, arg1);
         }
@@ -200,9 +200,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyList()"/> 
         /// </summary>
-        public Java.Util.Hashtable KeyPropertyList
+        public Java.Util.Hashtable<string, string> KeyPropertyList
         {
-            get { return IExecute<Java.Util.Hashtable>("getKeyPropertyList"); }
+            get { return IExecute<Java.Util.Hashtable<string, string>>("getKeyPropertyList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyListString()"/> 

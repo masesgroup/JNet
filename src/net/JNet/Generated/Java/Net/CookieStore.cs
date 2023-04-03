@@ -48,9 +48,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getCookies()"/> 
         /// </summary>
-        public Java.Util.List Cookies
+        public Java.Util.List<Java.Net.HttpCookie> Cookies
         {
-            get { return IExecute<Java.Util.List>("getCookies"); }
+            get { return IExecute<Java.Util.List<Java.Net.HttpCookie>>("getCookies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/> 
@@ -62,9 +62,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
-        public Java.Util.List URIs
+        public Java.Util.List<Java.Net.URI> URIs
         {
-            get { return IExecute<Java.Util.List>("getURIs"); }
+            get { return IExecute<Java.Util.List<Java.Net.URI>>("getURIs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
@@ -81,9 +81,9 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List Get(Java.Net.URI arg0)
+        public Java.Util.List<Java.Net.HttpCookie> Get(Java.Net.URI arg0)
         {
-            return IExecute<Java.Util.List>("get", arg0);
+            return IExecute<Java.Util.List<Java.Net.HttpCookie>>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>

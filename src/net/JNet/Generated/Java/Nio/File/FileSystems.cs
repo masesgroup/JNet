@@ -65,7 +65,7 @@ namespace Java.Nio.File
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Nio.File.FileSystem NewFileSystem<Arg1Extendsobject>(Java.Net.URI arg0, Java.Util.Map<string, Arg1Extendsobject> arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1, arg2);
         }
@@ -76,7 +76,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map arg1)
+        public static Java.Nio.File.FileSystem NewFileSystem<Arg1Extendsobject>(Java.Net.URI arg0, Java.Util.Map<string, Arg1Extendsobject> arg1)
         {
             return SExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }

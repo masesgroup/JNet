@@ -121,16 +121,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>
         /// </summary>
-        public Java.Util.List ServerNames
+        public Java.Util.List<Javax.Net.Ssl.SNIServerName> ServerNames
         {
-            get { return IExecute<Java.Util.List>("getServerNames"); } set { IExecute("setServerNames", value); }
+            get { return IExecute<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames"); } set { IExecute("setServerNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection SNIMatchers
+        public Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> SNIMatchers
         {
-            get { return IExecute<Java.Util.Collection>("getSNIMatchers"); } set { IExecute("setSNIMatchers", value); }
+            get { return IExecute<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers"); } set { IExecute("setSNIMatchers", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>

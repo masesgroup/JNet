@@ -62,9 +62,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getList()"/> 
         /// </summary>
-        public Javax.Swing.JList List
+        public Javax.Swing.JList<object> List
         {
-            get { return IExecute<Javax.Swing.JList>("getList"); }
+            get { return IExecute<Javax.Swing.JList<object>>("getList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 

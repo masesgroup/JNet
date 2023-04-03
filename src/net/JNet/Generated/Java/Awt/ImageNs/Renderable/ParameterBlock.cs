@@ -94,9 +94,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setParameters(java.util.Vector)"/>
         /// </summary>
-        public Java.Util.Vector Parameters
+        public Java.Util.Vector<object> Parameters
         {
-            get { return IExecute<Java.Util.Vector>("getParameters"); } set { IExecute("setParameters", value); }
+            get { return IExecute<Java.Util.Vector<object>>("getParameters"); } set { IExecute("setParameters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/> 
@@ -108,9 +108,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSources()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSources(java.util.Vector)"/>
         /// </summary>
-        public Java.Util.Vector Sources
+        public Java.Util.Vector<object> Sources
         {
-            get { return IExecute<Java.Util.Vector>("getSources"); } set { IExecute("setSources", value); }
+            get { return IExecute<Java.Util.Vector<object>>("getSources"); } set { IExecute("setSources", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>

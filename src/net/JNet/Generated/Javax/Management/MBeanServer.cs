@@ -200,9 +200,9 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set QueryMBeans(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
+        public Java.Util.Set<Javax.Management.ObjectInstance> QueryMBeans(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
         {
-            return IExecute<Java.Util.Set>("queryMBeans", arg0, arg1);
+            return IExecute<Java.Util.Set<Javax.Management.ObjectInstance>>("queryMBeans", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#queryNames(javax.management.ObjectName,javax.management.QueryExp)"/>
@@ -210,9 +210,9 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set QueryNames(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
+        public Java.Util.Set<Javax.Management.ObjectName> QueryNames(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
         {
-            return IExecute<Java.Util.Set>("queryNames", arg0, arg1);
+            return IExecute<Java.Util.Set<Javax.Management.ObjectName>>("queryNames", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getAttributes(javax.management.ObjectName,java.lang.String[])"/>

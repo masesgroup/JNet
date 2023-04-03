@@ -50,7 +50,7 @@ namespace Javax.Security.Sasl
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="string"/></returns>
-        public string[] GetMechanismNames(Java.Util.Map arg0)
+        public string[] GetMechanismNames<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
         {
             return IExecuteArray<string>("getMechanismNames", arg0);
         }
@@ -64,7 +64,7 @@ namespace Javax.Security.Sasl
         /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        public Javax.Security.Sasl.SaslServer CreateSaslServer<Arg3Extendsobject>(string arg0, string arg1, string arg2, Java.Util.Map<string, Arg3Extendsobject> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
             return IExecute<Javax.Security.Sasl.SaslServer>("createSaslServer", arg0, arg1, arg2, arg3, arg4);
         }

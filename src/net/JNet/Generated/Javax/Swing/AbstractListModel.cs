@@ -140,9 +140,9 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="T"/></returns>
-        public T GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
-            return IExecute<T>("getListeners", arg0);
+            return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>

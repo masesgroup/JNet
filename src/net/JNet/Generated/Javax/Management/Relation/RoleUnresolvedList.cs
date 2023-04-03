@@ -65,9 +65,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#asList()"/> 
         /// </summary>
-        public Java.Util.List AsList
+        public Java.Util.List<Javax.Management.Relation.RoleUnresolved> AsList
         {
-            get { return IExecute<Java.Util.List>("asList"); }
+            get { return IExecute<Java.Util.List<Javax.Management.Relation.RoleUnresolved>>("asList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(int,javax.management.relation.RoleUnresolvedList)"/>

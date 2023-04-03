@@ -56,9 +56,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getTransforms()"/> 
         /// </summary>
-        public Java.Util.List Transforms
+        public Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms
         {
-            get { return IExecute<Java.Util.List>("getTransforms"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 

@@ -61,7 +61,7 @@ namespace Javax.Management.Relation
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public static string RoleValueToString(Java.Util.List arg0)
+        public static string RoleValueToString(Java.Util.List<Javax.Management.ObjectName> arg0)
         {
             return SExecute<string>("roleValueToString", arg0);
         }
@@ -79,9 +79,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#setRoleValue(java.util.List)"/>
         /// </summary>
-        public Java.Util.List RoleValue
+        public Java.Util.List<Javax.Management.ObjectName> RoleValue
         {
-            get { return IExecute<Java.Util.List>("getRoleValue"); } set { IExecute("setRoleValue", value); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue"); } set { IExecute("setRoleValue", value); }
         }
         
         #endregion

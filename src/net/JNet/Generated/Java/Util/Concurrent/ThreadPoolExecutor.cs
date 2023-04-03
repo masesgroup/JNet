@@ -170,9 +170,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
         /// </summary>
-        public Java.Util.Concurrent.BlockingQueue Queue
+        public Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> Queue
         {
-            get { return IExecute<Java.Util.Concurrent.BlockingQueue>("getQueue"); }
+            get { return IExecute<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>

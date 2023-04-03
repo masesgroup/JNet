@@ -101,18 +101,18 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getPackages()"/> 
         /// </summary>
-        public Java.Util.Set Packages
+        public Java.Util.Set<string> Packages
         {
-            get { return IExecute<Java.Util.Set>("getPackages"); }
+            get { return IExecute<Java.Util.Set<string>>("getPackages"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
-        public Java.Lang.Annotation.Annotation GetAnnotation(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Lang.Annotation.Annotation>("getAnnotation", arg0);
+            return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)"/>

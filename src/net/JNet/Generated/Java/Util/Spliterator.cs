@@ -192,7 +192,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            public bool TryAdvance<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -208,7 +208,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+            public void ForEachRemaining<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -277,7 +277,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            public bool TryAdvance<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -293,7 +293,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+            public void ForEachRemaining<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -362,7 +362,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            public bool TryAdvance<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -378,7 +378,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+            public void ForEachRemaining<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

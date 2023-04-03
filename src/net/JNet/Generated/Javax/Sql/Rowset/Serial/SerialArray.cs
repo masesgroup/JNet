@@ -112,7 +112,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(Java.Util.Map arg0)
+        public object GetArray<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
         {
             return IExecute("getArray", arg0);
         }
@@ -124,7 +124,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(long arg0, int arg1, Java.Util.Map arg2)
+        public object GetArray<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
         {
             return IExecute("getArray", arg0, arg1, arg2);
         }
@@ -145,7 +145,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(Java.Util.Map arg0)
+        public Java.Sql.ResultSet GetResultSet<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
         {
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0);
         }
@@ -157,7 +157,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map arg2)
+        public Java.Sql.ResultSet GetResultSet<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
         {
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1, arg2);
         }

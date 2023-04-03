@@ -55,9 +55,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#getSourceVersions()"/> 
         /// </summary>
-        public Java.Util.Set SourceVersions
+        public Java.Util.Set<Javax.Lang.Model.SourceVersion> SourceVersions
         {
-            get { return IExecute<Java.Util.Set>("getSourceVersions"); }
+            get { return IExecute<Java.Util.Set<Javax.Lang.Model.SourceVersion>>("getSourceVersions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#run(java.io.InputStream,java.io.OutputStream,java.io.OutputStream,java.lang.String[])"/>

@@ -52,16 +52,16 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elements()"/> 
         /// </summary>
-        public Java.Util.Enumeration Elements
+        public Java.Util.Enumeration<Java.Security.Permission> Elements
         {
-            get { return IExecute<Java.Util.Enumeration>("elements"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Security.Permission>>("elements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream ElementsAsStream
+        public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream
         {
-            get { return IExecute<Java.Util.Stream.Stream>("elementsAsStream"); }
+            get { return IExecute<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#isReadOnly()"/> 

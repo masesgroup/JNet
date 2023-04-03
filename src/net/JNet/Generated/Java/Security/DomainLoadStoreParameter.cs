@@ -71,9 +71,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/> 
         /// </summary>
-        public Java.Util.Map ProtectionParams
+        public Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter> ProtectionParams
         {
-            get { return IExecute<Java.Util.Map>("getProtectionParams"); }
+            get { return IExecute<Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams"); }
         }
         
         #endregion

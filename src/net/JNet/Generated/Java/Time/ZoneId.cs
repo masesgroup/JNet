@@ -52,9 +52,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getAvailableZoneIds()"/> 
         /// </summary>
-        public static Java.Util.Set AvailableZoneIds
+        public static Java.Util.Set<string> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
+            get { return SExecute<Java.Util.Set<string>>("getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()"/> 
@@ -78,7 +78,7 @@ namespace Java.Time
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public static Java.Time.ZoneId Of(string arg0, Java.Util.Map arg1)
+        public static Java.Time.ZoneId Of(string arg0, Java.Util.Map<string, string> arg1)
         {
             return SExecute<Java.Time.ZoneId>("of", arg0, arg1);
         }

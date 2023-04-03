@@ -106,7 +106,7 @@ namespace Javax.Management.Remote
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void Connect(Java.Util.Map arg0)
+        public void Connect<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
         {
             IExecute("connect", arg0);
         }

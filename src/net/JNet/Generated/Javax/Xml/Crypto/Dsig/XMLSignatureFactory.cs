@@ -163,7 +163,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Manifest"/></returns>
-        public Javax.Xml.Crypto.Dsig.Manifest NewManifest(Java.Util.List arg0, string arg1)
+        public Javax.Xml.Crypto.Dsig.Manifest NewManifest<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference> arg0, string arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference: Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", arg0, arg1);
         }
@@ -172,7 +172,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Manifest"/></returns>
-        public Javax.Xml.Crypto.Dsig.Manifest NewManifest(Java.Util.List arg0)
+        public Javax.Xml.Crypto.Dsig.Manifest NewManifest<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference> arg0) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference: Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", arg0);
         }
@@ -186,7 +186,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg4"><see cref="string"/></param>
         /// <param name="arg5"><see cref="byte"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, string arg3, string arg4, byte[] arg5)
+        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, string arg3, string arg4, byte[] arg5) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Reference>("newReference", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -199,7 +199,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, string arg3, string arg4)
+        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, string arg3, string arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Reference>("newReference", arg0, arg1, arg2, arg3, arg4);
         }
@@ -214,7 +214,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg5"><see cref="string"/></param>
         /// <param name="arg6"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, Javax.Xml.Crypto.Data arg3, Java.Util.List arg4, string arg5, string arg6)
+        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform, Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform>(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, Javax.Xml.Crypto.Data arg3, Java.Util.List<Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform> arg4, string arg5, string arg6) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform where Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Reference>("newReference", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -246,7 +246,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureProperties"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignatureProperties NewSignatureProperties(Java.Util.List arg0, string arg1)
+        public Javax.Xml.Crypto.Dsig.SignatureProperties NewSignatureProperties<Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty> arg0, string arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty: Javax.Xml.Crypto.Dsig.SignatureProperty
         {
             return IExecute<Javax.Xml.Crypto.Dsig.SignatureProperties>("newSignatureProperties", arg0, arg1);
         }
@@ -257,7 +257,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureProperty"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignatureProperty NewSignatureProperty(Java.Util.List arg0, string arg1, string arg2)
+        public Javax.Xml.Crypto.Dsig.SignatureProperty NewSignatureProperty<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, string arg1, string arg2) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
             return IExecute<Javax.Xml.Crypto.Dsig.SignatureProperty>("newSignatureProperty", arg0, arg1, arg2);
         }
@@ -269,7 +269,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List arg2, string arg3)
+        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference>(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference> arg2, string arg3) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference: Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecute<Javax.Xml.Crypto.Dsig.SignedInfo>("newSignedInfo", arg0, arg1, arg2, arg3);
         }
@@ -280,7 +280,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List arg2)
+        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference>(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference: Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecute<Javax.Xml.Crypto.Dsig.SignedInfo>("newSignedInfo", arg0, arg1, arg2);
         }
@@ -316,7 +316,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLObject"/></returns>
-        public Javax.Xml.Crypto.Dsig.XMLObject NewXMLObject(Java.Util.List arg0, string arg1, string arg2, string arg3)
+        public Javax.Xml.Crypto.Dsig.XMLObject NewXMLObject<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, string arg1, string arg2, string arg3) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLObject>("newXMLObject", arg0, arg1, arg2, arg3);
         }
@@ -329,7 +329,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
-        public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1, Java.Util.List arg2, string arg3, string arg4)
+        public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature<Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject>(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject> arg2, string arg3, string arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject: Javax.Xml.Crypto.Dsig.XMLObject
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("newXMLSignature", arg0, arg1, arg2, arg3, arg4);
         }

@@ -56,7 +56,7 @@ namespace Java.Lang.ModuleNs
         /// <param name="arg2"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
         /// <param name="arg3"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
-        public static Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection arg3)
+        public static Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<string> arg3)
         {
             return SExecute<Java.Lang.ModuleNs.Configuration>("resolve", arg0, arg1, arg2, arg3);
         }
@@ -68,7 +68,7 @@ namespace Java.Lang.ModuleNs
         /// <param name="arg2"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
         /// <param name="arg3"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
-        public static Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection arg3)
+        public static Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<string> arg3)
         {
             return SExecute<Java.Lang.ModuleNs.Configuration>("resolveAndBind", arg0, arg1, arg2, arg3);
         }
@@ -79,16 +79,16 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#modules()"/> 
         /// </summary>
-        public Java.Util.Set Modules
+        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Modules
         {
-            get { return IExecute<Java.Util.Set>("modules"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("modules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#parents()"/> 
         /// </summary>
-        public Java.Util.List Parents
+        public Java.Util.List<Java.Lang.ModuleNs.Configuration> Parents
         {
-            get { return IExecute<Java.Util.List>("parents"); }
+            get { return IExecute<Java.Util.List<Java.Lang.ModuleNs.Configuration>>("parents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolve(java.lang.module.ModuleFinder,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -97,7 +97,7 @@ namespace Java.Lang.ModuleNs
         /// <param name="arg1"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
         /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
-        public Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection arg2)
+        public Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection<string> arg2)
         {
             return IExecute<Java.Lang.ModuleNs.Configuration>("resolve", arg0, arg1, arg2);
         }
@@ -108,7 +108,7 @@ namespace Java.Lang.ModuleNs
         /// <param name="arg1"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
         /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
-        public Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection arg2)
+        public Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection<string> arg2)
         {
             return IExecute<Java.Lang.ModuleNs.Configuration>("resolveAndBind", arg0, arg1, arg2);
         }
@@ -117,9 +117,9 @@ namespace Java.Lang.ModuleNs
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional FindModule(string arg0)
+        public Java.Util.Optional<Java.Lang.ModuleNs.ResolvedModule> FindModule(string arg0)
         {
-            return IExecute<Java.Util.Optional>("findModule", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ResolvedModule>>("findModule", arg0);
         }
         
         #endregion

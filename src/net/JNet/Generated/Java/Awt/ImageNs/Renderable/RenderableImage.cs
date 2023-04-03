@@ -94,9 +94,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getSources()"/> 
         /// </summary>
-        public Java.Util.Vector Sources
+        public Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage> Sources
         {
-            get { return IExecute<Java.Util.Vector>("getSources"); }
+            get { return IExecute<Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage>>("getSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 

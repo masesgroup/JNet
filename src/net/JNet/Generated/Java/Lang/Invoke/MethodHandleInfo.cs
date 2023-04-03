@@ -149,10 +149,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <returns><see cref="Java.Lang.Reflect.Member"/></returns>
-        public Java.Lang.Reflect.Member ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1)
+        /// <returns><see cref="T"/></returns>
+        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.Member
         {
-            return IExecute<Java.Lang.Reflect.Member>("reflectAs", arg0, arg1);
+            return IExecute<T>("reflectAs", arg0, arg1);
         }
         
         #endregion

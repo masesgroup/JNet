@@ -66,9 +66,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#keys()"/> 
         /// </summary>
-        public Java.Util.Set Keys
+        public Java.Util.Set<Java.Nio.Channels.SelectionKey> Keys
         {
-            get { return IExecute<Java.Util.Set>("keys"); }
+            get { return IExecute<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("keys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#provider()"/> 
@@ -80,9 +80,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectedKeys()"/> 
         /// </summary>
-        public Java.Util.Set SelectedKeys
+        public Java.Util.Set<Java.Nio.Channels.SelectionKey> SelectedKeys
         {
-            get { return IExecute<Java.Util.Set>("selectedKeys"); }
+            get { return IExecute<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("selectedKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#wakeup()"/> 
@@ -137,7 +137,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public int Select(Java.Util.Function.Consumer arg0, long arg1)
+        public int Select(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0, long arg1)
         {
             return IExecute<int>("select", arg0, arg1);
         }
@@ -147,7 +147,7 @@ namespace Java.Nio.Channels
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public int Select(Java.Util.Function.Consumer arg0)
+        public int Select(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0)
         {
             return IExecute<int>("select", arg0);
         }
@@ -157,7 +157,7 @@ namespace Java.Nio.Channels
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public int SelectNow(Java.Util.Function.Consumer arg0)
+        public int SelectNow(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0)
         {
             return IExecute<int>("selectNow", arg0);
         }

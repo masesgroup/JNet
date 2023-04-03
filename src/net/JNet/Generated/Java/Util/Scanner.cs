@@ -294,9 +294,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#tokens()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Tokens
+        public Java.Util.Stream.Stream<string> Tokens
         {
-            get { return IExecute<Java.Util.Stream.Stream>("tokens"); }
+            get { return IExecute<Java.Util.Stream.Stream<string>>("tokens"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNext()"/>
@@ -593,18 +593,18 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream FindAll(string arg0)
+        public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> FindAll(string arg0)
         {
-            return IExecute<Java.Util.Stream.Stream>("findAll", arg0);
+            return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("findAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findAll(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream FindAll(Java.Util.Regex.Pattern arg0)
+        public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> FindAll(Java.Util.Regex.Pattern arg0)
         {
-            return IExecute<Java.Util.Stream.Stream>("findAll", arg0);
+            return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("findAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLong()"/>

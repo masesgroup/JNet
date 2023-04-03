@@ -61,7 +61,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
+        public static object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
         {
             return SExecute("getObjectInstance", arg0, arg1, arg2, arg3);
         }
@@ -74,7 +74,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
+        public static object GetStateToBind<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
         {
             return SExecute("getStateToBind", arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable arg0)
+        public static Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
         {
             return SExecute<Javax.Naming.Context>("getInitialContext", arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetURLContext(string arg0, Java.Util.Hashtable arg1)
+        public static Javax.Naming.Context GetURLContext<Arg1Extendsobject>(string arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1)
         {
             return SExecute<Javax.Naming.Context>("getURLContext", arg0, arg1);
         }

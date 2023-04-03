@@ -112,9 +112,9 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Connect(Java.Net.SocketAddress arg0, object arg1, Java.Nio.Channels.CompletionHandler arg2)
+        public void Connect<A, Arg2objectSuperA>(Java.Net.SocketAddress arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Void, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("connect", arg0, arg1, arg2);
         }
@@ -124,9 +124,9 @@ namespace Java.Nio.Channels
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="A"/></param>
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Read(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, object arg3, Java.Nio.Channels.CompletionHandler arg4)
+        public void Read<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<int?, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2, arg3, arg4);
         }
@@ -138,9 +138,9 @@ namespace Java.Nio.Channels
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="A"/></param>
         /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, object arg5, Java.Nio.Channels.CompletionHandler arg6)
+        public void Read<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<long?, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -150,9 +150,9 @@ namespace Java.Nio.Channels
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="A"/></param>
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Write(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, object arg3, Java.Nio.Channels.CompletionHandler arg4)
+        public void Write<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<int?, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2, arg3, arg4);
         }
@@ -164,9 +164,9 @@ namespace Java.Nio.Channels
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="A"/></param>
         /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, object arg5, Java.Nio.Channels.CompletionHandler arg6)
+        public void Write<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<long?, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -175,35 +175,35 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.Future<int?> Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future>("read", arg0);
+            return IExecute<Java.Util.Concurrent.Future<int?>>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.Future<int?> Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future>("write", arg0);
+            return IExecute<Java.Util.Concurrent.Future<int?>>("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Connect(Java.Net.SocketAddress arg0)
+        public Java.Util.Concurrent.Future<Java.Lang.Void> Connect(Java.Net.SocketAddress arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future>("connect", arg0);
+            return IExecute<Java.Util.Concurrent.Future<Java.Lang.Void>>("connect", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Read(Java.Nio.ByteBuffer arg0, object arg1, Java.Nio.Channels.CompletionHandler arg2)
+        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2);
         }
@@ -211,9 +211,9 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Write(Java.Nio.ByteBuffer arg0, object arg1, Java.Nio.Channels.CompletionHandler arg2)
+        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2);
         }

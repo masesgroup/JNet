@@ -177,7 +177,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#config(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Config(Java.Util.Function.Supplier arg0)
+        public void Config(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("config", arg0);
         }
@@ -241,7 +241,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#fine(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Fine(Java.Util.Function.Supplier arg0)
+        public void Fine(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("fine", arg0);
         }
@@ -257,7 +257,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finer(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Finer(Java.Util.Function.Supplier arg0)
+        public void Finer(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("finer", arg0);
         }
@@ -273,7 +273,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finest(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Finest(Java.Util.Function.Supplier arg0)
+        public void Finest(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("finest", arg0);
         }
@@ -289,7 +289,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#info(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Info(Java.Util.Function.Supplier arg0)
+        public void Info(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("info", arg0);
         }
@@ -338,7 +338,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Log(Java.Util.Logging.Level arg0, Java.Lang.Throwable arg1, Java.Util.Function.Supplier arg2)
+        public void Log(Java.Util.Logging.Level arg0, Java.Lang.Throwable arg1, Java.Util.Function.Supplier<string> arg2)
         {
             IExecute("log", arg0, arg1, arg2);
         }
@@ -347,7 +347,7 @@ namespace Java.Util.Logging
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier arg1)
+        public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier<string> arg1)
         {
             IExecute("log", arg0, arg1);
         }
@@ -414,7 +414,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg4"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Lang.Throwable arg3, Java.Util.Function.Supplier arg4)
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Lang.Throwable arg3, Java.Util.Function.Supplier<string> arg4)
         {
             IExecute("logp", arg0, arg1, arg2, arg3, arg4);
         }
@@ -425,7 +425,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Util.Function.Supplier arg3)
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Util.Function.Supplier<string> arg3)
         {
             IExecute("logp", arg0, arg1, arg2, arg3);
         }
@@ -498,7 +498,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#severe(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Severe(Java.Util.Function.Supplier arg0)
+        public void Severe(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("severe", arg0);
         }
@@ -524,7 +524,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#warning(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Warning(Java.Util.Function.Supplier arg0)
+        public void Warning(Java.Util.Function.Supplier<string> arg0)
         {
             IExecute("warning", arg0);
         }

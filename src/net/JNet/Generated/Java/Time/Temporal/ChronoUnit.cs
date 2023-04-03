@@ -160,12 +160,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <param name="arg0"><see cref="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0, long arg1)
+        /// <returns><see cref="R"/></returns>
+        public R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal
         {
-            return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0, arg1);
+            return IExecute<R>("addTo", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>

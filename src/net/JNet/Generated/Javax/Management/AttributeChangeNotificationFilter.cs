@@ -52,9 +52,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#getEnabledAttributes()"/> 
         /// </summary>
-        public Java.Util.Vector EnabledAttributes
+        public Java.Util.Vector<string> EnabledAttributes
         {
-            get { return IExecute<Java.Util.Vector>("getEnabledAttributes"); }
+            get { return IExecute<Java.Util.Vector<string>>("getEnabledAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>

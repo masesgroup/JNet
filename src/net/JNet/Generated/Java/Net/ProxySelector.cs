@@ -66,9 +66,9 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List Select(Java.Net.URI arg0)
+        public Java.Util.List<Java.Net.Proxy> Select(Java.Net.URI arg0)
         {
-            return IExecute<Java.Util.List>("select", arg0);
+            return IExecute<Java.Util.List<Java.Net.Proxy>>("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)"/>

@@ -60,7 +60,7 @@ namespace Javax.Management.Remote
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Javax.Management.Remote.JMXConnector Connect(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1)
+        public static Javax.Management.Remote.JMXConnector Connect<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1)
         {
             return SExecute<Javax.Management.Remote.JMXConnector>("connect", arg0, arg1);
         }
@@ -81,7 +81,7 @@ namespace Javax.Management.Remote
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1)
+        public static Javax.Management.Remote.JMXConnector NewJMXConnector<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1)
         {
             return SExecute<Javax.Management.Remote.JMXConnector>("newJMXConnector", arg0, arg1);
         }

@@ -64,10 +64,10 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object Create(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
+        /// <returns><see cref="T"/></returns>
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
         {
-            return SExecute("create", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<T>("create", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String,java.lang.String)"/>
@@ -76,10 +76,10 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object Create(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
+        /// <returns><see cref="T"/></returns>
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
         {
-            return SExecute("create", arg0, arg1, arg2, arg3);
+            return SExecute<T>("create", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String)"/>
@@ -87,10 +87,10 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object Create(Java.Lang.Class arg0, object arg1, string arg2)
+        /// <returns><see cref="T"/></returns>
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2)
         {
-            return SExecute("create", arg0, arg1, arg2);
+            return SExecute<T>("create", arg0, arg1, arg2);
         }
         
         #endregion

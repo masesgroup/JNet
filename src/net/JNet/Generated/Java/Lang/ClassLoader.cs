@@ -79,9 +79,9 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.Enumeration GetSystemResources(string arg0)
+        public static Java.Util.Enumeration<Java.Net.URL> GetSystemResources(string arg0)
         {
-            return SExecute<Java.Util.Enumeration>("getSystemResources", arg0);
+            return SExecute<Java.Util.Enumeration<Java.Net.URL>>("getSystemResources", arg0);
         }
         
         #endregion
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0)
+        public Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0);
         }
@@ -165,18 +165,18 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Enumeration GetResources(string arg0)
+        public Java.Util.Enumeration<Java.Net.URL> GetResources(string arg0)
         {
-            return IExecute<Java.Util.Enumeration>("getResources", arg0);
+            return IExecute<Java.Util.Enumeration<Java.Net.URL>>("getResources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#resources(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Resources(string arg0)
+        public Java.Util.Stream.Stream<Java.Net.URL> Resources(string arg0)
         {
-            return IExecute<Java.Util.Stream.Stream>("resources", arg0);
+            return IExecute<Java.Util.Stream.Stream<Java.Net.URL>>("resources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#clearAssertionStatus()"/>

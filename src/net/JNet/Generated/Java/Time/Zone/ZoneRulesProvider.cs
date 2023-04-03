@@ -44,9 +44,9 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getAvailableZoneIds()"/> 
         /// </summary>
-        public static Java.Util.Set AvailableZoneIds
+        public static Java.Util.Set<string> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
+            get { return SExecute<Java.Util.Set<string>>("getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/> 
@@ -70,9 +70,9 @@ namespace Java.Time.Zone
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap GetVersions(string arg0)
+        public static Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules> GetVersions(string arg0)
         {
-            return SExecute<Java.Util.NavigableMap>("getVersions", arg0);
+            return SExecute<Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules>>("getVersions", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>

@@ -714,9 +714,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClasses()"/> 
         /// </summary>
-        public Java.Lang.Class Classes
+        public Java.Lang.Class[] Classes
         {
-            get { return IExecute<Java.Lang.Class>("getClasses"); }
+            get { return IExecuteArray<Java.Lang.Class>("getClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClassLoader()"/> 
@@ -749,9 +749,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredClasses()"/> 
         /// </summary>
-        public Java.Lang.Class DeclaredClasses
+        public Java.Lang.Class[] DeclaredClasses
         {
-            get { return IExecute<Java.Lang.Class>("getDeclaredClasses"); }
+            get { return IExecuteArray<Java.Lang.Class>("getDeclaredClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
@@ -812,9 +812,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnumConstants()"/> 
         /// </summary>
-        public T EnumConstants
+        public T[] EnumConstants
         {
-            get { return IExecute<T>("getEnumConstants"); }
+            get { return IExecuteArray<T>("getEnumConstants"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getFields()"/> 
@@ -840,9 +840,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getInterfaces()"/> 
         /// </summary>
-        public Java.Lang.Class Interfaces
+        public Java.Lang.Class[] Interfaces
         {
-            get { return IExecute<Java.Lang.Class>("getInterfaces"); }
+            get { return IExecuteArray<Java.Lang.Class>("getInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/> 
@@ -938,9 +938,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getNestMembers()"/> 
         /// </summary>
-        public Java.Lang.Class NestMembers
+        public Java.Lang.Class[] NestMembers
         {
-            get { return IExecute<Java.Lang.Class>("getNestMembers"); }
+            get { return IExecuteArray<Java.Lang.Class>("getNestMembers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getPackage()"/> 
@@ -1001,9 +1001,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getTypeParameters()"/> 
         /// </summary>
-        public Java.Lang.Reflect.TypeVariable<Java.Lang.Class<T>> TypeParameters
+        public Java.Lang.Reflect.TypeVariable<Java.Lang.Class>[] TypeParameters
         {
-            get { return IExecute<Java.Lang.Reflect.TypeVariable<Java.Lang.Class<T>>>("getTypeParameters"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable<Java.Lang.Class>>("getTypeParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
@@ -1028,18 +1028,18 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="A"/></returns>
-        public A GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
+        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
-            return IExecute<A>("getAnnotationsByType", arg0);
+            return IExecuteArray<A>("getAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="A"/></returns>
-        public A GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
+        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
-            return IExecute<A>("getDeclaredAnnotationsByType", arg0);
+            return IExecuteArray<A>("getDeclaredAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#asSubclass(java.lang.Class)"/>
@@ -1084,7 +1084,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Constructor<T> GetConstructor(params Java.Lang.Class[] arg0)
+        public Java.Lang.Reflect.Constructor<T> GetConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", arg0);
         }
@@ -1095,7 +1095,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor(params Java.Lang.Class[] arg0)
+        public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", arg0);
         }
@@ -1129,7 +1129,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Method GetDeclaredMethod(string arg0, params Java.Lang.Class[] arg1)
+        public Java.Lang.Reflect.Method GetDeclaredMethod<Arg1Extendsobject>(string arg0, params Java.Lang.Class[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
         }
@@ -1141,7 +1141,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Method GetMethod(string arg0, params Java.Lang.Class[] arg1)
+        public Java.Lang.Reflect.Method GetMethod<Arg1Extendsobject>(string arg0, params Java.Lang.Class[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }

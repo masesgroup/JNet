@@ -48,9 +48,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Iterator Attributes
+        public Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute> Attributes
         {
-            get { return IExecute<Java.Util.Iterator>("getAttributes"); }
+            get { return IExecute<Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
@@ -69,9 +69,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaces()"/> 
         /// </summary>
-        public Java.Util.Iterator Namespaces
+        public Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces
         {
-            get { return IExecute<Java.Util.Iterator>("getNamespaces"); }
+            get { return IExecute<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>

@@ -83,9 +83,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
         /// </summary>
-        public Java.Util.Function.BiFunction HandshakeApplicationProtocolSelector
+        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<string>, string> HandshakeApplicationProtocolSelector
         {
-            get { return IExecute<Java.Util.Function.BiFunction>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
+            get { return IExecute<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<string>, string>>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeSession()"/> 

@@ -66,9 +66,9 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#iterator()"/> 
         /// </summary>
-        public Java.Util.Iterator Iterator
+        public Java.Util.Iterator<Java.Util.Map.Entry<string, Org.W3c.Dom.Element>> Iterator
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            get { return IExecute<Java.Util.Iterator<Java.Util.Map.Entry<string, Org.W3c.Dom.Element>>>("iterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getKeySelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)"/>

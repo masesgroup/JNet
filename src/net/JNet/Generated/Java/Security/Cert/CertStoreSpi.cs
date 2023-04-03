@@ -60,9 +60,9 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection EngineGetCertificates(Java.Security.Cert.CertSelector arg0)
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
-            return IExecute<Java.Util.Collection>("engineGetCertificates", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("engineGetCertificates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
@@ -70,9 +70,9 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection EngineGetCRLs(Java.Security.Cert.CRLSelector arg0)
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
         {
-            return IExecute<Java.Util.Collection>("engineGetCRLs", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("engineGetCRLs", arg0);
         }
         
         #endregion

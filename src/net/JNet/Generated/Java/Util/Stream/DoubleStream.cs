@@ -129,9 +129,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#boxed()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Boxed
+        public Java.Util.Stream.Stream<double?> Boxed
         {
-            get { return IExecute<Java.Util.Stream.Stream>("boxed"); }
+            get { return IExecute<Java.Util.Stream.Stream<double?>>("boxed"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/> 
@@ -237,19 +237,19 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjDoubleConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjDoubleConsumer arg1, Java.Util.Function.BiConsumer arg2)
+        /// <returns><see cref="R"/></returns>
+        public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjDoubleConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute("collect", arg0, arg1, arg2);
+            return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream MapToObj(Java.Util.Function.DoubleFunction arg0)
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
         {
-            return IExecute<Java.Util.Stream.Stream>("mapToObj", arg0);
+            return IExecute<Java.Util.Stream.Stream<U>>("mapToObj", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMap(Java.Util.Function.DoubleFunction arg0)
+        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
         {
             return IExecute<Java.Util.Stream.DoubleStream>("flatMap", arg0);
         }

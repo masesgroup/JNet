@@ -51,7 +51,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Context GetInitialContext(Java.Util.Hashtable arg0)
+        public Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
         {
             return IExecute<Javax.Naming.Context>("getInitialContext", arg0);
         }

@@ -55,16 +55,16 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
         /// </summary>
-        public Java.Util.List Entities
+        public Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration> Entities
         {
-            get { return IExecute<Java.Util.List>("getEntities"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration>>("getEntities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
         /// </summary>
-        public Java.Util.List Notations
+        public Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration> Notations
         {
-            get { return IExecute<Java.Util.List>("getNotations"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration>>("getNotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 

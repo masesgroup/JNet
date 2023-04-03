@@ -59,9 +59,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperties.html#getProperties()"/> 
         /// </summary>
-        public Java.Util.List Properties
+        public Java.Util.List<Javax.Xml.Crypto.Dsig.SignatureProperty> Properties
         {
-            get { return IExecute<Java.Util.List>("getProperties"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.SignatureProperty>>("getProperties"); }
         }
         
         #endregion

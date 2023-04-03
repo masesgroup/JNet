@@ -52,9 +52,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getContent()"/> 
         /// </summary>
-        public Java.Util.List Content
+        public Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content
         {
-            get { return IExecute<Java.Util.List>("getContent"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getEncoding()"/> 

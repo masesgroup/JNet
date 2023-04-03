@@ -48,9 +48,9 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getExclusiveQueuedThreads()"/> 
         /// </summary>
-        public Java.Util.Collection ExclusiveQueuedThreads
+        public Java.Util.Collection<Java.Lang.Thread> ExclusiveQueuedThreads
         {
-            get { return IExecute<Java.Util.Collection>("getExclusiveQueuedThreads"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getExclusiveQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getFirstQueuedThread()"/> 
@@ -83,9 +83,9 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getQueuedThreads()"/> 
         /// </summary>
-        public Java.Util.Collection QueuedThreads
+        public Java.Util.Collection<Java.Lang.Thread> QueuedThreads
         {
-            get { return IExecute<Java.Util.Collection>("getQueuedThreads"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getQueueLength()"/> 
@@ -97,9 +97,9 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getSharedQueuedThreads()"/> 
         /// </summary>
-        public Java.Util.Collection SharedQueuedThreads
+        public Java.Util.Collection<Java.Lang.Thread> SharedQueuedThreads
         {
-            get { return IExecute<Java.Util.Collection>("getSharedQueuedThreads"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>
@@ -182,9 +182,9 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection GetWaitingThreads(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
+        public Java.Util.Collection<Java.Lang.Thread> GetWaitingThreads(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
-            return IExecute<Java.Util.Collection>("getWaitingThreads", arg0);
+            return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getWaitingThreads", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#acquire(int)"/>

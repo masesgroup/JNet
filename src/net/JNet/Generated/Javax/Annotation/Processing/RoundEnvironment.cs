@@ -71,36 +71,36 @@ namespace Javax.Annotation.Processing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetElementsAnnotatedWith(Java.Lang.Class arg0)
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWith<ReturnExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Class arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return IExecute<Java.Util.Set>("getElementsAnnotatedWith", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(javax.lang.model.element.TypeElement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetElementsAnnotatedWith(Javax.Lang.Model.Element.TypeElement arg0)
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWith<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return IExecute<Java.Util.Set>("getElementsAnnotatedWith", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetElementsAnnotatedWithAny(Java.Util.Set arg0)
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWithAny<ReturnExtendsJavax_Lang_Model_Element_Element, Arg0ExtendsJava_Lang_Annotation_Annotation>(Java.Util.Set<Java.Lang.Class> arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element where Arg0ExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetElementsAnnotatedWithAny(params Javax.Lang.Model.Element.TypeElement[] arg0)
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWithAny<ReturnExtendsJavax_Lang_Model_Element_Element>(params Javax.Lang.Model.Element.TypeElement[] arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            if (arg0.Length == 0) return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny"); else return IExecute<Java.Util.Set>("getElementsAnnotatedWithAny", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny"); else return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", arg0);
         }
         
         #endregion

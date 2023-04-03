@@ -150,7 +150,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
         /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
-        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0, Java.Awt.FontNs.NumericShaper.Range arg1)
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> arg0, Java.Awt.FontNs.NumericShaper.Range arg1)
         {
             return SExecute<Java.Awt.FontNs.NumericShaper>("getContextualShaper", arg0, arg1);
         }
@@ -159,7 +159,7 @@ namespace Java.Awt.FontNs
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
-        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0)
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> arg0)
         {
             return SExecute<Java.Awt.FontNs.NumericShaper>("getContextualShaper", arg0);
         }
@@ -202,9 +202,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getRangeSet()"/> 
         /// </summary>
-        public Java.Util.Set RangeSet
+        public Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> RangeSet
         {
-            get { return IExecute<Java.Util.Set>("getRangeSet"); }
+            get { return IExecute<Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range>>("getRangeSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int,int)"/>

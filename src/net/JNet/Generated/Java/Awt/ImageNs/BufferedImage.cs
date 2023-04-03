@@ -256,9 +256,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSources()"/> 
         /// </summary>
-        public Java.Util.Vector Sources
+        public Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources
         {
-            get { return IExecute<Java.Util.Vector>("getSources"); }
+            get { return IExecute<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridXOffset()"/> 

@@ -87,9 +87,9 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/> 
         /// </summary>
-        public Java.Util.Iterator Iterator
+        public Java.Util.Iterator<Java.Awt.EventNs.InputEvent> Iterator
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            get { return IExecute<Java.Util.Iterator<Java.Awt.EventNs.InputEvent>>("iterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getSourceAsDragGestureRecognizer()"/> 

@@ -148,9 +148,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream VersionedStream
+        public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream
         {
-            get { return IExecute<Java.Util.Stream.Stream>("versionedStream"); }
+            get { return IExecute<Java.Util.Stream.Stream<Java.Util.Jar.JarEntry>>("versionedStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#getJarEntry(java.lang.String)"/>

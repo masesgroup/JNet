@@ -47,7 +47,7 @@ namespace Javax.Print.Attribute
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class VerifyAttributeCategory(object arg0, Java.Lang.Class arg1)
+        public static Java.Lang.Class VerifyAttributeCategory<ReturnExtendsobject>(object arg0, Java.Lang.Class arg1)
         {
             return SExecute<Java.Lang.Class>("verifyAttributeCategory", arg0, arg1);
         }

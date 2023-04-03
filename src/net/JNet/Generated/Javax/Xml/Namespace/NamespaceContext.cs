@@ -68,9 +68,9 @@ namespace Javax.Xml.Namespace
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator GetPrefixes(string arg0)
+        public Java.Util.Iterator<string> GetPrefixes(string arg0)
         {
-            return IExecute<Java.Util.Iterator>("getPrefixes", arg0);
+            return IExecute<Java.Util.Iterator<string>>("getPrefixes", arg0);
         }
         
         #endregion

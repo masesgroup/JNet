@@ -62,7 +62,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
-        public static Java.Lang.ModuleLayer.Controller DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Util.Function.Function arg2)
+        public static Java.Lang.ModuleLayer.Controller DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Util.Function.Function<string, Java.Lang.ClassLoader> arg2)
         {
             return SExecute<Java.Lang.ModuleLayer.Controller>("defineModules", arg0, arg1, arg2);
         }
@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
-        public static Java.Lang.ModuleLayer.Controller DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.ModuleLayer.Controller DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.ModuleLayer.Controller>("defineModulesWithManyLoaders", arg0, arg1, arg2);
         }
@@ -84,7 +84,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
-        public static Java.Lang.ModuleLayer.Controller DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.ModuleLayer.Controller DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.ModuleLayer.Controller>("defineModulesWithOneLoader", arg0, arg1, arg2);
         }
@@ -102,16 +102,16 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/> 
         /// </summary>
-        public Java.Util.Set Modules
+        public Java.Util.Set<Java.Lang.Module> Modules
         {
-            get { return IExecute<Java.Util.Set>("modules"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.Module>>("modules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/> 
         /// </summary>
-        public Java.Util.List Parents
+        public Java.Util.List<Java.Lang.ModuleLayer> Parents
         {
-            get { return IExecute<Java.Util.List>("parents"); }
+            get { return IExecute<Java.Util.List<Java.Lang.ModuleLayer>>("parents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
-        public Java.Lang.ModuleLayer DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.Function.Function arg1)
+        public Java.Lang.ModuleLayer DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.Function.Function<string, Java.Lang.ClassLoader> arg1)
         {
             return IExecute<Java.Lang.ModuleLayer>("defineModules", arg0, arg1);
         }
@@ -157,9 +157,9 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional FindModule(string arg0)
+        public Java.Util.Optional<Java.Lang.Module> FindModule(string arg0)
         {
-            return IExecute<Java.Util.Optional>("findModule", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.Module>>("findModule", arg0);
         }
         
         #endregion

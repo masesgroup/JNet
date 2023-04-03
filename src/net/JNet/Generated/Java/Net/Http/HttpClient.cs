@@ -62,30 +62,30 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()"/> 
         /// </summary>
-        public Java.Util.Optional Authenticator
+        public Java.Util.Optional<Java.Net.Authenticator> Authenticator
         {
-            get { return IExecute<Java.Util.Optional>("authenticator"); }
+            get { return IExecute<Java.Util.Optional<Java.Net.Authenticator>>("authenticator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()"/> 
         /// </summary>
-        public Java.Util.Optional ConnectTimeout
+        public Java.Util.Optional<Java.Time.Duration> ConnectTimeout
         {
-            get { return IExecute<Java.Util.Optional>("connectTimeout"); }
+            get { return IExecute<Java.Util.Optional<Java.Time.Duration>>("connectTimeout"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()"/> 
         /// </summary>
-        public Java.Util.Optional CookieHandler
+        public Java.Util.Optional<Java.Net.CookieHandler> CookieHandler
         {
-            get { return IExecute<Java.Util.Optional>("cookieHandler"); }
+            get { return IExecute<Java.Util.Optional<Java.Net.CookieHandler>>("cookieHandler"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()"/> 
         /// </summary>
-        public Java.Util.Optional Executor
+        public Java.Util.Optional<Java.Util.Concurrent.Executor> Executor
         {
-            get { return IExecute<Java.Util.Optional>("executor"); }
+            get { return IExecute<Java.Util.Optional<Java.Util.Concurrent.Executor>>("executor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()"/> 
@@ -104,9 +104,9 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()"/> 
         /// </summary>
-        public Java.Util.Optional Proxy
+        public Java.Util.Optional<Java.Net.ProxySelector> Proxy
         {
-            get { return IExecute<Java.Util.Optional>("proxy"); }
+            get { return IExecute<Java.Util.Optional<Java.Net.ProxySelector>>("proxy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()"/> 
@@ -130,9 +130,9 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Net.Http.HttpResponse"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Net.Http.HttpResponse Send(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
+        public Java.Net.Http.HttpResponse<T> Send<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
         {
-            return IExecute<Java.Net.Http.HttpResponse>("send", arg0, arg1);
+            return IExecute<Java.Net.Http.HttpResponse<T>>("send", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler,java.net.http.HttpResponse.PushPromiseHandler)"/>
@@ -141,9 +141,9 @@ namespace Java.Net.Http
         /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
         /// <param name="arg2"><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1, Java.Net.Http.HttpResponse.PushPromiseHandler arg2)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1, Java.Net.Http.HttpResponse.PushPromiseHandler<T> arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendAsync", arg0, arg1, arg2);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)"/>
@@ -151,9 +151,9 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
         /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendAsync", arg0, arg1);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#version()"/>

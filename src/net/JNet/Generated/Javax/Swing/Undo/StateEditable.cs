@@ -53,7 +53,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#restoreState(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void RestoreState(Java.Util.Hashtable arg0)
+        public void RestoreState<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
         {
             IExecute("restoreState", arg0);
         }
@@ -61,7 +61,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#storeState(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void StoreState(Java.Util.Hashtable arg0)
+        public void StoreState(Java.Util.Hashtable<object, object> arg0)
         {
             IExecute("storeState", arg0);
         }

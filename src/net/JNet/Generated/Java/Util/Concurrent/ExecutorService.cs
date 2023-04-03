@@ -62,28 +62,28 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/> 
         /// </summary>
-        public Java.Util.List ShutdownNow
+        public Java.Util.List<Java.Lang.Runnable> ShutdownNow
         {
-            get { return IExecute<Java.Util.List>("shutdownNow"); }
+            get { return IExecute<Java.Util.List<Java.Lang.Runnable>>("shutdownNow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="T"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
+        public Java.Util.Concurrent.Future<T> Submit<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+            return IExecute<Java.Util.Concurrent.Future<T>>("submit", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
+        public Java.Util.Concurrent.Future<T> Submit<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+            return IExecute<Java.Util.Concurrent.Future<T>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"/>
@@ -93,9 +93,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.List InvokeAll(Java.Util.Collection arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
         {
-            return IExecute<Java.Util.List>("invokeAll", arg0, arg1, arg2);
+            return IExecute<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAll(java.util.Collection)"/>
@@ -103,9 +103,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.List InvokeAll(Java.Util.Collection arg0)
+        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
         {
-            return IExecute<Java.Util.List>("invokeAll", arg0);
+            return IExecute<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"/>
@@ -113,24 +113,24 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
-        public object InvokeAny(Java.Util.Collection arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
         {
-            return IExecute("invokeAny", arg0, arg1, arg2);
+            return IExecute<T>("invokeAny", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAny(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        public object InvokeAny(Java.Util.Collection arg0)
+        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
         {
-            return IExecute("invokeAny", arg0);
+            return IExecute<T>("invokeAny", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#awaitTermination(long,java.util.concurrent.TimeUnit)"/>
@@ -148,9 +148,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0)
+        public Java.Util.Concurrent.Future<ReturnExtendsobject> Submit<ReturnExtendsobject>(Java.Lang.Runnable arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+            return IExecute<Java.Util.Concurrent.Future<ReturnExtendsobject>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdown()"/>

@@ -48,9 +48,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
         /// </summary>
-        public Java.Util.Enumeration Ids
+        public Java.Util.Enumeration<byte[]> Ids
         {
-            get { return IExecute<Java.Util.Enumeration>("getIds"); }
+            get { return IExecute<Java.Util.Enumeration<byte[]>>("getIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>

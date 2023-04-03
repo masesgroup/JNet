@@ -236,7 +236,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public object GetContent(Java.Lang.Class[] arg0)
+        public object GetContent<Arg0Extendsobject>(Java.Lang.Class arg0)
         {
             return IExecute("getContent", arg0);
         }

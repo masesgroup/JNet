@@ -261,9 +261,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#entrySet()"/> 
         /// </summary>
-        public Java.Util.Set EntrySet
+        public Java.Util.Set<Java.Util.Map.Entry<object, object>> EntrySet
         {
-            get { return IExecute<Java.Util.Set>("entrySet"); }
+            get { return IExecute<Java.Util.Set<Java.Util.Map.Entry<object, object>>>("entrySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#isEmpty()"/> 
@@ -275,9 +275,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#keySet()"/> 
         /// </summary>
-        public Java.Util.Set KeySet
+        public Java.Util.Set<object> KeySet
         {
-            get { return IExecute<Java.Util.Set>("keySet"); }
+            get { return IExecute<Java.Util.Set<object>>("keySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#size()"/> 
@@ -289,9 +289,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#values()"/> 
         /// </summary>
-        public Java.Util.Collection Values
+        public Java.Util.Collection<object> Values
         {
-            get { return IExecute<Java.Util.Collection>("values"); }
+            get { return IExecute<Java.Util.Collection<object>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#containsKey(java.lang.Object)"/>
@@ -358,7 +358,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public void PutAll(Java.Util.Map arg0)
+        public void PutAll<Arg0Extendsobject>(Java.Util.Map<Arg0Extendsobject, Arg0Extendsobject> arg0)
         {
             IExecute("putAll", arg0);
         }

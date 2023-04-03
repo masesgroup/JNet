@@ -66,16 +66,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuerNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection IssuerNames
+        public Java.Util.Collection<object> IssuerNames
         {
-            get { return IExecute<Java.Util.Collection>("getIssuerNames"); } set { IExecute("setIssuerNames", value); }
+            get { return IExecute<Java.Util.Collection<object>>("getIssuerNames"); } set { IExecute("setIssuerNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuers(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection Issuers
+        public Java.Util.Collection<Javax.Security.Auth.X500.X500Principal> Issuers
         {
-            get { return IExecute<Java.Util.Collection>("getIssuers"); } set { IExecute("setIssuers", value); }
+            get { return IExecute<Java.Util.Collection<Javax.Security.Auth.X500.X500Principal>>("getIssuers"); } set { IExecute("setIssuers", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL()"/> 

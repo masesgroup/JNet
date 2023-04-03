@@ -67,18 +67,18 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Spliterator"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator Iterator(Java.Util.Spliterator arg0)
+        public static Java.Util.Iterator<T> Iterator<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Iterator>("iterator", arg0);
+            return SExecute<Java.Util.Iterator<T>>("iterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptySpliterator()"/>
         /// </summary>
         
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator EmptySpliteratorMethod()
+        public static Java.Util.Spliterator<T> EmptySpliteratorMethod<T>()
         {
-            return SExecute<Java.Util.Spliterator>("emptySpliterator");
+            return SExecute<Java.Util.Spliterator<T>>("emptySpliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.lang.Object[],int,int,int)"/>
@@ -88,9 +88,9 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator Spliterator(object[] arg0, int arg1, int arg2, int arg3)
+        public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator>("spliterator", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Spliterator<T>>("spliterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.lang.Object[],int)"/>
@@ -98,9 +98,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator Spliterator(object[] arg0, int arg1)
+        public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator>("spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>("spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.Collection,int)"/>
@@ -108,9 +108,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator Spliterator(Java.Util.Collection arg0, int arg1)
+        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator>("spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>("spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.Iterator,long,int)"/>
@@ -119,9 +119,9 @@ namespace Java.Util
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator Spliterator(Java.Util.Iterator arg0, long arg1, int arg2)
+        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator>("spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator<T>>("spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.Iterator,int)"/>
@@ -129,9 +129,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator SpliteratorUnknownSize(Java.Util.Iterator arg0, int arg1)
+        public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator>("spliteratorUnknownSize", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>("spliteratorUnknownSize", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#iterator(java.util.Spliterator.OfDouble)"/>

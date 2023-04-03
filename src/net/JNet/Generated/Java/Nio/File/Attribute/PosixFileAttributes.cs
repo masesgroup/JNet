@@ -62,9 +62,9 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/> 
         /// </summary>
-        public Java.Util.Set Permissions
+        public Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions
         {
-            get { return IExecute<Java.Util.Set>("permissions"); }
+            get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>("permissions"); }
         }
         
         #endregion

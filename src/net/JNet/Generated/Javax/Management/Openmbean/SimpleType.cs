@@ -174,7 +174,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("VOID");
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Void> VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Void>>("VOID");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGDECIMAL"/>
         /// </summary>

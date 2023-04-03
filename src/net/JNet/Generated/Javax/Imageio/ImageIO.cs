@@ -178,36 +178,36 @@ namespace Javax.Imageio
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageReaders(object arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReaders(object arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageReaders", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>("getImageReaders", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersByFormatName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageReadersByFormatName(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersByFormatName(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageReadersByFormatName", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>("getImageReadersByFormatName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersByMIMEType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageReadersByMIMEType(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersByMIMEType(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageReadersByMIMEType", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>("getImageReadersByMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersBySuffix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageReadersBySuffix(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersBySuffix(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageReadersBySuffix", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>("getImageReadersBySuffix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageTranscoders(javax.imageio.ImageReader,javax.imageio.ImageWriter)"/>
@@ -215,9 +215,9 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageWriter"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageTranscoders(Javax.Imageio.ImageReader arg0, Javax.Imageio.ImageWriter arg1)
+        public static Java.Util.Iterator<Javax.Imageio.ImageTranscoder> GetImageTranscoders(Javax.Imageio.ImageReader arg0, Javax.Imageio.ImageWriter arg1)
         {
-            return SExecute<Java.Util.Iterator>("getImageTranscoders", arg0, arg1);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageTranscoder>>("getImageTranscoders", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWriters(javax.imageio.ImageTypeSpecifier,java.lang.String)"/>
@@ -225,36 +225,36 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageWriters(Javax.Imageio.ImageTypeSpecifier arg0, string arg1)
+        public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWriters(Javax.Imageio.ImageTypeSpecifier arg0, string arg1)
         {
-            return SExecute<Java.Util.Iterator>("getImageWriters", arg0, arg1);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>("getImageWriters", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersByFormatName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageWritersByFormatName(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersByFormatName(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageWritersByFormatName", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>("getImageWritersByFormatName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersByMIMEType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageWritersByMIMEType(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersByMIMEType(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageWritersByMIMEType", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>("getImageWritersByMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersBySuffix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator GetImageWritersBySuffix(string arg0)
+        public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersBySuffix(string arg0)
         {
-            return SExecute<Java.Util.Iterator>("getImageWritersBySuffix", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>("getImageWritersBySuffix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReader(javax.imageio.ImageWriter)"/>

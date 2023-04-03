@@ -463,7 +463,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="char"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.ComboBoxModel"/></param>
             /// <returns><see cref="int"/></returns>
-            public int SelectionForKey(char arg0, Javax.Swing.ComboBoxModel arg1)
+            public int SelectionForKey<Arg1Extendsobject>(char arg0, Javax.Swing.ComboBoxModel<Arg1Extendsobject> arg1)
             {
                 return IExecute<int>("selectionForKey", arg0, arg1);
             }

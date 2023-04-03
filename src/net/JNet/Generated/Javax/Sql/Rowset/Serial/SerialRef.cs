@@ -87,7 +87,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetObject(Java.Util.Map arg0)
+        public object GetObject<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
         {
             return IExecute("getObject", arg0);
         }

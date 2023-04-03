@@ -52,9 +52,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getFileStores()"/> 
         /// </summary>
-        public Java.Lang.Iterable FileStores
+        public Java.Lang.Iterable<Java.Nio.File.FileStore> FileStores
         {
-            get { return IExecute<Java.Lang.Iterable>("getFileStores"); }
+            get { return IExecute<Java.Lang.Iterable<Java.Nio.File.FileStore>>("getFileStores"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isOpen()"/> 
@@ -87,9 +87,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getRootDirectories()"/> 
         /// </summary>
-        public Java.Lang.Iterable RootDirectories
+        public Java.Lang.Iterable<Java.Nio.File.Path> RootDirectories
         {
-            get { return IExecute<Java.Lang.Iterable>("getRootDirectories"); }
+            get { return IExecute<Java.Lang.Iterable<Java.Nio.File.Path>>("getRootDirectories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getSeparator()"/> 
@@ -101,9 +101,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/> 
         /// </summary>
-        public Java.Util.Set SupportedFileAttributeViews
+        public Java.Util.Set<string> SupportedFileAttributeViews
         {
-            get { return IExecute<Java.Util.Set>("supportedFileAttributeViews"); }
+            get { return IExecute<Java.Util.Set<string>>("supportedFileAttributeViews"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getUserPrincipalLookupService()"/> 

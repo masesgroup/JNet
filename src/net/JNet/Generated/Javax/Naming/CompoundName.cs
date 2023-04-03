@@ -62,9 +62,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html#getAll()"/> 
         /// </summary>
-        public Java.Util.Enumeration All
+        public Java.Util.Enumeration<string> All
         {
-            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html#isEmpty()"/> 

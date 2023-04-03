@@ -61,9 +61,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/> 
         /// </summary>
-        public Java.Util.Set KeySet
+        public Java.Util.Set<string> KeySet
         {
-            get { return IExecute<Java.Util.Set>("keySet"); }
+            get { return IExecute<Java.Util.Set<string>>("keySet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)"/>
@@ -88,9 +88,9 @@ namespace Javax.Management.Openmbean
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
-        public Javax.Management.Openmbean.OpenType GetType(string arg0)
+        public Javax.Management.Openmbean.OpenType<ReturnExtendsobject> GetType<ReturnExtendsobject>(string arg0)
         {
-            return IExecute<Javax.Management.Openmbean.OpenType>("getType", arg0);
+            return IExecute<Javax.Management.Openmbean.OpenType<ReturnExtendsobject>>("getType", arg0);
         }
         
         #endregion

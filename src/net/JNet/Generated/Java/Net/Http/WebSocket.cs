@@ -76,9 +76,9 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendBinary(Java.Nio.ByteBuffer arg0, bool arg1)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendBinary(Java.Nio.ByteBuffer arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendBinary", arg0, arg1);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendBinary", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
@@ -86,27 +86,27 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendClose(int arg0, string arg1)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, string arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendClose", arg0, arg1);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendClose", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPing(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendPing(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPing(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendPing", arg0);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPong(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendPong(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPong(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendPong", arg0);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendText(java.lang.CharSequence,boolean)"/>
@@ -114,9 +114,9 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture SendText(Java.Lang.CharSequence arg0, bool arg1)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendText(Java.Lang.CharSequence arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendText", arg0, arg1);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendText", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()"/>
@@ -192,9 +192,9 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.URI"/></param>
             /// <param name="arg1"><see cref="Java.Net.Http.WebSocket.Listener"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-            public Java.Util.Concurrent.CompletableFuture BuildAsync(Java.Net.URI arg0, Java.Net.Http.WebSocket.Listener arg1)
+            public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> BuildAsync(Java.Net.URI arg0, Java.Net.Http.WebSocket.Listener arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletableFuture>("buildAsync", arg0, arg1);
+                return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("buildAsync", arg0, arg1);
             }
             
             #endregion

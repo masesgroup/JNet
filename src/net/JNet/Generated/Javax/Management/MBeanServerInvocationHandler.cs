@@ -71,10 +71,10 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object NewProxyInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
+        /// <returns><see cref="T"/></returns>
+        public static T NewProxyInstance<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute("newProxyInstance", arg0, arg1, arg2, arg3);
+            return SExecute<T>("newProxyInstance", arg0, arg1, arg2, arg3);
         }
         
         #endregion

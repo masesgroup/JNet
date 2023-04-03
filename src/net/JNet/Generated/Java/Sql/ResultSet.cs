@@ -259,22 +259,22 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(int arg0, Java.Lang.Class arg1)
+        public T GetObject<T>(int arg0, Java.Lang.Class arg1)
         {
-            return IExecute("getObject", arg0, arg1);
+            return IExecute<T>("getObject", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(string arg0, Java.Lang.Class arg1)
+        public T GetObject<T>(string arg0, Java.Lang.Class arg1)
         {
-            return IExecute("getObject", arg0, arg1);
+            return IExecute<T>("getObject", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int)"/>
@@ -513,7 +513,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(int arg0, Java.Util.Map arg1)
+        public object GetObject<Arg1Extendsobject>(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }
@@ -534,7 +534,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(string arg0, Java.Util.Map arg1)
+        public object GetObject<Arg1Extendsobject>(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }

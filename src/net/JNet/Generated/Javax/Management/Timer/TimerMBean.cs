@@ -48,9 +48,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getAllNotificationIDs()"/> 
         /// </summary>
-        public Java.Util.Vector AllNotificationIDs
+        public Java.Util.Vector<int?> AllNotificationIDs
         {
-            get { return IExecute<Java.Util.Vector>("getAllNotificationIDs"); }
+            get { return IExecute<Java.Util.Vector<int?>>("getAllNotificationIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isActive()"/> 
@@ -206,9 +206,9 @@ namespace Javax.Management.Timer
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Vector"/></returns>
-        public Java.Util.Vector GetNotificationIDs(string arg0)
+        public Java.Util.Vector<int?> GetNotificationIDs(string arg0)
         {
-            return IExecute<Java.Util.Vector>("getNotificationIDs", arg0);
+            return IExecute<Java.Util.Vector<int?>>("getNotificationIDs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeAllNotifications()"/>

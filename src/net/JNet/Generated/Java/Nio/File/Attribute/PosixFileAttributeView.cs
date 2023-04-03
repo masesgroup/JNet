@@ -81,7 +81,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetPermissions(Java.Util.Set arg0)
+        public void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
         {
             IExecute("setPermissions", arg0);
         }

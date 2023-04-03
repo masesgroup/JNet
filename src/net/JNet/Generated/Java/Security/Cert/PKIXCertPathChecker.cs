@@ -63,9 +63,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/> 
         /// </summary>
-        public Java.Util.Set SupportedExtensions
+        public Java.Util.Set<string> SupportedExtensions
         {
-            get { return IExecute<Java.Util.Set>("getSupportedExtensions"); }
+            get { return IExecute<Java.Util.Set<string>>("getSupportedExtensions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>
@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
-        public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection arg1)
+        public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection<string> arg1)
         {
             IExecute("check", arg0, arg1);
         }

@@ -77,7 +77,7 @@ namespace Java.Rmi.Activation
         /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3, int arg4, Java.Rmi.Server.RMIClientSocketFactory arg5, Java.Rmi.Server.RMIServerSocketFactory arg6)
+        public static Java.Rmi.Activation.ActivationID ExportObject<Arg2Extendsobject>(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject<Arg2Extendsobject> arg2, bool arg3, int arg4, Java.Rmi.Server.RMIClientSocketFactory arg5, Java.Rmi.Server.RMIServerSocketFactory arg6)
         {
             return SExecute<Java.Rmi.Activation.ActivationID>("exportObject", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -92,7 +92,7 @@ namespace Java.Rmi.Activation
         /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3, int arg4)
+        public static Java.Rmi.Activation.ActivationID ExportObject<Arg2Extendsobject>(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject<Arg2Extendsobject> arg2, bool arg3, int arg4)
         {
             return SExecute<Java.Rmi.Activation.ActivationID>("exportObject", arg0, arg1, arg2, arg3, arg4);
         }

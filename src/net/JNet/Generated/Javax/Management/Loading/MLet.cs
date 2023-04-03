@@ -127,9 +127,9 @@ namespace Javax.Management.Loading
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public Java.Util.Set GetMBeansFromURL(string arg0)
+        public Java.Util.Set<object> GetMBeansFromURL(string arg0)
         {
-            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+            return IExecute<Java.Util.Set<object>>("getMBeansFromURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.net.URL)"/>
@@ -137,9 +137,9 @@ namespace Javax.Management.Loading
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public Java.Util.Set GetMBeansFromURL(Java.Net.URL arg0)
+        public Java.Util.Set<object> GetMBeansFromURL(Java.Net.URL arg0)
         {
-            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+            return IExecute<Java.Util.Set<object>>("getMBeansFromURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
@@ -159,7 +159,7 @@ namespace Javax.Management.Loading
         /// <param name="arg1"><see cref="Javax.Management.Loading.ClassLoaderRepository"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
+        public Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0, arg1);
         }

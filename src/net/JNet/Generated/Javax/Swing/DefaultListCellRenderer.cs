@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        public Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList arg0, object arg1, int arg2, bool arg3, bool arg4)
+        public Java.Awt.Component GetListCellRendererComponent<Arg0Extendsobject>(Javax.Swing.JList<Arg0Extendsobject> arg0, object arg1, int arg2, bool arg3, bool arg4)
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }

@@ -80,9 +80,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set ExtendedKeyUsage
+        public Java.Util.Set<string> ExtendedKeyUsage
         {
-            get { return IExecute<Java.Util.Set>("getExtendedKeyUsage"); } set { IExecute("setExtendedKeyUsage", value); }
+            get { return IExecute<Java.Util.Set<string>>("getExtendedKeyUsage"); } set { IExecute("setExtendedKeyUsage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuer()"/> 
@@ -136,9 +136,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set Policy
+        public Java.Util.Set<string> Policy
         {
-            get { return IExecute<Java.Util.Set>("getPolicy"); } set { IExecute("setPolicy", value); }
+            get { return IExecute<Java.Util.Set<string>>("getPolicy"); } set { IExecute("setPolicy", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)"/>

@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
+        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption, Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1, arg2);
         }

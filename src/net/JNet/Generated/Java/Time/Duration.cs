@@ -292,9 +292,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getUnits()"/> 
         /// </summary>
-        public Java.Util.List Units
+        public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
         {
-            get { return IExecute<Java.Util.List>("getUnits"); }
+            get { return IExecute<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#compareTo(java.lang.Object)"/>

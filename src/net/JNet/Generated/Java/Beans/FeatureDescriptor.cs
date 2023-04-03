@@ -48,9 +48,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration AttributeNames
+        public Java.Util.Enumeration<string> AttributeNames
         {
-            get { return IExecute<Java.Util.Enumeration>("attributeNames"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("attributeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getDisplayName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setDisplayName(java.lang.String)"/>

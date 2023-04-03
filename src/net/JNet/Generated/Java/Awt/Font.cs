@@ -199,7 +199,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public static Java.Awt.Font GetFont(Java.Util.Map arg0)
+        public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return SExecute<Java.Awt.Font>("getFont", arg0);
         }
@@ -472,7 +472,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public Java.Awt.Font DeriveFont(Java.Util.Map arg0)
+        public Java.Awt.Font DeriveFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }

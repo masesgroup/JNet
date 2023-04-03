@@ -70,9 +70,9 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getRegisteredProviders()"/> 
         /// </summary>
-        public static Java.Util.Enumeration RegisteredProviders
+        public static Java.Util.Enumeration<Javax.Sql.Rowset.Spi.SyncProvider> RegisteredProviders
         {
-            get { return SExecute<Java.Util.Enumeration>("getRegisteredProviders"); }
+            get { return SExecute<Java.Util.Enumeration<Javax.Sql.Rowset.Spi.SyncProvider>>("getRegisteredProviders"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String)"/>

@@ -62,9 +62,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getExtensions()"/> 
         /// </summary>
-        public Java.Util.List Extensions
+        public Java.Util.List<string> Extensions
         {
-            get { return IExecute<Java.Util.List>("getExtensions"); }
+            get { return IExecute<Java.Util.List<string>>("getExtensions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName()"/> 
@@ -83,16 +83,16 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMimeTypes()"/> 
         /// </summary>
-        public Java.Util.List MimeTypes
+        public Java.Util.List<string> MimeTypes
         {
-            get { return IExecute<Java.Util.List>("getMimeTypes"); }
+            get { return IExecute<Java.Util.List<string>>("getMimeTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getNames()"/> 
         /// </summary>
-        public Java.Util.List Names
+        public Java.Util.List<string> Names
         {
-            get { return IExecute<Java.Util.List>("getNames"); }
+            get { return IExecute<Java.Util.List<string>>("getNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine()"/> 

@@ -52,9 +52,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#getEnabledTypes()"/> 
         /// </summary>
-        public Java.Util.Vector EnabledTypes
+        public Java.Util.Vector<string> EnabledTypes
         {
-            get { return IExecute<Java.Util.Vector>("getEnabledTypes"); }
+            get { return IExecute<Java.Util.Vector<string>>("getEnabledTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification)"/>

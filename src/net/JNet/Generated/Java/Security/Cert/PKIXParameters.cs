@@ -71,16 +71,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertPathCheckers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertPathCheckers(java.util.List)"/>
         /// </summary>
-        public Java.Util.List CertPathCheckers
+        public Java.Util.List<Java.Security.Cert.PKIXCertPathChecker> CertPathCheckers
         {
-            get { return IExecute<Java.Util.List>("getCertPathCheckers"); } set { IExecute("setCertPathCheckers", value); }
+            get { return IExecute<Java.Util.List<Java.Security.Cert.PKIXCertPathChecker>>("getCertPathCheckers"); } set { IExecute("setCertPathCheckers", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertStores()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertStores(java.util.List)"/>
         /// </summary>
-        public Java.Util.List CertStores
+        public Java.Util.List<Java.Security.Cert.CertStore> CertStores
         {
-            get { return IExecute<Java.Util.List>("getCertStores"); } set { IExecute("setCertStores", value); }
+            get { return IExecute<Java.Util.List<Java.Security.Cert.CertStore>>("getCertStores"); } set { IExecute("setCertStores", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getDate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setDate(java.util.Date)"/>
@@ -92,9 +92,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getInitialPolicies()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setInitialPolicies(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set InitialPolicies
+        public Java.Util.Set<string> InitialPolicies
         {
-            get { return IExecute<Java.Util.Set>("getInitialPolicies"); } set { IExecute("setInitialPolicies", value); }
+            get { return IExecute<Java.Util.Set<string>>("getInitialPolicies"); } set { IExecute("setInitialPolicies", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/> 
@@ -148,9 +148,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getTrustAnchors()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setTrustAnchors(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set TrustAnchors
+        public Java.Util.Set<Java.Security.Cert.TrustAnchor> TrustAnchors
         {
-            get { return IExecute<Java.Util.Set>("getTrustAnchors"); } set { IExecute("setTrustAnchors", value); }
+            get { return IExecute<Java.Util.Set<Java.Security.Cert.TrustAnchor>>("getTrustAnchors"); } set { IExecute("setTrustAnchors", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#addCertPathChecker(java.security.cert.PKIXCertPathChecker)"/>

@@ -71,9 +71,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#stringPropertyNames()"/> 
         /// </summary>
-        public Java.Util.Set StringPropertyNames
+        public Java.Util.Set<string> StringPropertyNames
         {
-            get { return IExecute<Java.Util.Set>("stringPropertyNames"); }
+            get { return IExecute<Java.Util.Set<string>>("stringPropertyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#getProperty(java.lang.String,java.lang.String)"/>

@@ -52,9 +52,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getExternalElements()"/> 
         /// </summary>
-        public Java.Util.List ExternalElements
+        public Java.Util.List<Javax.Xml.Crypto.XMLStructure> ExternalElements
         {
-            get { return IExecute<Java.Util.List>("getExternalElements"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getExternalElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyId()"/> 

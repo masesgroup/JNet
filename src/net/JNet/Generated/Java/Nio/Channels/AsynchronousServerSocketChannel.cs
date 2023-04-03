@@ -90,9 +90,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="A"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        public void Accept(object arg0, Java.Nio.Channels.CompletionHandler arg1)
+        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
         {
             IExecute("accept", arg0, arg1);
         }
@@ -112,9 +112,9 @@ namespace Java.Nio.Channels
         /// </summary>
         
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future Accept()
+        public Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel> Accept()
         {
-            return IExecute<Java.Util.Concurrent.Future>("accept");
+            return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel>>("accept");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>

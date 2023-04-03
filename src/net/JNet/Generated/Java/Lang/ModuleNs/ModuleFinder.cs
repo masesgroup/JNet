@@ -73,18 +73,18 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/> 
         /// </summary>
-        public Java.Util.Set FindAll
+        public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll
         {
-            get { return IExecute<Java.Util.Set>("findAll"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional Find(string arg0)
+        public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0)
         {
-            return IExecute<Java.Util.Optional>("find", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", arg0);
         }
         
         #endregion

@@ -116,9 +116,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/> 
         /// </summary>
-        public Java.Util.Enumeration Aliases
+        public Java.Util.Enumeration<string> Aliases
         {
-            get { return IExecute<Java.Util.Enumeration>("aliases"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("aliases"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getProvider()"/> 
@@ -505,9 +505,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.html#getAttributes()"/> 
             /// </summary>
-            public Java.Util.Set Attributes
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecute<Java.Util.Set>("getAttributes"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             
             #endregion
@@ -678,9 +678,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getAttributes()"/> 
             /// </summary>
-            public Java.Util.Set Attributes
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecute<Java.Util.Set>("getAttributes"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/> 
@@ -777,9 +777,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getAttributes()"/> 
             /// </summary>
-            public Java.Util.Set Attributes
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecute<Java.Util.Set>("getAttributes"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/> 
@@ -835,9 +835,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getAttributes()"/> 
             /// </summary>
-            public Java.Util.Set Attributes
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecute<Java.Util.Set>("getAttributes"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/> 

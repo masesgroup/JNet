@@ -104,16 +104,16 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery ParsedExcessDays
+        public static Java.Time.Temporal.TemporalQuery<Java.Time.Period> ParsedExcessDays
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("parsedExcessDays"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.Period>>("parsedExcessDays"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/> 
         /// </summary>
-        public static Java.Time.Temporal.TemporalQuery ParsedLeapSecond
+        public static Java.Time.Temporal.TemporalQuery<bool?> ParsedLeapSecond
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery>("parsedLeapSecond"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<bool?>>("parsedLeapSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDate(java.time.format.FormatStyle)"/>
@@ -199,9 +199,9 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#getResolverFields()"/> 
         /// </summary>
-        public Java.Util.Set ResolverFields
+        public Java.Util.Set<Java.Time.Temporal.TemporalField> ResolverFields
         {
-            get { return IExecute<Java.Util.Set>("getResolverFields"); }
+            get { return IExecute<Java.Util.Set<Java.Time.Temporal.TemporalField>>("getResolverFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#getResolverStyle()"/> 
@@ -222,10 +222,10 @@ namespace Java.Time.Format
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Parse(Java.Lang.CharSequence arg0, Java.Time.Temporal.TemporalQuery arg1)
+        /// <returns><see cref="T"/></returns>
+        public T Parse<T>(Java.Lang.CharSequence arg0, Java.Time.Temporal.TemporalQuery<T> arg1)
         {
-            return IExecute("parse", arg0, arg1);
+            return IExecute<T>("parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#format(java.time.temporal.TemporalAccessor)"/>
@@ -250,7 +250,7 @@ namespace Java.Time.Format
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <returns><see cref="Java.Text.Format"/></returns>
-        public Java.Text.Format ToFormat(Java.Time.Temporal.TemporalQuery arg0)
+        public Java.Text.Format ToFormat<Arg0Extendsobject>(Java.Time.Temporal.TemporalQuery<Arg0Extendsobject> arg0)
         {
             return IExecute<Java.Text.Format>("toFormat", arg0);
         }
@@ -304,7 +304,7 @@ namespace Java.Time.Format
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
-        public Java.Time.Format.DateTimeFormatter WithResolverFields(Java.Util.Set arg0)
+        public Java.Time.Format.DateTimeFormatter WithResolverFields(Java.Util.Set<Java.Time.Temporal.TemporalField> arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", arg0);
         }
@@ -351,7 +351,7 @@ namespace Java.Time.Format
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        public Java.Time.Temporal.TemporalAccessor ParseBest(Java.Lang.CharSequence arg0, params Java.Time.Temporal.TemporalQuery[] arg1)
+        public Java.Time.Temporal.TemporalAccessor ParseBest<Arg1Extendsobject>(Java.Lang.CharSequence arg0, params Java.Time.Temporal.TemporalQuery<Arg1Extendsobject>[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0); else return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0, arg1);
         }

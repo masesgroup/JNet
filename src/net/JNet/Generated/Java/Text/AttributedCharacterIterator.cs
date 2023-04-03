@@ -48,16 +48,16 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/> 
         /// </summary>
-        public Java.Util.Set AllAttributeKeys
+        public Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys
         {
-            get { return IExecute<Java.Util.Set>("getAllAttributeKeys"); }
+            get { return IExecute<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map Attributes
+        public Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes
         {
-            get { return IExecute<Java.Util.Map>("getAttributes"); }
+            get { return IExecute<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
@@ -87,7 +87,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="int"/></returns>
-        public int GetRunLimit(Java.Util.Set arg0)
+        public int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecute<int>("getRunLimit", arg0);
         }
@@ -105,7 +105,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="int"/></returns>
-        public int GetRunStart(Java.Util.Set arg0)
+        public int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecute<int>("getRunStart", arg0);
         }

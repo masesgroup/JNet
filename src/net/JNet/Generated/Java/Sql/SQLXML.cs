@@ -84,21 +84,21 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Xml.Transform.Source GetSource(Java.Lang.Class arg0)
+        public T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Source
         {
-            return IExecute<Javax.Xml.Transform.Source>("getSource", arg0);
+            return IExecute<T>("getSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Result"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Xml.Transform.Result SetResult(Java.Lang.Class arg0)
+        public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Result
         {
-            return IExecute<Javax.Xml.Transform.Result>("setResult", arg0);
+            return IExecute<T>("setResult", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>

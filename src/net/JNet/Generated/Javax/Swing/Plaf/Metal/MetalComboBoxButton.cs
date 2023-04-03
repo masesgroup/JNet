@@ -71,9 +71,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboBox()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboBox(javax.swing.JComboBox)"/>
         /// </summary>
-        public Javax.Swing.JComboBox ComboBox
+        public Javax.Swing.JComboBox<object> ComboBox
         {
-            get { return IExecute<Javax.Swing.JComboBox>("getComboBox"); } set { IExecute("setComboBox", value); }
+            get { return IExecute<Javax.Swing.JComboBox<object>>("getComboBox"); } set { IExecute("setComboBox", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboIcon(javax.swing.Icon)"/>

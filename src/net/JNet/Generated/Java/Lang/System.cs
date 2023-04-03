@@ -70,9 +70,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv()"/> 
         /// </summary>
-        public static Java.Util.Map Env
+        public static Java.Util.Map<string, string> Env
         {
-            get { return SExecute<Java.Util.Map>("getenv"); }
+            get { return SExecute<Java.Util.Map<string, string>>("getenv"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/> 
@@ -377,7 +377,7 @@ namespace Java.Lang
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1, Java.Lang.Throwable arg2)
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<string> arg1, Java.Lang.Throwable arg2)
             {
                 IExecute("log", arg0, arg1, arg2);
             }
@@ -386,7 +386,7 @@ namespace Java.Lang
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1)
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<string> arg1)
             {
                 IExecute("log", arg0, arg1);
             }

@@ -114,10 +114,10 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.EventListener"/></returns>
-        public static Java.Util.EventListener[] GetListeners(Java.Util.EventListener arg0, Java.Lang.Class arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T[] GetListeners<T>(Java.Util.EventListener arg0, Java.Lang.Class arg1) where T: Java.Util.EventListener
         {
-            return SExecuteArray<Java.Util.EventListener>("getListeners", arg0, arg1);
+            return SExecuteArray<T>("getListeners", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>

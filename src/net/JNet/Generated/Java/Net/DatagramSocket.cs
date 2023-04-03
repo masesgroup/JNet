@@ -209,10 +209,10 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="T"/></param>
         /// <returns><see cref="Java.Net.DatagramSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Net.DatagramSocket SetOption(Java.Net.SocketOption arg0, object arg1)
+        public Java.Net.DatagramSocket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
             return IExecute<Java.Net.DatagramSocket>("setOption", arg0, arg1);
         }
@@ -220,11 +220,11 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getOption(java.net.SocketOption)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public object GetOption(Java.Net.SocketOption arg0)
+        public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
-            return IExecute("getOption", arg0);
+            return IExecute<T>("getOption", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#bind(java.net.SocketAddress)"/>

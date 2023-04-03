@@ -52,7 +52,7 @@ namespace Java.Security
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Permits(Java.Util.Set arg0, string arg1, Java.Security.AlgorithmParameters arg2)
+        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.AlgorithmParameters arg2)
         {
             return IExecute<bool>("permits", arg0, arg1, arg2);
         }
@@ -64,7 +64,7 @@ namespace Java.Security
         /// <param name="arg2"><see cref="Java.Security.Key"/></param>
         /// <param name="arg3"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Permits(Java.Util.Set arg0, string arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
+        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
         {
             return IExecute<bool>("permits", arg0, arg1, arg2, arg3);
         }
@@ -74,7 +74,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Permits(Java.Util.Set arg0, Java.Security.Key arg1)
+        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Security.Key arg1)
         {
             return IExecute<bool>("permits", arg0, arg1);
         }

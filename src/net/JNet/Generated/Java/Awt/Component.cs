@@ -522,10 +522,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.EventListener"/></returns>
-        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
-            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+            return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#areFocusTraversalKeysSet(int)"/>
@@ -768,9 +768,9 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set GetFocusTraversalKeys(int arg0)
+        public Java.Util.Set<Java.Awt.AWTKeyStroke> GetFocusTraversalKeys(int arg0)
         {
-            return IExecute<Java.Util.Set>("getFocusTraversalKeys", arg0);
+            return IExecute<Java.Util.Set<Java.Awt.AWTKeyStroke>>("getFocusTraversalKeys", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addComponentListener(java.awt.event.ComponentListener)"/>
@@ -1235,7 +1235,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-        public void SetFocusTraversalKeys(int arg0, Java.Util.Set arg1)
+        public void SetFocusTraversalKeys<Arg1ExtendsJava_Awt_AWTKeyStroke>(int arg0, Java.Util.Set<Arg1ExtendsJava_Awt_AWTKeyStroke> arg1) where Arg1ExtendsJava_Awt_AWTKeyStroke: Java.Awt.AWTKeyStroke
         {
             IExecute("setFocusTraversalKeys", arg0, arg1);
         }

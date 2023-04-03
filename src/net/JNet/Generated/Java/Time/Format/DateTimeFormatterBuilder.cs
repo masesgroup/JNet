@@ -188,7 +188,7 @@ namespace Java.Time.Format
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
-        public Java.Time.Format.DateTimeFormatterBuilder AppendGenericZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set arg1)
+        public Java.Time.Format.DateTimeFormatterBuilder AppendGenericZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set<Java.Time.ZoneId> arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendGenericZoneText", arg0, arg1);
         }
@@ -300,7 +300,7 @@ namespace Java.Time.Format
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
-        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Util.Map arg1)
+        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Util.Map<long?, string> arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
         }
@@ -374,7 +374,7 @@ namespace Java.Time.Format
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
-        public Java.Time.Format.DateTimeFormatterBuilder AppendZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set arg1)
+        public Java.Time.Format.DateTimeFormatterBuilder AppendZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set<Java.Time.ZoneId> arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneText", arg0, arg1);
         }

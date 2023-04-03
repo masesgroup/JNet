@@ -50,18 +50,18 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0)
+        public Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, string> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return IExecute<Java.Util.Map>("getNativesForFlavors", arg0);
+            return IExecute<Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, string>>("getNativesForFlavors", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html#getFlavorsForNatives(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map GetFlavorsForNatives(string[] arg0)
+        public Java.Util.Map<string, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(string[] arg0)
         {
-            return IExecute<Java.Util.Map>("getFlavorsForNatives", arg0);
+            return IExecute<Java.Util.Map<string, Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNatives", arg0);
         }
         
         #endregion

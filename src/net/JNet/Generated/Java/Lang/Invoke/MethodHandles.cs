@@ -53,10 +53,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="Java.Lang.Reflect.Member"/></returns>
-        public static Java.Lang.Reflect.Member ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T: Java.Lang.Reflect.Member
         {
-            return SExecute<Java.Lang.Reflect.Member>("reflectAs", arg0, arg1);
+            return SExecute<T>("reflectAs", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayConstructor(java.lang.Class)"/>
@@ -171,7 +171,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public static Java.Lang.Invoke.MethodHandle DropArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Class[] arg2)
+        public static Java.Lang.Invoke.MethodHandle DropArguments<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Class[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("dropArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>("dropArguments", arg0, arg1, arg2);
         }
@@ -182,7 +182,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public static Java.Lang.Invoke.MethodHandle DropArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List arg2)
+        public static Java.Lang.Invoke.MethodHandle DropArguments<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List<Java.Lang.Class> arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("dropArguments", arg0, arg1, arg2);
         }
@@ -194,7 +194,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public static Java.Lang.Invoke.MethodHandle DropArgumentsToMatch(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List arg2, int arg3)
+        public static Java.Lang.Invoke.MethodHandle DropArgumentsToMatch<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List<Java.Lang.Class> arg2, int arg3)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("dropArgumentsToMatch", arg0, arg1, arg2, arg3);
         }
@@ -540,7 +540,7 @@ namespace Java.Lang.Invoke
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Class AccessClass(Java.Lang.Class arg0)
+            public Java.Lang.Class AccessClass<ReturnExtendsobject>(Java.Lang.Class arg0)
             {
                 return IExecute<Java.Lang.Class>("accessClass", arg0);
             }
@@ -550,7 +550,7 @@ namespace Java.Lang.Invoke
             /// <param name="arg0"><see cref="byte"/></param>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Class DefineClass(byte[] arg0)
+            public Java.Lang.Class DefineClass<ReturnExtendsobject>(byte[] arg0)
             {
                 return IExecute<Java.Lang.Class>("defineClass", arg0);
             }
@@ -561,7 +561,7 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.ClassNotFoundException"/>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Class FindClass(string arg0)
+            public Java.Lang.Class FindClass<ReturnExtendsobject>(string arg0)
             {
                 return IExecute<Java.Lang.Class>("findClass", arg0);
             }
@@ -698,7 +698,7 @@ namespace Java.Lang.Invoke
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Constructor"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Invoke.MethodHandle UnreflectConstructor(Java.Lang.Reflect.Constructor arg0)
+            public Java.Lang.Invoke.MethodHandle UnreflectConstructor<Arg0Extendsobject>(Java.Lang.Reflect.Constructor<Arg0Extendsobject> arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandle>("unreflectConstructor", arg0);
             }

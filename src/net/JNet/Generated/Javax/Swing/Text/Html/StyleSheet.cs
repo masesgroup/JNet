@@ -223,10 +223,10 @@ namespace Javax.Swing.Text.Html
             IExecute("removeStyleSheet", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetBaseFontSize(string arg0)
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBaseFontSize(int arg0)
         {
             IExecute("setBaseFontSize", arg0);
         }

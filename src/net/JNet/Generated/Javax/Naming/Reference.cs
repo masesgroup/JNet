@@ -94,9 +94,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getAll()"/> 
         /// </summary>
-        public Java.Util.Enumeration All
+        public Java.Util.Enumeration<Javax.Naming.RefAddr> All
         {
-            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+            get { return IExecute<Java.Util.Enumeration<Javax.Naming.RefAddr>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getFactoryClassLocation()"/> 

@@ -82,9 +82,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Stream.Collector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector CollectingAndThen(Java.Util.Stream.Collector arg0, Java.Util.Function.Function arg1)
+        public static Java.Util.Stream.Collector<T, A, RR> CollectingAndThen<T, A, RR, R>(Java.Util.Stream.Collector<T, A, R> arg0, Java.Util.Function.Function<R, RR> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector>("collectingAndThen", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, A, RR>>("collectingAndThen", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#filtering(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -92,18 +92,18 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Filtering(Java.Util.Function.Predicate arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Filtering<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("filtering", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>("filtering", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toCollection(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToCollection(Java.Util.Function.Supplier arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, C> ToCollection<T, ReturnExtendsobject, C>(Java.Util.Function.Supplier<C> arg0) where C: Java.Util.Collection<T>
         {
-            return SExecute<Java.Util.Stream.Collector>("toCollection", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, C>>("toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -111,9 +111,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector PartitioningBy(Java.Util.Function.Predicate arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>> PartitioningBy<T, ReturnExtendsobject, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("partitioningBy", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>>>("partitioningBy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -122,9 +122,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg2"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingByConcurrent(Java.Util.Function.Function arg0, Java.Util.Function.Supplier arg1, Java.Util.Stream.Collector arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingByConcurrent<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Concurrent.ConcurrentMap<K, D>
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingByConcurrent", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>("groupingByConcurrent", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.stream.Collector)"/>
@@ -132,9 +132,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingByConcurrent(Java.Util.Function.Function arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingByConcurrent", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>>>("groupingByConcurrent", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.stream.Collector)"/>
@@ -142,9 +142,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingBy(Java.Util.Function.Function arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>> GroupingBy<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingBy", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>>>("groupingBy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -153,9 +153,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg2"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingBy(Java.Util.Function.Function arg0, Java.Util.Function.Supplier arg1, Java.Util.Stream.Collector arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingBy<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Map<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Map<K, D>
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingBy", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>("groupingBy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -165,9 +165,9 @@ namespace Java.Util.Stream
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToConcurrentMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2, Java.Util.Function.Supplier arg3)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToConcurrentMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toConcurrentMap", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>("toConcurrentMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -177,9 +177,9 @@ namespace Java.Util.Stream
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2, Java.Util.Function.Supplier arg3)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Map<K, U> where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toMap", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>("toMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -188,9 +188,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToConcurrentMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toConcurrentMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>("toConcurrentMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function)"/>
@@ -198,9 +198,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToConcurrentMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toConcurrentMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>("toConcurrentMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -209,9 +209,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>("toMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function)"/>
@@ -219,9 +219,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>("toMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -230,9 +230,9 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToUnmodifiableMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toUnmodifiableMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>("toUnmodifiableMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function)"/>
@@ -240,27 +240,27 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector ToUnmodifiableMap(Java.Util.Function.Function arg0, Java.Util.Function.Function arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("toUnmodifiableMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>("toUnmodifiableMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingByConcurrent(Java.Util.Function.Function arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingByConcurrent", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>("groupingByConcurrent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector GroupingBy(Java.Util.Function.Function arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("groupingBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>>>("groupingBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#flatMapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -268,9 +268,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector FlatMapping(Java.Util.Function.Function arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> FlatMapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsU: Java.Util.Stream.Stream<Arg0ExtendsU>
         {
-            return SExecute<Java.Util.Stream.Collector>("flatMapping", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>("flatMapping", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#mapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -278,156 +278,156 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Mapping(Java.Util.Function.Function arg0, Java.Util.Stream.Collector arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Mapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("mapping", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>("mapping", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.Function,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="U"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Reducing(object arg0, Java.Util.Function.Function arg1, Java.Util.Function.BinaryOperator arg2)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, U> Reducing<T, ReturnExtendsobject, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("reducing", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, U>>("reducing", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector AveragingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("averagingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>("averagingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector AveragingInt(Java.Util.Function.ToIntFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("averagingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>("averagingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector AveragingLong(Java.Util.Function.ToLongFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("averagingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>("averagingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> SummingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>("summingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummingInt(Java.Util.Function.ToIntFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, int?> SummingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, int?>>("summingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummingLong(Java.Util.Function.ToLongFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, long?> SummingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, long?>>("summingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummarizingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics> SummarizingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summarizingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics>>("summarizingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummarizingInt(Java.Util.Function.ToIntFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics> SummarizingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summarizingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics>>("summarizingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector SummarizingLong(Java.Util.Function.ToLongFunction arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics> SummarizingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("summarizingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics>>("summarizingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector PartitioningBy(Java.Util.Function.Predicate arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>> PartitioningBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("partitioningBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>>>("partitioningBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector MaxBy(Java.Util.Comparator arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MaxBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("maxBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>("maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector MinBy(Java.Util.Comparator arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MinBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector>("minBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>("minBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Reducing(Java.Util.Function.BinaryOperator arg0)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> Reducing<T, ReturnExtendsobject>(Java.Util.Function.BinaryOperator<T> arg0)
         {
-            return SExecute<Java.Util.Stream.Collector>("reducing", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>("reducing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Reducing(object arg0, Java.Util.Function.BinaryOperator arg1)
+        public static Java.Util.Stream.Collector<T, ReturnExtendsobject, T> Reducing<T, ReturnExtendsobject>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector>("reducing", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, T>>("reducing", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()"/>
         /// </summary>
         
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Joining()
+        public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>()
         {
-            return SExecute<Java.Util.Stream.Collector>("joining");
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>("joining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -436,18 +436,18 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Joining(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
+        public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
-            return SExecute<Java.Util.Stream.Collector>("joining", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>("joining", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector Joining(Java.Lang.CharSequence arg0)
+        public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Util.Stream.Collector>("joining", arg0);
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>("joining", arg0);
         }
         
         #endregion

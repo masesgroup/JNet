@@ -48,16 +48,16 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#children()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Children
+        public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children
         {
-            get { return IExecute<Java.Util.Stream.Stream>("children"); }
+            get { return IExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("children"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#descendants()"/> 
         /// </summary>
-        public Java.Util.Stream.Stream Descendants
+        public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants
         {
-            get { return IExecute<Java.Util.Stream.Stream>("descendants"); }
+            get { return IExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("descendants"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroyForcibly()"/> 
@@ -104,9 +104,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#onExit()"/> 
         /// </summary>
-        public Java.Util.Concurrent.CompletableFuture OnExit
+        public Java.Util.Concurrent.CompletableFuture<Java.Lang.Process> OnExit
         {
-            get { return IExecute<Java.Util.Concurrent.CompletableFuture>("onExit"); }
+            get { return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Process>>("onExit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getOutputStream()"/> 

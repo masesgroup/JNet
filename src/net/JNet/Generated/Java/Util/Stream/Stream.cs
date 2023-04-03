@@ -580,9 +580,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <returns><see cref="A"/></returns>
-        public A ToArray<A>(Java.Util.Function.IntFunction<A> arg0)
+        public A[] ToArray<A>(Java.Util.Function.IntFunction<A[]> arg0)
         {
-            return IExecute<A>("toArray", arg0);
+            return IExecuteArray<A>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)"/>

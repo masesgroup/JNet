@@ -108,16 +108,16 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getMBeansToUnregister()"/> 
         /// </summary>
-        public Java.Util.List MBeansToUnregister
+        public Java.Util.List<Javax.Management.ObjectName> MBeansToUnregister
         {
-            get { return IExecute<Java.Util.List>("getMBeansToUnregister"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getMBeansToUnregister"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getNewRoleValue()"/> 
         /// </summary>
-        public Java.Util.List NewRoleValue
+        public Java.Util.List<Javax.Management.ObjectName> NewRoleValue
         {
-            get { return IExecute<Java.Util.List>("getNewRoleValue"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getNewRoleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getObjectName()"/> 
@@ -129,9 +129,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getOldRoleValue()"/> 
         /// </summary>
-        public Java.Util.List OldRoleValue
+        public Java.Util.List<Javax.Management.ObjectName> OldRoleValue
         {
-            get { return IExecute<Java.Util.List>("getOldRoleValue"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getOldRoleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId()"/> 

@@ -49,20 +49,20 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object GetInterface(Java.Lang.Class arg0)
+        /// <returns><see cref="T"/></returns>
+        public T GetInterface<T>(Java.Lang.Class arg0)
         {
-            return IExecute("getInterface", arg0);
+            return IExecute<T>("getInterface", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Object,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object GetInterface(object arg0, Java.Lang.Class arg1)
+        /// <returns><see cref="T"/></returns>
+        public T GetInterface<T>(object arg0, Java.Lang.Class arg1)
         {
-            return IExecute("getInterface", arg0, arg1);
+            return IExecute<T>("getInterface", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object[])"/>

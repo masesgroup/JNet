@@ -73,16 +73,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setEnd(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable End
+        public Java.Lang.Comparable<Java.Util.Date> End
         {
-            get { return IExecute<Java.Lang.Comparable>("getEnd"); } set { IExecute("setEnd", value); }
+            get { return IExecute<Java.Lang.Comparable<Java.Util.Date>>("getEnd"); } set { IExecute("setEnd", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setStart(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable Start
+        public Java.Lang.Comparable<Java.Util.Date> Start
         {
-            get { return IExecute<Java.Lang.Comparable>("getStart"); } set { IExecute("setStart", value); }
+            get { return IExecute<Java.Lang.Comparable<Java.Util.Date>>("getStart"); } set { IExecute("setStart", value); }
         }
         
         #endregion

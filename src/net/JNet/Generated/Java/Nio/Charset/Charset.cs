@@ -48,9 +48,9 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#availableCharsets()"/> 
         /// </summary>
-        public static Java.Util.SortedMap AvailableCharsets
+        public static Java.Util.SortedMap<string, Java.Nio.Charset.Charset> AvailableCharsets
         {
-            get { return SExecute<Java.Util.SortedMap>("availableCharsets"); }
+            get { return SExecute<Java.Util.SortedMap<string, Java.Nio.Charset.Charset>>("availableCharsets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()"/> 
@@ -84,9 +84,9 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#aliases()"/> 
         /// </summary>
-        public Java.Util.Set Aliases
+        public Java.Util.Set<string> Aliases
         {
-            get { return IExecute<Java.Util.Set>("aliases"); }
+            get { return IExecute<Java.Util.Set<string>>("aliases"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#canEncode()"/> 

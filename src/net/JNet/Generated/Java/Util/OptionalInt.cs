@@ -95,7 +95,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public int OrElseThrow(Java.Util.Function.Supplier arg0)
+        public int OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
         {
             return IExecute<int>("orElseThrow", arg0);
         }

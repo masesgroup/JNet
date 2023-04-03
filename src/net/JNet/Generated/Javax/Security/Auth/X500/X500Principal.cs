@@ -118,7 +118,7 @@ namespace Javax.Security.Auth.X500
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="string"/></returns>
-        public string GetName(string arg0, Java.Util.Map arg1)
+        public string GetName(string arg0, Java.Util.Map<string, string> arg1)
         {
             return IExecute<string>("getName", arg0, arg1);
         }

@@ -59,9 +59,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLoggerNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration LoggerNames
+        public Java.Util.Enumeration<string> LoggerNames
         {
-            get { return IExecute<Java.Util.Enumeration>("getLoggerNames"); }
+            get { return IExecute<Java.Util.Enumeration<string>>("getLoggerNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)"/>
@@ -151,7 +151,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function arg1)
+        public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function<string, Java.Util.Function.BiFunction<string, string, string>> arg1)
         {
             IExecute("updateConfiguration", arg0, arg1);
         }
@@ -160,7 +160,7 @@ namespace Java.Util.Logging
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void UpdateConfiguration(Java.Util.Function.Function arg0)
+        public void UpdateConfiguration(Java.Util.Function.Function<string, Java.Util.Function.BiFunction<string, string, string>> arg0)
         {
             IExecute("updateConfiguration", arg0);
         }

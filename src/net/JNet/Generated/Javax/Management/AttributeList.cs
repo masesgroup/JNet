@@ -72,9 +72,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/> 
         /// </summary>
-        public Java.Util.List AsList
+        public Java.Util.List<Javax.Management.Attribute> AsList
         {
-            get { return IExecute<Java.Util.List>("asList"); }
+            get { return IExecute<Java.Util.List<Javax.Management.Attribute>>("asList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(int,javax.management.AttributeList)"/>

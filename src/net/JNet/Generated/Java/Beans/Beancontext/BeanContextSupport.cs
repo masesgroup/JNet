@@ -133,9 +133,9 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#iterator()"/> 
         /// </summary>
-        public Java.Util.Iterator Iterator
+        public Java.Util.Iterator<object> Iterator
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            get { return IExecute<Java.Util.Iterator<object>>("iterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setLocale(java.util.Locale)"/>

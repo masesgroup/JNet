@@ -56,11 +56,11 @@ namespace Javax.Lang.Model.Type
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#accept(javax.lang.model.type.TypeVisitor,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeVisitor"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Accept(Javax.Lang.Model.Type.TypeVisitor arg0, object arg1)
+        /// <param name="arg1"><see cref="P"/></param>
+        /// <returns><see cref="R"/></returns>
+        public R Accept<R, P>(Javax.Lang.Model.Type.TypeVisitor<R, P> arg0, P arg1)
         {
-            return IExecute("accept", arg0, arg1);
+            return IExecute<R>("accept", arg0, arg1);
         }
         
         #endregion

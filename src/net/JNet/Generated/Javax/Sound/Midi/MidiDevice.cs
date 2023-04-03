@@ -90,9 +90,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceivers()"/> 
         /// </summary>
-        public Java.Util.List Receivers
+        public Java.Util.List<Javax.Sound.Midi.Receiver> Receivers
         {
-            get { return IExecute<Java.Util.List>("getReceivers"); }
+            get { return IExecute<Java.Util.List<Javax.Sound.Midi.Receiver>>("getReceivers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitter()"/> 
@@ -104,9 +104,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
         /// </summary>
-        public Java.Util.List Transmitters
+        public Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters
         {
-            get { return IExecute<Java.Util.List>("getTransmitters"); }
+            get { return IExecute<Java.Util.List<Javax.Sound.Midi.Transmitter>>("getTransmitters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>

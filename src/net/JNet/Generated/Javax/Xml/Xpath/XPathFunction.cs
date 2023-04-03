@@ -51,7 +51,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
-        public object Evaluate(Java.Util.List arg0)
+        public object Evaluate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
         {
             return IExecute("evaluate", arg0);
         }

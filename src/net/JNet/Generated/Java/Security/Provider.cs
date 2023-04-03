@@ -69,9 +69,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getServices()"/> 
         /// </summary>
-        public Java.Util.Set Services
+        public Java.Util.Set<Java.Security.Provider.Service> Services
         {
-            get { return IExecute<Java.Util.Set>("getServices"); }
+            get { return IExecute<Java.Util.Set<Java.Security.Provider.Service>>("getServices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getVersionStr()"/> 

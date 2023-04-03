@@ -53,9 +53,9 @@ namespace Java.Rmi.Activation
         /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public Java.Rmi.MarshalledObject NewInstance(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1)
+        public Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> NewInstance<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote: Java.Rmi.Remote
         {
-            return IExecute<Java.Rmi.MarshalledObject>("newInstance", arg0, arg1);
+            return IExecute<Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote>>("newInstance", arg0, arg1);
         }
         
         #endregion

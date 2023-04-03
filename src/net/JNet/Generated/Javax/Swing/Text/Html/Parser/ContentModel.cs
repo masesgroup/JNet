@@ -117,7 +117,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#getElements(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public void GetElements(Java.Util.Vector arg0)
+        public void GetElements(Java.Util.Vector<Javax.Swing.Text.Html.Parser.Element> arg0)
         {
             IExecute("getElements", arg0);
         }

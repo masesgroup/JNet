@@ -93,9 +93,9 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.Severity"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
+        public Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason> PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
         {
-            return IExecute<Java.Util.Set>("printerStateReasonSet", arg0);
+            return IExecute<Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason>>("printerStateReasonSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#put(javax.print.attribute.standard.PrinterStateReason,javax.print.attribute.standard.Severity)"/>

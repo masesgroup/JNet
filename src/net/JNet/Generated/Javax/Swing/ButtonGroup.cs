@@ -59,9 +59,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getElements()"/> 
         /// </summary>
-        public Java.Util.Enumeration Elements
+        public Java.Util.Enumeration<Javax.Swing.AbstractButton> Elements
         {
-            get { return IExecute<Java.Util.Enumeration>("getElements"); }
+            get { return IExecute<Java.Util.Enumeration<Javax.Swing.AbstractButton>>("getElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getSelection()"/> 

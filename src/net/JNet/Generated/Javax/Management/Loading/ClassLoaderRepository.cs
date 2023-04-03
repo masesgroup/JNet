@@ -51,7 +51,7 @@ namespace Javax.Management.Loading
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0)
+        public Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0);
         }
@@ -62,7 +62,7 @@ namespace Javax.Management.Loading
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, string arg1)
+        public Java.Lang.Class LoadClassBefore<ReturnExtendsobject>(Java.Lang.ClassLoader arg0, string arg1)
         {
             return IExecute<Java.Lang.Class>("loadClassBefore", arg0, arg1);
         }
@@ -73,7 +73,7 @@ namespace Javax.Management.Loading
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, string arg1)
+        public Java.Lang.Class LoadClassWithout<ReturnExtendsobject>(Java.Lang.ClassLoader arg0, string arg1)
         {
             return IExecute<Java.Lang.Class>("loadClassWithout", arg0, arg1);
         }

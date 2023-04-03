@@ -46,10 +46,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object AsInterfaceInstance(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T AsInterfaceInstance<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
-            return SExecute("asInterfaceInstance", arg0, arg1);
+            return SExecute<T>("asInterfaceInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#isWrapperInstance(java.lang.Object)"/>
@@ -65,7 +65,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class WrapperInstanceType(object arg0)
+        public static Java.Lang.Class WrapperInstanceType<ReturnExtendsobject>(object arg0)
         {
             return SExecute<Java.Lang.Class>("wrapperInstanceType", arg0);
         }

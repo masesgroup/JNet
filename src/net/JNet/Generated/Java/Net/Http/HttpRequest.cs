@@ -87,9 +87,9 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#timeout()"/> 
         /// </summary>
-        public Java.Util.Optional Timeout
+        public Java.Util.Optional<Java.Time.Duration> Timeout
         {
-            get { return IExecute<Java.Util.Optional>("timeout"); }
+            get { return IExecute<Java.Util.Optional<Java.Time.Duration>>("timeout"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#uri()"/> 
@@ -101,18 +101,18 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#version()"/> 
         /// </summary>
-        public Java.Util.Optional Version
+        public Java.Util.Optional<Java.Net.Http.HttpClient.Version> Version
         {
-            get { return IExecute<Java.Util.Optional>("version"); }
+            get { return IExecute<Java.Util.Optional<Java.Net.Http.HttpClient.Version>>("version"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#bodyPublisher()"/>
         /// </summary>
         
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional BodyPublisherMethod()
+        public Java.Util.Optional<Java.Net.Http.HttpRequest.BodyPublisher> BodyPublisherMethod()
         {
-            return IExecute<Java.Util.Optional>("bodyPublisher");
+            return IExecute<Java.Util.Optional<Java.Net.Http.HttpRequest.BodyPublisher>>("bodyPublisher");
         }
         
         #endregion
@@ -181,7 +181,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
             /// <param name="arg1"><see cref="long"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher(Java.Util.Concurrent.Flow.Publisher arg0, long arg1)
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0, arg1);
             }
@@ -190,7 +190,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher(Java.Util.Concurrent.Flow.Publisher arg0)
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0);
             }
@@ -219,7 +219,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArrays(Java.Lang.Iterable arg0)
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArrays(Java.Lang.Iterable<byte[]> arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArrays", arg0);
             }
@@ -238,7 +238,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream(Java.Util.Function.Supplier arg0)
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream<Arg0ExtendsJava_Io_InputStream>(Java.Util.Function.Supplier<Arg0ExtendsJava_Io_InputStream> arg0) where Arg0ExtendsJava_Io_InputStream: Java.Io.InputStream
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofInputStream", arg0);
             }

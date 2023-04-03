@@ -59,9 +59,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map Attributes
+        public Java.Util.Map<string, string> Attributes
         {
-            get { return IExecute<Java.Util.Map>("getAttributes"); }
+            get { return IExecute<Java.Util.Map<string, string>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode()"/> 
@@ -101,16 +101,16 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterTypes()"/> 
         /// </summary>
-        public Java.Util.List ParameterTypes
+        public Java.Util.List<string> ParameterTypes
         {
-            get { return IExecute<Java.Util.List>("getParameterTypes"); }
+            get { return IExecute<Java.Util.List<string>>("getParameterTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterValues()"/> 
         /// </summary>
-        public Java.Util.List ParameterValues
+        public Java.Util.List<string> ParameterValues
         {
-            get { return IExecute<Java.Util.List>("getParameterValues"); }
+            get { return IExecute<Java.Util.List<string>>("getParameterValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject()"/> 

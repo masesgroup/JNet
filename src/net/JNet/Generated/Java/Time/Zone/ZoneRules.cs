@@ -54,7 +54,7 @@ namespace Java.Time.Zone
         /// <param name="arg3"><see cref="Java.Util.List"/></param>
         /// <param name="arg4"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
-        public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List arg2, Java.Util.List arg3, Java.Util.List arg4)
+        public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg2, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg3, Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> arg4)
         {
             return SExecute<Java.Time.Zone.ZoneRules>("of", arg0, arg1, arg2, arg3, arg4);
         }
@@ -81,16 +81,16 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitionRules()"/> 
         /// </summary>
-        public Java.Util.List TransitionRules
+        public Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> TransitionRules
         {
-            get { return IExecute<Java.Util.List>("getTransitionRules"); }
+            get { return IExecute<Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule>>("getTransitionRules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitions()"/> 
         /// </summary>
-        public Java.Util.List Transitions
+        public Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> Transitions
         {
-            get { return IExecute<Java.Util.List>("getTransitions"); }
+            get { return IExecute<Java.Util.List<Java.Time.Zone.ZoneOffsetTransition>>("getTransitions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
@@ -179,9 +179,9 @@ namespace Java.Time.Zone
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List GetValidOffsets(Java.Time.LocalDateTime arg0)
+        public Java.Util.List<Java.Time.ZoneOffset> GetValidOffsets(Java.Time.LocalDateTime arg0)
         {
-            return IExecute<Java.Util.List>("getValidOffsets", arg0);
+            return IExecute<Java.Util.List<Java.Time.ZoneOffset>>("getValidOffsets", arg0);
         }
         
         #endregion

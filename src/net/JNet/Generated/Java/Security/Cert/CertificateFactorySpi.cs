@@ -48,9 +48,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/> 
         /// </summary>
-        public Java.Util.Iterator EngineGetCertPathEncodings
+        public Java.Util.Iterator<string> EngineGetCertPathEncodings
         {
-            get { return IExecute<Java.Util.Iterator>("engineGetCertPathEncodings"); }
+            get { return IExecute<Java.Util.Iterator<string>>("engineGetCertPathEncodings"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCertificate(java.io.InputStream)"/>
@@ -78,9 +78,9 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public Java.Util.Collection EngineGenerateCertificates(Java.Io.InputStream arg0)
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGenerateCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
-            return IExecute<Java.Util.Collection>("engineGenerateCertificates", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("engineGenerateCertificates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCRLs(java.io.InputStream)"/>
@@ -88,9 +88,9 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CRLException"/>
-        public Java.Util.Collection EngineGenerateCRLs(Java.Io.InputStream arg0)
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGenerateCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
         {
-            return IExecute<Java.Util.Collection>("engineGenerateCRLs", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("engineGenerateCRLs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCertPath(java.io.InputStream,java.lang.String)"/>
@@ -119,7 +119,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public Java.Security.Cert.CertPath EngineGenerateCertPath(Java.Util.List arg0)
+        public Java.Security.Cert.CertPath EngineGenerateCertPath<Arg0ExtendsJava_Security_Cert_Certificate>(Java.Util.List<Arg0ExtendsJava_Security_Cert_Certificate> arg0) where Arg0ExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
             return IExecute<Java.Security.Cert.CertPath>("engineGenerateCertPath", arg0);
         }

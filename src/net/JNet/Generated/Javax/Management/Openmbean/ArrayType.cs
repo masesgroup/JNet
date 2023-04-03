@@ -162,9 +162,9 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public static Javax.Management.Openmbean.ArrayType<E> GetArrayType<E>(Javax.Management.Openmbean.OpenType<E> arg0)
+        public static Javax.Management.Openmbean.ArrayType<E[]> GetArrayType<E>(Javax.Management.Openmbean.OpenType<E> arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType<E>>("getArrayType", arg0);
+            return SExecute<Javax.Management.Openmbean.ArrayType<E[]>>("getArrayType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class)"/>

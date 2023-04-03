@@ -55,7 +55,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3, Javax.Naming.Directory.Attributes arg4)
+        public Javax.Naming.Spi.DirStateFactory.Result GetStateToBind<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return IExecute<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", arg0, arg1, arg2, arg3, arg4);
         }

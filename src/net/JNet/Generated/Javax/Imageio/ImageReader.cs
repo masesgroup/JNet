@@ -176,9 +176,9 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Iterator GetImageTypes(int arg0)
+        public Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier> GetImageTypes(int arg0)
         {
-            return IExecute<Java.Util.Iterator>("getImageTypes", arg0);
+            return IExecute<Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier>>("getImageTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int)"/>
@@ -375,9 +375,9 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Iterator ReadAll(Java.Util.Iterator arg0)
+        public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam: Javax.Imageio.ImageReadParam
         {
-            return IExecute<Java.Util.Iterator>("readAll", arg0);
+            return IExecute<Java.Util.Iterator<Javax.Imageio.IIOImage>>("readAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(int,javax.imageio.ImageReadParam)"/>
@@ -408,7 +408,7 @@ namespace Javax.Imageio
         /// <param name="arg2"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0, string arg1, Java.Util.Set arg2)
+        public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0, string arg1, Java.Util.Set<string> arg2)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", arg0, arg1, arg2);
         }
@@ -419,7 +419,7 @@ namespace Javax.Imageio
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Imageio.Metadata.IIOMetadata GetStreamMetadata(string arg0, Java.Util.Set arg1)
+        public Javax.Imageio.Metadata.IIOMetadata GetStreamMetadata(string arg0, Java.Util.Set<string> arg1)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata", arg0, arg1);
         }

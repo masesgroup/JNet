@@ -60,9 +60,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#getIndexNames()"/> 
         /// </summary>
-        public Java.Util.List IndexNames
+        public Java.Util.List<string> IndexNames
         {
-            get { return IExecute<Java.Util.List>("getIndexNames"); }
+            get { return IExecute<Java.Util.List<string>>("getIndexNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#getRowType()"/> 

@@ -65,7 +65,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
-        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0, int arg1)
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0, int arg1)
         {
             return SExecute<Java.Lang.StackWalker>("getInstance", arg0, arg1);
         }
@@ -74,7 +74,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
-        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0)
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0)
         {
             return SExecute<Java.Lang.StackWalker>("getInstance", arg0);
         }
@@ -93,16 +93,16 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#walk(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Walk(Java.Util.Function.Function arg0)
+        /// <returns><see cref="T"/></returns>
+        public T Walk<T, Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT> arg0) where Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_: Java.Util.Stream.Stream<Java.Lang.StackWalker.StackFrame> where Arg0ExtendsT: T
         {
-            return IExecute("walk", arg0);
+            return IExecute<T>("walk", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#forEach(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        public void ForEach(Java.Util.Function.Consumer arg0)
+        public void ForEach<Arg0objectSuperJava_Lang_StackWalker_StackFrame>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_StackWalker_StackFrame> arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame: Java.Lang.StackWalker.StackFrame
         {
             IExecute("forEach", arg0);
         }

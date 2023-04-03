@@ -59,9 +59,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Manifest.html#getReferences()"/> 
         /// </summary>
-        public Java.Util.List References
+        public Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References
         {
-            get { return IExecute<Java.Util.List>("getReferences"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Reference>>("getReferences"); }
         }
         
         #endregion

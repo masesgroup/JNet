@@ -48,9 +48,9 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/FilesEvent.html#getFiles()"/> 
         /// </summary>
-        public Java.Util.List Files
+        public Java.Util.List<Java.Io.File> Files
         {
-            get { return IExecute<Java.Util.List>("getFiles"); }
+            get { return IExecute<Java.Util.List<Java.Io.File>>("getFiles"); }
         }
         
         #endregion

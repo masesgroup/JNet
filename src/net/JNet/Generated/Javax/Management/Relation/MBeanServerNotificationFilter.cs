@@ -48,16 +48,16 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getDisabledObjectNames()"/> 
         /// </summary>
-        public Java.Util.Vector DisabledObjectNames
+        public Java.Util.Vector<Javax.Management.ObjectName> DisabledObjectNames
         {
-            get { return IExecute<Java.Util.Vector>("getDisabledObjectNames"); }
+            get { return IExecute<Java.Util.Vector<Javax.Management.ObjectName>>("getDisabledObjectNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getEnabledObjectNames()"/> 
         /// </summary>
-        public Java.Util.Vector EnabledObjectNames
+        public Java.Util.Vector<Javax.Management.ObjectName> EnabledObjectNames
         {
-            get { return IExecute<Java.Util.Vector>("getEnabledObjectNames"); }
+            get { return IExecute<Java.Util.Vector<Javax.Management.ObjectName>>("getEnabledObjectNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableAllObjectNames()"/>

@@ -46,9 +46,9 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public static Java.Util.Optional FindFirst(string arg0)
+        public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(string arg0)
         {
-            return SExecute<Java.Util.Optional>("findFirst", arg0);
+            return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>("findFirst", arg0);
         }
         
         #endregion

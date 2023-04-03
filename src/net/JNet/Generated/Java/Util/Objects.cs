@@ -44,62 +44,62 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#compare(java.lang.Object,java.lang.Object,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg1"><see cref="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int Compare(object arg0, object arg1, Java.Util.Comparator arg2)
+        public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
             return SExecute<int>("compare", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="T"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object RequireNonNull(object arg0, string arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T RequireNonNull<T>(T arg0, string arg1)
         {
-            return SExecute("requireNonNull", arg0, arg1);
+            return SExecute<T>("requireNonNull", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object RequireNonNull(object arg0, Java.Util.Function.Supplier arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<string> arg1)
         {
-            return SExecute("requireNonNull", arg0, arg1);
+            return SExecute<T>("requireNonNull", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object RequireNonNull(object arg0)
+        /// <param name="arg0"><see cref="T"/></param>
+        /// <returns><see cref="T"/></returns>
+        public static T RequireNonNull<T>(T arg0)
         {
-            return SExecute("requireNonNull", arg0);
+            return SExecute<T>("requireNonNull", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElse(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object RequireNonNullElse(object arg0, object arg1)
+        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg1"><see cref="T"/></param>
+        /// <returns><see cref="T"/></returns>
+        public static T RequireNonNullElse<T>(T arg0, T arg1)
         {
-            return SExecute("requireNonNullElse", arg0, arg1);
+            return SExecute<T>("requireNonNullElse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object RequireNonNullElseGet(object arg0, Java.Util.Function.Supplier arg1)
+        /// <returns><see cref="T"/></returns>
+        public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
-            return SExecute("requireNonNullElseGet", arg0, arg1);
+            return SExecute<T>("requireNonNullElseGet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>

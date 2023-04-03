@@ -66,16 +66,16 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#flags()"/> 
         /// </summary>
-        public Java.Util.Set Flags
+        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag> Flags
         {
-            get { return IExecute<Java.Util.Set>("flags"); }
+            get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag>>("flags"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#permissions()"/> 
         /// </summary>
-        public Java.Util.Set Permissions
+        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission> Permissions
         {
-            get { return IExecute<Java.Util.Set>("permissions"); }
+            get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission>>("permissions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/> 
@@ -136,7 +136,7 @@ namespace Java.Nio.File.Attribute
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Set"/></param>
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
-            public Java.Nio.File.Attribute.AclEntry.Builder SetFlags(Java.Util.Set arg0)
+            public Java.Nio.File.Attribute.AclEntry.Builder SetFlags(Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag> arg0)
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", arg0);
             }
@@ -154,7 +154,7 @@ namespace Java.Nio.File.Attribute
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Set"/></param>
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
-            public Java.Nio.File.Attribute.AclEntry.Builder SetPermissions(Java.Util.Set arg0)
+            public Java.Nio.File.Attribute.AclEntry.Builder SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission> arg0)
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", arg0);
             }

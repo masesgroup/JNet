@@ -54,7 +54,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0, arg1, arg2);
         }
@@ -67,7 +67,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadProxyClass(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
+        public Java.Lang.Class LoadProxyClass<ReturnExtendsobject>(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
         {
             return IExecute<Java.Lang.Class>("loadProxyClass", arg0, arg1, arg2);
         }

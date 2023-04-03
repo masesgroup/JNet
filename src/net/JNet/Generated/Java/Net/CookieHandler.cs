@@ -59,9 +59,9 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Map Get(Java.Net.URI arg0, Java.Util.Map arg1)
+        public Java.Util.Map<string, Java.Util.List<string>> Get(Java.Net.URI arg0, Java.Util.Map<string, Java.Util.List<string>> arg1)
         {
-            return IExecute<Java.Util.Map>("get", arg0, arg1);
+            return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#put(java.net.URI,java.util.Map)"/>
@@ -69,7 +69,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void Put(Java.Net.URI arg0, Java.Util.Map arg1)
+        public void Put(Java.Net.URI arg0, Java.Util.Map<string, Java.Util.List<string>> arg1)
         {
             IExecute("put", arg0, arg1);
         }

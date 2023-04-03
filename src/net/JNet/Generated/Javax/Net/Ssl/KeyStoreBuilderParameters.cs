@@ -68,9 +68,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#getParameters()"/> 
         /// </summary>
-        public Java.Util.List Parameters
+        public Java.Util.List<Java.Security.KeyStore.Builder> Parameters
         {
-            get { return IExecute<Java.Util.List>("getParameters"); }
+            get { return IExecute<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters"); }
         }
         
         #endregion

@@ -258,10 +258,10 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        /// <returns><see cref="R"/></returns>
+        public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecute("query", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>
@@ -554,18 +554,18 @@ namespace Java.Time
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
         /// <param name="arg1"><see cref="Java.Time.Period"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream DatesUntil(Java.Time.LocalDate arg0, Java.Time.Period arg1)
+        public Java.Util.Stream.Stream<Java.Time.LocalDate> DatesUntil(Java.Time.LocalDate arg0, Java.Time.Period arg1)
         {
-            return IExecute<Java.Util.Stream.Stream>("datesUntil", arg0, arg1);
+            return IExecute<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#datesUntil(java.time.LocalDate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream DatesUntil(Java.Time.LocalDate arg0)
+        public Java.Util.Stream.Stream<Java.Time.LocalDate> DatesUntil(Java.Time.LocalDate arg0)
         {
-            return IExecute<Java.Util.Stream.Stream>("datesUntil", arg0);
+            return IExecute<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getLong(java.time.temporal.TemporalField)"/>

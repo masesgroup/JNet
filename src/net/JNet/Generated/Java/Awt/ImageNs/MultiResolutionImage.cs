@@ -48,9 +48,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariants()"/> 
         /// </summary>
-        public Java.Util.List ResolutionVariants
+        public Java.Util.List<Java.Awt.Image> ResolutionVariants
         {
-            get { return IExecute<Java.Util.List>("getResolutionVariants"); }
+            get { return IExecute<Java.Util.List<Java.Awt.Image>>("getResolutionVariants"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>

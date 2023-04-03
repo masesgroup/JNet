@@ -850,9 +850,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
+        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -860,18 +860,18 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture RunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
+        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> RunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>("runAsync", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("runAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture RunAsync(Java.Lang.Runnable arg0)
+        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> RunAsync(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>("runAsync", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("runAsync", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>

@@ -56,9 +56,9 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#timeLineOrder()"/> 
         /// </summary>
-        public static Java.Util.Comparator TimeLineOrder
+        public static Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate> TimeLineOrder
         {
-            get { return SExecute<Java.Util.Comparator>("timeLineOrder"); }
+            get { return SExecute<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>("timeLineOrder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -138,10 +138,10 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <returns><see cref="object"/></returns>
-        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        /// <returns><see cref="R"/></returns>
+        public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecute("query", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>

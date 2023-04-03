@@ -52,7 +52,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public void ActiveObject(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject arg1)
+        public void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote: Java.Rmi.Remote
         {
             IExecute("activeObject", arg0, arg1);
         }
