@@ -1,5 +1,7 @@
 # JNet: Reflector
 
+The tool is able to build .NET classes which mimcs the JVM class (Java, Scala, Kotlin, ...) counterpart.
+
 ## Installation
 
 To install the tool follows the instructions on https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools.
@@ -13,7 +15,7 @@ To use JNetReflector runs a command like the following:
 
 > jnr -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
 
-## Command switch available
+## Command switches available
 
 _jnr_ accepts the following command-line switch:
 
@@ -30,6 +32,7 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
+* **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition

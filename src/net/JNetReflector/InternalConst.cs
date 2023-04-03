@@ -41,6 +41,7 @@ namespace MASES.JNetReflector
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
+        public const string OnlyPropertiesForGetterSetter = "OnlyPropertiesForGetterSetter";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
@@ -150,6 +151,15 @@ namespace MASES.JNetReflector
             {
                 lst.Add(i.ToString());
             }
+            return lst;
+        }
+
+        public static IEnumerable<string> ReservedPropertyNames = CreateReservedPropertyNames();
+
+        static IEnumerable<string> CreateReservedPropertyNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("clone");
             return lst;
         }
 

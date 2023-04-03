@@ -924,7 +924,7 @@ namespace MASES.JNetReflector
                     var propertyName = method.PropertyName(classDefinitions, false, JNetReflectorCore.UseCamel);
                     if (propertyName.IsReservedName()
                         || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
-                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions, JNetReflectorCore.UseCamel))
+                        || propertyName.CollapseWithOtherMethods(method, prefilteredMethods, classDefinitions, JNetReflectorCore.UseCamel))
                     {
                         methods.Add(genString, method);
                     }

@@ -122,6 +122,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.OnlyPropertiesForGetterSetter,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to convert into properties only getter/setter",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.ReflectDeprecated,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated",
@@ -228,6 +234,9 @@ namespace MASES.JNetReflector
 
         static IEnumerable<string> _ClassesToAvoidInGenerics;
         public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics;
+
+        static bool _OnlyPropertiesForGetterSetter;
+        public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter;
 
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
@@ -380,6 +389,7 @@ namespace MASES.JNetReflector
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
+            _OnlyPropertiesForGetterSetter = ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
             _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);

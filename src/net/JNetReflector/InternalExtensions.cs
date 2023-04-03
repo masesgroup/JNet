@@ -75,10 +75,12 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithOtherMethods(this string entry, ICollection<Method> methodToBeReflected, ICollection<Class> classDefinitions, bool camel)
+        public static bool CollapseWithOtherMethods(this string entry, Method methodToCheck, ICollection<Method> methodToBeReflected, ICollection<Class> classDefinitions, bool camel)
         {
             foreach (var method in methodToBeReflected)
             {
+                if (methodToCheck.GenericString == method.GenericString) continue; // bypass this method
+
                 var testName = method.MethodName(classDefinitions, false, camel);
                 testName = testName.Contains('<') ? testName.Substring(0, testName.IndexOf('<')) : testName;
                 if (entry == testName)
@@ -1416,7 +1418,11 @@ namespace MASES.JNetReflector
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var name = entry.Name;
-            if (name.StartsWith("get") && name.Length > 3 && entry.ParameterCount == 0) return true;
+            if (name.StartsWith("get") && name.Length > 3 && entry.ParameterCount == 0 && !entry.ReturnType.IsVoid()) return true;
+            else if (!JNetReflectorCore.OnlyPropertiesForGetterSetter)
+            {
+                if (entry.ParameterCount == 0 && !entry.ReturnType.IsVoid()) return true;
+            }
             return false;
         }
 
@@ -1425,13 +1431,22 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var name = entry.Name;
             if (name.StartsWith("set") && name.Length > 3 && entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) return true;
+            else if (!JNetReflectorCore.OnlyPropertiesForGetterSetter)
+            {
+                if (entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) return true;
+            }
             return false;
         }
 
         public static bool IsProperty(this Method entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            if (entry.IsGetProperty() || entry.IsSetProperty()) return true;
+            if (entry.IsGetProperty() || entry.IsSetProperty())
+            {
+                var name = entry.Name;
+                if (SpecialNames.ReservedPropertyNames.Any((n) => name.Equals(n))) return false;
+                return true;
+            }
             return false;
         }
 
@@ -1474,8 +1489,14 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name(classDefinitions, null, null, string.Empty, usedInGenerics, camel);
             string methodName2 = string.Empty;
-            if (methodName.StartsWith("Get") && methodName.Length > 3 && entry.ParameterCount == 0) methodName2 = methodName.Substring(3).Camel();
-            if (methodName.StartsWith("Set") && methodName.Length > 3 && entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) methodName2 = methodName.Substring(3);
+            if (methodName.StartsWith("Get") && methodName.Length > 3 && entry.ParameterCount == 0 && !entry.ReturnType.IsVoid()) methodName2 = methodName.Substring(3).Camel();
+            else if (methodName.StartsWith("Set") && methodName.Length > 3 && entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) methodName2 = methodName.Substring(3);
+            else if (!JNetReflectorCore.OnlyPropertiesForGetterSetter)
+            {
+                if (entry.ParameterCount == 0 && !entry.ReturnType.IsVoid()) methodName2 = methodName.Camel();
+                if (entry.ParameterCount == 1 && entry.ReturnType.IsVoid()) methodName2 = methodName.Camel();
+            }
+
             if (camel) methodName2 = methodName2.Camel();
             if (methodName2.IsReservedName() || methodName2.CollapseWithClassOrNestedClass(classDefinitions))
             {
