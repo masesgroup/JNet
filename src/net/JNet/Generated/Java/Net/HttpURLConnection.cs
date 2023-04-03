@@ -258,10 +258,10 @@ namespace Java.Net
             IExecute("setChunkedStreamingMode", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(long)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        public void SetFixedLengthStreamingMode(long arg0)
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFixedLengthStreamingMode(int arg0)
         {
             IExecute("setFixedLengthStreamingMode", arg0);
         }

@@ -43,7 +43,7 @@ namespace Java.Awt.EventNs
     public partial class InputMethodListener : IInputMethodListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "org.mases.jnet.awt.event.JNetInputMethodListener";
 

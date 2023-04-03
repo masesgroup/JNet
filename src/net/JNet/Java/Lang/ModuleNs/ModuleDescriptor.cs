@@ -27,7 +27,7 @@ namespace Java.Lang.ModuleNs
     public sealed class ModuleDescriptor : JVMBridgeBase<ModuleDescriptor>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.module.ModuleDescriptor";
 #else
@@ -43,7 +43,7 @@ namespace Java.Lang.ModuleNs
             public partial class Modifier : Enum<Modifier>
             {
                 /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
                 /// </summary>
                 public override string ClassName => "java.lang.module.ModuleDescriptor$Exports$Modifier";
             }
@@ -57,7 +57,7 @@ namespace Java.Lang.ModuleNs
             public partial class Modifier : Enum<Modifier>
             {
                 /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
                 /// </summary>
                 public override string ClassName => "java.lang.module.ModuleDescriptor$Opens$Modifier";
             }
@@ -71,7 +71,7 @@ namespace Java.Lang.ModuleNs
             public partial class Modifier : Enum<Modifier>
             {
                 /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
                 /// </summary>
                 public override string ClassName => "java.lang.module.ModuleDescriptor$Requires$Modifier";
             }

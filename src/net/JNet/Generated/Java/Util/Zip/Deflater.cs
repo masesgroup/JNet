@@ -238,10 +238,10 @@ namespace Java.Util.Zip
             IExecute("setDictionary", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        public void SetDictionary(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref="byte"/></param>
+        public void SetDictionary(byte[] arg0)
         {
             IExecute("setDictionary", arg0);
         }
