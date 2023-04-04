@@ -8,7 +8,6 @@ This release comes with some ready made classes:
   * If something is not available use [API extensibility](API_extensibility.md) to cover missing classes.
 * JNetCLI: added REPL shell, run Main-Class and execute C# scripts
 * JNetReflector: reflects classes skeleton, constructor, methods, fields, conversion operators and adds documentation; known limitation are:
-  * ~~reflects base classes of generics, however does not build corresponding C# generics~~
   * can identify Listener, Adapter, and so on, however is not able to build the corresponding C# class
 * JNetPSCore: base implementation for JNetPS
 * JNetPS: some PowerShell cmdlets
