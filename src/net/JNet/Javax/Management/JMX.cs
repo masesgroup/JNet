@@ -35,11 +35,19 @@ namespace Javax.Management
         /// <summary>
         /// Make a proxy for a Standard MBean in a local or remote MBean Server.
         /// </summary>
+        public static object NewMBeanProxy(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class interfaceClass) => SExecute("newMBeanProxy", connection, objectName, interfaceClass);
+        /// <summary>
+        /// Make a proxy for a Standard MBean in a local or remote MBean Server.
+        /// </summary>
         public static T NewMBeanProxy<T>(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class<T> interfaceClass) where T : IJVMBridgeBase, new() => SExecute<T>("newMBeanProxy", connection, objectName, interfaceClass);
         /// <summary>
         /// Make a proxy for a Standard MBean in a local or remote MBean Server.
         /// </summary>
         public static T NewMBeanProxy<T>(MBeanServerConnection connection, ObjectName objectName) where T : IJVMBridgeBase, new() => NewMBeanProxy(connection, objectName, Java.Lang.Class.Of<T>());
+        /// <summary>
+        /// Make a proxy for a Standard MBean in a local or remote MBean Server that may also support the methods of <see cref="NotificationEmitter"/>.
+        /// </summary>
+        public static object NewMBeanProxy(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class interfaceClass, bool notificationEmitter) => SExecute("newMBeanProxy", connection, objectName, interfaceClass, notificationEmitter);
         /// <summary>
         /// Make a proxy for a Standard MBean in a local or remote MBean Server that may also support the methods of <see cref="NotificationEmitter"/>.
         /// </summary>
@@ -51,11 +59,19 @@ namespace Javax.Management
         /// <summary>
         /// Make a proxy for an MXBean in a local or remote MBean Server.
         /// </summary>
+        public static object NewMXBeanProxy(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class interfaceClass) => SExecute("newMXBeanProxy", connection, objectName, interfaceClass);
+        /// <summary>
+        /// Make a proxy for an MXBean in a local or remote MBean Server.
+        /// </summary>
         public static T NewMXBeanProxy<T>(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class<T> interfaceClass) where T : IJVMBridgeBase, new() => SExecute<T>("newMXBeanProxy", connection, objectName, interfaceClass);
         /// <summary>
         /// Make a proxy for an MXBean in a local or remote MBean Server.
         /// </summary>
         public static T NewMXBeanProxy<T>(MBeanServerConnection connection, ObjectName objectName) where T : IJVMBridgeBase, new() => NewMXBeanProxy(connection, objectName, Java.Lang.Class.Of<T>());
+        /// <summary>
+        /// Make a proxy for an MXBean in a local or remote MBean Server that may also support the methods of NotificationEmitter.
+        /// </summary>
+        public static object NewMXBeanProxy(MBeanServerConnection connection, ObjectName objectName, Java.Lang.Class interfaceClass, bool notificationEmitter) => SExecute("newMXBeanProxy", connection, objectName, interfaceClass, notificationEmitter);
         /// <summary>
         /// Make a proxy for an MXBean in a local or remote MBean Server that may also support the methods of NotificationEmitter.
         /// </summary>

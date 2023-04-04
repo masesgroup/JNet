@@ -39,19 +39,16 @@ namespace MASES.JNetTest
             var res = cls.Equals(cls2);
             System.Console.WriteLine($"Class are equals: {res}");
 
-            if (args.Length != 0)
+            try
             {
-                try
-                {
-                    var set = Collections.Singleton(appArgs[0]);
-                    set.Add("test");
-                }
-                catch (UnsupportedOperationException)
-                {
-                    System.Console.WriteLine("Operation not supported as expected");
-                }
-                catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+                var set = Collections.Singleton("test");
+                if (appArgs.Length != 0) set.Add(appArgs[0]);
             }
+            catch (UnsupportedOperationException)
+            {
+                System.Console.WriteLine("Add Operation not supported as expected");
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
             TestExtensions();
         }
@@ -67,7 +64,7 @@ namespace MASES.JNetTest
 
             const int execution = 10000;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());
