@@ -16,7 +16,7 @@ using Java.Lang;
 
 namespace MASES.JNetExample
 {
-	// this class defines a concrete implementation of JNetCore<>
+    // this class defines a concrete implementation of JNetCore<>
     class MyJNetCore : JNetCore<MyJNetCore>
     { 
     }
@@ -25,27 +25,33 @@ namespace MASES.JNetExample
     {
         static void Main(string[] args)
         {
-			// the first step is to invoke the method CreateGlobalInstance: it allocates the JVM and prepares the environment
+            // the first step is mandatory: 
+            // it invokes the method CreateGlobalInstance to allocate the JVM and prepares the environment
             MyJNetCore.CreateGlobalInstance();
-			// at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) are available to be used like any developer does with the args in the Main 
+            // at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) 
+            // are available to be used like any developer does with the args in the Main 
             var appArgs = MyJNetCore.FilteredArgs;
 
-			// now we go into .NET/JVM interaction based on generics
-			try
-			{
-				// in the first step the code allocates a java.util.Set<String> in the JVM using the java.util.Collections class and returns a Java.Util.Set<string> in .NET
-				var set = Collections.Singleton("test");
-				// then the code tries to add a new value if it is available in command-line, but we expect it raise an exception
-				if (appArgs.Length != 0) set.Add(appArgs[0]);
-			}
-			// if something is available in appArgs the Add operation on java.util.Set<String> cannot be performed because Collections.Singleton returns an immutable (see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
-			catch (UnsupportedOperationException) 
-			{
-				// so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
-				System.Console.WriteLine("Operation not supported as expected");
-			}
-			// this piece of code is for any convenience because we want a clean close of the application
-			catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+            // now we go into .NET/JVM interaction based on generics
+            try
+            {
+                // in the first step the code allocates a java.util.Set<String> within the JVM using the java.util.Collections class
+                // and returns a Java.Util.Set<string> in .NET
+                var set = Collections.Singleton("test");
+                // then the code tries to Add a new value if it is available in command-line, 
+                // but we expect the JVM raises an exception
+                if (appArgs.Length != 0) set.Add(appArgs[0]);
+            }
+            // if the Add is invoked the operation on java.util.Set<String> cannot be performed 
+            // because Collections.Singleton returns an immutable java.util.Set<String>
+            // see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
+            catch (UnsupportedOperationException) 
+            {
+                // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
+                System.Console.WriteLine("Operation not supported as expected");
+            }
+            // this piece of code is for any convenience because we want a clean close of the application
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
         }
     }
 }
