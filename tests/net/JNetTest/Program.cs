@@ -20,6 +20,7 @@ using Java.Util;
 using MASES.JNetTest.Common;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
+using Java.Lang;
 
 namespace MASES.JNetTest
 {
@@ -44,6 +45,10 @@ namespace MASES.JNetTest
                 {
                     var set = Collections.Singleton(appArgs[0]);
                     set.Add("test");
+                }
+                catch (UnsupportedOperationException)
+                {
+                    System.Console.WriteLine("Operation not supported as expected");
                 }
                 catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
             }
@@ -80,7 +85,7 @@ namespace MASES.JNetTest
 
             //var collection = newDict.Values.ToJCollection();
             //var intermediate = collection.ToList<Map.Entry<string, string>>();
-            var list = ((Collection<string>)alist).ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
+            var list = alist.ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
         }
     }
 }
