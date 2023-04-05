@@ -30,14 +30,5 @@ namespace Javax.Management
         /// </summary>
         public static explicit operator Java.Lang.Comparable<ObjectName>(ObjectName o) => o.Cast<Java.Lang.Comparable<ObjectName>>();
 
-        /// <summary>
-        /// Return an instance of ObjectName that can be used anywhere an object obtained with new ObjectName(domain, table) can be used.
-        /// </summary>
-        public static ObjectName GetInstance(string domain, Hashtable<string, string> table) => SExecute<ObjectName>("getInstance", domain, table);
-
-        /// <summary>
-        /// Returns the key properties as a Hashtable.
-        /// </summary>
-        public Hashtable<string, string> KeyPropertyList2 => KeyPropertyList.Cast<Hashtable<string, string>>();
     }
 }

@@ -43,9 +43,9 @@ namespace Java.Util.Function
     public abstract class ToLongBiFunction : JVMBridgeListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.util.function.JNetToLongBiFunction";
+        public override string ClassName => "org.mases.jnet.util.function.JNetToLongBiFunction";
     }
 
     /// <summary>

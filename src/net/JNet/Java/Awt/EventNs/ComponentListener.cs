@@ -51,9 +51,9 @@ namespace Java.Awt.EventNs
     public partial class ComponentListener : IComponentListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.awt.event.JNetComponentListener";
+        public override string ClassName => "org.mases.jnet.awt.event.JNetComponentListener";
 
         readonly Action<ComponentEvent> componentResizedFunction = null;
         readonly Action<ComponentEvent> componentMovedFunction = null;

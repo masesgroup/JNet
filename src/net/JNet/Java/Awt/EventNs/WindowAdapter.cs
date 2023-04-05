@@ -75,9 +75,9 @@ namespace Java.Awt.EventNs
     public partial class WindowAdapter : IWindowAdapter
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.awt.event.JNetWindowAdapter";
+        public override string ClassName => "org.mases.jnet.awt.event.JNetWindowAdapter";
 
         readonly Action<WindowEvent> WindowActivatedFunction = null;
         readonly Action<WindowEvent> WindowClosedFunction = null;

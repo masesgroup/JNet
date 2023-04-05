@@ -30,12 +30,15 @@ namespace MASES.JNetReflector.Templates
                 AllPackageClassesTemplate,
                 AllPackageClassesStubClassTemplate,
                 AllPackageClassesStubClassListenerTemplate,
+                AllPackageClassesStubClassMainClassTemplate,
                 AllPackageClassesStubExceptionTemplate,
                 AllPackageClassesStubNestedClassTemplate,
                 AllPackageClassesStubNestedClassListenerTemplate,
+                AllPackageClassesStubNestedClassMainClassTemplate,
                 AllPackageClassesStubNestedExceptionTemplate,
 
                 SingleClassTemplate,
+                SingleClassFileTemplate,
                 SingleConstructorTemplate,
                 SingleFieldTemplate,
                 SingleMethodTemplate,
@@ -73,12 +76,15 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesTemplate = "AllPackageClasses.template";
         public const string AllPackageClassesStubClassTemplate = "AllPackageClassesStubClass.template";
         public const string AllPackageClassesStubClassListenerTemplate = "AllPackageClassesStubClassListener.template";
+        public const string AllPackageClassesStubClassMainClassTemplate = "AllPackageClassesStubClassMainClass.template";
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
         public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
         public const string AllPackageClassesStubNestedClassListenerTemplate = "AllPackageClassesStubNestedClassListener.template";
+        public const string AllPackageClassesStubNestedClassMainClassTemplate = "AllPackageClassesStubNestedClassMainClass.template";
         public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
+        public const string SingleClassFileTemplate = "SingleClassFile.template";
         public const string SingleConstructorTemplate = "SingleConstructor.template";
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
@@ -93,14 +99,19 @@ namespace MASES.JNetReflector.Templates
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
         public const string CLASSES = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
 
-        public const string HREF_URL = "<see href=\"{0}\"/>";
+        public static string DocTemplate => JNetReflectorCore.OriginJavadocUrl != null ? HREF_URL : CREF_URL;
+
+        const string CREF_URL = "<see cref=\"{0}\"/>";
+        const string HREF_URL = "<see href=\"{0}\"/>";
 
         public class ClassStub
         {
             public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER";
             public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
+            public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER";
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
+            public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_WHERECLAUSES_PLACEHOLDER";
             public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
             public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER";
             public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER";
@@ -114,10 +125,8 @@ namespace MASES.JNetReflector.Templates
             public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
             public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
 
-            public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER";
-
-            public const string DEFAULT_DECORATION = "    #region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
-            public const string OBSOLETE_DECORATION = "    [System.Obsolete()]";
+            public const string DEFAULT_DECORATION = "#region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
             public class ConstructorStub
             {
@@ -152,6 +161,7 @@ namespace MASES.JNetReflector.Templates
                 public const string RETURNTYPE = "METHOD_STUB_RETURN_TYPE_PLACEHOLDER";
                 public const string NAME = "METHOD_STUB_METHOD_NAME_PLACEHOLDER";
                 public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
+                public const string WHERECLAUSES = "METHOD_STUB_WHERECLAUSES_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
                 public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
@@ -160,7 +170,7 @@ namespace MASES.JNetReflector.Templates
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
                 public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see cref=\"{1}\"/></param>";
-                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see {0}=\"{1}\"/></returns>";
+                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see cref=\"{0}\"/></returns>";
                 public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
@@ -200,29 +210,31 @@ namespace MASES.JNetReflector.Templates
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
-            public class NestedClassStub
-            {
-                public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
-                public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
-                public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
-                public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
-                public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
-                public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";
-                public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER";
-                public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER";
-                public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER";
+            //public class NestedClassStub
+            //{
+            //    public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
+            //    public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
+            //    public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_SIMPLECLASS_PLACEHOLDER";
+            //    public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+            //    public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
+            //    public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_NESTED_WHERECLAUSES_PLACEHOLDER";
+            //    public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+            //    public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
+            //    public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";
+            //    public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER";
+            //    public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER";
+            //    public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER";
 
-                public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
-                public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
-                public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
-                public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+            //    public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
+            //    public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
+            //    public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
+            //    public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
 
-                public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER";
+            //    public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER";
 
-                public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";
-            }
+            //    public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+            //    public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";
+            //}
         }
     }
 }

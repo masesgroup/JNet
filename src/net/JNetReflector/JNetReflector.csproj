@@ -29,9 +29,12 @@
     <None Remove="AllPackageClassesStubNestedClass.template" />
     <None Remove="SingleClass.template" />
     <None Remove="Templates\AllPackageClassesStubClassListener.template" />
+    <None Remove="Templates\AllPackageClassesStubClassMainClass.template" />
     <None Remove="Templates\AllPackageClassesStubException.template" />
     <None Remove="Templates\AllPackageClassesStubNestedClassListener.template" />
+    <None Remove="Templates\AllPackageClassesStubNestedClassMainClass.template" />
     <None Remove="Templates\AllPackageClassesStubNestedException.template" />
+    <None Remove="Templates\SingleClassFile.template" />
     <None Remove="Templates\SingleConstructor.template" />
     <None Remove="Templates\SingleField.template" />
     <None Remove="Templates\SingleMethod.template" />
@@ -119,10 +122,13 @@
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedException.template" />
+    <EmbeddedResource Include="Templates\SingleClassFile.template" />
     <EmbeddedResource Include="Templates\SingleConstructor.template" />
     <EmbeddedResource Include="Templates\SingleField.template" />
     <EmbeddedResource Include="Templates\SingleProperty.template" />
@@ -135,7 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-	<PackageReference Include="MASES.JCOBridge" Version="2.5.3">
+	<PackageReference Include="MASES.JCOBridge" Version="2.5.4">
 		<IncludeAssets>All</IncludeAssets>
 		<PrivateAssets>None</PrivateAssets>
 	</PackageReference>

@@ -21,59 +21,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/>
-    /// </summary>
-    /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/></typeparam>
-    public class Spliterator<T> : JVMBridgeBase<Spliterator<T>>
+    public partial class Spliterator<T>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-        /// </summary>
-        public override string ClassName => "java.util.Spliterator";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
-        /// </summary>
-        public override bool IsInterface => true;
-        /// <summary>
-        /// Returns a set of characteristics of this <see cref="Spliterator{T}"/> and its elements.
-        /// </summary>
-        public int Characteristics => IExecute<int>("characteristics");
-        /// <summary>
-        /// Returns an estimate of the number of elements that would be encountered by a <see cref="ForEachRemaining{TSuper}(Consumer{TSuper})"/> traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.
-        /// </summary>
-        public long EstimateSize => IExecute<long>("estimateSize");
-        /// <summary>
-        /// Performs the given action for each remaining element, sequentially in the current thread, until all elements have been processed or the action throws an exception.
-        /// </summary>
-        /// <typeparam name="TSuper"></typeparam>
-        /// <param name="action"></param>
-        public void ForEachRemaining<TSuper>(Consumer<TSuper> action) where TSuper : T => IExecute("forEachRemaining", action);
-        /// <summary>
-        /// If this <see cref="Spliterator{T}"/> source is SORTED by a <see cref="Comparator"/>, returns that <see cref="Comparator"/>.
-        /// </summary>
-        public Comparator Comparator => IExecute<Comparator>("getComparator");
-        /// <summary>
-        /// Convenience method that returns <see cref="EstimateSize"/> if this <see cref="Spliterator{T}"/> is SIZED, else -1.
-        /// </summary>
-        public long ExactSizeIfKnown => IExecute<long>("getExactSizeIfKnown");
-        /// <summary>
-        /// Returns true if this <see cref="Spliterator{T}"/> <see cref="Characteristics"/> contain all of the given characteristics.
-        /// </summary>
-        /// <param name="characteristics"></param>
-        /// <returns></returns>
-        public bool HasCharacteristics(int characteristics) => IExecute<bool>("hasCharacteristics", characteristics);
-        /// <summary>
-        /// If a remaining element exists, performs the given action on it, returning true; else returns false.
-        /// </summary>
-        /// <typeparam name="SuperT"></typeparam>
-        /// <param name="action"></param>
-        /// <returns></returns>
-        public bool TryAdvance<SuperT>(Consumer<SuperT> action) where SuperT : T => IExecute<bool>("tryAdvance", action);
-        /// <summary>
-        /// If this spliterator can be partitioned, returns a <see cref="Spliterator{T}"/> covering elements, that will, upon return from this method, not be covered by this <see cref="Spliterator{T}"/>.
-        /// </summary>
-        /// <returns></returns>
-        public Spliterator<T> TrySplit() => IExecute<Spliterator<T>>("trySplit");
+
     }
 }

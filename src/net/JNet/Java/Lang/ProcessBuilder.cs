@@ -26,7 +26,7 @@ namespace Java.Lang
     public sealed class ProcessBuilder : JVMBridgeBase<ProcessBuilder>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.ProcessBuilder";
 
@@ -36,11 +36,11 @@ namespace Java.Lang
         public sealed class Redirect : JVMBridgeBase<Redirect>
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
             public override string ClassName => "java.lang.ProcessBuilder.Redirect";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             /// </summary>
             public override bool IsStatic => true;
         }

@@ -27,7 +27,7 @@ namespace Java.Lang
     public class Thread : JVMBridgeBase<Thread>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.Thread";
         /// <summary>
@@ -199,11 +199,11 @@ namespace Java.Lang
         public class State : Java.Lang.Enum
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
             public override string ClassName => "java.lang.Thread$State";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             /// </summary>
             public override bool IsStatic => true;
 
@@ -267,9 +267,9 @@ namespace Java.Lang
         public class UncaughtExceptionHandler : JVMBridgeListener
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
             /// </summary>
-            public sealed override string ClassName => "org.mases.jnet.lang.JNetUncaughtExceptionHandler";
+            public override string ClassName => "org.mases.jnet.lang.JNetUncaughtExceptionHandler";
 
             readonly Action<Thread, JVMBridgeException> executionFunction = null;
             /// <summary>

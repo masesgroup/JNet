@@ -1,24 +1,12 @@
-# JNet: .NET gateway for JVM APIs
+# JNet: Java/JVM suite for .NET
 
-JNet is a .NET gateway for JVM APIs (Java, Scala, Kotlin, ...) to use .NET and JVM side-by-side.
+JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.
 
-This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
+### Libraries and Tools
 
-## Status
-
-Latest status is:
-
-### Libraries
-
-|JNet | JNet.Templates | JNetPSCore<br>(version 1.4.9+) |
-|:---:	|:---:	|:---:	|
-|[![JNet nuget](https://img.shields.io/nuget/v/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) | [![JNet.Templates nuget](https://img.shields.io/nuget/v/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)| [![JNetPSCore nuget](https://img.shields.io/nuget/v/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore)|
-
-### Tools
-
-| JNetCLI<br>(version 1.4.8+) | JNetReflector<br>(version 1.4.8+) | JNetPS<br>(version 1.4.9+) |
-|:---:	|:---:	|:---:	|
-| [![JNetCLI nuget](https://img.shields.io/nuget/v/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI)| [![JNetReflector nuget](https://img.shields.io/nuget/v/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector)| [![JNetPS](https://img.shields.io/powershellgallery/v/MASES.JNetPS.svg?style=flat-square&label=MASES.JNetPS)](https://www.powershellgallery.com/packages/MASES.JNetPS/)|
+|JNet | JNet.Templates | JNetPSCore | JNetCLI | JNetReflector | JNetPS |
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+|[![JNet nuget](https://img.shields.io/nuget/v/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet)<br/>[![downloads](https://img.shields.io/nuget/dt/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) | [![JNet.Templates nuget](https://img.shields.io/nuget/v/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)<br/>[![downloads](https://img.shields.io/nuget/dt/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)| [![JNetPSCore nuget](https://img.shields.io/nuget/v/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore)<br/>[![downloads](https://img.shields.io/nuget/dt/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore)| [![JNetCLI nuget](https://img.shields.io/nuget/v/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI)<br/>[![downloads](https://img.shields.io/nuget/dt/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI)| [![JNetReflector nuget](https://img.shields.io/nuget/v/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector)<br/>[![downloads](https://img.shields.io/nuget/dt/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector)| [![JNetPS](https://img.shields.io/powershellgallery/v/MASES.JNetPS.svg?style=flat-square&label=MASES.JNetPS)](https://www.powershellgallery.com/packages/MASES.JNetPS/)|
 
 ### Pipelines
 
@@ -26,14 +14,46 @@ Latest status is:
 [![CodeQL](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml)
 [![CI_RELEASE](https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/release.yaml) 
 
+---
+
 ## Scope of the project
 
-This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
+This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
 There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
 * all implemented features are availables at no extra implementation costs, see [JNet usage](src/net/Documentation/articles/usage.md);
 * avoids any third party communication protocol implementation;
 * access all features made available from Java platform.
+
+So, for example, do you want an `ArrayList`? Just write in C# a line of code like this:
+
+```c#
+Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
+```
+
+See [JNet usage](src/net/Documentation/articles/usage.md) for a comprehensive example.
+
+### Community and Contribution
+
+Do you like the project? 
+- Request your free [community subscription](https://www.jcobridge.com/pricing-25/).
+
+Do you want to help us?
+- put a :star: on this project
+- open [issues](https://github.com/masesgroup/JNet/issues) to request features or report bugs :bug:
+- improves the project with Pull Requests
+
+This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
+
+## Summary
+
+* [Roadmap](src/net/Documentation/articles/roadmap.md)
+* [Actual state](src/net/Documentation/articles/actualstate.md)
+* [JNet usage](src/net/Documentation/articles/usage.md)
+* [JNet APIs extensibility](src/net/Documentation/articles/API_extensibility.md)
+* [JNet CLI usage](src/net/Documentation/articles/usageCLI.md)
+* [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
+* [JNet PowerShell usage](src/net/Documentation/articles/usagePS.md)
 
 ### News
 
@@ -42,6 +62,9 @@ There are many client libraries written to manage communication with Java. Conve
   * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
   * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
 * V1.5.2+: strong improvement of JNetReflector; it is used to generate almost all Java 11 classes available in the corresponding JNet version
+* V1.5.3+: JNetReflector manages generics and almost all classes of Java SE 11 are covered: see [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
+
+---
 
 ## Runtime engine
 
@@ -67,16 +90,3 @@ Have a look at the following JCOBridge resources:
 - [Community Edition](https://www.jcobridge.com/pricing-25/)
 - [Commercial Edition](https://www.jcobridge.com/pricing-25/)
 - Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
-
----
-## Summary
-
-* [Roadmap](src/net/Documentation/articles/roadmap.md)
-* [Actual state](src/net/Documentation/articles/actualstate.md)
-* [JNet usage](src/net/Documentation/articles/usage.md)
-* [JNet APIs extensibility](src/net/Documentation/articles/API_extensibility.md)
-* [JNet CLI usage](src/net/Documentation/articles/usageCLI.md)
-* [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
-* [JNet PowerShell usage](src/net/Documentation/articles/usagePS.md)
-
----

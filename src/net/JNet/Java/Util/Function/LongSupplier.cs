@@ -39,9 +39,9 @@ namespace Java.Util.Function
     public class LongSupplier : JVMBridgeListener, ILongSupplier
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
-        public sealed override string ClassName => "org.mases.jnet.util.function.JNetLongSupplier";
+        public override string ClassName => "org.mases.jnet.util.function.JNetLongSupplier";
 
         Func<long> executionFunction = null;
         /// <summary>

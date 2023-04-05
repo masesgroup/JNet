@@ -1,0 +1,15 @@
+﻿    #region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
+    /// <summary>
+    /// ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER
+    /// </summary>
+    public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : MASES.JCOBridge.C2JBridge.JVMBridgeMain<ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER>
+    {
+        /// <summary>
+        /// Initialize a new <see cref="ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER"/>
+        /// </summary>
+        public ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER()
+            : base("ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER")
+        {
+        }
+    }
+    #endregion

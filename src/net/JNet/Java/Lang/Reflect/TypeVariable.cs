@@ -28,12 +28,12 @@ namespace Java.Lang.Reflect
     public class TypeVariable : AnnotatedElement
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.reflect.TypeVariable";
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
         /// <summary>
@@ -56,15 +56,9 @@ namespace Java.Lang.Reflect
 #endif
     }
 #if !JNETREFLECTOR
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
-    /// </summary>
-    public class TypeVariable<D> : TypeVariable where D : GenericDeclaration
+    public partial class TypeVariable<D>
     {
-        /// <summary>
-        /// Returns the <see cref="GenericDeclaration"/> object representing the generic declaration declared this type variable.
-        /// </summary>
-        public D GenericDeclaration2 => GenericDeclaration.Cast<D>();
+
     }
 #endif
 }

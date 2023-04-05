@@ -42,7 +42,7 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.OriginRootPath,
                         Type = ArgumentType.Double,
-                        Help = "The origin path where Jars to be analyzed are stored",
+                        Help = "The origin path where Jars to be analyzed, and dependencies, are stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -60,10 +60,23 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.OriginJavadocJARVersionAndUrls,
+                        Type = ArgumentType.Double,
+                        Default = null,
+                        Help = "A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.DestinationRootPath,
                         Type = ArgumentType.Double,
                         Default = SpecialNames.JNetReflectorGeneratedFolder,
                         Help = "The destination root path where reflected classes will be stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAnalyze,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of full qualified class names to be analyzed",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -101,11 +114,17 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Double,
                         Help = "A CSV list of classes to be removed during analysis",
                     },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAvoidInGenerics,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of classes to be removed during analysis from the classes which have generics types",
+                    },
                     new ArgumentMetadata<object>()
                     {
-                        Name = CLIParam.DoNotAddJarsInClasspath,
+                        Name = CLIParam.OnlyPropertiesForGetterSetter,
                         Type = ArgumentType.Single,
-                        Help = "The option inform the tool to not add the Jars in classpath",
+                        Help = "The option forces the tool to convert into properties only getter/setter",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -115,15 +134,45 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.AvoidCSharpGenericDefinition,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to reflect generics without create the C# generic definition",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.AvoidCSharpGenericClauseDefinition,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to reflect generics without create the clauses of C# generic definition",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DisableGenericsInNonGenericClasses,
+                        Type = ArgumentType.Single,
+                        Help = "The option disables generation of generic methods in non generic classes",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DisableGenerics,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable any generic type",
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.AvoidParallelBuild,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to disable parallel execution",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
                         Help = "Execute everything, but do not write anything to disk",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DoNotCamel,
+                        Type = ArgumentType.Single,
+                        Help = "Does not use camelized names in methods, class and so on",
                     },
                     new ArgumentMetadata<int>()
                     {
@@ -158,14 +207,21 @@ namespace MASES.JNetReflector
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl;
 
+        static IEnumerable<(int, string)> _OriginJavadocJARVersionAndUrls;
+        public static IEnumerable<(int, string)> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls;
+
         static int _JavadocVersion;
         public static int JavadocVersion => _JavadocVersion;
 
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath;
 
-        static IEnumerable<string> _JarsToAnaylyze;
-        public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
+        static IEnumerable<string> _ClassesToAnalyze;
+        public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze;
+
+        static IEnumerable<string> _JarsToAddInClassPath;
+        static IEnumerable<string> _JarsToAnalyze;
+        public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze;
 
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse;
@@ -182,17 +238,35 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToAvoid;
         public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid;
 
-        static bool _DoNotAddJarsInClasspath;
-        public static bool DoNotAddJarsInClasspath => _DoNotAddJarsInClasspath;
+        static IEnumerable<string> _ClassesToAvoidInGenerics;
+        public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics;
+
+        static bool _OnlyPropertiesForGetterSetter;
+        public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter;
 
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
 
+        static bool _AvoidCSharpGenericDefinition;
+        public static bool AvoidCSharpGenericDefinition => _AvoidCSharpGenericDefinition;
+
+        static bool _AvoidCSharpGenericClauseDefinition;
+        public static bool AvoidCSharpGenericClauseDefinition => _AvoidCSharpGenericClauseDefinition;
+
+        static bool _DisableGenericsInNonGenericClasses;
+        public static bool DisableGenericsInNonGenericClasses => _DisableGenericsInNonGenericClasses;
+
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
 
+        static bool _AvoidParallelBuild;
+        public static bool AvoidParallelBuild => _AvoidParallelBuild;
+
         static bool _DryRun;
         public static bool DryRun => _DryRun;
+
+        static bool _UseCamel;
+        public static bool UseCamel => _UseCamel;
 
         static int _TraceLevel;
         public static int TraceLevel => _TraceLevel;
@@ -204,26 +278,35 @@ namespace MASES.JNetReflector
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
+
+            List<string> classesToAnalyze = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAnalyze))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAnalyze).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAnalyze.Contains(item)) classesToAnalyze.Add(item);
+                }
+                _ClassesToAnalyze = classesToAnalyze;
+            }
+
+            List<string> jarsToAnaylyze = new List<string>();
             if (ParsedArgs.Exist(CLIParam.OriginRootPath))
             {
                 var originalRootPath = ParsedArgs.Get<string>(CLIParam.OriginRootPath);
                 _OriginRootPath = Path.GetFullPath(originalRootPath);
                 if (!Directory.Exists(_OriginRootPath)) throw new DirectoryNotFoundException($"{_OriginRootPath} not exist.");
+                _JarsToAddInClassPath = new List<string>(Directory.EnumerateFiles(originalRootPath, "*.jar"));
+            }
 
-                List<string> jarsToAnaylyze = new List<string>();
-                if (ParsedArgs.Exist(CLIParam.JarList))
+            if (ParsedArgs.Exist(CLIParam.JarList))
+            {
+                var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
+                foreach (var item in jars.Select((o) => Path.Combine(OriginRootPath, o)))
                 {
-                    var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
-                    foreach (var item in jars.Select((o) => Path.Combine(originalRootPath, o)))
-                    {
-                        if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
-                    }
+                    if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
                 }
-                else
-                {
-                    jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath, "*.jar"));
-                }
-                _JarsToAnaylyze = jarsToAnaylyze;
+                _JarsToAnalyze = jarsToAnaylyze;
             }
 
             List<string> modulesToParse = new List<string>();
@@ -234,8 +317,25 @@ namespace MASES.JNetReflector
                 {
                     if (!modulesToParse.Contains(item)) modulesToParse.Add(item);
                 }
+                _ModulesToParse = modulesToParse;
             }
-            _ModulesToParse = modulesToParse;
+
+            List<(int, string)> jarURLsToAnaylyze = new List<(int, string)>();
+            if (ParsedArgs.Exist(CLIParam.OriginJavadocJARVersionAndUrls))
+            {
+                var jarURLs = ParsedArgs.Get<string>(CLIParam.OriginJavadocJARVersionAndUrls).Split(',', ';');
+                foreach (var item in jarURLs)
+                {
+                    var items = item.Split('|');
+                    if (items.Length < 2) throw new System.InvalidOperationException($"{item} does not conform to expected pattern.");
+                    var version = int.Parse(items[0]);
+                    var url = string.Join(string.Empty, items.Skip(1));
+                    jarURLsToAnaylyze.Add((version, url));
+                }
+                _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
+                if (_JarsToAnalyze.Count() != _OriginJavadocJARVersionAndUrls.Count())
+                    throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
+            }
 
             List<string> classesToBeListener = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToBeListener))
@@ -281,16 +381,32 @@ namespace MASES.JNetReflector
             }
             _ClassesToAvoid = classesToAvoid;
 
+            List<string> classesToAvoidInGenerics = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAvoidInGenerics))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAvoidInGenerics).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAvoidInGenerics.Contains(item)) classesToAvoidInGenerics.Add(item);
+                }
+            }
+            _ClassesToAvoidInGenerics = classesToAvoidInGenerics;
+
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
-            _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
+            _OnlyPropertiesForGetterSetter = ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
+            _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
+            _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);
+            _DisableGenericsInNonGenericClasses = ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
+            _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
+            _UseCamel = !ParsedArgs.Exist(CLIParam.DoNotCamel);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 
@@ -308,10 +424,9 @@ namespace MASES.JNetReflector
                 var assembly = typeof(JNetReflectorCore<>).Assembly;
                 var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"*.jar");
                 lst.Add(path);
-                if (DoNotAddJarsInClasspath) return lst;
-                if (_JarsToAnaylyze != null)
+                if (_JarsToAddInClassPath != null)
                 {
-                    foreach (var item in _JarsToAnaylyze)
+                    foreach (var item in _JarsToAddInClassPath)
                     {
                         lst.Add(Path.GetFullPath(item));
                     }

@@ -16,28 +16,27 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
 using Java.Util;
 using System.Collections.Generic;
 
 namespace MASES.JNet.Extensions
 {
     /// <summary>
-    /// Extension for JAva.Util classes
+    /// Extension for Java.Util classes
     /// </summary>
     public static class JavaUtilExtensions
     {
         #region List Extensions
         /// <summary>
-        /// Converts a <see cref="Iterable{T}"/> to <see cref="IEnumerable{T}"/>
+        /// Converts a <see cref="Collection{T}"/> to <see cref="ICollection{T}"/>
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
-        /// <param name="set">The <see cref="Iterable{T}"/></param>
-        /// <returns>The <see cref="IEnumerable{T}"/></returns>
-        public static IEnumerable<T> ToEnumerable<T>(this Iterable<T> set)
+        /// <param name="set">The <see cref="Collection{T}"/></param>
+        /// <returns>The <see cref="ICollection{T}"/></returns>
+        public static ICollection<T> ToCollection<T>(this Collection<T> set)
         {
-            if (set == null) return null;
             System.Collections.Generic.List<T> list = new();
+            if (set.IsEmpty) return list;
             foreach (var item in set)
             {
                 list.Add(item);
@@ -52,31 +51,41 @@ namespace MASES.JNet.Extensions
         /// <returns>The <see cref="System.Collections.Generic.List{T}"/></returns>
         public static System.Collections.Generic.List<T> ToList<T>(this Collection<T> set)
         {
-            if (set == null) return null;
-            return new System.Collections.Generic.List<T>(ToEnumerable(set));
+            System.Collections.Generic.List<T> list = new();
+            if (set.IsEmpty) return list;
+            foreach (var item in set)
+            {
+                list.Add(item);
+            }
+            return list;
         }
         /// <summary>
-        /// Converts a <see cref="IEnumerable{T}"/> to <see cref="Collection{T}"/>
+        /// Converts a <see cref="ICollection{T}"/> to <see cref="Collection{T}"/>
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
-        /// <param name="enumerable">The <see cref="IEnumerable{T}"/></param>
+        /// <param name="collection">The <see cref="ICollection{T}"/></param>
         /// <returns>The <see cref="Collection{T}"/></returns>
-        public static Collection<T> ToJCollection<T>(this IEnumerable<T> enumerable)
+        public static Collection<T> ToJCollection<T>(this ICollection<T> collection)
         {
-            if (enumerable == null) return null;
-            return ToJList<T>(enumerable);
+            ArrayList<T> list = new();
+            if (collection.Count == 0) return list.CastTo<Collection<T>>();
+            foreach (var item in collection)
+            {
+                list.Add(item);
+            }
+            return list.CastTo<Collection<T>>();
         }
         /// <summary>
-        /// Converts a <see cref="IEnumerable{T}"/> to <see cref="Java.Util.List{T}"/>
+        /// Converts a <see cref="ICollection{T}"/> to <see cref="Java.Util.List{T}"/>
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
-        /// <param name="enumerable">The <see cref="IEnumerable{T}"/></param>
+        /// <param name="collection">The <see cref="ICollection{T}"/></param>
         /// <returns>The <see cref="Java.Util.List{T}"/></returns>
-        public static Java.Util.List<T> ToJList<T>(this IEnumerable<T> enumerable)
+        public static Java.Util.List<T> ToJList<T>(this ICollection<T> collection)
         {
-            if (enumerable == null) return null;
             ArrayList<T> list = new();
-            foreach (var item in enumerable)
+            if (collection.Count == 0) return list;
+            foreach (var item in collection)
             {
                 list.Add(item);
             }
@@ -96,8 +105,8 @@ namespace MASES.JNet.Extensions
         public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
-            if (map.IsEmpty()) return dictionary;
-            foreach (var item in map.EntrySet2)
+            if (map.IsEmpty) return dictionary;
+            foreach (var item in map.EntrySet)
             {
                 dictionary.Add(item.Key, item.Value);
             }
