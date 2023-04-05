@@ -28,6 +28,7 @@ using System.Linq;
 using Org.Mases.Jnet;
 using System.Diagnostics;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace MASES.JNetReflector
 {
@@ -86,7 +87,7 @@ namespace MASES.JNetReflector
         {
             namespaces = classes = 0;
             Stopwatch w = Stopwatch.StartNew();
-            if (JNetReflectorCore.JarsToAnaylyze != null)
+            if (JNetReflectorCore.JarsToAnalyze != null)
             {
                 AnalyzeJars();
             }
@@ -94,7 +95,11 @@ namespace MASES.JNetReflector
             {
                 AnalyzeNamespaces();
             }
-            else throw new ArgumentException("At least one of NamespacesToParse or OriginRootPath must be set");
+            else if (JNetReflectorCore.ClassesToAnalyze != null)
+            {
+                AnalyzeClasses();
+            }
+            else throw new ArgumentException("At least one of ClassesToAnaylyze, NamespacesToParse or OriginRootPath must be set");
             w.Stop();
             Console.WriteLine();
             Console.WriteLine($"Operation completed in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
@@ -102,238 +107,255 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJars()
         {
-            foreach (var item in JNetReflectorCore.JarsToAnaylyze)
+            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze);
+            for (int i = 0; i < jarNames.Count; i++)
             {
-                AnalyzeJar(item, JNetReflectorCore.DestinationRootPath);
+                string javadocUrl = JNetReflectorCore.OriginJavadocUrl;
+                int javadocVersion = JNetReflectorCore.JavadocVersion;
+                if (JNetReflectorCore.OriginJavadocJARVersionAndUrls != null)
+                {
+                    var data = JNetReflectorCore.OriginJavadocJARVersionAndUrls.ElementAt(i);
+                    javadocVersion = data.Item1;
+                    javadocUrl = data.Item2;
+                }
+
+                AnalyzeJar(jarNames[i], javadocUrl, javadocVersion);
             }
         }
 
-        public static void AddItem(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, Class cls)
+        public static void AnalyzeClasses()
+        {
+            SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
+            foreach (var item in JNetReflectorCore.ClassesToAnalyze)
+            {
+                var jClass = item.JVMClass(true);
+                if (jClass != null) resultingArguments.AddItem(jClass);
+            }
+            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
+            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JarOrModuleName = "CustomSelection";
+            resultingArguments.AnalyzeItems();
+        }
+
+        public static void AddItem(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> data, Class cls)
         {
             if (cls == null) return;
+            ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", cls.Name);
+            if (cls.IsSpecialClass()) return; // do not reflect this classes
+            if (cls.IsNamespaceToAvoid()) return; // do not reflect this classes
+            if (!(cls.IsJVMClass() || cls.IsJVMNestedClass())) return;
+
             ReportTrace(ReflectionTraceLevel.Debug, "Adding entry {0}", cls.Name);
-            var package = cls.Namespace();
-            IDictionary<string, IDictionary<string, string>> entries;
+            var package = cls.Namespace(JNetReflectorCore.UseCamel);
+            IDictionary<string, IDictionary<string, Class>> entries;
             if (!data.TryGetValue(package, out entries))
             {
-                entries = new SortedDictionary<string, IDictionary<string, string>>();
+                entries = new SortedDictionary<string, IDictionary<string, Class>>();
                 data.Add(package, entries);
             }
-            IDictionary<string, string> subEntries;
-            if (!entries.TryGetValue(cls.JVMClassName(), out subEntries))
+            IDictionary<string, Class> subEntries;
+            if (!entries.TryGetValue(cls.JVMMainClassName(), out subEntries))
             {
-                subEntries = new SortedDictionary<string, string>();
-                entries.Add(cls.JVMClassName(), subEntries);
+                subEntries = new SortedDictionary<string, Class>();
+                entries.Add(cls.JVMMainClassName(), subEntries);
             }
-            subEntries.Add(cls.Name, cls.Name);
+            subEntries.Add(cls.Name, cls);
         }
 
-        public static void AnalyzeJar(string pathToJar, string rootDesinationFolder)
+        public static void AnalyzeJar(string pathToJar, string javadocUrl, int javadocVersion)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
             {
-                SortedDictionary<string, IDictionary<string, IDictionary<string, string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, string>>>();
+                SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
 
                 foreach (var entry in archive.Entries)
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.ToString());
                     if (entry.IsSpecialFolder()) continue; // do not reflect this folders
-                    if (entry.IsSpecialClass()) continue; // do not reflect this classes
-                    if (entry.IsJVMClass() || entry.IsJVMNestedClass())
+                    if (entry.IsFolder()) continue; // do not reflect this folders
+
+                    var jClass = entry.JVMClass();
+                    if (jClass != null && (jClass.IsJVMClass() || jClass.IsJVMNestedClass()))
                     {
-                        var jClass = entry.JVMClass();
-                        AddItem(resultingArguments, jClass);
+                        resultingArguments.AddItem(jClass);
                     }
                 }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", resultingArguments.Count);
-                var jarName = Path.GetFileName(pathToJar);
-                AnalyzeItems(resultingArguments, rootDesinationFolder, jarName);
+                JavadocBaseUrl = javadocUrl;
+                JavadocVersion = javadocVersion;
+                JarOrModuleName = Path.GetFileName(pathToJar);
+                resultingArguments.AnalyzeItems();
             }
         }
 
         public static void AnalyzeNamespaces()
         {
-            SortedDictionary<string, IDictionary<string, IDictionary<string, string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, string>>>();
+            SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
             foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
-                AnalyzeNamespace(resultingArguments, ns, JNetReflectorCore.DestinationRootPath);
+                AnalyzeNamespace(resultingArguments, ns);
             }
         }
 
-        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
+        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, Class>>> data, string ns)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Namespace {0} *******************", ns);
             var classes = JNetReflectorHelper.Find(ns, false);
 
             foreach (var entry in classes)
             {
-                ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.Name);
-                if (entry.IsSpecialClass()) continue; // do not reflect this classes
-                if (entry.IsNamespaceToAvoid()) continue; // do not reflect this classes
-                if (entry.IsJVMClass() || entry.IsJVMNestedClass())
-                {
-                    AddItem(data, entry);
-                }
+                data.AddItem(entry);
             }
 
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
-            AnalyzeItems(data, rootDesinationFolder, ns);
+            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
+            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JarOrModuleName = ns;
+            data.AnalyzeItems();
         }
 
-        static void AnalyzeItems(IDictionary<string, IDictionary<string, IDictionary<string, string>>> items, string rootDesinationFolder, string jarOrModuleName)
+        static string JavadocBaseUrl { get; set; }
+        static int JavadocVersion { get; set; }
+        static string JarOrModuleName { get; set; }
+        static CancellationTokenSource CancellationTokenSource { get; set; }
+
+        static void AnalyzeItems(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items)
         {
-            var allPackageClasses = Template.GetTemplate(Template.AllPackageClassesTemplate);
-
-            foreach (var item in items)
+            if (!JNetReflectorCore.AvoidParallelBuild)
             {
-                ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for package {0}", item.Key);
-                StringBuilder sb = new StringBuilder();
-                foreach (var entry in item.Value)
+                try
                 {
-                    var classContent = AnalyzeClass(jarOrModuleName, entry.Value.Values, rootDesinationFolder);
-                    if (!string.IsNullOrEmpty(classContent))
-                    {
-                        sb.AppendLine(classContent);
-                        sb.AppendLine();
-                    }
+                    ParallelOptions po = new ParallelOptions();
+                    Console.CancelKeyPress += Console_CancelKeyPress;
+                    CancellationTokenSource = new CancellationTokenSource();
+                    CancellationTokenSource.Token.ThrowIfCancellationRequested();
+                    po.CancellationToken = CancellationTokenSource.Token;
+                    po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;
+                    Parallel.ForEach(items, po, AnalyzeSubItemsParallel);
                 }
-
-                var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
-                                                   .Replace(AllPackageClasses.JAR, jarOrModuleName)
-                                                   .Replace(AllPackageClasses.NAMESPACE, item.Key)
-                                                   .Replace(AllPackageClasses.CLASSES, sb.ToString());
-
-                var path = Path.Combine(rootDesinationFolder, item.Key.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
-                WriteFile(path, itemPackage);
+                finally
+                {
+                    CancellationTokenSource = null;
+                    Console.CancelKeyPress -= Console_CancelKeyPress;
+                }
+            }
+            else
+            {
+                foreach (var item in items)
+                {
+                    AnalyzeSubItems(item.Key, item.Value, JarOrModuleName);
+                }
             }
         }
 
-        static string AnalyzeClass(string jarOrModuleName, ICollection<string> classDefinitions, string rootDesinationFolder)
+        private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
+        {
+            CancellationTokenSource.Cancel();
+        }
+
+        static void AnalyzeSubItemsParallel(KeyValuePair<string, IDictionary<string, IDictionary<string, Class>>> items)
+        {
+            try
+            {
+                AnalyzeSubItems(items.Key, items.Value, JarOrModuleName);
+            }
+            catch (OperationCanceledException)
+            {
+                throw;
+            }
+            catch (System.Exception e)
+            {
+                ReportTrace(ReflectionTraceLevel.Error, "Error in parallel for package {0}: {1}", items.Key, e.Message);
+                throw;
+            }
+        }
+
+        static void AnalyzeSubItems(string package, IDictionary<string, IDictionary<string, Class>> items, string jarOrModuleName)
+        {
+            var allPackageClasses = Template.GetTemplate(Template.AllPackageClassesTemplate);
+
+            ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for package {0}", package);
+            StringBuilder sb = new StringBuilder();
+            foreach (var entry in items)
+            {
+                var classContent = AnalyzeClass(jarOrModuleName, entry.Value.Values, JNetReflectorCore.DestinationRootPath);
+                if (!string.IsNullOrEmpty(classContent))
+                {
+                    sb.AppendLine(classContent);
+                    sb.AppendLine();
+                }
+            }
+
+            var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                                               .Replace(AllPackageClasses.JAR, jarOrModuleName)
+                                               .Replace(AllPackageClasses.NAMESPACE, package)
+                                               .Replace(AllPackageClasses.CLASSES, sb.ToString());
+
+            var path = Path.Combine(JNetReflectorCore.DestinationRootPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
+            WriteFile(path, itemPackage);
+        }
+
+        static string AnalyzeClass(string jarOrModuleName, ICollection<Class> classDefinitions, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* AnalyzeClass {0} *******************", jarOrModuleName);
 
             bool mainClassDone = false;
-            var allPackageStubNestedClass = Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate);
-            var allPackageStubNestedClassListener = Template.GetTemplate(Template.AllPackageClassesStubNestedClassListenerTemplate);
-            var allPackageStubNestedException = Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate);
-            var allPackageStubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
-            var allPackageStubClassListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
-            var allPackageStubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
-            var singleClassTemplate = Template.GetTemplate(Template.SingleClassTemplate);
-            var singleNestedClassTemplate = Template.GetTemplate(Template.SingleNestedClassTemplate);
-
-            StringBuilder subClassBlock = new StringBuilder();
-            StringBuilder subClassAutonoumous = new StringBuilder();
             Class jClass = null;
+            List<Class> nestedClasses = new List<Class>();
 
-            foreach (var classDefinition in classDefinitions)
+            foreach (var entry in classDefinitions)
             {
-                Class entry = classDefinition.JVMClass();
                 if (entry == null)
                 {
-                    ReportTrace(ReflectionTraceLevel.Error, "Class Entry {0} returned a null Class", classDefinition);
+                    ReportTrace(ReflectionTraceLevel.Error, "Class Entry {0} returned a null Class", entry.GenericString);
                     continue;
                 }
+
                 if (entry.MustBeAvoided())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarding avoided class {0}", entry.GenericString);
                     continue;
                 }
+
+                if (entry.IsJVMException() && entry.IsJavaLangException())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarding Java Lang exception class {0}", entry.GenericString);
+                    continue;
+                }
+
                 if (entry.IsJVMNestedClass())
                 {
-                    string nestedConstructorBlock = string.Empty;
-                    string nestedOperatorBlock = string.Empty;
-                    string nestedFieldBlock = string.Empty;
-                    string nestedStaticMethodBlock = string.Empty;
-                    string nestedMethodBlock = string.Empty;
-                    var jSubClass = entry;
-
-                    bool jSubClassIsDepracated = jSubClass.IsDeprecated();
+                    bool jSubClassIsDepracated = entry.IsDeprecated();
                     if (!JNetReflectorCore.ReflectDeprecated && jSubClassIsDepracated)
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding deprecated class {0}", jSubClass.GenericString);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding deprecated class {0}", entry.GenericString);
                         continue;
                     }
 
-                    bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
+                    bool jSubClassIsOrFromGeneric = entry.IsOrInheritFromJVMGenericClass();
                     if (JNetReflectorCore.DisableGenerics && jSubClassIsOrFromGeneric)
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jSubClass.GenericString);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", entry.GenericString);
                         continue;
                     }
-                    bool jSubClassIsListener = jSubClass.IsJVMListenerClass();
-                    string nestedClassBlock;
 
-                    ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jSubClass.GenericString);
-
-                    if (jSubClass.IsJVMException())
-                    {
-                        if (jSubClass.IsJavaLangException()) continue;
-                        nestedClassBlock = allPackageStubNestedException.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocHrefUrl())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(false))
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
-                    }
-                    else
-                    {
-                        bool isSubClassCloseable = jSubClass.IsCloseable();
-                        bool isSubClassAbstract = jSubClass.IsAbstract();
-                        bool isSubClassInterface = jSubClass.IsInterface();
-                        bool isSubClassStatic = jSubClass.IsStatic();
-
-                        string nestedTemplate = jSubClassIsListener ? allPackageStubNestedClassListener : allPackageStubNestedClass;
-
-                        nestedClassBlock = nestedTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocHrefUrl())
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(jSubClassIsListener))
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISABSTRACT, isSubClassAbstract ? "true" : "false")
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISCLOSEABLE, isSubClassCloseable ? "true" : "false")
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISINTERFACE, isSubClassInterface ? "true" : "false")
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC, isSubClassStatic ? "true" : "false")
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
-
-                        if (!jSubClassIsListener)
-                        {
-                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(3);
-                            nestedOperatorBlock = jSubClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(3);
-                            nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(3);
-                            var nestedPrefilter = jSubClass.PrefilterMethods();
-                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(nestedPrefilter, true, classDefinitions, true).AddTabLevel(3);
-                            nestedMethodBlock = jSubClass.AnalyzeMethods(nestedPrefilter, true, classDefinitions, false).AddTabLevel(3);
-                        }
-                    }
-
-                    subClassBlock.AppendLine(nestedClassBlock);
-                    subClassBlock.AppendLine();
-
-                    if (!jSubClassIsListener)
-                    {
-                        StringBuilder jSubClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION);
-                        if (jSubClassIsDepracated)
-                        {
-                            jSubClassDecoration.AppendLine();
-                            jSubClassDecoration.Append(AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION);
-                        }
-
-                        var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.DECORATION, jSubClassDecoration.ToString())
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS, nestedConstructorBlock)
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.OPERATORS, nestedOperatorBlock)
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.FIELDS, nestedFieldBlock)
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS, nestedStaticMethodBlock)
-                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.METHODS, nestedMethodBlock);
-
-                        subClassAutonoumous.AppendLine(singleNestedClassStr);
-                        subClassAutonoumous.AppendLine();
-                    }
+                    nestedClasses.Add(entry);
                 }
                 else if (entry.IsJVMClass())
                 {
                     if (mainClassDone) throw new InvalidOperationException("Too many main class");
+                    if (!JNetReflectorCore.ReflectDeprecated && entry.IsDeprecated())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated main class {0}", jClass.GenericString);
+                        return string.Empty;
+                    }
+                    if (JNetReflectorCore.DisableGenerics && entry.IsOrInheritFromJVMGenericClass())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jClass.GenericString);
+                        return string.Empty;
+                    }
                     mainClassDone = true;
                     jClass = entry;
                     ReportTrace(ReflectionTraceLevel.Debug, "Identified main class {0}", jClass.CanonicalName);
@@ -346,42 +368,132 @@ namespace MASES.JNetReflector
                 ReportTrace(ReflectionTraceLevel.Error, "Main Class Entry returned a null class");
                 return string.Empty;
             }
-            if (jClass.IsJavaLangException())
+
+            StringBuilder subClassBlock = new StringBuilder();
+            StringBuilder subClassAutonoumous = new StringBuilder();
+            StringBuilder subClassGenericBlock = new StringBuilder();
+            StringBuilder subClassGenericAutonoumous = new StringBuilder();
+
+            foreach (var entry in nestedClasses)
             {
-                ReportTrace(ReflectionTraceLevel.Error, "Main Class Entry is a base Exception class managed direcly from JNet");
-                return string.Empty;
+                string nestedClassBlock;
+                string singleNestedClassStr;
+                entry.PrepareSingleClass(classDefinitions, true, false, 3, out nestedClassBlock, out singleNestedClassStr);
+
+                if (!string.IsNullOrEmpty(nestedClassBlock))
+                {
+                    subClassBlock.AppendLine(nestedClassBlock);
+                    subClassBlock.AppendLine();
+                }
+
+                if (!string.IsNullOrEmpty(singleNestedClassStr))
+                {
+                    subClassAutonoumous.AppendLine(singleNestedClassStr);
+                    subClassAutonoumous.AppendLine();
+                }
+
+                if (!JNetReflectorCore.AvoidCSharpGenericDefinition && entry.IsJVMGenericClass() && !entry.IsClassToAvoidInGenerics())
+                {
+                    entry.PrepareSingleClass(classDefinitions, true, true, 3, out nestedClassBlock, out singleNestedClassStr);
+
+                    if (!string.IsNullOrEmpty(nestedClassBlock))
+                    {
+                        subClassBlock.AppendLine(nestedClassBlock);
+                        subClassBlock.AppendLine();
+                    }
+
+                    if (!string.IsNullOrEmpty(singleNestedClassStr))
+                    {
+                        subClassAutonoumous.AppendLine(singleNestedClassStr);
+                        subClassAutonoumous.AppendLine();
+                    }
+                }
             }
-            bool jClassIsDepracated = jClass.IsDeprecated();
-            bool jClassIsListener = jClass.IsJVMListenerClass();
-            if (!JNetReflectorCore.ReflectDeprecated && jClassIsDepracated)
-            {
-                ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated main class {0}", jClass.GenericString);
-                return string.Empty;
-            }
-            bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
-            if (JNetReflectorCore.DisableGenerics && jClassIsOrFromGeneric)
-            {
-                ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jClass.GenericString);
-                return string.Empty;
-            }
-            ReportTrace(ReflectionTraceLevel.Debug, "Preparing main class {0}", jClass.GenericString);
+
+            StringBuilder allClassBlock = new StringBuilder();
+            StringBuilder singleFileBlock = new StringBuilder();
 
             string classBlock;
+            string singleClassStr;
+            jClass.PrepareSingleClass(classDefinitions, false, false, 2, out classBlock, out singleClassStr);
+            singleClassStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
+            singleFileBlock.Append(singleClassStr);
+            var subClassStr = subClassBlock.ToString();
+            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassStr.Length != 0 ? subClassStr : string.Empty);
+            allClassBlock.Append(classBlock);
+
+            string classGenericBlock;
+            string singleClassGenericStr;
+            if (!JNetReflectorCore.AvoidCSharpGenericDefinition && jClass.IsJVMGenericClass() && !jClass.IsClassToAvoidInGenerics())
+            {
+                jClass.PrepareSingleClass(classDefinitions, false, true, 2, out classGenericBlock, out singleClassGenericStr);
+                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericAutonoumous.ToString());
+                singleFileBlock.AppendLine();
+                singleFileBlock.AppendLine();
+                singleFileBlock.Append(singleClassGenericStr);
+                var subClassGenericStr = subClassGenericBlock.ToString();
+                classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericStr.Length != 0 ? subClassGenericStr : string.Empty);
+                allClassBlock.AppendLine();
+                allClassBlock.AppendLine();
+                allClassBlock.Append(classGenericBlock);
+            }
+
+            var singleFileBlockStr = singleFileBlock.ToString();
+            if (!string.IsNullOrWhiteSpace(singleFileBlockStr))
+            {
+                var singleClassFileTemplate = Template.GetTemplate(Template.SingleClassFileTemplate);
+
+                var fileContent = singleClassFileTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                                                         .Replace(AllPackageClasses.JAR, jarOrModuleName)
+                                                         .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace(JNetReflectorCore.UseCamel))
+                                                         .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
+
+                var clsName = jClass.JVMClassName(null, false);
+                var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace(JNetReflectorCore.UseCamel).Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
+                WriteFile(classPath, fileContent);
+            }
+
+            return allClassBlock.ToString();
+        }
+
+        static void PrepareSingleClass(this Class jClass, ICollection<Class> classDefinitions, bool isNested, bool isGeneric, int tabLevel, out string classBlock, out string singleClassStr)
+        {
+            string stubException = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate) : Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
+            string stubListener = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassListenerTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
+            string stubClass = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
+            string singleClass = isNested ? Template.GetTemplate(Template.SingleNestedClassTemplate) : Template.GetTemplate(Template.SingleClassTemplate);
             string constructorBlock = string.Empty;
             string operatorBlock = string.Empty;
             string fieldBlock = string.Empty;
             string staticMethodBlock = string.Empty;
             string methodBlock = string.Empty;
-            string fullClassName = jClass.JVMFullClassName();
-            string className = jClass.JVMSimpleClassName();
+
+            bool jClassIsDepracated = jClass.IsDeprecated();
+            bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
+            bool jClassIsListener = jClass.IsJVMListenerClass();
+            string template = jClassIsListener ? stubListener : stubClass;
+            bool isMainClass = false;
+            IList<Method> methodPrefilter = null;
+            if (!jClassIsListener)
+            {
+                methodPrefilter = jClass.PrefilterMethods(isGeneric, out isMainClass);
+                if (isMainClass)
+                {
+                    template = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassMainClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
+                }
+            }
+            bool classCantBeAnalyzed = jClassIsListener || isMainClass;
+
+            ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
             if (jClass.IsJVMException())
             {
-                classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, fullClassName)
-                                                    .Replace(AllPackageClasses.ClassStub.CLASS, className)
-                                                    .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
-                                                    .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false))
-                                                    .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
+                classBlock = stubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                                          .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
+                                          .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
+                                          .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
+                                          .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
+                                          .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
             }
             else
             {
@@ -389,62 +501,53 @@ namespace MASES.JNetReflector
                 bool isClassAbstract = jClass.IsAbstract();
                 bool isClassInterface = jClass.IsInterface();
                 bool isClassStatic = jClass.IsStatic();
+                List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                string template = jClassIsListener ? allPackageStubClassListener : allPackageStubClass;
-
-                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, fullClassName)
-                                     .Replace(AllPackageClasses.ClassStub.CLASS, className)
-                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
-                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(jClassIsListener))
+                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(genClause, false))
+                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
+                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
+                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel))
+                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
                                      .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
+                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
 
-                if (!jClassIsListener)
+                if (!classCantBeAnalyzed)
                 {
-                    constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(2);
-                    operatorBlock = jClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(2);
-                    fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
-                    var prefilter = jClass.PrefilterMethods();
-                    staticMethodBlock = jClass.AnalyzeMethods(prefilter, false, classDefinitions, true).AddTabLevel(2);
-                    methodBlock = jClass.AnalyzeMethods(prefilter, false, classDefinitions, false).AddTabLevel(2);
+                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
+                    operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
+                    fieldBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(tabLevel);
+                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, true).AddTabLevel(tabLevel);
+                    methodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, false).AddTabLevel(tabLevel);
                 }
             }
 
-            if (!jClassIsListener)
+            singleClassStr = string.Empty;
+
+            if (!classCantBeAnalyzed)
             {
-                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
+                List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
+
+                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION.AddTabLevel(tabLevel - 1));
                 if (jClassIsDepracated)
                 {
                     jClassDecoration.AppendLine();
-                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
+                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION.AddTabLevel(tabLevel - 1));
                 }
 
-                var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
-                                                        .Replace(AllPackageClasses.JAR, jarOrModuleName)
-                                                        .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace())
-                                                        .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
-                                                        .Replace(AllPackageClasses.ClassStub.CLASS, className)
-                                                        .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
-                                                        .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
-                                                        .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
-                                                        .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
-                                                        .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock)
-                                                        .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
-
-                var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{className}.cs");
-                WriteFile(classPath, singleClassStr);
+                singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
+                                            .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
+                                            .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
+                                            .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
+                                            .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
+                                            .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
+                                            .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock);
             }
-
-            var subClassStr = subClassBlock.ToString();
-            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassStr.Length != 0 ? subClassStr : string.Empty);
-
-            return classBlock;
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, bool isNested, ICollection<string> classDefinitions)
+        static string AnalyzeConstructors(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric, bool isNested)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -474,6 +577,10 @@ namespace MASES.JNetReflector
                 sortedFilteredCtors.Add(constructor.GenericString, constructor);
             }
 
+            List<string> classGenerics = new List<string>();
+            List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+
             StringBuilder subClassBlock = new StringBuilder();
             foreach (var constructor in sortedFilteredCtors.Values)
             {
@@ -482,24 +589,22 @@ namespace MASES.JNetReflector
 
                 bool isDeprecated = constructor.IsDeprecated();
                 string modifier = constructor.IsStatic() ? " static" : string.Empty;
-                string constructorName = constructor.Name();
+                string constructorName = constructor.Name(JNetReflectorCore.UseCamel);
                 bool bypass = false;
                 bool hasVarArg = false;
+                List<Parameter> parameters = new List<Parameter>();
                 Parameter varArg = null;
-                StringBuilder constructorHelpBuilder = new StringBuilder();
-                StringBuilder constructorParamsBuilder = new StringBuilder();
-                StringBuilder constructorExecutionParamsBuilder = new StringBuilder();
+
                 foreach (var parameter in constructor.Parameters)
                 {
+                    List<string> genArgumentsLocal = new List<string>();
+                    List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
-                    if (parameter.Type() == "object[]") { bypass = true; break; }
+                    if (parameter.Type(genArgumentsLocal, genClauseLocal, string.Empty, isGeneric, JNetReflectorCore.UseCamel) == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
-                        constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                           parameter.TypeWithoutArrayOrNullable()));
-                        constructorParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
-                        constructorExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                        parameters.Add(parameter);
                     }
                     else // store var arg becuase it is not clear that results are ordered
                     {
@@ -513,12 +618,51 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded constructor {0}", constructor.GenericString);
                     continue;
                 }
-                if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kinf of constructor is managed from AllClasses template as default for any JCOBridge reflected class
+                if (hasVarArg && paramCount == 1 && varArg.IsObjectType(JNetReflectorCore.UseCamel)) continue; // this kind of constructor is managed from AllClasses template as default for any JCOBridge reflected class
+
                 if (hasVarArg)
                 {
-                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, varArg.Name,
-                                                                                                                                       varArg.TypeWithoutArrayOrNullable()));
-                    constructorParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
+                    parameters.Add(varArg);
+                }
+
+                StringBuilder constructorHelpBuilder = new StringBuilder();
+                StringBuilder constructorParamsBuilder = new StringBuilder();
+                StringBuilder constructorExecutionParamsBuilder = new StringBuilder();
+
+                foreach (var item in parameters)
+                {
+                    List<string> paramGenArguments = new List<string>();
+                    List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
+                    var typeStr = item.Type(paramGenArguments, paramGenClause, item.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
+                    if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        foreach (var genString in paramGenArguments)
+                        {
+                            if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                        }
+                        if (typeStr.StartsWith(SpecialNames.JavaLangClass))
+                        {
+                            typeStr = typeStrForDoc;
+                            usableGenStrings = false;
+                        }
+                        if (!usableGenStrings)
+                        {
+                            typeStr = typeStrForDoc;
+                        }
+                    }
+                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name,
+                                                                                                                                       typeStrForDoc.ConvertToJavadoc()));
+                    if (item.IsVarArgs)
+                    {
+                        constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
+                    }
+                    else
+                    {
+                        constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name()}, ");
+                    }
+                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
@@ -537,7 +681,8 @@ namespace MASES.JNetReflector
                     StringBuilder exceptionBuilder = new StringBuilder();
                     for (int i = 0; i < exceptions.Length; i++)
                     {
-                        exceptionBuilder.AppendFormat(AllPackageClasses.ClassStub.ConstructorStub.HELP_EXCEPTION_DECORATION, exceptions[i].ToNetType());
+                        var expType = exceptions[i].ToNetType(JNetReflectorCore.UseCamel);
+                        exceptionBuilder.AppendFormat(AllPackageClasses.ClassStub.ConstructorStub.HELP_EXCEPTION_DECORATION, expType.ConvertToJavadoc());
                         if (i < exceptions.Length - 1) exceptionBuilder.AppendLine();
                     }
                     if (!constructorHelpBuilder.ToString().EndsWith(Environment.NewLine)) constructorHelpBuilder.AppendLine();
@@ -563,7 +708,7 @@ namespace MASES.JNetReflector
                                                                  .Replace(AllPackageClasses.ClassStub.ConstructorStub.NAME, constructorName)
                                                                  .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
                                                                  .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
-                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocHrefUrl());
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                 subClassBlock.AppendLine(singleConstructor);
             }
@@ -571,43 +716,117 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeOperators(this Class classDefinition, bool isNested, ICollection<string> classDefinitions)
+        static string AnalyzeOperators(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric, bool isNested)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
 
             StringBuilder subOperatorBlock = new StringBuilder();
-            foreach (var implementedInterface in classDefinition.Interfaces)
+
+            if (classDefinition.NeedsOperators(isGeneric))
             {
-                if (implementedInterface.MustBeAvoided())
+                List<string> classGenerics = new List<string>();
+                List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+
+                List<Class> filteredInterfaces = new List<Class>();
+                foreach (var implementedInterface in classDefinition.Interfaces)
                 {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded avoided {0}", implementedInterface.GenericString);
-                    continue;
-                }
-                if (implementedInterface.IsStatic())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
-                    continue;
-                }
-                if (JNetReflectorCore.DisableGenerics && implementedInterface.IsOrInheritFromJVMGenericClass())
-                {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
-                    continue;
+                    var superCls = classDefinition.SuperClass;
+                    if (superCls == null
+                        || !superCls.IsPublic()
+                        || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                        || superCls.MustBeAvoided()
+                        || superCls.TypeName == SpecialNames.JavaLangObject)
+                    {
+                        filteredInterfaces.Add(implementedInterface);
+                    }
+                    else
+                    {
+                        bool foundInSuperClass = false;
+                        foreach (var supInterface in superCls.Interfaces)
+                        {
+                            if (supInterface.TypeName == implementedInterface.TypeName)
+                            {
+                                foundInSuperClass = true; break;
+                            }
+                        }
+                        if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                    }
                 }
 
-                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implementedInterface.ToNetType(),
-                                                                                                                    classDefinition.ToNetType());
+                foreach (var implementedInterface in filteredInterfaces)
+                {
+                    if (implementedInterface.IsIterable())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded iterable {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (implementedInterface.MustBeAvoided())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded avoided {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (implementedInterface.IsStatic())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+                    if (JNetReflectorCore.DisableGenerics && implementedInterface.IsOrInheritFromJVMGenericClass())
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
+                        continue;
+                    }
+
+                    List<string> implClassGenerics = new List<string>();
+                    List<KeyValuePair<string, string>> implClassClauses = new List<KeyValuePair<string, string>>();
+                    implementedInterface.GetGenerics(implClassGenerics, implClassClauses, string.Empty, JNetReflectorCore.UseCamel);
+
+                    var implClass = implementedInterface.ToFullQualifiedClassName(false, JNetReflectorCore.UseCamel);
+                    if (isGeneric && implClassGenerics != null && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        foreach (var genString in implClassGenerics)
+                        {
+                            if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                        }
+                        if (usableGenStrings && implClass != SpecialNames.JavaLangClass)
+                        {
+                            implClass += implClassGenerics.ApplyGenerics();
+                        }
+                    }
+
+                    var classDef = classDefinition.ToFullQualifiedClassName(isGeneric, JNetReflectorCore.UseCamel);
+
+                    var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
+                                                                                                                        classDef.ConvertToJavadoc());
+                    subOperatorBlock.AppendLine(singleOperatorHelp);
+
+                    var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
+                    subOperatorBlock.AppendLine(singleOperator);
+                }
+            }
+
+            if (isGeneric)
+            {
+                // auto cast to non generic 
+
+                var implClass = classDefinition.ToFullQualifiedClassName(false, JNetReflectorCore.UseCamel);
+                var classDef = classDefinition.ToFullQualifiedClassName(true, JNetReflectorCore.UseCamel);
+
+                var singleOperatorHelp = string.Format(AllPackageClasses.ClassStub.OperatorStub.DEFAULT_DECORATION, implClass.ConvertToJavadoc(),
+                                                                                                                    classDef.ConvertToJavadoc());
                 subOperatorBlock.AppendLine(singleOperatorHelp);
 
-                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implementedInterface.ToNetType(),
-                                                                                                                       classDefinition.ToNetType());
+                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implClass, classDef);
                 subOperatorBlock.AppendLine(singleOperator);
             }
 
             return subOperatorBlock.ToString();
         }
 
-        static IList<Method> PrefilterMethods(this Class classDefinition)
+        static IList<Method> PrefilterMethods(this Class classDefinition, bool isGeneric, out bool isMainClass)
         {
+            isMainClass = false;
             ReportTrace(ReflectionTraceLevel.Info, "******************* Prefilter Methods of {0} *******************", classDefinition.GenericString);
 
             List<Method> prefilteredMethods = new List<Method>();
@@ -617,16 +836,36 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
 
-                if (paramCount == 0 &&
-                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode"
-                    || methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == " wait")
+                if (methodNameOrigin.Contains(SpecialNames.NestedClassSeparator)) // scala classes can contains this kind of methods
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded not manegeable method {0}", genString);
+                    continue;
+                }
+
+                if (methodNameOrigin == "main" && method.IsStatic())
+                {
+                    isMainClass = true;
+                    prefilteredMethods.Clear();
+                    return prefilteredMethods;
+                }
+
+                if (paramCount == 0 && !method.IsVoid() &&
+                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode")
                    ) continue; // special methods managed from JCOBridge
 
-                if (paramCount == 1 &&
-                    (methodNameOrigin == "equals" || methodNameOrigin == " wait")
+                if (paramCount == 0 && method.IsVoid() &&
+                    (methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == " wait")
                    ) continue; // special methods managed from JCOBridge
 
-                if (paramCount == 2 &&
+                if (paramCount == 1 && method.IsVoid() &&
+                    (methodNameOrigin == " wait")
+                   ) continue; // special methods managed from JCOBridge
+
+                if (paramCount == 1 && !method.IsVoid() &&
+                    (methodNameOrigin == "equals")
+                   ) continue; // special methods managed from JCOBridge
+
+                if (paramCount == 2 && method.IsVoid() &&
                     (methodNameOrigin == " wait")
                    ) continue; // special methods managed from JCOBridge
 
@@ -657,7 +896,7 @@ namespace MASES.JNetReflector
                 if (method.ReturnType.MustBeAvoided())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded MustBeAvoided method for ReturnType {0}", genString);
-                    continue; // avoid generics till now
+                    continue;
                 }
 
                 prefilteredMethods.Add(method);
@@ -666,9 +905,14 @@ namespace MASES.JNetReflector
             return prefilteredMethods;
         }
 
-        static string AnalyzeMethods(this Class classDefinition, IList<Method> prefilteredMethods, bool isNested, ICollection<string> classDefinitions, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, ICollection<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool isNested, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
+
+            if (!JNetReflectorCore.DisableGenericsInNonGenericClasses && !JNetReflectorCore.DisableGenerics && !classDefinition.IsJVMGenericClass())
+            {
+                isGeneric = true; // force generic to true to build generic methods on classes that does not have generics
+            }
 
             var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
             var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
@@ -687,10 +931,10 @@ namespace MASES.JNetReflector
 
                 if (method.IsProperty())
                 {
-                    var propertyName = method.PropertyName(classDefinitions);
+                    var propertyName = method.PropertyName(classDefinitions, false, JNetReflectorCore.UseCamel);
                     if (propertyName.IsReservedName()
                         || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
-                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions))
+                        || propertyName.CollapseWithOtherMethods(method, prefilteredMethods, classDefinitions, JNetReflectorCore.UseCamel))
                     {
                         methods.Add(genString, method);
                     }
@@ -711,6 +955,10 @@ namespace MASES.JNetReflector
                     methods.Add(genString, method);
                 }
             }
+
+            List<string> classGenerics = new List<string>();
+            List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
 
             foreach (var prop in properties.ToArray())
             {
@@ -758,10 +1006,32 @@ namespace MASES.JNetReflector
                     break;
                 }
 
+                List<string> genArguments = new List<string>();
+
                 foreach (var item in propToCheck)
                 {
-                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(); }
+                    if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(genArguments, null, string.Empty, isGeneric, JNetReflectorCore.UseCamel); }
                     if (item.IsSetProperty()) { setMethod = item; }
+                }
+
+                var returnTypeForDoc = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
+
+                if (returnType.StartsWith(SpecialNames.JavaLangClass))
+                {
+                    returnType = returnTypeForDoc;
+                }
+
+                if (isGeneric && genArguments.Count != 0 && classGenerics != null)
+                {
+                    bool usableGenStrings = true;
+                    foreach (var genString in genArguments)
+                    {
+                        if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                    }
+                    if (!usableGenStrings)
+                    {
+                        returnType = returnTypeForDoc;
+                    }
                 }
 
                 bool isArrayReturnType = false;
@@ -796,7 +1066,7 @@ namespace MASES.JNetReflector
                     else
                     {
                         executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, execStub,
-                                                                                                                  getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
+                                                                                                                  getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                                                                   getMethod.Name);
                     }
                 }
@@ -822,8 +1092,8 @@ namespace MASES.JNetReflector
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, executionStub.ToString())
-                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocHrefUrl() : string.Empty)
-                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.SET_HELP, setMethod != null ? setMethod.JavadocHrefUrl() : string.Empty);
+                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocHrefUrl(JNetReflectorCore.UseCamel) : string.Empty)
+                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.SET_HELP, setMethod != null ? setMethod.JavadocHrefUrl(JNetReflectorCore.UseCamel) : string.Empty);
 
                 subClassBlock.AppendLine(singleProperty);
             }
@@ -835,29 +1105,35 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
 
+                List<string> genericArguments = new List<string>();
+                List<KeyValuePair<string, string>> genericClauses = new List<KeyValuePair<string, string>>();
+                List<string> retGenArguments = new List<string>();
+                List<KeyValuePair<string, string>> retGenClause = new List<KeyValuePair<string, string>>();
                 string modifier = method.IsStatic() ? " static" : string.Empty;
-                string returnType = method.ReturnType();
-                string methodName = method.MethodName(classDefinitions);
+                string returnType = method.ReturnType(retGenArguments, retGenClause, "Return", isGeneric, JNetReflectorCore.UseCamel);
+                genericArguments.AddRange(retGenArguments);
+                genericClauses.AddRange(retGenClause);
+                string methodName = method.MethodName(classDefinitions, false, JNetReflectorCore.UseCamel);
 
                 if (methodName == "Clone" && returnType == "object") continue;
                 if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
+                if (returnType.StartsWith(SpecialNames.JavaLangClass))
+                {
+                    returnType = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
+                }
 
                 bool bypass = false;
                 bool hasVarArg = false;
+                List<Parameter> parameters = new List<Parameter>();
                 Parameter varArg = null;
-                StringBuilder methodHelpBuilder = new StringBuilder();
-                StringBuilder methodParamsBuilder = new StringBuilder();
-                StringBuilder methodExecutionParamsBuilder = new StringBuilder();
+
                 foreach (var parameter in method.Parameters)
                 {
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
-                        methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                 parameter.TypeWithoutArrayOrNullable()));
-                        methodParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
-                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
+                        parameters.Add(parameter);
                     }
                     else // store var arg becuase it is not clear that results are ordered
                     {
@@ -873,9 +1149,116 @@ namespace MASES.JNetReflector
                 }
                 if (hasVarArg)
                 {
-                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, varArg.Name,
-                                                                                                                             varArg.TypeWithoutArrayOrNullable()));
-                    methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
+                    parameters.Add(varArg);
+                }
+
+                StringBuilder methodHelpBuilder = new StringBuilder();
+                StringBuilder methodParamsBuilder = new StringBuilder();
+                StringBuilder methodExecutionParamsBuilder = new StringBuilder();
+
+                foreach (var parameter in parameters)
+                {
+                    List<string> paramGenArguments = new List<string>();
+                    List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
+                    var typeStr = parameter.Type(paramGenArguments, paramGenClause, parameter.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
+                    if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
+                    {
+                        bool usableGenStrings = true;
+                        if (typeStr.IsNetNativeType()) usableGenStrings = false;
+                        else if (typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
+                        {
+                            typeStr = typeStr.Substring(0, typeStr.IndexOf(SpecialNames.ArrayTypeTrailer));
+                        }
+                        else if (typeStr.StartsWith(SpecialNames.JavaLangClass))
+                        {
+                            typeStr = typeStrForDoc;
+                            usableGenStrings = false;
+                        }
+                        if (usableGenStrings && !typeStr.IsNetNativeType())
+                        {
+                            genericArguments.AddRange(paramGenArguments);
+                            genericClauses.AddRange(paramGenClause);
+                        }
+                    }
+
+                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
+                                                                                                                                  typeStrForDoc.ConvertToJavadoc()));
+                    if (parameter.IsVarArgs)
+                    {
+                        if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
+                        methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
+                    }
+                    else
+                    {
+                        methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name()}, ");
+                        methodExecutionParamsBuilder.AppendFormat($"{parameter.Name()}, ");
+                    }
+                }
+
+                if (isGeneric)
+                {
+                    string[] argArray = genericArguments.ToArray();
+                    KeyValuePair<string, string>[] argClausesArray = genericClauses.ToArray();
+                    for (int i = 0; i < argArray.Length; i++)
+                    {
+                        int counter = 0;
+                        foreach (var genericArgument in genericArguments)
+                        {
+                            if (genericArgument == argArray[i]) counter++;
+                        }
+                        if (counter > 1)
+                        {
+                            for (int i2 = i + 1; i2 < argArray.Length; i2++)
+                            {
+                                if (argArray[i] == argArray[i2])
+                                {
+                                    argArray[i2] = null;
+                                }
+                            }
+                        }
+                    }
+                    genericArguments.Clear();
+                    genericClauses.Clear();
+                    for (int i = 0; i < argArray.Length; i++)
+                    {
+                        var argInArray = argArray[i];
+                        if (argInArray != null)
+                        {
+                            if (argInArray.IsNetNativeType()) continue;
+                            else if (argInArray.EndsWith(SpecialNames.ArrayTypeTrailer))
+                            {
+                                var valueToAdd = argInArray.Substring(0, argInArray.IndexOf(SpecialNames.ArrayTypeTrailer));
+                                genericArguments.Add(valueToAdd);
+                                genericClauses.Add(new KeyValuePair<string, string>(valueToAdd, argClausesArray[i].Value));
+                            }
+                            else
+                            {
+                                genericArguments.Add(argInArray);
+                                genericClauses.Add(new KeyValuePair<string, string>(argInArray, argClausesArray[i].Value));
+                            }
+                        }
+                    }
+
+                    if (classGenerics != null)
+                    {
+                        foreach (var classGeneric in classGenerics)
+                        {
+                            if (genericArguments.Contains(classGeneric))
+                            {
+                                genericArguments.Remove(classGeneric);
+                                foreach (var genericClause in genericClauses.ToArray())
+                                {
+                                    if (genericClause.Key == classGeneric)
+                                    {
+                                        genericClauses.Remove(genericClause);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    methodName += genericArguments.ApplyGenerics();
                 }
 
                 string paramsString = methodParamsBuilder.ToString();
@@ -909,40 +1292,40 @@ namespace MASES.JNetReflector
                 {
                     executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
                                                                                                            execStub,
-                                                                                                           isVoidMethod || method.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
+                                                                                                           isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                                                            methodNameOrigin,
-                                                                                                           executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString); ; ;
+                                                                                                           executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
                 }
 
                 if (hasVarArg)
                 {
-                    string executionStubWithVarArg;
+                    string executionStubWithVarArg = string.Empty;
                     if (isReturnTypeException)
                     {
                         executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
                                                                                                                                    methodNameOrigin,
                                                                                                                                    (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                                   + executionParamsString + ", " + varArg.Name,
+                                                                                                                                   + executionParamsString + ", " + varArg.Name(),
                                                                                                                                    returnType);
                     }
                     else
                     {
                         executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, isVoidMethod ? string.Empty : "return ",
                                                                                                                          execStub,
-                                                                                                                         isVoidMethod || method.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
+                                                                                                                         isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                                                                          methodNameOrigin,
                                                                                                                          (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                         + executionParamsString + ", " + varArg.Name);
+                                                                                                                         + executionParamsString + ", " + varArg.Name());
                     }
-                    executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
+                    executionStub = $"if ({varArg.Name()}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
-                if(!isVoidMethod)
+                if (!isVoidMethod)
                 {
-                    string strReturn = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_RETURN_DECORATION, method.ReturnType.IsNetNative() ? "langword" : "cref",
-                                                                                                                    returnType);
+                    var returnTypeForDocs = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
+                    string strReturn = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_RETURN_DECORATION, returnTypeForDocs.ConvertToJavadoc());
                     if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
                     methodHelpBuilder.Append(strReturn);
                 }
@@ -952,7 +1335,8 @@ namespace MASES.JNetReflector
                     StringBuilder exceptionBuilder = new StringBuilder();
                     for (int i = 0; i < exceptions.Length; i++)
                     {
-                        exceptionBuilder.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_EXCEPTION_DECORATION, exceptions[i].ToNetType());
+                        var expType = exceptions[i].ToNetType(JNetReflectorCore.UseCamel);
+                        exceptionBuilder.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_EXCEPTION_DECORATION, expType.ConvertToJavadoc());
                         if (i < exceptions.Length - 1) exceptionBuilder.AppendLine();
                     }
                     if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
@@ -978,8 +1362,9 @@ namespace MASES.JNetReflector
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric)) // method.WhereClauses(isGeneric))
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
-                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl());
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                 subClassBlock.AppendLine(singleMethod);
             }
@@ -987,7 +1372,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeFields(this Class classDefinition, ICollection<string> classDefinitions)
+        static string AnalyzeFields(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Fields of {0} *******************", classDefinition.GenericString);
 
@@ -1025,7 +1410,9 @@ namespace MASES.JNetReflector
                 {
                     //  modifier += field.IsFinal() ? " readonly" : string.Empty; // avoid till now because seems not compile the test project
                 }
-                string fieldType = field.Type();
+                List<string> genArguments = new List<string>();
+                List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
+                string fieldType = field.Type(genArguments, genClause, isGeneric, JNetReflectorCore.UseCamel);
                 string fieldName = field.Name(false);
 
                 if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
@@ -1036,7 +1423,7 @@ namespace MASES.JNetReflector
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
                 string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.EXECUTION_FORMAT, field.IsStatic() ? "Clazz" : "Instance",
-                                                                                                             field.IsObjectReturnType() ? string.Empty : $"<{fieldType}>",
+                                                                                                             field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>",
                                                                                                              field.Name);
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION);
@@ -1051,7 +1438,7 @@ namespace MASES.JNetReflector
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, fieldType)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.NAME, fieldName)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.EXECUTION, executionStub)
-                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.HELP, field.JavadocHrefUrl());
+                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.HELP, field.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                 subClassBlock.AppendLine(singleField);
             }

@@ -20,6 +20,7 @@ using Java.Util;
 using MASES.JNetTest.Common;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
+using Java.Lang;
 
 namespace MASES.JNetTest
 {
@@ -38,15 +39,16 @@ namespace MASES.JNetTest
             var res = cls.Equals(cls2);
             System.Console.WriteLine($"Class are equals: {res}");
 
-            if (args.Length != 0)
+            try
             {
-                try
-                {
-                    var set = Collections.Singleton(appArgs[0]);
-                    set.Add("test");
-                }
-                catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+                var set = Collections.Singleton("test");
+                if (appArgs.Length != 0) set.Add(appArgs[0]);
             }
+            catch (UnsupportedOperationException)
+            {
+                System.Console.WriteLine("Add Operation not supported as expected");
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
             TestExtensions();
         }
@@ -62,7 +64,7 @@ namespace MASES.JNetTest
 
             const int execution = 10000;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());
@@ -80,7 +82,7 @@ namespace MASES.JNetTest
 
             //var collection = newDict.Values.ToJCollection();
             //var intermediate = collection.ToList<Map.Entry<string, string>>();
-            var list = ((Collection<string>)alist).ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
+            var list = alist.ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
         }
     }
 }

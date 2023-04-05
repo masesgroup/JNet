@@ -26,13 +26,21 @@ namespace Java.Lang
     public class Iterable : JVMBridgeBaseEnumerable<Iterable>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.Iterable";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Iterable() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Iterable(params object[] args) : base(args) { }
 #if !JNETREFLECTOR
         /// <summary>
         /// Returns an iterator over elements of type <see langref="object"/>
@@ -49,13 +57,21 @@ namespace Java.Lang
     public class Iterable<T> : JVMBridgeBaseEnumerable<Iterable<T>, T>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.Iterable";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Iterable() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Iterable(params object[] args) : base(args) { }
 #if !JNETREFLECTOR
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.

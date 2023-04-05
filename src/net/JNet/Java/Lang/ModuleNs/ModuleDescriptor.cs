@@ -27,14 +27,54 @@ namespace Java.Lang.ModuleNs
     public sealed class ModuleDescriptor : JVMBridgeBase<ModuleDescriptor>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.lang.module.ModuleDescriptor";
 #else
     public partial class ModuleDescriptor
     {
 #endif
-
         // can be extended with methods not reflected or not available in Java;
+        public partial class Exports
+        {
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Enum<Modifier>
+            {
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Exports$Modifier";
+            }
+        }
+
+        public partial class Opens
+        {
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Enum<Modifier>
+            {
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Opens$Modifier";
+            }
+        }
+
+        public partial class Requires
+        {
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Enum<Modifier>
+            {
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Requires$Modifier";
+            }
+        }
     }
 }

@@ -22,27 +22,8 @@ using System.Collections.Generic;
 
 namespace Java.Util
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html"/>
-    /// </summary>
-    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html"/></typeparam>
-    public class Enumeration<E> : JVMBridgeBase<Enumeration<E>>
+    public partial class Enumeration<E>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-        /// </summary>
-        public override string ClassName => "java.util.Enumeration";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
-        /// </summary>
-        public override bool IsInterface => true;
-        /// <summary>
-        /// Tests if this enumeration contains more elements.
-        /// </summary>
-        public bool HasMoreElements => IExecute<bool>("hasMoreElements");
-        /// <summary>
-        /// Returns the next element of this enumeration if this enumeration object has at least one more element to provide.
-        /// </summary>
-        public E NextElement => IExecute<E>("nextElement");
+
     }
 }

@@ -22,7 +22,7 @@ using System.Collections.Generic;
 namespace MASES.JNet.Extensions
 {
     /// <summary>
-    /// Extension for JAva.Util classes
+    /// Extension for Java.Util classes
     /// </summary>
     public static class JavaUtilExtensions
     {
@@ -68,12 +68,12 @@ namespace MASES.JNet.Extensions
         public static Collection<T> ToJCollection<T>(this ICollection<T> collection)
         {
             ArrayList<T> list = new();
-            if (collection.Count == 0) return list;
+            if (collection.Count == 0) return list.CastTo<Collection<T>>();
             foreach (var item in collection)
             {
                 list.Add(item);
             }
-            return list;
+            return list.CastTo<Collection<T>>();
         }
         /// <summary>
         /// Converts a <see cref="ICollection{T}"/> to <see cref="Java.Util.List{T}"/>
@@ -105,8 +105,8 @@ namespace MASES.JNet.Extensions
         public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
-            if (map.IsEmpty()) return dictionary;
-            foreach (var item in map.EntrySet2)
+            if (map.IsEmpty) return dictionary;
+            foreach (var item in map.EntrySet)
             {
                 dictionary.Add(item.Key, item.Value);
             }

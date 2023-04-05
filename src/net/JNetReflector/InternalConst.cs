@@ -31,28 +31,32 @@ namespace MASES.JNetReflector
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
+        public const string OriginJavadocJARVersionAndUrls = "OriginJavadocJARVersionAndUrls";
         public const string DestinationRootPath = "DestinationRootPath";
+        public const string ClassesToAnalyze = "ClassesToAnalyze";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesToBeListener = "ClassesToBeListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
-        public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
+        public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
+        public const string OnlyPropertiesForGetterSetter = "OnlyPropertiesForGetterSetter";
         public const string ReflectDeprecated = "ReflectDeprecated";
+        public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
+        public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
+        public const string DisableGenericsInNonGenericClasses = "DisableGenericsInNonGenericClasses";
         public const string DisableGenerics = "DisableGenerics";
+        public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";
+        public const string DoNotCamel = "DoNotCamel";
         public const string TraceLevel = "TraceLevel";
         public const string TraceTo = "TraceTo";
     }
 
     public static class SpecialNames
     {
-        static Assembly jcoBridgeAssemblyVersion = typeof(SetupJVMWrapper).Assembly;
-        static System.Diagnostics.FileVersionInfo fileVersionInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(jcoBridgeAssemblyVersion.Location);
-        public static string JCOBridgeVersion => $"{fileVersionInfo.FileMajorPart}.{fileVersionInfo.FileMinorPart}.{fileVersionInfo.FileBuildPart}";
-
-        static Assembly assembly = typeof(Program).Assembly;
+        static readonly Assembly assembly = typeof(Program).Assembly;
 
         public static string VersionPlaceHolder()
         {
@@ -64,7 +68,12 @@ namespace MASES.JNetReflector
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
+        public const string JavaLangClass = "Java.Lang.Class";
+        public const string JavaLangVoid = "Java.Lang.Void";
         public const string JavaLangObject = "java.lang.Object";
+        public const string JavaLangDeprecated = "java.lang.Deprecated";
+        public const string JavaLangIterable = "java.lang.Iterable";
+        public const string JavaUtilCollection = "java.util.Collection";
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
@@ -77,7 +86,7 @@ namespace MASES.JNetReflector
             return JavaLangExceptions.Contains(canonicalName);
         }
 
-        public static IEnumerable<string> JavaLangExceptions = new string[]
+        static readonly IEnumerable<string> JavaLangExceptions = new string[]
         {
             "java.lang.Throwable",
             "java.lang.ArithmeticException",
@@ -141,6 +150,15 @@ namespace MASES.JNetReflector
             {
                 lst.Add(i.ToString());
             }
+            return lst;
+        }
+
+        public static IEnumerable<string> ReservedPropertyNames = CreateReservedPropertyNames();
+
+        static IEnumerable<string> CreateReservedPropertyNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("clone");
             return lst;
         }
 

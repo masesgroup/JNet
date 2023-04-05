@@ -24,6 +24,12 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
+#if !JNETREFLECTOR
+    public partial class Collection<E>
+    {
+
+    }
+#else
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/>
     /// </summary>
@@ -31,14 +37,14 @@ namespace Java.Util
     public class Collection<E> : Iterable<E>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "java.util.Collection";
-#if !JNETREFLECTOR
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(E)"/>
         /// </summary>
@@ -72,10 +78,6 @@ namespace Java.Util
         /// </summary>
         public bool RemoveAll​<T>(Collection<T> c) => IExecute<bool>("removeAll​", c);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
-        /// </summary>
-        public bool RemoveIf<SuperE>(Predicate<SuperE> filter) => IExecute<bool>("removeIf", filter);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
         /// </summary>
         public bool RetainAll​<T>(Collection<T> c) => IExecute<bool>("retainAll​​", c);
@@ -83,10 +85,6 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
         /// </summary>
         public int Size => IExecute<int>("size");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
-        /// </summary>
-        public Spliterator<E> Spliterator() => IExecute<Spliterator<E>>("spliterator");
-#endif
     }
+#endif
 }

@@ -18,66 +18,8 @@
 
 namespace Java.Util
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
-    /// </summary>
-    public class Set<E> : Collection<E>
+    public partial class Set<E>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-        /// </summary>
-        public override string ClassName => "java.util.Set";
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)"/>
-        /// </summary>
-        public static Set<E> CopyOf​<ExtendsE>(Collection<ExtendsE> coll) where ExtendsE : E => SExecute<Set<E>>("copyOf​", coll);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of()"/>
-        /// </summary>
-        public static Set<E> Of() => SExecute<Set<E>>("of");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1) => SExecute<Set<E>>("of", e1);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E...)"/>
-        /// </summary>
-        public static Set<E> Of(params E[] elements) => elements.Length == 0 ? SExecute<Set<E>>("of") : SExecute<Set<E>>("of", elements);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2) => SExecute<Set<E>>("of", e1, e2);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3) => SExecute<Set<E>>("of", e1, e2, e3);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4) => SExecute<Set<E>>("of", e1, e2, e3, e4);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5, E e6) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5, e6);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5, e6, e7);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8, e9);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E,E,E)"/>
-        /// </summary>
-        public static Set<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10) => SExecute<Set<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8, e9, e10);
+
     }
 }
