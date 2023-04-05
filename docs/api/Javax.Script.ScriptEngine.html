@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Script.ScriptEngine&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -387,7 +387,7 @@
   </span>
   <a id="Javax_Script_ScriptEngine_ClassName_" data-uid="Javax.Script.ScriptEngine.ClassName*"></a>
   <h4 id="Javax_Script_ScriptEngine_ClassName" data-uid="Javax.Script.ScriptEngine.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -438,6 +438,37 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Javax.Script.ScriptContext.html">ScriptContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_CreateBindings.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.CreateBindings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L86">View Source</a>
+  </span>
+  <a id="Javax_Script_ScriptEngine_CreateBindings_" data-uid="Javax.Script.ScriptEngine.CreateBindings*"></a>
+  <h4 id="Javax_Script_ScriptEngine_CreateBindings" data-uid="Javax.Script.ScriptEngine.CreateBindings">CreateBindings</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()">https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bindings CreateBindings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Script.Bindings.html">Bindings</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -509,7 +540,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Factory.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L93">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Factory_" data-uid="Javax.Script.ScriptEngine.Factory*"></a>
   <h4 id="Javax_Script_ScriptEngine_Factory" data-uid="Javax.Script.ScriptEngine.Factory">Factory</h4>
@@ -575,7 +606,7 @@
   </span>
   <a id="Javax_Script_ScriptEngine_IsAbstract_" data-uid="Javax.Script.ScriptEngine.IsAbstract*"></a>
   <h4 id="Javax_Script_ScriptEngine_IsAbstract" data-uid="Javax.Script.ScriptEngine.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -608,7 +639,7 @@
   </span>
   <a id="Javax_Script_ScriptEngine_IsCloseable_" data-uid="Javax.Script.ScriptEngine.IsCloseable*"></a>
   <h4 id="Javax_Script_ScriptEngine_IsCloseable" data-uid="Javax.Script.ScriptEngine.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -641,7 +672,7 @@
   </span>
   <a id="Javax_Script_ScriptEngine_IsInterface_" data-uid="Javax.Script.ScriptEngine.IsInterface*"></a>
   <h4 id="Javax_Script_ScriptEngine_IsInterface" data-uid="Javax.Script.ScriptEngine.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -674,7 +705,7 @@
   </span>
   <a id="Javax_Script_ScriptEngine_IsStatic_" data-uid="Javax.Script.ScriptEngine.IsStatic*"></a>
   <h4 id="Javax_Script_ScriptEngine_IsStatic" data-uid="Javax.Script.ScriptEngine.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -795,42 +826,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_CreateBindings.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.CreateBindings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L168">View Source</a>
-  </span>
-  <a id="Javax_Script_ScriptEngine_CreateBindings_" data-uid="Javax.Script.ScriptEngine.CreateBindings*"></a>
-  <h4 id="Javax_Script_ScriptEngine_CreateBindings" data-uid="Javax.Script.ScriptEngine.CreateBindings">CreateBindings()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()">https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Bindings CreateBindings()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Script.Bindings.html">Bindings</a></td>
-        <td><p><a class="xref" href="Javax.Script.Bindings.html">Bindings</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_Java_Io_Reader_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(Java.Io.Reader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L125">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_Java_Io_Reader_" data-uid="Javax.Script.ScriptEngine.Eval(Java.Io.Reader)">Eval(Reader)</h4>
@@ -870,7 +869,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -895,7 +894,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_Java_Io_Reader_Javax_Script_Bindings_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(Java.Io.Reader%2CJavax.Script.Bindings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L104">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_Java_Io_Reader_Javax_Script_Bindings_" data-uid="Javax.Script.ScriptEngine.Eval(Java.Io.Reader,Javax.Script.Bindings)">Eval(Reader, Bindings)</h4>
@@ -941,7 +940,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -966,7 +965,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_Java_Io_Reader_Javax_Script_ScriptContext_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(Java.Io.Reader%2CJavax.Script.ScriptContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L108">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L115">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_Java_Io_Reader_Javax_Script_ScriptContext_" data-uid="Javax.Script.ScriptEngine.Eval(Java.Io.Reader,Javax.Script.ScriptContext)">Eval(Reader, ScriptContext)</h4>
@@ -1012,7 +1011,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1037,7 +1036,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_System_String_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L150">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L157">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_System_String_" data-uid="Javax.Script.ScriptEngine.Eval(System.String)">Eval(String)</h4>
@@ -1077,7 +1076,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1102,7 +1101,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_System_String_Javax_Script_Bindings_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(System.String%2CJavax.Script.Bindings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L129">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L136">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_System_String_Javax_Script_Bindings_" data-uid="Javax.Script.ScriptEngine.Eval(System.String,Javax.Script.Bindings)">Eval(String, Bindings)</h4>
@@ -1148,7 +1147,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1173,7 +1172,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Eval_System_String_Javax_Script_ScriptContext_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Eval(System.String%2CJavax.Script.ScriptContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L140">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L147">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Eval_" data-uid="Javax.Script.ScriptEngine.Eval*"></a>
   <h4 id="Javax_Script_ScriptEngine_Eval_System_String_Javax_Script_ScriptContext_" data-uid="Javax.Script.ScriptEngine.Eval(System.String,Javax.Script.ScriptContext)">Eval(String, ScriptContext)</h4>
@@ -1219,7 +1218,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1244,7 +1243,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Get_System_String_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Get(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L159">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L166">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Get_" data-uid="Javax.Script.ScriptEngine.Get*"></a>
   <h4 id="Javax_Script_ScriptEngine_Get_System_String_" data-uid="Javax.Script.ScriptEngine.Get(System.String)">Get(String)</h4>
@@ -1284,7 +1283,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1294,7 +1293,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_GetBindings_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.GetBindings(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L177">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L175">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_GetBindings_" data-uid="Javax.Script.ScriptEngine.GetBindings*"></a>
   <h4 id="Javax_Script_ScriptEngine_GetBindings_System_Int32_" data-uid="Javax.Script.ScriptEngine.GetBindings(System.Int32)">GetBindings(Int32)</h4>
@@ -1344,7 +1343,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_Put_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.Put(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L186">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L184">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_Put_" data-uid="Javax.Script.ScriptEngine.Put*"></a>
   <h4 id="Javax_Script_ScriptEngine_Put_System_String_System_Object_" data-uid="Javax.Script.ScriptEngine.Put(System.String,System.Object)">Put(String, Object)</h4>
@@ -1384,7 +1383,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptEngine_SetBindings_Javax_Script_Bindings_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptEngine.SetBindings(Javax.Script.Bindings%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L195">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptEngine.cs/#L193">View Source</a>
   </span>
   <a id="Javax_Script_ScriptEngine_SetBindings_" data-uid="Javax.Script.ScriptEngine.SetBindings*"></a>
   <h4 id="Javax_Script_ScriptEngine_SetBindings_Javax_Script_Bindings_System_Int32_" data-uid="Javax.Script.ScriptEngine.SetBindings(Javax.Script.Bindings,System.Int32)">SetBindings(Bindings, Int32)</h4>

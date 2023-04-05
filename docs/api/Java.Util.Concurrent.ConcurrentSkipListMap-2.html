@@ -1,0 +1,2030 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConcurrentSkipListMap&lt;K, V&gt;
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConcurrentSkipListMap&lt;K, V&gt;
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2">
+  
+  
+  <h1 id="Java_Util_Concurrent_ConcurrentSkipListMap_2" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2" class="text-break">Class ConcurrentSkipListMap&lt;K, V&gt;
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.AbstractMap-2.html">AbstractMap</a>&lt;K, V&gt;&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Util.AbstractMap-2.html">AbstractMap</a>&lt;K, V&gt;</div>
+    <div class="level5"><span class="xref">ConcurrentSkipListMap&lt;K, V&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_EntrySet">AbstractMap&lt;K, V&gt;.EntrySet</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_IsEmpty">AbstractMap&lt;K, V&gt;.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_KeySet">AbstractMap&lt;K, V&gt;.KeySet</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Size">AbstractMap&lt;K, V&gt;.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Values">AbstractMap&lt;K, V&gt;.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_ContainsKey_System_Object_">AbstractMap&lt;K, V&gt;.ContainsKey(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_ContainsValue_System_Object_">AbstractMap&lt;K, V&gt;.ContainsValue(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Get_System_Object_">AbstractMap&lt;K, V&gt;.Get(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Put__0__1_">AbstractMap&lt;K, V&gt;.Put(K, V)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Remove_System_Object_">AbstractMap&lt;K, V&gt;.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_Clear">AbstractMap&lt;K, V&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_PutAll__2_Java_Util_Map___0___1__">AbstractMap&lt;K, V&gt;.PutAll&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_ClassName">AbstractMap&lt;K, V&gt;.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_IsAbstract">AbstractMap&lt;K, V&gt;.IsAbstract</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_IsCloseable">AbstractMap&lt;K, V&gt;.IsCloseable</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_IsInterface">AbstractMap&lt;K, V&gt;.IsInterface</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractMap-2.html#Java_Util_AbstractMap_2_IsStatic">AbstractMap&lt;K, V&gt;.IsStatic</a>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractMap&lt;K, V&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Util.Concurrent.html">Java.Util.Concurrent</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConcurrentSkipListMap&lt;K, V&gt; : AbstractMap&lt;K, V&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">K</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">V</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1269">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor">ConcurrentSkipListMap()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_Comparator_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.%23ctor(Java.Util.Comparator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L314">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_Comparator_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor(Java.Util.Comparator)">ConcurrentSkipListMap(Comparator)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap(Comparator arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Comparator.html">Comparator</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_Map_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.%23ctor(Java.Util.Map)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L322">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_Map_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor(Java.Util.Map)">ConcurrentSkipListMap(Map)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Map)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap(Map arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.html">Map</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_SortedMap_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.%23ctor(Java.Util.SortedMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L330">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_Java_Util_SortedMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor(Java.Util.SortedMap)">ConcurrentSkipListMap(SortedMap)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.SortedMap)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.SortedMap)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap(SortedMap arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1273">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2__ctor_System_Object___" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.#ctor(System.Object[])">ConcurrentSkipListMap(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_ClassName.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1278">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_ClassName_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.ClassName*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_ClassName" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.AbstractMap&lt;K, V&gt;.ClassName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_Comparator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.Comparator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L369">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_Comparator_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.Comparator*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_Comparator" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.Comparator">Comparator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#comparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#comparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Comparator Comparator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Comparator.html">Comparator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingKeySet.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.DescendingKeySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L376">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingKeySet_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.DescendingKeySet*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingKeySet" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.DescendingKeySet">DescendingKeySet</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigableSet&lt;K&gt; DescendingKeySet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingMap.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.DescendingMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L383">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.DescendingMap*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_DescendingMap" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.DescendingMap">DescendingMap</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; DescendingMap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstEntry.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.FirstEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L390">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FirstEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstEntry" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FirstEntry">FirstEntry</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; FirstEntry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstKey.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.FirstKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L397">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FirstKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FirstKey" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FirstKey">FirstKey</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K FirstKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1282">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsAbstract_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsAbstract*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsAbstract" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.AbstractMap&lt;K, V&gt;.IsAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1286">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsCloseable_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsCloseable*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsCloseable" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.AbstractMap&lt;K, V&gt;.IsCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_IsInterface.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1290">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsInterface_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsInterface*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsInterface" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.AbstractMap&lt;K, V&gt;.IsInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_IsStatic.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1294">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsStatic_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsStatic*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_IsStatic" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.AbstractMap&lt;K, V&gt;.IsStatic</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_LastEntry.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.LastEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L404">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LastEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LastEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LastEntry" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LastEntry">LastEntry</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; LastEntry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_LastKey.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.LastKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L411">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LastKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LastKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LastKey" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LastKey">LastKey</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K LastKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_NavigableKeySet.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.NavigableKeySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L418">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_NavigableKeySet_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.NavigableKeySet*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_NavigableKeySet" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.NavigableKeySet">NavigableKeySet</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigableSet&lt;K&gt; NavigableKeySet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_PollFirstEntry.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.PollFirstEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L425">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_PollFirstEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.PollFirstEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_PollFirstEntry" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.PollFirstEntry">PollFirstEntry</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; PollFirstEntry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_PollLastEntry.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.PollLastEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L432">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_PollLastEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.PollLastEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_PollLastEntry" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.PollLastEntry">PollLastEntry</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; PollLastEntry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.CeilingEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L510">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.CeilingEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingEntry__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.CeilingEntry(`0)">CeilingEntry(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; CeilingEntry(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.CeilingKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L546">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.CeilingKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_CeilingKey__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.CeilingKey(`0)">CeilingKey(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K CeilingKey(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_Clone.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L501">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_Clone_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.Clone*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_Clone" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentSkipListMap&lt;K, V&gt; Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap.html">ConcurrentSkipListMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.FloorEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L519">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FloorEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorEntry__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FloorEntry(`0)">FloorEntry(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; FloorEntry(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.FloorKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L555">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FloorKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_FloorKey__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.FloorKey(`0)">FloorKey(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorKey(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K FloorKey(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.HeadMap(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L451">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HeadMap*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HeadMap(`0)">HeadMap(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; HeadMap(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.HeadMap(%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L442">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HeadMap*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HeadMap__0_System_Boolean_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HeadMap(`0,System.Boolean)">HeadMap(K, Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; HeadMap(K arg0, bool arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.HigherEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L528">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HigherEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherEntry__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HigherEntry(`0)">HigherEntry(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; HigherEntry(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.HigherKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L564">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HigherKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_HigherKey__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.HigherKey(`0)">HigherKey(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherKey(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K HigherKey(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.LowerEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L537">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerEntry_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LowerEntry*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerEntry__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LowerEntry(`0)">LowerEntry(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map.Entry&lt;K, V&gt; LowerEntry(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.LowerKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L573">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerKey_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LowerKey*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_LowerKey__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.LowerKey(`0)">LowerKey(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerKey(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public K LowerKey(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.SubMapMethod(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L473">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.SubMapMethod*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod__0__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.SubMapMethod(`0,`0)">SubMapMethod(K, K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; SubMapMethod(K arg0, K arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod__0_System_Boolean__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.SubMapMethod(%600%2CSystem.Boolean%2C%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L463">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.SubMapMethod*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_SubMapMethod__0_System_Boolean__0_System_Boolean_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.SubMapMethod(`0,System.Boolean,`0,System.Boolean)">SubMapMethod(K, Boolean, K, Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; SubMapMethod(K arg0, bool arg1, K arg2, bool arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.TailMap(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L492">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.TailMap*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap__0_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.TailMap(`0)">TailMap(K)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; TailMap(K arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.TailMap(%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L483">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.TailMap*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_TailMap__0_System_Boolean_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.TailMap(`0,System.Boolean)">TailMap(K, Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentNavigableMap&lt;K, V&gt; TailMap(K arg0, bool arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:K"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Io_Serializable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap%7B%600%2C%601%7D)~Java.Io.Serializable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L349">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Io_Serializable" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap{`0,`1})~Java.Io.Serializable">Implicit(ConcurrentSkipListMap&lt;K, V&gt; to Serializable)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(ConcurrentSkipListMap&lt;K, V&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap</a>&lt;K, V&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.Serializable.html">Serializable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Lang_Cloneable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap%7B%600%2C%601%7D)~Java.Lang.Cloneable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L345">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Lang_Cloneable" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap{`0,`1})~Java.Lang.Cloneable">Implicit(ConcurrentSkipListMap&lt;K, V&gt; to Cloneable)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Cloneable(ConcurrentSkipListMap&lt;K, V&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap</a>&lt;K, V&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Util_Concurrent_ConcurrentNavigableMap__0__1_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap%7B%600%2C%601%7D)~Java.Util.Concurrent.ConcurrentNavigableMap%7B%600%2C%601%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L341">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Util_Concurrent_ConcurrentNavigableMap__0__1_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap{`0,`1})~Java.Util.Concurrent.ConcurrentNavigableMap{`0,`1}">Implicit(ConcurrentSkipListMap&lt;K, V&gt; to ConcurrentNavigableMap&lt;K, V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap&lt;K, V&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ConcurrentNavigableMap&lt;K, V&gt;(ConcurrentSkipListMap&lt;K, V&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap</a>&lt;K, V&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentNavigableMap-2.html">ConcurrentNavigableMap</a>&lt;K, V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Util_Concurrent_ConcurrentSkipListMap.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap%7B%600%2C%601%7D)~Java.Util.Concurrent.ConcurrentSkipListMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L353">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentSkipListMap_2_op_Implicit_Java_Util_Concurrent_ConcurrentSkipListMap__0__1___Java_Util_Concurrent_ConcurrentSkipListMap" data-uid="Java.Util.Concurrent.ConcurrentSkipListMap`2.op_Implicit(Java.Util.Concurrent.ConcurrentSkipListMap{`0,`1})~Java.Util.Concurrent.ConcurrentSkipListMap">Implicit(ConcurrentSkipListMap&lt;K, V&gt; to ConcurrentSkipListMap)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap.html">ConcurrentSkipListMap</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ConcurrentSkipListMap(ConcurrentSkipListMap&lt;K, V&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap-2.html">ConcurrentSkipListMap</a>&lt;K, V&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ConcurrentSkipListMap.html">ConcurrentSkipListMap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentSkipListMap_2.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentSkipListMap%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentSkipListMap.cs/#L307" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -107,7 +107,7 @@
       <a class="xref" href="Javax.Management.Remote.JMXConnectorServer.html#Javax_Management_Remote_JMXConnectorServer_MBeanServer">JMXConnectorServer.MBeanServer</a>
     </div>
     <div>
-      <a class="xref" href="Javax.Management.Remote.JMXConnectorServer.html#Javax_Management_Remote_JMXConnectorServer_ToJMXConnector_Java_Util_Map_">JMXConnectorServer.ToJMXConnector(Map)</a>
+      <a class="xref" href="Javax.Management.Remote.JMXConnectorServer.html#Javax_Management_Remote_JMXConnectorServer_ToJMXConnector__1_Java_Util_Map_System_String___0__">JMXConnectorServer.ToJMXConnector&lt;Arg0Extendsobject&gt;(Map&lt;String, Arg0Extendsobject&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Management.Remote.JMXConnectorServer.html#Javax_Management_Remote_JMXConnectorServer_PreRegister_Javax_Management_MBeanServer_Javax_Management_ObjectName_">JMXConnectorServer.PreRegister(MBeanServer, ObjectName)</a>
@@ -188,6 +188,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Management.NotificationBroadcasterSupport&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -197,13 +200,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -212,19 +215,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -365,7 +365,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_Javax_Management_Remote_JMXServiceURL_Java_Util_Map_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor(Javax.Management.Remote.JMXServiceURL,Java.Util.Map)">RMIConnectorServer(JMXServiceURL, Map)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -420,7 +420,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_Javax_Management_Remote_JMXServiceURL_Java_Util_Map_Javax_Management_MBeanServer_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor(Javax.Management.Remote.JMXServiceURL,Java.Util.Map,Javax.Management.MBeanServer)">RMIConnectorServer(JMXServiceURL, Map, MBeanServer)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E,javax.management.MBeanServer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E,javax.management.MBeanServer)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -481,7 +481,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer__ctor_Javax_Management_Remote_JMXServiceURL_Java_Util_Map_Javax_Management_Remote_Rmi_RMIServerImpl_Javax_Management_MBeanServer_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.#ctor(Javax.Management.Remote.JMXServiceURL,Java.Util.Map,Javax.Management.Remote.Rmi.RMIServerImpl,Javax.Management.MBeanServer)">RMIConnectorServer(JMXServiceURL, Map, RMIServerImpl, MBeanServer)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -583,7 +583,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer_ClassName_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.ClassName*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer_ClassName" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -647,7 +647,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsAbstract_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsAbstract*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsAbstract" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -680,7 +680,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsCloseable_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsCloseable*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsCloseable" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -713,7 +713,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsInterface_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsInterface*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsInterface" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -746,7 +746,7 @@
   </span>
   <a id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsStatic_" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsStatic*"></a>
   <h4 id="Javax_Management_Remote_Rmi_RMIConnectorServer_IsStatic" data-uid="Javax.Management.Remote.Rmi.RMIConnectorServer.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

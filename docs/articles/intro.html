@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>JNet: .NET gateway for JVM APIs | JNet website </title>
+    <title>JNet: Java/JVM suite for .NET | JNet website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="JNet: .NET gateway for JVM APIs | JNet website ">
+    <meta name="title" content="JNet: Java/JVM suite for .NET | JNet website ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,60 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="jnet-net-gateway-for-jvm-apis">JNet: .NET gateway for JVM APIs</h1>
+<h1 id="jnet-javajvm-suite-for-net">JNet: Java/JVM suite for .NET</h1>
 
-<p>JNet is a .NET gateway for JVM APIs (Java, Scala, Kotlin, ...) to use .NET and JVM side-by-side.</p>
+<p>JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.</p>
+<h3 id="libraries-and-tools">Libraries and Tools</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">JNet</th>
+<th style="text-align: center;">JNet.Templates</th>
+<th style="text-align: center;">JNetPSCore</th>
+<th style="text-align: center;">JNetCLI</th>
+<th style="text-align: center;">JNetReflector</th>
+<th style="text-align: center;">JNetPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://www.nuget.org/packages/MASES.JNet"><img src="https://img.shields.io/nuget/v/MASES.JNet" alt="JNet nuget"></a><br><a href="https://www.nuget.org/packages/MASES.JNet"><img src="https://img.shields.io/nuget/dt/MASES.JNet" alt="downloads"></a></td>
+<td style="text-align: center;"><a href="https://www.nuget.org/packages/MASES.JNet.Templates"><img src="https://img.shields.io/nuget/v/MASES.JNet.Templates" alt="JNet.Templates nuget"></a><br><a href="https://www.nuget.org/packages/MASES.JNet.Templates"><img src="https://img.shields.io/nuget/dt/MASES.JNet.Templates" alt="downloads"></a></td>
+<td style="text-align: center;"><a href="https://www.nuget.org/packages/MASES.JNetPSCore"><img src="https://img.shields.io/nuget/v/MASES.JNetPSCore" alt="JNetPSCore nuget"></a><br><a href="https://www.nuget.org/packages/MASES.JNetPSCore"><img src="https://img.shields.io/nuget/dt/MASES.JNetPSCore" alt="downloads"></a></td>
+<td style="text-align: center;"><a href="https://www.nuget.org/packages/MASES.JNetCLI"><img src="https://img.shields.io/nuget/v/MASES.JNetCLI" alt="JNetCLI nuget"></a><br><a href="https://www.nuget.org/packages/MASES.JNetCLI"><img src="https://img.shields.io/nuget/dt/MASES.JNetCLI" alt="downloads"></a></td>
+<td style="text-align: center;"><a href="https://www.nuget.org/packages/MASES.JNetReflector"><img src="https://img.shields.io/nuget/v/MASES.JNetReflector" alt="JNetReflector nuget"></a><br><a href="https://www.nuget.org/packages/MASES.JNetReflector"><img src="https://img.shields.io/nuget/dt/MASES.JNetReflector" alt="downloads"></a></td>
+<td style="text-align: center;"><a href="https://www.powershellgallery.com/packages/MASES.JNetPS/"><img src="https://img.shields.io/powershellgallery/v/MASES.JNetPS.svg?style=flat-square&amp;label=MASES.JNetPS" alt="JNetPS"></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pipelines">Pipelines</h3>
+<p><a href="https://github.com/masesgroup/JNet/actions/workflows/build.yaml"><img src="https://github.com/masesgroup/JNet/actions/workflows/build.yaml/badge.svg" alt="CI_BUILD"></a>
+<a href="https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml"><img src="https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL"></a>
+<a href="https://github.com/masesgroup/JNet/actions/workflows/release.yaml"><img src="https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg" alt="CI_RELEASE"></a></p>
+<hr>
+<h2 id="scope-of-the-project">Scope of the project</h2>
+<p>This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>.</p>
+<p>There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:</p>
+<ul>
+<li>all implemented features are availables at no extra implementation costs, see <a href="src/net/Documentation/articles/usage.md">JNet usage</a>;</li>
+<li>avoids any third party communication protocol implementation;</li>
+<li>access all features made available from Java platform.</li>
+</ul>
+<p>So, for example, do you want an <code>ArrayList</code>? Just write in C# a line of code like this:</p>
+<pre><code class="lang-c#">Java.Util.ArrayList&lt;string&gt; alist = new Java.Util.ArrayList&lt;string&gt;();
+</code></pre>
+<p>See <a href="src/net/Documentation/articles/usage.md">JNet usage</a> for a comprehensive example.</p>
+<h3 id="community-and-contribution">Community and Contribution</h3>
+<p>Do you like the project?</p>
+<ul>
+<li>Request your free <a href="https://www.jcobridge.com/pricing-25/">community subscription</a>.</li>
+</ul>
+<p>Do you want to help us?</p>
+<ul>
+<li>put a ⭐ on this project</li>
+<li>open <a href="https://github.com/masesgroup/JNet/issues">issues</a> to request features or report bugs 🐛</li>
+<li>improves the project with Pull Requests</li>
+</ul>
 <p>This project adheres to the Contributor <a href="CODE_OF_CONDUCT.md">Covenant code of conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.</p>
 </article>
           </div>

@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Taskbar&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -356,7 +356,7 @@
   </span>
   <a id="Java_Awt_Taskbar_ClassName_" data-uid="Java.Awt.Taskbar.ClassName*"></a>
   <h4 id="Java_Awt_Taskbar_ClassName" data-uid="Java.Awt.Taskbar.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -382,10 +382,41 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_GetTaskbar.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.GetTaskbar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L47">View Source</a>
+  </span>
+  <a id="Java_Awt_Taskbar_GetTaskbar_" data-uid="Java.Awt.Taskbar.GetTaskbar*"></a>
+  <h4 id="Java_Awt_Taskbar_GetTaskbar" data-uid="Java.Awt.Taskbar.GetTaskbar">GetTaskbar</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Taskbar GetTaskbar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Taskbar.html">Taskbar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_IconImage.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.IconImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L69">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L65">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_IconImage_" data-uid="Java.Awt.Taskbar.IconImage*"></a>
   <h4 id="Java_Awt_Taskbar_IconImage" data-uid="Java.Awt.Taskbar.IconImage">IconImage</h4>
@@ -420,7 +451,7 @@
   </span>
   <a id="Java_Awt_Taskbar_IsAbstract_" data-uid="Java.Awt.Taskbar.IsAbstract*"></a>
   <h4 id="Java_Awt_Taskbar_IsAbstract" data-uid="Java.Awt.Taskbar.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -453,7 +484,7 @@
   </span>
   <a id="Java_Awt_Taskbar_IsCloseable_" data-uid="Java.Awt.Taskbar.IsCloseable*"></a>
   <h4 id="Java_Awt_Taskbar_IsCloseable" data-uid="Java.Awt.Taskbar.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -486,7 +517,7 @@
   </span>
   <a id="Java_Awt_Taskbar_IsInterface_" data-uid="Java.Awt.Taskbar.IsInterface*"></a>
   <h4 id="Java_Awt_Taskbar_IsInterface" data-uid="Java.Awt.Taskbar.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -519,7 +550,7 @@
   </span>
   <a id="Java_Awt_Taskbar_IsStatic_" data-uid="Java.Awt.Taskbar.IsStatic*"></a>
   <h4 id="Java_Awt_Taskbar_IsStatic" data-uid="Java.Awt.Taskbar.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -545,10 +576,41 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_IsTaskbarSupported.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.IsTaskbarSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L54">View Source</a>
+  </span>
+  <a id="Java_Awt_Taskbar_IsTaskbarSupported_" data-uid="Java.Awt.Taskbar.IsTaskbarSupported*"></a>
+  <h4 id="Java_Awt_Taskbar_IsTaskbarSupported" data-uid="Java.Awt.Taskbar.IsTaskbarSupported">IsTaskbarSupported</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTaskbarSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_Menu.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.Menu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L72">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_Menu_" data-uid="Java.Awt.Taskbar.Menu*"></a>
   <h4 id="Java_Awt_Taskbar_Menu" data-uid="Java.Awt.Taskbar.Menu">Menu</h4>
@@ -578,46 +640,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_GetTaskbar.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.GetTaskbar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L58">View Source</a>
-  </span>
-  <a id="Java_Awt_Taskbar_GetTaskbar_" data-uid="Java.Awt.Taskbar.GetTaskbar*"></a>
-  <h4 id="Java_Awt_Taskbar_GetTaskbar" data-uid="Java.Awt.Taskbar.GetTaskbar">GetTaskbar()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Taskbar GetTaskbar()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Awt.Taskbar.html">Taskbar</a></td>
-        <td><p><a class="xref" href="Java.Awt.Taskbar.html">Taskbar</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_IsSupported_Java_Awt_Taskbar_Feature_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.IsSupported(Java.Awt.Taskbar.Feature)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L85">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L81">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_IsSupported_" data-uid="Java.Awt.Taskbar.IsSupported*"></a>
   <h4 id="Java_Awt_Taskbar_IsSupported_Java_Awt_Taskbar_Feature_" data-uid="Java.Awt.Taskbar.IsSupported(Java.Awt.Taskbar.Feature)">IsSupported(Taskbar.Feature)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar$Feature)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar$Feature)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar.Feature)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar.Feature)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -653,39 +683,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_IsTaskbarSupported.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.IsTaskbarSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L49">View Source</a>
-  </span>
-  <a id="Java_Awt_Taskbar_IsTaskbarSupported_" data-uid="Java.Awt.Taskbar.IsTaskbarSupported*"></a>
-  <h4 id="Java_Awt_Taskbar_IsTaskbarSupported" data-uid="Java.Awt.Taskbar.IsTaskbarSupported">IsTaskbarSupported()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsTaskbarSupported()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -695,7 +693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_RequestUserAttention_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.RequestUserAttention(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L94">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L90">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_RequestUserAttention_" data-uid="Java.Awt.Taskbar.RequestUserAttention*"></a>
   <h4 id="Java_Awt_Taskbar_RequestUserAttention_System_Boolean_System_Boolean_" data-uid="Java.Awt.Taskbar.RequestUserAttention(System.Boolean,System.Boolean)">RequestUserAttention(Boolean, Boolean)</h4>
@@ -735,7 +733,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_RequestWindowUserAttention_Java_Awt_Window_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.RequestWindowUserAttention(Java.Awt.Window)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L102">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L98">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_RequestWindowUserAttention_" data-uid="Java.Awt.Taskbar.RequestWindowUserAttention*"></a>
   <h4 id="Java_Awt_Taskbar_RequestWindowUserAttention_Java_Awt_Window_" data-uid="Java.Awt.Taskbar.RequestWindowUserAttention(Java.Awt.Window)">RequestWindowUserAttention(Window)</h4>
@@ -769,7 +767,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_SetIconBadge_System_String_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.SetIconBadge(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L110">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L106">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_SetIconBadge_" data-uid="Java.Awt.Taskbar.SetIconBadge*"></a>
   <h4 id="Java_Awt_Taskbar_SetIconBadge_System_String_" data-uid="Java.Awt.Taskbar.SetIconBadge(System.String)">SetIconBadge(String)</h4>
@@ -803,7 +801,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_SetProgressValue_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.SetProgressValue(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L114">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_SetProgressValue_" data-uid="Java.Awt.Taskbar.SetProgressValue*"></a>
   <h4 id="Java_Awt_Taskbar_SetProgressValue_System_Int32_" data-uid="Java.Awt.Taskbar.SetProgressValue(System.Int32)">SetProgressValue(Int32)</h4>
@@ -837,7 +835,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_SetWindowIconBadge_Java_Awt_Window_Java_Awt_Image_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.SetWindowIconBadge(Java.Awt.Window%2CJava.Awt.Image)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L127">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L123">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_SetWindowIconBadge_" data-uid="Java.Awt.Taskbar.SetWindowIconBadge*"></a>
   <h4 id="Java_Awt_Taskbar_SetWindowIconBadge_Java_Awt_Window_Java_Awt_Image_" data-uid="Java.Awt.Taskbar.SetWindowIconBadge(Java.Awt.Window,Java.Awt.Image)">SetWindowIconBadge(Window, Image)</h4>
@@ -877,11 +875,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_SetWindowProgressState_Java_Awt_Window_Java_Awt_Taskbar_State_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.SetWindowProgressState(Java.Awt.Window%2CJava.Awt.Taskbar.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L136">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L132">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_SetWindowProgressState_" data-uid="Java.Awt.Taskbar.SetWindowProgressState*"></a>
   <h4 id="Java_Awt_Taskbar_SetWindowProgressState_Java_Awt_Window_Java_Awt_Taskbar_State_" data-uid="Java.Awt.Taskbar.SetWindowProgressState(Java.Awt.Window,Java.Awt.Taskbar.State)">SetWindowProgressState(Window, Taskbar.State)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar$State)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar$State)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar.State)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar.State)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -917,7 +915,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Taskbar_SetWindowProgressValue_Java_Awt_Window_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.Taskbar.SetWindowProgressValue(Java.Awt.Window%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L145">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Taskbar.cs/#L141">View Source</a>
   </span>
   <a id="Java_Awt_Taskbar_SetWindowProgressValue_" data-uid="Java.Awt.Taskbar.SetWindowProgressValue*"></a>
   <h4 id="Java_Awt_Taskbar_SetWindowProgressValue_Java_Awt_Window_System_Int32_" data-uid="Java.Awt.Taskbar.SetWindowProgressValue(Java.Awt.Window,System.Int32)">SetWindowProgressValue(Window, Int32)</h4>

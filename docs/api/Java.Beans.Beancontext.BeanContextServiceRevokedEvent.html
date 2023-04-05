@@ -101,10 +101,10 @@
       <a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_BeanContext">BeanContextEvent.BeanContext</a>
     </div>
     <div>
-      <a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_PropagatedFrom">BeanContextEvent.PropagatedFrom</a>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_IsPropagated">BeanContextEvent.IsPropagated</a>
     </div>
     <div>
-      <a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_IsPropagated">BeanContextEvent.IsPropagated()</a>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_PropagatedFrom">BeanContextEvent.PropagatedFrom</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.EventObject.html#Java_Util_EventObject_Source">EventObject.Source</a>
@@ -158,6 +158,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.EventObject&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -167,13 +170,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -182,19 +185,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -335,7 +335,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.#ctor*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Lang_Class_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Lang.Class,System.Boolean)">BeanContextServiceRevokedEvent(BeanContextServices, Class, Boolean)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class%3C?%3E,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class%3C?%3E,boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class,boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -416,7 +416,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_ClassName_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.ClassName*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_ClassName" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -449,7 +449,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsAbstract_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsAbstract*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsAbstract" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -482,7 +482,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCloseable_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCloseable*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCloseable" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -508,6 +508,37 @@
   <div><a class="xref" href="Java.Beans.Beancontext.BeanContextEvent.html#Java_Beans_Beancontext_BeanContextEvent_IsCloseable">BeanContextEvent.IsCloseable</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L61">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow">IsCurrentServiceInvalidNow</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurrentServiceInvalidNow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsInterface.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -515,7 +546,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsInterface_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsInterface*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsInterface" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -548,7 +579,7 @@
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsStatic_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsStatic*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsStatic" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -577,7 +608,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_ServiceClass.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.ServiceClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L61">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L68">View Source</a>
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_ServiceClass_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.ServiceClass*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_ServiceClass" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.ServiceClass">ServiceClass</h4>
@@ -608,7 +639,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_SourceAsBeanContextServices.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.SourceAsBeanContextServices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L68">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L75">View Source</a>
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_SourceAsBeanContextServices_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.SourceAsBeanContextServices*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_SourceAsBeanContextServices" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.SourceAsBeanContextServices">SourceAsBeanContextServices</h4>
@@ -638,46 +669,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L77">View Source</a>
-  </span>
-  <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow*"></a>
-  <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsCurrentServiceInvalidNow" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsCurrentServiceInvalidNow">IsCurrentServiceInvalidNow()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsCurrentServiceInvalidNow()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsServiceClass_Java_Lang_Class_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsServiceClass(Java.Lang.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServiceRevokedEvent.cs/#L84">View Source</a>
   </span>
   <a id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsServiceClass_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsServiceClass*"></a>
   <h4 id="Java_Beans_Beancontext_BeanContextServiceRevokedEvent_IsServiceClass_Java_Lang_Class_" data-uid="Java.Beans.Beancontext.BeanContextServiceRevokedEvent.IsServiceClass(Java.Lang.Class)">IsServiceClass(Class)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class%3C?%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class%3C?%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -713,7 +712,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>

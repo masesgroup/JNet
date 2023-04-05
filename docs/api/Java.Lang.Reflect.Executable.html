@@ -85,6 +85,7 @@
     <div class="level4"><a class="xref" href="Java.Lang.Reflect.AccessibleObject.html">AccessibleObject</a></div>
     <div class="level5"><span class="xref">Executable</span></div>
       <div class="level6"><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></div>
+      <div class="level6"><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor&lt;T&gt;</a></div>
       <div class="level6"><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></div>
   </div>
   <div class="implements">
@@ -108,25 +109,25 @@
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_DeclaredAnnotations">AccessibleObject.DeclaredAnnotations</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotation_Java_Lang_Class_">AccessibleObject.GetAnnotation(Class)</a>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_TrySetAccessible">AccessibleObject.TrySetAccessible</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotation_Java_Lang_Class_">AccessibleObject.GetDeclaredAnnotation(Class)</a>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotation__1_Java_Lang_Class_">AccessibleObject.GetAnnotation&lt;T&gt;(Class)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotationsByType_Java_Lang_Class_">AccessibleObject.GetAnnotationsByType(Class)</a>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotation__1_Java_Lang_Class_">AccessibleObject.GetDeclaredAnnotation&lt;T&gt;(Class)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotationsByType_Java_Lang_Class_">AccessibleObject.GetDeclaredAnnotationsByType(Class)</a>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotationsByType__1_Java_Lang_Class_">AccessibleObject.GetAnnotationsByType&lt;T&gt;(Class)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotationsByType__1_Java_Lang_Class_">AccessibleObject.GetDeclaredAnnotationsByType&lt;T&gt;(Class)</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent_Java_Lang_Class_">AccessibleObject.IsAnnotationPresent(Class)</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_CanAccess_System_Object_">AccessibleObject.CanAccess(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_TrySetAccessible">AccessibleObject.TrySetAccessible()</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_SetAccessible_System_Boolean_">AccessibleObject.SetAccessible(Boolean)</a>
@@ -198,6 +199,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -207,13 +211,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -222,19 +226,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -355,7 +356,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable__ctor.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L404">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L445">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable__ctor_" data-uid="Java.Lang.Reflect.Executable.#ctor*"></a>
   <h4 id="Java_Lang_Reflect_Executable__ctor" data-uid="Java.Lang.Reflect.Executable.#ctor">Executable()</h4>
@@ -371,7 +372,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L408">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L449">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable__ctor_" data-uid="Java.Lang.Reflect.Executable.#ctor*"></a>
   <h4 id="Java_Lang_Reflect_Executable__ctor_System_Object___" data-uid="Java.Lang.Reflect.Executable.#ctor(System.Object[])">Executable(Object[])</h4>
@@ -530,11 +531,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ClassName.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L413">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L454">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_ClassName_" data-uid="Java.Lang.Reflect.Executable.ClassName*"></a>
   <h4 id="Java_Lang_Reflect_Executable_ClassName" data-uid="Java.Lang.Reflect.Executable.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -718,11 +719,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L417">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L458">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_IsAbstract_" data-uid="Java.Lang.Reflect.Executable.IsAbstract*"></a>
   <h4 id="Java_Lang_Reflect_Executable_IsAbstract" data-uid="Java.Lang.Reflect.Executable.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -751,11 +752,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L421">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L462">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_IsCloseable_" data-uid="Java.Lang.Reflect.Executable.IsCloseable*"></a>
   <h4 id="Java_Lang_Reflect_Executable_IsCloseable" data-uid="Java.Lang.Reflect.Executable.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -784,11 +785,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsInterface.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L425">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L466">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_IsInterface_" data-uid="Java.Lang.Reflect.Executable.IsInterface*"></a>
   <h4 id="Java_Lang_Reflect_Executable_IsInterface" data-uid="Java.Lang.Reflect.Executable.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -817,11 +818,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsStatic.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L429">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AllPackageClasses.cs/#L470">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_IsStatic_" data-uid="Java.Lang.Reflect.Executable.IsStatic*"></a>
   <h4 id="Java_Lang_Reflect_Executable_IsStatic" data-uid="Java.Lang.Reflect.Executable.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -847,10 +848,72 @@
   <div><a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsStatic">AccessibleObject.IsStatic</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_Modifiers.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.Modifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsSynthetic.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsSynthetic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L115">View Source</a>
+  </span>
+  <a id="Java_Lang_Reflect_Executable_IsSynthetic_" data-uid="Java.Lang.Reflect.Executable.IsSynthetic*"></a>
+  <h4 id="Java_Lang_Reflect_Executable_IsSynthetic" data-uid="Java.Lang.Reflect.Executable.IsSynthetic">IsSynthetic</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynthetic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsVarArgs.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsVarArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L122">View Source</a>
+  </span>
+  <a id="Java_Lang_Reflect_Executable_IsVarArgs_" data-uid="Java.Lang.Reflect.Executable.IsVarArgs*"></a>
+  <h4 id="Java_Lang_Reflect_Executable_IsVarArgs" data-uid="Java.Lang.Reflect.Executable.IsVarArgs">IsVarArgs</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVarArgs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_Modifiers.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.Modifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L129">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_Modifiers_" data-uid="Java.Lang.Reflect.Executable.Modifiers*"></a>
   <h4 id="Java_Lang_Reflect_Executable_Modifiers" data-uid="Java.Lang.Reflect.Executable.Modifiers">Modifiers</h4>
@@ -881,7 +944,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_Name.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L122">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L136">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_Name_" data-uid="Java.Lang.Reflect.Executable.Name*"></a>
   <h4 id="Java_Lang_Reflect_Executable_Name" data-uid="Java.Lang.Reflect.Executable.Name">Name</h4>
@@ -912,7 +975,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ParameterAnnotations.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ParameterAnnotations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L129">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L143">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_ParameterAnnotations_" data-uid="Java.Lang.Reflect.Executable.ParameterAnnotations*"></a>
   <h4 id="Java_Lang_Reflect_Executable_ParameterAnnotations" data-uid="Java.Lang.Reflect.Executable.ParameterAnnotations">ParameterAnnotations</h4>
@@ -943,7 +1006,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ParameterCount.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ParameterCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L136">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L150">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_ParameterCount_" data-uid="Java.Lang.Reflect.Executable.ParameterCount*"></a>
   <h4 id="Java_Lang_Reflect_Executable_ParameterCount" data-uid="Java.Lang.Reflect.Executable.ParameterCount">ParameterCount</h4>
@@ -974,7 +1037,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_Parameters.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L143">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L157">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_Parameters_" data-uid="Java.Lang.Reflect.Executable.Parameters*"></a>
   <h4 id="Java_Lang_Reflect_Executable_Parameters" data-uid="Java.Lang.Reflect.Executable.Parameters">Parameters</h4>
@@ -1005,7 +1068,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ParameterTypes.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ParameterTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L150">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L164">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_ParameterTypes_" data-uid="Java.Lang.Reflect.Executable.ParameterTypes*"></a>
   <h4 id="Java_Lang_Reflect_Executable_ParameterTypes" data-uid="Java.Lang.Reflect.Executable.ParameterTypes">ParameterTypes</h4>
@@ -1033,19 +1096,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_TypeParameters.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.TypeParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ToGenericString.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ToGenericString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L157">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L171">View Source</a>
   </span>
-  <a id="Java_Lang_Reflect_Executable_TypeParameters_" data-uid="Java.Lang.Reflect.Executable.TypeParameters*"></a>
-  <h4 id="Java_Lang_Reflect_Executable_TypeParameters" data-uid="Java.Lang.Reflect.Executable.TypeParameters">TypeParameters</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()</a></p>
+  <a id="Java_Lang_Reflect_Executable_ToGenericString_" data-uid="Java.Lang.Reflect.Executable.ToGenericString*"></a>
+  <h4 id="Java_Lang_Reflect_Executable_ToGenericString" data-uid="Java.Lang.Reflect.Executable.ToGenericString">ToGenericString</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TypeVariable[] TypeParameters { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ToGenericString { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1057,30 +1120,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Lang.Reflect.TypeVariable.html">TypeVariable</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsSynthetic.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsSynthetic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_TypeParameters.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.TypeParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L175">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L178">View Source</a>
   </span>
-  <a id="Java_Lang_Reflect_Executable_IsSynthetic_" data-uid="Java.Lang.Reflect.Executable.IsSynthetic*"></a>
-  <h4 id="Java_Lang_Reflect_Executable_IsSynthetic" data-uid="Java.Lang.Reflect.Executable.IsSynthetic">IsSynthetic()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()</a></p>
+  <a id="Java_Lang_Reflect_Executable_TypeParameters_" data-uid="Java.Lang.Reflect.Executable.TypeParameters*"></a>
+  <h4 id="Java_Lang_Reflect_Executable_TypeParameters" data-uid="Java.Lang.Reflect.Executable.TypeParameters">TypeParameters</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSynthetic()</code></pre>
+    <pre><code class="lang-csharp hljs">public TypeVariable TypeParameters { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1090,73 +1151,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_IsVarArgs.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.IsVarArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L184">View Source</a>
-  </span>
-  <a id="Java_Lang_Reflect_Executable_IsVarArgs_" data-uid="Java.Lang.Reflect.Executable.IsVarArgs*"></a>
-  <h4 id="Java_Lang_Reflect_Executable_IsVarArgs" data-uid="Java.Lang.Reflect.Executable.IsVarArgs">IsVarArgs()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsVarArgs()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_ToGenericString.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.ToGenericString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L166">View Source</a>
-  </span>
-  <a id="Java_Lang_Reflect_Executable_ToGenericString_" data-uid="Java.Lang.Reflect.Executable.ToGenericString*"></a>
-  <h4 id="Java_Lang_Reflect_Executable_ToGenericString" data-uid="Java.Lang.Reflect.Executable.ToGenericString">ToGenericString()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToGenericString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
-</td>
+        <td><a class="xref" href="Java.Lang.Reflect.TypeVariable.html">TypeVariable</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

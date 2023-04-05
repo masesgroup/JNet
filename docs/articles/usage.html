@@ -71,11 +71,61 @@
 
 <p>To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.
 If classes or methods are not available yet it is possible to use the approach synthetized in <a href="API_extensibility.html">What to do if an API was not yet implemented</a></p>
+<h2 id="basic-example">Basic example</h2>
+<p>Below a basic example which demonstrates how to create a program based on JNet and some other features available like generics and exception handling.
+Within the program the comments try to explain how the code works.</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    // this class defines a concrete implementation of JNetCore&lt;&gt;
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt;
+    { 
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // the first step is mandatory: 
+            // it invokes the method CreateGlobalInstance to allocate the JVM and prepares the environment
+            MyJNetCore.CreateGlobalInstance();
+            // at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) 
+            // are available to be used like any developer does with the args in the Main 
+            var appArgs = MyJNetCore.FilteredArgs;
+
+            // now we go into .NET/JVM interaction based on generics
+            try
+            {
+                // in the first step the code allocates a java.util.Set&lt;String&gt; within the JVM using the java.util.Collections class
+                // and returns a Java.Util.Set&lt;string&gt; in .NET
+                var set = Collections.Singleton(&quot;test&quot;);
+                // then the code tries to Add a new value if it is available in command-line, 
+                // but we expect the JVM raises an exception
+                if (appArgs.Length != 0) set.Add(appArgs[0]);
+            }
+            // if the Add is invoked the operation on java.util.Set&lt;String&gt; cannot be performed 
+            // because Collections.Singleton returns an immutable java.util.Set&lt;String&gt;
+            // see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
+            catch (UnsupportedOperationException) 
+            {
+                // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
+                System.Console.WriteLine(&quot;Operation not supported as expected&quot;);
+            }
+            // this piece of code is for any convenience because we want a clean close of the application
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
 <h2 id="environment-setup">Environment setup</h2>
 <p>JNet accepts many command-line switches to customize its behavior. The full list is available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
 <h3 id="jvm-identification">JVM identification</h3>
 <p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
-If a developer is using KNet within its own product it is possible to override the <strong>JVMPath</strong> property with a snippet like the following one:</p>
+If a developer is using JNet within its own product it is possible to override the <strong>JVMPath</strong> property with a snippet like the following one:</p>
 <pre><code class="lang-c#">    class MyJNetCore : JNetCore
     {
         public override string JVMPath
