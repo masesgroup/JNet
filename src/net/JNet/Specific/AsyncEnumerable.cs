@@ -84,6 +84,20 @@ namespace MASES.JNet.Specific
     public abstract class JNetAsyncEnumerable<TClass, TObject> : JVMBridgeBaseEnumerable<TClass, TObject>, IAsyncEnumerable<TObject>
         where TClass : JVMBridgeBase, new()
     {
+        /// <summary>
+        /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
+        /// </summary>
+        public JNetAsyncEnumerable()
+        {
+        }
+        /// <summary>
+        /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
+        /// </summary>
+        /// <param name="args">The arguments to send to base class <see cref="JVMBridgeBaseEnumerable{TClass,TObject}"/></param>
+        public JNetAsyncEnumerable(params object[] args)
+            : base(args)
+        {
+        }
         /// <inheritdoc cref="IAsyncEnumerable{TObject}.GetAsyncEnumerator(CancellationToken)"/>
         public IAsyncEnumerator<TObject> GetAsyncEnumerator(CancellationToken cancellationToken = default)
         {
