@@ -73,7 +73,7 @@
   
   <h1 id="Java_Util_ListIterator_1" data-uid="Java.Util.ListIterator`1" class="text-break">Class ListIterator&lt;E&gt;
   </h1>
-  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html">https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html</a></p>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -99,10 +99,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Java.Util.Iterator-1.html#Java_Util_Iterator_1_HasNext">Iterator&lt;E&gt;.HasNext</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Util.Iterator-1.html#Java_Util_Iterator_1_Next">Iterator&lt;E&gt;.Next</a>
+      <a class="xref" href="Java.Util.Iterator-1.html#Java_Util_Iterator_1_ForEachRemaining__1_Java_Util_Function_Consumer___0__">Iterator&lt;E&gt;.ForEachRemaining&lt;Arg0objectSuperE&gt;(Consumer&lt;Arg0objectSuperE&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Iterator-1.html#Java_Util_Iterator_1_GetEnumerator">Iterator&lt;E&gt;.GetEnumerator()</a>
@@ -159,6 +156,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Iterator&lt;E&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -168,13 +168,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -183,19 +183,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -244,15 +241,6 @@
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsAbstract</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
@@ -329,8 +317,58 @@
     <tbody>
       <tr>
         <td><span class="parametername">E</span></td>
-        <td><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html">https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html</a></p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3201">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1__ctor_" data-uid="Java.Util.ListIterator`1.#ctor*"></a>
+  <h4 id="Java_Util_ListIterator_1__ctor" data-uid="Java.Util.ListIterator`1.#ctor">ListIterator()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3205">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1__ctor_" data-uid="Java.Util.ListIterator`1.#ctor*"></a>
+  <h4 id="Java_Util_ListIterator_1__ctor_System_Object___" data-uid="Java.Util.ListIterator`1.#ctor(System.Object[])">ListIterator(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -341,11 +379,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_ClassName.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L34">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3210">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_ClassName_" data-uid="Java.Util.ListIterator`1.ClassName*"></a>
   <h4 id="Java_Util_ListIterator_1_ClassName" data-uid="Java.Util.ListIterator`1.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -371,14 +409,45 @@
   <div><span class="xref">Java.Util.Iterator&lt;E&gt;.ClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_HasNext.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.HasNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L151">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_HasNext_" data-uid="Java.Util.ListIterator`1.HasNext*"></a>
+  <h4 id="Java_Util_ListIterator_1_HasNext" data-uid="Java.Util.ListIterator`1.HasNext">HasNext</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasNext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_HasPrevious.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.HasPrevious%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L158">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_HasPrevious_" data-uid="Java.Util.ListIterator`1.HasPrevious*"></a>
   <h4 id="Java_Util_ListIterator_1_HasPrevious" data-uid="Java.Util.ListIterator`1.HasPrevious">HasPrevious</h4>
-  <div class="markdown level1 summary"><p>Returns true if this list iterator has more elements when traversing the list in the reverse direction.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -402,14 +471,80 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3214">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_IsAbstract_" data-uid="Java.Util.ListIterator`1.IsAbstract*"></a>
+  <h4 id="Java_Util_ListIterator_1_IsAbstract" data-uid="Java.Util.ListIterator`1.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.Iterator&lt;E&gt;.IsAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3218">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_IsCloseable_" data-uid="Java.Util.ListIterator`1.IsCloseable*"></a>
+  <h4 id="Java_Util_ListIterator_1_IsCloseable" data-uid="Java.Util.ListIterator`1.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.Iterator&lt;E&gt;.IsCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_IsInterface.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L38">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3222">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_IsInterface_" data-uid="Java.Util.ListIterator`1.IsInterface*"></a>
   <h4 id="Java_Util_ListIterator_1_IsInterface" data-uid="Java.Util.ListIterator`1.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -435,14 +570,78 @@
   <div><span class="xref">Java.Util.Iterator&lt;E&gt;.IsInterface</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_IsStatic.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L3226">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_IsStatic_" data-uid="Java.Util.ListIterator`1.IsStatic*"></a>
+  <h4 id="Java_Util_ListIterator_1_IsStatic" data-uid="Java.Util.ListIterator`1.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Java.Util.Iterator&lt;E&gt;.IsStatic</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_Next.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.Next%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L165">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_Next_" data-uid="Java.Util.ListIterator`1.Next*"></a>
+  <h4 id="Java_Util_ListIterator_1_Next" data-uid="Java.Util.ListIterator`1.Next">Next</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E Next { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_NextIndex.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.NextIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L172">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_NextIndex_" data-uid="Java.Util.ListIterator`1.NextIndex*"></a>
   <h4 id="Java_Util_ListIterator_1_NextIndex" data-uid="Java.Util.ListIterator`1.NextIndex">NextIndex</h4>
-  <div class="markdown level1 summary"><p>Returns the index of the element that would be returned by a subsequent call to next().</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -469,11 +668,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_Previous.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.Previous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L179">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_Previous_" data-uid="Java.Util.ListIterator`1.Previous*"></a>
   <h4 id="Java_Util_ListIterator_1_Previous" data-uid="Java.Util.ListIterator`1.Previous">Previous</h4>
-  <div class="markdown level1 summary"><p>Returns the previous element in the list and moves the cursor position backwards.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -500,11 +699,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_PreviousIndex.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.PreviousIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L186">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_PreviousIndex_" data-uid="Java.Util.ListIterator`1.PreviousIndex*"></a>
   <h4 id="Java_Util_ListIterator_1_PreviousIndex" data-uid="Java.Util.ListIterator`1.PreviousIndex">PreviousIndex</h4>
-  <div class="markdown level1 summary"><p>Returns the index of the element that would be returned by a subsequent call to previous().</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -533,16 +732,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_Add__0_.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L194">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_Add_" data-uid="Java.Util.ListIterator`1.Add*"></a>
   <h4 id="Java_Util_ListIterator_1_Add__0_" data-uid="Java.Util.ListIterator`1.Add(`0)">Add(E)</h4>
-  <div class="markdown level1 summary"><p>Inserts the specified element into the list(optional operation).</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(E e)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Add(E arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -556,8 +755,9 @@
     <tbody>
       <tr>
         <td><span class="xref">E</span></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -566,11 +766,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_Remove.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L63">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L201">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_Remove_" data-uid="Java.Util.ListIterator`1.Remove*"></a>
   <h4 id="Java_Util_ListIterator_1_Remove" data-uid="Java.Util.ListIterator`1.Remove">Remove()</h4>
-  <div class="markdown level1 summary"><p>Removes from the list the last element that was returned by next() or previous() (optional operation).</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -582,16 +782,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_Set__0_.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.Set(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L68">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L209">View Source</a>
   </span>
   <a id="Java_Util_ListIterator_1_Set_" data-uid="Java.Util.ListIterator`1.Set*"></a>
   <h4 id="Java_Util_ListIterator_1_Set__0_" data-uid="Java.Util.ListIterator`1.Set(`0)">Set(E)</h4>
-  <div class="markdown level1 summary"><p>Replaces the last element returned by next() or previous() with the specified element (optional operation).</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set(E e)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Set(E arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -605,7 +805,58 @@
     <tbody>
       <tr>
         <td><span class="xref">E</span></td>
-        <td><span class="parametername">e</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1_op_Implicit_Java_Util_ListIterator__0___Java_Util_ListIterator.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601.op_Implicit(Java.Util.ListIterator%7B%600%7D)~Java.Util.ListIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/ListIterator.cs/#L135">View Source</a>
+  </span>
+  <a id="Java_Util_ListIterator_1_op_Implicit_" data-uid="Java.Util.ListIterator`1.op_Implicit*"></a>
+  <h4 id="Java_Util_ListIterator_1_op_Implicit_Java_Util_ListIterator__0___Java_Util_ListIterator" data-uid="Java.Util.ListIterator`1.op_Implicit(Java.Util.ListIterator{`0})~Java.Util.ListIterator">Implicit(ListIterator&lt;E&gt; to ListIterator)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.ListIterator-1.html">ListIterator&lt;E&gt;</a> to <a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ListIterator(ListIterator&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator-1.html">ListIterator</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -650,7 +901,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_ListIterator_1.md&amp;value=---%0Auid%3A%20Java.Util.ListIterator%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/ListIterator.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Naming.Ldap.LdapName&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -321,7 +321,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName__ctor_" data-uid="Javax.Naming.Ldap.LdapName.#ctor*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName__ctor_Java_Util_List_" data-uid="Javax.Naming.Ldap.LdapName.#ctor(Java.Util.List)">LdapName(List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List%3Cjavax.naming.ldap.Rdn%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List%3Cjavax.naming.ldap.Rdn%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -444,7 +444,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration All { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;string&gt; All { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,7 +456,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -470,7 +470,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName_ClassName_" data-uid="Javax.Naming.Ldap.LdapName.ClassName*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_ClassName" data-uid="Javax.Naming.Ldap.LdapName.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -503,7 +503,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName_IsAbstract_" data-uid="Javax.Naming.Ldap.LdapName.IsAbstract*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_IsAbstract" data-uid="Javax.Naming.Ldap.LdapName.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -536,7 +536,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName_IsCloseable_" data-uid="Javax.Naming.Ldap.LdapName.IsCloseable*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_IsCloseable" data-uid="Javax.Naming.Ldap.LdapName.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -562,6 +562,37 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_IsEmpty.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L79">View Source</a>
+  </span>
+  <a id="Javax_Naming_Ldap_LdapName_IsEmpty_" data-uid="Javax.Naming.Ldap.LdapName.IsEmpty*"></a>
+  <h4 id="Javax_Naming_Ldap_LdapName_IsEmpty" data-uid="Javax.Naming.Ldap.LdapName.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_IsInterface.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -569,7 +600,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName_IsInterface_" data-uid="Javax.Naming.Ldap.LdapName.IsInterface*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_IsInterface" data-uid="Javax.Naming.Ldap.LdapName.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -602,7 +633,7 @@
   </span>
   <a id="Javax_Naming_Ldap_LdapName_IsStatic_" data-uid="Javax.Naming.Ldap.LdapName.IsStatic*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_IsStatic" data-uid="Javax.Naming.Ldap.LdapName.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -631,7 +662,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Rdns.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Rdns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L86">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Rdns_" data-uid="Javax.Naming.Ldap.LdapName.Rdns*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Rdns" data-uid="Javax.Naming.Ldap.LdapName.Rdns">Rdns</h4>
@@ -640,7 +671,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List Rdns { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;Rdn&gt; Rdns { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -652,7 +683,38 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Naming.Ldap.Rdn.html">Rdn</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Size.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L93">View Source</a>
+  </span>
+  <a id="Javax_Naming_Ldap_LdapName_Size_" data-uid="Javax.Naming.Ldap.LdapName.Size*"></a>
+  <h4 id="Javax_Naming_Ldap_LdapName_Size" data-uid="Javax.Naming.Ldap.LdapName.Size">Size</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -664,7 +726,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Add_Javax_Naming_Ldap_Rdn_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Add(Javax.Naming.Ldap.Rdn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L210">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L206">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Add_" data-uid="Javax.Naming.Ldap.LdapName.Add*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Add_Javax_Naming_Ldap_Rdn_" data-uid="Javax.Naming.Ldap.LdapName.Add(Javax.Naming.Ldap.Rdn)">Add(Rdn)</h4>
@@ -714,7 +776,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Add_System_Int32_Javax_Naming_Ldap_Rdn_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Add(System.Int32%2CJavax.Naming.Ldap.Rdn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L191">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L187">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Add_" data-uid="Javax.Naming.Ldap.LdapName.Add*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Add_System_Int32_Javax_Naming_Ldap_Rdn_" data-uid="Javax.Naming.Ldap.LdapName.Add(System.Int32,Javax.Naming.Ldap.Rdn)">Add(Int32, Rdn)</h4>
@@ -770,7 +832,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Add_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Add(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L181">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L177">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Add_" data-uid="Javax.Naming.Ldap.LdapName.Add*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Add_System_Int32_System_String_" data-uid="Javax.Naming.Ldap.LdapName.Add(System.Int32,System.String)">Add(Int32, String)</h4>
@@ -841,7 +903,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Add_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Add(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L201">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L197">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Add_" data-uid="Javax.Naming.Ldap.LdapName.Add*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Add_System_String_" data-uid="Javax.Naming.Ldap.LdapName.Add(System.String)">Add(String)</h4>
@@ -903,19 +965,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(Java.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_Java_Util_List_Javax_Naming_Ldap_Rdn__.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(Java.Util.List%7BJavax.Naming.Ldap.Rdn%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L240">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L236">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_AddAll_" data-uid="Javax.Naming.Ldap.LdapName.AddAll*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_AddAll_Java_Util_List_" data-uid="Javax.Naming.Ldap.LdapName.AddAll(Java.Util.List)">AddAll(List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List%3Cjavax.naming.ldap.Rdn%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List%3Cjavax.naming.ldap.Rdn%3E)</a></p>
+  <h4 id="Javax_Naming_Ldap_LdapName_AddAll_Java_Util_List_Javax_Naming_Ldap_Rdn__" data-uid="Javax.Naming.Ldap.LdapName.AddAll(Java.Util.List{Javax.Naming.Ldap.Rdn})">AddAll(List&lt;Rdn&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Name AddAll(List arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Name AddAll(List&lt;Rdn&gt; arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -928,7 +990,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Naming.Ldap.Rdn.html">Rdn</a>&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -956,7 +1018,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L250">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L246">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_AddAll_" data-uid="Javax.Naming.Ldap.LdapName.AddAll*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_AddAll_Javax_Naming_Name_" data-uid="Javax.Naming.Ldap.LdapName.AddAll(Javax.Naming.Name)">AddAll(Name)</h4>
@@ -1018,19 +1080,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(System.Int32%2CJava.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Java_Util_List_Javax_Naming_Ldap_Rdn__.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(System.Int32%2CJava.Util.List%7BJavax.Naming.Ldap.Rdn%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L220">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L216">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_AddAll_" data-uid="Javax.Naming.Ldap.LdapName.AddAll*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Java_Util_List_" data-uid="Javax.Naming.Ldap.LdapName.AddAll(System.Int32,Java.Util.List)">AddAll(Int32, List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List%3Cjavax.naming.ldap.Rdn%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List%3Cjavax.naming.ldap.Rdn%3E)</a></p>
+  <h4 id="Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Java_Util_List_Javax_Naming_Ldap_Rdn__" data-uid="Javax.Naming.Ldap.LdapName.AddAll(System.Int32,Java.Util.List{Javax.Naming.Ldap.Rdn})">AddAll(Int32, List&lt;Rdn&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Name AddAll(int arg0, List arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public Name AddAll(int arg0, List&lt;Rdn&gt; arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1049,7 +1111,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Naming.Ldap.Rdn.html">Rdn</a>&gt;</td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -1077,7 +1139,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.AddAll(System.Int32%2CJavax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L231">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L227">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_AddAll_" data-uid="Javax.Naming.Ldap.LdapName.AddAll*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_AddAll_System_Int32_Javax_Naming_Name_" data-uid="Javax.Naming.Ldap.LdapName.AddAll(System.Int32,Javax.Naming.Name)">AddAll(Int32, Name)</h4>
@@ -1148,7 +1210,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.CompareTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L133">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L138">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_CompareTo_" data-uid="Javax.Naming.Ldap.LdapName.CompareTo*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_CompareTo_System_Object_" data-uid="Javax.Naming.Ldap.LdapName.CompareTo(System.Object)">CompareTo(Object)</h4>
@@ -1188,26 +1250,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_EndsWith_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.EndsWith(Java.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_EndsWith_Java_Util_List_Javax_Naming_Ldap_Rdn__.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.EndsWith(Java.Util.List%7BJavax.Naming.Ldap.Rdn%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L88">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L102">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_EndsWith_" data-uid="Javax.Naming.Ldap.LdapName.EndsWith*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_EndsWith_Java_Util_List_" data-uid="Javax.Naming.Ldap.LdapName.EndsWith(Java.Util.List)">EndsWith(List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)</a></p>
+  <h4 id="Javax_Naming_Ldap_LdapName_EndsWith_Java_Util_List_Javax_Naming_Ldap_Rdn__" data-uid="Javax.Naming.Ldap.LdapName.EndsWith(Java.Util.List{Javax.Naming.Ldap.Rdn})">EndsWith(List&lt;Rdn&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EndsWith(List arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool EndsWith(List&lt;Rdn&gt; arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1220,7 +1282,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Naming.Ldap.Rdn.html">Rdn</a>&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -1238,7 +1300,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1248,7 +1310,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_EndsWith_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.EndsWith(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L111">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_EndsWith_" data-uid="Javax.Naming.Ldap.LdapName.EndsWith*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_EndsWith_Javax_Naming_Name_" data-uid="Javax.Naming.Ldap.LdapName.EndsWith(Javax.Naming.Name)">EndsWith(Name)</h4>
@@ -1288,7 +1350,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1298,7 +1360,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Get_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Get(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L161">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L157">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Get_" data-uid="Javax.Naming.Ldap.LdapName.Get*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Get_System_Int32_" data-uid="Javax.Naming.Ldap.LdapName.Get(System.Int32)">Get(Int32)</h4>
@@ -1338,7 +1400,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
 </td>
       </tr>
     </tbody>
@@ -1348,7 +1410,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_GetPrefix_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.GetPrefix(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L259">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L255">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_GetPrefix_" data-uid="Javax.Naming.Ldap.LdapName.GetPrefix*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_GetPrefix_System_Int32_" data-uid="Javax.Naming.Ldap.LdapName.GetPrefix(System.Int32)">GetPrefix(Int32)</h4>
@@ -1398,7 +1460,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_GetRdn_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.GetRdn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L170">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L166">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_GetRdn_" data-uid="Javax.Naming.Ldap.LdapName.GetRdn*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_GetRdn_System_Int32_" data-uid="Javax.Naming.Ldap.LdapName.GetRdn(System.Int32)">GetRdn(Int32)</h4>
@@ -1448,7 +1510,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_GetSuffix_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.GetSuffix(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L268">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L264">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_GetSuffix_" data-uid="Javax.Naming.Ldap.LdapName.GetSuffix*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_GetSuffix_System_Int32_" data-uid="Javax.Naming.Ldap.LdapName.GetSuffix(System.Int32)">GetSuffix(Int32)</h4>
@@ -1495,42 +1557,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_IsEmpty.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L106">View Source</a>
-  </span>
-  <a id="Javax_Naming_Ldap_LdapName_IsEmpty_" data-uid="Javax.Naming.Ldap.LdapName.IsEmpty*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_IsEmpty" data-uid="Javax.Naming.Ldap.LdapName.IsEmpty">IsEmpty()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Remove_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Remove(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L152">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L148">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_Remove_" data-uid="Javax.Naming.Ldap.LdapName.Remove*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_Remove_System_Int32_" data-uid="Javax.Naming.Ldap.LdapName.Remove(System.Int32)">Remove(Int32)</h4>
@@ -1570,7 +1600,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -1592,51 +1622,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_Size.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_StartsWith_Java_Util_List_Javax_Naming_Ldap_Rdn__.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.StartsWith(Java.Util.List%7BJavax.Naming.Ldap.Rdn%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L142">View Source</a>
-  </span>
-  <a id="Javax_Naming_Ldap_LdapName_Size_" data-uid="Javax.Naming.Ldap.LdapName.Size*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_Size" data-uid="Javax.Naming.Ldap.LdapName.Size">Size()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Size()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_StartsWith_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.StartsWith(Java.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L115">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L120">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_StartsWith_" data-uid="Javax.Naming.Ldap.LdapName.StartsWith*"></a>
-  <h4 id="Javax_Naming_Ldap_LdapName_StartsWith_Java_Util_List_" data-uid="Javax.Naming.Ldap.LdapName.StartsWith(Java.Util.List)">StartsWith(List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List%3Cjavax.naming.ldap.Rdn%3E)</a></p>
+  <h4 id="Javax_Naming_Ldap_LdapName_StartsWith_Java_Util_List_Javax_Naming_Ldap_Rdn__" data-uid="Javax.Naming.Ldap.LdapName.StartsWith(Java.Util.List{Javax.Naming.Ldap.Rdn})">StartsWith(List&lt;Rdn&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool StartsWith(List arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool StartsWith(List&lt;Rdn&gt; arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1649,7 +1647,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Naming.Ldap.Rdn.html">Rdn</a>&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -1667,7 +1665,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1677,7 +1675,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapName_StartsWith_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapName.StartsWith(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L124">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapName.cs/#L129">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapName_StartsWith_" data-uid="Javax.Naming.Ldap.LdapName.StartsWith*"></a>
   <h4 id="Javax_Naming_Ldap_LdapName_StartsWith_Javax_Naming_Name_" data-uid="Javax.Naming.Ldap.LdapName.StartsWith(Javax.Naming.Name)">StartsWith(Name)</h4>
@@ -1717,7 +1715,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>

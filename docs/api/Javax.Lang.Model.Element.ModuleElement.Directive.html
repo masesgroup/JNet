@@ -83,6 +83,11 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Lang.Model.Element.ModuleElement.Directive.html">ModuleElement.Directive</a>&gt;</div>
     <div class="level4"><span class="xref">ModuleElement.Directive</span></div>
+      <div class="level5"><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.ExportsDirective.html">ModuleElement.ExportsDirective</a></div>
+      <div class="level5"><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.OpensDirective.html">ModuleElement.OpensDirective</a></div>
+      <div class="level5"><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective.html">ModuleElement.ProvidesDirective</a></div>
+      <div class="level5"><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.RequiresDirective.html">ModuleElement.RequiresDirective</a></div>
+      <div class="level5"><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.UsesDirective.html">ModuleElement.UsesDirective</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -144,6 +149,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Lang.Model.Element.ModuleElement.Directive&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +161,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +176,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -301,7 +306,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive__ctor.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L400">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L482">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive__ctor_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.#ctor*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive__ctor" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.#ctor">Directive()</h4>
@@ -317,7 +322,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L404">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L486">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive__ctor_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.#ctor*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive__ctor_System_Object___" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.#ctor(System.Object[])">Directive(Object[])</h4>
@@ -352,11 +357,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_ClassName.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L409">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L491">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_ClassName_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.ClassName*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_ClassName" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -385,11 +390,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_IsAbstract.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L413">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L495">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_IsAbstract_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsAbstract*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_IsAbstract" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -418,11 +423,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_IsCloseable.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L417">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L499">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_IsCloseable_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsCloseable*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_IsCloseable" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -451,11 +456,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_IsInterface.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L421">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L503">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_IsInterface_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsInterface*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_IsInterface" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -484,11 +489,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_IsStatic.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L425">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AllPackageClasses.cs/#L507">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_IsStatic_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsStatic*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_IsStatic" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,7 +522,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_Kind.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.Kind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L136">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L132">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_Kind_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.Kind*"></a>
   <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_Kind" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.Kind">Kind</h4>
@@ -547,19 +552,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_Accept_Javax_Lang_Model_Element_ModuleElement_DirectiveVisitor_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.Accept(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive_Accept__2_Javax_Lang_Model_Element_ModuleElement_DirectiveVisitor___0___1____1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive.Accept%60%602(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor%7B%60%600%2C%60%601%7D%2C%60%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L146">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L142">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_ModuleElement_Directive_Accept_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.Accept*"></a>
-  <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_Accept_Javax_Lang_Model_Element_ModuleElement_DirectiveVisitor_System_Object_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.Accept(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor,System.Object)">Accept(ModuleElement.DirectiveVisitor, Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement$DirectiveVisitor%3CR, P%3E,P)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement$DirectiveVisitor%3CR, P%3E,P)</a></p>
+  <h4 id="Javax_Lang_Model_Element_ModuleElement_Directive_Accept__2_Javax_Lang_Model_Element_ModuleElement_DirectiveVisitor___0___1____1_" data-uid="Javax.Lang.Model.Element.ModuleElement.Directive.Accept``2(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor{``0,``1},``1)">Accept&lt;R, P&gt;(ModuleElement.DirectiveVisitor&lt;R, P&gt;, P)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement.DirectiveVisitor,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement.DirectiveVisitor,java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Accept(ModuleElement.DirectiveVisitor arg0, object arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public R Accept&lt;R, P&gt;(ModuleElement.DirectiveVisitor&lt;R, P&gt; arg0, P arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -572,15 +577,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor.html">ModuleElement.DirectiveVisitor</a></td>
+        <td><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor-2.html">ModuleElement.DirectiveVisitor</a>&lt;R, P&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor.html">ModuleElement.DirectiveVisitor</a></p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="xref">P</span></td>
         <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+        <td><p><see cref="!:P"></see></p>
 </td>
       </tr>
     </tbody>
@@ -595,9 +600,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><span class="xref">R</span></td>
+        <td><p><see cref="!:R"></see></p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">R</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +659,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_ModuleElement_Directive.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.ModuleElement.Directive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L114" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/ModuleElement.cs/#L110" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

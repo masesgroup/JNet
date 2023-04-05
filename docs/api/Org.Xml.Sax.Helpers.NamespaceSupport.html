@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Org.Xml.Sax.Helpers.NamespaceSupport&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -356,7 +356,7 @@
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_ClassName_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.ClassName*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_ClassName" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -394,7 +394,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration DeclaredPrefixes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;string&gt; DeclaredPrefixes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -406,7 +406,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -420,7 +420,7 @@
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsAbstract_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsAbstract*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsAbstract" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -453,7 +453,7 @@
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsCloseable_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsCloseable*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsCloseable" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -486,7 +486,7 @@
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsInterface_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsInterface*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsInterface" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -512,6 +512,37 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInterface</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L66">View Source</a>
+  </span>
+  <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris*"></a>
+  <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris">IsNamespaceDeclUris</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNamespaceDeclUris { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_IsStatic.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -519,7 +550,7 @@
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsStatic_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsStatic*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsStatic" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -579,7 +610,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_Prefixes.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.Prefixes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L73">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_Prefixes_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.Prefixes*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_Prefixes" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.Prefixes">Prefixes</h4>
@@ -588,7 +619,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration Prefixes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;string&gt; Prefixes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -600,7 +631,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -643,7 +674,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_DeclarePrefix_System_String_System_String_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.DeclarePrefix(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L83">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_DeclarePrefix_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.DeclarePrefix*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_DeclarePrefix_System_String_System_String_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.DeclarePrefix(System.String,System.String)">DeclarePrefix(String, String)</h4>
@@ -689,7 +720,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -699,7 +730,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefix_System_String_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefix(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L94">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L92">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefix_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefix*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefix_System_String_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefix(System.String)">GetPrefix(String)</h4>
@@ -739,7 +770,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
 </td>
       </tr>
     </tbody>
@@ -749,7 +780,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefixes_System_String_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefixes(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L123">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L121">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefixes_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefixes*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_GetPrefixes_System_String_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetPrefixes(System.String)">GetPrefixes(String)</h4>
@@ -758,7 +789,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration GetPrefixes(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;string&gt; GetPrefixes(string arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -788,7 +819,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><p><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></p>
 </td>
       </tr>
@@ -799,7 +830,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_GetURI_System_String_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.GetURI(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L103">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L101">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_GetURI_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetURI*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_GetURI_System_String_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.GetURI(System.String)">GetURI(String)</h4>
@@ -839,39 +870,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L85">View Source</a>
-  </span>
-  <a id="Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris*"></a>
-  <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_IsNamespaceDeclUris" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.IsNamespaceDeclUris">IsNamespaceDeclUris()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNamespaceDeclUris()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
 </td>
       </tr>
     </tbody>
@@ -881,7 +880,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_PopContext.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.PopContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L130">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L128">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_PopContext_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.PopContext*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_PopContext" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.PopContext">PopContext()</h4>
@@ -897,7 +896,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_ProcessName_System_String_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.ProcessName(System.String%2CSystem.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L112">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_ProcessName_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.ProcessName*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_ProcessName_System_String_System_String___System_Boolean_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.ProcessName(System.String,System.String[],System.Boolean)">ProcessName(String, String[], Boolean)</h4>
@@ -959,7 +958,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_PushContext.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.PushContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L137">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L135">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_PushContext_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.PushContext*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_PushContext" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.PushContext">PushContext()</h4>
@@ -975,7 +974,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_Reset.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L144">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L142">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_Reset_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.Reset*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_Reset" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.Reset">Reset()</h4>
@@ -991,7 +990,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_Xml_Sax_Helpers_NamespaceSupport_SetNamespaceDeclUris_System_Boolean_.md&amp;value=---%0Auid%3A%20Org.Xml.Sax.Helpers.NamespaceSupport.SetNamespaceDeclUris(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L152">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/Xml/Sax/Helpers/NamespaceSupport.cs/#L150">View Source</a>
   </span>
   <a id="Org_Xml_Sax_Helpers_NamespaceSupport_SetNamespaceDeclUris_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.SetNamespaceDeclUris*"></a>
   <h4 id="Org_Xml_Sax_Helpers_NamespaceSupport_SetNamespaceDeclUris_System_Boolean_" data-uid="Org.Xml.Sax.Helpers.NamespaceSupport.SetNamespaceDeclUris(System.Boolean)">SetNamespaceDeclUris(Boolean)</h4>

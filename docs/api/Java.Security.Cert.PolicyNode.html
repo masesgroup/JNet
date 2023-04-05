@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Security.Cert.PolicyNode&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -387,7 +387,7 @@
   </span>
   <a id="Java_Security_Cert_PolicyNode_ClassName_" data-uid="Java.Security.Cert.PolicyNode.ClassName*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_ClassName" data-uid="Java.Security.Cert.PolicyNode.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -456,7 +456,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Set ExpectedPolicies { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Set&lt;string&gt; ExpectedPolicies { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -468,7 +468,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Set.html">Set</a></td>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -482,7 +482,7 @@
   </span>
   <a id="Java_Security_Cert_PolicyNode_IsAbstract_" data-uid="Java.Security.Cert.PolicyNode.IsAbstract*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_IsAbstract" data-uid="Java.Security.Cert.PolicyNode.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -515,7 +515,7 @@
   </span>
   <a id="Java_Security_Cert_PolicyNode_IsCloseable_" data-uid="Java.Security.Cert.PolicyNode.IsCloseable*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_IsCloseable" data-uid="Java.Security.Cert.PolicyNode.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -541,6 +541,37 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_IsCritical.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.IsCritical%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L72">View Source</a>
+  </span>
+  <a id="Java_Security_Cert_PolicyNode_IsCritical_" data-uid="Java.Security.Cert.PolicyNode.IsCritical*"></a>
+  <h4 id="Java_Security_Cert_PolicyNode_IsCritical" data-uid="Java.Security.Cert.PolicyNode.IsCritical">IsCritical</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCritical { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_IsInterface.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -548,7 +579,7 @@
   </span>
   <a id="Java_Security_Cert_PolicyNode_IsInterface_" data-uid="Java.Security.Cert.PolicyNode.IsInterface*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_IsInterface" data-uid="Java.Security.Cert.PolicyNode.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -581,7 +612,7 @@
   </span>
   <a id="Java_Security_Cert_PolicyNode_IsStatic_" data-uid="Java.Security.Cert.PolicyNode.IsStatic*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_IsStatic" data-uid="Java.Security.Cert.PolicyNode.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -610,7 +641,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_Parent.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L79">View Source</a>
   </span>
   <a id="Java_Security_Cert_PolicyNode_Parent_" data-uid="Java.Security.Cert.PolicyNode.Parent*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_Parent" data-uid="Java.Security.Cert.PolicyNode.Parent">Parent</h4>
@@ -641,7 +672,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_PolicyQualifiers.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.PolicyQualifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L86">View Source</a>
   </span>
   <a id="Java_Security_Cert_PolicyNode_PolicyQualifiers_" data-uid="Java.Security.Cert.PolicyNode.PolicyQualifiers*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_PolicyQualifiers" data-uid="Java.Security.Cert.PolicyNode.PolicyQualifiers">PolicyQualifiers</h4>
@@ -672,7 +703,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_ValidPolicy.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.ValidPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L93">View Source</a>
   </span>
   <a id="Java_Security_Cert_PolicyNode_ValidPolicy_" data-uid="Java.Security.Cert.PolicyNode.ValidPolicy*"></a>
   <h4 id="Java_Security_Cert_PolicyNode_ValidPolicy" data-uid="Java.Security.Cert.PolicyNode.ValidPolicy">ValidPolicy</h4>
@@ -695,40 +726,6 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Security_Cert_PolicyNode_IsCritical.md&amp;value=---%0Auid%3A%20Java.Security.Cert.PolicyNode.IsCritical%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/PolicyNode.cs/#L95">View Source</a>
-  </span>
-  <a id="Java_Security_Cert_PolicyNode_IsCritical_" data-uid="Java.Security.Cert.PolicyNode.IsCritical*"></a>
-  <h4 id="Java_Security_Cert_PolicyNode_IsCritical" data-uid="Java.Security.Cert.PolicyNode.IsCritical">IsCritical()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsCritical()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
       </tr>
     </tbody>
   </table>

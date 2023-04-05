@@ -1,0 +1,2489 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CopyOnWriteArrayList&lt;E&gt;
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CopyOnWriteArrayList&lt;E&gt;
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1">
+  
+  
+  <h1 id="Java_Util_Concurrent_CopyOnWriteArrayList_1" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1" class="text-break">Class CopyOnWriteArrayList&lt;E&gt;
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;&gt;</div>
+    <div class="level4"><span class="xref">CopyOnWriteArrayList&lt;E&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.CopyOnWriteArrayList&lt;E&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Util.Concurrent.html">Java.Util.Concurrent</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CopyOnWriteArrayList&lt;E&gt; : JVMBridgeBase&lt;CopyOnWriteArrayList&lt;E&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">E</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1433">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor">CopyOnWriteArrayList()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CopyOnWriteArrayList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L371">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor(`0)">CopyOnWriteArrayList(E)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CopyOnWriteArrayList(E arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_Java_Util_Collection_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.%23ctor(Java.Util.Collection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L379">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_Java_Util_Collection_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor(Java.Util.Collection)">CopyOnWriteArrayList(Collection)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CopyOnWriteArrayList(Collection arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection.html">Collection</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1437">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1__ctor_System_Object___" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.#ctor(System.Object[])">CopyOnWriteArrayList(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CopyOnWriteArrayList(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ClassName.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1442">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ClassName_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ClassName*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ClassName" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1446">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsAbstract_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsAbstract*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsAbstract" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1450">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsCloseable_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsCloseable*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsCloseable" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IsEmpty.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L422">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsEmpty_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsEmpty*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsEmpty" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IsInterface.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1454">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsInterface_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsInterface*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsInterface" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IsStatic.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L1458">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsStatic_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsStatic*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IsStatic" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Iterator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Iterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L429">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Iterator_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Iterator*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Iterator" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Iterator">Iterator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Iterator&lt;E&gt; Iterator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Iterator-1.html">Iterator</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Size.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L436">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Size_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Size*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Size" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Size">Size</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Spliterator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Spliterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L443">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Spliterator_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Spliterator*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Spliterator" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Spliterator">Spliterator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spliterator&lt;E&gt; Spliterator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Spliterator-1.html">Spliterator</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Add__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L461">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Add_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Add*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Add__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Add(`0)">Add(E)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(E arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Add_System_Int32__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Add(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L664">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Add_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Add*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Add_System_Int32__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Add(System.Int32,`0)">Add(Int32, E)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(int arg0, E arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.AddAll%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L480">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAll``1(Java.Util.Collection{``0})">AddAll&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddAll&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt; arg0)
+    where Arg0ExtendsE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0ExtendsE&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0ExtendsE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll__1_System_Int32_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.AddAll%60%601(System.Int32%2CJava.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L471">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAll__1_System_Int32_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAll``1(System.Int32,Java.Util.Collection{``0})">AddAll&lt;Arg1ExtendsE&gt;(Int32, Collection&lt;Arg1ExtendsE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddAll&lt;Arg1ExtendsE&gt;(int arg0, Collection&lt;Arg1ExtendsE&gt; arg1)
+    where Arg1ExtendsE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg1ExtendsE&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg1ExtendsE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAllAbsent__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.AddAllAbsent%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L580">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAllAbsent_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAllAbsent*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddAllAbsent__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddAllAbsent``1(Java.Util.Collection{``0})">AddAllAbsent&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddAllAbsent&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt; arg0)
+    where Arg0ExtendsE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0ExtendsE&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0ExtendsE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_AddIfAbsent__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.AddIfAbsent(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L489">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddIfAbsent_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddIfAbsent*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_AddIfAbsent__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.AddIfAbsent(`0)">AddIfAbsent(E)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddIfAbsent(E arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Clear.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L671">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Clear_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Clear*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Clear" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#clear()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#clear()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Contains_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Contains(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L498">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Contains_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Contains*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Contains_System_Object_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Contains(System.Object)">Contains(Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(object arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ContainsAll__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ContainsAll%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L507">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ContainsAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ContainsAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ContainsAll__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ContainsAll``1(Java.Util.Collection{``0})">ContainsAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt; arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0Extendsobject&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0Extendsobject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ForEach__1_Java_Util_Function_Consumer___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ForEach%60%601(Java.Util.Function.Consumer%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L679">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ForEach_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ForEach*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ForEach__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ForEach``1(Java.Util.Function.Consumer{``0})">ForEach&lt;Arg0objectSuperE&gt;(Consumer&lt;Arg0objectSuperE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach&lt;Arg0objectSuperE&gt;(Consumer&lt;Arg0objectSuperE&gt; arg0)
+    where Arg0objectSuperE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperE&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0objectSuperE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Get_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Get(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L552">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Get_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Get*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Get_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Get(System.Int32)">Get(Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E Get(int arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf__0_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IndexOf(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L590">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IndexOf*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf__0_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IndexOf(`0,System.Int32)">IndexOf(E, Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(E arg0, int arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.IndexOf(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L599">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IndexOf*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_IndexOf_System_Object_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.IndexOf(System.Object)">IndexOf(Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(object arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf__0_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.LastIndexOf(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L609">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.LastIndexOf*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf__0_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.LastIndexOf(`0,System.Int32)">LastIndexOf(E, Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(E arg0, int arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.LastIndexOf(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L618">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.LastIndexOf*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_LastIndexOf_System_Object_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.LastIndexOf(System.Object)">LastIndexOf(Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(object arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ListIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L646">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ListIterator*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ListIterator">ListIterator()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator&lt;E&gt; ListIterator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator-1.html">ListIterator</a>&lt;E&gt;</td>
+        <td><p><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ListIterator(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L655">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ListIterator*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ListIterator_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ListIterator(System.Int32)">ListIterator(Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator&lt;E&gt; ListIterator(int arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator-1.html">ListIterator</a>&lt;E&gt;</td>
+        <td><p><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Remove(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L561">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Remove*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Remove(System.Int32)">Remove(Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E Remove(int arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Remove(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L516">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Remove*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Remove_System_Object_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Remove(System.Object)">Remove(Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(object arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveAll__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.RemoveAll%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L525">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RemoveAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveAll__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RemoveAll``1(Java.Util.Collection{``0})">RemoveAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt; arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0Extendsobject&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0Extendsobject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveIf__1_Java_Util_Function_Predicate___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.RemoveIf%60%601(Java.Util.Function.Predicate%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L534">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveIf_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RemoveIf*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RemoveIf__1_Java_Util_Function_Predicate___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RemoveIf``1(Java.Util.Function.Predicate{``0})">RemoveIf&lt;Arg0objectSuperE&gt;(Predicate&lt;Arg0objectSuperE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveIf&lt;Arg0objectSuperE&gt;(Predicate&lt;Arg0objectSuperE&gt; arg0)
+    where Arg0objectSuperE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Predicate-1.html">Predicate</a>&lt;Arg0objectSuperE&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Predicate.html">Predicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0objectSuperE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ReplaceAll_Java_Util_Function_UnaryOperator__0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ReplaceAll(Java.Util.Function.UnaryOperator%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L687">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ReplaceAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ReplaceAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ReplaceAll_Java_Util_Function_UnaryOperator__0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ReplaceAll(Java.Util.Function.UnaryOperator{`0})">ReplaceAll(UnaryOperator&lt;E&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceAll(UnaryOperator&lt;E&gt; arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.UnaryOperator-1.html">UnaryOperator</a>&lt;E&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.UnaryOperator.html">UnaryOperator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_RetainAll__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.RetainAll%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L543">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RetainAll_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RetainAll*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_RetainAll__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.RetainAll``1(Java.Util.Collection{``0})">RetainAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RetainAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt; arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0Extendsobject&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0Extendsobject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Set_System_Int32__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Set(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L571">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Set_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Set*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Set_System_Int32__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Set(System.Int32,`0)">Set(Int32, E)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public E Set(int arg0, E arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><p><see cref="!:E"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_Sort__1_Java_Util_Comparator___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.Sort%60%601(Java.Util.Comparator%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L695">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Sort_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Sort*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_Sort__1_Java_Util_Comparator___0__" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.Sort``1(Java.Util.Comparator{``0})">Sort&lt;Arg0objectSuperE&gt;(Comparator&lt;Arg0objectSuperE&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort&lt;Arg0objectSuperE&gt;(Comparator&lt;Arg0objectSuperE&gt; arg0)
+    where Arg0objectSuperE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg0objectSuperE&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0objectSuperE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_SubList_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.SubList(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L637">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_SubList_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.SubList*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_SubList_System_Int32_System_Int32_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.SubList(System.Int32,System.Int32)">SubList(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;E&gt; SubList(int arg0, int arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;E&gt;</td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ToArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L627">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ToArray*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray__1___0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.ToArray%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L452">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ToArray*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_ToArray__1___0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.ToArray``1(``0)">ToArray&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray&lt;T&gt;(T arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><see cref="!:T"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p><see cref="!:T"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Io_Serializable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList%7B%600%7D)~Java.Io.Serializable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L402">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Io_Serializable" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList{`0})~Java.Io.Serializable">Implicit(CopyOnWriteArrayList&lt;E&gt; to Serializable)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList&lt;E&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(CopyOnWriteArrayList&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.Serializable.html">Serializable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Lang_Cloneable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList%7B%600%7D)~Java.Lang.Cloneable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L398">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Lang_Cloneable" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList{`0})~Java.Lang.Cloneable">Implicit(CopyOnWriteArrayList&lt;E&gt; to Cloneable)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList&lt;E&gt;</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Cloneable(CopyOnWriteArrayList&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_Concurrent_CopyOnWriteArrayList.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList%7B%600%7D)~Java.Util.Concurrent.CopyOnWriteArrayList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L406">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_Concurrent_CopyOnWriteArrayList" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList{`0})~Java.Util.Concurrent.CopyOnWriteArrayList">Implicit(CopyOnWriteArrayList&lt;E&gt; to CopyOnWriteArrayList)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList&lt;E&gt;</a> to <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList.html">CopyOnWriteArrayList</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator CopyOnWriteArrayList(CopyOnWriteArrayList&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList.html">CopyOnWriteArrayList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_List__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList%7B%600%7D)~Java.Util.List%7B%600%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L390">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_List__0_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList{`0})~Java.Util.List{`0}">Implicit(CopyOnWriteArrayList&lt;E&gt; to List&lt;E&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList&lt;E&gt;</a> to <a class="xref" href="Java.Util.List-1.html">List&lt;E&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List&lt;E&gt;(CopyOnWriteArrayList&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_RandomAccess.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList%7B%600%7D)~Java.Util.RandomAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L394">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Concurrent_CopyOnWriteArrayList_1_op_Implicit_Java_Util_Concurrent_CopyOnWriteArrayList__0___Java_Util_RandomAccess" data-uid="Java.Util.Concurrent.CopyOnWriteArrayList`1.op_Implicit(Java.Util.Concurrent.CopyOnWriteArrayList{`0})~Java.Util.RandomAccess">Implicit(CopyOnWriteArrayList&lt;E&gt; to RandomAccess)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList&lt;E&gt;</a> to <a class="xref" href="Java.Util.RandomAccess.html">RandomAccess</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator RandomAccess(CopyOnWriteArrayList&lt;E&gt; t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.CopyOnWriteArrayList-1.html">CopyOnWriteArrayList</a>&lt;E&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.RandomAccess.html">RandomAccess</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_CopyOnWriteArrayList_1.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CopyOnWriteArrayList%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/CopyOnWriteArrayList.cs/#L364" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -149,6 +149,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.FeatureDescriptor&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -158,13 +161,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -173,19 +176,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -354,6 +354,37 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_AttributeNames.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.AttributeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L51">View Source</a>
+  </span>
+  <a id="Java_Beans_FeatureDescriptor_AttributeNames_" data-uid="Java.Beans.FeatureDescriptor.AttributeNames*"></a>
+  <h4 id="Java_Beans_FeatureDescriptor_AttributeNames" data-uid="Java.Beans.FeatureDescriptor.AttributeNames">AttributeNames</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;string&gt; AttributeNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_ClassName.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -361,7 +392,7 @@
   </span>
   <a id="Java_Beans_FeatureDescriptor_ClassName_" data-uid="Java.Beans.FeatureDescriptor.ClassName*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_ClassName" data-uid="Java.Beans.FeatureDescriptor.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -390,7 +421,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_DisplayName.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L58">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_DisplayName_" data-uid="Java.Beans.FeatureDescriptor.DisplayName*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_DisplayName" data-uid="Java.Beans.FeatureDescriptor.DisplayName">DisplayName</h4>
@@ -425,7 +456,7 @@
   </span>
   <a id="Java_Beans_FeatureDescriptor_IsAbstract_" data-uid="Java.Beans.FeatureDescriptor.IsAbstract*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_IsAbstract" data-uid="Java.Beans.FeatureDescriptor.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -458,7 +489,7 @@
   </span>
   <a id="Java_Beans_FeatureDescriptor_IsCloseable_" data-uid="Java.Beans.FeatureDescriptor.IsCloseable*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_IsCloseable" data-uid="Java.Beans.FeatureDescriptor.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -484,6 +515,68 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsExpert.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsExpert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L65">View Source</a>
+  </span>
+  <a id="Java_Beans_FeatureDescriptor_IsExpert_" data-uid="Java.Beans.FeatureDescriptor.IsExpert*"></a>
+  <h4 id="Java_Beans_FeatureDescriptor_IsExpert" data-uid="Java.Beans.FeatureDescriptor.IsExpert">IsExpert</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExpert { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsHidden.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsHidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L72">View Source</a>
+  </span>
+  <a id="Java_Beans_FeatureDescriptor_IsHidden_" data-uid="Java.Beans.FeatureDescriptor.IsHidden*"></a>
+  <h4 id="Java_Beans_FeatureDescriptor_IsHidden" data-uid="Java.Beans.FeatureDescriptor.IsHidden">IsHidden</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHidden { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsInterface.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -491,7 +584,7 @@
   </span>
   <a id="Java_Beans_FeatureDescriptor_IsInterface_" data-uid="Java.Beans.FeatureDescriptor.IsInterface*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_IsInterface" data-uid="Java.Beans.FeatureDescriptor.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,6 +610,37 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInterface</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsPreferred.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsPreferred%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L79">View Source</a>
+  </span>
+  <a id="Java_Beans_FeatureDescriptor_IsPreferred_" data-uid="Java.Beans.FeatureDescriptor.IsPreferred*"></a>
+  <h4 id="Java_Beans_FeatureDescriptor_IsPreferred" data-uid="Java.Beans.FeatureDescriptor.IsPreferred">IsPreferred</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreferred { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsStatic.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -524,7 +648,7 @@
   </span>
   <a id="Java_Beans_FeatureDescriptor_IsStatic_" data-uid="Java.Beans.FeatureDescriptor.IsStatic*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_IsStatic" data-uid="Java.Beans.FeatureDescriptor.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -553,7 +677,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_Name.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L86">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_Name_" data-uid="Java.Beans.FeatureDescriptor.Name*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_Name" data-uid="Java.Beans.FeatureDescriptor.Name">Name</h4>
@@ -584,7 +708,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_ShortDescription.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.ShortDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L93">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_ShortDescription_" data-uid="Java.Beans.FeatureDescriptor.ShortDescription*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_ShortDescription" data-uid="Java.Beans.FeatureDescriptor.ShortDescription">ShortDescription</h4>
@@ -614,42 +738,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_AttributeNames.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.AttributeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L110">View Source</a>
-  </span>
-  <a id="Java_Beans_FeatureDescriptor_AttributeNames_" data-uid="Java.Beans.FeatureDescriptor.AttributeNames*"></a>
-  <h4 id="Java_Beans_FeatureDescriptor_AttributeNames" data-uid="Java.Beans.FeatureDescriptor.AttributeNames">AttributeNames()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration AttributeNames()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
-        <td><p><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_GetValue_System_String_.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.GetValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L101">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L102">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_GetValue_" data-uid="Java.Beans.FeatureDescriptor.GetValue*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_GetValue_System_String_" data-uid="Java.Beans.FeatureDescriptor.GetValue(System.String)">GetValue(String)</h4>
@@ -689,103 +781,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsExpert.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsExpert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L74">View Source</a>
-  </span>
-  <a id="Java_Beans_FeatureDescriptor_IsExpert_" data-uid="Java.Beans.FeatureDescriptor.IsExpert*"></a>
-  <h4 id="Java_Beans_FeatureDescriptor_IsExpert" data-uid="Java.Beans.FeatureDescriptor.IsExpert">IsExpert()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExpert()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsHidden.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsHidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L83">View Source</a>
-  </span>
-  <a id="Java_Beans_FeatureDescriptor_IsHidden_" data-uid="Java.Beans.FeatureDescriptor.IsHidden*"></a>
-  <h4 id="Java_Beans_FeatureDescriptor_IsHidden" data-uid="Java.Beans.FeatureDescriptor.IsHidden">IsHidden()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsHidden()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_IsPreferred.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.IsPreferred%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L92">View Source</a>
-  </span>
-  <a id="Java_Beans_FeatureDescriptor_IsPreferred_" data-uid="Java.Beans.FeatureDescriptor.IsPreferred*"></a>
-  <h4 id="Java_Beans_FeatureDescriptor_IsPreferred" data-uid="Java.Beans.FeatureDescriptor.IsPreferred">IsPreferred()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPreferred()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
@@ -795,7 +791,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_SetExpert_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.SetExpert(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L110">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_SetExpert_" data-uid="Java.Beans.FeatureDescriptor.SetExpert*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_SetExpert_System_Boolean_" data-uid="Java.Beans.FeatureDescriptor.SetExpert(System.Boolean)">SetExpert(Boolean)</h4>
@@ -829,7 +825,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_SetHidden_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.SetHidden(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L126">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L118">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_SetHidden_" data-uid="Java.Beans.FeatureDescriptor.SetHidden*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_SetHidden_System_Boolean_" data-uid="Java.Beans.FeatureDescriptor.SetHidden(System.Boolean)">SetHidden(Boolean)</h4>
@@ -863,7 +859,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_SetPreferred_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.SetPreferred(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L134">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L126">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_SetPreferred_" data-uid="Java.Beans.FeatureDescriptor.SetPreferred*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_SetPreferred_System_Boolean_" data-uid="Java.Beans.FeatureDescriptor.SetPreferred(System.Boolean)">SetPreferred(Boolean)</h4>
@@ -897,7 +893,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_FeatureDescriptor_SetValue_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Java.Beans.FeatureDescriptor.SetValue(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L143">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/FeatureDescriptor.cs/#L135">View Source</a>
   </span>
   <a id="Java_Beans_FeatureDescriptor_SetValue_" data-uid="Java.Beans.FeatureDescriptor.SetValue*"></a>
   <h4 id="Java_Beans_FeatureDescriptor_SetValue_System_String_System_Object_" data-uid="Java.Beans.FeatureDescriptor.SetValue(System.String,System.Object)">SetValue(String, Object)</h4>

@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Management.Relation.RelationServiceMBean&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -361,7 +361,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List AllRelationIds { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; AllRelationIds { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -373,7 +373,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -392,7 +392,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List AllRelationTypeNames { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; AllRelationTypeNames { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -404,7 +404,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -418,7 +418,7 @@
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_ClassName_" data-uid="Javax.Management.Relation.RelationServiceMBean.ClassName*"></a>
   <h4 id="Javax_Management_Relation_RelationServiceMBean_ClassName" data-uid="Javax.Management.Relation.RelationServiceMBean.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -451,7 +451,7 @@
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_IsAbstract_" data-uid="Javax.Management.Relation.RelationServiceMBean.IsAbstract*"></a>
   <h4 id="Javax_Management_Relation_RelationServiceMBean_IsAbstract" data-uid="Javax.Management.Relation.RelationServiceMBean.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -484,7 +484,7 @@
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_IsCloseable_" data-uid="Javax.Management.Relation.RelationServiceMBean.IsCloseable*"></a>
   <h4 id="Javax_Management_Relation_RelationServiceMBean_IsCloseable" data-uid="Javax.Management.Relation.RelationServiceMBean.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,7 +517,7 @@
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_IsInterface_" data-uid="Javax.Management.Relation.RelationServiceMBean.IsInterface*"></a>
   <h4 id="Javax_Management_Relation_RelationServiceMBean_IsInterface" data-uid="Javax.Management.Relation.RelationServiceMBean.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -550,7 +550,7 @@
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_IsStatic_" data-uid="Javax.Management.Relation.RelationServiceMBean.IsStatic*"></a>
   <h4 id="Javax_Management_Relation_RelationServiceMBean_IsStatic" data-uid="Javax.Management.Relation.RelationServiceMBean.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -792,7 +792,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><p><span class="xref">langword_csharp_int?</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -873,7 +873,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><p><span class="xref">langword_csharp_int?</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -1051,7 +1051,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Map FindAssociatedMBeans(ObjectName arg0, string arg1, string arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public Map&lt;ObjectName, List&lt;string&gt;&gt; FindAssociatedMBeans(ObjectName arg0, string arg1, string arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1093,7 +1093,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Map.html">Map</a></td>
+        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
 </td>
       </tr>
@@ -1128,7 +1128,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Map FindReferencingRelations(ObjectName arg0, string arg1, string arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public Map&lt;string, List&lt;string&gt;&gt; FindReferencingRelations(ObjectName arg0, string arg1, string arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1170,7 +1170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Map.html">Map</a></td>
+        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
 </td>
       </tr>
@@ -1205,7 +1205,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List FindRelationsOfType(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; FindRelationsOfType(string arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1235,7 +1235,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
       </tr>
@@ -1347,7 +1347,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Map GetReferencedMBeans(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Map&lt;ObjectName, List&lt;string&gt;&gt; GetReferencedMBeans(string arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1377,7 +1377,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Map.html">Map</a></td>
+        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
 </td>
       </tr>
@@ -1447,7 +1447,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
 </td>
       </tr>
     </tbody>
@@ -1485,7 +1485,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List GetRole(string arg0, string arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;ObjectName&gt; GetRole(string arg0, string arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1521,7 +1521,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
       </tr>
@@ -1605,7 +1605,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><p><span class="xref">langword_csharp_int?</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -1726,7 +1726,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List GetRoleInfos(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;RoleInfo&gt; GetRoleInfos(string arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1756,7 +1756,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Management.Relation.RoleInfo.html">RoleInfo</a>&gt;</td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
       </tr>
@@ -1905,7 +1905,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td><p><span class="xref">langword_csharp_bool?</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -2001,7 +2001,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><span class="xref">langword_csharp_string</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
 </td>
       </tr>
     </tbody>
@@ -2290,19 +2290,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_SendRelationRemovalNotification_System_String_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.SendRelationRemovalNotification(System.String%2CJava.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_SendRelationRemovalNotification_System_String_Java_Util_List_Javax_Management_ObjectName__.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.SendRelationRemovalNotification(System.String%2CJava.Util.List%7BJavax.Management.ObjectName%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/RelationServiceMBean.cs/#L382">View Source</a>
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_SendRelationRemovalNotification_" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRelationRemovalNotification*"></a>
-  <h4 id="Javax_Management_Relation_RelationServiceMBean_SendRelationRemovalNotification_System_String_Java_Util_List_" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRelationRemovalNotification(System.String,Java.Util.List)">SendRelationRemovalNotification(String, List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationRemovalNotification(java.lang.String,java.util.List%3Cjavax.management.ObjectName%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationRemovalNotification(java.lang.String,java.util.List%3Cjavax.management.ObjectName%3E)</a></p>
+  <h4 id="Javax_Management_Relation_RelationServiceMBean_SendRelationRemovalNotification_System_String_Java_Util_List_Javax_Management_ObjectName__" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRelationRemovalNotification(System.String,Java.Util.List{Javax.Management.ObjectName})">SendRelationRemovalNotification(String, List&lt;ObjectName&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationRemovalNotification(java.lang.String,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationRemovalNotification(java.lang.String,java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendRelationRemovalNotification(string arg0, List arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendRelationRemovalNotification(string arg0, List&lt;ObjectName&gt; arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2321,7 +2321,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -2349,19 +2349,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_SendRoleUpdateNotification_System_String_Javax_Management_Relation_Role_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.SendRoleUpdateNotification(System.String%2CJavax.Management.Relation.Role%2CJava.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_SendRoleUpdateNotification_System_String_Javax_Management_Relation_Role_Java_Util_List_Javax_Management_ObjectName__.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.SendRoleUpdateNotification(System.String%2CJavax.Management.Relation.Role%2CJava.Util.List%7BJavax.Management.ObjectName%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/RelationServiceMBean.cs/#L394">View Source</a>
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_SendRoleUpdateNotification_" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRoleUpdateNotification*"></a>
-  <h4 id="Javax_Management_Relation_RelationServiceMBean_SendRoleUpdateNotification_System_String_Javax_Management_Relation_Role_Java_Util_List_" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRoleUpdateNotification(System.String,Javax.Management.Relation.Role,Java.Util.List)">SendRoleUpdateNotification(String, Role, List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRoleUpdateNotification(java.lang.String,javax.management.relation.Role,java.util.List%3Cjavax.management.ObjectName%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRoleUpdateNotification(java.lang.String,javax.management.relation.Role,java.util.List%3Cjavax.management.ObjectName%3E)</a></p>
+  <h4 id="Javax_Management_Relation_RelationServiceMBean_SendRoleUpdateNotification_System_String_Javax_Management_Relation_Role_Java_Util_List_Javax_Management_ObjectName__" data-uid="Javax.Management.Relation.RelationServiceMBean.SendRoleUpdateNotification(System.String,Javax.Management.Relation.Role,Java.Util.List{Javax.Management.ObjectName})">SendRoleUpdateNotification(String, Role, List&lt;ObjectName&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRoleUpdateNotification(java.lang.String,javax.management.relation.Role,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRoleUpdateNotification(java.lang.String,javax.management.relation.Role,java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendRoleUpdateNotification(string arg0, Role arg1, List arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendRoleUpdateNotification(string arg0, Role arg1, List&lt;ObjectName&gt; arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2386,7 +2386,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</td>
         <td><span class="parametername">arg2</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>
@@ -2568,19 +2568,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_UpdateRoleMap_System_String_Javax_Management_Relation_Role_Java_Util_List_.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.UpdateRoleMap(System.String%2CJavax.Management.Relation.Role%2CJava.Util.List)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Relation_RelationServiceMBean_UpdateRoleMap_System_String_Javax_Management_Relation_Role_Java_Util_List_Javax_Management_ObjectName__.md&amp;value=---%0Auid%3A%20Javax.Management.Relation.RelationServiceMBean.UpdateRoleMap(System.String%2CJavax.Management.Relation.Role%2CJava.Util.List%7BJavax.Management.ObjectName%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/RelationServiceMBean.cs/#L422">View Source</a>
   </span>
   <a id="Javax_Management_Relation_RelationServiceMBean_UpdateRoleMap_" data-uid="Javax.Management.Relation.RelationServiceMBean.UpdateRoleMap*"></a>
-  <h4 id="Javax_Management_Relation_RelationServiceMBean_UpdateRoleMap_System_String_Javax_Management_Relation_Role_Java_Util_List_" data-uid="Javax.Management.Relation.RelationServiceMBean.UpdateRoleMap(System.String,Javax.Management.Relation.Role,Java.Util.List)">UpdateRoleMap(String, Role, List)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#updateRoleMap(java.lang.String,javax.management.relation.Role,java.util.List%3Cjavax.management.ObjectName%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#updateRoleMap(java.lang.String,javax.management.relation.Role,java.util.List%3Cjavax.management.ObjectName%3E)</a></p>
+  <h4 id="Javax_Management_Relation_RelationServiceMBean_UpdateRoleMap_System_String_Javax_Management_Relation_Role_Java_Util_List_Javax_Management_ObjectName__" data-uid="Javax.Management.Relation.RelationServiceMBean.UpdateRoleMap(System.String,Javax.Management.Relation.Role,Java.Util.List{Javax.Management.ObjectName})">UpdateRoleMap(String, Role, List&lt;ObjectName&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#updateRoleMap(java.lang.String,javax.management.relation.Role,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#updateRoleMap(java.lang.String,javax.management.relation.Role,java.util.List)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateRoleMap(string arg0, Role arg1, List arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateRoleMap(string arg0, Role arg1, List&lt;ObjectName&gt; arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2605,7 +2605,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</td>
         <td><span class="parametername">arg2</span></td>
         <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
 </td>

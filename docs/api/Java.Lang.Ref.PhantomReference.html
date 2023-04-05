@@ -100,13 +100,13 @@
       <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_ReachabilityFence_System_Object_">Reference.ReachabilityFence(Object)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_Enqueue">Reference.Enqueue()</a>
+      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_Enqueue">Reference.Enqueue</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_IsEnqueued">Reference.IsEnqueued()</a>
+      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_Get">Reference.Get</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_Get">Reference.Get()</a>
+      <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_IsEnqueued">Reference.IsEnqueued</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.Ref.Reference.html#Java_Lang_Ref_Reference_Clear">Reference.Clear()</a>
@@ -160,6 +160,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Ref.Reference&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -169,13 +172,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -184,19 +187,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -337,7 +337,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference__ctor_" data-uid="Java.Lang.Ref.PhantomReference.#ctor*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference__ctor_System_Object_Java_Lang_Ref_ReferenceQueue_" data-uid="Java.Lang.Ref.PhantomReference.#ctor(System.Object,Java.Lang.Ref.ReferenceQueue)">PhantomReference(Object, ReferenceQueue)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(T,java.lang.ref.ReferenceQueue%3C? super T%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(T,java.lang.ref.ReferenceQueue%3C? super T%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -412,7 +412,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference_ClassName_" data-uid="Java.Lang.Ref.PhantomReference.ClassName*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference_ClassName" data-uid="Java.Lang.Ref.PhantomReference.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -445,7 +445,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference_IsAbstract_" data-uid="Java.Lang.Ref.PhantomReference.IsAbstract*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference_IsAbstract" data-uid="Java.Lang.Ref.PhantomReference.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -478,7 +478,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference_IsCloseable_" data-uid="Java.Lang.Ref.PhantomReference.IsCloseable*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference_IsCloseable" data-uid="Java.Lang.Ref.PhantomReference.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -511,7 +511,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference_IsInterface_" data-uid="Java.Lang.Ref.PhantomReference.IsInterface*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference_IsInterface" data-uid="Java.Lang.Ref.PhantomReference.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -544,7 +544,7 @@
   </span>
   <a id="Java_Lang_Ref_PhantomReference_IsStatic_" data-uid="Java.Lang.Ref.PhantomReference.IsStatic*"></a>
   <h4 id="Java_Lang_Ref_PhantomReference_IsStatic" data-uid="Java.Lang.Ref.PhantomReference.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
