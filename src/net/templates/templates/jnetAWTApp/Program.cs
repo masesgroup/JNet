@@ -24,7 +24,11 @@ namespace MASES.JNetTemplate.JNetAWTApp
             try
             {
                 var vApp = new JVMWrapperApp();
-                vApp.Execute();
+                if (appArgs.Length != 0 && appArgs[0] == "dyn")
+                {
+                    vApp.ExecuteDynamics();
+                }
+                else vApp.Execute();
             }
             catch (Exception e)
             {
@@ -49,7 +53,7 @@ namespace MASES.JNetTemplate.JNetAWTApp
                 }
             }
 
-            public void Execute()
+            public void ExecuteDynamics()
             {
                 // the example uses the implicit cast to dynamic to access methods of the Java Object without an implementation in the .NET class
 
@@ -76,6 +80,39 @@ namespace MASES.JNetTemplate.JNetAWTApp
                 while (execute)
                 {
                     System.Threading.Thread.Sleep(10);
+                }
+            }
+
+            public void Execute()
+            {
+                using (var listener = new ActionListener(ActionDone))
+                {
+                    var frame = new Frame("My First GUI");
+                    frame.SetSize(300, 300);
+
+                    var buttonWrite = new Button("Write to console")
+                    {
+                        ActionCommand = "writeToConsole"
+                    };
+                    buttonWrite.AddActionListener(listener);
+                    var buttonClose = new Button("Close application")
+                    {
+                        ActionCommand = "closeApplication"
+                    };
+                    buttonClose.AddActionListener(listener);
+                    var panel = new Panel();
+                    var layout = new GridLayout(1, 2);
+                    panel.Layout = layout;
+
+                    panel.Add(buttonWrite); // Adds Button to content pane of frame
+                    panel.Add(buttonClose); // Adds Button to content pane of frame
+                    frame.Add(panel);
+                    frame.SetVisible(true);
+                    Console.WriteLine("Waiting for close...");
+                    while (execute)
+                    {
+                        System.Threading.Thread.Sleep(10);
+                    }
                 }
             }
         }
