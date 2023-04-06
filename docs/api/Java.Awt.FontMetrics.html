@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.FontMetrics&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -387,7 +387,7 @@
   </span>
   <a id="Java_Awt_FontMetrics_ClassName_" data-uid="Java.Awt.FontMetrics.ClassName*"></a>
   <h4 id="Java_Awt_FontMetrics_ClassName" data-uid="Java.Awt.FontMetrics.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -506,10 +506,41 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_Height.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_HasUniformLineMetrics.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.HasUniformLineMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L83">View Source</a>
+  </span>
+  <a id="Java_Awt_FontMetrics_HasUniformLineMetrics_" data-uid="Java.Awt.FontMetrics.HasUniformLineMetrics*"></a>
+  <h4 id="Java_Awt_FontMetrics_HasUniformLineMetrics" data-uid="Java.Awt.FontMetrics.HasUniformLineMetrics">HasUniformLineMetrics</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUniformLineMetrics { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_Height.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L90">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_Height_" data-uid="Java.Awt.FontMetrics.Height*"></a>
   <h4 id="Java_Awt_FontMetrics_Height" data-uid="Java.Awt.FontMetrics.Height">Height</h4>
@@ -544,7 +575,7 @@
   </span>
   <a id="Java_Awt_FontMetrics_IsAbstract_" data-uid="Java.Awt.FontMetrics.IsAbstract*"></a>
   <h4 id="Java_Awt_FontMetrics_IsAbstract" data-uid="Java.Awt.FontMetrics.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -577,7 +608,7 @@
   </span>
   <a id="Java_Awt_FontMetrics_IsCloseable_" data-uid="Java.Awt.FontMetrics.IsCloseable*"></a>
   <h4 id="Java_Awt_FontMetrics_IsCloseable" data-uid="Java.Awt.FontMetrics.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -610,7 +641,7 @@
   </span>
   <a id="Java_Awt_FontMetrics_IsInterface_" data-uid="Java.Awt.FontMetrics.IsInterface*"></a>
   <h4 id="Java_Awt_FontMetrics_IsInterface" data-uid="Java.Awt.FontMetrics.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -643,7 +674,7 @@
   </span>
   <a id="Java_Awt_FontMetrics_IsStatic_" data-uid="Java.Awt.FontMetrics.IsStatic*"></a>
   <h4 id="Java_Awt_FontMetrics_IsStatic" data-uid="Java.Awt.FontMetrics.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -672,7 +703,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_Leading.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.Leading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L97">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_Leading_" data-uid="Java.Awt.FontMetrics.Leading*"></a>
   <h4 id="Java_Awt_FontMetrics_Leading" data-uid="Java.Awt.FontMetrics.Leading">Leading</h4>
@@ -703,7 +734,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_MaxAdvance.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.MaxAdvance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L104">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_MaxAdvance_" data-uid="Java.Awt.FontMetrics.MaxAdvance*"></a>
   <h4 id="Java_Awt_FontMetrics_MaxAdvance" data-uid="Java.Awt.FontMetrics.MaxAdvance">MaxAdvance</h4>
@@ -734,7 +765,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_MaxAscent.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.MaxAscent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L104">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L111">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_MaxAscent_" data-uid="Java.Awt.FontMetrics.MaxAscent*"></a>
   <h4 id="Java_Awt_FontMetrics_MaxAscent" data-uid="Java.Awt.FontMetrics.MaxAscent">MaxAscent</h4>
@@ -765,7 +796,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_MaxDescent.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.MaxDescent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L111">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L118">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_MaxDescent_" data-uid="Java.Awt.FontMetrics.MaxDescent*"></a>
   <h4 id="Java_Awt_FontMetrics_MaxDescent" data-uid="Java.Awt.FontMetrics.MaxDescent">MaxDescent</h4>
@@ -796,7 +827,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_Widths.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.Widths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L125">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_Widths_" data-uid="Java.Awt.FontMetrics.Widths*"></a>
   <h4 id="Java_Awt_FontMetrics_Widths" data-uid="Java.Awt.FontMetrics.Widths">Widths</h4>
@@ -829,7 +860,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_BytesWidth_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.BytesWidth(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L138">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L136">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_BytesWidth_" data-uid="Java.Awt.FontMetrics.BytesWidth*"></a>
   <h4 id="Java_Awt_FontMetrics_BytesWidth_System_Byte___System_Int32_System_Int32_" data-uid="Java.Awt.FontMetrics.BytesWidth(System.Byte[],System.Int32,System.Int32)">BytesWidth(Byte[], Int32, Int32)</h4>
@@ -881,7 +912,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -891,7 +922,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_CharsWidth_System_Char___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.CharsWidth(System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L149">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L147">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_CharsWidth_" data-uid="Java.Awt.FontMetrics.CharsWidth*"></a>
   <h4 id="Java_Awt_FontMetrics_CharsWidth_System_Char___System_Int32_System_Int32_" data-uid="Java.Awt.FontMetrics.CharsWidth(System.Char[],System.Int32,System.Int32)">CharsWidth(Char[], Int32, Int32)</h4>
@@ -943,7 +974,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -953,7 +984,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_CharWidth_System_Char_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.CharWidth(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L158">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L156">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_CharWidth_" data-uid="Java.Awt.FontMetrics.CharWidth*"></a>
   <h4 id="Java_Awt_FontMetrics_CharWidth_System_Char_" data-uid="Java.Awt.FontMetrics.CharWidth(System.Char)">CharWidth(Char)</h4>
@@ -993,7 +1024,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -1003,7 +1034,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_CharWidth_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.CharWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L167">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L165">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_CharWidth_" data-uid="Java.Awt.FontMetrics.CharWidth*"></a>
   <h4 id="Java_Awt_FontMetrics_CharWidth_System_Int32_" data-uid="Java.Awt.FontMetrics.CharWidth(System.Int32)">CharWidth(Int32)</h4>
@@ -1043,7 +1074,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>
@@ -1053,7 +1084,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetLineMetrics_Java_Text_CharacterIterator_System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetLineMetrics(Java.Text.CharacterIterator%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L222">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L220">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetLineMetrics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics*"></a>
   <h4 id="Java_Awt_FontMetrics_GetLineMetrics_Java_Text_CharacterIterator_System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics(Java.Text.CharacterIterator,System.Int32,System.Int32,Java.Awt.Graphics)">GetLineMetrics(CharacterIterator, Int32, Int32, Graphics)</h4>
@@ -1121,7 +1152,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetLineMetrics_System_Char___System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetLineMetrics(System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L188">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L186">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetLineMetrics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics*"></a>
   <h4 id="Java_Awt_FontMetrics_GetLineMetrics_System_Char___System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics(System.Char[],System.Int32,System.Int32,Java.Awt.Graphics)">GetLineMetrics(Char[], Int32, Int32, Graphics)</h4>
@@ -1189,7 +1220,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetLineMetrics_System_String_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetLineMetrics(System.String%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L210">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L208">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetLineMetrics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics*"></a>
   <h4 id="Java_Awt_FontMetrics_GetLineMetrics_System_String_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics(System.String,Java.Awt.Graphics)">GetLineMetrics(String, Graphics)</h4>
@@ -1245,7 +1276,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetLineMetrics_System_String_System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetLineMetrics(System.String%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L200">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L198">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetLineMetrics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics*"></a>
   <h4 id="Java_Awt_FontMetrics_GetLineMetrics_System_String_System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetLineMetrics(System.String,System.Int32,System.Int32,Java.Awt.Graphics)">GetLineMetrics(String, Int32, Int32, Graphics)</h4>
@@ -1313,7 +1344,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetMaxCharBounds_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetMaxCharBounds(Java.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L231">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L229">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetMaxCharBounds_" data-uid="Java.Awt.FontMetrics.GetMaxCharBounds*"></a>
   <h4 id="Java_Awt_FontMetrics_GetMaxCharBounds_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetMaxCharBounds(Java.Awt.Graphics)">GetMaxCharBounds(Graphics)</h4>
@@ -1363,7 +1394,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetStringBounds_Java_Text_CharacterIterator_System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetStringBounds(Java.Text.CharacterIterator%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L277">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L275">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetStringBounds_" data-uid="Java.Awt.FontMetrics.GetStringBounds*"></a>
   <h4 id="Java_Awt_FontMetrics_GetStringBounds_Java_Text_CharacterIterator_System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetStringBounds(Java.Text.CharacterIterator,System.Int32,System.Int32,Java.Awt.Graphics)">GetStringBounds(CharacterIterator, Int32, Int32, Graphics)</h4>
@@ -1431,7 +1462,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetStringBounds_System_Char___System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetStringBounds(System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L243">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L241">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetStringBounds_" data-uid="Java.Awt.FontMetrics.GetStringBounds*"></a>
   <h4 id="Java_Awt_FontMetrics_GetStringBounds_System_Char___System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetStringBounds(System.Char[],System.Int32,System.Int32,Java.Awt.Graphics)">GetStringBounds(Char[], Int32, Int32, Graphics)</h4>
@@ -1499,7 +1530,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetStringBounds_System_String_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetStringBounds(System.String%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L265">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L263">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetStringBounds_" data-uid="Java.Awt.FontMetrics.GetStringBounds*"></a>
   <h4 id="Java_Awt_FontMetrics_GetStringBounds_System_String_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetStringBounds(System.String,Java.Awt.Graphics)">GetStringBounds(String, Graphics)</h4>
@@ -1555,7 +1586,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_GetStringBounds_System_String_System_Int32_System_Int32_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.GetStringBounds(System.String%2CSystem.Int32%2CSystem.Int32%2CJava.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L255">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L253">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_GetStringBounds_" data-uid="Java.Awt.FontMetrics.GetStringBounds*"></a>
   <h4 id="Java_Awt_FontMetrics_GetStringBounds_System_String_System_Int32_System_Int32_Java_Awt_Graphics_" data-uid="Java.Awt.FontMetrics.GetStringBounds(System.String,System.Int32,System.Int32,Java.Awt.Graphics)">GetStringBounds(String, Int32, Int32, Graphics)</h4>
@@ -1620,42 +1651,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_HasUniformLineMetrics.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.HasUniformLineMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L127">View Source</a>
-  </span>
-  <a id="Java_Awt_FontMetrics_HasUniformLineMetrics_" data-uid="Java.Awt.FontMetrics.HasUniformLineMetrics*"></a>
-  <h4 id="Java_Awt_FontMetrics_HasUniformLineMetrics" data-uid="Java.Awt.FontMetrics.HasUniformLineMetrics">HasUniformLineMetrics()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasUniformLineMetrics()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_FontMetrics_StringWidth_System_String_.md&amp;value=---%0Auid%3A%20Java.Awt.FontMetrics.StringWidth(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L176">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/FontMetrics.cs/#L174">View Source</a>
   </span>
   <a id="Java_Awt_FontMetrics_StringWidth_" data-uid="Java.Awt.FontMetrics.StringWidth*"></a>
   <h4 id="Java_Awt_FontMetrics_StringWidth_System_String_" data-uid="Java.Awt.FontMetrics.StringWidth(System.String)">StringWidth(String)</h4>
@@ -1695,7 +1694,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p><span class="xref">langword_csharp_int</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
 </td>
       </tr>
     </tbody>

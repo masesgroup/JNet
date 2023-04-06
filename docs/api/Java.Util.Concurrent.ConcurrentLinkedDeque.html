@@ -81,9 +81,12 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
-    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.AbstractCollection.html">AbstractCollection</a>&gt;</div>
-    <div class="level4"><a class="xref" href="Java.Util.AbstractCollection.html">AbstractCollection</a></div>
-    <div class="level5"><span class="xref">ConcurrentLinkedDeque</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Iterable.html">Iterable</a>&gt;</div>
+    <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable</span>&lt;<a class="xref" href="Java.Lang.Iterable.html">Iterable</a>&gt;</div>
+    <div class="level5"><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></div>
+    <div class="level6"><a class="xref" href="Java.Util.Collection.html">Collection</a></div>
+    <div class="level7"><a class="xref" href="Java.Util.AbstractCollection.html">AbstractCollection</a></div>
+    <div class="level8"><span class="xref">ConcurrentLinkedDeque</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,17 +96,22 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IEnumerableExtension</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_IsEmpty">AbstractCollection.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Iterator">AbstractCollection.Iterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Size">AbstractCollection.Size</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_ToArray_System_Object___">AbstractCollection.ToArray(Object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Size">AbstractCollection.Size()</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Iterator">AbstractCollection.Iterator()</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Add_System_Object_">AbstractCollection.Add(Object)</a>
@@ -116,9 +124,6 @@
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_ContainsAll_Java_Util_Collection_">AbstractCollection.ContainsAll(Collection)</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_IsEmpty">AbstractCollection.IsEmpty()</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Remove_System_Object_">AbstractCollection.Remove(Object)</a>
@@ -136,52 +141,82 @@
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Clear">AbstractCollection.Clear()</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute(System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Collection.html#Java_Util_Collection_ParallelStream">Collection.ParallelStream</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Collection.html#Java_Util_Collection_Spliterator">Collection.Spliterator</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Collection.html#Java_Util_Collection_Stream">Collection.Stream</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Collection.html#Java_Util_Collection_ToArray_Java_Util_Function_IntFunction_">Collection.ToArray(IntFunction)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Collection.html#Java_Util_Collection_RemoveIf_Java_Util_Function_Predicate_">Collection.RemoveIf(Predicate)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Lang.Iterable&gt;.GetEnumerator()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Lang.Iterable&gt;.MASES.JCOBridge.C2JBridge.IEnumerableExtension.UsePrefetch</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Lang.Iterable&gt;.MASES.JCOBridge.C2JBridge.IEnumerableExtension.UseThread</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Lang.Iterable&gt;.MASES.JCOBridge.C2JBridge.IEnumerableExtension.ConverterBridge</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.New(System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.Execute&lt;T&gt;(T[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.AbstractCollection&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Iterable&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
@@ -193,13 +228,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -208,19 +243,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -332,7 +364,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Concurrent_ConcurrentLinkedDeque_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConcurrentLinkedDeque : AbstractCollection, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConcurrentLinkedDeque : AbstractCollection, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerable, IEnumerableExtension</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -341,7 +373,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L532">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L900">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor">ConcurrentLinkedDeque()</h4>
@@ -361,7 +393,7 @@
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_Java_Util_Collection_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor(Java.Util.Collection)">ConcurrentLinkedDeque(Collection)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -391,7 +423,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L536">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L904">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque__ctor_System_Object___" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.#ctor(System.Object[])">ConcurrentLinkedDeque(Object[])</h4>
@@ -426,11 +458,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_ClassName.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L541">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L909">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_ClassName_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.ClassName*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_ClassName" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -456,10 +488,72 @@
   <div><a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_ClassName">AbstractCollection.ClassName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_First.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.First%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L67">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator">DescendingIterator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Iterator DescendingIterator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Iterator.html">Iterator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Element.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L74">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Element_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Element*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Element" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Element">Element</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Element { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_First.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.First%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L81">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_First_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.First*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_First" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.First">First</h4>
@@ -490,11 +584,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L545">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L913">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsAbstract_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsAbstract*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsAbstract" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -523,11 +617,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L549">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L917">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsCloseable_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsCloseable*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsCloseable" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -556,11 +650,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_IsInterface.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L553">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L921">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsInterface_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsInterface*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsInterface" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -589,11 +683,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_IsStatic.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L557">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L925">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsStatic_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsStatic*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_IsStatic" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -622,7 +716,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Last.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Last%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L74">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L88">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Last_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Last*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Last" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Last">Last</h4>
@@ -648,6 +742,316 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Peek.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L95">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Peek_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Peek*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Peek" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Peek">Peek</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Peek { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L102">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst">PeekFirst</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PeekFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L109">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast">PeekLast</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PeekLast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Poll.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Poll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L116">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Poll_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Poll*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Poll" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Poll">Poll</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Poll { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L123">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst">PollFirst</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PollFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L130">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast">PollLast</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PollLast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Pop.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L137">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Pop_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Pop*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Pop" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Pop">Pop</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Pop { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Remove.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L144">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Remove_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Remove*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Remove" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Remove">Remove</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Remove { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L151">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst">RemoveFirst</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object RemoveFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L158">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast*"></a>
+  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast">RemoveLast</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object RemoveLast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -655,11 +1059,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_AddFirst_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.AddFirst(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L235">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L211">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_AddFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.AddFirst*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_AddFirst_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.AddFirst(System.Object)">AddFirst(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -689,11 +1093,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_AddLast_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.AddLast(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L243">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L219">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_AddLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.AddLast*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_AddLast_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.AddLast(System.Object)">AddLast(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -720,78 +1124,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L227">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_DescendingIterator" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.DescendingIterator">DescendingIterator()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Iterator DescendingIterator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Iterator.html">Iterator</a></td>
-        <td><p><a class="xref" href="Java.Util.Iterator.html">Iterator</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Element.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L128">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Element_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Element*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Element" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Element">Element()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Element()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Offer_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Offer(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L167">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Offer_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Offer*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Offer_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Offer(System.Object)">Offer(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -827,7 +1167,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -837,11 +1177,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_OfferFirst_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.OfferFirst(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L176">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_OfferFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.OfferFirst*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_OfferFirst_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.OfferFirst(System.Object)">OfferFirst(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -877,7 +1217,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -887,11 +1227,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_OfferLast_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.OfferLast(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L101">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L185">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_OfferLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.OfferLast*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_OfferLast_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.OfferLast(System.Object)">OfferLast(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -927,231 +1267,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Peek.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L137">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Peek_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Peek*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Peek" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Peek">Peek()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Peek()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L146">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekFirst">PeekFirst()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object PeekFirst()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L155">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PeekLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PeekLast">PeekLast()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object PeekLast()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Poll.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Poll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L164">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Poll_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Poll*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Poll" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Poll">Poll()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Poll()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L173">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollFirst">PollFirst()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object PollFirst()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L182">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_PollLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.PollLast">PollLast()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object PollLast()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Pop.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L191">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Pop_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Pop*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Pop" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Pop">Pop()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Pop()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1161,11 +1277,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Push_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Push(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L251">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L227">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Push_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Push*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Push_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Push(System.Object)">Push(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1192,74 +1308,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_Remove.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L200">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_Remove_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Remove*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_Remove" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.Remove">Remove()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Remove()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L209">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirst" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirst">RemoveFirst()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object RemoveFirst()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirstOccurrence_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirstOccurrence(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L110">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L194">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirstOccurrence_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirstOccurrence*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveFirstOccurrence_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveFirstOccurrence(System.Object)">RemoveFirstOccurrence(Object)</h4>
@@ -1299,39 +1351,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L218">View Source</a>
-  </span>
-  <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast*"></a>
-  <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLast" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLast">RemoveLast()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object RemoveLast()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><span class="xref">langword_csharp_object</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1341,7 +1361,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLastOccurrence_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLastOccurrence(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L119">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ConcurrentLinkedDeque.cs/#L203">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLastOccurrence_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLastOccurrence*"></a>
   <h4 id="Java_Util_Concurrent_ConcurrentLinkedDeque_RemoveLastOccurrence_System_Object_" data-uid="Java.Util.Concurrent.ConcurrentLinkedDeque.RemoveLastOccurrence(System.Object)">RemoveLastOccurrence(Object)</h4>
@@ -1381,7 +1401,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
 </td>
       </tr>
     </tbody>
@@ -1502,6 +1522,12 @@
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IEnumerableExtension</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

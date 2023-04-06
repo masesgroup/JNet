@@ -160,6 +160,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Imageio.Spi.IIOServiceProvider&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -169,13 +172,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -184,19 +187,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -370,7 +370,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi__ctor_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.#ctor*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi__ctor_System_String_System_String_Java_Lang_Class_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.#ctor(System.String,System.String,Java.Lang.Class)">ImageInputStreamSpi(String, String, Class)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class%3C?%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class%3C?%3E)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -411,6 +411,37 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L61">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile*"></a>
+  <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile">CanUseCacheFile</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUseCacheFile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_ClassName.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -418,7 +449,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_ClassName_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.ClassName*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_ClassName" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -447,7 +478,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_InputClass.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.InputClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L61">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L68">View Source</a>
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_InputClass_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.InputClass*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_InputClass" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.InputClass">InputClass</h4>
@@ -482,7 +513,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_IsAbstract_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsAbstract*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_IsAbstract" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -515,7 +546,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_IsCloseable_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsCloseable*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_IsCloseable" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -548,7 +579,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_IsInterface_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsInterface*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_IsInterface" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -581,7 +612,7 @@
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_IsStatic_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsStatic*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_IsStatic" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -605,25 +636,23 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Javax.Imageio.Spi.IIOServiceProvider.html#Javax_Imageio_Spi_IIOServiceProvider_IsStatic">IIOServiceProvider.IsStatic</a></div>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L82">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L75">View Source</a>
   </span>
-  <a id="Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile*"></a>
-  <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_CanUseCacheFile" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CanUseCacheFile">CanUseCacheFile()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()</a></p>
+  <a id="Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile*"></a>
+  <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile">NeedsCacheFile</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanUseCacheFile()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool NeedsCacheFile { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -634,17 +663,18 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L101">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L97">View Source</a>
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_System_Object_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance(System.Object)">CreateInputStreamInstance(Object)</h4>
@@ -709,7 +739,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_System_Object_System_Boolean_Java_Io_File_.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance(System.Object%2CSystem.Boolean%2CJava.Io.File)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L73">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L87">View Source</a>
   </span>
   <a id="Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance*"></a>
   <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_CreateInputStreamInstance_System_Object_System_Boolean_Java_Io_File_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.CreateInputStreamInstance(System.Object,System.Boolean,Java.Io.File)">CreateInputStreamInstance(Object, Boolean, File)</h4>
@@ -778,38 +808,6 @@
       <tr>
         <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile.md&amp;value=---%0Auid%3A%20Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Spi/ImageInputStreamSpi.cs/#L91">View Source</a>
-  </span>
-  <a id="Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile_" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile*"></a>
-  <h4 id="Javax_Imageio_Spi_ImageInputStreamSpi_NeedsCacheFile" data-uid="Javax.Imageio.Spi.ImageInputStreamSpi.NeedsCacheFile">NeedsCacheFile()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool NeedsCacheFile()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">langword_csharp_bool</span></p>
-</td>
       </tr>
     </tbody>
   </table>

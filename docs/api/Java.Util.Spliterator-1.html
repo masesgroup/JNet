@@ -73,7 +73,7 @@
   
   <h1 id="Java_Util_Spliterator_1" data-uid="Java.Util.Spliterator`1" class="text-break">Class Spliterator&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html">https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html</a></p>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Spliterator-1.html">Spliterator</a>&lt;T&gt;&gt;</div>
     <div class="level4"><span class="xref">Spliterator&lt;T&gt;</span></div>
+      <div class="level5"><a class="xref" href="Java.Util.Spliterator.OfPrimitive-3.html">Spliterator.OfPrimitive&lt;T, T_CONS, T_SPLITR&gt;</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -144,6 +145,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Spliterator&lt;T&gt;&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +157,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +172,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -229,15 +230,6 @@
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsAbstract</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
@@ -314,8 +306,58 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html">https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html</a></p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5540">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1__ctor_" data-uid="Java.Util.Spliterator`1.#ctor*"></a>
+  <h4 id="Java_Util_Spliterator_1__ctor" data-uid="Java.Util.Spliterator`1.#ctor">Spliterator()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spliterator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5544">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1__ctor_" data-uid="Java.Util.Spliterator`1.#ctor*"></a>
+  <h4 id="Java_Util_Spliterator_1__ctor_System_Object___" data-uid="Java.Util.Spliterator`1.#ctor(System.Object[])">Spliterator(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spliterator(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -326,11 +368,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_Characteristics.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.Characteristics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L41">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L572">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_Characteristics_" data-uid="Java.Util.Spliterator`1.Characteristics*"></a>
   <h4 id="Java_Util_Spliterator_1_Characteristics" data-uid="Java.Util.Spliterator`1.Characteristics">Characteristics</h4>
-  <div class="markdown level1 summary"><p>Returns a set of characteristics of this <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> and its elements.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -357,11 +399,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_ClassName.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L33">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5549">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_ClassName_" data-uid="Java.Util.Spliterator`1.ClassName*"></a>
   <h4 id="Java_Util_Spliterator_1_ClassName" data-uid="Java.Util.Spliterator`1.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -390,11 +432,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_Comparator.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.Comparator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L579">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_Comparator_" data-uid="Java.Util.Spliterator`1.Comparator*"></a>
   <h4 id="Java_Util_Spliterator_1_Comparator" data-uid="Java.Util.Spliterator`1.Comparator">Comparator</h4>
-  <div class="markdown level1 summary"><p>If this <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> source is SORTED by a <a class="xref" href="Java.Util.Spliterator-1.html#Java_Util_Spliterator_1_Comparator">Comparator</a>, returns that <a class="xref" href="Java.Util.Spliterator-1.html#Java_Util_Spliterator_1_Comparator">Comparator</a>.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -418,14 +460,76 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_CONCURRENT.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.CONCURRENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L532">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_CONCURRENT_" data-uid="Java.Util.Spliterator`1.CONCURRENT*"></a>
+  <h4 id="Java_Util_Spliterator_1_CONCURRENT" data-uid="Java.Util.Spliterator`1.CONCURRENT">CONCURRENT</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONCURRENT { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_DISTINCT.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.DISTINCT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L536">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_DISTINCT_" data-uid="Java.Util.Spliterator`1.DISTINCT*"></a>
+  <h4 id="Java_Util_Spliterator_1_DISTINCT" data-uid="Java.Util.Spliterator`1.DISTINCT">DISTINCT</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DISTINCT { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_EstimateSize.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.EstimateSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L45">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L586">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_EstimateSize_" data-uid="Java.Util.Spliterator`1.EstimateSize*"></a>
   <h4 id="Java_Util_Spliterator_1_EstimateSize" data-uid="Java.Util.Spliterator`1.EstimateSize">EstimateSize</h4>
-  <div class="markdown level1 summary"><p>Returns an estimate of the number of elements that would be encountered by a <a class="xref" href="Java.Util.Spliterator-1.html#Java_Util_Spliterator_1_ForEachRemaining__1_Java_Util_Function_Consumer___0__">ForEachRemaining&lt;TSuper&gt;(Consumer&lt;TSuper&gt;)</a> traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -452,11 +556,11 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_ExactSizeIfKnown.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.ExactSizeIfKnown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L593">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_ExactSizeIfKnown_" data-uid="Java.Util.Spliterator`1.ExactSizeIfKnown*"></a>
   <h4 id="Java_Util_Spliterator_1_ExactSizeIfKnown" data-uid="Java.Util.Spliterator`1.ExactSizeIfKnown">ExactSizeIfKnown</h4>
-  <div class="markdown level1 summary"><p>Convenience method that returns <a class="xref" href="Java.Util.Spliterator-1.html#Java_Util_Spliterator_1_EstimateSize">EstimateSize</a> if this <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> is SIZED, else -1.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -480,14 +584,111 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_IMMUTABLE.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.IMMUTABLE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L540">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_IMMUTABLE_" data-uid="Java.Util.Spliterator`1.IMMUTABLE*"></a>
+  <h4 id="Java_Util_Spliterator_1_IMMUTABLE" data-uid="Java.Util.Spliterator`1.IMMUTABLE">IMMUTABLE</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMMUTABLE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5553">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_IsAbstract_" data-uid="Java.Util.Spliterator`1.IsAbstract*"></a>
+  <h4 id="Java_Util_Spliterator_1_IsAbstract" data-uid="Java.Util.Spliterator`1.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5557">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_IsCloseable_" data-uid="Java.Util.Spliterator`1.IsCloseable*"></a>
+  <h4 id="Java_Util_Spliterator_1_IsCloseable" data-uid="Java.Util.Spliterator`1.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_IsInterface.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L37">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5561">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_IsInterface_" data-uid="Java.Util.Spliterator`1.IsInterface*"></a>
   <h4 id="Java_Util_Spliterator_1_IsInterface" data-uid="Java.Util.Spliterator`1.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -511,6 +712,225 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_IsStatic.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L5565">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_IsStatic_" data-uid="Java.Util.Spliterator`1.IsStatic*"></a>
+  <h4 id="Java_Util_Spliterator_1_IsStatic" data-uid="Java.Util.Spliterator`1.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_NONNULL.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.NONNULL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L544">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_NONNULL_" data-uid="Java.Util.Spliterator`1.NONNULL*"></a>
+  <h4 id="Java_Util_Spliterator_1_NONNULL" data-uid="Java.Util.Spliterator`1.NONNULL">NONNULL</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NONNULL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_ORDERED.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.ORDERED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L548">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_ORDERED_" data-uid="Java.Util.Spliterator`1.ORDERED*"></a>
+  <h4 id="Java_Util_Spliterator_1_ORDERED" data-uid="Java.Util.Spliterator`1.ORDERED">ORDERED</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ORDERED { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_SIZED.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.SIZED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L552">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_SIZED_" data-uid="Java.Util.Spliterator`1.SIZED*"></a>
+  <h4 id="Java_Util_Spliterator_1_SIZED" data-uid="Java.Util.Spliterator`1.SIZED">SIZED</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SIZED { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_SORTED.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.SORTED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L556">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_SORTED_" data-uid="Java.Util.Spliterator`1.SORTED*"></a>
+  <h4 id="Java_Util_Spliterator_1_SORTED" data-uid="Java.Util.Spliterator`1.SORTED">SORTED</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SORTED { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_SUBSIZED.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.SUBSIZED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L560">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_SUBSIZED_" data-uid="Java.Util.Spliterator`1.SUBSIZED*"></a>
+  <h4 id="Java_Util_Spliterator_1_SUBSIZED" data-uid="Java.Util.Spliterator`1.SUBSIZED">SUBSIZED</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SUBSIZED { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_TrySplit.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.TrySplit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L600">View Source</a>
+  </span>
+  <a id="Java_Util_Spliterator_1_TrySplit_" data-uid="Java.Util.Spliterator`1.TrySplit*"></a>
+  <h4 id="Java_Util_Spliterator_1_TrySplit" data-uid="Java.Util.Spliterator`1.TrySplit">TrySplit</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spliterator&lt;T&gt; TrySplit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Spliterator-1.html">Spliterator</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -518,17 +938,17 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_ForEachRemaining__1_Java_Util_Function_Consumer___0__.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.ForEachRemaining%60%601(Java.Util.Function.Consumer%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L626">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_ForEachRemaining_" data-uid="Java.Util.Spliterator`1.ForEachRemaining*"></a>
-  <h4 id="Java_Util_Spliterator_1_ForEachRemaining__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Spliterator`1.ForEachRemaining``1(Java.Util.Function.Consumer{``0})">ForEachRemaining&lt;TSuper&gt;(Consumer&lt;TSuper&gt;)</h4>
-  <div class="markdown level1 summary"><p>Performs the given action for each remaining element, sequentially in the current thread, until all elements have been processed or the action throws an exception.</p>
+  <h4 id="Java_Util_Spliterator_1_ForEachRemaining__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Spliterator`1.ForEachRemaining``1(Java.Util.Function.Consumer{``0})">ForEachRemaining&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ForEachRemaining&lt;TSuper&gt;(Consumer&lt;TSuper&gt; action)
-    where TSuper : T</code></pre>
+    <pre><code class="lang-csharp hljs">public void ForEachRemaining&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt; arg0)
+    where Arg0objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,9 +961,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;TSuper&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
+        <td><a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperT&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -557,7 +978,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TSuper</span></td>
+        <td><span class="parametername">Arg0objectSuperT</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -567,16 +988,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_HasCharacteristics_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.HasCharacteristics(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L618">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_HasCharacteristics_" data-uid="Java.Util.Spliterator`1.HasCharacteristics*"></a>
   <h4 id="Java_Util_Spliterator_1_HasCharacteristics_System_Int32_" data-uid="Java.Util.Spliterator`1.HasCharacteristics(System.Int32)">HasCharacteristics(Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns true if this <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> <a class="xref" href="Java.Util.Spliterator-1.html#Java_Util_Spliterator_1_Characteristics">Characteristics</a> contain all of the given characteristics.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasCharacteristics(int characteristics)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool HasCharacteristics(int arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -590,8 +1011,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">characteristics</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -606,7 +1028,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -615,17 +1038,17 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_TryAdvance__1_Java_Util_Function_Consumer___0__.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.TryAdvance%60%601(Java.Util.Function.Consumer%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L609">View Source</a>
   </span>
   <a id="Java_Util_Spliterator_1_TryAdvance_" data-uid="Java.Util.Spliterator`1.TryAdvance*"></a>
-  <h4 id="Java_Util_Spliterator_1_TryAdvance__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Spliterator`1.TryAdvance``1(Java.Util.Function.Consumer{``0})">TryAdvance&lt;SuperT&gt;(Consumer&lt;SuperT&gt;)</h4>
-  <div class="markdown level1 summary"><p>If a remaining element exists, performs the given action on it, returning true; else returns false.</p>
+  <h4 id="Java_Util_Spliterator_1_TryAdvance__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Spliterator`1.TryAdvance``1(Java.Util.Function.Consumer{``0})">TryAdvance&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryAdvance&lt;SuperT&gt;(Consumer&lt;SuperT&gt; action)
-    where SuperT : T</code></pre>
+    <pre><code class="lang-csharp hljs">public bool TryAdvance&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt; arg0)
+    where Arg0objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -638,9 +1061,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;SuperT&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
+        <td><a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperT&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -655,7 +1079,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -669,27 +1094,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">SuperT</span></td>
+        <td><span class="parametername">Arg0objectSuperT</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="operators">Operators
+  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_TrySplit.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.TrySplit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1_op_Implicit_Java_Util_Spliterator__0___Java_Util_Spliterator.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601.op_Implicit(Java.Util.Spliterator%7B%600%7D)~Java.Util.Spliterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L77">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Spliterator.cs/#L524">View Source</a>
   </span>
-  <a id="Java_Util_Spliterator_1_TrySplit_" data-uid="Java.Util.Spliterator`1.TrySplit*"></a>
-  <h4 id="Java_Util_Spliterator_1_TrySplit" data-uid="Java.Util.Spliterator`1.TrySplit">TrySplit()</h4>
-  <div class="markdown level1 summary"><p>If this spliterator can be partitioned, returns a <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> covering elements, that will, upon return from this method, not be covered by this <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a>.</p>
+  <a id="Java_Util_Spliterator_1_op_Implicit_" data-uid="Java.Util.Spliterator`1.op_Implicit*"></a>
+  <h4 id="Java_Util_Spliterator_1_op_Implicit_Java_Util_Spliterator__0___Java_Util_Spliterator" data-uid="Java.Util.Spliterator`1.op_Implicit(Java.Util.Spliterator{`0})~Java.Util.Spliterator">Implicit(Spliterator&lt;T&gt; to Spliterator)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Spliterator-1.html">Spliterator&lt;T&gt;</a> to <a class="xref" href="Java.Util.Spliterator.html">Spliterator</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Spliterator&lt;T&gt; TrySplit()</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator Spliterator(Spliterator&lt;T&gt; t)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Spliterator-1.html">Spliterator</a>&lt;T&gt;</td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -700,7 +1144,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Spliterator-1.html">Spliterator</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Java.Util.Spliterator.html">Spliterator</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -739,7 +1183,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Spliterator_1.md&amp;value=---%0Auid%3A%20Java.Util.Spliterator%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Spliterator.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

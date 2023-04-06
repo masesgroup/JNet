@@ -144,6 +144,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Net.Http.HttpClient&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
@@ -153,13 +156,13 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.String)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -168,19 +171,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.CastTo&lt;TNewClass&gt;(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
@@ -349,6 +349,37 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Authenticator.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Authenticator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L65">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_Authenticator_" data-uid="Java.Net.Http.HttpClient.Authenticator*"></a>
+  <h4 id="Java_Net_Http_HttpClient_Authenticator" data-uid="Java.Net.Http.HttpClient.Authenticator">Authenticator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;Authenticator&gt; Authenticator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Net.Authenticator.html">Authenticator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_ClassName.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -356,7 +387,7 @@
   </span>
   <a id="Java_Net_Http_HttpClient_ClassName_" data-uid="Java.Net.Http.HttpClient.ClassName*"></a>
   <h4 id="Java_Net_Http_HttpClient_ClassName" data-uid="Java.Net.Http.HttpClient.ClassName">ClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -382,6 +413,130 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_ConnectTimeout.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.ConnectTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L72">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_ConnectTimeout_" data-uid="Java.Net.Http.HttpClient.ConnectTimeout*"></a>
+  <h4 id="Java_Net_Http_HttpClient_ConnectTimeout" data-uid="Java.Net.Http.HttpClient.ConnectTimeout">ConnectTimeout</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;Duration&gt; ConnectTimeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Time.Duration.html">Duration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_CookieHandler.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.CookieHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L79">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_CookieHandler_" data-uid="Java.Net.Http.HttpClient.CookieHandler*"></a>
+  <h4 id="Java_Net_Http_HttpClient_CookieHandler" data-uid="Java.Net.Http.HttpClient.CookieHandler">CookieHandler</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;CookieHandler&gt; CookieHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Net.CookieHandler.html">CookieHandler</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Executor.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Executor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L86">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_Executor_" data-uid="Java.Net.Http.HttpClient.Executor*"></a>
+  <h4 id="Java_Net_Http_HttpClient_Executor" data-uid="Java.Net.Http.HttpClient.Executor">Executor</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;Executor&gt; Executor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_FollowRedirects.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.FollowRedirects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L93">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_FollowRedirects_" data-uid="Java.Net.Http.HttpClient.FollowRedirects*"></a>
+  <h4 id="Java_Net_Http_HttpClient_FollowRedirects" data-uid="Java.Net.Http.HttpClient.FollowRedirects">FollowRedirects</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpClient.Redirect FollowRedirects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.Http.HttpClient.Redirect.html">HttpClient.Redirect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -389,7 +544,7 @@
   </span>
   <a id="Java_Net_Http_HttpClient_IsAbstract_" data-uid="Java.Net.Http.HttpClient.IsAbstract*"></a>
   <h4 id="Java_Net_Http_HttpClient_IsAbstract" data-uid="Java.Net.Http.HttpClient.IsAbstract">IsAbstract</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -422,7 +577,7 @@
   </span>
   <a id="Java_Net_Http_HttpClient_IsCloseable_" data-uid="Java.Net.Http.HttpClient.IsCloseable*"></a>
   <h4 id="Java_Net_Http_HttpClient_IsCloseable" data-uid="Java.Net.Http.HttpClient.IsCloseable">IsCloseable</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -455,7 +610,7 @@
   </span>
   <a id="Java_Net_Http_HttpClient_IsInterface_" data-uid="Java.Net.Http.HttpClient.IsInterface*"></a>
   <h4 id="Java_Net_Http_HttpClient_IsInterface" data-uid="Java.Net.Http.HttpClient.IsInterface">IsInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -488,7 +643,7 @@
   </span>
   <a id="Java_Net_Http_HttpClient_IsStatic_" data-uid="Java.Net.Http.HttpClient.IsStatic*"></a>
   <h4 id="Java_Net_Http_HttpClient_IsStatic" data-uid="Java.Net.Http.HttpClient.IsStatic">IsStatic</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -512,185 +667,23 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span></div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Authenticator.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Authenticator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L122">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_Authenticator_" data-uid="Java.Net.Http.HttpClient.Authenticator*"></a>
-  <h4 id="Java_Net_Http_HttpClient_Authenticator" data-uid="Java.Net.Http.HttpClient.Authenticator">Authenticator()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Optional Authenticator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Optional.html">Optional</a></td>
-        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_ConnectTimeout.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.ConnectTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L149">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_ConnectTimeout_" data-uid="Java.Net.Http.HttpClient.ConnectTimeout*"></a>
-  <h4 id="Java_Net_Http_HttpClient_ConnectTimeout" data-uid="Java.Net.Http.HttpClient.ConnectTimeout">ConnectTimeout()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Optional ConnectTimeout()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Optional.html">Optional</a></td>
-        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_CookieHandler.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.CookieHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L131">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_CookieHandler_" data-uid="Java.Net.Http.HttpClient.CookieHandler*"></a>
-  <h4 id="Java_Net_Http_HttpClient_CookieHandler" data-uid="Java.Net.Http.HttpClient.CookieHandler">CookieHandler()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Optional CookieHandler()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Optional.html">Optional</a></td>
-        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Executor.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Executor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L158">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_Executor_" data-uid="Java.Net.Http.HttpClient.Executor*"></a>
-  <h4 id="Java_Net_Http_HttpClient_Executor" data-uid="Java.Net.Http.HttpClient.Executor">Executor()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Optional Executor()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Optional.html">Optional</a></td>
-        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_FollowRedirects.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.FollowRedirects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L104">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_FollowRedirects_" data-uid="Java.Net.Http.HttpClient.FollowRedirects*"></a>
-  <h4 id="Java_Net_Http_HttpClient_FollowRedirects" data-uid="Java.Net.Http.HttpClient.FollowRedirects">FollowRedirects()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpClient.Redirect FollowRedirects()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpClient.Redirect.html">HttpClient.Redirect</a></td>
-        <td><p><a class="xref" href="Java.Net.Http.HttpClient.Redirect.html">HttpClient.Redirect</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_NewBuilder.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.NewBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L47">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_NewBuilder_" data-uid="Java.Net.Http.HttpClient.NewBuilder*"></a>
-  <h4 id="Java_Net_Http_HttpClient_NewBuilder" data-uid="Java.Net.Http.HttpClient.NewBuilder">NewBuilder()</h4>
+  <h4 id="Java_Net_Http_HttpClient_NewBuilder" data-uid="Java.Net.Http.HttpClient.NewBuilder">NewBuilder</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpClient.Builder NewBuilder()</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpClient.Builder NewBuilder { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -701,8 +694,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Net.Http.HttpClient.Builder.html">HttpClient.Builder</a></td>
-        <td><p><a class="xref" href="Java.Net.Http.HttpClient.Builder.html">HttpClient.Builder</a></p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -711,18 +703,18 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_NewHttpClient.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.NewHttpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L49">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L54">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_NewHttpClient_" data-uid="Java.Net.Http.HttpClient.NewHttpClient*"></a>
-  <h4 id="Java_Net_Http_HttpClient_NewHttpClient" data-uid="Java.Net.Http.HttpClient.NewHttpClient">NewHttpClient()</h4>
+  <h4 id="Java_Net_Http_HttpClient_NewHttpClient" data-uid="Java.Net.Http.HttpClient.NewHttpClient">NewHttpClient</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpClient NewHttpClient()</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpClient NewHttpClient { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -733,8 +725,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Net.Http.HttpClient.html">HttpClient</a></td>
-        <td><p><a class="xref" href="Java.Net.Http.HttpClient.html">HttpClient</a></p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -743,18 +734,18 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_NewWebSocketBuilder.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.NewWebSocketBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L185">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L100">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_NewWebSocketBuilder_" data-uid="Java.Net.Http.HttpClient.NewWebSocketBuilder*"></a>
-  <h4 id="Java_Net_Http_HttpClient_NewWebSocketBuilder" data-uid="Java.Net.Http.HttpClient.NewWebSocketBuilder">NewWebSocketBuilder()</h4>
+  <h4 id="Java_Net_Http_HttpClient_NewWebSocketBuilder" data-uid="Java.Net.Http.HttpClient.NewWebSocketBuilder">NewWebSocketBuilder</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebSocket.Builder NewWebSocketBuilder()</code></pre>
+    <pre><code class="lang-csharp hljs">public WebSocket.Builder NewWebSocketBuilder { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -765,8 +756,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Net.Http.WebSocket.Builder.html">WebSocket.Builder</a></td>
-        <td><p><a class="xref" href="Java.Net.Http.WebSocket.Builder.html">WebSocket.Builder</a></p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -775,18 +765,18 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Proxy.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Proxy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L140">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L107">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_Proxy_" data-uid="Java.Net.Http.HttpClient.Proxy*"></a>
-  <h4 id="Java_Net_Http_HttpClient_Proxy" data-uid="Java.Net.Http.HttpClient.Proxy">Proxy()</h4>
+  <h4 id="Java_Net_Http_HttpClient_Proxy" data-uid="Java.Net.Http.HttpClient.Proxy">Proxy</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Optional Proxy()</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;ProxySelector&gt; Proxy { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -796,27 +786,90 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Optional.html">Optional</a></td>
-        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
-</td>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Net.ProxySelector.html">ProxySelector</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Send_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Send(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SslContext.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SslContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L74">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L114">View Source</a>
   </span>
-  <a id="Java_Net_Http_HttpClient_Send_" data-uid="Java.Net.Http.HttpClient.Send*"></a>
-  <h4 id="Java_Net_Http_HttpClient_Send_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_" data-uid="Java.Net.Http.HttpClient.Send(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler)">Send(HttpRequest, HttpResponse.BodyHandler)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)</a></p>
+  <a id="Java_Net_Http_HttpClient_SslContext_" data-uid="Java.Net.Http.HttpClient.SslContext*"></a>
+  <h4 id="Java_Net_Http_HttpClient_SslContext" data-uid="Java.Net.Http.HttpClient.SslContext">SslContext</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpResponse Send(HttpRequest arg0, HttpResponse.BodyHandler arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public SSLContext SslContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Net.Ssl.SSLContext.html">SSLContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SslParameters.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SslParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L121">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_SslParameters_" data-uid="Java.Net.Http.HttpClient.SslParameters*"></a>
+  <h4 id="Java_Net_Http_HttpClient_SslParameters" data-uid="Java.Net.Http.HttpClient.SslParameters">SslParameters</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSLParameters SslParameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_Send__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.Send%60%601(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L133">View Source</a>
+  </span>
+  <a id="Java_Net_Http_HttpClient_Send_" data-uid="Java.Net.Http.HttpClient.Send*"></a>
+  <h4 id="Java_Net_Http_HttpClient_Send__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__" data-uid="Java.Net.Http.HttpClient.Send``1(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler{``0})">Send&lt;T&gt;(HttpRequest, HttpResponse.BodyHandler&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponse&lt;T&gt; Send&lt;T&gt;(HttpRequest arg0, HttpResponse.BodyHandler&lt;T&gt; arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -835,7 +888,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></td>
+        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">HttpResponse.BodyHandler</a>&lt;T&gt;</td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </td>
@@ -852,9 +905,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a></td>
+        <td><a class="xref" href="Java.Net.Http.HttpResponse-1.html">HttpResponse</a>&lt;T&gt;</td>
         <td><p><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a></p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -879,19 +947,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SendAsync_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SendAsync(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SendAsync__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SendAsync%60%601(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L95">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L154">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_SendAsync_" data-uid="Java.Net.Http.HttpClient.SendAsync*"></a>
-  <h4 id="Java_Net_Http_HttpClient_SendAsync_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_" data-uid="Java.Net.Http.HttpClient.SendAsync(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler)">SendAsync(HttpRequest, HttpResponse.BodyHandler)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)</a></p>
+  <h4 id="Java_Net_Http_HttpClient_SendAsync__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__" data-uid="Java.Net.Http.HttpClient.SendAsync``1(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler{``0})">SendAsync&lt;T&gt;(HttpRequest, HttpResponse.BodyHandler&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CompletableFuture SendAsync(HttpRequest arg0, HttpResponse.BodyHandler arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public CompletableFuture&lt;HttpResponse&lt;T&gt;&gt; SendAsync&lt;T&gt;(HttpRequest arg0, HttpResponse.BodyHandler&lt;T&gt; arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -910,7 +978,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></td>
+        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">HttpResponse.BodyHandler</a>&lt;T&gt;</td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </td>
@@ -927,27 +995,42 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Concurrent.CompletableFuture.html">CompletableFuture</a></td>
+        <td><a class="xref" href="Java.Util.Concurrent.CompletableFuture-1.html">CompletableFuture</a>&lt;<a class="xref" href="Java.Net.Http.HttpResponse-1.html">HttpResponse</a>&lt;T&gt;&gt;</td>
         <td><p><a class="xref" href="Java.Util.Concurrent.CompletableFuture.html">CompletableFuture</a></p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SendAsync_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_Java_Net_Http_HttpResponse_PushPromiseHandler_.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SendAsync(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler%2CJava.Net.Http.HttpResponse.PushPromiseHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SendAsync__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__Java_Net_Http_HttpResponse_PushPromiseHandler___0__.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SendAsync%60%601(Java.Net.Http.HttpRequest%2CJava.Net.Http.HttpResponse.BodyHandler%7B%60%600%7D%2CJava.Net.Http.HttpResponse.PushPromiseHandler%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L85">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L144">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_SendAsync_" data-uid="Java.Net.Http.HttpClient.SendAsync*"></a>
-  <h4 id="Java_Net_Http_HttpClient_SendAsync_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler_Java_Net_Http_HttpResponse_PushPromiseHandler_" data-uid="Java.Net.Http.HttpClient.SendAsync(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler,Java.Net.Http.HttpResponse.PushPromiseHandler)">SendAsync(HttpRequest, HttpResponse.BodyHandler, HttpResponse.PushPromiseHandler)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E,java.net.http.HttpResponse$PushPromiseHandler%3CT%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E,java.net.http.HttpResponse$PushPromiseHandler%3CT%3E)</a></p>
+  <h4 id="Java_Net_Http_HttpClient_SendAsync__1_Java_Net_Http_HttpRequest_Java_Net_Http_HttpResponse_BodyHandler___0__Java_Net_Http_HttpResponse_PushPromiseHandler___0__" data-uid="Java.Net.Http.HttpClient.SendAsync``1(Java.Net.Http.HttpRequest,Java.Net.Http.HttpResponse.BodyHandler{``0},Java.Net.Http.HttpResponse.PushPromiseHandler{``0})">SendAsync&lt;T&gt;(HttpRequest, HttpResponse.BodyHandler&lt;T&gt;, HttpResponse.PushPromiseHandler&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler,java.net.http.HttpResponse.PushPromiseHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler,java.net.http.HttpResponse.PushPromiseHandler)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CompletableFuture SendAsync(HttpRequest arg0, HttpResponse.BodyHandler arg1, HttpResponse.PushPromiseHandler arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public CompletableFuture&lt;HttpResponse&lt;T&gt;&gt; SendAsync&lt;T&gt;(HttpRequest arg0, HttpResponse.BodyHandler&lt;T&gt; arg1, HttpResponse.PushPromiseHandler&lt;T&gt; arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,13 +1049,13 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></td>
+        <td><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">HttpResponse.BodyHandler</a>&lt;T&gt;</td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Net.Http.HttpResponse.PushPromiseHandler.html">HttpResponse.PushPromiseHandler</a></td>
+        <td><a class="xref" href="Java.Net.Http.HttpResponse.PushPromiseHandler-1.html">HttpResponse.PushPromiseHandler</a>&lt;T&gt;</td>
         <td><span class="parametername">arg2</span></td>
         <td><p><a class="xref" href="Java.Net.Http.HttpResponse.PushPromiseHandler.html">HttpResponse.PushPromiseHandler</a></p>
 </td>
@@ -989,73 +1072,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Concurrent.CompletableFuture.html">CompletableFuture</a></td>
+        <td><a class="xref" href="Java.Util.Concurrent.CompletableFuture-1.html">CompletableFuture</a>&lt;<a class="xref" href="Java.Net.Http.HttpResponse-1.html">HttpResponse</a>&lt;T&gt;&gt;</td>
         <td><p><a class="xref" href="Java.Util.Concurrent.CompletableFuture.html">CompletableFuture</a></p>
 </td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SslContext.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SslContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L167">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_SslContext_" data-uid="Java.Net.Http.HttpClient.SslContext*"></a>
-  <h4 id="Java_Net_Http_HttpClient_SslContext" data-uid="Java.Net.Http.HttpClient.SslContext">SslContext()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SSLContext SslContext()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Javax.Net.Ssl.SSLContext.html">SSLContext</a></td>
-        <td><p><a class="xref" href="Javax.Net.Ssl.SSLContext.html">SSLContext</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_SslParameters.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.SslParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L176">View Source</a>
-  </span>
-  <a id="Java_Net_Http_HttpClient_SslParameters_" data-uid="Java.Net.Http.HttpClient.SslParameters*"></a>
-  <h4 id="Java_Net_Http_HttpClient_SslParameters" data-uid="Java.Net.Http.HttpClient.SslParameters">SslParameters()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SSLParameters SslParameters()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></td>
-        <td><p><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></p>
-</td>
+        <td><span class="parametername">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1064,7 +1098,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Net_Http_HttpClient_VersionMethod.md&amp;value=---%0Auid%3A%20Java.Net.Http.HttpClient.VersionMethod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L113">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpClient.cs/#L163">View Source</a>
   </span>
   <a id="Java_Net_Http_HttpClient_VersionMethod_" data-uid="Java.Net.Http.HttpClient.VersionMethod*"></a>
   <h4 id="Java_Net_Http_HttpClient_VersionMethod" data-uid="Java.Net.Http.HttpClient.VersionMethod">VersionMethod()</h4>

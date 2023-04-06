@@ -69,6 +69,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="jnet-reflector">JNet: Reflector</h1>
 
+<p>The tool is able to build .NET classes which reproduce the JVM class (Java, Scala, Kotlin, ...) counterpart.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the tool follows the instructions on <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a>.</p>
 <h2 id="usage">Usage</h2>
@@ -82,23 +83,31 @@
 <blockquote>
 <p>jnr -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
 </blockquote>
-<h2 id="command-switch-available">Command switch available</h2>
+<h2 id="command-switches-available">Command switches available</h2>
 <p><em>jnr</em> accepts the following command-line switch:</p>
 <ul>
-<li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed are stored</li>
+<li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed, and dependencies, are stored</li>
 <li><strong>OriginJavadocUrl</strong>: The base URL of the Javadoc to be associated to the classes</li>
 <li><strong>JavadocVersion</strong>: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used</li>
+<li><strong>OriginJavadocJARVersionAndUrls</strong>: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed</li>
 <li><strong>DestinationRootPath</strong>: The destination root path where reflected classes will be stored</li>
+<li><strong>ClassesToAnalyze</strong>: A CSV list of full qualified class names to be analyzed</li>
 <li><strong>JarList</strong>: A CSV list of JAR to be analyzed or folders containing the JARs</li>
-<li><strong>DoNotAddJarsInClasspath</strong>: The option inform the tool to not add the Jars in classpath</li>
 <li><strong>ModulesToParse</strong>: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath</li>
 <li><strong>NamespacesToAvoid</strong>: A CSV list of namespaces to be removed from analysis</li>
 <li><strong>ClassesToAvoid</strong>: A CSV list of classes to be removed during analysis</li>
+<li><strong>ClassesToAvoidInGenerics</strong>: A CSV list of classes to be removed during analysis from the classes which have generics types</li>
 <li><strong>ClassesToBeListener</strong>: A CSV list of class names to be treated as Listener</li>
 <li><strong>NamespacesInConflict</strong>: A CSV list of namespaces in conflict with class name: to this one will be added an &quot;Ns&quot; at the end</li>
+<li><strong>OnlyPropertiesForGetterSetter</strong>: The option forces the tool to convert into properties only getter/setter</li>
 <li><strong>ReflectDeprecated</strong>: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated</li>
+<li><strong>AvoidCSharpGenericDefinition</strong>: The option forces the tool to reflect generics without create the C# generic definition</li>
+<li><strong>AvoidCSharpGenericClauseDefinition</strong>: The option forces the tool to reflect generics without create the clauses of C# generic definition</li>
+<li><strong>DisableGenericsInNonGenericClasses</strong>: The option disables generation of generic methods in non generic classes</li>
 <li><strong>DisableGenerics</strong>: The option forces the tool to disable any generic type</li>
+<li><strong>AvoidParallelBuild</strong>: The option forces the tool to disable parallel execution</li>
 <li><strong>DryRun</strong>: Execute everything, but do not write anything to disk</li>
+<li><strong>DoNotCamel</strong>: Does not use camelized names in methods, class and so on</li>
 <li><strong>TraceLevel</strong>: The level of traces to be reported: 0 - Critical ... 5 - Verbose</li>
 <li><strong>TraceTo</strong>: The file name where traces will be write, default write to console</li>
 </ul>
@@ -107,10 +116,11 @@
 The command line interface used is:</p>
 <blockquote>
 <p>jnetreflector -ModulesToParse org.<em>,java.</em> -DestinationRootPath .\src\net\JNet\Generated -OriginJavadocUrl &quot;https://docs.oracle.com/en/java/javase/11/docs/api/&quot; -JavadocVersion 11 <br>
--ClassesToBeListener javax.management.NotificationFilter <br>
--ClassesToAvoid javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler <br>
+-ClassesToBeListener java.util.Comparator,java.util.ServiceLoader$Provider,java.util.stream.DoubleStream$Builder,java.util.stream.IntStream$Builder,java.util.stream.LongStream$Builder,java.util.stream.Stream$Builder,javax.swing.Action,javax.management.NotificationFilter <br>
+-ClassesToAvoid java.time.chrono.Chronology,javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler <br>
 -NamespacesToAvoid org.jcp.xml.dsig.internal,com.oracle,com.sun,org.mases,org.junit,org.hamcrest,org.burningwave,org.graalvm,org.slf4j,java.awt.peer <br>
--NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font</p>
+-NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font <br>
+-ClassesToAvoidInGenerics java.time.chrono.ChronoLocalDateTime,java.time.chrono.ChronoZonedDateTime</p>
 </blockquote>
 <h3 id="running-environment-for-powershell-users">Running environment for PowerShell users</h3>
 <p>The command above fails in PowerShell because the nested class separator ($) is used from PowerShell to substitute variable values.
