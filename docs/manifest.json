@@ -7785,7 +7785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.Iterable-1.html",
-          "hash": "CNTPEK4w5JgW8XtPUy0JApvCnet2s/vGgVUoTOL/9ug="
+          "hash": "AwCGvvfGNwBffBis2qeP2eyQY2MIF7HJJwi8m16Ybjo="
         }
       },
       "is_incremental": false,
@@ -12201,7 +12201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Nio.File.DirectoryStream-1.html",
-          "hash": "avbCCNy3aHZNAdS1RNkdDNf3NeV78kBz8rAlVT+97XE="
+          "hash": "PIPYiQO/BiSSPCqgWe0f1mCdq8whaddTUauKJp/2FXE="
         }
       },
       "is_incremental": false,
@@ -12561,7 +12561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Nio.File.SecureDirectoryStream-1.html",
-          "hash": "M/GiEXhvvrQlyMNZWA/GJ6QgJ+eGrrhC/0LD5eXI3kg="
+          "hash": "rTBSFftKT7NrO2Qu69Y1Cus/nc7U7Pq90ELdAFEwrjM="
         }
       },
       "is_incremental": false,
@@ -17973,7 +17973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractCollection-1.html",
-          "hash": "KdXemeZp4HVxuHWoTM9bUhw4fq7o4YFBo0rTJYyrkjk="
+          "hash": "sVDG8u6i59g+0lJQa2q3FzuYLSONFw9jsIrI0fe3JdM="
         }
       },
       "is_incremental": false,
@@ -17997,7 +17997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractList-1.html",
-          "hash": "mT32zdoZ5JYo9bw4OTLmUtUNkF9NT69KthWurQkOLPQ="
+          "hash": "3kbs1/ScGF+STB21MWOWyw8Isbwtt1EUn7xFjKQOKc8="
         }
       },
       "is_incremental": false,
@@ -18093,7 +18093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractQueue-1.html",
-          "hash": "U7TaFTZtCRMntclJPSzsT9zJ4TdB4WCSVusFOoKiL50="
+          "hash": "94N1H/SusHN+GSmiE8dmcItdQm7u7+5r+iGKw0T5Ohc="
         }
       },
       "is_incremental": false,
@@ -18117,7 +18117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractSequentialList-1.html",
-          "hash": "dEqk8vHSXu2tt5k7q2uepYQ1bge+be3VrBVl39idpjc="
+          "hash": "kTVfokF6Hw3EBSh2bCRU3e8hILc7xgwzqmM/PxndaMA="
         }
       },
       "is_incremental": false,
@@ -18141,7 +18141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractSet-1.html",
-          "hash": "IbWAKJmCnBYcP3a2tSeZmxYPmYFihK/FzMVk37Xi4Bo="
+          "hash": "w/ITQ+rVgzHn0tFudvVpGo/Xd22LrKW6AbONtvXvB20="
         }
       },
       "is_incremental": false,
@@ -18165,7 +18165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.ArrayDeque-1.html",
-          "hash": "BBP6I5MSDiNrzURgzRN8NkYJ9P0pDU8OK4Auu+AEUjA="
+          "hash": "ESpr56KqFCFl5iQbiORD/+0KHGoOZro/R8M/hfZLYxw="
         }
       },
       "is_incremental": false,
@@ -18189,7 +18189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.ArrayList-1.html",
-          "hash": "ZpNDcx1CUbOazMi6WXEO3Cy5iNXlenktBzsoI8F44IY="
+          "hash": "ShvEGC4GVPzc2utaD9i/yrKRSPQanojtbhs5pI1BOCs="
         }
       },
       "is_incremental": false,
@@ -18297,7 +18297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Collection-1.html",
-          "hash": "3vuG6VxUR3l0necx057Mig7Rthi9ctWwm8m4BK5RAdo="
+          "hash": "BWlhn3SJXU3hRvdKGtd0WoqU1qjAB/25mfiTgFfEZbg="
         }
       },
       "is_incremental": false,
@@ -18369,7 +18369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.ArrayBlockingQueue-1.html",
-          "hash": "U3vMapWNTf7hwrQXXCJ3LtpCKRsCs1vKztb6/m3PU54="
+          "hash": "bRWH4wIKNrXvTWh9VGnuji4DiDwLR1bG94N/gD9oZoA="
         }
       },
       "is_incremental": false,
@@ -18705,7 +18705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.BlockingQueue-1.html",
-          "hash": "ri52FqcZQn60h6FBdOxgNJ/zXZRUJ36jA+ltxSjDtK4="
+          "hash": "VDTOlXe2sIoyHDu0JaZsKLIe3GLgX0cvyMKA7UG+lKI="
         }
       },
       "is_incremental": false,
@@ -18921,7 +18921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.ConcurrentLinkedDeque-1.html",
-          "hash": "EsGG89pMOzpddb2YSAQm8AO90f88JYJOhlsQumSFFFY="
+          "hash": "/FA0rYn4UdElLv98rdiWGF+QFWt3Vh6+2OTS8USwm6g="
         }
       },
       "is_incremental": false,
@@ -18945,7 +18945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.ConcurrentLinkedQueue-1.html",
-          "hash": "bb9fhHGteE3g5wVJ5qHY0+wnSZy+q4u0Z+0IpuhOe84="
+          "hash": "+Se/95/ecJLCuj6yyARpt/fqlVcXBLBMLsjPPD3LQjU="
         }
       },
       "is_incremental": false,
@@ -19041,7 +19041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.ConcurrentSkipListSet-1.html",
-          "hash": "GXPxfNnQu5Y4TUTBwaNSgSONbRbJH0LPbDhvUaNX2Jo="
+          "hash": "kHE+bXuBvzoQm0tA45Kh5qaMdHV9N6jqvrMkE/cp3aA="
         }
       },
       "is_incremental": false,
@@ -19089,7 +19089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.CopyOnWriteArraySet-1.html",
-          "hash": "N0g6GGE7jwF8kKwEueGk3FmlMLrFjuPCqnFo0tyak5Q="
+          "hash": "YmlU3rKwozhd6Wsuh0JeR6xtcTwq0yJep00ZI+YTfC4="
         }
       },
       "is_incremental": false,
@@ -19161,7 +19161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.DelayQueue-1.html",
-          "hash": "JO8gKbUvsTv+GUN2AjGV7cP8lvLTM03oIj9v7jklLFQ="
+          "hash": "YUCKhVmx+DfNjLGcoer0Zt1TOmH30YSaIStDF427w74="
         }
       },
       "is_incremental": false,
@@ -19509,7 +19509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.LinkedBlockingDeque-1.html",
-          "hash": "JTqw3KsO4Eed7rzzseuUeyF38RGlBc1fvQ+ZSSRHcwU="
+          "hash": "n2zyOGQ4ybZda8F65cocq2uyMDjfu5jPME3K+MCNv2A="
         }
       },
       "is_incremental": false,
@@ -19533,7 +19533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.LinkedBlockingQueue-1.html",
-          "hash": "20tzrVQN3Qr2djfwKwOY1xWOgmhepwRUodQgkJ2lv/k="
+          "hash": "zIqO1fVrrIVgtg6rGG8a/7gH4JfkF4VrUDQo0LMNYNg="
         }
       },
       "is_incremental": false,
@@ -19557,7 +19557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.LinkedTransferQueue-1.html",
-          "hash": "SqwtD42y1OIa2En4/orN4MzSJSJ6qAM+PSYESG+Jc1Y="
+          "hash": "xWmzeVDjVHwM1EYBpTDAmpkQpjMdRWwMxucqCoYyj8U="
         }
       },
       "is_incremental": false,
@@ -19773,7 +19773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.PriorityBlockingQueue-1.html",
-          "hash": "YSWJ6b6ZzswVmkmWQaZyZ9QdeBu6kAQOxaBJ/LIoyxE="
+          "hash": "xMfcuhEugmFm8FkCc5EZqbo1hL+K/kS/UYEVp/jRerY="
         }
       },
       "is_incremental": false,
@@ -19989,7 +19989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.SynchronousQueue-1.html",
-          "hash": "3U3QDEbIwoRBH74PsxiZ6pIROV4wm/vKHJah8BUCX5k="
+          "hash": "gQz/ppzip9hGXp0p/sTOwk4/WpW1O+c6jFLUSQL5fio="
         }
       },
       "is_incremental": false,
@@ -20121,7 +20121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.TransferQueue-1.html",
-          "hash": "rvw+Mrkfl5PcFYyw33Zc2gzVo+2hqyYFu4I3wP8Hpdw="
+          "hash": "eo/irql8WrFb1d5MCYdbZ/TvlWEDwbMA34VdHraVSv4="
         }
       },
       "is_incremental": false,
@@ -20193,7 +20193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Deque-1.html",
-          "hash": "UKErWibDwd+Loe1SmcVVWmAWB0ladwzhuFG8TEpQOYE="
+          "hash": "5yYmVu9+aXCmEpB04+gJBPi7fWB5w4zT3fiwRRrwQtI="
         }
       },
       "is_incremental": false,
@@ -20301,7 +20301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.EnumSet-1.html",
-          "hash": "kJBHowiwKKZIoIHKhi7GQGelnRETs4OdXDk2MDKy1ec="
+          "hash": "vwNUOUG2mI4IfX+v/MkFY4UvQ1VxXSPFl/Ya1lTLI50="
         }
       },
       "is_incremental": false,
@@ -21801,7 +21801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.HashSet-1.html",
-          "hash": "acTjz55/34g/A7Lep9gYg3m7TM0oCUnhlfJItnKI8o4="
+          "hash": "6TBbcBryCxi6ugcs0k7+CweBvtyVeR5THc0o+FlDUpA="
         }
       },
       "is_incremental": false,
@@ -22161,7 +22161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.LinkedHashSet-1.html",
-          "hash": "eoVGtjpZXF7n+s9ZOYe5ZhBM0R+ahvjs74b97J65b6A="
+          "hash": "Hv9ClNdQPZTi8sw9zcU9Rc6khpeLlWmGHFyLJnv0cso="
         }
       },
       "is_incremental": false,
@@ -22185,7 +22185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.LinkedList-1.html",
-          "hash": "Hl7xP2FwqrWfMeIvg3b0DZ+Zu9Z4wtt6blFpfmJqB34="
+          "hash": "UZicMYAhkwEDFf6KCqG6Zb4nPcfa211IV0X5MAfQRtM="
         }
       },
       "is_incremental": false,
@@ -22209,7 +22209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.List-1.html",
-          "hash": "g3eLGtLaucXiTdeP5RJmo3rZwxoTqXDYu4FSVhVaUyM="
+          "hash": "0WidMCgk2Lw8Qx4igYhV+y417ykDriTrvHxMwiVwjRM="
         }
       },
       "is_incremental": false,
@@ -22665,7 +22665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.NavigableSet-1.html",
-          "hash": "93S4nDAJfeGOece/77Cj3OrFwsKWXHkpZBsBoCuIWM4="
+          "hash": "wz9coNlVxqFvAGq7jak4GIjTf+VBtlTNprARrf3DF8U="
         }
       },
       "is_incremental": false,
@@ -22953,7 +22953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.PriorityQueue-1.html",
-          "hash": "aq9W+SalSWKquzxryNodHi6RSjPHApoeJUL5jlKWkvI="
+          "hash": "u3SPgWZ+aI7aSuxsi5Fdff9dG2eqMgGyTZ3s4JYhHww="
         }
       },
       "is_incremental": false,
@@ -23013,7 +23013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Queue-1.html",
-          "hash": "SXcD4AGYXcfnz3f27U+cPOBj5zYWOBmms5yKZGO++oE="
+          "hash": "N+nf52LiGs9a3juXWybKAXhyM4lZJQg6cJyLG+spqAg="
         }
       },
       "is_incremental": false,
@@ -23169,7 +23169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.ServiceLoader-1.html",
-          "hash": "QjzbxiWYf/kBDRupVYWKgfV4BXhqHrWJBRgEu99Th58="
+          "hash": "5f3CA+DAGXAuqx4YO3AOmd1uCGp5eWAiordurQxhPoM="
         }
       },
       "is_incremental": false,
@@ -23217,7 +23217,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Set-1.html",
-          "hash": "sWRST76oHyHCM52EPmTNV0naKUIsyiX40TkZqNRZch0="
+          "hash": "Q1xDm5BAO2Dab1rO7Byhf9JRNFGX5LXHXRSk3X/odzE="
         }
       },
       "is_incremental": false,
@@ -23277,7 +23277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.SortedSet-1.html",
-          "hash": "DMMRC30b1qZZpDccG8zKCCQdKwMjXh1DUMhlgCDchoM="
+          "hash": "fPPcmiiN9RY13YL9ybRBan0PndW/77DC398aJ/pACbU="
         }
       },
       "is_incremental": false,
@@ -23601,7 +23601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Stack-1.html",
-          "hash": "BcAyma/Uwy/UtYzlRC2lqoZHpJDvGJPT+OwrxlNjxU4="
+          "hash": "GEUIoWNWXsB7exGzg5Mpq47XrOKHHBS67zTAV/unrNI="
         }
       },
       "is_incremental": false,
@@ -23937,7 +23937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.TreeSet-1.html",
-          "hash": "7l0FjCEUoS/1Mi9RJlKB/T37vMhpKVkT9XwQaGIHIXk="
+          "hash": "tixIB3vK7gqwspkU0Voi9ETCbpXqGhqo8wU+nj0/CKY="
         }
       },
       "is_incremental": false,
@@ -23997,7 +23997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Vector-1.html",
-          "hash": "F4Gicro75kbV6Z/eFRPiKA66dAwFIM+CwFUBxPeT5ew="
+          "hash": "oZSo1EE24rk6WAi7RvY2Q6Jfj7IgUhqdtBursbsJ2aA="
         }
       },
       "is_incremental": false,
@@ -47253,7 +47253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Xml.Crypto.NodeSetData-1.html",
-          "hash": "UsgkrmIlt9tyslTqcaDnWtA6tHm19ZXvNNYo71dNQgA="
+          "hash": "6JcJ1WuvgTGbkUV40YqjWl4zvOvERjTXmFwuAmrAIoM="
         }
       },
       "is_incremental": false,
@@ -48725,6 +48725,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerable-2.html",
+          "hash": "+slU6gqeguwX3WHh1IO+GNYQpvWy+ksswqRD19u7uyk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerator-1.html",
+          "hash": "+AoFMCNz93+CMyA59xt75j9ygWTPF1d4QkGoSk82lzQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.html",
+          "hash": "bfDqkjpLbThGsGS84702f9wE1YWpdVqUjvYZTHwmpSI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.yml",
       "output": {
         ".html": {
@@ -49737,7 +49773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Org.Mases.Jnet.JNetReflectorHelper.html",
-          "hash": "ocBfSOZHHTyqnD2LJvYbv1ZAhmndDBP2op3l+zt+zKM="
+          "hash": "jnlbxmLU8AnMiigjF+CF+YdIi6YkAfJeTH/NNIoX6BY="
         }
       },
       "is_incremental": false,
@@ -49749,7 +49785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Org.Mases.Jnet.html",
-          "hash": "8QKADnC6tiDfnk+MQPTU5ZHG9FJKz1J3ygYtyjfH07w="
+          "hash": "vrdPJjQdcNXh4+q4x/pjyHbaX81j562jlFSNm04vaXM="
         }
       },
       "is_incremental": false,
@@ -52041,7 +52077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "FvYeJpwfkr3Q4L7ixc5nR2FJVI6OZCxSKp6RupL/d9M="
+          "hash": "rvceJvSrMzi4omBEXO2CQ4XYv0N4lZ46Zqc6iZuQiME="
         }
       },
       "is_incremental": false,
@@ -52241,7 +52277,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4335,
+          "total_file_count": 4338,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

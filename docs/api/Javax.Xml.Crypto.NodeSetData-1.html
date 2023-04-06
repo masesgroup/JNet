@@ -84,8 +84,9 @@
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;&gt;</div>
     <div class="level5"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;, T&gt;</div>
-    <div class="level6"><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</div>
-    <div class="level7"><span class="xref">NodeSetData&lt;T&gt;</span></div>
+    <div class="level6"><a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerable-2.html">JNetAsyncEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;, T&gt;</div>
+    <div class="level7"><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</div>
+    <div class="level8"><span class="xref">NodeSetData&lt;T&gt;</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -98,9 +99,13 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IEnumerableExtension</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;T&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerable-2.html#MASES_JNet_Specific_JNetAsyncEnumerable_2_GetAsyncEnumerator_System_Threading_CancellationToken_">JNetAsyncEnumerable&lt;Iterable&lt;T&gt;, T&gt;.GetAsyncEnumerator(CancellationToken)</a>
+    </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Lang.Iterable&lt;T&gt;, T&gt;.GetEnumerator()</span>
     </div>
@@ -313,7 +318,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Xml_Crypto_NodeSetData_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NodeSetData&lt;T&gt; : Iterable&lt;T&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class NodeSetData&lt;T&gt; : Iterable&lt;T&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;T&gt;, IEnumerable, IAsyncEnumerable&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -704,6 +709,9 @@
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
