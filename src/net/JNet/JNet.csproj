@@ -11,6 +11,8 @@
 		<PackageId>MASES.JNet</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
   <ItemGroup>
     <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
@@ -133,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-    <PackageReference Include="MASES.JCOBridge" Version="2.5.4">
+    <PackageReference Include="MASES.JCOBridge" Version="2.5.5">
       <IncludeAssets>All</IncludeAssets>
       <PrivateAssets>None</PrivateAssets>
     </PackageReference>

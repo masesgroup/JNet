@@ -34,7 +34,7 @@ namespace Java.Util
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/>
     /// </summary>
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/></typeparam>
-    public class Collection<E> : Iterable<E>
+    public class Collection<E> : Java.Lang.Iterable<E>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>

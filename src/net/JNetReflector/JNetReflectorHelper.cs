@@ -27,12 +27,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Mases.Jnet
 {
+    /// <summary>
+    /// An helper class to manage the Java class JNetReflectorHelper 
+    /// </summary>
     public class JNetReflectorHelper : JVMBridgeBase<JNetReflectorHelper>
     {
         public override string ClassName => "org.mases.jnet.JNetReflectorHelper";
 
+        /// <summary>
+        /// Enable or disable logging
+        /// </summary>
+        public static bool EnableLogging
+        {
+            get { return SExecute<bool>("getLoggingState"); }
+            set { SExecute("setLoggingState", value); }
+        }
+        /// <summary>
+        /// Find all <see cref="Class"/>es in the classpath
+        /// </summary>
+        /// <returns><see cref="Collection{E}"/> of <see cref="Class"/></returns>
         public static Collection<Class> Find() => SExecute<Collection<Class>>("find");
-
+        /// <summary>
+        /// Find all <see cref="Class"/>es with <paramref name="packageOrModuleName"/>
+        /// </summary>
+        /// <param name="packageOrModuleName">Pattern to search</param>
+        /// <param name="isModule"><see langword="true"/> for modules, otherwise <see langword="false"/></param>
+        /// <returns><see cref="Collection{E}"/> of <see cref="Class"/></returns>
         public static Collection<Class> Find(string packageOrModuleName, bool isModule) => SExecute<Collection<Class>>("find", packageOrModuleName, isModule);
     }
 }
