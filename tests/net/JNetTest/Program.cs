@@ -21,6 +21,9 @@ using MASES.JNetTest.Common;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
 using Java.Lang;
+using MASES.JCOBridge.C2JBridge;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace MASES.JNetTest
 {
@@ -51,13 +54,14 @@ namespace MASES.JNetTest
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
             TestIterator();
+            TestAsyncIterator().Wait();
 
             TestExtensions();
         }
 
-        static void TestIterator()
+        static async Task TestAsyncIterator()
         {
-            const int execution = 10000;
+            const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
             ArrayList<string> alist = new Java.Util.ArrayList<string>();
             for (int i = 0; i < execution; i++)
@@ -66,39 +70,65 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-
+            await foreach (var item in alist.WithPrefetch())
+            {
+                if (!int.TryParse(item, out int i))
+                {
+                    System.Console.WriteLine($"Failed to parse: {item}");
+                }
+            }
         }
 
-        static void TestExtensions()
+        static void TestIterator()
         {
-            System.Collections.Generic.Dictionary<string, string> dict = new();
-            dict.Add("a", "a");
-            dict.Add("b", "b");
-            dict.Add("c", "c");
-            var map = dict.ToMap();
-            var newDict = map.ToDictiony();
-
-            const int execution = 10000;
+            const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            ArrayList<string> alist = new Java.Util.ArrayList<string>();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());
             }
             w.Stop();
-            System.Console.WriteLine($"ArrayList Elapsed ticks: {w.ElapsedTicks}");
-            w.Restart();
-            System.Collections.Generic.List<string> nlist = new System.Collections.Generic.List<string>();
+
+            foreach (var item in alist.WithPrefetch())
+            {
+                if (!int.TryParse(item, out int i))
+                {
+                    System.Console.WriteLine($"Failed to parse: {item}");
+                }
+            }
+        }
+
+        static void TestExtensions()
+        {
+            System.Collections.Generic.Dictionary<string, bool> dict = new();
+            dict.Add("true", true);
+            dict.Add("false", false);
+            dict.Add("true2", true);
+            var map = dict.ToMap();
+            var newDict = map.ToDictiony();
+
+            const int execution = 10000;
+            Stopwatch w = Stopwatch.StartNew();
+            Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
             for (int i = 0; i < execution; i++)
             {
-                nlist.Add(i.ToString());
+                alist.Add(i);
+            }
+            w.Stop();
+            System.Console.WriteLine($"ArrayList Elapsed ticks: {w.ElapsedTicks}");
+            w.Restart();
+            System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
+            for (int i = 0; i < execution; i++)
+            {
+                nlist.Add(i);
             }
             w.Stop();
             System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
 
             //var collection = newDict.Values.ToJCollection();
             //var intermediate = collection.ToList<Map.Entry<string, string>>();
-            var list = alist.ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
+            var list = alist.ToList();
         }
     }
 }
