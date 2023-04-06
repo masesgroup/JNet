@@ -30,6 +30,9 @@ namespace MASES.JNetReflector
 {
     static class JNetReflectorExtensions
     {
+        static string _CurrentJavadocBaseUrl;
+        static int _CurrentJavadocVersion;
+
         static Java.Lang.ClassLoader _loader;
         static Java.Lang.ClassLoader SystemClassLoader
         {
@@ -39,6 +42,16 @@ namespace MASES.JNetReflector
                 return _loader;
             }
         }
+
+        #region General info
+
+        public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion)
+        {
+            _CurrentJavadocBaseUrl = currentJavadocBaseUrl;
+            _CurrentJavadocVersion = currentJavadocVersion;
+        }
+
+        #endregion
 
         #region string extension
 
@@ -1261,13 +1274,13 @@ namespace MASES.JNetReflector
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
 
-            var newURl = JNetReflectorCore.OriginJavadocUrl;
+            var newURl = _CurrentJavadocBaseUrl;
             if (newURl != null)
             {
                 if (!newURl.EndsWith("/"))
                     newURl += '/';
 
-                if (JNetReflectorCore.JavadocVersion > 9)
+                if (_CurrentJavadocVersion > 9)
                 {
                     var module = entry.Module;
 #if USE_MODULEINFO
@@ -1300,7 +1313,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Class entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1361,7 +1374,7 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Constructor entry, bool camel)
         {
             var newURl = entry.DeclaringClass.JavadocUrl(camel);
-            if (JNetReflectorCore.OriginJavadocUrl != null)
+            if (_CurrentJavadocBaseUrl != null)
             {
                 var genString = entry.GenericString;
                 genString = entry.Name + "(";
@@ -1376,7 +1389,7 @@ namespace MASES.JNetReflector
                 genString += ")";
 
                 if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
-                if (JNetReflectorCore.JavadocVersion > 9)
+                if (_CurrentJavadocVersion > 9)
                 {
                     genString = genString.StartsWith(entry.Name) ? genString.Substring(entry.Name.Length) : genString.Substring(genString.IndexOf(entry.Name) + entry.Name.Length);
                     genString = "<init>" + genString;
@@ -1386,7 +1399,7 @@ namespace MASES.JNetReflector
                     genString = genString.Substring(genString.IndexOf(entry.Name));
                 }
 
-                if (JNetReflectorCore.JavadocVersion < 7)
+                if (_CurrentJavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
                 }
@@ -1400,7 +1413,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Constructor entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1653,7 +1666,7 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Method entry, bool camel)
         {
             var newURl = entry.DeclaringClass.JavadocUrl(camel);
-            if (JNetReflectorCore.OriginJavadocUrl != null)
+            if (_CurrentJavadocBaseUrl != null)
             {
                 var genString = entry.GenericString;
                 genString = genString.Substring(genString.IndexOf(entry.Name));
@@ -1669,11 +1682,11 @@ namespace MASES.JNetReflector
                 genString += ")";
 
                 if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
-                if (JNetReflectorCore.JavadocVersion < 7)
+                if (_CurrentJavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
                 }
-                else if (JNetReflectorCore.JavadocVersion > 7 && JNetReflectorCore.JavadocVersion < 10)
+                else if (_CurrentJavadocVersion > 7 && _CurrentJavadocVersion < 10)
                 {
                     genString = genString.Replace(",", "-").Replace('(', '-').Replace(')', '-');
                 }
@@ -1687,7 +1700,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Method entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1771,7 +1784,7 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Field entry, bool camel)
         {
             var newURl = entry.DeclaringClass.JavadocUrl(camel);
-            if (JNetReflectorCore.OriginJavadocUrl != null)
+            if (_CurrentJavadocBaseUrl != null)
             {
                 var genString = entry.Name;
                 newURl += "#" + genString;
@@ -1783,7 +1796,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Field entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate, JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion

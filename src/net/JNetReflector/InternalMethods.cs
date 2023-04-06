@@ -131,8 +131,7 @@ namespace MASES.JNetReflector
                 var jClass = item.JVMClass(true);
                 if (jClass != null) resultingArguments.AddItem(jClass);
             }
-            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
-            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion);
             JarOrModuleName = "CustomSelection";
             resultingArguments.AnalyzeItems();
         }
@@ -183,8 +182,7 @@ namespace MASES.JNetReflector
                 }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", resultingArguments.Count);
-                JavadocBaseUrl = javadocUrl;
-                JavadocVersion = javadocVersion;
+                JNetReflectorExtensions.SetJavaDocInfo(javadocUrl, javadocVersion);
                 JarOrModuleName = Path.GetFileName(pathToJar);
                 resultingArguments.AnalyzeItems();
             }
@@ -210,15 +208,13 @@ namespace MASES.JNetReflector
             }
 
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
-            JavadocBaseUrl = JNetReflectorCore.OriginJavadocUrl;
-            JavadocVersion = JNetReflectorCore.JavadocVersion;
+            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion);
             JarOrModuleName = ns;
             data.AnalyzeItems();
         }
 
-        static string JavadocBaseUrl { get; set; }
-        static int JavadocVersion { get; set; }
         static string JarOrModuleName { get; set; }
+
         static CancellationTokenSource CancellationTokenSource { get; set; }
 
         static void AnalyzeItems(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items)
