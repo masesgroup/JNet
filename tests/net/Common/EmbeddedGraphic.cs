@@ -19,6 +19,7 @@
 using Java.Awt;
 using Java.Awt.EventNs;
 using Javax.Swing;
+using Javax.Swing.Table;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNetTest.Common;
 using System;
@@ -27,28 +28,72 @@ namespace MASES.JNetTest.GraphicCommon
 {
     static class GraphicCommon
     {
-        public static dynamic TextArea { get; private set; }
+        public static TextArea TextArea { get; private set; }
 
-        static dynamic CommonContainer { get; set; }
+        static Container CommonContainer { get; set; }
 
         public static IJCGraphicContainer Container { get; private set; }
         static ActionListener _Listener;
 
         public static object CreateAWTContent(Action<ActionEvent> handler)
         {
+            return CreateAWTContentDynamic(handler);
+            return CreateAWTContentClasses(handler);
+        }
+
+        public static object CreateAWTContentDynamic(Action<ActionEvent> handler)
+        {
             try
             {
                 _Listener = new ActionListener(handler);
                 CommonContainer = new Panel();
+                dynamic container = CommonContainer;
                 dynamic layout = new GridLayout(2, 1);
-                CommonContainer.setLayout(layout);
+                container.setLayout(layout);
                 TextArea = new TextArea("", 10, 40);
-                CommonContainer.add(TextArea);
+                container.add(TextArea);
                 dynamic button = new Button("Send TextArea text to Host Application");
                 button.setActionCommand("sendData");
                 button.addActionListener(_Listener.Instance);
-                CommonContainer.add(button);
-                Container = CommonContainer.HostedContainer;
+                container.add(button);
+#if WINFORMS
+                return CommonContainer.CreateHostedContainer(false);
+#else
+                return CommonContainer.CreateHostedContainer(true);
+#endif
+            }
+            catch (Exception ex)
+            {
+#if WINFORMS
+                var label = new System.Windows.Forms.Label
+                {
+                    Text = ex.ToString()
+                };
+#else
+                var label = new System.Windows.Controls.Label
+                {
+                    Content = ex.ToString()
+                };
+#endif
+                return label;
+            }
+        }
+
+        public static object CreateAWTContentClasses(Action<ActionEvent> handler)
+        {
+            try
+            {
+                _Listener = new ActionListener(handler);
+                var panel = new Panel();
+                var layout = new GridLayout(2, 1);
+                panel.Layout = layout;
+                TextArea = new TextArea("", 10, 40);
+                panel.Add(TextArea);
+                var button = new Button("Send TextArea text to Host Application");
+                button.ActionCommand = "sendData";
+                button.AddActionListener(_Listener);
+                panel.Add(button);
+                CommonContainer = panel;
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);
 #else
@@ -73,6 +118,12 @@ namespace MASES.JNetTest.GraphicCommon
         }
 
         public static object CreateSwingContent()
+        {
+            //return CreateSwingContentDynamic();
+            return CreateSwingContentClasses();
+        }
+
+        public static object CreateSwingContentDynamic()
         {
             try
             {
@@ -107,6 +158,7 @@ namespace MASES.JNetTest.GraphicCommon
 
                 // Define the panel to hold the components  
                 CommonContainer = new JPanel();
+                dynamic container = CommonContainer;
                 // Contains all the chat components
                 chatPanel = new JPanel();
                 messagePanel = new JPanel();
@@ -189,13 +241,13 @@ namespace MASES.JNetTest.GraphicCommon
                 var scrollPane = JNetTestCore.GlobalInstance.DynJVM.JScrollPane.@new(jt);
 
                 //configure panel
-                CommonContainer.setSize(500, 600);
-                CommonContainer.setLayout(layout);
-                CommonContainer.add(chatPanel.Instance);
+                container.setSize(500, 600);
+                container.setLayout(layout);
+                container.add(chatPanel.Instance);
                 tableButtonPanel.Dyn().add(addRowButton);
                 tablePanel.Dyn().add(tableButtonPanel.Instance);
                 tablePanel.Dyn().add(scrollPane);
-                CommonContainer.add(tablePanel.Instance);
+                container.add(tablePanel.Instance);
 
                 dynamic layoutAccessor = JNetTestCore.GlobalInstance.DynJVM.SpringLayout;
 
@@ -211,7 +263,206 @@ namespace MASES.JNetTest.GraphicCommon
                 layout.putConstraint(layoutAccessor.NORTH, tablePanel.Instance, 5, layoutAccessor.SOUTH, imagePanel.Instance);
                 layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
                 layout.putConstraint(layoutAccessor.WIDTH, tablePanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
-                Container = CommonContainer.HostedContainer;
+#if WINFORMS
+                return CommonContainer.CreateHostedContainer(false);
+#else
+                return CommonContainer.CreateHostedContainer(true);
+#endif
+            }
+            catch (Exception ex)
+            {
+#if WINFORMS
+                var label = new System.Windows.Forms.Label
+                {
+                    Text = ex.ToString()
+                };
+#else
+                var label = new System.Windows.Controls.Label
+                {
+                    Content = ex.ToString()
+                };
+#endif
+                return label;
+            }
+        }
+
+        public static object CreateSwingContentClasses()
+        {
+            try
+            {
+                JButton clearButton;
+                JButton sendButton;
+                SpringLayout layout;
+                JPanel chatPanel;
+                JPanel messagePanel;
+                JPanel imagePanel;
+                JPanel tablePanel;
+                JPanel tableButtonPanel;
+                JButton addRowButton;
+                JLabel textLabel;
+                JTextField textField;
+                JTextArea textArea;
+                JSpinner spinner;
+                TableModel tableModel;
+                string[][] data;
+
+                // don't work: JFrame.SetDefaultLookAndFeelDecorated(true);
+                //JFrame.SetDefaultLookAndFeelDecorated(true);
+                //   UIManager.SetLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+
+                // Define the panel to hold the components  
+                var jPanel = new JPanel();
+                // Contains all the chat components
+                chatPanel = new JPanel();
+                messagePanel = new JPanel();
+                // Contains all the table components
+                tablePanel = new JPanel();
+                tableButtonPanel = new JPanel();
+                // Contains all the image components
+                imagePanel = new JPanel();
+
+                // Define layouts
+                BoxLayout chatLayout = new BoxLayout(chatPanel, BoxLayout.Y_AXIS);
+                BoxLayout messageLayout = new BoxLayout(messagePanel, BoxLayout.X_AXIS);
+                BoxLayout tableLayout = new BoxLayout(tablePanel, BoxLayout.Y_AXIS);
+                BoxLayout tableButtonLayout = new BoxLayout(tableButtonPanel, BoxLayout.X_AXIS);
+                layout = new SpringLayout();
+
+                // Set Layouts
+                chatPanel.Layout = chatLayout;
+                messagePanel.Layout = messageLayout;
+                tablePanel.Layout = tableLayout;
+                tableButtonPanel.Layout = tableButtonLayout;
+
+                // Create buttons
+                clearButton = new JButton("Clear");
+                sendButton = new JButton("Send");
+                addRowButton = new JButton("Add Row");
+                clearButton.ActionCommand = "Clear";
+                sendButton.ActionCommand = "Send";
+                addRowButton.ActionCommand = "AddRow";
+
+                // Add chats components
+                textLabel = new JLabel("Message: ");
+                textField = new JTextField("Test Message", 15);
+                textField.SetActionCommand("TextEntered");
+                textArea = new JTextArea("Message Area\n", 10, 5);
+
+                // var condition = JComponent.WHEN_FOCUSED;
+
+                messagePanel.Add(textLabel);
+                messagePanel.Add(textField);
+                messagePanel.Add(sendButton);
+                messagePanel.Add(clearButton);
+                chatPanel.Add(textArea);
+                chatPanel.Add(messagePanel);
+                chatPanel.SetSize(100, 100);
+
+                // Add spinner
+                var zoomModel = new SpinnerNumberModel(100, //initial value
+                                                        25,  //min
+                                                        200, //max
+                                                        25); //step
+                spinner = new JSpinner(zoomModel);
+                var labelZoom = new JLabel("Zoom X");
+
+                //Add table
+                data = new string[][] { new string[] { "101","Amit","670000"},
+                                        new string[] { "102","Jai","780000"},
+                                        new string[] { "101","Sachin","700000"},
+                                        new string[] { "103","New Row","0"} };
+
+                string[] columns = { "ID", "NAME", "SALARY" };
+                var jt = new JTable(0, 3);
+                tableModel = jt.Model;
+                if (tableModel.IsInstanceOf<DefaultTableModel>())
+                {
+                    var tModel = tableModel.CastTo<DefaultTableModel>();
+                    Java.Util.Vector<string> vector = new();
+                    vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
+                    tModel.SetColumnIdentifiers(vector);   // (new string[] { columns[0], columns[1], columns[2] });
+                    vector = new();
+                    vector.Add(data[0][0]); vector.Add(data[0][1]); vector.Add(data[0][2]);
+                    tModel.AddRow(vector);
+                    vector = new();
+                    vector.Add(data[1][0]); vector.Add(data[1][1]); vector.Add(data[1][2]);
+                    tModel.AddRow(vector);
+                    vector = new();
+                    vector.Add(data[2][0]); vector.Add(data[2][1]); vector.Add(data[2][2]);
+                    tModel.AddRow(vector);
+                }
+
+                jt.SetBounds(30, 40, 200, 300);
+                // Put table in a scroll panel
+                var scrollPane = new JScrollPane(jt);
+
+                //configure panel
+                jPanel.SetSize(500, 600);
+                jPanel.Layout = layout;
+                jPanel.Add(chatPanel);
+                tableButtonPanel.Add(addRowButton);
+                tablePanel.Add(tableButtonPanel);
+                tablePanel.Add(scrollPane);
+                jPanel.Add(tablePanel);
+
+                // Put constraint on components
+                try
+                {
+
+                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, chatPanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.WIDTH, chatPanel, 5, SpringLayout.WIDTH, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.NORTH, chatPanel, 5, SpringLayout.NORTH, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.NORTH, imagePanel, 5, SpringLayout.SOUTH, chatPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.WIDTH, imagePanel, 5, SpringLayout.WIDTH, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.NORTH, tablePanel, 5, SpringLayout.SOUTH, imagePanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+                try
+                {
+                    layout.PutConstraint(SpringLayout.WIDTH, tablePanel, 5, SpringLayout.WIDTH, jPanel);
+                }
+                catch (Java.Lang.NullPointerException)
+                { }
+
+                CommonContainer = jPanel;
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);
 #else

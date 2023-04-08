@@ -28,7 +28,7 @@ namespace MASES.JNetWinFormsTest
         public Form1()
         {
             InitializeComponent();
-#if NETFRAMEWORK
+#if NET462_OR_GREATER
             Text = "Main Windows in WinForms .NET Framework";
 #else
             Text = "Main Windows in WinForms .NET Core WindowsDesktop";
@@ -51,7 +51,7 @@ namespace MASES.JNetWinFormsTest
         {
             if (textBox1.InvokeRequired)
             {
-                textBox1.Invoke(new MethodInvoker(delegate { textBox1.Text += GraphicCommon.TextArea.getText() + Environment.NewLine; }));
+                textBox1.Invoke(new MethodInvoker(delegate { textBox1.Text += GraphicCommon.TextArea.Text + Environment.NewLine; }));
             }
             else
             {

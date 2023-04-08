@@ -114,10 +114,10 @@ namespace Java.Text
             IExecute("reset");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        public void SetText(Java.Text.CharacterIterator arg0)
+        /// <param name="arg0"><see cref="string"/></param>
+        public void SetText(string arg0)
         {
             IExecute("setText", arg0);
         }
