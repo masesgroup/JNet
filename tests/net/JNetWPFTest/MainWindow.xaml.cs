@@ -35,7 +35,7 @@ namespace MASES.JNetWPFTest
             JNetTestCore.CreateGlobalInstance();
 
             InitializeComponent();
-#if NETFRAMEWORK
+#if NET462_OR_GREATER
             Title = "Main Windows in WPF .NET Framework";
 #else
             Title = "Main Windows in WPF .NET Core WindowsDesktop";
@@ -60,7 +60,7 @@ namespace MASES.JNetWPFTest
 
         void ActionDone(ActionEvent args)
         {
-            tbOutput.Dispatcher.Invoke(() => tbOutput.Text += GraphicCommon.TextArea.getText() + Environment.NewLine);
+            tbOutput.Dispatcher.Invoke(() => tbOutput.Text += GraphicCommon.TextArea.Text + Environment.NewLine);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
