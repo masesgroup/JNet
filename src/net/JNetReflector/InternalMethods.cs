@@ -1055,23 +1055,23 @@ namespace MASES.JNetReflector
                     if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     if (getMethod.IsReturnTypeAnException())
                     {
-                        executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT_EXCEPTION, execStub,
-                                                                                                                            returnType,
-                                                                                                                            getMethod.Name);
+                        var execFormat = getMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_GET_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT_EXCEPTION;
+                        executionStub.AppendFormat(execFormat, execStub, returnType, getMethod.Name);
                     }
                     else
                     {
-                        executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, execStub,
-                                                                                                                  getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
-                                                                                                                  getMethod.Name);
+                        var execFormat = getMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_GET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT;
+                        executionStub.AppendFormat(execFormat, execStub, 
+                                                               getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                               getMethod.Name);
                     }
                 }
 
                 if (setMethod != null)
                 {
                     if (JNetReflectorCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
-                    executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT, setMethod.IsStatic() ? "SExecute" : "IExecute",
-                                                                                                              setMethod.Name);
+                    var execFormat = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT;
+                    executionStub.AppendFormat(execFormat, setMethod.IsStatic() ? "SExecute" : "IExecute", setMethod.Name);
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing properties of {0}", prop.Key);
@@ -1279,18 +1279,20 @@ namespace MASES.JNetReflector
                 string executionStub = string.Empty;
                 if (isReturnTypeException)
                 {
-                    executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
-                                                                                                                     methodNameOrigin,
-                                                                                                                     executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
-                                                                                                                     returnType);
+                    var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
+                    executionStub = string.Format(execFormat, execStub,
+                                                              methodNameOrigin,
+                                                              executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
+                                                              returnType);
                 }
                 else
                 {
-                    executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
-                                                                                                           execStub,
-                                                                                                           isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
-                                                                                                           methodNameOrigin,
-                                                                                                           executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
+                    var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
+                    executionStub = string.Format(execFormat, method.IsVoid() ? string.Empty : "return ",
+                                                              execStub,
+                                                              isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                              methodNameOrigin,
+                                                              executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
                 }
 
                 if (hasVarArg)
@@ -1298,20 +1300,22 @@ namespace MASES.JNetReflector
                     string executionStubWithVarArg = string.Empty;
                     if (isReturnTypeException)
                     {
-                        executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
-                                                                                                                                   methodNameOrigin,
-                                                                                                                                   (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                                   + executionParamsString + ", " + varArg.Name(),
-                                                                                                                                   returnType);
+                        var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
+                        executionStubWithVarArg = string.Format(execFormat, execStub,
+                                                                            methodNameOrigin,
+                                                                            (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                            + executionParamsString + ", " + varArg.Name(),
+                                                                            returnType);
                     }
                     else
                     {
-                        executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, isVoidMethod ? string.Empty : "return ",
-                                                                                                                         execStub,
-                                                                                                                         isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
-                                                                                                                         methodNameOrigin,
-                                                                                                                         (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                                                                         + executionParamsString + ", " + varArg.Name());
+                        var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
+                        executionStubWithVarArg = string.Format(execFormat, isVoidMethod ? string.Empty : "return ",
+                                                                            execStub,
+                                                                            isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                                            methodNameOrigin,
+                                                                            (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                            + executionParamsString + ", " + varArg.Name());
                     }
                     executionStub = $"if ({varArg.Name()}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
