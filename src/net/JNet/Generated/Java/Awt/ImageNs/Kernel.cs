@@ -94,7 +94,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float[] GetKernelData(float[] arg0)
         {
-            return IExecuteArray<float>("getKernelData", arg0);
+            return IExecuteArray<float>("getKernelData", new object[] { arg0 });
         }
         
         #endregion

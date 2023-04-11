@@ -108,7 +108,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="byte"/></param>
         public void WriteBytes(byte[] arg0)
         {
-            IExecute("writeBytes", arg0);
+            IExecute("writeBytes", new object[] { arg0 });
         }
         
         #endregion

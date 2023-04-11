@@ -180,7 +180,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetAlphas(byte[] arg0)
         {
-            IExecute("getAlphas", arg0);
+            IExecute("getAlphas", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getBlues(byte[])"/>
@@ -188,7 +188,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetBlues(byte[] arg0)
         {
-            IExecute("getBlues", arg0);
+            IExecute("getBlues", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getGreens(byte[])"/>
@@ -196,7 +196,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetGreens(byte[] arg0)
         {
-            IExecute("getGreens", arg0);
+            IExecute("getGreens", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getReds(byte[])"/>
@@ -204,7 +204,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetReds(byte[] arg0)
         {
-            IExecute("getReds", arg0);
+            IExecute("getReds", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getRGBs(int[])"/>
@@ -212,7 +212,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void GetRGBs(int[] arg0)
         {
-            IExecute("getRGBs", arg0);
+            IExecute("getRGBs", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#convertToIntDiscrete(java.awt.image.Raster,boolean)"/>

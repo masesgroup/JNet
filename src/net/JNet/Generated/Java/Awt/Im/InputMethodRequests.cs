@@ -85,7 +85,7 @@ namespace Java.Awt.Im
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator CancelLatestCommittedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
-            return IExecute<Java.Text.AttributedCharacterIterator>("cancelLatestCommittedText", arg0);
+            return IExecute<Java.Text.AttributedCharacterIterator>("cancelLatestCommittedText", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getCommittedText(int,int,java.text.AttributedCharacterIterator.Attribute[])"/>
@@ -105,7 +105,7 @@ namespace Java.Awt.Im
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetSelectedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
-            return IExecute<Java.Text.AttributedCharacterIterator>("getSelectedText", arg0);
+            return IExecute<Java.Text.AttributedCharacterIterator>("getSelectedText", new object[] { arg0 });
         }
         
         #endregion

@@ -371,7 +371,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="double"/></param>
         public void GetMatrix(double[] arg0)
         {
-            IExecute("getMatrix", arg0);
+            IExecute("getMatrix", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#inverseTransform(double[],int,double[],int,int)"/>

@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0)
         {
-            return SExecute<Java.Nio.LongBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.LongBuffer>("wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -143,7 +143,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0);
+            return IExecute<Java.Nio.LongBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compareTo(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0)
         {
-            return IExecute<Java.Nio.LongBuffer>("get", arg0);
+            return IExecute<Java.Nio.LongBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(java.nio.LongBuffer)"/>

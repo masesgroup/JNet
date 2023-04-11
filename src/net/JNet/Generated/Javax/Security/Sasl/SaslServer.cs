@@ -74,7 +74,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] EvaluateResponse(byte[] arg0)
         {
-            return IExecuteArray<byte>("evaluateResponse", arg0);
+            return IExecuteArray<byte>("evaluateResponse", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#unwrap(byte[],int,int)"/>

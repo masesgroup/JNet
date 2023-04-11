@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void SetPrinterResolution(int[] arg0)
         {
-            IExecute("setPrinterResolution", arg0);
+            IExecute("setPrinterResolution", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setPrinterResolutionToDefault()"/>

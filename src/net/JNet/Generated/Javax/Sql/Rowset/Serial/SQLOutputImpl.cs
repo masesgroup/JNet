@@ -129,7 +129,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBytes(byte[] arg0)
         {
-            IExecute("writeBytes", arg0);
+            IExecute("writeBytes", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLOutputImpl.html#writeCharacterStream(java.io.Reader)"/>

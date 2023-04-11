@@ -84,7 +84,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0)
         {
-            return SExecute<Java.Nio.CharBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.CharBuffer>("wrap", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(java.lang.CharSequence,int,int)"/>
@@ -198,7 +198,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(char[] arg0)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0);
+            return IExecute<Java.Nio.CharBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(java.lang.String)"/>
@@ -306,7 +306,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Get(char[] arg0)
         {
-            return IExecute<Java.Nio.CharBuffer>("get", arg0);
+            return IExecute<Java.Nio.CharBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char[],int,int)"/>

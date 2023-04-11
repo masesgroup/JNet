@@ -204,7 +204,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal(byte[] arg0)
         {
-            return IExecuteArray<byte>("doFinal", arg0);
+            return IExecuteArray<byte>("doFinal", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)"/>
@@ -224,7 +224,7 @@ namespace Javax.Crypto
         /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0)
         {
-            return IExecuteArray<byte>("update", arg0);
+            return IExecuteArray<byte>("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#wrap(java.security.Key)"/>
@@ -462,7 +462,7 @@ namespace Javax.Crypto
         /// <param name="arg0"><see cref="byte"/></param>
         public void UpdateAAD(byte[] arg0)
         {
-            IExecute("updateAAD", arg0);
+            IExecute("updateAAD", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(java.nio.ByteBuffer)"/>

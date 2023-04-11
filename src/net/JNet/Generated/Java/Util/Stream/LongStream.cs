@@ -95,7 +95,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(params long[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.LongStream>("of"); else return SExecute<Java.Util.Stream.LongStream>("of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.LongStream>("of", new object[] { arg0 }); else return SExecute<Java.Util.Stream.LongStream>("of", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long)"/>

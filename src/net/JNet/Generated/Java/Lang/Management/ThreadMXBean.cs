@@ -214,7 +214,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0);
+            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCpuTime(long)"/>

@@ -119,7 +119,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public Javax.Management.Relation.RoleResult GetRoles(string[] arg0)
         {
-            return IExecute<Javax.Management.Relation.RoleResult>("getRoles", arg0);
+            return IExecute<Javax.Management.Relation.RoleResult>("getRoles", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#setRoles(javax.management.relation.RoleList)"/>

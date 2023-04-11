@@ -438,9 +438,12 @@ namespace MASES.JNetReflector
         static string ConvertGenerics(this IEnumerable<string> entry)
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var item in entry)
+            if (entry != null)
             {
-                sb.AppendFormat("{0}, ", item);
+                foreach (var item in entry)
+                {
+                    sb.AppendFormat("{0}, ", item);
+                }
             }
             var parameters = sb.ToString();
             if (!string.IsNullOrEmpty(parameters))
@@ -1866,7 +1869,6 @@ namespace MASES.JNetReflector
                 {
                     entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
                     var retVal = genArguments.ConvertGenerics();
-                    //genArguments.Clear();
                     return retVal;
                 }
                 else

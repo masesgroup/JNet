@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         public Javax.Net.Ssl.SSLSession GetSession(byte[] arg0)
         {
-            return IExecute<Javax.Net.Ssl.SSLSession>("getSession", arg0);
+            return IExecute<Javax.Net.Ssl.SSLSession>("getSession", new object[] { arg0 });
         }
         
         #endregion

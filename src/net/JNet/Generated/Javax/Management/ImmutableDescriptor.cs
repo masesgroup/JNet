@@ -72,7 +72,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
         public static Javax.Management.ImmutableDescriptor Union(params Javax.Management.Descriptor[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>("union"); else return SExecute<Javax.Management.ImmutableDescriptor>("union", arg0);
+            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>("union", new object[] { arg0 }); else return SExecute<Javax.Management.ImmutableDescriptor>("union", new object[] { arg0 }, arg0);
         }
         
         #endregion
@@ -115,7 +115,7 @@ namespace Javax.Management
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params string[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
+            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues", new object[] { arg0 }); else return IExecuteArray<object>("getFieldValues", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#removeField(java.lang.String)"/>

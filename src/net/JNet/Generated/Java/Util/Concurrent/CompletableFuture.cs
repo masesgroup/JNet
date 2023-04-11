@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture AnyOfMethod(params Java.Util.Concurrent.CompletableFuture[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>("anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>("anyOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>("anyOf", new object[] { arg0 }); else return SExecute<Java.Util.Concurrent.CompletableFuture>("anyOf", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture AllOf(params Java.Util.Concurrent.CompletableFuture[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf", new object[] { arg0 }); else return SExecute<Java.Util.Concurrent.CompletableFuture>("allOf", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -843,7 +843,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>("anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>("anyOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>("anyOf", new object[] { arg0 }); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>("anyOf", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
@@ -852,7 +852,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf", new object[] { arg0 }); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("allOf", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>

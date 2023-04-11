@@ -67,7 +67,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSContext CreateContext(byte[] arg0)
         {
-            return IExecute<Org.Ietf.Jgss.GSSContext>("createContext", arg0);
+            return IExecute<Org.Ietf.Jgss.GSSContext>("createContext", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(org.ietf.jgss.GSSCredential)"/>
