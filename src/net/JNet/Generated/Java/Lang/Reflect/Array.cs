@@ -51,7 +51,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.NegativeArraySizeException"/>
         public static object NewInstance(Java.Lang.Class arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return SExecute("newInstance", arg0); else return SExecute("newInstance", arg0, arg1);
+            if (arg1.Length == 0) return SExecute(LocalClazz, "newInstance", arg0); else return SExecute(LocalClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class,int)"/>
@@ -62,7 +62,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.NegativeArraySizeException"/>
         public static object NewInstance(Java.Lang.Class arg0, int arg1)
         {
-            return SExecute("newInstance", arg0, arg1);
+            return SExecute(LocalClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
@@ -74,7 +74,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static bool GetBoolean(object arg0, int arg1)
         {
-            return SExecute<bool>("getBoolean", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "getBoolean", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getByte(java.lang.Object,int)"/>
@@ -86,7 +86,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static byte GetByte(object arg0, int arg1)
         {
-            return SExecute<byte>("getByte", arg0, arg1);
+            return SExecute<byte>(LocalClazz, "getByte", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getChar(java.lang.Object,int)"/>
@@ -98,7 +98,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static char GetChar(object arg0, int arg1)
         {
-            return SExecute<char>("getChar", arg0, arg1);
+            return SExecute<char>(LocalClazz, "getChar", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getDouble(java.lang.Object,int)"/>
@@ -110,7 +110,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static double GetDouble(object arg0, int arg1)
         {
-            return SExecute<double>("getDouble", arg0, arg1);
+            return SExecute<double>(LocalClazz, "getDouble", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getFloat(java.lang.Object,int)"/>
@@ -122,7 +122,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static float GetFloat(object arg0, int arg1)
         {
-            return SExecute<float>("getFloat", arg0, arg1);
+            return SExecute<float>(LocalClazz, "getFloat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getInt(java.lang.Object,int)"/>
@@ -134,7 +134,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static int GetInt(object arg0, int arg1)
         {
-            return SExecute<int>("getInt", arg0, arg1);
+            return SExecute<int>(LocalClazz, "getInt", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
@@ -144,7 +144,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static int GetLength(object arg0)
         {
-            return SExecute<int>("getLength", arg0);
+            return SExecute<int>(LocalClazz, "getLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#get(java.lang.Object,int)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static object Get(object arg0, int arg1)
         {
-            return SExecute("get", arg0, arg1);
+            return SExecute(LocalClazz, "get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLong(java.lang.Object,int)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static long GetLong(object arg0, int arg1)
         {
-            return SExecute<long>("getLong", arg0, arg1);
+            return SExecute<long>(LocalClazz, "getLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getShort(java.lang.Object,int)"/>
@@ -180,7 +180,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static short GetShort(object arg0, int arg1)
         {
-            return SExecute<short>("getShort", arg0, arg1);
+            return SExecute<short>(LocalClazz, "getShort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#set(java.lang.Object,int,java.lang.Object)"/>
@@ -192,7 +192,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void Set(object arg0, int arg1, object arg2)
         {
-            SExecute("set", arg0, arg1, arg2);
+            SExecute(LocalClazz, "set", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setBoolean(java.lang.Object,int,boolean)"/>
@@ -204,7 +204,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetBoolean(object arg0, int arg1, bool arg2)
         {
-            SExecute("setBoolean", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setBoolean", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setByte(java.lang.Object,int,byte)"/>
@@ -216,7 +216,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetByte(object arg0, int arg1, byte arg2)
         {
-            SExecute("setByte", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setByte", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setChar(java.lang.Object,int,char)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetChar(object arg0, int arg1, char arg2)
         {
-            SExecute("setChar", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setChar", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setDouble(java.lang.Object,int,double)"/>
@@ -240,7 +240,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetDouble(object arg0, int arg1, double arg2)
         {
-            SExecute("setDouble", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setDouble", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setFloat(java.lang.Object,int,float)"/>
@@ -252,7 +252,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetFloat(object arg0, int arg1, float arg2)
         {
-            SExecute("setFloat", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setFloat", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setInt(java.lang.Object,int,int)"/>
@@ -264,7 +264,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetInt(object arg0, int arg1, int arg2)
         {
-            SExecute("setInt", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setInt", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setLong(java.lang.Object,int,long)"/>
@@ -276,7 +276,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetLong(object arg0, int arg1, long arg2)
         {
-            SExecute("setLong", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setLong", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setShort(java.lang.Object,int,short)"/>
@@ -288,7 +288,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetShort(object arg0, int arg1, short arg2)
         {
-            SExecute("setShort", arg0, arg1, arg2);
+            SExecute(LocalClazz, "setShort", arg0, arg1, arg2);
         }
         
         #endregion

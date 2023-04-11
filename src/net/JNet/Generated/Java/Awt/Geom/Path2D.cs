@@ -68,7 +68,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
-            return SExecute<bool>("contains", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<bool>(LocalClazz, "contains", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double)"/>
@@ -79,7 +79,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2)
         {
-            return SExecute<bool>("contains", arg0, arg1, arg2);
+            return SExecute<bool>(LocalClazz, "contains", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Point2D)"/>
@@ -89,7 +89,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Point2D arg1)
         {
-            return SExecute<bool>("contains", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "contains", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
@@ -99,7 +99,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return SExecute<bool>("contains", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "contains", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,double,double,double,double)"/>
@@ -112,7 +112,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
-            return SExecute<bool>("intersects", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<bool>(LocalClazz, "intersects", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
@@ -122,7 +122,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return SExecute<bool>("intersects", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "intersects", arg0, arg1);
         }
         
         #endregion

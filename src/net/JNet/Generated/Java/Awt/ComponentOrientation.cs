@@ -64,7 +64,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
         public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Awt.ComponentOrientation>("getOrientation", arg0);
+            return SExecute<Java.Awt.ComponentOrientation>(LocalClazz, "getOrientation", arg0);
         }
         
         #endregion

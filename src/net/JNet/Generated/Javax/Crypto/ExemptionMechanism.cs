@@ -51,7 +51,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.ExemptionMechanism GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Crypto.ExemptionMechanism>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.ExemptionMechanism>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -62,7 +62,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.ExemptionMechanism GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.ExemptionMechanism>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.ExemptionMechanism>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String)"/>
@@ -72,7 +72,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.ExemptionMechanism GetInstance(string arg0)
         {
-            return SExecute<Javax.Crypto.ExemptionMechanism>("getInstance", arg0);
+            return SExecute<Javax.Crypto.ExemptionMechanism>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion
@@ -136,7 +136,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.ExemptionMechanismException"/>
         public int GenExemptionBlob(byte[] arg0)
         {
-            return IExecute<int>("genExemptionBlob", arg0);
+            return IExecute<int>("genExemptionBlob", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html#getOutputSize(int)"/>

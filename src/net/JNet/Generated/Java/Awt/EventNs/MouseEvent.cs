@@ -153,7 +153,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="string"/></returns>
         public static string GetMouseModifiersText(int arg0)
         {
-            return SExecute<string>("getMouseModifiersText", arg0);
+            return SExecute<string>(LocalClazz, "getMouseModifiersText", arg0);
         }
         
         #endregion

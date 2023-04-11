@@ -84,7 +84,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="string"/></returns>
         public static string ReferenceKindToString(int arg0)
         {
-            return SExecute<string>("referenceKindToString", arg0);
+            return SExecute<string>(LocalClazz, "referenceKindToString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
@@ -96,7 +96,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0, Java.Lang.Class arg1, string arg2, Java.Lang.Invoke.MethodType arg3)
         {
-            return SExecute<string>("toString", arg0, arg1, arg2, arg3);
+            return SExecute<string>(LocalClazz, "toString", arg0, arg1, arg2, arg3);
         }
         
         #endregion

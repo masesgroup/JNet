@@ -138,35 +138,35 @@ namespace Java.Lang
         /// </summary>
         public static int ActiveCount
         {
-            get { return SExecute<int>("activeCount"); }
+            get { return SExecute<int>(LocalClazz, "activeCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
         /// </summary>
         public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
         {
-            get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>("getAllStackTraces"); }
+            get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalClazz, "getAllStackTraces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/> 
         /// </summary>
         public static Java.Lang.Thread CurrentThread
         {
-            get { return SExecute<Java.Lang.Thread>("currentThread"); }
+            get { return SExecute<Java.Lang.Thread>(LocalClazz, "currentThread"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)"/>
         /// </summary>
         public static Java.Lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
         {
-            get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>("getDefaultUncaughtExceptionHandler"); } set { SExecute("setDefaultUncaughtExceptionHandler", value); }
+            get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>(LocalClazz, "getDefaultUncaughtExceptionHandler"); } set { SExecute(LocalClazz, "setDefaultUncaughtExceptionHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/> 
         /// </summary>
         public static bool Interrupted
         {
-            get { return SExecute<bool>("interrupted"); }
+            get { return SExecute<bool>(LocalClazz, "interrupted"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
@@ -175,7 +175,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Enumerate(Java.Lang.Thread[] arg0)
         {
-            return SExecute<int>("enumerate", arg0);
+            return SExecute<int>(LocalClazz, "enumerate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool HoldsLock(object arg0)
         {
-            return SExecute<bool>("holdsLock", arg0);
+            return SExecute<bool>(LocalClazz, "holdsLock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
@@ -193,28 +193,28 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
-            SExecute("sleep", arg0);
+            SExecute(LocalClazz, "sleep", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
-            SExecute("yield");
+            SExecute(LocalClazz, "yield");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#dumpStack()"/>
         /// </summary>
         public static void DumpStack()
         {
-            SExecute("dumpStack");
+            SExecute(LocalClazz, "dumpStack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#onSpinWait()"/>
         /// </summary>
         public static void OnSpinWait()
         {
-            SExecute("onSpinWait");
+            SExecute(LocalClazz, "onSpinWait");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
@@ -224,7 +224,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0, int arg1)
         {
-            SExecute("sleep", arg0, arg1);
+            SExecute(LocalClazz, "sleep", arg0, arg1);
         }
         
         #endregion
@@ -428,7 +428,7 @@ namespace Java.Lang
             /// </summary>
             public static Java.Lang.Thread.State[] Values
             {
-                get { return SExecuteArray<Java.Lang.Thread.State>("values"); }
+                get { return SExecuteArray<Java.Lang.Thread.State>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
@@ -437,7 +437,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
             public static Java.Lang.Thread.State ValueOf(string arg0)
             {
-                return SExecute<Java.Lang.Thread.State>("valueOf", arg0);
+                return SExecute<Java.Lang.Thread.State>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

@@ -1070,8 +1070,13 @@ namespace MASES.JNetReflector
                 if (setMethod != null)
                 {
                     if (JNetReflectorCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
-                    var execFormat = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT;
-                    executionStub.AppendFormat(execFormat, setMethod.IsStatic() ? "SExecute" : "IExecute", setMethod.Name);
+                    string setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT;
+                    if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
+                    {
+                        setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_ARRAY_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_ARRAY_EXECUTION_FORMAT;
+                    }
+                    executionStub.AppendFormat(setExecStub, setMethod.IsStatic() ? "SExecute" : "IExecute",
+                                                              setMethod.Name);
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing properties of {0}", prop.Key);
@@ -1266,12 +1271,18 @@ namespace MASES.JNetReflector
                 }
 
                 bool isArrayReturnType = false;
+
                 string execStub = method.IsStatic() ? "SExecute" : "IExecute";
                 if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));
                     execStub += "Array";
                     isArrayReturnType = true;
+                }
+
+                if (paramCount == 1 && parameters[0].Type(null, null, parameters[0].Name().Camel(), isGeneric, JNetReflectorCore.UseCamel).EndsWith(SpecialNames.ArrayTypeTrailer))
+                {
+                    executionParamsString = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_ARRAY_EXECUTION_FORMAT, parameters[0].Name);
                 }
 
                 bool isVoidMethod = method.IsVoid();

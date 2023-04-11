@@ -165,7 +165,7 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.DocumentationTool.Location[] Values
             {
-                get { return SExecuteArray<Javax.Tools.DocumentationTool.Location>("values"); }
+                get { return SExecuteArray<Javax.Tools.DocumentationTool.Location>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#valueOf(java.lang.String)"/>
@@ -174,7 +174,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
             public static Javax.Tools.DocumentationTool.Location ValueOf(string arg0)
             {
-                return SExecute<Javax.Tools.DocumentationTool.Location>("valueOf", arg0);
+                return SExecute<Javax.Tools.DocumentationTool.Location>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

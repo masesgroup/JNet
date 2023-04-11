@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt.Im
 {
     #region InputContext
@@ -37,6 +39,8 @@ namespace Java.Awt.Im
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.InputContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Awt.Im
         /// </summary>
         public InputMethodHighlight(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.InputMethodHighlight");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Java.Awt.Im
         /// </summary>
         public InputMethodRequests(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.InputMethodRequests");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Java.Awt.Im
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputSubset(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.InputSubset");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

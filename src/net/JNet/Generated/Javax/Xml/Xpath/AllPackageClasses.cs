@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Xml.Xpath
 {
     #region XPath
@@ -37,6 +39,8 @@ namespace Javax.Xml.Xpath
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPath(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPath");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathConstants(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathConstants");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathEvaluationResult(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathEvaluationResult");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -156,6 +164,8 @@ namespace Javax.Xml.Xpath
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public XPathResultType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathEvaluationResult$XPathResultType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -200,6 +210,8 @@ namespace Javax.Xml.Xpath
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPathEvaluationResult(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathEvaluationResult");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -258,6 +270,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathExpression(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathExpression");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -314,6 +328,8 @@ namespace Javax.Xml.Xpath
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPathFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -372,6 +388,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathFunction(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathFunction");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -429,6 +447,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathFunctionResolver(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathFunctionResolver");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -470,6 +490,8 @@ namespace Javax.Xml.Xpath
         /// </summary>
         public XPathNodes(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathNodes");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -510,6 +532,8 @@ namespace Javax.Xml.Xpath
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPathVariableResolver(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.xpath.XPathVariableResolver");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

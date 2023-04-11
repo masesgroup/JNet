@@ -48,7 +48,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(string arg0)
         {
-            return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>("findFirst", arg0);
+            return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalClazz, "findFirst", arg0);
         }
         
         #endregion

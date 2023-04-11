@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Util.Concurrent
 {
     #region AbstractExecutorService
@@ -37,6 +39,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractExecutorService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.AbstractExecutorService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ArrayBlockingQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ArrayBlockingQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ArrayBlockingQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ArrayBlockingQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public BlockingDeque(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.BlockingDeque");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BlockingDeque(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.BlockingDeque");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public BlockingQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.BlockingQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BlockingQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.BlockingQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -341,6 +357,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Callable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Callable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -381,6 +399,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Callable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Callable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -439,6 +459,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CompletableFuture(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletableFuture");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -475,6 +497,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AsynchronousCompletionTask(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletableFuture$AsynchronousCompletionTask");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -519,6 +543,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CompletableFuture(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletableFuture");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -577,6 +603,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CompletionService(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletionService");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -617,6 +645,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CompletionService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletionService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -659,6 +689,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CompletionStage(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletionStage");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -699,6 +731,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CompletionStage(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CompletionStage");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -741,6 +775,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentHashMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentHashMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -777,6 +813,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KeySetView(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentHashMap$KeySetView");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -817,6 +855,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KeySetView(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentHashMap$KeySetView");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -862,6 +902,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentHashMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentHashMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -902,6 +944,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentLinkedDeque(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentLinkedDeque");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -944,6 +988,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentLinkedDeque(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentLinkedDeque");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -984,6 +1030,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentLinkedQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentLinkedQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1026,6 +1074,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentLinkedQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentLinkedQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1066,6 +1116,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentMap(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentMap");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1108,6 +1160,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1148,6 +1202,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentNavigableMap");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1190,6 +1246,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentNavigableMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1230,6 +1288,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentSkipListMap(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentSkipListMap");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1272,6 +1332,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentSkipListMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentSkipListMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1312,6 +1374,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConcurrentSkipListSet(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentSkipListSet");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1354,6 +1418,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ConcurrentSkipListSet(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ConcurrentSkipListSet");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1394,6 +1460,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CopyOnWriteArrayList");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1436,6 +1504,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CopyOnWriteArrayList");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1476,6 +1546,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CopyOnWriteArraySet(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CopyOnWriteArraySet");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1518,6 +1590,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CopyOnWriteArraySet(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CopyOnWriteArraySet");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1558,6 +1632,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CountDownLatch(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CountDownLatch");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1600,6 +1676,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CountedCompleter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CountedCompleter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1640,6 +1718,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CountedCompleter(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CountedCompleter");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1682,6 +1762,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public CyclicBarrier(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.CyclicBarrier");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1722,6 +1804,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Delayed(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Delayed");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1764,6 +1848,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public DelayQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.DelayQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1804,6 +1890,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DelayQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.DelayQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1846,6 +1934,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Exchanger(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Exchanger");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1886,6 +1976,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Exchanger(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Exchanger");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1944,6 +2036,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Executor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Executor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1984,6 +2078,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ExecutorCompletionService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ExecutorCompletionService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2026,6 +2122,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ExecutorCompletionService(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ExecutorCompletionService");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2066,6 +2164,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Executors(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Executors");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2108,6 +2208,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ExecutorService(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ExecutorService");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2149,6 +2251,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Flow(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2185,6 +2289,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Processor(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Processor");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2226,6 +2332,8 @@ namespace Java.Util.Concurrent
             /// </summary>
             public Processor(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Processor");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -2265,6 +2373,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Publisher(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Publisher");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2306,6 +2416,8 @@ namespace Java.Util.Concurrent
             /// </summary>
             public Publisher(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Publisher");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -2345,6 +2457,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Subscriber(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Subscriber");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2386,6 +2500,8 @@ namespace Java.Util.Concurrent
             /// </summary>
             public Subscriber(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Subscriber");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -2425,6 +2541,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Subscription(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Flow$Subscription");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2470,6 +2588,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ForkJoinPool(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinPool");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2506,6 +2626,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ForkJoinWorkerThreadFactory(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2546,6 +2668,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ManagedBlocker(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinPool$ManagedBlocker");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2591,6 +2715,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ForkJoinTask(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinTask");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2631,6 +2757,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ForkJoinTask(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinTask");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2673,6 +2801,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ForkJoinWorkerThread(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ForkJoinWorkerThread");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2713,6 +2843,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Future(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Future");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2755,6 +2887,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Future(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Future");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2795,6 +2929,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FutureTask(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.FutureTask");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2837,6 +2973,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public FutureTask(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.FutureTask");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2877,6 +3015,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingDeque(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedBlockingDeque");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2919,6 +3059,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public LinkedBlockingDeque(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedBlockingDeque");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2959,6 +3101,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedBlockingQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3001,6 +3145,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public LinkedBlockingQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedBlockingQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3041,6 +3187,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedTransferQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedTransferQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3083,6 +3231,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public LinkedTransferQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.LinkedTransferQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3123,6 +3273,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Phaser(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Phaser");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3165,6 +3317,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public PriorityBlockingQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.PriorityBlockingQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3205,6 +3359,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PriorityBlockingQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.PriorityBlockingQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3247,6 +3403,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public RecursiveAction(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RecursiveAction");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3288,6 +3446,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public RecursiveTask(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RecursiveTask");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3328,6 +3488,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RecursiveTask(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RecursiveTask");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3386,6 +3548,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public RejectedExecutionHandler(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RejectedExecutionHandler");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3426,6 +3590,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RunnableFuture(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RunnableFuture");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3468,6 +3634,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public RunnableFuture(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RunnableFuture");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3508,6 +3676,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RunnableScheduledFuture(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RunnableScheduledFuture");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3550,6 +3720,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public RunnableScheduledFuture(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.RunnableScheduledFuture");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3590,6 +3762,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScheduledExecutorService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ScheduledExecutorService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3632,6 +3806,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ScheduledFuture(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ScheduledFuture");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3672,6 +3848,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScheduledFuture(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ScheduledFuture");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3714,6 +3892,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ScheduledThreadPoolExecutor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ScheduledThreadPoolExecutor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3754,6 +3934,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Semaphore(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.Semaphore");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3796,6 +3978,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public SubmissionPublisher(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.SubmissionPublisher");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3836,6 +4020,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SubmissionPublisher(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.SubmissionPublisher");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3878,6 +4064,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public SynchronousQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.SynchronousQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3918,6 +4106,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SynchronousQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.SynchronousQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3960,6 +4150,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ThreadFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4000,6 +4192,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThreadLocalRandom(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadLocalRandom");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4042,6 +4236,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ThreadPoolExecutor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadPoolExecutor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4078,6 +4274,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AbortPolicy(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadPoolExecutor$AbortPolicy");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4119,6 +4317,8 @@ namespace Java.Util.Concurrent
             /// </summary>
             public CallerRunsPolicy(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -4159,6 +4359,8 @@ namespace Java.Util.Concurrent
             /// </summary>
             public DiscardOldestPolicy(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadPoolExecutor$DiscardOldestPolicy");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -4198,6 +4400,8 @@ namespace Java.Util.Concurrent
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DiscardPolicy(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.ThreadPoolExecutor$DiscardPolicy");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4259,6 +4463,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public TimeUnit(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.TimeUnit");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4300,6 +4506,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         public TransferQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.TransferQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4340,6 +4548,8 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransferQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.TransferQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

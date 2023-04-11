@@ -174,7 +174,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("addSelectionPaths", arg0);
+            IExecute("addSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
@@ -213,7 +213,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("removeSelectionPaths", arg0);
+            IExecute("removeSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>

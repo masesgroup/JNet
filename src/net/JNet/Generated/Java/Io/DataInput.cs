@@ -157,7 +157,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecute("readFully", arg0);
+            IExecute("readFully", new object[] { arg0 });
         }
         
         #endregion

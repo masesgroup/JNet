@@ -61,7 +61,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(int[] arg0)
         {
-            IExecute("setMatchColumn", arg0);
+            IExecute("setMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(string[] arg0)
         {
-            IExecute("setMatchColumn", arg0);
+            IExecute("setMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(int)"/>
@@ -97,7 +97,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(int[] arg0)
         {
-            IExecute("unsetMatchColumn", arg0);
+            IExecute("unsetMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(java.lang.String)"/>
@@ -115,7 +115,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(string[] arg0)
         {
-            IExecute("unsetMatchColumn", arg0);
+            IExecute("unsetMatchColumn", new object[] { arg0 });
         }
         
         #endregion

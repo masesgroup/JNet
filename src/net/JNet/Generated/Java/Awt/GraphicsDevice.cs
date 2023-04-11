@@ -182,7 +182,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values
             {
-                get { return SExecuteArray<Java.Awt.GraphicsDevice.WindowTranslucency>("values"); }
+                get { return SExecuteArray<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#valueOf(java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
             public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>("valueOf", arg0);
+                return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

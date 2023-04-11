@@ -65,7 +65,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class ForName(Java.Lang.Module arg0, string arg1)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0, arg1);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
@@ -77,7 +77,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(string arg0, bool arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0, arg1, arg2);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
@@ -87,7 +87,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(string arg0)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0);
         }
         
         #endregion
@@ -496,7 +496,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor>("getConstructor", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getConstructor", new object[] { arg0 }); else return IExecute<Java.Lang.Reflect.Constructor>("getConstructor", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
@@ -507,7 +507,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", new object[] { arg0 }); else return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
@@ -655,7 +655,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(Java.Lang.Module arg0, string arg1)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0, arg1);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
@@ -667,7 +667,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0, bool arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0, arg1, arg2);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
@@ -677,7 +677,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0)
         {
-            return SExecute<Java.Lang.Class>("forName", arg0);
+            return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0);
         }
         
         #endregion
@@ -1086,7 +1086,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", new object[] { arg0 }); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
@@ -1097,7 +1097,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", new object[] { arg0 }); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>

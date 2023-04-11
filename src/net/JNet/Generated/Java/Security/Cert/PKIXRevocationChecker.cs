@@ -128,7 +128,7 @@ namespace Java.Security.Cert
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values
             {
-                get { return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>("values"); }
+                get { return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#valueOf(java.lang.String)"/>
@@ -137,7 +137,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
             public static Java.Security.Cert.PKIXRevocationChecker.Option ValueOf(string arg0)
             {
-                return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>("valueOf", arg0);
+                return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

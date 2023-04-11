@@ -54,7 +54,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.OutputStream NullOutputStream
         {
-            get { return SExecute<Java.Io.OutputStream>("nullOutputStream"); }
+            get { return SExecute<Java.Io.OutputStream>(LocalClazz, "nullOutputStream"); }
         }
         
         #endregion
@@ -105,7 +105,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecute("write", arg0);
+            IExecute("write", new object[] { arg0 });
         }
         
         #endregion

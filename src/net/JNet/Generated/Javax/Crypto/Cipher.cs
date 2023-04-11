@@ -77,7 +77,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(string arg0)
         {
-            return SExecute<int>("getMaxAllowedKeyLength", arg0);
+            return SExecute<int>(LocalClazz, "getMaxAllowedKeyLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
@@ -87,7 +87,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(string arg0)
         {
-            return SExecute<Java.Security.Spec.AlgorithmParameterSpec>("getMaxAllowedParameterSpec", arg0);
+            return SExecute<Java.Security.Spec.AlgorithmParameterSpec>(LocalClazz, "getMaxAllowedParameterSpec", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -100,7 +100,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Crypto.Cipher>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -112,7 +112,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.Cipher>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
@@ -123,7 +123,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0)
         {
-            return SExecute<Javax.Crypto.Cipher>("getInstance", arg0);
+            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion
@@ -204,7 +204,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal(byte[] arg0)
         {
-            return IExecuteArray<byte>("doFinal", arg0);
+            return IExecuteArray<byte>("doFinal", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)"/>
@@ -224,7 +224,7 @@ namespace Javax.Crypto
         /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0)
         {
-            return IExecuteArray<byte>("update", arg0);
+            return IExecuteArray<byte>("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#wrap(java.security.Key)"/>
@@ -462,7 +462,7 @@ namespace Javax.Crypto
         /// <param name="arg0"><see cref="byte"/></param>
         public void UpdateAAD(byte[] arg0)
         {
-            IExecute("updateAAD", arg0);
+            IExecute("updateAAD", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(java.nio.ByteBuffer)"/>

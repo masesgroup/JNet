@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.ResponseCache Default
         {
-            get { return SExecute<Java.Net.ResponseCache>("getDefault"); } set { SExecute("setDefault", value); }
+            get { return SExecute<Java.Net.ResponseCache>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
         }
         
         #endregion

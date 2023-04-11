@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt.ColorNs
 {
     #region CMMException
@@ -53,6 +55,8 @@ namespace Java.Awt.ColorNs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ColorSpace(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.color.ColorSpace");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public ICC_ColorSpace(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.color.ICC_ColorSpace");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -135,6 +141,8 @@ namespace Java.Awt.ColorNs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ICC_Profile(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.color.ICC_Profile");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -177,6 +185,8 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public ICC_ProfileGray(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.color.ICC_ProfileGray");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -217,6 +227,8 @@ namespace Java.Awt.ColorNs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ICC_ProfileRGB(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.color.ICC_ProfileRGB");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

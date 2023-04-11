@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0)
         {
-            return IExecute<int>("enumerate", arg0);
+            return IExecute<int>("enumerate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[],boolean)"/>
@@ -185,7 +185,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
-            return IExecute<int>("enumerate", arg0);
+            return IExecute<int>("enumerate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#list()"/>

@@ -667,7 +667,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("addSelectionPaths", arg0);
+            IExecute("addSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)"/>
@@ -683,7 +683,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void AddSelectionRows(int[] arg0)
         {
-            IExecute("addSelectionRows", arg0);
+            IExecute("addSelectionRows", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
@@ -820,7 +820,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("removeSelectionPaths", arg0);
+            IExecute("removeSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)"/>
@@ -836,7 +836,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveSelectionRows(int[] arg0)
         {
-            IExecute("removeSelectionRows", arg0);
+            IExecute("removeSelectionRows", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
@@ -1019,7 +1019,7 @@ namespace Javax.Swing
             /// <param name="arg1"><see cref="object"/></param>
             public static void CreateChildren(Javax.Swing.Tree.DefaultMutableTreeNode arg0, object arg1)
             {
-                SExecute("createChildren", arg0, arg1);
+                SExecute(LocalClazz, "createChildren", arg0, arg1);
             }
             
             #endregion

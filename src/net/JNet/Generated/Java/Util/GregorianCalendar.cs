@@ -116,7 +116,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public static Java.Util.GregorianCalendar From(Java.Time.ZonedDateTime arg0)
         {
-            return SExecute<Java.Util.GregorianCalendar>("from", arg0);
+            return SExecute<Java.Util.GregorianCalendar>(LocalClazz, "from", arg0);
         }
         
         #endregion

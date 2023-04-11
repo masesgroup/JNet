@@ -77,7 +77,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
         {
-            return SExecute<bool>("isParityAdjusted", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isParityAdjusted", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#isWeak(byte[],int)"/>
@@ -88,7 +88,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsWeak(byte[] arg0, int arg1)
         {
-            return SExecute<bool>("isWeak", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isWeak", arg0, arg1);
         }
         
         #endregion

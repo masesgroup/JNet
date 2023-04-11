@@ -46,7 +46,7 @@ namespace Java.Util.Function
         /// </summary>
         public static Java.Util.Function.Function Identity
         {
-            get { return SExecute<Java.Util.Function.Function>("identity"); }
+            get { return SExecute<Java.Util.Function.Function>(LocalClazz, "identity"); }
         }
         
         #endregion
@@ -115,7 +115,7 @@ namespace Java.Util.Function
         /// </summary>
         public static Java.Util.Function.Function<T, T> Identity
         {
-            get { return SExecute<Java.Util.Function.Function<T, T>>("identity"); }
+            get { return SExecute<Java.Util.Function.Function<T, T>>(LocalClazz, "identity"); }
         }
         
         #endregion

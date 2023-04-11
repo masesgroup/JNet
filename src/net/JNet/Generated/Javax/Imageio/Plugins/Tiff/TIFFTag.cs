@@ -143,7 +143,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public static int GetSizeOfType(int arg0)
         {
-            return SExecute<int>("getSizeOfType", arg0);
+            return SExecute<int>(LocalClazz, "getSizeOfType", arg0);
         }
         
         #endregion

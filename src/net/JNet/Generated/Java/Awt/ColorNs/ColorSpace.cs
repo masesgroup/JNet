@@ -172,7 +172,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ColorSpace"/></returns>
         public static Java.Awt.ColorNs.ColorSpace GetInstance(int arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ColorSpace>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ColorSpace>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion
@@ -206,7 +206,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] FromCIEXYZ(float[] arg0)
         {
-            return IExecuteArray<float>("fromCIEXYZ", arg0);
+            return IExecuteArray<float>("fromCIEXYZ", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromRGB(float[])"/>
@@ -215,7 +215,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] FromRGB(float[] arg0)
         {
-            return IExecuteArray<float>("fromRGB", arg0);
+            return IExecuteArray<float>("fromRGB", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toCIEXYZ(float[])"/>
@@ -224,7 +224,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] ToCIEXYZ(float[] arg0)
         {
-            return IExecuteArray<float>("toCIEXYZ", arg0);
+            return IExecuteArray<float>("toCIEXYZ", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toRGB(float[])"/>
@@ -233,7 +233,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] ToRGB(float[] arg0)
         {
-            return IExecuteArray<float>("toRGB", arg0);
+            return IExecuteArray<float>("toRGB", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)"/>

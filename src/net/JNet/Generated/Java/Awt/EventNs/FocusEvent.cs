@@ -193,7 +193,7 @@ namespace Java.Awt.EventNs
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause[] Values
             {
-                get { return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>("values"); }
+                get { return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#valueOf(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
             /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
             public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.EventNs.FocusEvent.Cause>("valueOf", arg0);
+                return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

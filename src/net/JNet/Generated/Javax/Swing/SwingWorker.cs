@@ -194,7 +194,7 @@ namespace Javax.Swing
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue[] Values
             {
-                get { return SExecuteArray<Javax.Swing.SwingWorker.StateValue>("values"); }
+                get { return SExecuteArray<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#valueOf(java.lang.String)"/>
@@ -203,7 +203,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
             public static Javax.Swing.SwingWorker.StateValue ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.SwingWorker.StateValue>("valueOf", arg0);
+                return SExecute<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

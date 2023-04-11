@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Imageio.Spi
 {
     #region IIORegistry
@@ -37,6 +39,8 @@ namespace Javax.Imageio.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IIORegistry(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.IIORegistry");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public IIOServiceProvider(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.IIOServiceProvider");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Imageio.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageInputStreamSpi(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageInputStreamSpi");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public ImageOutputStreamSpi(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageOutputStreamSpi");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Imageio.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageReaderSpi(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageReaderSpi");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public ImageReaderWriterSpi(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageReaderWriterSpi");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Imageio.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageTranscoderSpi(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageTranscoderSpi");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public ImageWriterSpi(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ImageWriterSpi");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Javax.Imageio.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RegisterableService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.RegisterableService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public ServiceRegistry(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ServiceRegistry");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -443,6 +465,8 @@ namespace Javax.Imageio.Spi
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Filter(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.imageio.spi.ServiceRegistry$Filter");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

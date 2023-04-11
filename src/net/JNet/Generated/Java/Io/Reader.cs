@@ -54,7 +54,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.Reader NullReader
         {
-            get { return SExecute<Java.Io.Reader>("nullReader"); }
+            get { return SExecute<Java.Io.Reader>(LocalClazz, "nullReader"); }
         }
         
         #endregion
@@ -113,7 +113,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(java.nio.CharBuffer)"/>

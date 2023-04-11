@@ -50,7 +50,7 @@ namespace Java.Util.Logging
         /// </summary>
         public static Java.Util.Logging.LogManager GetLogManager
         {
-            get { return SExecute<Java.Util.Logging.LogManager>("getLogManager"); }
+            get { return SExecute<Java.Util.Logging.LogManager>(LocalClazz, "getLogManager"); }
         }
         
         #endregion

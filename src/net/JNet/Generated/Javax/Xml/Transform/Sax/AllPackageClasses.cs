@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Xml.Transform.Sax
 {
     #region SAXResult
@@ -37,6 +39,8 @@ namespace Javax.Xml.Transform.Sax
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SAXResult(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.transform.sax.SAXResult");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         public SAXSource(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.transform.sax.SAXSource");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Xml.Transform.Sax
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SAXTransformerFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.transform.sax.SAXTransformerFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         public TemplatesHandler(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.transform.sax.TemplatesHandler");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Xml.Transform.Sax
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransformerHandler(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.transform.sax.TransformerHandler");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -55,7 +55,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.TypeNotPresentException"/>
         public static Java.Lang.Invoke.MethodType FromMethodDescriptorString(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("fromMethodDescriptorString", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "fromMethodDescriptorString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#genericMethodType(int,boolean)"/>
@@ -65,7 +65,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType GenericMethodType(int arg0, bool arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("genericMethodType", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "genericMethodType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#genericMethodType(int)"/>
@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType GenericMethodType(int arg0)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("genericMethodType", arg0);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "genericMethodType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class,java.lang.Class[])"/>
@@ -85,7 +85,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg2Extendsobject>(Java.Lang.Class arg0, Java.Lang.Class arg1, params Java.Lang.Class[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class)"/>
@@ -95,7 +95,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class[])"/>
@@ -105,7 +105,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg1Extendsobject>(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.invoke.MethodType)"/>
@@ -115,7 +115,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Invoke.MethodType arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.util.List)"/>
@@ -125,7 +125,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg1Extendsobject>(Java.Lang.Class arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0, arg1);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class)"/>
@@ -134,7 +134,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>("methodType", arg0);
+            return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0);
         }
         
         #endregion
@@ -240,7 +240,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType AppendParameterTypes<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes"); else return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", new object[] { arg0 }); else return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.util.List)"/>

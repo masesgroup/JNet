@@ -66,7 +66,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryNotificationInfo"/></returns>
         public static Java.Lang.Management.MemoryNotificationInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.MemoryNotificationInfo>("from", arg0);
+            return SExecute<Java.Lang.Management.MemoryNotificationInfo>(LocalClazz, "from", arg0);
         }
         
         #endregion

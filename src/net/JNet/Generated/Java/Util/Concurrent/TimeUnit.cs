@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit[] Values
         {
-            get { return SExecuteArray<Java.Util.Concurrent.TimeUnit>("values"); }
+            get { return SExecuteArray<Java.Util.Concurrent.TimeUnit>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit Of(Java.Time.Temporal.ChronoUnit arg0)
         {
-            return SExecute<Java.Util.Concurrent.TimeUnit>("of", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit ValueOf(string arg0)
         {
-            return SExecute<Java.Util.Concurrent.TimeUnit>("valueOf", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

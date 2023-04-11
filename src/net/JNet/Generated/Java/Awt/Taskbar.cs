@@ -46,14 +46,14 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Taskbar GetTaskbar
         {
-            get { return SExecute<Java.Awt.Taskbar>("getTaskbar"); }
+            get { return SExecute<Java.Awt.Taskbar>(LocalClazz, "getTaskbar"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/> 
         /// </summary>
         public static bool IsTaskbarSupported
         {
-            get { return SExecute<bool>("isTaskbarSupported"); }
+            get { return SExecute<bool>(LocalClazz, "isTaskbarSupported"); }
         }
         
         #endregion
@@ -207,7 +207,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Taskbar.Feature[] Values
             {
-                get { return SExecuteArray<Java.Awt.Taskbar.Feature>("values"); }
+                get { return SExecuteArray<Java.Awt.Taskbar.Feature>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#valueOf(java.lang.String)"/>
@@ -216,7 +216,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
             public static Java.Awt.Taskbar.Feature ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Taskbar.Feature>("valueOf", arg0);
+                return SExecute<Java.Awt.Taskbar.Feature>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion
@@ -270,7 +270,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Taskbar.State[] Values
             {
-                get { return SExecuteArray<Java.Awt.Taskbar.State>("values"); }
+                get { return SExecuteArray<Java.Awt.Taskbar.State>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#valueOf(java.lang.String)"/>
@@ -279,7 +279,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
             public static Java.Awt.Taskbar.State ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Taskbar.State>("valueOf", arg0);
+                return SExecute<Java.Awt.Taskbar.State>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

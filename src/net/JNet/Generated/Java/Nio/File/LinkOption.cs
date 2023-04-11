@@ -58,7 +58,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.LinkOption[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.LinkOption>("values"); }
+            get { return SExecuteArray<Java.Nio.File.LinkOption>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#valueOf(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
         public static Java.Nio.File.LinkOption ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.LinkOption>("valueOf", arg0);
+            return SExecute<Java.Nio.File.LinkOption>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

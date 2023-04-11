@@ -528,7 +528,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(byte[] arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalClazz, "getInstance", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(int)"/>
@@ -537,7 +537,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(int arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.io.InputStream)"/>
@@ -547,7 +547,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(Java.Io.InputStream arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.lang.String)"/>
@@ -557,7 +557,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(string arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion

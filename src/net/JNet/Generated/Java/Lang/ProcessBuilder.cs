@@ -65,7 +65,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.List<Java.Lang.Process> StartPipeline(Java.Util.List<Java.Lang.ProcessBuilder> arg0)
         {
-            return SExecute<Java.Util.List<Java.Lang.Process>>("startPipeline", arg0);
+            return SExecute<Java.Util.List<Java.Lang.Process>>(LocalClazz, "startPipeline", arg0);
         }
         
         #endregion
@@ -117,7 +117,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder Command(params string[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.ProcessBuilder>("command"); else return IExecute<Java.Lang.ProcessBuilder>("command", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.ProcessBuilder>("command", new object[] { arg0 }); else return IExecute<Java.Lang.ProcessBuilder>("command", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.util.List)"/>
@@ -275,7 +275,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
             public static Java.Lang.ProcessBuilder.Redirect AppendTo(Java.Io.File arg0)
             {
-                return SExecute<Java.Lang.ProcessBuilder.Redirect>("appendTo", arg0);
+                return SExecute<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "appendTo", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#from(java.io.File)"/>
@@ -284,7 +284,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
             public static Java.Lang.ProcessBuilder.Redirect From(Java.Io.File arg0)
             {
-                return SExecute<Java.Lang.ProcessBuilder.Redirect>("from", arg0);
+                return SExecute<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "from", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#to(java.io.File)"/>
@@ -293,7 +293,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
             public static Java.Lang.ProcessBuilder.Redirect To(Java.Io.File arg0)
             {
-                return SExecute<Java.Lang.ProcessBuilder.Redirect>("to", arg0);
+                return SExecute<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "to", arg0);
             }
             
             #endregion

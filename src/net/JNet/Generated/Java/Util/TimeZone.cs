@@ -62,14 +62,14 @@ namespace Java.Util
         /// </summary>
         public static string[] AvailableIDs
         {
-            get { return SExecuteArray<string>("getAvailableIDs"); }
+            get { return SExecuteArray<string>(LocalClazz, "getAvailableIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#setDefault(java.util.TimeZone)"/>
         /// </summary>
         public static Java.Util.TimeZone Default
         {
-            get { return SExecute<Java.Util.TimeZone>("getDefault"); } set { SExecute("setDefault", value); }
+            get { return SExecute<Java.Util.TimeZone>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getTimeZone(java.time.ZoneId)"/>
@@ -78,7 +78,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
         public static Java.Util.TimeZone GetTimeZone(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Util.TimeZone>("getTimeZone", arg0);
+            return SExecute<Java.Util.TimeZone>(LocalClazz, "getTimeZone", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getAvailableIDs(int)"/>
@@ -87,7 +87,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string[] GetAvailableIDs(int arg0)
         {
-            return SExecuteArray<string>("getAvailableIDs", arg0);
+            return SExecuteArray<string>(LocalClazz, "getAvailableIDs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getTimeZone(java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
         public static Java.Util.TimeZone GetTimeZone(string arg0)
         {
-            return SExecute<Java.Util.TimeZone>("getTimeZone", arg0);
+            return SExecute<Java.Util.TimeZone>(LocalClazz, "getTimeZone", arg0);
         }
         
         #endregion

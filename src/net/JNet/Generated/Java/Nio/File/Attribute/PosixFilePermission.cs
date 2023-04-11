@@ -82,7 +82,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public static Java.Nio.File.Attribute.PosixFilePermission[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.Attribute.PosixFilePermission>("values"); }
+            get { return SExecuteArray<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#valueOf(java.lang.String)"/>
@@ -91,7 +91,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.PosixFilePermission"/></returns>
         public static Java.Nio.File.Attribute.PosixFilePermission ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.Attribute.PosixFilePermission>("valueOf", arg0);
+            return SExecute<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

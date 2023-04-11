@@ -82,7 +82,7 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance(java.util.Locale)"/>
@@ -91,7 +91,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.Collator>("getInstance", arg0);
+            return SExecute<Java.Text.Collator>(LocalClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance()"/>
@@ -100,7 +100,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance()
         {
-            return SExecute<Java.Text.Collator>("getInstance");
+            return SExecute<Java.Text.Collator>(LocalClazz, "getInstance");
         }
         
         #endregion

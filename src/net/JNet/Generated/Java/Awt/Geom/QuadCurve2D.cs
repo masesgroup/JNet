@@ -61,7 +61,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>("getFlatness", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalClazz, "getFlatness", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatness(double[],int)"/>
@@ -71,7 +71,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double[] arg0, int arg1)
         {
-            return SExecute<double>("getFlatness", arg0, arg1);
+            return SExecute<double>(LocalClazz, "getFlatness", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatnessSq(double,double,double,double,double,double)"/>
@@ -85,7 +85,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>("getFlatnessSq", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalClazz, "getFlatnessSq", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatnessSq(double[],int)"/>
@@ -95,7 +95,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double[] arg0, int arg1)
         {
-            return SExecute<double>("getFlatnessSq", arg0, arg1);
+            return SExecute<double>(LocalClazz, "getFlatnessSq", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#solveQuadratic(double[],double[])"/>
@@ -105,7 +105,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveQuadratic(double[] arg0, double[] arg1)
         {
-            return SExecute<int>("solveQuadratic", arg0, arg1);
+            return SExecute<int>(LocalClazz, "solveQuadratic", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#solveQuadratic(double[])"/>
@@ -114,7 +114,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveQuadratic(double[] arg0)
         {
-            return SExecute<int>("solveQuadratic", arg0);
+            return SExecute<int>(LocalClazz, "solveQuadratic", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="int"/></param>
         public static void Subdivide(double[] arg0, int arg1, double[] arg2, int arg3, double[] arg4, int arg5)
         {
-            SExecute("subdivide", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecute(LocalClazz, "subdivide", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D)"/>
@@ -137,7 +137,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
         public static void Subdivide(Java.Awt.Geom.QuadCurve2D arg0, Java.Awt.Geom.QuadCurve2D arg1, Java.Awt.Geom.QuadCurve2D arg2)
         {
-            SExecute("subdivide", arg0, arg1, arg2);
+            SExecute(LocalClazz, "subdivide", arg0, arg1, arg2);
         }
         
         #endregion

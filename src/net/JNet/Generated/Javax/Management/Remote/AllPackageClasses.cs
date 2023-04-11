@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Management.Remote
 {
     #region JMXAddressable
@@ -37,6 +39,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXAddressable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXAddressable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXAuthenticator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXAuthenticator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXConnectionNotification(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectionNotification");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXConnector(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnector");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXConnectorFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXConnectorProvider(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorProvider");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXConnectorServer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorServer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXConnectorServerFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorServerFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXConnectorServerMBean(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorServerMBean");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXConnectorServerProvider(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXConnectorServerProvider");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JMXPrincipal(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXPrincipal");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -521,6 +545,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public JMXServiceURL(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.JMXServiceURL");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -561,6 +587,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MBeanServerForwarder(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.MBeanServerForwarder");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -603,6 +631,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public NotificationResult(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.NotificationResult");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -644,6 +674,8 @@ namespace Javax.Management.Remote
         /// </summary>
         public SubjectDelegationPermission(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.SubjectDelegationPermission");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -684,6 +716,8 @@ namespace Javax.Management.Remote
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TargetedNotification(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.remote.TargetedNotification");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

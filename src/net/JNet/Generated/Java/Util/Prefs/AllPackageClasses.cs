@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Util.Prefs
 {
     #region AbstractPreferences
@@ -37,6 +39,8 @@ namespace Java.Util.Prefs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractPreferences(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.prefs.AbstractPreferences");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -111,6 +115,8 @@ namespace Java.Util.Prefs
         /// </summary>
         public NodeChangeEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.prefs.NodeChangeEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -164,6 +170,8 @@ namespace Java.Util.Prefs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PreferenceChangeEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.prefs.PreferenceChangeEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -219,6 +227,8 @@ namespace Java.Util.Prefs
         /// </summary>
         public Preferences(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.prefs.Preferences");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -259,6 +269,8 @@ namespace Java.Util.Prefs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PreferencesFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.prefs.PreferencesFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

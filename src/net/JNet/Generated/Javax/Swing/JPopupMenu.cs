@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// </summary>
         public static bool DefaultLightWeightPopupEnabled
         {
-            get { return SExecute<bool>("getDefaultLightWeightPopupEnabled"); } set { SExecute("setDefaultLightWeightPopupEnabled", value); }
+            get { return SExecute<bool>(LocalClazz, "getDefaultLightWeightPopupEnabled"); } set { SExecute(LocalClazz, "setDefaultLightWeightPopupEnabled", value); }
         }
         
         #endregion

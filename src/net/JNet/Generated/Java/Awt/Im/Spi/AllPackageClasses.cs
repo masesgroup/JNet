@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt.Im.Spi
 {
     #region InputMethod
@@ -37,6 +39,8 @@ namespace Java.Awt.Im.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputMethod(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.spi.InputMethod");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Awt.Im.Spi
         /// </summary>
         public InputMethodContext(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.spi.InputMethodContext");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Awt.Im.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputMethodDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.im.spi.InputMethodDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

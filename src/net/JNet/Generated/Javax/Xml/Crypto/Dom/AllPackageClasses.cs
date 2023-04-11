@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Xml.Crypto.Dom
 {
     #region DOMCryptoContext
@@ -37,6 +39,8 @@ namespace Javax.Xml.Crypto.Dom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DOMCryptoContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dom.DOMCryptoContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         public DOMStructure(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dom.DOMStructure");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Xml.Crypto.Dom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DOMURIReference(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dom.DOMURIReference");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

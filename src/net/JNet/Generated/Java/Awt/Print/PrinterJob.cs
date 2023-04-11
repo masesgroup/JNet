@@ -46,14 +46,14 @@ namespace Java.Awt.Print
         /// </summary>
         public static Java.Awt.Print.PrinterJob GetPrinterJob
         {
-            get { return SExecute<Java.Awt.Print.PrinterJob>("getPrinterJob"); }
+            get { return SExecute<Java.Awt.Print.PrinterJob>(LocalClazz, "getPrinterJob"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/> 
         /// </summary>
         public static Javax.Print.PrintService[] LookupPrintServices
         {
-            get { return SExecuteArray<Javax.Print.PrintService>("lookupPrintServices"); }
+            get { return SExecuteArray<Javax.Print.PrintService>(LocalClazz, "lookupPrintServices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupStreamPrintServices(java.lang.String)"/>
@@ -62,7 +62,7 @@ namespace Java.Awt.Print
         /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServices(string arg0)
         {
-            return SExecuteArray<Javax.Print.StreamPrintServiceFactory>("lookupStreamPrintServices", arg0);
+            return SExecuteArray<Javax.Print.StreamPrintServiceFactory>(LocalClazz, "lookupStreamPrintServices", arg0);
         }
         
         #endregion

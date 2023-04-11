@@ -48,7 +48,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List CopyOf(Java.Util.Collection arg0)
         {
-            return SExecute<Java.Util.List>("copyOf", arg0);
+            return SExecute<Java.Util.List>(LocalClazz, "copyOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
@@ -57,7 +57,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of()
         {
-            return SExecute<Java.Util.List>("of");
+            return SExecute<Java.Util.List>(LocalClazz, "of");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -75,7 +75,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -92,7 +92,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -108,7 +108,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -137,7 +137,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -150,7 +150,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -173,7 +173,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1, arg2);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
@@ -183,7 +183,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0, object arg1)
         {
-            return SExecute<Java.Util.List>("of", arg0, arg1);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object[])"/>
@@ -192,7 +192,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.List>("of"); else return SExecute<Java.Util.List>("of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.List>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Util.List>(LocalClazz, "of", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object)"/>
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of(object arg0)
         {
-            return SExecute<Java.Util.List>("of", arg0);
+            return SExecute<Java.Util.List>(LocalClazz, "of", arg0);
         }
         
         #endregion
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteArray<object>("toArray", arg0);
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(java.lang.Object)"/>
@@ -470,7 +470,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
-            return SExecute<Java.Util.List<E>>("copyOf", arg0);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "copyOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
@@ -479,7 +479,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of()
         {
-            return SExecute<Java.Util.List<E>>("of");
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -497,7 +497,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8, E arg9)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -514,7 +514,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -530,7 +530,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -545,7 +545,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -559,7 +559,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -572,7 +572,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -584,7 +584,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -595,7 +595,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1, E arg2)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1, arg2);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
@@ -605,7 +605,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0, E arg1)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0, arg1);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object[])"/>
@@ -614,7 +614,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(params E[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.List<E>>("of"); else return SExecute<Java.Util.List<E>>("of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.List<E>>(LocalClazz, "of"); else return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object)"/>
@@ -623,7 +623,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of(E arg0)
         {
-            return SExecute<Java.Util.List<E>>("of", arg0);
+            return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0);
         }
         
         #endregion

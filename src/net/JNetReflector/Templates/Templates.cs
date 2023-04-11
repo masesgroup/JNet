@@ -164,6 +164,7 @@ namespace MASES.JNetReflector.Templates
                 public const string WHERECLAUSES = "METHOD_STUB_WHERECLAUSES_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
+                public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalClazz, \"{3}\"{4});";
                 public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
                 public const string STATIC_EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalClazz, \"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
@@ -186,9 +187,11 @@ namespace MASES.JNetReflector.Templates
                 public const string NAME = "PROPERTY_STUB_PROPERTY_NAME_PLACEHOLDER";
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
-                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
                 public const string STATIC_GET_EXECUTION_FORMAT = "get {{ return {0}{1}(LocalClazz, \"{2}\"); }}";
+                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
+                public const string SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", new object[] { value }); }}";
                 public const string STATIC_SET_EXECUTION_FORMAT = " set {{ {0}(LocalClazz, \"{1}\", value); }}";
+                public const string STATIC_SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(LocalClazz, \"{1}\", new object[] { value }); }}";
                 public const string GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{2}\"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
                 public const string STATIC_GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalClazz, \"{2}\"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
 

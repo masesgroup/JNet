@@ -49,7 +49,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader>("load", arg0, arg1);
+            return SExecute<Java.Util.ServiceLoader>(LocalClazz, "load", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -58,7 +58,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader>("load", arg0);
+            return SExecute<Java.Util.ServiceLoader>(LocalClazz, "load", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
@@ -68,7 +68,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.ServiceLoader>("load", arg0, arg1);
+            return SExecute<Java.Util.ServiceLoader>(LocalClazz, "load", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
@@ -77,7 +77,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader LoadInstalled(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader>("loadInstalled", arg0);
+            return SExecute<Java.Util.ServiceLoader>(LocalClazz, "loadInstalled", arg0);
         }
         
         #endregion
@@ -150,7 +150,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>("load", arg0, arg1);
+            return SExecute<Java.Util.ServiceLoader<S>>(LocalClazz, "load", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>("load", arg0);
+            return SExecute<Java.Util.ServiceLoader<S>>(LocalClazz, "load", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>("load", arg0, arg1);
+            return SExecute<Java.Util.ServiceLoader<S>>(LocalClazz, "load", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
@@ -178,7 +178,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> LoadInstalled(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>("loadInstalled", arg0);
+            return SExecute<Java.Util.ServiceLoader<S>>(LocalClazz, "loadInstalled", arg0);
         }
         
         #endregion

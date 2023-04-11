@@ -77,7 +77,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
         {
-            return SExecute<bool>("isParityAdjusted", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isParityAdjusted", arg0, arg1);
         }
         
         #endregion

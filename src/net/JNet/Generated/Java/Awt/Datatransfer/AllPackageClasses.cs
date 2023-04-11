@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt.Datatransfer
 {
     #region Clipboard
@@ -37,6 +39,8 @@ namespace Java.Awt.Datatransfer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Clipboard(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.Clipboard");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public ClipboardOwner(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.ClipboardOwner");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public DataFlavor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.DataFlavor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Java.Awt.Datatransfer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FlavorEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.FlavorEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -215,6 +225,8 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public FlavorMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.FlavorMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -255,6 +267,8 @@ namespace Java.Awt.Datatransfer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FlavorTable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.FlavorTable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -313,6 +327,8 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public StringSelection(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.StringSelection");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -354,6 +370,8 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public SystemFlavorMap(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.SystemFlavorMap");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -394,6 +412,8 @@ namespace Java.Awt.Datatransfer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Transferable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.datatransfer.Transferable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

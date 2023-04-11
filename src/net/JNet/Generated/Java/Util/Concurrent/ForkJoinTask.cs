@@ -54,28 +54,28 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static bool InForkJoinPool
         {
-            get { return SExecute<bool>("inForkJoinPool"); }
+            get { return SExecute<bool>(LocalClazz, "inForkJoinPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool Pool
         {
-            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>("getPool"); }
+            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>(LocalClazz, "getPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/> 
         /// </summary>
         public static int QueuedTaskCount
         {
-            get { return SExecute<int>("getQueuedTaskCount"); }
+            get { return SExecute<int>(LocalClazz, "getQueuedTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/> 
         /// </summary>
         public static int SurplusQueuedTaskCount
         {
-            get { return SExecute<int>("getSurplusQueuedTaskCount"); }
+            get { return SExecute<int>(LocalClazz, "getSurplusQueuedTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection InvokeAll(Java.Util.Collection arg0)
         {
-            return SExecute<Java.Util.Collection>("invokeAll", arg0);
+            return SExecute<Java.Util.Collection>(LocalClazz, "invokeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
@@ -94,7 +94,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0, object arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalClazz, "adapt", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -103,7 +103,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Util.Concurrent.Callable arg0)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalClazz, "adapt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
@@ -112,14 +112,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalClazz, "adapt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
         /// </summary>
         public static void HelpQuiesce()
         {
-            SExecute("helpQuiesce");
+            SExecute(LocalClazz, "helpQuiesce");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask arg0, Java.Util.Concurrent.ForkJoinTask arg1)
         {
-            SExecute("invokeAll", arg0, arg1);
+            SExecute(LocalClazz, "invokeAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -136,7 +136,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask[] arg0)
         {
-            if (arg0.Length == 0) SExecute("invokeAll"); else SExecute("invokeAll", arg0);
+            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
         }
         
         #endregion
@@ -359,28 +359,28 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static bool InForkJoinPool
         {
-            get { return SExecute<bool>("inForkJoinPool"); }
+            get { return SExecute<bool>(LocalClazz, "inForkJoinPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool Pool
         {
-            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>("getPool"); }
+            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>(LocalClazz, "getPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/> 
         /// </summary>
         public static int QueuedTaskCount
         {
-            get { return SExecute<int>("getQueuedTaskCount"); }
+            get { return SExecute<int>(LocalClazz, "getQueuedTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/> 
         /// </summary>
         public static int SurplusQueuedTaskCount
         {
-            get { return SExecute<int>("getSurplusQueuedTaskCount"); }
+            get { return SExecute<int>(LocalClazz, "getSurplusQueuedTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
@@ -389,7 +389,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> InvokeAll<T>(Java.Util.Collection<T> arg0)
         {
-            return SExecute<Java.Util.Collection<T>>("invokeAll", arg0);
+            return SExecute<Java.Util.Collection<T>>(LocalClazz, "invokeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
@@ -399,7 +399,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>("adapt", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalClazz, "adapt", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -408,7 +408,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T, Arg0ExtendsT>(Java.Util.Concurrent.Callable<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>("adapt", arg0);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalClazz, "adapt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
@@ -417,14 +417,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject> Adapt<ReturnExtendsobject>(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject>>("adapt", arg0);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject>>(LocalClazz, "adapt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
         /// </summary>
         public static void HelpQuiesce()
         {
-            SExecute("helpQuiesce");
+            SExecute(LocalClazz, "helpQuiesce");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
@@ -433,7 +433,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject> arg0, Java.Util.Concurrent.ForkJoinTask<Arg1Extendsobject> arg1)
         {
-            SExecute("invokeAll", arg0, arg1);
+            SExecute(LocalClazz, "invokeAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -441,7 +441,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll<Arg0Extendsobject>(params Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) SExecute("invokeAll"); else SExecute("invokeAll", arg0);
+            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
         }
         
         #endregion

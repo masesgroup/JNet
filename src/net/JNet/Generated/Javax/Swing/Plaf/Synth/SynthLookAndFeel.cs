@@ -46,7 +46,7 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.SynthStyleFactory StyleFactory
         {
-            get { return SExecute<Javax.Swing.Plaf.Synth.SynthStyleFactory>("getStyleFactory"); } set { SExecute("setStyleFactory", value); }
+            get { return SExecute<Javax.Swing.Plaf.Synth.SynthStyleFactory>(LocalClazz, "getStyleFactory"); } set { SExecute(LocalClazz, "setStyleFactory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#createUI(javax.swing.JComponent)"/>
@@ -55,7 +55,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
-            return SExecute<Javax.Swing.Plaf.ComponentUI>("createUI", arg0);
+            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalClazz, "createUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getRegion(javax.swing.JComponent)"/>
@@ -64,7 +64,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.Region"/></returns>
         public static Javax.Swing.Plaf.Synth.Region GetRegion(Javax.Swing.JComponent arg0)
         {
-            return SExecute<Javax.Swing.Plaf.Synth.Region>("getRegion", arg0);
+            return SExecute<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "getRegion", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
         public static Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
-            return SExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", arg0, arg1);
+            return SExecute<Javax.Swing.Plaf.Synth.SynthStyle>(LocalClazz, "getStyle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#updateStyles(java.awt.Component)"/>
@@ -82,7 +82,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public static void UpdateStyles(Java.Awt.Component arg0)
         {
-            SExecute("updateStyles", arg0);
+            SExecute(LocalClazz, "updateStyles", arg0);
         }
         
         #endregion

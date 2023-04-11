@@ -54,7 +54,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet GetInstance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>("getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>(LocalClazz, "getInstance"); }
         }
         
         #endregion

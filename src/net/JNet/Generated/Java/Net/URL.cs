@@ -117,7 +117,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
         public static void SetURLStreamHandlerFactory(Java.Net.URLStreamHandlerFactory arg0)
         {
-            SExecute("setURLStreamHandlerFactory", arg0);
+            SExecute(LocalClazz, "setURLStreamHandlerFactory", arg0);
         }
         
         #endregion
@@ -238,7 +238,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public object GetContent<Arg0Extendsobject>(Java.Lang.Class arg0)
         {
-            return IExecute("getContent", arg0);
+            return IExecute("getContent", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>

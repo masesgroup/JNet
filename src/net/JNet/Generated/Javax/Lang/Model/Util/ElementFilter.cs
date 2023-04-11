@@ -48,7 +48,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>("constructorsIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalClazz, "constructorsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.lang.Iterable)"/>
@@ -57,7 +57,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>("methodsIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalClazz, "methodsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.lang.Iterable)"/>
@@ -66,7 +66,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement>>("modulesIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement>>(LocalClazz, "modulesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#exportsIn(java.lang.Iterable)"/>
@@ -75,7 +75,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective> ExportsIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective>>("exportsIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective>>(LocalClazz, "exportsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#opensIn(java.lang.Iterable)"/>
@@ -84,7 +84,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective> OpensIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective>>("opensIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective>>(LocalClazz, "opensIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#providesIn(java.lang.Iterable)"/>
@@ -93,7 +93,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective> ProvidesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective>>("providesIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective>>(LocalClazz, "providesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#requiresIn(java.lang.Iterable)"/>
@@ -102,7 +102,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective> RequiresIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective>>("requiresIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective>>(LocalClazz, "requiresIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#usesIn(java.lang.Iterable)"/>
@@ -111,7 +111,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective> UsesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective>>("usesIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective>>(LocalClazz, "usesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.lang.Iterable)"/>
@@ -120,7 +120,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.PackageElement>>("packagesIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.PackageElement>>(LocalClazz, "packagesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.lang.Iterable)"/>
@@ -129,7 +129,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.TypeElement>>("typesIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.TypeElement>>(LocalClazz, "typesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.lang.Iterable)"/>
@@ -138,7 +138,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.List<Javax.Lang.Model.Element.VariableElement>>("fieldsIn", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.VariableElement>>(LocalClazz, "fieldsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#constructorsIn(java.util.Set)"/>
@@ -147,7 +147,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>("constructorsIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalClazz, "constructorsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.util.Set)"/>
@@ -156,7 +156,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>("methodsIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalClazz, "methodsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.util.Set)"/>
@@ -165,7 +165,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ModuleElement>>("modulesIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ModuleElement>>(LocalClazz, "modulesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.util.Set)"/>
@@ -174,7 +174,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.PackageElement>>("packagesIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.PackageElement>>(LocalClazz, "packagesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.util.Set)"/>
@@ -183,7 +183,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.TypeElement>>("typesIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.TypeElement>>(LocalClazz, "typesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.util.Set)"/>
@@ -192,7 +192,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
-            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>("fieldsIn", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>(LocalClazz, "fieldsIn", arg0);
         }
         
         #endregion

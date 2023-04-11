@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Nio.Channels.Spi
 {
     #region AbstractInterruptibleChannel
@@ -37,6 +39,8 @@ namespace Java.Nio.Channels.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractInterruptibleChannel(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.AbstractInterruptibleChannel");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractSelectableChannel(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.AbstractSelectableChannel");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Nio.Channels.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractSelectionKey(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.AbstractSelectionKey");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractSelector(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.AbstractSelector");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -202,6 +212,8 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AsynchronousChannelProvider(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.AsynchronousChannelProvider");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -242,6 +254,8 @@ namespace Java.Nio.Channels.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SelectorProvider(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.channels.spi.SelectorProvider");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -64,7 +64,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.CharBuffer>("allocate", arg0);
+            return SExecute<Java.Nio.CharBuffer>(LocalClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(char[],int,int)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.CharBuffer>("wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.CharBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(char[])"/>
@@ -84,7 +84,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0)
         {
-            return SExecute<Java.Nio.CharBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.CharBuffer>(LocalClazz, "wrap", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(java.lang.CharSequence,int,int)"/>
@@ -95,7 +95,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.CharBuffer>("wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.CharBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(java.lang.CharSequence)"/>
@@ -104,7 +104,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Nio.CharBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.CharBuffer>(LocalClazz, "wrap", arg0);
         }
         
         #endregion
@@ -198,7 +198,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(char[] arg0)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0);
+            return IExecute<Java.Nio.CharBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(java.lang.String)"/>
@@ -306,7 +306,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Get(char[] arg0)
         {
-            return IExecute<Java.Nio.CharBuffer>("get", arg0);
+            return IExecute<Java.Nio.CharBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char[],int,int)"/>

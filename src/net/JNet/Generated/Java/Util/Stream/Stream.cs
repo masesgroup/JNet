@@ -46,7 +46,7 @@ namespace Java.Util.Stream
         /// </summary>
         public static Java.Util.Stream.Stream Empty
         {
-            get { return SExecute<Java.Util.Stream.Stream>("empty"); }
+            get { return SExecute<Java.Util.Stream.Stream>(LocalClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
@@ -56,7 +56,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Concat(Java.Util.Stream.Stream arg0, Java.Util.Stream.Stream arg1)
         {
-            return SExecute<Java.Util.Stream.Stream>("concat", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "concat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -65,7 +65,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Generate(Java.Util.Function.Supplier arg0)
         {
-            return SExecute<Java.Util.Stream.Stream>("generate", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.Predicate,java.util.function.UnaryOperator)"/>
@@ -76,7 +76,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Iterate(object arg0, Java.Util.Function.Predicate arg1, Java.Util.Function.UnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.Stream>("iterate", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.UnaryOperator)"/>
@@ -86,7 +86,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Iterate(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.Stream>("iterate", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "iterate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object[])"/>
@@ -95,7 +95,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Of(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream>("of"); else return SExecute<Java.Util.Stream.Stream>("of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object)"/>
@@ -104,7 +104,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Of(object arg0)
         {
-            return SExecute<Java.Util.Stream.Stream>("of", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#ofNullable(java.lang.Object)"/>
@@ -113,7 +113,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream OfNullable(object arg0)
         {
-            return SExecute<Java.Util.Stream.Stream>("ofNullable", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalClazz, "ofNullable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
@@ -122,7 +122,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
         public static Java.Util.Stream.Stream.Builder BuilderMethod()
         {
-            return SExecute<Java.Util.Stream.Stream.Builder>("builder");
+            return SExecute<Java.Util.Stream.Stream.Builder>(LocalClazz, "builder");
         }
         
         #endregion
@@ -465,7 +465,7 @@ namespace Java.Util.Stream
         /// </summary>
         public static Java.Util.Stream.Stream<T> Empty
         {
-            get { return SExecute<Java.Util.Stream.Stream<T>>("empty"); }
+            get { return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
@@ -475,7 +475,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Concat<Arg0ExtendsT, Arg1ExtendsT>(Java.Util.Stream.Stream<Arg0ExtendsT> arg0, Java.Util.Stream.Stream<Arg1ExtendsT> arg1) where Arg0ExtendsT: T where Arg1ExtendsT: T
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("concat", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "concat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -484,7 +484,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Generate<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("generate", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.Predicate,java.util.function.UnaryOperator)"/>
@@ -495,7 +495,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Iterate<Arg1objectSuperT>(T arg0, Java.Util.Function.Predicate<Arg1objectSuperT> arg1, Java.Util.Function.UnaryOperator<T> arg2) where Arg1objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("iterate", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.UnaryOperator)"/>
@@ -505,7 +505,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Iterate(T arg0, Java.Util.Function.UnaryOperator<T> arg1)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("iterate", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "iterate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object[])"/>
@@ -514,7 +514,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Of(params T[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream<T>>("of"); else return SExecute<Java.Util.Stream.Stream<T>>("of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "of"); else return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object)"/>
@@ -523,7 +523,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Of(T arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("of", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#ofNullable(java.lang.Object)"/>
@@ -532,7 +532,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> OfNullable(T arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>("ofNullable", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "ofNullable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
@@ -541,7 +541,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
         public static Java.Util.Stream.Stream.Builder<T> BuilderMethod()
         {
-            return SExecute<Java.Util.Stream.Stream.Builder<T>>("builder");
+            return SExecute<Java.Util.Stream.Stream.Builder<T>>(LocalClazz, "builder");
         }
         
         #endregion

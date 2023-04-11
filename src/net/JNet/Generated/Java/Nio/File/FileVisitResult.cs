@@ -62,7 +62,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.FileVisitResult[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.FileVisitResult>("values"); }
+            get { return SExecuteArray<Java.Nio.File.FileVisitResult>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         public static Java.Nio.File.FileVisitResult ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.FileVisitResult>("valueOf", arg0);
+            return SExecute<Java.Nio.File.FileVisitResult>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

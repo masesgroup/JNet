@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open()
         {
-            return SExecute<Java.Nio.Channels.DatagramChannel>("open");
+            return SExecute<Java.Nio.Channels.DatagramChannel>(LocalClazz, "open");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#open(java.net.ProtocolFamily)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open(Java.Net.ProtocolFamily arg0)
         {
-            return SExecute<Java.Nio.Channels.DatagramChannel>("open", arg0);
+            return SExecute<Java.Nio.Channels.DatagramChannel>(LocalClazz, "open", arg0);
         }
         
         #endregion
@@ -199,7 +199,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("read", arg0);
+            return IExecute<long>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[])"/>
@@ -209,7 +209,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("write", arg0);
+            return IExecute<long>("write", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#bind(java.net.SocketAddress)"/>

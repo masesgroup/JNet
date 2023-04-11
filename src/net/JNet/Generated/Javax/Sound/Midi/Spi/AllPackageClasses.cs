@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Sound.Midi.Spi
 {
     #region MidiDeviceProvider
@@ -37,6 +39,8 @@ namespace Javax.Sound.Midi.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MidiDeviceProvider(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.midi.spi.MidiDeviceProvider");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Sound.Midi.Spi
         /// </summary>
         public MidiFileReader(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.midi.spi.MidiFileReader");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Sound.Midi.Spi
         /// </summary>
         public MidiFileWriter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.midi.spi.MidiFileWriter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Javax.Sound.Midi.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SoundbankReader(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.midi.spi.SoundbankReader");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

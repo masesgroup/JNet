@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Time.Chrono.MinguoEra[] Values
         {
-            get { return SExecuteArray<Java.Time.Chrono.MinguoEra>("values"); }
+            get { return SExecuteArray<Java.Time.Chrono.MinguoEra>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#of(int)"/>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra Of(int arg0)
         {
-            return SExecute<Java.Time.Chrono.MinguoEra>("of", arg0);
+            return SExecute<Java.Time.Chrono.MinguoEra>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#valueOf(java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Chrono.MinguoEra>("valueOf", arg0);
+            return SExecute<Java.Time.Chrono.MinguoEra>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

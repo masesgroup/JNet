@@ -115,7 +115,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void AddIssuerName(byte[] arg0)
         {
-            IExecute("addIssuerName", arg0);
+            IExecute("addIssuerName", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>

@@ -152,7 +152,7 @@ namespace Javax.Net.Ssl
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus[] Values
             {
-                get { return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("values"); }
+                get { return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#valueOf(java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Javax.Net.Ssl
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus ValueOf(string arg0)
             {
-                return SExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("valueOf", arg0);
+                return SExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion
@@ -211,7 +211,7 @@ namespace Javax.Net.Ssl
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status[] Values
             {
-                get { return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>("values"); }
+                get { return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#valueOf(java.lang.String)"/>
@@ -220,7 +220,7 @@ namespace Javax.Net.Ssl
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status ValueOf(string arg0)
             {
-                return SExecute<Javax.Net.Ssl.SSLEngineResult.Status>("valueOf", arg0);
+                return SExecute<Javax.Net.Ssl.SSLEngineResult.Status>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

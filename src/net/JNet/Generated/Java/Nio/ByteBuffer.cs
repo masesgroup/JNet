@@ -52,7 +52,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public static Java.Nio.ByteBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.ByteBuffer>("allocate", arg0);
+            return SExecute<Java.Nio.ByteBuffer>(LocalClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#allocateDirect(int)"/>
@@ -61,7 +61,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public static Java.Nio.ByteBuffer AllocateDirect(int arg0)
         {
-            return SExecute<Java.Nio.ByteBuffer>("allocateDirect", arg0);
+            return SExecute<Java.Nio.ByteBuffer>(LocalClazz, "allocateDirect", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[],int,int)"/>
@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public static Java.Nio.ByteBuffer Wrap(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.ByteBuffer>("wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.ByteBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[])"/>
@@ -81,7 +81,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public static Java.Nio.ByteBuffer Wrap(byte[] arg0)
         {
-            return SExecute<Java.Nio.ByteBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.ByteBuffer>(LocalClazz, "wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -425,7 +425,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Put(byte[] arg0)
         {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0);
+            return IExecute<Java.Nio.ByteBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order()"/>
@@ -481,7 +481,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Get(byte[] arg0)
         {
-            return IExecute<Java.Nio.ByteBuffer>("get", arg0);
+            return IExecute<Java.Nio.ByteBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte[],int,int)"/>

@@ -58,14 +58,14 @@ namespace Java.Util.Prefs
         /// </summary>
         public static Java.Util.Prefs.Preferences SystemRoot
         {
-            get { return SExecute<Java.Util.Prefs.Preferences>("systemRoot"); }
+            get { return SExecute<Java.Util.Prefs.Preferences>(LocalClazz, "systemRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/> 
         /// </summary>
         public static Java.Util.Prefs.Preferences UserRoot
         {
-            get { return SExecute<Java.Util.Prefs.Preferences>("userRoot"); }
+            get { return SExecute<Java.Util.Prefs.Preferences>(LocalClazz, "userRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemNodeForPackage(java.lang.Class)"/>
@@ -74,7 +74,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences SystemNodeForPackage(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.Prefs.Preferences>("systemNodeForPackage", arg0);
+            return SExecute<Java.Util.Prefs.Preferences>(LocalClazz, "systemNodeForPackage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userNodeForPackage(java.lang.Class)"/>
@@ -83,7 +83,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences UserNodeForPackage(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.Prefs.Preferences>("userNodeForPackage", arg0);
+            return SExecute<Java.Util.Prefs.Preferences>(LocalClazz, "userNodeForPackage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream)"/>
@@ -93,7 +93,7 @@ namespace Java.Util.Prefs
         /// <exception cref="Java.Util.Prefs.InvalidPreferencesFormatException"/>
         public static void ImportPreferences(Java.Io.InputStream arg0)
         {
-            SExecute("importPreferences", arg0);
+            SExecute(LocalClazz, "importPreferences", arg0);
         }
         
         #endregion

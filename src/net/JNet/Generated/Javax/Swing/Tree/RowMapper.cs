@@ -52,7 +52,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            return IExecuteArray<int>("getRowsForPaths", arg0);
+            return IExecuteArray<int>("getRowsForPaths", new object[] { arg0 });
         }
         
         #endregion

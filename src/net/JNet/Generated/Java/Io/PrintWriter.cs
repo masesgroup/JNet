@@ -220,7 +220,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Print(char[] arg0)
         {
-            IExecute("print", arg0);
+            IExecute("print", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(double)"/>
@@ -299,7 +299,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Println(char[] arg0)
         {
-            IExecute("println", arg0);
+            IExecute("println", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(double)"/>

@@ -48,7 +48,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="int"/></returns>
         public static int GetIndexOfSize(float arg0)
         {
-            return SExecute<int>("getIndexOfSize", arg0);
+            return SExecute<int>(LocalClazz, "getIndexOfSize", arg0);
         }
         
         #endregion

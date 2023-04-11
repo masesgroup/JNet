@@ -73,7 +73,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteArray<object>("toArray", arg0);
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#add(java.lang.Object)"/>

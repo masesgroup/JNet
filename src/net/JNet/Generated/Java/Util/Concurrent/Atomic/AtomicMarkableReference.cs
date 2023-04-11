@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get(bool[] arg0)
         {
-            return IExecute("get", arg0);
+            return IExecute("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="V"/></returns>
         public V Get(bool[] arg0)
         {
-            return IExecute<V>("get", arg0);
+            return IExecute<V>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>

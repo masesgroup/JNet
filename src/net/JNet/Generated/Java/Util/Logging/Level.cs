@@ -89,7 +89,7 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Util.Logging.Level Parse(string arg0)
         {
-            return SExecute<Java.Util.Logging.Level>("parse", arg0);
+            return SExecute<Java.Util.Logging.Level>(LocalClazz, "parse", arg0);
         }
         
         #endregion

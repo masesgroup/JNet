@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
     #region C14NMethodParameterSpec
@@ -37,6 +39,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public C14NMethodParameterSpec(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.C14NMethodParameterSpec");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public DigestMethodParameterSpec(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.DigestMethodParameterSpec");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ExcC14NParameterSpec(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.ExcC14NParameterSpec");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public HMACParameterSpec(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.HMACParameterSpec");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SignatureMethodParameterSpec(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public TransformParameterSpec(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.TransformParameterSpec");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPathFilter2ParameterSpec(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public XPathFilterParameterSpec(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.XPathFilterParameterSpec");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -366,6 +384,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public XPathType(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.XPathType");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -402,6 +422,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Filter(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.XPathType$Filter");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -446,6 +468,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XSLTTransformParameterSpec(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

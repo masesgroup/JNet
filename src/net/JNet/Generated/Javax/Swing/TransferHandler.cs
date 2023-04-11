@@ -78,21 +78,21 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.Action CopyAction
         {
-            get { return SExecute<Javax.Swing.Action>("getCopyAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getCopyAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCutAction()"/> 
         /// </summary>
         public static Javax.Swing.Action CutAction
         {
-            get { return SExecute<Javax.Swing.Action>("getCutAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getCutAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getPasteAction()"/> 
         /// </summary>
         public static Javax.Swing.Action PasteAction
         {
-            get { return SExecute<Javax.Swing.Action>("getPasteAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getPasteAction"); }
         }
         
         #endregion

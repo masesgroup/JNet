@@ -48,7 +48,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Javax.Xml.Crypto.KeySelector"/></returns>
         public static Javax.Xml.Crypto.KeySelector SingletonKeySelectorMethod(Java.Security.Key arg0)
         {
-            return SExecute<Javax.Xml.Crypto.KeySelector>("singletonKeySelector", arg0);
+            return SExecute<Javax.Xml.Crypto.KeySelector>(LocalClazz, "singletonKeySelector", arg0);
         }
         
         #endregion

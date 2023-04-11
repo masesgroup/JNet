@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt
 {
     #region ActiveEvent
@@ -37,6 +39,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActiveEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ActiveEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Awt
         /// </summary>
         public Adjustable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Adjustable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlphaComposite(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.AlphaComposite");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -177,6 +185,8 @@ namespace Java.Awt
         /// </summary>
         public AWTEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.AWTEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -217,6 +227,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AWTEventMulticaster(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.AWTEventMulticaster");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -275,6 +287,8 @@ namespace Java.Awt
         /// </summary>
         public AWTKeyStroke(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.AWTKeyStroke");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -315,6 +329,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AWTPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.AWTPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -357,6 +373,8 @@ namespace Java.Awt
         /// </summary>
         public BasicStroke(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.BasicStroke");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -397,6 +415,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BorderLayout(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.BorderLayout");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -439,6 +459,8 @@ namespace Java.Awt
         /// </summary>
         public BufferCapabilities(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.BufferCapabilities");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -475,6 +497,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FlipContents(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.BufferCapabilities$FlipContents");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -520,6 +544,8 @@ namespace Java.Awt
         /// </summary>
         public Button(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Button");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -560,6 +586,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Canvas(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Canvas");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -602,6 +630,8 @@ namespace Java.Awt
         /// </summary>
         public CardLayout(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.CardLayout");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -642,6 +672,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Checkbox(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Checkbox");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -684,6 +716,8 @@ namespace Java.Awt
         /// </summary>
         public CheckboxGroup(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.CheckboxGroup");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -724,6 +758,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CheckboxMenuItem(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.CheckboxMenuItem");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -766,6 +802,8 @@ namespace Java.Awt
         /// </summary>
         public Choice(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Choice");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -806,6 +844,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Color(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Color");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -848,6 +888,8 @@ namespace Java.Awt
         /// </summary>
         public Component(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Component");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -884,6 +926,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BaselineResizeBehavior(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Component$BaselineResizeBehavior");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -929,6 +973,8 @@ namespace Java.Awt
         /// </summary>
         public ComponentOrientation(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ComponentOrientation");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -969,6 +1015,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Composite(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Composite");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1011,6 +1059,8 @@ namespace Java.Awt
         /// </summary>
         public CompositeContext(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.CompositeContext");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1051,6 +1101,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Container(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Container");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1093,6 +1145,8 @@ namespace Java.Awt
         /// </summary>
         public ContainerOrderFocusTraversalPolicy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ContainerOrderFocusTraversalPolicy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1133,6 +1187,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Cursor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Cursor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1175,6 +1231,8 @@ namespace Java.Awt
         /// </summary>
         public DefaultFocusTraversalPolicy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.DefaultFocusTraversalPolicy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1215,6 +1273,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DefaultKeyboardFocusManager(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.DefaultKeyboardFocusManager");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1257,6 +1317,8 @@ namespace Java.Awt
         /// </summary>
         public Desktop(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Desktop");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1293,6 +1355,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Action(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Desktop$Action");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1338,6 +1402,8 @@ namespace Java.Awt
         /// </summary>
         public Dialog(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Dialog");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1374,6 +1440,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ModalExclusionType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Dialog$ModalExclusionType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1414,6 +1482,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ModalityType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Dialog$ModalityType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1459,6 +1529,8 @@ namespace Java.Awt
         /// </summary>
         public Dimension(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Dimension");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1499,6 +1571,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DisplayMode(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.DisplayMode");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1541,6 +1615,8 @@ namespace Java.Awt
         /// </summary>
         public EventQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.EventQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1581,6 +1657,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileDialog(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.FileDialog");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1623,6 +1701,8 @@ namespace Java.Awt
         /// </summary>
         public FlowLayout(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.FlowLayout");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1664,6 +1744,8 @@ namespace Java.Awt
         /// </summary>
         public FocusTraversalPolicy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.FocusTraversalPolicy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1704,6 +1786,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Font(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Font");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1762,6 +1846,8 @@ namespace Java.Awt
         /// </summary>
         public FontMetrics(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.FontMetrics");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1802,6 +1888,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Frame(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Frame");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1844,6 +1932,8 @@ namespace Java.Awt
         /// </summary>
         public GradientPaint(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GradientPaint");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1884,6 +1974,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Graphics(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Graphics");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1926,6 +2018,8 @@ namespace Java.Awt
         /// </summary>
         public Graphics2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Graphics2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1966,6 +2060,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GraphicsConfigTemplate(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GraphicsConfigTemplate");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2008,6 +2104,8 @@ namespace Java.Awt
         /// </summary>
         public GraphicsConfiguration(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GraphicsConfiguration");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2049,6 +2147,8 @@ namespace Java.Awt
         /// </summary>
         public GraphicsDevice(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GraphicsDevice");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2085,6 +2185,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WindowTranslucency(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.GraphicsDevice$WindowTranslucency");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2130,6 +2232,8 @@ namespace Java.Awt
         /// </summary>
         public GraphicsEnvironment(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GraphicsEnvironment");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2170,6 +2274,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GridBagConstraints(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GridBagConstraints");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2212,6 +2318,8 @@ namespace Java.Awt
         /// </summary>
         public GridBagLayout(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GridBagLayout");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2253,6 +2361,8 @@ namespace Java.Awt
         /// </summary>
         public GridBagLayoutInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GridBagLayoutInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2293,6 +2403,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GridLayout(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.GridLayout");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2367,6 +2479,8 @@ namespace Java.Awt
         /// </summary>
         public Image(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Image");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2407,6 +2521,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageCapabilities(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ImageCapabilities");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2449,6 +2565,8 @@ namespace Java.Awt
         /// </summary>
         public Insets(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Insets");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2489,6 +2607,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ItemSelectable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ItemSelectable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2531,6 +2651,8 @@ namespace Java.Awt
         /// </summary>
         public JobAttributes(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2567,6 +2689,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DefaultSelectionType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes$DefaultSelectionType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2608,6 +2732,8 @@ namespace Java.Awt
             /// </summary>
             public DestinationType(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes$DestinationType");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -2647,6 +2773,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DialogType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes$DialogType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2688,6 +2816,8 @@ namespace Java.Awt
             /// </summary>
             public MultipleDocumentHandlingType(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes$MultipleDocumentHandlingType");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -2727,6 +2857,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SidesType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.JobAttributes$SidesType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2772,6 +2904,8 @@ namespace Java.Awt
         /// </summary>
         public KeyboardFocusManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.KeyboardFocusManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2812,6 +2946,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyEventDispatcher(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.KeyEventDispatcher");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2854,6 +2990,8 @@ namespace Java.Awt
         /// </summary>
         public KeyEventPostProcessor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.KeyEventPostProcessor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2894,6 +3032,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Label(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Label");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2936,6 +3076,8 @@ namespace Java.Awt
         /// </summary>
         public LayoutManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.LayoutManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2976,6 +3118,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LayoutManager2(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.LayoutManager2");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3018,6 +3162,8 @@ namespace Java.Awt
         /// </summary>
         public LinearGradientPaint(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.LinearGradientPaint");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3058,6 +3204,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public List(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.List");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3100,6 +3248,8 @@ namespace Java.Awt
         /// </summary>
         public MediaTracker(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MediaTracker");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3140,6 +3290,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Menu(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Menu");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3182,6 +3334,8 @@ namespace Java.Awt
         /// </summary>
         public MenuBar(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MenuBar");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3222,6 +3376,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MenuComponent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MenuComponent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3264,6 +3420,8 @@ namespace Java.Awt
         /// </summary>
         public MenuContainer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MenuContainer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3304,6 +3462,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MenuItem(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MenuItem");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3346,6 +3506,8 @@ namespace Java.Awt
         /// </summary>
         public MenuShortcut(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MenuShortcut");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3386,6 +3548,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MouseInfo(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MouseInfo");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3428,6 +3592,8 @@ namespace Java.Awt
         /// </summary>
         public MultipleGradientPaint(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.MultipleGradientPaint");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3464,6 +3630,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ColorSpaceType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.MultipleGradientPaint$ColorSpaceType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3504,6 +3672,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CycleMethod(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.MultipleGradientPaint$CycleMethod");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3549,6 +3719,8 @@ namespace Java.Awt
         /// </summary>
         public PageAttributes(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3585,6 +3757,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ColorType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes$ColorType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3626,6 +3800,8 @@ namespace Java.Awt
             /// </summary>
             public MediaType(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes$MediaType");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -3665,6 +3841,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OrientationRequestedType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes$OrientationRequestedType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3706,6 +3884,8 @@ namespace Java.Awt
             /// </summary>
             public OriginType(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes$OriginType");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -3745,6 +3925,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PrintQualityType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.PageAttributes$PrintQualityType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3790,6 +3972,8 @@ namespace Java.Awt
         /// </summary>
         public Paint(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Paint");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3830,6 +4014,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PaintContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PaintContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3872,6 +4058,8 @@ namespace Java.Awt
         /// </summary>
         public Panel(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Panel");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3912,6 +4100,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Point(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Point");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -3954,6 +4144,8 @@ namespace Java.Awt
         /// </summary>
         public PointerInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PointerInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -3994,6 +4186,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Polygon(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Polygon");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4036,6 +4230,8 @@ namespace Java.Awt
         /// </summary>
         public PopupMenu(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PopupMenu");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4076,6 +4272,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrintGraphics(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PrintGraphics");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4118,6 +4316,8 @@ namespace Java.Awt
         /// </summary>
         public PrintJob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.PrintJob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4158,6 +4358,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RadialGradientPaint(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.RadialGradientPaint");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4200,6 +4402,8 @@ namespace Java.Awt
         /// </summary>
         public Rectangle(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Rectangle");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4241,6 +4445,8 @@ namespace Java.Awt
         /// </summary>
         public RenderingHints(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.RenderingHints");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4277,6 +4483,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Key(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.RenderingHints$Key");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4322,6 +4530,8 @@ namespace Java.Awt
         /// </summary>
         public Robot(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Robot");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4362,6 +4572,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Scrollbar(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Scrollbar");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4404,6 +4616,8 @@ namespace Java.Awt
         /// </summary>
         public ScrollPane(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ScrollPane");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4444,6 +4658,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScrollPaneAdjustable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.ScrollPaneAdjustable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4486,6 +4702,8 @@ namespace Java.Awt
         /// </summary>
         public SecondaryLoop(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.SecondaryLoop");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4526,6 +4744,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Shape(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Shape");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4568,6 +4788,8 @@ namespace Java.Awt
         /// </summary>
         public SplashScreen(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.SplashScreen");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4608,6 +4830,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Stroke(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Stroke");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4650,6 +4874,8 @@ namespace Java.Awt
         /// </summary>
         public SystemColor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.SystemColor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4690,6 +4916,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SystemTray(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.SystemTray");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4732,6 +4960,8 @@ namespace Java.Awt
         /// </summary>
         public Taskbar(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Taskbar");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4768,6 +4998,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Feature(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Taskbar$Feature");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4808,6 +5040,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public State(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Taskbar$State");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4853,6 +5087,8 @@ namespace Java.Awt
         /// </summary>
         public TextArea(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.TextArea");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4893,6 +5129,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextComponent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.TextComponent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -4935,6 +5173,8 @@ namespace Java.Awt
         /// </summary>
         public TextField(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.TextField");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -4975,6 +5215,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TexturePaint(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.TexturePaint");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -5017,6 +5259,8 @@ namespace Java.Awt
         /// </summary>
         public Toolkit(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Toolkit");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -5057,6 +5301,8 @@ namespace Java.Awt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Transparency(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Transparency");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -5099,6 +5345,8 @@ namespace Java.Awt
         /// </summary>
         public TrayIcon(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.TrayIcon");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -5135,6 +5383,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MessageType(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.TrayIcon$MessageType");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -5180,6 +5430,8 @@ namespace Java.Awt
         /// </summary>
         public Window(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.Window");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -5216,6 +5468,8 @@ namespace Java.Awt
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.Window$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

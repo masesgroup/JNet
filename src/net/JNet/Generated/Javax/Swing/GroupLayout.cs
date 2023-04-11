@@ -232,7 +232,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(params Java.Awt.Component[] arg0)
         {
-            if (arg0.Length == 0) IExecute("linkSize"); else IExecute("linkSize", arg0);
+            if (arg0.Length == 0) IExecute("linkSize", new object[] { arg0 }); else IExecute("linkSize", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -317,7 +317,7 @@ namespace Javax.Swing
             /// </summary>
             public static Javax.Swing.GroupLayout.Alignment[] Values
             {
-                get { return SExecuteArray<Javax.Swing.GroupLayout.Alignment>("values"); }
+                get { return SExecuteArray<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#valueOf(java.lang.String)"/>
@@ -326,7 +326,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.Alignment"/></returns>
             public static Javax.Swing.GroupLayout.Alignment ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.GroupLayout.Alignment>("valueOf", arg0);
+                return SExecute<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

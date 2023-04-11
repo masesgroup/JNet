@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Rmi.Server.ObjID Read(Java.Io.ObjectInput arg0)
         {
-            return SExecute<Java.Rmi.Server.ObjID>("read", arg0);
+            return SExecute<Java.Rmi.Server.ObjID>(LocalClazz, "read", arg0);
         }
         
         #endregion

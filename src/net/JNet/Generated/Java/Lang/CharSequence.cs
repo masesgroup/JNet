@@ -49,7 +49,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<int>("compare", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
         
         #endregion

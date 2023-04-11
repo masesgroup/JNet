@@ -169,7 +169,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetDescriptors(Javax.Management.Descriptor[] arg0)
         {
-            IExecute("setDescriptors", arg0);
+            IExecute("setDescriptors", new object[] { arg0 });
         }
         
         #endregion

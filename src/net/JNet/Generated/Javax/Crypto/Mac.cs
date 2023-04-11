@@ -55,7 +55,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.Mac GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Crypto.Mac>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Mac>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -66,7 +66,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.Mac GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.Mac>("getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Mac>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getInstance(java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.Mac GetInstance(string arg0)
         {
-            return SExecute<Javax.Crypto.Mac>("getInstance", arg0);
+            return SExecute<Javax.Crypto.Mac>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion
@@ -121,7 +121,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] DoFinal(byte[] arg0)
         {
-            return IExecuteArray<byte>("doFinal", arg0);
+            return IExecuteArray<byte>("doFinal", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal(byte[],int)"/>
@@ -188,7 +188,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update(byte[] arg0)
         {
-            IExecute("update", arg0);
+            IExecute("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(java.nio.ByteBuffer)"/>

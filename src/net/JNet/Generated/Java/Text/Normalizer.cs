@@ -49,7 +49,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public static bool IsNormalized(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
-            return SExecute<bool>("isNormalized", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isNormalized", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer.Form)"/>
@@ -59,7 +59,7 @@ namespace Java.Text
         /// <returns><see cref="string"/></returns>
         public static string Normalize(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
-            return SExecute<string>("normalize", arg0, arg1);
+            return SExecute<string>(LocalClazz, "normalize", arg0, arg1);
         }
         
         #endregion
@@ -106,7 +106,7 @@ namespace Java.Text
             /// </summary>
             public static Java.Text.Normalizer.Form[] Values
             {
-                get { return SExecuteArray<Java.Text.Normalizer.Form>("values"); }
+                get { return SExecuteArray<Java.Text.Normalizer.Form>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
@@ -115,7 +115,7 @@ namespace Java.Text
             /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
             public static Java.Text.Normalizer.Form ValueOf(string arg0)
             {
-                return SExecute<Java.Text.Normalizer.Form>("valueOf", arg0);
+                return SExecute<Java.Text.Normalizer.Form>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

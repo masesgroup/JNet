@@ -63,7 +63,7 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.UUID RandomUUID
         {
-            get { return SExecute<Java.Util.UUID>("randomUUID"); }
+            get { return SExecute<Java.Util.UUID>(LocalClazz, "randomUUID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#fromString(java.lang.String)"/>
@@ -72,7 +72,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID FromString(string arg0)
         {
-            return SExecute<Java.Util.UUID>("fromString", arg0);
+            return SExecute<Java.Util.UUID>(LocalClazz, "fromString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
@@ -81,7 +81,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID NameUUIDFromBytes(byte[] arg0)
         {
-            return SExecute<Java.Util.UUID>("nameUUIDFromBytes", arg0);
+            return SExecute<Java.Util.UUID>(LocalClazz, "nameUUIDFromBytes", new object[] { arg0 });
         }
         
         #endregion

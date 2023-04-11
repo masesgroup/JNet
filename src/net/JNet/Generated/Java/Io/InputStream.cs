@@ -50,7 +50,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.InputStream NullInputStream
         {
-            get { return SExecute<Java.Io.InputStream>("nullInputStream"); }
+            get { return SExecute<Java.Io.InputStream>(LocalClazz, "nullInputStream"); }
         }
         
         #endregion
@@ -117,7 +117,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(byte[],int,int)"/>

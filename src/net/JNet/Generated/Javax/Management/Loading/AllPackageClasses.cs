@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Management.Loading
 {
     #region ClassLoaderRepository
@@ -37,6 +39,8 @@ namespace Javax.Management.Loading
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ClassLoaderRepository(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.ClassLoaderRepository");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Management.Loading
         /// </summary>
         public MLet(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.MLet");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Management.Loading
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MLetContent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.MLetContent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Management.Loading
         /// </summary>
         public MLetMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.MLetMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -202,6 +212,8 @@ namespace Javax.Management.Loading
         /// </summary>
         public PrivateClassLoader(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.PrivateClassLoader");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -242,6 +254,8 @@ namespace Javax.Management.Loading
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrivateMLet(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.loading.PrivateMLet");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -96,7 +96,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Frame[] Frames
         {
-            get { return SExecuteArray<Java.Awt.Frame>("getFrames"); }
+            get { return SExecuteArray<Java.Awt.Frame>(LocalClazz, "getFrames"); }
         }
         
         #endregion

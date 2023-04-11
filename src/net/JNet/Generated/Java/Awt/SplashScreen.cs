@@ -46,7 +46,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.SplashScreen GetSplashScreen
         {
-            get { return SExecute<Java.Awt.SplashScreen>("getSplashScreen"); }
+            get { return SExecute<Java.Awt.SplashScreen>(LocalClazz, "getSplashScreen"); }
         }
         
         #endregion

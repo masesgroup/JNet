@@ -80,7 +80,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="int"/></returns>
         public static int GetMaskForButton(int arg0)
         {
-            return SExecute<int>("getMaskForButton", arg0);
+            return SExecute<int>(LocalClazz, "getMaskForButton", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersExText(int)"/>
@@ -89,7 +89,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="string"/></returns>
         public static string GetModifiersExText(int arg0)
         {
-            return SExecute<string>("getModifiersExText", arg0);
+            return SExecute<string>(LocalClazz, "getModifiersExText", arg0);
         }
         
         #endregion

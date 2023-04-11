@@ -48,7 +48,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance()
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getInstance");
+            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalClazz, "getInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -59,7 +59,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -69,7 +69,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String)"/>
@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(string arg0)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getInstance", arg0);
+            return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion
@@ -190,7 +190,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData(byte[] arg0)
         {
-            return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", arg0);
+            return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newRetrievalMethod(java.lang.String,java.lang.String,java.util.List)"/>

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Imageio.Stream
 {
     #region FileCacheImageInputStream
@@ -37,6 +39,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileCacheImageInputStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.FileCacheImageInputStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public FileCacheImageOutputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.FileCacheImageOutputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileImageInputStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.FileImageInputStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public FileImageOutputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.FileImageOutputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IIOByteBuffer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.IIOByteBuffer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public ImageInputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.ImageInputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageInputStreamImpl(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.ImageInputStreamImpl");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public ImageOutputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.ImageOutputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageOutputStreamImpl(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.ImageOutputStreamImpl");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public MemoryCacheImageInputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.MemoryCacheImageInputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Javax.Imageio.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MemoryCacheImageOutputStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.imageio.stream.MemoryCacheImageOutputStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

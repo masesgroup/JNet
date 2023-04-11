@@ -48,7 +48,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
         public static Java.Net.Http.HttpRequest.Builder NewBuilder()
         {
-            return SExecute<Java.Net.Http.HttpRequest.Builder>("newBuilder");
+            return SExecute<Java.Net.Http.HttpRequest.Builder>(LocalClazz, "newBuilder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.URI)"/>
@@ -57,7 +57,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
         public static Java.Net.Http.HttpRequest.Builder NewBuilder(Java.Net.URI arg0)
         {
-            return SExecute<Java.Net.Http.HttpRequest.Builder>("newBuilder", arg0);
+            return SExecute<Java.Net.Http.HttpRequest.Builder>(LocalClazz, "newBuilder", arg0);
         }
         
         #endregion
@@ -173,7 +173,7 @@ namespace Java.Net.Http
             /// </summary>
             public static Java.Net.Http.HttpRequest.BodyPublisher NoBody
             {
-                get { return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody"); }
+                get { return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "noBody"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow.Publisher,long)"/>
@@ -183,7 +183,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0, arg1);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "fromPublisher", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow.Publisher)"/>
@@ -192,7 +192,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "fromPublisher", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)"/>
@@ -203,7 +203,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0, arg1, arg2);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofByteArray", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])"/>
@@ -212,7 +212,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofByteArray", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArrays(java.lang.Iterable)"/>
@@ -221,7 +221,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArrays(Java.Lang.Iterable<byte[]> arg0)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArrays", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofByteArrays", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path)"/>
@@ -231,7 +231,7 @@ namespace Java.Net.Http
             /// <exception cref="Java.Io.FileNotFoundException"/>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfFile(Java.Nio.File.Path arg0)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofFile", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofFile", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofInputStream(java.util.function.Supplier)"/>
@@ -240,7 +240,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream<Arg0ExtendsJava_Io_InputStream>(Java.Util.Function.Supplier<Arg0ExtendsJava_Io_InputStream> arg0) where Arg0ExtendsJava_Io_InputStream: Java.Io.InputStream
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofInputStream", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofInputStream", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)"/>
@@ -250,7 +250,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0, arg1);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofString", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)"/>
@@ -259,7 +259,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofString", arg0);
             }
             
             #endregion
@@ -346,7 +346,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Headers(params string[] arg0)
             {
-                if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers"); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", arg0);
+                if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", new object[] { arg0 }); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", new object[] { arg0 }, arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest.BodyPublisher)"/>

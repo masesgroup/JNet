@@ -46,7 +46,7 @@ namespace Javax.Xml.Validation
         /// </summary>
         public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance
         {
-            get { return SExecute<Javax.Xml.Validation.SchemaFactory>("newDefaultInstance"); }
+            get { return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalClazz, "newDefaultInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -57,7 +57,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewInstance(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Javax.Xml.Validation.SchemaFactory>("newInstance", arg0, arg1, arg2);
+            return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalClazz, "newInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String)"/>
@@ -66,7 +66,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewInstance(string arg0)
         {
-            return SExecute<Javax.Xml.Validation.SchemaFactory>("newInstance", arg0);
+            return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalClazz, "newInstance", arg0);
         }
         
         #endregion
@@ -113,7 +113,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source[] arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", arg0);
+            return IExecute<Javax.Xml.Validation.Schema>("newSchema", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#getFeature(java.lang.String)"/>

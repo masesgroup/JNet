@@ -46,14 +46,14 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.SystemTray GetSystemTray
         {
-            get { return SExecute<Java.Awt.SystemTray>("getSystemTray"); }
+            get { return SExecute<Java.Awt.SystemTray>(LocalClazz, "getSystemTray"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#isSupported()"/> 
         /// </summary>
         public static bool IsSupported
         {
-            get { return SExecute<bool>("isSupported"); }
+            get { return SExecute<bool>(LocalClazz, "isSupported"); }
         }
         
         #endregion

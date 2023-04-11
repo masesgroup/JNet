@@ -111,7 +111,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="object"/></param>
         public void AddRow(object[] arg0)
         {
-            IExecute("addRow", arg0);
+            IExecute("addRow", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addRow(java.util.Vector)"/>
@@ -190,12 +190,12 @@ namespace Javax.Swing.Table
             IExecute("setColumnCount", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.util.Vector)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public void SetColumnIdentifiers<Arg0Extendsobject>(Java.Util.Vector<Arg0Extendsobject> arg0)
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetColumnIdentifiers(object[] arg0)
         {
-            IExecute("setColumnIdentifiers", arg0);
+            IExecute("setColumnIdentifiers", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])"/>

@@ -52,7 +52,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.FloatBuffer>("allocate", arg0);
+            return SExecute<Java.Nio.FloatBuffer>(LocalClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[],int,int)"/>
@@ -63,7 +63,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.FloatBuffer>("wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.FloatBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[])"/>
@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0)
         {
-            return SExecute<Java.Nio.FloatBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.FloatBuffer>(LocalClazz, "wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -143,7 +143,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0);
+            return IExecute<Java.Nio.FloatBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compareTo(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0)
         {
-            return IExecute<Java.Nio.FloatBuffer>("get", arg0);
+            return IExecute<Java.Nio.FloatBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float[],int,int)"/>

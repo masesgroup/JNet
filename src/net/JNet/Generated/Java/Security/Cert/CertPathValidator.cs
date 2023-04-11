@@ -46,7 +46,7 @@ namespace Java.Security.Cert
         /// </summary>
         public static string DefaultType
         {
-            get { return SExecute<string>("getDefaultType"); }
+            get { return SExecute<string>(LocalClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -58,7 +58,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertPathValidator GetInstance(string arg0, string arg1)
         {
-            return SExecute<Java.Security.Cert.CertPathValidator>("getInstance", arg0, arg1);
+            return SExecute<Java.Security.Cert.CertPathValidator>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -69,7 +69,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertPathValidator GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Cert.CertPathValidator>("getInstance", arg0, arg1);
+            return SExecute<Java.Security.Cert.CertPathValidator>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertPathValidator GetInstance(string arg0)
         {
-            return SExecute<Java.Security.Cert.CertPathValidator>("getInstance", arg0);
+            return SExecute<Java.Security.Cert.CertPathValidator>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion

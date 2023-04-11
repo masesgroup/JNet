@@ -61,7 +61,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static string ReadUTF(Java.Io.DataInput arg0)
         {
-            return SExecute<string>("readUTF", arg0);
+            return SExecute<string>(LocalClazz, "readUTF", arg0);
         }
         
         #endregion
@@ -175,7 +175,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecute("readFully", arg0);
+            IExecute("readFully", new object[] { arg0 });
         }
         
         #endregion

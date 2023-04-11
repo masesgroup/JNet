@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Time.Zone
 {
     #region ZoneOffsetTransition
@@ -37,6 +39,8 @@ namespace Java.Time.Zone
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ZoneOffsetTransition(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.zone.ZoneOffsetTransition");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Time.Zone
         /// </summary>
         public ZoneOffsetTransitionRule(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.zone.ZoneOffsetTransitionRule");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -115,6 +121,8 @@ namespace Java.Time.Zone
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TimeDefinition(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.time.zone.ZoneOffsetTransitionRule$TimeDefinition");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -159,6 +167,8 @@ namespace Java.Time.Zone
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ZoneRules(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.zone.ZoneRules");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -216,6 +226,8 @@ namespace Java.Time.Zone
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ZoneRulesProvider(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.zone.ZoneRulesProvider");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

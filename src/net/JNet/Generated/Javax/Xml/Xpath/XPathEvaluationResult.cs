@@ -108,7 +108,7 @@ namespace Javax.Xml.Xpath
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values
             {
-                get { return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("values"); }
+                get { return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#getQNameType(java.lang.Class)"/>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Xpath
             /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
             public static Javax.Xml.Namespace.QName GetQNameType(Java.Lang.Class arg0)
             {
-                return SExecute<Javax.Xml.Namespace.QName>("getQNameType", arg0);
+                return SExecute<Javax.Xml.Namespace.QName>(LocalClazz, "getQNameType", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#valueOf(java.lang.String)"/>
@@ -126,7 +126,7 @@ namespace Javax.Xml.Xpath
             /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(string arg0)
             {
-                return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("valueOf", arg0);
+                return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

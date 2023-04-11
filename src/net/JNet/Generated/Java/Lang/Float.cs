@@ -96,7 +96,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinite(float arg0)
         {
-            return SExecute<bool>("isFinite", arg0);
+            return SExecute<bool>(LocalClazz, "isFinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite(float)"/>
@@ -105,7 +105,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsInfinite(float arg0)
         {
-            return SExecute<bool>("isInfinite", arg0);
+            return SExecute<bool>(LocalClazz, "isInfinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN(float)"/>
@@ -114,7 +114,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsNaN(float arg0)
         {
-            return SExecute<bool>("isNaN", arg0);
+            return SExecute<bool>(LocalClazz, "isNaN", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#max(float,float)"/>
@@ -124,7 +124,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
-            return SExecute<float>("max", arg0, arg1);
+            return SExecute<float>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#min(float,float)"/>
@@ -134,7 +134,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
-            return SExecute<float>("min", arg0, arg1);
+            return SExecute<float>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#parseFloat(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float ParseFloat(string arg0)
         {
-            return SExecute<float>("parseFloat", arg0);
+            return SExecute<float>(LocalClazz, "parseFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#sum(float,float)"/>
@@ -154,7 +154,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Sum(float arg0, float arg1)
         {
-            return SExecute<float>("sum", arg0, arg1);
+            return SExecute<float>(LocalClazz, "sum", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compare(float,float)"/>
@@ -164,7 +164,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(float arg0, float arg1)
         {
-            return SExecute<int>("compare", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToIntBits(float)"/>
@@ -173,7 +173,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloatToIntBits(float arg0)
         {
-            return SExecute<int>("floatToIntBits", arg0);
+            return SExecute<int>(LocalClazz, "floatToIntBits", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#hashCode(float)"/>
@@ -182,7 +182,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(float arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>(LocalClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)"/>
@@ -191,7 +191,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float? ValueOf(float arg0)
         {
-            return SExecute<float?>("valueOf", arg0);
+            return SExecute<float?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float? ValueOf(string arg0)
         {
-            return SExecute<float?>("valueOf", arg0);
+            return SExecute<float?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)"/>
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToHexString(float arg0)
         {
-            return SExecute<string>("toHexString", arg0);
+            return SExecute<string>(LocalClazz, "toHexString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toString(float)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(float arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>(LocalClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#intBitsToFloat(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float IntBitsToFloat(int arg0)
         {
-            return SExecute<float>("intBitsToFloat", arg0);
+            return SExecute<float>(LocalClazz, "intBitsToFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToRawIntBits(float)"/>
@@ -237,7 +237,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloatToRawIntBits(float arg0)
         {
-            return SExecute<int>("floatToRawIntBits", arg0);
+            return SExecute<int>(LocalClazz, "floatToRawIntBits", arg0);
         }
         
         #endregion

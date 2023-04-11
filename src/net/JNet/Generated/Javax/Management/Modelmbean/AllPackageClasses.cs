@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Management.Modelmbean
 {
     #region DescriptorSupport
@@ -37,6 +39,8 @@ namespace Javax.Management.Modelmbean
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DescriptorSupport(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.DescriptorSupport");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -135,6 +141,8 @@ namespace Javax.Management.Modelmbean
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ModelMBeanAttributeInfo(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanAttributeInfo");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -177,6 +185,8 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBeanConstructorInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanConstructorInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -217,6 +227,8 @@ namespace Javax.Management.Modelmbean
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ModelMBeanInfo(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanInfo");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -259,6 +271,8 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBeanInfoSupport(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanInfoSupport");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -299,6 +313,8 @@ namespace Javax.Management.Modelmbean
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ModelMBeanNotificationBroadcaster(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanNotificationBroadcaster");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -341,6 +357,8 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBeanNotificationInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanNotificationInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -382,6 +400,8 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBeanOperationInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.ModelMBeanOperationInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -422,6 +442,8 @@ namespace Javax.Management.Modelmbean
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RequiredModelMBean(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.modelmbean.RequiredModelMBean");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

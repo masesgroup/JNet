@@ -82,7 +82,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static void SetSocketFactory(Java.Net.SocketImplFactory arg0)
         {
-            SExecute("setSocketFactory", arg0);
+            SExecute(LocalClazz, "setSocketFactory", arg0);
         }
         
         #endregion

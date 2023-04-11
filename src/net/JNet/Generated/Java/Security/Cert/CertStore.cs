@@ -46,7 +46,7 @@ namespace Java.Security.Cert
         /// </summary>
         public static string DefaultType
         {
-            get { return SExecute<string>("getDefaultType"); }
+            get { return SExecute<string>(LocalClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
@@ -60,7 +60,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1, string arg2)
         {
-            return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1, arg2);
+            return SExecute<Java.Security.Cert.CertStore>(LocalClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)"/>
@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1, arg2);
+            return SExecute<Java.Security.Cert.CertStore>(LocalClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
@@ -85,7 +85,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1)
         {
-            return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1);
+            return SExecute<Java.Security.Cert.CertStore>(LocalClazz, "getInstance", arg0, arg1);
         }
         
         #endregion

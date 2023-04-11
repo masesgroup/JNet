@@ -67,7 +67,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnectorServer NewJMXConnectorServer<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1, Javax.Management.MBeanServer arg2)
         {
-            return SExecute<Javax.Management.Remote.JMXConnectorServer>("newJMXConnectorServer", arg0, arg1, arg2);
+            return SExecute<Javax.Management.Remote.JMXConnectorServer>(LocalClazz, "newJMXConnectorServer", arg0, arg1, arg2);
         }
         
         #endregion

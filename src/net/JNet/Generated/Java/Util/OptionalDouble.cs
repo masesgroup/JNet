@@ -46,7 +46,7 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.OptionalDouble Empty
         {
-            get { return SExecute<Java.Util.OptionalDouble>("empty"); }
+            get { return SExecute<Java.Util.OptionalDouble>(LocalClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#of(double)"/>
@@ -55,7 +55,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public static Java.Util.OptionalDouble Of(double arg0)
         {
-            return SExecute<Java.Util.OptionalDouble>("of", arg0);
+            return SExecute<Java.Util.OptionalDouble>(LocalClazz, "of", arg0);
         }
         
         #endregion

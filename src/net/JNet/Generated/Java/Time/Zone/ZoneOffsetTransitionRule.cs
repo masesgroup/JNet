@@ -60,7 +60,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/></returns>
         public static Java.Time.Zone.ZoneOffsetTransitionRule Of(Java.Time.Month arg0, int arg1, Java.Time.DayOfWeek arg2, Java.Time.LocalTime arg3, bool arg4, Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition arg5, Java.Time.ZoneOffset arg6, Java.Time.ZoneOffset arg7, Java.Time.ZoneOffset arg8)
         {
-            return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         
         #endregion
@@ -175,7 +175,7 @@ namespace Java.Time.Zone
             /// </summary>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition[] Values
             {
-                get { return SExecuteArray<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("values"); }
+                get { return SExecuteArray<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Java.Time.Zone
             /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition ValueOf(string arg0)
             {
-                return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("valueOf", arg0);
+                return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

@@ -147,7 +147,7 @@ namespace Java.Awt.Im.Spi
         /// <param name="arg0"><see cref="Java.Lang.Character.Subset"/></param>
         public void SetCharacterSubsets(Java.Lang.Character.Subset[] arg0)
         {
-            IExecute("setCharacterSubsets", arg0);
+            IExecute("setCharacterSubsets", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCompositionEnabled(boolean)"/>

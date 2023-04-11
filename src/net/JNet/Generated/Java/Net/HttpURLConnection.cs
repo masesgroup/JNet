@@ -186,7 +186,7 @@ namespace Java.Net
         /// </summary>
         public static bool FollowRedirects
         {
-            get { return SExecute<bool>("getFollowRedirects"); } set { SExecute("setFollowRedirects", value); }
+            get { return SExecute<bool>(LocalClazz, "getFollowRedirects"); } set { SExecute(LocalClazz, "setFollowRedirects", value); }
         }
         
         #endregion
