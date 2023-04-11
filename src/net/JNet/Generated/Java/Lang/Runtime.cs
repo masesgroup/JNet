@@ -162,7 +162,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(string[] arg0)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0);
+            return IExecute<Java.Lang.Process>("exec", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#gc()"/>

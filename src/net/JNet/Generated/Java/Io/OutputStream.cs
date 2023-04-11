@@ -105,7 +105,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecute("write", arg0);
+            IExecute("write", new object[] { arg0 });
         }
         
         #endregion

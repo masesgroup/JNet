@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0)
         {
-            return SExecute<Java.Nio.ShortBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.ShortBuffer>("wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -143,7 +143,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0);
+            return IExecute<Java.Nio.ShortBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compareTo(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0)
         {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0);
+            return IExecute<Java.Nio.ShortBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer)"/>

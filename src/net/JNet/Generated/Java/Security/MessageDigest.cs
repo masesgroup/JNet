@@ -125,7 +125,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public byte[] Digest(byte[] arg0)
         {
-            return IExecuteArray<byte>("digest", arg0);
+            return IExecuteArray<byte>("digest", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#update(java.nio.ByteBuffer)"/>
@@ -178,7 +178,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)
         {
-            IExecute("update", arg0);
+            IExecute("update", new object[] { arg0 });
         }
         
         #endregion

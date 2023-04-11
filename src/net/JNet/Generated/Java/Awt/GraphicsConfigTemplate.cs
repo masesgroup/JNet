@@ -77,7 +77,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.GraphicsConfiguration"/></returns>
         public Java.Awt.GraphicsConfiguration GetBestConfiguration(Java.Awt.GraphicsConfiguration[] arg0)
         {
-            return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", arg0);
+            return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", new object[] { arg0 });
         }
         
         #endregion

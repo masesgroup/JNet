@@ -212,7 +212,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArrays(java.lang.Iterable)"/>
@@ -346,7 +346,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Headers(params string[] arg0)
             {
-                if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers"); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", arg0);
+                if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", new object[] { arg0 }); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", new object[] { arg0 }, arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest.BodyPublisher)"/>

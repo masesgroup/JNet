@@ -114,7 +114,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveQuadratic(double[] arg0)
         {
-            return SExecute<int>("solveQuadratic", arg0);
+            return SExecute<int>("solveQuadratic", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>

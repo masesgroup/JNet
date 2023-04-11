@@ -83,7 +83,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)
         {
-            IExecute("update", arg0);
+            IExecute("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html#update(java.nio.ByteBuffer)"/>

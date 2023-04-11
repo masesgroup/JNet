@@ -128,7 +128,7 @@ namespace Java.Util
             /// <returns><see cref="byte"/></returns>
             public byte[] Decode(byte[] arg0)
             {
-                return IExecuteArray<byte>("decode", arg0);
+                return IExecuteArray<byte>("decode", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.lang.String)"/>
@@ -208,7 +208,7 @@ namespace Java.Util
             /// <returns><see cref="byte"/></returns>
             public byte[] Encode(byte[] arg0)
             {
-                return IExecuteArray<byte>("encode", arg0);
+                return IExecuteArray<byte>("encode", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(byte[],byte[])"/>
@@ -236,7 +236,7 @@ namespace Java.Util
             /// <returns><see cref="string"/></returns>
             public string EncodeToString(byte[] arg0)
             {
-                return IExecute<string>("encodeToString", arg0);
+                return IExecute<string>("encodeToString", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(java.nio.ByteBuffer)"/>

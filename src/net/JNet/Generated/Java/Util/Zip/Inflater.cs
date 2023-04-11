@@ -136,7 +136,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Util.Zip.DataFormatException"/>
         public int Inflate(byte[] arg0)
         {
-            return IExecute<int>("inflate", arg0);
+            return IExecute<int>("inflate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)"/>
@@ -178,7 +178,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetDictionary(byte[] arg0)
         {
-            IExecute("setDictionary", arg0);
+            IExecute("setDictionary", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setInput(byte[],int,int)"/>

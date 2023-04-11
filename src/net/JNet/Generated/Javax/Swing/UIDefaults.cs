@@ -315,7 +315,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void PutDefaults(object[] arg0)
         {
-            IExecute("putDefaults", arg0);
+            IExecute("putDefaults", new object[] { arg0 });
         }
         
         #endregion

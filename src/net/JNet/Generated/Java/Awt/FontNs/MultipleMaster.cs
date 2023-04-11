@@ -93,7 +93,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0)
         {
-            return IExecute<Java.Awt.Font>("deriveMMFont", arg0);
+            return IExecute<Java.Awt.Font>("deriveMMFont", new object[] { arg0 });
         }
         
         #endregion

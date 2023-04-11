@@ -93,7 +93,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
         public void AddAll(Javax.Accessibility.AccessibleState[] arg0)
         {
-            IExecute("addAll", arg0);
+            IExecute("addAll", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#clear()"/>

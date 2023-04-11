@@ -187,7 +187,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string CopyValueOf(char[] arg0)
         {
-            return SExecute<string>("copyValueOf", arg0);
+            return SExecute<string>("copyValueOf", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])"/>
@@ -266,7 +266,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ValueOf(char[] arg0)
         {
-            return SExecute<string>("valueOf", arg0);
+            return SExecute<string>("valueOf", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(double)"/>

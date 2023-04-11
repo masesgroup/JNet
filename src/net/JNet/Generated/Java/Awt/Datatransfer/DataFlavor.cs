@@ -137,7 +137,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Awt.Datatransfer.DataFlavor"/></returns>
         public static Java.Awt.Datatransfer.DataFlavor SelectBestTextFlavor(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return SExecute<Java.Awt.Datatransfer.DataFlavor>("selectBestTextFlavor", arg0);
+            return SExecute<Java.Awt.Datatransfer.DataFlavor>("selectBestTextFlavor", new object[] { arg0 });
         }
         
         #endregion

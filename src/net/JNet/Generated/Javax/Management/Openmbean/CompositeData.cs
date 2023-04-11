@@ -93,7 +93,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="object"/></returns>
         public object[] GetAll(string[] arg0)
         {
-            return IExecuteArray<object>("getAll", arg0);
+            return IExecuteArray<object>("getAll", new object[] { arg0 });
         }
         
         #endregion

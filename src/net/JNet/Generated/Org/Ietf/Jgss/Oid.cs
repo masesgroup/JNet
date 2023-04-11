@@ -86,7 +86,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool ContainedIn(Org.Ietf.Jgss.Oid[] arg0)
         {
-            return IExecute<bool>("containedIn", arg0);
+            return IExecute<bool>("containedIn", new object[] { arg0 });
         }
         
         #endregion

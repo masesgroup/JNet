@@ -326,7 +326,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Loop(params Java.Lang.Invoke.MethodHandle[][] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("loop"); else return SExecute<Java.Lang.Invoke.MethodHandle>("loop", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("loop", new object[] { arg0 }); else return SExecute<Java.Lang.Invoke.MethodHandle>("loop", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])"/>
@@ -552,7 +552,7 @@ namespace Java.Lang.Invoke
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Class DefineClass<ReturnExtendsobject>(byte[] arg0)
             {
-                return IExecute<Java.Lang.Class>("defineClass", arg0);
+                return IExecute<Java.Lang.Class>("defineClass", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)"/>

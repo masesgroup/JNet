@@ -81,7 +81,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID NameUUIDFromBytes(byte[] arg0)
         {
-            return SExecute<Java.Util.UUID>("nameUUIDFromBytes", arg0);
+            return SExecute<Java.Util.UUID>("nameUUIDFromBytes", new object[] { arg0 });
         }
         
         #endregion

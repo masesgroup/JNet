@@ -687,7 +687,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetFields(params int[] arg0)
             {
-                if (arg0.Length == 0) return IExecute<Java.Util.Calendar.Builder>("setFields"); else return IExecute<Java.Util.Calendar.Builder>("setFields", arg0);
+                if (arg0.Length == 0) return IExecute<Java.Util.Calendar.Builder>("setFields", new object[] { arg0 }); else return IExecute<Java.Util.Calendar.Builder>("setFields", new object[] { arg0 }, arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(java.util.Date)"/>

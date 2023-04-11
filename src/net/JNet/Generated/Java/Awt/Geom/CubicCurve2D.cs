@@ -118,7 +118,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveCubic(double[] arg0)
         {
-            return SExecute<int>("solveCubic", arg0);
+            return SExecute<int>("solveCubic", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>

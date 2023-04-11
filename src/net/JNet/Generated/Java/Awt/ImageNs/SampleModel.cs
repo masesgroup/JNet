@@ -150,7 +150,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateSubsetSampleModel(int[] arg0)
         {
-            return IExecute<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", arg0);
+            return IExecute<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>

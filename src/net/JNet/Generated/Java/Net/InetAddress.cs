@@ -67,7 +67,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByAddress(byte[] arg0)
         {
-            return SExecute<Java.Net.InetAddress>("getByAddress", arg0);
+            return SExecute<Java.Net.InetAddress>("getByAddress", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[])"/>

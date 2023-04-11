@@ -113,7 +113,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source[] arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", arg0);
+            return IExecute<Javax.Xml.Validation.Schema>("newSchema", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#getFeature(java.lang.String)"/>

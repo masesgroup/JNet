@@ -136,7 +136,7 @@ namespace Java.Security
         /// <exception cref="Java.Io.IOException"/>
         public void Init(byte[] arg0)
         {
-            IExecute("init", arg0);
+            IExecute("init", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(java.security.spec.AlgorithmParameterSpec)"/>

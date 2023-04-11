@@ -369,7 +369,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetColorComponents(float[] arg0)
         {
-            return IExecuteArray<float>("getColorComponents", arg0);
+            return IExecuteArray<float>("getColorComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorComponents(java.awt.color.ColorSpace,float[])"/>
@@ -388,7 +388,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetComponents(float[] arg0)
         {
-            return IExecuteArray<float>("getComponents", arg0);
+            return IExecuteArray<float>("getComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getComponents(java.awt.color.ColorSpace,float[])"/>
@@ -407,7 +407,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetRGBColorComponents(float[] arg0)
         {
-            return IExecuteArray<float>("getRGBColorComponents", arg0);
+            return IExecuteArray<float>("getRGBColorComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGBComponents(float[])"/>
@@ -416,7 +416,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetRGBComponents(float[] arg0)
         {
-            return IExecuteArray<float>("getRGBComponents", arg0);
+            return IExecuteArray<float>("getRGBComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
