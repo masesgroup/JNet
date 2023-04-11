@@ -88,7 +88,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.LdapContext NewInstance(Javax.Naming.Ldap.Control[] arg0)
         {
-            return IExecute<Javax.Naming.Ldap.LdapContext>("newInstance", arg0);
+            return IExecute<Javax.Naming.Ldap.LdapContext>("newInstance", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#reconnect(javax.naming.ldap.Control[])"/>
@@ -97,7 +97,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Reconnect(Javax.Naming.Ldap.Control[] arg0)
         {
-            IExecute("reconnect", arg0);
+            IExecute("reconnect", new object[] { arg0 });
         }
         
         #endregion

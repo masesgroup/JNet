@@ -297,7 +297,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public Java.Time.Format.DateTimeFormatter WithResolverFields(params Java.Time.Temporal.TemporalField[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields"); else return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", new object[] { arg0 }); else return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#withResolverFields(java.util.Set)"/>

@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("read", arg0);
+            return IExecute<long>("read", new object[] { arg0 });
         }
         
         #endregion

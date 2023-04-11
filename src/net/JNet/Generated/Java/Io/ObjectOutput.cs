@@ -89,7 +89,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecute("write", arg0);
+            IExecute("write", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html#write(int)"/>

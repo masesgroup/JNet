@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetAlignedSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
-            return SExecute<Javax.Swing.SizeRequirements>("getAlignedSizeRequirements", arg0);
+            return SExecute<Javax.Swing.SizeRequirements>("getAlignedSizeRequirements", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getTiledSizeRequirements(javax.swing.SizeRequirements[])"/>
@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetTiledSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
-            return SExecute<Javax.Swing.SizeRequirements>("getTiledSizeRequirements", arg0);
+            return SExecute<Javax.Swing.SizeRequirements>("getTiledSizeRequirements", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>

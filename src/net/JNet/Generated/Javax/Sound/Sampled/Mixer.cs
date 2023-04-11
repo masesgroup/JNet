@@ -151,7 +151,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
         public void Unsynchronize(Javax.Sound.Sampled.Line[] arg0)
         {
-            IExecute("unsynchronize", arg0);
+            IExecute("unsynchronize", new object[] { arg0 });
         }
         
         #endregion

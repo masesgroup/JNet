@@ -78,7 +78,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public static Javax.Swing.InputMap MakeInputMap(object[] arg0)
         {
-            return SExecute<Javax.Swing.InputMap>("makeInputMap", arg0);
+            return SExecute<Javax.Swing.InputMap>("makeInputMap", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeKeyBindings(java.lang.Object[])"/>
@@ -87,7 +87,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Text.JTextComponent.KeyBinding"/></returns>
         public static Javax.Swing.Text.JTextComponent.KeyBinding[] MakeKeyBindings(object[] arg0)
         {
-            return SExecuteArray<Javax.Swing.Text.JTextComponent.KeyBinding>("makeKeyBindings", arg0);
+            return SExecuteArray<Javax.Swing.Text.JTextComponent.KeyBinding>("makeKeyBindings", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installBorder(javax.swing.JComponent,java.lang.String)"/>

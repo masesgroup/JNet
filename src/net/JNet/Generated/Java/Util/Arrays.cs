@@ -325,7 +325,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="T"/></param>
         public static void ParallelSort<T>(T arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>
@@ -1158,7 +1158,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int DeepHashCode(object[] arg0)
         {
-            return SExecute<int>("deepHashCode", arg0);
+            return SExecute<int>("deepHashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
@@ -1167,7 +1167,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(bool[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])"/>
@@ -1176,7 +1176,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(byte[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])"/>
@@ -1185,7 +1185,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(char[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])"/>
@@ -1194,7 +1194,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(double[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])"/>
@@ -1203,7 +1203,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(float[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])"/>
@@ -1212,7 +1212,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(int[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
@@ -1221,7 +1221,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(object[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])"/>
@@ -1230,7 +1230,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(long[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])"/>
@@ -1239,7 +1239,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short[] arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>("hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
@@ -1485,7 +1485,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string DeepToString(object[] arg0)
         {
-            return SExecute<string>("deepToString", arg0);
+            return SExecute<string>("deepToString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
@@ -1494,7 +1494,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(bool[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
@@ -1503,7 +1503,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(byte[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
@@ -1512,7 +1512,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(char[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
@@ -1521,7 +1521,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(double[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
@@ -1530,7 +1530,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(float[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
@@ -1539,7 +1539,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(int[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
@@ -1548,7 +1548,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(object[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
@@ -1557,7 +1557,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(long[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
@@ -1566,7 +1566,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(short[] arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>("toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(double[],int,int)"/>
@@ -1586,7 +1586,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>("spliterator", arg0);
+            return SExecute<Java.Util.Spliterator.OfDouble>("spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(int[],int,int)"/>
@@ -1606,7 +1606,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>("spliterator", arg0);
+            return SExecute<Java.Util.Spliterator.OfInt>("spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(long[],int,int)"/>
@@ -1626,7 +1626,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>("spliterator", arg0);
+            return SExecute<Java.Util.Spliterator.OfLong>("spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(double[],int,int)"/>
@@ -1646,7 +1646,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("stream", arg0);
+            return SExecute<Java.Util.Stream.DoubleStream>("stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(int[],int,int)"/>
@@ -1666,7 +1666,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0)
         {
-            return SExecute<Java.Util.Stream.IntStream>("stream", arg0);
+            return SExecute<Java.Util.Stream.IntStream>("stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(long[],int,int)"/>
@@ -1686,7 +1686,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0)
         {
-            return SExecute<Java.Util.Stream.LongStream>("stream", arg0);
+            return SExecute<Java.Util.Stream.LongStream>("stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(long[],int)"/>
@@ -2013,7 +2013,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void ParallelSort(byte[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[],int,int)"/>
@@ -2031,7 +2031,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void ParallelSort(char[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[],int,int)"/>
@@ -2049,7 +2049,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void ParallelSort(double[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[],int,int)"/>
@@ -2067,7 +2067,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void ParallelSort(float[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[],int,int)"/>
@@ -2085,7 +2085,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[],int,int)"/>
@@ -2103,7 +2103,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParallelSort(long[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[],int,int)"/>
@@ -2121,7 +2121,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void ParallelSort(short[] arg0)
         {
-            SExecute("parallelSort", arg0);
+            SExecute("parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
@@ -2166,7 +2166,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void Sort(byte[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[],int,int)"/>
@@ -2184,7 +2184,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void Sort(char[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[],int,int)"/>
@@ -2202,7 +2202,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void Sort(double[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[],int,int)"/>
@@ -2220,7 +2220,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void Sort(float[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[],int,int)"/>
@@ -2238,7 +2238,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void Sort(int[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
@@ -2256,7 +2256,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public static void Sort(object[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[],int,int)"/>
@@ -2274,7 +2274,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void Sort(long[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[],int,int)"/>
@@ -2292,7 +2292,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void Sort(short[] arg0)
         {
-            SExecute("sort", arg0);
+            SExecute("sort", new object[] { arg0 });
         }
         
         #endregion

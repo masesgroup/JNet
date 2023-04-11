@@ -186,7 +186,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="object"/></param>
         public void SetTarget(object[] arg0)
         {
-            IExecute("setTarget", arg0);
+            IExecute("setTarget", new object[] { arg0 });
         }
         
         #endregion

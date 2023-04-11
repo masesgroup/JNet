@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0)
         {
-            return SExecute<Java.Nio.DoubleBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.DoubleBuffer>("wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -143,7 +143,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(double[] arg0)
         {
-            return IExecute<Java.Nio.DoubleBuffer>("put", arg0);
+            return IExecute<Java.Nio.DoubleBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compareTo(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Get(double[] arg0)
         {
-            return IExecute<Java.Nio.DoubleBuffer>("get", arg0);
+            return IExecute<Java.Nio.DoubleBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double[],int,int)"/>

@@ -285,7 +285,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public object GetContent<Arg0Extendsobject>(Java.Lang.Class arg0)
         {
-            return IExecute("getContent", arg0);
+            return IExecute("getContent", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(int)"/>

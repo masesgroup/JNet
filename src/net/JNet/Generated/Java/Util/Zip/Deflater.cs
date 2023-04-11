@@ -185,7 +185,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(byte[] arg0)
         {
-            return IExecute<int>("deflate", arg0);
+            return IExecute<int>("deflate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer,int)"/>
@@ -243,7 +243,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetDictionary(byte[] arg0)
         {
-            IExecute("setDictionary", arg0);
+            IExecute("setDictionary", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[],int,int)"/>

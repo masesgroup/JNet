@@ -102,7 +102,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="string"/></param>
         public void SetEnabledCipherSuites(string[] arg0)
         {
-            IExecute("setEnabledCipherSuites", arg0);
+            IExecute("setEnabledCipherSuites", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>

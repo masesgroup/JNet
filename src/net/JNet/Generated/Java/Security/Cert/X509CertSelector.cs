@@ -259,7 +259,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetIssuer(byte[] arg0)
         {
-            IExecute("setIssuer", arg0);
+            IExecute("setIssuer", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)"/>
@@ -285,7 +285,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetSubject(byte[] arg0)
         {
-            IExecute("setSubject", arg0);
+            IExecute("setSubject", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)"/>
@@ -311,7 +311,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetSubjectPublicKey(byte[] arg0)
         {
-            IExecute("setSubjectPublicKey", arg0);
+            IExecute("setSubjectPublicKey", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKey(java.security.PublicKey)"/>

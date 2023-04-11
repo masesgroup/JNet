@@ -113,7 +113,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         public Javax.Management.AttributeList GetAttributes(string[] arg0)
         {
-            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0);
+            return IExecute<Javax.Management.AttributeList>("getAttributes", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setAttributes(javax.management.AttributeList)"/>

@@ -233,7 +233,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(int)"/>
@@ -327,7 +327,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecute("readFully", arg0);
+            IExecute("readFully", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(char[],int,int)"/>

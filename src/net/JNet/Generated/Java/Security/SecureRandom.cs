@@ -198,7 +198,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetSeed(byte[] arg0)
         {
-            IExecute("setSeed", arg0);
+            IExecute("setSeed", new object[] { arg0 });
         }
         
         #endregion

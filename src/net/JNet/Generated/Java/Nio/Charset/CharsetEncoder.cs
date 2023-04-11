@@ -119,7 +119,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool IsLegalReplacement(byte[] arg0)
         {
-            return IExecute<bool>("isLegalReplacement", arg0);
+            return IExecute<bool>("isLegalReplacement", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer)"/>
@@ -156,7 +156,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder ReplaceWith(byte[] arg0)
         {
-            return IExecute<Java.Nio.Charset.CharsetEncoder>("replaceWith", arg0);
+            return IExecute<Java.Nio.Charset.CharsetEncoder>("replaceWith", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer,java.nio.ByteBuffer,boolean)"/>

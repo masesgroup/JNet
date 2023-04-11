@@ -87,7 +87,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object[] arg0)
         {
-            return IExecute<bool>("containsKey", arg0);
+            return IExecute<bool>("containsKey", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsValue(javax.management.openmbean.CompositeData)"/>
@@ -114,7 +114,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
         public Javax.Management.Openmbean.CompositeData Get(object[] arg0)
         {
-            return IExecute<Javax.Management.Openmbean.CompositeData>("get", arg0);
+            return IExecute<Javax.Management.Openmbean.CompositeData>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#remove(java.lang.Object[])"/>
@@ -123,7 +123,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
         public Javax.Management.Openmbean.CompositeData Remove(object[] arg0)
         {
-            return IExecute<Javax.Management.Openmbean.CompositeData>("remove", arg0);
+            return IExecute<Javax.Management.Openmbean.CompositeData>("remove", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#clear()"/>
@@ -146,7 +146,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
         public void PutAll(Javax.Management.Openmbean.CompositeData[] arg0)
         {
-            IExecute("putAll", arg0);
+            IExecute("putAll", new object[] { arg0 });
         }
         
         #endregion

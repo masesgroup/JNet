@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0)
         {
-            return SExecute<Java.Nio.IntBuffer>("wrap", arg0);
+            return SExecute<Java.Nio.IntBuffer>("wrap", new object[] { arg0 });
         }
         
         #endregion
@@ -143,7 +143,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int[] arg0)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0);
+            return IExecute<Java.Nio.IntBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Get(int[] arg0)
         {
-            return IExecute<Java.Nio.IntBuffer>("get", arg0);
+            return IExecute<Java.Nio.IntBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[],int,int)"/>

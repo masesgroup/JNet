@@ -64,7 +64,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(byte[] arg0)
         {
-            return SExecute<Java.Util.BitSet>("valueOf", arg0);
+            return SExecute<Java.Util.BitSet>("valueOf", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)"/>
@@ -91,7 +91,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(long[] arg0)
         {
-            return SExecute<Java.Util.BitSet>("valueOf", arg0);
+            return SExecute<Java.Util.BitSet>("valueOf", new object[] { arg0 });
         }
         
         #endregion

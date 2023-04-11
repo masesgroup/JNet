@@ -528,7 +528,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(byte[] arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>("getInstance", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(int)"/>

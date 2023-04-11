@@ -241,7 +241,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public void NextBytes(byte[] arg0)
         {
-            IExecute("nextBytes", arg0);
+            IExecute("nextBytes", new object[] { arg0 });
         }
         
         #endregion
