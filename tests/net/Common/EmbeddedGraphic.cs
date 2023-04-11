@@ -307,8 +307,8 @@ namespace MASES.JNetTest.GraphicCommon
                 string[][] data;
 
                 // don't work: JFrame.SetDefaultLookAndFeelDecorated(true);
-                //JFrame.SetDefaultLookAndFeelDecorated(true);
-                //   UIManager.SetLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                JFrame.SetDefaultLookAndFeelDecorated(true);
+                UIManager.SetLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
                 // Define the panel to hold the components  
                 var jPanel = new JPanel();
@@ -380,7 +380,7 @@ namespace MASES.JNetTest.GraphicCommon
                     var tModel = tableModel.CastTo<DefaultTableModel>();
                     Java.Util.Vector<string> vector = new();
                     vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
-                    tModel.SetColumnIdentifiers(vector);   // (new string[] { columns[0], columns[1], columns[2] });
+                    tModel.SetColumnIdentifiers(new object[] { columns[0], columns[1], columns[2] });   // (new string[] { columns[0], columns[1], columns[2] });
                     vector = new();
                     vector.Add(data[0][0]); vector.Add(data[0][1]); vector.Add(data[0][2]);
                     tModel.AddRow(vector);
@@ -390,6 +390,22 @@ namespace MASES.JNetTest.GraphicCommon
                     vector = new();
                     vector.Add(data[2][0]); vector.Add(data[2][1]); vector.Add(data[2][2]);
                     tModel.AddRow(vector);
+
+
+
+                    //var tModel = tableModel.CastTo<DefaultTableModel>();
+                    //Java.Util.Vector<string> vector = new();
+                    //vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
+                    //tModel.SetColumnIdentifiers(vector);   // (new string[] { columns[0], columns[1], columns[2] });
+                    //vector = new();
+                    //vector.Add(data[0][0]); vector.Add(data[0][1]); vector.Add(data[0][2]);
+                    //tModel.AddRow(vector);
+                    //vector = new();
+                    //vector.Add(data[1][0]); vector.Add(data[1][1]); vector.Add(data[1][2]);
+                    //tModel.AddRow(vector);
+                    //vector = new();
+                    //vector.Add(data[2][0]); vector.Add(data[2][1]); vector.Add(data[2][2]);
+                    //tModel.AddRow(vector);
                 }
 
                 jt.SetBounds(30, 40, 200, 300);
