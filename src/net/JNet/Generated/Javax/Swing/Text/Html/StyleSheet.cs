@@ -230,6 +230,14 @@ namespace Javax.Swing.Text.Html
         {
             IExecute("setBaseFontSize", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        public void SetBaseFontSize(string arg0)
+        {
+            IExecute("setBaseFontSize", arg0);
+        }
         
         #endregion
 

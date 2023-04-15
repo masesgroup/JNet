@@ -958,11 +958,6 @@ namespace MASES.JNetReflector
 
             foreach (var prop in properties.ToArray())
             {
-                string methodName = prop.Key;
-                string modifier = string.Empty;
-                string returnType = string.Empty;
-                Method getMethod = null;
-                Method setMethod = null;
                 var propToCheck = new List<Method>(prop.Value);
                 if (propToCheck.Count > 2)
                 {
@@ -995,13 +990,50 @@ namespace MASES.JNetReflector
                         }
                     }
                 }
+                else if (propToCheck.Count == 2) // check if there is one get and one set otherwise convert into methods
+                {
+                    List<Method> getMethods = new List<Method>();
+                    List<Method> setMethods = new List<Method>();
+                    // test properties with duplicated name
+                    foreach (var item in propToCheck)
+                    {
+                        if (item.IsGetProperty()) getMethods.Add(item);
+                        if (item.IsSetProperty()) setMethods.Add(item);
+                    }
+
+                    if (getMethods.Count == 1 && setMethods.Count == 1)
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Processing can continue, we are good");
+                    }
+                    else
+                    {
+                        foreach (var item in getMethods)
+                        {
+                            propToCheck.Remove(item);
+                            methods.Add(item.GenericString, item);
+                            ReportTrace(ReflectionTraceLevel.Debug, "Get Property moved to methods {0}", item.GenericString);
+                        }
+
+                        foreach (var item in setMethods)
+                        {
+                            propToCheck.Remove(item);
+                            methods.Add(item.GenericString, item);
+                            ReportTrace(ReflectionTraceLevel.Debug, "Set Property moved to methods {0}", item.GenericString);
+                        }
+                    }
+                }
 
                 if (propToCheck.Count == 0)
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "No more properties to be created");
-                    break;
+                    continue;
                 }
 
+                string methodName = prop.Key;
+                string modifier = string.Empty;
+                string returnType = string.Empty;
+                Method getMethod = null;
+                Method setMethod = null;
                 List<string> genArguments = new List<string>();
 
                 foreach (var item in propToCheck)

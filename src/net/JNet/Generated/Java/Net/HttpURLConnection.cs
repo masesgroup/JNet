@@ -265,6 +265,14 @@ namespace Java.Net
         {
             IExecute("setFixedLengthStreamingMode", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetFixedLengthStreamingMode(long arg0)
+        {
+            IExecute("setFixedLengthStreamingMode", arg0);
+        }
         
         #endregion
 
