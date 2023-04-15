@@ -380,7 +380,7 @@ namespace MASES.JNetTest.GraphicCommon
                     var tModel = tableModel.CastTo<DefaultTableModel>();
                     Java.Util.Vector<string> vector = new();
                     vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
-                    tModel.SetColumnIdentifiers(new string[] { columns[0], columns[1], columns[2] });
+                    tModel.SetColumnIdentifiers(vector); // (new string[] { columns[0], columns[1], columns[2] });
                     vector = new();
                     vector.Add(data[0][0]); vector.Add(data[0][1]); vector.Add(data[0][2]);
                     tModel.AddRow(vector);
