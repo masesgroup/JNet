@@ -328,6 +328,19 @@ namespace MASES.JNetTest.GraphicCommon
                 BoxLayout tableButtonLayout = new BoxLayout(tableButtonPanel, BoxLayout.X_AXIS);
                 layout = new SpringLayout();
 
+                // Put constraint on components
+                layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, chatPanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                layout.PutConstraint(SpringLayout.WIDTH, chatPanel, 5, SpringLayout.WIDTH, jPanel);
+                layout.PutConstraint(SpringLayout.NORTH, chatPanel, 5, SpringLayout.NORTH, jPanel);
+
+                layout.PutConstraint(SpringLayout.NORTH, imagePanel, 5, SpringLayout.SOUTH, chatPanel);
+                layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                layout.PutConstraint(SpringLayout.WIDTH, imagePanel, 5, SpringLayout.WIDTH, jPanel);
+
+                layout.PutConstraint(SpringLayout.NORTH, tablePanel, 5, SpringLayout.SOUTH, imagePanel);
+                layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
+                layout.PutConstraint(SpringLayout.WIDTH, tablePanel, 5, SpringLayout.WIDTH, jPanel);
+
                 // Set Layouts
                 chatPanel.Layout = chatLayout;
                 messagePanel.Layout = messageLayout;
@@ -404,63 +417,6 @@ namespace MASES.JNetTest.GraphicCommon
                 tablePanel.Add(tableButtonPanel);
                 tablePanel.Add(scrollPane);
                 jPanel.Add(tablePanel);
-
-                // Put constraint on components
-                try
-                {
-
-                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, chatPanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.WIDTH, chatPanel, 5, SpringLayout.WIDTH, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.NORTH, chatPanel, 5, SpringLayout.NORTH, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.NORTH, imagePanel, 5, SpringLayout.SOUTH, chatPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.WIDTH, imagePanel, 5, SpringLayout.WIDTH, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.NORTH, tablePanel, 5, SpringLayout.SOUTH, imagePanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
-                try
-                {
-                    layout.PutConstraint(SpringLayout.WIDTH, tablePanel, 5, SpringLayout.WIDTH, jPanel);
-                }
-                catch (Java.Lang.NullPointerException)
-                { }
 
                 CommonContainer = jPanel;
 #if WINFORMS
