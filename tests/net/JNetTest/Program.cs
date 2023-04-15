@@ -23,7 +23,6 @@ using System.Diagnostics;
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace MASES.JNetTest
 {
