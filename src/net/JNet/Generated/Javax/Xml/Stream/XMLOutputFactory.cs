@@ -50,14 +50,14 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory
         {
-            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newDefaultFactory"); }
+            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalClazz, "newDefaultFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/> 
         /// </summary>
         public static Javax.Xml.Stream.XMLOutputFactory NewInstance
         {
-            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newInstance"); }
+            get { return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalClazz, "newInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
@@ -67,7 +67,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory()
         {
-            return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newFactory");
+            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
@@ -78,7 +78,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newFactory", arg0, arg1);
+            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalClazz, "newFactory", arg0, arg1);
         }
         
         #endregion

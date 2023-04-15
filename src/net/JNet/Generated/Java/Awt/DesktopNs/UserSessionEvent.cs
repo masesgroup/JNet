@@ -101,7 +101,7 @@ namespace Java.Awt.DesktopNs
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason[] Values
             {
-                get { return SExecuteArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>("values"); }
+                get { return SExecuteArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#valueOf(java.lang.String)"/>
@@ -110,7 +110,7 @@ namespace Java.Awt.DesktopNs
             /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>("valueOf", arg0);
+                return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

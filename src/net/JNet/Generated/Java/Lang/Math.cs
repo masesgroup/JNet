@@ -54,7 +54,7 @@ namespace Java.Lang
         /// </summary>
         public static double Random
         {
-            get { return SExecute<double>("random"); }
+            get { return SExecute<double>(LocalClazz, "random"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(double)"/>
@@ -63,7 +63,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Abs(double arg0)
         {
-            return SExecute<double>("abs", arg0);
+            return SExecute<double>(LocalClazz, "abs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#acos(double)"/>
@@ -72,7 +72,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Acos(double arg0)
         {
-            return SExecute<double>("acos", arg0);
+            return SExecute<double>(LocalClazz, "acos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#asin(double)"/>
@@ -81,7 +81,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Asin(double arg0)
         {
-            return SExecute<double>("asin", arg0);
+            return SExecute<double>(LocalClazz, "asin", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#atan(double)"/>
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Atan(double arg0)
         {
-            return SExecute<double>("atan", arg0);
+            return SExecute<double>(LocalClazz, "atan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#atan2(double,double)"/>
@@ -100,7 +100,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Atan2(double arg0, double arg1)
         {
-            return SExecute<double>("atan2", arg0, arg1);
+            return SExecute<double>(LocalClazz, "atan2", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cbrt(double)"/>
@@ -109,7 +109,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Cbrt(double arg0)
         {
-            return SExecute<double>("cbrt", arg0);
+            return SExecute<double>(LocalClazz, "cbrt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ceil(double)"/>
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Ceil(double arg0)
         {
-            return SExecute<double>("ceil", arg0);
+            return SExecute<double>(LocalClazz, "ceil", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#copySign(double,double)"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double CopySign(double arg0, double arg1)
         {
-            return SExecute<double>("copySign", arg0, arg1);
+            return SExecute<double>(LocalClazz, "copySign", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cos(double)"/>
@@ -137,7 +137,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Cos(double arg0)
         {
-            return SExecute<double>("cos", arg0);
+            return SExecute<double>(LocalClazz, "cos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cosh(double)"/>
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Cosh(double arg0)
         {
-            return SExecute<double>("cosh", arg0);
+            return SExecute<double>(LocalClazz, "cosh", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#exp(double)"/>
@@ -155,7 +155,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Exp(double arg0)
         {
-            return SExecute<double>("exp", arg0);
+            return SExecute<double>(LocalClazz, "exp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#expm1(double)"/>
@@ -164,7 +164,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Expm1(double arg0)
         {
-            return SExecute<double>("expm1", arg0);
+            return SExecute<double>(LocalClazz, "expm1", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floor(double)"/>
@@ -173,7 +173,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Floor(double arg0)
         {
-            return SExecute<double>("floor", arg0);
+            return SExecute<double>(LocalClazz, "floor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#fma(double,double,double)"/>
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Fma(double arg0, double arg1, double arg2)
         {
-            return SExecute<double>("fma", arg0, arg1, arg2);
+            return SExecute<double>(LocalClazz, "fma", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#hypot(double,double)"/>
@@ -194,7 +194,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Hypot(double arg0, double arg1)
         {
-            return SExecute<double>("hypot", arg0, arg1);
+            return SExecute<double>(LocalClazz, "hypot", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#IEEEremainder(double,double)"/>
@@ -204,7 +204,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double IEEEremainder(double arg0, double arg1)
         {
-            return SExecute<double>("IEEEremainder", arg0, arg1);
+            return SExecute<double>(LocalClazz, "IEEEremainder", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log(double)"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Log(double arg0)
         {
-            return SExecute<double>("log", arg0);
+            return SExecute<double>(LocalClazz, "log", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log10(double)"/>
@@ -222,7 +222,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Log10(double arg0)
         {
-            return SExecute<double>("log10", arg0);
+            return SExecute<double>(LocalClazz, "log10", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log1p(double)"/>
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Log1p(double arg0)
         {
-            return SExecute<double>("log1p", arg0);
+            return SExecute<double>(LocalClazz, "log1p", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#max(double,double)"/>
@@ -241,7 +241,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
-            return SExecute<double>("max", arg0, arg1);
+            return SExecute<double>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(double,double)"/>
@@ -251,7 +251,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
-            return SExecute<double>("min", arg0, arg1);
+            return SExecute<double>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextAfter(double,double)"/>
@@ -261,7 +261,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double NextAfter(double arg0, double arg1)
         {
-            return SExecute<double>("nextAfter", arg0, arg1);
+            return SExecute<double>(LocalClazz, "nextAfter", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(double)"/>
@@ -270,7 +270,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double NextDown(double arg0)
         {
-            return SExecute<double>("nextDown", arg0);
+            return SExecute<double>(LocalClazz, "nextDown", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextUp(double)"/>
@@ -279,7 +279,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double NextUp(double arg0)
         {
-            return SExecute<double>("nextUp", arg0);
+            return SExecute<double>(LocalClazz, "nextUp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#pow(double,double)"/>
@@ -289,7 +289,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Pow(double arg0, double arg1)
         {
-            return SExecute<double>("pow", arg0, arg1);
+            return SExecute<double>(LocalClazz, "pow", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#rint(double)"/>
@@ -298,7 +298,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Rint(double arg0)
         {
-            return SExecute<double>("rint", arg0);
+            return SExecute<double>(LocalClazz, "rint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#scalb(double,int)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Scalb(double arg0, int arg1)
         {
-            return SExecute<double>("scalb", arg0, arg1);
+            return SExecute<double>(LocalClazz, "scalb", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(double)"/>
@@ -317,7 +317,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Signum(double arg0)
         {
-            return SExecute<double>("signum", arg0);
+            return SExecute<double>(LocalClazz, "signum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sin(double)"/>
@@ -326,7 +326,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sin(double arg0)
         {
-            return SExecute<double>("sin", arg0);
+            return SExecute<double>(LocalClazz, "sin", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sinh(double)"/>
@@ -335,7 +335,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sinh(double arg0)
         {
-            return SExecute<double>("sinh", arg0);
+            return SExecute<double>(LocalClazz, "sinh", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#sqrt(double)"/>
@@ -344,7 +344,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sqrt(double arg0)
         {
-            return SExecute<double>("sqrt", arg0);
+            return SExecute<double>(LocalClazz, "sqrt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#tan(double)"/>
@@ -353,7 +353,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Tan(double arg0)
         {
-            return SExecute<double>("tan", arg0);
+            return SExecute<double>(LocalClazz, "tan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#tanh(double)"/>
@@ -362,7 +362,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Tanh(double arg0)
         {
-            return SExecute<double>("tanh", arg0);
+            return SExecute<double>(LocalClazz, "tanh", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toDegrees(double)"/>
@@ -371,7 +371,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double ToDegrees(double arg0)
         {
-            return SExecute<double>("toDegrees", arg0);
+            return SExecute<double>(LocalClazz, "toDegrees", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toRadians(double)"/>
@@ -380,7 +380,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double ToRadians(double arg0)
         {
-            return SExecute<double>("toRadians", arg0);
+            return SExecute<double>(LocalClazz, "toRadians", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ulp(double)"/>
@@ -389,7 +389,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Ulp(double arg0)
         {
-            return SExecute<double>("ulp", arg0);
+            return SExecute<double>(LocalClazz, "ulp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(float)"/>
@@ -398,7 +398,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Abs(float arg0)
         {
-            return SExecute<float>("abs", arg0);
+            return SExecute<float>(LocalClazz, "abs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#copySign(float,float)"/>
@@ -408,7 +408,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float CopySign(float arg0, float arg1)
         {
-            return SExecute<float>("copySign", arg0, arg1);
+            return SExecute<float>(LocalClazz, "copySign", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#fma(float,float,float)"/>
@@ -419,7 +419,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Fma(float arg0, float arg1, float arg2)
         {
-            return SExecute<float>("fma", arg0, arg1, arg2);
+            return SExecute<float>(LocalClazz, "fma", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#max(float,float)"/>
@@ -429,7 +429,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
-            return SExecute<float>("max", arg0, arg1);
+            return SExecute<float>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(float,float)"/>
@@ -439,7 +439,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
-            return SExecute<float>("min", arg0, arg1);
+            return SExecute<float>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextAfter(float,double)"/>
@@ -449,7 +449,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float NextAfter(float arg0, double arg1)
         {
-            return SExecute<float>("nextAfter", arg0, arg1);
+            return SExecute<float>(LocalClazz, "nextAfter", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(float)"/>
@@ -458,7 +458,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float NextDown(float arg0)
         {
-            return SExecute<float>("nextDown", arg0);
+            return SExecute<float>(LocalClazz, "nextDown", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextUp(float)"/>
@@ -467,7 +467,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float NextUp(float arg0)
         {
-            return SExecute<float>("nextUp", arg0);
+            return SExecute<float>(LocalClazz, "nextUp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#scalb(float,int)"/>
@@ -477,7 +477,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Scalb(float arg0, int arg1)
         {
-            return SExecute<float>("scalb", arg0, arg1);
+            return SExecute<float>(LocalClazz, "scalb", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(float)"/>
@@ -486,7 +486,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Signum(float arg0)
         {
-            return SExecute<float>("signum", arg0);
+            return SExecute<float>(LocalClazz, "signum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#ulp(float)"/>
@@ -495,7 +495,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Ulp(float arg0)
         {
-            return SExecute<float>("ulp", arg0);
+            return SExecute<float>(LocalClazz, "ulp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(int)"/>
@@ -504,7 +504,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Abs(int arg0)
         {
-            return SExecute<int>("abs", arg0);
+            return SExecute<int>(LocalClazz, "abs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#addExact(int,int)"/>
@@ -514,7 +514,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int AddExact(int arg0, int arg1)
         {
-            return SExecute<int>("addExact", arg0, arg1);
+            return SExecute<int>(LocalClazz, "addExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(int)"/>
@@ -523,7 +523,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int DecrementExact(int arg0)
         {
-            return SExecute<int>("decrementExact", arg0);
+            return SExecute<int>(LocalClazz, "decrementExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorDiv(int,int)"/>
@@ -533,7 +533,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorDiv(int arg0, int arg1)
         {
-            return SExecute<int>("floorDiv", arg0, arg1);
+            return SExecute<int>(LocalClazz, "floorDiv", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(int,int)"/>
@@ -543,7 +543,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorMod(int arg0, int arg1)
         {
-            return SExecute<int>("floorMod", arg0, arg1);
+            return SExecute<int>(LocalClazz, "floorMod", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(long,int)"/>
@@ -553,7 +553,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorMod(long arg0, int arg1)
         {
-            return SExecute<int>("floorMod", arg0, arg1);
+            return SExecute<int>(LocalClazz, "floorMod", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#getExponent(double)"/>
@@ -562,7 +562,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetExponent(double arg0)
         {
-            return SExecute<int>("getExponent", arg0);
+            return SExecute<int>(LocalClazz, "getExponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#getExponent(float)"/>
@@ -571,7 +571,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetExponent(float arg0)
         {
-            return SExecute<int>("getExponent", arg0);
+            return SExecute<int>(LocalClazz, "getExponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#incrementExact(int)"/>
@@ -580,7 +580,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int IncrementExact(int arg0)
         {
-            return SExecute<int>("incrementExact", arg0);
+            return SExecute<int>(LocalClazz, "incrementExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#max(int,int)"/>
@@ -590,7 +590,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Max(int arg0, int arg1)
         {
-            return SExecute<int>("max", arg0, arg1);
+            return SExecute<int>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(int,int)"/>
@@ -600,7 +600,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Min(int arg0, int arg1)
         {
-            return SExecute<int>("min", arg0, arg1);
+            return SExecute<int>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(int,int)"/>
@@ -610,7 +610,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int MultiplyExact(int arg0, int arg1)
         {
-            return SExecute<int>("multiplyExact", arg0, arg1);
+            return SExecute<int>(LocalClazz, "multiplyExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(int)"/>
@@ -619,7 +619,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int NegateExact(int arg0)
         {
-            return SExecute<int>("negateExact", arg0);
+            return SExecute<int>(LocalClazz, "negateExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#round(float)"/>
@@ -628,7 +628,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Round(float arg0)
         {
-            return SExecute<int>("round", arg0);
+            return SExecute<int>(LocalClazz, "round", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#subtractExact(int,int)"/>
@@ -638,7 +638,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int SubtractExact(int arg0, int arg1)
         {
-            return SExecute<int>("subtractExact", arg0, arg1);
+            return SExecute<int>(LocalClazz, "subtractExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toIntExact(long)"/>
@@ -647,7 +647,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToIntExact(long arg0)
         {
-            return SExecute<int>("toIntExact", arg0);
+            return SExecute<int>(LocalClazz, "toIntExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#abs(long)"/>
@@ -656,7 +656,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Abs(long arg0)
         {
-            return SExecute<long>("abs", arg0);
+            return SExecute<long>(LocalClazz, "abs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#addExact(long,long)"/>
@@ -666,7 +666,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long AddExact(long arg0, long arg1)
         {
-            return SExecute<long>("addExact", arg0, arg1);
+            return SExecute<long>(LocalClazz, "addExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(long)"/>
@@ -675,7 +675,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DecrementExact(long arg0)
         {
-            return SExecute<long>("decrementExact", arg0);
+            return SExecute<long>(LocalClazz, "decrementExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorDiv(long,int)"/>
@@ -685,7 +685,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, int arg1)
         {
-            return SExecute<long>("floorDiv", arg0, arg1);
+            return SExecute<long>(LocalClazz, "floorDiv", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorDiv(long,long)"/>
@@ -695,7 +695,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, long arg1)
         {
-            return SExecute<long>("floorDiv", arg0, arg1);
+            return SExecute<long>(LocalClazz, "floorDiv", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(long,long)"/>
@@ -705,7 +705,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorMod(long arg0, long arg1)
         {
-            return SExecute<long>("floorMod", arg0, arg1);
+            return SExecute<long>(LocalClazz, "floorMod", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#incrementExact(long)"/>
@@ -714,7 +714,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long IncrementExact(long arg0)
         {
-            return SExecute<long>("incrementExact", arg0);
+            return SExecute<long>(LocalClazz, "incrementExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#max(long,long)"/>
@@ -724,7 +724,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
-            return SExecute<long>("max", arg0, arg1);
+            return SExecute<long>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(long,long)"/>
@@ -734,7 +734,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
-            return SExecute<long>("min", arg0, arg1);
+            return SExecute<long>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(long,int)"/>
@@ -744,7 +744,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, int arg1)
         {
-            return SExecute<long>("multiplyExact", arg0, arg1);
+            return SExecute<long>(LocalClazz, "multiplyExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(long,long)"/>
@@ -754,7 +754,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, long arg1)
         {
-            return SExecute<long>("multiplyExact", arg0, arg1);
+            return SExecute<long>(LocalClazz, "multiplyExact", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyFull(int,int)"/>
@@ -764,7 +764,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyFull(int arg0, int arg1)
         {
-            return SExecute<long>("multiplyFull", arg0, arg1);
+            return SExecute<long>(LocalClazz, "multiplyFull", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyHigh(long,long)"/>
@@ -774,7 +774,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyHigh(long arg0, long arg1)
         {
-            return SExecute<long>("multiplyHigh", arg0, arg1);
+            return SExecute<long>(LocalClazz, "multiplyHigh", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(long)"/>
@@ -783,7 +783,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long NegateExact(long arg0)
         {
-            return SExecute<long>("negateExact", arg0);
+            return SExecute<long>(LocalClazz, "negateExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#round(double)"/>
@@ -792,7 +792,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Round(double arg0)
         {
-            return SExecute<long>("round", arg0);
+            return SExecute<long>(LocalClazz, "round", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#subtractExact(long,long)"/>
@@ -802,7 +802,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long SubtractExact(long arg0, long arg1)
         {
-            return SExecute<long>("subtractExact", arg0, arg1);
+            return SExecute<long>(LocalClazz, "subtractExact", arg0, arg1);
         }
         
         #endregion

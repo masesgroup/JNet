@@ -70,7 +70,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.KeyboardFocusManager CurrentKeyboardFocusManager
         {
-            get { return SExecute<Java.Awt.KeyboardFocusManager>("getCurrentKeyboardFocusManager"); } set { SExecute("setCurrentKeyboardFocusManager", value); }
+            get { return SExecute<Java.Awt.KeyboardFocusManager>(LocalClazz, "getCurrentKeyboardFocusManager"); } set { SExecute(LocalClazz, "setCurrentKeyboardFocusManager", value); }
         }
         
         #endregion

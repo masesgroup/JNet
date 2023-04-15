@@ -46,7 +46,7 @@ namespace Java.Util.Function
         /// </summary>
         public static Java.Util.Function.LongUnaryOperator Identity
         {
-            get { return SExecute<Java.Util.Function.LongUnaryOperator>("identity"); }
+            get { return SExecute<Java.Util.Function.LongUnaryOperator>(LocalClazz, "identity"); }
         }
         
         #endregion

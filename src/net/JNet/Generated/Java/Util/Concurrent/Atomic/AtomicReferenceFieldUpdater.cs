@@ -50,7 +50,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.Class arg1, string arg2)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>("newUpdater", arg0, arg1, arg2);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>(LocalClazz, "newUpdater", arg0, arg1, arg2);
         }
         
         #endregion
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W> NewUpdater<U, W>(Java.Lang.Class arg0, Java.Lang.Class arg1, string arg2)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>("newUpdater", arg0, arg1, arg2);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>(LocalClazz, "newUpdater", arg0, arg1, arg2);
         }
         
         #endregion

@@ -80,7 +80,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.LocalTime>("from", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#now()"/>
@@ -89,7 +89,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Now()
         {
-            return SExecute<Java.Time.LocalTime>("now");
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#now(java.time.Clock)"/>
@@ -98,7 +98,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.LocalTime>("now", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#now(java.time.ZoneId)"/>
@@ -107,7 +107,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.LocalTime>("now", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int,int,int)"/>
@@ -119,7 +119,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Time.LocalTime>("of", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int,int)"/>
@@ -130,7 +130,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.LocalTime>("of", arg0, arg1, arg2);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int)"/>
@@ -140,7 +140,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1)
         {
-            return SExecute<Java.Time.LocalTime>("of", arg0, arg1);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -150,7 +150,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.LocalTime>("ofInstant", arg0, arg1);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "ofInstant", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofNanoOfDay(long)"/>
@@ -159,7 +159,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfNanoOfDay(long arg0)
         {
-            return SExecute<Java.Time.LocalTime>("ofNanoOfDay", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "ofNanoOfDay", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofSecondOfDay(long)"/>
@@ -168,7 +168,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfSecondOfDay(long arg0)
         {
-            return SExecute<Java.Time.LocalTime>("ofSecondOfDay", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "ofSecondOfDay", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -178,7 +178,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.LocalTime>("parse", arg0, arg1);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#parse(java.lang.CharSequence)"/>
@@ -187,7 +187,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.LocalTime>("parse", arg0);
+            return SExecute<Java.Time.LocalTime>(LocalClazz, "parse", arg0);
         }
         
         #endregion

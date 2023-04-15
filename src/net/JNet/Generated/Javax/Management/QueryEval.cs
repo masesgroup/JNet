@@ -50,7 +50,7 @@ namespace Javax.Management
         /// </summary>
         public static Javax.Management.MBeanServer MBeanServer
         {
-            get { return SExecute<Javax.Management.MBeanServer>("getMBeanServer"); }
+            get { return SExecute<Javax.Management.MBeanServer>(LocalClazz, "getMBeanServer"); }
         }
         
         #endregion

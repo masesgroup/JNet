@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Security.Sasl
 {
     #region AuthenticationException
@@ -53,6 +55,8 @@ namespace Javax.Security.Sasl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AuthorizeCallback(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.AuthorizeCallback");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Javax.Security.Sasl
         /// </summary>
         public RealmCallback(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.RealmCallback");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -135,6 +141,8 @@ namespace Javax.Security.Sasl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RealmChoiceCallback(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.RealmChoiceCallback");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -177,6 +185,8 @@ namespace Javax.Security.Sasl
         /// </summary>
         public Sasl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.Sasl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -218,6 +228,8 @@ namespace Javax.Security.Sasl
         /// </summary>
         public SaslClient(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.SaslClient");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -258,6 +270,8 @@ namespace Javax.Security.Sasl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SaslClientFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.SaslClientFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -316,6 +330,8 @@ namespace Javax.Security.Sasl
         /// </summary>
         public SaslServer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.SaslServer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -356,6 +372,8 @@ namespace Javax.Security.Sasl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SaslServerFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.sasl.SaslServerFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

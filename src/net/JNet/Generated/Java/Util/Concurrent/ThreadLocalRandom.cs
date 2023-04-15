@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static Java.Util.Concurrent.ThreadLocalRandom Current
         {
-            get { return SExecute<Java.Util.Concurrent.ThreadLocalRandom>("current"); }
+            get { return SExecute<Java.Util.Concurrent.ThreadLocalRandom>(LocalClazz, "current"); }
         }
         
         #endregion

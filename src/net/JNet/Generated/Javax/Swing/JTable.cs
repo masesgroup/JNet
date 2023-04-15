@@ -1108,7 +1108,7 @@ namespace Javax.Swing
             /// </summary>
             public static Javax.Swing.JTable.PrintMode[] Values
             {
-                get { return SExecuteArray<Javax.Swing.JTable.PrintMode>("values"); }
+                get { return SExecuteArray<Javax.Swing.JTable.PrintMode>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#valueOf(java.lang.String)"/>
@@ -1117,7 +1117,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
             public static Javax.Swing.JTable.PrintMode ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.JTable.PrintMode>("valueOf", arg0);
+                return SExecute<Javax.Swing.JTable.PrintMode>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

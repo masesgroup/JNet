@@ -73,7 +73,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public static Javax.Imageio.Metadata.IIOMetadataFormat StandardFormatInstance
         {
-            get { return SExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getStandardFormatInstance"); }
+            get { return SExecute<Javax.Imageio.Metadata.IIOMetadataFormat>(LocalClazz, "getStandardFormatInstance"); }
         }
         
         #endregion

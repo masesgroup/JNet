@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Nio.File
 {
     #region AccessDeniedException
@@ -53,6 +55,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessMode(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.AccessMode");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -159,6 +163,8 @@ namespace Java.Nio.File
         /// </summary>
         public CopyOption(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.CopyOption");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -232,6 +238,8 @@ namespace Java.Nio.File
         /// </summary>
         public DirectoryStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.DirectoryStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -268,6 +276,8 @@ namespace Java.Nio.File
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Filter(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.DirectoryStream$Filter");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -308,6 +318,8 @@ namespace Java.Nio.File
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Filter(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.DirectoryStream$Filter");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -352,6 +364,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DirectoryStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.DirectoryStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -410,6 +424,8 @@ namespace Java.Nio.File
         /// </summary>
         public Files(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.Files");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -451,6 +467,8 @@ namespace Java.Nio.File
         /// </summary>
         public FileStore(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileStore");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -491,6 +509,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileSystem(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileSystem");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -597,6 +617,8 @@ namespace Java.Nio.File
         /// </summary>
         public FileSystems(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileSystems");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -637,6 +659,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileVisitOption(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileVisitOption");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -679,6 +703,8 @@ namespace Java.Nio.File
         /// </summary>
         public FileVisitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileVisitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -720,6 +746,8 @@ namespace Java.Nio.File
         /// </summary>
         public FileVisitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileVisitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -760,6 +788,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileVisitResult(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.FileVisitResult");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -818,6 +848,8 @@ namespace Java.Nio.File
         /// </summary>
         public LinkOption(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.LinkOption");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -858,6 +890,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.LinkPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -948,6 +982,8 @@ namespace Java.Nio.File
         /// </summary>
         public OpenOption(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.OpenOption");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -988,6 +1024,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Path(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.Path");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1030,6 +1068,8 @@ namespace Java.Nio.File
         /// </summary>
         public PathMatcher(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.PathMatcher");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1070,6 +1110,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Paths(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.Paths");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1160,6 +1202,8 @@ namespace Java.Nio.File
         /// </summary>
         public SecureDirectoryStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.SecureDirectoryStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1200,6 +1244,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SecureDirectoryStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.SecureDirectoryStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1242,6 +1288,8 @@ namespace Java.Nio.File
         /// </summary>
         public SimpleFileVisitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.SimpleFileVisitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1282,6 +1330,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SimpleFileVisitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.SimpleFileVisitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1324,6 +1374,8 @@ namespace Java.Nio.File
         /// </summary>
         public StandardCopyOption(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.StandardCopyOption");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1364,6 +1416,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StandardOpenOption(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.StandardOpenOption");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1406,6 +1460,8 @@ namespace Java.Nio.File
         /// </summary>
         public StandardWatchEventKinds(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.StandardWatchEventKinds");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1446,6 +1502,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Watchable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.Watchable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1488,6 +1546,8 @@ namespace Java.Nio.File
         /// </summary>
         public WatchEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1524,6 +1584,8 @@ namespace Java.Nio.File
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Kind(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchEvent$Kind");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1565,6 +1627,8 @@ namespace Java.Nio.File
             /// </summary>
             public Kind(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchEvent$Kind");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -1604,6 +1668,8 @@ namespace Java.Nio.File
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Modifier(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchEvent$Modifier");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1649,6 +1715,8 @@ namespace Java.Nio.File
         /// </summary>
         public WatchEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1690,6 +1758,8 @@ namespace Java.Nio.File
         /// </summary>
         public WatchKey(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchKey");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1730,6 +1800,8 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WatchService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.WatchService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -54,7 +54,7 @@ namespace Javax.Xml.Datatype
         /// </summary>
         public static Javax.Xml.Datatype.DatatypeFactory NewDefaultInstance
         {
-            get { return SExecute<Javax.Xml.Datatype.DatatypeFactory>("newDefaultInstance"); }
+            get { return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalClazz, "newDefaultInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance()"/>
@@ -64,7 +64,7 @@ namespace Javax.Xml.Datatype
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance()
         {
-            return SExecute<Javax.Xml.Datatype.DatatypeFactory>("newInstance");
+            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalClazz, "newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
@@ -75,7 +75,7 @@ namespace Javax.Xml.Datatype
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Datatype.DatatypeFactory>("newInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalClazz, "newInstance", arg0, arg1);
         }
         
         #endregion

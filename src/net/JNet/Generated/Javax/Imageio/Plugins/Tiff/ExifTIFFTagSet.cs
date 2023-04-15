@@ -702,7 +702,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet GetInstance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>("getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalClazz, "getInstance"); }
         }
         
         #endregion

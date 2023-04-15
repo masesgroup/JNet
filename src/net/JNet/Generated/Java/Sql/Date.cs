@@ -56,7 +56,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Date"/></returns>
         public static Java.Sql.Date ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.Date>("valueOf", arg0);
+            return SExecute<Java.Sql.Date>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.time.LocalDate)"/>
@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Date"/></returns>
         public static Java.Sql.Date ValueOf(Java.Time.LocalDate arg0)
         {
-            return SExecute<Java.Sql.Date>("valueOf", arg0);
+            return SExecute<Java.Sql.Date>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

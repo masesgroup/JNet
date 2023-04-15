@@ -100,7 +100,7 @@ namespace Java.Beans
         /// <returns><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></returns>
         public static Org.Xml.Sax.Helpers.DefaultHandler CreateHandler(object arg0, Java.Beans.ExceptionListener arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Org.Xml.Sax.Helpers.DefaultHandler>("createHandler", arg0, arg1, arg2);
+            return SExecute<Org.Xml.Sax.Helpers.DefaultHandler>(LocalClazz, "createHandler", arg0, arg1, arg2);
         }
         
         #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Lang.Ref
 {
     #region Cleaner
@@ -37,6 +39,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Cleaner(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.Cleaner");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -74,6 +78,8 @@ namespace Java.Lang.Ref
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Cleanable(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.lang.ref.Cleaner$Cleanable");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -119,6 +125,8 @@ namespace Java.Lang.Ref
         /// </summary>
         public PhantomReference(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.PhantomReference");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -159,6 +167,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PhantomReference(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.PhantomReference");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -201,6 +211,8 @@ namespace Java.Lang.Ref
         /// </summary>
         public Reference(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.Reference");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -241,6 +253,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Reference(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.Reference");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -283,6 +297,8 @@ namespace Java.Lang.Ref
         /// </summary>
         public ReferenceQueue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.ReferenceQueue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -323,6 +339,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ReferenceQueue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.ReferenceQueue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -365,6 +383,8 @@ namespace Java.Lang.Ref
         /// </summary>
         public SoftReference(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.SoftReference");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -405,6 +425,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SoftReference(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.SoftReference");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -447,6 +469,8 @@ namespace Java.Lang.Ref
         /// </summary>
         public WeakReference(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.WeakReference");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -487,6 +511,8 @@ namespace Java.Lang.Ref
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WeakReference(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.ref.WeakReference");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

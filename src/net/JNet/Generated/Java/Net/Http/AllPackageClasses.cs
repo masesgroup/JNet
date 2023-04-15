@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Net.Http
 {
     #region HttpClient
@@ -37,6 +39,8 @@ namespace Java.Net.Http
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HttpClient(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -74,6 +78,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Builder");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -115,6 +121,8 @@ namespace Java.Net.Http
             /// </summary>
             public Redirect(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Redirect");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -154,6 +162,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Version(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Version");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -215,6 +225,8 @@ namespace Java.Net.Http
         /// </summary>
         public HttpHeaders(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpHeaders");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -256,6 +268,8 @@ namespace Java.Net.Http
         /// </summary>
         public HttpRequest(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -292,6 +306,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BodyPublisher(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$BodyPublisher");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -333,6 +349,8 @@ namespace Java.Net.Http
             /// </summary>
             public BodyPublishers(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$BodyPublishers");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -372,6 +390,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$Builder");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -417,6 +437,8 @@ namespace Java.Net.Http
         /// </summary>
         public HttpResponse(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -453,6 +475,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BodyHandler(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -494,6 +518,8 @@ namespace Java.Net.Http
             /// </summary>
             public BodyHandler(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -533,6 +559,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BodyHandlers(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandlers");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -574,6 +602,8 @@ namespace Java.Net.Http
             /// </summary>
             public BodySubscriber(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -613,6 +643,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BodySubscriber(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -654,6 +686,8 @@ namespace Java.Net.Http
             /// </summary>
             public BodySubscribers(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscribers");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -693,6 +727,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PushPromiseHandler(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -734,6 +770,8 @@ namespace Java.Net.Http
             /// </summary>
             public PushPromiseHandler(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -773,6 +811,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ResponseInfo(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$ResponseInfo");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -817,6 +857,8 @@ namespace Java.Net.Http
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HttpResponse(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -875,6 +917,8 @@ namespace Java.Net.Http
         /// </summary>
         public WebSocket(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.net.http.WebSocket");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -911,6 +955,8 @@ namespace Java.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.net.http.WebSocket$Builder");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

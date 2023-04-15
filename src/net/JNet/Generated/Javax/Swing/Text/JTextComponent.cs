@@ -65,7 +65,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap AddKeymap(string arg0, Javax.Swing.Text.Keymap arg1)
         {
-            return SExecute<Javax.Swing.Text.Keymap>("addKeymap", arg0, arg1);
+            return SExecute<Javax.Swing.Text.Keymap>(LocalClazz, "addKeymap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap(java.lang.String)"/>
@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap GetKeymap(string arg0)
         {
-            return SExecute<Javax.Swing.Text.Keymap>("getKeymap", arg0);
+            return SExecute<Javax.Swing.Text.Keymap>(LocalClazz, "getKeymap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeKeymap(java.lang.String)"/>
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap RemoveKeymap(string arg0)
         {
-            return SExecute<Javax.Swing.Text.Keymap>("removeKeymap", arg0);
+            return SExecute<Javax.Swing.Text.Keymap>(LocalClazz, "removeKeymap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#loadKeymap(javax.swing.text.Keymap,javax.swing.text.JTextComponent.KeyBinding[],javax.swing.Action[])"/>
@@ -93,7 +93,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Action"/></param>
         public static void LoadKeymap(Javax.Swing.Text.Keymap arg0, Javax.Swing.Text.JTextComponent.KeyBinding[] arg1, Javax.Swing.Action[] arg2)
         {
-            SExecute("loadKeymap", arg0, arg1, arg2);
+            SExecute(LocalClazz, "loadKeymap", arg0, arg1, arg2);
         }
         
         #endregion

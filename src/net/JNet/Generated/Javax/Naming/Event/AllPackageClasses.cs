@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Naming.Event
 {
     #region EventContext
@@ -37,6 +39,8 @@ namespace Javax.Naming.Event
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EventContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.naming.event.EventContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -78,6 +82,8 @@ namespace Javax.Naming.Event
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EventDirContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.naming.event.EventDirContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -133,6 +139,8 @@ namespace Javax.Naming.Event
         /// </summary>
         public NamingEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.naming.event.NamingEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -173,6 +181,8 @@ namespace Javax.Naming.Event
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NamingExceptionEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.naming.event.NamingExceptionEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

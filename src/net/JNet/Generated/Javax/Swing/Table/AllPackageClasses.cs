@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Swing.Table
 {
     #region AbstractTableModel
@@ -37,6 +39,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractTableModel(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.AbstractTableModel");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public DefaultTableCellRenderer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.DefaultTableCellRenderer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -115,6 +121,8 @@ namespace Javax.Swing.Table
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UIResource(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.swing.table.DefaultTableCellRenderer$UIResource");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -160,6 +168,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public DefaultTableColumnModel(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.DefaultTableColumnModel");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -200,6 +210,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DefaultTableModel(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.DefaultTableModel");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -242,6 +254,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public JTableHeader(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.JTableHeader");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -282,6 +296,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TableCellEditor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableCellEditor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -324,6 +340,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public TableCellRenderer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableCellRenderer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -364,6 +382,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TableColumn(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableColumn");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -406,6 +426,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public TableColumnModel(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableColumnModel");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -446,6 +468,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TableModel(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableModel");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -488,6 +512,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public TableRowSorter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableRowSorter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -529,6 +555,8 @@ namespace Javax.Swing.Table
         /// </summary>
         public TableRowSorter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableRowSorter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -569,6 +597,8 @@ namespace Javax.Swing.Table
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TableStringConverter(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.table.TableStringConverter");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

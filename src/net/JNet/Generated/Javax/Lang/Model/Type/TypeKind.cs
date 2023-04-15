@@ -134,7 +134,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.Type.TypeKind>("values"); }
+            get { return SExecuteArray<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
         public static Javax.Lang.Model.Type.TypeKind ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.Type.TypeKind>("valueOf", arg0);
+            return SExecute<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

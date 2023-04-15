@@ -58,7 +58,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet GetInstance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>("getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>(LocalClazz, "getInstance"); }
         }
         
         #endregion

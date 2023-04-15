@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Org.Xml.Sax.Helpers
 {
     #region AttributesImpl
@@ -37,6 +39,8 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AttributesImpl(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.xml.sax.helpers.AttributesImpl");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public DefaultHandler(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.xml.sax.helpers.DefaultHandler");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public LocatorImpl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.xml.sax.helpers.LocatorImpl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NamespaceSupport(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.xml.sax.helpers.NamespaceSupport");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -214,6 +224,8 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XMLFilterImpl(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.xml.sax.helpers.XMLFilterImpl");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

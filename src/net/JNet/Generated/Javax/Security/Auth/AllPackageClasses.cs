@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Security.Auth
 {
     #region AuthPermission
@@ -37,6 +39,8 @@ namespace Javax.Security.Auth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AuthPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.AuthPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -78,6 +82,8 @@ namespace Javax.Security.Auth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Destroyable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.Destroyable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -136,6 +142,8 @@ namespace Javax.Security.Auth
         /// </summary>
         public PrivateCredentialPermission(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.PrivateCredentialPermission");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -176,6 +184,8 @@ namespace Javax.Security.Auth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Refreshable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.Refreshable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -234,6 +244,8 @@ namespace Javax.Security.Auth
         /// </summary>
         public Subject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.Subject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -274,6 +286,8 @@ namespace Javax.Security.Auth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SubjectDomainCombiner(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.SubjectDomainCombiner");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

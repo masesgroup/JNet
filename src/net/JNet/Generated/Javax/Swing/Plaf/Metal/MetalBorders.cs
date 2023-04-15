@@ -46,35 +46,35 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public static Javax.Swing.Border.Border DesktopIconBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getDesktopIconBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getDesktopIconBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetButtonBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getButtonBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetTextFieldBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getTextFieldBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetToggleButtonBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getToggleButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getTextBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getTextBorder"); }
         }
         
         #endregion

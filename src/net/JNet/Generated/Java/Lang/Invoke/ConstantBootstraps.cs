@@ -50,7 +50,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="E"/></returns>
         public static E EnumConstant<E>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2) where E: Java.Lang.Enum<E>
         {
-            return SExecute<E>("enumConstant", arg0, arg1, arg2);
+            return SExecute<E>(LocalClazz, "enumConstant", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#primitiveClass(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -61,7 +61,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class PrimitiveClass<ReturnExtendsobject>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
-            return SExecute<Java.Lang.Class>("primitiveClass", arg0, arg1, arg2);
+            return SExecute<Java.Lang.Class>(LocalClazz, "primitiveClass", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#arrayVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class)"/>
@@ -73,7 +73,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle ArrayVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Class arg3)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>("arrayVarHandle", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.Invoke.VarHandle>(LocalClazz, "arrayVarHandle", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#fieldVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)"/>
@@ -86,7 +86,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle FieldVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Class arg3, Java.Lang.Class arg4)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>("fieldVarHandle", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Lang.Invoke.VarHandle>(LocalClazz, "fieldVarHandle", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#staticFieldVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)"/>
@@ -99,7 +99,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle StaticFieldVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Class arg3, Java.Lang.Class arg4)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>("staticFieldVarHandle", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Lang.Invoke.VarHandle>(LocalClazz, "staticFieldVarHandle", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#getStaticFinal(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class)"/>
@@ -111,7 +111,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Class arg3)
         {
-            return SExecute("getStaticFinal", arg0, arg1, arg2, arg3);
+            return SExecute(LocalClazz, "getStaticFinal", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#getStaticFinal(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -122,7 +122,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
-            return SExecute("getStaticFinal", arg0, arg1, arg2);
+            return SExecute(LocalClazz, "getStaticFinal", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#invoke(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.invoke.MethodHandle,java.lang.Object[])"/>
@@ -136,7 +136,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public static object Invoke(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2, Java.Lang.Invoke.MethodHandle arg3, params object[] arg4)
         {
-            if (arg4.Length == 0) return SExecute("invoke", arg0, arg1, arg2, arg3); else return SExecute("invoke", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecute(LocalClazz, "invoke", arg0, arg1, arg2, arg3); else return SExecute(LocalClazz, "invoke", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#nullConstant(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -147,7 +147,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object NullConstant(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
-            return SExecute("nullConstant", arg0, arg1, arg2);
+            return SExecute(LocalClazz, "nullConstant", arg0, arg1, arg2);
         }
         
         #endregion

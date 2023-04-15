@@ -56,7 +56,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
         public static Java.Io.ObjectStreamClass Lookup(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Io.ObjectStreamClass>("lookup", arg0);
+            return SExecute<Java.Io.ObjectStreamClass>(LocalClazz, "lookup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class)"/>
@@ -65,7 +65,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
         public static Java.Io.ObjectStreamClass LookupAny(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Io.ObjectStreamClass>("lookupAny", arg0);
+            return SExecute<Java.Io.ObjectStreamClass>(LocalClazz, "lookupAny", arg0);
         }
         
         #endregion

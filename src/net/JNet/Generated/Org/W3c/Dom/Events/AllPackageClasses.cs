@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Org.W3c.Dom.Events
 {
     #region DocumentEvent
@@ -37,6 +39,8 @@ namespace Org.W3c.Dom.Events
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DocumentEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.DocumentEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -78,6 +82,8 @@ namespace Org.W3c.Dom.Events
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Event(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.Event");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -149,6 +155,8 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public EventTarget(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.EventTarget");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -189,6 +197,8 @@ namespace Org.W3c.Dom.Events
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MouseEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.MouseEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -231,6 +241,8 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public MutationEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.MutationEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -271,6 +283,8 @@ namespace Org.W3c.Dom.Events
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UIEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.events.UIEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

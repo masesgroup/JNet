@@ -1350,7 +1350,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior[] Values
             {
-                get { return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>("values"); }
+                get { return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#valueOf(java.lang.String)"/>
@@ -1359,7 +1359,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
             public static Java.Awt.Component.BaselineResizeBehavior ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Component.BaselineResizeBehavior>("valueOf", arg0);
+                return SExecute<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

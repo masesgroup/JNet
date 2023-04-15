@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Print
 {
     #region AttributeException
@@ -37,6 +39,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AttributeException(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.AttributeException");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Print
         /// </summary>
         public CancelablePrintJob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.CancelablePrintJob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Doc(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.Doc");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Print
         /// </summary>
         public DocFlavor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -197,6 +207,8 @@ namespace Javax.Print
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BYTE_ARRAY(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$BYTE_ARRAY");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -238,6 +250,8 @@ namespace Javax.Print
             /// </summary>
             public CHAR_ARRAY(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$CHAR_ARRAY");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -277,6 +291,8 @@ namespace Javax.Print
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public INPUT_STREAM(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$INPUT_STREAM");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -318,6 +334,8 @@ namespace Javax.Print
             /// </summary>
             public READER(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$READER");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -357,6 +375,8 @@ namespace Javax.Print
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SERVICE_FORMATTED(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$SERVICE_FORMATTED");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -398,6 +418,8 @@ namespace Javax.Print
             /// </summary>
             public STRING(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$STRING");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -437,6 +459,8 @@ namespace Javax.Print
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public URL(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.print.DocFlavor$URL");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -482,6 +506,8 @@ namespace Javax.Print
         /// </summary>
         public DocPrintJob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.DocPrintJob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -522,6 +548,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FlavorException(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.FlavorException");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -564,6 +592,8 @@ namespace Javax.Print
         /// </summary>
         public MultiDoc(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.MultiDoc");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -605,6 +635,8 @@ namespace Javax.Print
         /// </summary>
         public MultiDocPrintJob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.MultiDocPrintJob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -645,6 +677,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MultiDocPrintService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.MultiDocPrintService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -703,6 +737,8 @@ namespace Javax.Print
         /// </summary>
         public PrintService(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.PrintService");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -743,6 +779,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrintServiceLookup(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.PrintServiceLookup");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -785,6 +823,8 @@ namespace Javax.Print
         /// </summary>
         public ServiceUI(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.ServiceUI");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -825,6 +865,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ServiceUIFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.ServiceUIFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -867,6 +909,8 @@ namespace Javax.Print
         /// </summary>
         public SimpleDoc(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.SimpleDoc");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -907,6 +951,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StreamPrintService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.StreamPrintService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -949,6 +995,8 @@ namespace Javax.Print
         /// </summary>
         public StreamPrintServiceFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.print.StreamPrintServiceFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -989,6 +1037,8 @@ namespace Javax.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public URIException(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.print.URIException");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

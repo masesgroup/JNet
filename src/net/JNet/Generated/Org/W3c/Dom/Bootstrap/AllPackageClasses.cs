@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Org.W3c.Dom.Bootstrap
 {
     #region DOMImplementationRegistry
@@ -37,6 +39,8 @@ namespace Org.W3c.Dom.Bootstrap
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DOMImplementationRegistry(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.bootstrap.DOMImplementationRegistry");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

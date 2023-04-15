@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Lang.Instrument
 {
     #region ClassDefinition
@@ -37,6 +39,8 @@ namespace Java.Lang.Instrument
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ClassDefinition(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.instrument.ClassDefinition");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -78,6 +82,8 @@ namespace Java.Lang.Instrument
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ClassFileTransformer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.instrument.ClassFileTransformer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -135,6 +141,8 @@ namespace Java.Lang.Instrument
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Instrumentation(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.instrument.Instrumentation");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

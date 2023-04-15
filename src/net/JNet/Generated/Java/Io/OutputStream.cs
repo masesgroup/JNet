@@ -54,7 +54,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.OutputStream NullOutputStream
         {
-            get { return SExecute<Java.Io.OutputStream>("nullOutputStream"); }
+            get { return SExecute<Java.Io.OutputStream>(LocalClazz, "nullOutputStream"); }
         }
         
         #endregion

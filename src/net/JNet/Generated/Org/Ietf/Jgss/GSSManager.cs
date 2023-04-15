@@ -46,7 +46,7 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public static Org.Ietf.Jgss.GSSManager GetInstance
         {
-            get { return SExecute<Org.Ietf.Jgss.GSSManager>("getInstance"); }
+            get { return SExecute<Org.Ietf.Jgss.GSSManager>(LocalClazz, "getInstance"); }
         }
         
         #endregion

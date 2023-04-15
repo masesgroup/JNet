@@ -54,7 +54,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption, Arg3Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<Arg3Extendsobject>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0, arg1, arg2, arg3);
         }
         
         #endregion

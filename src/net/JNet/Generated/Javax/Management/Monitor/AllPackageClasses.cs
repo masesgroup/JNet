@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Management.Monitor
 {
     #region CounterMonitor
@@ -37,6 +39,8 @@ namespace Javax.Management.Monitor
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CounterMonitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.CounterMonitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Management.Monitor
         /// </summary>
         public CounterMonitorMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.CounterMonitorMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Management.Monitor
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GaugeMonitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.GaugeMonitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Management.Monitor
         /// </summary>
         public GaugeMonitorMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.GaugeMonitorMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Management.Monitor
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Monitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.Monitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Management.Monitor
         /// </summary>
         public MonitorMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.MonitorMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Management.Monitor
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MonitorNotification(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.MonitorNotification");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -341,6 +357,8 @@ namespace Javax.Management.Monitor
         /// </summary>
         public StringMonitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.StringMonitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -381,6 +399,8 @@ namespace Javax.Management.Monitor
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StringMonitorMBean(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.monitor.StringMonitorMBean");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

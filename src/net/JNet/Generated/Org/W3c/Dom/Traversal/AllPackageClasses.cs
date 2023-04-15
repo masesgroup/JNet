@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Org.W3c.Dom.Traversal
 {
     #region DocumentTraversal
@@ -37,6 +39,8 @@ namespace Org.W3c.Dom.Traversal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DocumentTraversal(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.traversal.DocumentTraversal");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Org.W3c.Dom.Traversal
         /// </summary>
         public NodeFilter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.traversal.NodeFilter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Org.W3c.Dom.Traversal
         /// </summary>
         public NodeIterator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.traversal.NodeIterator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Org.W3c.Dom.Traversal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TreeWalker(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.traversal.TreeWalker");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

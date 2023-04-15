@@ -48,7 +48,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo AfterOffset(int arg0)
         {
-            return SExecute<Java.Awt.FontNs.TextHitInfo>("afterOffset", arg0);
+            return SExecute<Java.Awt.FontNs.TextHitInfo>(LocalClazz, "afterOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#beforeOffset(int)"/>
@@ -57,7 +57,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo BeforeOffset(int arg0)
         {
-            return SExecute<Java.Awt.FontNs.TextHitInfo>("beforeOffset", arg0);
+            return SExecute<Java.Awt.FontNs.TextHitInfo>(LocalClazz, "beforeOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#leading(int)"/>
@@ -66,7 +66,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo Leading(int arg0)
         {
-            return SExecute<Java.Awt.FontNs.TextHitInfo>("leading", arg0);
+            return SExecute<Java.Awt.FontNs.TextHitInfo>(LocalClazz, "leading", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#trailing(int)"/>
@@ -75,7 +75,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo Trailing(int arg0)
         {
-            return SExecute<Java.Awt.FontNs.TextHitInfo>("trailing", arg0);
+            return SExecute<Java.Awt.FontNs.TextHitInfo>(LocalClazz, "trailing", arg0);
         }
         
         #endregion

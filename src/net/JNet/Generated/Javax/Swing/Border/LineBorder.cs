@@ -73,14 +73,14 @@ namespace Javax.Swing.Border
         /// </summary>
         public static Javax.Swing.Border.Border CreateBlackLineBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("createBlackLineBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "createBlackLineBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createGrayLineBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border CreateGrayLineBorder
         {
-            get { return SExecute<Javax.Swing.Border.Border>("createGrayLineBorder"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "createGrayLineBorder"); }
         }
         
         #endregion

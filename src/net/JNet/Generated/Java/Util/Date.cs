@@ -68,7 +68,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Date"/></returns>
         public static Java.Util.Date From(Java.Time.Instant arg0)
         {
-            return SExecute<Java.Util.Date>("from", arg0);
+            return SExecute<Java.Util.Date>(LocalClazz, "from", arg0);
         }
         
         #endregion

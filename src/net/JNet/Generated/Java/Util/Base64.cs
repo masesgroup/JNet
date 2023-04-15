@@ -46,42 +46,42 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Base64.Decoder GetDecoder
         {
-            get { return SExecute<Java.Util.Base64.Decoder>("getDecoder"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalClazz, "getDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder GetEncoder
         {
-            get { return SExecute<Java.Util.Base64.Encoder>("getEncoder"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalClazz, "getEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeDecoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Decoder MimeDecoder
         {
-            get { return SExecute<Java.Util.Base64.Decoder>("getMimeDecoder"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalClazz, "getMimeDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder MimeEncoder
         {
-            get { return SExecute<Java.Util.Base64.Encoder>("getMimeEncoder"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalClazz, "getMimeEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getUrlDecoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Decoder UrlDecoder
         {
-            get { return SExecute<Java.Util.Base64.Decoder>("getUrlDecoder"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalClazz, "getUrlDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getUrlEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder UrlEncoder
         {
-            get { return SExecute<Java.Util.Base64.Encoder>("getUrlEncoder"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalClazz, "getUrlEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder(int,byte[])"/>
@@ -91,7 +91,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
         public static Java.Util.Base64.Encoder GetMimeEncoder(int arg0, byte[] arg1)
         {
-            return SExecute<Java.Util.Base64.Encoder>("getMimeEncoder", arg0, arg1);
+            return SExecute<Java.Util.Base64.Encoder>(LocalClazz, "getMimeEncoder", arg0, arg1);
         }
         
         #endregion

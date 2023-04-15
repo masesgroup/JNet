@@ -101,7 +101,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Net.URLClassLoader>("newInstance", arg0, arg1);
+            return SExecute<Java.Net.URLClassLoader>(LocalClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])"/>
@@ -110,7 +110,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0)
         {
-            return SExecute<Java.Net.URLClassLoader>("newInstance", new object[] { arg0 });
+            return SExecute<Java.Net.URLClassLoader>(LocalClazz, "newInstance", new object[] { arg0 });
         }
         
         #endregion

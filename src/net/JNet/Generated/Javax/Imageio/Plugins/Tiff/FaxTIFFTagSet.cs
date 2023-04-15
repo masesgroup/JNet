@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet GetInstance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>("getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>(LocalClazz, "getInstance"); }
         }
         
         #endregion

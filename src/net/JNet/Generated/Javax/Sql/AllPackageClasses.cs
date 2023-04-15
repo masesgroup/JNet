@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Sql
 {
     #region CommonDataSource
@@ -37,6 +39,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CommonDataSource(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.CommonDataSource");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -78,6 +82,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConnectionEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.ConnectionEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -133,6 +139,8 @@ namespace Javax.Sql
         /// </summary>
         public ConnectionPoolDataSource(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.ConnectionPoolDataSource");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -173,6 +181,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DataSource(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.DataSource");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -215,6 +225,8 @@ namespace Javax.Sql
         /// </summary>
         public PooledConnection(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.PooledConnection");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -255,6 +267,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PooledConnectionBuilder(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.PooledConnectionBuilder");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -297,6 +311,8 @@ namespace Javax.Sql
         /// </summary>
         public RowSet(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSet");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -338,6 +354,8 @@ namespace Javax.Sql
         /// </summary>
         public RowSetEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSetEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -378,6 +396,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RowSetInternal(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSetInternal");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -433,6 +453,8 @@ namespace Javax.Sql
         /// </summary>
         public RowSetMetaData(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSetMetaData");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -473,6 +495,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RowSetReader(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSetReader");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -515,6 +539,8 @@ namespace Javax.Sql
         /// </summary>
         public RowSetWriter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.RowSetWriter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -555,6 +581,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StatementEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.StatementEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -610,6 +638,8 @@ namespace Javax.Sql
         /// </summary>
         public XAConnection(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.XAConnection");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -651,6 +681,8 @@ namespace Javax.Sql
         /// </summary>
         public XAConnectionBuilder(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.XAConnectionBuilder");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -691,6 +723,8 @@ namespace Javax.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XADataSource(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.XADataSource");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

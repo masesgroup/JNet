@@ -48,7 +48,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder()
         {
-            return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>("newBuilder");
+            return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>(LocalClazz, "newBuilder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder(java.nio.file.attribute.AclEntry)"/>
@@ -57,7 +57,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder(Java.Nio.File.Attribute.AclEntry arg0)
         {
-            return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>("newBuilder", arg0);
+            return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>(LocalClazz, "newBuilder", arg0);
         }
         
         #endregion

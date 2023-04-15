@@ -48,7 +48,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance()
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance");
+            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalClazz, "getInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -59,7 +59,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -69,7 +69,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String)"/>
@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(string arg0)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance", arg0);
+            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion

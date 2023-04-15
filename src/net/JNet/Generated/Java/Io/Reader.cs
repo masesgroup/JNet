@@ -54,7 +54,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.Reader NullReader
         {
-            get { return SExecute<Java.Io.Reader>("nullReader"); }
+            get { return SExecute<Java.Io.Reader>(LocalClazz, "nullReader"); }
         }
         
         #endregion

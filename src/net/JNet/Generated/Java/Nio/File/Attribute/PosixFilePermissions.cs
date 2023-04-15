@@ -48,7 +48,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="string"/></returns>
         public static string ToString(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>(LocalClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#asFileAttribute(java.util.Set)"/>
@@ -57,7 +57,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileAttribute"/></returns>
         public static Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>> AsFileAttribute(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
         {
-            return SExecute<Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>>("asFileAttribute", arg0);
+            return SExecute<Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>>(LocalClazz, "asFileAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#fromString(java.lang.String)"/>
@@ -66,7 +66,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> FromString(string arg0)
         {
-            return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>("fromString", arg0);
+            return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalClazz, "fromString", arg0);
         }
         
         #endregion

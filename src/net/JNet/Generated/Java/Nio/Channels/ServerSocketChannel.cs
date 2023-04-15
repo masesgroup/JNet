@@ -50,7 +50,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public static Java.Nio.Channels.ServerSocketChannel Open
         {
-            get { return SExecute<Java.Nio.Channels.ServerSocketChannel>("open"); }
+            get { return SExecute<Java.Nio.Channels.ServerSocketChannel>(LocalClazz, "open"); }
         }
         
         #endregion

@@ -232,7 +232,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public static float[] RGBtoHSB(int arg0, int arg1, int arg2, float[] arg3)
         {
-            return SExecuteArray<float>("RGBtoHSB", arg0, arg1, arg2, arg3);
+            return SExecuteArray<float>(LocalClazz, "RGBtoHSB", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#HSBtoRGB(float,float,float)"/>
@@ -243,7 +243,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public static int HSBtoRGB(float arg0, float arg1, float arg2)
         {
-            return SExecute<int>("HSBtoRGB", arg0, arg1, arg2);
+            return SExecute<int>(LocalClazz, "HSBtoRGB", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#decode(java.lang.String)"/>
@@ -253,7 +253,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Awt.Color Decode(string arg0)
         {
-            return SExecute<Java.Awt.Color>("decode", arg0);
+            return SExecute<Java.Awt.Color>(LocalClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,int)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0, int arg1)
         {
-            return SExecute<Java.Awt.Color>("getColor", arg0, arg1);
+            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,java.awt.Color)"/>
@@ -273,7 +273,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0, Java.Awt.Color arg1)
         {
-            return SExecute<Java.Awt.Color>("getColor", arg0, arg1);
+            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String)"/>
@@ -282,7 +282,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0)
         {
-            return SExecute<Java.Awt.Color>("getColor", arg0);
+            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getHSBColor(float,float,float)"/>
@@ -293,7 +293,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetHSBColor(float arg0, float arg1, float arg2)
         {
-            return SExecute<Java.Awt.Color>("getHSBColor", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Color>(LocalClazz, "getHSBColor", arg0, arg1, arg2);
         }
         
         #endregion

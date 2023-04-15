@@ -46,14 +46,14 @@ namespace Javax.Swing.Colorchooser
         /// </summary>
         public static Javax.Swing.Colorchooser.AbstractColorChooserPanel[] DefaultChooserPanels
         {
-            get { return SExecuteArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("getDefaultChooserPanels"); }
+            get { return SExecuteArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>(LocalClazz, "getDefaultChooserPanels"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html#getPreviewPanel()"/> 
         /// </summary>
         public static Javax.Swing.JComponent PreviewPanel
         {
-            get { return SExecute<Javax.Swing.JComponent>("getPreviewPanel"); }
+            get { return SExecute<Javax.Swing.JComponent>(LocalClazz, "getPreviewPanel"); }
         }
         
         #endregion

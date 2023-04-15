@@ -72,7 +72,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
         public static Javax.Management.ImmutableDescriptor Union(params Javax.Management.Descriptor[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>("union", new object[] { arg0 }); else return SExecute<Javax.Management.ImmutableDescriptor>("union", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union", new object[] { arg0 }); else return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union", new object[] { arg0 }, arg0);
         }
         
         #endregion

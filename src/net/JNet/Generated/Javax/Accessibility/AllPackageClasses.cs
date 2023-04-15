@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Accessibility
 {
     #region AccessibilityProvider
@@ -37,6 +39,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibilityProvider(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibilityProvider");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Accessibility
         /// </summary>
         public Accessible(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.Accessible");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleAction(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleAction");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleAttributeSequence(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleAttributeSequence");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleBundle(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleBundle");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleComponent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleComponent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleContext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleContext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleEditableText(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleEditableText");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleExtendedComponent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleExtendedComponent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleExtendedTable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleExtendedTable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleExtendedText(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleExtendedText");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -489,6 +513,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleHyperlink(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleHyperlink");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -529,6 +555,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleHypertext(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleHypertext");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -571,6 +599,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleIcon(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleIcon");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -611,6 +641,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleKeyBinding(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleKeyBinding");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -653,6 +685,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleRelation(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleRelation");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -693,6 +727,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleRelationSet(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleRelationSet");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -735,6 +771,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleRole(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleRole");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -775,6 +813,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleSelection(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleSelection");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -817,6 +857,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleState(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleState");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -857,6 +899,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleStateSet(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleStateSet");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -899,6 +943,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleStreamable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleStreamable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -939,6 +985,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleTable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleTable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -981,6 +1029,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleTableModelChange(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleTableModelChange");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1021,6 +1071,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleText(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleText");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1063,6 +1115,8 @@ namespace Javax.Accessibility
         /// </summary>
         public AccessibleTextSequence(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleTextSequence");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1103,6 +1157,8 @@ namespace Javax.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibleValue(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.accessibility.AccessibleValue");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

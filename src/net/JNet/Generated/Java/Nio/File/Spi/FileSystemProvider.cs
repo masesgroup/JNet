@@ -46,7 +46,7 @@ namespace Java.Nio.File.Spi
         /// </summary>
         public static Java.Util.List<Java.Nio.File.Spi.FileSystemProvider> InstalledProviders
         {
-            get { return SExecute<Java.Util.List<Java.Nio.File.Spi.FileSystemProvider>>("installedProviders"); }
+            get { return SExecute<Java.Util.List<Java.Nio.File.Spi.FileSystemProvider>>(LocalClazz, "installedProviders"); }
         }
         
         #endregion

@@ -172,7 +172,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ColorSpace"/></returns>
         public static Java.Awt.ColorNs.ColorSpace GetInstance(int arg0)
         {
-            return SExecute<Java.Awt.ColorNs.ColorSpace>("getInstance", arg0);
+            return SExecute<Java.Awt.ColorNs.ColorSpace>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion

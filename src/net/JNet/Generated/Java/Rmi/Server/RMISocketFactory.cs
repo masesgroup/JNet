@@ -54,21 +54,21 @@ namespace Java.Rmi.Server
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory DefaultSocketFactory
         {
-            get { return SExecute<Java.Rmi.Server.RMISocketFactory>("getDefaultSocketFactory"); }
+            get { return SExecute<Java.Rmi.Server.RMISocketFactory>(LocalClazz, "getDefaultSocketFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getFailureHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setFailureHandler(java.rmi.server.RMIFailureHandler)"/>
         /// </summary>
         public static Java.Rmi.Server.RMIFailureHandler FailureHandler
         {
-            get { return SExecute<Java.Rmi.Server.RMIFailureHandler>("getFailureHandler"); } set { SExecute("setFailureHandler", value); }
+            get { return SExecute<Java.Rmi.Server.RMIFailureHandler>(LocalClazz, "getFailureHandler"); } set { SExecute(LocalClazz, "setFailureHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getSocketFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setSocketFactory(java.rmi.server.RMISocketFactory)"/>
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory SocketFactory
         {
-            get { return SExecute<Java.Rmi.Server.RMISocketFactory>("getSocketFactory"); } set { SExecute("setSocketFactory", value); }
+            get { return SExecute<Java.Rmi.Server.RMISocketFactory>(LocalClazz, "getSocketFactory"); } set { SExecute(LocalClazz, "setSocketFactory", value); }
         }
         
         #endregion

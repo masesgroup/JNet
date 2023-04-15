@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// </summary>
         public static Java.Awt.Frame RootFrame
         {
-            get { return SExecute<Java.Awt.Frame>("getRootFrame"); } set { SExecute("setRootFrame", value); }
+            get { return SExecute<Java.Awt.Frame>(LocalClazz, "getRootFrame"); } set { SExecute(LocalClazz, "setRootFrame", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
@@ -207,7 +207,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
-            return SExecute<int>("showConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
@@ -221,7 +221,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
         {
-            return SExecute<int>("showConfirmDialog", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<int>(LocalClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -234,7 +234,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            return SExecute<int>("showConfirmDialog", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalClazz, "showConfirmDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object)"/>
@@ -245,7 +245,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<int>("showConfirmDialog", arg0, arg1);
+            return SExecute<int>(LocalClazz, "showConfirmDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
@@ -259,7 +259,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
-            return SExecute<int>("showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
@@ -272,7 +272,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
         {
-            return SExecute<int>("showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<int>(LocalClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -284,7 +284,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            return SExecute<int>("showInternalConfirmDialog", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object)"/>
@@ -294,7 +294,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<int>("showInternalConfirmDialog", arg0, arg1);
+            return SExecute<int>(LocalClazz, "showInternalConfirmDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -310,7 +310,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
-            return SExecute<int>("showInternalOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<int>(LocalClazz, "showInternalOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
-            return SExecute<int>("showOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<int>(LocalClazz, "showOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getFrameForComponent(java.awt.Component)"/>
@@ -337,7 +337,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Frame GetFrameForComponent(Java.Awt.Component arg0)
         {
-            return SExecute<Java.Awt.Frame>("getFrameForComponent", arg0);
+            return SExecute<Java.Awt.Frame>(LocalClazz, "getFrameForComponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -353,7 +353,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static object ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
-            return SExecute("showInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute(LocalClazz, "showInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -368,7 +368,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
-            return SExecute("showInternalInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute(LocalClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)"/>
@@ -379,7 +379,7 @@ namespace Javax.Swing
         /// <returns><see cref="string"/></returns>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, object arg2)
         {
-            return SExecute<string>("showInputDialog", arg0, arg1, arg2);
+            return SExecute<string>(LocalClazz, "showInputDialog", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -392,7 +392,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            return SExecute<string>("showInputDialog", arg0, arg1, arg2, arg3);
+            return SExecute<string>(LocalClazz, "showInputDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object)"/>
@@ -403,7 +403,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<string>("showInputDialog", arg0, arg1);
+            return SExecute<string>(LocalClazz, "showInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object,java.lang.Object)"/>
@@ -413,7 +413,7 @@ namespace Javax.Swing
         /// <returns><see cref="string"/></returns>
         public static string ShowInputDialog(object arg0, object arg1)
         {
-            return SExecute<string>("showInputDialog", arg0, arg1);
+            return SExecute<string>(LocalClazz, "showInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object)"/>
@@ -423,7 +423,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(object arg0)
         {
-            return SExecute<string>("showInputDialog", arg0);
+            return SExecute<string>(LocalClazz, "showInputDialog", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -435,7 +435,7 @@ namespace Javax.Swing
         /// <returns><see cref="string"/></returns>
         public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            return SExecute<string>("showInternalInputDialog", arg0, arg1, arg2, arg3);
+            return SExecute<string>(LocalClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object)"/>
@@ -445,7 +445,7 @@ namespace Javax.Swing
         /// <returns><see cref="string"/></returns>
         public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<string>("showInternalInputDialog", arg0, arg1);
+            return SExecute<string>(LocalClazz, "showInternalInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getDesktopPaneForComponent(java.awt.Component)"/>
@@ -454,7 +454,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JDesktopPane"/></returns>
         public static Javax.Swing.JDesktopPane GetDesktopPaneForComponent(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.JDesktopPane>("getDesktopPaneForComponent", arg0);
+            return SExecute<Javax.Swing.JDesktopPane>(LocalClazz, "getDesktopPaneForComponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
@@ -466,7 +466,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
         {
-            SExecute("showInternalMessageDialog", arg0, arg1, arg2, arg3, arg4);
+            SExecute(LocalClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -477,7 +477,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            SExecute("showInternalMessageDialog", arg0, arg1, arg2, arg3);
+            SExecute(LocalClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object)"/>
@@ -486,7 +486,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1)
         {
-            SExecute("showInternalMessageDialog", arg0, arg1);
+            SExecute(LocalClazz, "showInternalMessageDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
@@ -499,7 +499,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
         {
-            SExecute("showMessageDialog", arg0, arg1, arg2, arg3, arg4);
+            SExecute(LocalClazz, "showMessageDialog", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -511,7 +511,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
-            SExecute("showMessageDialog", arg0, arg1, arg2, arg3);
+            SExecute(LocalClazz, "showMessageDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object)"/>
@@ -521,7 +521,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1)
         {
-            SExecute("showMessageDialog", arg0, arg1);
+            SExecute(LocalClazz, "showMessageDialog", arg0, arg1);
         }
         
         #endregion

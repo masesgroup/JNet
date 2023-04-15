@@ -66,7 +66,7 @@ namespace Java.Text
         /// <returns><see cref="string"/></returns>
         public static string Format(string arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<string>("format", arg0); else return SExecute<string>("format", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<string>(LocalClazz, "format", arg0); else return SExecute<string>(LocalClazz, "format", arg0, arg1);
         }
         
         #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Management.Timer
 {
     #region Timer
@@ -37,6 +39,8 @@ namespace Javax.Management.Timer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Timer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.timer.Timer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Management.Timer
         /// </summary>
         public TimerMBean(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.management.timer.TimerMBean");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Management.Timer
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TimerNotification(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.management.timer.TimerNotification");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

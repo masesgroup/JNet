@@ -128,7 +128,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor TextPlainUnicodeFlavor
         {
-            get { return SExecute<Java.Awt.Datatransfer.DataFlavor>("getTextPlainUnicodeFlavor"); }
+            get { return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "getTextPlainUnicodeFlavor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectBestTextFlavor(java.awt.datatransfer.DataFlavor[])"/>
@@ -137,7 +137,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Awt.Datatransfer.DataFlavor"/></returns>
         public static Java.Awt.Datatransfer.DataFlavor SelectBestTextFlavor(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return SExecute<Java.Awt.Datatransfer.DataFlavor>("selectBestTextFlavor", new object[] { arg0 });
+            return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "selectBestTextFlavor", new object[] { arg0 });
         }
         
         #endregion

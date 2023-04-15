@@ -72,7 +72,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public static bool IsLeap(long arg0)
         {
-            return SExecute<bool>("isLeap", arg0);
+            return SExecute<bool>(LocalClazz, "isLeap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -81,7 +81,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.Year>("from", arg0);
+            return SExecute<Java.Time.Year>(LocalClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#now()"/>
@@ -90,7 +90,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Now()
         {
-            return SExecute<Java.Time.Year>("now");
+            return SExecute<Java.Time.Year>(LocalClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#now(java.time.Clock)"/>
@@ -99,7 +99,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.Year>("now", arg0);
+            return SExecute<Java.Time.Year>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#now(java.time.ZoneId)"/>
@@ -108,7 +108,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.Year>("now", arg0);
+            return SExecute<Java.Time.Year>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#of(int)"/>
@@ -117,7 +117,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Of(int arg0)
         {
-            return SExecute<Java.Time.Year>("of", arg0);
+            return SExecute<Java.Time.Year>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -127,7 +127,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.Year>("parse", arg0, arg1);
+            return SExecute<Java.Time.Year>(LocalClazz, "parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#parse(java.lang.CharSequence)"/>
@@ -136,7 +136,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.Year>("parse", arg0);
+            return SExecute<Java.Time.Year>(LocalClazz, "parse", arg0);
         }
         
         #endregion

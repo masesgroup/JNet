@@ -57,7 +57,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static Java.Rmi.Remote ToStub(Java.Rmi.Remote arg0)
         {
-            return SExecute<Java.Rmi.Remote>("toStub", arg0);
+            return SExecute<Java.Rmi.Remote>(LocalClazz, "toStub", arg0);
         }
         
         #endregion

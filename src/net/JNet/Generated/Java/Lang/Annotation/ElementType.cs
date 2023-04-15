@@ -90,7 +90,7 @@ namespace Java.Lang.Annotation
         /// </summary>
         public static Java.Lang.Annotation.ElementType[] Values
         {
-            get { return SExecuteArray<Java.Lang.Annotation.ElementType>("values"); }
+            get { return SExecuteArray<Java.Lang.Annotation.ElementType>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#valueOf(java.lang.String)"/>
@@ -99,7 +99,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         public static Java.Lang.Annotation.ElementType ValueOf(string arg0)
         {
-            return SExecute<Java.Lang.Annotation.ElementType>("valueOf", arg0);
+            return SExecute<Java.Lang.Annotation.ElementType>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

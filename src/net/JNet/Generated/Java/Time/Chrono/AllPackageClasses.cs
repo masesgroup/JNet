@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Time.Chrono
 {
     #region AbstractChronology
@@ -37,6 +39,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractChronology(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.AbstractChronology");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoLocalDate(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ChronoLocalDate");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ChronoLocalDateTime(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ChronoLocalDateTime");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public Chronology(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.Chronology");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ChronoPeriod(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ChronoPeriod");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoZonedDateTime(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ChronoZonedDateTime");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Era(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.Era");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public HijrahChronology(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.HijrahChronology");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HijrahDate(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.HijrahDate");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public HijrahEra(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.HijrahEra");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IsoChronology(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.IsoChronology");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -489,6 +513,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public IsoEra(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.IsoEra");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -529,6 +555,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JapaneseChronology(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.JapaneseChronology");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -571,6 +599,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public JapaneseDate(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.JapaneseDate");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -611,6 +641,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JapaneseEra(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.JapaneseEra");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -653,6 +685,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public MinguoChronology(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.MinguoChronology");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -693,6 +727,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MinguoDate(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.MinguoDate");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -735,6 +771,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public MinguoEra(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.MinguoEra");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -775,6 +813,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThaiBuddhistChronology(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ThaiBuddhistChronology");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -817,6 +857,8 @@ namespace Java.Time.Chrono
         /// </summary>
         public ThaiBuddhistDate(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ThaiBuddhistDate");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -857,6 +899,8 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThaiBuddhistEra(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.chrono.ThaiBuddhistEra");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

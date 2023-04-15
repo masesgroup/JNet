@@ -111,14 +111,14 @@ namespace Java.Util.Jar
         /// </summary>
         public static Java.Lang.Runtime.Version BaseVersion
         {
-            get { return SExecute<Java.Lang.Runtime.Version>("baseVersion"); }
+            get { return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "baseVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/> 
         /// </summary>
         public static Java.Lang.Runtime.Version RuntimeVersion
         {
-            get { return SExecute<Java.Lang.Runtime.Version>("runtimeVersion"); }
+            get { return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "runtimeVersion"); }
         }
         
         #endregion

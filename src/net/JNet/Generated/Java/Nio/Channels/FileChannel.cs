@@ -62,7 +62,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>("open", arg0); else return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0); else return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
@@ -74,7 +74,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption, Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0, arg1, arg2);
         }
         
         #endregion

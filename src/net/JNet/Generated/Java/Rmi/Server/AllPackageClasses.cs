@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Rmi.Server
 {
     #region ExportException
@@ -53,6 +55,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ObjID(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.ObjID");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public RemoteObject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RemoteObject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -135,6 +141,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteObjectInvocationHandler(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RemoteObjectInvocationHandler");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -177,6 +185,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public RemoteRef(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RemoteRef");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -217,6 +227,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteServer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RemoteServer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -259,6 +271,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public RMIClassLoader(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMIClassLoader");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -299,6 +313,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RMIClassLoaderSpi(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMIClassLoaderSpi");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -341,6 +357,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public RMIClientSocketFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMIClientSocketFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -381,6 +399,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RMIFailureHandler(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMIFailureHandler");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -423,6 +443,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public RMIServerSocketFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMIServerSocketFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -463,6 +485,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RMISocketFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.RMISocketFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -537,6 +561,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public UID(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.UID");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -578,6 +604,8 @@ namespace Java.Rmi.Server
         /// </summary>
         public UnicastRemoteObject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.UnicastRemoteObject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -618,6 +646,8 @@ namespace Java.Rmi.Server
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Unreferenced(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.server.Unreferenced");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

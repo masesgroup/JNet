@@ -67,7 +67,7 @@ namespace Java.Beans
         /// <returns><see cref="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
         {
-            return SExecute<T>("create", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String,java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Java.Beans
         /// <returns><see cref="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
         {
-            return SExecute<T>("create", arg0, arg1, arg2, arg3);
+            return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String)"/>
@@ -90,7 +90,7 @@ namespace Java.Beans
         /// <returns><see cref="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2)
         {
-            return SExecute<T>("create", arg0, arg1, arg2);
+            return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2);
         }
         
         #endregion

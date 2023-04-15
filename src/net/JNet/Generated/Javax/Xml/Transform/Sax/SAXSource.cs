@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
         public static Org.Xml.Sax.InputSource SourceToInputSource(Javax.Xml.Transform.Source arg0)
         {
-            return SExecute<Org.Xml.Sax.InputSource>("sourceToInputSource", arg0);
+            return SExecute<Org.Xml.Sax.InputSource>(LocalClazz, "sourceToInputSource", arg0);
         }
         
         #endregion

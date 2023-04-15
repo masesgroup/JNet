@@ -54,7 +54,7 @@ namespace Java.Lang.Management
         /// </summary>
         public static Java.Lang.Management.MemoryType[] Values
         {
-            get { return SExecuteArray<Java.Lang.Management.MemoryType>("values"); }
+            get { return SExecuteArray<Java.Lang.Management.MemoryType>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#valueOf(java.lang.String)"/>
@@ -63,7 +63,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
         public static Java.Lang.Management.MemoryType ValueOf(string arg0)
         {
-            return SExecute<Java.Lang.Management.MemoryType>("valueOf", arg0);
+            return SExecute<Java.Lang.Management.MemoryType>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

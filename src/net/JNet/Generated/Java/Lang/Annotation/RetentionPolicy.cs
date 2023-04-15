@@ -58,7 +58,7 @@ namespace Java.Lang.Annotation
         /// </summary>
         public static Java.Lang.Annotation.RetentionPolicy[] Values
         {
-            get { return SExecuteArray<Java.Lang.Annotation.RetentionPolicy>("values"); }
+            get { return SExecuteArray<Java.Lang.Annotation.RetentionPolicy>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#valueOf(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public static Java.Lang.Annotation.RetentionPolicy ValueOf(string arg0)
         {
-            return SExecute<Java.Lang.Annotation.RetentionPolicy>("valueOf", arg0);
+            return SExecute<Java.Lang.Annotation.RetentionPolicy>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

@@ -46,14 +46,14 @@ namespace Java.Net
         /// </summary>
         public static bool DefaultAllowUserInteraction
         {
-            get { return SExecute<bool>("getDefaultAllowUserInteraction"); } set { SExecute("setDefaultAllowUserInteraction", value); }
+            get { return SExecute<bool>(LocalClazz, "getDefaultAllowUserInteraction"); } set { SExecute(LocalClazz, "setDefaultAllowUserInteraction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getFileNameMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
         /// </summary>
         public static Java.Net.FileNameMap FileNameMap
         {
-            get { return SExecute<Java.Net.FileNameMap>("getFileNameMap"); } set { SExecute("setFileNameMap", value); }
+            get { return SExecute<Java.Net.FileNameMap>(LocalClazz, "getFileNameMap"); } set { SExecute(LocalClazz, "setFileNameMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
@@ -62,7 +62,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public static bool GetDefaultUseCaches(string arg0)
         {
-            return SExecute<bool>("getDefaultUseCaches", arg0);
+            return SExecute<bool>(LocalClazz, "getDefaultUseCaches", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string GuessContentTypeFromName(string arg0)
         {
-            return SExecute<string>("guessContentTypeFromName", arg0);
+            return SExecute<string>(LocalClazz, "guessContentTypeFromName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
@@ -81,7 +81,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static string GuessContentTypeFromStream(Java.Io.InputStream arg0)
         {
-            return SExecute<string>("guessContentTypeFromStream", arg0);
+            return SExecute<string>(LocalClazz, "guessContentTypeFromStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
@@ -89,7 +89,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.ContentHandlerFactory"/></param>
         public static void SetContentHandlerFactory(Java.Net.ContentHandlerFactory arg0)
         {
-            SExecute("setContentHandlerFactory", arg0);
+            SExecute(LocalClazz, "setContentHandlerFactory", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
@@ -98,7 +98,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetDefaultUseCaches(string arg0, bool arg1)
         {
-            SExecute("setDefaultUseCaches", arg0, arg1);
+            SExecute(LocalClazz, "setDefaultUseCaches", arg0, arg1);
         }
         
         #endregion

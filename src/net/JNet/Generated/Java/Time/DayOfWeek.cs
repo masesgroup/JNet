@@ -82,7 +82,7 @@ namespace Java.Time
         /// </summary>
         public static Java.Time.DayOfWeek[] Values
         {
-            get { return SExecuteArray<Java.Time.DayOfWeek>("values"); }
+            get { return SExecuteArray<Java.Time.DayOfWeek>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -91,7 +91,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>("from", arg0);
+            return SExecute<Java.Time.DayOfWeek>(LocalClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#of(int)"/>
@@ -100,7 +100,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek Of(int arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>("of", arg0);
+            return SExecute<Java.Time.DayOfWeek>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#valueOf(java.lang.String)"/>
@@ -109,7 +109,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek ValueOf(string arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>("valueOf", arg0);
+            return SExecute<Java.Time.DayOfWeek>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

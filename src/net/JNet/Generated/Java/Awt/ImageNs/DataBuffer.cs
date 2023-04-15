@@ -76,7 +76,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public static int GetDataTypeSize(int arg0)
         {
-            return SExecute<int>("getDataTypeSize", arg0);
+            return SExecute<int>(LocalClazz, "getDataTypeSize", arg0);
         }
         
         #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Rmi
 {
     #region AccessException
@@ -118,6 +120,8 @@ namespace Java.Rmi
         /// </summary>
         public MarshalledObject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.MarshalledObject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -159,6 +163,8 @@ namespace Java.Rmi
         /// </summary>
         public MarshalledObject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.MarshalledObject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -199,6 +205,8 @@ namespace Java.Rmi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Naming(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.Naming");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -272,6 +280,8 @@ namespace Java.Rmi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Remote(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.Remote");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

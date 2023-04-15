@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Transaction.Xa
 {
     #region XAException
@@ -53,6 +55,8 @@ namespace Javax.Transaction.Xa
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XAResource(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.transaction.xa.XAResource");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -94,6 +98,8 @@ namespace Javax.Transaction.Xa
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Xid(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.transaction.xa.Xid");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

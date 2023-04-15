@@ -57,7 +57,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.LockInfo"/></returns>
         public static Java.Lang.Management.LockInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.LockInfo>("from", arg0);
+            return SExecute<Java.Lang.Management.LockInfo>(LocalClazz, "from", arg0);
         }
         
         #endregion

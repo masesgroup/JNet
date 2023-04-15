@@ -138,35 +138,35 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat DateInstance
         {
-            get { return SExecute<Java.Text.DateFormat>("getDateInstance"); }
+            get { return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat DateTimeInstance
         {
-            get { return SExecute<Java.Text.DateFormat>("getDateTimeInstance"); }
+            get { return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateTimeInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat GetInstance
         {
-            get { return SExecute<Java.Text.DateFormat>("getInstance"); }
+            get { return SExecute<Java.Text.DateFormat>(LocalClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat TimeInstance
         {
-            get { return SExecute<Java.Text.DateFormat>("getTimeInstance"); }
+            get { return SExecute<Java.Text.DateFormat>(LocalClazz, "getTimeInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int,java.util.Locale)"/>
@@ -176,7 +176,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>("getDateInstance", arg0, arg1);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int)"/>
@@ -185,7 +185,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0)
         {
-            return SExecute<Java.Text.DateFormat>("getDateInstance", arg0);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int,java.util.Locale)"/>
@@ -196,7 +196,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return SExecute<Java.Text.DateFormat>("getDateTimeInstance", arg0, arg1, arg2);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateTimeInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int)"/>
@@ -206,7 +206,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1)
         {
-            return SExecute<Java.Text.DateFormat>("getDateTimeInstance", arg0, arg1);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getDateTimeInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int,java.util.Locale)"/>
@@ -216,7 +216,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>("getTimeInstance", arg0, arg1);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getTimeInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int)"/>
@@ -225,7 +225,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0)
         {
-            return SExecute<Java.Text.DateFormat>("getTimeInstance", arg0);
+            return SExecute<Java.Text.DateFormat>(LocalClazz, "getTimeInstance", arg0);
         }
         
         #endregion
@@ -406,7 +406,7 @@ namespace Java.Text
             /// <returns><see cref="Java.Text.DateFormat.Field"/></returns>
             public static Java.Text.DateFormat.Field OfCalendarField(int arg0)
             {
-                return SExecute<Java.Text.DateFormat.Field>("ofCalendarField", arg0);
+                return SExecute<Java.Text.DateFormat.Field>(LocalClazz, "ofCalendarField", arg0);
             }
             
             #endregion
