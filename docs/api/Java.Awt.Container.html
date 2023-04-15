@@ -1027,7 +1027,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Container_HostedContainer.md&amp;value=---%0Auid%3A%20Java.Awt.Container.HostedContainer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L56">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L58">View Source</a>
   </span>
   <a id="Java_Awt_Container_HostedContainer_" data-uid="Java.Awt.Container.HostedContainer*"></a>
   <h4 id="Java_Awt_Container_HostedContainer" data-uid="Java.Awt.Container.HostedContainer">HostedContainer</h4>
@@ -1657,19 +1657,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Container_CreateHostedContainer_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.Container.CreateHostedContainer(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Container_CreateHostedContainer_System_Boolean_MASES_JCOBridge_C2JBridge_JCWindowsManager_.md&amp;value=---%0Auid%3A%20Java.Awt.Container.CreateHostedContainer(System.Boolean%2CMASES.JCOBridge.C2JBridge.JCWindowsManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L41">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L42">View Source</a>
   </span>
   <a id="Java_Awt_Container_CreateHostedContainer_" data-uid="Java.Awt.Container.CreateHostedContainer*"></a>
-  <h4 id="Java_Awt_Container_CreateHostedContainer_System_Boolean_" data-uid="Java.Awt.Container.CreateHostedContainer(System.Boolean)">CreateHostedContainer(Boolean)</h4>
+  <h4 id="Java_Awt_Container_CreateHostedContainer_System_Boolean_MASES_JCOBridge_C2JBridge_JCWindowsManager_" data-uid="Java.Awt.Container.CreateHostedContainer(System.Boolean,MASES.JCOBridge.C2JBridge.JCWindowsManager)">CreateHostedContainer(Boolean, JCWindowsManager)</h4>
   <div class="markdown level1 summary"><p>Creates the <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_HostedContainer">HostedContainer</a> and returns <span class="xref">MASES.JCOBridge.C2JBridge.IJCGraphicContainer.GraphicObject</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object CreateHostedContainer(bool isWPF)</code></pre>
+    <pre><code class="lang-csharp hljs">public object CreateHostedContainer(bool isWPF, JCWindowsManager manager = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1684,7 +1684,13 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">isWPF</span></td>
-        <td><p><span class="xref">true</span> if the object will be inserted in a WPF layout, <span class="xref">true</span> if the object will be inserted in a Windows Forms layout</p>
+        <td><p><span class="xref">true</span> if the object will be inserted in a WPF layout, <span class="xref">false</span> if the object will be inserted in a Windows Forms layout</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JCWindowsManager</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td><p>The <span class="xref">MASES.JCOBridge.C2JBridge.JCWindowsManager</span> to use, <see langref="null"></see> to use <span class="xref">MASES.JCOBridge.C2JBridge.JCWindowsManager.Default</span></p>
 </td>
       </tr>
     </tbody>
@@ -1710,7 +1716,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Container_Dispose.md&amp;value=---%0Auid%3A%20Java.Awt.Container.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L60">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Container.cs/#L62">View Source</a>
   </span>
   <a id="Java_Awt_Container_Dispose_" data-uid="Java.Awt.Container.Dispose*"></a>
   <h4 id="Java_Awt_Container_Dispose" data-uid="Java.Awt.Container.Dispose">Dispose()</h4>
