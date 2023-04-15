@@ -3,6 +3,7 @@ package org.mases.jnet;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
+import java.awt.*;
 import java.util.Vector;
 
 public class TestSwing {
@@ -142,7 +143,7 @@ public class TestSwing {
         layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, imagePanel, 5, SpringLayout.HORIZONTAL_CENTER, jPanel);
         layout.putConstraint(SpringLayout.WIDTH, tablePanel, 5, SpringLayout.WIDTH, jPanel);
 
-        JFrame frame = new JFrame();
+        Frame frame = new Frame();
         frame.add(jPanel);
         frame.setBounds(10, 10, 200, 300);
         frame.setVisible(true);

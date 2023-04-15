@@ -36,15 +36,17 @@ namespace Java.Awt
         /// <summary>
         /// Creates the <see cref="HostedContainer"/> and returns <see cref="IJCGraphicContainer.GraphicObject"/>
         /// </summary>
-        /// <param name="isWPF"><see langword="true"/> if the object will be inserted in a WPF layout, <see langword="true"/> if the object will be inserted in a Windows Forms layout</param>
+        /// <param name="isWPF"><see langword="true"/> if the object will be inserted in a WPF layout, <see langword="false"/> if the object will be inserted in a Windows Forms layout</param>
+        /// <param name="manager">The <see cref="JCWindowsManager"/> to use, <see langref="null"/> to use <see cref="JCWindowsManager.Default"/></param>
         /// <returns>The <see cref="object"/> in the <see cref="IJCGraphicContainer.GraphicObject"/> property</returns>
-        public object CreateHostedContainer(bool isWPF)
+        public object CreateHostedContainer(bool isWPF, JCWindowsManager manager = null)
         {
             lock (this)
             {
                 if (_container == null)
                 {
                     _container = Management.GetJCGraphicContainer(Instance, isWPF);
+                    _container.Initialize(manager != null ? manager : JCWindowsManager.Default);
                 }
                 return _container.GraphicObject;
             }
