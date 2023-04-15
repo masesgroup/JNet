@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Annotation.Processing
 {
     #region AbstractProcessor
@@ -37,6 +39,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractProcessor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.AbstractProcessor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Completion(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Completion");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Completions(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Completions");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Filer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Filer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -218,6 +228,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Generated(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Generated");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -258,6 +270,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Messager(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Messager");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -300,6 +314,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public ProcessingEnvironment(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.ProcessingEnvironment");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -340,6 +356,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Processor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.Processor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -382,6 +400,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public RoundEnvironment(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.RoundEnvironment");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -422,6 +442,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SupportedAnnotationTypes(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.SupportedAnnotationTypes");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -464,6 +486,8 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public SupportedOptions(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.SupportedOptions");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -504,6 +528,8 @@ namespace Javax.Annotation.Processing
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SupportedSourceVersion(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.annotation.processing.SupportedSourceVersion");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

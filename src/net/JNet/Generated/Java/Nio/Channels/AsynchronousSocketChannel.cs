@@ -57,7 +57,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open()
         {
-            return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>("open");
+            return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>(LocalClazz, "open");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>("open", arg0);
+            return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>(LocalClazz, "open", arg0);
         }
         
         #endregion

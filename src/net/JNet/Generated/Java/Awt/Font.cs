@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool TextRequiresLayout(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>("textRequiresLayout", arg0, arg1, arg2);
+            return SExecute<bool>(LocalClazz, "textRequiresLayout", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.File)"/>
@@ -152,7 +152,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.File arg1)
         {
-            return SExecute<Java.Awt.Font>("createFont", arg0, arg1);
+            return SExecute<Java.Awt.Font>(LocalClazz, "createFont", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.InputStream)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.InputStream arg1)
         {
-            return SExecute<Java.Awt.Font>("createFont", arg0, arg1);
+            return SExecute<Java.Awt.Font>(LocalClazz, "createFont", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#decode(java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font Decode(string arg0)
         {
-            return SExecute<Java.Awt.Font>("decode", arg0);
+            return SExecute<Java.Awt.Font>(LocalClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String,java.awt.Font)"/>
@@ -183,7 +183,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0, Java.Awt.Font arg1)
         {
-            return SExecute<Java.Awt.Font>("getFont", arg0, arg1);
+            return SExecute<Java.Awt.Font>(LocalClazz, "getFont", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String)"/>
@@ -192,7 +192,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0)
         {
-            return SExecute<Java.Awt.Font>("getFont", arg0);
+            return SExecute<Java.Awt.Font>(LocalClazz, "getFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.util.Map)"/>
@@ -201,7 +201,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
-            return SExecute<Java.Awt.Font>("getFont", arg0);
+            return SExecute<Java.Awt.Font>(LocalClazz, "getFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.File)"/>
@@ -212,7 +212,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font[] CreateFonts(Java.Io.File arg0)
         {
-            return SExecuteArray<Java.Awt.Font>("createFonts", arg0);
+            return SExecuteArray<Java.Awt.Font>(LocalClazz, "createFonts", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.InputStream)"/>
@@ -223,7 +223,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font[] CreateFonts(Java.Io.InputStream arg0)
         {
-            return SExecuteArray<Java.Awt.Font>("createFonts", arg0);
+            return SExecuteArray<Java.Awt.Font>(LocalClazz, "createFonts", arg0);
         }
         
         #endregion

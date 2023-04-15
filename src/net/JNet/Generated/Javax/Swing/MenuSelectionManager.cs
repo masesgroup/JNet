@@ -46,7 +46,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.MenuSelectionManager DefaultManager
         {
-            get { return SExecute<Javax.Swing.MenuSelectionManager>("defaultManager"); }
+            get { return SExecute<Javax.Swing.MenuSelectionManager>(LocalClazz, "defaultManager"); }
         }
         
         #endregion

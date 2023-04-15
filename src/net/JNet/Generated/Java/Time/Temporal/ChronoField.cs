@@ -170,7 +170,7 @@ namespace Java.Time.Temporal
         /// </summary>
         public static Java.Time.Temporal.ChronoField[] Values
         {
-            get { return SExecuteArray<Java.Time.Temporal.ChronoField>("values"); }
+            get { return SExecuteArray<Java.Time.Temporal.ChronoField>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#valueOf(java.lang.String)"/>
@@ -179,7 +179,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ChronoField"/></returns>
         public static Java.Time.Temporal.ChronoField ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Temporal.ChronoField>("valueOf", arg0);
+            return SExecute<Java.Time.Temporal.ChronoField>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

@@ -46,14 +46,14 @@ namespace Java.Lang
         /// </summary>
         public static Java.Util.Stream.Stream<Java.Lang.ProcessHandle> AllProcesses
         {
-            get { return SExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("allProcesses"); }
+            get { return SExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>(LocalClazz, "allProcesses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#current()"/> 
         /// </summary>
         public static Java.Lang.ProcessHandle Current
         {
-            get { return SExecute<Java.Lang.ProcessHandle>("current"); }
+            get { return SExecute<Java.Lang.ProcessHandle>(LocalClazz, "current"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#of(long)"/>
@@ -62,7 +62,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<Java.Lang.ProcessHandle> Of(long arg0)
         {
-            return SExecute<Java.Util.Optional<Java.Lang.ProcessHandle>>("of", arg0);
+            return SExecute<Java.Util.Optional<Java.Lang.ProcessHandle>>(LocalClazz, "of", arg0);
         }
         
         #endregion

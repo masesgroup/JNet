@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Util.Concurrent.Locks
 {
     #region AbstractOwnableSynchronizer
@@ -37,6 +39,8 @@ namespace Java.Util.Concurrent.Locks
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AbstractOwnableSynchronizer(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.AbstractOwnableSynchronizer");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public AbstractQueuedLongSynchronizer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.AbstractQueuedLongSynchronizer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -115,6 +121,8 @@ namespace Java.Util.Concurrent.Locks
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConditionObject(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -160,6 +168,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public AbstractQueuedSynchronizer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.AbstractQueuedSynchronizer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -196,6 +206,8 @@ namespace Java.Util.Concurrent.Locks
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConditionObject(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -241,6 +253,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public Condition(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.Condition");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -281,6 +295,8 @@ namespace Java.Util.Concurrent.Locks
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Lock(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.Lock");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -323,6 +339,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public LockSupport(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.LockSupport");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -363,6 +381,8 @@ namespace Java.Util.Concurrent.Locks
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ReadWriteLock(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.ReadWriteLock");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -405,6 +425,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public ReentrantLock(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.ReentrantLock");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -446,6 +468,8 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public ReentrantReadWriteLock(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.ReentrantReadWriteLock");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -482,6 +506,8 @@ namespace Java.Util.Concurrent.Locks
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ReadLock(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -522,6 +548,8 @@ namespace Java.Util.Concurrent.Locks
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WriteLock(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -566,6 +594,8 @@ namespace Java.Util.Concurrent.Locks
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StampedLock(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.concurrent.locks.StampedLock");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

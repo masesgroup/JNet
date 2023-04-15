@@ -46,7 +46,7 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.Runtime GetRuntime
         {
-            get { return SExecute<Java.Lang.Runtime>("getRuntime"); }
+            get { return SExecute<Java.Lang.Runtime>(LocalClazz, "getRuntime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#version()"/>
@@ -55,7 +55,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
         public static Java.Lang.Runtime.Version VersionMethod()
         {
-            return SExecute<Java.Lang.Runtime.Version>("version");
+            return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "version");
         }
         
         #endregion
@@ -249,7 +249,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
             public static Java.Lang.Runtime.Version Parse(string arg0)
             {
-                return SExecute<Java.Lang.Runtime.Version>("parse", arg0);
+                return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "parse", arg0);
             }
             
             #endregion

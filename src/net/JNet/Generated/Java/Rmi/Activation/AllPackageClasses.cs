@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Rmi.Activation
 {
     #region Activatable
@@ -37,6 +39,8 @@ namespace Java.Rmi.Activation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Activatable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.Activatable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationDesc(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationDesc");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -152,6 +158,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationGroup(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationGroup");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -192,6 +200,8 @@ namespace Java.Rmi.Activation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActivationGroup_Stub(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationGroup_Stub");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -234,6 +244,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationGroupDesc(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationGroupDesc");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -270,6 +282,8 @@ namespace Java.Rmi.Activation
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CommandEnvironment(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationGroupDesc$CommandEnvironment");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -315,6 +329,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationGroupID(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationGroupID");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -355,6 +371,8 @@ namespace Java.Rmi.Activation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActivationID(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationID");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -397,6 +415,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationInstantiator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationInstantiator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -437,6 +457,8 @@ namespace Java.Rmi.Activation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActivationMonitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationMonitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -479,6 +501,8 @@ namespace Java.Rmi.Activation
         /// </summary>
         public ActivationSystem(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.ActivationSystem");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -519,6 +543,8 @@ namespace Java.Rmi.Activation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Activator(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.rmi.activation.Activator");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

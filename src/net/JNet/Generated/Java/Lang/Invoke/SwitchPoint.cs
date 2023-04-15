@@ -47,7 +47,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.SwitchPoint"/></param>
         public static void InvalidateAll(Java.Lang.Invoke.SwitchPoint[] arg0)
         {
-            SExecute("invalidateAll", new object[] { arg0 });
+            SExecute(LocalClazz, "invalidateAll", new object[] { arg0 });
         }
         
         #endregion

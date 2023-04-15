@@ -50,7 +50,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public static string Decode(string arg0, string arg1)
         {
-            return SExecute<string>("decode", arg0, arg1);
+            return SExecute<string>(LocalClazz, "decode", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)"/>
@@ -60,7 +60,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string Decode(string arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<string>("decode", arg0, arg1);
+            return SExecute<string>(LocalClazz, "decode", arg0, arg1);
         }
         
         #endregion

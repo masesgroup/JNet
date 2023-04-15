@@ -50,14 +50,14 @@ namespace Java.Rmi.Activation
         /// </summary>
         public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID
         {
-            get { return SExecute<Java.Rmi.Activation.ActivationGroupID>("currentGroupID"); }
+            get { return SExecute<Java.Rmi.Activation.ActivationGroupID>(LocalClazz, "currentGroupID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#getSystem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem)"/>
         /// </summary>
         public static Java.Rmi.Activation.ActivationSystem System
         {
-            get { return SExecute<Java.Rmi.Activation.ActivationSystem>("getSystem"); } set { SExecute("setSystem", value); }
+            get { return SExecute<Java.Rmi.Activation.ActivationSystem>(LocalClazz, "getSystem"); } set { SExecute(LocalClazz, "setSystem", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc,long)"/>
@@ -69,7 +69,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)
         {
-            return SExecute<Java.Rmi.Activation.ActivationGroup>("createGroup", arg0, arg1, arg2);
+            return SExecute<Java.Rmi.Activation.ActivationGroup>(LocalClazz, "createGroup", arg0, arg1, arg2);
         }
         
         #endregion

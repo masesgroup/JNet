@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Crypto.Interfaces
 {
     #region DHKey
@@ -37,6 +39,8 @@ namespace Javax.Crypto.Interfaces
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DHKey(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.crypto.interfaces.DHKey");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Crypto.Interfaces
         /// </summary>
         public DHPrivateKey(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.crypto.interfaces.DHPrivateKey");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Crypto.Interfaces
         /// </summary>
         public DHPublicKey(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.crypto.interfaces.DHPublicKey");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Javax.Crypto.Interfaces
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PBEKey(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.crypto.interfaces.PBEKey");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

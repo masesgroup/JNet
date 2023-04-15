@@ -70,7 +70,7 @@ namespace Javax.Swing
         /// </summary>
         public static Java.Util.Locale DefaultLocale
         {
-            get { return SExecute<Java.Util.Locale>("getDefaultLocale"); } set { SExecute("setDefaultLocale", value); }
+            get { return SExecute<Java.Util.Locale>(LocalClazz, "getDefaultLocale"); } set { SExecute(LocalClazz, "setDefaultLocale", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isLightweightComponent(java.awt.Component)"/>
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool IsLightweightComponent(Java.Awt.Component arg0)
         {
-            return SExecute<bool>("isLightweightComponent", arg0);
+            return SExecute<bool>(LocalClazz, "isLightweightComponent", arg0);
         }
         
         #endregion

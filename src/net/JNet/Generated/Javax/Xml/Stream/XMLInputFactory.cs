@@ -82,14 +82,14 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static Javax.Xml.Stream.XMLInputFactory NewDefaultFactory
         {
-            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>("newDefaultFactory"); }
+            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalClazz, "newDefaultFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newInstance()"/> 
         /// </summary>
         public static Javax.Xml.Stream.XMLInputFactory NewInstance
         {
-            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>("newInstance"); }
+            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalClazz, "newInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()"/>
@@ -99,7 +99,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory()
         {
-            return SExecute<Javax.Xml.Stream.XMLInputFactory>("newFactory");
+            return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
@@ -110,7 +110,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Stream.XMLInputFactory>("newFactory", arg0, arg1);
+            return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalClazz, "newFactory", arg0, arg1);
         }
         
         #endregion

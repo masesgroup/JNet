@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Nio.Charset
 {
     #region CharacterCodingException
@@ -53,6 +55,8 @@ namespace Java.Nio.Charset
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Charset(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.Charset");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Java.Nio.Charset
         /// </summary>
         public CharsetDecoder(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.CharsetDecoder");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -135,6 +141,8 @@ namespace Java.Nio.Charset
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CharsetEncoder(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.CharsetEncoder");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -193,6 +201,8 @@ namespace Java.Nio.Charset
         /// </summary>
         public CoderResult(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.CoderResult");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -233,6 +243,8 @@ namespace Java.Nio.Charset
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CodingErrorAction(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.CodingErrorAction");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -306,6 +318,8 @@ namespace Java.Nio.Charset
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StandardCharsets(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.charset.StandardCharsets");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

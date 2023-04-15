@@ -50,7 +50,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Util.ResourceBundle.Control arg2)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1, arg2);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
@@ -60,7 +60,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle.Control)"/>
@@ -70,7 +70,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.ResourceBundle.Control arg1)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
@@ -79,14 +79,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#clearCache()"/>
         /// </summary>
         public static void ClearCache()
         {
-            SExecute("clearCache");
+            SExecute(LocalClazz, "clearCache");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader)"/>
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         public static void ClearCache(Java.Lang.ClassLoader arg0)
         {
-            SExecute("clearCache", arg0);
+            SExecute(LocalClazz, "clearCache", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.lang.Module)"/>
@@ -104,7 +104,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Lang.Module arg1)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)"/>
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2, Java.Util.ResourceBundle.Control arg3)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
@@ -127,7 +127,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1, arg2);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.Module)"/>
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.Module arg2)
         {
-            return SExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1, arg2);
+            return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1, arg2);
         }
         
         #endregion
@@ -255,7 +255,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
             public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List<string> arg0)
             {
-                return SExecute<Java.Util.ResourceBundle.Control>("getControl", arg0);
+                return SExecute<Java.Util.ResourceBundle.Control>(LocalClazz, "getControl", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getNoFallbackControl(java.util.List)"/>
@@ -264,7 +264,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
             public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List<string> arg0)
             {
-                return SExecute<Java.Util.ResourceBundle.Control>("getNoFallbackControl", arg0);
+                return SExecute<Java.Util.ResourceBundle.Control>(LocalClazz, "getNoFallbackControl", arg0);
             }
             
             #endregion

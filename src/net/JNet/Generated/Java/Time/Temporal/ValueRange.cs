@@ -55,7 +55,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2, long arg3)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Time.Temporal.ValueRange>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long)"/>
@@ -66,7 +66,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1, arg2);
+            return SExecute<Java.Time.Temporal.ValueRange>(LocalClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long)"/>
@@ -76,7 +76,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1);
+            return SExecute<Java.Time.Temporal.ValueRange>(LocalClazz, "of", arg0, arg1);
         }
         
         #endregion

@@ -72,7 +72,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.OffsetTime>("from", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now()"/>
@@ -81,7 +81,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now()
         {
-            return SExecute<Java.Time.OffsetTime>("now");
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now(java.time.Clock)"/>
@@ -90,7 +90,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.OffsetTime>("now", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now(java.time.ZoneId)"/>
@@ -99,7 +99,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.OffsetTime>("now", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#of(int,int,int,int,java.time.ZoneOffset)"/>
@@ -112,7 +112,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Of(int arg0, int arg1, int arg2, int arg3, Java.Time.ZoneOffset arg4)
         {
-            return SExecute<Java.Time.OffsetTime>("of", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#of(java.time.LocalTime,java.time.ZoneOffset)"/>
@@ -122,7 +122,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Of(Java.Time.LocalTime arg0, Java.Time.ZoneOffset arg1)
         {
-            return SExecute<Java.Time.OffsetTime>("of", arg0, arg1);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -132,7 +132,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.OffsetTime>("ofInstant", arg0, arg1);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "ofInstant", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -142,7 +142,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.OffsetTime>("parse", arg0, arg1);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#parse(java.lang.CharSequence)"/>
@@ -151,7 +151,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.OffsetTime>("parse", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalClazz, "parse", arg0);
         }
         
         #endregion

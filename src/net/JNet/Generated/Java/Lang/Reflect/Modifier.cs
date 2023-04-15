@@ -94,42 +94,42 @@ namespace Java.Lang.Reflect
         /// </summary>
         public static int ClassModifiers
         {
-            get { return SExecute<int>("classModifiers"); }
+            get { return SExecute<int>(LocalClazz, "classModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#constructorModifiers()"/> 
         /// </summary>
         public static int ConstructorModifiers
         {
-            get { return SExecute<int>("constructorModifiers"); }
+            get { return SExecute<int>(LocalClazz, "constructorModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()"/> 
         /// </summary>
         public static int FieldModifiers
         {
-            get { return SExecute<int>("fieldModifiers"); }
+            get { return SExecute<int>(LocalClazz, "fieldModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()"/> 
         /// </summary>
         public static int InterfaceModifiers
         {
-            get { return SExecute<int>("interfaceModifiers"); }
+            get { return SExecute<int>(LocalClazz, "interfaceModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#methodModifiers()"/> 
         /// </summary>
         public static int MethodModifiers
         {
-            get { return SExecute<int>("methodModifiers"); }
+            get { return SExecute<int>(LocalClazz, "methodModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"/> 
         /// </summary>
         public static int ParameterModifiers
         {
-            get { return SExecute<int>("parameterModifiers"); }
+            get { return SExecute<int>(LocalClazz, "parameterModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isAbstract(int)"/>
@@ -138,7 +138,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsAbstractMethod(int arg0)
         {
-            return SExecute<bool>("isAbstract", arg0);
+            return SExecute<bool>(LocalClazz, "isAbstract", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isFinal(int)"/>
@@ -147,7 +147,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinal(int arg0)
         {
-            return SExecute<bool>("isFinal", arg0);
+            return SExecute<bool>(LocalClazz, "isFinal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isInterface(int)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsInterfaceMethod(int arg0)
         {
-            return SExecute<bool>("isInterface", arg0);
+            return SExecute<bool>(LocalClazz, "isInterface", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isNative(int)"/>
@@ -165,7 +165,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsNative(int arg0)
         {
-            return SExecute<bool>("isNative", arg0);
+            return SExecute<bool>(LocalClazz, "isNative", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isPrivate(int)"/>
@@ -174,7 +174,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsPrivate(int arg0)
         {
-            return SExecute<bool>("isPrivate", arg0);
+            return SExecute<bool>(LocalClazz, "isPrivate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isProtected(int)"/>
@@ -183,7 +183,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsProtected(int arg0)
         {
-            return SExecute<bool>("isProtected", arg0);
+            return SExecute<bool>(LocalClazz, "isProtected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isPublic(int)"/>
@@ -192,7 +192,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsPublic(int arg0)
         {
-            return SExecute<bool>("isPublic", arg0);
+            return SExecute<bool>(LocalClazz, "isPublic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isStatic(int)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsStaticMethod(int arg0)
         {
-            return SExecute<bool>("isStatic", arg0);
+            return SExecute<bool>(LocalClazz, "isStatic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isStrict(int)"/>
@@ -210,7 +210,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsStrict(int arg0)
         {
-            return SExecute<bool>("isStrict", arg0);
+            return SExecute<bool>(LocalClazz, "isStrict", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isSynchronized(int)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsSynchronized(int arg0)
         {
-            return SExecute<bool>("isSynchronized", arg0);
+            return SExecute<bool>(LocalClazz, "isSynchronized", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isTransient(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsTransient(int arg0)
         {
-            return SExecute<bool>("isTransient", arg0);
+            return SExecute<bool>(LocalClazz, "isTransient", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isVolatile(int)"/>
@@ -237,7 +237,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsVolatile(int arg0)
         {
-            return SExecute<bool>("isVolatile", arg0);
+            return SExecute<bool>(LocalClazz, "isVolatile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#toString(int)"/>
@@ -246,7 +246,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="string"/></returns>
         public static string ToString(int arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>(LocalClazz, "toString", arg0);
         }
         
         #endregion

@@ -54,7 +54,7 @@ namespace Java.Nio
         /// </summary>
         public static Java.Nio.ByteOrder NativeOrder
         {
-            get { return SExecute<Java.Nio.ByteOrder>("nativeOrder"); }
+            get { return SExecute<Java.Nio.ByteOrder>(LocalClazz, "nativeOrder"); }
         }
         
         #endregion

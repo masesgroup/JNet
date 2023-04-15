@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Util.Jar
 {
     #region Attributes
@@ -37,6 +39,8 @@ namespace Java.Util.Jar
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Attributes(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.Attributes");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -74,6 +78,8 @@ namespace Java.Util.Jar
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Name(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.util.jar.Attributes$Name");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -118,6 +124,8 @@ namespace Java.Util.Jar
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JarEntry(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.JarEntry");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -176,6 +184,8 @@ namespace Java.Util.Jar
         /// </summary>
         public JarFile(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.JarFile");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -216,6 +226,8 @@ namespace Java.Util.Jar
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JarInputStream(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.JarInputStream");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -258,6 +270,8 @@ namespace Java.Util.Jar
         /// </summary>
         public JarOutputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.JarOutputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -298,6 +312,8 @@ namespace Java.Util.Jar
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Manifest(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.jar.Manifest");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

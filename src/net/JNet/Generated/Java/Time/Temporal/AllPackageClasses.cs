@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Time.Temporal
 {
     #region ChronoField
@@ -37,6 +39,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ChronoField(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.ChronoField");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public ChronoUnit(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.ChronoUnit");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IsoFields(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.IsoFields");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public JulianFields(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.JulianFields");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Temporal(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.Temporal");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public TemporalAccessor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalAccessor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TemporalAdjuster(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalAdjuster");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public TemporalAdjusters(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalAdjusters");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TemporalAmount(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalAmount");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public TemporalField(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalField");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TemporalQueries(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalQueries");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -489,6 +513,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public TemporalQuery(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalQuery");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -530,6 +556,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public TemporalQuery(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalQuery");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -570,6 +598,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TemporalUnit(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.TemporalUnit");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -628,6 +658,8 @@ namespace Java.Time.Temporal
         /// </summary>
         public ValueRange(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.ValueRange");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -668,6 +700,8 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WeekFields(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.time.temporal.WeekFields");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

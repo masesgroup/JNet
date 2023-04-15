@@ -72,7 +72,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int BitCount(long arg0)
         {
-            return SExecute<int>("bitCount", arg0);
+            return SExecute<int>(LocalClazz, "bitCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compare(long,long)"/>
@@ -82,7 +82,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(long arg0, long arg1)
         {
-            return SExecute<int>("compare", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareUnsigned(long,long)"/>
@@ -92,7 +92,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long arg0, long arg1)
         {
-            return SExecute<int>("compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#hashCode(long)"/>
@@ -101,7 +101,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(long arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>(LocalClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfLeadingZeros(long)"/>
@@ -110,7 +110,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int NumberOfLeadingZeros(long arg0)
         {
-            return SExecute<int>("numberOfLeadingZeros", arg0);
+            return SExecute<int>(LocalClazz, "numberOfLeadingZeros", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfTrailingZeros(long)"/>
@@ -119,7 +119,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int NumberOfTrailingZeros(long arg0)
         {
-            return SExecute<int>("numberOfTrailingZeros", arg0);
+            return SExecute<int>(LocalClazz, "numberOfTrailingZeros", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#signum(long)"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Signum(long arg0)
         {
-            return SExecute<int>("signum", arg0);
+            return SExecute<int>(LocalClazz, "signum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? Decode(string arg0)
         {
-            return SExecute<long?>("decode", arg0);
+            return SExecute<long?>(LocalClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)"/>
@@ -148,7 +148,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long? GetLong(string arg0, long? arg1)
         {
-            return SExecute<long?>("getLong", arg0, arg1);
+            return SExecute<long?>(LocalClazz, "getLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)"/>
@@ -158,7 +158,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long? GetLong(string arg0, long arg1)
         {
-            return SExecute<long?>("getLong", arg0, arg1);
+            return SExecute<long?>(LocalClazz, "getLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long? GetLong(string arg0)
         {
-            return SExecute<long?>("getLong", arg0);
+            return SExecute<long?>(LocalClazz, "getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int)"/>
@@ -178,7 +178,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0, int arg1)
         {
-            return SExecute<long?>("valueOf", arg0, arg1);
+            return SExecute<long?>(LocalClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0)
         {
-            return SExecute<long?>("valueOf", arg0);
+            return SExecute<long?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)"/>
@@ -197,7 +197,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long? ValueOf(long arg0)
         {
-            return SExecute<long?>("valueOf", arg0);
+            return SExecute<long?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)"/>
@@ -206,7 +206,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToBinaryString(long arg0)
         {
-            return SExecute<string>("toBinaryString", arg0);
+            return SExecute<string>(LocalClazz, "toBinaryString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toHexString(long)"/>
@@ -215,7 +215,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToHexString(long arg0)
         {
-            return SExecute<string>("toHexString", arg0);
+            return SExecute<string>(LocalClazz, "toHexString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toOctalString(long)"/>
@@ -224,7 +224,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToOctalString(long arg0)
         {
-            return SExecute<string>("toOctalString", arg0);
+            return SExecute<string>(LocalClazz, "toOctalString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long,int)"/>
@@ -234,7 +234,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(long arg0, int arg1)
         {
-            return SExecute<string>("toString", arg0, arg1);
+            return SExecute<string>(LocalClazz, "toString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long)"/>
@@ -243,7 +243,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(long arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>(LocalClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long,int)"/>
@@ -253,7 +253,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToUnsignedString(long arg0, int arg1)
         {
-            return SExecute<string>("toUnsignedString", arg0, arg1);
+            return SExecute<string>(LocalClazz, "toUnsignedString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long)"/>
@@ -262,7 +262,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToUnsignedString(long arg0)
         {
-            return SExecute<string>("toUnsignedString", arg0);
+            return SExecute<string>(LocalClazz, "toUnsignedString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#divideUnsigned(long,long)"/>
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DivideUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>("divideUnsigned", arg0, arg1);
+            return SExecute<long>(LocalClazz, "divideUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#highestOneBit(long)"/>
@@ -281,7 +281,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long HighestOneBit(long arg0)
         {
-            return SExecute<long>("highestOneBit", arg0);
+            return SExecute<long>(LocalClazz, "highestOneBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#lowestOneBit(long)"/>
@@ -290,7 +290,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long LowestOneBit(long arg0)
         {
-            return SExecute<long>("lowestOneBit", arg0);
+            return SExecute<long>(LocalClazz, "lowestOneBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#max(long,long)"/>
@@ -300,7 +300,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
-            return SExecute<long>("max", arg0, arg1);
+            return SExecute<long>(LocalClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#min(long,long)"/>
@@ -310,7 +310,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
-            return SExecute<long>("min", arg0, arg1);
+            return SExecute<long>(LocalClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int)"/>
@@ -323,7 +323,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>("parseLong", arg0, arg1, arg2, arg3);
+            return SExecute<long>(LocalClazz, "parseLong", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String,int)"/>
@@ -334,7 +334,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0, int arg1)
         {
-            return SExecute<long>("parseLong", arg0, arg1);
+            return SExecute<long>(LocalClazz, "parseLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String)"/>
@@ -344,7 +344,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0)
         {
-            return SExecute<long>("parseLong", arg0);
+            return SExecute<long>(LocalClazz, "parseLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.CharSequence,int,int,int)"/>
@@ -357,7 +357,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>("parseUnsignedLong", arg0, arg1, arg2, arg3);
+            return SExecute<long>(LocalClazz, "parseUnsignedLong", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String,int)"/>
@@ -368,7 +368,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0, int arg1)
         {
-            return SExecute<long>("parseUnsignedLong", arg0, arg1);
+            return SExecute<long>(LocalClazz, "parseUnsignedLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String)"/>
@@ -378,7 +378,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0)
         {
-            return SExecute<long>("parseUnsignedLong", arg0);
+            return SExecute<long>(LocalClazz, "parseUnsignedLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#remainderUnsigned(long,long)"/>
@@ -388,7 +388,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RemainderUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>("remainderUnsigned", arg0, arg1);
+            return SExecute<long>(LocalClazz, "remainderUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverse(long)"/>
@@ -397,7 +397,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Reverse(long arg0)
         {
-            return SExecute<long>("reverse", arg0);
+            return SExecute<long>(LocalClazz, "reverse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverseBytes(long)"/>
@@ -406,7 +406,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long ReverseBytes(long arg0)
         {
-            return SExecute<long>("reverseBytes", arg0);
+            return SExecute<long>(LocalClazz, "reverseBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateLeft(long,int)"/>
@@ -416,7 +416,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateLeft(long arg0, int arg1)
         {
-            return SExecute<long>("rotateLeft", arg0, arg1);
+            return SExecute<long>(LocalClazz, "rotateLeft", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateRight(long,int)"/>
@@ -426,7 +426,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateRight(long arg0, int arg1)
         {
-            return SExecute<long>("rotateRight", arg0, arg1);
+            return SExecute<long>(LocalClazz, "rotateRight", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#sum(long,long)"/>
@@ -436,7 +436,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Sum(long arg0, long arg1)
         {
-            return SExecute<long>("sum", arg0, arg1);
+            return SExecute<long>(LocalClazz, "sum", arg0, arg1);
         }
         
         #endregion

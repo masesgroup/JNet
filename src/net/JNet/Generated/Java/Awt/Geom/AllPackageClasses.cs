@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Awt.Geom
 {
     #region AffineTransform
@@ -37,6 +39,8 @@ namespace Java.Awt.Geom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AffineTransform(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.AffineTransform");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Arc2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Arc2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -115,6 +121,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Arc2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -155,6 +163,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Arc2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -200,6 +210,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Area(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Area");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -241,6 +253,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public CubicCurve2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.CubicCurve2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -277,6 +291,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.CubicCurve2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -317,6 +333,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.CubicCurve2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -362,6 +380,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Dimension2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Dimension2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -403,6 +423,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Ellipse2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Ellipse2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -439,6 +461,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Ellipse2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -479,6 +503,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Ellipse2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -524,6 +550,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public FlatteningPathIterator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.FlatteningPathIterator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -564,6 +592,8 @@ namespace Java.Awt.Geom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GeneralPath(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.GeneralPath");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -622,6 +652,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Line2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Line2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -658,6 +690,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Line2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -698,6 +732,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Line2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -759,6 +795,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Path2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Path2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -795,6 +833,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Path2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -835,6 +875,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Path2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -880,6 +922,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public PathIterator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.PathIterator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -921,6 +965,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Point2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Point2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -957,6 +1003,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Point2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -997,6 +1045,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Point2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1042,6 +1092,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public QuadCurve2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.QuadCurve2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1078,6 +1130,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.QuadCurve2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1118,6 +1172,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.QuadCurve2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1163,6 +1219,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public Rectangle2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Rectangle2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1199,6 +1257,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Rectangle2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1239,6 +1299,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.Rectangle2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1284,6 +1346,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public RectangularShape(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.RectangularShape");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1325,6 +1389,8 @@ namespace Java.Awt.Geom
         /// </summary>
         public RoundRectangle2D(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.awt.geom.RoundRectangle2D");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1361,6 +1427,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Double(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.RoundRectangle2D$Double");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1401,6 +1469,8 @@ namespace Java.Awt.Geom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Float(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.awt.geom.RoundRectangle2D$Float");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -92,7 +92,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="object"/></returns>
         public static object UnescapeValue(string arg0)
         {
-            return SExecute("unescapeValue", arg0);
+            return SExecute(LocalClazz, "unescapeValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object)"/>
@@ -101,7 +101,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="string"/></returns>
         public static string EscapeValue(object arg0)
         {
-            return SExecute<string>("escapeValue", arg0);
+            return SExecute<string>(LocalClazz, "escapeValue", arg0);
         }
         
         #endregion

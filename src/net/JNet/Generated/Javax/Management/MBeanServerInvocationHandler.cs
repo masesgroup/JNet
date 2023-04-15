@@ -74,7 +74,7 @@ namespace Javax.Management
         /// <returns><see cref="T"/></returns>
         public static T NewProxyInstance<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>("newProxyInstance", arg0, arg1, arg2, arg3);
+            return SExecute<T>(LocalClazz, "newProxyInstance", arg0, arg1, arg2, arg3);
         }
         
         #endregion

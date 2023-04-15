@@ -64,7 +64,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SNIMatcher"/></returns>
         public static Javax.Net.Ssl.SNIMatcher CreateSNIMatcher(string arg0)
         {
-            return SExecute<Javax.Net.Ssl.SNIMatcher>("createSNIMatcher", arg0);
+            return SExecute<Javax.Net.Ssl.SNIMatcher>(LocalClazz, "createSNIMatcher", arg0);
         }
         
         #endregion

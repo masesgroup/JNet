@@ -54,7 +54,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Util.Comparator TimeLineOrder
         {
-            get { return SExecute<Java.Util.Comparator>("timeLineOrder"); }
+            get { return SExecute<Java.Util.Comparator>(LocalClazz, "timeLineOrder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -63,7 +63,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public static Java.Time.Chrono.ChronoZonedDateTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.Chrono.ChronoZonedDateTime>("from", arg0);
+            return SExecute<Java.Time.Chrono.ChronoZonedDateTime>(LocalClazz, "from", arg0);
         }
         
         #endregion

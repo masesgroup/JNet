@@ -46,7 +46,7 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.OptionalInt Empty
         {
-            get { return SExecute<Java.Util.OptionalInt>("empty"); }
+            get { return SExecute<Java.Util.OptionalInt>(LocalClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
@@ -55,7 +55,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Of(int arg0)
         {
-            return SExecute<Java.Util.OptionalInt>("of", arg0);
+            return SExecute<Java.Util.OptionalInt>(LocalClazz, "of", arg0);
         }
         
         #endregion

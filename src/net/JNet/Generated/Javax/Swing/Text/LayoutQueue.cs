@@ -46,7 +46,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public static Javax.Swing.Text.LayoutQueue DefaultQueue
         {
-            get { return SExecute<Javax.Swing.Text.LayoutQueue>("getDefaultQueue"); } set { SExecute("setDefaultQueue", value); }
+            get { return SExecute<Javax.Swing.Text.LayoutQueue>(LocalClazz, "getDefaultQueue"); } set { SExecute(LocalClazz, "setDefaultQueue", value); }
         }
         
         #endregion

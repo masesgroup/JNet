@@ -46,21 +46,21 @@ namespace Java.Sql
         /// </summary>
         public static Java.Util.Stream.Stream<Java.Sql.Driver> Drivers
         {
-            get { return SExecute<Java.Util.Stream.Stream<Java.Sql.Driver>>("drivers"); }
+            get { return SExecute<Java.Util.Stream.Stream<Java.Sql.Driver>>(LocalClazz, "drivers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLoginTimeout(int)"/>
         /// </summary>
         public static int LoginTimeout
         {
-            get { return SExecute<int>("getLoginTimeout"); } set { SExecute("setLoginTimeout", value); }
+            get { return SExecute<int>(LocalClazz, "getLoginTimeout"); } set { SExecute(LocalClazz, "setLoginTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public static Java.Io.PrintWriter LogWriter
         {
-            get { return SExecute<Java.Io.PrintWriter>("getLogWriter"); } set { SExecute("setLogWriter", value); }
+            get { return SExecute<Java.Io.PrintWriter>(LocalClazz, "getLogWriter"); } set { SExecute(LocalClazz, "setLogWriter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -72,7 +72,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0, string arg1, string arg2)
         {
-            return SExecute<Java.Sql.Connection>("getConnection", arg0, arg1, arg2);
+            return SExecute<Java.Sql.Connection>(LocalClazz, "getConnection", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
@@ -83,7 +83,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0, Java.Util.Properties arg1)
         {
-            return SExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
+            return SExecute<Java.Sql.Connection>(LocalClazz, "getConnection", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
@@ -93,7 +93,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0)
         {
-            return SExecute<Java.Sql.Connection>("getConnection", arg0);
+            return SExecute<Java.Sql.Connection>(LocalClazz, "getConnection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
@@ -103,7 +103,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Driver GetDriver(string arg0)
         {
-            return SExecute<Java.Sql.Driver>("getDriver", arg0);
+            return SExecute<Java.Sql.Driver>(LocalClazz, "getDriver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDrivers()"/>
@@ -112,7 +112,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<Java.Sql.Driver> GetDrivers()
         {
-            return SExecute<Java.Util.Enumeration<Java.Sql.Driver>>("getDrivers");
+            return SExecute<Java.Util.Enumeration<Java.Sql.Driver>>(LocalClazz, "getDrivers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>
@@ -121,7 +121,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static void DeregisterDriver(Java.Sql.Driver arg0)
         {
-            SExecute("deregisterDriver", arg0);
+            SExecute(LocalClazz, "deregisterDriver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
@@ -129,7 +129,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="string"/></param>
         public static void Println(string arg0)
         {
-            SExecute("println", arg0);
+            SExecute(LocalClazz, "println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver,java.sql.DriverAction)"/>
@@ -139,7 +139,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0, Java.Sql.DriverAction arg1)
         {
-            SExecute("registerDriver", arg0, arg1);
+            SExecute(LocalClazz, "registerDriver", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
@@ -148,7 +148,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0)
         {
-            SExecute("registerDriver", arg0);
+            SExecute(LocalClazz, "registerDriver", arg0);
         }
         
         #endregion

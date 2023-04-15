@@ -76,7 +76,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public static bool IsRoleStatus(int arg0)
         {
-            return SExecute<bool>("isRoleStatus", arg0);
+            return SExecute<bool>(LocalClazz, "isRoleStatus", arg0);
         }
         
         #endregion

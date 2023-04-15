@@ -138,7 +138,7 @@ namespace Javax.Smartcardio
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State[] Values
             {
-                get { return SExecuteArray<Javax.Smartcardio.CardTerminals.State>("values"); }
+                get { return SExecuteArray<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#valueOf(java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Javax.Smartcardio
             /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
             public static Javax.Smartcardio.CardTerminals.State ValueOf(string arg0)
             {
-                return SExecute<Javax.Smartcardio.CardTerminals.State>("valueOf", arg0);
+                return SExecute<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

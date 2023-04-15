@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Swing.Text.Html.Parser
 {
     #region AttributeList
@@ -37,6 +39,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AttributeList(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.AttributeList");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public ContentModel(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.ContentModel");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DocumentParser(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.DocumentParser");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public DTD(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.DTD");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DTDConstants(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.DTDConstants");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public Element(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.Element");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Entity(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.Entity");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public Parser(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.Parser");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -366,6 +384,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public ParserDelegator(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.ParserDelegator");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -406,6 +426,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TagElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.parser.TagElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

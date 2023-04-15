@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
-            return SExecute<int>("compare", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareUnsigned(short,short)"/>
@@ -83,7 +83,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short arg0, short arg1)
         {
-            return SExecute<int>("compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)"/>
@@ -92,7 +92,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short arg0)
         {
-            return SExecute<int>("hashCode", arg0);
+            return SExecute<int>(LocalClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
@@ -101,7 +101,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToUnsignedInt(short arg0)
         {
-            return SExecute<int>("toUnsignedInt", arg0);
+            return SExecute<int>(LocalClazz, "toUnsignedInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? Decode(string arg0)
         {
-            return SExecute<short?>("decode", arg0);
+            return SExecute<short?>(LocalClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int)"/>
@@ -122,7 +122,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0, int arg1)
         {
-            return SExecute<short?>("valueOf", arg0, arg1);
+            return SExecute<short?>(LocalClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0)
         {
-            return SExecute<short?>("valueOf", arg0);
+            return SExecute<short?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)"/>
@@ -141,7 +141,7 @@ namespace Java.Lang
         /// <returns><see cref="short"/></returns>
         public static short? ValueOf(short arg0)
         {
-            return SExecute<short?>("valueOf", arg0);
+            return SExecute<short?>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)"/>
@@ -150,7 +150,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(short arg0)
         {
-            return SExecute<string>("toString", arg0);
+            return SExecute<string>(LocalClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
@@ -159,7 +159,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(short arg0)
         {
-            return SExecute<long>("toUnsignedLong", arg0);
+            return SExecute<long>(LocalClazz, "toUnsignedLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String,int)"/>
@@ -170,7 +170,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0, int arg1)
         {
-            return SExecute<short>("parseShort", arg0, arg1);
+            return SExecute<short>(LocalClazz, "parseShort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0)
         {
-            return SExecute<short>("parseShort", arg0);
+            return SExecute<short>(LocalClazz, "parseShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)"/>
@@ -189,7 +189,7 @@ namespace Java.Lang
         /// <returns><see cref="short"/></returns>
         public static short ReverseBytes(short arg0)
         {
-            return SExecute<short>("reverseBytes", arg0);
+            return SExecute<short>(LocalClazz, "reverseBytes", arg0);
         }
         
         #endregion

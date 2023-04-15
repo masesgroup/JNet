@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Sql.Rowset.Serial
 {
     #region SerialArray
@@ -37,6 +39,8 @@ namespace Javax.Sql.Rowset.Serial
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SerialArray(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialArray");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public SerialBlob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialBlob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public SerialClob(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialClob");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Javax.Sql.Rowset.Serial
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SerialDatalink(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialDatalink");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -218,6 +228,8 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public SerialJavaObject(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialJavaObject");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -258,6 +270,8 @@ namespace Javax.Sql.Rowset.Serial
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SerialRef(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialRef");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -300,6 +314,8 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public SerialStruct(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SerialStruct");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -341,6 +357,8 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public SQLInputImpl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SQLInputImpl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -381,6 +399,8 @@ namespace Javax.Sql.Rowset.Serial
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SQLOutputImpl(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.serial.SQLOutputImpl");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

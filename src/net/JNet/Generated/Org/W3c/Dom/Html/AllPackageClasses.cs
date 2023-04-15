@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Org.W3c.Dom.Html
 {
     #region HTMLAnchorElement
@@ -37,6 +39,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLAnchorElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLAnchorElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLAppletElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLAppletElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLAreaElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLAreaElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLBaseElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLBaseElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLBaseFontElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLBaseFontElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLBodyElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLBodyElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLBRElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLBRElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLButtonElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLButtonElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLCollection(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLCollection");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLDirectoryElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLDirectoryElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLDivElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLDivElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -489,6 +513,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLDListElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLDListElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -529,6 +555,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLDocument(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLDocument");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -571,6 +599,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLDOMImplementation(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLDOMImplementation");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -611,6 +641,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -653,6 +685,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLFieldSetElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLFieldSetElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -693,6 +727,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLFontElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLFontElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -735,6 +771,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLFormElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLFormElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -775,6 +813,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLFrameElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLFrameElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -817,6 +857,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLFrameSetElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLFrameSetElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -857,6 +899,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLHeadElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLHeadElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -899,6 +943,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLHeadingElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLHeadingElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -939,6 +985,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLHRElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLHRElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -981,6 +1029,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLHtmlElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLHtmlElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1021,6 +1071,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLIFrameElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLIFrameElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1063,6 +1115,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLImageElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLImageElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1103,6 +1157,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLInputElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLInputElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1145,6 +1201,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLIsIndexElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLIsIndexElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1185,6 +1243,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLLabelElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLLabelElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1227,6 +1287,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLLegendElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLLegendElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1267,6 +1329,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLLIElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLLIElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1309,6 +1373,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLLinkElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLLinkElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1349,6 +1415,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLMapElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLMapElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1391,6 +1459,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLMenuElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLMenuElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1431,6 +1501,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLMetaElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLMetaElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1473,6 +1545,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLModElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLModElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1513,6 +1587,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLObjectElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLObjectElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1555,6 +1631,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLOListElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLOListElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1595,6 +1673,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLOptGroupElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLOptGroupElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1637,6 +1717,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLOptionElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLOptionElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1677,6 +1759,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLParagraphElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLParagraphElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1719,6 +1803,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLParamElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLParamElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1759,6 +1845,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLPreElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLPreElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1801,6 +1889,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLQuoteElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLQuoteElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1841,6 +1931,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLScriptElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLScriptElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1883,6 +1975,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLSelectElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLSelectElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1923,6 +2017,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLStyleElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLStyleElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1965,6 +2061,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLTableCaptionElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableCaptionElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2005,6 +2103,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLTableCellElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableCellElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2047,6 +2147,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLTableColElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableColElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2087,6 +2189,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLTableElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2129,6 +2233,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLTableRowElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableRowElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2169,6 +2275,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLTableSectionElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTableSectionElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -2211,6 +2319,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLTextAreaElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTextAreaElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2252,6 +2362,8 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public HTMLTitleElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLTitleElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -2292,6 +2404,8 @@ namespace Org.W3c.Dom.Html
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HTMLUListElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("org.w3c.dom.html.HTMLUListElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

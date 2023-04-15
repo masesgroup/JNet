@@ -46,7 +46,7 @@ namespace Java.Util.Stream
         /// </summary>
         public static Java.Util.Stream.DoubleStream Empty
         {
-            get { return SExecute<Java.Util.Stream.DoubleStream>("empty"); }
+            get { return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)"/>
@@ -56,7 +56,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Concat(Java.Util.Stream.DoubleStream arg0, Java.Util.Stream.DoubleStream arg1)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("concat", arg0, arg1);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "concat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)"/>
@@ -65,7 +65,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Generate(Java.Util.Function.DoubleSupplier arg0)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("generate", arg0);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)"/>
@@ -76,7 +76,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoublePredicate arg1, Java.Util.Function.DoubleUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("iterate", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
@@ -86,7 +86,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoubleUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("iterate", arg0, arg1);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "iterate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double[])"/>
@@ -95,7 +95,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Of(params double[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.DoubleStream>("of", new object[] { arg0 }); else return SExecute<Java.Util.Stream.DoubleStream>("of", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "of", new object[] { arg0 }, arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double)"/>
@@ -104,7 +104,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Of(double arg0)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>("of", arg0);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#builder()"/>
@@ -113,7 +113,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream.Builder"/></returns>
         public static Java.Util.Stream.DoubleStream.Builder BuilderMethod()
         {
-            return SExecute<Java.Util.Stream.DoubleStream.Builder>("builder");
+            return SExecute<Java.Util.Stream.DoubleStream.Builder>(LocalClazz, "builder");
         }
         
         #endregion

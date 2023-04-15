@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Nio.File.Attribute
 {
     #region AclEntry
@@ -37,6 +39,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AclEntry(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclEntry");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -74,6 +78,8 @@ namespace Java.Nio.File.Attribute
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclEntry$Builder");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -119,6 +125,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public AclEntryFlag(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclEntryFlag");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -159,6 +167,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AclEntryPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclEntryPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -201,6 +211,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public AclEntryType(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclEntryType");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -241,6 +253,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AclFileAttributeView(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AclFileAttributeView");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -283,6 +297,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public AttributeView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.AttributeView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -323,6 +339,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BasicFileAttributes(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.BasicFileAttributes");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -365,6 +383,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public BasicFileAttributeView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.BasicFileAttributeView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -405,6 +425,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DosFileAttributes(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.DosFileAttributes");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -447,6 +469,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public DosFileAttributeView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.DosFileAttributeView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -487,6 +511,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileAttribute(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileAttribute");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -529,6 +555,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public FileAttribute(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileAttribute");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -569,6 +597,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileAttributeView(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileAttributeView");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -611,6 +641,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public FileOwnerAttributeView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileOwnerAttributeView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -651,6 +683,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileStoreAttributeView(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileStoreAttributeView");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -693,6 +727,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public FileTime(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.FileTime");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -733,6 +769,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GroupPrincipal(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.GroupPrincipal");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -775,6 +813,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public PosixFileAttributes(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.PosixFileAttributes");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -815,6 +855,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PosixFileAttributeView(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.PosixFileAttributeView");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -857,6 +899,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public PosixFilePermission(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.PosixFilePermission");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -897,6 +941,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PosixFilePermissions(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.PosixFilePermissions");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -939,6 +985,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public UserDefinedFileAttributeView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.UserDefinedFileAttributeView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -980,6 +1028,8 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public UserPrincipal(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.UserPrincipal");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1020,6 +1070,8 @@ namespace Java.Nio.File.Attribute
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UserPrincipalLookupService(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.nio.file.attribute.UserPrincipalLookupService");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

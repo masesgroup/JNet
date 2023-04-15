@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Lang.Annotation
 {
     #region Annotation
@@ -37,6 +39,8 @@ namespace Java.Lang.Annotation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Annotation(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Annotation");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -111,6 +115,8 @@ namespace Java.Lang.Annotation
         /// </summary>
         public Documented(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Documented");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -151,6 +157,8 @@ namespace Java.Lang.Annotation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ElementType(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.ElementType");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -209,6 +217,8 @@ namespace Java.Lang.Annotation
         /// </summary>
         public Inherited(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Inherited");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -249,6 +259,8 @@ namespace Java.Lang.Annotation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Native(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Native");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -291,6 +303,8 @@ namespace Java.Lang.Annotation
         /// </summary>
         public Repeatable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Repeatable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -331,6 +345,8 @@ namespace Java.Lang.Annotation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Retention(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Retention");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -373,6 +389,8 @@ namespace Java.Lang.Annotation
         /// </summary>
         public RetentionPolicy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.RetentionPolicy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -413,6 +431,8 @@ namespace Java.Lang.Annotation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Target(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.lang.annotation.Target");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

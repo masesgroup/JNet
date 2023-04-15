@@ -258,14 +258,14 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/> 
         /// </summary>
         public static Java.Util.Set<string> GetAvailableCalendarTypes
         {
-            get { return SExecute<Java.Util.Set<string>>("getAvailableCalendarTypes"); }
+            get { return SExecute<Java.Util.Set<string>>(LocalClazz, "getAvailableCalendarTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/>
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance()
         {
-            return SExecute<Java.Util.Calendar>("getInstance");
+            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)"/>
@@ -283,7 +283,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Util.Calendar>("getInstance", arg0);
+            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)"/>
@@ -293,7 +293,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Util.Calendar>("getInstance", arg0, arg1);
+            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone)"/>
@@ -302,7 +302,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
-            return SExecute<Java.Util.Calendar>("getInstance", arg0);
+            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0);
         }
         
         #endregion

@@ -86,14 +86,14 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool CommonPool
         {
-            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>("commonPool"); }
+            get { return SExecute<Java.Util.Concurrent.ForkJoinPool>(LocalClazz, "commonPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getCommonPoolParallelism()"/> 
         /// </summary>
         public static int CommonPoolParallelism
         {
-            get { return SExecute<int>("getCommonPoolParallelism"); }
+            get { return SExecute<int>(LocalClazz, "getCommonPoolParallelism"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)"/>
@@ -102,7 +102,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void ManagedBlock(Java.Util.Concurrent.ForkJoinPool.ManagedBlocker arg0)
         {
-            SExecute("managedBlock", arg0);
+            SExecute(LocalClazz, "managedBlock", arg0);
         }
         
         #endregion

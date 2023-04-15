@@ -74,21 +74,21 @@ namespace Java.Awt.Dnd
         /// </summary>
         public static Java.Awt.Dnd.DragSource DefaultDragSource
         {
-            get { return SExecute<Java.Awt.Dnd.DragSource>("getDefaultDragSource"); }
+            get { return SExecute<Java.Awt.Dnd.DragSource>(LocalClazz, "getDefaultDragSource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getDragThreshold()"/> 
         /// </summary>
         public static int DragThreshold
         {
-            get { return SExecute<int>("getDragThreshold"); }
+            get { return SExecute<int>(LocalClazz, "getDragThreshold"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#isDragImageSupported()"/> 
         /// </summary>
         public static bool IsDragImageSupported
         {
-            get { return SExecute<bool>("isDragImageSupported"); }
+            get { return SExecute<bool>(LocalClazz, "isDragImageSupported"); }
         }
         
         #endregion

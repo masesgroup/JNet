@@ -118,7 +118,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Cursor DefaultCursor
         {
-            get { return SExecute<Java.Awt.Cursor>("getDefaultCursor"); }
+            get { return SExecute<Java.Awt.Cursor>(LocalClazz, "getDefaultCursor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         public static Java.Awt.Cursor GetPredefinedCursor(int arg0)
         {
-            return SExecute<Java.Awt.Cursor>("getPredefinedCursor", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalClazz, "getPredefinedCursor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Cursor GetSystemCustomCursor(string arg0)
         {
-            return SExecute<Java.Awt.Cursor>("getSystemCustomCursor", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalClazz, "getSystemCustomCursor", arg0);
         }
         
         #endregion

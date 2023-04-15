@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Sound.Sampled
 {
     #region AudioFileFormat
@@ -37,6 +39,8 @@ namespace Javax.Sound.Sampled
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioFileFormat(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioFileFormat");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -74,6 +78,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioFileFormat$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -119,6 +125,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public AudioFormat(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioFormat");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -155,6 +163,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Encoding(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioFormat$Encoding");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -200,6 +210,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public AudioInputStream(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioInputStream");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -240,6 +252,8 @@ namespace Javax.Sound.Sampled
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -282,6 +296,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public AudioSystem(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.AudioSystem");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -323,6 +339,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public BooleanControl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.BooleanControl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -359,6 +377,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.BooleanControl$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -404,6 +424,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Clip(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Clip");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -445,6 +467,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public CompoundControl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.CompoundControl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -481,6 +505,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.CompoundControl$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -526,6 +552,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Control(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Control");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -562,6 +590,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Control$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -607,6 +637,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public DataLine(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.DataLine");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -643,6 +675,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Info(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.DataLine$Info");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -688,6 +722,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public EnumControl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.EnumControl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -724,6 +760,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.EnumControl$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -769,6 +807,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public FloatControl(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.FloatControl");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -805,6 +845,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.FloatControl$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -850,6 +892,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Line(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Line");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -886,6 +930,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Info(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Line$Info");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -931,6 +977,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public LineEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.LineEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -967,6 +1015,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.LineEvent$Type");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1041,6 +1091,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Mixer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Mixer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1077,6 +1129,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Info(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Mixer$Info");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1122,6 +1176,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Port(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Port");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1158,6 +1214,8 @@ namespace Javax.Sound.Sampled
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Info(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.Port$Info");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1203,6 +1261,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public ReverbType(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.ReverbType");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1244,6 +1304,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public SourceDataLine(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.SourceDataLine");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1284,6 +1346,8 @@ namespace Javax.Sound.Sampled
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TargetDataLine(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sound.sampled.TargetDataLine");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

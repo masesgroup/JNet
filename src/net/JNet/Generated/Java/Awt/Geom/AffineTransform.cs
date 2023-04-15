@@ -148,7 +148,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0, double arg1, double arg2)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getQuadrantRotateInstance", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getQuadrantRotateInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getQuadrantRotateInstance(int)"/>
@@ -157,7 +157,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getQuadrantRotateInstance", arg0);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getQuadrantRotateInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double,double)"/>
@@ -169,7 +169,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getRotateInstance", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double)"/>
@@ -180,7 +180,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getRotateInstance", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getRotateInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double)"/>
@@ -199,7 +199,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getRotateInstance", arg0);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getScaleInstance(double,double)"/>
@@ -209,7 +209,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetScaleInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getScaleInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getScaleInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getShearInstance(double,double)"/>
@@ -219,7 +219,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetShearInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getShearInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getShearInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getTranslateInstance(double,double)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetTranslateInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>("getTranslateInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getTranslateInstance", arg0, arg1);
         }
         
         #endregion

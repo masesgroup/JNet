@@ -143,7 +143,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ProbablePrime(int arg0, Java.Util.Random arg1)
         {
-            return SExecute<Java.Math.BigInteger>("probablePrime", arg0, arg1);
+            return SExecute<Java.Math.BigInteger>(LocalClazz, "probablePrime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#valueOf(long)"/>
@@ -152,7 +152,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ValueOf(long arg0)
         {
-            return SExecute<Java.Math.BigInteger>("valueOf", arg0);
+            return SExecute<Java.Math.BigInteger>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

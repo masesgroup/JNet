@@ -78,7 +78,7 @@ namespace Java.Math
         /// </summary>
         public static Java.Math.RoundingMode[] Values
         {
-            get { return SExecuteArray<Java.Math.RoundingMode>("values"); }
+            get { return SExecuteArray<Java.Math.RoundingMode>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(int)"/>
@@ -87,7 +87,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(int arg0)
         {
-            return SExecute<Java.Math.RoundingMode>("valueOf", arg0);
+            return SExecute<Java.Math.RoundingMode>(LocalClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(string arg0)
         {
-            return SExecute<Java.Math.RoundingMode>("valueOf", arg0);
+            return SExecute<Java.Math.RoundingMode>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

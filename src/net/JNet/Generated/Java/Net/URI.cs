@@ -116,7 +116,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public static Java.Net.URI Create(string arg0)
         {
-            return SExecute<Java.Net.URI>("create", arg0);
+            return SExecute<Java.Net.URI>(LocalClazz, "create", arg0);
         }
         
         #endregion

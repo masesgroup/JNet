@@ -46,14 +46,14 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.ClassLoader PlatformClassLoader
         {
-            get { return SExecute<Java.Lang.ClassLoader>("getPlatformClassLoader"); }
+            get { return SExecute<Java.Lang.ClassLoader>(LocalClazz, "getPlatformClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemClassLoader()"/> 
         /// </summary>
         public static Java.Lang.ClassLoader SystemClassLoader
         {
-            get { return SExecute<Java.Lang.ClassLoader>("getSystemClassLoader"); }
+            get { return SExecute<Java.Lang.ClassLoader>(LocalClazz, "getSystemClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)"/>
@@ -62,7 +62,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream GetSystemResourceAsStream(string arg0)
         {
-            return SExecute<Java.Io.InputStream>("getSystemResourceAsStream", arg0);
+            return SExecute<Java.Io.InputStream>(LocalClazz, "getSystemResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResource(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Net.URL"/></returns>
         public static Java.Net.URL GetSystemResource(string arg0)
         {
-            return SExecute<Java.Net.URL>("getSystemResource", arg0);
+            return SExecute<Java.Net.URL>(LocalClazz, "getSystemResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"/>
@@ -81,7 +81,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Enumeration<Java.Net.URL> GetSystemResources(string arg0)
         {
-            return SExecute<Java.Util.Enumeration<Java.Net.URL>>("getSystemResources", arg0);
+            return SExecute<Java.Util.Enumeration<Java.Net.URL>>(LocalClazz, "getSystemResources", arg0);
         }
         
         #endregion

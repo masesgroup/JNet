@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Net.Spi
 {
     #region URLStreamHandlerProvider
@@ -37,6 +39,8 @@ namespace Java.Net.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public URLStreamHandlerProvider(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.net.spi.URLStreamHandlerProvider");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

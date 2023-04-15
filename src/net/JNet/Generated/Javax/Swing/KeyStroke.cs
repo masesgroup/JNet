@@ -48,7 +48,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(char arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStroke", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int,boolean)"/>
@@ -59,7 +59,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(int arg0, int arg1, bool arg2)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1, arg2);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStroke", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int)"/>
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(int arg0, int arg1)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStroke", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.Character,int)"/>
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(char? arg0, int arg1)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStroke", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)"/>
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(string arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStroke", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStrokeForEvent(java.awt.event.KeyEvent)"/>
@@ -97,7 +97,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStrokeForEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>("getKeyStrokeForEvent", arg0);
+            return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStrokeForEvent", arg0);
         }
         
         #endregion

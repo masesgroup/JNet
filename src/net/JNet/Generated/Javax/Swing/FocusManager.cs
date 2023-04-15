@@ -50,7 +50,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.FocusManager CurrentManager
         {
-            get { return SExecute<Javax.Swing.FocusManager>("getCurrentManager"); } set { SExecute("setCurrentManager", value); }
+            get { return SExecute<Javax.Swing.FocusManager>(LocalClazz, "getCurrentManager"); } set { SExecute(LocalClazz, "setCurrentManager", value); }
         }
         
         #endregion

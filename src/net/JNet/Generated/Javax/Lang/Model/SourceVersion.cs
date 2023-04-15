@@ -94,21 +94,21 @@ namespace Javax.Lang.Model
         /// </summary>
         public static Javax.Lang.Model.SourceVersion Latest
         {
-            get { return SExecute<Javax.Lang.Model.SourceVersion>("latest"); }
+            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "latest"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/> 
         /// </summary>
         public static Javax.Lang.Model.SourceVersion LatestSupported
         {
-            get { return SExecute<Javax.Lang.Model.SourceVersion>("latestSupported"); }
+            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "latestSupported"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/> 
         /// </summary>
         public static Javax.Lang.Model.SourceVersion[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.SourceVersion>("values"); }
+            get { return SExecuteArray<Javax.Lang.Model.SourceVersion>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>("isIdentifier", arg0);
+            return SExecute<bool>(LocalClazz, "isIdentifier", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -127,7 +127,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>("isKeyword", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isKeyword", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
@@ -136,7 +136,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>("isKeyword", arg0);
+            return SExecute<bool>(LocalClazz, "isKeyword", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -146,7 +146,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>("isName", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "isName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>
@@ -155,7 +155,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>("isName", arg0);
+            return SExecute<bool>(LocalClazz, "isName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.SourceVersion>("valueOf", arg0);
+            return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

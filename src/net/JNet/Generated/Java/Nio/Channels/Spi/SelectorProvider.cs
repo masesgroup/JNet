@@ -46,7 +46,7 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public static Java.Nio.Channels.Spi.SelectorProvider Provider
         {
-            get { return SExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider"); }
+            get { return SExecute<Java.Nio.Channels.Spi.SelectorProvider>(LocalClazz, "provider"); }
         }
         
         #endregion

@@ -46,35 +46,35 @@ namespace Java.Lang.Invoke
         /// </summary>
         public static void AcquireFence()
         {
-            SExecute("acquireFence");
+            SExecute(LocalClazz, "acquireFence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#fullFence()"/>
         /// </summary>
         public static void FullFence()
         {
-            SExecute("fullFence");
+            SExecute(LocalClazz, "fullFence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#loadLoadFence()"/>
         /// </summary>
         public static void LoadLoadFence()
         {
-            SExecute("loadLoadFence");
+            SExecute(LocalClazz, "loadLoadFence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#releaseFence()"/>
         /// </summary>
         public static void ReleaseFence()
         {
-            SExecute("releaseFence");
+            SExecute(LocalClazz, "releaseFence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#storeStoreFence()"/>
         /// </summary>
         public static void StoreStoreFence()
         {
-            SExecute("storeStoreFence");
+            SExecute(LocalClazz, "storeStoreFence");
         }
         
         #endregion
@@ -545,7 +545,7 @@ namespace Java.Lang.Invoke
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode[] Values
             {
-                get { return SExecuteArray<Java.Lang.Invoke.VarHandle.AccessMode>("values"); }
+                get { return SExecuteArray<Java.Lang.Invoke.VarHandle.AccessMode>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
@@ -554,7 +554,7 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
             public static Java.Lang.Invoke.VarHandle.AccessMode ValueFromMethodName(string arg0)
             {
-                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>("valueFromMethodName", arg0);
+                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalClazz, "valueFromMethodName", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueOf(java.lang.String)"/>
@@ -563,7 +563,7 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
             public static Java.Lang.Invoke.VarHandle.AccessMode ValueOf(string arg0)
             {
-                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>("valueOf", arg0);
+                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

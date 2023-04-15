@@ -54,7 +54,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Io.InputStream arg0, Java.Util.Function.Supplier<Java.Util.Set<string>> arg1)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>("read", arg0, arg1);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>(LocalClazz, "read", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.io.InputStream)"/>
@@ -64,7 +64,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Io.InputStream arg0)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>("read", arg0);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>(LocalClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.nio.ByteBuffer,java.util.function.Supplier)"/>
@@ -74,7 +74,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Nio.ByteBuffer arg0, Java.Util.Function.Supplier<Java.Util.Set<string>> arg1)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>("read", arg0, arg1);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>(LocalClazz, "read", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.nio.ByteBuffer)"/>
@@ -83,7 +83,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Nio.ByteBuffer arg0)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>("read", arg0);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor>(LocalClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newAutomaticModule(java.lang.String)"/>
@@ -92,7 +92,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewAutomaticModule(string arg0)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("newAutomaticModule", arg0);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalClazz, "newAutomaticModule", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newModule(java.lang.String,java.util.Set)"/>
@@ -102,7 +102,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewModule(string arg0, Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Modifier> arg1)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("newModule", arg0, arg1);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalClazz, "newModule", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newModule(java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewModule(string arg0)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("newModule", arg0);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalClazz, "newModule", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newOpenModule(java.lang.String)"/>
@@ -120,7 +120,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewOpenModule(string arg0)
         {
-            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("newOpenModule", arg0);
+            return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalClazz, "newOpenModule", arg0);
         }
         
         #endregion
@@ -605,7 +605,7 @@ namespace Java.Lang.ModuleNs
             /// </summary>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier[] Values
             {
-                get { return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("values"); }
+                get { return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#valueOf(java.lang.String)"/>
@@ -614,7 +614,7 @@ namespace Java.Lang.ModuleNs
             /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Modifier"/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier ValueOf(string arg0)
             {
-                return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("valueOf", arg0);
+                return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion
@@ -871,7 +871,7 @@ namespace Java.Lang.ModuleNs
             /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Version Parse(string arg0)
             {
-                return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Version>("parse", arg0);
+                return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Version>(LocalClazz, "parse", arg0);
             }
             
             #endregion

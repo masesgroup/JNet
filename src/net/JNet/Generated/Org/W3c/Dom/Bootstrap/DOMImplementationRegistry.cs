@@ -50,7 +50,7 @@ namespace Org.W3c.Dom.Bootstrap
         /// </summary>
         public static Org.W3c.Dom.Bootstrap.DOMImplementationRegistry NewInstance
         {
-            get { return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>("newInstance"); }
+            get { return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>(LocalClazz, "newInstance"); }
         }
         
         #endregion

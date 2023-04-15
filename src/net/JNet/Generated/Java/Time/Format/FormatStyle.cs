@@ -62,7 +62,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.FormatStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.FormatStyle>("values"); }
+            get { return SExecuteArray<Java.Time.Format.FormatStyle>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
         public static Java.Time.Format.FormatStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.FormatStyle>("valueOf", arg0);
+            return SExecute<Java.Time.Format.FormatStyle>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

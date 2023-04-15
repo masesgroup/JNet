@@ -96,7 +96,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="int"/></returns>
         public static int Name2type(string arg0)
         {
-            return SExecute<int>("name2type", arg0);
+            return SExecute<int>(LocalClazz, "name2type", arg0);
         }
         
         #endregion

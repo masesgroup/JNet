@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Swing.Filechooser
 {
     #region FileFilter
@@ -37,6 +39,8 @@ namespace Javax.Swing.Filechooser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileFilter(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.filechooser.FileFilter");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public FileNameExtensionFilter(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.filechooser.FileNameExtensionFilter");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -120,6 +126,8 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public FileSystemView(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.filechooser.FileSystemView");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -160,6 +168,8 @@ namespace Javax.Swing.Filechooser
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileView(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.swing.filechooser.FileView");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Net.Ssl
 {
     #region CertPathTrustManagerParameters
@@ -37,6 +39,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CertPathTrustManagerParameters(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.CertPathTrustManagerParameters");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public ExtendedSSLSession(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.ExtendedSSLSession");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HandshakeCompletedEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.HandshakeCompletedEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -174,6 +182,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public HostnameVerifier(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.HostnameVerifier");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -214,6 +224,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HttpsURLConnection(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.HttpsURLConnection");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -256,6 +268,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public KeyManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.KeyManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -296,6 +310,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyManagerFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.KeyManagerFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -338,6 +354,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public KeyManagerFactorySpi(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.KeyManagerFactorySpi");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -378,6 +396,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyStoreBuilderParameters(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.KeyStoreBuilderParameters");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -420,6 +440,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public ManagerFactoryParameters(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.ManagerFactoryParameters");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -460,6 +482,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SNIHostName(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SNIHostName");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -502,6 +526,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SNIMatcher(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SNIMatcher");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -542,6 +568,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SNIServerName(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SNIServerName");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -584,6 +612,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLContext(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLContext");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -624,6 +654,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLContextSpi(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLContextSpi");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -666,6 +698,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLEngine(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLEngine");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -707,6 +741,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLEngineResult(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLEngineResult");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -743,6 +779,8 @@ namespace Javax.Net.Ssl
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public HandshakeStatus(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLEngineResult$HandshakeStatus");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -783,6 +821,8 @@ namespace Javax.Net.Ssl
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Status(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLEngineResult$Status");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -876,6 +916,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLParameters(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLParameters");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -932,6 +974,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLPermission(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLPermission");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -990,6 +1034,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLServerSocket(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLServerSocket");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1030,6 +1076,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLServerSocketFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLServerSocketFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1072,6 +1120,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLSession(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLSession");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1112,6 +1162,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLSessionBindingEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLSessionBindingEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1167,6 +1219,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLSessionContext(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLSessionContext");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1207,6 +1261,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLSocket(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLSocket");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1249,6 +1305,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLSocketFactory(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.SSLSocketFactory");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1289,6 +1347,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StandardConstants(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.StandardConstants");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1331,6 +1391,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public TrustManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.TrustManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1371,6 +1433,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TrustManagerFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.TrustManagerFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1413,6 +1477,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public TrustManagerFactorySpi(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.TrustManagerFactorySpi");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1453,6 +1519,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public X509ExtendedKeyManager(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.X509ExtendedKeyManager");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1495,6 +1563,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public X509ExtendedTrustManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.X509ExtendedTrustManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1536,6 +1606,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         public X509KeyManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.X509KeyManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1576,6 +1648,8 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public X509TrustManager(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.net.ssl.X509TrustManager");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

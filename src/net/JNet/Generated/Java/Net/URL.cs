@@ -117,7 +117,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
         public static void SetURLStreamHandlerFactory(Java.Net.URLStreamHandlerFactory arg0)
         {
-            SExecute("setURLStreamHandlerFactory", arg0);
+            SExecute(LocalClazz, "setURLStreamHandlerFactory", arg0);
         }
         
         #endregion

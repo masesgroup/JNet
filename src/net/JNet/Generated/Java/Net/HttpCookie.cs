@@ -62,7 +62,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public static bool DomainMatches(string arg0, string arg1)
         {
-            return SExecute<bool>("domainMatches", arg0, arg1);
+            return SExecute<bool>(LocalClazz, "domainMatches", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#parse(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Net.HttpCookie> Parse(string arg0)
         {
-            return SExecute<Java.Util.List<Java.Net.HttpCookie>>("parse", arg0);
+            return SExecute<Java.Util.List<Java.Net.HttpCookie>>(LocalClazz, "parse", arg0);
         }
         
         #endregion

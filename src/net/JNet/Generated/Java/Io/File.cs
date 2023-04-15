@@ -104,7 +104,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.File[] ListRoots
         {
-            get { return SExecuteArray<Java.Io.File>("listRoots"); }
+            get { return SExecuteArray<Java.Io.File>(LocalClazz, "listRoots"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
@@ -116,7 +116,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(string arg0, string arg1, Java.Io.File arg2)
         {
-            return SExecute<Java.Io.File>("createTempFile", arg0, arg1, arg2);
+            return SExecute<Java.Io.File>(LocalClazz, "createTempFile", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
@@ -127,7 +127,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(string arg0, string arg1)
         {
-            return SExecute<Java.Io.File>("createTempFile", arg0, arg1);
+            return SExecute<Java.Io.File>(LocalClazz, "createTempFile", arg0, arg1);
         }
         
         #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Util.Regex
 {
     #region Matcher
@@ -37,6 +39,8 @@ namespace Java.Util.Regex
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Matcher(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.regex.Matcher");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Util.Regex
         /// </summary>
         public MatchResult(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.util.regex.MatchResult");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Util.Regex
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Pattern(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.util.regex.Pattern");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

@@ -242,7 +242,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType[] Values
             {
-                get { return SExecuteArray<Java.Awt.TrayIcon.MessageType>("values"); }
+                get { return SExecuteArray<Java.Awt.TrayIcon.MessageType>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String)"/>
@@ -251,7 +251,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
             public static Java.Awt.TrayIcon.MessageType ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.TrayIcon.MessageType>("valueOf", arg0);
+                return SExecute<Java.Awt.TrayIcon.MessageType>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

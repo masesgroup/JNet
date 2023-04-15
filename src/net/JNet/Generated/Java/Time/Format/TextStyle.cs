@@ -70,7 +70,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.TextStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.TextStyle>("values"); }
+            get { return SExecuteArray<Java.Time.Format.TextStyle>(LocalClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#valueOf(java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public static Java.Time.Format.TextStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.TextStyle>("valueOf", arg0);
+            return SExecute<Java.Time.Format.TextStyle>(LocalClazz, "valueOf", arg0);
         }
         
         #endregion

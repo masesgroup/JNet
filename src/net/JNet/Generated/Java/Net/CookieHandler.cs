@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.CookieHandler Default
         {
-            get { return SExecute<Java.Net.CookieHandler>("getDefault"); } set { SExecute("setDefault", value); }
+            get { return SExecute<Java.Net.CookieHandler>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
         }
         
         #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Lang.Model.Element
 {
     #region AnnotationMirror
@@ -37,6 +39,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AnnotationMirror(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.AnnotationMirror");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public AnnotationValue(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.AnnotationValue");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AnnotationValueVisitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.AnnotationValueVisitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public AnnotationValueVisitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.AnnotationValueVisitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Element(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.Element");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public ElementKind(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ElementKind");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ElementVisitor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ElementVisitor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public ElementVisitor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ElementVisitor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ExecutableElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ExecutableElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Modifier(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.Modifier");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -448,6 +470,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public ModuleElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -484,6 +508,8 @@ namespace Javax.Lang.Model.Element
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Directive(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$Directive");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -525,6 +551,8 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public DirectiveKind(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$DirectiveKind");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -564,6 +592,8 @@ namespace Javax.Lang.Model.Element
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DirectiveVisitor(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$DirectiveVisitor");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -605,6 +635,8 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public DirectiveVisitor(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$DirectiveVisitor");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -644,6 +676,8 @@ namespace Javax.Lang.Model.Element
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ExportsDirective(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$ExportsDirective");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -685,6 +719,8 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public OpensDirective(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$OpensDirective");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -724,6 +760,8 @@ namespace Javax.Lang.Model.Element
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ProvidesDirective(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$ProvidesDirective");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -765,6 +803,8 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public RequiresDirective(params object[] args) : base(args) { }
 
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$RequiresDirective");
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             /// </summary>
@@ -804,6 +844,8 @@ namespace Javax.Lang.Model.Element
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UsesDirective(params object[] args) : base(args) { }
+
+            private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.ModuleElement$UsesDirective");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -849,6 +891,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Name(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.Name");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -889,6 +933,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NestingKind(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.NestingKind");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -931,6 +977,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public PackageElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.PackageElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -971,6 +1019,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Parameterizable(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.Parameterizable");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1013,6 +1063,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public QualifiedNameable(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.QualifiedNameable");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1054,6 +1106,8 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public TypeElement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.TypeElement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1094,6 +1148,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TypeParameterElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.TypeParameterElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1183,6 +1239,8 @@ namespace Javax.Lang.Model.Element
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VariableElement(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.lang.model.element.VariableElement");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

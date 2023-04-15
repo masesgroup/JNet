@@ -66,28 +66,28 @@ namespace Javax.Swing.Plaf
         /// </summary>
         public static Javax.Swing.Border.Border BlackLineBorderUIResource
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getBlackLineBorderUIResource"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getBlackLineBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getEtchedBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetEtchedBorderUIResource
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getEtchedBorderUIResource"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getEtchedBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getLoweredBevelBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border LoweredBevelBorderUIResource
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getLoweredBevelBorderUIResource"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getLoweredBevelBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getRaisedBevelBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border RaisedBevelBorderUIResource
         {
-            get { return SExecute<Javax.Swing.Border.Border>("getRaisedBevelBorderUIResource"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getRaisedBevelBorderUIResource"); }
         }
         
         #endregion

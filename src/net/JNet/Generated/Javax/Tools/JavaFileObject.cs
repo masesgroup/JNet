@@ -121,7 +121,7 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind[] Values
             {
-                get { return SExecuteArray<Javax.Tools.JavaFileObject.Kind>("values"); }
+                get { return SExecuteArray<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#valueOf(java.lang.String)"/>
@@ -130,7 +130,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
             public static Javax.Tools.JavaFileObject.Kind ValueOf(string arg0)
             {
-                return SExecute<Javax.Tools.JavaFileObject.Kind>("valueOf", arg0);
+                return SExecute<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "valueOf", arg0);
             }
             
             #endregion

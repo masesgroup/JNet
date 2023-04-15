@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Java.Beans
 {
     #region BeanDescriptor
@@ -37,6 +39,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BeanDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.BeanDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -79,6 +83,8 @@ namespace Java.Beans
         /// </summary>
         public BeanInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.BeanInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -119,6 +125,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BeanProperty(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.BeanProperty");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -161,6 +169,8 @@ namespace Java.Beans
         /// </summary>
         public Beans(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Beans");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -201,6 +211,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConstructorProperties(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.ConstructorProperties");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -243,6 +255,8 @@ namespace Java.Beans
         /// </summary>
         public Customizer(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Customizer");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -283,6 +297,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DefaultPersistenceDelegate(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.DefaultPersistenceDelegate");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -325,6 +341,8 @@ namespace Java.Beans
         /// </summary>
         public DesignMode(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.DesignMode");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -365,6 +383,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Encoder(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Encoder");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -407,6 +427,8 @@ namespace Java.Beans
         /// </summary>
         public EventHandler(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.EventHandler");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -447,6 +469,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EventSetDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.EventSetDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -502,6 +526,8 @@ namespace Java.Beans
         /// </summary>
         public Expression(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Expression");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -542,6 +568,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FeatureDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.FeatureDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -584,6 +612,8 @@ namespace Java.Beans
         /// </summary>
         public IndexedPropertyChangeEvent(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.IndexedPropertyChangeEvent");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -624,6 +654,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IndexedPropertyDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.IndexedPropertyDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -682,6 +714,8 @@ namespace Java.Beans
         /// </summary>
         public Introspector(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Introspector");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -722,6 +756,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JavaBean(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.JavaBean");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -764,6 +800,8 @@ namespace Java.Beans
         /// </summary>
         public MethodDescriptor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.MethodDescriptor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -804,6 +842,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ParameterDescriptor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.ParameterDescriptor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -846,6 +886,8 @@ namespace Java.Beans
         /// </summary>
         public PersistenceDelegate(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PersistenceDelegate");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -886,6 +928,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyChangeEvent(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyChangeEvent");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -941,6 +985,8 @@ namespace Java.Beans
         /// </summary>
         public PropertyChangeListenerProxy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyChangeListenerProxy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -981,6 +1027,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyChangeSupport(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyChangeSupport");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1023,6 +1071,8 @@ namespace Java.Beans
         /// </summary>
         public PropertyDescriptor(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyDescriptor");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1063,6 +1113,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyEditor(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyEditor");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1105,6 +1157,8 @@ namespace Java.Beans
         /// </summary>
         public PropertyEditorManager(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyEditorManager");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1145,6 +1199,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyEditorSupport(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.PropertyEditorSupport");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1203,6 +1259,8 @@ namespace Java.Beans
         /// </summary>
         public SimpleBeanInfo(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.SimpleBeanInfo");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1244,6 +1302,8 @@ namespace Java.Beans
         /// </summary>
         public Statement(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Statement");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1284,6 +1344,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Transient(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Transient");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1339,6 +1401,8 @@ namespace Java.Beans
         /// </summary>
         public VetoableChangeListenerProxy(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.VetoableChangeListenerProxy");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1379,6 +1443,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VetoableChangeSupport(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.VetoableChangeSupport");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -1421,6 +1487,8 @@ namespace Java.Beans
         /// </summary>
         public Visibility(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.Visibility");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1462,6 +1530,8 @@ namespace Java.Beans
         /// </summary>
         public XMLDecoder(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("java.beans.XMLDecoder");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -1502,6 +1572,8 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XMLEncoder(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("java.beans.XMLEncoder");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

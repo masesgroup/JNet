@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+
 namespace Javax.Sql.Rowset.Spi
 {
     #region SyncFactory
@@ -37,6 +39,8 @@ namespace Javax.Sql.Rowset.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SyncFactory(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.SyncFactory");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -95,6 +99,8 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public SyncProvider(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.SyncProvider");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -152,6 +158,8 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public SyncResolver(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.SyncResolver");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -192,6 +200,8 @@ namespace Javax.Sql.Rowset.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransactionalWriter(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.TransactionalWriter");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
@@ -234,6 +244,8 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public XmlReader(params object[] args) : base(args) { }
 
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.XmlReader");
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         /// </summary>
@@ -274,6 +286,8 @@ namespace Javax.Sql.Rowset.Spi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XmlWriter(params object[] args) : base(args) { }
+
+        private static IJavaType LocalClazz = ClazzOf("javax.sql.rowset.spi.XmlWriter");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>

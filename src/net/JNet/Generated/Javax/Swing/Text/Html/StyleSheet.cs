@@ -48,7 +48,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="int"/></returns>
         public static int GetIndexOfSize(float arg0)
         {
-            return SExecute<int>("getIndexOfSize", arg0);
+            return SExecute<int>(LocalClazz, "getIndexOfSize", arg0);
         }
         
         #endregion
@@ -223,10 +223,10 @@ namespace Javax.Swing.Text.Html
             IExecute("removeStyleSheet", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public void SetBaseFontSize(int arg0)
+        /// <param name="arg0"><see cref="string"/></param>
+        public void SetBaseFontSize(string arg0)
         {
             IExecute("setBaseFontSize", arg0);
         }
