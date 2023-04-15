@@ -46,6 +46,20 @@ namespace Javax.Sql.Rowset
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#getMatchColumnIndexes()"/> 
+        /// </summary>
+        public int[] MatchColumnIndexes
+        {
+            get { return IExecuteArray<int>("getMatchColumnIndexes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#getMatchColumnNames()"/> 
+        /// </summary>
+        public string[] MatchColumnNames
+        {
+            get { return IExecuteArray<string>("getMatchColumnNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

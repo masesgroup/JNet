@@ -121,6 +121,14 @@ namespace Java.Text
         {
             IExecute("setText", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        public void SetText(Java.Text.CharacterIterator arg0)
+        {
+            IExecute("setText", arg0);
+        }
         
         #endregion
 
