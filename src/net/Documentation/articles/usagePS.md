@@ -4,7 +4,15 @@
 
 To install the tool executes the following command within a PowerShell shell:
 
-> Install-Module -Name MASES.JNetPS
+```powershell
+Install-Module -Name MASES.JNetPS
+```
+
+If the above command fails, reporting errors related to _authenticode_, use the following command:
+
+```powershell
+Install-Module -Name MASES.JNetPS -SkipPublisherCheck
+```
 
 ## Usage
 
@@ -14,7 +22,9 @@ To use the PowerShell interface (JNetPS) runs the following commands within a **
 
 * The following cmdlet initialize the environment:
 
-> Start-JNetPS
+```powershell
+Start-JNetPS [arguments]
+```
 
 ### Execution
 
