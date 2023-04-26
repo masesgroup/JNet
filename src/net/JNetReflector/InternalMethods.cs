@@ -1465,9 +1465,15 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
-                string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
-                                                                                                             field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>",
-                                                                                                             field.Name);
+                string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
+                                                                                                                 field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>",
+                                                                                                                 field.Name);
+
+                if (!field.IsFinal())
+                {
+                    executionStub += " " + string.Format(AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
+                                                                                                                     field.Name);
+                }
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION);
                 if (isDeprecated)
