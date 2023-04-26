@@ -1465,14 +1465,35 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
-                string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
-                                                                                                                 field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>",
-                                                                                                                 field.Name);
+                string getFunction;
+                string getFormat;
+                string setFormat;
+                if (field.IsStatic())
+                {
+                    getFunction = "SGetField";
+                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT;
+                    setFormat = AllPackageClasses.ClassStub.FieldStub.SET_STATIC_EXECUTION_FORMAT;
+                }
+                else
+                {
+                    getFunction = "IGetField";
+                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT;
+                    setFormat = AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT;
+                }
+
+                bool isArrayReturnType = false;
+                if (fieldType.EndsWith(SpecialNames.ArrayTypeTrailer))
+                {
+                    fieldType = fieldType.Substring(0, fieldType.IndexOf(SpecialNames.ArrayTypeTrailer));
+                    getFunction += "Array";
+                    isArrayReturnType = true;
+                }
+
+                string executionStub = string.Format(getFormat, getFunction, field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>", field.Name);
 
                 if (!field.IsFinal())
                 {
-                    executionStub += " " + string.Format(AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
-                                                                                                                     field.Name);
+                    executionStub += " " + string.Format(setFormat, field.Name);
                 }
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION);
@@ -1484,7 +1505,7 @@ namespace MASES.JNetReflector
 
                 var singleField = singleFieldTemplate.Replace(AllPackageClasses.ClassStub.FieldStub.DECORATION, jDecoration.ToString())
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.MODIFIER, modifier)
-                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, fieldType)
+                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, isArrayReturnType ? fieldType + SpecialNames.ArrayTypeTrailer : fieldType)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.NAME, fieldName)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.EXECUTION, executionStub)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.HELP, field.JavadocHrefUrl(JNetReflectorCore.UseCamel));
