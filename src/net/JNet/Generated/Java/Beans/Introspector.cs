@@ -40,15 +40,15 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_ALL_BEANINFO"/>
         /// </summary>
-        public static int IGNORE_ALL_BEANINFO => LocalClazz.GetField<int>("IGNORE_ALL_BEANINFO");
+        public static int IGNORE_ALL_BEANINFO { get { return LocalClazz.GetField<int>("IGNORE_ALL_BEANINFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_IMMEDIATE_BEANINFO"/>
         /// </summary>
-        public static int IGNORE_IMMEDIATE_BEANINFO => LocalClazz.GetField<int>("IGNORE_IMMEDIATE_BEANINFO");
+        public static int IGNORE_IMMEDIATE_BEANINFO { get { return LocalClazz.GetField<int>("IGNORE_IMMEDIATE_BEANINFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO"/>
         /// </summary>
-        public static int USE_ALL_BEANINFO => LocalClazz.GetField<int>("USE_ALL_BEANINFO");
+        public static int USE_ALL_BEANINFO { get { return LocalClazz.GetField<int>("USE_ALL_BEANINFO"); } }
         
         #endregion
 

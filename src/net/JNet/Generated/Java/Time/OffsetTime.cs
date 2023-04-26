@@ -56,11 +56,11 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#MAX"/>
         /// </summary>
-        public static Java.Time.OffsetTime MAX => LocalClazz.GetField<Java.Time.OffsetTime>("MAX");
+        public static Java.Time.OffsetTime MAX { get { return LocalClazz.GetField<Java.Time.OffsetTime>("MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#MIN"/>
         /// </summary>
-        public static Java.Time.OffsetTime MIN => LocalClazz.GetField<Java.Time.OffsetTime>("MIN");
+        public static Java.Time.OffsetTime MIN { get { return LocalClazz.GetField<Java.Time.OffsetTime>("MIN"); } }
         
         #endregion
 

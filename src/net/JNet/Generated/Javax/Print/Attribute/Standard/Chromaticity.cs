@@ -52,11 +52,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#COLOR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Chromaticity COLOR => LocalClazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("COLOR");
+        public static Javax.Print.Attribute.Standard.Chromaticity COLOR { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("COLOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#MONOCHROME"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Chromaticity MONOCHROME => LocalClazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("MONOCHROME");
+        public static Javax.Print.Attribute.Standard.Chromaticity MONOCHROME { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("MONOCHROME"); } }
         
         #endregion
 

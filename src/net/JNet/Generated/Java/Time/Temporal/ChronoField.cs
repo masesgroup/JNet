@@ -44,123 +44,123 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#ALIGNED_DAY_OF_WEEK_IN_MONTH"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField ALIGNED_DAY_OF_WEEK_IN_MONTH => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_DAY_OF_WEEK_IN_MONTH");
+        public static Java.Time.Temporal.ChronoField ALIGNED_DAY_OF_WEEK_IN_MONTH { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_DAY_OF_WEEK_IN_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#ALIGNED_DAY_OF_WEEK_IN_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField ALIGNED_DAY_OF_WEEK_IN_YEAR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_DAY_OF_WEEK_IN_YEAR");
+        public static Java.Time.Temporal.ChronoField ALIGNED_DAY_OF_WEEK_IN_YEAR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_DAY_OF_WEEK_IN_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#ALIGNED_WEEK_OF_MONTH"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField ALIGNED_WEEK_OF_MONTH => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_WEEK_OF_MONTH");
+        public static Java.Time.Temporal.ChronoField ALIGNED_WEEK_OF_MONTH { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_WEEK_OF_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#ALIGNED_WEEK_OF_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField ALIGNED_WEEK_OF_YEAR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_WEEK_OF_YEAR");
+        public static Java.Time.Temporal.ChronoField ALIGNED_WEEK_OF_YEAR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ALIGNED_WEEK_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#AMPM_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField AMPM_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("AMPM_OF_DAY");
+        public static Java.Time.Temporal.ChronoField AMPM_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("AMPM_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#CLOCK_HOUR_OF_AMPM"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField CLOCK_HOUR_OF_AMPM => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("CLOCK_HOUR_OF_AMPM");
+        public static Java.Time.Temporal.ChronoField CLOCK_HOUR_OF_AMPM { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("CLOCK_HOUR_OF_AMPM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#CLOCK_HOUR_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField CLOCK_HOUR_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("CLOCK_HOUR_OF_DAY");
+        public static Java.Time.Temporal.ChronoField CLOCK_HOUR_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("CLOCK_HOUR_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#DAY_OF_MONTH"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField DAY_OF_MONTH => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_MONTH");
+        public static Java.Time.Temporal.ChronoField DAY_OF_MONTH { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#DAY_OF_WEEK"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField DAY_OF_WEEK => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_WEEK");
+        public static Java.Time.Temporal.ChronoField DAY_OF_WEEK { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_WEEK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#DAY_OF_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField DAY_OF_YEAR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_YEAR");
+        public static Java.Time.Temporal.ChronoField DAY_OF_YEAR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("DAY_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#EPOCH_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField EPOCH_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("EPOCH_DAY");
+        public static Java.Time.Temporal.ChronoField EPOCH_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("EPOCH_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#ERA"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField ERA => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ERA");
+        public static Java.Time.Temporal.ChronoField ERA { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("ERA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#HOUR_OF_AMPM"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField HOUR_OF_AMPM => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("HOUR_OF_AMPM");
+        public static Java.Time.Temporal.ChronoField HOUR_OF_AMPM { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("HOUR_OF_AMPM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#HOUR_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField HOUR_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("HOUR_OF_DAY");
+        public static Java.Time.Temporal.ChronoField HOUR_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("HOUR_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#INSTANT_SECONDS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField INSTANT_SECONDS => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("INSTANT_SECONDS");
+        public static Java.Time.Temporal.ChronoField INSTANT_SECONDS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("INSTANT_SECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MICRO_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MICRO_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MICRO_OF_DAY");
+        public static Java.Time.Temporal.ChronoField MICRO_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MICRO_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MICRO_OF_SECOND"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MICRO_OF_SECOND => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MICRO_OF_SECOND");
+        public static Java.Time.Temporal.ChronoField MICRO_OF_SECOND { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MICRO_OF_SECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MILLI_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MILLI_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MILLI_OF_DAY");
+        public static Java.Time.Temporal.ChronoField MILLI_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MILLI_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MILLI_OF_SECOND"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MILLI_OF_SECOND => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MILLI_OF_SECOND");
+        public static Java.Time.Temporal.ChronoField MILLI_OF_SECOND { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MILLI_OF_SECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MINUTE_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MINUTE_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MINUTE_OF_DAY");
+        public static Java.Time.Temporal.ChronoField MINUTE_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MINUTE_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MINUTE_OF_HOUR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MINUTE_OF_HOUR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MINUTE_OF_HOUR");
+        public static Java.Time.Temporal.ChronoField MINUTE_OF_HOUR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MINUTE_OF_HOUR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#MONTH_OF_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField MONTH_OF_YEAR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MONTH_OF_YEAR");
+        public static Java.Time.Temporal.ChronoField MONTH_OF_YEAR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("MONTH_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#NANO_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField NANO_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("NANO_OF_DAY");
+        public static Java.Time.Temporal.ChronoField NANO_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("NANO_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#NANO_OF_SECOND"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField NANO_OF_SECOND => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("NANO_OF_SECOND");
+        public static Java.Time.Temporal.ChronoField NANO_OF_SECOND { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("NANO_OF_SECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#OFFSET_SECONDS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField OFFSET_SECONDS => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("OFFSET_SECONDS");
+        public static Java.Time.Temporal.ChronoField OFFSET_SECONDS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("OFFSET_SECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#PROLEPTIC_MONTH"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField PROLEPTIC_MONTH => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("PROLEPTIC_MONTH");
+        public static Java.Time.Temporal.ChronoField PROLEPTIC_MONTH { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("PROLEPTIC_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#SECOND_OF_DAY"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField SECOND_OF_DAY => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("SECOND_OF_DAY");
+        public static Java.Time.Temporal.ChronoField SECOND_OF_DAY { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("SECOND_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#SECOND_OF_MINUTE"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField SECOND_OF_MINUTE => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("SECOND_OF_MINUTE");
+        public static Java.Time.Temporal.ChronoField SECOND_OF_MINUTE { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("SECOND_OF_MINUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField YEAR => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("YEAR");
+        public static Java.Time.Temporal.ChronoField YEAR { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#YEAR_OF_ERA"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoField YEAR_OF_ERA => LocalClazz.GetField<Java.Time.Temporal.ChronoField>("YEAR_OF_ERA");
+        public static Java.Time.Temporal.ChronoField YEAR_OF_ERA { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoField>("YEAR_OF_ERA"); } }
         
         #endregion
 

@@ -44,11 +44,11 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#BEFORE_ROC"/>
         /// </summary>
-        public static Java.Time.Chrono.MinguoEra BEFORE_ROC => LocalClazz.GetField<Java.Time.Chrono.MinguoEra>("BEFORE_ROC");
+        public static Java.Time.Chrono.MinguoEra BEFORE_ROC { get { return LocalClazz.GetField<Java.Time.Chrono.MinguoEra>("BEFORE_ROC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#ROC"/>
         /// </summary>
-        public static Java.Time.Chrono.MinguoEra ROC => LocalClazz.GetField<Java.Time.Chrono.MinguoEra>("ROC");
+        public static Java.Time.Chrono.MinguoEra ROC { get { return LocalClazz.GetField<Java.Time.Chrono.MinguoEra>("ROC"); } }
         
         #endregion
 

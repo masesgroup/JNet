@@ -40,7 +40,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#HINTS_OBSERVED"/>
         /// </summary>
-        public static string HINTS_OBSERVED => LocalClazz.GetField<string>("HINTS_OBSERVED");
+        public static string HINTS_OBSERVED { get { return LocalClazz.GetField<string>("HINTS_OBSERVED"); } }
         
         #endregion
 

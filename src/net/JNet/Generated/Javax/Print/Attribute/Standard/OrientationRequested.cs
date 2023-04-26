@@ -52,19 +52,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#LANDSCAPE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.OrientationRequested LANDSCAPE => LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("LANDSCAPE");
+        public static Javax.Print.Attribute.Standard.OrientationRequested LANDSCAPE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("LANDSCAPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#PORTRAIT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.OrientationRequested PORTRAIT => LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("PORTRAIT");
+        public static Javax.Print.Attribute.Standard.OrientationRequested PORTRAIT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("PORTRAIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_LANDSCAPE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_LANDSCAPE => LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_LANDSCAPE");
+        public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_LANDSCAPE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_LANDSCAPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_PORTRAIT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_PORTRAIT => LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_PORTRAIT");
+        public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_PORTRAIT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_PORTRAIT"); } }
         
         #endregion
 

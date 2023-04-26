@@ -44,19 +44,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#ISO_A4_TRANSPARENT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_TRANSPARENT => LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_TRANSPARENT");
+        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_TRANSPARENT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_TRANSPARENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#ISO_A4_WHITE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_WHITE => LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_WHITE");
+        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_WHITE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_WHITE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_TRANSPARENT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_TRANSPARENT => LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_TRANSPARENT");
+        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_TRANSPARENT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_TRANSPARENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_WHITE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_WHITE => LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_WHITE");
+        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_WHITE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_WHITE"); } }
         
         #endregion
 

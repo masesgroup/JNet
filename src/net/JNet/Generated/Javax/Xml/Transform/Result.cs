@@ -40,11 +40,11 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING"/>
         /// </summary>
-        public static string PI_DISABLE_OUTPUT_ESCAPING => LocalClazz.GetField<string>("PI_DISABLE_OUTPUT_ESCAPING");
+        public static string PI_DISABLE_OUTPUT_ESCAPING { get { return LocalClazz.GetField<string>("PI_DISABLE_OUTPUT_ESCAPING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING"/>
         /// </summary>
-        public static string PI_ENABLE_OUTPUT_ESCAPING => LocalClazz.GetField<string>("PI_ENABLE_OUTPUT_ESCAPING");
+        public static string PI_ENABLE_OUTPUT_ESCAPING { get { return LocalClazz.GetField<string>("PI_ENABLE_OUTPUT_ESCAPING"); } }
         
         #endregion
 

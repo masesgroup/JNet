@@ -110,11 +110,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#LINEAR_RGB"/>
             /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType LINEAR_RGB => LocalClazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("LINEAR_RGB");
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType LINEAR_RGB { get { return LocalClazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("LINEAR_RGB"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB"/>
             /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB => LocalClazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("SRGB");
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB { get { return LocalClazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("SRGB"); } }
             
             #endregion
 
@@ -161,15 +161,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#NO_CYCLE"/>
             /// </summary>
-            public static Java.Awt.MultipleGradientPaint.CycleMethod NO_CYCLE => LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("NO_CYCLE");
+            public static Java.Awt.MultipleGradientPaint.CycleMethod NO_CYCLE { get { return LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("NO_CYCLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REFLECT"/>
             /// </summary>
-            public static Java.Awt.MultipleGradientPaint.CycleMethod REFLECT => LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REFLECT");
+            public static Java.Awt.MultipleGradientPaint.CycleMethod REFLECT { get { return LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REFLECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REPEAT"/>
             /// </summary>
-            public static Java.Awt.MultipleGradientPaint.CycleMethod REPEAT => LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REPEAT");
+            public static Java.Awt.MultipleGradientPaint.CycleMethod REPEAT { get { return LocalClazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REPEAT"); } }
             
             #endregion
 

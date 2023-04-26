@@ -44,15 +44,15 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#ATOMIC_MOVE"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption ATOMIC_MOVE => LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("ATOMIC_MOVE");
+        public static Java.Nio.File.StandardCopyOption ATOMIC_MOVE { get { return LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("ATOMIC_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#COPY_ATTRIBUTES"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption COPY_ATTRIBUTES => LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("COPY_ATTRIBUTES");
+        public static Java.Nio.File.StandardCopyOption COPY_ATTRIBUTES { get { return LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("COPY_ATTRIBUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#REPLACE_EXISTING"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING => LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("REPLACE_EXISTING");
+        public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING { get { return LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("REPLACE_EXISTING"); } }
         
         #endregion
 

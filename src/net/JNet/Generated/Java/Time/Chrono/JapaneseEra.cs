@@ -48,19 +48,19 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra HEISEI => LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("HEISEI");
+        public static Java.Time.Chrono.JapaneseEra HEISEI { get { return LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("HEISEI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#MEIJI"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra MEIJI => LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("MEIJI");
+        public static Java.Time.Chrono.JapaneseEra MEIJI { get { return LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("MEIJI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#SHOWA"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra SHOWA => LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("SHOWA");
+        public static Java.Time.Chrono.JapaneseEra SHOWA { get { return LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("SHOWA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra TAISHO => LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO");
+        public static Java.Time.Chrono.JapaneseEra TAISHO { get { return LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO"); } }
         
         #endregion
 

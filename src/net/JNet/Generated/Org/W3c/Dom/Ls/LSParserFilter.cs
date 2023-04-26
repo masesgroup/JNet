@@ -40,19 +40,19 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_ACCEPT"/>
         /// </summary>
-        public static short FILTER_ACCEPT => LocalClazz.GetField<short>("FILTER_ACCEPT");
+        public static short FILTER_ACCEPT { get { return LocalClazz.GetField<short>("FILTER_ACCEPT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT"/>
         /// </summary>
-        public static short FILTER_INTERRUPT => LocalClazz.GetField<short>("FILTER_INTERRUPT");
+        public static short FILTER_INTERRUPT { get { return LocalClazz.GetField<short>("FILTER_INTERRUPT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT"/>
         /// </summary>
-        public static short FILTER_REJECT => LocalClazz.GetField<short>("FILTER_REJECT");
+        public static short FILTER_REJECT { get { return LocalClazz.GetField<short>("FILTER_REJECT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP"/>
         /// </summary>
-        public static short FILTER_SKIP => LocalClazz.GetField<short>("FILTER_SKIP");
+        public static short FILTER_SKIP { get { return LocalClazz.GetField<short>("FILTER_SKIP"); } }
         
         #endregion
 

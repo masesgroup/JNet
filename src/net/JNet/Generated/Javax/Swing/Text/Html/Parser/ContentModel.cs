@@ -71,15 +71,15 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#type"/>
         /// </summary>
-        public int type => Instance.GetField<int>("type");
+        public int type { get { return Instance.GetField<int>("type"); } set { Instance.SetField("type", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#content"/>
         /// </summary>
-        public object content => Instance.GetField("content");
+        public object content { get { return Instance.GetField("content"); } set { Instance.SetField("content", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#next"/>
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.ContentModel next => Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("next");
+        public Javax.Swing.Text.Html.Parser.ContentModel next { get { return Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("next"); } set { Instance.SetField("next", value); } }
         
         #endregion
 

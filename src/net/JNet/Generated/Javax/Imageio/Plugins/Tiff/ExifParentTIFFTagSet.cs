@@ -40,11 +40,11 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_EXIF_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_EXIF_IFD_POINTER => LocalClazz.GetField<int>("TAG_EXIF_IFD_POINTER");
+        public static int TAG_EXIF_IFD_POINTER { get { return LocalClazz.GetField<int>("TAG_EXIF_IFD_POINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_GPS_INFO_IFD_POINTER => LocalClazz.GetField<int>("TAG_GPS_INFO_IFD_POINTER");
+        public static int TAG_GPS_INFO_IFD_POINTER { get { return LocalClazz.GetField<int>("TAG_GPS_INFO_IFD_POINTER"); } }
         
         #endregion
 

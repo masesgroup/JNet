@@ -76,27 +76,27 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_CREATION"/>
         /// </summary>
-        public static string RELATION_BASIC_CREATION => LocalClazz.GetField<string>("RELATION_BASIC_CREATION");
+        public static string RELATION_BASIC_CREATION { get { return LocalClazz.GetField<string>("RELATION_BASIC_CREATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL"/>
         /// </summary>
-        public static string RELATION_BASIC_REMOVAL => LocalClazz.GetField<string>("RELATION_BASIC_REMOVAL");
+        public static string RELATION_BASIC_REMOVAL { get { return LocalClazz.GetField<string>("RELATION_BASIC_REMOVAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_UPDATE"/>
         /// </summary>
-        public static string RELATION_BASIC_UPDATE => LocalClazz.GetField<string>("RELATION_BASIC_UPDATE");
+        public static string RELATION_BASIC_UPDATE { get { return LocalClazz.GetField<string>("RELATION_BASIC_UPDATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION"/>
         /// </summary>
-        public static string RELATION_MBEAN_CREATION => LocalClazz.GetField<string>("RELATION_MBEAN_CREATION");
+        public static string RELATION_MBEAN_CREATION { get { return LocalClazz.GetField<string>("RELATION_MBEAN_CREATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_REMOVAL"/>
         /// </summary>
-        public static string RELATION_MBEAN_REMOVAL => LocalClazz.GetField<string>("RELATION_MBEAN_REMOVAL");
+        public static string RELATION_MBEAN_REMOVAL { get { return LocalClazz.GetField<string>("RELATION_MBEAN_REMOVAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE"/>
         /// </summary>
-        public static string RELATION_MBEAN_UPDATE => LocalClazz.GetField<string>("RELATION_MBEAN_UPDATE");
+        public static string RELATION_MBEAN_UPDATE { get { return LocalClazz.GetField<string>("RELATION_MBEAN_UPDATE"); } }
         
         #endregion
 

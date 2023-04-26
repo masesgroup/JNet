@@ -51,7 +51,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#OID"/>
         /// </summary>
-        public static string OID => LocalClazz.GetField<string>("OID");
+        public static string OID { get { return LocalClazz.GetField<string>("OID"); } }
         
         #endregion
 

@@ -70,11 +70,11 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#LOWERED"/>
         /// </summary>
-        public static int LOWERED => LocalClazz.GetField<int>("LOWERED");
+        public static int LOWERED { get { return LocalClazz.GetField<int>("LOWERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#RAISED"/>
         /// </summary>
-        public static int RAISED => LocalClazz.GetField<int>("RAISED");
+        public static int RAISED { get { return LocalClazz.GetField<int>("RAISED"); } }
         
         #endregion
 

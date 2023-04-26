@@ -48,11 +48,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#LONG"/>
         /// </summary>
-        public static int LONG => LocalClazz.GetField<int>("LONG");
+        public static int LONG { get { return LocalClazz.GetField<int>("LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#SHORT"/>
         /// </summary>
-        public static int SHORT => LocalClazz.GetField<int>("SHORT");
+        public static int SHORT { get { return LocalClazz.GetField<int>("SHORT"); } }
         
         #endregion
 

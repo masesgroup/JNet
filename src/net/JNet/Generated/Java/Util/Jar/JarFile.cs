@@ -101,7 +101,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#MANIFEST_NAME"/>
         /// </summary>
-        public static string MANIFEST_NAME => LocalClazz.GetField<string>("MANIFEST_NAME");
+        public static string MANIFEST_NAME { get { return LocalClazz.GetField<string>("MANIFEST_NAME"); } }
         
         #endregion
 

@@ -40,7 +40,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollBarUI.html#FREE_STANDING_PROP"/>
         /// </summary>
-        public static string FREE_STANDING_PROP => LocalClazz.GetField<string>("FREE_STANDING_PROP");
+        public static string FREE_STANDING_PROP { get { return LocalClazz.GetField<string>("FREE_STANDING_PROP"); } }
         
         #endregion
 

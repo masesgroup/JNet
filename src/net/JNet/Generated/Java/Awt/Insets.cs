@@ -59,19 +59,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#bottom"/>
         /// </summary>
-        public int bottom => Instance.GetField<int>("bottom");
+        public int bottom { get { return Instance.GetField<int>("bottom"); } set { Instance.SetField("bottom", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#left"/>
         /// </summary>
-        public int left => Instance.GetField<int>("left");
+        public int left { get { return Instance.GetField<int>("left"); } set { Instance.SetField("left", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#right"/>
         /// </summary>
-        public int right => Instance.GetField<int>("right");
+        public int right { get { return Instance.GetField<int>("right"); } set { Instance.SetField("right", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#top"/>
         /// </summary>
-        public int top => Instance.GetField<int>("top");
+        public int top { get { return Instance.GetField<int>("top"); } set { Instance.SetField("top", value); } }
         
         #endregion
 

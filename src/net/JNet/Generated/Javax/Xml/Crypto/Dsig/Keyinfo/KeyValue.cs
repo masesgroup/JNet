@@ -40,11 +40,11 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#DSA_TYPE"/>
         /// </summary>
-        public static string DSA_TYPE => LocalClazz.GetField<string>("DSA_TYPE");
+        public static string DSA_TYPE { get { return LocalClazz.GetField<string>("DSA_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#RSA_TYPE"/>
         /// </summary>
-        public static string RSA_TYPE => LocalClazz.GetField<string>("RSA_TYPE");
+        public static string RSA_TYPE { get { return LocalClazz.GetField<string>("RSA_TYPE"); } }
         
         #endregion
 

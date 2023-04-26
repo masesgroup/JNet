@@ -48,79 +48,79 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#BORDER_PAINTED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string BORDER_PAINTED_CHANGED_PROPERTY => LocalClazz.GetField<string>("BORDER_PAINTED_CHANGED_PROPERTY");
+        public static string BORDER_PAINTED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("BORDER_PAINTED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#CONTENT_AREA_FILLED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string CONTENT_AREA_FILLED_CHANGED_PROPERTY => LocalClazz.GetField<string>("CONTENT_AREA_FILLED_CHANGED_PROPERTY");
+        public static string CONTENT_AREA_FILLED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("CONTENT_AREA_FILLED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DISABLED_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("DISABLED_ICON_CHANGED_PROPERTY");
+        public static string DISABLED_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("DISABLED_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DISABLED_SELECTED_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("DISABLED_SELECTED_ICON_CHANGED_PROPERTY");
+        public static string DISABLED_SELECTED_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("DISABLED_SELECTED_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#FOCUS_PAINTED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FOCUS_PAINTED_CHANGED_PROPERTY => LocalClazz.GetField<string>("FOCUS_PAINTED_CHANGED_PROPERTY");
+        public static string FOCUS_PAINTED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FOCUS_PAINTED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY => LocalClazz.GetField<string>("HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY");
+        public static string HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY => LocalClazz.GetField<string>("HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY");
+        public static string HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("ICON_CHANGED_PROPERTY");
+        public static string ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MARGIN_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string MARGIN_CHANGED_PROPERTY => LocalClazz.GetField<string>("MARGIN_CHANGED_PROPERTY");
+        public static string MARGIN_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("MARGIN_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MNEMONIC_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string MNEMONIC_CHANGED_PROPERTY => LocalClazz.GetField<string>("MNEMONIC_CHANGED_PROPERTY");
+        public static string MNEMONIC_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("MNEMONIC_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MODEL_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string MODEL_CHANGED_PROPERTY => LocalClazz.GetField<string>("MODEL_CHANGED_PROPERTY");
+        public static string MODEL_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("MODEL_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#PRESSED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string PRESSED_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("PRESSED_ICON_CHANGED_PROPERTY");
+        public static string PRESSED_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("PRESSED_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ENABLED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ROLLOVER_ENABLED_CHANGED_PROPERTY => LocalClazz.GetField<string>("ROLLOVER_ENABLED_CHANGED_PROPERTY");
+        public static string ROLLOVER_ENABLED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ROLLOVER_ENABLED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ROLLOVER_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("ROLLOVER_ICON_CHANGED_PROPERTY");
+        public static string ROLLOVER_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ROLLOVER_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY");
+        public static string ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string SELECTED_ICON_CHANGED_PROPERTY => LocalClazz.GetField<string>("SELECTED_ICON_CHANGED_PROPERTY");
+        public static string SELECTED_ICON_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("SELECTED_ICON_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#TEXT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string TEXT_CHANGED_PROPERTY => LocalClazz.GetField<string>("TEXT_CHANGED_PROPERTY");
+        public static string TEXT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("TEXT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_ALIGNMENT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string VERTICAL_ALIGNMENT_CHANGED_PROPERTY => LocalClazz.GetField<string>("VERTICAL_ALIGNMENT_CHANGED_PROPERTY");
+        public static string VERTICAL_ALIGNMENT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("VERTICAL_ALIGNMENT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string VERTICAL_TEXT_POSITION_CHANGED_PROPERTY => LocalClazz.GetField<string>("VERTICAL_TEXT_POSITION_CHANGED_PROPERTY");
+        public static string VERTICAL_TEXT_POSITION_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"); } }
         
         #endregion
 

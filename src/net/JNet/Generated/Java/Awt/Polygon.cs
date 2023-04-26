@@ -58,15 +58,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#npoints"/>
         /// </summary>
-        public int npoints => Instance.GetField<int>("npoints");
+        public int npoints { get { return Instance.GetField<int>("npoints"); } set { Instance.SetField("npoints", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#xpoints"/>
         /// </summary>
-        public int[] xpoints => Instance.GetField<int[]>("xpoints");
+        public int[] xpoints { get { return Instance.GetField<int[]>("xpoints"); } set { Instance.SetField("xpoints", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#ypoints"/>
         /// </summary>
-        public int[] ypoints => Instance.GetField<int[]>("ypoints");
+        public int[] ypoints { get { return Instance.GetField<int[]>("ypoints"); } set { Instance.SetField("ypoints", value); } }
         
         #endregion
 

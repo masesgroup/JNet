@@ -40,27 +40,27 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_COPY"/>
         /// </summary>
-        public static int ACTION_COPY => LocalClazz.GetField<int>("ACTION_COPY");
+        public static int ACTION_COPY { get { return LocalClazz.GetField<int>("ACTION_COPY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_COPY_OR_MOVE"/>
         /// </summary>
-        public static int ACTION_COPY_OR_MOVE => LocalClazz.GetField<int>("ACTION_COPY_OR_MOVE");
+        public static int ACTION_COPY_OR_MOVE { get { return LocalClazz.GetField<int>("ACTION_COPY_OR_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_LINK"/>
         /// </summary>
-        public static int ACTION_LINK => LocalClazz.GetField<int>("ACTION_LINK");
+        public static int ACTION_LINK { get { return LocalClazz.GetField<int>("ACTION_LINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_MOVE"/>
         /// </summary>
-        public static int ACTION_MOVE => LocalClazz.GetField<int>("ACTION_MOVE");
+        public static int ACTION_MOVE { get { return LocalClazz.GetField<int>("ACTION_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_NONE"/>
         /// </summary>
-        public static int ACTION_NONE => LocalClazz.GetField<int>("ACTION_NONE");
+        public static int ACTION_NONE { get { return LocalClazz.GetField<int>("ACTION_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_REFERENCE"/>
         /// </summary>
-        public static int ACTION_REFERENCE => LocalClazz.GetField<int>("ACTION_REFERENCE");
+        public static int ACTION_REFERENCE { get { return LocalClazz.GetField<int>("ACTION_REFERENCE"); } }
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#documentBaseKey"/>
         /// </summary>
-        public static string documentBaseKey => LocalClazz.GetField<string>("documentBaseKey");
+        public static string documentBaseKey { get { return LocalClazz.GetField<string>("documentBaseKey"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#propertyKey"/>
         /// </summary>
-        public static string propertyKey => LocalClazz.GetField<string>("propertyKey");
+        public static string propertyKey { get { return LocalClazz.GetField<string>("propertyKey"); } }
         
         #endregion
 

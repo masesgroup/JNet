@@ -40,95 +40,95 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#AM_PM_FIELD"/>
         /// </summary>
-        public static int AM_PM_FIELD => LocalClazz.GetField<int>("AM_PM_FIELD");
+        public static int AM_PM_FIELD { get { return LocalClazz.GetField<int>("AM_PM_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#DATE_FIELD"/>
         /// </summary>
-        public static int DATE_FIELD => LocalClazz.GetField<int>("DATE_FIELD");
+        public static int DATE_FIELD { get { return LocalClazz.GetField<int>("DATE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#DAY_OF_WEEK_FIELD"/>
         /// </summary>
-        public static int DAY_OF_WEEK_FIELD => LocalClazz.GetField<int>("DAY_OF_WEEK_FIELD");
+        public static int DAY_OF_WEEK_FIELD { get { return LocalClazz.GetField<int>("DAY_OF_WEEK_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#DAY_OF_WEEK_IN_MONTH_FIELD"/>
         /// </summary>
-        public static int DAY_OF_WEEK_IN_MONTH_FIELD => LocalClazz.GetField<int>("DAY_OF_WEEK_IN_MONTH_FIELD");
+        public static int DAY_OF_WEEK_IN_MONTH_FIELD { get { return LocalClazz.GetField<int>("DAY_OF_WEEK_IN_MONTH_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#DAY_OF_YEAR_FIELD"/>
         /// </summary>
-        public static int DAY_OF_YEAR_FIELD => LocalClazz.GetField<int>("DAY_OF_YEAR_FIELD");
+        public static int DAY_OF_YEAR_FIELD { get { return LocalClazz.GetField<int>("DAY_OF_YEAR_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#DEFAULT"/>
         /// </summary>
-        public static int DEFAULT => LocalClazz.GetField<int>("DEFAULT");
+        public static int DEFAULT { get { return LocalClazz.GetField<int>("DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#ERA_FIELD"/>
         /// </summary>
-        public static int ERA_FIELD => LocalClazz.GetField<int>("ERA_FIELD");
+        public static int ERA_FIELD { get { return LocalClazz.GetField<int>("ERA_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#FULL"/>
         /// </summary>
-        public static int FULL => LocalClazz.GetField<int>("FULL");
+        public static int FULL { get { return LocalClazz.GetField<int>("FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#HOUR_OF_DAY0_FIELD"/>
         /// </summary>
-        public static int HOUR_OF_DAY0_FIELD => LocalClazz.GetField<int>("HOUR_OF_DAY0_FIELD");
+        public static int HOUR_OF_DAY0_FIELD { get { return LocalClazz.GetField<int>("HOUR_OF_DAY0_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#HOUR_OF_DAY1_FIELD"/>
         /// </summary>
-        public static int HOUR_OF_DAY1_FIELD => LocalClazz.GetField<int>("HOUR_OF_DAY1_FIELD");
+        public static int HOUR_OF_DAY1_FIELD { get { return LocalClazz.GetField<int>("HOUR_OF_DAY1_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#HOUR0_FIELD"/>
         /// </summary>
-        public static int HOUR0_FIELD => LocalClazz.GetField<int>("HOUR0_FIELD");
+        public static int HOUR0_FIELD { get { return LocalClazz.GetField<int>("HOUR0_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#HOUR1_FIELD"/>
         /// </summary>
-        public static int HOUR1_FIELD => LocalClazz.GetField<int>("HOUR1_FIELD");
+        public static int HOUR1_FIELD { get { return LocalClazz.GetField<int>("HOUR1_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#LONG"/>
         /// </summary>
-        public static int LONG => LocalClazz.GetField<int>("LONG");
+        public static int LONG { get { return LocalClazz.GetField<int>("LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#MEDIUM"/>
         /// </summary>
-        public static int MEDIUM => LocalClazz.GetField<int>("MEDIUM");
+        public static int MEDIUM { get { return LocalClazz.GetField<int>("MEDIUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#MILLISECOND_FIELD"/>
         /// </summary>
-        public static int MILLISECOND_FIELD => LocalClazz.GetField<int>("MILLISECOND_FIELD");
+        public static int MILLISECOND_FIELD { get { return LocalClazz.GetField<int>("MILLISECOND_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#MINUTE_FIELD"/>
         /// </summary>
-        public static int MINUTE_FIELD => LocalClazz.GetField<int>("MINUTE_FIELD");
+        public static int MINUTE_FIELD { get { return LocalClazz.GetField<int>("MINUTE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#MONTH_FIELD"/>
         /// </summary>
-        public static int MONTH_FIELD => LocalClazz.GetField<int>("MONTH_FIELD");
+        public static int MONTH_FIELD { get { return LocalClazz.GetField<int>("MONTH_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#SECOND_FIELD"/>
         /// </summary>
-        public static int SECOND_FIELD => LocalClazz.GetField<int>("SECOND_FIELD");
+        public static int SECOND_FIELD { get { return LocalClazz.GetField<int>("SECOND_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#SHORT"/>
         /// </summary>
-        public static int SHORT => LocalClazz.GetField<int>("SHORT");
+        public static int SHORT { get { return LocalClazz.GetField<int>("SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#TIMEZONE_FIELD"/>
         /// </summary>
-        public static int TIMEZONE_FIELD => LocalClazz.GetField<int>("TIMEZONE_FIELD");
+        public static int TIMEZONE_FIELD { get { return LocalClazz.GetField<int>("TIMEZONE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#WEEK_OF_MONTH_FIELD"/>
         /// </summary>
-        public static int WEEK_OF_MONTH_FIELD => LocalClazz.GetField<int>("WEEK_OF_MONTH_FIELD");
+        public static int WEEK_OF_MONTH_FIELD { get { return LocalClazz.GetField<int>("WEEK_OF_MONTH_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#WEEK_OF_YEAR_FIELD"/>
         /// </summary>
-        public static int WEEK_OF_YEAR_FIELD => LocalClazz.GetField<int>("WEEK_OF_YEAR_FIELD");
+        public static int WEEK_OF_YEAR_FIELD { get { return LocalClazz.GetField<int>("WEEK_OF_YEAR_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#YEAR_FIELD"/>
         /// </summary>
-        public static int YEAR_FIELD => LocalClazz.GetField<int>("YEAR_FIELD");
+        public static int YEAR_FIELD { get { return LocalClazz.GetField<int>("YEAR_FIELD"); } }
         
         #endregion
 
@@ -326,75 +326,75 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#AM_PM"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field AM_PM => LocalClazz.GetField<Java.Text.DateFormat.Field>("AM_PM");
+            public static Java.Text.DateFormat.Field AM_PM { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("AM_PM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#DAY_OF_MONTH"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field DAY_OF_MONTH => LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_MONTH");
+            public static Java.Text.DateFormat.Field DAY_OF_MONTH { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_MONTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#DAY_OF_WEEK"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field DAY_OF_WEEK => LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_WEEK");
+            public static Java.Text.DateFormat.Field DAY_OF_WEEK { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_WEEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#DAY_OF_WEEK_IN_MONTH"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field DAY_OF_WEEK_IN_MONTH => LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_WEEK_IN_MONTH");
+            public static Java.Text.DateFormat.Field DAY_OF_WEEK_IN_MONTH { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_WEEK_IN_MONTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#DAY_OF_YEAR"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field DAY_OF_YEAR => LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_YEAR");
+            public static Java.Text.DateFormat.Field DAY_OF_YEAR { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("DAY_OF_YEAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#ERA"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field ERA => LocalClazz.GetField<Java.Text.DateFormat.Field>("ERA");
+            public static Java.Text.DateFormat.Field ERA { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("ERA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#HOUR_OF_DAY0"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field HOUR_OF_DAY0 => LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR_OF_DAY0");
+            public static Java.Text.DateFormat.Field HOUR_OF_DAY0 { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR_OF_DAY0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#HOUR_OF_DAY1"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field HOUR_OF_DAY1 => LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR_OF_DAY1");
+            public static Java.Text.DateFormat.Field HOUR_OF_DAY1 { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR_OF_DAY1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#HOUR0"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field HOUR0 => LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR0");
+            public static Java.Text.DateFormat.Field HOUR0 { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#HOUR1"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field HOUR1 => LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR1");
+            public static Java.Text.DateFormat.Field HOUR1 { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("HOUR1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#MILLISECOND"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field MILLISECOND => LocalClazz.GetField<Java.Text.DateFormat.Field>("MILLISECOND");
+            public static Java.Text.DateFormat.Field MILLISECOND { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("MILLISECOND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#MINUTE"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field MINUTE => LocalClazz.GetField<Java.Text.DateFormat.Field>("MINUTE");
+            public static Java.Text.DateFormat.Field MINUTE { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("MINUTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#MONTH"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field MONTH => LocalClazz.GetField<Java.Text.DateFormat.Field>("MONTH");
+            public static Java.Text.DateFormat.Field MONTH { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("MONTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#SECOND"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field SECOND => LocalClazz.GetField<Java.Text.DateFormat.Field>("SECOND");
+            public static Java.Text.DateFormat.Field SECOND { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("SECOND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#TIME_ZONE"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field TIME_ZONE => LocalClazz.GetField<Java.Text.DateFormat.Field>("TIME_ZONE");
+            public static Java.Text.DateFormat.Field TIME_ZONE { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("TIME_ZONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#WEEK_OF_MONTH"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field WEEK_OF_MONTH => LocalClazz.GetField<Java.Text.DateFormat.Field>("WEEK_OF_MONTH");
+            public static Java.Text.DateFormat.Field WEEK_OF_MONTH { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("WEEK_OF_MONTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#WEEK_OF_YEAR"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field WEEK_OF_YEAR => LocalClazz.GetField<Java.Text.DateFormat.Field>("WEEK_OF_YEAR");
+            public static Java.Text.DateFormat.Field WEEK_OF_YEAR { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("WEEK_OF_YEAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#YEAR"/>
             /// </summary>
-            public static Java.Text.DateFormat.Field YEAR => LocalClazz.GetField<Java.Text.DateFormat.Field>("YEAR");
+            public static Java.Text.DateFormat.Field YEAR { get { return LocalClazz.GetField<Java.Text.DateFormat.Field>("YEAR"); } }
             
             #endregion
 

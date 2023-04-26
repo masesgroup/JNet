@@ -44,15 +44,15 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS => LocalClazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS");
+        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { return LocalClazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#ISO"/>
         /// </summary>
-        public static Java.Time.Temporal.WeekFields ISO => LocalClazz.GetField<Java.Time.Temporal.WeekFields>("ISO");
+        public static Java.Time.Temporal.WeekFields ISO { get { return LocalClazz.GetField<Java.Time.Temporal.WeekFields>("ISO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#SUNDAY_START"/>
         /// </summary>
-        public static Java.Time.Temporal.WeekFields SUNDAY_START => LocalClazz.GetField<Java.Time.Temporal.WeekFields>("SUNDAY_START");
+        public static Java.Time.Temporal.WeekFields SUNDAY_START { get { return LocalClazz.GetField<Java.Time.Temporal.WeekFields>("SUNDAY_START"); } }
         
         #endregion
 

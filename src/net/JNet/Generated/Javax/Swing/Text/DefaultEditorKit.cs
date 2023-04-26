@@ -40,199 +40,199 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#backwardAction"/>
         /// </summary>
-        public static string backwardAction => LocalClazz.GetField<string>("backwardAction");
+        public static string backwardAction { get { return LocalClazz.GetField<string>("backwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beepAction"/>
         /// </summary>
-        public static string beepAction => LocalClazz.GetField<string>("beepAction");
+        public static string beepAction { get { return LocalClazz.GetField<string>("beepAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginAction"/>
         /// </summary>
-        public static string beginAction => LocalClazz.GetField<string>("beginAction");
+        public static string beginAction { get { return LocalClazz.GetField<string>("beginAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginLineAction"/>
         /// </summary>
-        public static string beginLineAction => LocalClazz.GetField<string>("beginLineAction");
+        public static string beginLineAction { get { return LocalClazz.GetField<string>("beginLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginParagraphAction"/>
         /// </summary>
-        public static string beginParagraphAction => LocalClazz.GetField<string>("beginParagraphAction");
+        public static string beginParagraphAction { get { return LocalClazz.GetField<string>("beginParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginWordAction"/>
         /// </summary>
-        public static string beginWordAction => LocalClazz.GetField<string>("beginWordAction");
+        public static string beginWordAction { get { return LocalClazz.GetField<string>("beginWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#copyAction"/>
         /// </summary>
-        public static string copyAction => LocalClazz.GetField<string>("copyAction");
+        public static string copyAction { get { return LocalClazz.GetField<string>("copyAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#cutAction"/>
         /// </summary>
-        public static string cutAction => LocalClazz.GetField<string>("cutAction");
+        public static string cutAction { get { return LocalClazz.GetField<string>("cutAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#defaultKeyTypedAction"/>
         /// </summary>
-        public static string defaultKeyTypedAction => LocalClazz.GetField<string>("defaultKeyTypedAction");
+        public static string defaultKeyTypedAction { get { return LocalClazz.GetField<string>("defaultKeyTypedAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deleteNextCharAction"/>
         /// </summary>
-        public static string deleteNextCharAction => LocalClazz.GetField<string>("deleteNextCharAction");
+        public static string deleteNextCharAction { get { return LocalClazz.GetField<string>("deleteNextCharAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deleteNextWordAction"/>
         /// </summary>
-        public static string deleteNextWordAction => LocalClazz.GetField<string>("deleteNextWordAction");
+        public static string deleteNextWordAction { get { return LocalClazz.GetField<string>("deleteNextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deletePrevCharAction"/>
         /// </summary>
-        public static string deletePrevCharAction => LocalClazz.GetField<string>("deletePrevCharAction");
+        public static string deletePrevCharAction { get { return LocalClazz.GetField<string>("deletePrevCharAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deletePrevWordAction"/>
         /// </summary>
-        public static string deletePrevWordAction => LocalClazz.GetField<string>("deletePrevWordAction");
+        public static string deletePrevWordAction { get { return LocalClazz.GetField<string>("deletePrevWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#downAction"/>
         /// </summary>
-        public static string downAction => LocalClazz.GetField<string>("downAction");
+        public static string downAction { get { return LocalClazz.GetField<string>("downAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endAction"/>
         /// </summary>
-        public static string endAction => LocalClazz.GetField<string>("endAction");
+        public static string endAction { get { return LocalClazz.GetField<string>("endAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endLineAction"/>
         /// </summary>
-        public static string endLineAction => LocalClazz.GetField<string>("endLineAction");
+        public static string endLineAction { get { return LocalClazz.GetField<string>("endLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#EndOfLineStringProperty"/>
         /// </summary>
-        public static string EndOfLineStringProperty => LocalClazz.GetField<string>("EndOfLineStringProperty");
+        public static string EndOfLineStringProperty { get { return LocalClazz.GetField<string>("EndOfLineStringProperty"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endParagraphAction"/>
         /// </summary>
-        public static string endParagraphAction => LocalClazz.GetField<string>("endParagraphAction");
+        public static string endParagraphAction { get { return LocalClazz.GetField<string>("endParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endWordAction"/>
         /// </summary>
-        public static string endWordAction => LocalClazz.GetField<string>("endWordAction");
+        public static string endWordAction { get { return LocalClazz.GetField<string>("endWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#forwardAction"/>
         /// </summary>
-        public static string forwardAction => LocalClazz.GetField<string>("forwardAction");
+        public static string forwardAction { get { return LocalClazz.GetField<string>("forwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertBreakAction"/>
         /// </summary>
-        public static string insertBreakAction => LocalClazz.GetField<string>("insertBreakAction");
+        public static string insertBreakAction { get { return LocalClazz.GetField<string>("insertBreakAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertContentAction"/>
         /// </summary>
-        public static string insertContentAction => LocalClazz.GetField<string>("insertContentAction");
+        public static string insertContentAction { get { return LocalClazz.GetField<string>("insertContentAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertTabAction"/>
         /// </summary>
-        public static string insertTabAction => LocalClazz.GetField<string>("insertTabAction");
+        public static string insertTabAction { get { return LocalClazz.GetField<string>("insertTabAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#nextWordAction"/>
         /// </summary>
-        public static string nextWordAction => LocalClazz.GetField<string>("nextWordAction");
+        public static string nextWordAction { get { return LocalClazz.GetField<string>("nextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pageDownAction"/>
         /// </summary>
-        public static string pageDownAction => LocalClazz.GetField<string>("pageDownAction");
+        public static string pageDownAction { get { return LocalClazz.GetField<string>("pageDownAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pageUpAction"/>
         /// </summary>
-        public static string pageUpAction => LocalClazz.GetField<string>("pageUpAction");
+        public static string pageUpAction { get { return LocalClazz.GetField<string>("pageUpAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pasteAction"/>
         /// </summary>
-        public static string pasteAction => LocalClazz.GetField<string>("pasteAction");
+        public static string pasteAction { get { return LocalClazz.GetField<string>("pasteAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#previousWordAction"/>
         /// </summary>
-        public static string previousWordAction => LocalClazz.GetField<string>("previousWordAction");
+        public static string previousWordAction { get { return LocalClazz.GetField<string>("previousWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#readOnlyAction"/>
         /// </summary>
-        public static string readOnlyAction => LocalClazz.GetField<string>("readOnlyAction");
+        public static string readOnlyAction { get { return LocalClazz.GetField<string>("readOnlyAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectAllAction"/>
         /// </summary>
-        public static string selectAllAction => LocalClazz.GetField<string>("selectAllAction");
+        public static string selectAllAction { get { return LocalClazz.GetField<string>("selectAllAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBackwardAction"/>
         /// </summary>
-        public static string selectionBackwardAction => LocalClazz.GetField<string>("selectionBackwardAction");
+        public static string selectionBackwardAction { get { return LocalClazz.GetField<string>("selectionBackwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginAction"/>
         /// </summary>
-        public static string selectionBeginAction => LocalClazz.GetField<string>("selectionBeginAction");
+        public static string selectionBeginAction { get { return LocalClazz.GetField<string>("selectionBeginAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginLineAction"/>
         /// </summary>
-        public static string selectionBeginLineAction => LocalClazz.GetField<string>("selectionBeginLineAction");
+        public static string selectionBeginLineAction { get { return LocalClazz.GetField<string>("selectionBeginLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginParagraphAction"/>
         /// </summary>
-        public static string selectionBeginParagraphAction => LocalClazz.GetField<string>("selectionBeginParagraphAction");
+        public static string selectionBeginParagraphAction { get { return LocalClazz.GetField<string>("selectionBeginParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginWordAction"/>
         /// </summary>
-        public static string selectionBeginWordAction => LocalClazz.GetField<string>("selectionBeginWordAction");
+        public static string selectionBeginWordAction { get { return LocalClazz.GetField<string>("selectionBeginWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionDownAction"/>
         /// </summary>
-        public static string selectionDownAction => LocalClazz.GetField<string>("selectionDownAction");
+        public static string selectionDownAction { get { return LocalClazz.GetField<string>("selectionDownAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndAction"/>
         /// </summary>
-        public static string selectionEndAction => LocalClazz.GetField<string>("selectionEndAction");
+        public static string selectionEndAction { get { return LocalClazz.GetField<string>("selectionEndAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndLineAction"/>
         /// </summary>
-        public static string selectionEndLineAction => LocalClazz.GetField<string>("selectionEndLineAction");
+        public static string selectionEndLineAction { get { return LocalClazz.GetField<string>("selectionEndLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndParagraphAction"/>
         /// </summary>
-        public static string selectionEndParagraphAction => LocalClazz.GetField<string>("selectionEndParagraphAction");
+        public static string selectionEndParagraphAction { get { return LocalClazz.GetField<string>("selectionEndParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndWordAction"/>
         /// </summary>
-        public static string selectionEndWordAction => LocalClazz.GetField<string>("selectionEndWordAction");
+        public static string selectionEndWordAction { get { return LocalClazz.GetField<string>("selectionEndWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionForwardAction"/>
         /// </summary>
-        public static string selectionForwardAction => LocalClazz.GetField<string>("selectionForwardAction");
+        public static string selectionForwardAction { get { return LocalClazz.GetField<string>("selectionForwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionNextWordAction"/>
         /// </summary>
-        public static string selectionNextWordAction => LocalClazz.GetField<string>("selectionNextWordAction");
+        public static string selectionNextWordAction { get { return LocalClazz.GetField<string>("selectionNextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionPreviousWordAction"/>
         /// </summary>
-        public static string selectionPreviousWordAction => LocalClazz.GetField<string>("selectionPreviousWordAction");
+        public static string selectionPreviousWordAction { get { return LocalClazz.GetField<string>("selectionPreviousWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionUpAction"/>
         /// </summary>
-        public static string selectionUpAction => LocalClazz.GetField<string>("selectionUpAction");
+        public static string selectionUpAction { get { return LocalClazz.GetField<string>("selectionUpAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectLineAction"/>
         /// </summary>
-        public static string selectLineAction => LocalClazz.GetField<string>("selectLineAction");
+        public static string selectLineAction { get { return LocalClazz.GetField<string>("selectLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectParagraphAction"/>
         /// </summary>
-        public static string selectParagraphAction => LocalClazz.GetField<string>("selectParagraphAction");
+        public static string selectParagraphAction { get { return LocalClazz.GetField<string>("selectParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectWordAction"/>
         /// </summary>
-        public static string selectWordAction => LocalClazz.GetField<string>("selectWordAction");
+        public static string selectWordAction { get { return LocalClazz.GetField<string>("selectWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#upAction"/>
         /// </summary>
-        public static string upAction => LocalClazz.GetField<string>("upAction");
+        public static string upAction { get { return LocalClazz.GetField<string>("upAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#writableAction"/>
         /// </summary>
-        public static string writableAction => LocalClazz.GetField<string>("writableAction");
+        public static string writableAction { get { return LocalClazz.GetField<string>("writableAction"); } }
         
         #endregion
 

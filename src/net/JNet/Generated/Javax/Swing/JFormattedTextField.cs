@@ -81,19 +81,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT"/>
         /// </summary>
-        public static int COMMIT => LocalClazz.GetField<int>("COMMIT");
+        public static int COMMIT { get { return LocalClazz.GetField<int>("COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT_OR_REVERT"/>
         /// </summary>
-        public static int COMMIT_OR_REVERT => LocalClazz.GetField<int>("COMMIT_OR_REVERT");
+        public static int COMMIT_OR_REVERT { get { return LocalClazz.GetField<int>("COMMIT_OR_REVERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#PERSIST"/>
         /// </summary>
-        public static int PERSIST => LocalClazz.GetField<int>("PERSIST");
+        public static int PERSIST { get { return LocalClazz.GetField<int>("PERSIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT"/>
         /// </summary>
-        public static int REVERT => LocalClazz.GetField<int>("REVERT");
+        public static int REVERT { get { return LocalClazz.GetField<int>("REVERT"); } }
         
         #endregion
 

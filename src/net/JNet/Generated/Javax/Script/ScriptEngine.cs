@@ -40,31 +40,31 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ARGV"/>
         /// </summary>
-        public static string ARGV => LocalClazz.GetField<string>("ARGV");
+        public static string ARGV { get { return LocalClazz.GetField<string>("ARGV"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE"/>
         /// </summary>
-        public static string ENGINE => LocalClazz.GetField<string>("ENGINE");
+        public static string ENGINE { get { return LocalClazz.GetField<string>("ENGINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE_VERSION"/>
         /// </summary>
-        public static string ENGINE_VERSION => LocalClazz.GetField<string>("ENGINE_VERSION");
+        public static string ENGINE_VERSION { get { return LocalClazz.GetField<string>("ENGINE_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME"/>
         /// </summary>
-        public static string FILENAME => LocalClazz.GetField<string>("FILENAME");
+        public static string FILENAME { get { return LocalClazz.GetField<string>("FILENAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE"/>
         /// </summary>
-        public static string LANGUAGE => LocalClazz.GetField<string>("LANGUAGE");
+        public static string LANGUAGE { get { return LocalClazz.GetField<string>("LANGUAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE_VERSION"/>
         /// </summary>
-        public static string LANGUAGE_VERSION => LocalClazz.GetField<string>("LANGUAGE_VERSION");
+        public static string LANGUAGE_VERSION { get { return LocalClazz.GetField<string>("LANGUAGE_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME"/>
         /// </summary>
-        public static string NAME => LocalClazz.GetField<string>("NAME");
+        public static string NAME { get { return LocalClazz.GetField<string>("NAME"); } }
         
         #endregion
 

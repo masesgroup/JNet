@@ -40,23 +40,23 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_ADOPTED"/>
         /// </summary>
-        public static short NODE_ADOPTED => LocalClazz.GetField<short>("NODE_ADOPTED");
+        public static short NODE_ADOPTED { get { return LocalClazz.GetField<short>("NODE_ADOPTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_CLONED"/>
         /// </summary>
-        public static short NODE_CLONED => LocalClazz.GetField<short>("NODE_CLONED");
+        public static short NODE_CLONED { get { return LocalClazz.GetField<short>("NODE_CLONED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_DELETED"/>
         /// </summary>
-        public static short NODE_DELETED => LocalClazz.GetField<short>("NODE_DELETED");
+        public static short NODE_DELETED { get { return LocalClazz.GetField<short>("NODE_DELETED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_IMPORTED"/>
         /// </summary>
-        public static short NODE_IMPORTED => LocalClazz.GetField<short>("NODE_IMPORTED");
+        public static short NODE_IMPORTED { get { return LocalClazz.GetField<short>("NODE_IMPORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_RENAMED"/>
         /// </summary>
-        public static short NODE_RENAMED => LocalClazz.GetField<short>("NODE_RENAMED");
+        public static short NODE_RENAMED { get { return LocalClazz.GetField<short>("NODE_RENAMED"); } }
         
         #endregion
 

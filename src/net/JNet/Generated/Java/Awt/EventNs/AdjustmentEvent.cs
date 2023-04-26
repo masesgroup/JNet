@@ -63,35 +63,35 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_FIRST"/>
         /// </summary>
-        public static int ADJUSTMENT_FIRST => LocalClazz.GetField<int>("ADJUSTMENT_FIRST");
+        public static int ADJUSTMENT_FIRST { get { return LocalClazz.GetField<int>("ADJUSTMENT_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_LAST"/>
         /// </summary>
-        public static int ADJUSTMENT_LAST => LocalClazz.GetField<int>("ADJUSTMENT_LAST");
+        public static int ADJUSTMENT_LAST { get { return LocalClazz.GetField<int>("ADJUSTMENT_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_VALUE_CHANGED"/>
         /// </summary>
-        public static int ADJUSTMENT_VALUE_CHANGED => LocalClazz.GetField<int>("ADJUSTMENT_VALUE_CHANGED");
+        public static int ADJUSTMENT_VALUE_CHANGED { get { return LocalClazz.GetField<int>("ADJUSTMENT_VALUE_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_DECREMENT"/>
         /// </summary>
-        public static int BLOCK_DECREMENT => LocalClazz.GetField<int>("BLOCK_DECREMENT");
+        public static int BLOCK_DECREMENT { get { return LocalClazz.GetField<int>("BLOCK_DECREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_INCREMENT"/>
         /// </summary>
-        public static int BLOCK_INCREMENT => LocalClazz.GetField<int>("BLOCK_INCREMENT");
+        public static int BLOCK_INCREMENT { get { return LocalClazz.GetField<int>("BLOCK_INCREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#TRACK"/>
         /// </summary>
-        public static int TRACK => LocalClazz.GetField<int>("TRACK");
+        public static int TRACK { get { return LocalClazz.GetField<int>("TRACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT"/>
         /// </summary>
-        public static int UNIT_DECREMENT => LocalClazz.GetField<int>("UNIT_DECREMENT");
+        public static int UNIT_DECREMENT { get { return LocalClazz.GetField<int>("UNIT_DECREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT"/>
         /// </summary>
-        public static int UNIT_INCREMENT => LocalClazz.GetField<int>("UNIT_INCREMENT");
+        public static int UNIT_INCREMENT { get { return LocalClazz.GetField<int>("UNIT_INCREMENT"); } }
         
         #endregion
 

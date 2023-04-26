@@ -57,19 +57,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#LINE_AXIS"/>
         /// </summary>
-        public static int LINE_AXIS => LocalClazz.GetField<int>("LINE_AXIS");
+        public static int LINE_AXIS { get { return LocalClazz.GetField<int>("LINE_AXIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#PAGE_AXIS"/>
         /// </summary>
-        public static int PAGE_AXIS => LocalClazz.GetField<int>("PAGE_AXIS");
+        public static int PAGE_AXIS { get { return LocalClazz.GetField<int>("PAGE_AXIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#X_AXIS"/>
         /// </summary>
-        public static int X_AXIS => LocalClazz.GetField<int>("X_AXIS");
+        public static int X_AXIS { get { return LocalClazz.GetField<int>("X_AXIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#Y_AXIS"/>
         /// </summary>
-        public static int Y_AXIS => LocalClazz.GetField<int>("Y_AXIS");
+        public static int Y_AXIS { get { return LocalClazz.GetField<int>("Y_AXIS"); } }
         
         #endregion
 

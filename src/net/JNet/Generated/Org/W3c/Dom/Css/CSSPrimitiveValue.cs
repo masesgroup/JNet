@@ -40,107 +40,107 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_ATTR"/>
         /// </summary>
-        public static short CSS_ATTR => LocalClazz.GetField<short>("CSS_ATTR");
+        public static short CSS_ATTR { get { return LocalClazz.GetField<short>("CSS_ATTR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_CM"/>
         /// </summary>
-        public static short CSS_CM => LocalClazz.GetField<short>("CSS_CM");
+        public static short CSS_CM { get { return LocalClazz.GetField<short>("CSS_CM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_COUNTER"/>
         /// </summary>
-        public static short CSS_COUNTER => LocalClazz.GetField<short>("CSS_COUNTER");
+        public static short CSS_COUNTER { get { return LocalClazz.GetField<short>("CSS_COUNTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DEG"/>
         /// </summary>
-        public static short CSS_DEG => LocalClazz.GetField<short>("CSS_DEG");
+        public static short CSS_DEG { get { return LocalClazz.GetField<short>("CSS_DEG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DIMENSION"/>
         /// </summary>
-        public static short CSS_DIMENSION => LocalClazz.GetField<short>("CSS_DIMENSION");
+        public static short CSS_DIMENSION { get { return LocalClazz.GetField<short>("CSS_DIMENSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_EMS"/>
         /// </summary>
-        public static short CSS_EMS => LocalClazz.GetField<short>("CSS_EMS");
+        public static short CSS_EMS { get { return LocalClazz.GetField<short>("CSS_EMS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_EXS"/>
         /// </summary>
-        public static short CSS_EXS => LocalClazz.GetField<short>("CSS_EXS");
+        public static short CSS_EXS { get { return LocalClazz.GetField<short>("CSS_EXS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_GRAD"/>
         /// </summary>
-        public static short CSS_GRAD => LocalClazz.GetField<short>("CSS_GRAD");
+        public static short CSS_GRAD { get { return LocalClazz.GetField<short>("CSS_GRAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_HZ"/>
         /// </summary>
-        public static short CSS_HZ => LocalClazz.GetField<short>("CSS_HZ");
+        public static short CSS_HZ { get { return LocalClazz.GetField<short>("CSS_HZ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_IDENT"/>
         /// </summary>
-        public static short CSS_IDENT => LocalClazz.GetField<short>("CSS_IDENT");
+        public static short CSS_IDENT { get { return LocalClazz.GetField<short>("CSS_IDENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_IN"/>
         /// </summary>
-        public static short CSS_IN => LocalClazz.GetField<short>("CSS_IN");
+        public static short CSS_IN { get { return LocalClazz.GetField<short>("CSS_IN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_KHZ"/>
         /// </summary>
-        public static short CSS_KHZ => LocalClazz.GetField<short>("CSS_KHZ");
+        public static short CSS_KHZ { get { return LocalClazz.GetField<short>("CSS_KHZ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MM"/>
         /// </summary>
-        public static short CSS_MM => LocalClazz.GetField<short>("CSS_MM");
+        public static short CSS_MM { get { return LocalClazz.GetField<short>("CSS_MM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MS"/>
         /// </summary>
-        public static short CSS_MS => LocalClazz.GetField<short>("CSS_MS");
+        public static short CSS_MS { get { return LocalClazz.GetField<short>("CSS_MS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_NUMBER"/>
         /// </summary>
-        public static short CSS_NUMBER => LocalClazz.GetField<short>("CSS_NUMBER");
+        public static short CSS_NUMBER { get { return LocalClazz.GetField<short>("CSS_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PC"/>
         /// </summary>
-        public static short CSS_PC => LocalClazz.GetField<short>("CSS_PC");
+        public static short CSS_PC { get { return LocalClazz.GetField<short>("CSS_PC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PERCENTAGE"/>
         /// </summary>
-        public static short CSS_PERCENTAGE => LocalClazz.GetField<short>("CSS_PERCENTAGE");
+        public static short CSS_PERCENTAGE { get { return LocalClazz.GetField<short>("CSS_PERCENTAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PT"/>
         /// </summary>
-        public static short CSS_PT => LocalClazz.GetField<short>("CSS_PT");
+        public static short CSS_PT { get { return LocalClazz.GetField<short>("CSS_PT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PX"/>
         /// </summary>
-        public static short CSS_PX => LocalClazz.GetField<short>("CSS_PX");
+        public static short CSS_PX { get { return LocalClazz.GetField<short>("CSS_PX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RAD"/>
         /// </summary>
-        public static short CSS_RAD => LocalClazz.GetField<short>("CSS_RAD");
+        public static short CSS_RAD { get { return LocalClazz.GetField<short>("CSS_RAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RECT"/>
         /// </summary>
-        public static short CSS_RECT => LocalClazz.GetField<short>("CSS_RECT");
+        public static short CSS_RECT { get { return LocalClazz.GetField<short>("CSS_RECT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RGBCOLOR"/>
         /// </summary>
-        public static short CSS_RGBCOLOR => LocalClazz.GetField<short>("CSS_RGBCOLOR");
+        public static short CSS_RGBCOLOR { get { return LocalClazz.GetField<short>("CSS_RGBCOLOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_S"/>
         /// </summary>
-        public static short CSS_S => LocalClazz.GetField<short>("CSS_S");
+        public static short CSS_S { get { return LocalClazz.GetField<short>("CSS_S"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_STRING"/>
         /// </summary>
-        public static short CSS_STRING => LocalClazz.GetField<short>("CSS_STRING");
+        public static short CSS_STRING { get { return LocalClazz.GetField<short>("CSS_STRING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_UNKNOWN"/>
         /// </summary>
-        public static short CSS_UNKNOWN => LocalClazz.GetField<short>("CSS_UNKNOWN");
+        public static short CSS_UNKNOWN { get { return LocalClazz.GetField<short>("CSS_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_URI"/>
         /// </summary>
-        public static short CSS_URI => LocalClazz.GetField<short>("CSS_URI");
+        public static short CSS_URI { get { return LocalClazz.GetField<short>("CSS_URI"); } }
         
         #endregion
 

@@ -86,119 +86,119 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_OPTION"/>
         /// </summary>
-        public static int APPROVE_OPTION => LocalClazz.GetField<int>("APPROVE_OPTION");
+        public static int APPROVE_OPTION { get { return LocalClazz.GetField<int>("APPROVE_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_OPTION"/>
         /// </summary>
-        public static int CANCEL_OPTION => LocalClazz.GetField<int>("CANCEL_OPTION");
+        public static int CANCEL_OPTION { get { return LocalClazz.GetField<int>("CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CUSTOM_DIALOG"/>
         /// </summary>
-        public static int CUSTOM_DIALOG => LocalClazz.GetField<int>("CUSTOM_DIALOG");
+        public static int CUSTOM_DIALOG { get { return LocalClazz.GetField<int>("CUSTOM_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORIES_ONLY"/>
         /// </summary>
-        public static int DIRECTORIES_ONLY => LocalClazz.GetField<int>("DIRECTORIES_ONLY");
+        public static int DIRECTORIES_ONLY { get { return LocalClazz.GetField<int>("DIRECTORIES_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ERROR_OPTION"/>
         /// </summary>
-        public static int ERROR_OPTION => LocalClazz.GetField<int>("ERROR_OPTION");
+        public static int ERROR_OPTION { get { return LocalClazz.GetField<int>("ERROR_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_AND_DIRECTORIES"/>
         /// </summary>
-        public static int FILES_AND_DIRECTORIES => LocalClazz.GetField<int>("FILES_AND_DIRECTORIES");
+        public static int FILES_AND_DIRECTORIES { get { return LocalClazz.GetField<int>("FILES_AND_DIRECTORIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_ONLY"/>
         /// </summary>
-        public static int FILES_ONLY => LocalClazz.GetField<int>("FILES_ONLY");
+        public static int FILES_ONLY { get { return LocalClazz.GetField<int>("FILES_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#OPEN_DIALOG"/>
         /// </summary>
-        public static int OPEN_DIALOG => LocalClazz.GetField<int>("OPEN_DIALOG");
+        public static int OPEN_DIALOG { get { return LocalClazz.GetField<int>("OPEN_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SAVE_DIALOG"/>
         /// </summary>
-        public static int SAVE_DIALOG => LocalClazz.GetField<int>("SAVE_DIALOG");
+        public static int SAVE_DIALOG { get { return LocalClazz.GetField<int>("SAVE_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY => LocalClazz.GetField<string>("ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY");
+        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCESSORY_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ACCESSORY_CHANGED_PROPERTY => LocalClazz.GetField<string>("ACCESSORY_CHANGED_PROPERTY");
+        public static string ACCESSORY_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("ACCESSORY_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY => LocalClazz.GetField<string>("APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY");
+        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_TEXT_CHANGED_PROPERTY => LocalClazz.GetField<string>("APPROVE_BUTTON_TEXT_CHANGED_PROPERTY");
+        public static string APPROVE_BUTTON_TEXT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY => LocalClazz.GetField<string>("APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY");
+        public static string APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_SELECTION"/>
         /// </summary>
-        public static string APPROVE_SELECTION => LocalClazz.GetField<string>("APPROVE_SELECTION");
+        public static string APPROVE_SELECTION { get { return LocalClazz.GetField<string>("APPROVE_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_SELECTION"/>
         /// </summary>
-        public static string CANCEL_SELECTION => LocalClazz.GetField<string>("CANCEL_SELECTION");
+        public static string CANCEL_SELECTION { get { return LocalClazz.GetField<string>("CANCEL_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY => LocalClazz.GetField<string>("CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY");
+        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY => LocalClazz.GetField<string>("CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY");
+        public static string CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIALOG_TITLE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIALOG_TITLE_CHANGED_PROPERTY => LocalClazz.GetField<string>("DIALOG_TITLE_CHANGED_PROPERTY");
+        public static string DIALOG_TITLE_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("DIALOG_TITLE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIALOG_TYPE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIALOG_TYPE_CHANGED_PROPERTY => LocalClazz.GetField<string>("DIALOG_TYPE_CHANGED_PROPERTY");
+        public static string DIALOG_TYPE_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("DIALOG_TYPE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORY_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIRECTORY_CHANGED_PROPERTY => LocalClazz.GetField<string>("DIRECTORY_CHANGED_PROPERTY");
+        public static string DIRECTORY_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("DIRECTORY_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_FILTER_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_FILTER_CHANGED_PROPERTY => LocalClazz.GetField<string>("FILE_FILTER_CHANGED_PROPERTY");
+        public static string FILE_FILTER_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FILE_FILTER_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_HIDING_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_HIDING_CHANGED_PROPERTY => LocalClazz.GetField<string>("FILE_HIDING_CHANGED_PROPERTY");
+        public static string FILE_HIDING_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FILE_HIDING_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SELECTION_MODE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY => LocalClazz.GetField<string>("FILE_SELECTION_MODE_CHANGED_PROPERTY");
+        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FILE_SELECTION_MODE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SYSTEM_VIEW_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY => LocalClazz.GetField<string>("FILE_SYSTEM_VIEW_CHANGED_PROPERTY");
+        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FILE_SYSTEM_VIEW_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_VIEW_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_VIEW_CHANGED_PROPERTY => LocalClazz.GetField<string>("FILE_VIEW_CHANGED_PROPERTY");
+        public static string FILE_VIEW_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("FILE_VIEW_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY => LocalClazz.GetField<string>("MULTI_SELECTION_ENABLED_CHANGED_PROPERTY");
+        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string SELECTED_FILE_CHANGED_PROPERTY => LocalClazz.GetField<string>("SELECTED_FILE_CHANGED_PROPERTY");
+        public static string SELECTED_FILE_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("SELECTED_FILE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILES_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string SELECTED_FILES_CHANGED_PROPERTY => LocalClazz.GetField<string>("SELECTED_FILES_CHANGED_PROPERTY");
+        public static string SELECTED_FILES_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("SELECTED_FILES_CHANGED_PROPERTY"); } }
         
         #endregion
 

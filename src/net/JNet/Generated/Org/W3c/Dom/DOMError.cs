@@ -40,15 +40,15 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_ERROR"/>
         /// </summary>
-        public static short SEVERITY_ERROR => LocalClazz.GetField<short>("SEVERITY_ERROR");
+        public static short SEVERITY_ERROR { get { return LocalClazz.GetField<short>("SEVERITY_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR"/>
         /// </summary>
-        public static short SEVERITY_FATAL_ERROR => LocalClazz.GetField<short>("SEVERITY_FATAL_ERROR");
+        public static short SEVERITY_FATAL_ERROR { get { return LocalClazz.GetField<short>("SEVERITY_FATAL_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING"/>
         /// </summary>
-        public static short SEVERITY_WARNING => LocalClazz.GetField<short>("SEVERITY_WARNING");
+        public static short SEVERITY_WARNING { get { return LocalClazz.GetField<short>("SEVERITY_WARNING"); } }
         
         #endregion
 

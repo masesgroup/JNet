@@ -61,11 +61,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#x"/>
         /// </summary>
-        public int x => Instance.GetField<int>("x");
+        public int x { get { return Instance.GetField<int>("x"); } set { Instance.SetField("x", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#y"/>
         /// </summary>
-        public int y => Instance.GetField<int>("y");
+        public int y { get { return Instance.GetField<int>("y"); } set { Instance.SetField("y", value); } }
         
         #endregion
 

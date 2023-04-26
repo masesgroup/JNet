@@ -156,15 +156,15 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#CHANGE"/>
             /// </summary>
-            public static Javax.Swing.Event.DocumentEvent.EventType CHANGE => LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("CHANGE");
+            public static Javax.Swing.Event.DocumentEvent.EventType CHANGE { get { return LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("CHANGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#INSERT"/>
             /// </summary>
-            public static Javax.Swing.Event.DocumentEvent.EventType INSERT => LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("INSERT");
+            public static Javax.Swing.Event.DocumentEvent.EventType INSERT { get { return LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("INSERT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#REMOVE"/>
             /// </summary>
-            public static Javax.Swing.Event.DocumentEvent.EventType REMOVE => LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("REMOVE");
+            public static Javax.Swing.Event.DocumentEvent.EventType REMOVE { get { return LocalClazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("REMOVE"); } }
             
             #endregion
 

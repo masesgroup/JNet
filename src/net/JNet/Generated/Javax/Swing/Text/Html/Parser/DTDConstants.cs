@@ -40,143 +40,143 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ANY"/>
         /// </summary>
-        public static int ANY => LocalClazz.GetField<int>("ANY");
+        public static int ANY { get { return LocalClazz.GetField<int>("ANY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CDATA"/>
         /// </summary>
-        public static int CDATA => LocalClazz.GetField<int>("CDATA");
+        public static int CDATA { get { return LocalClazz.GetField<int>("CDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CONREF"/>
         /// </summary>
-        public static int CONREF => LocalClazz.GetField<int>("CONREF");
+        public static int CONREF { get { return LocalClazz.GetField<int>("CONREF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CURRENT"/>
         /// </summary>
-        public static int CURRENT => LocalClazz.GetField<int>("CURRENT");
+        public static int CURRENT { get { return LocalClazz.GetField<int>("CURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#DEFAULT"/>
         /// </summary>
-        public static int DEFAULT => LocalClazz.GetField<int>("DEFAULT");
+        public static int DEFAULT { get { return LocalClazz.GetField<int>("DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#EMPTY"/>
         /// </summary>
-        public static int EMPTY => LocalClazz.GetField<int>("EMPTY");
+        public static int EMPTY { get { return LocalClazz.GetField<int>("EMPTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENDTAG"/>
         /// </summary>
-        public static int ENDTAG => LocalClazz.GetField<int>("ENDTAG");
+        public static int ENDTAG { get { return LocalClazz.GetField<int>("ENDTAG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENTITIES"/>
         /// </summary>
-        public static int ENTITIES => LocalClazz.GetField<int>("ENTITIES");
+        public static int ENTITIES { get { return LocalClazz.GetField<int>("ENTITIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENTITY"/>
         /// </summary>
-        public static int ENTITY => LocalClazz.GetField<int>("ENTITY");
+        public static int ENTITY { get { return LocalClazz.GetField<int>("ENTITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#FIXED"/>
         /// </summary>
-        public static int FIXED => LocalClazz.GetField<int>("FIXED");
+        public static int FIXED { get { return LocalClazz.GetField<int>("FIXED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#GENERAL"/>
         /// </summary>
-        public static int GENERAL => LocalClazz.GetField<int>("GENERAL");
+        public static int GENERAL { get { return LocalClazz.GetField<int>("GENERAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ID"/>
         /// </summary>
-        public static int ID => LocalClazz.GetField<int>("ID");
+        public static int ID { get { return LocalClazz.GetField<int>("ID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IDREF"/>
         /// </summary>
-        public static int IDREF => LocalClazz.GetField<int>("IDREF");
+        public static int IDREF { get { return LocalClazz.GetField<int>("IDREF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IDREFS"/>
         /// </summary>
-        public static int IDREFS => LocalClazz.GetField<int>("IDREFS");
+        public static int IDREFS { get { return LocalClazz.GetField<int>("IDREFS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IMPLIED"/>
         /// </summary>
-        public static int IMPLIED => LocalClazz.GetField<int>("IMPLIED");
+        public static int IMPLIED { get { return LocalClazz.GetField<int>("IMPLIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MD"/>
         /// </summary>
-        public static int MD => LocalClazz.GetField<int>("MD");
+        public static int MD { get { return LocalClazz.GetField<int>("MD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MODEL"/>
         /// </summary>
-        public static int MODEL => LocalClazz.GetField<int>("MODEL");
+        public static int MODEL { get { return LocalClazz.GetField<int>("MODEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MS"/>
         /// </summary>
-        public static int MS => LocalClazz.GetField<int>("MS");
+        public static int MS { get { return LocalClazz.GetField<int>("MS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NAME"/>
         /// </summary>
-        public static int NAME => LocalClazz.GetField<int>("NAME");
+        public static int NAME { get { return LocalClazz.GetField<int>("NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NAMES"/>
         /// </summary>
-        public static int NAMES => LocalClazz.GetField<int>("NAMES");
+        public static int NAMES { get { return LocalClazz.GetField<int>("NAMES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NMTOKEN"/>
         /// </summary>
-        public static int NMTOKEN => LocalClazz.GetField<int>("NMTOKEN");
+        public static int NMTOKEN { get { return LocalClazz.GetField<int>("NMTOKEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NMTOKENS"/>
         /// </summary>
-        public static int NMTOKENS => LocalClazz.GetField<int>("NMTOKENS");
+        public static int NMTOKENS { get { return LocalClazz.GetField<int>("NMTOKENS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NOTATION"/>
         /// </summary>
-        public static int NOTATION => LocalClazz.GetField<int>("NOTATION");
+        public static int NOTATION { get { return LocalClazz.GetField<int>("NOTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUMBER"/>
         /// </summary>
-        public static int NUMBER => LocalClazz.GetField<int>("NUMBER");
+        public static int NUMBER { get { return LocalClazz.GetField<int>("NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUMBERS"/>
         /// </summary>
-        public static int NUMBERS => LocalClazz.GetField<int>("NUMBERS");
+        public static int NUMBERS { get { return LocalClazz.GetField<int>("NUMBERS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUTOKEN"/>
         /// </summary>
-        public static int NUTOKEN => LocalClazz.GetField<int>("NUTOKEN");
+        public static int NUTOKEN { get { return LocalClazz.GetField<int>("NUTOKEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUTOKENS"/>
         /// </summary>
-        public static int NUTOKENS => LocalClazz.GetField<int>("NUTOKENS");
+        public static int NUTOKENS { get { return LocalClazz.GetField<int>("NUTOKENS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PARAMETER"/>
         /// </summary>
-        public static int PARAMETER => LocalClazz.GetField<int>("PARAMETER");
+        public static int PARAMETER { get { return LocalClazz.GetField<int>("PARAMETER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PI"/>
         /// </summary>
-        public static int PI => LocalClazz.GetField<int>("PI");
+        public static int PI { get { return LocalClazz.GetField<int>("PI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PUBLIC"/>
         /// </summary>
-        public static int PUBLIC => LocalClazz.GetField<int>("PUBLIC");
+        public static int PUBLIC { get { return LocalClazz.GetField<int>("PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#RCDATA"/>
         /// </summary>
-        public static int RCDATA => LocalClazz.GetField<int>("RCDATA");
+        public static int RCDATA { get { return LocalClazz.GetField<int>("RCDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#REQUIRED"/>
         /// </summary>
-        public static int REQUIRED => LocalClazz.GetField<int>("REQUIRED");
+        public static int REQUIRED { get { return LocalClazz.GetField<int>("REQUIRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#SDATA"/>
         /// </summary>
-        public static int SDATA => LocalClazz.GetField<int>("SDATA");
+        public static int SDATA { get { return LocalClazz.GetField<int>("SDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#STARTTAG"/>
         /// </summary>
-        public static int STARTTAG => LocalClazz.GetField<int>("STARTTAG");
+        public static int STARTTAG { get { return LocalClazz.GetField<int>("STARTTAG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#SYSTEM"/>
         /// </summary>
-        public static int SYSTEM => LocalClazz.GetField<int>("SYSTEM");
+        public static int SYSTEM { get { return LocalClazz.GetField<int>("SYSTEM"); } }
         
         #endregion
 

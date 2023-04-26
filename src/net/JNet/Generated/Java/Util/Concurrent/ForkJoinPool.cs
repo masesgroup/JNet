@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#defaultForkJoinWorkerThreadFactory"/>
         /// </summary>
-        public static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory => LocalClazz.GetField<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("defaultForkJoinWorkerThreadFactory");
+        public static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory { get { return LocalClazz.GetField<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("defaultForkJoinWorkerThreadFactory"); } }
         
         #endregion
 

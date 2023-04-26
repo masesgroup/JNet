@@ -56,15 +56,15 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE"/>
         /// </summary>
-        public static int ALWAYS_UPDATE => LocalClazz.GetField<int>("ALWAYS_UPDATE");
+        public static int ALWAYS_UPDATE { get { return LocalClazz.GetField<int>("ALWAYS_UPDATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE"/>
         /// </summary>
-        public static int NEVER_UPDATE => LocalClazz.GetField<int>("NEVER_UPDATE");
+        public static int NEVER_UPDATE { get { return LocalClazz.GetField<int>("NEVER_UPDATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT"/>
         /// </summary>
-        public static int UPDATE_WHEN_ON_EDT => LocalClazz.GetField<int>("UPDATE_WHEN_ON_EDT");
+        public static int UPDATE_WHEN_ON_EDT { get { return LocalClazz.GetField<int>("UPDATE_WHEN_ON_EDT"); } }
         
         #endregion
 

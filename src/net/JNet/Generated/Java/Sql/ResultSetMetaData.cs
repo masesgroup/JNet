@@ -40,15 +40,15 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#columnNoNulls"/>
         /// </summary>
-        public static int columnNoNulls => LocalClazz.GetField<int>("columnNoNulls");
+        public static int columnNoNulls { get { return LocalClazz.GetField<int>("columnNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#columnNullable"/>
         /// </summary>
-        public static int columnNullable => LocalClazz.GetField<int>("columnNullable");
+        public static int columnNullable { get { return LocalClazz.GetField<int>("columnNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#columnNullableUnknown"/>
         /// </summary>
-        public static int columnNullableUnknown => LocalClazz.GetField<int>("columnNullableUnknown");
+        public static int columnNullableUnknown { get { return LocalClazz.GetField<int>("columnNullableUnknown"); } }
         
         #endregion
 

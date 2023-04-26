@@ -44,35 +44,35 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState ABORTED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("ABORTED");
+        public static Javax.Print.Attribute.Standard.JobState ABORTED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("ABORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState CANCELED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("CANCELED");
+        public static Javax.Print.Attribute.Standard.JobState CANCELED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("CANCELED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState COMPLETED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("COMPLETED");
+        public static Javax.Print.Attribute.Standard.JobState COMPLETED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("COMPLETED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PENDING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING");
+        public static Javax.Print.Attribute.Standard.JobState PENDING { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING_HELD"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PENDING_HELD => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING_HELD");
+        public static Javax.Print.Attribute.Standard.JobState PENDING_HELD { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING_HELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PROCESSING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING");
+        public static Javax.Print.Attribute.Standard.JobState PROCESSING { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING_STOPPED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING_STOPPED");
+        public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING_STOPPED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState UNKNOWN => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("UNKNOWN");
+        public static Javax.Print.Attribute.Standard.JobState UNKNOWN { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.JobState>("UNKNOWN"); } }
         
         #endregion
 

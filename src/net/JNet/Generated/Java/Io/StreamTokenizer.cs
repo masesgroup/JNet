@@ -48,31 +48,31 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nval"/>
         /// </summary>
-        public double nval => Instance.GetField<double>("nval");
+        public double nval { get { return Instance.GetField<double>("nval"); } set { Instance.SetField("nval", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ttype"/>
         /// </summary>
-        public int ttype => Instance.GetField<int>("ttype");
+        public int ttype { get { return Instance.GetField<int>("ttype"); } set { Instance.SetField("ttype", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval"/>
         /// </summary>
-        public string sval => Instance.GetField<string>("sval");
+        public string sval { get { return Instance.GetField<string>("sval"); } set { Instance.SetField("sval", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>
-        public static int TT_EOF => LocalClazz.GetField<int>("TT_EOF");
+        public static int TT_EOF { get { return LocalClazz.GetField<int>("TT_EOF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOL"/>
         /// </summary>
-        public static int TT_EOL => LocalClazz.GetField<int>("TT_EOL");
+        public static int TT_EOL { get { return LocalClazz.GetField<int>("TT_EOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_NUMBER"/>
         /// </summary>
-        public static int TT_NUMBER => LocalClazz.GetField<int>("TT_NUMBER");
+        public static int TT_NUMBER { get { return LocalClazz.GetField<int>("TT_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
-        public static int TT_WORD => LocalClazz.GetField<int>("TT_WORD");
+        public static int TT_WORD { get { return LocalClazz.GetField<int>("TT_WORD"); } }
         
         #endregion
 

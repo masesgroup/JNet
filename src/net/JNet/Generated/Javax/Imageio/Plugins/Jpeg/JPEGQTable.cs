@@ -48,19 +48,19 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Div2Luminance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Div2Luminance => LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Div2Luminance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Div2Luminance { get { return LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Div2Luminance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Luminance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Luminance => LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Luminance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Luminance { get { return LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Luminance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Chrominance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Chrominance => LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Chrominance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Chrominance { get { return LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Chrominance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Div2Chrominance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Div2Chrominance => LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Div2Chrominance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Div2Chrominance { get { return LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Div2Chrominance"); } }
         
         #endregion
 

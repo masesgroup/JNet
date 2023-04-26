@@ -40,31 +40,31 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#DECRYPT_MODE"/>
         /// </summary>
-        public static int DECRYPT_MODE => LocalClazz.GetField<int>("DECRYPT_MODE");
+        public static int DECRYPT_MODE { get { return LocalClazz.GetField<int>("DECRYPT_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#ENCRYPT_MODE"/>
         /// </summary>
-        public static int ENCRYPT_MODE => LocalClazz.GetField<int>("ENCRYPT_MODE");
+        public static int ENCRYPT_MODE { get { return LocalClazz.GetField<int>("ENCRYPT_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PRIVATE_KEY"/>
         /// </summary>
-        public static int PRIVATE_KEY => LocalClazz.GetField<int>("PRIVATE_KEY");
+        public static int PRIVATE_KEY { get { return LocalClazz.GetField<int>("PRIVATE_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PUBLIC_KEY"/>
         /// </summary>
-        public static int PUBLIC_KEY => LocalClazz.GetField<int>("PUBLIC_KEY");
+        public static int PUBLIC_KEY { get { return LocalClazz.GetField<int>("PUBLIC_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#SECRET_KEY"/>
         /// </summary>
-        public static int SECRET_KEY => LocalClazz.GetField<int>("SECRET_KEY");
+        public static int SECRET_KEY { get { return LocalClazz.GetField<int>("SECRET_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#UNWRAP_MODE"/>
         /// </summary>
-        public static int UNWRAP_MODE => LocalClazz.GetField<int>("UNWRAP_MODE");
+        public static int UNWRAP_MODE { get { return LocalClazz.GetField<int>("UNWRAP_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#WRAP_MODE"/>
         /// </summary>
-        public static int WRAP_MODE => LocalClazz.GetField<int>("WRAP_MODE");
+        public static int WRAP_MODE { get { return LocalClazz.GetField<int>("WRAP_MODE"); } }
         
         #endregion
 

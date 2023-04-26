@@ -82,107 +82,107 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#CANCEL_OPTION"/>
         /// </summary>
-        public static int CANCEL_OPTION => LocalClazz.GetField<int>("CANCEL_OPTION");
+        public static int CANCEL_OPTION { get { return LocalClazz.GetField<int>("CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#CLOSED_OPTION"/>
         /// </summary>
-        public static int CLOSED_OPTION => LocalClazz.GetField<int>("CLOSED_OPTION");
+        public static int CLOSED_OPTION { get { return LocalClazz.GetField<int>("CLOSED_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#DEFAULT_OPTION"/>
         /// </summary>
-        public static int DEFAULT_OPTION => LocalClazz.GetField<int>("DEFAULT_OPTION");
+        public static int DEFAULT_OPTION { get { return LocalClazz.GetField<int>("DEFAULT_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#ERROR_MESSAGE"/>
         /// </summary>
-        public static int ERROR_MESSAGE => LocalClazz.GetField<int>("ERROR_MESSAGE");
+        public static int ERROR_MESSAGE { get { return LocalClazz.GetField<int>("ERROR_MESSAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INFORMATION_MESSAGE"/>
         /// </summary>
-        public static int INFORMATION_MESSAGE => LocalClazz.GetField<int>("INFORMATION_MESSAGE");
+        public static int INFORMATION_MESSAGE { get { return LocalClazz.GetField<int>("INFORMATION_MESSAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#NO_OPTION"/>
         /// </summary>
-        public static int NO_OPTION => LocalClazz.GetField<int>("NO_OPTION");
+        public static int NO_OPTION { get { return LocalClazz.GetField<int>("NO_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_CANCEL_OPTION"/>
         /// </summary>
-        public static int OK_CANCEL_OPTION => LocalClazz.GetField<int>("OK_CANCEL_OPTION");
+        public static int OK_CANCEL_OPTION { get { return LocalClazz.GetField<int>("OK_CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_OPTION"/>
         /// </summary>
-        public static int OK_OPTION => LocalClazz.GetField<int>("OK_OPTION");
+        public static int OK_OPTION { get { return LocalClazz.GetField<int>("OK_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#PLAIN_MESSAGE"/>
         /// </summary>
-        public static int PLAIN_MESSAGE => LocalClazz.GetField<int>("PLAIN_MESSAGE");
+        public static int PLAIN_MESSAGE { get { return LocalClazz.GetField<int>("PLAIN_MESSAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#QUESTION_MESSAGE"/>
         /// </summary>
-        public static int QUESTION_MESSAGE => LocalClazz.GetField<int>("QUESTION_MESSAGE");
+        public static int QUESTION_MESSAGE { get { return LocalClazz.GetField<int>("QUESTION_MESSAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WARNING_MESSAGE"/>
         /// </summary>
-        public static int WARNING_MESSAGE => LocalClazz.GetField<int>("WARNING_MESSAGE");
+        public static int WARNING_MESSAGE { get { return LocalClazz.GetField<int>("WARNING_MESSAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_CANCEL_OPTION"/>
         /// </summary>
-        public static int YES_NO_CANCEL_OPTION => LocalClazz.GetField<int>("YES_NO_CANCEL_OPTION");
+        public static int YES_NO_CANCEL_OPTION { get { return LocalClazz.GetField<int>("YES_NO_CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_OPTION"/>
         /// </summary>
-        public static int YES_NO_OPTION => LocalClazz.GetField<int>("YES_NO_OPTION");
+        public static int YES_NO_OPTION { get { return LocalClazz.GetField<int>("YES_NO_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_OPTION"/>
         /// </summary>
-        public static int YES_OPTION => LocalClazz.GetField<int>("YES_OPTION");
+        public static int YES_OPTION { get { return LocalClazz.GetField<int>("YES_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#UNINITIALIZED_VALUE"/>
         /// </summary>
-        public static object UNINITIALIZED_VALUE => LocalClazz.GetField("UNINITIALIZED_VALUE");
+        public static object UNINITIALIZED_VALUE { get { return LocalClazz.GetField("UNINITIALIZED_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#ICON_PROPERTY"/>
         /// </summary>
-        public static string ICON_PROPERTY => LocalClazz.GetField<string>("ICON_PROPERTY");
+        public static string ICON_PROPERTY { get { return LocalClazz.GetField<string>("ICON_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_SELECTION_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INITIAL_SELECTION_VALUE_PROPERTY => LocalClazz.GetField<string>("INITIAL_SELECTION_VALUE_PROPERTY");
+        public static string INITIAL_SELECTION_VALUE_PROPERTY { get { return LocalClazz.GetField<string>("INITIAL_SELECTION_VALUE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INITIAL_VALUE_PROPERTY => LocalClazz.GetField<string>("INITIAL_VALUE_PROPERTY");
+        public static string INITIAL_VALUE_PROPERTY { get { return LocalClazz.GetField<string>("INITIAL_VALUE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INPUT_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INPUT_VALUE_PROPERTY => LocalClazz.GetField<string>("INPUT_VALUE_PROPERTY");
+        public static string INPUT_VALUE_PROPERTY { get { return LocalClazz.GetField<string>("INPUT_VALUE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_PROPERTY"/>
         /// </summary>
-        public static string MESSAGE_PROPERTY => LocalClazz.GetField<string>("MESSAGE_PROPERTY");
+        public static string MESSAGE_PROPERTY { get { return LocalClazz.GetField<string>("MESSAGE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_TYPE_PROPERTY"/>
         /// </summary>
-        public static string MESSAGE_TYPE_PROPERTY => LocalClazz.GetField<string>("MESSAGE_TYPE_PROPERTY");
+        public static string MESSAGE_TYPE_PROPERTY { get { return LocalClazz.GetField<string>("MESSAGE_TYPE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTION_TYPE_PROPERTY"/>
         /// </summary>
-        public static string OPTION_TYPE_PROPERTY => LocalClazz.GetField<string>("OPTION_TYPE_PROPERTY");
+        public static string OPTION_TYPE_PROPERTY { get { return LocalClazz.GetField<string>("OPTION_TYPE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTIONS_PROPERTY"/>
         /// </summary>
-        public static string OPTIONS_PROPERTY => LocalClazz.GetField<string>("OPTIONS_PROPERTY");
+        public static string OPTIONS_PROPERTY { get { return LocalClazz.GetField<string>("OPTIONS_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#SELECTION_VALUES_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_VALUES_PROPERTY => LocalClazz.GetField<string>("SELECTION_VALUES_PROPERTY");
+        public static string SELECTION_VALUES_PROPERTY { get { return LocalClazz.GetField<string>("SELECTION_VALUES_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#VALUE_PROPERTY"/>
         /// </summary>
-        public static string VALUE_PROPERTY => LocalClazz.GetField<string>("VALUE_PROPERTY");
+        public static string VALUE_PROPERTY { get { return LocalClazz.GetField<string>("VALUE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WANTS_INPUT_PROPERTY"/>
         /// </summary>
-        public static string WANTS_INPUT_PROPERTY => LocalClazz.GetField<string>("WANTS_INPUT_PROPERTY");
+        public static string WANTS_INPUT_PROPERTY { get { return LocalClazz.GetField<string>("WANTS_INPUT_PROPERTY"); } }
         
         #endregion
 

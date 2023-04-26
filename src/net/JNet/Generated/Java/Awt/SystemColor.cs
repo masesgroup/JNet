@@ -40,215 +40,215 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#ACTIVE_CAPTION"/>
         /// </summary>
-        public static int ACTIVE_CAPTION => LocalClazz.GetField<int>("ACTIVE_CAPTION");
+        public static int ACTIVE_CAPTION { get { return LocalClazz.GetField<int>("ACTIVE_CAPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#ACTIVE_CAPTION_BORDER"/>
         /// </summary>
-        public static int ACTIVE_CAPTION_BORDER => LocalClazz.GetField<int>("ACTIVE_CAPTION_BORDER");
+        public static int ACTIVE_CAPTION_BORDER { get { return LocalClazz.GetField<int>("ACTIVE_CAPTION_BORDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#ACTIVE_CAPTION_TEXT"/>
         /// </summary>
-        public static int ACTIVE_CAPTION_TEXT => LocalClazz.GetField<int>("ACTIVE_CAPTION_TEXT");
+        public static int ACTIVE_CAPTION_TEXT { get { return LocalClazz.GetField<int>("ACTIVE_CAPTION_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL"/>
         /// </summary>
-        public static int CONTROL => LocalClazz.GetField<int>("CONTROL");
+        public static int CONTROL { get { return LocalClazz.GetField<int>("CONTROL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL_DK_SHADOW"/>
         /// </summary>
-        public static int CONTROL_DK_SHADOW => LocalClazz.GetField<int>("CONTROL_DK_SHADOW");
+        public static int CONTROL_DK_SHADOW { get { return LocalClazz.GetField<int>("CONTROL_DK_SHADOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL_HIGHLIGHT"/>
         /// </summary>
-        public static int CONTROL_HIGHLIGHT => LocalClazz.GetField<int>("CONTROL_HIGHLIGHT");
+        public static int CONTROL_HIGHLIGHT { get { return LocalClazz.GetField<int>("CONTROL_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL_LT_HIGHLIGHT"/>
         /// </summary>
-        public static int CONTROL_LT_HIGHLIGHT => LocalClazz.GetField<int>("CONTROL_LT_HIGHLIGHT");
+        public static int CONTROL_LT_HIGHLIGHT { get { return LocalClazz.GetField<int>("CONTROL_LT_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL_SHADOW"/>
         /// </summary>
-        public static int CONTROL_SHADOW => LocalClazz.GetField<int>("CONTROL_SHADOW");
+        public static int CONTROL_SHADOW { get { return LocalClazz.GetField<int>("CONTROL_SHADOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#CONTROL_TEXT"/>
         /// </summary>
-        public static int CONTROL_TEXT => LocalClazz.GetField<int>("CONTROL_TEXT");
+        public static int CONTROL_TEXT { get { return LocalClazz.GetField<int>("CONTROL_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#DESKTOP"/>
         /// </summary>
-        public static int DESKTOP => LocalClazz.GetField<int>("DESKTOP");
+        public static int DESKTOP { get { return LocalClazz.GetField<int>("DESKTOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#INACTIVE_CAPTION"/>
         /// </summary>
-        public static int INACTIVE_CAPTION => LocalClazz.GetField<int>("INACTIVE_CAPTION");
+        public static int INACTIVE_CAPTION { get { return LocalClazz.GetField<int>("INACTIVE_CAPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#INACTIVE_CAPTION_BORDER"/>
         /// </summary>
-        public static int INACTIVE_CAPTION_BORDER => LocalClazz.GetField<int>("INACTIVE_CAPTION_BORDER");
+        public static int INACTIVE_CAPTION_BORDER { get { return LocalClazz.GetField<int>("INACTIVE_CAPTION_BORDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#INACTIVE_CAPTION_TEXT"/>
         /// </summary>
-        public static int INACTIVE_CAPTION_TEXT => LocalClazz.GetField<int>("INACTIVE_CAPTION_TEXT");
+        public static int INACTIVE_CAPTION_TEXT { get { return LocalClazz.GetField<int>("INACTIVE_CAPTION_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#INFO"/>
         /// </summary>
-        public static int INFO => LocalClazz.GetField<int>("INFO");
+        public static int INFO { get { return LocalClazz.GetField<int>("INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#INFO_TEXT"/>
         /// </summary>
-        public static int INFO_TEXT => LocalClazz.GetField<int>("INFO_TEXT");
+        public static int INFO_TEXT { get { return LocalClazz.GetField<int>("INFO_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#MENU"/>
         /// </summary>
-        public static int MENU => LocalClazz.GetField<int>("MENU");
+        public static int MENU { get { return LocalClazz.GetField<int>("MENU"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#MENU_TEXT"/>
         /// </summary>
-        public static int MENU_TEXT => LocalClazz.GetField<int>("MENU_TEXT");
+        public static int MENU_TEXT { get { return LocalClazz.GetField<int>("MENU_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#NUM_COLORS"/>
         /// </summary>
-        public static int NUM_COLORS => LocalClazz.GetField<int>("NUM_COLORS");
+        public static int NUM_COLORS { get { return LocalClazz.GetField<int>("NUM_COLORS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#SCROLLBAR"/>
         /// </summary>
-        public static int SCROLLBAR => LocalClazz.GetField<int>("SCROLLBAR");
+        public static int SCROLLBAR { get { return LocalClazz.GetField<int>("SCROLLBAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#TEXT"/>
         /// </summary>
-        public static int TEXT => LocalClazz.GetField<int>("TEXT");
+        public static int TEXT { get { return LocalClazz.GetField<int>("TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#TEXT_HIGHLIGHT"/>
         /// </summary>
-        public static int TEXT_HIGHLIGHT => LocalClazz.GetField<int>("TEXT_HIGHLIGHT");
+        public static int TEXT_HIGHLIGHT { get { return LocalClazz.GetField<int>("TEXT_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#TEXT_HIGHLIGHT_TEXT"/>
         /// </summary>
-        public static int TEXT_HIGHLIGHT_TEXT => LocalClazz.GetField<int>("TEXT_HIGHLIGHT_TEXT");
+        public static int TEXT_HIGHLIGHT_TEXT { get { return LocalClazz.GetField<int>("TEXT_HIGHLIGHT_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#TEXT_INACTIVE_TEXT"/>
         /// </summary>
-        public static int TEXT_INACTIVE_TEXT => LocalClazz.GetField<int>("TEXT_INACTIVE_TEXT");
+        public static int TEXT_INACTIVE_TEXT { get { return LocalClazz.GetField<int>("TEXT_INACTIVE_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#TEXT_TEXT"/>
         /// </summary>
-        public static int TEXT_TEXT => LocalClazz.GetField<int>("TEXT_TEXT");
+        public static int TEXT_TEXT { get { return LocalClazz.GetField<int>("TEXT_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#WINDOW"/>
         /// </summary>
-        public static int WINDOW => LocalClazz.GetField<int>("WINDOW");
+        public static int WINDOW { get { return LocalClazz.GetField<int>("WINDOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#WINDOW_BORDER"/>
         /// </summary>
-        public static int WINDOW_BORDER => LocalClazz.GetField<int>("WINDOW_BORDER");
+        public static int WINDOW_BORDER { get { return LocalClazz.GetField<int>("WINDOW_BORDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#WINDOW_TEXT"/>
         /// </summary>
-        public static int WINDOW_TEXT => LocalClazz.GetField<int>("WINDOW_TEXT");
+        public static int WINDOW_TEXT { get { return LocalClazz.GetField<int>("WINDOW_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#activeCaption"/>
         /// </summary>
-        public static Java.Awt.SystemColor activeCaption => LocalClazz.GetField<Java.Awt.SystemColor>("activeCaption");
+        public static Java.Awt.SystemColor activeCaption { get { return LocalClazz.GetField<Java.Awt.SystemColor>("activeCaption"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#activeCaptionBorder"/>
         /// </summary>
-        public static Java.Awt.SystemColor activeCaptionBorder => LocalClazz.GetField<Java.Awt.SystemColor>("activeCaptionBorder");
+        public static Java.Awt.SystemColor activeCaptionBorder { get { return LocalClazz.GetField<Java.Awt.SystemColor>("activeCaptionBorder"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#activeCaptionText"/>
         /// </summary>
-        public static Java.Awt.SystemColor activeCaptionText => LocalClazz.GetField<Java.Awt.SystemColor>("activeCaptionText");
+        public static Java.Awt.SystemColor activeCaptionText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("activeCaptionText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#control"/>
         /// </summary>
-        public static Java.Awt.SystemColor control => LocalClazz.GetField<Java.Awt.SystemColor>("control");
+        public static Java.Awt.SystemColor control { get { return LocalClazz.GetField<Java.Awt.SystemColor>("control"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#controlDkShadow"/>
         /// </summary>
-        public static Java.Awt.SystemColor controlDkShadow => LocalClazz.GetField<Java.Awt.SystemColor>("controlDkShadow");
+        public static Java.Awt.SystemColor controlDkShadow { get { return LocalClazz.GetField<Java.Awt.SystemColor>("controlDkShadow"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#controlHighlight"/>
         /// </summary>
-        public static Java.Awt.SystemColor controlHighlight => LocalClazz.GetField<Java.Awt.SystemColor>("controlHighlight");
+        public static Java.Awt.SystemColor controlHighlight { get { return LocalClazz.GetField<Java.Awt.SystemColor>("controlHighlight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#controlLtHighlight"/>
         /// </summary>
-        public static Java.Awt.SystemColor controlLtHighlight => LocalClazz.GetField<Java.Awt.SystemColor>("controlLtHighlight");
+        public static Java.Awt.SystemColor controlLtHighlight { get { return LocalClazz.GetField<Java.Awt.SystemColor>("controlLtHighlight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#controlShadow"/>
         /// </summary>
-        public static Java.Awt.SystemColor controlShadow => LocalClazz.GetField<Java.Awt.SystemColor>("controlShadow");
+        public static Java.Awt.SystemColor controlShadow { get { return LocalClazz.GetField<Java.Awt.SystemColor>("controlShadow"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#controlText"/>
         /// </summary>
-        public static Java.Awt.SystemColor controlText => LocalClazz.GetField<Java.Awt.SystemColor>("controlText");
+        public static Java.Awt.SystemColor controlText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("controlText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#desktop"/>
         /// </summary>
-        public static Java.Awt.SystemColor desktop => LocalClazz.GetField<Java.Awt.SystemColor>("desktop");
+        public static Java.Awt.SystemColor desktop { get { return LocalClazz.GetField<Java.Awt.SystemColor>("desktop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#inactiveCaption"/>
         /// </summary>
-        public static Java.Awt.SystemColor inactiveCaption => LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaption");
+        public static Java.Awt.SystemColor inactiveCaption { get { return LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaption"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#inactiveCaptionBorder"/>
         /// </summary>
-        public static Java.Awt.SystemColor inactiveCaptionBorder => LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaptionBorder");
+        public static Java.Awt.SystemColor inactiveCaptionBorder { get { return LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaptionBorder"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#inactiveCaptionText"/>
         /// </summary>
-        public static Java.Awt.SystemColor inactiveCaptionText => LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaptionText");
+        public static Java.Awt.SystemColor inactiveCaptionText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("inactiveCaptionText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#info"/>
         /// </summary>
-        public static Java.Awt.SystemColor info => LocalClazz.GetField<Java.Awt.SystemColor>("info");
+        public static Java.Awt.SystemColor info { get { return LocalClazz.GetField<Java.Awt.SystemColor>("info"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#infoText"/>
         /// </summary>
-        public static Java.Awt.SystemColor infoText => LocalClazz.GetField<Java.Awt.SystemColor>("infoText");
+        public static Java.Awt.SystemColor infoText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("infoText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#menu"/>
         /// </summary>
-        public static Java.Awt.SystemColor menu => LocalClazz.GetField<Java.Awt.SystemColor>("menu");
+        public static Java.Awt.SystemColor menu { get { return LocalClazz.GetField<Java.Awt.SystemColor>("menu"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#menuText"/>
         /// </summary>
-        public static Java.Awt.SystemColor menuText => LocalClazz.GetField<Java.Awt.SystemColor>("menuText");
+        public static Java.Awt.SystemColor menuText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("menuText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#scrollbar"/>
         /// </summary>
-        public static Java.Awt.SystemColor scrollbar => LocalClazz.GetField<Java.Awt.SystemColor>("scrollbar");
+        public static Java.Awt.SystemColor scrollbar { get { return LocalClazz.GetField<Java.Awt.SystemColor>("scrollbar"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#text"/>
         /// </summary>
-        public static Java.Awt.SystemColor text => LocalClazz.GetField<Java.Awt.SystemColor>("text");
+        public static Java.Awt.SystemColor text { get { return LocalClazz.GetField<Java.Awt.SystemColor>("text"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#textHighlight"/>
         /// </summary>
-        public static Java.Awt.SystemColor textHighlight => LocalClazz.GetField<Java.Awt.SystemColor>("textHighlight");
+        public static Java.Awt.SystemColor textHighlight { get { return LocalClazz.GetField<Java.Awt.SystemColor>("textHighlight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#textHighlightText"/>
         /// </summary>
-        public static Java.Awt.SystemColor textHighlightText => LocalClazz.GetField<Java.Awt.SystemColor>("textHighlightText");
+        public static Java.Awt.SystemColor textHighlightText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("textHighlightText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#textInactiveText"/>
         /// </summary>
-        public static Java.Awt.SystemColor textInactiveText => LocalClazz.GetField<Java.Awt.SystemColor>("textInactiveText");
+        public static Java.Awt.SystemColor textInactiveText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("textInactiveText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#textText"/>
         /// </summary>
-        public static Java.Awt.SystemColor textText => LocalClazz.GetField<Java.Awt.SystemColor>("textText");
+        public static Java.Awt.SystemColor textText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("textText"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#window"/>
         /// </summary>
-        public static Java.Awt.SystemColor window => LocalClazz.GetField<Java.Awt.SystemColor>("window");
+        public static Java.Awt.SystemColor window { get { return LocalClazz.GetField<Java.Awt.SystemColor>("window"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#windowBorder"/>
         /// </summary>
-        public static Java.Awt.SystemColor windowBorder => LocalClazz.GetField<Java.Awt.SystemColor>("windowBorder");
+        public static Java.Awt.SystemColor windowBorder { get { return LocalClazz.GetField<Java.Awt.SystemColor>("windowBorder"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#windowText"/>
         /// </summary>
-        public static Java.Awt.SystemColor windowText => LocalClazz.GetField<Java.Awt.SystemColor>("windowText");
+        public static Java.Awt.SystemColor windowText { get { return LocalClazz.GetField<Java.Awt.SystemColor>("windowText"); } }
         
         #endregion
 

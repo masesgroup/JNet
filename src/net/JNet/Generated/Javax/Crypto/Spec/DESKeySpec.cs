@@ -63,7 +63,7 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#DES_KEY_LEN"/>
         /// </summary>
-        public static int DES_KEY_LEN => LocalClazz.GetField<int>("DES_KEY_LEN");
+        public static int DES_KEY_LEN { get { return LocalClazz.GetField<int>("DES_KEY_LEN"); } }
         
         #endregion
 

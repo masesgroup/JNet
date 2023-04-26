@@ -174,11 +174,11 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#x"/>
             /// </summary>
-            public double x => Instance.GetField<double>("x");
+            public double x { get { return Instance.GetField<double>("x"); } set { Instance.SetField("x", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#y"/>
             /// </summary>
-            public double y => Instance.GetField<double>("y");
+            public double y { get { return Instance.GetField<double>("y"); } set { Instance.SetField("y", value); } }
             
             #endregion
 
@@ -222,11 +222,11 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Float.html#x"/>
             /// </summary>
-            public float x => Instance.GetField<float>("x");
+            public float x { get { return Instance.GetField<float>("x"); } set { Instance.SetField("x", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Float.html#y"/>
             /// </summary>
-            public float y => Instance.GetField<float>("y");
+            public float y { get { return Instance.GetField<float>("y"); } set { Instance.SetField("y", value); } }
             
             #endregion
 

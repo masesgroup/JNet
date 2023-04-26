@@ -48,23 +48,23 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_DAY"/>
         /// </summary>
-        public static long ONE_DAY => LocalClazz.GetField<long>("ONE_DAY");
+        public static long ONE_DAY { get { return LocalClazz.GetField<long>("ONE_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_HOUR"/>
         /// </summary>
-        public static long ONE_HOUR => LocalClazz.GetField<long>("ONE_HOUR");
+        public static long ONE_HOUR { get { return LocalClazz.GetField<long>("ONE_HOUR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_MINUTE"/>
         /// </summary>
-        public static long ONE_MINUTE => LocalClazz.GetField<long>("ONE_MINUTE");
+        public static long ONE_MINUTE { get { return LocalClazz.GetField<long>("ONE_MINUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_SECOND"/>
         /// </summary>
-        public static long ONE_SECOND => LocalClazz.GetField<long>("ONE_SECOND");
+        public static long ONE_SECOND { get { return LocalClazz.GetField<long>("ONE_SECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_WEEK"/>
         /// </summary>
-        public static long ONE_WEEK => LocalClazz.GetField<long>("ONE_WEEK");
+        public static long ONE_WEEK { get { return LocalClazz.GetField<long>("ONE_WEEK"); } }
         
         #endregion
 

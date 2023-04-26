@@ -55,19 +55,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#alignment"/>
         /// </summary>
-        public float alignment => Instance.GetField<float>("alignment");
+        public float alignment { get { return Instance.GetField<float>("alignment"); } set { Instance.SetField("alignment", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#maximum"/>
         /// </summary>
-        public int maximum => Instance.GetField<int>("maximum");
+        public int maximum { get { return Instance.GetField<int>("maximum"); } set { Instance.SetField("maximum", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#minimum"/>
         /// </summary>
-        public int minimum => Instance.GetField<int>("minimum");
+        public int minimum { get { return Instance.GetField<int>("minimum"); } set { Instance.SetField("minimum", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#preferred"/>
         /// </summary>
-        public int preferred => Instance.GetField<int>("preferred");
+        public int preferred { get { return Instance.GetField<int>("preferred"); } set { Instance.SetField("preferred", value); } }
         
         #endregion
 

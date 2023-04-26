@@ -44,35 +44,35 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FILE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FILE => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FILE");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FILE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FILE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FTP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FTP => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FTP");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FTP { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FTP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#GOPHER"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported GOPHER => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("GOPHER");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported GOPHER { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("GOPHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTP => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTP");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTP { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTPS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTPS => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTPS");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTPS { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTPS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NEWS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NEWS => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NEWS");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NEWS { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NEWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NNTP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NNTP => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NNTP");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NNTP { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NNTP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#WAIS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported WAIS => LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("WAIS");
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported WAIS { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("WAIS"); } }
         
         #endregion
 
