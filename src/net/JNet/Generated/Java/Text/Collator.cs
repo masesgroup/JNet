@@ -48,31 +48,31 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION"/>
         /// </summary>
-        public static int CANONICAL_DECOMPOSITION => Clazz.GetField<int>("CANONICAL_DECOMPOSITION");
+        public static int CANONICAL_DECOMPOSITION => LocalClazz.GetField<int>("CANONICAL_DECOMPOSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION"/>
         /// </summary>
-        public static int FULL_DECOMPOSITION => Clazz.GetField<int>("FULL_DECOMPOSITION");
+        public static int FULL_DECOMPOSITION => LocalClazz.GetField<int>("FULL_DECOMPOSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL"/>
         /// </summary>
-        public static int IDENTICAL => Clazz.GetField<int>("IDENTICAL");
+        public static int IDENTICAL => LocalClazz.GetField<int>("IDENTICAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION"/>
         /// </summary>
-        public static int NO_DECOMPOSITION => Clazz.GetField<int>("NO_DECOMPOSITION");
+        public static int NO_DECOMPOSITION => LocalClazz.GetField<int>("NO_DECOMPOSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#PRIMARY"/>
         /// </summary>
-        public static int PRIMARY => Clazz.GetField<int>("PRIMARY");
+        public static int PRIMARY => LocalClazz.GetField<int>("PRIMARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#SECONDARY"/>
         /// </summary>
-        public static int SECONDARY => Clazz.GetField<int>("SECONDARY");
+        public static int SECONDARY => LocalClazz.GetField<int>("SECONDARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY"/>
         /// </summary>
-        public static int TERTIARY => Clazz.GetField<int>("TERTIARY");
+        public static int TERTIARY => LocalClazz.GetField<int>("TERTIARY");
         
         #endregion
 

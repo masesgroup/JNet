@@ -74,27 +74,27 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#COMPACT_DISC"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info COMPACT_DISC => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("COMPACT_DISC");
+            public static Javax.Sound.Sampled.Port.Info COMPACT_DISC => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("COMPACT_DISC");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#HEADPHONE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info HEADPHONE => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("HEADPHONE");
+            public static Javax.Sound.Sampled.Port.Info HEADPHONE => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("HEADPHONE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_IN"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info LINE_IN => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_IN");
+            public static Javax.Sound.Sampled.Port.Info LINE_IN => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_IN");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_OUT"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info LINE_OUT => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_OUT");
+            public static Javax.Sound.Sampled.Port.Info LINE_OUT => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_OUT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#MICROPHONE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info MICROPHONE => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("MICROPHONE");
+            public static Javax.Sound.Sampled.Port.Info MICROPHONE => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("MICROPHONE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#SPEAKER"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info SPEAKER => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("SPEAKER");
+            public static Javax.Sound.Sampled.Port.Info SPEAKER => LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("SPEAKER");
             
             #endregion
 

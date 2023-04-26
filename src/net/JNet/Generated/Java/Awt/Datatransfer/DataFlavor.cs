@@ -86,39 +86,39 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#imageFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor imageFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("imageFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor imageFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("imageFlavor");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaFileListFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("javaFileListFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("javaFileListFlavor");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#stringFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor stringFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("stringFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor stringFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("stringFlavor");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaJVMLocalObjectMimeType"/>
         /// </summary>
-        public static string javaJVMLocalObjectMimeType => Clazz.GetField<string>("javaJVMLocalObjectMimeType");
+        public static string javaJVMLocalObjectMimeType => LocalClazz.GetField<string>("javaJVMLocalObjectMimeType");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaRemoteObjectMimeType"/>
         /// </summary>
-        public static string javaRemoteObjectMimeType => Clazz.GetField<string>("javaRemoteObjectMimeType");
+        public static string javaRemoteObjectMimeType => LocalClazz.GetField<string>("javaRemoteObjectMimeType");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaSerializedObjectMimeType"/>
         /// </summary>
-        public static string javaSerializedObjectMimeType => Clazz.GetField<string>("javaSerializedObjectMimeType");
+        public static string javaSerializedObjectMimeType => LocalClazz.GetField<string>("javaSerializedObjectMimeType");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("allHtmlFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("allHtmlFlavor");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor fragmentHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("fragmentHtmlFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor fragmentHtmlFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("fragmentHtmlFlavor");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("selectionHtmlFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor => LocalClazz.GetField<Java.Awt.Datatransfer.DataFlavor>("selectionHtmlFlavor");
         
         #endregion
 

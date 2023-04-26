@@ -40,7 +40,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#CONTROL_FACTORIES"/>
         /// </summary>
-        public static string CONTROL_FACTORIES => Clazz.GetField<string>("CONTROL_FACTORIES");
+        public static string CONTROL_FACTORIES => LocalClazz.GetField<string>("CONTROL_FACTORIES");
         
         #endregion
 

@@ -48,19 +48,19 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#MAX_SCROLL"/>
         /// </summary>
-        public static int MAX_SCROLL => Clazz.GetField<int>("MAX_SCROLL");
+        public static int MAX_SCROLL => LocalClazz.GetField<int>("MAX_SCROLL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#MIN_SCROLL"/>
         /// </summary>
-        public static int MIN_SCROLL => Clazz.GetField<int>("MIN_SCROLL");
+        public static int MIN_SCROLL => LocalClazz.GetField<int>("MIN_SCROLL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#NEGATIVE_SCROLL"/>
         /// </summary>
-        public static int NEGATIVE_SCROLL => Clazz.GetField<int>("NEGATIVE_SCROLL");
+        public static int NEGATIVE_SCROLL => LocalClazz.GetField<int>("NEGATIVE_SCROLL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#POSITIVE_SCROLL"/>
         /// </summary>
-        public static int POSITIVE_SCROLL => Clazz.GetField<int>("POSITIVE_SCROLL");
+        public static int POSITIVE_SCROLL => LocalClazz.GetField<int>("POSITIVE_SCROLL");
         
         #endregion
 

@@ -187,23 +187,23 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ALAW");
+            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW => LocalClazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ALAW");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_FLOAT");
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT => LocalClazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_FLOAT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_SIGNED"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_SIGNED");
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED => LocalClazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_SIGNED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_UNSIGNED"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_UNSIGNED");
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED => LocalClazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_UNSIGNED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ULAW");
+            public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW => LocalClazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ULAW");
             
             #endregion
 

@@ -48,7 +48,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#NOFOLLOW_LINKS"/>
         /// </summary>
-        public static Java.Nio.File.LinkOption NOFOLLOW_LINKS => Clazz.GetField<Java.Nio.File.LinkOption>("NOFOLLOW_LINKS");
+        public static Java.Nio.File.LinkOption NOFOLLOW_LINKS => LocalClazz.GetField<Java.Nio.File.LinkOption>("NOFOLLOW_LINKS");
         
         #endregion
 

@@ -40,59 +40,59 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#AUTHORITATIVE"/>
         /// </summary>
-        public static string AUTHORITATIVE => Clazz.GetField<string>("AUTHORITATIVE");
+        public static string AUTHORITATIVE => LocalClazz.GetField<string>("AUTHORITATIVE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#BATCHSIZE"/>
         /// </summary>
-        public static string BATCHSIZE => Clazz.GetField<string>("BATCHSIZE");
+        public static string BATCHSIZE => LocalClazz.GetField<string>("BATCHSIZE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#DNS_URL"/>
         /// </summary>
-        public static string DNS_URL => Clazz.GetField<string>("DNS_URL");
+        public static string DNS_URL => LocalClazz.GetField<string>("DNS_URL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#INITIAL_CONTEXT_FACTORY"/>
         /// </summary>
-        public static string INITIAL_CONTEXT_FACTORY => Clazz.GetField<string>("INITIAL_CONTEXT_FACTORY");
+        public static string INITIAL_CONTEXT_FACTORY => LocalClazz.GetField<string>("INITIAL_CONTEXT_FACTORY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#LANGUAGE"/>
         /// </summary>
-        public static string LANGUAGE => Clazz.GetField<string>("LANGUAGE");
+        public static string LANGUAGE => LocalClazz.GetField<string>("LANGUAGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#OBJECT_FACTORIES"/>
         /// </summary>
-        public static string OBJECT_FACTORIES => Clazz.GetField<string>("OBJECT_FACTORIES");
+        public static string OBJECT_FACTORIES => LocalClazz.GetField<string>("OBJECT_FACTORIES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#PROVIDER_URL"/>
         /// </summary>
-        public static string PROVIDER_URL => Clazz.GetField<string>("PROVIDER_URL");
+        public static string PROVIDER_URL => LocalClazz.GetField<string>("PROVIDER_URL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#REFERRAL"/>
         /// </summary>
-        public static string REFERRAL => Clazz.GetField<string>("REFERRAL");
+        public static string REFERRAL => LocalClazz.GetField<string>("REFERRAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_AUTHENTICATION"/>
         /// </summary>
-        public static string SECURITY_AUTHENTICATION => Clazz.GetField<string>("SECURITY_AUTHENTICATION");
+        public static string SECURITY_AUTHENTICATION => LocalClazz.GetField<string>("SECURITY_AUTHENTICATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_CREDENTIALS"/>
         /// </summary>
-        public static string SECURITY_CREDENTIALS => Clazz.GetField<string>("SECURITY_CREDENTIALS");
+        public static string SECURITY_CREDENTIALS => LocalClazz.GetField<string>("SECURITY_CREDENTIALS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_PRINCIPAL"/>
         /// </summary>
-        public static string SECURITY_PRINCIPAL => Clazz.GetField<string>("SECURITY_PRINCIPAL");
+        public static string SECURITY_PRINCIPAL => LocalClazz.GetField<string>("SECURITY_PRINCIPAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_PROTOCOL"/>
         /// </summary>
-        public static string SECURITY_PROTOCOL => Clazz.GetField<string>("SECURITY_PROTOCOL");
+        public static string SECURITY_PROTOCOL => LocalClazz.GetField<string>("SECURITY_PROTOCOL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#STATE_FACTORIES"/>
         /// </summary>
-        public static string STATE_FACTORIES => Clazz.GetField<string>("STATE_FACTORIES");
+        public static string STATE_FACTORIES => LocalClazz.GetField<string>("STATE_FACTORIES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#URL_PKG_PREFIXES"/>
         /// </summary>
-        public static string URL_PKG_PREFIXES => Clazz.GetField<string>("URL_PKG_PREFIXES");
+        public static string URL_PKG_PREFIXES => LocalClazz.GetField<string>("URL_PKG_PREFIXES");
         
         #endregion
 

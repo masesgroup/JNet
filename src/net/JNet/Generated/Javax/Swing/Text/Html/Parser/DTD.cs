@@ -104,7 +104,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION"/>
         /// </summary>
-        public static int FILE_VERSION => Clazz.GetField<int>("FILE_VERSION");
+        public static int FILE_VERSION => LocalClazz.GetField<int>("FILE_VERSION");
         
         #endregion
 

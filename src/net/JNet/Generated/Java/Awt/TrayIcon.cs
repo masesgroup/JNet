@@ -220,19 +220,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#ERROR"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType ERROR => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("ERROR");
+            public static Java.Awt.TrayIcon.MessageType ERROR => LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("ERROR");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#INFO"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType INFO => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("INFO");
+            public static Java.Awt.TrayIcon.MessageType INFO => LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("INFO");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#NONE"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType NONE => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("NONE");
+            public static Java.Awt.TrayIcon.MessageType NONE => LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("NONE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType WARNING => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING");
+            public static Java.Awt.TrayIcon.MessageType WARNING => LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING");
             
             #endregion
 

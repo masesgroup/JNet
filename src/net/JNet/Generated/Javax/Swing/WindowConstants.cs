@@ -40,19 +40,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/WindowConstants.html#DISPOSE_ON_CLOSE"/>
         /// </summary>
-        public static int DISPOSE_ON_CLOSE => Clazz.GetField<int>("DISPOSE_ON_CLOSE");
+        public static int DISPOSE_ON_CLOSE => LocalClazz.GetField<int>("DISPOSE_ON_CLOSE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/WindowConstants.html#DO_NOTHING_ON_CLOSE"/>
         /// </summary>
-        public static int DO_NOTHING_ON_CLOSE => Clazz.GetField<int>("DO_NOTHING_ON_CLOSE");
+        public static int DO_NOTHING_ON_CLOSE => LocalClazz.GetField<int>("DO_NOTHING_ON_CLOSE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/WindowConstants.html#EXIT_ON_CLOSE"/>
         /// </summary>
-        public static int EXIT_ON_CLOSE => Clazz.GetField<int>("EXIT_ON_CLOSE");
+        public static int EXIT_ON_CLOSE => LocalClazz.GetField<int>("EXIT_ON_CLOSE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/WindowConstants.html#HIDE_ON_CLOSE"/>
         /// </summary>
-        public static int HIDE_ON_CLOSE => Clazz.GetField<int>("HIDE_ON_CLOSE");
+        public static int HIDE_ON_CLOSE => LocalClazz.GetField<int>("HIDE_ON_CLOSE");
         
         #endregion
 

@@ -40,59 +40,59 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BOOLEAN"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType BOOLEAN => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BOOLEAN");
+        public static Javax.Management.Openmbean.SimpleType BOOLEAN => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("BOOLEAN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BYTE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType BYTE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BYTE");
+        public static Javax.Management.Openmbean.SimpleType BYTE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("BYTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#CHARACTER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType CHARACTER => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("CHARACTER");
+        public static Javax.Management.Openmbean.SimpleType CHARACTER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("CHARACTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DOUBLE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType DOUBLE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("DOUBLE");
+        public static Javax.Management.Openmbean.SimpleType DOUBLE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("DOUBLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#FLOAT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType FLOAT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("FLOAT");
+        public static Javax.Management.Openmbean.SimpleType FLOAT => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("FLOAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#INTEGER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType INTEGER => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("INTEGER");
+        public static Javax.Management.Openmbean.SimpleType INTEGER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("INTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#LONG"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType LONG => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("LONG");
+        public static Javax.Management.Openmbean.SimpleType LONG => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("LONG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#SHORT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType SHORT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("SHORT");
+        public static Javax.Management.Openmbean.SimpleType SHORT => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("SHORT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#STRING"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType STRING => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("STRING");
+        public static Javax.Management.Openmbean.SimpleType STRING => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("STRING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("VOID");
+        public static Javax.Management.Openmbean.SimpleType VOID => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("VOID");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGDECIMAL"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType BIGDECIMAL => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BIGDECIMAL");
+        public static Javax.Management.Openmbean.SimpleType BIGDECIMAL => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("BIGDECIMAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGINTEGER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType BIGINTEGER => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BIGINTEGER");
+        public static Javax.Management.Openmbean.SimpleType BIGINTEGER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("BIGINTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DATE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType DATE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("DATE");
+        public static Javax.Management.Openmbean.SimpleType DATE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("DATE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#OBJECTNAME"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType OBJECTNAME => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("OBJECTNAME");
+        public static Javax.Management.Openmbean.SimpleType OBJECTNAME => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType>("OBJECTNAME");
         
         #endregion
 
@@ -138,59 +138,59 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BOOLEAN"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<bool?> BOOLEAN => Clazz.GetField<Javax.Management.Openmbean.SimpleType<bool?>>("BOOLEAN");
+        public static Javax.Management.Openmbean.SimpleType<bool?> BOOLEAN => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<bool?>>("BOOLEAN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BYTE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<byte?> BYTE => Clazz.GetField<Javax.Management.Openmbean.SimpleType<byte?>>("BYTE");
+        public static Javax.Management.Openmbean.SimpleType<byte?> BYTE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<byte?>>("BYTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#CHARACTER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<char?> CHARACTER => Clazz.GetField<Javax.Management.Openmbean.SimpleType<char?>>("CHARACTER");
+        public static Javax.Management.Openmbean.SimpleType<char?> CHARACTER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<char?>>("CHARACTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DOUBLE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<double?> DOUBLE => Clazz.GetField<Javax.Management.Openmbean.SimpleType<double?>>("DOUBLE");
+        public static Javax.Management.Openmbean.SimpleType<double?> DOUBLE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<double?>>("DOUBLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#FLOAT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<float?> FLOAT => Clazz.GetField<Javax.Management.Openmbean.SimpleType<float?>>("FLOAT");
+        public static Javax.Management.Openmbean.SimpleType<float?> FLOAT => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<float?>>("FLOAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#INTEGER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<int?> INTEGER => Clazz.GetField<Javax.Management.Openmbean.SimpleType<int?>>("INTEGER");
+        public static Javax.Management.Openmbean.SimpleType<int?> INTEGER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<int?>>("INTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#LONG"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<long?> LONG => Clazz.GetField<Javax.Management.Openmbean.SimpleType<long?>>("LONG");
+        public static Javax.Management.Openmbean.SimpleType<long?> LONG => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<long?>>("LONG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#SHORT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<short?> SHORT => Clazz.GetField<Javax.Management.Openmbean.SimpleType<short?>>("SHORT");
+        public static Javax.Management.Openmbean.SimpleType<short?> SHORT => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<short?>>("SHORT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#STRING"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<string> STRING => Clazz.GetField<Javax.Management.Openmbean.SimpleType<string>>("STRING");
+        public static Javax.Management.Openmbean.SimpleType<string> STRING => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<string>>("STRING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Void> VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Void>>("VOID");
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Void> VOID => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Void>>("VOID");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGDECIMAL"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<Java.Math.BigDecimal> BIGDECIMAL => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Math.BigDecimal>>("BIGDECIMAL");
+        public static Javax.Management.Openmbean.SimpleType<Java.Math.BigDecimal> BIGDECIMAL => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Math.BigDecimal>>("BIGDECIMAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGINTEGER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<Java.Math.BigInteger> BIGINTEGER => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Math.BigInteger>>("BIGINTEGER");
+        public static Javax.Management.Openmbean.SimpleType<Java.Math.BigInteger> BIGINTEGER => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Math.BigInteger>>("BIGINTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DATE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<Java.Util.Date> DATE => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Util.Date>>("DATE");
+        public static Javax.Management.Openmbean.SimpleType<Java.Util.Date> DATE => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<Java.Util.Date>>("DATE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#OBJECTNAME"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName> OBJECTNAME => Clazz.GetField<Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName>>("OBJECTNAME");
+        public static Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName> OBJECTNAME => LocalClazz.GetField<Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName>>("OBJECTNAME");
         
         #endregion
 

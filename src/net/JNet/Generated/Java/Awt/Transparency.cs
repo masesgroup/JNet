@@ -40,15 +40,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#BITMASK"/>
         /// </summary>
-        public static int BITMASK => Clazz.GetField<int>("BITMASK");
+        public static int BITMASK => LocalClazz.GetField<int>("BITMASK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE"/>
         /// </summary>
-        public static int OPAQUE => Clazz.GetField<int>("OPAQUE");
+        public static int OPAQUE => LocalClazz.GetField<int>("OPAQUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT"/>
         /// </summary>
-        public static int TRANSLUCENT => Clazz.GetField<int>("TRANSLUCENT");
+        public static int TRANSLUCENT => LocalClazz.GetField<int>("TRANSLUCENT");
         
         #endregion
 

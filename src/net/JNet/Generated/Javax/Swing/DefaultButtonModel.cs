@@ -48,23 +48,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ARMED"/>
         /// </summary>
-        public static int ARMED => Clazz.GetField<int>("ARMED");
+        public static int ARMED => LocalClazz.GetField<int>("ARMED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ENABLED"/>
         /// </summary>
-        public static int ENABLED => Clazz.GetField<int>("ENABLED");
+        public static int ENABLED => LocalClazz.GetField<int>("ENABLED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#PRESSED"/>
         /// </summary>
-        public static int PRESSED => Clazz.GetField<int>("PRESSED");
+        public static int PRESSED => LocalClazz.GetField<int>("PRESSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ROLLOVER"/>
         /// </summary>
-        public static int ROLLOVER => Clazz.GetField<int>("ROLLOVER");
+        public static int ROLLOVER => LocalClazz.GetField<int>("ROLLOVER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED => Clazz.GetField<int>("SELECTED");
+        public static int SELECTED => LocalClazz.GetField<int>("SELECTED");
         
         #endregion
 

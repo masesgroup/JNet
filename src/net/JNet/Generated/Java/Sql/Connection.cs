@@ -48,23 +48,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_NONE"/>
         /// </summary>
-        public static int TRANSACTION_NONE => Clazz.GetField<int>("TRANSACTION_NONE");
+        public static int TRANSACTION_NONE => LocalClazz.GetField<int>("TRANSACTION_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_COMMITTED"/>
         /// </summary>
-        public static int TRANSACTION_READ_COMMITTED => Clazz.GetField<int>("TRANSACTION_READ_COMMITTED");
+        public static int TRANSACTION_READ_COMMITTED => LocalClazz.GetField<int>("TRANSACTION_READ_COMMITTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED"/>
         /// </summary>
-        public static int TRANSACTION_READ_UNCOMMITTED => Clazz.GetField<int>("TRANSACTION_READ_UNCOMMITTED");
+        public static int TRANSACTION_READ_UNCOMMITTED => LocalClazz.GetField<int>("TRANSACTION_READ_UNCOMMITTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_REPEATABLE_READ"/>
         /// </summary>
-        public static int TRANSACTION_REPEATABLE_READ => Clazz.GetField<int>("TRANSACTION_REPEATABLE_READ");
+        public static int TRANSACTION_REPEATABLE_READ => LocalClazz.GetField<int>("TRANSACTION_REPEATABLE_READ");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_SERIALIZABLE"/>
         /// </summary>
-        public static int TRANSACTION_SERIALIZABLE => Clazz.GetField<int>("TRANSACTION_SERIALIZABLE");
+        public static int TRANSACTION_SERIALIZABLE => LocalClazz.GetField<int>("TRANSACTION_SERIALIZABLE");
         
         #endregion
 

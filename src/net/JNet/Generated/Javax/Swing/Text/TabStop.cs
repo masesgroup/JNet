@@ -62,47 +62,47 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_BAR"/>
         /// </summary>
-        public static int ALIGN_BAR => Clazz.GetField<int>("ALIGN_BAR");
+        public static int ALIGN_BAR => LocalClazz.GetField<int>("ALIGN_BAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_CENTER"/>
         /// </summary>
-        public static int ALIGN_CENTER => Clazz.GetField<int>("ALIGN_CENTER");
+        public static int ALIGN_CENTER => LocalClazz.GetField<int>("ALIGN_CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_DECIMAL"/>
         /// </summary>
-        public static int ALIGN_DECIMAL => Clazz.GetField<int>("ALIGN_DECIMAL");
+        public static int ALIGN_DECIMAL => LocalClazz.GetField<int>("ALIGN_DECIMAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_LEFT"/>
         /// </summary>
-        public static int ALIGN_LEFT => Clazz.GetField<int>("ALIGN_LEFT");
+        public static int ALIGN_LEFT => LocalClazz.GetField<int>("ALIGN_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_RIGHT"/>
         /// </summary>
-        public static int ALIGN_RIGHT => Clazz.GetField<int>("ALIGN_RIGHT");
+        public static int ALIGN_RIGHT => LocalClazz.GetField<int>("ALIGN_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_DOTS"/>
         /// </summary>
-        public static int LEAD_DOTS => Clazz.GetField<int>("LEAD_DOTS");
+        public static int LEAD_DOTS => LocalClazz.GetField<int>("LEAD_DOTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_EQUALS"/>
         /// </summary>
-        public static int LEAD_EQUALS => Clazz.GetField<int>("LEAD_EQUALS");
+        public static int LEAD_EQUALS => LocalClazz.GetField<int>("LEAD_EQUALS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_HYPHENS"/>
         /// </summary>
-        public static int LEAD_HYPHENS => Clazz.GetField<int>("LEAD_HYPHENS");
+        public static int LEAD_HYPHENS => LocalClazz.GetField<int>("LEAD_HYPHENS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_NONE"/>
         /// </summary>
-        public static int LEAD_NONE => Clazz.GetField<int>("LEAD_NONE");
+        public static int LEAD_NONE => LocalClazz.GetField<int>("LEAD_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_THICKLINE"/>
         /// </summary>
-        public static int LEAD_THICKLINE => Clazz.GetField<int>("LEAD_THICKLINE");
+        public static int LEAD_THICKLINE => LocalClazz.GetField<int>("LEAD_THICKLINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_UNDERLINE"/>
         /// </summary>
-        public static int LEAD_UNDERLINE => Clazz.GetField<int>("LEAD_UNDERLINE");
+        public static int LEAD_UNDERLINE => LocalClazz.GetField<int>("LEAD_UNDERLINE");
         
         #endregion
 

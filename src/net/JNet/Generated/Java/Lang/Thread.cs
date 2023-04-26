@@ -120,15 +120,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY"/>
         /// </summary>
-        public static int MAX_PRIORITY => Clazz.GetField<int>("MAX_PRIORITY");
+        public static int MAX_PRIORITY => LocalClazz.GetField<int>("MAX_PRIORITY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MIN_PRIORITY"/>
         /// </summary>
-        public static int MIN_PRIORITY => Clazz.GetField<int>("MIN_PRIORITY");
+        public static int MIN_PRIORITY => LocalClazz.GetField<int>("MIN_PRIORITY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY"/>
         /// </summary>
-        public static int NORM_PRIORITY => Clazz.GetField<int>("NORM_PRIORITY");
+        public static int NORM_PRIORITY => LocalClazz.GetField<int>("NORM_PRIORITY");
         
         #endregion
 
@@ -398,27 +398,27 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED"/>
             /// </summary>
-            public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
+            public static Java.Lang.Thread.State BLOCKED => LocalClazz.GetField<Java.Lang.Thread.State>("BLOCKED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW"/>
             /// </summary>
-            public static Java.Lang.Thread.State NEW => Clazz.GetField<Java.Lang.Thread.State>("NEW");
+            public static Java.Lang.Thread.State NEW => LocalClazz.GetField<Java.Lang.Thread.State>("NEW");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE"/>
             /// </summary>
-            public static Java.Lang.Thread.State RUNNABLE => Clazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
+            public static Java.Lang.Thread.State RUNNABLE => LocalClazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED"/>
             /// </summary>
-            public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
+            public static Java.Lang.Thread.State TERMINATED => LocalClazz.GetField<Java.Lang.Thread.State>("TERMINATED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State TIMED_WAITING => Clazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
+            public static Java.Lang.Thread.State TIMED_WAITING => LocalClazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
+            public static Java.Lang.Thread.State WAITING => LocalClazz.GetField<Java.Lang.Thread.State>("WAITING");
             
             #endregion
 

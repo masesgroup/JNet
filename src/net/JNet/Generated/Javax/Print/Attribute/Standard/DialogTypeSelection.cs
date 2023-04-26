@@ -44,11 +44,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#COMMON"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.DialogTypeSelection COMMON => Clazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("COMMON");
+        public static Javax.Print.Attribute.Standard.DialogTypeSelection COMMON => LocalClazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("COMMON");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#NATIVE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.DialogTypeSelection NATIVE => Clazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("NATIVE");
+        public static Javax.Print.Attribute.Standard.DialogTypeSelection NATIVE => LocalClazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("NATIVE");
         
         #endregion
 

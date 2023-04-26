@@ -44,7 +44,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#SHORT_IDS"/>
         /// </summary>
-        public static Java.Util.Map SHORT_IDS => Clazz.GetField<Java.Util.Map>("SHORT_IDS");
+        public static Java.Util.Map SHORT_IDS => LocalClazz.GetField<Java.Util.Map>("SHORT_IDS");
         
         #endregion
 

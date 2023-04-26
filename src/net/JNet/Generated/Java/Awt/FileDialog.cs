@@ -94,11 +94,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#LOAD"/>
         /// </summary>
-        public static int LOAD => Clazz.GetField<int>("LOAD");
+        public static int LOAD => LocalClazz.GetField<int>("LOAD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#SAVE"/>
         /// </summary>
-        public static int SAVE => Clazz.GetField<int>("SAVE");
+        public static int SAVE => LocalClazz.GetField<int>("SAVE");
         
         #endregion
 

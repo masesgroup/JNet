@@ -69,19 +69,19 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL128"/>
         /// </summary>
-        public static Java.Math.MathContext DECIMAL128 => Clazz.GetField<Java.Math.MathContext>("DECIMAL128");
+        public static Java.Math.MathContext DECIMAL128 => LocalClazz.GetField<Java.Math.MathContext>("DECIMAL128");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL32"/>
         /// </summary>
-        public static Java.Math.MathContext DECIMAL32 => Clazz.GetField<Java.Math.MathContext>("DECIMAL32");
+        public static Java.Math.MathContext DECIMAL32 => LocalClazz.GetField<Java.Math.MathContext>("DECIMAL32");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL64"/>
         /// </summary>
-        public static Java.Math.MathContext DECIMAL64 => Clazz.GetField<Java.Math.MathContext>("DECIMAL64");
+        public static Java.Math.MathContext DECIMAL64 => LocalClazz.GetField<Java.Math.MathContext>("DECIMAL64");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#UNLIMITED"/>
         /// </summary>
-        public static Java.Math.MathContext UNLIMITED => Clazz.GetField<Java.Math.MathContext>("UNLIMITED");
+        public static Java.Math.MathContext UNLIMITED => LocalClazz.GetField<Java.Math.MathContext>("UNLIMITED");
         
         #endregion
 

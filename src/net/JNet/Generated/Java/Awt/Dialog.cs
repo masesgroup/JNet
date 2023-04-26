@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#DEFAULT_MODALITY_TYPE"/>
         /// </summary>
-        public static Java.Awt.Dialog.ModalityType DEFAULT_MODALITY_TYPE => Clazz.GetField<Java.Awt.Dialog.ModalityType>("DEFAULT_MODALITY_TYPE");
+        public static Java.Awt.Dialog.ModalityType DEFAULT_MODALITY_TYPE => LocalClazz.GetField<Java.Awt.Dialog.ModalityType>("DEFAULT_MODALITY_TYPE");
         
         #endregion
 
@@ -267,15 +267,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#APPLICATION_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType APPLICATION_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("APPLICATION_EXCLUDE");
+            public static Java.Awt.Dialog.ModalExclusionType APPLICATION_EXCLUDE => LocalClazz.GetField<Java.Awt.Dialog.ModalExclusionType>("APPLICATION_EXCLUDE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#NO_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("NO_EXCLUDE");
+            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE => LocalClazz.GetField<Java.Awt.Dialog.ModalExclusionType>("NO_EXCLUDE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#TOOLKIT_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType TOOLKIT_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("TOOLKIT_EXCLUDE");
+            public static Java.Awt.Dialog.ModalExclusionType TOOLKIT_EXCLUDE => LocalClazz.GetField<Java.Awt.Dialog.ModalExclusionType>("TOOLKIT_EXCLUDE");
             
             #endregion
 
@@ -322,19 +322,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#APPLICATION_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("APPLICATION_MODAL");
+            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL => LocalClazz.GetField<Java.Awt.Dialog.ModalityType>("APPLICATION_MODAL");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#DOCUMENT_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("DOCUMENT_MODAL");
+            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL => LocalClazz.GetField<Java.Awt.Dialog.ModalityType>("DOCUMENT_MODAL");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#MODELESS"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType MODELESS => Clazz.GetField<Java.Awt.Dialog.ModalityType>("MODELESS");
+            public static Java.Awt.Dialog.ModalityType MODELESS => LocalClazz.GetField<Java.Awt.Dialog.ModalityType>("MODELESS");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#TOOLKIT_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("TOOLKIT_MODAL");
+            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL => LocalClazz.GetField<Java.Awt.Dialog.ModalityType>("TOOLKIT_MODAL");
             
             #endregion
 

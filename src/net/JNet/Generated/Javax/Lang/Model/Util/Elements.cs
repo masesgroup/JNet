@@ -303,15 +303,15 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#EXPLICIT"/>
             /// </summary>
-            public static Javax.Lang.Model.Util.Elements.Origin EXPLICIT => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("EXPLICIT");
+            public static Javax.Lang.Model.Util.Elements.Origin EXPLICIT => LocalClazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("EXPLICIT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#MANDATED"/>
             /// </summary>
-            public static Javax.Lang.Model.Util.Elements.Origin MANDATED => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("MANDATED");
+            public static Javax.Lang.Model.Util.Elements.Origin MANDATED => LocalClazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("MANDATED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#SYNTHETIC"/>
             /// </summary>
-            public static Javax.Lang.Model.Util.Elements.Origin SYNTHETIC => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("SYNTHETIC");
+            public static Javax.Lang.Model.Util.Elements.Origin SYNTHETIC => LocalClazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("SYNTHETIC");
             
             #endregion
 

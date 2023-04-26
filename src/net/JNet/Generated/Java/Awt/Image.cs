@@ -40,27 +40,27 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING"/>
         /// </summary>
-        public static int SCALE_AREA_AVERAGING => Clazz.GetField<int>("SCALE_AREA_AVERAGING");
+        public static int SCALE_AREA_AVERAGING => LocalClazz.GetField<int>("SCALE_AREA_AVERAGING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_DEFAULT"/>
         /// </summary>
-        public static int SCALE_DEFAULT => Clazz.GetField<int>("SCALE_DEFAULT");
+        public static int SCALE_DEFAULT => LocalClazz.GetField<int>("SCALE_DEFAULT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_FAST"/>
         /// </summary>
-        public static int SCALE_FAST => Clazz.GetField<int>("SCALE_FAST");
+        public static int SCALE_FAST => LocalClazz.GetField<int>("SCALE_FAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_REPLICATE"/>
         /// </summary>
-        public static int SCALE_REPLICATE => Clazz.GetField<int>("SCALE_REPLICATE");
+        public static int SCALE_REPLICATE => LocalClazz.GetField<int>("SCALE_REPLICATE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH"/>
         /// </summary>
-        public static int SCALE_SMOOTH => Clazz.GetField<int>("SCALE_SMOOTH");
+        public static int SCALE_SMOOTH => LocalClazz.GetField<int>("SCALE_SMOOTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty"/>
         /// </summary>
-        public static object UndefinedProperty => Clazz.GetField("UndefinedProperty");
+        public static object UndefinedProperty => LocalClazz.GetField("UndefinedProperty");
         
         #endregion
 

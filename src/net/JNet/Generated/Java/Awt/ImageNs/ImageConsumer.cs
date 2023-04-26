@@ -40,39 +40,39 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#COMPLETESCANLINES"/>
         /// </summary>
-        public static int COMPLETESCANLINES => Clazz.GetField<int>("COMPLETESCANLINES");
+        public static int COMPLETESCANLINES => LocalClazz.GetField<int>("COMPLETESCANLINES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#IMAGEABORTED"/>
         /// </summary>
-        public static int IMAGEABORTED => Clazz.GetField<int>("IMAGEABORTED");
+        public static int IMAGEABORTED => LocalClazz.GetField<int>("IMAGEABORTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#IMAGEERROR"/>
         /// </summary>
-        public static int IMAGEERROR => Clazz.GetField<int>("IMAGEERROR");
+        public static int IMAGEERROR => LocalClazz.GetField<int>("IMAGEERROR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#RANDOMPIXELORDER"/>
         /// </summary>
-        public static int RANDOMPIXELORDER => Clazz.GetField<int>("RANDOMPIXELORDER");
+        public static int RANDOMPIXELORDER => LocalClazz.GetField<int>("RANDOMPIXELORDER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEFRAME"/>
         /// </summary>
-        public static int SINGLEFRAME => Clazz.GetField<int>("SINGLEFRAME");
+        public static int SINGLEFRAME => LocalClazz.GetField<int>("SINGLEFRAME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEFRAMEDONE"/>
         /// </summary>
-        public static int SINGLEFRAMEDONE => Clazz.GetField<int>("SINGLEFRAMEDONE");
+        public static int SINGLEFRAMEDONE => LocalClazz.GetField<int>("SINGLEFRAMEDONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEPASS"/>
         /// </summary>
-        public static int SINGLEPASS => Clazz.GetField<int>("SINGLEPASS");
+        public static int SINGLEPASS => LocalClazz.GetField<int>("SINGLEPASS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#STATICIMAGEDONE"/>
         /// </summary>
-        public static int STATICIMAGEDONE => Clazz.GetField<int>("STATICIMAGEDONE");
+        public static int STATICIMAGEDONE => LocalClazz.GetField<int>("STATICIMAGEDONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#TOPDOWNLEFTRIGHT"/>
         /// </summary>
-        public static int TOPDOWNLEFTRIGHT => Clazz.GetField<int>("TOPDOWNLEFTRIGHT");
+        public static int TOPDOWNLEFTRIGHT => LocalClazz.GetField<int>("TOPDOWNLEFTRIGHT");
         
         #endregion
 

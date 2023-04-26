@@ -120,19 +120,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#BACKGROUND"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("BACKGROUND");
+            public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND => LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("BACKGROUND");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents COPIED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED");
+            public static Java.Awt.BufferCapabilities.FlipContents COPIED => LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#PRIOR"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents PRIOR => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("PRIOR");
+            public static Java.Awt.BufferCapabilities.FlipContents PRIOR => LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("PRIOR");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED");
+            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED => LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED");
             
             #endregion
 

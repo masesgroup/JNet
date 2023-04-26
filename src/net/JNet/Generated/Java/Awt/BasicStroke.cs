@@ -86,27 +86,27 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_BUTT"/>
         /// </summary>
-        public static int CAP_BUTT => Clazz.GetField<int>("CAP_BUTT");
+        public static int CAP_BUTT => LocalClazz.GetField<int>("CAP_BUTT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_ROUND"/>
         /// </summary>
-        public static int CAP_ROUND => Clazz.GetField<int>("CAP_ROUND");
+        public static int CAP_ROUND => LocalClazz.GetField<int>("CAP_ROUND");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_SQUARE"/>
         /// </summary>
-        public static int CAP_SQUARE => Clazz.GetField<int>("CAP_SQUARE");
+        public static int CAP_SQUARE => LocalClazz.GetField<int>("CAP_SQUARE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL"/>
         /// </summary>
-        public static int JOIN_BEVEL => Clazz.GetField<int>("JOIN_BEVEL");
+        public static int JOIN_BEVEL => LocalClazz.GetField<int>("JOIN_BEVEL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER"/>
         /// </summary>
-        public static int JOIN_MITER => Clazz.GetField<int>("JOIN_MITER");
+        public static int JOIN_MITER => LocalClazz.GetField<int>("JOIN_MITER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND"/>
         /// </summary>
-        public static int JOIN_ROUND => Clazz.GetField<int>("JOIN_ROUND");
+        public static int JOIN_ROUND => LocalClazz.GetField<int>("JOIN_ROUND");
         
         #endregion
 

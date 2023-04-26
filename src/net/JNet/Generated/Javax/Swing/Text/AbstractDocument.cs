@@ -48,23 +48,23 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#BidiElementName"/>
         /// </summary>
-        public static string BidiElementName => Clazz.GetField<string>("BidiElementName");
+        public static string BidiElementName => LocalClazz.GetField<string>("BidiElementName");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ContentElementName"/>
         /// </summary>
-        public static string ContentElementName => Clazz.GetField<string>("ContentElementName");
+        public static string ContentElementName => LocalClazz.GetField<string>("ContentElementName");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ElementNameAttribute"/>
         /// </summary>
-        public static string ElementNameAttribute => Clazz.GetField<string>("ElementNameAttribute");
+        public static string ElementNameAttribute => LocalClazz.GetField<string>("ElementNameAttribute");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ParagraphElementName"/>
         /// </summary>
-        public static string ParagraphElementName => Clazz.GetField<string>("ParagraphElementName");
+        public static string ParagraphElementName => LocalClazz.GetField<string>("ParagraphElementName");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName"/>
         /// </summary>
-        public static string SectionElementName => Clazz.GetField<string>("SectionElementName");
+        public static string SectionElementName => LocalClazz.GetField<string>("SectionElementName");
         
         #endregion
 

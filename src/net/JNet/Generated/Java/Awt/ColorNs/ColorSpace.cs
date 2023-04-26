@@ -44,123 +44,123 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_CIEXYZ"/>
         /// </summary>
-        public static int CS_CIEXYZ => Clazz.GetField<int>("CS_CIEXYZ");
+        public static int CS_CIEXYZ => LocalClazz.GetField<int>("CS_CIEXYZ");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_GRAY"/>
         /// </summary>
-        public static int CS_GRAY => Clazz.GetField<int>("CS_GRAY");
+        public static int CS_GRAY => LocalClazz.GetField<int>("CS_GRAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_LINEAR_RGB"/>
         /// </summary>
-        public static int CS_LINEAR_RGB => Clazz.GetField<int>("CS_LINEAR_RGB");
+        public static int CS_LINEAR_RGB => LocalClazz.GetField<int>("CS_LINEAR_RGB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_PYCC"/>
         /// </summary>
-        public static int CS_PYCC => Clazz.GetField<int>("CS_PYCC");
+        public static int CS_PYCC => LocalClazz.GetField<int>("CS_PYCC");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_sRGB"/>
         /// </summary>
-        public static int CS_sRGB => Clazz.GetField<int>("CS_sRGB");
+        public static int CS_sRGB => LocalClazz.GetField<int>("CS_sRGB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_2CLR"/>
         /// </summary>
-        public static int TYPE_2CLR => Clazz.GetField<int>("TYPE_2CLR");
+        public static int TYPE_2CLR => LocalClazz.GetField<int>("TYPE_2CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_3CLR"/>
         /// </summary>
-        public static int TYPE_3CLR => Clazz.GetField<int>("TYPE_3CLR");
+        public static int TYPE_3CLR => LocalClazz.GetField<int>("TYPE_3CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_4CLR"/>
         /// </summary>
-        public static int TYPE_4CLR => Clazz.GetField<int>("TYPE_4CLR");
+        public static int TYPE_4CLR => LocalClazz.GetField<int>("TYPE_4CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_5CLR"/>
         /// </summary>
-        public static int TYPE_5CLR => Clazz.GetField<int>("TYPE_5CLR");
+        public static int TYPE_5CLR => LocalClazz.GetField<int>("TYPE_5CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_6CLR"/>
         /// </summary>
-        public static int TYPE_6CLR => Clazz.GetField<int>("TYPE_6CLR");
+        public static int TYPE_6CLR => LocalClazz.GetField<int>("TYPE_6CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_7CLR"/>
         /// </summary>
-        public static int TYPE_7CLR => Clazz.GetField<int>("TYPE_7CLR");
+        public static int TYPE_7CLR => LocalClazz.GetField<int>("TYPE_7CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_8CLR"/>
         /// </summary>
-        public static int TYPE_8CLR => Clazz.GetField<int>("TYPE_8CLR");
+        public static int TYPE_8CLR => LocalClazz.GetField<int>("TYPE_8CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_9CLR"/>
         /// </summary>
-        public static int TYPE_9CLR => Clazz.GetField<int>("TYPE_9CLR");
+        public static int TYPE_9CLR => LocalClazz.GetField<int>("TYPE_9CLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ACLR"/>
         /// </summary>
-        public static int TYPE_ACLR => Clazz.GetField<int>("TYPE_ACLR");
+        public static int TYPE_ACLR => LocalClazz.GetField<int>("TYPE_ACLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_BCLR"/>
         /// </summary>
-        public static int TYPE_BCLR => Clazz.GetField<int>("TYPE_BCLR");
+        public static int TYPE_BCLR => LocalClazz.GetField<int>("TYPE_BCLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CCLR"/>
         /// </summary>
-        public static int TYPE_CCLR => Clazz.GetField<int>("TYPE_CCLR");
+        public static int TYPE_CCLR => LocalClazz.GetField<int>("TYPE_CCLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMY"/>
         /// </summary>
-        public static int TYPE_CMY => Clazz.GetField<int>("TYPE_CMY");
+        public static int TYPE_CMY => LocalClazz.GetField<int>("TYPE_CMY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMYK"/>
         /// </summary>
-        public static int TYPE_CMYK => Clazz.GetField<int>("TYPE_CMYK");
+        public static int TYPE_CMYK => LocalClazz.GetField<int>("TYPE_CMYK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_DCLR"/>
         /// </summary>
-        public static int TYPE_DCLR => Clazz.GetField<int>("TYPE_DCLR");
+        public static int TYPE_DCLR => LocalClazz.GetField<int>("TYPE_DCLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ECLR"/>
         /// </summary>
-        public static int TYPE_ECLR => Clazz.GetField<int>("TYPE_ECLR");
+        public static int TYPE_ECLR => LocalClazz.GetField<int>("TYPE_ECLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_FCLR"/>
         /// </summary>
-        public static int TYPE_FCLR => Clazz.GetField<int>("TYPE_FCLR");
+        public static int TYPE_FCLR => LocalClazz.GetField<int>("TYPE_FCLR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_GRAY"/>
         /// </summary>
-        public static int TYPE_GRAY => Clazz.GetField<int>("TYPE_GRAY");
+        public static int TYPE_GRAY => LocalClazz.GetField<int>("TYPE_GRAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HLS"/>
         /// </summary>
-        public static int TYPE_HLS => Clazz.GetField<int>("TYPE_HLS");
+        public static int TYPE_HLS => LocalClazz.GetField<int>("TYPE_HLS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HSV"/>
         /// </summary>
-        public static int TYPE_HSV => Clazz.GetField<int>("TYPE_HSV");
+        public static int TYPE_HSV => LocalClazz.GetField<int>("TYPE_HSV");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Lab"/>
         /// </summary>
-        public static int TYPE_Lab => Clazz.GetField<int>("TYPE_Lab");
+        public static int TYPE_Lab => LocalClazz.GetField<int>("TYPE_Lab");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Luv"/>
         /// </summary>
-        public static int TYPE_Luv => Clazz.GetField<int>("TYPE_Luv");
+        public static int TYPE_Luv => LocalClazz.GetField<int>("TYPE_Luv");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_RGB"/>
         /// </summary>
-        public static int TYPE_RGB => Clazz.GetField<int>("TYPE_RGB");
+        public static int TYPE_RGB => LocalClazz.GetField<int>("TYPE_RGB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_XYZ"/>
         /// </summary>
-        public static int TYPE_XYZ => Clazz.GetField<int>("TYPE_XYZ");
+        public static int TYPE_XYZ => LocalClazz.GetField<int>("TYPE_XYZ");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_YCbCr"/>
         /// </summary>
-        public static int TYPE_YCbCr => Clazz.GetField<int>("TYPE_YCbCr");
+        public static int TYPE_YCbCr => LocalClazz.GetField<int>("TYPE_YCbCr");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Yxy"/>
         /// </summary>
-        public static int TYPE_Yxy => Clazz.GetField<int>("TYPE_Yxy");
+        public static int TYPE_Yxy => LocalClazz.GetField<int>("TYPE_Yxy");
         
         #endregion
 

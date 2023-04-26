@@ -52,23 +52,23 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides DUPLEX => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX");
+        public static Javax.Print.Attribute.Standard.Sides DUPLEX => LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#ONE_SIDED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides ONE_SIDED => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("ONE_SIDED");
+        public static Javax.Print.Attribute.Standard.Sides ONE_SIDED => LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("ONE_SIDED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TUMBLE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE");
+        public static Javax.Print.Attribute.Standard.Sides TUMBLE => LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_LONG_EDGE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_LONG_EDGE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_LONG_EDGE");
+        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_LONG_EDGE => LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_LONG_EDGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_SHORT_EDGE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_SHORT_EDGE");
+        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE => LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_SHORT_EDGE");
         
         #endregion
 

@@ -67,11 +67,11 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#LOWERED"/>
         /// </summary>
-        public static int LOWERED => Clazz.GetField<int>("LOWERED");
+        public static int LOWERED => LocalClazz.GetField<int>("LOWERED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#RAISED"/>
         /// </summary>
-        public static int RAISED => Clazz.GetField<int>("RAISED");
+        public static int RAISED => LocalClazz.GetField<int>("RAISED");
         
         #endregion
 

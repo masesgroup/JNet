@@ -40,23 +40,23 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#ACCEPT_ONLY"/>
         /// </summary>
-        public static int ACCEPT_ONLY => Clazz.GetField<int>("ACCEPT_ONLY");
+        public static int ACCEPT_ONLY => LocalClazz.GetField<int>("ACCEPT_ONLY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#DEFAULT_LIFETIME"/>
         /// </summary>
-        public static int DEFAULT_LIFETIME => Clazz.GetField<int>("DEFAULT_LIFETIME");
+        public static int DEFAULT_LIFETIME => LocalClazz.GetField<int>("DEFAULT_LIFETIME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INDEFINITE_LIFETIME"/>
         /// </summary>
-        public static int INDEFINITE_LIFETIME => Clazz.GetField<int>("INDEFINITE_LIFETIME");
+        public static int INDEFINITE_LIFETIME => LocalClazz.GetField<int>("INDEFINITE_LIFETIME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_AND_ACCEPT"/>
         /// </summary>
-        public static int INITIATE_AND_ACCEPT => Clazz.GetField<int>("INITIATE_AND_ACCEPT");
+        public static int INITIATE_AND_ACCEPT => LocalClazz.GetField<int>("INITIATE_AND_ACCEPT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_ONLY"/>
         /// </summary>
-        public static int INITIATE_ONLY => Clazz.GetField<int>("INITIATE_ONLY");
+        public static int INITIATE_ONLY => LocalClazz.GetField<int>("INITIATE_ONLY");
         
         #endregion
 

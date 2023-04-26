@@ -48,51 +48,51 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#APRIL"/>
         /// </summary>
-        public static Java.Time.Month APRIL => Clazz.GetField<Java.Time.Month>("APRIL");
+        public static Java.Time.Month APRIL => LocalClazz.GetField<Java.Time.Month>("APRIL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#AUGUST"/>
         /// </summary>
-        public static Java.Time.Month AUGUST => Clazz.GetField<Java.Time.Month>("AUGUST");
+        public static Java.Time.Month AUGUST => LocalClazz.GetField<Java.Time.Month>("AUGUST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#DECEMBER"/>
         /// </summary>
-        public static Java.Time.Month DECEMBER => Clazz.GetField<Java.Time.Month>("DECEMBER");
+        public static Java.Time.Month DECEMBER => LocalClazz.GetField<Java.Time.Month>("DECEMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#FEBRUARY"/>
         /// </summary>
-        public static Java.Time.Month FEBRUARY => Clazz.GetField<Java.Time.Month>("FEBRUARY");
+        public static Java.Time.Month FEBRUARY => LocalClazz.GetField<Java.Time.Month>("FEBRUARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#JANUARY"/>
         /// </summary>
-        public static Java.Time.Month JANUARY => Clazz.GetField<Java.Time.Month>("JANUARY");
+        public static Java.Time.Month JANUARY => LocalClazz.GetField<Java.Time.Month>("JANUARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#JULY"/>
         /// </summary>
-        public static Java.Time.Month JULY => Clazz.GetField<Java.Time.Month>("JULY");
+        public static Java.Time.Month JULY => LocalClazz.GetField<Java.Time.Month>("JULY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#JUNE"/>
         /// </summary>
-        public static Java.Time.Month JUNE => Clazz.GetField<Java.Time.Month>("JUNE");
+        public static Java.Time.Month JUNE => LocalClazz.GetField<Java.Time.Month>("JUNE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#MARCH"/>
         /// </summary>
-        public static Java.Time.Month MARCH => Clazz.GetField<Java.Time.Month>("MARCH");
+        public static Java.Time.Month MARCH => LocalClazz.GetField<Java.Time.Month>("MARCH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#MAY"/>
         /// </summary>
-        public static Java.Time.Month MAY => Clazz.GetField<Java.Time.Month>("MAY");
+        public static Java.Time.Month MAY => LocalClazz.GetField<Java.Time.Month>("MAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#NOVEMBER"/>
         /// </summary>
-        public static Java.Time.Month NOVEMBER => Clazz.GetField<Java.Time.Month>("NOVEMBER");
+        public static Java.Time.Month NOVEMBER => LocalClazz.GetField<Java.Time.Month>("NOVEMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#OCTOBER"/>
         /// </summary>
-        public static Java.Time.Month OCTOBER => Clazz.GetField<Java.Time.Month>("OCTOBER");
+        public static Java.Time.Month OCTOBER => LocalClazz.GetField<Java.Time.Month>("OCTOBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#SEPTEMBER"/>
         /// </summary>
-        public static Java.Time.Month SEPTEMBER => Clazz.GetField<Java.Time.Month>("SEPTEMBER");
+        public static Java.Time.Month SEPTEMBER => LocalClazz.GetField<Java.Time.Month>("SEPTEMBER");
         
         #endregion
 

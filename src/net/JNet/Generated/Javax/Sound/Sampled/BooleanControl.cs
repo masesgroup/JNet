@@ -80,11 +80,11 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#APPLY_REVERB"/>
             /// </summary>
-            public static Javax.Sound.Sampled.BooleanControl.Type APPLY_REVERB => Clazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("APPLY_REVERB");
+            public static Javax.Sound.Sampled.BooleanControl.Type APPLY_REVERB => LocalClazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("APPLY_REVERB");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#MUTE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.BooleanControl.Type MUTE => Clazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("MUTE");
+            public static Javax.Sound.Sampled.BooleanControl.Type MUTE => LocalClazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("MUTE");
             
             #endregion
 

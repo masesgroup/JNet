@@ -44,119 +44,119 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#ABORTED_BY_SYSTEM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason ABORTED_BY_SYSTEM => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("ABORTED_BY_SYSTEM");
+        public static Javax.Print.Attribute.Standard.JobStateReason ABORTED_BY_SYSTEM => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("ABORTED_BY_SYSTEM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#COMPRESSION_ERROR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason COMPRESSION_ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("COMPRESSION_ERROR");
+        public static Javax.Print.Attribute.Standard.JobStateReason COMPRESSION_ERROR => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("COMPRESSION_ERROR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#DOCUMENT_ACCESS_ERROR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason DOCUMENT_ACCESS_ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("DOCUMENT_ACCESS_ERROR");
+        public static Javax.Print.Attribute.Standard.JobStateReason DOCUMENT_ACCESS_ERROR => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("DOCUMENT_ACCESS_ERROR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#DOCUMENT_FORMAT_ERROR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason DOCUMENT_FORMAT_ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("DOCUMENT_FORMAT_ERROR");
+        public static Javax.Print.Attribute.Standard.JobStateReason DOCUMENT_FORMAT_ERROR => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("DOCUMENT_FORMAT_ERROR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_CANCELED_AT_DEVICE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_AT_DEVICE => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_AT_DEVICE");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_AT_DEVICE => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_AT_DEVICE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_CANCELED_BY_OPERATOR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_BY_OPERATOR => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_BY_OPERATOR");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_BY_OPERATOR => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_BY_OPERATOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_CANCELED_BY_USER"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_BY_USER => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_BY_USER");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_CANCELED_BY_USER => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_CANCELED_BY_USER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_COMPLETED_SUCCESSFULLY"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_SUCCESSFULLY => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_SUCCESSFULLY");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_SUCCESSFULLY => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_SUCCESSFULLY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_COMPLETED_WITH_ERRORS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_WITH_ERRORS => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_WITH_ERRORS");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_WITH_ERRORS => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_WITH_ERRORS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_COMPLETED_WITH_WARNINGS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_WITH_WARNINGS => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_WITH_WARNINGS");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_COMPLETED_WITH_WARNINGS => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_COMPLETED_WITH_WARNINGS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_DATA_INSUFFICIENT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_DATA_INSUFFICIENT => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_DATA_INSUFFICIENT");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_DATA_INSUFFICIENT => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_DATA_INSUFFICIENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_HOLD_UNTIL_SPECIFIED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_HOLD_UNTIL_SPECIFIED => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_HOLD_UNTIL_SPECIFIED");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_HOLD_UNTIL_SPECIFIED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_HOLD_UNTIL_SPECIFIED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_INCOMING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_INCOMING => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_INCOMING");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_INCOMING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_INCOMING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_INTERPRETING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_INTERPRETING => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_INTERPRETING");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_INTERPRETING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_INTERPRETING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_OUTGOING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_OUTGOING => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_OUTGOING");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_OUTGOING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_OUTGOING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_PRINTING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_PRINTING => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_PRINTING");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_PRINTING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_PRINTING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_QUEUED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_QUEUED => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_QUEUED");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_QUEUED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_QUEUED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_QUEUED_FOR_MARKER"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_QUEUED_FOR_MARKER => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_QUEUED_FOR_MARKER");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_QUEUED_FOR_MARKER => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_QUEUED_FOR_MARKER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_RESTARTABLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_RESTARTABLE => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_RESTARTABLE");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_RESTARTABLE => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_RESTARTABLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#JOB_TRANSFORMING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason JOB_TRANSFORMING => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_TRANSFORMING");
+        public static Javax.Print.Attribute.Standard.JobStateReason JOB_TRANSFORMING => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("JOB_TRANSFORMING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#PRINTER_STOPPED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason PRINTER_STOPPED => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PRINTER_STOPPED");
+        public static Javax.Print.Attribute.Standard.JobStateReason PRINTER_STOPPED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PRINTER_STOPPED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#PRINTER_STOPPED_PARTLY"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason PRINTER_STOPPED_PARTLY => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PRINTER_STOPPED_PARTLY");
+        public static Javax.Print.Attribute.Standard.JobStateReason PRINTER_STOPPED_PARTLY => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PRINTER_STOPPED_PARTLY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#PROCESSING_TO_STOP_POINT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason PROCESSING_TO_STOP_POINT => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PROCESSING_TO_STOP_POINT");
+        public static Javax.Print.Attribute.Standard.JobStateReason PROCESSING_TO_STOP_POINT => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("PROCESSING_TO_STOP_POINT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#QUEUED_IN_DEVICE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason QUEUED_IN_DEVICE => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("QUEUED_IN_DEVICE");
+        public static Javax.Print.Attribute.Standard.JobStateReason QUEUED_IN_DEVICE => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("QUEUED_IN_DEVICE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#RESOURCES_ARE_NOT_READY"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason RESOURCES_ARE_NOT_READY => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("RESOURCES_ARE_NOT_READY");
+        public static Javax.Print.Attribute.Standard.JobStateReason RESOURCES_ARE_NOT_READY => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("RESOURCES_ARE_NOT_READY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#SERVICE_OFF_LINE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason SERVICE_OFF_LINE => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("SERVICE_OFF_LINE");
+        public static Javax.Print.Attribute.Standard.JobStateReason SERVICE_OFF_LINE => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("SERVICE_OFF_LINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#SUBMISSION_INTERRUPTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason SUBMISSION_INTERRUPTED => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("SUBMISSION_INTERRUPTED");
+        public static Javax.Print.Attribute.Standard.JobStateReason SUBMISSION_INTERRUPTED => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("SUBMISSION_INTERRUPTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#UNSUPPORTED_COMPRESSION"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason UNSUPPORTED_COMPRESSION => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("UNSUPPORTED_COMPRESSION");
+        public static Javax.Print.Attribute.Standard.JobStateReason UNSUPPORTED_COMPRESSION => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("UNSUPPORTED_COMPRESSION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#UNSUPPORTED_DOCUMENT_FORMAT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobStateReason UNSUPPORTED_DOCUMENT_FORMAT => Clazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("UNSUPPORTED_DOCUMENT_FORMAT");
+        public static Javax.Print.Attribute.Standard.JobStateReason UNSUPPORTED_DOCUMENT_FORMAT => LocalClazz.GetField<Javax.Print.Attribute.Standard.JobStateReason>("UNSUPPORTED_DOCUMENT_FORMAT");
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#DEFAULT_LIFETIME"/>
         /// </summary>
-        public static int DEFAULT_LIFETIME => Clazz.GetField<int>("DEFAULT_LIFETIME");
+        public static int DEFAULT_LIFETIME => LocalClazz.GetField<int>("DEFAULT_LIFETIME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#INDEFINITE_LIFETIME"/>
         /// </summary>
-        public static int INDEFINITE_LIFETIME => Clazz.GetField<int>("INDEFINITE_LIFETIME");
+        public static int INDEFINITE_LIFETIME => LocalClazz.GetField<int>("INDEFINITE_LIFETIME");
         
         #endregion
 

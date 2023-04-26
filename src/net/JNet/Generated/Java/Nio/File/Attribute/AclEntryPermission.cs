@@ -40,71 +40,71 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#ADD_FILE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission ADD_FILE => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("ADD_FILE");
+        public static Java.Nio.File.Attribute.AclEntryPermission ADD_FILE => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("ADD_FILE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#ADD_SUBDIRECTORY"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission ADD_SUBDIRECTORY => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("ADD_SUBDIRECTORY");
+        public static Java.Nio.File.Attribute.AclEntryPermission ADD_SUBDIRECTORY => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("ADD_SUBDIRECTORY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#APPEND_DATA"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission APPEND_DATA => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("APPEND_DATA");
+        public static Java.Nio.File.Attribute.AclEntryPermission APPEND_DATA => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("APPEND_DATA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#DELETE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission DELETE => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("DELETE");
+        public static Java.Nio.File.Attribute.AclEntryPermission DELETE => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("DELETE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#DELETE_CHILD"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission DELETE_CHILD => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("DELETE_CHILD");
+        public static Java.Nio.File.Attribute.AclEntryPermission DELETE_CHILD => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("DELETE_CHILD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("EXECUTE");
+        public static Java.Nio.File.Attribute.AclEntryPermission EXECUTE => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("EXECUTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#LIST_DIRECTORY"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission LIST_DIRECTORY => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("LIST_DIRECTORY");
+        public static Java.Nio.File.Attribute.AclEntryPermission LIST_DIRECTORY => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("LIST_DIRECTORY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#READ_ACL"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission READ_ACL => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_ACL");
+        public static Java.Nio.File.Attribute.AclEntryPermission READ_ACL => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_ACL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#READ_ATTRIBUTES"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission READ_ATTRIBUTES => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_ATTRIBUTES");
+        public static Java.Nio.File.Attribute.AclEntryPermission READ_ATTRIBUTES => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_ATTRIBUTES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#READ_DATA"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission READ_DATA => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_DATA");
+        public static Java.Nio.File.Attribute.AclEntryPermission READ_DATA => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_DATA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#READ_NAMED_ATTRS"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission READ_NAMED_ATTRS => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_NAMED_ATTRS");
+        public static Java.Nio.File.Attribute.AclEntryPermission READ_NAMED_ATTRS => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("READ_NAMED_ATTRS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#SYNCHRONIZE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission SYNCHRONIZE => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("SYNCHRONIZE");
+        public static Java.Nio.File.Attribute.AclEntryPermission SYNCHRONIZE => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("SYNCHRONIZE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#WRITE_ACL"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_ACL => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_ACL");
+        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_ACL => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_ACL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#WRITE_ATTRIBUTES"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_ATTRIBUTES => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_ATTRIBUTES");
+        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_ATTRIBUTES => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_ATTRIBUTES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#WRITE_DATA"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_DATA => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_DATA");
+        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_DATA => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_DATA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#WRITE_NAMED_ATTRS"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_NAMED_ATTRS => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_NAMED_ATTRS");
+        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_NAMED_ATTRS => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_NAMED_ATTRS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#WRITE_OWNER"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_OWNER => Clazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_OWNER");
+        public static Java.Nio.File.Attribute.AclEntryPermission WRITE_OWNER => LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryPermission>("WRITE_OWNER");
         
         #endregion
 

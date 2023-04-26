@@ -40,19 +40,19 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN"/>
         /// </summary>
-        public static Java.Sql.ClientInfoStatus REASON_UNKNOWN => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN");
+        public static Java.Sql.ClientInfoStatus REASON_UNKNOWN => LocalClazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN_PROPERTY"/>
         /// </summary>
-        public static Java.Sql.ClientInfoStatus REASON_UNKNOWN_PROPERTY => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN_PROPERTY");
+        public static Java.Sql.ClientInfoStatus REASON_UNKNOWN_PROPERTY => LocalClazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_INVALID"/>
         /// </summary>
-        public static Java.Sql.ClientInfoStatus REASON_VALUE_INVALID => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_INVALID");
+        public static Java.Sql.ClientInfoStatus REASON_VALUE_INVALID => LocalClazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_INVALID");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED"/>
         /// </summary>
-        public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_TRUNCATED");
+        public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED => LocalClazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_TRUNCATED");
         
         #endregion
 

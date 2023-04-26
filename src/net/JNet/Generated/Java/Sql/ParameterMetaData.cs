@@ -40,31 +40,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeIn"/>
         /// </summary>
-        public static int parameterModeIn => Clazz.GetField<int>("parameterModeIn");
+        public static int parameterModeIn => LocalClazz.GetField<int>("parameterModeIn");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeInOut"/>
         /// </summary>
-        public static int parameterModeInOut => Clazz.GetField<int>("parameterModeInOut");
+        public static int parameterModeInOut => LocalClazz.GetField<int>("parameterModeInOut");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeOut"/>
         /// </summary>
-        public static int parameterModeOut => Clazz.GetField<int>("parameterModeOut");
+        public static int parameterModeOut => LocalClazz.GetField<int>("parameterModeOut");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown"/>
         /// </summary>
-        public static int parameterModeUnknown => Clazz.GetField<int>("parameterModeUnknown");
+        public static int parameterModeUnknown => LocalClazz.GetField<int>("parameterModeUnknown");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls"/>
         /// </summary>
-        public static int parameterNoNulls => Clazz.GetField<int>("parameterNoNulls");
+        public static int parameterNoNulls => LocalClazz.GetField<int>("parameterNoNulls");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable"/>
         /// </summary>
-        public static int parameterNullable => Clazz.GetField<int>("parameterNullable");
+        public static int parameterNullable => LocalClazz.GetField<int>("parameterNullable");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
         /// </summary>
-        public static int parameterNullableUnknown => Clazz.GetField<int>("parameterNullableUnknown");
+        public static int parameterNullableUnknown => LocalClazz.GetField<int>("parameterNullableUnknown");
         
         #endregion
 

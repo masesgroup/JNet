@@ -59,7 +59,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#GZIP_MAGIC"/>
         /// </summary>
-        public static int GZIP_MAGIC => Clazz.GetField<int>("GZIP_MAGIC");
+        public static int GZIP_MAGIC => LocalClazz.GetField<int>("GZIP_MAGIC");
         
         #endregion
 

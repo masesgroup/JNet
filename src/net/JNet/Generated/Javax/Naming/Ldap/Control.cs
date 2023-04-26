@@ -40,11 +40,11 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#CRITICAL"/>
         /// </summary>
-        public static bool CRITICAL => Clazz.GetField<bool>("CRITICAL");
+        public static bool CRITICAL => LocalClazz.GetField<bool>("CRITICAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#NONCRITICAL"/>
         /// </summary>
-        public static bool NONCRITICAL => Clazz.GetField<bool>("NONCRITICAL");
+        public static bool NONCRITICAL => LocalClazz.GetField<bool>("NONCRITICAL");
         
         #endregion
 

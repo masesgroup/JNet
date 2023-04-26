@@ -40,11 +40,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE"/>
         /// </summary>
-        public static int LIVE_DRAG_MODE => Clazz.GetField<int>("LIVE_DRAG_MODE");
+        public static int LIVE_DRAG_MODE => LocalClazz.GetField<int>("LIVE_DRAG_MODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE"/>
         /// </summary>
-        public static int OUTLINE_DRAG_MODE => Clazz.GetField<int>("OUTLINE_DRAG_MODE");
+        public static int OUTLINE_DRAG_MODE => LocalClazz.GetField<int>("OUTLINE_DRAG_MODE");
         
         #endregion
 

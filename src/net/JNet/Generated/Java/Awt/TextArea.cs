@@ -82,19 +82,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_BOTH"/>
         /// </summary>
-        public static int SCROLLBARS_BOTH => Clazz.GetField<int>("SCROLLBARS_BOTH");
+        public static int SCROLLBARS_BOTH => LocalClazz.GetField<int>("SCROLLBARS_BOTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_HORIZONTAL_ONLY"/>
         /// </summary>
-        public static int SCROLLBARS_HORIZONTAL_ONLY => Clazz.GetField<int>("SCROLLBARS_HORIZONTAL_ONLY");
+        public static int SCROLLBARS_HORIZONTAL_ONLY => LocalClazz.GetField<int>("SCROLLBARS_HORIZONTAL_ONLY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_NONE"/>
         /// </summary>
-        public static int SCROLLBARS_NONE => Clazz.GetField<int>("SCROLLBARS_NONE");
+        public static int SCROLLBARS_NONE => LocalClazz.GetField<int>("SCROLLBARS_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY"/>
         /// </summary>
-        public static int SCROLLBARS_VERTICAL_ONLY => Clazz.GetField<int>("SCROLLBARS_VERTICAL_ONLY");
+        public static int SCROLLBARS_VERTICAL_ONLY => LocalClazz.GetField<int>("SCROLLBARS_VERTICAL_ONLY");
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#RAW_X509_CERTIFICATE_TYPE"/>
         /// </summary>
-        public static string RAW_X509_CERTIFICATE_TYPE => Clazz.GetField<string>("RAW_X509_CERTIFICATE_TYPE");
+        public static string RAW_X509_CERTIFICATE_TYPE => LocalClazz.GetField<string>("RAW_X509_CERTIFICATE_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#TYPE"/>
         /// </summary>
-        public static string TYPE => Clazz.GetField<string>("TYPE");
+        public static string TYPE => LocalClazz.GetField<string>("TYPE");
         
         #endregion
 

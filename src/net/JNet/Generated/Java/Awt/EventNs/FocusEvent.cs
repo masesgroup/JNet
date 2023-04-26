@@ -82,19 +82,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_FIRST"/>
         /// </summary>
-        public static int FOCUS_FIRST => Clazz.GetField<int>("FOCUS_FIRST");
+        public static int FOCUS_FIRST => LocalClazz.GetField<int>("FOCUS_FIRST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_GAINED"/>
         /// </summary>
-        public static int FOCUS_GAINED => Clazz.GetField<int>("FOCUS_GAINED");
+        public static int FOCUS_GAINED => LocalClazz.GetField<int>("FOCUS_GAINED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LAST"/>
         /// </summary>
-        public static int FOCUS_LAST => Clazz.GetField<int>("FOCUS_LAST");
+        public static int FOCUS_LAST => LocalClazz.GetField<int>("FOCUS_LAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LOST"/>
         /// </summary>
-        public static int FOCUS_LOST => Clazz.GetField<int>("FOCUS_LOST");
+        public static int FOCUS_LOST => LocalClazz.GetField<int>("FOCUS_LOST");
         
         #endregion
 
@@ -143,47 +143,47 @@ namespace Java.Awt.EventNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ACTIVATION"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause ACTIVATION => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ACTIVATION");
+            public static Java.Awt.EventNs.FocusEvent.Cause ACTIVATION => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ACTIVATION");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#CLEAR_GLOBAL_FOCUS_OWNER"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause CLEAR_GLOBAL_FOCUS_OWNER => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("CLEAR_GLOBAL_FOCUS_OWNER");
+            public static Java.Awt.EventNs.FocusEvent.Cause CLEAR_GLOBAL_FOCUS_OWNER => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("CLEAR_GLOBAL_FOCUS_OWNER");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#MOUSE_EVENT"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause MOUSE_EVENT => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("MOUSE_EVENT");
+            public static Java.Awt.EventNs.FocusEvent.Cause MOUSE_EVENT => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("MOUSE_EVENT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ROLLBACK"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause ROLLBACK => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ROLLBACK");
+            public static Java.Awt.EventNs.FocusEvent.Cause ROLLBACK => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ROLLBACK");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL");
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_BACKWARD"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_BACKWARD => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_BACKWARD");
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_BACKWARD => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_BACKWARD");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_DOWN"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_DOWN => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_DOWN");
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_DOWN => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_DOWN");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_FORWARD"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_FORWARD => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_FORWARD");
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_FORWARD => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_FORWARD");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_UP"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_UP => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_UP");
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_UP => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_UP");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNEXPECTED"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause UNEXPECTED => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNEXPECTED");
+            public static Java.Awt.EventNs.FocusEvent.Cause UNEXPECTED => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNEXPECTED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNKNOWN"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNKNOWN");
+            public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN => LocalClazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNKNOWN");
             
             #endregion
 

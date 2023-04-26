@@ -44,31 +44,31 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DEFAULT_LAYER"/>
         /// </summary>
-        public static int? DEFAULT_LAYER => Clazz.GetField<int?>("DEFAULT_LAYER");
+        public static int? DEFAULT_LAYER => LocalClazz.GetField<int?>("DEFAULT_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DRAG_LAYER"/>
         /// </summary>
-        public static int? DRAG_LAYER => Clazz.GetField<int?>("DRAG_LAYER");
+        public static int? DRAG_LAYER => LocalClazz.GetField<int?>("DRAG_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#FRAME_CONTENT_LAYER"/>
         /// </summary>
-        public static int? FRAME_CONTENT_LAYER => Clazz.GetField<int?>("FRAME_CONTENT_LAYER");
+        public static int? FRAME_CONTENT_LAYER => LocalClazz.GetField<int?>("FRAME_CONTENT_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#MODAL_LAYER"/>
         /// </summary>
-        public static int? MODAL_LAYER => Clazz.GetField<int?>("MODAL_LAYER");
+        public static int? MODAL_LAYER => LocalClazz.GetField<int?>("MODAL_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#PALETTE_LAYER"/>
         /// </summary>
-        public static int? PALETTE_LAYER => Clazz.GetField<int?>("PALETTE_LAYER");
+        public static int? PALETTE_LAYER => LocalClazz.GetField<int?>("PALETTE_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#POPUP_LAYER"/>
         /// </summary>
-        public static int? POPUP_LAYER => Clazz.GetField<int?>("POPUP_LAYER");
+        public static int? POPUP_LAYER => LocalClazz.GetField<int?>("POPUP_LAYER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#LAYER_PROPERTY"/>
         /// </summary>
-        public static string LAYER_PROPERTY => Clazz.GetField<string>("LAYER_PROPERTY");
+        public static string LAYER_PROPERTY => LocalClazz.GetField<string>("LAYER_PROPERTY");
         
         #endregion
 

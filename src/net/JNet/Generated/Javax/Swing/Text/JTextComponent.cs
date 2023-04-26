@@ -48,11 +48,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#DEFAULT_KEYMAP"/>
         /// </summary>
-        public static string DEFAULT_KEYMAP => Clazz.GetField<string>("DEFAULT_KEYMAP");
+        public static string DEFAULT_KEYMAP => LocalClazz.GetField<string>("DEFAULT_KEYMAP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY"/>
         /// </summary>
-        public static string FOCUS_ACCELERATOR_KEY => Clazz.GetField<string>("FOCUS_ACCELERATOR_KEY");
+        public static string FOCUS_ACCELERATOR_KEY => LocalClazz.GetField<string>("FOCUS_ACCELERATOR_KEY");
         
         #endregion
 

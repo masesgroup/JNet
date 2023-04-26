@@ -50,11 +50,11 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_COLLECTION_THRESHOLD_EXCEEDED"/>
         /// </summary>
-        public static string MEMORY_COLLECTION_THRESHOLD_EXCEEDED => Clazz.GetField<string>("MEMORY_COLLECTION_THRESHOLD_EXCEEDED");
+        public static string MEMORY_COLLECTION_THRESHOLD_EXCEEDED => LocalClazz.GetField<string>("MEMORY_COLLECTION_THRESHOLD_EXCEEDED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_THRESHOLD_EXCEEDED"/>
         /// </summary>
-        public static string MEMORY_THRESHOLD_EXCEEDED => Clazz.GetField<string>("MEMORY_THRESHOLD_EXCEEDED");
+        public static string MEMORY_THRESHOLD_EXCEEDED => LocalClazz.GetField<string>("MEMORY_THRESHOLD_EXCEEDED");
         
         #endregion
 

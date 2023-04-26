@@ -40,11 +40,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#ALLOW_UNASSIGNED"/>
         /// </summary>
-        public static int ALLOW_UNASSIGNED => Clazz.GetField<int>("ALLOW_UNASSIGNED");
+        public static int ALLOW_UNASSIGNED => LocalClazz.GetField<int>("ALLOW_UNASSIGNED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
         /// </summary>
-        public static int USE_STD3_ASCII_RULES => Clazz.GetField<int>("USE_STD3_ASCII_RULES");
+        public static int USE_STD3_ASCII_RULES => LocalClazz.GetField<int>("USE_STD3_ASCII_RULES");
         
         #endregion
 

@@ -44,19 +44,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#IDLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState IDLE => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("IDLE");
+        public static Javax.Print.Attribute.Standard.PrinterState IDLE => LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("IDLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#PROCESSING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState PROCESSING => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("PROCESSING");
+        public static Javax.Print.Attribute.Standard.PrinterState PROCESSING => LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("PROCESSING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#STOPPED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState STOPPED => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("STOPPED");
+        public static Javax.Print.Attribute.Standard.PrinterState STOPPED => LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("STOPPED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#UNKNOWN"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN");
+        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN => LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN");
         
         #endregion
 

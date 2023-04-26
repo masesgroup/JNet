@@ -40,23 +40,23 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
         /// </summary>
-        public static short ACTION_APPEND_AS_CHILDREN => Clazz.GetField<short>("ACTION_APPEND_AS_CHILDREN");
+        public static short ACTION_APPEND_AS_CHILDREN => LocalClazz.GetField<short>("ACTION_APPEND_AS_CHILDREN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER"/>
         /// </summary>
-        public static short ACTION_INSERT_AFTER => Clazz.GetField<short>("ACTION_INSERT_AFTER");
+        public static short ACTION_INSERT_AFTER => LocalClazz.GetField<short>("ACTION_INSERT_AFTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE"/>
         /// </summary>
-        public static short ACTION_INSERT_BEFORE => Clazz.GetField<short>("ACTION_INSERT_BEFORE");
+        public static short ACTION_INSERT_BEFORE => LocalClazz.GetField<short>("ACTION_INSERT_BEFORE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE"/>
         /// </summary>
-        public static short ACTION_REPLACE => Clazz.GetField<short>("ACTION_REPLACE");
+        public static short ACTION_REPLACE => LocalClazz.GetField<short>("ACTION_REPLACE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
         /// </summary>
-        public static short ACTION_REPLACE_CHILDREN => Clazz.GetField<short>("ACTION_REPLACE_CHILDREN");
+        public static short ACTION_REPLACE_CHILDREN => LocalClazz.GetField<short>("ACTION_REPLACE_CHILDREN");
         
         #endregion
 

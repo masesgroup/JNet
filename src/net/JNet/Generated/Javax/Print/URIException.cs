@@ -40,15 +40,15 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIInaccessible"/>
         /// </summary>
-        public static int URIInaccessible => Clazz.GetField<int>("URIInaccessible");
+        public static int URIInaccessible => LocalClazz.GetField<int>("URIInaccessible");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIOtherProblem"/>
         /// </summary>
-        public static int URIOtherProblem => Clazz.GetField<int>("URIOtherProblem");
+        public static int URIOtherProblem => LocalClazz.GetField<int>("URIOtherProblem");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URISchemeNotSupported"/>
         /// </summary>
-        public static int URISchemeNotSupported => Clazz.GetField<int>("URISchemeNotSupported");
+        public static int URISchemeNotSupported => LocalClazz.GetField<int>("URISchemeNotSupported");
         
         #endregion
 
