@@ -180,7 +180,9 @@ namespace MASES.JNetReflector
             var pieces = origin.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
             for (int i = 0; i < pieces.Length; i++)
             {
-                if (i == pieces.Length - 1) sb.Append(tabber + pieces[i]);
+                if (i > 0 && i != pieces.Length - 1 && pieces[i - 1].Length != 0 && pieces[i].Length == 0) sb.Append(Environment.NewLine);
+                else if (i == pieces.Length - 1 && pieces[i].Length != 0) sb.Append(tabber + pieces[i]);
+                else if (i == pieces.Length - 1 && pieces[i].Length == 0) sb.Append(pieces[i]);
                 else sb.AppendLine(tabber + pieces[i]);
             }
             return sb.ToString();

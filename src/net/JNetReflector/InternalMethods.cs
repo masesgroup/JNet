@@ -51,6 +51,7 @@ namespace MASES.JNetReflector
         {
             TraceReportHandler = traceReport;
             Level = level;
+            JNetReflectorHelper.EnableLogging = Level >= (int)ReflectionTraceLevel.Debug;
         }
 
         static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
@@ -374,7 +375,11 @@ namespace MASES.JNetReflector
             {
                 string nestedClassBlock;
                 string singleNestedClassStr;
-                entry.PrepareSingleClass(classDefinitions, true, false, 3, out nestedClassBlock, out singleNestedClassStr);
+                entry.PrepareSingleClass(classDefinitions, false, out nestedClassBlock, out singleNestedClassStr);
+                nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty);
+                singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty);
+                nestedClassBlock = nestedClassBlock.AddTabLevel(1);
+                singleNestedClassStr = singleNestedClassStr.AddTabLevel(1);
 
                 if (!string.IsNullOrEmpty(nestedClassBlock))
                 {
@@ -390,7 +395,11 @@ namespace MASES.JNetReflector
 
                 if (!JNetReflectorCore.AvoidCSharpGenericDefinition && entry.IsJVMGenericClass() && !entry.IsClassToAvoidInGenerics())
                 {
-                    entry.PrepareSingleClass(classDefinitions, true, true, 3, out nestedClassBlock, out singleNestedClassStr);
+                    entry.PrepareSingleClass(classDefinitions, true, out nestedClassBlock, out singleNestedClassStr);
+                    nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty);
+                    singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty);
+                    nestedClassBlock = nestedClassBlock.AddTabLevel(1);
+                    singleNestedClassStr = singleNestedClassStr.AddTabLevel(1);
 
                     if (!string.IsNullOrEmpty(nestedClassBlock))
                     {
@@ -411,24 +420,33 @@ namespace MASES.JNetReflector
 
             string classBlock;
             string singleClassStr;
-            jClass.PrepareSingleClass(classDefinitions, false, false, 2, out classBlock, out singleClassStr);
-            singleClassStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
+            jClass.PrepareSingleClass(classDefinitions, false, out classBlock, out singleClassStr);
+
+            string nestedBlock = subClassAutonoumous.ToString();
+            singleClassStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(nestedBlock) ? string.Empty : nestedBlock);
+            singleClassStr = singleClassStr.AddTabLevel(1);
             singleFileBlock.Append(singleClassStr);
+
             var subClassStr = subClassBlock.ToString();
-            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassStr.Length != 0 ? subClassStr : string.Empty);
+            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(subClassStr) ? string.Empty : subClassStr);
+            classBlock = classBlock.AddTabLevel(1);
             allClassBlock.Append(classBlock);
 
             string classGenericBlock;
             string singleClassGenericStr;
             if (!JNetReflectorCore.AvoidCSharpGenericDefinition && jClass.IsJVMGenericClass() && !jClass.IsClassToAvoidInGenerics())
             {
-                jClass.PrepareSingleClass(classDefinitions, false, true, 2, out classGenericBlock, out singleClassGenericStr);
-                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericAutonoumous.ToString());
+                jClass.PrepareSingleClass(classDefinitions, true, out classGenericBlock, out singleClassGenericStr);
+                string nestedGenericBlock = subClassGenericAutonoumous.ToString();
+                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(nestedGenericBlock) ? string.Empty : nestedGenericBlock);
+                classGenericBlock = classGenericBlock.AddTabLevel(1);
+                singleClassGenericStr = singleClassGenericStr.AddTabLevel(1);
+
                 singleFileBlock.AppendLine();
                 singleFileBlock.AppendLine();
                 singleFileBlock.Append(singleClassGenericStr);
                 var subClassGenericStr = subClassGenericBlock.ToString();
-                classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericStr.Length != 0 ? subClassGenericStr : string.Empty);
+                classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(subClassGenericStr) ? string.Empty : subClassGenericStr);
                 allClassBlock.AppendLine();
                 allClassBlock.AppendLine();
                 allClassBlock.Append(classGenericBlock);
@@ -452,12 +470,12 @@ namespace MASES.JNetReflector
             return allClassBlock.ToString();
         }
 
-        static void PrepareSingleClass(this Class jClass, ICollection<Class> classDefinitions, bool isNested, bool isGeneric, int tabLevel, out string classBlock, out string singleClassStr)
+        static void PrepareSingleClass(this Class jClass, ICollection<Class> classDefinitions, bool isGeneric, out string classBlock, out string singleClassStr)
         {
-            string stubException = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate) : Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
-            string stubListener = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassListenerTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
-            string stubClass = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
-            string singleClass = isNested ? Template.GetTemplate(Template.SingleNestedClassTemplate) : Template.GetTemplate(Template.SingleClassTemplate);
+            string stubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
+            string stubListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
+            string stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
+            string singleClass = Template.GetTemplate(Template.SingleClassTemplate);
             string constructorBlock = string.Empty;
             string operatorBlock = string.Empty;
             string fieldBlock = string.Empty;
@@ -475,7 +493,7 @@ namespace MASES.JNetReflector
                 methodPrefilter = jClass.PrefilterMethods(isGeneric, out isMainClass);
                 if (isMainClass)
                 {
-                    template = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassMainClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
+                    template = Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
                 }
             }
             bool classCantBeAnalyzed = jClassIsListener || isMainClass;
@@ -512,11 +530,11 @@ namespace MASES.JNetReflector
 
                 if (!classCantBeAnalyzed)
                 {
-                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
-                    operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
-                    fieldBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(tabLevel);
-                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, true).AddTabLevel(tabLevel);
-                    methodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, false).AddTabLevel(tabLevel);
+                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    fieldBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
+                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, true).AddTabLevel(1);
+                    methodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, false).AddTabLevel(1);
                 }
             }
 
@@ -526,11 +544,11 @@ namespace MASES.JNetReflector
             {
                 List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION.AddTabLevel(tabLevel - 1));
+                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
                 if (jClassIsDepracated)
                 {
                     jClassDecoration.AppendLine();
-                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION.AddTabLevel(tabLevel - 1));
+                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
                 }
 
                 singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
@@ -1093,7 +1111,7 @@ namespace MASES.JNetReflector
                     else
                     {
                         var execFormat = getMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_GET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT;
-                        executionStub.AppendFormat(execFormat, execStub, 
+                        executionStub.AppendFormat(execFormat, execStub,
                                                                getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                getMethod.Name);
                     }

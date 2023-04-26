@@ -1,30 +1,30 @@
 ﻿ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
-    public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
-    {
-        #region Constructors
+public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
+{
+    #region Constructors
 // ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER
-        #endregion
-
-        #region Class/Interface conversion operators
-// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER
-        #endregion
-
-        #region Fields
-// ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER
-        #endregion
-
-        #region Static methods
-// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER
-        #endregion
-
-        #region Instance methods
-// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER
-        #endregion
-
-        #region Nested classes
-// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER
-        #endregion
-
-        // TODO: complete the class
-    }
     #endregion
+
+    #region Class/Interface conversion operators
+// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER
+    #endregion
+
+    #region Fields
+// ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER
+    #endregion
+
+    #region Static methods
+// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER
+    #endregion
+
+    #region Instance methods
+// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER
+    #endregion
+
+    #region Nested classes
+// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER
+    #endregion
+
+    // TODO: complete the class
+}
+#endregion
