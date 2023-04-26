@@ -73,7 +73,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#DEFAULT_CARET_POLICY"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextLayout.CaretPolicy DEFAULT_CARET_POLICY => LocalClazz.GetField<Java.Awt.FontNs.TextLayout.CaretPolicy>("DEFAULT_CARET_POLICY");
+        public static Java.Awt.FontNs.TextLayout.CaretPolicy DEFAULT_CARET_POLICY { get { return LocalClazz.GetField<Java.Awt.FontNs.TextLayout.CaretPolicy>("DEFAULT_CARET_POLICY"); } }
         
         #endregion
 

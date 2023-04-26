@@ -44,39 +44,39 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL"/>
         /// </summary>
-        public static Java.Util.Logging.Level ALL => LocalClazz.GetField<Java.Util.Logging.Level>("ALL");
+        public static Java.Util.Logging.Level ALL { get { return LocalClazz.GetField<Java.Util.Logging.Level>("ALL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#CONFIG"/>
         /// </summary>
-        public static Java.Util.Logging.Level CONFIG => LocalClazz.GetField<Java.Util.Logging.Level>("CONFIG");
+        public static Java.Util.Logging.Level CONFIG { get { return LocalClazz.GetField<Java.Util.Logging.Level>("CONFIG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINE"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINE => LocalClazz.GetField<Java.Util.Logging.Level>("FINE");
+        public static Java.Util.Logging.Level FINE { get { return LocalClazz.GetField<Java.Util.Logging.Level>("FINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINER"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINER => LocalClazz.GetField<Java.Util.Logging.Level>("FINER");
+        public static Java.Util.Logging.Level FINER { get { return LocalClazz.GetField<Java.Util.Logging.Level>("FINER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINEST"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINEST => LocalClazz.GetField<Java.Util.Logging.Level>("FINEST");
+        public static Java.Util.Logging.Level FINEST { get { return LocalClazz.GetField<Java.Util.Logging.Level>("FINEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO"/>
         /// </summary>
-        public static Java.Util.Logging.Level INFO => LocalClazz.GetField<Java.Util.Logging.Level>("INFO");
+        public static Java.Util.Logging.Level INFO { get { return LocalClazz.GetField<Java.Util.Logging.Level>("INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF"/>
         /// </summary>
-        public static Java.Util.Logging.Level OFF => LocalClazz.GetField<Java.Util.Logging.Level>("OFF");
+        public static Java.Util.Logging.Level OFF { get { return LocalClazz.GetField<Java.Util.Logging.Level>("OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE"/>
         /// </summary>
-        public static Java.Util.Logging.Level SEVERE => LocalClazz.GetField<Java.Util.Logging.Level>("SEVERE");
+        public static Java.Util.Logging.Level SEVERE { get { return LocalClazz.GetField<Java.Util.Logging.Level>("SEVERE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING"/>
         /// </summary>
-        public static Java.Util.Logging.Level WARNING => LocalClazz.GetField<Java.Util.Logging.Level>("WARNING");
+        public static Java.Util.Logging.Level WARNING { get { return LocalClazz.GetField<Java.Util.Logging.Level>("WARNING"); } }
         
         #endregion
 

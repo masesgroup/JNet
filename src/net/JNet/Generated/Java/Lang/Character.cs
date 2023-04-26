@@ -48,283 +48,283 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#COMBINING_SPACING_MARK"/>
         /// </summary>
-        public static byte COMBINING_SPACING_MARK => LocalClazz.GetField<byte>("COMBINING_SPACING_MARK");
+        public static byte COMBINING_SPACING_MARK { get { return LocalClazz.GetField<byte>("COMBINING_SPACING_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#CONNECTOR_PUNCTUATION"/>
         /// </summary>
-        public static byte CONNECTOR_PUNCTUATION => LocalClazz.GetField<byte>("CONNECTOR_PUNCTUATION");
+        public static byte CONNECTOR_PUNCTUATION { get { return LocalClazz.GetField<byte>("CONNECTOR_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#CONTROL"/>
         /// </summary>
-        public static byte CONTROL => LocalClazz.GetField<byte>("CONTROL");
+        public static byte CONTROL { get { return LocalClazz.GetField<byte>("CONTROL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#CURRENCY_SYMBOL"/>
         /// </summary>
-        public static byte CURRENCY_SYMBOL => LocalClazz.GetField<byte>("CURRENCY_SYMBOL");
+        public static byte CURRENCY_SYMBOL { get { return LocalClazz.GetField<byte>("CURRENCY_SYMBOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DASH_PUNCTUATION"/>
         /// </summary>
-        public static byte DASH_PUNCTUATION => LocalClazz.GetField<byte>("DASH_PUNCTUATION");
+        public static byte DASH_PUNCTUATION { get { return LocalClazz.GetField<byte>("DASH_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DECIMAL_DIGIT_NUMBER"/>
         /// </summary>
-        public static byte DECIMAL_DIGIT_NUMBER => LocalClazz.GetField<byte>("DECIMAL_DIGIT_NUMBER");
+        public static byte DECIMAL_DIGIT_NUMBER { get { return LocalClazz.GetField<byte>("DECIMAL_DIGIT_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_ARABIC_NUMBER"/>
         /// </summary>
-        public static byte DIRECTIONALITY_ARABIC_NUMBER => LocalClazz.GetField<byte>("DIRECTIONALITY_ARABIC_NUMBER");
+        public static byte DIRECTIONALITY_ARABIC_NUMBER { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_ARABIC_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_BOUNDARY_NEUTRAL"/>
         /// </summary>
-        public static byte DIRECTIONALITY_BOUNDARY_NEUTRAL => LocalClazz.GetField<byte>("DIRECTIONALITY_BOUNDARY_NEUTRAL");
+        public static byte DIRECTIONALITY_BOUNDARY_NEUTRAL { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_BOUNDARY_NEUTRAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR"/>
         /// </summary>
-        public static byte DIRECTIONALITY_COMMON_NUMBER_SEPARATOR => LocalClazz.GetField<byte>("DIRECTIONALITY_COMMON_NUMBER_SEPARATOR");
+        public static byte DIRECTIONALITY_COMMON_NUMBER_SEPARATOR { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_COMMON_NUMBER_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_EUROPEAN_NUMBER"/>
         /// </summary>
-        public static byte DIRECTIONALITY_EUROPEAN_NUMBER => LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER");
+        public static byte DIRECTIONALITY_EUROPEAN_NUMBER { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR"/>
         /// </summary>
-        public static byte DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR => LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR");
+        public static byte DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR"/>
         /// </summary>
-        public static byte DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR => LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR");
+        public static byte DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_FIRST_STRONG_ISOLATE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_FIRST_STRONG_ISOLATE => LocalClazz.GetField<byte>("DIRECTIONALITY_FIRST_STRONG_ISOLATE");
+        public static byte DIRECTIONALITY_FIRST_STRONG_ISOLATE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_FIRST_STRONG_ISOLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static byte DIRECTIONALITY_LEFT_TO_RIGHT => LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT");
+        public static byte DIRECTIONALITY_LEFT_TO_RIGHT { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING"/>
         /// </summary>
-        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING => LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING");
+        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE => LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE");
+        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE => LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE");
+        public static byte DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_NONSPACING_MARK"/>
         /// </summary>
-        public static byte DIRECTIONALITY_NONSPACING_MARK => LocalClazz.GetField<byte>("DIRECTIONALITY_NONSPACING_MARK");
+        public static byte DIRECTIONALITY_NONSPACING_MARK { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_NONSPACING_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_OTHER_NEUTRALS"/>
         /// </summary>
-        public static byte DIRECTIONALITY_OTHER_NEUTRALS => LocalClazz.GetField<byte>("DIRECTIONALITY_OTHER_NEUTRALS");
+        public static byte DIRECTIONALITY_OTHER_NEUTRALS { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_OTHER_NEUTRALS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_PARAGRAPH_SEPARATOR"/>
         /// </summary>
-        public static byte DIRECTIONALITY_PARAGRAPH_SEPARATOR => LocalClazz.GetField<byte>("DIRECTIONALITY_PARAGRAPH_SEPARATOR");
+        public static byte DIRECTIONALITY_PARAGRAPH_SEPARATOR { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_PARAGRAPH_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT"/>
         /// </summary>
-        public static byte DIRECTIONALITY_POP_DIRECTIONAL_FORMAT => LocalClazz.GetField<byte>("DIRECTIONALITY_POP_DIRECTIONAL_FORMAT");
+        public static byte DIRECTIONALITY_POP_DIRECTIONAL_FORMAT { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_POP_DIRECTIONAL_FORMAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE => LocalClazz.GetField<byte>("DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE");
+        public static byte DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static byte DIRECTIONALITY_RIGHT_TO_LEFT => LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT");
+        public static byte DIRECTIONALITY_RIGHT_TO_LEFT { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC"/>
         /// </summary>
-        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC => LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC");
+        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING"/>
         /// </summary>
-        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING => LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING");
+        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE => LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE");
+        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE => LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE");
+        public static byte DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_SEGMENT_SEPARATOR"/>
         /// </summary>
-        public static byte DIRECTIONALITY_SEGMENT_SEPARATOR => LocalClazz.GetField<byte>("DIRECTIONALITY_SEGMENT_SEPARATOR");
+        public static byte DIRECTIONALITY_SEGMENT_SEPARATOR { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_SEGMENT_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_UNDEFINED"/>
         /// </summary>
-        public static byte DIRECTIONALITY_UNDEFINED => LocalClazz.GetField<byte>("DIRECTIONALITY_UNDEFINED");
+        public static byte DIRECTIONALITY_UNDEFINED { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#DIRECTIONALITY_WHITESPACE"/>
         /// </summary>
-        public static byte DIRECTIONALITY_WHITESPACE => LocalClazz.GetField<byte>("DIRECTIONALITY_WHITESPACE");
+        public static byte DIRECTIONALITY_WHITESPACE { get { return LocalClazz.GetField<byte>("DIRECTIONALITY_WHITESPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#ENCLOSING_MARK"/>
         /// </summary>
-        public static byte ENCLOSING_MARK => LocalClazz.GetField<byte>("ENCLOSING_MARK");
+        public static byte ENCLOSING_MARK { get { return LocalClazz.GetField<byte>("ENCLOSING_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#END_PUNCTUATION"/>
         /// </summary>
-        public static byte END_PUNCTUATION => LocalClazz.GetField<byte>("END_PUNCTUATION");
+        public static byte END_PUNCTUATION { get { return LocalClazz.GetField<byte>("END_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#FINAL_QUOTE_PUNCTUATION"/>
         /// </summary>
-        public static byte FINAL_QUOTE_PUNCTUATION => LocalClazz.GetField<byte>("FINAL_QUOTE_PUNCTUATION");
+        public static byte FINAL_QUOTE_PUNCTUATION { get { return LocalClazz.GetField<byte>("FINAL_QUOTE_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#FORMAT"/>
         /// </summary>
-        public static byte FORMAT => LocalClazz.GetField<byte>("FORMAT");
+        public static byte FORMAT { get { return LocalClazz.GetField<byte>("FORMAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#INITIAL_QUOTE_PUNCTUATION"/>
         /// </summary>
-        public static byte INITIAL_QUOTE_PUNCTUATION => LocalClazz.GetField<byte>("INITIAL_QUOTE_PUNCTUATION");
+        public static byte INITIAL_QUOTE_PUNCTUATION { get { return LocalClazz.GetField<byte>("INITIAL_QUOTE_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#LETTER_NUMBER"/>
         /// </summary>
-        public static byte LETTER_NUMBER => LocalClazz.GetField<byte>("LETTER_NUMBER");
+        public static byte LETTER_NUMBER { get { return LocalClazz.GetField<byte>("LETTER_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#LINE_SEPARATOR"/>
         /// </summary>
-        public static byte LINE_SEPARATOR => LocalClazz.GetField<byte>("LINE_SEPARATOR");
+        public static byte LINE_SEPARATOR { get { return LocalClazz.GetField<byte>("LINE_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#LOWERCASE_LETTER"/>
         /// </summary>
-        public static byte LOWERCASE_LETTER => LocalClazz.GetField<byte>("LOWERCASE_LETTER");
+        public static byte LOWERCASE_LETTER { get { return LocalClazz.GetField<byte>("LOWERCASE_LETTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MATH_SYMBOL"/>
         /// </summary>
-        public static byte MATH_SYMBOL => LocalClazz.GetField<byte>("MATH_SYMBOL");
+        public static byte MATH_SYMBOL { get { return LocalClazz.GetField<byte>("MATH_SYMBOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MODIFIER_LETTER"/>
         /// </summary>
-        public static byte MODIFIER_LETTER => LocalClazz.GetField<byte>("MODIFIER_LETTER");
+        public static byte MODIFIER_LETTER { get { return LocalClazz.GetField<byte>("MODIFIER_LETTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MODIFIER_SYMBOL"/>
         /// </summary>
-        public static byte MODIFIER_SYMBOL => LocalClazz.GetField<byte>("MODIFIER_SYMBOL");
+        public static byte MODIFIER_SYMBOL { get { return LocalClazz.GetField<byte>("MODIFIER_SYMBOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#NON_SPACING_MARK"/>
         /// </summary>
-        public static byte NON_SPACING_MARK => LocalClazz.GetField<byte>("NON_SPACING_MARK");
+        public static byte NON_SPACING_MARK { get { return LocalClazz.GetField<byte>("NON_SPACING_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#OTHER_LETTER"/>
         /// </summary>
-        public static byte OTHER_LETTER => LocalClazz.GetField<byte>("OTHER_LETTER");
+        public static byte OTHER_LETTER { get { return LocalClazz.GetField<byte>("OTHER_LETTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#OTHER_NUMBER"/>
         /// </summary>
-        public static byte OTHER_NUMBER => LocalClazz.GetField<byte>("OTHER_NUMBER");
+        public static byte OTHER_NUMBER { get { return LocalClazz.GetField<byte>("OTHER_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#OTHER_PUNCTUATION"/>
         /// </summary>
-        public static byte OTHER_PUNCTUATION => LocalClazz.GetField<byte>("OTHER_PUNCTUATION");
+        public static byte OTHER_PUNCTUATION { get { return LocalClazz.GetField<byte>("OTHER_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#OTHER_SYMBOL"/>
         /// </summary>
-        public static byte OTHER_SYMBOL => LocalClazz.GetField<byte>("OTHER_SYMBOL");
+        public static byte OTHER_SYMBOL { get { return LocalClazz.GetField<byte>("OTHER_SYMBOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#PARAGRAPH_SEPARATOR"/>
         /// </summary>
-        public static byte PARAGRAPH_SEPARATOR => LocalClazz.GetField<byte>("PARAGRAPH_SEPARATOR");
+        public static byte PARAGRAPH_SEPARATOR { get { return LocalClazz.GetField<byte>("PARAGRAPH_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#PRIVATE_USE"/>
         /// </summary>
-        public static byte PRIVATE_USE => LocalClazz.GetField<byte>("PRIVATE_USE");
+        public static byte PRIVATE_USE { get { return LocalClazz.GetField<byte>("PRIVATE_USE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SPACE_SEPARATOR"/>
         /// </summary>
-        public static byte SPACE_SEPARATOR => LocalClazz.GetField<byte>("SPACE_SEPARATOR");
+        public static byte SPACE_SEPARATOR { get { return LocalClazz.GetField<byte>("SPACE_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#START_PUNCTUATION"/>
         /// </summary>
-        public static byte START_PUNCTUATION => LocalClazz.GetField<byte>("START_PUNCTUATION");
+        public static byte START_PUNCTUATION { get { return LocalClazz.GetField<byte>("START_PUNCTUATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SURROGATE"/>
         /// </summary>
-        public static byte SURROGATE => LocalClazz.GetField<byte>("SURROGATE");
+        public static byte SURROGATE { get { return LocalClazz.GetField<byte>("SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#TITLECASE_LETTER"/>
         /// </summary>
-        public static byte TITLECASE_LETTER => LocalClazz.GetField<byte>("TITLECASE_LETTER");
+        public static byte TITLECASE_LETTER { get { return LocalClazz.GetField<byte>("TITLECASE_LETTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#UNASSIGNED"/>
         /// </summary>
-        public static byte UNASSIGNED => LocalClazz.GetField<byte>("UNASSIGNED");
+        public static byte UNASSIGNED { get { return LocalClazz.GetField<byte>("UNASSIGNED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#UPPERCASE_LETTER"/>
         /// </summary>
-        public static byte UPPERCASE_LETTER => LocalClazz.GetField<byte>("UPPERCASE_LETTER");
+        public static byte UPPERCASE_LETTER { get { return LocalClazz.GetField<byte>("UPPERCASE_LETTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_HIGH_SURROGATE"/>
         /// </summary>
-        public static char MAX_HIGH_SURROGATE => LocalClazz.GetField<char>("MAX_HIGH_SURROGATE");
+        public static char MAX_HIGH_SURROGATE { get { return LocalClazz.GetField<char>("MAX_HIGH_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_LOW_SURROGATE"/>
         /// </summary>
-        public static char MAX_LOW_SURROGATE => LocalClazz.GetField<char>("MAX_LOW_SURROGATE");
+        public static char MAX_LOW_SURROGATE { get { return LocalClazz.GetField<char>("MAX_LOW_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_SURROGATE"/>
         /// </summary>
-        public static char MAX_SURROGATE => LocalClazz.GetField<char>("MAX_SURROGATE");
+        public static char MAX_SURROGATE { get { return LocalClazz.GetField<char>("MAX_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_VALUE"/>
         /// </summary>
-        public static char MAX_VALUE => LocalClazz.GetField<char>("MAX_VALUE");
+        public static char MAX_VALUE { get { return LocalClazz.GetField<char>("MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_HIGH_SURROGATE"/>
         /// </summary>
-        public static char MIN_HIGH_SURROGATE => LocalClazz.GetField<char>("MIN_HIGH_SURROGATE");
+        public static char MIN_HIGH_SURROGATE { get { return LocalClazz.GetField<char>("MIN_HIGH_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_LOW_SURROGATE"/>
         /// </summary>
-        public static char MIN_LOW_SURROGATE => LocalClazz.GetField<char>("MIN_LOW_SURROGATE");
+        public static char MIN_LOW_SURROGATE { get { return LocalClazz.GetField<char>("MIN_LOW_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_SURROGATE"/>
         /// </summary>
-        public static char MIN_SURROGATE => LocalClazz.GetField<char>("MIN_SURROGATE");
+        public static char MIN_SURROGATE { get { return LocalClazz.GetField<char>("MIN_SURROGATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_VALUE"/>
         /// </summary>
-        public static char MIN_VALUE => LocalClazz.GetField<char>("MIN_VALUE");
+        public static char MIN_VALUE { get { return LocalClazz.GetField<char>("MIN_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#BYTES"/>
         /// </summary>
-        public static int BYTES => LocalClazz.GetField<int>("BYTES");
+        public static int BYTES { get { return LocalClazz.GetField<int>("BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_CODE_POINT"/>
         /// </summary>
-        public static int MAX_CODE_POINT => LocalClazz.GetField<int>("MAX_CODE_POINT");
+        public static int MAX_CODE_POINT { get { return LocalClazz.GetField<int>("MAX_CODE_POINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MAX_RADIX"/>
         /// </summary>
-        public static int MAX_RADIX => LocalClazz.GetField<int>("MAX_RADIX");
+        public static int MAX_RADIX { get { return LocalClazz.GetField<int>("MAX_RADIX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_CODE_POINT"/>
         /// </summary>
-        public static int MIN_CODE_POINT => LocalClazz.GetField<int>("MIN_CODE_POINT");
+        public static int MIN_CODE_POINT { get { return LocalClazz.GetField<int>("MIN_CODE_POINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_RADIX"/>
         /// </summary>
-        public static int MIN_RADIX => LocalClazz.GetField<int>("MIN_RADIX");
+        public static int MIN_RADIX { get { return LocalClazz.GetField<int>("MIN_RADIX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#MIN_SUPPLEMENTARY_CODE_POINT"/>
         /// </summary>
-        public static int MIN_SUPPLEMENTARY_CODE_POINT => LocalClazz.GetField<int>("MIN_SUPPLEMENTARY_CODE_POINT");
+        public static int MIN_SUPPLEMENTARY_CODE_POINT { get { return LocalClazz.GetField<int>("MIN_SUPPLEMENTARY_CODE_POINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SIZE"/>
         /// </summary>
-        public static int SIZE => LocalClazz.GetField<int>("SIZE");
+        public static int SIZE { get { return LocalClazz.GetField<int>("SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE => LocalClazz.GetField<Java.Lang.Class>("TYPE");
+        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
         
         #endregion
 
@@ -1150,1123 +1150,1123 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ADLAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ADLAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ADLAM");
+            public static Java.Lang.Character.UnicodeBlock ADLAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ADLAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#AEGEAN_NUMBERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock AEGEAN_NUMBERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AEGEAN_NUMBERS");
+            public static Java.Lang.Character.UnicodeBlock AEGEAN_NUMBERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AEGEAN_NUMBERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#AHOM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock AHOM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AHOM");
+            public static Java.Lang.Character.UnicodeBlock AHOM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AHOM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ALCHEMICAL_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ALCHEMICAL_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ALCHEMICAL_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock ALCHEMICAL_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ALCHEMICAL_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ALPHABETIC_PRESENTATION_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ALPHABETIC_PRESENTATION_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ALPHABETIC_PRESENTATION_FORMS");
+            public static Java.Lang.Character.UnicodeBlock ALPHABETIC_PRESENTATION_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ALPHABETIC_PRESENTATION_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ANATOLIAN_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ANATOLIAN_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANATOLIAN_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeBlock ANATOLIAN_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANATOLIAN_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ANCIENT_GREEK_MUSICAL_NOTATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ANCIENT_GREEK_MUSICAL_NOTATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_GREEK_MUSICAL_NOTATION");
+            public static Java.Lang.Character.UnicodeBlock ANCIENT_GREEK_MUSICAL_NOTATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_GREEK_MUSICAL_NOTATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ANCIENT_GREEK_NUMBERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ANCIENT_GREEK_NUMBERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_GREEK_NUMBERS");
+            public static Java.Lang.Character.UnicodeBlock ANCIENT_GREEK_NUMBERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_GREEK_NUMBERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ANCIENT_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ANCIENT_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock ANCIENT_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ANCIENT_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC");
+            public static Java.Lang.Character.UnicodeBlock ARABIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock ARABIC_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_PRESENTATION_FORMS_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC_PRESENTATION_FORMS_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_PRESENTATION_FORMS_A");
+            public static Java.Lang.Character.UnicodeBlock ARABIC_PRESENTATION_FORMS_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_PRESENTATION_FORMS_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_PRESENTATION_FORMS_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC_PRESENTATION_FORMS_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_PRESENTATION_FORMS_B");
+            public static Java.Lang.Character.UnicodeBlock ARABIC_PRESENTATION_FORMS_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_PRESENTATION_FORMS_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARABIC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock ARABIC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARABIC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARMENIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARMENIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARMENIAN");
+            public static Java.Lang.Character.UnicodeBlock ARMENIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARMENIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARROWS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ARROWS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARROWS");
+            public static Java.Lang.Character.UnicodeBlock ARROWS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ARROWS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#AVESTAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock AVESTAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AVESTAN");
+            public static Java.Lang.Character.UnicodeBlock AVESTAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("AVESTAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BALINESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BALINESE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BALINESE");
+            public static Java.Lang.Character.UnicodeBlock BALINESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BALINESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BAMUM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BAMUM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BAMUM");
+            public static Java.Lang.Character.UnicodeBlock BAMUM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BAMUM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BAMUM_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BAMUM_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BAMUM_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock BAMUM_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BAMUM_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BASIC_LATIN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BASIC_LATIN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BASIC_LATIN");
+            public static Java.Lang.Character.UnicodeBlock BASIC_LATIN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BASIC_LATIN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BASSA_VAH"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BASSA_VAH => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BASSA_VAH");
+            public static Java.Lang.Character.UnicodeBlock BASSA_VAH { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BASSA_VAH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BATAK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BATAK => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BATAK");
+            public static Java.Lang.Character.UnicodeBlock BATAK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BATAK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BENGALI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BENGALI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BENGALI");
+            public static Java.Lang.Character.UnicodeBlock BENGALI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BENGALI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BHAIKSUKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BHAIKSUKI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BHAIKSUKI");
+            public static Java.Lang.Character.UnicodeBlock BHAIKSUKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BHAIKSUKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BLOCK_ELEMENTS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BLOCK_ELEMENTS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BLOCK_ELEMENTS");
+            public static Java.Lang.Character.UnicodeBlock BLOCK_ELEMENTS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BLOCK_ELEMENTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BOPOMOFO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BOPOMOFO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOPOMOFO");
+            public static Java.Lang.Character.UnicodeBlock BOPOMOFO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOPOMOFO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BOPOMOFO_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BOPOMOFO_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOPOMOFO_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock BOPOMOFO_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOPOMOFO_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BOX_DRAWING"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BOX_DRAWING => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOX_DRAWING");
+            public static Java.Lang.Character.UnicodeBlock BOX_DRAWING { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BOX_DRAWING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BRAHMI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BRAHMI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BRAHMI");
+            public static Java.Lang.Character.UnicodeBlock BRAHMI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BRAHMI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BRAILLE_PATTERNS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BRAILLE_PATTERNS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BRAILLE_PATTERNS");
+            public static Java.Lang.Character.UnicodeBlock BRAILLE_PATTERNS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BRAILLE_PATTERNS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BUGINESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BUGINESE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BUGINESE");
+            public static Java.Lang.Character.UnicodeBlock BUGINESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BUGINESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BUHID"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BUHID => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BUHID");
+            public static Java.Lang.Character.UnicodeBlock BUHID { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BUHID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BYZANTINE_MUSICAL_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock BYZANTINE_MUSICAL_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BYZANTINE_MUSICAL_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock BYZANTINE_MUSICAL_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("BYZANTINE_MUSICAL_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CARIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CARIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CARIAN");
+            public static Java.Lang.Character.UnicodeBlock CARIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CARIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CAUCASIAN_ALBANIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CAUCASIAN_ALBANIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CAUCASIAN_ALBANIAN");
+            public static Java.Lang.Character.UnicodeBlock CAUCASIAN_ALBANIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CAUCASIAN_ALBANIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHAKMA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CHAKMA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHAKMA");
+            public static Java.Lang.Character.UnicodeBlock CHAKMA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHAKMA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHAM");
+            public static Java.Lang.Character.UnicodeBlock CHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHEROKEE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CHEROKEE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHEROKEE");
+            public static Java.Lang.Character.UnicodeBlock CHEROKEE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHEROKEE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHEROKEE_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CHEROKEE_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHEROKEE_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock CHEROKEE_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CHEROKEE_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_COMPATIBILITY"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY");
+            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_COMPATIBILITY_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_FORMS");
+            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_COMPATIBILITY_IDEOGRAPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_IDEOGRAPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_IDEOGRAPHS");
+            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_IDEOGRAPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_IDEOGRAPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_RADICALS_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_RADICALS_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_RADICALS_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock CJK_RADICALS_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_RADICALS_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_STROKES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_STROKES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_STROKES");
+            public static Java.Lang.Character.UnicodeBlock CJK_STROKES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_STROKES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_SYMBOLS_AND_PUNCTUATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_SYMBOLS_AND_PUNCTUATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_SYMBOLS_AND_PUNCTUATION");
+            public static Java.Lang.Character.UnicodeBlock CJK_SYMBOLS_AND_PUNCTUATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_SYMBOLS_AND_PUNCTUATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F");
+            public static Java.Lang.Character.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_DIACRITICAL_MARKS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS");
+            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_DIACRITICAL_MARKS_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_DIACRITICAL_MARKS_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock COMBINING_DIACRITICAL_MARKS_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_DIACRITICAL_MARKS_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_HALF_MARKS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMBINING_HALF_MARKS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_HALF_MARKS");
+            public static Java.Lang.Character.UnicodeBlock COMBINING_HALF_MARKS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_HALF_MARKS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_MARKS_FOR_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMBINING_MARKS_FOR_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_MARKS_FOR_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock COMBINING_MARKS_FOR_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMBINING_MARKS_FOR_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMMON_INDIC_NUMBER_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COMMON_INDIC_NUMBER_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMMON_INDIC_NUMBER_FORMS");
+            public static Java.Lang.Character.UnicodeBlock COMMON_INDIC_NUMBER_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COMMON_INDIC_NUMBER_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CONTROL_PICTURES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CONTROL_PICTURES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CONTROL_PICTURES");
+            public static Java.Lang.Character.UnicodeBlock CONTROL_PICTURES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CONTROL_PICTURES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COPTIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COPTIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COPTIC");
+            public static Java.Lang.Character.UnicodeBlock COPTIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COPTIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COPTIC_EPACT_NUMBERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COPTIC_EPACT_NUMBERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COPTIC_EPACT_NUMBERS");
+            public static Java.Lang.Character.UnicodeBlock COPTIC_EPACT_NUMBERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COPTIC_EPACT_NUMBERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COUNTING_ROD_NUMERALS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock COUNTING_ROD_NUMERALS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COUNTING_ROD_NUMERALS");
+            public static Java.Lang.Character.UnicodeBlock COUNTING_ROD_NUMERALS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("COUNTING_ROD_NUMERALS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CUNEIFORM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CUNEIFORM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CUNEIFORM");
+            public static Java.Lang.Character.UnicodeBlock CUNEIFORM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CUNEIFORM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CUNEIFORM_NUMBERS_AND_PUNCTUATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CUNEIFORM_NUMBERS_AND_PUNCTUATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CUNEIFORM_NUMBERS_AND_PUNCTUATION");
+            public static Java.Lang.Character.UnicodeBlock CUNEIFORM_NUMBERS_AND_PUNCTUATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CUNEIFORM_NUMBERS_AND_PUNCTUATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CURRENCY_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CURRENCY_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CURRENCY_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock CURRENCY_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CURRENCY_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYPRIOT_SYLLABARY"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYPRIOT_SYLLABARY => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYPRIOT_SYLLABARY");
+            public static Java.Lang.Character.UnicodeBlock CYPRIOT_SYLLABARY { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYPRIOT_SYLLABARY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYRILLIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC");
+            public static Java.Lang.Character.UnicodeBlock CYRILLIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_B");
+            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_C"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_C => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_C");
+            public static Java.Lang.Character.UnicodeBlock CYRILLIC_EXTENDED_C { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_EXTENDED_C"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_SUPPLEMENTARY"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock CYRILLIC_SUPPLEMENTARY => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_SUPPLEMENTARY");
+            public static Java.Lang.Character.UnicodeBlock CYRILLIC_SUPPLEMENTARY { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("CYRILLIC_SUPPLEMENTARY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DESERET"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DESERET => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DESERET");
+            public static Java.Lang.Character.UnicodeBlock DESERET { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DESERET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DEVANAGARI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DEVANAGARI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DEVANAGARI");
+            public static Java.Lang.Character.UnicodeBlock DEVANAGARI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DEVANAGARI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DEVANAGARI_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DEVANAGARI_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DEVANAGARI_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock DEVANAGARI_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DEVANAGARI_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DINGBATS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DINGBATS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DINGBATS");
+            public static Java.Lang.Character.UnicodeBlock DINGBATS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DINGBATS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DOMINO_TILES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DOMINO_TILES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DOMINO_TILES");
+            public static Java.Lang.Character.UnicodeBlock DOMINO_TILES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DOMINO_TILES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DUPLOYAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock DUPLOYAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DUPLOYAN");
+            public static Java.Lang.Character.UnicodeBlock DUPLOYAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("DUPLOYAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EARLY_DYNASTIC_CUNEIFORM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock EARLY_DYNASTIC_CUNEIFORM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EARLY_DYNASTIC_CUNEIFORM");
+            public static Java.Lang.Character.UnicodeBlock EARLY_DYNASTIC_CUNEIFORM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EARLY_DYNASTIC_CUNEIFORM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock EGYPTIAN_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EGYPTIAN_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeBlock EGYPTIAN_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EGYPTIAN_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELBASAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ELBASAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ELBASAN");
+            public static Java.Lang.Character.UnicodeBlock ELBASAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ELBASAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EMOTICONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock EMOTICONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EMOTICONS");
+            public static Java.Lang.Character.UnicodeBlock EMOTICONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("EMOTICONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ENCLOSED_ALPHANUMERIC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ENCLOSED_ALPHANUMERIC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_ALPHANUMERIC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock ENCLOSED_ALPHANUMERIC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_ALPHANUMERIC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ENCLOSED_ALPHANUMERICS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ENCLOSED_ALPHANUMERICS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_ALPHANUMERICS");
+            public static Java.Lang.Character.UnicodeBlock ENCLOSED_ALPHANUMERICS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_ALPHANUMERICS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ENCLOSED_CJK_LETTERS_AND_MONTHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ENCLOSED_CJK_LETTERS_AND_MONTHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_CJK_LETTERS_AND_MONTHS");
+            public static Java.Lang.Character.UnicodeBlock ENCLOSED_CJK_LETTERS_AND_MONTHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_CJK_LETTERS_AND_MONTHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ENCLOSED_IDEOGRAPHIC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ENCLOSED_IDEOGRAPHIC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_IDEOGRAPHIC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock ENCLOSED_IDEOGRAPHIC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ENCLOSED_IDEOGRAPHIC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ETHIOPIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC");
+            public static Java.Lang.Character.UnicodeBlock ETHIOPIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock ETHIOPIC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ETHIOPIC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GENERAL_PUNCTUATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GENERAL_PUNCTUATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GENERAL_PUNCTUATION");
+            public static Java.Lang.Character.UnicodeBlock GENERAL_PUNCTUATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GENERAL_PUNCTUATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEOMETRIC_SHAPES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GEOMETRIC_SHAPES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEOMETRIC_SHAPES");
+            public static Java.Lang.Character.UnicodeBlock GEOMETRIC_SHAPES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEOMETRIC_SHAPES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEOMETRIC_SHAPES_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GEOMETRIC_SHAPES_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEOMETRIC_SHAPES_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock GEOMETRIC_SHAPES_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEOMETRIC_SHAPES_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEORGIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GEORGIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEORGIAN");
+            public static Java.Lang.Character.UnicodeBlock GEORGIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEORGIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEORGIAN_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GEORGIAN_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEORGIAN_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock GEORGIAN_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GEORGIAN_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GLAGOLITIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GLAGOLITIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GLAGOLITIC");
+            public static Java.Lang.Character.UnicodeBlock GLAGOLITIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GLAGOLITIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GLAGOLITIC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GLAGOLITIC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GLAGOLITIC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock GLAGOLITIC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GLAGOLITIC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GOTHIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GOTHIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GOTHIC");
+            public static Java.Lang.Character.UnicodeBlock GOTHIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GOTHIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GRANTHA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GRANTHA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GRANTHA");
+            public static Java.Lang.Character.UnicodeBlock GRANTHA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GRANTHA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GREEK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GREEK => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GREEK");
+            public static Java.Lang.Character.UnicodeBlock GREEK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GREEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GREEK_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GREEK_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GREEK_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock GREEK_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GREEK_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GUJARATI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GUJARATI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GUJARATI");
+            public static Java.Lang.Character.UnicodeBlock GUJARATI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GUJARATI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GURMUKHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock GURMUKHI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GURMUKHI");
+            public static Java.Lang.Character.UnicodeBlock GURMUKHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("GURMUKHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HALFWIDTH_AND_FULLWIDTH_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HALFWIDTH_AND_FULLWIDTH_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HALFWIDTH_AND_FULLWIDTH_FORMS");
+            public static Java.Lang.Character.UnicodeBlock HALFWIDTH_AND_FULLWIDTH_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HALFWIDTH_AND_FULLWIDTH_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANGUL_COMPATIBILITY_JAMO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANGUL_COMPATIBILITY_JAMO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_COMPATIBILITY_JAMO");
+            public static Java.Lang.Character.UnicodeBlock HANGUL_COMPATIBILITY_JAMO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_COMPATIBILITY_JAMO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANGUL_JAMO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO");
+            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANGUL_JAMO_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANGUL_JAMO_EXTENDED_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO_EXTENDED_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO_EXTENDED_B");
+            public static Java.Lang.Character.UnicodeBlock HANGUL_JAMO_EXTENDED_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_JAMO_EXTENDED_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANGUL_SYLLABLES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANGUL_SYLLABLES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_SYLLABLES");
+            public static Java.Lang.Character.UnicodeBlock HANGUL_SYLLABLES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANGUL_SYLLABLES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANUNOO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HANUNOO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANUNOO");
+            public static Java.Lang.Character.UnicodeBlock HANUNOO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HANUNOO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HATRAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HATRAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HATRAN");
+            public static Java.Lang.Character.UnicodeBlock HATRAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HATRAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HEBREW"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HEBREW => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HEBREW");
+            public static Java.Lang.Character.UnicodeBlock HEBREW { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HEBREW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HIGH_PRIVATE_USE_SURROGATES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HIGH_PRIVATE_USE_SURROGATES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIGH_PRIVATE_USE_SURROGATES");
+            public static Java.Lang.Character.UnicodeBlock HIGH_PRIVATE_USE_SURROGATES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIGH_PRIVATE_USE_SURROGATES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HIGH_SURROGATES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HIGH_SURROGATES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIGH_SURROGATES");
+            public static Java.Lang.Character.UnicodeBlock HIGH_SURROGATES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIGH_SURROGATES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HIRAGANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock HIRAGANA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIRAGANA");
+            public static Java.Lang.Character.UnicodeBlock HIRAGANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("HIRAGANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IDEOGRAPHIC_DESCRIPTION_CHARACTERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock IDEOGRAPHIC_DESCRIPTION_CHARACTERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IDEOGRAPHIC_DESCRIPTION_CHARACTERS");
+            public static Java.Lang.Character.UnicodeBlock IDEOGRAPHIC_DESCRIPTION_CHARACTERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IDEOGRAPHIC_DESCRIPTION_CHARACTERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION");
+            public static Java.Lang.Character.UnicodeBlock IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IMPERIAL_ARAMAIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock IMPERIAL_ARAMAIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IMPERIAL_ARAMAIC");
+            public static Java.Lang.Character.UnicodeBlock IMPERIAL_ARAMAIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IMPERIAL_ARAMAIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#INSCRIPTIONAL_PAHLAVI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock INSCRIPTIONAL_PAHLAVI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("INSCRIPTIONAL_PAHLAVI");
+            public static Java.Lang.Character.UnicodeBlock INSCRIPTIONAL_PAHLAVI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("INSCRIPTIONAL_PAHLAVI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#INSCRIPTIONAL_PARTHIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock INSCRIPTIONAL_PARTHIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("INSCRIPTIONAL_PARTHIAN");
+            public static Java.Lang.Character.UnicodeBlock INSCRIPTIONAL_PARTHIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("INSCRIPTIONAL_PARTHIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IPA_EXTENSIONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock IPA_EXTENSIONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IPA_EXTENSIONS");
+            public static Java.Lang.Character.UnicodeBlock IPA_EXTENSIONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("IPA_EXTENSIONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#JAVANESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock JAVANESE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("JAVANESE");
+            public static Java.Lang.Character.UnicodeBlock JAVANESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("JAVANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KAITHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KAITHI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KAITHI");
+            public static Java.Lang.Character.UnicodeBlock KAITHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KAITHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KANA_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANA_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock KANA_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANA_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KANA_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANA_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock KANA_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANA_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANBUN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KANBUN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANBUN");
+            public static Java.Lang.Character.UnicodeBlock KANBUN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANBUN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANGXI_RADICALS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KANGXI_RADICALS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANGXI_RADICALS");
+            public static Java.Lang.Character.UnicodeBlock KANGXI_RADICALS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANGXI_RADICALS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANNADA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KANNADA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANNADA");
+            public static Java.Lang.Character.UnicodeBlock KANNADA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KANNADA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KATAKANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KATAKANA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KATAKANA");
+            public static Java.Lang.Character.UnicodeBlock KATAKANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KATAKANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KATAKANA_PHONETIC_EXTENSIONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KATAKANA_PHONETIC_EXTENSIONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KATAKANA_PHONETIC_EXTENSIONS");
+            public static Java.Lang.Character.UnicodeBlock KATAKANA_PHONETIC_EXTENSIONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KATAKANA_PHONETIC_EXTENSIONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KAYAH_LI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KAYAH_LI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KAYAH_LI");
+            public static Java.Lang.Character.UnicodeBlock KAYAH_LI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KAYAH_LI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHAROSHTHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KHAROSHTHI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHAROSHTHI");
+            public static Java.Lang.Character.UnicodeBlock KHAROSHTHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHAROSHTHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHMER"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KHMER => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHMER");
+            public static Java.Lang.Character.UnicodeBlock KHMER { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHMER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHMER_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KHMER_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHMER_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock KHMER_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHMER_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHOJKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KHOJKI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHOJKI");
+            public static Java.Lang.Character.UnicodeBlock KHOJKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHOJKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHUDAWADI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock KHUDAWADI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHUDAWADI");
+            public static Java.Lang.Character.UnicodeBlock KHUDAWADI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("KHUDAWADI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LAO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LAO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LAO");
+            public static Java.Lang.Character.UnicodeBlock LAO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LAO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_1_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_1_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_1_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock LATIN_1_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_1_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_ADDITIONAL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_ADDITIONAL => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_ADDITIONAL");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_ADDITIONAL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_ADDITIONAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_B");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_C"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_C => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_C");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_C { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_C"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_D"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_D => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_D");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_D { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_D"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_E"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_E => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_E");
+            public static Java.Lang.Character.UnicodeBlock LATIN_EXTENDED_E { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LATIN_EXTENDED_E"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LEPCHA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LEPCHA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LEPCHA");
+            public static Java.Lang.Character.UnicodeBlock LEPCHA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LEPCHA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LETTERLIKE_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LETTERLIKE_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LETTERLIKE_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock LETTERLIKE_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LETTERLIKE_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LIMBU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LIMBU => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LIMBU");
+            public static Java.Lang.Character.UnicodeBlock LIMBU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LIMBU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LINEAR_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LINEAR_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_A");
+            public static Java.Lang.Character.UnicodeBlock LINEAR_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LINEAR_B_IDEOGRAMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LINEAR_B_IDEOGRAMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_B_IDEOGRAMS");
+            public static Java.Lang.Character.UnicodeBlock LINEAR_B_IDEOGRAMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_B_IDEOGRAMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LINEAR_B_SYLLABARY"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LINEAR_B_SYLLABARY => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_B_SYLLABARY");
+            public static Java.Lang.Character.UnicodeBlock LINEAR_B_SYLLABARY { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LINEAR_B_SYLLABARY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LISU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LISU => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LISU");
+            public static Java.Lang.Character.UnicodeBlock LISU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LISU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LOW_SURROGATES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LOW_SURROGATES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LOW_SURROGATES");
+            public static Java.Lang.Character.UnicodeBlock LOW_SURROGATES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LOW_SURROGATES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LYCIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LYCIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LYCIAN");
+            public static Java.Lang.Character.UnicodeBlock LYCIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LYCIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LYDIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock LYDIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LYDIAN");
+            public static Java.Lang.Character.UnicodeBlock LYDIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("LYDIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAHAJANI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MAHAJANI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MAHAJANI");
+            public static Java.Lang.Character.UnicodeBlock MAHAJANI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MAHAJANI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAHJONG_TILES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MAHJONG_TILES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MAHJONG_TILES");
+            public static Java.Lang.Character.UnicodeBlock MAHJONG_TILES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MAHJONG_TILES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MALAYALAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MALAYALAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MALAYALAM");
+            public static Java.Lang.Character.UnicodeBlock MALAYALAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MALAYALAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MANDAIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MANDAIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MANDAIC");
+            public static Java.Lang.Character.UnicodeBlock MANDAIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MANDAIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MANICHAEAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MANICHAEAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MANICHAEAN");
+            public static Java.Lang.Character.UnicodeBlock MANICHAEAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MANICHAEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MARCHEN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MARCHEN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MARCHEN");
+            public static Java.Lang.Character.UnicodeBlock MARCHEN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MARCHEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MASARAM_GONDI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MASARAM_GONDI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MASARAM_GONDI");
+            public static Java.Lang.Character.UnicodeBlock MASARAM_GONDI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MASARAM_GONDI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MATHEMATICAL_ALPHANUMERIC_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MATHEMATICAL_ALPHANUMERIC_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MATHEMATICAL_ALPHANUMERIC_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock MATHEMATICAL_ALPHANUMERIC_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MATHEMATICAL_ALPHANUMERIC_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MATHEMATICAL_OPERATORS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MATHEMATICAL_OPERATORS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MATHEMATICAL_OPERATORS");
+            public static Java.Lang.Character.UnicodeBlock MATHEMATICAL_OPERATORS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MATHEMATICAL_OPERATORS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEETEI_MAYEK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MEETEI_MAYEK => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEETEI_MAYEK");
+            public static Java.Lang.Character.UnicodeBlock MEETEI_MAYEK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEETEI_MAYEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEETEI_MAYEK_EXTENSIONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MEETEI_MAYEK_EXTENSIONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEETEI_MAYEK_EXTENSIONS");
+            public static Java.Lang.Character.UnicodeBlock MEETEI_MAYEK_EXTENSIONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEETEI_MAYEK_EXTENSIONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MENDE_KIKAKUI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MENDE_KIKAKUI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MENDE_KIKAKUI");
+            public static Java.Lang.Character.UnicodeBlock MENDE_KIKAKUI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MENDE_KIKAKUI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEROITIC_CURSIVE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MEROITIC_CURSIVE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEROITIC_CURSIVE");
+            public static Java.Lang.Character.UnicodeBlock MEROITIC_CURSIVE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEROITIC_CURSIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEROITIC_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MEROITIC_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEROITIC_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeBlock MEROITIC_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MEROITIC_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MIAO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MIAO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MIAO");
+            public static Java.Lang.Character.UnicodeBlock MIAO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MIAO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS_AND_ARROWS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_ARROWS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS_AND_ARROWS");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_ARROWS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS_AND_ARROWS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_TECHNICAL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_TECHNICAL => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_TECHNICAL");
+            public static Java.Lang.Character.UnicodeBlock MISCELLANEOUS_TECHNICAL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MISCELLANEOUS_TECHNICAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MODI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MODI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MODI");
+            public static Java.Lang.Character.UnicodeBlock MODI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MODI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MODIFIER_TONE_LETTERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MODIFIER_TONE_LETTERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MODIFIER_TONE_LETTERS");
+            public static Java.Lang.Character.UnicodeBlock MODIFIER_TONE_LETTERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MODIFIER_TONE_LETTERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MONGOLIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MONGOLIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MONGOLIAN");
+            public static Java.Lang.Character.UnicodeBlock MONGOLIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MONGOLIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MONGOLIAN_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MONGOLIAN_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MONGOLIAN_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock MONGOLIAN_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MONGOLIAN_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MRO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MRO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MRO");
+            public static Java.Lang.Character.UnicodeBlock MRO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MRO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MULTANI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MULTANI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MULTANI");
+            public static Java.Lang.Character.UnicodeBlock MULTANI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MULTANI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MUSICAL_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MUSICAL_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MUSICAL_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock MUSICAL_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MUSICAL_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MYANMAR"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MYANMAR => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR");
+            public static Java.Lang.Character.UnicodeBlock MYANMAR { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MYANMAR_EXTENDED_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MYANMAR_EXTENDED_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR_EXTENDED_A");
+            public static Java.Lang.Character.UnicodeBlock MYANMAR_EXTENDED_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR_EXTENDED_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MYANMAR_EXTENDED_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock MYANMAR_EXTENDED_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR_EXTENDED_B");
+            public static Java.Lang.Character.UnicodeBlock MYANMAR_EXTENDED_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("MYANMAR_EXTENDED_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NABATAEAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NABATAEAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NABATAEAN");
+            public static Java.Lang.Character.UnicodeBlock NABATAEAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NABATAEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NEW_TAI_LUE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NEW_TAI_LUE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NEW_TAI_LUE");
+            public static Java.Lang.Character.UnicodeBlock NEW_TAI_LUE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NEW_TAI_LUE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NEWA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NEWA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NEWA");
+            public static Java.Lang.Character.UnicodeBlock NEWA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NEWA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NKO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NKO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NKO");
+            public static Java.Lang.Character.UnicodeBlock NKO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NKO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NUMBER_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NUMBER_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NUMBER_FORMS");
+            public static Java.Lang.Character.UnicodeBlock NUMBER_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NUMBER_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NUSHU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock NUSHU => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NUSHU");
+            public static Java.Lang.Character.UnicodeBlock NUSHU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("NUSHU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OGHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OGHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OGHAM");
+            public static Java.Lang.Character.UnicodeBlock OGHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OGHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OL_CHIKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OL_CHIKI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OL_CHIKI");
+            public static Java.Lang.Character.UnicodeBlock OL_CHIKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OL_CHIKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_HUNGARIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_HUNGARIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_HUNGARIAN");
+            public static Java.Lang.Character.UnicodeBlock OLD_HUNGARIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_HUNGARIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_ITALIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_ITALIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_ITALIC");
+            public static Java.Lang.Character.UnicodeBlock OLD_ITALIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_ITALIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_NORTH_ARABIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_NORTH_ARABIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_NORTH_ARABIAN");
+            public static Java.Lang.Character.UnicodeBlock OLD_NORTH_ARABIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_NORTH_ARABIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_PERMIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_PERMIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_PERMIC");
+            public static Java.Lang.Character.UnicodeBlock OLD_PERMIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_PERMIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_PERSIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_PERSIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_PERSIAN");
+            public static Java.Lang.Character.UnicodeBlock OLD_PERSIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_PERSIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_SOUTH_ARABIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_SOUTH_ARABIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_SOUTH_ARABIAN");
+            public static Java.Lang.Character.UnicodeBlock OLD_SOUTH_ARABIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_SOUTH_ARABIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_TURKIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OLD_TURKIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_TURKIC");
+            public static Java.Lang.Character.UnicodeBlock OLD_TURKIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OLD_TURKIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OPTICAL_CHARACTER_RECOGNITION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OPTICAL_CHARACTER_RECOGNITION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OPTICAL_CHARACTER_RECOGNITION");
+            public static Java.Lang.Character.UnicodeBlock OPTICAL_CHARACTER_RECOGNITION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OPTICAL_CHARACTER_RECOGNITION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ORIYA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ORIYA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ORIYA");
+            public static Java.Lang.Character.UnicodeBlock ORIYA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ORIYA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ORNAMENTAL_DINGBATS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ORNAMENTAL_DINGBATS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ORNAMENTAL_DINGBATS");
+            public static Java.Lang.Character.UnicodeBlock ORNAMENTAL_DINGBATS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ORNAMENTAL_DINGBATS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OSAGE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OSAGE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OSAGE");
+            public static Java.Lang.Character.UnicodeBlock OSAGE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OSAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OSMANYA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock OSMANYA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OSMANYA");
+            public static Java.Lang.Character.UnicodeBlock OSMANYA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("OSMANYA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PAHAWH_HMONG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PAHAWH_HMONG => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PAHAWH_HMONG");
+            public static Java.Lang.Character.UnicodeBlock PAHAWH_HMONG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PAHAWH_HMONG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PALMYRENE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PALMYRENE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PALMYRENE");
+            public static Java.Lang.Character.UnicodeBlock PALMYRENE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PALMYRENE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PAU_CIN_HAU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PAU_CIN_HAU => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PAU_CIN_HAU");
+            public static Java.Lang.Character.UnicodeBlock PAU_CIN_HAU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PAU_CIN_HAU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PHAGS_PA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PHAGS_PA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHAGS_PA");
+            public static Java.Lang.Character.UnicodeBlock PHAGS_PA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHAGS_PA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PHAISTOS_DISC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PHAISTOS_DISC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHAISTOS_DISC");
+            public static Java.Lang.Character.UnicodeBlock PHAISTOS_DISC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHAISTOS_DISC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PHOENICIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PHOENICIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHOENICIAN");
+            public static Java.Lang.Character.UnicodeBlock PHOENICIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHOENICIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PHONETIC_EXTENSIONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PHONETIC_EXTENSIONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHONETIC_EXTENSIONS");
+            public static Java.Lang.Character.UnicodeBlock PHONETIC_EXTENSIONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHONETIC_EXTENSIONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PHONETIC_EXTENSIONS_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PHONETIC_EXTENSIONS_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHONETIC_EXTENSIONS_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock PHONETIC_EXTENSIONS_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PHONETIC_EXTENSIONS_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PLAYING_CARDS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PLAYING_CARDS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PLAYING_CARDS");
+            public static Java.Lang.Character.UnicodeBlock PLAYING_CARDS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PLAYING_CARDS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PRIVATE_USE_AREA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PRIVATE_USE_AREA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PRIVATE_USE_AREA");
+            public static Java.Lang.Character.UnicodeBlock PRIVATE_USE_AREA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PRIVATE_USE_AREA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#PSALTER_PAHLAVI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock PSALTER_PAHLAVI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PSALTER_PAHLAVI");
+            public static Java.Lang.Character.UnicodeBlock PSALTER_PAHLAVI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("PSALTER_PAHLAVI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#REJANG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock REJANG => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("REJANG");
+            public static Java.Lang.Character.UnicodeBlock REJANG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("REJANG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#RUMI_NUMERAL_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock RUMI_NUMERAL_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("RUMI_NUMERAL_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock RUMI_NUMERAL_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("RUMI_NUMERAL_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#RUNIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock RUNIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("RUNIC");
+            public static Java.Lang.Character.UnicodeBlock RUNIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("RUNIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SAMARITAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SAMARITAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SAMARITAN");
+            public static Java.Lang.Character.UnicodeBlock SAMARITAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SAMARITAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SAURASHTRA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SAURASHTRA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SAURASHTRA");
+            public static Java.Lang.Character.UnicodeBlock SAURASHTRA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SAURASHTRA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHARADA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SHARADA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHARADA");
+            public static Java.Lang.Character.UnicodeBlock SHARADA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHARADA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHAVIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SHAVIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHAVIAN");
+            public static Java.Lang.Character.UnicodeBlock SHAVIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHAVIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHORTHAND_FORMAT_CONTROLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SHORTHAND_FORMAT_CONTROLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHORTHAND_FORMAT_CONTROLS");
+            public static Java.Lang.Character.UnicodeBlock SHORTHAND_FORMAT_CONTROLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SHORTHAND_FORMAT_CONTROLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SIDDHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SIDDHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SIDDHAM");
+            public static Java.Lang.Character.UnicodeBlock SIDDHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SIDDHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SINHALA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SINHALA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SINHALA");
+            public static Java.Lang.Character.UnicodeBlock SINHALA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SINHALA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SINHALA_ARCHAIC_NUMBERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SINHALA_ARCHAIC_NUMBERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SINHALA_ARCHAIC_NUMBERS");
+            public static Java.Lang.Character.UnicodeBlock SINHALA_ARCHAIC_NUMBERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SINHALA_ARCHAIC_NUMBERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_FORM_VARIANTS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SMALL_FORM_VARIANTS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SMALL_FORM_VARIANTS");
+            public static Java.Lang.Character.UnicodeBlock SMALL_FORM_VARIANTS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SMALL_FORM_VARIANTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SORA_SOMPENG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SORA_SOMPENG => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SORA_SOMPENG");
+            public static Java.Lang.Character.UnicodeBlock SORA_SOMPENG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SORA_SOMPENG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SOYOMBO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SOYOMBO => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SOYOMBO");
+            public static Java.Lang.Character.UnicodeBlock SOYOMBO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SOYOMBO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SPACING_MODIFIER_LETTERS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SPACING_MODIFIER_LETTERS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SPACING_MODIFIER_LETTERS");
+            public static Java.Lang.Character.UnicodeBlock SPACING_MODIFIER_LETTERS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SPACING_MODIFIER_LETTERS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SPECIALS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SPECIALS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SPECIALS");
+            public static Java.Lang.Character.UnicodeBlock SPECIALS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SPECIALS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUNDANESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUNDANESE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUNDANESE");
+            public static Java.Lang.Character.UnicodeBlock SUNDANESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUNDANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUNDANESE_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUNDANESE_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUNDANESE_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock SUNDANESE_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUNDANESE_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPERSCRIPTS_AND_SUBSCRIPTS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPERSCRIPTS_AND_SUBSCRIPTS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPERSCRIPTS_AND_SUBSCRIPTS");
+            public static Java.Lang.Character.UnicodeBlock SUPERSCRIPTS_AND_SUBSCRIPTS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPERSCRIPTS_AND_SUBSCRIPTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_ARROWS_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_A");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_ARROWS_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_B");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_ARROWS_C"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_C => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_C");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_ARROWS_C { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_ARROWS_C"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_MATHEMATICAL_OPERATORS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_MATHEMATICAL_OPERATORS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_MATHEMATICAL_OPERATORS");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_MATHEMATICAL_OPERATORS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_MATHEMATICAL_OPERATORS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_PUNCTUATION"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_PUNCTUATION => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_PUNCTUATION");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_PUNCTUATION { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_PUNCTUATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTARY_PRIVATE_USE_AREA_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_A => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTARY_PRIVATE_USE_AREA_A");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTARY_PRIVATE_USE_AREA_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTARY_PRIVATE_USE_AREA_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_B => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTARY_PRIVATE_USE_AREA_B");
+            public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUPPLEMENTARY_PRIVATE_USE_AREA_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUTTON_SIGNWRITING"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SUTTON_SIGNWRITING => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUTTON_SIGNWRITING");
+            public static Java.Lang.Character.UnicodeBlock SUTTON_SIGNWRITING { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SUTTON_SIGNWRITING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYLOTI_NAGRI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SYLOTI_NAGRI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYLOTI_NAGRI");
+            public static Java.Lang.Character.UnicodeBlock SYLOTI_NAGRI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYLOTI_NAGRI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYRIAC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SYRIAC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYRIAC");
+            public static Java.Lang.Character.UnicodeBlock SYRIAC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYRIAC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYRIAC_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock SYRIAC_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYRIAC_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock SYRIAC_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("SYRIAC_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAGALOG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAGALOG => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGALOG");
+            public static Java.Lang.Character.UnicodeBlock TAGALOG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGALOG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAGBANWA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAGBANWA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGBANWA");
+            public static Java.Lang.Character.UnicodeBlock TAGBANWA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGBANWA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAGS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAGS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGS");
+            public static Java.Lang.Character.UnicodeBlock TAGS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAGS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_LE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAI_LE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_LE");
+            public static Java.Lang.Character.UnicodeBlock TAI_LE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_THAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAI_THAM => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_THAM");
+            public static Java.Lang.Character.UnicodeBlock TAI_THAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_THAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_VIET"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAI_VIET => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_VIET");
+            public static Java.Lang.Character.UnicodeBlock TAI_VIET { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_VIET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_XUAN_JING_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAI_XUAN_JING_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_XUAN_JING_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock TAI_XUAN_JING_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAI_XUAN_JING_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAKRI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAKRI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAKRI");
+            public static Java.Lang.Character.UnicodeBlock TAKRI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAKRI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TAMIL => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAMIL");
+            public static Java.Lang.Character.UnicodeBlock TAMIL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TAMIL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TANGUT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TANGUT");
+            public static Java.Lang.Character.UnicodeBlock TANGUT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TANGUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_COMPONENTS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TANGUT_COMPONENTS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TANGUT_COMPONENTS");
+            public static Java.Lang.Character.UnicodeBlock TANGUT_COMPONENTS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TANGUT_COMPONENTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TELUGU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TELUGU => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TELUGU");
+            public static Java.Lang.Character.UnicodeBlock TELUGU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TELUGU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#THAANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock THAANA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("THAANA");
+            public static Java.Lang.Character.UnicodeBlock THAANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("THAANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#THAI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock THAI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("THAI");
+            public static Java.Lang.Character.UnicodeBlock THAI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("THAI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TIBETAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TIBETAN => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIBETAN");
+            public static Java.Lang.Character.UnicodeBlock TIBETAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIBETAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TIFINAGH"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TIFINAGH => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIFINAGH");
+            public static Java.Lang.Character.UnicodeBlock TIFINAGH { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIFINAGH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TIRHUTA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TIRHUTA => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIRHUTA");
+            public static Java.Lang.Character.UnicodeBlock TIRHUTA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TIRHUTA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TRANSPORT_AND_MAP_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock TRANSPORT_AND_MAP_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TRANSPORT_AND_MAP_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock TRANSPORT_AND_MAP_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("TRANSPORT_AND_MAP_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UGARITIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock UGARITIC => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UGARITIC");
+            public static Java.Lang.Character.UnicodeBlock UGARITIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UGARITIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS");
+            public static Java.Lang.Character.UnicodeBlock UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED");
+            public static Java.Lang.Character.UnicodeBlock UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VAI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock VAI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VAI");
+            public static Java.Lang.Character.UnicodeBlock VAI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VAI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VARIATION_SELECTORS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock VARIATION_SELECTORS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VARIATION_SELECTORS");
+            public static Java.Lang.Character.UnicodeBlock VARIATION_SELECTORS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VARIATION_SELECTORS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VARIATION_SELECTORS_SUPPLEMENT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock VARIATION_SELECTORS_SUPPLEMENT => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VARIATION_SELECTORS_SUPPLEMENT");
+            public static Java.Lang.Character.UnicodeBlock VARIATION_SELECTORS_SUPPLEMENT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VARIATION_SELECTORS_SUPPLEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VEDIC_EXTENSIONS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock VEDIC_EXTENSIONS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VEDIC_EXTENSIONS");
+            public static Java.Lang.Character.UnicodeBlock VEDIC_EXTENSIONS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VEDIC_EXTENSIONS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VERTICAL_FORMS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock VERTICAL_FORMS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VERTICAL_FORMS");
+            public static Java.Lang.Character.UnicodeBlock VERTICAL_FORMS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("VERTICAL_FORMS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WARANG_CITI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock WARANG_CITI => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("WARANG_CITI");
+            public static Java.Lang.Character.UnicodeBlock WARANG_CITI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("WARANG_CITI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#YI_RADICALS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock YI_RADICALS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YI_RADICALS");
+            public static Java.Lang.Character.UnicodeBlock YI_RADICALS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YI_RADICALS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#YI_SYLLABLES"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock YI_SYLLABLES => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YI_SYLLABLES");
+            public static Java.Lang.Character.UnicodeBlock YI_SYLLABLES { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YI_SYLLABLES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#YIJING_HEXAGRAM_SYMBOLS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock YIJING_HEXAGRAM_SYMBOLS => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YIJING_HEXAGRAM_SYMBOLS");
+            public static Java.Lang.Character.UnicodeBlock YIJING_HEXAGRAM_SYMBOLS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("YIJING_HEXAGRAM_SYMBOLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZANABAZAR_SQUARE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeBlock ZANABAZAR_SQUARE => LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ZANABAZAR_SQUARE");
+            public static Java.Lang.Character.UnicodeBlock ZANABAZAR_SQUARE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ZANABAZAR_SQUARE"); } }
             
             #endregion
 
@@ -2324,571 +2324,571 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ADLAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ADLAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ADLAM");
+            public static Java.Lang.Character.UnicodeScript ADLAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ADLAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AHOM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript AHOM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("AHOM");
+            public static Java.Lang.Character.UnicodeScript AHOM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("AHOM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ANATOLIAN_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ANATOLIAN_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ANATOLIAN_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeScript ANATOLIAN_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ANATOLIAN_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARABIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ARABIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ARABIC");
+            public static Java.Lang.Character.UnicodeScript ARABIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ARABIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARMENIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ARMENIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ARMENIAN");
+            public static Java.Lang.Character.UnicodeScript ARMENIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ARMENIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AVESTAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript AVESTAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("AVESTAN");
+            public static Java.Lang.Character.UnicodeScript AVESTAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("AVESTAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BALINESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BALINESE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BALINESE");
+            public static Java.Lang.Character.UnicodeScript BALINESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BALINESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BAMUM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BAMUM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BAMUM");
+            public static Java.Lang.Character.UnicodeScript BAMUM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BAMUM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BASSA_VAH"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BASSA_VAH => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BASSA_VAH");
+            public static Java.Lang.Character.UnicodeScript BASSA_VAH { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BASSA_VAH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BATAK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BATAK => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BATAK");
+            public static Java.Lang.Character.UnicodeScript BATAK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BATAK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BENGALI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BENGALI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BENGALI");
+            public static Java.Lang.Character.UnicodeScript BENGALI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BENGALI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BHAIKSUKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BHAIKSUKI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BHAIKSUKI");
+            public static Java.Lang.Character.UnicodeScript BHAIKSUKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BHAIKSUKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BOPOMOFO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BOPOMOFO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BOPOMOFO");
+            public static Java.Lang.Character.UnicodeScript BOPOMOFO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BOPOMOFO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAHMI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BRAHMI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BRAHMI");
+            public static Java.Lang.Character.UnicodeScript BRAHMI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BRAHMI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAILLE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BRAILLE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BRAILLE");
+            public static Java.Lang.Character.UnicodeScript BRAILLE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BRAILLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUGINESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BUGINESE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BUGINESE");
+            public static Java.Lang.Character.UnicodeScript BUGINESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BUGINESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUHID"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript BUHID => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BUHID");
+            public static Java.Lang.Character.UnicodeScript BUHID { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("BUHID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CANADIAN_ABORIGINAL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CANADIAN_ABORIGINAL => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CANADIAN_ABORIGINAL");
+            public static Java.Lang.Character.UnicodeScript CANADIAN_ABORIGINAL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CANADIAN_ABORIGINAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CARIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CARIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CARIAN");
+            public static Java.Lang.Character.UnicodeScript CARIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CARIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CAUCASIAN_ALBANIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CAUCASIAN_ALBANIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CAUCASIAN_ALBANIAN");
+            public static Java.Lang.Character.UnicodeScript CAUCASIAN_ALBANIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CAUCASIAN_ALBANIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAKMA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHAKMA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHAKMA");
+            public static Java.Lang.Character.UnicodeScript CHAKMA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHAKMA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHAM");
+            public static Java.Lang.Character.UnicodeScript CHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHEROKEE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHEROKEE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHEROKEE");
+            public static Java.Lang.Character.UnicodeScript CHEROKEE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CHEROKEE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COMMON"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript COMMON => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("COMMON");
+            public static Java.Lang.Character.UnicodeScript COMMON { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("COMMON"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COPTIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript COPTIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("COPTIC");
+            public static Java.Lang.Character.UnicodeScript COPTIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("COPTIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CUNEIFORM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CUNEIFORM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CUNEIFORM");
+            public static Java.Lang.Character.UnicodeScript CUNEIFORM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CUNEIFORM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRIOT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CYPRIOT => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CYPRIOT");
+            public static Java.Lang.Character.UnicodeScript CYPRIOT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CYPRIOT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYRILLIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript CYRILLIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CYRILLIC");
+            public static Java.Lang.Character.UnicodeScript CYRILLIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("CYRILLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DESERET"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript DESERET => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DESERET");
+            public static Java.Lang.Character.UnicodeScript DESERET { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DESERET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DEVANAGARI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript DEVANAGARI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DEVANAGARI");
+            public static Java.Lang.Character.UnicodeScript DEVANAGARI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DEVANAGARI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DUPLOYAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript DUPLOYAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DUPLOYAN");
+            public static Java.Lang.Character.UnicodeScript DUPLOYAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("DUPLOYAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#EGYPTIAN_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript EGYPTIAN_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("EGYPTIAN_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeScript EGYPTIAN_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("EGYPTIAN_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ELBASAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ELBASAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ELBASAN");
+            public static Java.Lang.Character.UnicodeScript ELBASAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ELBASAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ETHIOPIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ETHIOPIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ETHIOPIC");
+            public static Java.Lang.Character.UnicodeScript ETHIOPIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ETHIOPIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GEORGIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GEORGIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GEORGIAN");
+            public static Java.Lang.Character.UnicodeScript GEORGIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GEORGIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GLAGOLITIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GLAGOLITIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GLAGOLITIC");
+            public static Java.Lang.Character.UnicodeScript GLAGOLITIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GLAGOLITIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GOTHIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GOTHIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GOTHIC");
+            public static Java.Lang.Character.UnicodeScript GOTHIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GOTHIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GRANTHA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GRANTHA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GRANTHA");
+            public static Java.Lang.Character.UnicodeScript GRANTHA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GRANTHA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GREEK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GREEK => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GREEK");
+            public static Java.Lang.Character.UnicodeScript GREEK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GREEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GUJARATI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GUJARATI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GUJARATI");
+            public static Java.Lang.Character.UnicodeScript GUJARATI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GUJARATI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GURMUKHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript GURMUKHI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GURMUKHI");
+            public static Java.Lang.Character.UnicodeScript GURMUKHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("GURMUKHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HAN");
+            public static Java.Lang.Character.UnicodeScript HAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANGUL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HANGUL => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HANGUL");
+            public static Java.Lang.Character.UnicodeScript HANGUL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HANGUL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANUNOO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HANUNOO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HANUNOO");
+            public static Java.Lang.Character.UnicodeScript HANUNOO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HANUNOO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HATRAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HATRAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HATRAN");
+            public static Java.Lang.Character.UnicodeScript HATRAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HATRAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HEBREW"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HEBREW => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HEBREW");
+            public static Java.Lang.Character.UnicodeScript HEBREW { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HEBREW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HIRAGANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript HIRAGANA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HIRAGANA");
+            public static Java.Lang.Character.UnicodeScript HIRAGANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("HIRAGANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#IMPERIAL_ARAMAIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript IMPERIAL_ARAMAIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("IMPERIAL_ARAMAIC");
+            public static Java.Lang.Character.UnicodeScript IMPERIAL_ARAMAIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("IMPERIAL_ARAMAIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INHERITED"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript INHERITED => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INHERITED");
+            public static Java.Lang.Character.UnicodeScript INHERITED { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INHERITED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PAHLAVI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PAHLAVI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PAHLAVI");
+            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PAHLAVI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PAHLAVI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PARTHIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PARTHIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PARTHIAN");
+            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PARTHIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PARTHIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#JAVANESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript JAVANESE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("JAVANESE");
+            public static Java.Lang.Character.UnicodeScript JAVANESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("JAVANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAITHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KAITHI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KAITHI");
+            public static Java.Lang.Character.UnicodeScript KAITHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KAITHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KANNADA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KANNADA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KANNADA");
+            public static Java.Lang.Character.UnicodeScript KANNADA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KANNADA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KATAKANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KATAKANA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KATAKANA");
+            public static Java.Lang.Character.UnicodeScript KATAKANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KATAKANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAYAH_LI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KAYAH_LI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KAYAH_LI");
+            public static Java.Lang.Character.UnicodeScript KAYAH_LI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KAYAH_LI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHAROSHTHI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHAROSHTHI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHAROSHTHI");
+            public static Java.Lang.Character.UnicodeScript KHAROSHTHI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHAROSHTHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHMER"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHMER => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHMER");
+            public static Java.Lang.Character.UnicodeScript KHMER { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHMER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHOJKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHOJKI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHOJKI");
+            public static Java.Lang.Character.UnicodeScript KHOJKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHOJKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHUDAWADI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHUDAWADI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHUDAWADI");
+            public static Java.Lang.Character.UnicodeScript KHUDAWADI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("KHUDAWADI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LAO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LAO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LAO");
+            public static Java.Lang.Character.UnicodeScript LAO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LAO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LATIN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LATIN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LATIN");
+            public static Java.Lang.Character.UnicodeScript LATIN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LATIN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LEPCHA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LEPCHA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LEPCHA");
+            public static Java.Lang.Character.UnicodeScript LEPCHA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LEPCHA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LIMBU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LIMBU => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LIMBU");
+            public static Java.Lang.Character.UnicodeScript LIMBU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LIMBU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_A"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LINEAR_A => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_A");
+            public static Java.Lang.Character.UnicodeScript LINEAR_A { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_B"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LINEAR_B => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_B");
+            public static Java.Lang.Character.UnicodeScript LINEAR_B { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LISU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LISU => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LISU");
+            public static Java.Lang.Character.UnicodeScript LISU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LISU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYCIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LYCIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LYCIAN");
+            public static Java.Lang.Character.UnicodeScript LYCIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LYCIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYDIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript LYDIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LYDIAN");
+            public static Java.Lang.Character.UnicodeScript LYDIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("LYDIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MAHAJANI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MAHAJANI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MAHAJANI");
+            public static Java.Lang.Character.UnicodeScript MAHAJANI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MAHAJANI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MALAYALAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MALAYALAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MALAYALAM");
+            public static Java.Lang.Character.UnicodeScript MALAYALAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MALAYALAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANDAIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MANDAIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MANDAIC");
+            public static Java.Lang.Character.UnicodeScript MANDAIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MANDAIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANICHAEAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MANICHAEAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MANICHAEAN");
+            public static Java.Lang.Character.UnicodeScript MANICHAEAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MANICHAEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MARCHEN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MARCHEN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MARCHEN");
+            public static Java.Lang.Character.UnicodeScript MARCHEN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MARCHEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MASARAM_GONDI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MASARAM_GONDI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MASARAM_GONDI");
+            public static Java.Lang.Character.UnicodeScript MASARAM_GONDI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MASARAM_GONDI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEETEI_MAYEK"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEETEI_MAYEK => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEETEI_MAYEK");
+            public static Java.Lang.Character.UnicodeScript MEETEI_MAYEK { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEETEI_MAYEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MENDE_KIKAKUI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MENDE_KIKAKUI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MENDE_KIKAKUI");
+            public static Java.Lang.Character.UnicodeScript MENDE_KIKAKUI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MENDE_KIKAKUI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_CURSIVE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEROITIC_CURSIVE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_CURSIVE");
+            public static Java.Lang.Character.UnicodeScript MEROITIC_CURSIVE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_CURSIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_HIEROGLYPHS"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEROITIC_HIEROGLYPHS => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_HIEROGLYPHS");
+            public static Java.Lang.Character.UnicodeScript MEROITIC_HIEROGLYPHS { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_HIEROGLYPHS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MIAO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MIAO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MIAO");
+            public static Java.Lang.Character.UnicodeScript MIAO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MIAO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MODI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MODI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MODI");
+            public static Java.Lang.Character.UnicodeScript MODI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MODI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MONGOLIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MONGOLIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MONGOLIAN");
+            public static Java.Lang.Character.UnicodeScript MONGOLIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MONGOLIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MRO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MRO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MRO");
+            public static Java.Lang.Character.UnicodeScript MRO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MRO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MULTANI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MULTANI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MULTANI");
+            public static Java.Lang.Character.UnicodeScript MULTANI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MULTANI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MYANMAR"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript MYANMAR => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MYANMAR");
+            public static Java.Lang.Character.UnicodeScript MYANMAR { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("MYANMAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NABATAEAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript NABATAEAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NABATAEAN");
+            public static Java.Lang.Character.UnicodeScript NABATAEAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NABATAEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEW_TAI_LUE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript NEW_TAI_LUE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NEW_TAI_LUE");
+            public static Java.Lang.Character.UnicodeScript NEW_TAI_LUE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NEW_TAI_LUE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEWA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript NEWA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NEWA");
+            public static Java.Lang.Character.UnicodeScript NEWA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NEWA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NKO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript NKO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NKO");
+            public static Java.Lang.Character.UnicodeScript NKO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NKO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NUSHU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript NUSHU => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NUSHU");
+            public static Java.Lang.Character.UnicodeScript NUSHU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("NUSHU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OGHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OGHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OGHAM");
+            public static Java.Lang.Character.UnicodeScript OGHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OGHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OL_CHIKI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OL_CHIKI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OL_CHIKI");
+            public static Java.Lang.Character.UnicodeScript OL_CHIKI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OL_CHIKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_HUNGARIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_HUNGARIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_HUNGARIAN");
+            public static Java.Lang.Character.UnicodeScript OLD_HUNGARIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_HUNGARIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_ITALIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_ITALIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_ITALIC");
+            public static Java.Lang.Character.UnicodeScript OLD_ITALIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_ITALIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_NORTH_ARABIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_NORTH_ARABIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_NORTH_ARABIAN");
+            public static Java.Lang.Character.UnicodeScript OLD_NORTH_ARABIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_NORTH_ARABIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERMIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_PERMIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERMIC");
+            public static Java.Lang.Character.UnicodeScript OLD_PERMIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERMIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERSIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_PERSIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERSIAN");
+            public static Java.Lang.Character.UnicodeScript OLD_PERSIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERSIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_SOUTH_ARABIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_SOUTH_ARABIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_SOUTH_ARABIAN");
+            public static Java.Lang.Character.UnicodeScript OLD_SOUTH_ARABIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_SOUTH_ARABIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_TURKIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_TURKIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_TURKIC");
+            public static Java.Lang.Character.UnicodeScript OLD_TURKIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_TURKIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ORIYA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ORIYA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ORIYA");
+            public static Java.Lang.Character.UnicodeScript ORIYA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ORIYA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSAGE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OSAGE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OSAGE");
+            public static Java.Lang.Character.UnicodeScript OSAGE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OSAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSMANYA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript OSMANYA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OSMANYA");
+            public static Java.Lang.Character.UnicodeScript OSMANYA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("OSMANYA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAHAWH_HMONG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PAHAWH_HMONG => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PAHAWH_HMONG");
+            public static Java.Lang.Character.UnicodeScript PAHAWH_HMONG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PAHAWH_HMONG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PALMYRENE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PALMYRENE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PALMYRENE");
+            public static Java.Lang.Character.UnicodeScript PALMYRENE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PALMYRENE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAU_CIN_HAU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PAU_CIN_HAU => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PAU_CIN_HAU");
+            public static Java.Lang.Character.UnicodeScript PAU_CIN_HAU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PAU_CIN_HAU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHAGS_PA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PHAGS_PA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PHAGS_PA");
+            public static Java.Lang.Character.UnicodeScript PHAGS_PA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PHAGS_PA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHOENICIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PHOENICIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PHOENICIAN");
+            public static Java.Lang.Character.UnicodeScript PHOENICIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PHOENICIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PSALTER_PAHLAVI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript PSALTER_PAHLAVI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PSALTER_PAHLAVI");
+            public static Java.Lang.Character.UnicodeScript PSALTER_PAHLAVI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("PSALTER_PAHLAVI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#REJANG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript REJANG => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("REJANG");
+            public static Java.Lang.Character.UnicodeScript REJANG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("REJANG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#RUNIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript RUNIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("RUNIC");
+            public static Java.Lang.Character.UnicodeScript RUNIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("RUNIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAMARITAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SAMARITAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SAMARITAN");
+            public static Java.Lang.Character.UnicodeScript SAMARITAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SAMARITAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAURASHTRA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SAURASHTRA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SAURASHTRA");
+            public static Java.Lang.Character.UnicodeScript SAURASHTRA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SAURASHTRA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHARADA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SHARADA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SHARADA");
+            public static Java.Lang.Character.UnicodeScript SHARADA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SHARADA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHAVIAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SHAVIAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SHAVIAN");
+            public static Java.Lang.Character.UnicodeScript SHAVIAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SHAVIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIDDHAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SIDDHAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SIDDHAM");
+            public static Java.Lang.Character.UnicodeScript SIDDHAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SIDDHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIGNWRITING"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SIGNWRITING => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SIGNWRITING");
+            public static Java.Lang.Character.UnicodeScript SIGNWRITING { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SIGNWRITING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SINHALA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SINHALA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SINHALA");
+            public static Java.Lang.Character.UnicodeScript SINHALA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SINHALA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SORA_SOMPENG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SORA_SOMPENG => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SORA_SOMPENG");
+            public static Java.Lang.Character.UnicodeScript SORA_SOMPENG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SORA_SOMPENG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SOYOMBO"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SOYOMBO => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SOYOMBO");
+            public static Java.Lang.Character.UnicodeScript SOYOMBO { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SOYOMBO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SUNDANESE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SUNDANESE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SUNDANESE");
+            public static Java.Lang.Character.UnicodeScript SUNDANESE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SUNDANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYLOTI_NAGRI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SYLOTI_NAGRI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SYLOTI_NAGRI");
+            public static Java.Lang.Character.UnicodeScript SYLOTI_NAGRI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SYLOTI_NAGRI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYRIAC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript SYRIAC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SYRIAC");
+            public static Java.Lang.Character.UnicodeScript SYRIAC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("SYRIAC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGALOG"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAGALOG => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAGALOG");
+            public static Java.Lang.Character.UnicodeScript TAGALOG { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAGALOG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGBANWA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAGBANWA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAGBANWA");
+            public static Java.Lang.Character.UnicodeScript TAGBANWA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAGBANWA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_LE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_LE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_LE");
+            public static Java.Lang.Character.UnicodeScript TAI_LE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_THAM"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_THAM => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_THAM");
+            public static Java.Lang.Character.UnicodeScript TAI_THAM { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_THAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_VIET"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_VIET => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_VIET");
+            public static Java.Lang.Character.UnicodeScript TAI_VIET { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_VIET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAKRI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAKRI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAKRI");
+            public static Java.Lang.Character.UnicodeScript TAKRI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAKRI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAMIL"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAMIL => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAMIL");
+            public static Java.Lang.Character.UnicodeScript TAMIL { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TAMIL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGUT"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TANGUT => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TANGUT");
+            public static Java.Lang.Character.UnicodeScript TANGUT { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TANGUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TELUGU"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TELUGU => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TELUGU");
+            public static Java.Lang.Character.UnicodeScript TELUGU { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TELUGU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAANA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript THAANA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("THAANA");
+            public static Java.Lang.Character.UnicodeScript THAANA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("THAANA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript THAI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("THAI");
+            public static Java.Lang.Character.UnicodeScript THAI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("THAI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIBETAN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIBETAN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIBETAN");
+            public static Java.Lang.Character.UnicodeScript TIBETAN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIBETAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIFINAGH"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIFINAGH => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIFINAGH");
+            public static Java.Lang.Character.UnicodeScript TIFINAGH { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIFINAGH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIRHUTA"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIRHUTA => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIRHUTA");
+            public static Java.Lang.Character.UnicodeScript TIRHUTA { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("TIRHUTA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UGARITIC"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript UGARITIC => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("UGARITIC");
+            public static Java.Lang.Character.UnicodeScript UGARITIC { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("UGARITIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UNKNOWN"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript UNKNOWN => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("UNKNOWN");
+            public static Java.Lang.Character.UnicodeScript UNKNOWN { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("UNKNOWN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#VAI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript VAI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("VAI");
+            public static Java.Lang.Character.UnicodeScript VAI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("VAI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#WARANG_CITI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript WARANG_CITI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("WARANG_CITI");
+            public static Java.Lang.Character.UnicodeScript WARANG_CITI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("WARANG_CITI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#YI"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript YI => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("YI");
+            public static Java.Lang.Character.UnicodeScript YI { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("YI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ZANABAZAR_SQUARE"/>
             /// </summary>
-            public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE => LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ZANABAZAR_SQUARE");
+            public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ZANABAZAR_SQUARE"); } }
             
             #endregion
 

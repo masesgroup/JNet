@@ -40,7 +40,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#NULLORDER"/>
         /// </summary>
-        public static int NULLORDER => LocalClazz.GetField<int>("NULLORDER");
+        public static int NULLORDER { get { return LocalClazz.GetField<int>("NULLORDER"); } }
         
         #endregion
 

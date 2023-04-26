@@ -186,15 +186,15 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ONE"/>
         /// </summary>
-        public static Java.Math.BigDecimal ONE => LocalClazz.GetField<Java.Math.BigDecimal>("ONE");
+        public static Java.Math.BigDecimal ONE { get { return LocalClazz.GetField<Java.Math.BigDecimal>("ONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#TEN"/>
         /// </summary>
-        public static Java.Math.BigDecimal TEN => LocalClazz.GetField<Java.Math.BigDecimal>("TEN");
+        public static Java.Math.BigDecimal TEN { get { return LocalClazz.GetField<Java.Math.BigDecimal>("TEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ZERO"/>
         /// </summary>
-        public static Java.Math.BigDecimal ZERO => LocalClazz.GetField<Java.Math.BigDecimal>("ZERO");
+        public static Java.Math.BigDecimal ZERO { get { return LocalClazz.GetField<Java.Math.BigDecimal>("ZERO"); } }
         
         #endregion
 

@@ -44,7 +44,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoChronology.html#INSTANCE"/>
         /// </summary>
-        public static Java.Time.Chrono.MinguoChronology INSTANCE => LocalClazz.GetField<Java.Time.Chrono.MinguoChronology>("INSTANCE");
+        public static Java.Time.Chrono.MinguoChronology INSTANCE { get { return LocalClazz.GetField<Java.Time.Chrono.MinguoChronology>("INSTANCE"); } }
         
         #endregion
 

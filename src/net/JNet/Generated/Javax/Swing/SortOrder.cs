@@ -40,15 +40,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#ASCENDING"/>
         /// </summary>
-        public static Javax.Swing.SortOrder ASCENDING => LocalClazz.GetField<Javax.Swing.SortOrder>("ASCENDING");
+        public static Javax.Swing.SortOrder ASCENDING { get { return LocalClazz.GetField<Javax.Swing.SortOrder>("ASCENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#DESCENDING"/>
         /// </summary>
-        public static Javax.Swing.SortOrder DESCENDING => LocalClazz.GetField<Javax.Swing.SortOrder>("DESCENDING");
+        public static Javax.Swing.SortOrder DESCENDING { get { return LocalClazz.GetField<Javax.Swing.SortOrder>("DESCENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#UNSORTED"/>
         /// </summary>
-        public static Javax.Swing.SortOrder UNSORTED => LocalClazz.GetField<Javax.Swing.SortOrder>("UNSORTED");
+        public static Javax.Swing.SortOrder UNSORTED { get { return LocalClazz.GetField<Javax.Swing.SortOrder>("UNSORTED"); } }
         
         #endregion
 

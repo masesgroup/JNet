@@ -40,15 +40,15 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#AT_TARGET"/>
         /// </summary>
-        public static short AT_TARGET => LocalClazz.GetField<short>("AT_TARGET");
+        public static short AT_TARGET { get { return LocalClazz.GetField<short>("AT_TARGET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#BUBBLING_PHASE"/>
         /// </summary>
-        public static short BUBBLING_PHASE => LocalClazz.GetField<short>("BUBBLING_PHASE");
+        public static short BUBBLING_PHASE { get { return LocalClazz.GetField<short>("BUBBLING_PHASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#CAPTURING_PHASE"/>
         /// </summary>
-        public static short CAPTURING_PHASE => LocalClazz.GetField<short>("CAPTURING_PHASE");
+        public static short CAPTURING_PHASE { get { return LocalClazz.GetField<short>("CAPTURING_PHASE"); } }
         
         #endregion
 

@@ -51,15 +51,15 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#CONTENTS_CHANGED"/>
         /// </summary>
-        public static int CONTENTS_CHANGED => LocalClazz.GetField<int>("CONTENTS_CHANGED");
+        public static int CONTENTS_CHANGED { get { return LocalClazz.GetField<int>("CONTENTS_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_ADDED"/>
         /// </summary>
-        public static int INTERVAL_ADDED => LocalClazz.GetField<int>("INTERVAL_ADDED");
+        public static int INTERVAL_ADDED { get { return LocalClazz.GetField<int>("INTERVAL_ADDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_REMOVED"/>
         /// </summary>
-        public static int INTERVAL_REMOVED => LocalClazz.GetField<int>("INTERVAL_REMOVED");
+        public static int INTERVAL_REMOVED { get { return LocalClazz.GetField<int>("INTERVAL_REMOVED"); } }
         
         #endregion
 

@@ -82,19 +82,19 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#pathSeparatorChar"/>
         /// </summary>
-        public static char pathSeparatorChar => LocalClazz.GetField<char>("pathSeparatorChar");
+        public static char pathSeparatorChar { get { return LocalClazz.GetField<char>("pathSeparatorChar"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separatorChar"/>
         /// </summary>
-        public static char separatorChar => LocalClazz.GetField<char>("separatorChar");
+        public static char separatorChar { get { return LocalClazz.GetField<char>("separatorChar"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#pathSeparator"/>
         /// </summary>
-        public static string pathSeparator => LocalClazz.GetField<string>("pathSeparator");
+        public static string pathSeparator { get { return LocalClazz.GetField<string>("pathSeparator"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separator"/>
         /// </summary>
-        public static string separator => LocalClazz.GetField<string>("separator");
+        public static string separator { get { return LocalClazz.GetField<string>("separator"); } }
         
         #endregion
 

@@ -40,63 +40,63 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#IP_MULTICAST_IF"/>
         /// </summary>
-        public static int IP_MULTICAST_IF => LocalClazz.GetField<int>("IP_MULTICAST_IF");
+        public static int IP_MULTICAST_IF { get { return LocalClazz.GetField<int>("IP_MULTICAST_IF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#IP_MULTICAST_IF2"/>
         /// </summary>
-        public static int IP_MULTICAST_IF2 => LocalClazz.GetField<int>("IP_MULTICAST_IF2");
+        public static int IP_MULTICAST_IF2 { get { return LocalClazz.GetField<int>("IP_MULTICAST_IF2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#IP_MULTICAST_LOOP"/>
         /// </summary>
-        public static int IP_MULTICAST_LOOP => LocalClazz.GetField<int>("IP_MULTICAST_LOOP");
+        public static int IP_MULTICAST_LOOP { get { return LocalClazz.GetField<int>("IP_MULTICAST_LOOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#IP_TOS"/>
         /// </summary>
-        public static int IP_TOS => LocalClazz.GetField<int>("IP_TOS");
+        public static int IP_TOS { get { return LocalClazz.GetField<int>("IP_TOS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BINDADDR"/>
         /// </summary>
-        public static int SO_BINDADDR => LocalClazz.GetField<int>("SO_BINDADDR");
+        public static int SO_BINDADDR { get { return LocalClazz.GetField<int>("SO_BINDADDR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BROADCAST"/>
         /// </summary>
-        public static int SO_BROADCAST => LocalClazz.GetField<int>("SO_BROADCAST");
+        public static int SO_BROADCAST { get { return LocalClazz.GetField<int>("SO_BROADCAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_KEEPALIVE"/>
         /// </summary>
-        public static int SO_KEEPALIVE => LocalClazz.GetField<int>("SO_KEEPALIVE");
+        public static int SO_KEEPALIVE { get { return LocalClazz.GetField<int>("SO_KEEPALIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_LINGER"/>
         /// </summary>
-        public static int SO_LINGER => LocalClazz.GetField<int>("SO_LINGER");
+        public static int SO_LINGER { get { return LocalClazz.GetField<int>("SO_LINGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_OOBINLINE"/>
         /// </summary>
-        public static int SO_OOBINLINE => LocalClazz.GetField<int>("SO_OOBINLINE");
+        public static int SO_OOBINLINE { get { return LocalClazz.GetField<int>("SO_OOBINLINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_RCVBUF"/>
         /// </summary>
-        public static int SO_RCVBUF => LocalClazz.GetField<int>("SO_RCVBUF");
+        public static int SO_RCVBUF { get { return LocalClazz.GetField<int>("SO_RCVBUF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEADDR"/>
         /// </summary>
-        public static int SO_REUSEADDR => LocalClazz.GetField<int>("SO_REUSEADDR");
+        public static int SO_REUSEADDR { get { return LocalClazz.GetField<int>("SO_REUSEADDR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEPORT"/>
         /// </summary>
-        public static int SO_REUSEPORT => LocalClazz.GetField<int>("SO_REUSEPORT");
+        public static int SO_REUSEPORT { get { return LocalClazz.GetField<int>("SO_REUSEPORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_SNDBUF"/>
         /// </summary>
-        public static int SO_SNDBUF => LocalClazz.GetField<int>("SO_SNDBUF");
+        public static int SO_SNDBUF { get { return LocalClazz.GetField<int>("SO_SNDBUF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_TIMEOUT"/>
         /// </summary>
-        public static int SO_TIMEOUT => LocalClazz.GetField<int>("SO_TIMEOUT");
+        public static int SO_TIMEOUT { get { return LocalClazz.GetField<int>("SO_TIMEOUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#TCP_NODELAY"/>
         /// </summary>
-        public static int TCP_NODELAY => LocalClazz.GetField<int>("TCP_NODELAY");
+        public static int TCP_NODELAY { get { return LocalClazz.GetField<int>("TCP_NODELAY"); } }
         
         #endregion
 

@@ -90,47 +90,47 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#CANCEL"/>
         /// </summary>
-        public static int CANCEL => LocalClazz.GetField<int>("CANCEL");
+        public static int CANCEL { get { return LocalClazz.GetField<int>("CANCEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#ERROR"/>
         /// </summary>
-        public static int ERROR => LocalClazz.GetField<int>("ERROR");
+        public static int ERROR { get { return LocalClazz.GetField<int>("ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#INFORMATION"/>
         /// </summary>
-        public static int INFORMATION => LocalClazz.GetField<int>("INFORMATION");
+        public static int INFORMATION { get { return LocalClazz.GetField<int>("INFORMATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#NO"/>
         /// </summary>
-        public static int NO => LocalClazz.GetField<int>("NO");
+        public static int NO { get { return LocalClazz.GetField<int>("NO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK"/>
         /// </summary>
-        public static int OK => LocalClazz.GetField<int>("OK");
+        public static int OK { get { return LocalClazz.GetField<int>("OK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK_CANCEL_OPTION"/>
         /// </summary>
-        public static int OK_CANCEL_OPTION => LocalClazz.GetField<int>("OK_CANCEL_OPTION");
+        public static int OK_CANCEL_OPTION { get { return LocalClazz.GetField<int>("OK_CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#UNSPECIFIED_OPTION"/>
         /// </summary>
-        public static int UNSPECIFIED_OPTION => LocalClazz.GetField<int>("UNSPECIFIED_OPTION");
+        public static int UNSPECIFIED_OPTION { get { return LocalClazz.GetField<int>("UNSPECIFIED_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#WARNING"/>
         /// </summary>
-        public static int WARNING => LocalClazz.GetField<int>("WARNING");
+        public static int WARNING { get { return LocalClazz.GetField<int>("WARNING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES"/>
         /// </summary>
-        public static int YES => LocalClazz.GetField<int>("YES");
+        public static int YES { get { return LocalClazz.GetField<int>("YES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_CANCEL_OPTION"/>
         /// </summary>
-        public static int YES_NO_CANCEL_OPTION => LocalClazz.GetField<int>("YES_NO_CANCEL_OPTION");
+        public static int YES_NO_CANCEL_OPTION { get { return LocalClazz.GetField<int>("YES_NO_CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION"/>
         /// </summary>
-        public static int YES_NO_OPTION => LocalClazz.GetField<int>("YES_NO_OPTION");
+        public static int YES_NO_OPTION { get { return LocalClazz.GetField<int>("YES_NO_OPTION"); } }
         
         #endregion
 

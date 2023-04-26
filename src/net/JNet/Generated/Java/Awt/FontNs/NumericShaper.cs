@@ -44,83 +44,83 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#ALL_RANGES"/>
         /// </summary>
-        public static int ALL_RANGES => LocalClazz.GetField<int>("ALL_RANGES");
+        public static int ALL_RANGES { get { return LocalClazz.GetField<int>("ALL_RANGES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#ARABIC"/>
         /// </summary>
-        public static int ARABIC => LocalClazz.GetField<int>("ARABIC");
+        public static int ARABIC { get { return LocalClazz.GetField<int>("ARABIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#BENGALI"/>
         /// </summary>
-        public static int BENGALI => LocalClazz.GetField<int>("BENGALI");
+        public static int BENGALI { get { return LocalClazz.GetField<int>("BENGALI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#DEVANAGARI"/>
         /// </summary>
-        public static int DEVANAGARI => LocalClazz.GetField<int>("DEVANAGARI");
+        public static int DEVANAGARI { get { return LocalClazz.GetField<int>("DEVANAGARI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#EASTERN_ARABIC"/>
         /// </summary>
-        public static int EASTERN_ARABIC => LocalClazz.GetField<int>("EASTERN_ARABIC");
+        public static int EASTERN_ARABIC { get { return LocalClazz.GetField<int>("EASTERN_ARABIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#ETHIOPIC"/>
         /// </summary>
-        public static int ETHIOPIC => LocalClazz.GetField<int>("ETHIOPIC");
+        public static int ETHIOPIC { get { return LocalClazz.GetField<int>("ETHIOPIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#EUROPEAN"/>
         /// </summary>
-        public static int EUROPEAN => LocalClazz.GetField<int>("EUROPEAN");
+        public static int EUROPEAN { get { return LocalClazz.GetField<int>("EUROPEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#GUJARATI"/>
         /// </summary>
-        public static int GUJARATI => LocalClazz.GetField<int>("GUJARATI");
+        public static int GUJARATI { get { return LocalClazz.GetField<int>("GUJARATI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#GURMUKHI"/>
         /// </summary>
-        public static int GURMUKHI => LocalClazz.GetField<int>("GURMUKHI");
+        public static int GURMUKHI { get { return LocalClazz.GetField<int>("GURMUKHI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#KANNADA"/>
         /// </summary>
-        public static int KANNADA => LocalClazz.GetField<int>("KANNADA");
+        public static int KANNADA { get { return LocalClazz.GetField<int>("KANNADA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#KHMER"/>
         /// </summary>
-        public static int KHMER => LocalClazz.GetField<int>("KHMER");
+        public static int KHMER { get { return LocalClazz.GetField<int>("KHMER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#LAO"/>
         /// </summary>
-        public static int LAO => LocalClazz.GetField<int>("LAO");
+        public static int LAO { get { return LocalClazz.GetField<int>("LAO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#MALAYALAM"/>
         /// </summary>
-        public static int MALAYALAM => LocalClazz.GetField<int>("MALAYALAM");
+        public static int MALAYALAM { get { return LocalClazz.GetField<int>("MALAYALAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#MONGOLIAN"/>
         /// </summary>
-        public static int MONGOLIAN => LocalClazz.GetField<int>("MONGOLIAN");
+        public static int MONGOLIAN { get { return LocalClazz.GetField<int>("MONGOLIAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#MYANMAR"/>
         /// </summary>
-        public static int MYANMAR => LocalClazz.GetField<int>("MYANMAR");
+        public static int MYANMAR { get { return LocalClazz.GetField<int>("MYANMAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#ORIYA"/>
         /// </summary>
-        public static int ORIYA => LocalClazz.GetField<int>("ORIYA");
+        public static int ORIYA { get { return LocalClazz.GetField<int>("ORIYA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#TAMIL"/>
         /// </summary>
-        public static int TAMIL => LocalClazz.GetField<int>("TAMIL");
+        public static int TAMIL { get { return LocalClazz.GetField<int>("TAMIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#TELUGU"/>
         /// </summary>
-        public static int TELUGU => LocalClazz.GetField<int>("TELUGU");
+        public static int TELUGU { get { return LocalClazz.GetField<int>("TELUGU"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#THAI"/>
         /// </summary>
-        public static int THAI => LocalClazz.GetField<int>("THAI");
+        public static int THAI { get { return LocalClazz.GetField<int>("THAI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#TIBETAN"/>
         /// </summary>
-        public static int TIBETAN => LocalClazz.GetField<int>("TIBETAN");
+        public static int TIBETAN { get { return LocalClazz.GetField<int>("TIBETAN"); } }
         
         #endregion
 
@@ -257,151 +257,151 @@ namespace Java.Awt.FontNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#ARABIC"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range ARABIC => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ARABIC");
+            public static Java.Awt.FontNs.NumericShaper.Range ARABIC { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ARABIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#BALINESE"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range BALINESE => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("BALINESE");
+            public static Java.Awt.FontNs.NumericShaper.Range BALINESE { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("BALINESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#BENGALI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range BENGALI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("BENGALI");
+            public static Java.Awt.FontNs.NumericShaper.Range BENGALI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("BENGALI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#CHAM"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range CHAM => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("CHAM");
+            public static Java.Awt.FontNs.NumericShaper.Range CHAM { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("CHAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#DEVANAGARI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range DEVANAGARI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("DEVANAGARI");
+            public static Java.Awt.FontNs.NumericShaper.Range DEVANAGARI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("DEVANAGARI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#EASTERN_ARABIC"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range EASTERN_ARABIC => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("EASTERN_ARABIC");
+            public static Java.Awt.FontNs.NumericShaper.Range EASTERN_ARABIC { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("EASTERN_ARABIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#ETHIOPIC"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range ETHIOPIC => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ETHIOPIC");
+            public static Java.Awt.FontNs.NumericShaper.Range ETHIOPIC { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ETHIOPIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#EUROPEAN"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range EUROPEAN => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("EUROPEAN");
+            public static Java.Awt.FontNs.NumericShaper.Range EUROPEAN { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("EUROPEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#GUJARATI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range GUJARATI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("GUJARATI");
+            public static Java.Awt.FontNs.NumericShaper.Range GUJARATI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("GUJARATI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#GURMUKHI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range GURMUKHI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("GURMUKHI");
+            public static Java.Awt.FontNs.NumericShaper.Range GURMUKHI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("GURMUKHI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#JAVANESE"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range JAVANESE => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("JAVANESE");
+            public static Java.Awt.FontNs.NumericShaper.Range JAVANESE { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("JAVANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#KANNADA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range KANNADA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KANNADA");
+            public static Java.Awt.FontNs.NumericShaper.Range KANNADA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KANNADA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#KAYAH_LI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range KAYAH_LI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KAYAH_LI");
+            public static Java.Awt.FontNs.NumericShaper.Range KAYAH_LI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KAYAH_LI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#KHMER"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range KHMER => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KHMER");
+            public static Java.Awt.FontNs.NumericShaper.Range KHMER { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("KHMER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#LAO"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range LAO => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LAO");
+            public static Java.Awt.FontNs.NumericShaper.Range LAO { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LAO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#LEPCHA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range LEPCHA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LEPCHA");
+            public static Java.Awt.FontNs.NumericShaper.Range LEPCHA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LEPCHA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#LIMBU"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range LIMBU => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LIMBU");
+            public static Java.Awt.FontNs.NumericShaper.Range LIMBU { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("LIMBU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MALAYALAM"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MALAYALAM => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MALAYALAM");
+            public static Java.Awt.FontNs.NumericShaper.Range MALAYALAM { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MALAYALAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MEETEI_MAYEK"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MEETEI_MAYEK => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MEETEI_MAYEK");
+            public static Java.Awt.FontNs.NumericShaper.Range MEETEI_MAYEK { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MEETEI_MAYEK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MONGOLIAN"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MONGOLIAN => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MONGOLIAN");
+            public static Java.Awt.FontNs.NumericShaper.Range MONGOLIAN { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MONGOLIAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MYANMAR"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR");
+            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MYANMAR_SHAN"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR_SHAN => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR_SHAN");
+            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR_SHAN { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR_SHAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#MYANMAR_TAI_LAING"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR_TAI_LAING => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR_TAI_LAING");
+            public static Java.Awt.FontNs.NumericShaper.Range MYANMAR_TAI_LAING { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("MYANMAR_TAI_LAING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#NEW_TAI_LUE"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range NEW_TAI_LUE => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("NEW_TAI_LUE");
+            public static Java.Awt.FontNs.NumericShaper.Range NEW_TAI_LUE { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("NEW_TAI_LUE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#NKO"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range NKO => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("NKO");
+            public static Java.Awt.FontNs.NumericShaper.Range NKO { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("NKO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#OL_CHIKI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range OL_CHIKI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("OL_CHIKI");
+            public static Java.Awt.FontNs.NumericShaper.Range OL_CHIKI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("OL_CHIKI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#ORIYA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range ORIYA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ORIYA");
+            public static Java.Awt.FontNs.NumericShaper.Range ORIYA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("ORIYA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#SAURASHTRA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range SAURASHTRA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SAURASHTRA");
+            public static Java.Awt.FontNs.NumericShaper.Range SAURASHTRA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SAURASHTRA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#SINHALA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range SINHALA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SINHALA");
+            public static Java.Awt.FontNs.NumericShaper.Range SINHALA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SINHALA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#SUNDANESE"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range SUNDANESE => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SUNDANESE");
+            public static Java.Awt.FontNs.NumericShaper.Range SUNDANESE { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("SUNDANESE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#TAI_THAM_HORA"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range TAI_THAM_HORA => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAI_THAM_HORA");
+            public static Java.Awt.FontNs.NumericShaper.Range TAI_THAM_HORA { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAI_THAM_HORA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#TAI_THAM_THAM"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range TAI_THAM_THAM => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAI_THAM_THAM");
+            public static Java.Awt.FontNs.NumericShaper.Range TAI_THAM_THAM { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAI_THAM_THAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#TAMIL"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range TAMIL => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAMIL");
+            public static Java.Awt.FontNs.NumericShaper.Range TAMIL { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TAMIL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#TELUGU"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range TELUGU => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TELUGU");
+            public static Java.Awt.FontNs.NumericShaper.Range TELUGU { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TELUGU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#THAI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range THAI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("THAI");
+            public static Java.Awt.FontNs.NumericShaper.Range THAI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("THAI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#TIBETAN"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range TIBETAN => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TIBETAN");
+            public static Java.Awt.FontNs.NumericShaper.Range TIBETAN { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("TIBETAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#VAI"/>
             /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range VAI => LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("VAI");
+            public static Java.Awt.FontNs.NumericShaper.Range VAI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("VAI"); } }
             
             #endregion
 

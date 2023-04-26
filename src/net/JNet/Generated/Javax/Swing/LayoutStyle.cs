@@ -103,15 +103,15 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT => LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("INDENT");
+            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT { get { return LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("INDENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#RELATED"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED => LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("RELATED");
+            public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED { get { return LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("RELATED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED => LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("UNRELATED");
+            public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED { get { return LocalClazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("UNRELATED"); } }
             
             #endregion
 

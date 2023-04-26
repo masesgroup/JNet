@@ -52,15 +52,15 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX"/>
         /// </summary>
-        public static Java.Time.ZoneOffset MAX => LocalClazz.GetField<Java.Time.ZoneOffset>("MAX");
+        public static Java.Time.ZoneOffset MAX { get { return LocalClazz.GetField<Java.Time.ZoneOffset>("MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MIN"/>
         /// </summary>
-        public static Java.Time.ZoneOffset MIN => LocalClazz.GetField<Java.Time.ZoneOffset>("MIN");
+        public static Java.Time.ZoneOffset MIN { get { return LocalClazz.GetField<Java.Time.ZoneOffset>("MIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC"/>
         /// </summary>
-        public static Java.Time.ZoneOffset UTC => LocalClazz.GetField<Java.Time.ZoneOffset>("UTC");
+        public static Java.Time.ZoneOffset UTC { get { return LocalClazz.GetField<Java.Time.ZoneOffset>("UTC"); } }
         
         #endregion
 

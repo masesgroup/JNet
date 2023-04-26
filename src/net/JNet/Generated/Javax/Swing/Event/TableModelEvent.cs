@@ -90,23 +90,23 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS"/>
         /// </summary>
-        public static int ALL_COLUMNS => LocalClazz.GetField<int>("ALL_COLUMNS");
+        public static int ALL_COLUMNS { get { return LocalClazz.GetField<int>("ALL_COLUMNS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#DELETE"/>
         /// </summary>
-        public static int DELETE => LocalClazz.GetField<int>("DELETE");
+        public static int DELETE { get { return LocalClazz.GetField<int>("DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#HEADER_ROW"/>
         /// </summary>
-        public static int HEADER_ROW => LocalClazz.GetField<int>("HEADER_ROW");
+        public static int HEADER_ROW { get { return LocalClazz.GetField<int>("HEADER_ROW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT"/>
         /// </summary>
-        public static int INSERT => LocalClazz.GetField<int>("INSERT");
+        public static int INSERT { get { return LocalClazz.GetField<int>("INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE"/>
         /// </summary>
-        public static int UPDATE => LocalClazz.GetField<int>("UPDATE");
+        public static int UPDATE { get { return LocalClazz.GetField<int>("UPDATE"); } }
         
         #endregion
 

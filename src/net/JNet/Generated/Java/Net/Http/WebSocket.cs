@@ -40,7 +40,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#NORMAL_CLOSURE"/>
         /// </summary>
-        public static int NORMAL_CLOSURE => LocalClazz.GetField<int>("NORMAL_CLOSURE");
+        public static int NORMAL_CLOSURE { get { return LocalClazz.GetField<int>("NORMAL_CLOSURE"); } }
         
         #endregion
 

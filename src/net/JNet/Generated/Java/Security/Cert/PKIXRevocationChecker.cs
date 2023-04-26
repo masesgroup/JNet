@@ -106,19 +106,19 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#NO_FALLBACK"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option NO_FALLBACK => LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("NO_FALLBACK");
+            public static Java.Security.Cert.PKIXRevocationChecker.Option NO_FALLBACK { get { return LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("NO_FALLBACK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#ONLY_END_ENTITY"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option ONLY_END_ENTITY => LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("ONLY_END_ENTITY");
+            public static Java.Security.Cert.PKIXRevocationChecker.Option ONLY_END_ENTITY { get { return LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("ONLY_END_ENTITY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#PREFER_CRLS"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option PREFER_CRLS => LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("PREFER_CRLS");
+            public static Java.Security.Cert.PKIXRevocationChecker.Option PREFER_CRLS { get { return LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("PREFER_CRLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#SOFT_FAIL"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL => LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("SOFT_FAIL");
+            public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL { get { return LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("SOFT_FAIL"); } }
             
             #endregion
 

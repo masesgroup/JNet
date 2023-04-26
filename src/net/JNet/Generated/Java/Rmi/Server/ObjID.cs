@@ -52,15 +52,15 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#ACTIVATOR_ID"/>
         /// </summary>
-        public static int ACTIVATOR_ID => LocalClazz.GetField<int>("ACTIVATOR_ID");
+        public static int ACTIVATOR_ID { get { return LocalClazz.GetField<int>("ACTIVATOR_ID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#DGC_ID"/>
         /// </summary>
-        public static int DGC_ID => LocalClazz.GetField<int>("DGC_ID");
+        public static int DGC_ID { get { return LocalClazz.GetField<int>("DGC_ID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID"/>
         /// </summary>
-        public static int REGISTRY_ID => LocalClazz.GetField<int>("REGISTRY_ID");
+        public static int REGISTRY_ID { get { return LocalClazz.GetField<int>("REGISTRY_ID"); } }
         
         #endregion
 

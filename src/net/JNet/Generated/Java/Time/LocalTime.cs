@@ -56,19 +56,19 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MAX"/>
         /// </summary>
-        public static Java.Time.LocalTime MAX => LocalClazz.GetField<Java.Time.LocalTime>("MAX");
+        public static Java.Time.LocalTime MAX { get { return LocalClazz.GetField<Java.Time.LocalTime>("MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MIDNIGHT"/>
         /// </summary>
-        public static Java.Time.LocalTime MIDNIGHT => LocalClazz.GetField<Java.Time.LocalTime>("MIDNIGHT");
+        public static Java.Time.LocalTime MIDNIGHT { get { return LocalClazz.GetField<Java.Time.LocalTime>("MIDNIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MIN"/>
         /// </summary>
-        public static Java.Time.LocalTime MIN => LocalClazz.GetField<Java.Time.LocalTime>("MIN");
+        public static Java.Time.LocalTime MIN { get { return LocalClazz.GetField<Java.Time.LocalTime>("MIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#NOON"/>
         /// </summary>
-        public static Java.Time.LocalTime NOON => LocalClazz.GetField<Java.Time.LocalTime>("NOON");
+        public static Java.Time.LocalTime NOON { get { return LocalClazz.GetField<Java.Time.LocalTime>("NOON"); } }
         
         #endregion
 

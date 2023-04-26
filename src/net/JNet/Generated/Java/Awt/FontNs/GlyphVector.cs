@@ -44,23 +44,23 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_COMPLEX_GLYPHS"/>
         /// </summary>
-        public static int FLAG_COMPLEX_GLYPHS => LocalClazz.GetField<int>("FLAG_COMPLEX_GLYPHS");
+        public static int FLAG_COMPLEX_GLYPHS { get { return LocalClazz.GetField<int>("FLAG_COMPLEX_GLYPHS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_POSITION_ADJUSTMENTS"/>
         /// </summary>
-        public static int FLAG_HAS_POSITION_ADJUSTMENTS => LocalClazz.GetField<int>("FLAG_HAS_POSITION_ADJUSTMENTS");
+        public static int FLAG_HAS_POSITION_ADJUSTMENTS { get { return LocalClazz.GetField<int>("FLAG_HAS_POSITION_ADJUSTMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_TRANSFORMS"/>
         /// </summary>
-        public static int FLAG_HAS_TRANSFORMS => LocalClazz.GetField<int>("FLAG_HAS_TRANSFORMS");
+        public static int FLAG_HAS_TRANSFORMS { get { return LocalClazz.GetField<int>("FLAG_HAS_TRANSFORMS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_MASK"/>
         /// </summary>
-        public static int FLAG_MASK => LocalClazz.GetField<int>("FLAG_MASK");
+        public static int FLAG_MASK { get { return LocalClazz.GetField<int>("FLAG_MASK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_RUN_RTL"/>
         /// </summary>
-        public static int FLAG_RUN_RTL => LocalClazz.GetField<int>("FLAG_RUN_RTL");
+        public static int FLAG_RUN_RTL { get { return LocalClazz.GetField<int>("FLAG_RUN_RTL"); } }
         
         #endregion
 

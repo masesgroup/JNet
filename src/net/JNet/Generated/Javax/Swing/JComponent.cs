@@ -44,23 +44,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#UNDEFINED_CONDITION"/>
         /// </summary>
-        public static int UNDEFINED_CONDITION => LocalClazz.GetField<int>("UNDEFINED_CONDITION");
+        public static int UNDEFINED_CONDITION { get { return LocalClazz.GetField<int>("UNDEFINED_CONDITION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"/>
         /// </summary>
-        public static int WHEN_ANCESTOR_OF_FOCUSED_COMPONENT => LocalClazz.GetField<int>("WHEN_ANCESTOR_OF_FOCUSED_COMPONENT");
+        public static int WHEN_ANCESTOR_OF_FOCUSED_COMPONENT { get { return LocalClazz.GetField<int>("WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_FOCUSED"/>
         /// </summary>
-        public static int WHEN_FOCUSED => LocalClazz.GetField<int>("WHEN_FOCUSED");
+        public static int WHEN_FOCUSED { get { return LocalClazz.GetField<int>("WHEN_FOCUSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_IN_FOCUSED_WINDOW"/>
         /// </summary>
-        public static int WHEN_IN_FOCUSED_WINDOW => LocalClazz.GetField<int>("WHEN_IN_FOCUSED_WINDOW");
+        public static int WHEN_IN_FOCUSED_WINDOW { get { return LocalClazz.GetField<int>("WHEN_IN_FOCUSED_WINDOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#TOOL_TIP_TEXT_KEY"/>
         /// </summary>
-        public static string TOOL_TIP_TEXT_KEY => LocalClazz.GetField<string>("TOOL_TIP_TEXT_KEY");
+        public static string TOOL_TIP_TEXT_KEY { get { return LocalClazz.GetField<string>("TOOL_TIP_TEXT_KEY"); } }
         
         #endregion
 

@@ -89,67 +89,67 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ANCHOR_SELECTION_PATH_PROPERTY"/>
         /// </summary>
-        public static string ANCHOR_SELECTION_PATH_PROPERTY => LocalClazz.GetField<string>("ANCHOR_SELECTION_PATH_PROPERTY");
+        public static string ANCHOR_SELECTION_PATH_PROPERTY { get { return LocalClazz.GetField<string>("ANCHOR_SELECTION_PATH_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_EDITOR_PROPERTY"/>
         /// </summary>
-        public static string CELL_EDITOR_PROPERTY => LocalClazz.GetField<string>("CELL_EDITOR_PROPERTY");
+        public static string CELL_EDITOR_PROPERTY { get { return LocalClazz.GetField<string>("CELL_EDITOR_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_RENDERER_PROPERTY"/>
         /// </summary>
-        public static string CELL_RENDERER_PROPERTY => LocalClazz.GetField<string>("CELL_RENDERER_PROPERTY");
+        public static string CELL_RENDERER_PROPERTY { get { return LocalClazz.GetField<string>("CELL_RENDERER_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EDITABLE_PROPERTY"/>
         /// </summary>
-        public static string EDITABLE_PROPERTY => LocalClazz.GetField<string>("EDITABLE_PROPERTY");
+        public static string EDITABLE_PROPERTY { get { return LocalClazz.GetField<string>("EDITABLE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EXPANDS_SELECTED_PATHS_PROPERTY"/>
         /// </summary>
-        public static string EXPANDS_SELECTED_PATHS_PROPERTY => LocalClazz.GetField<string>("EXPANDS_SELECTED_PATHS_PROPERTY");
+        public static string EXPANDS_SELECTED_PATHS_PROPERTY { get { return LocalClazz.GetField<string>("EXPANDS_SELECTED_PATHS_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#INVOKES_STOP_CELL_EDITING_PROPERTY"/>
         /// </summary>
-        public static string INVOKES_STOP_CELL_EDITING_PROPERTY => LocalClazz.GetField<string>("INVOKES_STOP_CELL_EDITING_PROPERTY");
+        public static string INVOKES_STOP_CELL_EDITING_PROPERTY { get { return LocalClazz.GetField<string>("INVOKES_STOP_CELL_EDITING_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LARGE_MODEL_PROPERTY"/>
         /// </summary>
-        public static string LARGE_MODEL_PROPERTY => LocalClazz.GetField<string>("LARGE_MODEL_PROPERTY");
+        public static string LARGE_MODEL_PROPERTY { get { return LocalClazz.GetField<string>("LARGE_MODEL_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LEAD_SELECTION_PATH_PROPERTY"/>
         /// </summary>
-        public static string LEAD_SELECTION_PATH_PROPERTY => LocalClazz.GetField<string>("LEAD_SELECTION_PATH_PROPERTY");
+        public static string LEAD_SELECTION_PATH_PROPERTY { get { return LocalClazz.GetField<string>("LEAD_SELECTION_PATH_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROOT_VISIBLE_PROPERTY"/>
         /// </summary>
-        public static string ROOT_VISIBLE_PROPERTY => LocalClazz.GetField<string>("ROOT_VISIBLE_PROPERTY");
+        public static string ROOT_VISIBLE_PROPERTY { get { return LocalClazz.GetField<string>("ROOT_VISIBLE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROW_HEIGHT_PROPERTY"/>
         /// </summary>
-        public static string ROW_HEIGHT_PROPERTY => LocalClazz.GetField<string>("ROW_HEIGHT_PROPERTY");
+        public static string ROW_HEIGHT_PROPERTY { get { return LocalClazz.GetField<string>("ROW_HEIGHT_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SCROLLS_ON_EXPAND_PROPERTY"/>
         /// </summary>
-        public static string SCROLLS_ON_EXPAND_PROPERTY => LocalClazz.GetField<string>("SCROLLS_ON_EXPAND_PROPERTY");
+        public static string SCROLLS_ON_EXPAND_PROPERTY { get { return LocalClazz.GetField<string>("SCROLLS_ON_EXPAND_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SELECTION_MODEL_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_MODEL_PROPERTY => LocalClazz.GetField<string>("SELECTION_MODEL_PROPERTY");
+        public static string SELECTION_MODEL_PROPERTY { get { return LocalClazz.GetField<string>("SELECTION_MODEL_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SHOWS_ROOT_HANDLES_PROPERTY"/>
         /// </summary>
-        public static string SHOWS_ROOT_HANDLES_PROPERTY => LocalClazz.GetField<string>("SHOWS_ROOT_HANDLES_PROPERTY");
+        public static string SHOWS_ROOT_HANDLES_PROPERTY { get { return LocalClazz.GetField<string>("SHOWS_ROOT_HANDLES_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TOGGLE_CLICK_COUNT_PROPERTY"/>
         /// </summary>
-        public static string TOGGLE_CLICK_COUNT_PROPERTY => LocalClazz.GetField<string>("TOGGLE_CLICK_COUNT_PROPERTY");
+        public static string TOGGLE_CLICK_COUNT_PROPERTY { get { return LocalClazz.GetField<string>("TOGGLE_CLICK_COUNT_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TREE_MODEL_PROPERTY"/>
         /// </summary>
-        public static string TREE_MODEL_PROPERTY => LocalClazz.GetField<string>("TREE_MODEL_PROPERTY");
+        public static string TREE_MODEL_PROPERTY { get { return LocalClazz.GetField<string>("TREE_MODEL_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#VISIBLE_ROW_COUNT_PROPERTY"/>
         /// </summary>
-        public static string VISIBLE_ROW_COUNT_PROPERTY => LocalClazz.GetField<string>("VISIBLE_ROW_COUNT_PROPERTY");
+        public static string VISIBLE_ROW_COUNT_PROPERTY { get { return LocalClazz.GetField<string>("VISIBLE_ROW_COUNT_PROPERTY"); } }
         
         #endregion
 

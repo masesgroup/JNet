@@ -48,31 +48,31 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#FRIDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek FRIDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("FRIDAY");
+        public static Java.Time.DayOfWeek FRIDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("FRIDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#MONDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek MONDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("MONDAY");
+        public static Java.Time.DayOfWeek MONDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("MONDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#SATURDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek SATURDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("SATURDAY");
+        public static Java.Time.DayOfWeek SATURDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("SATURDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#SUNDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek SUNDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("SUNDAY");
+        public static Java.Time.DayOfWeek SUNDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("SUNDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#THURSDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek THURSDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("THURSDAY");
+        public static Java.Time.DayOfWeek THURSDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("THURSDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#TUESDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek TUESDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("TUESDAY");
+        public static Java.Time.DayOfWeek TUESDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("TUESDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#WEDNESDAY"/>
         /// </summary>
-        public static Java.Time.DayOfWeek WEDNESDAY => LocalClazz.GetField<Java.Time.DayOfWeek>("WEDNESDAY");
+        public static Java.Time.DayOfWeek WEDNESDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("WEDNESDAY"); } }
         
         #endregion
 

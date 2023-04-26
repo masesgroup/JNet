@@ -67,803 +67,803 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#CHAR_UNDEFINED"/>
         /// </summary>
-        public static char CHAR_UNDEFINED => LocalClazz.GetField<char>("CHAR_UNDEFINED");
+        public static char CHAR_UNDEFINED { get { return LocalClazz.GetField<char>("CHAR_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_FIRST"/>
         /// </summary>
-        public static int KEY_FIRST => LocalClazz.GetField<int>("KEY_FIRST");
+        public static int KEY_FIRST { get { return LocalClazz.GetField<int>("KEY_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LAST"/>
         /// </summary>
-        public static int KEY_LAST => LocalClazz.GetField<int>("KEY_LAST");
+        public static int KEY_LAST { get { return LocalClazz.GetField<int>("KEY_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_LEFT"/>
         /// </summary>
-        public static int KEY_LOCATION_LEFT => LocalClazz.GetField<int>("KEY_LOCATION_LEFT");
+        public static int KEY_LOCATION_LEFT { get { return LocalClazz.GetField<int>("KEY_LOCATION_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_NUMPAD"/>
         /// </summary>
-        public static int KEY_LOCATION_NUMPAD => LocalClazz.GetField<int>("KEY_LOCATION_NUMPAD");
+        public static int KEY_LOCATION_NUMPAD { get { return LocalClazz.GetField<int>("KEY_LOCATION_NUMPAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_RIGHT"/>
         /// </summary>
-        public static int KEY_LOCATION_RIGHT => LocalClazz.GetField<int>("KEY_LOCATION_RIGHT");
+        public static int KEY_LOCATION_RIGHT { get { return LocalClazz.GetField<int>("KEY_LOCATION_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_STANDARD"/>
         /// </summary>
-        public static int KEY_LOCATION_STANDARD => LocalClazz.GetField<int>("KEY_LOCATION_STANDARD");
+        public static int KEY_LOCATION_STANDARD { get { return LocalClazz.GetField<int>("KEY_LOCATION_STANDARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_UNKNOWN"/>
         /// </summary>
-        public static int KEY_LOCATION_UNKNOWN => LocalClazz.GetField<int>("KEY_LOCATION_UNKNOWN");
+        public static int KEY_LOCATION_UNKNOWN { get { return LocalClazz.GetField<int>("KEY_LOCATION_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_PRESSED"/>
         /// </summary>
-        public static int KEY_PRESSED => LocalClazz.GetField<int>("KEY_PRESSED");
+        public static int KEY_PRESSED { get { return LocalClazz.GetField<int>("KEY_PRESSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_RELEASED"/>
         /// </summary>
-        public static int KEY_RELEASED => LocalClazz.GetField<int>("KEY_RELEASED");
+        public static int KEY_RELEASED { get { return LocalClazz.GetField<int>("KEY_RELEASED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_TYPED"/>
         /// </summary>
-        public static int KEY_TYPED => LocalClazz.GetField<int>("KEY_TYPED");
+        public static int KEY_TYPED { get { return LocalClazz.GetField<int>("KEY_TYPED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_0"/>
         /// </summary>
-        public static int VK_0 => LocalClazz.GetField<int>("VK_0");
+        public static int VK_0 { get { return LocalClazz.GetField<int>("VK_0"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_1"/>
         /// </summary>
-        public static int VK_1 => LocalClazz.GetField<int>("VK_1");
+        public static int VK_1 { get { return LocalClazz.GetField<int>("VK_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_2"/>
         /// </summary>
-        public static int VK_2 => LocalClazz.GetField<int>("VK_2");
+        public static int VK_2 { get { return LocalClazz.GetField<int>("VK_2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_3"/>
         /// </summary>
-        public static int VK_3 => LocalClazz.GetField<int>("VK_3");
+        public static int VK_3 { get { return LocalClazz.GetField<int>("VK_3"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_4"/>
         /// </summary>
-        public static int VK_4 => LocalClazz.GetField<int>("VK_4");
+        public static int VK_4 { get { return LocalClazz.GetField<int>("VK_4"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_5"/>
         /// </summary>
-        public static int VK_5 => LocalClazz.GetField<int>("VK_5");
+        public static int VK_5 { get { return LocalClazz.GetField<int>("VK_5"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_6"/>
         /// </summary>
-        public static int VK_6 => LocalClazz.GetField<int>("VK_6");
+        public static int VK_6 { get { return LocalClazz.GetField<int>("VK_6"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_7"/>
         /// </summary>
-        public static int VK_7 => LocalClazz.GetField<int>("VK_7");
+        public static int VK_7 { get { return LocalClazz.GetField<int>("VK_7"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_8"/>
         /// </summary>
-        public static int VK_8 => LocalClazz.GetField<int>("VK_8");
+        public static int VK_8 { get { return LocalClazz.GetField<int>("VK_8"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_9"/>
         /// </summary>
-        public static int VK_9 => LocalClazz.GetField<int>("VK_9");
+        public static int VK_9 { get { return LocalClazz.GetField<int>("VK_9"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_A"/>
         /// </summary>
-        public static int VK_A => LocalClazz.GetField<int>("VK_A");
+        public static int VK_A { get { return LocalClazz.GetField<int>("VK_A"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ACCEPT"/>
         /// </summary>
-        public static int VK_ACCEPT => LocalClazz.GetField<int>("VK_ACCEPT");
+        public static int VK_ACCEPT { get { return LocalClazz.GetField<int>("VK_ACCEPT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ADD"/>
         /// </summary>
-        public static int VK_ADD => LocalClazz.GetField<int>("VK_ADD");
+        public static int VK_ADD { get { return LocalClazz.GetField<int>("VK_ADD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AGAIN"/>
         /// </summary>
-        public static int VK_AGAIN => LocalClazz.GetField<int>("VK_AGAIN");
+        public static int VK_AGAIN { get { return LocalClazz.GetField<int>("VK_AGAIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALL_CANDIDATES"/>
         /// </summary>
-        public static int VK_ALL_CANDIDATES => LocalClazz.GetField<int>("VK_ALL_CANDIDATES");
+        public static int VK_ALL_CANDIDATES { get { return LocalClazz.GetField<int>("VK_ALL_CANDIDATES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALPHANUMERIC"/>
         /// </summary>
-        public static int VK_ALPHANUMERIC => LocalClazz.GetField<int>("VK_ALPHANUMERIC");
+        public static int VK_ALPHANUMERIC { get { return LocalClazz.GetField<int>("VK_ALPHANUMERIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT"/>
         /// </summary>
-        public static int VK_ALT => LocalClazz.GetField<int>("VK_ALT");
+        public static int VK_ALT { get { return LocalClazz.GetField<int>("VK_ALT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT_GRAPH"/>
         /// </summary>
-        public static int VK_ALT_GRAPH => LocalClazz.GetField<int>("VK_ALT_GRAPH");
+        public static int VK_ALT_GRAPH { get { return LocalClazz.GetField<int>("VK_ALT_GRAPH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AMPERSAND"/>
         /// </summary>
-        public static int VK_AMPERSAND => LocalClazz.GetField<int>("VK_AMPERSAND");
+        public static int VK_AMPERSAND { get { return LocalClazz.GetField<int>("VK_AMPERSAND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ASTERISK"/>
         /// </summary>
-        public static int VK_ASTERISK => LocalClazz.GetField<int>("VK_ASTERISK");
+        public static int VK_ASTERISK { get { return LocalClazz.GetField<int>("VK_ASTERISK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AT"/>
         /// </summary>
-        public static int VK_AT => LocalClazz.GetField<int>("VK_AT");
+        public static int VK_AT { get { return LocalClazz.GetField<int>("VK_AT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_B"/>
         /// </summary>
-        public static int VK_B => LocalClazz.GetField<int>("VK_B");
+        public static int VK_B { get { return LocalClazz.GetField<int>("VK_B"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_QUOTE"/>
         /// </summary>
-        public static int VK_BACK_QUOTE => LocalClazz.GetField<int>("VK_BACK_QUOTE");
+        public static int VK_BACK_QUOTE { get { return LocalClazz.GetField<int>("VK_BACK_QUOTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SLASH"/>
         /// </summary>
-        public static int VK_BACK_SLASH => LocalClazz.GetField<int>("VK_BACK_SLASH");
+        public static int VK_BACK_SLASH { get { return LocalClazz.GetField<int>("VK_BACK_SLASH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SPACE"/>
         /// </summary>
-        public static int VK_BACK_SPACE => LocalClazz.GetField<int>("VK_BACK_SPACE");
+        public static int VK_BACK_SPACE { get { return LocalClazz.GetField<int>("VK_BACK_SPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BEGIN"/>
         /// </summary>
-        public static int VK_BEGIN => LocalClazz.GetField<int>("VK_BEGIN");
+        public static int VK_BEGIN { get { return LocalClazz.GetField<int>("VK_BEGIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACELEFT"/>
         /// </summary>
-        public static int VK_BRACELEFT => LocalClazz.GetField<int>("VK_BRACELEFT");
+        public static int VK_BRACELEFT { get { return LocalClazz.GetField<int>("VK_BRACELEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACERIGHT"/>
         /// </summary>
-        public static int VK_BRACERIGHT => LocalClazz.GetField<int>("VK_BRACERIGHT");
+        public static int VK_BRACERIGHT { get { return LocalClazz.GetField<int>("VK_BRACERIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_C"/>
         /// </summary>
-        public static int VK_C => LocalClazz.GetField<int>("VK_C");
+        public static int VK_C { get { return LocalClazz.GetField<int>("VK_C"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CANCEL"/>
         /// </summary>
-        public static int VK_CANCEL => LocalClazz.GetField<int>("VK_CANCEL");
+        public static int VK_CANCEL { get { return LocalClazz.GetField<int>("VK_CANCEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CAPS_LOCK"/>
         /// </summary>
-        public static int VK_CAPS_LOCK => LocalClazz.GetField<int>("VK_CAPS_LOCK");
+        public static int VK_CAPS_LOCK { get { return LocalClazz.GetField<int>("VK_CAPS_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CIRCUMFLEX"/>
         /// </summary>
-        public static int VK_CIRCUMFLEX => LocalClazz.GetField<int>("VK_CIRCUMFLEX");
+        public static int VK_CIRCUMFLEX { get { return LocalClazz.GetField<int>("VK_CIRCUMFLEX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLEAR"/>
         /// </summary>
-        public static int VK_CLEAR => LocalClazz.GetField<int>("VK_CLEAR");
+        public static int VK_CLEAR { get { return LocalClazz.GetField<int>("VK_CLEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLOSE_BRACKET"/>
         /// </summary>
-        public static int VK_CLOSE_BRACKET => LocalClazz.GetField<int>("VK_CLOSE_BRACKET");
+        public static int VK_CLOSE_BRACKET { get { return LocalClazz.GetField<int>("VK_CLOSE_BRACKET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CODE_INPUT"/>
         /// </summary>
-        public static int VK_CODE_INPUT => LocalClazz.GetField<int>("VK_CODE_INPUT");
+        public static int VK_CODE_INPUT { get { return LocalClazz.GetField<int>("VK_CODE_INPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COLON"/>
         /// </summary>
-        public static int VK_COLON => LocalClazz.GetField<int>("VK_COLON");
+        public static int VK_COLON { get { return LocalClazz.GetField<int>("VK_COLON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMMA"/>
         /// </summary>
-        public static int VK_COMMA => LocalClazz.GetField<int>("VK_COMMA");
+        public static int VK_COMMA { get { return LocalClazz.GetField<int>("VK_COMMA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMPOSE"/>
         /// </summary>
-        public static int VK_COMPOSE => LocalClazz.GetField<int>("VK_COMPOSE");
+        public static int VK_COMPOSE { get { return LocalClazz.GetField<int>("VK_COMPOSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTEXT_MENU"/>
         /// </summary>
-        public static int VK_CONTEXT_MENU => LocalClazz.GetField<int>("VK_CONTEXT_MENU");
+        public static int VK_CONTEXT_MENU { get { return LocalClazz.GetField<int>("VK_CONTEXT_MENU"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTROL"/>
         /// </summary>
-        public static int VK_CONTROL => LocalClazz.GetField<int>("VK_CONTROL");
+        public static int VK_CONTROL { get { return LocalClazz.GetField<int>("VK_CONTROL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONVERT"/>
         /// </summary>
-        public static int VK_CONVERT => LocalClazz.GetField<int>("VK_CONVERT");
+        public static int VK_CONVERT { get { return LocalClazz.GetField<int>("VK_CONVERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COPY"/>
         /// </summary>
-        public static int VK_COPY => LocalClazz.GetField<int>("VK_COPY");
+        public static int VK_COPY { get { return LocalClazz.GetField<int>("VK_COPY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CUT"/>
         /// </summary>
-        public static int VK_CUT => LocalClazz.GetField<int>("VK_CUT");
+        public static int VK_CUT { get { return LocalClazz.GetField<int>("VK_CUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_D"/>
         /// </summary>
-        public static int VK_D => LocalClazz.GetField<int>("VK_D");
+        public static int VK_D { get { return LocalClazz.GetField<int>("VK_D"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVEDOT"/>
         /// </summary>
-        public static int VK_DEAD_ABOVEDOT => LocalClazz.GetField<int>("VK_DEAD_ABOVEDOT");
+        public static int VK_DEAD_ABOVEDOT { get { return LocalClazz.GetField<int>("VK_DEAD_ABOVEDOT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVERING"/>
         /// </summary>
-        public static int VK_DEAD_ABOVERING => LocalClazz.GetField<int>("VK_DEAD_ABOVERING");
+        public static int VK_DEAD_ABOVERING { get { return LocalClazz.GetField<int>("VK_DEAD_ABOVERING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ACUTE"/>
         /// </summary>
-        public static int VK_DEAD_ACUTE => LocalClazz.GetField<int>("VK_DEAD_ACUTE");
+        public static int VK_DEAD_ACUTE { get { return LocalClazz.GetField<int>("VK_DEAD_ACUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_BREVE"/>
         /// </summary>
-        public static int VK_DEAD_BREVE => LocalClazz.GetField<int>("VK_DEAD_BREVE");
+        public static int VK_DEAD_BREVE { get { return LocalClazz.GetField<int>("VK_DEAD_BREVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CARON"/>
         /// </summary>
-        public static int VK_DEAD_CARON => LocalClazz.GetField<int>("VK_DEAD_CARON");
+        public static int VK_DEAD_CARON { get { return LocalClazz.GetField<int>("VK_DEAD_CARON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CEDILLA"/>
         /// </summary>
-        public static int VK_DEAD_CEDILLA => LocalClazz.GetField<int>("VK_DEAD_CEDILLA");
+        public static int VK_DEAD_CEDILLA { get { return LocalClazz.GetField<int>("VK_DEAD_CEDILLA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CIRCUMFLEX"/>
         /// </summary>
-        public static int VK_DEAD_CIRCUMFLEX => LocalClazz.GetField<int>("VK_DEAD_CIRCUMFLEX");
+        public static int VK_DEAD_CIRCUMFLEX { get { return LocalClazz.GetField<int>("VK_DEAD_CIRCUMFLEX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DIAERESIS"/>
         /// </summary>
-        public static int VK_DEAD_DIAERESIS => LocalClazz.GetField<int>("VK_DEAD_DIAERESIS");
+        public static int VK_DEAD_DIAERESIS { get { return LocalClazz.GetField<int>("VK_DEAD_DIAERESIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DOUBLEACUTE"/>
         /// </summary>
-        public static int VK_DEAD_DOUBLEACUTE => LocalClazz.GetField<int>("VK_DEAD_DOUBLEACUTE");
+        public static int VK_DEAD_DOUBLEACUTE { get { return LocalClazz.GetField<int>("VK_DEAD_DOUBLEACUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_GRAVE"/>
         /// </summary>
-        public static int VK_DEAD_GRAVE => LocalClazz.GetField<int>("VK_DEAD_GRAVE");
+        public static int VK_DEAD_GRAVE { get { return LocalClazz.GetField<int>("VK_DEAD_GRAVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_IOTA"/>
         /// </summary>
-        public static int VK_DEAD_IOTA => LocalClazz.GetField<int>("VK_DEAD_IOTA");
+        public static int VK_DEAD_IOTA { get { return LocalClazz.GetField<int>("VK_DEAD_IOTA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_MACRON"/>
         /// </summary>
-        public static int VK_DEAD_MACRON => LocalClazz.GetField<int>("VK_DEAD_MACRON");
+        public static int VK_DEAD_MACRON { get { return LocalClazz.GetField<int>("VK_DEAD_MACRON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_OGONEK"/>
         /// </summary>
-        public static int VK_DEAD_OGONEK => LocalClazz.GetField<int>("VK_DEAD_OGONEK");
+        public static int VK_DEAD_OGONEK { get { return LocalClazz.GetField<int>("VK_DEAD_OGONEK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_SEMIVOICED_SOUND"/>
         /// </summary>
-        public static int VK_DEAD_SEMIVOICED_SOUND => LocalClazz.GetField<int>("VK_DEAD_SEMIVOICED_SOUND");
+        public static int VK_DEAD_SEMIVOICED_SOUND { get { return LocalClazz.GetField<int>("VK_DEAD_SEMIVOICED_SOUND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_TILDE"/>
         /// </summary>
-        public static int VK_DEAD_TILDE => LocalClazz.GetField<int>("VK_DEAD_TILDE");
+        public static int VK_DEAD_TILDE { get { return LocalClazz.GetField<int>("VK_DEAD_TILDE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_VOICED_SOUND"/>
         /// </summary>
-        public static int VK_DEAD_VOICED_SOUND => LocalClazz.GetField<int>("VK_DEAD_VOICED_SOUND");
+        public static int VK_DEAD_VOICED_SOUND { get { return LocalClazz.GetField<int>("VK_DEAD_VOICED_SOUND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DECIMAL"/>
         /// </summary>
-        public static int VK_DECIMAL => LocalClazz.GetField<int>("VK_DECIMAL");
+        public static int VK_DECIMAL { get { return LocalClazz.GetField<int>("VK_DECIMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DELETE"/>
         /// </summary>
-        public static int VK_DELETE => LocalClazz.GetField<int>("VK_DELETE");
+        public static int VK_DELETE { get { return LocalClazz.GetField<int>("VK_DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DIVIDE"/>
         /// </summary>
-        public static int VK_DIVIDE => LocalClazz.GetField<int>("VK_DIVIDE");
+        public static int VK_DIVIDE { get { return LocalClazz.GetField<int>("VK_DIVIDE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOLLAR"/>
         /// </summary>
-        public static int VK_DOLLAR => LocalClazz.GetField<int>("VK_DOLLAR");
+        public static int VK_DOLLAR { get { return LocalClazz.GetField<int>("VK_DOLLAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOWN"/>
         /// </summary>
-        public static int VK_DOWN => LocalClazz.GetField<int>("VK_DOWN");
+        public static int VK_DOWN { get { return LocalClazz.GetField<int>("VK_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_E"/>
         /// </summary>
-        public static int VK_E => LocalClazz.GetField<int>("VK_E");
+        public static int VK_E { get { return LocalClazz.GetField<int>("VK_E"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_END"/>
         /// </summary>
-        public static int VK_END => LocalClazz.GetField<int>("VK_END");
+        public static int VK_END { get { return LocalClazz.GetField<int>("VK_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ENTER"/>
         /// </summary>
-        public static int VK_ENTER => LocalClazz.GetField<int>("VK_ENTER");
+        public static int VK_ENTER { get { return LocalClazz.GetField<int>("VK_ENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EQUALS"/>
         /// </summary>
-        public static int VK_EQUALS => LocalClazz.GetField<int>("VK_EQUALS");
+        public static int VK_EQUALS { get { return LocalClazz.GetField<int>("VK_EQUALS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ESCAPE"/>
         /// </summary>
-        public static int VK_ESCAPE => LocalClazz.GetField<int>("VK_ESCAPE");
+        public static int VK_ESCAPE { get { return LocalClazz.GetField<int>("VK_ESCAPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EURO_SIGN"/>
         /// </summary>
-        public static int VK_EURO_SIGN => LocalClazz.GetField<int>("VK_EURO_SIGN");
+        public static int VK_EURO_SIGN { get { return LocalClazz.GetField<int>("VK_EURO_SIGN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EXCLAMATION_MARK"/>
         /// </summary>
-        public static int VK_EXCLAMATION_MARK => LocalClazz.GetField<int>("VK_EXCLAMATION_MARK");
+        public static int VK_EXCLAMATION_MARK { get { return LocalClazz.GetField<int>("VK_EXCLAMATION_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F"/>
         /// </summary>
-        public static int VK_F => LocalClazz.GetField<int>("VK_F");
+        public static int VK_F { get { return LocalClazz.GetField<int>("VK_F"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F1"/>
         /// </summary>
-        public static int VK_F1 => LocalClazz.GetField<int>("VK_F1");
+        public static int VK_F1 { get { return LocalClazz.GetField<int>("VK_F1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F10"/>
         /// </summary>
-        public static int VK_F10 => LocalClazz.GetField<int>("VK_F10");
+        public static int VK_F10 { get { return LocalClazz.GetField<int>("VK_F10"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F11"/>
         /// </summary>
-        public static int VK_F11 => LocalClazz.GetField<int>("VK_F11");
+        public static int VK_F11 { get { return LocalClazz.GetField<int>("VK_F11"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F12"/>
         /// </summary>
-        public static int VK_F12 => LocalClazz.GetField<int>("VK_F12");
+        public static int VK_F12 { get { return LocalClazz.GetField<int>("VK_F12"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F13"/>
         /// </summary>
-        public static int VK_F13 => LocalClazz.GetField<int>("VK_F13");
+        public static int VK_F13 { get { return LocalClazz.GetField<int>("VK_F13"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F14"/>
         /// </summary>
-        public static int VK_F14 => LocalClazz.GetField<int>("VK_F14");
+        public static int VK_F14 { get { return LocalClazz.GetField<int>("VK_F14"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F15"/>
         /// </summary>
-        public static int VK_F15 => LocalClazz.GetField<int>("VK_F15");
+        public static int VK_F15 { get { return LocalClazz.GetField<int>("VK_F15"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F16"/>
         /// </summary>
-        public static int VK_F16 => LocalClazz.GetField<int>("VK_F16");
+        public static int VK_F16 { get { return LocalClazz.GetField<int>("VK_F16"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F17"/>
         /// </summary>
-        public static int VK_F17 => LocalClazz.GetField<int>("VK_F17");
+        public static int VK_F17 { get { return LocalClazz.GetField<int>("VK_F17"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F18"/>
         /// </summary>
-        public static int VK_F18 => LocalClazz.GetField<int>("VK_F18");
+        public static int VK_F18 { get { return LocalClazz.GetField<int>("VK_F18"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F19"/>
         /// </summary>
-        public static int VK_F19 => LocalClazz.GetField<int>("VK_F19");
+        public static int VK_F19 { get { return LocalClazz.GetField<int>("VK_F19"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F2"/>
         /// </summary>
-        public static int VK_F2 => LocalClazz.GetField<int>("VK_F2");
+        public static int VK_F2 { get { return LocalClazz.GetField<int>("VK_F2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F20"/>
         /// </summary>
-        public static int VK_F20 => LocalClazz.GetField<int>("VK_F20");
+        public static int VK_F20 { get { return LocalClazz.GetField<int>("VK_F20"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F21"/>
         /// </summary>
-        public static int VK_F21 => LocalClazz.GetField<int>("VK_F21");
+        public static int VK_F21 { get { return LocalClazz.GetField<int>("VK_F21"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F22"/>
         /// </summary>
-        public static int VK_F22 => LocalClazz.GetField<int>("VK_F22");
+        public static int VK_F22 { get { return LocalClazz.GetField<int>("VK_F22"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F23"/>
         /// </summary>
-        public static int VK_F23 => LocalClazz.GetField<int>("VK_F23");
+        public static int VK_F23 { get { return LocalClazz.GetField<int>("VK_F23"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F24"/>
         /// </summary>
-        public static int VK_F24 => LocalClazz.GetField<int>("VK_F24");
+        public static int VK_F24 { get { return LocalClazz.GetField<int>("VK_F24"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F3"/>
         /// </summary>
-        public static int VK_F3 => LocalClazz.GetField<int>("VK_F3");
+        public static int VK_F3 { get { return LocalClazz.GetField<int>("VK_F3"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F4"/>
         /// </summary>
-        public static int VK_F4 => LocalClazz.GetField<int>("VK_F4");
+        public static int VK_F4 { get { return LocalClazz.GetField<int>("VK_F4"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F5"/>
         /// </summary>
-        public static int VK_F5 => LocalClazz.GetField<int>("VK_F5");
+        public static int VK_F5 { get { return LocalClazz.GetField<int>("VK_F5"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F6"/>
         /// </summary>
-        public static int VK_F6 => LocalClazz.GetField<int>("VK_F6");
+        public static int VK_F6 { get { return LocalClazz.GetField<int>("VK_F6"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F7"/>
         /// </summary>
-        public static int VK_F7 => LocalClazz.GetField<int>("VK_F7");
+        public static int VK_F7 { get { return LocalClazz.GetField<int>("VK_F7"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F8"/>
         /// </summary>
-        public static int VK_F8 => LocalClazz.GetField<int>("VK_F8");
+        public static int VK_F8 { get { return LocalClazz.GetField<int>("VK_F8"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F9"/>
         /// </summary>
-        public static int VK_F9 => LocalClazz.GetField<int>("VK_F9");
+        public static int VK_F9 { get { return LocalClazz.GetField<int>("VK_F9"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FINAL"/>
         /// </summary>
-        public static int VK_FINAL => LocalClazz.GetField<int>("VK_FINAL");
+        public static int VK_FINAL { get { return LocalClazz.GetField<int>("VK_FINAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FIND"/>
         /// </summary>
-        public static int VK_FIND => LocalClazz.GetField<int>("VK_FIND");
+        public static int VK_FIND { get { return LocalClazz.GetField<int>("VK_FIND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FULL_WIDTH"/>
         /// </summary>
-        public static int VK_FULL_WIDTH => LocalClazz.GetField<int>("VK_FULL_WIDTH");
+        public static int VK_FULL_WIDTH { get { return LocalClazz.GetField<int>("VK_FULL_WIDTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_G"/>
         /// </summary>
-        public static int VK_G => LocalClazz.GetField<int>("VK_G");
+        public static int VK_G { get { return LocalClazz.GetField<int>("VK_G"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_GREATER"/>
         /// </summary>
-        public static int VK_GREATER => LocalClazz.GetField<int>("VK_GREATER");
+        public static int VK_GREATER { get { return LocalClazz.GetField<int>("VK_GREATER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_H"/>
         /// </summary>
-        public static int VK_H => LocalClazz.GetField<int>("VK_H");
+        public static int VK_H { get { return LocalClazz.GetField<int>("VK_H"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HALF_WIDTH"/>
         /// </summary>
-        public static int VK_HALF_WIDTH => LocalClazz.GetField<int>("VK_HALF_WIDTH");
+        public static int VK_HALF_WIDTH { get { return LocalClazz.GetField<int>("VK_HALF_WIDTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HELP"/>
         /// </summary>
-        public static int VK_HELP => LocalClazz.GetField<int>("VK_HELP");
+        public static int VK_HELP { get { return LocalClazz.GetField<int>("VK_HELP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HIRAGANA"/>
         /// </summary>
-        public static int VK_HIRAGANA => LocalClazz.GetField<int>("VK_HIRAGANA");
+        public static int VK_HIRAGANA { get { return LocalClazz.GetField<int>("VK_HIRAGANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HOME"/>
         /// </summary>
-        public static int VK_HOME => LocalClazz.GetField<int>("VK_HOME");
+        public static int VK_HOME { get { return LocalClazz.GetField<int>("VK_HOME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_I"/>
         /// </summary>
-        public static int VK_I => LocalClazz.GetField<int>("VK_I");
+        public static int VK_I { get { return LocalClazz.GetField<int>("VK_I"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INPUT_METHOD_ON_OFF"/>
         /// </summary>
-        public static int VK_INPUT_METHOD_ON_OFF => LocalClazz.GetField<int>("VK_INPUT_METHOD_ON_OFF");
+        public static int VK_INPUT_METHOD_ON_OFF { get { return LocalClazz.GetField<int>("VK_INPUT_METHOD_ON_OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INSERT"/>
         /// </summary>
-        public static int VK_INSERT => LocalClazz.GetField<int>("VK_INSERT");
+        public static int VK_INSERT { get { return LocalClazz.GetField<int>("VK_INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INVERTED_EXCLAMATION_MARK"/>
         /// </summary>
-        public static int VK_INVERTED_EXCLAMATION_MARK => LocalClazz.GetField<int>("VK_INVERTED_EXCLAMATION_MARK");
+        public static int VK_INVERTED_EXCLAMATION_MARK { get { return LocalClazz.GetField<int>("VK_INVERTED_EXCLAMATION_MARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_J"/>
         /// </summary>
-        public static int VK_J => LocalClazz.GetField<int>("VK_J");
+        public static int VK_J { get { return LocalClazz.GetField<int>("VK_J"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_HIRAGANA"/>
         /// </summary>
-        public static int VK_JAPANESE_HIRAGANA => LocalClazz.GetField<int>("VK_JAPANESE_HIRAGANA");
+        public static int VK_JAPANESE_HIRAGANA { get { return LocalClazz.GetField<int>("VK_JAPANESE_HIRAGANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_KATAKANA"/>
         /// </summary>
-        public static int VK_JAPANESE_KATAKANA => LocalClazz.GetField<int>("VK_JAPANESE_KATAKANA");
+        public static int VK_JAPANESE_KATAKANA { get { return LocalClazz.GetField<int>("VK_JAPANESE_KATAKANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_ROMAN"/>
         /// </summary>
-        public static int VK_JAPANESE_ROMAN => LocalClazz.GetField<int>("VK_JAPANESE_ROMAN");
+        public static int VK_JAPANESE_ROMAN { get { return LocalClazz.GetField<int>("VK_JAPANESE_ROMAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_K"/>
         /// </summary>
-        public static int VK_K => LocalClazz.GetField<int>("VK_K");
+        public static int VK_K { get { return LocalClazz.GetField<int>("VK_K"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA"/>
         /// </summary>
-        public static int VK_KANA => LocalClazz.GetField<int>("VK_KANA");
+        public static int VK_KANA { get { return LocalClazz.GetField<int>("VK_KANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA_LOCK"/>
         /// </summary>
-        public static int VK_KANA_LOCK => LocalClazz.GetField<int>("VK_KANA_LOCK");
+        public static int VK_KANA_LOCK { get { return LocalClazz.GetField<int>("VK_KANA_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANJI"/>
         /// </summary>
-        public static int VK_KANJI => LocalClazz.GetField<int>("VK_KANJI");
+        public static int VK_KANJI { get { return LocalClazz.GetField<int>("VK_KANJI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KATAKANA"/>
         /// </summary>
-        public static int VK_KATAKANA => LocalClazz.GetField<int>("VK_KATAKANA");
+        public static int VK_KATAKANA { get { return LocalClazz.GetField<int>("VK_KATAKANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_DOWN"/>
         /// </summary>
-        public static int VK_KP_DOWN => LocalClazz.GetField<int>("VK_KP_DOWN");
+        public static int VK_KP_DOWN { get { return LocalClazz.GetField<int>("VK_KP_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_LEFT"/>
         /// </summary>
-        public static int VK_KP_LEFT => LocalClazz.GetField<int>("VK_KP_LEFT");
+        public static int VK_KP_LEFT { get { return LocalClazz.GetField<int>("VK_KP_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_RIGHT"/>
         /// </summary>
-        public static int VK_KP_RIGHT => LocalClazz.GetField<int>("VK_KP_RIGHT");
+        public static int VK_KP_RIGHT { get { return LocalClazz.GetField<int>("VK_KP_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_UP"/>
         /// </summary>
-        public static int VK_KP_UP => LocalClazz.GetField<int>("VK_KP_UP");
+        public static int VK_KP_UP { get { return LocalClazz.GetField<int>("VK_KP_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_L"/>
         /// </summary>
-        public static int VK_L => LocalClazz.GetField<int>("VK_L");
+        public static int VK_L { get { return LocalClazz.GetField<int>("VK_L"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT"/>
         /// </summary>
-        public static int VK_LEFT => LocalClazz.GetField<int>("VK_LEFT");
+        public static int VK_LEFT { get { return LocalClazz.GetField<int>("VK_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT_PARENTHESIS"/>
         /// </summary>
-        public static int VK_LEFT_PARENTHESIS => LocalClazz.GetField<int>("VK_LEFT_PARENTHESIS");
+        public static int VK_LEFT_PARENTHESIS { get { return LocalClazz.GetField<int>("VK_LEFT_PARENTHESIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LESS"/>
         /// </summary>
-        public static int VK_LESS => LocalClazz.GetField<int>("VK_LESS");
+        public static int VK_LESS { get { return LocalClazz.GetField<int>("VK_LESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_M"/>
         /// </summary>
-        public static int VK_M => LocalClazz.GetField<int>("VK_M");
+        public static int VK_M { get { return LocalClazz.GetField<int>("VK_M"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_META"/>
         /// </summary>
-        public static int VK_META => LocalClazz.GetField<int>("VK_META");
+        public static int VK_META { get { return LocalClazz.GetField<int>("VK_META"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MINUS"/>
         /// </summary>
-        public static int VK_MINUS => LocalClazz.GetField<int>("VK_MINUS");
+        public static int VK_MINUS { get { return LocalClazz.GetField<int>("VK_MINUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MODECHANGE"/>
         /// </summary>
-        public static int VK_MODECHANGE => LocalClazz.GetField<int>("VK_MODECHANGE");
+        public static int VK_MODECHANGE { get { return LocalClazz.GetField<int>("VK_MODECHANGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MULTIPLY"/>
         /// </summary>
-        public static int VK_MULTIPLY => LocalClazz.GetField<int>("VK_MULTIPLY");
+        public static int VK_MULTIPLY { get { return LocalClazz.GetField<int>("VK_MULTIPLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_N"/>
         /// </summary>
-        public static int VK_N => LocalClazz.GetField<int>("VK_N");
+        public static int VK_N { get { return LocalClazz.GetField<int>("VK_N"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NONCONVERT"/>
         /// </summary>
-        public static int VK_NONCONVERT => LocalClazz.GetField<int>("VK_NONCONVERT");
+        public static int VK_NONCONVERT { get { return LocalClazz.GetField<int>("VK_NONCONVERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUM_LOCK"/>
         /// </summary>
-        public static int VK_NUM_LOCK => LocalClazz.GetField<int>("VK_NUM_LOCK");
+        public static int VK_NUM_LOCK { get { return LocalClazz.GetField<int>("VK_NUM_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMBER_SIGN"/>
         /// </summary>
-        public static int VK_NUMBER_SIGN => LocalClazz.GetField<int>("VK_NUMBER_SIGN");
+        public static int VK_NUMBER_SIGN { get { return LocalClazz.GetField<int>("VK_NUMBER_SIGN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD0"/>
         /// </summary>
-        public static int VK_NUMPAD0 => LocalClazz.GetField<int>("VK_NUMPAD0");
+        public static int VK_NUMPAD0 { get { return LocalClazz.GetField<int>("VK_NUMPAD0"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD1"/>
         /// </summary>
-        public static int VK_NUMPAD1 => LocalClazz.GetField<int>("VK_NUMPAD1");
+        public static int VK_NUMPAD1 { get { return LocalClazz.GetField<int>("VK_NUMPAD1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD2"/>
         /// </summary>
-        public static int VK_NUMPAD2 => LocalClazz.GetField<int>("VK_NUMPAD2");
+        public static int VK_NUMPAD2 { get { return LocalClazz.GetField<int>("VK_NUMPAD2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD3"/>
         /// </summary>
-        public static int VK_NUMPAD3 => LocalClazz.GetField<int>("VK_NUMPAD3");
+        public static int VK_NUMPAD3 { get { return LocalClazz.GetField<int>("VK_NUMPAD3"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD4"/>
         /// </summary>
-        public static int VK_NUMPAD4 => LocalClazz.GetField<int>("VK_NUMPAD4");
+        public static int VK_NUMPAD4 { get { return LocalClazz.GetField<int>("VK_NUMPAD4"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD5"/>
         /// </summary>
-        public static int VK_NUMPAD5 => LocalClazz.GetField<int>("VK_NUMPAD5");
+        public static int VK_NUMPAD5 { get { return LocalClazz.GetField<int>("VK_NUMPAD5"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD6"/>
         /// </summary>
-        public static int VK_NUMPAD6 => LocalClazz.GetField<int>("VK_NUMPAD6");
+        public static int VK_NUMPAD6 { get { return LocalClazz.GetField<int>("VK_NUMPAD6"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD7"/>
         /// </summary>
-        public static int VK_NUMPAD7 => LocalClazz.GetField<int>("VK_NUMPAD7");
+        public static int VK_NUMPAD7 { get { return LocalClazz.GetField<int>("VK_NUMPAD7"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD8"/>
         /// </summary>
-        public static int VK_NUMPAD8 => LocalClazz.GetField<int>("VK_NUMPAD8");
+        public static int VK_NUMPAD8 { get { return LocalClazz.GetField<int>("VK_NUMPAD8"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD9"/>
         /// </summary>
-        public static int VK_NUMPAD9 => LocalClazz.GetField<int>("VK_NUMPAD9");
+        public static int VK_NUMPAD9 { get { return LocalClazz.GetField<int>("VK_NUMPAD9"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_O"/>
         /// </summary>
-        public static int VK_O => LocalClazz.GetField<int>("VK_O");
+        public static int VK_O { get { return LocalClazz.GetField<int>("VK_O"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_OPEN_BRACKET"/>
         /// </summary>
-        public static int VK_OPEN_BRACKET => LocalClazz.GetField<int>("VK_OPEN_BRACKET");
+        public static int VK_OPEN_BRACKET { get { return LocalClazz.GetField<int>("VK_OPEN_BRACKET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_P"/>
         /// </summary>
-        public static int VK_P => LocalClazz.GetField<int>("VK_P");
+        public static int VK_P { get { return LocalClazz.GetField<int>("VK_P"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_DOWN"/>
         /// </summary>
-        public static int VK_PAGE_DOWN => LocalClazz.GetField<int>("VK_PAGE_DOWN");
+        public static int VK_PAGE_DOWN { get { return LocalClazz.GetField<int>("VK_PAGE_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_UP"/>
         /// </summary>
-        public static int VK_PAGE_UP => LocalClazz.GetField<int>("VK_PAGE_UP");
+        public static int VK_PAGE_UP { get { return LocalClazz.GetField<int>("VK_PAGE_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PASTE"/>
         /// </summary>
-        public static int VK_PASTE => LocalClazz.GetField<int>("VK_PASTE");
+        public static int VK_PASTE { get { return LocalClazz.GetField<int>("VK_PASTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAUSE"/>
         /// </summary>
-        public static int VK_PAUSE => LocalClazz.GetField<int>("VK_PAUSE");
+        public static int VK_PAUSE { get { return LocalClazz.GetField<int>("VK_PAUSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PERIOD"/>
         /// </summary>
-        public static int VK_PERIOD => LocalClazz.GetField<int>("VK_PERIOD");
+        public static int VK_PERIOD { get { return LocalClazz.GetField<int>("VK_PERIOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PLUS"/>
         /// </summary>
-        public static int VK_PLUS => LocalClazz.GetField<int>("VK_PLUS");
+        public static int VK_PLUS { get { return LocalClazz.GetField<int>("VK_PLUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PREVIOUS_CANDIDATE"/>
         /// </summary>
-        public static int VK_PREVIOUS_CANDIDATE => LocalClazz.GetField<int>("VK_PREVIOUS_CANDIDATE");
+        public static int VK_PREVIOUS_CANDIDATE { get { return LocalClazz.GetField<int>("VK_PREVIOUS_CANDIDATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PRINTSCREEN"/>
         /// </summary>
-        public static int VK_PRINTSCREEN => LocalClazz.GetField<int>("VK_PRINTSCREEN");
+        public static int VK_PRINTSCREEN { get { return LocalClazz.GetField<int>("VK_PRINTSCREEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PROPS"/>
         /// </summary>
-        public static int VK_PROPS => LocalClazz.GetField<int>("VK_PROPS");
+        public static int VK_PROPS { get { return LocalClazz.GetField<int>("VK_PROPS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Q"/>
         /// </summary>
-        public static int VK_Q => LocalClazz.GetField<int>("VK_Q");
+        public static int VK_Q { get { return LocalClazz.GetField<int>("VK_Q"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTE"/>
         /// </summary>
-        public static int VK_QUOTE => LocalClazz.GetField<int>("VK_QUOTE");
+        public static int VK_QUOTE { get { return LocalClazz.GetField<int>("VK_QUOTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTEDBL"/>
         /// </summary>
-        public static int VK_QUOTEDBL => LocalClazz.GetField<int>("VK_QUOTEDBL");
+        public static int VK_QUOTEDBL { get { return LocalClazz.GetField<int>("VK_QUOTEDBL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_R"/>
         /// </summary>
-        public static int VK_R => LocalClazz.GetField<int>("VK_R");
+        public static int VK_R { get { return LocalClazz.GetField<int>("VK_R"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT"/>
         /// </summary>
-        public static int VK_RIGHT => LocalClazz.GetField<int>("VK_RIGHT");
+        public static int VK_RIGHT { get { return LocalClazz.GetField<int>("VK_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT_PARENTHESIS"/>
         /// </summary>
-        public static int VK_RIGHT_PARENTHESIS => LocalClazz.GetField<int>("VK_RIGHT_PARENTHESIS");
+        public static int VK_RIGHT_PARENTHESIS { get { return LocalClazz.GetField<int>("VK_RIGHT_PARENTHESIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ROMAN_CHARACTERS"/>
         /// </summary>
-        public static int VK_ROMAN_CHARACTERS => LocalClazz.GetField<int>("VK_ROMAN_CHARACTERS");
+        public static int VK_ROMAN_CHARACTERS { get { return LocalClazz.GetField<int>("VK_ROMAN_CHARACTERS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_S"/>
         /// </summary>
-        public static int VK_S => LocalClazz.GetField<int>("VK_S");
+        public static int VK_S { get { return LocalClazz.GetField<int>("VK_S"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SCROLL_LOCK"/>
         /// </summary>
-        public static int VK_SCROLL_LOCK => LocalClazz.GetField<int>("VK_SCROLL_LOCK");
+        public static int VK_SCROLL_LOCK { get { return LocalClazz.GetField<int>("VK_SCROLL_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEMICOLON"/>
         /// </summary>
-        public static int VK_SEMICOLON => LocalClazz.GetField<int>("VK_SEMICOLON");
+        public static int VK_SEMICOLON { get { return LocalClazz.GetField<int>("VK_SEMICOLON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATER"/>
         /// </summary>
-        public static int VK_SEPARATER => LocalClazz.GetField<int>("VK_SEPARATER");
+        public static int VK_SEPARATER { get { return LocalClazz.GetField<int>("VK_SEPARATER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATOR"/>
         /// </summary>
-        public static int VK_SEPARATOR => LocalClazz.GetField<int>("VK_SEPARATOR");
+        public static int VK_SEPARATOR { get { return LocalClazz.GetField<int>("VK_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SHIFT"/>
         /// </summary>
-        public static int VK_SHIFT => LocalClazz.GetField<int>("VK_SHIFT");
+        public static int VK_SHIFT { get { return LocalClazz.GetField<int>("VK_SHIFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SLASH"/>
         /// </summary>
-        public static int VK_SLASH => LocalClazz.GetField<int>("VK_SLASH");
+        public static int VK_SLASH { get { return LocalClazz.GetField<int>("VK_SLASH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SPACE"/>
         /// </summary>
-        public static int VK_SPACE => LocalClazz.GetField<int>("VK_SPACE");
+        public static int VK_SPACE { get { return LocalClazz.GetField<int>("VK_SPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_STOP"/>
         /// </summary>
-        public static int VK_STOP => LocalClazz.GetField<int>("VK_STOP");
+        public static int VK_STOP { get { return LocalClazz.GetField<int>("VK_STOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SUBTRACT"/>
         /// </summary>
-        public static int VK_SUBTRACT => LocalClazz.GetField<int>("VK_SUBTRACT");
+        public static int VK_SUBTRACT { get { return LocalClazz.GetField<int>("VK_SUBTRACT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_T"/>
         /// </summary>
-        public static int VK_T => LocalClazz.GetField<int>("VK_T");
+        public static int VK_T { get { return LocalClazz.GetField<int>("VK_T"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_TAB"/>
         /// </summary>
-        public static int VK_TAB => LocalClazz.GetField<int>("VK_TAB");
+        public static int VK_TAB { get { return LocalClazz.GetField<int>("VK_TAB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_U"/>
         /// </summary>
-        public static int VK_U => LocalClazz.GetField<int>("VK_U");
+        public static int VK_U { get { return LocalClazz.GetField<int>("VK_U"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDEFINED"/>
         /// </summary>
-        public static int VK_UNDEFINED => LocalClazz.GetField<int>("VK_UNDEFINED");
+        public static int VK_UNDEFINED { get { return LocalClazz.GetField<int>("VK_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDERSCORE"/>
         /// </summary>
-        public static int VK_UNDERSCORE => LocalClazz.GetField<int>("VK_UNDERSCORE");
+        public static int VK_UNDERSCORE { get { return LocalClazz.GetField<int>("VK_UNDERSCORE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDO"/>
         /// </summary>
-        public static int VK_UNDO => LocalClazz.GetField<int>("VK_UNDO");
+        public static int VK_UNDO { get { return LocalClazz.GetField<int>("VK_UNDO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UP"/>
         /// </summary>
-        public static int VK_UP => LocalClazz.GetField<int>("VK_UP");
+        public static int VK_UP { get { return LocalClazz.GetField<int>("VK_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_V"/>
         /// </summary>
-        public static int VK_V => LocalClazz.GetField<int>("VK_V");
+        public static int VK_V { get { return LocalClazz.GetField<int>("VK_V"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_W"/>
         /// </summary>
-        public static int VK_W => LocalClazz.GetField<int>("VK_W");
+        public static int VK_W { get { return LocalClazz.GetField<int>("VK_W"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_WINDOWS"/>
         /// </summary>
-        public static int VK_WINDOWS => LocalClazz.GetField<int>("VK_WINDOWS");
+        public static int VK_WINDOWS { get { return LocalClazz.GetField<int>("VK_WINDOWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_X"/>
         /// </summary>
-        public static int VK_X => LocalClazz.GetField<int>("VK_X");
+        public static int VK_X { get { return LocalClazz.GetField<int>("VK_X"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Y"/>
         /// </summary>
-        public static int VK_Y => LocalClazz.GetField<int>("VK_Y");
+        public static int VK_Y { get { return LocalClazz.GetField<int>("VK_Y"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Z"/>
         /// </summary>
-        public static int VK_Z => LocalClazz.GetField<int>("VK_Z");
+        public static int VK_Z { get { return LocalClazz.GetField<int>("VK_Z"); } }
         
         #endregion
 

@@ -96,15 +96,15 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability NONE => LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("NONE");
+            public static Java.Security.DrbgParameters.Capability NONE { get { return LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("NONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#PR_AND_RESEED"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability PR_AND_RESEED => LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("PR_AND_RESEED");
+            public static Java.Security.DrbgParameters.Capability PR_AND_RESEED { get { return LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("PR_AND_RESEED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability RESEED_ONLY => LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("RESEED_ONLY");
+            public static Java.Security.DrbgParameters.Capability RESEED_ONLY { get { return LocalClazz.GetField<Java.Security.DrbgParameters.Capability>("RESEED_ONLY"); } }
             
             #endregion
 

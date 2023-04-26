@@ -40,207 +40,207 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_ACNT"/>
         /// </summary>
-        public static int TAG_ACNT => LocalClazz.GetField<int>("TAG_ACNT");
+        public static int TAG_ACNT { get { return LocalClazz.GetField<int>("TAG_ACNT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_AVAR"/>
         /// </summary>
-        public static int TAG_AVAR => LocalClazz.GetField<int>("TAG_AVAR");
+        public static int TAG_AVAR { get { return LocalClazz.GetField<int>("TAG_AVAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BASE"/>
         /// </summary>
-        public static int TAG_BASE => LocalClazz.GetField<int>("TAG_BASE");
+        public static int TAG_BASE { get { return LocalClazz.GetField<int>("TAG_BASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BDAT"/>
         /// </summary>
-        public static int TAG_BDAT => LocalClazz.GetField<int>("TAG_BDAT");
+        public static int TAG_BDAT { get { return LocalClazz.GetField<int>("TAG_BDAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BLOC"/>
         /// </summary>
-        public static int TAG_BLOC => LocalClazz.GetField<int>("TAG_BLOC");
+        public static int TAG_BLOC { get { return LocalClazz.GetField<int>("TAG_BLOC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BSLN"/>
         /// </summary>
-        public static int TAG_BSLN => LocalClazz.GetField<int>("TAG_BSLN");
+        public static int TAG_BSLN { get { return LocalClazz.GetField<int>("TAG_BSLN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CFF"/>
         /// </summary>
-        public static int TAG_CFF => LocalClazz.GetField<int>("TAG_CFF");
+        public static int TAG_CFF { get { return LocalClazz.GetField<int>("TAG_CFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CMAP"/>
         /// </summary>
-        public static int TAG_CMAP => LocalClazz.GetField<int>("TAG_CMAP");
+        public static int TAG_CMAP { get { return LocalClazz.GetField<int>("TAG_CMAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVAR"/>
         /// </summary>
-        public static int TAG_CVAR => LocalClazz.GetField<int>("TAG_CVAR");
+        public static int TAG_CVAR { get { return LocalClazz.GetField<int>("TAG_CVAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVT"/>
         /// </summary>
-        public static int TAG_CVT => LocalClazz.GetField<int>("TAG_CVT");
+        public static int TAG_CVT { get { return LocalClazz.GetField<int>("TAG_CVT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_DSIG"/>
         /// </summary>
-        public static int TAG_DSIG => LocalClazz.GetField<int>("TAG_DSIG");
+        public static int TAG_DSIG { get { return LocalClazz.GetField<int>("TAG_DSIG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBDT"/>
         /// </summary>
-        public static int TAG_EBDT => LocalClazz.GetField<int>("TAG_EBDT");
+        public static int TAG_EBDT { get { return LocalClazz.GetField<int>("TAG_EBDT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBLC"/>
         /// </summary>
-        public static int TAG_EBLC => LocalClazz.GetField<int>("TAG_EBLC");
+        public static int TAG_EBLC { get { return LocalClazz.GetField<int>("TAG_EBLC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBSC"/>
         /// </summary>
-        public static int TAG_EBSC => LocalClazz.GetField<int>("TAG_EBSC");
+        public static int TAG_EBSC { get { return LocalClazz.GetField<int>("TAG_EBSC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FDSC"/>
         /// </summary>
-        public static int TAG_FDSC => LocalClazz.GetField<int>("TAG_FDSC");
+        public static int TAG_FDSC { get { return LocalClazz.GetField<int>("TAG_FDSC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FEAT"/>
         /// </summary>
-        public static int TAG_FEAT => LocalClazz.GetField<int>("TAG_FEAT");
+        public static int TAG_FEAT { get { return LocalClazz.GetField<int>("TAG_FEAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FMTX"/>
         /// </summary>
-        public static int TAG_FMTX => LocalClazz.GetField<int>("TAG_FMTX");
+        public static int TAG_FMTX { get { return LocalClazz.GetField<int>("TAG_FMTX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FPGM"/>
         /// </summary>
-        public static int TAG_FPGM => LocalClazz.GetField<int>("TAG_FPGM");
+        public static int TAG_FPGM { get { return LocalClazz.GetField<int>("TAG_FPGM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FVAR"/>
         /// </summary>
-        public static int TAG_FVAR => LocalClazz.GetField<int>("TAG_FVAR");
+        public static int TAG_FVAR { get { return LocalClazz.GetField<int>("TAG_FVAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GASP"/>
         /// </summary>
-        public static int TAG_GASP => LocalClazz.GetField<int>("TAG_GASP");
+        public static int TAG_GASP { get { return LocalClazz.GetField<int>("TAG_GASP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GDEF"/>
         /// </summary>
-        public static int TAG_GDEF => LocalClazz.GetField<int>("TAG_GDEF");
+        public static int TAG_GDEF { get { return LocalClazz.GetField<int>("TAG_GDEF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GLYF"/>
         /// </summary>
-        public static int TAG_GLYF => LocalClazz.GetField<int>("TAG_GLYF");
+        public static int TAG_GLYF { get { return LocalClazz.GetField<int>("TAG_GLYF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GPOS"/>
         /// </summary>
-        public static int TAG_GPOS => LocalClazz.GetField<int>("TAG_GPOS");
+        public static int TAG_GPOS { get { return LocalClazz.GetField<int>("TAG_GPOS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GSUB"/>
         /// </summary>
-        public static int TAG_GSUB => LocalClazz.GetField<int>("TAG_GSUB");
+        public static int TAG_GSUB { get { return LocalClazz.GetField<int>("TAG_GSUB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GVAR"/>
         /// </summary>
-        public static int TAG_GVAR => LocalClazz.GetField<int>("TAG_GVAR");
+        public static int TAG_GVAR { get { return LocalClazz.GetField<int>("TAG_GVAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HDMX"/>
         /// </summary>
-        public static int TAG_HDMX => LocalClazz.GetField<int>("TAG_HDMX");
+        public static int TAG_HDMX { get { return LocalClazz.GetField<int>("TAG_HDMX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HEAD"/>
         /// </summary>
-        public static int TAG_HEAD => LocalClazz.GetField<int>("TAG_HEAD");
+        public static int TAG_HEAD { get { return LocalClazz.GetField<int>("TAG_HEAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HHEA"/>
         /// </summary>
-        public static int TAG_HHEA => LocalClazz.GetField<int>("TAG_HHEA");
+        public static int TAG_HHEA { get { return LocalClazz.GetField<int>("TAG_HHEA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HMTX"/>
         /// </summary>
-        public static int TAG_HMTX => LocalClazz.GetField<int>("TAG_HMTX");
+        public static int TAG_HMTX { get { return LocalClazz.GetField<int>("TAG_HMTX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JSTF"/>
         /// </summary>
-        public static int TAG_JSTF => LocalClazz.GetField<int>("TAG_JSTF");
+        public static int TAG_JSTF { get { return LocalClazz.GetField<int>("TAG_JSTF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JUST"/>
         /// </summary>
-        public static int TAG_JUST => LocalClazz.GetField<int>("TAG_JUST");
+        public static int TAG_JUST { get { return LocalClazz.GetField<int>("TAG_JUST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_KERN"/>
         /// </summary>
-        public static int TAG_KERN => LocalClazz.GetField<int>("TAG_KERN");
+        public static int TAG_KERN { get { return LocalClazz.GetField<int>("TAG_KERN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LCAR"/>
         /// </summary>
-        public static int TAG_LCAR => LocalClazz.GetField<int>("TAG_LCAR");
+        public static int TAG_LCAR { get { return LocalClazz.GetField<int>("TAG_LCAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LOCA"/>
         /// </summary>
-        public static int TAG_LOCA => LocalClazz.GetField<int>("TAG_LOCA");
+        public static int TAG_LOCA { get { return LocalClazz.GetField<int>("TAG_LOCA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LTSH"/>
         /// </summary>
-        public static int TAG_LTSH => LocalClazz.GetField<int>("TAG_LTSH");
+        public static int TAG_LTSH { get { return LocalClazz.GetField<int>("TAG_LTSH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MAXP"/>
         /// </summary>
-        public static int TAG_MAXP => LocalClazz.GetField<int>("TAG_MAXP");
+        public static int TAG_MAXP { get { return LocalClazz.GetField<int>("TAG_MAXP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMFX"/>
         /// </summary>
-        public static int TAG_MMFX => LocalClazz.GetField<int>("TAG_MMFX");
+        public static int TAG_MMFX { get { return LocalClazz.GetField<int>("TAG_MMFX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMSD"/>
         /// </summary>
-        public static int TAG_MMSD => LocalClazz.GetField<int>("TAG_MMSD");
+        public static int TAG_MMSD { get { return LocalClazz.GetField<int>("TAG_MMSD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MORT"/>
         /// </summary>
-        public static int TAG_MORT => LocalClazz.GetField<int>("TAG_MORT");
+        public static int TAG_MORT { get { return LocalClazz.GetField<int>("TAG_MORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_NAME"/>
         /// </summary>
-        public static int TAG_NAME => LocalClazz.GetField<int>("TAG_NAME");
+        public static int TAG_NAME { get { return LocalClazz.GetField<int>("TAG_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OPBD"/>
         /// </summary>
-        public static int TAG_OPBD => LocalClazz.GetField<int>("TAG_OPBD");
+        public static int TAG_OPBD { get { return LocalClazz.GetField<int>("TAG_OPBD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OS2"/>
         /// </summary>
-        public static int TAG_OS2 => LocalClazz.GetField<int>("TAG_OS2");
+        public static int TAG_OS2 { get { return LocalClazz.GetField<int>("TAG_OS2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PCLT"/>
         /// </summary>
-        public static int TAG_PCLT => LocalClazz.GetField<int>("TAG_PCLT");
+        public static int TAG_PCLT { get { return LocalClazz.GetField<int>("TAG_PCLT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_POST"/>
         /// </summary>
-        public static int TAG_POST => LocalClazz.GetField<int>("TAG_POST");
+        public static int TAG_POST { get { return LocalClazz.GetField<int>("TAG_POST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PREP"/>
         /// </summary>
-        public static int TAG_PREP => LocalClazz.GetField<int>("TAG_PREP");
+        public static int TAG_PREP { get { return LocalClazz.GetField<int>("TAG_PREP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PROP"/>
         /// </summary>
-        public static int TAG_PROP => LocalClazz.GetField<int>("TAG_PROP");
+        public static int TAG_PROP { get { return LocalClazz.GetField<int>("TAG_PROP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TRAK"/>
         /// </summary>
-        public static int TAG_TRAK => LocalClazz.GetField<int>("TAG_TRAK");
+        public static int TAG_TRAK { get { return LocalClazz.GetField<int>("TAG_TRAK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TYP1"/>
         /// </summary>
-        public static int TAG_TYP1 => LocalClazz.GetField<int>("TAG_TYP1");
+        public static int TAG_TYP1 { get { return LocalClazz.GetField<int>("TAG_TYP1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VDMX"/>
         /// </summary>
-        public static int TAG_VDMX => LocalClazz.GetField<int>("TAG_VDMX");
+        public static int TAG_VDMX { get { return LocalClazz.GetField<int>("TAG_VDMX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VHEA"/>
         /// </summary>
-        public static int TAG_VHEA => LocalClazz.GetField<int>("TAG_VHEA");
+        public static int TAG_VHEA { get { return LocalClazz.GetField<int>("TAG_VHEA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VMTX"/>
         /// </summary>
-        public static int TAG_VMTX => LocalClazz.GetField<int>("TAG_VMTX");
+        public static int TAG_VMTX { get { return LocalClazz.GetField<int>("TAG_VMTX"); } }
         
         #endregion
 

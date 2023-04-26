@@ -40,27 +40,27 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#FULL"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle FULL => LocalClazz.GetField<Java.Time.Format.TextStyle>("FULL");
+        public static Java.Time.Format.TextStyle FULL { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#FULL_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle FULL_STANDALONE => LocalClazz.GetField<Java.Time.Format.TextStyle>("FULL_STANDALONE");
+        public static Java.Time.Format.TextStyle FULL_STANDALONE { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("FULL_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle NARROW => LocalClazz.GetField<Java.Time.Format.TextStyle>("NARROW");
+        public static Java.Time.Format.TextStyle NARROW { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("NARROW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle NARROW_STANDALONE => LocalClazz.GetField<Java.Time.Format.TextStyle>("NARROW_STANDALONE");
+        public static Java.Time.Format.TextStyle NARROW_STANDALONE { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("NARROW_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle SHORT => LocalClazz.GetField<Java.Time.Format.TextStyle>("SHORT");
+        public static Java.Time.Format.TextStyle SHORT { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle SHORT_STANDALONE => LocalClazz.GetField<Java.Time.Format.TextStyle>("SHORT_STANDALONE");
+        public static Java.Time.Format.TextStyle SHORT_STANDALONE { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("SHORT_STANDALONE"); } }
         
         #endregion
 

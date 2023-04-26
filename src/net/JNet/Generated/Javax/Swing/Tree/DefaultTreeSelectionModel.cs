@@ -52,7 +52,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#SELECTION_MODE_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_MODE_PROPERTY => LocalClazz.GetField<string>("SELECTION_MODE_PROPERTY");
+        public static string SELECTION_MODE_PROPERTY { get { return LocalClazz.GetField<string>("SELECTION_MODE_PROPERTY"); } }
         
         #endregion
 

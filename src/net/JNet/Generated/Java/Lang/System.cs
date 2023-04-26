@@ -40,15 +40,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#in"/>
         /// </summary>
-        public static Java.Io.InputStream inField => LocalClazz.GetField<Java.Io.InputStream>("in");
+        public static Java.Io.InputStream inField { get { return LocalClazz.GetField<Java.Io.InputStream>("in"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err"/>
         /// </summary>
-        public static Java.Io.PrintStream err => LocalClazz.GetField<Java.Io.PrintStream>("err");
+        public static Java.Io.PrintStream err { get { return LocalClazz.GetField<Java.Io.PrintStream>("err"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out"/>
         /// </summary>
-        public static Java.Io.PrintStream outField => LocalClazz.GetField<Java.Io.PrintStream>("out");
+        public static Java.Io.PrintStream outField { get { return LocalClazz.GetField<Java.Io.PrintStream>("out"); } }
         
         #endregion
 

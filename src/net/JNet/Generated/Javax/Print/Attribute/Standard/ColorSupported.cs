@@ -44,11 +44,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ColorSupported.html#NOT_SUPPORTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ColorSupported NOT_SUPPORTED => LocalClazz.GetField<Javax.Print.Attribute.Standard.ColorSupported>("NOT_SUPPORTED");
+        public static Javax.Print.Attribute.Standard.ColorSupported NOT_SUPPORTED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ColorSupported>("NOT_SUPPORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ColorSupported.html#SUPPORTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.ColorSupported SUPPORTED => LocalClazz.GetField<Javax.Print.Attribute.Standard.ColorSupported>("SUPPORTED");
+        public static Javax.Print.Attribute.Standard.ColorSupported SUPPORTED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ColorSupported>("SUPPORTED"); } }
         
         #endregion
 

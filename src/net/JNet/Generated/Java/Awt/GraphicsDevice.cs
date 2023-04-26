@@ -40,15 +40,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_IMAGE_BUFFER"/>
         /// </summary>
-        public static int TYPE_IMAGE_BUFFER => LocalClazz.GetField<int>("TYPE_IMAGE_BUFFER");
+        public static int TYPE_IMAGE_BUFFER { get { return LocalClazz.GetField<int>("TYPE_IMAGE_BUFFER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_PRINTER"/>
         /// </summary>
-        public static int TYPE_PRINTER => LocalClazz.GetField<int>("TYPE_PRINTER");
+        public static int TYPE_PRINTER { get { return LocalClazz.GetField<int>("TYPE_PRINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_RASTER_SCREEN"/>
         /// </summary>
-        public static int TYPE_RASTER_SCREEN => LocalClazz.GetField<int>("TYPE_RASTER_SCREEN");
+        public static int TYPE_RASTER_SCREEN { get { return LocalClazz.GetField<int>("TYPE_RASTER_SCREEN"); } }
         
         #endregion
 
@@ -164,15 +164,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSLUCENT"/>
             /// </summary>
-            public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSLUCENT => LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSLUCENT");
+            public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSLUCENT { get { return LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSLUCENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSPARENT"/>
             /// </summary>
-            public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSPARENT => LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSPARENT");
+            public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSPARENT { get { return LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSPARENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#TRANSLUCENT"/>
             /// </summary>
-            public static Java.Awt.GraphicsDevice.WindowTranslucency TRANSLUCENT => LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("TRANSLUCENT");
+            public static Java.Awt.GraphicsDevice.WindowTranslucency TRANSLUCENT { get { return LocalClazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("TRANSLUCENT"); } }
             
             #endregion
 

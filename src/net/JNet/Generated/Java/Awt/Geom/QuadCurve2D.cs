@@ -401,27 +401,27 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#ctrlx"/>
             /// </summary>
-            public double ctrlx => Instance.GetField<double>("ctrlx");
+            public double ctrlx { get { return Instance.GetField<double>("ctrlx"); } set { Instance.SetField("ctrlx", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#ctrly"/>
             /// </summary>
-            public double ctrly => Instance.GetField<double>("ctrly");
+            public double ctrly { get { return Instance.GetField<double>("ctrly"); } set { Instance.SetField("ctrly", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#x1"/>
             /// </summary>
-            public double x1 => Instance.GetField<double>("x1");
+            public double x1 { get { return Instance.GetField<double>("x1"); } set { Instance.SetField("x1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#x2"/>
             /// </summary>
-            public double x2 => Instance.GetField<double>("x2");
+            public double x2 { get { return Instance.GetField<double>("x2"); } set { Instance.SetField("x2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#y1"/>
             /// </summary>
-            public double y1 => Instance.GetField<double>("y1");
+            public double y1 { get { return Instance.GetField<double>("y1"); } set { Instance.SetField("y1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#y2"/>
             /// </summary>
-            public double y2 => Instance.GetField<double>("y2");
+            public double y2 { get { return Instance.GetField<double>("y2"); } set { Instance.SetField("y2", value); } }
             
             #endregion
 
@@ -469,27 +469,27 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#ctrlx"/>
             /// </summary>
-            public float ctrlx => Instance.GetField<float>("ctrlx");
+            public float ctrlx { get { return Instance.GetField<float>("ctrlx"); } set { Instance.SetField("ctrlx", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#ctrly"/>
             /// </summary>
-            public float ctrly => Instance.GetField<float>("ctrly");
+            public float ctrly { get { return Instance.GetField<float>("ctrly"); } set { Instance.SetField("ctrly", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#x1"/>
             /// </summary>
-            public float x1 => Instance.GetField<float>("x1");
+            public float x1 { get { return Instance.GetField<float>("x1"); } set { Instance.SetField("x1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#x2"/>
             /// </summary>
-            public float x2 => Instance.GetField<float>("x2");
+            public float x2 { get { return Instance.GetField<float>("x2"); } set { Instance.SetField("x2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#y1"/>
             /// </summary>
-            public float y1 => Instance.GetField<float>("y1");
+            public float y1 { get { return Instance.GetField<float>("y1"); } set { Instance.SetField("y1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#y2"/>
             /// </summary>
-            public float y2 => Instance.GetField<float>("y2");
+            public float y2 { get { return Instance.GetField<float>("y2"); } set { Instance.SetField("y2", value); } }
             
             #endregion
 

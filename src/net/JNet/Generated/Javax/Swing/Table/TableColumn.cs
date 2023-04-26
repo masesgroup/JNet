@@ -72,19 +72,19 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#CELL_RENDERER_PROPERTY"/>
         /// </summary>
-        public static string CELL_RENDERER_PROPERTY => LocalClazz.GetField<string>("CELL_RENDERER_PROPERTY");
+        public static string CELL_RENDERER_PROPERTY { get { return LocalClazz.GetField<string>("CELL_RENDERER_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#COLUMN_WIDTH_PROPERTY"/>
         /// </summary>
-        public static string COLUMN_WIDTH_PROPERTY => LocalClazz.GetField<string>("COLUMN_WIDTH_PROPERTY");
+        public static string COLUMN_WIDTH_PROPERTY { get { return LocalClazz.GetField<string>("COLUMN_WIDTH_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_RENDERER_PROPERTY"/>
         /// </summary>
-        public static string HEADER_RENDERER_PROPERTY => LocalClazz.GetField<string>("HEADER_RENDERER_PROPERTY");
+        public static string HEADER_RENDERER_PROPERTY { get { return LocalClazz.GetField<string>("HEADER_RENDERER_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_VALUE_PROPERTY"/>
         /// </summary>
-        public static string HEADER_VALUE_PROPERTY => LocalClazz.GetField<string>("HEADER_VALUE_PROPERTY");
+        public static string HEADER_VALUE_PROPERTY { get { return LocalClazz.GetField<string>("HEADER_VALUE_PROPERTY"); } }
         
         #endregion
 

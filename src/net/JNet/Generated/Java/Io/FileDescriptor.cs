@@ -40,15 +40,15 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#err"/>
         /// </summary>
-        public static Java.Io.FileDescriptor err => LocalClazz.GetField<Java.Io.FileDescriptor>("err");
+        public static Java.Io.FileDescriptor err { get { return LocalClazz.GetField<Java.Io.FileDescriptor>("err"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#in"/>
         /// </summary>
-        public static Java.Io.FileDescriptor inField => LocalClazz.GetField<Java.Io.FileDescriptor>("in");
+        public static Java.Io.FileDescriptor inField { get { return LocalClazz.GetField<Java.Io.FileDescriptor>("in"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#out"/>
         /// </summary>
-        public static Java.Io.FileDescriptor outField => LocalClazz.GetField<Java.Io.FileDescriptor>("out");
+        public static Java.Io.FileDescriptor outField { get { return LocalClazz.GetField<Java.Io.FileDescriptor>("out"); } }
         
         #endregion
 

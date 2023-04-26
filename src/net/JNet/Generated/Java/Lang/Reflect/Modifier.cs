@@ -40,51 +40,51 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#ABSTRACT"/>
         /// </summary>
-        public static int ABSTRACT => LocalClazz.GetField<int>("ABSTRACT");
+        public static int ABSTRACT { get { return LocalClazz.GetField<int>("ABSTRACT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#FINAL"/>
         /// </summary>
-        public static int FINAL => LocalClazz.GetField<int>("FINAL");
+        public static int FINAL { get { return LocalClazz.GetField<int>("FINAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#INTERFACE"/>
         /// </summary>
-        public static int INTERFACE => LocalClazz.GetField<int>("INTERFACE");
+        public static int INTERFACE { get { return LocalClazz.GetField<int>("INTERFACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#NATIVE"/>
         /// </summary>
-        public static int NATIVE => LocalClazz.GetField<int>("NATIVE");
+        public static int NATIVE { get { return LocalClazz.GetField<int>("NATIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PRIVATE"/>
         /// </summary>
-        public static int PRIVATE => LocalClazz.GetField<int>("PRIVATE");
+        public static int PRIVATE { get { return LocalClazz.GetField<int>("PRIVATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PROTECTED"/>
         /// </summary>
-        public static int PROTECTED => LocalClazz.GetField<int>("PROTECTED");
+        public static int PROTECTED { get { return LocalClazz.GetField<int>("PROTECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PUBLIC"/>
         /// </summary>
-        public static int PUBLIC => LocalClazz.GetField<int>("PUBLIC");
+        public static int PUBLIC { get { return LocalClazz.GetField<int>("PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#STATIC"/>
         /// </summary>
-        public static int STATIC => LocalClazz.GetField<int>("STATIC");
+        public static int STATIC { get { return LocalClazz.GetField<int>("STATIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#STRICT"/>
         /// </summary>
-        public static int STRICT => LocalClazz.GetField<int>("STRICT");
+        public static int STRICT { get { return LocalClazz.GetField<int>("STRICT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#SYNCHRONIZED"/>
         /// </summary>
-        public static int SYNCHRONIZED => LocalClazz.GetField<int>("SYNCHRONIZED");
+        public static int SYNCHRONIZED { get { return LocalClazz.GetField<int>("SYNCHRONIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#TRANSIENT"/>
         /// </summary>
-        public static int TRANSIENT => LocalClazz.GetField<int>("TRANSIENT");
+        public static int TRANSIENT { get { return LocalClazz.GetField<int>("TRANSIENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#VOLATILE"/>
         /// </summary>
-        public static int VOLATILE => LocalClazz.GetField<int>("VOLATILE");
+        public static int VOLATILE { get { return LocalClazz.GetField<int>("VOLATILE"); } }
         
         #endregion
 

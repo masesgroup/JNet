@@ -40,11 +40,11 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#BIG_ENDIAN"/>
         /// </summary>
-        public static Java.Nio.ByteOrder BIG_ENDIAN => LocalClazz.GetField<Java.Nio.ByteOrder>("BIG_ENDIAN");
+        public static Java.Nio.ByteOrder BIG_ENDIAN { get { return LocalClazz.GetField<Java.Nio.ByteOrder>("BIG_ENDIAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#LITTLE_ENDIAN"/>
         /// </summary>
-        public static Java.Nio.ByteOrder LITTLE_ENDIAN => LocalClazz.GetField<Java.Nio.ByteOrder>("LITTLE_ENDIAN");
+        public static Java.Nio.ByteOrder LITTLE_ENDIAN { get { return LocalClazz.GetField<Java.Nio.ByteOrder>("LITTLE_ENDIAN"); } }
         
         #endregion
 

@@ -44,11 +44,11 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#DARK"/>
         /// </summary>
-        public static bool DARK => LocalClazz.GetField<bool>("DARK");
+        public static bool DARK { get { return LocalClazz.GetField<bool>("DARK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#LIGHT"/>
         /// </summary>
-        public static bool LIGHT => LocalClazz.GetField<bool>("LIGHT");
+        public static bool LIGHT { get { return LocalClazz.GetField<bool>("LIGHT"); } }
         
         #endregion
 
