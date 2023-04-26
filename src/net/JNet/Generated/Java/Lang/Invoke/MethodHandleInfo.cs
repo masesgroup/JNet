@@ -40,39 +40,39 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getField"/>
         /// </summary>
-        public static int REF_getField { get { return LocalClazz.GetField<int>("REF_getField"); } }
+        public static int REF_getField { get { return SGetField<int>(LocalClazz, "REF_getField"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getStatic"/>
         /// </summary>
-        public static int REF_getStatic { get { return LocalClazz.GetField<int>("REF_getStatic"); } }
+        public static int REF_getStatic { get { return SGetField<int>(LocalClazz, "REF_getStatic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface"/>
         /// </summary>
-        public static int REF_invokeInterface { get { return LocalClazz.GetField<int>("REF_invokeInterface"); } }
+        public static int REF_invokeInterface { get { return SGetField<int>(LocalClazz, "REF_invokeInterface"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial"/>
         /// </summary>
-        public static int REF_invokeSpecial { get { return LocalClazz.GetField<int>("REF_invokeSpecial"); } }
+        public static int REF_invokeSpecial { get { return SGetField<int>(LocalClazz, "REF_invokeSpecial"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic"/>
         /// </summary>
-        public static int REF_invokeStatic { get { return LocalClazz.GetField<int>("REF_invokeStatic"); } }
+        public static int REF_invokeStatic { get { return SGetField<int>(LocalClazz, "REF_invokeStatic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual"/>
         /// </summary>
-        public static int REF_invokeVirtual { get { return LocalClazz.GetField<int>("REF_invokeVirtual"); } }
+        public static int REF_invokeVirtual { get { return SGetField<int>(LocalClazz, "REF_invokeVirtual"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial"/>
         /// </summary>
-        public static int REF_newInvokeSpecial { get { return LocalClazz.GetField<int>("REF_newInvokeSpecial"); } }
+        public static int REF_newInvokeSpecial { get { return SGetField<int>(LocalClazz, "REF_newInvokeSpecial"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putField"/>
         /// </summary>
-        public static int REF_putField { get { return LocalClazz.GetField<int>("REF_putField"); } }
+        public static int REF_putField { get { return SGetField<int>(LocalClazz, "REF_putField"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic"/>
         /// </summary>
-        public static int REF_putStatic { get { return LocalClazz.GetField<int>("REF_putStatic"); } }
+        public static int REF_putStatic { get { return SGetField<int>(LocalClazz, "REF_putStatic"); } }
         
         #endregion
 

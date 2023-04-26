@@ -40,15 +40,15 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#IGNORE"/>
         /// </summary>
-        public static Java.Nio.Charset.CodingErrorAction IGNORE { get { return LocalClazz.GetField<Java.Nio.Charset.CodingErrorAction>("IGNORE"); } }
+        public static Java.Nio.Charset.CodingErrorAction IGNORE { get { return SGetField<Java.Nio.Charset.CodingErrorAction>(LocalClazz, "IGNORE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPLACE"/>
         /// </summary>
-        public static Java.Nio.Charset.CodingErrorAction REPLACE { get { return LocalClazz.GetField<Java.Nio.Charset.CodingErrorAction>("REPLACE"); } }
+        public static Java.Nio.Charset.CodingErrorAction REPLACE { get { return SGetField<Java.Nio.Charset.CodingErrorAction>(LocalClazz, "REPLACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPORT"/>
         /// </summary>
-        public static Java.Nio.Charset.CodingErrorAction REPORT { get { return LocalClazz.GetField<Java.Nio.Charset.CodingErrorAction>("REPORT"); } }
+        public static Java.Nio.Charset.CodingErrorAction REPORT { get { return SGetField<Java.Nio.Charset.CodingErrorAction>(LocalClazz, "REPORT"); } }
         
         #endregion
 

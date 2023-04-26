@@ -79,19 +79,19 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#CONSOLE"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE { get { return LocalClazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("CONSOLE"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "CONSOLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK { get { return LocalClazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("LOCK"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "LOCK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#REMOTE"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE { get { return LocalClazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("REMOTE"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "REMOTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED { get { return LocalClazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("UNSPECIFIED"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "UNSPECIFIED"); } }
             
             #endregion
 

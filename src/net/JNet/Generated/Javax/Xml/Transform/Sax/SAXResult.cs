@@ -52,7 +52,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
         /// </summary>
-        public static string FEATURE { get { return LocalClazz.GetField<string>("FEATURE"); } }
+        public static string FEATURE { get { return SGetField<string>(LocalClazz, "FEATURE"); } }
         
         #endregion
 

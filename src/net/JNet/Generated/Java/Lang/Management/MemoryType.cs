@@ -40,11 +40,11 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#HEAP"/>
         /// </summary>
-        public static Java.Lang.Management.MemoryType HEAP { get { return LocalClazz.GetField<Java.Lang.Management.MemoryType>("HEAP"); } }
+        public static Java.Lang.Management.MemoryType HEAP { get { return SGetField<Java.Lang.Management.MemoryType>(LocalClazz, "HEAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#NON_HEAP"/>
         /// </summary>
-        public static Java.Lang.Management.MemoryType NON_HEAP { get { return LocalClazz.GetField<Java.Lang.Management.MemoryType>("NON_HEAP"); } }
+        public static Java.Lang.Management.MemoryType NON_HEAP { get { return SGetField<Java.Lang.Management.MemoryType>(LocalClazz, "NON_HEAP"); } }
         
         #endregion
 

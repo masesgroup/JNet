@@ -78,27 +78,27 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#ANY"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ANY { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("ANY"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ANY { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "ANY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#BOOLEAN"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("BOOLEAN"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "BOOLEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODE"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NODE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODESET"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NODESET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NUMBER"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NUMBER"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NUMBER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING { get { return LocalClazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("STRING"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "STRING"); } }
             
             #endregion
 

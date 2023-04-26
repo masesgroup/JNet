@@ -583,19 +583,19 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#AUTOMATIC"/>
             /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier AUTOMATIC { get { return LocalClazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("AUTOMATIC"); } }
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier AUTOMATIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "AUTOMATIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#MANDATED"/>
             /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier MANDATED { get { return LocalClazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("MANDATED"); } }
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier MANDATED { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "MANDATED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#OPEN"/>
             /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN { get { return LocalClazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("OPEN"); } }
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "OPEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC"/>
             /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC { get { return LocalClazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("SYNTHETIC"); } }
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "SYNTHETIC"); } }
             
             #endregion
 

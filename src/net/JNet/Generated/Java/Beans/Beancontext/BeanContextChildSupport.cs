@@ -60,7 +60,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#beanContextChildPeer"/>
         /// </summary>
-        public Java.Beans.Beancontext.BeanContextChild beanContextChildPeer { get { return Instance.GetField<Java.Beans.Beancontext.BeanContextChild>("beanContextChildPeer"); } set { Instance.SetField("beanContextChildPeer", value); } }
+        public Java.Beans.Beancontext.BeanContextChild beanContextChildPeer { get { return IGetField<Java.Beans.Beancontext.BeanContextChild>("beanContextChildPeer"); } set { ISetField("beanContextChildPeer", value); } }
         
         #endregion
 

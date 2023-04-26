@@ -63,35 +63,35 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_MOVED"/>
         /// </summary>
-        public static int ANCESTOR_MOVED { get { return LocalClazz.GetField<int>("ANCESTOR_MOVED"); } }
+        public static int ANCESTOR_MOVED { get { return SGetField<int>(LocalClazz, "ANCESTOR_MOVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_RESIZED"/>
         /// </summary>
-        public static int ANCESTOR_RESIZED { get { return LocalClazz.GetField<int>("ANCESTOR_RESIZED"); } }
+        public static int ANCESTOR_RESIZED { get { return SGetField<int>(LocalClazz, "ANCESTOR_RESIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#DISPLAYABILITY_CHANGED"/>
         /// </summary>
-        public static int DISPLAYABILITY_CHANGED { get { return LocalClazz.GetField<int>("DISPLAYABILITY_CHANGED"); } }
+        public static int DISPLAYABILITY_CHANGED { get { return SGetField<int>(LocalClazz, "DISPLAYABILITY_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_CHANGED"/>
         /// </summary>
-        public static int HIERARCHY_CHANGED { get { return LocalClazz.GetField<int>("HIERARCHY_CHANGED"); } }
+        public static int HIERARCHY_CHANGED { get { return SGetField<int>(LocalClazz, "HIERARCHY_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_FIRST"/>
         /// </summary>
-        public static int HIERARCHY_FIRST { get { return LocalClazz.GetField<int>("HIERARCHY_FIRST"); } }
+        public static int HIERARCHY_FIRST { get { return SGetField<int>(LocalClazz, "HIERARCHY_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_LAST"/>
         /// </summary>
-        public static int HIERARCHY_LAST { get { return LocalClazz.GetField<int>("HIERARCHY_LAST"); } }
+        public static int HIERARCHY_LAST { get { return SGetField<int>(LocalClazz, "HIERARCHY_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#PARENT_CHANGED"/>
         /// </summary>
-        public static int PARENT_CHANGED { get { return LocalClazz.GetField<int>("PARENT_CHANGED"); } }
+        public static int PARENT_CHANGED { get { return SGetField<int>(LocalClazz, "PARENT_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#SHOWING_CHANGED"/>
         /// </summary>
-        public static int SHOWING_CHANGED { get { return LocalClazz.GetField<int>("SHOWING_CHANGED"); } }
+        public static int SHOWING_CHANGED { get { return SGetField<int>(LocalClazz, "SHOWING_CHANGED"); } }
         
         #endregion
 

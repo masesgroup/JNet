@@ -40,19 +40,19 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS { get { return LocalClazz.GetField<Javax.Lang.Model.Element.NestingKind>("ANONYMOUS"); } }
+        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "ANONYMOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#LOCAL"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind LOCAL { get { return LocalClazz.GetField<Javax.Lang.Model.Element.NestingKind>("LOCAL"); } }
+        public static Javax.Lang.Model.Element.NestingKind LOCAL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "LOCAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind MEMBER { get { return LocalClazz.GetField<Javax.Lang.Model.Element.NestingKind>("MEMBER"); } }
+        public static Javax.Lang.Model.Element.NestingKind MEMBER { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "MEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL { get { return LocalClazz.GetField<Javax.Lang.Model.Element.NestingKind>("TOP_LEVEL"); } }
+        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "TOP_LEVEL"); } }
         
         #endregion
 

@@ -165,23 +165,23 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS { get { return LocalClazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("EXPORTS"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "EXPORTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS { get { return LocalClazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("OPENS"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "OPENS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES { get { return LocalClazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("PROVIDES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "PROVIDES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES { get { return LocalClazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("REQUIRES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "REQUIRES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES { get { return LocalClazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("USES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "USES"); } }
             
             #endregion
 

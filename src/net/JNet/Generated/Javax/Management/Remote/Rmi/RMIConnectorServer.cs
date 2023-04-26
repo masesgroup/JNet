@@ -73,23 +73,23 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIALS_FILTER_PATTERN"/>
         /// </summary>
-        public static string CREDENTIALS_FILTER_PATTERN { get { return LocalClazz.GetField<string>("CREDENTIALS_FILTER_PATTERN"); } }
+        public static string CREDENTIALS_FILTER_PATTERN { get { return SGetField<string>(LocalClazz, "CREDENTIALS_FILTER_PATTERN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#JNDI_REBIND_ATTRIBUTE"/>
         /// </summary>
-        public static string JNDI_REBIND_ATTRIBUTE { get { return LocalClazz.GetField<string>("JNDI_REBIND_ATTRIBUTE"); } }
+        public static string JNDI_REBIND_ATTRIBUTE { get { return SGetField<string>(LocalClazz, "JNDI_REBIND_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE"/>
         /// </summary>
-        public static string RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE { get { return LocalClazz.GetField<string>("RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE"); } }
+        public static string RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE { get { return SGetField<string>(LocalClazz, "RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE"/>
         /// </summary>
-        public static string RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE { get { return LocalClazz.GetField<string>("RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE"); } }
+        public static string RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE { get { return SGetField<string>(LocalClazz, "RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#SERIAL_FILTER_PATTERN"/>
         /// </summary>
-        public static string SERIAL_FILTER_PATTERN { get { return LocalClazz.GetField<string>("SERIAL_FILTER_PATTERN"); } }
+        public static string SERIAL_FILTER_PATTERN { get { return SGetField<string>(LocalClazz, "SERIAL_FILTER_PATTERN"); } }
         
         #endregion
 

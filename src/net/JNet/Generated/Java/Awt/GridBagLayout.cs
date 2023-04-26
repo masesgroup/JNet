@@ -48,19 +48,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#columnWeights"/>
         /// </summary>
-        public double[] columnWeights { get { return Instance.GetField<double[]>("columnWeights"); } set { Instance.SetField("columnWeights", value); } }
+        public double[] columnWeights { get { return IGetFieldArray<double>("columnWeights"); } set { ISetField("columnWeights", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowWeights"/>
         /// </summary>
-        public double[] rowWeights { get { return Instance.GetField<double[]>("rowWeights"); } set { Instance.SetField("rowWeights", value); } }
+        public double[] rowWeights { get { return IGetFieldArray<double>("rowWeights"); } set { ISetField("rowWeights", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#columnWidths"/>
         /// </summary>
-        public int[] columnWidths { get { return Instance.GetField<int[]>("columnWidths"); } set { Instance.SetField("columnWidths", value); } }
+        public int[] columnWidths { get { return IGetFieldArray<int>("columnWidths"); } set { ISetField("columnWidths", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowHeights"/>
         /// </summary>
-        public int[] rowHeights { get { return Instance.GetField<int[]>("rowHeights"); } set { Instance.SetField("rowHeights", value); } }
+        public int[] rowHeights { get { return IGetFieldArray<int>("rowHeights"); } set { ISetField("rowHeights", value); } }
         
         #endregion
 

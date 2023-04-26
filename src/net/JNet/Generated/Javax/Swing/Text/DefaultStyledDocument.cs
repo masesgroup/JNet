@@ -61,7 +61,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#BUFFER_SIZE_DEFAULT"/>
         /// </summary>
-        public static int BUFFER_SIZE_DEFAULT { get { return LocalClazz.GetField<int>("BUFFER_SIZE_DEFAULT"); } }
+        public static int BUFFER_SIZE_DEFAULT { get { return SGetField<int>(LocalClazz, "BUFFER_SIZE_DEFAULT"); } }
         
         #endregion
 
@@ -363,31 +363,31 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#ContentType"/>
             /// </summary>
-            public static short ContentType { get { return LocalClazz.GetField<short>("ContentType"); } }
+            public static short ContentType { get { return SGetField<short>(LocalClazz, "ContentType"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#EndTagType"/>
             /// </summary>
-            public static short EndTagType { get { return LocalClazz.GetField<short>("EndTagType"); } }
+            public static short EndTagType { get { return SGetField<short>(LocalClazz, "EndTagType"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinFractureDirection"/>
             /// </summary>
-            public static short JoinFractureDirection { get { return LocalClazz.GetField<short>("JoinFractureDirection"); } }
+            public static short JoinFractureDirection { get { return SGetField<short>(LocalClazz, "JoinFractureDirection"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinNextDirection"/>
             /// </summary>
-            public static short JoinNextDirection { get { return LocalClazz.GetField<short>("JoinNextDirection"); } }
+            public static short JoinNextDirection { get { return SGetField<short>(LocalClazz, "JoinNextDirection"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinPreviousDirection"/>
             /// </summary>
-            public static short JoinPreviousDirection { get { return LocalClazz.GetField<short>("JoinPreviousDirection"); } }
+            public static short JoinPreviousDirection { get { return SGetField<short>(LocalClazz, "JoinPreviousDirection"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#OriginateDirection"/>
             /// </summary>
-            public static short OriginateDirection { get { return LocalClazz.GetField<short>("OriginateDirection"); } }
+            public static short OriginateDirection { get { return SGetField<short>(LocalClazz, "OriginateDirection"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType"/>
             /// </summary>
-            public static short StartTagType { get { return LocalClazz.GetField<short>("StartTagType"); } }
+            public static short StartTagType { get { return SGetField<short>(LocalClazz, "StartTagType"); } }
             
             #endregion
 

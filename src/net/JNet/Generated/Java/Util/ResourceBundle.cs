@@ -227,23 +227,23 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_CLASS"/>
             /// </summary>
-            public static Java.Util.List FORMAT_CLASS { get { return LocalClazz.GetField<Java.Util.List>("FORMAT_CLASS"); } }
+            public static Java.Util.List FORMAT_CLASS { get { return SGetField<Java.Util.List>(LocalClazz, "FORMAT_CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_DEFAULT"/>
             /// </summary>
-            public static Java.Util.List FORMAT_DEFAULT { get { return LocalClazz.GetField<Java.Util.List>("FORMAT_DEFAULT"); } }
+            public static Java.Util.List FORMAT_DEFAULT { get { return SGetField<Java.Util.List>(LocalClazz, "FORMAT_DEFAULT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_PROPERTIES"/>
             /// </summary>
-            public static Java.Util.List FORMAT_PROPERTIES { get { return LocalClazz.GetField<Java.Util.List>("FORMAT_PROPERTIES"); } }
+            public static Java.Util.List FORMAT_PROPERTIES { get { return SGetField<Java.Util.List>(LocalClazz, "FORMAT_PROPERTIES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#TTL_DONT_CACHE"/>
             /// </summary>
-            public static long TTL_DONT_CACHE { get { return LocalClazz.GetField<long>("TTL_DONT_CACHE"); } }
+            public static long TTL_DONT_CACHE { get { return SGetField<long>(LocalClazz, "TTL_DONT_CACHE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#TTL_NO_EXPIRATION_CONTROL"/>
             /// </summary>
-            public static long TTL_NO_EXPIRATION_CONTROL { get { return LocalClazz.GetField<long>("TTL_NO_EXPIRATION_CONTROL"); } }
+            public static long TTL_NO_EXPIRATION_CONTROL { get { return SGetField<long>(LocalClazz, "TTL_NO_EXPIRATION_CONTROL"); } }
             
             #endregion
 

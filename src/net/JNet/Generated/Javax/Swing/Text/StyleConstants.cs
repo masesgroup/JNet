@@ -40,139 +40,139 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_CENTER"/>
         /// </summary>
-        public static int ALIGN_CENTER { get { return LocalClazz.GetField<int>("ALIGN_CENTER"); } }
+        public static int ALIGN_CENTER { get { return SGetField<int>(LocalClazz, "ALIGN_CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_JUSTIFIED"/>
         /// </summary>
-        public static int ALIGN_JUSTIFIED { get { return LocalClazz.GetField<int>("ALIGN_JUSTIFIED"); } }
+        public static int ALIGN_JUSTIFIED { get { return SGetField<int>(LocalClazz, "ALIGN_JUSTIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_LEFT"/>
         /// </summary>
-        public static int ALIGN_LEFT { get { return LocalClazz.GetField<int>("ALIGN_LEFT"); } }
+        public static int ALIGN_LEFT { get { return SGetField<int>(LocalClazz, "ALIGN_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_RIGHT"/>
         /// </summary>
-        public static int ALIGN_RIGHT { get { return LocalClazz.GetField<int>("ALIGN_RIGHT"); } }
+        public static int ALIGN_RIGHT { get { return SGetField<int>(LocalClazz, "ALIGN_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Alignment"/>
         /// </summary>
-        public static object Alignment { get { return LocalClazz.GetField("Alignment"); } }
+        public static object Alignment { get { return SGetField(LocalClazz, "Alignment"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Background"/>
         /// </summary>
-        public static object Background { get { return LocalClazz.GetField("Background"); } }
+        public static object Background { get { return SGetField(LocalClazz, "Background"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#BidiLevel"/>
         /// </summary>
-        public static object BidiLevel { get { return LocalClazz.GetField("BidiLevel"); } }
+        public static object BidiLevel { get { return SGetField(LocalClazz, "BidiLevel"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Bold"/>
         /// </summary>
-        public static object Bold { get { return LocalClazz.GetField("Bold"); } }
+        public static object Bold { get { return SGetField(LocalClazz, "Bold"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentAttribute"/>
         /// </summary>
-        public static object ComponentAttribute { get { return LocalClazz.GetField("ComponentAttribute"); } }
+        public static object ComponentAttribute { get { return SGetField(LocalClazz, "ComponentAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComposedTextAttribute"/>
         /// </summary>
-        public static object ComposedTextAttribute { get { return LocalClazz.GetField("ComposedTextAttribute"); } }
+        public static object ComposedTextAttribute { get { return SGetField(LocalClazz, "ComposedTextAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Family"/>
         /// </summary>
-        public static object Family { get { return LocalClazz.GetField("Family"); } }
+        public static object Family { get { return SGetField(LocalClazz, "Family"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FirstLineIndent"/>
         /// </summary>
-        public static object FirstLineIndent { get { return LocalClazz.GetField("FirstLineIndent"); } }
+        public static object FirstLineIndent { get { return SGetField(LocalClazz, "FirstLineIndent"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontFamily"/>
         /// </summary>
-        public static object FontFamily { get { return LocalClazz.GetField("FontFamily"); } }
+        public static object FontFamily { get { return SGetField(LocalClazz, "FontFamily"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontSize"/>
         /// </summary>
-        public static object FontSize { get { return LocalClazz.GetField("FontSize"); } }
+        public static object FontSize { get { return SGetField(LocalClazz, "FontSize"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Foreground"/>
         /// </summary>
-        public static object Foreground { get { return LocalClazz.GetField("Foreground"); } }
+        public static object Foreground { get { return SGetField(LocalClazz, "Foreground"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconAttribute"/>
         /// </summary>
-        public static object IconAttribute { get { return LocalClazz.GetField("IconAttribute"); } }
+        public static object IconAttribute { get { return SGetField(LocalClazz, "IconAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Italic"/>
         /// </summary>
-        public static object Italic { get { return LocalClazz.GetField("Italic"); } }
+        public static object Italic { get { return SGetField(LocalClazz, "Italic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#LeftIndent"/>
         /// </summary>
-        public static object LeftIndent { get { return LocalClazz.GetField("LeftIndent"); } }
+        public static object LeftIndent { get { return SGetField(LocalClazz, "LeftIndent"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#LineSpacing"/>
         /// </summary>
-        public static object LineSpacing { get { return LocalClazz.GetField("LineSpacing"); } }
+        public static object LineSpacing { get { return SGetField(LocalClazz, "LineSpacing"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ModelAttribute"/>
         /// </summary>
-        public static object ModelAttribute { get { return LocalClazz.GetField("ModelAttribute"); } }
+        public static object ModelAttribute { get { return SGetField(LocalClazz, "ModelAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#NameAttribute"/>
         /// </summary>
-        public static object NameAttribute { get { return LocalClazz.GetField("NameAttribute"); } }
+        public static object NameAttribute { get { return SGetField(LocalClazz, "NameAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Orientation"/>
         /// </summary>
-        public static object Orientation { get { return LocalClazz.GetField("Orientation"); } }
+        public static object Orientation { get { return SGetField(LocalClazz, "Orientation"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ResolveAttribute"/>
         /// </summary>
-        public static object ResolveAttribute { get { return LocalClazz.GetField("ResolveAttribute"); } }
+        public static object ResolveAttribute { get { return SGetField(LocalClazz, "ResolveAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#RightIndent"/>
         /// </summary>
-        public static object RightIndent { get { return LocalClazz.GetField("RightIndent"); } }
+        public static object RightIndent { get { return SGetField(LocalClazz, "RightIndent"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Size"/>
         /// </summary>
-        public static object Size { get { return LocalClazz.GetField("Size"); } }
+        public static object Size { get { return SGetField(LocalClazz, "Size"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#SpaceAbove"/>
         /// </summary>
-        public static object SpaceAbove { get { return LocalClazz.GetField("SpaceAbove"); } }
+        public static object SpaceAbove { get { return SGetField(LocalClazz, "SpaceAbove"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#SpaceBelow"/>
         /// </summary>
-        public static object SpaceBelow { get { return LocalClazz.GetField("SpaceBelow"); } }
+        public static object SpaceBelow { get { return SGetField(LocalClazz, "SpaceBelow"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#StrikeThrough"/>
         /// </summary>
-        public static object StrikeThrough { get { return LocalClazz.GetField("StrikeThrough"); } }
+        public static object StrikeThrough { get { return SGetField(LocalClazz, "StrikeThrough"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Subscript"/>
         /// </summary>
-        public static object Subscript { get { return LocalClazz.GetField("Subscript"); } }
+        public static object Subscript { get { return SGetField(LocalClazz, "Subscript"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Superscript"/>
         /// </summary>
-        public static object Superscript { get { return LocalClazz.GetField("Superscript"); } }
+        public static object Superscript { get { return SGetField(LocalClazz, "Superscript"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#TabSet"/>
         /// </summary>
-        public static object TabSet { get { return LocalClazz.GetField("TabSet"); } }
+        public static object TabSet { get { return SGetField(LocalClazz, "TabSet"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Underline"/>
         /// </summary>
-        public static object Underline { get { return LocalClazz.GetField("Underline"); } }
+        public static object Underline { get { return SGetField(LocalClazz, "Underline"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentElementName"/>
         /// </summary>
-        public static string ComponentElementName { get { return LocalClazz.GetField<string>("ComponentElementName"); } }
+        public static string ComponentElementName { get { return SGetField<string>(LocalClazz, "ComponentElementName"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconElementName"/>
         /// </summary>
-        public static string IconElementName { get { return LocalClazz.GetField<string>("IconElementName"); } }
+        public static string IconElementName { get { return SGetField<string>(LocalClazz, "IconElementName"); } }
         
         #endregion
 

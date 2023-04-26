@@ -40,47 +40,47 @@ namespace Javax.Transaction.Xa
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMENDRSCAN"/>
         /// </summary>
-        public static int TMENDRSCAN { get { return LocalClazz.GetField<int>("TMENDRSCAN"); } }
+        public static int TMENDRSCAN { get { return SGetField<int>(LocalClazz, "TMENDRSCAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMFAIL"/>
         /// </summary>
-        public static int TMFAIL { get { return LocalClazz.GetField<int>("TMFAIL"); } }
+        public static int TMFAIL { get { return SGetField<int>(LocalClazz, "TMFAIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMJOIN"/>
         /// </summary>
-        public static int TMJOIN { get { return LocalClazz.GetField<int>("TMJOIN"); } }
+        public static int TMJOIN { get { return SGetField<int>(LocalClazz, "TMJOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMNOFLAGS"/>
         /// </summary>
-        public static int TMNOFLAGS { get { return LocalClazz.GetField<int>("TMNOFLAGS"); } }
+        public static int TMNOFLAGS { get { return SGetField<int>(LocalClazz, "TMNOFLAGS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMONEPHASE"/>
         /// </summary>
-        public static int TMONEPHASE { get { return LocalClazz.GetField<int>("TMONEPHASE"); } }
+        public static int TMONEPHASE { get { return SGetField<int>(LocalClazz, "TMONEPHASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMRESUME"/>
         /// </summary>
-        public static int TMRESUME { get { return LocalClazz.GetField<int>("TMRESUME"); } }
+        public static int TMRESUME { get { return SGetField<int>(LocalClazz, "TMRESUME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSTARTRSCAN"/>
         /// </summary>
-        public static int TMSTARTRSCAN { get { return LocalClazz.GetField<int>("TMSTARTRSCAN"); } }
+        public static int TMSTARTRSCAN { get { return SGetField<int>(LocalClazz, "TMSTARTRSCAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUCCESS"/>
         /// </summary>
-        public static int TMSUCCESS { get { return LocalClazz.GetField<int>("TMSUCCESS"); } }
+        public static int TMSUCCESS { get { return SGetField<int>(LocalClazz, "TMSUCCESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUSPEND"/>
         /// </summary>
-        public static int TMSUSPEND { get { return LocalClazz.GetField<int>("TMSUSPEND"); } }
+        public static int TMSUSPEND { get { return SGetField<int>(LocalClazz, "TMSUSPEND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_OK"/>
         /// </summary>
-        public static int XA_OK { get { return LocalClazz.GetField<int>("XA_OK"); } }
+        public static int XA_OK { get { return SGetField<int>(LocalClazz, "XA_OK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY"/>
         /// </summary>
-        public static int XA_RDONLY { get { return LocalClazz.GetField<int>("XA_RDONLY"); } }
+        public static int XA_RDONLY { get { return SGetField<int>(LocalClazz, "XA_RDONLY"); } }
         
         #endregion
 

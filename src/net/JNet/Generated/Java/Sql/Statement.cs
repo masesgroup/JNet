@@ -48,31 +48,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#CLOSE_ALL_RESULTS"/>
         /// </summary>
-        public static int CLOSE_ALL_RESULTS { get { return LocalClazz.GetField<int>("CLOSE_ALL_RESULTS"); } }
+        public static int CLOSE_ALL_RESULTS { get { return SGetField<int>(LocalClazz, "CLOSE_ALL_RESULTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#CLOSE_CURRENT_RESULT"/>
         /// </summary>
-        public static int CLOSE_CURRENT_RESULT { get { return LocalClazz.GetField<int>("CLOSE_CURRENT_RESULT"); } }
+        public static int CLOSE_CURRENT_RESULT { get { return SGetField<int>(LocalClazz, "CLOSE_CURRENT_RESULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#EXECUTE_FAILED"/>
         /// </summary>
-        public static int EXECUTE_FAILED { get { return LocalClazz.GetField<int>("EXECUTE_FAILED"); } }
+        public static int EXECUTE_FAILED { get { return SGetField<int>(LocalClazz, "EXECUTE_FAILED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#KEEP_CURRENT_RESULT"/>
         /// </summary>
-        public static int KEEP_CURRENT_RESULT { get { return LocalClazz.GetField<int>("KEEP_CURRENT_RESULT"); } }
+        public static int KEEP_CURRENT_RESULT { get { return SGetField<int>(LocalClazz, "KEEP_CURRENT_RESULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#NO_GENERATED_KEYS"/>
         /// </summary>
-        public static int NO_GENERATED_KEYS { get { return LocalClazz.GetField<int>("NO_GENERATED_KEYS"); } }
+        public static int NO_GENERATED_KEYS { get { return SGetField<int>(LocalClazz, "NO_GENERATED_KEYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#RETURN_GENERATED_KEYS"/>
         /// </summary>
-        public static int RETURN_GENERATED_KEYS { get { return LocalClazz.GetField<int>("RETURN_GENERATED_KEYS"); } }
+        public static int RETURN_GENERATED_KEYS { get { return SGetField<int>(LocalClazz, "RETURN_GENERATED_KEYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#SUCCESS_NO_INFO"/>
         /// </summary>
-        public static int SUCCESS_NO_INFO { get { return LocalClazz.GetField<int>("SUCCESS_NO_INFO"); } }
+        public static int SUCCESS_NO_INFO { get { return SGetField<int>(LocalClazz, "SUCCESS_NO_INFO"); } }
         
         #endregion
 

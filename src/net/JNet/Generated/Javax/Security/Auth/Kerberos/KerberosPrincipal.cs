@@ -65,27 +65,27 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_PRINCIPAL"/>
         /// </summary>
-        public static int KRB_NT_PRINCIPAL { get { return LocalClazz.GetField<int>("KRB_NT_PRINCIPAL"); } }
+        public static int KRB_NT_PRINCIPAL { get { return SGetField<int>(LocalClazz, "KRB_NT_PRINCIPAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_HST"/>
         /// </summary>
-        public static int KRB_NT_SRV_HST { get { return LocalClazz.GetField<int>("KRB_NT_SRV_HST"); } }
+        public static int KRB_NT_SRV_HST { get { return SGetField<int>(LocalClazz, "KRB_NT_SRV_HST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_INST"/>
         /// </summary>
-        public static int KRB_NT_SRV_INST { get { return LocalClazz.GetField<int>("KRB_NT_SRV_INST"); } }
+        public static int KRB_NT_SRV_INST { get { return SGetField<int>(LocalClazz, "KRB_NT_SRV_INST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_XHST"/>
         /// </summary>
-        public static int KRB_NT_SRV_XHST { get { return LocalClazz.GetField<int>("KRB_NT_SRV_XHST"); } }
+        public static int KRB_NT_SRV_XHST { get { return SGetField<int>(LocalClazz, "KRB_NT_SRV_XHST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UID"/>
         /// </summary>
-        public static int KRB_NT_UID { get { return LocalClazz.GetField<int>("KRB_NT_UID"); } }
+        public static int KRB_NT_UID { get { return SGetField<int>(LocalClazz, "KRB_NT_UID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UNKNOWN"/>
         /// </summary>
-        public static int KRB_NT_UNKNOWN { get { return LocalClazz.GetField<int>("KRB_NT_UNKNOWN"); } }
+        public static int KRB_NT_UNKNOWN { get { return SGetField<int>(LocalClazz, "KRB_NT_UNKNOWN"); } }
         
         #endregion
 

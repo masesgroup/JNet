@@ -40,247 +40,247 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowNotPseudo"/>
         /// </summary>
-        public static int bestRowNotPseudo { get { return LocalClazz.GetField<int>("bestRowNotPseudo"); } }
+        public static int bestRowNotPseudo { get { return SGetField<int>(LocalClazz, "bestRowNotPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowPseudo"/>
         /// </summary>
-        public static int bestRowPseudo { get { return LocalClazz.GetField<int>("bestRowPseudo"); } }
+        public static int bestRowPseudo { get { return SGetField<int>(LocalClazz, "bestRowPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowSession"/>
         /// </summary>
-        public static int bestRowSession { get { return LocalClazz.GetField<int>("bestRowSession"); } }
+        public static int bestRowSession { get { return SGetField<int>(LocalClazz, "bestRowSession"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTemporary"/>
         /// </summary>
-        public static int bestRowTemporary { get { return LocalClazz.GetField<int>("bestRowTemporary"); } }
+        public static int bestRowTemporary { get { return SGetField<int>(LocalClazz, "bestRowTemporary"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTransaction"/>
         /// </summary>
-        public static int bestRowTransaction { get { return LocalClazz.GetField<int>("bestRowTransaction"); } }
+        public static int bestRowTransaction { get { return SGetField<int>(LocalClazz, "bestRowTransaction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowUnknown"/>
         /// </summary>
-        public static int bestRowUnknown { get { return LocalClazz.GetField<int>("bestRowUnknown"); } }
+        public static int bestRowUnknown { get { return SGetField<int>(LocalClazz, "bestRowUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNoNulls"/>
         /// </summary>
-        public static int columnNoNulls { get { return LocalClazz.GetField<int>("columnNoNulls"); } }
+        public static int columnNoNulls { get { return SGetField<int>(LocalClazz, "columnNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNullable"/>
         /// </summary>
-        public static int columnNullable { get { return LocalClazz.GetField<int>("columnNullable"); } }
+        public static int columnNullable { get { return SGetField<int>(LocalClazz, "columnNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNullableUnknown"/>
         /// </summary>
-        public static int columnNullableUnknown { get { return LocalClazz.GetField<int>("columnNullableUnknown"); } }
+        public static int columnNullableUnknown { get { return SGetField<int>(LocalClazz, "columnNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnIn"/>
         /// </summary>
-        public static int functionColumnIn { get { return LocalClazz.GetField<int>("functionColumnIn"); } }
+        public static int functionColumnIn { get { return SGetField<int>(LocalClazz, "functionColumnIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnInOut"/>
         /// </summary>
-        public static int functionColumnInOut { get { return LocalClazz.GetField<int>("functionColumnInOut"); } }
+        public static int functionColumnInOut { get { return SGetField<int>(LocalClazz, "functionColumnInOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnOut"/>
         /// </summary>
-        public static int functionColumnOut { get { return LocalClazz.GetField<int>("functionColumnOut"); } }
+        public static int functionColumnOut { get { return SGetField<int>(LocalClazz, "functionColumnOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnResult"/>
         /// </summary>
-        public static int functionColumnResult { get { return LocalClazz.GetField<int>("functionColumnResult"); } }
+        public static int functionColumnResult { get { return SGetField<int>(LocalClazz, "functionColumnResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnUnknown"/>
         /// </summary>
-        public static int functionColumnUnknown { get { return LocalClazz.GetField<int>("functionColumnUnknown"); } }
+        public static int functionColumnUnknown { get { return SGetField<int>(LocalClazz, "functionColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoNulls"/>
         /// </summary>
-        public static int functionNoNulls { get { return LocalClazz.GetField<int>("functionNoNulls"); } }
+        public static int functionNoNulls { get { return SGetField<int>(LocalClazz, "functionNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoTable"/>
         /// </summary>
-        public static int functionNoTable { get { return LocalClazz.GetField<int>("functionNoTable"); } }
+        public static int functionNoTable { get { return SGetField<int>(LocalClazz, "functionNoTable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNullable"/>
         /// </summary>
-        public static int functionNullable { get { return LocalClazz.GetField<int>("functionNullable"); } }
+        public static int functionNullable { get { return SGetField<int>(LocalClazz, "functionNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNullableUnknown"/>
         /// </summary>
-        public static int functionNullableUnknown { get { return LocalClazz.GetField<int>("functionNullableUnknown"); } }
+        public static int functionNullableUnknown { get { return SGetField<int>(LocalClazz, "functionNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionResultUnknown"/>
         /// </summary>
-        public static int functionResultUnknown { get { return LocalClazz.GetField<int>("functionResultUnknown"); } }
+        public static int functionResultUnknown { get { return SGetField<int>(LocalClazz, "functionResultUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturn"/>
         /// </summary>
-        public static int functionReturn { get { return LocalClazz.GetField<int>("functionReturn"); } }
+        public static int functionReturn { get { return SGetField<int>(LocalClazz, "functionReturn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturnsTable"/>
         /// </summary>
-        public static int functionReturnsTable { get { return LocalClazz.GetField<int>("functionReturnsTable"); } }
+        public static int functionReturnsTable { get { return SGetField<int>(LocalClazz, "functionReturnsTable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyCascade"/>
         /// </summary>
-        public static int importedKeyCascade { get { return LocalClazz.GetField<int>("importedKeyCascade"); } }
+        public static int importedKeyCascade { get { return SGetField<int>(LocalClazz, "importedKeyCascade"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyDeferred"/>
         /// </summary>
-        public static int importedKeyInitiallyDeferred { get { return LocalClazz.GetField<int>("importedKeyInitiallyDeferred"); } }
+        public static int importedKeyInitiallyDeferred { get { return SGetField<int>(LocalClazz, "importedKeyInitiallyDeferred"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyImmediate"/>
         /// </summary>
-        public static int importedKeyInitiallyImmediate { get { return LocalClazz.GetField<int>("importedKeyInitiallyImmediate"); } }
+        public static int importedKeyInitiallyImmediate { get { return SGetField<int>(LocalClazz, "importedKeyInitiallyImmediate"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNoAction"/>
         /// </summary>
-        public static int importedKeyNoAction { get { return LocalClazz.GetField<int>("importedKeyNoAction"); } }
+        public static int importedKeyNoAction { get { return SGetField<int>(LocalClazz, "importedKeyNoAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNotDeferrable"/>
         /// </summary>
-        public static int importedKeyNotDeferrable { get { return LocalClazz.GetField<int>("importedKeyNotDeferrable"); } }
+        public static int importedKeyNotDeferrable { get { return SGetField<int>(LocalClazz, "importedKeyNotDeferrable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyRestrict"/>
         /// </summary>
-        public static int importedKeyRestrict { get { return LocalClazz.GetField<int>("importedKeyRestrict"); } }
+        public static int importedKeyRestrict { get { return SGetField<int>(LocalClazz, "importedKeyRestrict"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetDefault"/>
         /// </summary>
-        public static int importedKeySetDefault { get { return LocalClazz.GetField<int>("importedKeySetDefault"); } }
+        public static int importedKeySetDefault { get { return SGetField<int>(LocalClazz, "importedKeySetDefault"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetNull"/>
         /// </summary>
-        public static int importedKeySetNull { get { return LocalClazz.GetField<int>("importedKeySetNull"); } }
+        public static int importedKeySetNull { get { return SGetField<int>(LocalClazz, "importedKeySetNull"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnIn"/>
         /// </summary>
-        public static int procedureColumnIn { get { return LocalClazz.GetField<int>("procedureColumnIn"); } }
+        public static int procedureColumnIn { get { return SGetField<int>(LocalClazz, "procedureColumnIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnInOut"/>
         /// </summary>
-        public static int procedureColumnInOut { get { return LocalClazz.GetField<int>("procedureColumnInOut"); } }
+        public static int procedureColumnInOut { get { return SGetField<int>(LocalClazz, "procedureColumnInOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnOut"/>
         /// </summary>
-        public static int procedureColumnOut { get { return LocalClazz.GetField<int>("procedureColumnOut"); } }
+        public static int procedureColumnOut { get { return SGetField<int>(LocalClazz, "procedureColumnOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnResult"/>
         /// </summary>
-        public static int procedureColumnResult { get { return LocalClazz.GetField<int>("procedureColumnResult"); } }
+        public static int procedureColumnResult { get { return SGetField<int>(LocalClazz, "procedureColumnResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnReturn"/>
         /// </summary>
-        public static int procedureColumnReturn { get { return LocalClazz.GetField<int>("procedureColumnReturn"); } }
+        public static int procedureColumnReturn { get { return SGetField<int>(LocalClazz, "procedureColumnReturn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnUnknown"/>
         /// </summary>
-        public static int procedureColumnUnknown { get { return LocalClazz.GetField<int>("procedureColumnUnknown"); } }
+        public static int procedureColumnUnknown { get { return SGetField<int>(LocalClazz, "procedureColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoNulls"/>
         /// </summary>
-        public static int procedureNoNulls { get { return LocalClazz.GetField<int>("procedureNoNulls"); } }
+        public static int procedureNoNulls { get { return SGetField<int>(LocalClazz, "procedureNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoResult"/>
         /// </summary>
-        public static int procedureNoResult { get { return LocalClazz.GetField<int>("procedureNoResult"); } }
+        public static int procedureNoResult { get { return SGetField<int>(LocalClazz, "procedureNoResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullable"/>
         /// </summary>
-        public static int procedureNullable { get { return LocalClazz.GetField<int>("procedureNullable"); } }
+        public static int procedureNullable { get { return SGetField<int>(LocalClazz, "procedureNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullableUnknown"/>
         /// </summary>
-        public static int procedureNullableUnknown { get { return LocalClazz.GetField<int>("procedureNullableUnknown"); } }
+        public static int procedureNullableUnknown { get { return SGetField<int>(LocalClazz, "procedureNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureResultUnknown"/>
         /// </summary>
-        public static int procedureResultUnknown { get { return LocalClazz.GetField<int>("procedureResultUnknown"); } }
+        public static int procedureResultUnknown { get { return SGetField<int>(LocalClazz, "procedureResultUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureReturnsResult"/>
         /// </summary>
-        public static int procedureReturnsResult { get { return LocalClazz.GetField<int>("procedureReturnsResult"); } }
+        public static int procedureReturnsResult { get { return SGetField<int>(LocalClazz, "procedureReturnsResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL"/>
         /// </summary>
-        public static int sqlStateSQL { get { return LocalClazz.GetField<int>("sqlStateSQL"); } }
+        public static int sqlStateSQL { get { return SGetField<int>(LocalClazz, "sqlStateSQL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL99"/>
         /// </summary>
-        public static int sqlStateSQL99 { get { return LocalClazz.GetField<int>("sqlStateSQL99"); } }
+        public static int sqlStateSQL99 { get { return SGetField<int>(LocalClazz, "sqlStateSQL99"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateXOpen"/>
         /// </summary>
-        public static int sqlStateXOpen { get { return LocalClazz.GetField<int>("sqlStateXOpen"); } }
+        public static int sqlStateXOpen { get { return SGetField<int>(LocalClazz, "sqlStateXOpen"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNoNulls"/>
         /// </summary>
-        public static int typeNoNulls { get { return LocalClazz.GetField<int>("typeNoNulls"); } }
+        public static int typeNoNulls { get { return SGetField<int>(LocalClazz, "typeNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullable"/>
         /// </summary>
-        public static int typeNullable { get { return LocalClazz.GetField<int>("typeNullable"); } }
+        public static int typeNullable { get { return SGetField<int>(LocalClazz, "typeNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullableUnknown"/>
         /// </summary>
-        public static int typeNullableUnknown { get { return LocalClazz.GetField<int>("typeNullableUnknown"); } }
+        public static int typeNullableUnknown { get { return SGetField<int>(LocalClazz, "typeNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredBasic"/>
         /// </summary>
-        public static int typePredBasic { get { return LocalClazz.GetField<int>("typePredBasic"); } }
+        public static int typePredBasic { get { return SGetField<int>(LocalClazz, "typePredBasic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredChar"/>
         /// </summary>
-        public static int typePredChar { get { return LocalClazz.GetField<int>("typePredChar"); } }
+        public static int typePredChar { get { return SGetField<int>(LocalClazz, "typePredChar"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredNone"/>
         /// </summary>
-        public static int typePredNone { get { return LocalClazz.GetField<int>("typePredNone"); } }
+        public static int typePredNone { get { return SGetField<int>(LocalClazz, "typePredNone"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeSearchable"/>
         /// </summary>
-        public static int typeSearchable { get { return LocalClazz.GetField<int>("typeSearchable"); } }
+        public static int typeSearchable { get { return SGetField<int>(LocalClazz, "typeSearchable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnNotPseudo"/>
         /// </summary>
-        public static int versionColumnNotPseudo { get { return LocalClazz.GetField<int>("versionColumnNotPseudo"); } }
+        public static int versionColumnNotPseudo { get { return SGetField<int>(LocalClazz, "versionColumnNotPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnPseudo"/>
         /// </summary>
-        public static int versionColumnPseudo { get { return LocalClazz.GetField<int>("versionColumnPseudo"); } }
+        public static int versionColumnPseudo { get { return SGetField<int>(LocalClazz, "versionColumnPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnUnknown"/>
         /// </summary>
-        public static int versionColumnUnknown { get { return LocalClazz.GetField<int>("versionColumnUnknown"); } }
+        public static int versionColumnUnknown { get { return SGetField<int>(LocalClazz, "versionColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNoNulls"/>
         /// </summary>
-        public static short attributeNoNulls { get { return LocalClazz.GetField<short>("attributeNoNulls"); } }
+        public static short attributeNoNulls { get { return SGetField<short>(LocalClazz, "attributeNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullable"/>
         /// </summary>
-        public static short attributeNullable { get { return LocalClazz.GetField<short>("attributeNullable"); } }
+        public static short attributeNullable { get { return SGetField<short>(LocalClazz, "attributeNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullableUnknown"/>
         /// </summary>
-        public static short attributeNullableUnknown { get { return LocalClazz.GetField<short>("attributeNullableUnknown"); } }
+        public static short attributeNullableUnknown { get { return SGetField<short>(LocalClazz, "attributeNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexClustered"/>
         /// </summary>
-        public static short tableIndexClustered { get { return LocalClazz.GetField<short>("tableIndexClustered"); } }
+        public static short tableIndexClustered { get { return SGetField<short>(LocalClazz, "tableIndexClustered"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexHashed"/>
         /// </summary>
-        public static short tableIndexHashed { get { return LocalClazz.GetField<short>("tableIndexHashed"); } }
+        public static short tableIndexHashed { get { return SGetField<short>(LocalClazz, "tableIndexHashed"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexOther"/>
         /// </summary>
-        public static short tableIndexOther { get { return LocalClazz.GetField<short>("tableIndexOther"); } }
+        public static short tableIndexOther { get { return SGetField<short>(LocalClazz, "tableIndexOther"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexStatistic"/>
         /// </summary>
-        public static short tableIndexStatistic { get { return LocalClazz.GetField<short>("tableIndexStatistic"); } }
+        public static short tableIndexStatistic { get { return SGetField<short>(LocalClazz, "tableIndexStatistic"); } }
         
         #endregion
 

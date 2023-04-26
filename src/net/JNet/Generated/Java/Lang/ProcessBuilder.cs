@@ -255,15 +255,15 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#DISCARD"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect DISCARD { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("DISCARD"); } }
+            public static Java.Lang.ProcessBuilder.Redirect DISCARD { get { return SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "DISCARD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#INHERIT"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect INHERIT { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("INHERIT"); } }
+            public static Java.Lang.ProcessBuilder.Redirect INHERIT { get { return SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "INHERIT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#PIPE"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect PIPE { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("PIPE"); } }
+            public static Java.Lang.ProcessBuilder.Redirect PIPE { get { return SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalClazz, "PIPE"); } }
             
             #endregion
 

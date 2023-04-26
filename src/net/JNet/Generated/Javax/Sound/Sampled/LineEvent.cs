@@ -95,19 +95,19 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type CLOSE { get { return LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("CLOSE"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type CLOSE { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "CLOSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type OPEN { get { return LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type OPEN { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "OPEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type START { get { return LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("START"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type START { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "START"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type STOP { get { return LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("STOP"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type STOP { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "STOP"); } }
             
             #endregion
 

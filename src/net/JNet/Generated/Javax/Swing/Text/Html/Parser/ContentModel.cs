@@ -71,15 +71,15 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#type"/>
         /// </summary>
-        public int type { get { return Instance.GetField<int>("type"); } set { Instance.SetField("type", value); } }
+        public int type { get { return IGetField<int>("type"); } set { ISetField("type", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#content"/>
         /// </summary>
-        public object content { get { return Instance.GetField("content"); } set { Instance.SetField("content", value); } }
+        public object content { get { return IGetField("content"); } set { ISetField("content", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#next"/>
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.ContentModel next { get { return Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("next"); } set { Instance.SetField("next", value); } }
+        public Javax.Swing.Text.Html.Parser.ContentModel next { get { return IGetField<Javax.Swing.Text.Html.Parser.ContentModel>("next"); } set { ISetField("next", value); } }
         
         #endregion
 

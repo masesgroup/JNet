@@ -44,39 +44,39 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CANON_EQ"/>
         /// </summary>
-        public static int CANON_EQ { get { return LocalClazz.GetField<int>("CANON_EQ"); } }
+        public static int CANON_EQ { get { return SGetField<int>(LocalClazz, "CANON_EQ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CASE_INSENSITIVE"/>
         /// </summary>
-        public static int CASE_INSENSITIVE { get { return LocalClazz.GetField<int>("CASE_INSENSITIVE"); } }
+        public static int CASE_INSENSITIVE { get { return SGetField<int>(LocalClazz, "CASE_INSENSITIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#COMMENTS"/>
         /// </summary>
-        public static int COMMENTS { get { return LocalClazz.GetField<int>("COMMENTS"); } }
+        public static int COMMENTS { get { return SGetField<int>(LocalClazz, "COMMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#DOTALL"/>
         /// </summary>
-        public static int DOTALL { get { return LocalClazz.GetField<int>("DOTALL"); } }
+        public static int DOTALL { get { return SGetField<int>(LocalClazz, "DOTALL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#LITERAL"/>
         /// </summary>
-        public static int LITERAL { get { return LocalClazz.GetField<int>("LITERAL"); } }
+        public static int LITERAL { get { return SGetField<int>(LocalClazz, "LITERAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#MULTILINE"/>
         /// </summary>
-        public static int MULTILINE { get { return LocalClazz.GetField<int>("MULTILINE"); } }
+        public static int MULTILINE { get { return SGetField<int>(LocalClazz, "MULTILINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CASE"/>
         /// </summary>
-        public static int UNICODE_CASE { get { return LocalClazz.GetField<int>("UNICODE_CASE"); } }
+        public static int UNICODE_CASE { get { return SGetField<int>(LocalClazz, "UNICODE_CASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS"/>
         /// </summary>
-        public static int UNICODE_CHARACTER_CLASS { get { return LocalClazz.GetField<int>("UNICODE_CHARACTER_CLASS"); } }
+        public static int UNICODE_CHARACTER_CLASS { get { return SGetField<int>(LocalClazz, "UNICODE_CHARACTER_CLASS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES"/>
         /// </summary>
-        public static int UNIX_LINES { get { return LocalClazz.GetField<int>("UNIX_LINES"); } }
+        public static int UNIX_LINES { get { return SGetField<int>(LocalClazz, "UNIX_LINES"); } }
         
         #endregion
 

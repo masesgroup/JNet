@@ -44,7 +44,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#DONE"/>
         /// </summary>
-        public static int DONE { get { return LocalClazz.GetField<int>("DONE"); } }
+        public static int DONE { get { return SGetField<int>(LocalClazz, "DONE"); } }
         
         #endregion
 

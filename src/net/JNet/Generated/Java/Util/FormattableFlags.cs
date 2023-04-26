@@ -40,15 +40,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormattableFlags.html#ALTERNATE"/>
         /// </summary>
-        public static int ALTERNATE { get { return LocalClazz.GetField<int>("ALTERNATE"); } }
+        public static int ALTERNATE { get { return SGetField<int>(LocalClazz, "ALTERNATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormattableFlags.html#LEFT_JUSTIFY"/>
         /// </summary>
-        public static int LEFT_JUSTIFY { get { return LocalClazz.GetField<int>("LEFT_JUSTIFY"); } }
+        public static int LEFT_JUSTIFY { get { return SGetField<int>(LocalClazz, "LEFT_JUSTIFY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormattableFlags.html#UPPERCASE"/>
         /// </summary>
-        public static int UPPERCASE { get { return LocalClazz.GetField<int>("UPPERCASE"); } }
+        public static int UPPERCASE { get { return SGetField<int>(LocalClazz, "UPPERCASE"); } }
         
         #endregion
 

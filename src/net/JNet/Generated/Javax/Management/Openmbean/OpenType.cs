@@ -44,7 +44,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { return LocalClazz.GetField<Java.Util.List>("ALLOWED_CLASSNAMES_LIST"); } }
+        public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List>(LocalClazz, "ALLOWED_CLASSNAMES_LIST"); } }
         
         #endregion
 
@@ -124,7 +124,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { return LocalClazz.GetField<Java.Util.List<string>>("ALLOWED_CLASSNAMES_LIST"); } }
+        public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List<string>>(LocalClazz, "ALLOWED_CLASSNAMES_LIST"); } }
         
         #endregion
 

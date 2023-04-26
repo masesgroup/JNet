@@ -44,11 +44,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET"/>
         /// </summary>
-        public static Java.Net.StandardProtocolFamily INET { get { return LocalClazz.GetField<Java.Net.StandardProtocolFamily>("INET"); } }
+        public static Java.Net.StandardProtocolFamily INET { get { return SGetField<Java.Net.StandardProtocolFamily>(LocalClazz, "INET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET6"/>
         /// </summary>
-        public static Java.Net.StandardProtocolFamily INET6 { get { return LocalClazz.GetField<Java.Net.StandardProtocolFamily>("INET6"); } }
+        public static Java.Net.StandardProtocolFamily INET6 { get { return SGetField<Java.Net.StandardProtocolFamily>(LocalClazz, "INET6"); } }
         
         #endregion
 

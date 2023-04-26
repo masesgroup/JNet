@@ -40,7 +40,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#NULL_ATTRIBUTE_VALUE"/>
         /// </summary>
-        public static string NULL_ATTRIBUTE_VALUE { get { return LocalClazz.GetField<string>("NULL_ATTRIBUTE_VALUE"); } }
+        public static string NULL_ATTRIBUTE_VALUE { get { return SGetField<string>(LocalClazz, "NULL_ATTRIBUTE_VALUE"); } }
         
         #endregion
 
@@ -111,323 +111,323 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ACTION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ACTION { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ACTION"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ACTION { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ACTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ALIGN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ALIGN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ALIGN"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ALIGN { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ALIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ALINK"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ALINK { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ALINK"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ALINK { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ALINK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ALT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ALT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ALT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ALT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ALT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ARCHIVE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ARCHIVE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ARCHIVE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ARCHIVE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ARCHIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#BACKGROUND"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute BACKGROUND { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("BACKGROUND"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute BACKGROUND { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "BACKGROUND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#BGCOLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute BGCOLOR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("BGCOLOR"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute BGCOLOR { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "BGCOLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#BORDER"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute BORDER { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("BORDER"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute BORDER { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "BORDER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CELLPADDING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CELLPADDING { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CELLPADDING"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CELLPADDING { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CELLPADDING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CELLSPACING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CELLSPACING { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CELLSPACING"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CELLSPACING { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CELLSPACING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CHECKED"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CHECKED { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CHECKED"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CHECKED { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CHECKED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CLASS"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CLASS { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CLASS"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CLASS { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CLASSID"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CLASSID { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CLASSID"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CLASSID { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CLASSID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CLEAR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CLEAR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CLEAR"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CLEAR { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CLEAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CODE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CODE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CODE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CODE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CODE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CODEBASE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CODEBASE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CODEBASE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CODEBASE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CODEBASE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CODETYPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CODETYPE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CODETYPE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CODETYPE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CODETYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COLOR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COLOR"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COLOR { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COLS"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COLS { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COLS"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COLS { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COLSPAN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COLSPAN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COLSPAN"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COLSPAN { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COLSPAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COMMENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COMMENT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COMMENT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COMMENT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COMMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COMPACT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COMPACT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COMPACT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COMPACT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COMPACT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#CONTENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute CONTENT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("CONTENT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute CONTENT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "CONTENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#COORDS"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute COORDS { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("COORDS"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute COORDS { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "COORDS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#DATA"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute DATA { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("DATA"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute DATA { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "DATA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#DECLARE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute DECLARE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("DECLARE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute DECLARE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "DECLARE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#DIR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute DIR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("DIR"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute DIR { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "DIR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#DUMMY"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute DUMMY { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("DUMMY"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute DUMMY { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "DUMMY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ENCTYPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ENCTYPE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ENCTYPE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ENCTYPE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ENCTYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ENDTAG"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ENDTAG { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ENDTAG"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ENDTAG { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ENDTAG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#FACE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute FACE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("FACE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute FACE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "FACE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#FRAMEBORDER"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute FRAMEBORDER { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("FRAMEBORDER"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute FRAMEBORDER { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "FRAMEBORDER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#HALIGN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute HALIGN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("HALIGN"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute HALIGN { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "HALIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#HEIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute HEIGHT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("HEIGHT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute HEIGHT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "HEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#HREF"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute HREF { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("HREF"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute HREF { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "HREF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#HSPACE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute HSPACE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("HSPACE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute HSPACE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "HSPACE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#HTTPEQUIV"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute HTTPEQUIV { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("HTTPEQUIV"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute HTTPEQUIV { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "HTTPEQUIV"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ID"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ID { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ID"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ID { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ISMAP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ISMAP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ISMAP"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ISMAP { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ISMAP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#LANG"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute LANG { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("LANG"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute LANG { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "LANG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#LANGUAGE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute LANGUAGE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("LANGUAGE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute LANGUAGE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "LANGUAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#LINK"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute LINK { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("LINK"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute LINK { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "LINK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#LOWSRC"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute LOWSRC { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("LOWSRC"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute LOWSRC { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "LOWSRC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#MARGINHEIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute MARGINHEIGHT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("MARGINHEIGHT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute MARGINHEIGHT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "MARGINHEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#MARGINWIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute MARGINWIDTH { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("MARGINWIDTH"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute MARGINWIDTH { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "MARGINWIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#MAXLENGTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute MAXLENGTH { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("MAXLENGTH"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute MAXLENGTH { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "MAXLENGTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#METHOD"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute METHOD { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("METHOD"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute METHOD { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "METHOD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#MULTIPLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute MULTIPLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("MULTIPLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute MULTIPLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "MULTIPLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#N"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute N { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("N"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute N { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "N"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#NAME"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute NAME { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("NAME"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute NAME { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "NAME"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#NOHREF"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute NOHREF { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("NOHREF"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute NOHREF { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "NOHREF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#NORESIZE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute NORESIZE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("NORESIZE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute NORESIZE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "NORESIZE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#NOSHADE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute NOSHADE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("NOSHADE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute NOSHADE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "NOSHADE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#NOWRAP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute NOWRAP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("NOWRAP"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute NOWRAP { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "NOWRAP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#PROMPT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute PROMPT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("PROMPT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute PROMPT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "PROMPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#REL"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute REL { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("REL"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute REL { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "REL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#REV"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute REV { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("REV"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute REV { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "REV"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ROWS"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ROWS { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ROWS"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ROWS { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ROWS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#ROWSPAN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute ROWSPAN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("ROWSPAN"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute ROWSPAN { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "ROWSPAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SCROLLING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SCROLLING { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SCROLLING"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SCROLLING { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SCROLLING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SELECTED"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SELECTED { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SELECTED"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SELECTED { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SELECTED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SHAPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SHAPE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SHAPE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SHAPE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SHAPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SHAPES"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SHAPES { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SHAPES"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SHAPES { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SHAPES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SIZE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SIZE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SIZE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SIZE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SIZE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#SRC"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute SRC { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("SRC"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute SRC { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "SRC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#STANDBY"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute STANDBY { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("STANDBY"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute STANDBY { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "STANDBY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#START"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute START { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("START"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute START { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "START"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute STYLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("STYLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute STYLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#TARGET"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute TARGET { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("TARGET"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute TARGET { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "TARGET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#TEXT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute TEXT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("TEXT"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute TEXT { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "TEXT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#TITLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute TITLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("TITLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute TITLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#TYPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute TYPE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("TYPE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute TYPE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "TYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#USEMAP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute USEMAP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("USEMAP"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute USEMAP { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "USEMAP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VALIGN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VALIGN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VALIGN"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VALIGN { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VALIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VALUE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VALUE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VALUE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VALUE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VALUE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VALUETYPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VALUETYPE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VALUETYPE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VALUETYPE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VALUETYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VERSION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VERSION { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VERSION"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VERSION { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VLINK"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VLINK { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VLINK"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VLINK { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VLINK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#VSPACE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute VSPACE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("VSPACE"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute VSPACE { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "VSPACE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Attribute WIDTH { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("WIDTH"); } }
+            public static Javax.Swing.Text.Html.HTML.Attribute WIDTH { get { return SGetField<Javax.Swing.Text.Html.HTML.Attribute>(LocalClazz, "WIDTH"); } }
             
             #endregion
 
@@ -458,307 +458,307 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#A"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag A { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("A"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag A { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#ADDRESS"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag ADDRESS { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("ADDRESS"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag ADDRESS { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "ADDRESS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#APPLET"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag APPLET { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("APPLET"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag APPLET { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "APPLET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#AREA"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag AREA { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("AREA"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag AREA { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "AREA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#B"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag B { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("B"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag B { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BASE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BASE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BASE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BASE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BASE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BASEFONT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BASEFONT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BASEFONT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BASEFONT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BASEFONT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BIG"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BIG { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BIG"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BIG { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BIG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BLOCKQUOTE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BLOCKQUOTE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BLOCKQUOTE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BLOCKQUOTE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BLOCKQUOTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BODY"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BODY { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BODY"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BODY { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BODY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#BR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag BR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("BR"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag BR { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "BR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#CAPTION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag CAPTION { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("CAPTION"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag CAPTION { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "CAPTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#CENTER"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag CENTER { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("CENTER"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag CENTER { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "CENTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#CITE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag CITE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("CITE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag CITE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "CITE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#CODE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag CODE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("CODE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag CODE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "CODE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#COMMENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag COMMENT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("COMMENT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag COMMENT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "COMMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#CONTENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag CONTENT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("CONTENT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag CONTENT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "CONTENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DD"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DD { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DD"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DD { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DFN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DFN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DFN"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DFN { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DFN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DIR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DIR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DIR"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DIR { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DIR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DIV"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DIV { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DIV"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DIV { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DIV"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DL"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DL { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DL"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DL { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#DT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag DT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("DT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag DT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "DT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#EM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag EM { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("EM"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag EM { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "EM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#FONT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag FONT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("FONT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag FONT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "FONT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#FORM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag FORM { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("FORM"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag FORM { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "FORM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#FRAME"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag FRAME { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("FRAME"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag FRAME { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "FRAME"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#FRAMESET"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag FRAMESET { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("FRAMESET"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag FRAMESET { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "FRAMESET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H1"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H1 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H1"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H1 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H2"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H2 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H2"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H2 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H3"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H3 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H3"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H3 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H4"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H4 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H4"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H4 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H5"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H5 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H5"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H5 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#H6"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag H6 { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("H6"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag H6 { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "H6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#HEAD"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag HEAD { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("HEAD"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag HEAD { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "HEAD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#HR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag HR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("HR"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag HR { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "HR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#HTML"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag HTMLField { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("HTML"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag HTMLField { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#I"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag I { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("I"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag I { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "I"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#IMG"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag IMG { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("IMG"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag IMG { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "IMG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#IMPLIED"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag IMPLIED { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("IMPLIED"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag IMPLIED { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "IMPLIED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#INPUT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag INPUT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("INPUT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag INPUT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "INPUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#ISINDEX"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag ISINDEX { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("ISINDEX"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag ISINDEX { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "ISINDEX"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#KBD"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag KBD { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("KBD"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag KBD { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "KBD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#LI"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag LI { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("LI"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag LI { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "LI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#LINK"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag LINK { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("LINK"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag LINK { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "LINK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#MAP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag MAP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("MAP"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag MAP { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "MAP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#MENU"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag MENU { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("MENU"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag MENU { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "MENU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#META"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag META { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("META"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag META { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "META"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#NOFRAMES"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag NOFRAMES { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("NOFRAMES"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag NOFRAMES { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "NOFRAMES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#OBJECT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag OBJECT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("OBJECT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag OBJECT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "OBJECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#OL"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag OL { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("OL"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag OL { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "OL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#OPTION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag OPTION { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("OPTION"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag OPTION { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "OPTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#P"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag P { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("P"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag P { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "P"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#PARAM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag PARAM { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("PARAM"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag PARAM { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "PARAM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#PRE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag PRE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("PRE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag PRE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "PRE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#S"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag S { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("S"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag S { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "S"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SAMP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SAMP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SAMP"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SAMP { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SAMP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SCRIPT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SCRIPT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SCRIPT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SCRIPT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SCRIPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SELECT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SELECT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SELECT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SELECT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SELECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SMALL"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SMALL { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SMALL"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SMALL { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SMALL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SPAN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SPAN { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SPAN"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SPAN { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SPAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#STRIKE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag STRIKE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("STRIKE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag STRIKE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "STRIKE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#STRONG"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag STRONG { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("STRONG"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag STRONG { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "STRONG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag STYLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("STYLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag STYLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SUB"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SUB { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SUB"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SUB { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SUB"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#SUP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag SUP { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("SUP"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag SUP { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "SUP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TABLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TABLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TABLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TABLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TABLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TD"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TD { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TD"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TD { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TEXTAREA"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TEXTAREA { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TEXTAREA"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TEXTAREA { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TEXTAREA"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TH { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TH"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TH { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TITLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TITLE { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TITLE"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TITLE { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TR"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TR { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#TT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag TT { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("TT"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag TT { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "TT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#U"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag U { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("U"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag U { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "U"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#UL"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag UL { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("UL"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag UL { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "UL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#VAR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.HTML.Tag VAR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("VAR"); } }
+            public static Javax.Swing.Text.Html.HTML.Tag VAR { get { return SGetField<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "VAR"); } }
             
             #endregion
 

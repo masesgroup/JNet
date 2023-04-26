@@ -40,7 +40,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#NOT_SPECIFIED"/>
         /// </summary>
-        public static int NOT_SPECIFIED { get { return LocalClazz.GetField<int>("NOT_SPECIFIED"); } }
+        public static int NOT_SPECIFIED { get { return SGetField<int>(LocalClazz, "NOT_SPECIFIED"); } }
         
         #endregion
 

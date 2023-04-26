@@ -53,15 +53,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_ALWAYS"/>
         /// </summary>
-        public static int SCROLLBARS_ALWAYS { get { return LocalClazz.GetField<int>("SCROLLBARS_ALWAYS"); } }
+        public static int SCROLLBARS_ALWAYS { get { return SGetField<int>(LocalClazz, "SCROLLBARS_ALWAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_AS_NEEDED"/>
         /// </summary>
-        public static int SCROLLBARS_AS_NEEDED { get { return LocalClazz.GetField<int>("SCROLLBARS_AS_NEEDED"); } }
+        public static int SCROLLBARS_AS_NEEDED { get { return SGetField<int>(LocalClazz, "SCROLLBARS_AS_NEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_NEVER"/>
         /// </summary>
-        public static int SCROLLBARS_NEVER { get { return LocalClazz.GetField<int>("SCROLLBARS_NEVER"); } }
+        public static int SCROLLBARS_NEVER { get { return SGetField<int>(LocalClazz, "SCROLLBARS_NEVER"); } }
         
         #endregion
 

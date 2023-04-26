@@ -40,27 +40,27 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#active"/>
         /// </summary>
-        public bool active { get { return Instance.GetField<bool>("active"); } set { Instance.SetField("active", value); } }
+        public bool active { get { return IGetField<bool>("active"); } set { ISetField("active", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#bank"/>
         /// </summary>
-        public int bank { get { return Instance.GetField<int>("bank"); } set { Instance.SetField("bank", value); } }
+        public int bank { get { return IGetField<int>("bank"); } set { ISetField("bank", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#channel"/>
         /// </summary>
-        public int channel { get { return Instance.GetField<int>("channel"); } set { Instance.SetField("channel", value); } }
+        public int channel { get { return IGetField<int>("channel"); } set { ISetField("channel", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#note"/>
         /// </summary>
-        public int note { get { return Instance.GetField<int>("note"); } set { Instance.SetField("note", value); } }
+        public int note { get { return IGetField<int>("note"); } set { ISetField("note", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#program"/>
         /// </summary>
-        public int program { get { return Instance.GetField<int>("program"); } set { Instance.SetField("program", value); } }
+        public int program { get { return IGetField<int>("program"); } set { ISetField("program", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#volume"/>
         /// </summary>
-        public int volume { get { return Instance.GetField<int>("volume"); } set { Instance.SetField("volume", value); } }
+        public int volume { get { return IGetField<int>("volume"); } set { ISetField("volume", value); } }
         
         #endregion
 

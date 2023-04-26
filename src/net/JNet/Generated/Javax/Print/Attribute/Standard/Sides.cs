@@ -52,23 +52,23 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides DUPLEX { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX"); } }
+        public static Javax.Print.Attribute.Standard.Sides DUPLEX { get { return SGetField<Javax.Print.Attribute.Standard.Sides>(LocalClazz, "DUPLEX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#ONE_SIDED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides ONE_SIDED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("ONE_SIDED"); } }
+        public static Javax.Print.Attribute.Standard.Sides ONE_SIDED { get { return SGetField<Javax.Print.Attribute.Standard.Sides>(LocalClazz, "ONE_SIDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TUMBLE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE"); } }
+        public static Javax.Print.Attribute.Standard.Sides TUMBLE { get { return SGetField<Javax.Print.Attribute.Standard.Sides>(LocalClazz, "TUMBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_LONG_EDGE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_LONG_EDGE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_LONG_EDGE"); } }
+        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_LONG_EDGE { get { return SGetField<Javax.Print.Attribute.Standard.Sides>(LocalClazz, "TWO_SIDED_LONG_EDGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_SHORT_EDGE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_SHORT_EDGE"); } }
+        public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE { get { return SGetField<Javax.Print.Attribute.Standard.Sides>(LocalClazz, "TWO_SIDED_SHORT_EDGE"); } }
         
         #endregion
 

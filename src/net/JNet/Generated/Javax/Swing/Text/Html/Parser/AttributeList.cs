@@ -69,27 +69,27 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#modifier"/>
         /// </summary>
-        public int modifier { get { return Instance.GetField<int>("modifier"); } set { Instance.SetField("modifier", value); } }
+        public int modifier { get { return IGetField<int>("modifier"); } set { ISetField("modifier", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#type"/>
         /// </summary>
-        public int type { get { return Instance.GetField<int>("type"); } set { Instance.SetField("type", value); } }
+        public int type { get { return IGetField<int>("type"); } set { ISetField("type", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name"/>
         /// </summary>
-        public string name { get { return Instance.GetField<string>("name"); } set { Instance.SetField("name", value); } }
+        public string name { get { return IGetField<string>("name"); } set { ISetField("name", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#value"/>
         /// </summary>
-        public string value { get { return Instance.GetField<string>("value"); } set { Instance.SetField("value", value); } }
+        public string value { get { return IGetField<string>("value"); } set { ISetField("value", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#values"/>
         /// </summary>
-        public Java.Util.Vector values { get { return Instance.GetField<Java.Util.Vector>("values"); } set { Instance.SetField("values", value); } }
+        public Java.Util.Vector values { get { return IGetField<Java.Util.Vector>("values"); } set { ISetField("values", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#next"/>
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.AttributeList next { get { return Instance.GetField<Javax.Swing.Text.Html.Parser.AttributeList>("next"); } set { Instance.SetField("next", value); } }
+        public Javax.Swing.Text.Html.Parser.AttributeList next { get { return IGetField<Javax.Swing.Text.Html.Parser.AttributeList>("next"); } set { ISetField("next", value); } }
         
         #endregion
 

@@ -78,19 +78,19 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#isSelected"/>
             /// </summary>
-            public bool isSelected { get { return Instance.GetField<bool>("isSelected"); } set { Instance.SetField("isSelected", value); } }
+            public bool isSelected { get { return IGetField<bool>("isSelected"); } set { ISetField("isSelected", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#wasFocused"/>
             /// </summary>
-            public Java.Awt.Component wasFocused { get { return Instance.GetField<Java.Awt.Component>("wasFocused"); } set { Instance.SetField("wasFocused", value); } }
+            public Java.Awt.Component wasFocused { get { return IGetField<Java.Awt.Component>("wasFocused"); } set { ISetField("wasFocused", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu"/>
             /// </summary>
-            public Javax.Swing.JMenu menu { get { return Instance.GetField<Javax.Swing.JMenu>("menu"); } set { Instance.SetField("menu", value); } }
+            public Javax.Swing.JMenu menu { get { return IGetField<Javax.Swing.JMenu>("menu"); } set { ISetField("menu", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui"/>
             /// </summary>
-            public Javax.Swing.Plaf.Basic.BasicMenuUI ui { get { return Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui"); } set { Instance.SetField("ui", value); } }
+            public Javax.Swing.Plaf.Basic.BasicMenuUI ui { get { return IGetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui"); } set { ISetField("ui", value); } }
             
             #endregion
 

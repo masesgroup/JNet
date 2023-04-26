@@ -101,19 +101,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#height"/>
         /// </summary>
-        public int height { get { return Instance.GetField<int>("height"); } set { Instance.SetField("height", value); } }
+        public int height { get { return IGetField<int>("height"); } set { ISetField("height", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#width"/>
         /// </summary>
-        public int width { get { return Instance.GetField<int>("width"); } set { Instance.SetField("width", value); } }
+        public int width { get { return IGetField<int>("width"); } set { ISetField("width", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#x"/>
         /// </summary>
-        public int x { get { return Instance.GetField<int>("x"); } set { Instance.SetField("x", value); } }
+        public int x { get { return IGetField<int>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#y"/>
         /// </summary>
-        public int y { get { return Instance.GetField<int>("y"); } set { Instance.SetField("y", value); } }
+        public int y { get { return IGetField<int>("y"); } set { ISetField("y", value); } }
         
         #endregion
 

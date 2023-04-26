@@ -57,15 +57,15 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#ERROR"/>
         /// </summary>
-        public static int ERROR { get { return LocalClazz.GetField<int>("ERROR"); } }
+        public static int ERROR { get { return SGetField<int>(LocalClazz, "ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#INFORMATION"/>
         /// </summary>
-        public static int INFORMATION { get { return LocalClazz.GetField<int>("INFORMATION"); } }
+        public static int INFORMATION { get { return SGetField<int>(LocalClazz, "INFORMATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#WARNING"/>
         /// </summary>
-        public static int WARNING { get { return LocalClazz.GetField<int>("WARNING"); } }
+        public static int WARNING { get { return SGetField<int>(LocalClazz, "WARNING"); } }
         
         #endregion
 

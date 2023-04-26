@@ -61,11 +61,11 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SPECIAL_SYSTEM_EXCLUSIVE"/>
         /// </summary>
-        public static int SPECIAL_SYSTEM_EXCLUSIVE { get { return LocalClazz.GetField<int>("SPECIAL_SYSTEM_EXCLUSIVE"); } }
+        public static int SPECIAL_SYSTEM_EXCLUSIVE { get { return SGetField<int>(LocalClazz, "SPECIAL_SYSTEM_EXCLUSIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SYSTEM_EXCLUSIVE"/>
         /// </summary>
-        public static int SYSTEM_EXCLUSIVE { get { return LocalClazz.GetField<int>("SYSTEM_EXCLUSIVE"); } }
+        public static int SYSTEM_EXCLUSIVE { get { return SGetField<int>(LocalClazz, "SYSTEM_EXCLUSIVE"); } }
         
         #endregion
 

@@ -62,71 +62,71 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#BOLD"/>
         /// </summary>
-        public static int BOLD { get { return LocalClazz.GetField<int>("BOLD"); } }
+        public static int BOLD { get { return SGetField<int>(LocalClazz, "BOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#CENTER_BASELINE"/>
         /// </summary>
-        public static int CENTER_BASELINE { get { return LocalClazz.GetField<int>("CENTER_BASELINE"); } }
+        public static int CENTER_BASELINE { get { return SGetField<int>(LocalClazz, "CENTER_BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#HANGING_BASELINE"/>
         /// </summary>
-        public static int HANGING_BASELINE { get { return LocalClazz.GetField<int>("HANGING_BASELINE"); } }
+        public static int HANGING_BASELINE { get { return SGetField<int>(LocalClazz, "HANGING_BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ITALIC"/>
         /// </summary>
-        public static int ITALIC { get { return LocalClazz.GetField<int>("ITALIC"); } }
+        public static int ITALIC { get { return SGetField<int>(LocalClazz, "ITALIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int LAYOUT_LEFT_TO_RIGHT { get { return LocalClazz.GetField<int>("LAYOUT_LEFT_TO_RIGHT"); } }
+        public static int LAYOUT_LEFT_TO_RIGHT { get { return SGetField<int>(LocalClazz, "LAYOUT_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_LIMIT_CONTEXT"/>
         /// </summary>
-        public static int LAYOUT_NO_LIMIT_CONTEXT { get { return LocalClazz.GetField<int>("LAYOUT_NO_LIMIT_CONTEXT"); } }
+        public static int LAYOUT_NO_LIMIT_CONTEXT { get { return SGetField<int>(LocalClazz, "LAYOUT_NO_LIMIT_CONTEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_START_CONTEXT"/>
         /// </summary>
-        public static int LAYOUT_NO_START_CONTEXT { get { return LocalClazz.GetField<int>("LAYOUT_NO_START_CONTEXT"); } }
+        public static int LAYOUT_NO_START_CONTEXT { get { return SGetField<int>(LocalClazz, "LAYOUT_NO_START_CONTEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int LAYOUT_RIGHT_TO_LEFT { get { return LocalClazz.GetField<int>("LAYOUT_RIGHT_TO_LEFT"); } }
+        public static int LAYOUT_RIGHT_TO_LEFT { get { return SGetField<int>(LocalClazz, "LAYOUT_RIGHT_TO_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#PLAIN"/>
         /// </summary>
-        public static int PLAIN { get { return LocalClazz.GetField<int>("PLAIN"); } }
+        public static int PLAIN { get { return SGetField<int>(LocalClazz, "PLAIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ROMAN_BASELINE"/>
         /// </summary>
-        public static int ROMAN_BASELINE { get { return LocalClazz.GetField<int>("ROMAN_BASELINE"); } }
+        public static int ROMAN_BASELINE { get { return SGetField<int>(LocalClazz, "ROMAN_BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TRUETYPE_FONT"/>
         /// </summary>
-        public static int TRUETYPE_FONT { get { return LocalClazz.GetField<int>("TRUETYPE_FONT"); } }
+        public static int TRUETYPE_FONT { get { return SGetField<int>(LocalClazz, "TRUETYPE_FONT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TYPE1_FONT"/>
         /// </summary>
-        public static int TYPE1_FONT { get { return LocalClazz.GetField<int>("TYPE1_FONT"); } }
+        public static int TYPE1_FONT { get { return SGetField<int>(LocalClazz, "TYPE1_FONT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG"/>
         /// </summary>
-        public static string DIALOG { get { return LocalClazz.GetField<string>("DIALOG"); } }
+        public static string DIALOG { get { return SGetField<string>(LocalClazz, "DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG_INPUT"/>
         /// </summary>
-        public static string DIALOG_INPUT { get { return LocalClazz.GetField<string>("DIALOG_INPUT"); } }
+        public static string DIALOG_INPUT { get { return SGetField<string>(LocalClazz, "DIALOG_INPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#MONOSPACED"/>
         /// </summary>
-        public static string MONOSPACED { get { return LocalClazz.GetField<string>("MONOSPACED"); } }
+        public static string MONOSPACED { get { return SGetField<string>(LocalClazz, "MONOSPACED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SANS_SERIF"/>
         /// </summary>
-        public static string SANS_SERIF { get { return LocalClazz.GetField<string>("SANS_SERIF"); } }
+        public static string SANS_SERIF { get { return SGetField<string>(LocalClazz, "SANS_SERIF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF"/>
         /// </summary>
-        public static string SERIF { get { return LocalClazz.GetField<string>("SERIF"); } }
+        public static string SERIF { get { return SGetField<string>(LocalClazz, "SERIF"); } }
         
         #endregion
 

@@ -120,19 +120,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#BACKGROUND"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND { get { return LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("BACKGROUND"); } }
+            public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND { get { return SGetField<Java.Awt.BufferCapabilities.FlipContents>(LocalClazz, "BACKGROUND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents COPIED { get { return LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED"); } }
+            public static Java.Awt.BufferCapabilities.FlipContents COPIED { get { return SGetField<Java.Awt.BufferCapabilities.FlipContents>(LocalClazz, "COPIED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#PRIOR"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents PRIOR { get { return LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("PRIOR"); } }
+            public static Java.Awt.BufferCapabilities.FlipContents PRIOR { get { return SGetField<Java.Awt.BufferCapabilities.FlipContents>(LocalClazz, "PRIOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED"/>
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED { get { return LocalClazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED"); } }
+            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED { get { return SGetField<Java.Awt.BufferCapabilities.FlipContents>(LocalClazz, "UNDEFINED"); } }
             
             #endregion
 

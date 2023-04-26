@@ -40,15 +40,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_LIST"/>
         /// </summary>
-        public static Java.Util.List EMPTY_LIST { get { return LocalClazz.GetField<Java.Util.List>("EMPTY_LIST"); } }
+        public static Java.Util.List EMPTY_LIST { get { return SGetField<Java.Util.List>(LocalClazz, "EMPTY_LIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_MAP"/>
         /// </summary>
-        public static Java.Util.Map EMPTY_MAP { get { return LocalClazz.GetField<Java.Util.Map>("EMPTY_MAP"); } }
+        public static Java.Util.Map EMPTY_MAP { get { return SGetField<Java.Util.Map>(LocalClazz, "EMPTY_MAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_SET"/>
         /// </summary>
-        public static Java.Util.Set EMPTY_SET { get { return LocalClazz.GetField<Java.Util.Set>("EMPTY_SET"); } }
+        public static Java.Util.Set EMPTY_SET { get { return SGetField<Java.Util.Set>(LocalClazz, "EMPTY_SET"); } }
         
         #endregion
 

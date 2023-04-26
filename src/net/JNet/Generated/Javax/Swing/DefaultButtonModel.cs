@@ -48,23 +48,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ARMED"/>
         /// </summary>
-        public static int ARMED { get { return LocalClazz.GetField<int>("ARMED"); } }
+        public static int ARMED { get { return SGetField<int>(LocalClazz, "ARMED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ENABLED"/>
         /// </summary>
-        public static int ENABLED { get { return LocalClazz.GetField<int>("ENABLED"); } }
+        public static int ENABLED { get { return SGetField<int>(LocalClazz, "ENABLED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#PRESSED"/>
         /// </summary>
-        public static int PRESSED { get { return LocalClazz.GetField<int>("PRESSED"); } }
+        public static int PRESSED { get { return SGetField<int>(LocalClazz, "PRESSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#ROLLOVER"/>
         /// </summary>
-        public static int ROLLOVER { get { return LocalClazz.GetField<int>("ROLLOVER"); } }
+        public static int ROLLOVER { get { return SGetField<int>(LocalClazz, "ROLLOVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED { get { return LocalClazz.GetField<int>("SELECTED"); } }
+        public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
         
         #endregion
 

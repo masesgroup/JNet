@@ -40,15 +40,15 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER"/>
         /// </summary>
-        public static string ROWSET_SYNC_PROVIDER { get { return LocalClazz.GetField<string>("ROWSET_SYNC_PROVIDER"); } }
+        public static string ROWSET_SYNC_PROVIDER { get { return SGetField<string>(LocalClazz, "ROWSET_SYNC_PROVIDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER_VERSION"/>
         /// </summary>
-        public static string ROWSET_SYNC_PROVIDER_VERSION { get { return LocalClazz.GetField<string>("ROWSET_SYNC_PROVIDER_VERSION"); } }
+        public static string ROWSET_SYNC_PROVIDER_VERSION { get { return SGetField<string>(LocalClazz, "ROWSET_SYNC_PROVIDER_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR"/>
         /// </summary>
-        public static string ROWSET_SYNC_VENDOR { get { return LocalClazz.GetField<string>("ROWSET_SYNC_VENDOR"); } }
+        public static string ROWSET_SYNC_VENDOR { get { return SGetField<string>(LocalClazz, "ROWSET_SYNC_VENDOR"); } }
         
         #endregion
 

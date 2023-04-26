@@ -48,23 +48,23 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#BidiElementName"/>
         /// </summary>
-        public static string BidiElementName { get { return LocalClazz.GetField<string>("BidiElementName"); } }
+        public static string BidiElementName { get { return SGetField<string>(LocalClazz, "BidiElementName"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ContentElementName"/>
         /// </summary>
-        public static string ContentElementName { get { return LocalClazz.GetField<string>("ContentElementName"); } }
+        public static string ContentElementName { get { return SGetField<string>(LocalClazz, "ContentElementName"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ElementNameAttribute"/>
         /// </summary>
-        public static string ElementNameAttribute { get { return LocalClazz.GetField<string>("ElementNameAttribute"); } }
+        public static string ElementNameAttribute { get { return SGetField<string>(LocalClazz, "ElementNameAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ParagraphElementName"/>
         /// </summary>
-        public static string ParagraphElementName { get { return LocalClazz.GetField<string>("ParagraphElementName"); } }
+        public static string ParagraphElementName { get { return SGetField<string>(LocalClazz, "ParagraphElementName"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName"/>
         /// </summary>
-        public static string SectionElementName { get { return LocalClazz.GetField<string>("SectionElementName"); } }
+        public static string SectionElementName { get { return SGetField<string>(LocalClazz, "SectionElementName"); } }
         
         #endregion
 

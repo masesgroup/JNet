@@ -161,43 +161,43 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_IMAGE_WINDOW"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_BADGE_IMAGE_WINDOW { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_IMAGE_WINDOW"); } }
+            public static Java.Awt.Taskbar.Feature ICON_BADGE_IMAGE_WINDOW { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "ICON_BADGE_IMAGE_WINDOW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_NUMBER"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_BADGE_NUMBER { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_NUMBER"); } }
+            public static Java.Awt.Taskbar.Feature ICON_BADGE_NUMBER { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "ICON_BADGE_NUMBER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_TEXT"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_BADGE_TEXT { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_TEXT"); } }
+            public static Java.Awt.Taskbar.Feature ICON_BADGE_TEXT { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "ICON_BADGE_TEXT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_IMAGE"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_IMAGE { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("ICON_IMAGE"); } }
+            public static Java.Awt.Taskbar.Feature ICON_IMAGE { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "ICON_IMAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#MENU"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature MENU { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("MENU"); } }
+            public static Java.Awt.Taskbar.Feature MENU { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "MENU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_STATE_WINDOW"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature PROGRESS_STATE_WINDOW { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_STATE_WINDOW"); } }
+            public static Java.Awt.Taskbar.Feature PROGRESS_STATE_WINDOW { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "PROGRESS_STATE_WINDOW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature PROGRESS_VALUE { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_VALUE"); } }
+            public static Java.Awt.Taskbar.Feature PROGRESS_VALUE { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "PROGRESS_VALUE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE_WINDOW"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature PROGRESS_VALUE_WINDOW { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_VALUE_WINDOW"); } }
+            public static Java.Awt.Taskbar.Feature PROGRESS_VALUE_WINDOW { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "PROGRESS_VALUE_WINDOW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature USER_ATTENTION { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("USER_ATTENTION"); } }
+            public static Java.Awt.Taskbar.Feature USER_ATTENTION { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "USER_ATTENTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION_WINDOW"/>
             /// </summary>
-            public static Java.Awt.Taskbar.Feature USER_ATTENTION_WINDOW { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("USER_ATTENTION_WINDOW"); } }
+            public static Java.Awt.Taskbar.Feature USER_ATTENTION_WINDOW { get { return SGetField<Java.Awt.Taskbar.Feature>(LocalClazz, "USER_ATTENTION_WINDOW"); } }
             
             #endregion
 
@@ -244,23 +244,23 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR"/>
             /// </summary>
-            public static Java.Awt.Taskbar.State ERROR { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("ERROR"); } }
+            public static Java.Awt.Taskbar.State ERROR { get { return SGetField<Java.Awt.Taskbar.State>(LocalClazz, "ERROR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE"/>
             /// </summary>
-            public static Java.Awt.Taskbar.State INDETERMINATE { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("INDETERMINATE"); } }
+            public static Java.Awt.Taskbar.State INDETERMINATE { get { return SGetField<Java.Awt.Taskbar.State>(LocalClazz, "INDETERMINATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL"/>
             /// </summary>
-            public static Java.Awt.Taskbar.State NORMAL { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("NORMAL"); } }
+            public static Java.Awt.Taskbar.State NORMAL { get { return SGetField<Java.Awt.Taskbar.State>(LocalClazz, "NORMAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF"/>
             /// </summary>
-            public static Java.Awt.Taskbar.State OFF { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("OFF"); } }
+            public static Java.Awt.Taskbar.State OFF { get { return SGetField<Java.Awt.Taskbar.State>(LocalClazz, "OFF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED"/>
             /// </summary>
-            public static Java.Awt.Taskbar.State PAUSED { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("PAUSED"); } }
+            public static Java.Awt.Taskbar.State PAUSED { get { return SGetField<Java.Awt.Taskbar.State>(LocalClazz, "PAUSED"); } }
             
             #endregion
 

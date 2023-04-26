@@ -48,15 +48,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#FALSE"/>
         /// </summary>
-        public static bool? FALSE { get { return LocalClazz.GetField<bool?>("FALSE"); } }
+        public static bool? FALSE { get { return SGetField<bool?>(LocalClazz, "FALSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TRUE"/>
         /// </summary>
-        public static bool? TRUE { get { return LocalClazz.GetField<bool?>("TRUE"); } }
+        public static bool? TRUE { get { return SGetField<bool?>(LocalClazz, "TRUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
+        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
         
         #endregion
 

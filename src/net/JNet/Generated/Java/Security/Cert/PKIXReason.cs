@@ -40,35 +40,35 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_KEY_USAGE"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason INVALID_KEY_USAGE { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_KEY_USAGE"); } }
+        public static Java.Security.Cert.PKIXReason INVALID_KEY_USAGE { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "INVALID_KEY_USAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_NAME"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason INVALID_NAME { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_NAME"); } }
+        public static Java.Security.Cert.PKIXReason INVALID_NAME { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "INVALID_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_POLICY"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason INVALID_POLICY { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_POLICY"); } }
+        public static Java.Security.Cert.PKIXReason INVALID_POLICY { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "INVALID_POLICY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NAME_CHAINING"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason NAME_CHAINING { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("NAME_CHAINING"); } }
+        public static Java.Security.Cert.PKIXReason NAME_CHAINING { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "NAME_CHAINING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NO_TRUST_ANCHOR"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason NO_TRUST_ANCHOR { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("NO_TRUST_ANCHOR"); } }
+        public static Java.Security.Cert.PKIXReason NO_TRUST_ANCHOR { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "NO_TRUST_ANCHOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NOT_CA_CERT"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason NOT_CA_CERT { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("NOT_CA_CERT"); } }
+        public static Java.Security.Cert.PKIXReason NOT_CA_CERT { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "NOT_CA_CERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#PATH_TOO_LONG"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason PATH_TOO_LONG { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("PATH_TOO_LONG"); } }
+        public static Java.Security.Cert.PKIXReason PATH_TOO_LONG { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "PATH_TOO_LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT"/>
         /// </summary>
-        public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT { get { return LocalClazz.GetField<Java.Security.Cert.PKIXReason>("UNRECOGNIZED_CRIT_EXT"); } }
+        public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "UNRECOGNIZED_CRIT_EXT"); } }
         
         #endregion
 

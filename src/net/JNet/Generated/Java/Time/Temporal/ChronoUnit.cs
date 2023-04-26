@@ -44,67 +44,67 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#CENTURIES"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit CENTURIES { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("CENTURIES"); } }
+        public static Java.Time.Temporal.ChronoUnit CENTURIES { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "CENTURIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#DAYS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit DAYS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("DAYS"); } }
+        public static Java.Time.Temporal.ChronoUnit DAYS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "DAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#DECADES"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit DECADES { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("DECADES"); } }
+        public static Java.Time.Temporal.ChronoUnit DECADES { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "DECADES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#ERAS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit ERAS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("ERAS"); } }
+        public static Java.Time.Temporal.ChronoUnit ERAS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "ERAS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#FOREVER"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit FOREVER { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("FOREVER"); } }
+        public static Java.Time.Temporal.ChronoUnit FOREVER { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "FOREVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#HALF_DAYS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit HALF_DAYS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("HALF_DAYS"); } }
+        public static Java.Time.Temporal.ChronoUnit HALF_DAYS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "HALF_DAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#HOURS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit HOURS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("HOURS"); } }
+        public static Java.Time.Temporal.ChronoUnit HOURS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "HOURS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#MICROS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit MICROS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("MICROS"); } }
+        public static Java.Time.Temporal.ChronoUnit MICROS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "MICROS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#MILLENNIA"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit MILLENNIA { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("MILLENNIA"); } }
+        public static Java.Time.Temporal.ChronoUnit MILLENNIA { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "MILLENNIA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#MILLIS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit MILLIS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("MILLIS"); } }
+        public static Java.Time.Temporal.ChronoUnit MILLIS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "MILLIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#MINUTES"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit MINUTES { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("MINUTES"); } }
+        public static Java.Time.Temporal.ChronoUnit MINUTES { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "MINUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#MONTHS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit MONTHS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("MONTHS"); } }
+        public static Java.Time.Temporal.ChronoUnit MONTHS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "MONTHS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#NANOS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit NANOS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("NANOS"); } }
+        public static Java.Time.Temporal.ChronoUnit NANOS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "NANOS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#SECONDS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit SECONDS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("SECONDS"); } }
+        public static Java.Time.Temporal.ChronoUnit SECONDS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "SECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#WEEKS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit WEEKS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("WEEKS"); } }
+        public static Java.Time.Temporal.ChronoUnit WEEKS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "WEEKS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#YEARS"/>
         /// </summary>
-        public static Java.Time.Temporal.ChronoUnit YEARS { get { return LocalClazz.GetField<Java.Time.Temporal.ChronoUnit>("YEARS"); } }
+        public static Java.Time.Temporal.ChronoUnit YEARS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "YEARS"); } }
         
         #endregion
 

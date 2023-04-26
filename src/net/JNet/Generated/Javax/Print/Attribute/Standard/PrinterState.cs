@@ -44,19 +44,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#IDLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState IDLE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("IDLE"); } }
+        public static Javax.Print.Attribute.Standard.PrinterState IDLE { get { return SGetField<Javax.Print.Attribute.Standard.PrinterState>(LocalClazz, "IDLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#PROCESSING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState PROCESSING { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("PROCESSING"); } }
+        public static Javax.Print.Attribute.Standard.PrinterState PROCESSING { get { return SGetField<Javax.Print.Attribute.Standard.PrinterState>(LocalClazz, "PROCESSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#STOPPED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState STOPPED { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("STOPPED"); } }
+        public static Javax.Print.Attribute.Standard.PrinterState STOPPED { get { return SGetField<Javax.Print.Attribute.Standard.PrinterState>(LocalClazz, "STOPPED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#UNKNOWN"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN"); } }
+        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN { get { return SGetField<Javax.Print.Attribute.Standard.PrinterState>(LocalClazz, "UNKNOWN"); } }
         
         #endregion
 

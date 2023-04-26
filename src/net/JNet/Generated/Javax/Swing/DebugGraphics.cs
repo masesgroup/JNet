@@ -57,19 +57,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION"/>
         /// </summary>
-        public static int BUFFERED_OPTION { get { return LocalClazz.GetField<int>("BUFFERED_OPTION"); } }
+        public static int BUFFERED_OPTION { get { return SGetField<int>(LocalClazz, "BUFFERED_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#FLASH_OPTION"/>
         /// </summary>
-        public static int FLASH_OPTION { get { return LocalClazz.GetField<int>("FLASH_OPTION"); } }
+        public static int FLASH_OPTION { get { return SGetField<int>(LocalClazz, "FLASH_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION"/>
         /// </summary>
-        public static int LOG_OPTION { get { return LocalClazz.GetField<int>("LOG_OPTION"); } }
+        public static int LOG_OPTION { get { return SGetField<int>(LocalClazz, "LOG_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION"/>
         /// </summary>
-        public static int NONE_OPTION { get { return LocalClazz.GetField<int>("NONE_OPTION"); } }
+        public static int NONE_OPTION { get { return SGetField<int>(LocalClazz, "NONE_OPTION"); } }
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#CLOSE_ALL_WINDOWS"/>
         /// </summary>
-        public static Java.Awt.DesktopNs.QuitStrategy CLOSE_ALL_WINDOWS { get { return LocalClazz.GetField<Java.Awt.DesktopNs.QuitStrategy>("CLOSE_ALL_WINDOWS"); } }
+        public static Java.Awt.DesktopNs.QuitStrategy CLOSE_ALL_WINDOWS { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "CLOSE_ALL_WINDOWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#NORMAL_EXIT"/>
         /// </summary>
-        public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT { get { return LocalClazz.GetField<Java.Awt.DesktopNs.QuitStrategy>("NORMAL_EXIT"); } }
+        public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "NORMAL_EXIT"); } }
         
         #endregion
 

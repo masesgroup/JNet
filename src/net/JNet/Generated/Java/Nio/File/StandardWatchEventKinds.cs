@@ -40,19 +40,19 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#OVERFLOW"/>
         /// </summary>
-        public static Java.Nio.File.WatchEvent.Kind OVERFLOW { get { return LocalClazz.GetField<Java.Nio.File.WatchEvent.Kind>("OVERFLOW"); } }
+        public static Java.Nio.File.WatchEvent.Kind OVERFLOW { get { return SGetField<Java.Nio.File.WatchEvent.Kind>(LocalClazz, "OVERFLOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_CREATE"/>
         /// </summary>
-        public static Java.Nio.File.WatchEvent.Kind ENTRY_CREATE { get { return LocalClazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_CREATE"); } }
+        public static Java.Nio.File.WatchEvent.Kind ENTRY_CREATE { get { return SGetField<Java.Nio.File.WatchEvent.Kind>(LocalClazz, "ENTRY_CREATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_DELETE"/>
         /// </summary>
-        public static Java.Nio.File.WatchEvent.Kind ENTRY_DELETE { get { return LocalClazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_DELETE"); } }
+        public static Java.Nio.File.WatchEvent.Kind ENTRY_DELETE { get { return SGetField<Java.Nio.File.WatchEvent.Kind>(LocalClazz, "ENTRY_DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY"/>
         /// </summary>
-        public static Java.Nio.File.WatchEvent.Kind ENTRY_MODIFY { get { return LocalClazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_MODIFY"); } }
+        public static Java.Nio.File.WatchEvent.Kind ENTRY_MODIFY { get { return SGetField<Java.Nio.File.WatchEvent.Kind>(LocalClazz, "ENTRY_MODIFY"); } }
         
         #endregion
 

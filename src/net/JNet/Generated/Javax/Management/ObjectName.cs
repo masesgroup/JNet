@@ -78,7 +78,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#WILDCARD"/>
         /// </summary>
-        public static Javax.Management.ObjectName WILDCARD { get { return LocalClazz.GetField<Javax.Management.ObjectName>("WILDCARD"); } }
+        public static Javax.Management.ObjectName WILDCARD { get { return SGetField<Javax.Management.ObjectName>(LocalClazz, "WILDCARD"); } }
         
         #endregion
 

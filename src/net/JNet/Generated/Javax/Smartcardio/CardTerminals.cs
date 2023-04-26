@@ -112,23 +112,23 @@ namespace Javax.Smartcardio
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#ALL"/>
             /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State ALL { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("ALL"); } }
+            public static Javax.Smartcardio.CardTerminals.State ALL { get { return SGetField<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "ALL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_ABSENT"/>
             /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State CARD_ABSENT { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_ABSENT"); } }
+            public static Javax.Smartcardio.CardTerminals.State CARD_ABSENT { get { return SGetField<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "CARD_ABSENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_INSERTION"/>
             /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State CARD_INSERTION { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_INSERTION"); } }
+            public static Javax.Smartcardio.CardTerminals.State CARD_INSERTION { get { return SGetField<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "CARD_INSERTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_PRESENT"/>
             /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State CARD_PRESENT { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_PRESENT"); } }
+            public static Javax.Smartcardio.CardTerminals.State CARD_PRESENT { get { return SGetField<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "CARD_PRESENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_REMOVAL"/>
             /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State CARD_REMOVAL { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_REMOVAL"); } }
+            public static Javax.Smartcardio.CardTerminals.State CARD_REMOVAL { get { return SGetField<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "CARD_REMOVAL"); } }
             
             #endregion
 

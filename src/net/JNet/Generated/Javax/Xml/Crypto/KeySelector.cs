@@ -86,19 +86,19 @@ namespace Javax.Xml.Crypto
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT { get { return LocalClazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("DECRYPT"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "DECRYPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT { get { return LocalClazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("ENCRYPT"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "ENCRYPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#SIGN"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose SIGN { get { return LocalClazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("SIGN"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose SIGN { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "SIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY { get { return LocalClazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("VERIFY"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "VERIFY"); } }
             
             #endregion
 

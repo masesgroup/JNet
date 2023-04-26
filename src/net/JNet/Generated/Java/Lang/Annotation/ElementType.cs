@@ -40,47 +40,47 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#ANNOTATION_TYPE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType ANNOTATION_TYPE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("ANNOTATION_TYPE"); } }
+        public static Java.Lang.Annotation.ElementType ANNOTATION_TYPE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "ANNOTATION_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#CONSTRUCTOR"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType CONSTRUCTOR { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("CONSTRUCTOR"); } }
+        public static Java.Lang.Annotation.ElementType CONSTRUCTOR { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "CONSTRUCTOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#FIELD"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType FIELD { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("FIELD"); } }
+        public static Java.Lang.Annotation.ElementType FIELD { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#LOCAL_VARIABLE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType LOCAL_VARIABLE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("LOCAL_VARIABLE"); } }
+        public static Java.Lang.Annotation.ElementType LOCAL_VARIABLE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "LOCAL_VARIABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#METHOD"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType METHOD { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("METHOD"); } }
+        public static Java.Lang.Annotation.ElementType METHOD { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "METHOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#MODULE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType MODULE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("MODULE"); } }
+        public static Java.Lang.Annotation.ElementType MODULE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "MODULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#PACKAGE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType PACKAGE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("PACKAGE"); } }
+        public static Java.Lang.Annotation.ElementType PACKAGE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "PACKAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#PARAMETER"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType PARAMETER { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("PARAMETER"); } }
+        public static Java.Lang.Annotation.ElementType PARAMETER { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "PARAMETER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType TYPE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("TYPE"); } }
+        public static Java.Lang.Annotation.ElementType TYPE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE_PARAMETER"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType TYPE_PARAMETER { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("TYPE_PARAMETER"); } }
+        public static Java.Lang.Annotation.ElementType TYPE_PARAMETER { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "TYPE_PARAMETER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE_USE"/>
         /// </summary>
-        public static Java.Lang.Annotation.ElementType TYPE_USE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("TYPE_USE"); } }
+        public static Java.Lang.Annotation.ElementType TYPE_USE { get { return SGetField<Java.Lang.Annotation.ElementType>(LocalClazz, "TYPE_USE"); } }
         
         #endregion
 

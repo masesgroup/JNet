@@ -40,19 +40,19 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#FULL"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle FULL { get { return LocalClazz.GetField<Java.Time.Format.FormatStyle>("FULL"); } }
+        public static Java.Time.Format.FormatStyle FULL { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#LONG"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle LONG { get { return LocalClazz.GetField<Java.Time.Format.FormatStyle>("LONG"); } }
+        public static Java.Time.Format.FormatStyle LONG { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#MEDIUM"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle MEDIUM { get { return LocalClazz.GetField<Java.Time.Format.FormatStyle>("MEDIUM"); } }
+        public static Java.Time.Format.FormatStyle MEDIUM { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "MEDIUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#SHORT"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle SHORT { get { return LocalClazz.GetField<Java.Time.Format.FormatStyle>("SHORT"); } }
+        public static Java.Time.Format.FormatStyle SHORT { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "SHORT"); } }
         
         #endregion
 

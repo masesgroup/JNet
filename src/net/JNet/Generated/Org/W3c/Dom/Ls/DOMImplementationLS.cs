@@ -40,11 +40,11 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#MODE_ASYNCHRONOUS"/>
         /// </summary>
-        public static short MODE_ASYNCHRONOUS { get { return LocalClazz.GetField<short>("MODE_ASYNCHRONOUS"); } }
+        public static short MODE_ASYNCHRONOUS { get { return SGetField<short>(LocalClazz, "MODE_ASYNCHRONOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#MODE_SYNCHRONOUS"/>
         /// </summary>
-        public static short MODE_SYNCHRONOUS { get { return LocalClazz.GetField<short>("MODE_SYNCHRONOUS"); } }
+        public static short MODE_SYNCHRONOUS { get { return SGetField<short>(LocalClazz, "MODE_SYNCHRONOUS"); } }
         
         #endregion
 

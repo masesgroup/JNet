@@ -65,11 +65,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#SCROLL_TAB_LAYOUT"/>
         /// </summary>
-        public static int SCROLL_TAB_LAYOUT { get { return LocalClazz.GetField<int>("SCROLL_TAB_LAYOUT"); } }
+        public static int SCROLL_TAB_LAYOUT { get { return SGetField<int>(LocalClazz, "SCROLL_TAB_LAYOUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#WRAP_TAB_LAYOUT"/>
         /// </summary>
-        public static int WRAP_TAB_LAYOUT { get { return LocalClazz.GetField<int>("WRAP_TAB_LAYOUT"); } }
+        public static int WRAP_TAB_LAYOUT { get { return SGetField<int>(LocalClazz, "WRAP_TAB_LAYOUT"); } }
         
         #endregion
 

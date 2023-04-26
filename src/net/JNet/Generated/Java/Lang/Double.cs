@@ -44,47 +44,47 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_VALUE"/>
         /// </summary>
-        public static double MAX_VALUE { get { return LocalClazz.GetField<double>("MAX_VALUE"); } }
+        public static double MAX_VALUE { get { return SGetField<double>(LocalClazz, "MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_NORMAL"/>
         /// </summary>
-        public static double MIN_NORMAL { get { return LocalClazz.GetField<double>("MIN_NORMAL"); } }
+        public static double MIN_NORMAL { get { return SGetField<double>(LocalClazz, "MIN_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_VALUE"/>
         /// </summary>
-        public static double MIN_VALUE { get { return LocalClazz.GetField<double>("MIN_VALUE"); } }
+        public static double MIN_VALUE { get { return SGetField<double>(LocalClazz, "MIN_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NaN"/>
         /// </summary>
-        public static double NaN { get { return LocalClazz.GetField<double>("NaN"); } }
+        public static double NaN { get { return SGetField<double>(LocalClazz, "NaN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NEGATIVE_INFINITY"/>
         /// </summary>
-        public static double NEGATIVE_INFINITY { get { return LocalClazz.GetField<double>("NEGATIVE_INFINITY"); } }
+        public static double NEGATIVE_INFINITY { get { return SGetField<double>(LocalClazz, "NEGATIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#POSITIVE_INFINITY"/>
         /// </summary>
-        public static double POSITIVE_INFINITY { get { return LocalClazz.GetField<double>("POSITIVE_INFINITY"); } }
+        public static double POSITIVE_INFINITY { get { return SGetField<double>(LocalClazz, "POSITIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#BYTES"/>
         /// </summary>
-        public static int BYTES { get { return LocalClazz.GetField<int>("BYTES"); } }
+        public static int BYTES { get { return SGetField<int>(LocalClazz, "BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_EXPONENT"/>
         /// </summary>
-        public static int MAX_EXPONENT { get { return LocalClazz.GetField<int>("MAX_EXPONENT"); } }
+        public static int MAX_EXPONENT { get { return SGetField<int>(LocalClazz, "MAX_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_EXPONENT"/>
         /// </summary>
-        public static int MIN_EXPONENT { get { return LocalClazz.GetField<int>("MIN_EXPONENT"); } }
+        public static int MIN_EXPONENT { get { return SGetField<int>(LocalClazz, "MIN_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#SIZE"/>
         /// </summary>
-        public static int SIZE { get { return LocalClazz.GetField<int>("SIZE"); } }
+        public static int SIZE { get { return SGetField<int>(LocalClazz, "SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
+        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
         
         #endregion
 

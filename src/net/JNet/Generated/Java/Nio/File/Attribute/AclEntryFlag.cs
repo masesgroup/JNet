@@ -40,19 +40,19 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#DIRECTORY_INHERIT"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryFlag DIRECTORY_INHERIT { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("DIRECTORY_INHERIT"); } }
+        public static Java.Nio.File.Attribute.AclEntryFlag DIRECTORY_INHERIT { get { return SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalClazz, "DIRECTORY_INHERIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#FILE_INHERIT"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryFlag FILE_INHERIT { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("FILE_INHERIT"); } }
+        public static Java.Nio.File.Attribute.AclEntryFlag FILE_INHERIT { get { return SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalClazz, "FILE_INHERIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#INHERIT_ONLY"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryFlag INHERIT_ONLY { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("INHERIT_ONLY"); } }
+        public static Java.Nio.File.Attribute.AclEntryFlag INHERIT_ONLY { get { return SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalClazz, "INHERIT_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#NO_PROPAGATE_INHERIT"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryFlag NO_PROPAGATE_INHERIT { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("NO_PROPAGATE_INHERIT"); } }
+        public static Java.Nio.File.Attribute.AclEntryFlag NO_PROPAGATE_INHERIT { get { return SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalClazz, "NO_PROPAGATE_INHERIT"); } }
         
         #endregion
 

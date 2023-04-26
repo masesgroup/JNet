@@ -70,19 +70,19 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT { get { return LocalClazz.GetField<int>("DIRECTION_DEFAULT_LEFT_TO_RIGHT"); } }
+        public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT { get { return SGetField<int>(LocalClazz, "DIRECTION_DEFAULT_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT { get { return LocalClazz.GetField<int>("DIRECTION_DEFAULT_RIGHT_TO_LEFT"); } }
+        public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT { get { return SGetField<int>(LocalClazz, "DIRECTION_DEFAULT_RIGHT_TO_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int DIRECTION_LEFT_TO_RIGHT { get { return LocalClazz.GetField<int>("DIRECTION_LEFT_TO_RIGHT"); } }
+        public static int DIRECTION_LEFT_TO_RIGHT { get { return SGetField<int>(LocalClazz, "DIRECTION_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int DIRECTION_RIGHT_TO_LEFT { get { return LocalClazz.GetField<int>("DIRECTION_RIGHT_TO_LEFT"); } }
+        public static int DIRECTION_RIGHT_TO_LEFT { get { return SGetField<int>(LocalClazz, "DIRECTION_RIGHT_TO_LEFT"); } }
         
         #endregion
 

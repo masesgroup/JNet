@@ -48,11 +48,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#DEFAULT_KEYMAP"/>
         /// </summary>
-        public static string DEFAULT_KEYMAP { get { return LocalClazz.GetField<string>("DEFAULT_KEYMAP"); } }
+        public static string DEFAULT_KEYMAP { get { return SGetField<string>(LocalClazz, "DEFAULT_KEYMAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY"/>
         /// </summary>
-        public static string FOCUS_ACCELERATOR_KEY { get { return LocalClazz.GetField<string>("FOCUS_ACCELERATOR_KEY"); } }
+        public static string FOCUS_ACCELERATOR_KEY { get { return SGetField<string>(LocalClazz, "FOCUS_ACCELERATOR_KEY"); } }
         
         #endregion
 
@@ -875,11 +875,11 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#actionName"/>
             /// </summary>
-            public string actionName { get { return Instance.GetField<string>("actionName"); } set { Instance.SetField("actionName", value); } }
+            public string actionName { get { return IGetField<string>("actionName"); } set { ISetField("actionName", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key"/>
             /// </summary>
-            public Javax.Swing.KeyStroke key { get { return Instance.GetField<Javax.Swing.KeyStroke>("key"); } set { Instance.SetField("key", value); } }
+            public Javax.Swing.KeyStroke key { get { return IGetField<Javax.Swing.KeyStroke>("key"); } set { ISetField("key", value); } }
             
             #endregion
 

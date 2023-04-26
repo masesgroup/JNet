@@ -82,51 +82,51 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ACTIVATED"/>
         /// </summary>
-        public static int WINDOW_ACTIVATED { get { return LocalClazz.GetField<int>("WINDOW_ACTIVATED"); } }
+        public static int WINDOW_ACTIVATED { get { return SGetField<int>(LocalClazz, "WINDOW_ACTIVATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_CLOSED"/>
         /// </summary>
-        public static int WINDOW_CLOSED { get { return LocalClazz.GetField<int>("WINDOW_CLOSED"); } }
+        public static int WINDOW_CLOSED { get { return SGetField<int>(LocalClazz, "WINDOW_CLOSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_CLOSING"/>
         /// </summary>
-        public static int WINDOW_CLOSING { get { return LocalClazz.GetField<int>("WINDOW_CLOSING"); } }
+        public static int WINDOW_CLOSING { get { return SGetField<int>(LocalClazz, "WINDOW_CLOSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_DEACTIVATED"/>
         /// </summary>
-        public static int WINDOW_DEACTIVATED { get { return LocalClazz.GetField<int>("WINDOW_DEACTIVATED"); } }
+        public static int WINDOW_DEACTIVATED { get { return SGetField<int>(LocalClazz, "WINDOW_DEACTIVATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_DEICONIFIED"/>
         /// </summary>
-        public static int WINDOW_DEICONIFIED { get { return LocalClazz.GetField<int>("WINDOW_DEICONIFIED"); } }
+        public static int WINDOW_DEICONIFIED { get { return SGetField<int>(LocalClazz, "WINDOW_DEICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_FIRST"/>
         /// </summary>
-        public static int WINDOW_FIRST { get { return LocalClazz.GetField<int>("WINDOW_FIRST"); } }
+        public static int WINDOW_FIRST { get { return SGetField<int>(LocalClazz, "WINDOW_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_GAINED_FOCUS"/>
         /// </summary>
-        public static int WINDOW_GAINED_FOCUS { get { return LocalClazz.GetField<int>("WINDOW_GAINED_FOCUS"); } }
+        public static int WINDOW_GAINED_FOCUS { get { return SGetField<int>(LocalClazz, "WINDOW_GAINED_FOCUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ICONIFIED"/>
         /// </summary>
-        public static int WINDOW_ICONIFIED { get { return LocalClazz.GetField<int>("WINDOW_ICONIFIED"); } }
+        public static int WINDOW_ICONIFIED { get { return SGetField<int>(LocalClazz, "WINDOW_ICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_LAST"/>
         /// </summary>
-        public static int WINDOW_LAST { get { return LocalClazz.GetField<int>("WINDOW_LAST"); } }
+        public static int WINDOW_LAST { get { return SGetField<int>(LocalClazz, "WINDOW_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_LOST_FOCUS"/>
         /// </summary>
-        public static int WINDOW_LOST_FOCUS { get { return LocalClazz.GetField<int>("WINDOW_LOST_FOCUS"); } }
+        public static int WINDOW_LOST_FOCUS { get { return SGetField<int>(LocalClazz, "WINDOW_LOST_FOCUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_OPENED"/>
         /// </summary>
-        public static int WINDOW_OPENED { get { return LocalClazz.GetField<int>("WINDOW_OPENED"); } }
+        public static int WINDOW_OPENED { get { return SGetField<int>(LocalClazz, "WINDOW_OPENED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_STATE_CHANGED"/>
         /// </summary>
-        public static int WINDOW_STATE_CHANGED { get { return LocalClazz.GetField<int>("WINDOW_STATE_CHANGED"); } }
+        public static int WINDOW_STATE_CHANGED { get { return SGetField<int>(LocalClazz, "WINDOW_STATE_CHANGED"); } }
         
         #endregion
 

@@ -55,7 +55,7 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT"/>
         /// </summary>
-        public static Javax.Crypto.Spec.OAEPParameterSpec DEFAULT { get { return LocalClazz.GetField<Javax.Crypto.Spec.OAEPParameterSpec>("DEFAULT"); } }
+        public static Javax.Crypto.Spec.OAEPParameterSpec DEFAULT { get { return SGetField<Javax.Crypto.Spec.OAEPParameterSpec>(LocalClazz, "DEFAULT"); } }
         
         #endregion
 

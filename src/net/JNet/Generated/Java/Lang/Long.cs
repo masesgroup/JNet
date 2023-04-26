@@ -44,23 +44,23 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#BYTES"/>
         /// </summary>
-        public static int BYTES { get { return LocalClazz.GetField<int>("BYTES"); } }
+        public static int BYTES { get { return SGetField<int>(LocalClazz, "BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#SIZE"/>
         /// </summary>
-        public static int SIZE { get { return LocalClazz.GetField<int>("SIZE"); } }
+        public static int SIZE { get { return SGetField<int>(LocalClazz, "SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
+        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MAX_VALUE"/>
         /// </summary>
-        public static long MAX_VALUE { get { return LocalClazz.GetField<long>("MAX_VALUE"); } }
+        public static long MAX_VALUE { get { return SGetField<long>(LocalClazz, "MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE"/>
         /// </summary>
-        public static long MIN_VALUE { get { return LocalClazz.GetField<long>("MIN_VALUE"); } }
+        public static long MIN_VALUE { get { return SGetField<long>(LocalClazz, "MIN_VALUE"); } }
         
         #endregion
 

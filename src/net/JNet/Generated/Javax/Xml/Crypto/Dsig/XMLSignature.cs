@@ -40,7 +40,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#XMLNS"/>
         /// </summary>
-        public static string XMLNS { get { return LocalClazz.GetField<string>("XMLNS"); } }
+        public static string XMLNS { get { return SGetField<string>(LocalClazz, "XMLNS"); } }
         
         #endregion
 

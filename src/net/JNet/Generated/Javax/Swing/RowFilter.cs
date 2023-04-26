@@ -132,19 +132,19 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#AFTER"/>
             /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType AFTER { get { return LocalClazz.GetField<Javax.Swing.RowFilter.ComparisonType>("AFTER"); } }
+            public static Javax.Swing.RowFilter.ComparisonType AFTER { get { return SGetField<Javax.Swing.RowFilter.ComparisonType>(LocalClazz, "AFTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#BEFORE"/>
             /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType BEFORE { get { return LocalClazz.GetField<Javax.Swing.RowFilter.ComparisonType>("BEFORE"); } }
+            public static Javax.Swing.RowFilter.ComparisonType BEFORE { get { return SGetField<Javax.Swing.RowFilter.ComparisonType>(LocalClazz, "BEFORE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#EQUAL"/>
             /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType EQUAL { get { return LocalClazz.GetField<Javax.Swing.RowFilter.ComparisonType>("EQUAL"); } }
+            public static Javax.Swing.RowFilter.ComparisonType EQUAL { get { return SGetField<Javax.Swing.RowFilter.ComparisonType>(LocalClazz, "EQUAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL"/>
             /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL { get { return LocalClazz.GetField<Javax.Swing.RowFilter.ComparisonType>("NOT_EQUAL"); } }
+            public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL { get { return SGetField<Javax.Swing.RowFilter.ComparisonType>(LocalClazz, "NOT_EQUAL"); } }
             
             #endregion
 

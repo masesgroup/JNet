@@ -70,23 +70,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#ICONIFIED"/>
         /// </summary>
-        public static int ICONIFIED { get { return LocalClazz.GetField<int>("ICONIFIED"); } }
+        public static int ICONIFIED { get { return SGetField<int>(LocalClazz, "ICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH"/>
         /// </summary>
-        public static int MAXIMIZED_BOTH { get { return LocalClazz.GetField<int>("MAXIMIZED_BOTH"); } }
+        public static int MAXIMIZED_BOTH { get { return SGetField<int>(LocalClazz, "MAXIMIZED_BOTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_HORIZ"/>
         /// </summary>
-        public static int MAXIMIZED_HORIZ { get { return LocalClazz.GetField<int>("MAXIMIZED_HORIZ"); } }
+        public static int MAXIMIZED_HORIZ { get { return SGetField<int>(LocalClazz, "MAXIMIZED_HORIZ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_VERT"/>
         /// </summary>
-        public static int MAXIMIZED_VERT { get { return LocalClazz.GetField<int>("MAXIMIZED_VERT"); } }
+        public static int MAXIMIZED_VERT { get { return SGetField<int>(LocalClazz, "MAXIMIZED_VERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL"/>
         /// </summary>
-        public static int NORMAL { get { return LocalClazz.GetField<int>("NORMAL"); } }
+        public static int NORMAL { get { return SGetField<int>(LocalClazz, "NORMAL"); } }
         
         #endregion
 

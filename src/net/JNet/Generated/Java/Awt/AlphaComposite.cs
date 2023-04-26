@@ -44,99 +44,99 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#CLEAR"/>
         /// </summary>
-        public static int CLEAR { get { return LocalClazz.GetField<int>("CLEAR"); } }
+        public static int CLEAR { get { return SGetField<int>(LocalClazz, "CLEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST"/>
         /// </summary>
-        public static int DST { get { return LocalClazz.GetField<int>("DST"); } }
+        public static int DST { get { return SGetField<int>(LocalClazz, "DST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_ATOP"/>
         /// </summary>
-        public static int DST_ATOP { get { return LocalClazz.GetField<int>("DST_ATOP"); } }
+        public static int DST_ATOP { get { return SGetField<int>(LocalClazz, "DST_ATOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_IN"/>
         /// </summary>
-        public static int DST_IN { get { return LocalClazz.GetField<int>("DST_IN"); } }
+        public static int DST_IN { get { return SGetField<int>(LocalClazz, "DST_IN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OUT"/>
         /// </summary>
-        public static int DST_OUT { get { return LocalClazz.GetField<int>("DST_OUT"); } }
+        public static int DST_OUT { get { return SGetField<int>(LocalClazz, "DST_OUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OVER"/>
         /// </summary>
-        public static int DST_OVER { get { return LocalClazz.GetField<int>("DST_OVER"); } }
+        public static int DST_OVER { get { return SGetField<int>(LocalClazz, "DST_OVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC"/>
         /// </summary>
-        public static int SRC { get { return LocalClazz.GetField<int>("SRC"); } }
+        public static int SRC { get { return SGetField<int>(LocalClazz, "SRC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_ATOP"/>
         /// </summary>
-        public static int SRC_ATOP { get { return LocalClazz.GetField<int>("SRC_ATOP"); } }
+        public static int SRC_ATOP { get { return SGetField<int>(LocalClazz, "SRC_ATOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_IN"/>
         /// </summary>
-        public static int SRC_IN { get { return LocalClazz.GetField<int>("SRC_IN"); } }
+        public static int SRC_IN { get { return SGetField<int>(LocalClazz, "SRC_IN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OUT"/>
         /// </summary>
-        public static int SRC_OUT { get { return LocalClazz.GetField<int>("SRC_OUT"); } }
+        public static int SRC_OUT { get { return SGetField<int>(LocalClazz, "SRC_OUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OVER"/>
         /// </summary>
-        public static int SRC_OVER { get { return LocalClazz.GetField<int>("SRC_OVER"); } }
+        public static int SRC_OVER { get { return SGetField<int>(LocalClazz, "SRC_OVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#XOR"/>
         /// </summary>
-        public static int XOR { get { return LocalClazz.GetField<int>("XOR"); } }
+        public static int XOR { get { return SGetField<int>(LocalClazz, "XOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Clear"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite Clear { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("Clear"); } }
+        public static Java.Awt.AlphaComposite Clear { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "Clear"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Dst"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite Dst { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("Dst"); } }
+        public static Java.Awt.AlphaComposite Dst { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "Dst"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstAtop"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite DstAtop { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("DstAtop"); } }
+        public static Java.Awt.AlphaComposite DstAtop { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "DstAtop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstIn"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite DstIn { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("DstIn"); } }
+        public static Java.Awt.AlphaComposite DstIn { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "DstIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOut"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite DstOut { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("DstOut"); } }
+        public static Java.Awt.AlphaComposite DstOut { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "DstOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOver"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite DstOver { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("DstOver"); } }
+        public static Java.Awt.AlphaComposite DstOver { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "DstOver"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Src"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite Src { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("Src"); } }
+        public static Java.Awt.AlphaComposite Src { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "Src"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcAtop"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite SrcAtop { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("SrcAtop"); } }
+        public static Java.Awt.AlphaComposite SrcAtop { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "SrcAtop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcIn"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite SrcIn { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("SrcIn"); } }
+        public static Java.Awt.AlphaComposite SrcIn { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "SrcIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOut"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite SrcOut { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("SrcOut"); } }
+        public static Java.Awt.AlphaComposite SrcOut { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "SrcOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOver"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite SrcOver { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("SrcOver"); } }
+        public static Java.Awt.AlphaComposite SrcOver { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "SrcOver"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Xor"/>
         /// </summary>
-        public static Java.Awt.AlphaComposite Xor { get { return LocalClazz.GetField<Java.Awt.AlphaComposite>("Xor"); } }
+        public static Java.Awt.AlphaComposite Xor { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "Xor"); } }
         
         #endregion
 

@@ -44,15 +44,15 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#LANDSCAPE"/>
         /// </summary>
-        public static int LANDSCAPE { get { return LocalClazz.GetField<int>("LANDSCAPE"); } }
+        public static int LANDSCAPE { get { return SGetField<int>(LocalClazz, "LANDSCAPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#PORTRAIT"/>
         /// </summary>
-        public static int PORTRAIT { get { return LocalClazz.GetField<int>("PORTRAIT"); } }
+        public static int PORTRAIT { get { return SGetField<int>(LocalClazz, "PORTRAIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#REVERSE_LANDSCAPE"/>
         /// </summary>
-        public static int REVERSE_LANDSCAPE { get { return LocalClazz.GetField<int>("REVERSE_LANDSCAPE"); } }
+        public static int REVERSE_LANDSCAPE { get { return SGetField<int>(LocalClazz, "REVERSE_LANDSCAPE"); } }
         
         #endregion
 

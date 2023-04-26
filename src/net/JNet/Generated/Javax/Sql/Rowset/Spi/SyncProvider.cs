@@ -40,47 +40,47 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_DB_LOCK"/>
         /// </summary>
-        public static int DATASOURCE_DB_LOCK { get { return LocalClazz.GetField<int>("DATASOURCE_DB_LOCK"); } }
+        public static int DATASOURCE_DB_LOCK { get { return SGetField<int>(LocalClazz, "DATASOURCE_DB_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_NO_LOCK"/>
         /// </summary>
-        public static int DATASOURCE_NO_LOCK { get { return LocalClazz.GetField<int>("DATASOURCE_NO_LOCK"); } }
+        public static int DATASOURCE_NO_LOCK { get { return SGetField<int>(LocalClazz, "DATASOURCE_NO_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_ROW_LOCK"/>
         /// </summary>
-        public static int DATASOURCE_ROW_LOCK { get { return LocalClazz.GetField<int>("DATASOURCE_ROW_LOCK"); } }
+        public static int DATASOURCE_ROW_LOCK { get { return SGetField<int>(LocalClazz, "DATASOURCE_ROW_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_TABLE_LOCK"/>
         /// </summary>
-        public static int DATASOURCE_TABLE_LOCK { get { return LocalClazz.GetField<int>("DATASOURCE_TABLE_LOCK"); } }
+        public static int DATASOURCE_TABLE_LOCK { get { return SGetField<int>(LocalClazz, "DATASOURCE_TABLE_LOCK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_ALL_AT_COMMIT"/>
         /// </summary>
-        public static int GRADE_CHECK_ALL_AT_COMMIT { get { return LocalClazz.GetField<int>("GRADE_CHECK_ALL_AT_COMMIT"); } }
+        public static int GRADE_CHECK_ALL_AT_COMMIT { get { return SGetField<int>(LocalClazz, "GRADE_CHECK_ALL_AT_COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_MODIFIED_AT_COMMIT"/>
         /// </summary>
-        public static int GRADE_CHECK_MODIFIED_AT_COMMIT { get { return LocalClazz.GetField<int>("GRADE_CHECK_MODIFIED_AT_COMMIT"); } }
+        public static int GRADE_CHECK_MODIFIED_AT_COMMIT { get { return SGetField<int>(LocalClazz, "GRADE_CHECK_MODIFIED_AT_COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_LOADED"/>
         /// </summary>
-        public static int GRADE_LOCK_WHEN_LOADED { get { return LocalClazz.GetField<int>("GRADE_LOCK_WHEN_LOADED"); } }
+        public static int GRADE_LOCK_WHEN_LOADED { get { return SGetField<int>(LocalClazz, "GRADE_LOCK_WHEN_LOADED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_MODIFIED"/>
         /// </summary>
-        public static int GRADE_LOCK_WHEN_MODIFIED { get { return LocalClazz.GetField<int>("GRADE_LOCK_WHEN_MODIFIED"); } }
+        public static int GRADE_LOCK_WHEN_MODIFIED { get { return SGetField<int>(LocalClazz, "GRADE_LOCK_WHEN_MODIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_NONE"/>
         /// </summary>
-        public static int GRADE_NONE { get { return LocalClazz.GetField<int>("GRADE_NONE"); } }
+        public static int GRADE_NONE { get { return SGetField<int>(LocalClazz, "GRADE_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#NONUPDATABLE_VIEW_SYNC"/>
         /// </summary>
-        public static int NONUPDATABLE_VIEW_SYNC { get { return LocalClazz.GetField<int>("NONUPDATABLE_VIEW_SYNC"); } }
+        public static int NONUPDATABLE_VIEW_SYNC { get { return SGetField<int>(LocalClazz, "NONUPDATABLE_VIEW_SYNC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#UPDATABLE_VIEW_SYNC"/>
         /// </summary>
-        public static int UPDATABLE_VIEW_SYNC { get { return LocalClazz.GetField<int>("UPDATABLE_VIEW_SYNC"); } }
+        public static int UPDATABLE_VIEW_SYNC { get { return SGetField<int>(LocalClazz, "UPDATABLE_VIEW_SYNC"); } }
         
         #endregion
 

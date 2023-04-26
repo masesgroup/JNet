@@ -44,11 +44,11 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#BCE"/>
         /// </summary>
-        public static Java.Time.Chrono.IsoEra BCE { get { return LocalClazz.GetField<Java.Time.Chrono.IsoEra>("BCE"); } }
+        public static Java.Time.Chrono.IsoEra BCE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalClazz, "BCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#CE"/>
         /// </summary>
-        public static Java.Time.Chrono.IsoEra CE { get { return LocalClazz.GetField<Java.Time.Chrono.IsoEra>("CE"); } }
+        public static Java.Time.Chrono.IsoEra CE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalClazz, "CE"); } }
         
         #endregion
 

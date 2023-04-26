@@ -40,7 +40,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#padSpaceBetweenStrings"/>
         /// </summary>
-        public static int padSpaceBetweenStrings { get { return LocalClazz.GetField<int>("padSpaceBetweenStrings"); } }
+        public static int padSpaceBetweenStrings { get { return SGetField<int>(LocalClazz, "padSpaceBetweenStrings"); } }
         
         #endregion
 

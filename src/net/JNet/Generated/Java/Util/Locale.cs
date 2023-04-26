@@ -75,99 +75,99 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRIVATE_USE_EXTENSION"/>
         /// </summary>
-        public static char PRIVATE_USE_EXTENSION { get { return LocalClazz.GetField<char>("PRIVATE_USE_EXTENSION"); } }
+        public static char PRIVATE_USE_EXTENSION { get { return SGetField<char>(LocalClazz, "PRIVATE_USE_EXTENSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UNICODE_LOCALE_EXTENSION"/>
         /// </summary>
-        public static char UNICODE_LOCALE_EXTENSION { get { return LocalClazz.GetField<char>("UNICODE_LOCALE_EXTENSION"); } }
+        public static char UNICODE_LOCALE_EXTENSION { get { return SGetField<char>(LocalClazz, "UNICODE_LOCALE_EXTENSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CANADA"/>
         /// </summary>
-        public static Java.Util.Locale CANADA { get { return LocalClazz.GetField<Java.Util.Locale>("CANADA"); } }
+        public static Java.Util.Locale CANADA { get { return SGetField<Java.Util.Locale>(LocalClazz, "CANADA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CANADA_FRENCH"/>
         /// </summary>
-        public static Java.Util.Locale CANADA_FRENCH { get { return LocalClazz.GetField<Java.Util.Locale>("CANADA_FRENCH"); } }
+        public static Java.Util.Locale CANADA_FRENCH { get { return SGetField<Java.Util.Locale>(LocalClazz, "CANADA_FRENCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINA"/>
         /// </summary>
-        public static Java.Util.Locale CHINA { get { return LocalClazz.GetField<Java.Util.Locale>("CHINA"); } }
+        public static Java.Util.Locale CHINA { get { return SGetField<Java.Util.Locale>(LocalClazz, "CHINA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINESE"/>
         /// </summary>
-        public static Java.Util.Locale CHINESE { get { return LocalClazz.GetField<Java.Util.Locale>("CHINESE"); } }
+        public static Java.Util.Locale CHINESE { get { return SGetField<Java.Util.Locale>(LocalClazz, "CHINESE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ENGLISH"/>
         /// </summary>
-        public static Java.Util.Locale ENGLISH { get { return LocalClazz.GetField<Java.Util.Locale>("ENGLISH"); } }
+        public static Java.Util.Locale ENGLISH { get { return SGetField<Java.Util.Locale>(LocalClazz, "ENGLISH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRANCE"/>
         /// </summary>
-        public static Java.Util.Locale FRANCE { get { return LocalClazz.GetField<Java.Util.Locale>("FRANCE"); } }
+        public static Java.Util.Locale FRANCE { get { return SGetField<Java.Util.Locale>(LocalClazz, "FRANCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRENCH"/>
         /// </summary>
-        public static Java.Util.Locale FRENCH { get { return LocalClazz.GetField<Java.Util.Locale>("FRENCH"); } }
+        public static Java.Util.Locale FRENCH { get { return SGetField<Java.Util.Locale>(LocalClazz, "FRENCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMAN"/>
         /// </summary>
-        public static Java.Util.Locale GERMAN { get { return LocalClazz.GetField<Java.Util.Locale>("GERMAN"); } }
+        public static Java.Util.Locale GERMAN { get { return SGetField<Java.Util.Locale>(LocalClazz, "GERMAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMANY"/>
         /// </summary>
-        public static Java.Util.Locale GERMANY { get { return LocalClazz.GetField<Java.Util.Locale>("GERMANY"); } }
+        public static Java.Util.Locale GERMANY { get { return SGetField<Java.Util.Locale>(LocalClazz, "GERMANY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALIAN"/>
         /// </summary>
-        public static Java.Util.Locale ITALIAN { get { return LocalClazz.GetField<Java.Util.Locale>("ITALIAN"); } }
+        public static Java.Util.Locale ITALIAN { get { return SGetField<Java.Util.Locale>(LocalClazz, "ITALIAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALY"/>
         /// </summary>
-        public static Java.Util.Locale ITALY { get { return LocalClazz.GetField<Java.Util.Locale>("ITALY"); } }
+        public static Java.Util.Locale ITALY { get { return SGetField<Java.Util.Locale>(LocalClazz, "ITALY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPAN"/>
         /// </summary>
-        public static Java.Util.Locale JAPAN { get { return LocalClazz.GetField<Java.Util.Locale>("JAPAN"); } }
+        public static Java.Util.Locale JAPAN { get { return SGetField<Java.Util.Locale>(LocalClazz, "JAPAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPANESE"/>
         /// </summary>
-        public static Java.Util.Locale JAPANESE { get { return LocalClazz.GetField<Java.Util.Locale>("JAPANESE"); } }
+        public static Java.Util.Locale JAPANESE { get { return SGetField<Java.Util.Locale>(LocalClazz, "JAPANESE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREA"/>
         /// </summary>
-        public static Java.Util.Locale KOREA { get { return LocalClazz.GetField<Java.Util.Locale>("KOREA"); } }
+        public static Java.Util.Locale KOREA { get { return SGetField<Java.Util.Locale>(LocalClazz, "KOREA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREAN"/>
         /// </summary>
-        public static Java.Util.Locale KOREAN { get { return LocalClazz.GetField<Java.Util.Locale>("KOREAN"); } }
+        public static Java.Util.Locale KOREAN { get { return SGetField<Java.Util.Locale>(LocalClazz, "KOREAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRC"/>
         /// </summary>
-        public static Java.Util.Locale PRC { get { return LocalClazz.GetField<Java.Util.Locale>("PRC"); } }
+        public static Java.Util.Locale PRC { get { return SGetField<Java.Util.Locale>(LocalClazz, "PRC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ROOT"/>
         /// </summary>
-        public static Java.Util.Locale ROOT { get { return LocalClazz.GetField<Java.Util.Locale>("ROOT"); } }
+        public static Java.Util.Locale ROOT { get { return SGetField<Java.Util.Locale>(LocalClazz, "ROOT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#SIMPLIFIED_CHINESE"/>
         /// </summary>
-        public static Java.Util.Locale SIMPLIFIED_CHINESE { get { return LocalClazz.GetField<Java.Util.Locale>("SIMPLIFIED_CHINESE"); } }
+        public static Java.Util.Locale SIMPLIFIED_CHINESE { get { return SGetField<Java.Util.Locale>(LocalClazz, "SIMPLIFIED_CHINESE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TAIWAN"/>
         /// </summary>
-        public static Java.Util.Locale TAIWAN { get { return LocalClazz.GetField<Java.Util.Locale>("TAIWAN"); } }
+        public static Java.Util.Locale TAIWAN { get { return SGetField<Java.Util.Locale>(LocalClazz, "TAIWAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TRADITIONAL_CHINESE"/>
         /// </summary>
-        public static Java.Util.Locale TRADITIONAL_CHINESE { get { return LocalClazz.GetField<Java.Util.Locale>("TRADITIONAL_CHINESE"); } }
+        public static Java.Util.Locale TRADITIONAL_CHINESE { get { return SGetField<Java.Util.Locale>(LocalClazz, "TRADITIONAL_CHINESE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UK"/>
         /// </summary>
-        public static Java.Util.Locale UK { get { return LocalClazz.GetField<Java.Util.Locale>("UK"); } }
+        public static Java.Util.Locale UK { get { return SGetField<Java.Util.Locale>(LocalClazz, "UK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#US"/>
         /// </summary>
-        public static Java.Util.Locale US { get { return LocalClazz.GetField<Java.Util.Locale>("US"); } }
+        public static Java.Util.Locale US { get { return SGetField<Java.Util.Locale>(LocalClazz, "US"); } }
         
         #endregion
 
@@ -643,11 +643,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#DISPLAY"/>
             /// </summary>
-            public static Java.Util.Locale.Category DISPLAY { get { return LocalClazz.GetField<Java.Util.Locale.Category>("DISPLAY"); } }
+            public static Java.Util.Locale.Category DISPLAY { get { return SGetField<Java.Util.Locale.Category>(LocalClazz, "DISPLAY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT"/>
             /// </summary>
-            public static Java.Util.Locale.Category FORMAT { get { return LocalClazz.GetField<Java.Util.Locale.Category>("FORMAT"); } }
+            public static Java.Util.Locale.Category FORMAT { get { return SGetField<Java.Util.Locale.Category>(LocalClazz, "FORMAT"); } }
             
             #endregion
 
@@ -694,23 +694,23 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#AUTOSELECT_FILTERING"/>
             /// </summary>
-            public static Java.Util.Locale.FilteringMode AUTOSELECT_FILTERING { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("AUTOSELECT_FILTERING"); } }
+            public static Java.Util.Locale.FilteringMode AUTOSELECT_FILTERING { get { return SGetField<Java.Util.Locale.FilteringMode>(LocalClazz, "AUTOSELECT_FILTERING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#EXTENDED_FILTERING"/>
             /// </summary>
-            public static Java.Util.Locale.FilteringMode EXTENDED_FILTERING { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("EXTENDED_FILTERING"); } }
+            public static Java.Util.Locale.FilteringMode EXTENDED_FILTERING { get { return SGetField<Java.Util.Locale.FilteringMode>(LocalClazz, "EXTENDED_FILTERING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#IGNORE_EXTENDED_RANGES"/>
             /// </summary>
-            public static Java.Util.Locale.FilteringMode IGNORE_EXTENDED_RANGES { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("IGNORE_EXTENDED_RANGES"); } }
+            public static Java.Util.Locale.FilteringMode IGNORE_EXTENDED_RANGES { get { return SGetField<Java.Util.Locale.FilteringMode>(LocalClazz, "IGNORE_EXTENDED_RANGES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#MAP_EXTENDED_RANGES"/>
             /// </summary>
-            public static Java.Util.Locale.FilteringMode MAP_EXTENDED_RANGES { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("MAP_EXTENDED_RANGES"); } }
+            public static Java.Util.Locale.FilteringMode MAP_EXTENDED_RANGES { get { return SGetField<Java.Util.Locale.FilteringMode>(LocalClazz, "MAP_EXTENDED_RANGES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#REJECT_EXTENDED_RANGES"/>
             /// </summary>
-            public static Java.Util.Locale.FilteringMode REJECT_EXTENDED_RANGES { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("REJECT_EXTENDED_RANGES"); } }
+            public static Java.Util.Locale.FilteringMode REJECT_EXTENDED_RANGES { get { return SGetField<Java.Util.Locale.FilteringMode>(LocalClazz, "REJECT_EXTENDED_RANGES"); } }
             
             #endregion
 
@@ -757,15 +757,15 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2"/>
             /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 { get { return LocalClazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA2"); } }
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 { get { return SGetField<Java.Util.Locale.IsoCountryCode>(LocalClazz, "PART1_ALPHA2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3"/>
             /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 { get { return LocalClazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA3"); } }
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 { get { return SGetField<Java.Util.Locale.IsoCountryCode>(LocalClazz, "PART1_ALPHA3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3"/>
             /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART3 { get { return LocalClazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3"); } }
+            public static Java.Util.Locale.IsoCountryCode PART3 { get { return SGetField<Java.Util.Locale.IsoCountryCode>(LocalClazz, "PART3"); } }
             
             #endregion
 
@@ -829,11 +829,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT"/>
             /// </summary>
-            public static double MAX_WEIGHT { get { return LocalClazz.GetField<double>("MAX_WEIGHT"); } }
+            public static double MAX_WEIGHT { get { return SGetField<double>(LocalClazz, "MAX_WEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT"/>
             /// </summary>
-            public static double MIN_WEIGHT { get { return LocalClazz.GetField<double>("MIN_WEIGHT"); } }
+            public static double MIN_WEIGHT { get { return SGetField<double>(LocalClazz, "MIN_WEIGHT"); } }
             
             #endregion
 

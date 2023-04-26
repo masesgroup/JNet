@@ -311,15 +311,15 @@ namespace Java.Nio.Channels
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#PRIVATE"/>
             /// </summary>
-            public static Java.Nio.Channels.FileChannel.MapMode PRIVATE { get { return LocalClazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("PRIVATE"); } }
+            public static Java.Nio.Channels.FileChannel.MapMode PRIVATE { get { return SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalClazz, "PRIVATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#READ_ONLY"/>
             /// </summary>
-            public static Java.Nio.Channels.FileChannel.MapMode READ_ONLY { get { return LocalClazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("READ_ONLY"); } }
+            public static Java.Nio.Channels.FileChannel.MapMode READ_ONLY { get { return SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalClazz, "READ_ONLY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#READ_WRITE"/>
             /// </summary>
-            public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE { get { return LocalClazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("READ_WRITE"); } }
+            public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE { get { return SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalClazz, "READ_WRITE"); } }
             
             #endregion
 

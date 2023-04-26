@@ -48,11 +48,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_FALSE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_FALSE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_FALSE"); } }
+        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_FALSE { get { return SGetField<Javax.Print.Attribute.Standard.Fidelity>(LocalClazz, "FIDELITY_FALSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_TRUE"); } }
+        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE { get { return SGetField<Javax.Print.Attribute.Standard.Fidelity>(LocalClazz, "FIDELITY_TRUE"); } }
         
         #endregion
 

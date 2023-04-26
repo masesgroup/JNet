@@ -50,19 +50,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_ADDED"/>
         /// </summary>
-        public static int COMPONENT_ADDED { get { return LocalClazz.GetField<int>("COMPONENT_ADDED"); } }
+        public static int COMPONENT_ADDED { get { return SGetField<int>(LocalClazz, "COMPONENT_ADDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_REMOVED"/>
         /// </summary>
-        public static int COMPONENT_REMOVED { get { return LocalClazz.GetField<int>("COMPONENT_REMOVED"); } }
+        public static int COMPONENT_REMOVED { get { return SGetField<int>(LocalClazz, "COMPONENT_REMOVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_FIRST"/>
         /// </summary>
-        public static int CONTAINER_FIRST { get { return LocalClazz.GetField<int>("CONTAINER_FIRST"); } }
+        public static int CONTAINER_FIRST { get { return SGetField<int>(LocalClazz, "CONTAINER_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST"/>
         /// </summary>
-        public static int CONTAINER_LAST { get { return LocalClazz.GetField<int>("CONTAINER_LAST"); } }
+        public static int CONTAINER_LAST { get { return SGetField<int>(LocalClazz, "CONTAINER_LAST"); } }
         
         #endregion
 

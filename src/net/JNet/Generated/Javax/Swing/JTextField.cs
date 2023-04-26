@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#notifyAction"/>
         /// </summary>
-        public static string notifyAction { get { return LocalClazz.GetField<string>("notifyAction"); } }
+        public static string notifyAction { get { return SGetField<string>(LocalClazz, "notifyAction"); } }
         
         #endregion
 

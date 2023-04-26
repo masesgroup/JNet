@@ -40,27 +40,27 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#ISO_8859_1"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset ISO_8859_1 { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("ISO_8859_1"); } }
+        public static Java.Nio.Charset.Charset ISO_8859_1 { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "ISO_8859_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#US_ASCII"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset US_ASCII { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("US_ASCII"); } }
+        public static Java.Nio.Charset.Charset US_ASCII { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "US_ASCII"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset UTF_16 { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("UTF_16"); } }
+        public static Java.Nio.Charset.Charset UTF_16 { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "UTF_16"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16BE"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset UTF_16BE { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("UTF_16BE"); } }
+        public static Java.Nio.Charset.Charset UTF_16BE { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "UTF_16BE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16LE"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset UTF_16LE { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("UTF_16LE"); } }
+        public static Java.Nio.Charset.Charset UTF_16LE { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "UTF_16LE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_8"/>
         /// </summary>
-        public static Java.Nio.Charset.Charset UTF_8 { get { return LocalClazz.GetField<Java.Nio.Charset.Charset>("UTF_8"); } }
+        public static Java.Nio.Charset.Charset UTF_8 { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "UTF_8"); } }
         
         #endregion
 

@@ -44,11 +44,11 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BE"/>
         /// </summary>
-        public static Java.Time.Chrono.ThaiBuddhistEra BE { get { return LocalClazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BE"); } }
+        public static Java.Time.Chrono.ThaiBuddhistEra BE { get { return SGetField<Java.Time.Chrono.ThaiBuddhistEra>(LocalClazz, "BE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE"/>
         /// </summary>
-        public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE { get { return LocalClazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BEFORE_BE"); } }
+        public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE { get { return SGetField<Java.Time.Chrono.ThaiBuddhistEra>(LocalClazz, "BEFORE_BE"); } }
         
         #endregion
 

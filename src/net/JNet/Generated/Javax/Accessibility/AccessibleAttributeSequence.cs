@@ -50,15 +50,15 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#endIndex"/>
         /// </summary>
-        public int endIndex { get { return Instance.GetField<int>("endIndex"); } set { Instance.SetField("endIndex", value); } }
+        public int endIndex { get { return IGetField<int>("endIndex"); } set { ISetField("endIndex", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#startIndex"/>
         /// </summary>
-        public int startIndex { get { return Instance.GetField<int>("startIndex"); } set { Instance.SetField("startIndex", value); } }
+        public int startIndex { get { return IGetField<int>("startIndex"); } set { ISetField("startIndex", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#attributes"/>
         /// </summary>
-        public Javax.Swing.Text.AttributeSet attributes { get { return Instance.GetField<Javax.Swing.Text.AttributeSet>("attributes"); } set { Instance.SetField("attributes", value); } }
+        public Javax.Swing.Text.AttributeSet attributes { get { return IGetField<Javax.Swing.Text.AttributeSet>("attributes"); } set { ISetField("attributes", value); } }
         
         #endregion
 

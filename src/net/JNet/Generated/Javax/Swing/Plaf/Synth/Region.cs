@@ -40,231 +40,231 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#ARROW_BUTTON"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region ARROW_BUTTON { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("ARROW_BUTTON"); } }
+        public static Javax.Swing.Plaf.Synth.Region ARROW_BUTTON { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "ARROW_BUTTON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#BUTTON"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region BUTTON { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("BUTTON"); } }
+        public static Javax.Swing.Plaf.Synth.Region BUTTON { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "BUTTON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#CHECK_BOX"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region CHECK_BOX { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("CHECK_BOX"); } }
+        public static Javax.Swing.Plaf.Synth.Region CHECK_BOX { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "CHECK_BOX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#CHECK_BOX_MENU_ITEM"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region CHECK_BOX_MENU_ITEM { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("CHECK_BOX_MENU_ITEM"); } }
+        public static Javax.Swing.Plaf.Synth.Region CHECK_BOX_MENU_ITEM { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "CHECK_BOX_MENU_ITEM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#COLOR_CHOOSER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region COLOR_CHOOSER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("COLOR_CHOOSER"); } }
+        public static Javax.Swing.Plaf.Synth.Region COLOR_CHOOSER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "COLOR_CHOOSER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#COMBO_BOX"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region COMBO_BOX { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("COMBO_BOX"); } }
+        public static Javax.Swing.Plaf.Synth.Region COMBO_BOX { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "COMBO_BOX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#DESKTOP_ICON"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region DESKTOP_ICON { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("DESKTOP_ICON"); } }
+        public static Javax.Swing.Plaf.Synth.Region DESKTOP_ICON { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "DESKTOP_ICON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#DESKTOP_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region DESKTOP_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("DESKTOP_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region DESKTOP_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "DESKTOP_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#EDITOR_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region EDITOR_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("EDITOR_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region EDITOR_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "EDITOR_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#FILE_CHOOSER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region FILE_CHOOSER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("FILE_CHOOSER"); } }
+        public static Javax.Swing.Plaf.Synth.Region FILE_CHOOSER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "FILE_CHOOSER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#FORMATTED_TEXT_FIELD"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region FORMATTED_TEXT_FIELD { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("FORMATTED_TEXT_FIELD"); } }
+        public static Javax.Swing.Plaf.Synth.Region FORMATTED_TEXT_FIELD { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "FORMATTED_TEXT_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#INTERNAL_FRAME"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region INTERNAL_FRAME { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("INTERNAL_FRAME"); } }
+        public static Javax.Swing.Plaf.Synth.Region INTERNAL_FRAME { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "INTERNAL_FRAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#INTERNAL_FRAME_TITLE_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region INTERNAL_FRAME_TITLE_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("INTERNAL_FRAME_TITLE_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region INTERNAL_FRAME_TITLE_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "INTERNAL_FRAME_TITLE_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#LABEL"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region LABEL { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("LABEL"); } }
+        public static Javax.Swing.Plaf.Synth.Region LABEL { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "LABEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#LIST"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region LIST { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("LIST"); } }
+        public static Javax.Swing.Plaf.Synth.Region LIST { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "LIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#MENU"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region MENU { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("MENU"); } }
+        public static Javax.Swing.Plaf.Synth.Region MENU { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "MENU"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#MENU_BAR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region MENU_BAR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("MENU_BAR"); } }
+        public static Javax.Swing.Plaf.Synth.Region MENU_BAR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "MENU_BAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#MENU_ITEM"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region MENU_ITEM { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("MENU_ITEM"); } }
+        public static Javax.Swing.Plaf.Synth.Region MENU_ITEM { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "MENU_ITEM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#MENU_ITEM_ACCELERATOR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region MENU_ITEM_ACCELERATOR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("MENU_ITEM_ACCELERATOR"); } }
+        public static Javax.Swing.Plaf.Synth.Region MENU_ITEM_ACCELERATOR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "MENU_ITEM_ACCELERATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#OPTION_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region OPTION_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("OPTION_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region OPTION_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "OPTION_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#PANEL"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region PANEL { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("PANEL"); } }
+        public static Javax.Swing.Plaf.Synth.Region PANEL { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "PANEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#PASSWORD_FIELD"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region PASSWORD_FIELD { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("PASSWORD_FIELD"); } }
+        public static Javax.Swing.Plaf.Synth.Region PASSWORD_FIELD { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "PASSWORD_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#POPUP_MENU"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region POPUP_MENU { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("POPUP_MENU"); } }
+        public static Javax.Swing.Plaf.Synth.Region POPUP_MENU { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "POPUP_MENU"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#POPUP_MENU_SEPARATOR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region POPUP_MENU_SEPARATOR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("POPUP_MENU_SEPARATOR"); } }
+        public static Javax.Swing.Plaf.Synth.Region POPUP_MENU_SEPARATOR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "POPUP_MENU_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#PROGRESS_BAR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region PROGRESS_BAR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("PROGRESS_BAR"); } }
+        public static Javax.Swing.Plaf.Synth.Region PROGRESS_BAR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "PROGRESS_BAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#RADIO_BUTTON"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region RADIO_BUTTON { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("RADIO_BUTTON"); } }
+        public static Javax.Swing.Plaf.Synth.Region RADIO_BUTTON { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "RADIO_BUTTON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#RADIO_BUTTON_MENU_ITEM"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region RADIO_BUTTON_MENU_ITEM { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("RADIO_BUTTON_MENU_ITEM"); } }
+        public static Javax.Swing.Plaf.Synth.Region RADIO_BUTTON_MENU_ITEM { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "RADIO_BUTTON_MENU_ITEM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#ROOT_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region ROOT_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("ROOT_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region ROOT_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "ROOT_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR"); } }
+        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SCROLL_BAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR_THUMB"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_THUMB { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR_THUMB"); } }
+        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_THUMB { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SCROLL_BAR_THUMB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR_TRACK"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_TRACK { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR_TRACK"); } }
+        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_TRACK { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SCROLL_BAR_TRACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SCROLL_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region SCROLL_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SCROLL_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SEPARATOR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SEPARATOR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SEPARATOR"); } }
+        public static Javax.Swing.Plaf.Synth.Region SEPARATOR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SLIDER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER"); } }
+        public static Javax.Swing.Plaf.Synth.Region SLIDER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SLIDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER_THUMB"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SLIDER_THUMB { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER_THUMB"); } }
+        public static Javax.Swing.Plaf.Synth.Region SLIDER_THUMB { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SLIDER_THUMB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER_TRACK"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SLIDER_TRACK { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER_TRACK"); } }
+        public static Javax.Swing.Plaf.Synth.Region SLIDER_TRACK { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SLIDER_TRACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SPINNER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SPINNER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SPINNER"); } }
+        public static Javax.Swing.Plaf.Synth.Region SPINNER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SPINNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SPLIT_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SPLIT_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SPLIT_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region SPLIT_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SPLIT_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SPLIT_PANE_DIVIDER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SPLIT_PANE_DIVIDER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("SPLIT_PANE_DIVIDER"); } }
+        public static Javax.Swing.Plaf.Synth.Region SPLIT_PANE_DIVIDER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "SPLIT_PANE_DIVIDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABBED_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_CONTENT"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_CONTENT { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_CONTENT"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_CONTENT { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABBED_PANE_CONTENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_TAB"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_TAB"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABBED_PANE_TAB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_TAB_AREA"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB_AREA { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_TAB_AREA"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB_AREA { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABBED_PANE_TAB_AREA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABLE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABLE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABLE"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABLE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABLE_HEADER"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABLE_HEADER { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABLE_HEADER"); } }
+        public static Javax.Swing.Plaf.Synth.Region TABLE_HEADER { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TABLE_HEADER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TEXT_AREA"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TEXT_AREA { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TEXT_AREA"); } }
+        public static Javax.Swing.Plaf.Synth.Region TEXT_AREA { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TEXT_AREA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TEXT_FIELD"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TEXT_FIELD { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TEXT_FIELD"); } }
+        public static Javax.Swing.Plaf.Synth.Region TEXT_FIELD { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TEXT_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TEXT_PANE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TEXT_PANE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TEXT_PANE"); } }
+        public static Javax.Swing.Plaf.Synth.Region TEXT_PANE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TEXT_PANE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOGGLE_BUTTON"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOGGLE_BUTTON { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOGGLE_BUTTON"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOGGLE_BUTTON { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOGGLE_BUTTON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_BAR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOOL_BAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_BAR_CONTENT"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_CONTENT { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR_CONTENT"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_CONTENT { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOOL_BAR_CONTENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_BAR_DRAG_WINDOW"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_DRAG_WINDOW { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR_DRAG_WINDOW"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_DRAG_WINDOW { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOOL_BAR_DRAG_WINDOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_BAR_SEPARATOR"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_SEPARATOR { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR_SEPARATOR"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_SEPARATOR { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOOL_BAR_SEPARATOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_TIP"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_TIP { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_TIP"); } }
+        public static Javax.Swing.Plaf.Synth.Region TOOL_TIP { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TOOL_TIP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TREE"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TREE { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TREE"); } }
+        public static Javax.Swing.Plaf.Synth.Region TREE { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TREE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TREE_CELL"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TREE_CELL { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("TREE_CELL"); } }
+        public static Javax.Swing.Plaf.Synth.Region TREE_CELL { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "TREE_CELL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#VIEWPORT"/>
         /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region VIEWPORT { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("VIEWPORT"); } }
+        public static Javax.Swing.Plaf.Synth.Region VIEWPORT { get { return SGetField<Javax.Swing.Plaf.Synth.Region>(LocalClazz, "VIEWPORT"); } }
         
         #endregion
 

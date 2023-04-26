@@ -40,19 +40,19 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_END"/>
         /// </summary>
-        public static short END_TO_END { get { return LocalClazz.GetField<short>("END_TO_END"); } }
+        public static short END_TO_END { get { return SGetField<short>(LocalClazz, "END_TO_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_START"/>
         /// </summary>
-        public static short END_TO_START { get { return LocalClazz.GetField<short>("END_TO_START"); } }
+        public static short END_TO_START { get { return SGetField<short>(LocalClazz, "END_TO_START"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_END"/>
         /// </summary>
-        public static short START_TO_END { get { return LocalClazz.GetField<short>("START_TO_END"); } }
+        public static short START_TO_END { get { return SGetField<short>(LocalClazz, "START_TO_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START"/>
         /// </summary>
-        public static short START_TO_START { get { return LocalClazz.GetField<short>("START_TO_START"); } }
+        public static short START_TO_START { get { return SGetField<short>(LocalClazz, "START_TO_START"); } }
         
         #endregion
 

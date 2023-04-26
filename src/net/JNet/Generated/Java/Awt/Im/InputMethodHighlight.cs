@@ -70,27 +70,27 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#CONVERTED_TEXT"/>
         /// </summary>
-        public static int CONVERTED_TEXT { get { return LocalClazz.GetField<int>("CONVERTED_TEXT"); } }
+        public static int CONVERTED_TEXT { get { return SGetField<int>(LocalClazz, "CONVERTED_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#RAW_TEXT"/>
         /// </summary>
-        public static int RAW_TEXT { get { return LocalClazz.GetField<int>("RAW_TEXT"); } }
+        public static int RAW_TEXT { get { return SGetField<int>(LocalClazz, "RAW_TEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_CONVERTED_TEXT_HIGHLIGHT"/>
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight SELECTED_CONVERTED_TEXT_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_CONVERTED_TEXT_HIGHLIGHT"); } }
+        public static Java.Awt.Im.InputMethodHighlight SELECTED_CONVERTED_TEXT_HIGHLIGHT { get { return SGetField<Java.Awt.Im.InputMethodHighlight>(LocalClazz, "SELECTED_CONVERTED_TEXT_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_RAW_TEXT_HIGHLIGHT"/>
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight SELECTED_RAW_TEXT_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_RAW_TEXT_HIGHLIGHT"); } }
+        public static Java.Awt.Im.InputMethodHighlight SELECTED_RAW_TEXT_HIGHLIGHT { get { return SGetField<Java.Awt.Im.InputMethodHighlight>(LocalClazz, "SELECTED_RAW_TEXT_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_CONVERTED_TEXT_HIGHLIGHT"/>
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_CONVERTED_TEXT_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_CONVERTED_TEXT_HIGHLIGHT"); } }
+        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_CONVERTED_TEXT_HIGHLIGHT { get { return SGetField<Java.Awt.Im.InputMethodHighlight>(LocalClazz, "UNSELECTED_CONVERTED_TEXT_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT"/>
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_RAW_TEXT_HIGHLIGHT"); } }
+        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT { get { return SGetField<Java.Awt.Im.InputMethodHighlight>(LocalClazz, "UNSELECTED_RAW_TEXT_HIGHLIGHT"); } }
         
         #endregion
 

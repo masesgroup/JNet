@@ -48,31 +48,31 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION"/>
         /// </summary>
-        public static int CANONICAL_DECOMPOSITION { get { return LocalClazz.GetField<int>("CANONICAL_DECOMPOSITION"); } }
+        public static int CANONICAL_DECOMPOSITION { get { return SGetField<int>(LocalClazz, "CANONICAL_DECOMPOSITION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION"/>
         /// </summary>
-        public static int FULL_DECOMPOSITION { get { return LocalClazz.GetField<int>("FULL_DECOMPOSITION"); } }
+        public static int FULL_DECOMPOSITION { get { return SGetField<int>(LocalClazz, "FULL_DECOMPOSITION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL"/>
         /// </summary>
-        public static int IDENTICAL { get { return LocalClazz.GetField<int>("IDENTICAL"); } }
+        public static int IDENTICAL { get { return SGetField<int>(LocalClazz, "IDENTICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION"/>
         /// </summary>
-        public static int NO_DECOMPOSITION { get { return LocalClazz.GetField<int>("NO_DECOMPOSITION"); } }
+        public static int NO_DECOMPOSITION { get { return SGetField<int>(LocalClazz, "NO_DECOMPOSITION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#PRIMARY"/>
         /// </summary>
-        public static int PRIMARY { get { return LocalClazz.GetField<int>("PRIMARY"); } }
+        public static int PRIMARY { get { return SGetField<int>(LocalClazz, "PRIMARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#SECONDARY"/>
         /// </summary>
-        public static int SECONDARY { get { return LocalClazz.GetField<int>("SECONDARY"); } }
+        public static int SECONDARY { get { return SGetField<int>(LocalClazz, "SECONDARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY"/>
         /// </summary>
-        public static int TERTIARY { get { return LocalClazz.GetField<int>("TERTIARY"); } }
+        public static int TERTIARY { get { return SGetField<int>(LocalClazz, "TERTIARY"); } }
         
         #endregion
 

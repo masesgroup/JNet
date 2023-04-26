@@ -48,43 +48,43 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#RIPEMD160"/>
         /// </summary>
-        public static string RIPEMD160 { get { return LocalClazz.GetField<string>("RIPEMD160"); } }
+        public static string RIPEMD160 { get { return SGetField<string>(LocalClazz, "RIPEMD160"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA1"/>
         /// </summary>
-        public static string SHA1 { get { return LocalClazz.GetField<string>("SHA1"); } }
+        public static string SHA1 { get { return SGetField<string>(LocalClazz, "SHA1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA224"/>
         /// </summary>
-        public static string SHA224 { get { return LocalClazz.GetField<string>("SHA224"); } }
+        public static string SHA224 { get { return SGetField<string>(LocalClazz, "SHA224"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA256"/>
         /// </summary>
-        public static string SHA256 { get { return LocalClazz.GetField<string>("SHA256"); } }
+        public static string SHA256 { get { return SGetField<string>(LocalClazz, "SHA256"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_224"/>
         /// </summary>
-        public static string SHA3_224 { get { return LocalClazz.GetField<string>("SHA3_224"); } }
+        public static string SHA3_224 { get { return SGetField<string>(LocalClazz, "SHA3_224"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_256"/>
         /// </summary>
-        public static string SHA3_256 { get { return LocalClazz.GetField<string>("SHA3_256"); } }
+        public static string SHA3_256 { get { return SGetField<string>(LocalClazz, "SHA3_256"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_384"/>
         /// </summary>
-        public static string SHA3_384 { get { return LocalClazz.GetField<string>("SHA3_384"); } }
+        public static string SHA3_384 { get { return SGetField<string>(LocalClazz, "SHA3_384"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_512"/>
         /// </summary>
-        public static string SHA3_512 { get { return LocalClazz.GetField<string>("SHA3_512"); } }
+        public static string SHA3_512 { get { return SGetField<string>(LocalClazz, "SHA3_512"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA384"/>
         /// </summary>
-        public static string SHA384 { get { return LocalClazz.GetField<string>("SHA384"); } }
+        public static string SHA384 { get { return SGetField<string>(LocalClazz, "SHA384"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA512"/>
         /// </summary>
-        public static string SHA512 { get { return LocalClazz.GetField<string>("SHA512"); } }
+        public static string SHA512 { get { return SGetField<string>(LocalClazz, "SHA512"); } }
         
         #endregion
 

@@ -431,35 +431,35 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx1"/>
             /// </summary>
-            public double ctrlx1 { get { return Instance.GetField<double>("ctrlx1"); } set { Instance.SetField("ctrlx1", value); } }
+            public double ctrlx1 { get { return IGetField<double>("ctrlx1"); } set { ISetField("ctrlx1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx2"/>
             /// </summary>
-            public double ctrlx2 { get { return Instance.GetField<double>("ctrlx2"); } set { Instance.SetField("ctrlx2", value); } }
+            public double ctrlx2 { get { return IGetField<double>("ctrlx2"); } set { ISetField("ctrlx2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly1"/>
             /// </summary>
-            public double ctrly1 { get { return Instance.GetField<double>("ctrly1"); } set { Instance.SetField("ctrly1", value); } }
+            public double ctrly1 { get { return IGetField<double>("ctrly1"); } set { ISetField("ctrly1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly2"/>
             /// </summary>
-            public double ctrly2 { get { return Instance.GetField<double>("ctrly2"); } set { Instance.SetField("ctrly2", value); } }
+            public double ctrly2 { get { return IGetField<double>("ctrly2"); } set { ISetField("ctrly2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x1"/>
             /// </summary>
-            public double x1 { get { return Instance.GetField<double>("x1"); } set { Instance.SetField("x1", value); } }
+            public double x1 { get { return IGetField<double>("x1"); } set { ISetField("x1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x2"/>
             /// </summary>
-            public double x2 { get { return Instance.GetField<double>("x2"); } set { Instance.SetField("x2", value); } }
+            public double x2 { get { return IGetField<double>("x2"); } set { ISetField("x2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y1"/>
             /// </summary>
-            public double y1 { get { return Instance.GetField<double>("y1"); } set { Instance.SetField("y1", value); } }
+            public double y1 { get { return IGetField<double>("y1"); } set { ISetField("y1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2"/>
             /// </summary>
-            public double y2 { get { return Instance.GetField<double>("y2"); } set { Instance.SetField("y2", value); } }
+            public double y2 { get { return IGetField<double>("y2"); } set { ISetField("y2", value); } }
             
             #endregion
 
@@ -509,35 +509,35 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx1"/>
             /// </summary>
-            public float ctrlx1 { get { return Instance.GetField<float>("ctrlx1"); } set { Instance.SetField("ctrlx1", value); } }
+            public float ctrlx1 { get { return IGetField<float>("ctrlx1"); } set { ISetField("ctrlx1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx2"/>
             /// </summary>
-            public float ctrlx2 { get { return Instance.GetField<float>("ctrlx2"); } set { Instance.SetField("ctrlx2", value); } }
+            public float ctrlx2 { get { return IGetField<float>("ctrlx2"); } set { ISetField("ctrlx2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly1"/>
             /// </summary>
-            public float ctrly1 { get { return Instance.GetField<float>("ctrly1"); } set { Instance.SetField("ctrly1", value); } }
+            public float ctrly1 { get { return IGetField<float>("ctrly1"); } set { ISetField("ctrly1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly2"/>
             /// </summary>
-            public float ctrly2 { get { return Instance.GetField<float>("ctrly2"); } set { Instance.SetField("ctrly2", value); } }
+            public float ctrly2 { get { return IGetField<float>("ctrly2"); } set { ISetField("ctrly2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x1"/>
             /// </summary>
-            public float x1 { get { return Instance.GetField<float>("x1"); } set { Instance.SetField("x1", value); } }
+            public float x1 { get { return IGetField<float>("x1"); } set { ISetField("x1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x2"/>
             /// </summary>
-            public float x2 { get { return Instance.GetField<float>("x2"); } set { Instance.SetField("x2", value); } }
+            public float x2 { get { return IGetField<float>("x2"); } set { ISetField("x2", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y1"/>
             /// </summary>
-            public float y1 { get { return Instance.GetField<float>("y1"); } set { Instance.SetField("y1", value); } }
+            public float y1 { get { return IGetField<float>("y1"); } set { ISetField("y1", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y2"/>
             /// </summary>
-            public float y2 { get { return Instance.GetField<float>("y2"); } set { Instance.SetField("y2", value); } }
+            public float y2 { get { return IGetField<float>("y2"); } set { ISetField("y2", value); } }
             
             #endregion
 

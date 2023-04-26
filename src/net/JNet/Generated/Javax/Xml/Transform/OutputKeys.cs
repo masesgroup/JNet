@@ -40,43 +40,43 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS"/>
         /// </summary>
-        public static string CDATA_SECTION_ELEMENTS { get { return LocalClazz.GetField<string>("CDATA_SECTION_ELEMENTS"); } }
+        public static string CDATA_SECTION_ELEMENTS { get { return SGetField<string>(LocalClazz, "CDATA_SECTION_ELEMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC"/>
         /// </summary>
-        public static string DOCTYPE_PUBLIC { get { return LocalClazz.GetField<string>("DOCTYPE_PUBLIC"); } }
+        public static string DOCTYPE_PUBLIC { get { return SGetField<string>(LocalClazz, "DOCTYPE_PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM"/>
         /// </summary>
-        public static string DOCTYPE_SYSTEM { get { return LocalClazz.GetField<string>("DOCTYPE_SYSTEM"); } }
+        public static string DOCTYPE_SYSTEM { get { return SGetField<string>(LocalClazz, "DOCTYPE_SYSTEM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#ENCODING"/>
         /// </summary>
-        public static string ENCODING { get { return LocalClazz.GetField<string>("ENCODING"); } }
+        public static string ENCODING { get { return SGetField<string>(LocalClazz, "ENCODING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#INDENT"/>
         /// </summary>
-        public static string INDENT { get { return LocalClazz.GetField<string>("INDENT"); } }
+        public static string INDENT { get { return SGetField<string>(LocalClazz, "INDENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#MEDIA_TYPE"/>
         /// </summary>
-        public static string MEDIA_TYPE { get { return LocalClazz.GetField<string>("MEDIA_TYPE"); } }
+        public static string MEDIA_TYPE { get { return SGetField<string>(LocalClazz, "MEDIA_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#METHOD"/>
         /// </summary>
-        public static string METHOD { get { return LocalClazz.GetField<string>("METHOD"); } }
+        public static string METHOD { get { return SGetField<string>(LocalClazz, "METHOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION"/>
         /// </summary>
-        public static string OMIT_XML_DECLARATION { get { return LocalClazz.GetField<string>("OMIT_XML_DECLARATION"); } }
+        public static string OMIT_XML_DECLARATION { get { return SGetField<string>(LocalClazz, "OMIT_XML_DECLARATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#STANDALONE"/>
         /// </summary>
-        public static string STANDALONE { get { return LocalClazz.GetField<string>("STANDALONE"); } }
+        public static string STANDALONE { get { return SGetField<string>(LocalClazz, "STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#VERSION"/>
         /// </summary>
-        public static string VERSION { get { return LocalClazz.GetField<string>("VERSION"); } }
+        public static string VERSION { get { return SGetField<string>(LocalClazz, "VERSION"); } }
         
         #endregion
 

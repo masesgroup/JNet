@@ -40,91 +40,91 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_ALL"/>
         /// </summary>
-        public static int CHILD_POLICY_ALL { get { return LocalClazz.GetField<int>("CHILD_POLICY_ALL"); } }
+        public static int CHILD_POLICY_ALL { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_ALL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_CHOICE"/>
         /// </summary>
-        public static int CHILD_POLICY_CHOICE { get { return LocalClazz.GetField<int>("CHILD_POLICY_CHOICE"); } }
+        public static int CHILD_POLICY_CHOICE { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_CHOICE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_EMPTY"/>
         /// </summary>
-        public static int CHILD_POLICY_EMPTY { get { return LocalClazz.GetField<int>("CHILD_POLICY_EMPTY"); } }
+        public static int CHILD_POLICY_EMPTY { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_EMPTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_MAX"/>
         /// </summary>
-        public static int CHILD_POLICY_MAX { get { return LocalClazz.GetField<int>("CHILD_POLICY_MAX"); } }
+        public static int CHILD_POLICY_MAX { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_REPEAT"/>
         /// </summary>
-        public static int CHILD_POLICY_REPEAT { get { return LocalClazz.GetField<int>("CHILD_POLICY_REPEAT"); } }
+        public static int CHILD_POLICY_REPEAT { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_REPEAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SEQUENCE"/>
         /// </summary>
-        public static int CHILD_POLICY_SEQUENCE { get { return LocalClazz.GetField<int>("CHILD_POLICY_SEQUENCE"); } }
+        public static int CHILD_POLICY_SEQUENCE { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_SEQUENCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SOME"/>
         /// </summary>
-        public static int CHILD_POLICY_SOME { get { return LocalClazz.GetField<int>("CHILD_POLICY_SOME"); } }
+        public static int CHILD_POLICY_SOME { get { return SGetField<int>(LocalClazz, "CHILD_POLICY_SOME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_BOOLEAN"/>
         /// </summary>
-        public static int DATATYPE_BOOLEAN { get { return LocalClazz.GetField<int>("DATATYPE_BOOLEAN"); } }
+        public static int DATATYPE_BOOLEAN { get { return SGetField<int>(LocalClazz, "DATATYPE_BOOLEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_DOUBLE"/>
         /// </summary>
-        public static int DATATYPE_DOUBLE { get { return LocalClazz.GetField<int>("DATATYPE_DOUBLE"); } }
+        public static int DATATYPE_DOUBLE { get { return SGetField<int>(LocalClazz, "DATATYPE_DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_FLOAT"/>
         /// </summary>
-        public static int DATATYPE_FLOAT { get { return LocalClazz.GetField<int>("DATATYPE_FLOAT"); } }
+        public static int DATATYPE_FLOAT { get { return SGetField<int>(LocalClazz, "DATATYPE_FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_INTEGER"/>
         /// </summary>
-        public static int DATATYPE_INTEGER { get { return LocalClazz.GetField<int>("DATATYPE_INTEGER"); } }
+        public static int DATATYPE_INTEGER { get { return SGetField<int>(LocalClazz, "DATATYPE_INTEGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_STRING"/>
         /// </summary>
-        public static int DATATYPE_STRING { get { return LocalClazz.GetField<int>("DATATYPE_STRING"); } }
+        public static int DATATYPE_STRING { get { return SGetField<int>(LocalClazz, "DATATYPE_STRING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ARBITRARY"/>
         /// </summary>
-        public static int VALUE_ARBITRARY { get { return LocalClazz.GetField<int>("VALUE_ARBITRARY"); } }
+        public static int VALUE_ARBITRARY { get { return SGetField<int>(LocalClazz, "VALUE_ARBITRARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ENUMERATION"/>
         /// </summary>
-        public static int VALUE_ENUMERATION { get { return LocalClazz.GetField<int>("VALUE_ENUMERATION"); } }
+        public static int VALUE_ENUMERATION { get { return SGetField<int>(LocalClazz, "VALUE_ENUMERATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_LIST"/>
         /// </summary>
-        public static int VALUE_LIST { get { return LocalClazz.GetField<int>("VALUE_LIST"); } }
+        public static int VALUE_LIST { get { return SGetField<int>(LocalClazz, "VALUE_LIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_NONE"/>
         /// </summary>
-        public static int VALUE_NONE { get { return LocalClazz.GetField<int>("VALUE_NONE"); } }
+        public static int VALUE_NONE { get { return SGetField<int>(LocalClazz, "VALUE_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE"/>
         /// </summary>
-        public static int VALUE_RANGE { get { return LocalClazz.GetField<int>("VALUE_RANGE"); } }
+        public static int VALUE_RANGE { get { return SGetField<int>(LocalClazz, "VALUE_RANGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE"/>
         /// </summary>
-        public static int VALUE_RANGE_MAX_INCLUSIVE { get { return LocalClazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE"); } }
+        public static int VALUE_RANGE_MAX_INCLUSIVE { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MAX_INCLUSIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE_MASK"/>
         /// </summary>
-        public static int VALUE_RANGE_MAX_INCLUSIVE_MASK { get { return LocalClazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE_MASK"); } }
+        public static int VALUE_RANGE_MAX_INCLUSIVE_MASK { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MAX_INCLUSIVE_MASK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE"/>
         /// </summary>
-        public static int VALUE_RANGE_MIN_INCLUSIVE { get { return LocalClazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE"); } }
+        public static int VALUE_RANGE_MIN_INCLUSIVE { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MIN_INCLUSIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE_MASK"/>
         /// </summary>
-        public static int VALUE_RANGE_MIN_INCLUSIVE_MASK { get { return LocalClazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE_MASK"); } }
+        public static int VALUE_RANGE_MIN_INCLUSIVE_MASK { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MIN_INCLUSIVE_MASK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE"/>
         /// </summary>
-        public static int VALUE_RANGE_MIN_MAX_INCLUSIVE { get { return LocalClazz.GetField<int>("VALUE_RANGE_MIN_MAX_INCLUSIVE"); } }
+        public static int VALUE_RANGE_MIN_MAX_INCLUSIVE { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MIN_MAX_INCLUSIVE"); } }
         
         #endregion
 

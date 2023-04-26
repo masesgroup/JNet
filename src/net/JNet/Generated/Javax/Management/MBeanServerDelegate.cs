@@ -48,7 +48,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#DELEGATE_NAME"/>
         /// </summary>
-        public static Javax.Management.ObjectName DELEGATE_NAME { get { return LocalClazz.GetField<Javax.Management.ObjectName>("DELEGATE_NAME"); } }
+        public static Javax.Management.ObjectName DELEGATE_NAME { get { return SGetField<Javax.Management.ObjectName>(LocalClazz, "DELEGATE_NAME"); } }
         
         #endregion
 

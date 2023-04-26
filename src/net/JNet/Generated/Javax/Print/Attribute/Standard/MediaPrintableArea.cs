@@ -76,11 +76,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#INCH"/>
         /// </summary>
-        public static int INCH { get { return LocalClazz.GetField<int>("INCH"); } }
+        public static int INCH { get { return SGetField<int>(LocalClazz, "INCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#MM"/>
         /// </summary>
-        public static int MM { get { return LocalClazz.GetField<int>("MM"); } }
+        public static int MM { get { return SGetField<int>(LocalClazz, "MM"); } }
         
         #endregion
 

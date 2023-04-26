@@ -52,23 +52,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY"/>
         /// </summary>
-        public static int COPY { get { return LocalClazz.GetField<int>("COPY"); } }
+        public static int COPY { get { return SGetField<int>(LocalClazz, "COPY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY_OR_MOVE"/>
         /// </summary>
-        public static int COPY_OR_MOVE { get { return LocalClazz.GetField<int>("COPY_OR_MOVE"); } }
+        public static int COPY_OR_MOVE { get { return SGetField<int>(LocalClazz, "COPY_OR_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#LINK"/>
         /// </summary>
-        public static int LINK { get { return LocalClazz.GetField<int>("LINK"); } }
+        public static int LINK { get { return SGetField<int>(LocalClazz, "LINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE"/>
         /// </summary>
-        public static int MOVE { get { return LocalClazz.GetField<int>("MOVE"); } }
+        public static int MOVE { get { return SGetField<int>(LocalClazz, "MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE"/>
         /// </summary>
-        public static int NONE { get { return LocalClazz.GetField<int>("NONE"); } }
+        public static int NONE { get { return SGetField<int>(LocalClazz, "NONE"); } }
         
         #endregion
 

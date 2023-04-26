@@ -57,99 +57,99 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CHILD_NODE_OF"/>
         /// </summary>
-        public static string CHILD_NODE_OF { get { return LocalClazz.GetField<string>("CHILD_NODE_OF"); } }
+        public static string CHILD_NODE_OF { get { return SGetField<string>(LocalClazz, "CHILD_NODE_OF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CHILD_NODE_OF_PROPERTY"/>
         /// </summary>
-        public static string CHILD_NODE_OF_PROPERTY { get { return LocalClazz.GetField<string>("CHILD_NODE_OF_PROPERTY"); } }
+        public static string CHILD_NODE_OF_PROPERTY { get { return SGetField<string>(LocalClazz, "CHILD_NODE_OF_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLED_BY"/>
         /// </summary>
-        public static string CONTROLLED_BY { get { return LocalClazz.GetField<string>("CONTROLLED_BY"); } }
+        public static string CONTROLLED_BY { get { return SGetField<string>(LocalClazz, "CONTROLLED_BY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLED_BY_PROPERTY"/>
         /// </summary>
-        public static string CONTROLLED_BY_PROPERTY { get { return LocalClazz.GetField<string>("CONTROLLED_BY_PROPERTY"); } }
+        public static string CONTROLLED_BY_PROPERTY { get { return SGetField<string>(LocalClazz, "CONTROLLED_BY_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLER_FOR"/>
         /// </summary>
-        public static string CONTROLLER_FOR { get { return LocalClazz.GetField<string>("CONTROLLER_FOR"); } }
+        public static string CONTROLLER_FOR { get { return SGetField<string>(LocalClazz, "CONTROLLER_FOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLER_FOR_PROPERTY"/>
         /// </summary>
-        public static string CONTROLLER_FOR_PROPERTY { get { return LocalClazz.GetField<string>("CONTROLLER_FOR_PROPERTY"); } }
+        public static string CONTROLLER_FOR_PROPERTY { get { return SGetField<string>(LocalClazz, "CONTROLLER_FOR_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDDED_BY"/>
         /// </summary>
-        public static string EMBEDDED_BY { get { return LocalClazz.GetField<string>("EMBEDDED_BY"); } }
+        public static string EMBEDDED_BY { get { return SGetField<string>(LocalClazz, "EMBEDDED_BY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDDED_BY_PROPERTY"/>
         /// </summary>
-        public static string EMBEDDED_BY_PROPERTY { get { return LocalClazz.GetField<string>("EMBEDDED_BY_PROPERTY"); } }
+        public static string EMBEDDED_BY_PROPERTY { get { return SGetField<string>(LocalClazz, "EMBEDDED_BY_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDS"/>
         /// </summary>
-        public static string EMBEDS { get { return LocalClazz.GetField<string>("EMBEDS"); } }
+        public static string EMBEDS { get { return SGetField<string>(LocalClazz, "EMBEDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDS_PROPERTY"/>
         /// </summary>
-        public static string EMBEDS_PROPERTY { get { return LocalClazz.GetField<string>("EMBEDS_PROPERTY"); } }
+        public static string EMBEDS_PROPERTY { get { return SGetField<string>(LocalClazz, "EMBEDS_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_FROM"/>
         /// </summary>
-        public static string FLOWS_FROM { get { return LocalClazz.GetField<string>("FLOWS_FROM"); } }
+        public static string FLOWS_FROM { get { return SGetField<string>(LocalClazz, "FLOWS_FROM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_FROM_PROPERTY"/>
         /// </summary>
-        public static string FLOWS_FROM_PROPERTY { get { return LocalClazz.GetField<string>("FLOWS_FROM_PROPERTY"); } }
+        public static string FLOWS_FROM_PROPERTY { get { return SGetField<string>(LocalClazz, "FLOWS_FROM_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_TO"/>
         /// </summary>
-        public static string FLOWS_TO { get { return LocalClazz.GetField<string>("FLOWS_TO"); } }
+        public static string FLOWS_TO { get { return SGetField<string>(LocalClazz, "FLOWS_TO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_TO_PROPERTY"/>
         /// </summary>
-        public static string FLOWS_TO_PROPERTY { get { return LocalClazz.GetField<string>("FLOWS_TO_PROPERTY"); } }
+        public static string FLOWS_TO_PROPERTY { get { return SGetField<string>(LocalClazz, "FLOWS_TO_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABEL_FOR"/>
         /// </summary>
-        public static string LABEL_FOR { get { return LocalClazz.GetField<string>("LABEL_FOR"); } }
+        public static string LABEL_FOR { get { return SGetField<string>(LocalClazz, "LABEL_FOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABEL_FOR_PROPERTY"/>
         /// </summary>
-        public static string LABEL_FOR_PROPERTY { get { return LocalClazz.GetField<string>("LABEL_FOR_PROPERTY"); } }
+        public static string LABEL_FOR_PROPERTY { get { return SGetField<string>(LocalClazz, "LABEL_FOR_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABELED_BY"/>
         /// </summary>
-        public static string LABELED_BY { get { return LocalClazz.GetField<string>("LABELED_BY"); } }
+        public static string LABELED_BY { get { return SGetField<string>(LocalClazz, "LABELED_BY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABELED_BY_PROPERTY"/>
         /// </summary>
-        public static string LABELED_BY_PROPERTY { get { return LocalClazz.GetField<string>("LABELED_BY_PROPERTY"); } }
+        public static string LABELED_BY_PROPERTY { get { return SGetField<string>(LocalClazz, "LABELED_BY_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#MEMBER_OF"/>
         /// </summary>
-        public static string MEMBER_OF { get { return LocalClazz.GetField<string>("MEMBER_OF"); } }
+        public static string MEMBER_OF { get { return SGetField<string>(LocalClazz, "MEMBER_OF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#MEMBER_OF_PROPERTY"/>
         /// </summary>
-        public static string MEMBER_OF_PROPERTY { get { return LocalClazz.GetField<string>("MEMBER_OF_PROPERTY"); } }
+        public static string MEMBER_OF_PROPERTY { get { return SGetField<string>(LocalClazz, "MEMBER_OF_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#PARENT_WINDOW_OF"/>
         /// </summary>
-        public static string PARENT_WINDOW_OF { get { return LocalClazz.GetField<string>("PARENT_WINDOW_OF"); } }
+        public static string PARENT_WINDOW_OF { get { return SGetField<string>(LocalClazz, "PARENT_WINDOW_OF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#PARENT_WINDOW_OF_PROPERTY"/>
         /// </summary>
-        public static string PARENT_WINDOW_OF_PROPERTY { get { return LocalClazz.GetField<string>("PARENT_WINDOW_OF_PROPERTY"); } }
+        public static string PARENT_WINDOW_OF_PROPERTY { get { return SGetField<string>(LocalClazz, "PARENT_WINDOW_OF_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#SUBWINDOW_OF"/>
         /// </summary>
-        public static string SUBWINDOW_OF { get { return LocalClazz.GetField<string>("SUBWINDOW_OF"); } }
+        public static string SUBWINDOW_OF { get { return SGetField<string>(LocalClazz, "SUBWINDOW_OF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#SUBWINDOW_OF_PROPERTY"/>
         /// </summary>
-        public static string SUBWINDOW_OF_PROPERTY { get { return LocalClazz.GetField<string>("SUBWINDOW_OF_PROPERTY"); } }
+        public static string SUBWINDOW_OF_PROPERTY { get { return SGetField<string>(LocalClazz, "SUBWINDOW_OF_PROPERTY"); } }
         
         #endregion
 

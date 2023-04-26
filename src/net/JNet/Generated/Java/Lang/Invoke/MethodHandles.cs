@@ -484,27 +484,27 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
             /// </summary>
-            public static int MODULE { get { return LocalClazz.GetField<int>("MODULE"); } }
+            public static int MODULE { get { return SGetField<int>(LocalClazz, "MODULE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
             /// </summary>
-            public static int PACKAGE { get { return LocalClazz.GetField<int>("PACKAGE"); } }
+            public static int PACKAGE { get { return SGetField<int>(LocalClazz, "PACKAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE"/>
             /// </summary>
-            public static int PRIVATE { get { return LocalClazz.GetField<int>("PRIVATE"); } }
+            public static int PRIVATE { get { return SGetField<int>(LocalClazz, "PRIVATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED"/>
             /// </summary>
-            public static int PROTECTED { get { return LocalClazz.GetField<int>("PROTECTED"); } }
+            public static int PROTECTED { get { return SGetField<int>(LocalClazz, "PROTECTED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC"/>
             /// </summary>
-            public static int PUBLIC { get { return LocalClazz.GetField<int>("PUBLIC"); } }
+            public static int PUBLIC { get { return SGetField<int>(LocalClazz, "PUBLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL"/>
             /// </summary>
-            public static int UNCONDITIONAL { get { return LocalClazz.GetField<int>("UNCONDITIONAL"); } }
+            public static int UNCONDITIONAL { get { return SGetField<int>(LocalClazz, "UNCONDITIONAL"); } }
             
             #endregion
 

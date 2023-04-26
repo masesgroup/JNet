@@ -40,7 +40,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
-        public static int LOOP_CONTINUOUSLY { get { return LocalClazz.GetField<int>("LOOP_CONTINUOUSLY"); } }
+        public static int LOOP_CONTINUOUSLY { get { return SGetField<int>(LocalClazz, "LOOP_CONTINUOUSLY"); } }
         
         #endregion
 
@@ -324,19 +324,19 @@ namespace Javax.Sound.Midi
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#INTERNAL_CLOCK"/>
             /// </summary>
-            public static Javax.Sound.Midi.Sequencer.SyncMode INTERNAL_CLOCK { get { return LocalClazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("INTERNAL_CLOCK"); } }
+            public static Javax.Sound.Midi.Sequencer.SyncMode INTERNAL_CLOCK { get { return SGetField<Javax.Sound.Midi.Sequencer.SyncMode>(LocalClazz, "INTERNAL_CLOCK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_SYNC"/>
             /// </summary>
-            public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_SYNC { get { return LocalClazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("MIDI_SYNC"); } }
+            public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_SYNC { get { return SGetField<Javax.Sound.Midi.Sequencer.SyncMode>(LocalClazz, "MIDI_SYNC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_TIME_CODE"/>
             /// </summary>
-            public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_TIME_CODE { get { return LocalClazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("MIDI_TIME_CODE"); } }
+            public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_TIME_CODE { get { return SGetField<Javax.Sound.Midi.Sequencer.SyncMode>(LocalClazz, "MIDI_TIME_CODE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#NO_SYNC"/>
             /// </summary>
-            public static Javax.Sound.Midi.Sequencer.SyncMode NO_SYNC { get { return LocalClazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("NO_SYNC"); } }
+            public static Javax.Sound.Midi.Sequencer.SyncMode NO_SYNC { get { return SGetField<Javax.Sound.Midi.Sequencer.SyncMode>(LocalClazz, "NO_SYNC"); } }
             
             #endregion
 

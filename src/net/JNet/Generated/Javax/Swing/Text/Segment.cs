@@ -62,15 +62,15 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#array"/>
         /// </summary>
-        public char[] array { get { return Instance.GetField<char[]>("array"); } set { Instance.SetField("array", value); } }
+        public char[] array { get { return IGetFieldArray<char>("array"); } set { ISetField("array", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#count"/>
         /// </summary>
-        public int count { get { return Instance.GetField<int>("count"); } set { Instance.SetField("count", value); } }
+        public int count { get { return IGetField<int>("count"); } set { ISetField("count", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#offset"/>
         /// </summary>
-        public int offset { get { return Instance.GetField<int>("offset"); } set { Instance.SetField("offset", value); } }
+        public int offset { get { return IGetField<int>("offset"); } set { ISetField("offset", value); } }
         
         #endregion
 

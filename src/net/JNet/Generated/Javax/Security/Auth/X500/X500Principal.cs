@@ -81,15 +81,15 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#CANONICAL"/>
         /// </summary>
-        public static string CANONICAL { get { return LocalClazz.GetField<string>("CANONICAL"); } }
+        public static string CANONICAL { get { return SGetField<string>(LocalClazz, "CANONICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#RFC1779"/>
         /// </summary>
-        public static string RFC1779 { get { return LocalClazz.GetField<string>("RFC1779"); } }
+        public static string RFC1779 { get { return SGetField<string>(LocalClazz, "RFC1779"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#RFC2253"/>
         /// </summary>
-        public static string RFC2253 { get { return LocalClazz.GetField<string>("RFC2253"); } }
+        public static string RFC2253 { get { return SGetField<string>(LocalClazz, "RFC2253"); } }
         
         #endregion
 

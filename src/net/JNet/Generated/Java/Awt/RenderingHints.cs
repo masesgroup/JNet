@@ -65,191 +65,191 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_ALPHA_INTERPOLATION"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_ALPHA_INTERPOLATION { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_ALPHA_INTERPOLATION"); } }
+        public static Java.Awt.RenderingHints.Key KEY_ALPHA_INTERPOLATION { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_ALPHA_INTERPOLATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_ANTIALIASING"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_ANTIALIASING { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_ANTIALIASING"); } }
+        public static Java.Awt.RenderingHints.Key KEY_ANTIALIASING { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_ANTIALIASING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_COLOR_RENDERING"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_COLOR_RENDERING { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_COLOR_RENDERING"); } }
+        public static Java.Awt.RenderingHints.Key KEY_COLOR_RENDERING { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_COLOR_RENDERING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_DITHERING"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_DITHERING { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_DITHERING"); } }
+        public static Java.Awt.RenderingHints.Key KEY_DITHERING { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_DITHERING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_FRACTIONALMETRICS"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_FRACTIONALMETRICS { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_FRACTIONALMETRICS"); } }
+        public static Java.Awt.RenderingHints.Key KEY_FRACTIONALMETRICS { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_FRACTIONALMETRICS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_INTERPOLATION"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_INTERPOLATION { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_INTERPOLATION"); } }
+        public static Java.Awt.RenderingHints.Key KEY_INTERPOLATION { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_INTERPOLATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_RENDERING"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_RENDERING { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_RENDERING"); } }
+        public static Java.Awt.RenderingHints.Key KEY_RENDERING { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_RENDERING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_RESOLUTION_VARIANT"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_RESOLUTION_VARIANT { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_RESOLUTION_VARIANT"); } }
+        public static Java.Awt.RenderingHints.Key KEY_RESOLUTION_VARIANT { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_RESOLUTION_VARIANT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_STROKE_CONTROL"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_STROKE_CONTROL { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_STROKE_CONTROL"); } }
+        public static Java.Awt.RenderingHints.Key KEY_STROKE_CONTROL { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_STROKE_CONTROL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_ANTIALIASING"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_TEXT_ANTIALIASING { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_ANTIALIASING"); } }
+        public static Java.Awt.RenderingHints.Key KEY_TEXT_ANTIALIASING { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_TEXT_ANTIALIASING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_LCD_CONTRAST"/>
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_TEXT_LCD_CONTRAST { get { return LocalClazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_LCD_CONTRAST"); } }
+        public static Java.Awt.RenderingHints.Key KEY_TEXT_LCD_CONTRAST { get { return SGetField<Java.Awt.RenderingHints.Key>(LocalClazz, "KEY_TEXT_LCD_CONTRAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_DEFAULT"/>
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_DEFAULT { get { return LocalClazz.GetField("VALUE_ALPHA_INTERPOLATION_DEFAULT"); } }
+        public static object VALUE_ALPHA_INTERPOLATION_DEFAULT { get { return SGetField(LocalClazz, "VALUE_ALPHA_INTERPOLATION_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_QUALITY"/>
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_QUALITY { get { return LocalClazz.GetField("VALUE_ALPHA_INTERPOLATION_QUALITY"); } }
+        public static object VALUE_ALPHA_INTERPOLATION_QUALITY { get { return SGetField(LocalClazz, "VALUE_ALPHA_INTERPOLATION_QUALITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_SPEED"/>
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_SPEED { get { return LocalClazz.GetField("VALUE_ALPHA_INTERPOLATION_SPEED"); } }
+        public static object VALUE_ALPHA_INTERPOLATION_SPEED { get { return SGetField(LocalClazz, "VALUE_ALPHA_INTERPOLATION_SPEED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_DEFAULT"/>
         /// </summary>
-        public static object VALUE_ANTIALIAS_DEFAULT { get { return LocalClazz.GetField("VALUE_ANTIALIAS_DEFAULT"); } }
+        public static object VALUE_ANTIALIAS_DEFAULT { get { return SGetField(LocalClazz, "VALUE_ANTIALIAS_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_OFF"/>
         /// </summary>
-        public static object VALUE_ANTIALIAS_OFF { get { return LocalClazz.GetField("VALUE_ANTIALIAS_OFF"); } }
+        public static object VALUE_ANTIALIAS_OFF { get { return SGetField(LocalClazz, "VALUE_ANTIALIAS_OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_ON"/>
         /// </summary>
-        public static object VALUE_ANTIALIAS_ON { get { return LocalClazz.GetField("VALUE_ANTIALIAS_ON"); } }
+        public static object VALUE_ANTIALIAS_ON { get { return SGetField(LocalClazz, "VALUE_ANTIALIAS_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_DEFAULT"/>
         /// </summary>
-        public static object VALUE_COLOR_RENDER_DEFAULT { get { return LocalClazz.GetField("VALUE_COLOR_RENDER_DEFAULT"); } }
+        public static object VALUE_COLOR_RENDER_DEFAULT { get { return SGetField(LocalClazz, "VALUE_COLOR_RENDER_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_QUALITY"/>
         /// </summary>
-        public static object VALUE_COLOR_RENDER_QUALITY { get { return LocalClazz.GetField("VALUE_COLOR_RENDER_QUALITY"); } }
+        public static object VALUE_COLOR_RENDER_QUALITY { get { return SGetField(LocalClazz, "VALUE_COLOR_RENDER_QUALITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_SPEED"/>
         /// </summary>
-        public static object VALUE_COLOR_RENDER_SPEED { get { return LocalClazz.GetField("VALUE_COLOR_RENDER_SPEED"); } }
+        public static object VALUE_COLOR_RENDER_SPEED { get { return SGetField(LocalClazz, "VALUE_COLOR_RENDER_SPEED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_DEFAULT"/>
         /// </summary>
-        public static object VALUE_DITHER_DEFAULT { get { return LocalClazz.GetField("VALUE_DITHER_DEFAULT"); } }
+        public static object VALUE_DITHER_DEFAULT { get { return SGetField(LocalClazz, "VALUE_DITHER_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_DISABLE"/>
         /// </summary>
-        public static object VALUE_DITHER_DISABLE { get { return LocalClazz.GetField("VALUE_DITHER_DISABLE"); } }
+        public static object VALUE_DITHER_DISABLE { get { return SGetField(LocalClazz, "VALUE_DITHER_DISABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_ENABLE"/>
         /// </summary>
-        public static object VALUE_DITHER_ENABLE { get { return LocalClazz.GetField("VALUE_DITHER_ENABLE"); } }
+        public static object VALUE_DITHER_ENABLE { get { return SGetField(LocalClazz, "VALUE_DITHER_ENABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_DEFAULT"/>
         /// </summary>
-        public static object VALUE_FRACTIONALMETRICS_DEFAULT { get { return LocalClazz.GetField("VALUE_FRACTIONALMETRICS_DEFAULT"); } }
+        public static object VALUE_FRACTIONALMETRICS_DEFAULT { get { return SGetField(LocalClazz, "VALUE_FRACTIONALMETRICS_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_OFF"/>
         /// </summary>
-        public static object VALUE_FRACTIONALMETRICS_OFF { get { return LocalClazz.GetField("VALUE_FRACTIONALMETRICS_OFF"); } }
+        public static object VALUE_FRACTIONALMETRICS_OFF { get { return SGetField(LocalClazz, "VALUE_FRACTIONALMETRICS_OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_ON"/>
         /// </summary>
-        public static object VALUE_FRACTIONALMETRICS_ON { get { return LocalClazz.GetField("VALUE_FRACTIONALMETRICS_ON"); } }
+        public static object VALUE_FRACTIONALMETRICS_ON { get { return SGetField(LocalClazz, "VALUE_FRACTIONALMETRICS_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_BICUBIC"/>
         /// </summary>
-        public static object VALUE_INTERPOLATION_BICUBIC { get { return LocalClazz.GetField("VALUE_INTERPOLATION_BICUBIC"); } }
+        public static object VALUE_INTERPOLATION_BICUBIC { get { return SGetField(LocalClazz, "VALUE_INTERPOLATION_BICUBIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_BILINEAR"/>
         /// </summary>
-        public static object VALUE_INTERPOLATION_BILINEAR { get { return LocalClazz.GetField("VALUE_INTERPOLATION_BILINEAR"); } }
+        public static object VALUE_INTERPOLATION_BILINEAR { get { return SGetField(LocalClazz, "VALUE_INTERPOLATION_BILINEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_NEAREST_NEIGHBOR"/>
         /// </summary>
-        public static object VALUE_INTERPOLATION_NEAREST_NEIGHBOR { get { return LocalClazz.GetField("VALUE_INTERPOLATION_NEAREST_NEIGHBOR"); } }
+        public static object VALUE_INTERPOLATION_NEAREST_NEIGHBOR { get { return SGetField(LocalClazz, "VALUE_INTERPOLATION_NEAREST_NEIGHBOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_DEFAULT"/>
         /// </summary>
-        public static object VALUE_RENDER_DEFAULT { get { return LocalClazz.GetField("VALUE_RENDER_DEFAULT"); } }
+        public static object VALUE_RENDER_DEFAULT { get { return SGetField(LocalClazz, "VALUE_RENDER_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_QUALITY"/>
         /// </summary>
-        public static object VALUE_RENDER_QUALITY { get { return LocalClazz.GetField("VALUE_RENDER_QUALITY"); } }
+        public static object VALUE_RENDER_QUALITY { get { return SGetField(LocalClazz, "VALUE_RENDER_QUALITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_SPEED"/>
         /// </summary>
-        public static object VALUE_RENDER_SPEED { get { return LocalClazz.GetField("VALUE_RENDER_SPEED"); } }
+        public static object VALUE_RENDER_SPEED { get { return SGetField(LocalClazz, "VALUE_RENDER_SPEED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_BASE"/>
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_BASE { get { return LocalClazz.GetField("VALUE_RESOLUTION_VARIANT_BASE"); } }
+        public static object VALUE_RESOLUTION_VARIANT_BASE { get { return SGetField(LocalClazz, "VALUE_RESOLUTION_VARIANT_BASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DEFAULT"/>
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_DEFAULT { get { return LocalClazz.GetField("VALUE_RESOLUTION_VARIANT_DEFAULT"); } }
+        public static object VALUE_RESOLUTION_VARIANT_DEFAULT { get { return SGetField(LocalClazz, "VALUE_RESOLUTION_VARIANT_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DPI_FIT"/>
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_DPI_FIT { get { return LocalClazz.GetField("VALUE_RESOLUTION_VARIANT_DPI_FIT"); } }
+        public static object VALUE_RESOLUTION_VARIANT_DPI_FIT { get { return SGetField(LocalClazz, "VALUE_RESOLUTION_VARIANT_DPI_FIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_SIZE_FIT"/>
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_SIZE_FIT { get { return LocalClazz.GetField("VALUE_RESOLUTION_VARIANT_SIZE_FIT"); } }
+        public static object VALUE_RESOLUTION_VARIANT_SIZE_FIT { get { return SGetField(LocalClazz, "VALUE_RESOLUTION_VARIANT_SIZE_FIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_STROKE_DEFAULT"/>
         /// </summary>
-        public static object VALUE_STROKE_DEFAULT { get { return LocalClazz.GetField("VALUE_STROKE_DEFAULT"); } }
+        public static object VALUE_STROKE_DEFAULT { get { return SGetField(LocalClazz, "VALUE_STROKE_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_STROKE_NORMALIZE"/>
         /// </summary>
-        public static object VALUE_STROKE_NORMALIZE { get { return LocalClazz.GetField("VALUE_STROKE_NORMALIZE"); } }
+        public static object VALUE_STROKE_NORMALIZE { get { return SGetField(LocalClazz, "VALUE_STROKE_NORMALIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_STROKE_PURE"/>
         /// </summary>
-        public static object VALUE_STROKE_PURE { get { return LocalClazz.GetField("VALUE_STROKE_PURE"); } }
+        public static object VALUE_STROKE_PURE { get { return SGetField(LocalClazz, "VALUE_STROKE_PURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_DEFAULT"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_DEFAULT { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_DEFAULT"); } }
+        public static object VALUE_TEXT_ANTIALIAS_DEFAULT { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_GASP"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_GASP { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_GASP"); } }
+        public static object VALUE_TEXT_ANTIALIAS_GASP { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_GASP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HBGR"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_HBGR { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HBGR"); } }
+        public static object VALUE_TEXT_ANTIALIAS_LCD_HBGR { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_LCD_HBGR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HRGB"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_HRGB { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HRGB"); } }
+        public static object VALUE_TEXT_ANTIALIAS_LCD_HRGB { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_LCD_HRGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VBGR"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_VBGR { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VBGR"); } }
+        public static object VALUE_TEXT_ANTIALIAS_LCD_VBGR { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_LCD_VBGR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VRGB"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_VRGB { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VRGB"); } }
+        public static object VALUE_TEXT_ANTIALIAS_LCD_VRGB { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_LCD_VRGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_OFF"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_OFF { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_OFF"); } }
+        public static object VALUE_TEXT_ANTIALIAS_OFF { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_ON"/>
         /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_ON { get { return LocalClazz.GetField("VALUE_TEXT_ANTIALIAS_ON"); } }
+        public static object VALUE_TEXT_ANTIALIAS_ON { get { return SGetField(LocalClazz, "VALUE_TEXT_ANTIALIAS_ON"); } }
         
         #endregion
 

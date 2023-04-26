@@ -57,47 +57,47 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION"/>
         /// </summary>
-        public static int BEST_COMPRESSION { get { return LocalClazz.GetField<int>("BEST_COMPRESSION"); } }
+        public static int BEST_COMPRESSION { get { return SGetField<int>(LocalClazz, "BEST_COMPRESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_SPEED"/>
         /// </summary>
-        public static int BEST_SPEED { get { return LocalClazz.GetField<int>("BEST_SPEED"); } }
+        public static int BEST_SPEED { get { return SGetField<int>(LocalClazz, "BEST_SPEED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_COMPRESSION"/>
         /// </summary>
-        public static int DEFAULT_COMPRESSION { get { return LocalClazz.GetField<int>("DEFAULT_COMPRESSION"); } }
+        public static int DEFAULT_COMPRESSION { get { return SGetField<int>(LocalClazz, "DEFAULT_COMPRESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY"/>
         /// </summary>
-        public static int DEFAULT_STRATEGY { get { return LocalClazz.GetField<int>("DEFAULT_STRATEGY"); } }
+        public static int DEFAULT_STRATEGY { get { return SGetField<int>(LocalClazz, "DEFAULT_STRATEGY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED"/>
         /// </summary>
-        public static int DEFLATED { get { return LocalClazz.GetField<int>("DEFLATED"); } }
+        public static int DEFLATED { get { return SGetField<int>(LocalClazz, "DEFLATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FILTERED"/>
         /// </summary>
-        public static int FILTERED { get { return LocalClazz.GetField<int>("FILTERED"); } }
+        public static int FILTERED { get { return SGetField<int>(LocalClazz, "FILTERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH"/>
         /// </summary>
-        public static int FULL_FLUSH { get { return LocalClazz.GetField<int>("FULL_FLUSH"); } }
+        public static int FULL_FLUSH { get { return SGetField<int>(LocalClazz, "FULL_FLUSH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#HUFFMAN_ONLY"/>
         /// </summary>
-        public static int HUFFMAN_ONLY { get { return LocalClazz.GetField<int>("HUFFMAN_ONLY"); } }
+        public static int HUFFMAN_ONLY { get { return SGetField<int>(LocalClazz, "HUFFMAN_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION"/>
         /// </summary>
-        public static int NO_COMPRESSION { get { return LocalClazz.GetField<int>("NO_COMPRESSION"); } }
+        public static int NO_COMPRESSION { get { return SGetField<int>(LocalClazz, "NO_COMPRESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_FLUSH"/>
         /// </summary>
-        public static int NO_FLUSH { get { return LocalClazz.GetField<int>("NO_FLUSH"); } }
+        public static int NO_FLUSH { get { return SGetField<int>(LocalClazz, "NO_FLUSH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH"/>
         /// </summary>
-        public static int SYNC_FLUSH { get { return LocalClazz.GetField<int>("SYNC_FLUSH"); } }
+        public static int SYNC_FLUSH { get { return SGetField<int>(LocalClazz, "SYNC_FLUSH"); } }
         
         #endregion
 

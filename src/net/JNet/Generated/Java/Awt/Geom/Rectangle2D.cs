@@ -40,19 +40,19 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_BOTTOM"/>
         /// </summary>
-        public static int OUT_BOTTOM { get { return LocalClazz.GetField<int>("OUT_BOTTOM"); } }
+        public static int OUT_BOTTOM { get { return SGetField<int>(LocalClazz, "OUT_BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_LEFT"/>
         /// </summary>
-        public static int OUT_LEFT { get { return LocalClazz.GetField<int>("OUT_LEFT"); } }
+        public static int OUT_LEFT { get { return SGetField<int>(LocalClazz, "OUT_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_RIGHT"/>
         /// </summary>
-        public static int OUT_RIGHT { get { return LocalClazz.GetField<int>("OUT_RIGHT"); } }
+        public static int OUT_RIGHT { get { return SGetField<int>(LocalClazz, "OUT_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_TOP"/>
         /// </summary>
-        public static int OUT_TOP { get { return LocalClazz.GetField<int>("OUT_TOP"); } }
+        public static int OUT_TOP { get { return SGetField<int>(LocalClazz, "OUT_TOP"); } }
         
         #endregion
 
@@ -217,19 +217,19 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Double.html#height"/>
             /// </summary>
-            public double height { get { return Instance.GetField<double>("height"); } set { Instance.SetField("height", value); } }
+            public double height { get { return IGetField<double>("height"); } set { ISetField("height", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Double.html#width"/>
             /// </summary>
-            public double width { get { return Instance.GetField<double>("width"); } set { Instance.SetField("width", value); } }
+            public double width { get { return IGetField<double>("width"); } set { ISetField("width", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Double.html#x"/>
             /// </summary>
-            public double x { get { return Instance.GetField<double>("x"); } set { Instance.SetField("x", value); } }
+            public double x { get { return IGetField<double>("x"); } set { ISetField("x", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Double.html#y"/>
             /// </summary>
-            public double y { get { return Instance.GetField<double>("y"); } set { Instance.SetField("y", value); } }
+            public double y { get { return IGetField<double>("y"); } set { ISetField("y", value); } }
             
             #endregion
 
@@ -275,19 +275,19 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html#height"/>
             /// </summary>
-            public float height { get { return Instance.GetField<float>("height"); } set { Instance.SetField("height", value); } }
+            public float height { get { return IGetField<float>("height"); } set { ISetField("height", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html#width"/>
             /// </summary>
-            public float width { get { return Instance.GetField<float>("width"); } set { Instance.SetField("width", value); } }
+            public float width { get { return IGetField<float>("width"); } set { ISetField("width", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html#x"/>
             /// </summary>
-            public float x { get { return Instance.GetField<float>("x"); } set { Instance.SetField("x", value); } }
+            public float x { get { return IGetField<float>("x"); } set { ISetField("x", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html#y"/>
             /// </summary>
-            public float y { get { return Instance.GetField<float>("y"); } set { Instance.SetField("y", value); } }
+            public float y { get { return IGetField<float>("y"); } set { ISetField("y", value); } }
             
             #endregion
 

@@ -40,15 +40,15 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#OBJECT_SCOPE"/>
         /// </summary>
-        public static int OBJECT_SCOPE { get { return LocalClazz.GetField<int>("OBJECT_SCOPE"); } }
+        public static int OBJECT_SCOPE { get { return SGetField<int>(LocalClazz, "OBJECT_SCOPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#ONELEVEL_SCOPE"/>
         /// </summary>
-        public static int ONELEVEL_SCOPE { get { return LocalClazz.GetField<int>("ONELEVEL_SCOPE"); } }
+        public static int ONELEVEL_SCOPE { get { return SGetField<int>(LocalClazz, "ONELEVEL_SCOPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#SUBTREE_SCOPE"/>
         /// </summary>
-        public static int SUBTREE_SCOPE { get { return LocalClazz.GetField<int>("SUBTREE_SCOPE"); } }
+        public static int SUBTREE_SCOPE { get { return SGetField<int>(LocalClazz, "SUBTREE_SCOPE"); } }
         
         #endregion
 

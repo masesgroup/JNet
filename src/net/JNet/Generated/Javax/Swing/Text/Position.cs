@@ -71,11 +71,11 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Backward"/>
             /// </summary>
-            public static Javax.Swing.Text.Position.Bias Backward { get { return LocalClazz.GetField<Javax.Swing.Text.Position.Bias>("Backward"); } }
+            public static Javax.Swing.Text.Position.Bias Backward { get { return SGetField<Javax.Swing.Text.Position.Bias>(LocalClazz, "Backward"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Forward"/>
             /// </summary>
-            public static Javax.Swing.Text.Position.Bias Forward { get { return LocalClazz.GetField<Javax.Swing.Text.Position.Bias>("Forward"); } }
+            public static Javax.Swing.Text.Position.Bias Forward { get { return SGetField<Javax.Swing.Text.Position.Bias>(LocalClazz, "Forward"); } }
             
             #endregion
 

@@ -40,15 +40,15 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode EXECUTE { get { return LocalClazz.GetField<Java.Nio.File.AccessMode>("EXECUTE"); } }
+        public static Java.Nio.File.AccessMode EXECUTE { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "EXECUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#READ"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode READ { get { return LocalClazz.GetField<Java.Nio.File.AccessMode>("READ"); } }
+        public static Java.Nio.File.AccessMode READ { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#WRITE"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode WRITE { get { return LocalClazz.GetField<Java.Nio.File.AccessMode>("WRITE"); } }
+        public static Java.Nio.File.AccessMode WRITE { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "WRITE"); } }
         
         #endregion
 

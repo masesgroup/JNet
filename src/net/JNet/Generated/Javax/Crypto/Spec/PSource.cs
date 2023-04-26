@@ -79,7 +79,7 @@ namespace Javax.Crypto.Spec
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#DEFAULT"/>
             /// </summary>
-            public static Javax.Crypto.Spec.PSource.PSpecified DEFAULT { get { return LocalClazz.GetField<Javax.Crypto.Spec.PSource.PSpecified>("DEFAULT"); } }
+            public static Javax.Crypto.Spec.PSource.PSpecified DEFAULT { get { return SGetField<Javax.Crypto.Spec.PSource.PSpecified>(LocalClazz, "DEFAULT"); } }
             
             #endregion
 

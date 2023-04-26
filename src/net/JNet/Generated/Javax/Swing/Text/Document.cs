@@ -40,11 +40,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#StreamDescriptionProperty"/>
         /// </summary>
-        public static string StreamDescriptionProperty { get { return LocalClazz.GetField<string>("StreamDescriptionProperty"); } }
+        public static string StreamDescriptionProperty { get { return SGetField<string>(LocalClazz, "StreamDescriptionProperty"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#TitleProperty"/>
         /// </summary>
-        public static string TitleProperty { get { return LocalClazz.GetField<string>("TitleProperty"); } }
+        public static string TitleProperty { get { return SGetField<string>(LocalClazz, "TitleProperty"); } }
         
         #endregion
 

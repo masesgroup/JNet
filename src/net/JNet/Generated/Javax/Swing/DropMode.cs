@@ -40,35 +40,35 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT"/>
         /// </summary>
-        public static Javax.Swing.DropMode INSERT { get { return LocalClazz.GetField<Javax.Swing.DropMode>("INSERT"); } }
+        public static Javax.Swing.DropMode INSERT { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT_COLS"/>
         /// </summary>
-        public static Javax.Swing.DropMode INSERT_COLS { get { return LocalClazz.GetField<Javax.Swing.DropMode>("INSERT_COLS"); } }
+        public static Javax.Swing.DropMode INSERT_COLS { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "INSERT_COLS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT_ROWS"/>
         /// </summary>
-        public static Javax.Swing.DropMode INSERT_ROWS { get { return LocalClazz.GetField<Javax.Swing.DropMode>("INSERT_ROWS"); } }
+        public static Javax.Swing.DropMode INSERT_ROWS { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "INSERT_ROWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON"/>
         /// </summary>
-        public static Javax.Swing.DropMode ON { get { return LocalClazz.GetField<Javax.Swing.DropMode>("ON"); } }
+        public static Javax.Swing.DropMode ON { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT"/>
         /// </summary>
-        public static Javax.Swing.DropMode ON_OR_INSERT { get { return LocalClazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT"); } }
+        public static Javax.Swing.DropMode ON_OR_INSERT { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "ON_OR_INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT_COLS"/>
         /// </summary>
-        public static Javax.Swing.DropMode ON_OR_INSERT_COLS { get { return LocalClazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT_COLS"); } }
+        public static Javax.Swing.DropMode ON_OR_INSERT_COLS { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "ON_OR_INSERT_COLS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT_ROWS"/>
         /// </summary>
-        public static Javax.Swing.DropMode ON_OR_INSERT_ROWS { get { return LocalClazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT_ROWS"); } }
+        public static Javax.Swing.DropMode ON_OR_INSERT_ROWS { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "ON_OR_INSERT_ROWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#USE_SELECTION"/>
         /// </summary>
-        public static Javax.Swing.DropMode USE_SELECTION { get { return LocalClazz.GetField<Javax.Swing.DropMode>("USE_SELECTION"); } }
+        public static Javax.Swing.DropMode USE_SELECTION { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "USE_SELECTION"); } }
         
         #endregion
 

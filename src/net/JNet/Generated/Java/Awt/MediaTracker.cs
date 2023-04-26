@@ -52,19 +52,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ABORTED"/>
         /// </summary>
-        public static int ABORTED { get { return LocalClazz.GetField<int>("ABORTED"); } }
+        public static int ABORTED { get { return SGetField<int>(LocalClazz, "ABORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#COMPLETE"/>
         /// </summary>
-        public static int COMPLETE { get { return LocalClazz.GetField<int>("COMPLETE"); } }
+        public static int COMPLETE { get { return SGetField<int>(LocalClazz, "COMPLETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ERRORED"/>
         /// </summary>
-        public static int ERRORED { get { return LocalClazz.GetField<int>("ERRORED"); } }
+        public static int ERRORED { get { return SGetField<int>(LocalClazz, "ERRORED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING"/>
         /// </summary>
-        public static int LOADING { get { return LocalClazz.GetField<int>("LOADING"); } }
+        public static int LOADING { get { return SGetField<int>(LocalClazz, "LOADING"); } }
         
         #endregion
 

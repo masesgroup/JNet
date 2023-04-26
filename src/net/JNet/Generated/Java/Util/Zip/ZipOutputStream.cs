@@ -57,11 +57,11 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#DEFLATED"/>
         /// </summary>
-        public static int DEFLATED { get { return LocalClazz.GetField<int>("DEFLATED"); } }
+        public static int DEFLATED { get { return SGetField<int>(LocalClazz, "DEFLATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#STORED"/>
         /// </summary>
-        public static int STORED { get { return LocalClazz.GetField<int>("STORED"); } }
+        public static int STORED { get { return SGetField<int>(LocalClazz, "STORED"); } }
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#FRACTION_FIELD"/>
         /// </summary>
-        public static int FRACTION_FIELD { get { return LocalClazz.GetField<int>("FRACTION_FIELD"); } }
+        public static int FRACTION_FIELD { get { return SGetField<int>(LocalClazz, "FRACTION_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD"/>
         /// </summary>
-        public static int INTEGER_FIELD { get { return LocalClazz.GetField<int>("INTEGER_FIELD"); } }
+        public static int INTEGER_FIELD { get { return SGetField<int>(LocalClazz, "INTEGER_FIELD"); } }
         
         #endregion
 
@@ -293,47 +293,47 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field CURRENCY { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("CURRENCY"); } }
+            public static Java.Text.NumberFormat.Field CURRENCY { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "CURRENCY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#DECIMAL_SEPARATOR"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("DECIMAL_SEPARATOR"); } }
+            public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "DECIMAL_SEPARATOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SIGN { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SIGN"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT_SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT_SIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SYMBOL"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT_SYMBOL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field FRACTION { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("FRACTION"); } }
+            public static Java.Text.NumberFormat.Field FRACTION { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "FRACTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#GROUPING_SEPARATOR"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("GROUPING_SEPARATOR"); } }
+            public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "GROUPING_SEPARATOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field INTEGER { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("INTEGER"); } }
+            public static Java.Text.NumberFormat.Field INTEGER { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "INTEGER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERCENT"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field PERCENT { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("PERCENT"); } }
+            public static Java.Text.NumberFormat.Field PERCENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "PERCENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERMILLE"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field PERMILLE { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("PERMILLE"); } }
+            public static Java.Text.NumberFormat.Field PERMILLE { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "PERMILLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field SIGN { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("SIGN"); } }
+            public static Java.Text.NumberFormat.Field SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "SIGN"); } }
             
             #endregion
 

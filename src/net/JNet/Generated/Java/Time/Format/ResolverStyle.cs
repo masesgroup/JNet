@@ -40,15 +40,15 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#LENIENT"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle LENIENT { get { return LocalClazz.GetField<Java.Time.Format.ResolverStyle>("LENIENT"); } }
+        public static Java.Time.Format.ResolverStyle LENIENT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "LENIENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#SMART"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle SMART { get { return LocalClazz.GetField<Java.Time.Format.ResolverStyle>("SMART"); } }
+        public static Java.Time.Format.ResolverStyle SMART { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "SMART"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#STRICT"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle STRICT { get { return LocalClazz.GetField<Java.Time.Format.ResolverStyle>("STRICT"); } }
+        public static Java.Time.Format.ResolverStyle STRICT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "STRICT"); } }
         
         #endregion
 

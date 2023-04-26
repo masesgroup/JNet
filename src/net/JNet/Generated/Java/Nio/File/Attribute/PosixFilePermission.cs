@@ -40,39 +40,39 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_EXECUTE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_EXECUTE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_EXECUTE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "GROUP_EXECUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_READ"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_READ { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_READ"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_READ { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "GROUP_READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_WRITE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_WRITE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_WRITE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_WRITE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "GROUP_WRITE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_EXECUTE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_EXECUTE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_EXECUTE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OTHERS_EXECUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_READ"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_READ { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_READ"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_READ { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OTHERS_READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_WRITE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_WRITE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_WRITE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_WRITE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OTHERS_WRITE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_EXECUTE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_EXECUTE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_EXECUTE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OWNER_EXECUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_READ"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_READ { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_READ"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_READ { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OWNER_READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_WRITE"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_WRITE { get { return LocalClazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_WRITE"); } }
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_WRITE { get { return SGetField<Java.Nio.File.Attribute.PosixFilePermission>(LocalClazz, "OWNER_WRITE"); } }
         
         #endregion
 

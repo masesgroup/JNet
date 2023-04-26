@@ -147,11 +147,11 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#PROXY"/>
             /// </summary>
-            public static Java.Net.Authenticator.RequestorType PROXY { get { return LocalClazz.GetField<Java.Net.Authenticator.RequestorType>("PROXY"); } }
+            public static Java.Net.Authenticator.RequestorType PROXY { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalClazz, "PROXY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#SERVER"/>
             /// </summary>
-            public static Java.Net.Authenticator.RequestorType SERVER { get { return LocalClazz.GetField<Java.Net.Authenticator.RequestorType>("SERVER"); } }
+            public static Java.Net.Authenticator.RequestorType SERVER { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalClazz, "SERVER"); } }
             
             #endregion
 

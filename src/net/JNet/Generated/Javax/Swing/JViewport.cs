@@ -44,15 +44,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#BACKINGSTORE_SCROLL_MODE"/>
         /// </summary>
-        public static int BACKINGSTORE_SCROLL_MODE { get { return LocalClazz.GetField<int>("BACKINGSTORE_SCROLL_MODE"); } }
+        public static int BACKINGSTORE_SCROLL_MODE { get { return SGetField<int>(LocalClazz, "BACKINGSTORE_SCROLL_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#BLIT_SCROLL_MODE"/>
         /// </summary>
-        public static int BLIT_SCROLL_MODE { get { return LocalClazz.GetField<int>("BLIT_SCROLL_MODE"); } }
+        public static int BLIT_SCROLL_MODE { get { return SGetField<int>(LocalClazz, "BLIT_SCROLL_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#SIMPLE_SCROLL_MODE"/>
         /// </summary>
-        public static int SIMPLE_SCROLL_MODE { get { return LocalClazz.GetField<int>("SIMPLE_SCROLL_MODE"); } }
+        public static int SIMPLE_SCROLL_MODE { get { return SGetField<int>(LocalClazz, "SIMPLE_SCROLL_MODE"); } }
         
         #endregion
 

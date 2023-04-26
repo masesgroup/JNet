@@ -48,19 +48,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#BACKWARD_TRAVERSAL_KEYS"/>
         /// </summary>
-        public static int BACKWARD_TRAVERSAL_KEYS { get { return LocalClazz.GetField<int>("BACKWARD_TRAVERSAL_KEYS"); } }
+        public static int BACKWARD_TRAVERSAL_KEYS { get { return SGetField<int>(LocalClazz, "BACKWARD_TRAVERSAL_KEYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#DOWN_CYCLE_TRAVERSAL_KEYS"/>
         /// </summary>
-        public static int DOWN_CYCLE_TRAVERSAL_KEYS { get { return LocalClazz.GetField<int>("DOWN_CYCLE_TRAVERSAL_KEYS"); } }
+        public static int DOWN_CYCLE_TRAVERSAL_KEYS { get { return SGetField<int>(LocalClazz, "DOWN_CYCLE_TRAVERSAL_KEYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#FORWARD_TRAVERSAL_KEYS"/>
         /// </summary>
-        public static int FORWARD_TRAVERSAL_KEYS { get { return LocalClazz.GetField<int>("FORWARD_TRAVERSAL_KEYS"); } }
+        public static int FORWARD_TRAVERSAL_KEYS { get { return SGetField<int>(LocalClazz, "FORWARD_TRAVERSAL_KEYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#UP_CYCLE_TRAVERSAL_KEYS"/>
         /// </summary>
-        public static int UP_CYCLE_TRAVERSAL_KEYS { get { return LocalClazz.GetField<int>("UP_CYCLE_TRAVERSAL_KEYS"); } }
+        public static int UP_CYCLE_TRAVERSAL_KEYS { get { return SGetField<int>(LocalClazz, "UP_CYCLE_TRAVERSAL_KEYS"); } }
         
         #endregion
 

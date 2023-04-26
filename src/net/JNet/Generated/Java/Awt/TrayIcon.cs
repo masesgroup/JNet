@@ -220,19 +220,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#ERROR"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType ERROR { get { return LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("ERROR"); } }
+            public static Java.Awt.TrayIcon.MessageType ERROR { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "ERROR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#INFO"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType INFO { get { return LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("INFO"); } }
+            public static Java.Awt.TrayIcon.MessageType INFO { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "INFO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#NONE"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType NONE { get { return LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("NONE"); } }
+            public static Java.Awt.TrayIcon.MessageType NONE { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "NONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType WARNING { get { return LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING"); } }
+            public static Java.Awt.TrayIcon.MessageType WARNING { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "WARNING"); } }
             
             #endregion
 

@@ -44,479 +44,479 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_ABSTRACT"/>
         /// </summary>
-        public static int CLASS_ABSTRACT { get { return LocalClazz.GetField<int>("CLASS_ABSTRACT"); } }
+        public static int CLASS_ABSTRACT { get { return SGetField<int>(LocalClazz, "CLASS_ABSTRACT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_COLORSPACECONVERSION"/>
         /// </summary>
-        public static int CLASS_COLORSPACECONVERSION { get { return LocalClazz.GetField<int>("CLASS_COLORSPACECONVERSION"); } }
+        public static int CLASS_COLORSPACECONVERSION { get { return SGetField<int>(LocalClazz, "CLASS_COLORSPACECONVERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DEVICELINK"/>
         /// </summary>
-        public static int CLASS_DEVICELINK { get { return LocalClazz.GetField<int>("CLASS_DEVICELINK"); } }
+        public static int CLASS_DEVICELINK { get { return SGetField<int>(LocalClazz, "CLASS_DEVICELINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DISPLAY"/>
         /// </summary>
-        public static int CLASS_DISPLAY { get { return LocalClazz.GetField<int>("CLASS_DISPLAY"); } }
+        public static int CLASS_DISPLAY { get { return SGetField<int>(LocalClazz, "CLASS_DISPLAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_INPUT"/>
         /// </summary>
-        public static int CLASS_INPUT { get { return LocalClazz.GetField<int>("CLASS_INPUT"); } }
+        public static int CLASS_INPUT { get { return SGetField<int>(LocalClazz, "CLASS_INPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_NAMEDCOLOR"/>
         /// </summary>
-        public static int CLASS_NAMEDCOLOR { get { return LocalClazz.GetField<int>("CLASS_NAMEDCOLOR"); } }
+        public static int CLASS_NAMEDCOLOR { get { return SGetField<int>(LocalClazz, "CLASS_NAMEDCOLOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_OUTPUT"/>
         /// </summary>
-        public static int CLASS_OUTPUT { get { return LocalClazz.GetField<int>("CLASS_OUTPUT"); } }
+        public static int CLASS_OUTPUT { get { return SGetField<int>(LocalClazz, "CLASS_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icAbsoluteColorimetric"/>
         /// </summary>
-        public static int icAbsoluteColorimetric { get { return LocalClazz.GetField<int>("icAbsoluteColorimetric"); } }
+        public static int icAbsoluteColorimetric { get { return SGetField<int>(LocalClazz, "icAbsoluteColorimetric"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveCount"/>
         /// </summary>
-        public static int icCurveCount { get { return LocalClazz.GetField<int>("icCurveCount"); } }
+        public static int icCurveCount { get { return SGetField<int>(LocalClazz, "icCurveCount"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveData"/>
         /// </summary>
-        public static int icCurveData { get { return LocalClazz.GetField<int>("icCurveData"); } }
+        public static int icCurveData { get { return SGetField<int>(LocalClazz, "icCurveData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrAttributes"/>
         /// </summary>
-        public static int icHdrAttributes { get { return LocalClazz.GetField<int>("icHdrAttributes"); } }
+        public static int icHdrAttributes { get { return SGetField<int>(LocalClazz, "icHdrAttributes"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCmmId"/>
         /// </summary>
-        public static int icHdrCmmId { get { return LocalClazz.GetField<int>("icHdrCmmId"); } }
+        public static int icHdrCmmId { get { return SGetField<int>(LocalClazz, "icHdrCmmId"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrColorSpace"/>
         /// </summary>
-        public static int icHdrColorSpace { get { return LocalClazz.GetField<int>("icHdrColorSpace"); } }
+        public static int icHdrColorSpace { get { return SGetField<int>(LocalClazz, "icHdrColorSpace"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCreator"/>
         /// </summary>
-        public static int icHdrCreator { get { return LocalClazz.GetField<int>("icHdrCreator"); } }
+        public static int icHdrCreator { get { return SGetField<int>(LocalClazz, "icHdrCreator"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDate"/>
         /// </summary>
-        public static int icHdrDate { get { return LocalClazz.GetField<int>("icHdrDate"); } }
+        public static int icHdrDate { get { return SGetField<int>(LocalClazz, "icHdrDate"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDeviceClass"/>
         /// </summary>
-        public static int icHdrDeviceClass { get { return LocalClazz.GetField<int>("icHdrDeviceClass"); } }
+        public static int icHdrDeviceClass { get { return SGetField<int>(LocalClazz, "icHdrDeviceClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrFlags"/>
         /// </summary>
-        public static int icHdrFlags { get { return LocalClazz.GetField<int>("icHdrFlags"); } }
+        public static int icHdrFlags { get { return SGetField<int>(LocalClazz, "icHdrFlags"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrIlluminant"/>
         /// </summary>
-        public static int icHdrIlluminant { get { return LocalClazz.GetField<int>("icHdrIlluminant"); } }
+        public static int icHdrIlluminant { get { return SGetField<int>(LocalClazz, "icHdrIlluminant"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrMagic"/>
         /// </summary>
-        public static int icHdrMagic { get { return LocalClazz.GetField<int>("icHdrMagic"); } }
+        public static int icHdrMagic { get { return SGetField<int>(LocalClazz, "icHdrMagic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrManufacturer"/>
         /// </summary>
-        public static int icHdrManufacturer { get { return LocalClazz.GetField<int>("icHdrManufacturer"); } }
+        public static int icHdrManufacturer { get { return SGetField<int>(LocalClazz, "icHdrManufacturer"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrModel"/>
         /// </summary>
-        public static int icHdrModel { get { return LocalClazz.GetField<int>("icHdrModel"); } }
+        public static int icHdrModel { get { return SGetField<int>(LocalClazz, "icHdrModel"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPcs"/>
         /// </summary>
-        public static int icHdrPcs { get { return LocalClazz.GetField<int>("icHdrPcs"); } }
+        public static int icHdrPcs { get { return SGetField<int>(LocalClazz, "icHdrPcs"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPlatform"/>
         /// </summary>
-        public static int icHdrPlatform { get { return LocalClazz.GetField<int>("icHdrPlatform"); } }
+        public static int icHdrPlatform { get { return SGetField<int>(LocalClazz, "icHdrPlatform"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrProfileID"/>
         /// </summary>
-        public static int icHdrProfileID { get { return LocalClazz.GetField<int>("icHdrProfileID"); } }
+        public static int icHdrProfileID { get { return SGetField<int>(LocalClazz, "icHdrProfileID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrRenderingIntent"/>
         /// </summary>
-        public static int icHdrRenderingIntent { get { return LocalClazz.GetField<int>("icHdrRenderingIntent"); } }
+        public static int icHdrRenderingIntent { get { return SGetField<int>(LocalClazz, "icHdrRenderingIntent"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrSize"/>
         /// </summary>
-        public static int icHdrSize { get { return LocalClazz.GetField<int>("icHdrSize"); } }
+        public static int icHdrSize { get { return SGetField<int>(LocalClazz, "icHdrSize"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrVersion"/>
         /// </summary>
-        public static int icHdrVersion { get { return LocalClazz.GetField<int>("icHdrVersion"); } }
+        public static int icHdrVersion { get { return SGetField<int>(LocalClazz, "icHdrVersion"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icICCAbsoluteColorimetric"/>
         /// </summary>
-        public static int icICCAbsoluteColorimetric { get { return LocalClazz.GetField<int>("icICCAbsoluteColorimetric"); } }
+        public static int icICCAbsoluteColorimetric { get { return SGetField<int>(LocalClazz, "icICCAbsoluteColorimetric"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icMediaRelativeColorimetric"/>
         /// </summary>
-        public static int icMediaRelativeColorimetric { get { return LocalClazz.GetField<int>("icMediaRelativeColorimetric"); } }
+        public static int icMediaRelativeColorimetric { get { return SGetField<int>(LocalClazz, "icMediaRelativeColorimetric"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icPerceptual"/>
         /// </summary>
-        public static int icPerceptual { get { return LocalClazz.GetField<int>("icPerceptual"); } }
+        public static int icPerceptual { get { return SGetField<int>(LocalClazz, "icPerceptual"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icRelativeColorimetric"/>
         /// </summary>
-        public static int icRelativeColorimetric { get { return LocalClazz.GetField<int>("icRelativeColorimetric"); } }
+        public static int icRelativeColorimetric { get { return SGetField<int>(LocalClazz, "icRelativeColorimetric"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSaturation"/>
         /// </summary>
-        public static int icSaturation { get { return LocalClazz.GetField<int>("icSaturation"); } }
+        public static int icSaturation { get { return SGetField<int>(LocalClazz, "icSaturation"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAbstractClass"/>
         /// </summary>
-        public static int icSigAbstractClass { get { return LocalClazz.GetField<int>("icSigAbstractClass"); } }
+        public static int icSigAbstractClass { get { return SGetField<int>(LocalClazz, "icSigAbstractClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAToB0Tag"/>
         /// </summary>
-        public static int icSigAToB0Tag { get { return LocalClazz.GetField<int>("icSigAToB0Tag"); } }
+        public static int icSigAToB0Tag { get { return SGetField<int>(LocalClazz, "icSigAToB0Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAToB1Tag"/>
         /// </summary>
-        public static int icSigAToB1Tag { get { return LocalClazz.GetField<int>("icSigAToB1Tag"); } }
+        public static int icSigAToB1Tag { get { return SGetField<int>(LocalClazz, "icSigAToB1Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAToB2Tag"/>
         /// </summary>
-        public static int icSigAToB2Tag { get { return LocalClazz.GetField<int>("icSigAToB2Tag"); } }
+        public static int icSigAToB2Tag { get { return SGetField<int>(LocalClazz, "icSigAToB2Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBlueColorantTag"/>
         /// </summary>
-        public static int icSigBlueColorantTag { get { return LocalClazz.GetField<int>("icSigBlueColorantTag"); } }
+        public static int icSigBlueColorantTag { get { return SGetField<int>(LocalClazz, "icSigBlueColorantTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBlueMatrixColumnTag"/>
         /// </summary>
-        public static int icSigBlueMatrixColumnTag { get { return LocalClazz.GetField<int>("icSigBlueMatrixColumnTag"); } }
+        public static int icSigBlueMatrixColumnTag { get { return SGetField<int>(LocalClazz, "icSigBlueMatrixColumnTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBlueTRCTag"/>
         /// </summary>
-        public static int icSigBlueTRCTag { get { return LocalClazz.GetField<int>("icSigBlueTRCTag"); } }
+        public static int icSigBlueTRCTag { get { return SGetField<int>(LocalClazz, "icSigBlueTRCTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBToA0Tag"/>
         /// </summary>
-        public static int icSigBToA0Tag { get { return LocalClazz.GetField<int>("icSigBToA0Tag"); } }
+        public static int icSigBToA0Tag { get { return SGetField<int>(LocalClazz, "icSigBToA0Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBToA1Tag"/>
         /// </summary>
-        public static int icSigBToA1Tag { get { return LocalClazz.GetField<int>("icSigBToA1Tag"); } }
+        public static int icSigBToA1Tag { get { return SGetField<int>(LocalClazz, "icSigBToA1Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigBToA2Tag"/>
         /// </summary>
-        public static int icSigBToA2Tag { get { return LocalClazz.GetField<int>("icSigBToA2Tag"); } }
+        public static int icSigBToA2Tag { get { return SGetField<int>(LocalClazz, "icSigBToA2Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCalibrationDateTimeTag"/>
         /// </summary>
-        public static int icSigCalibrationDateTimeTag { get { return LocalClazz.GetField<int>("icSigCalibrationDateTimeTag"); } }
+        public static int icSigCalibrationDateTimeTag { get { return SGetField<int>(LocalClazz, "icSigCalibrationDateTimeTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCharTargetTag"/>
         /// </summary>
-        public static int icSigCharTargetTag { get { return LocalClazz.GetField<int>("icSigCharTargetTag"); } }
+        public static int icSigCharTargetTag { get { return SGetField<int>(LocalClazz, "icSigCharTargetTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticAdaptationTag"/>
         /// </summary>
-        public static int icSigChromaticAdaptationTag { get { return LocalClazz.GetField<int>("icSigChromaticAdaptationTag"); } }
+        public static int icSigChromaticAdaptationTag { get { return SGetField<int>(LocalClazz, "icSigChromaticAdaptationTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticityTag"/>
         /// </summary>
-        public static int icSigChromaticityTag { get { return LocalClazz.GetField<int>("icSigChromaticityTag"); } }
+        public static int icSigChromaticityTag { get { return SGetField<int>(LocalClazz, "icSigChromaticityTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmyData"/>
         /// </summary>
-        public static int icSigCmyData { get { return LocalClazz.GetField<int>("icSigCmyData"); } }
+        public static int icSigCmyData { get { return SGetField<int>(LocalClazz, "icSigCmyData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmykData"/>
         /// </summary>
-        public static int icSigCmykData { get { return LocalClazz.GetField<int>("icSigCmykData"); } }
+        public static int icSigCmykData { get { return SGetField<int>(LocalClazz, "icSigCmykData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantOrderTag"/>
         /// </summary>
-        public static int icSigColorantOrderTag { get { return LocalClazz.GetField<int>("icSigColorantOrderTag"); } }
+        public static int icSigColorantOrderTag { get { return SGetField<int>(LocalClazz, "icSigColorantOrderTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantTableTag"/>
         /// </summary>
-        public static int icSigColorantTableTag { get { return LocalClazz.GetField<int>("icSigColorantTableTag"); } }
+        public static int icSigColorantTableTag { get { return SGetField<int>(LocalClazz, "icSigColorantTableTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorSpaceClass"/>
         /// </summary>
-        public static int icSigColorSpaceClass { get { return LocalClazz.GetField<int>("icSigColorSpaceClass"); } }
+        public static int icSigColorSpaceClass { get { return SGetField<int>(LocalClazz, "icSigColorSpaceClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCopyrightTag"/>
         /// </summary>
-        public static int icSigCopyrightTag { get { return LocalClazz.GetField<int>("icSigCopyrightTag"); } }
+        public static int icSigCopyrightTag { get { return SGetField<int>(LocalClazz, "icSigCopyrightTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCrdInfoTag"/>
         /// </summary>
-        public static int icSigCrdInfoTag { get { return LocalClazz.GetField<int>("icSigCrdInfoTag"); } }
+        public static int icSigCrdInfoTag { get { return SGetField<int>(LocalClazz, "icSigCrdInfoTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDeviceMfgDescTag"/>
         /// </summary>
-        public static int icSigDeviceMfgDescTag { get { return LocalClazz.GetField<int>("icSigDeviceMfgDescTag"); } }
+        public static int icSigDeviceMfgDescTag { get { return SGetField<int>(LocalClazz, "icSigDeviceMfgDescTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDeviceModelDescTag"/>
         /// </summary>
-        public static int icSigDeviceModelDescTag { get { return LocalClazz.GetField<int>("icSigDeviceModelDescTag"); } }
+        public static int icSigDeviceModelDescTag { get { return SGetField<int>(LocalClazz, "icSigDeviceModelDescTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDeviceSettingsTag"/>
         /// </summary>
-        public static int icSigDeviceSettingsTag { get { return LocalClazz.GetField<int>("icSigDeviceSettingsTag"); } }
+        public static int icSigDeviceSettingsTag { get { return SGetField<int>(LocalClazz, "icSigDeviceSettingsTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDisplayClass"/>
         /// </summary>
-        public static int icSigDisplayClass { get { return LocalClazz.GetField<int>("icSigDisplayClass"); } }
+        public static int icSigDisplayClass { get { return SGetField<int>(LocalClazz, "icSigDisplayClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGamutTag"/>
         /// </summary>
-        public static int icSigGamutTag { get { return LocalClazz.GetField<int>("icSigGamutTag"); } }
+        public static int icSigGamutTag { get { return SGetField<int>(LocalClazz, "icSigGamutTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGrayData"/>
         /// </summary>
-        public static int icSigGrayData { get { return LocalClazz.GetField<int>("icSigGrayData"); } }
+        public static int icSigGrayData { get { return SGetField<int>(LocalClazz, "icSigGrayData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGrayTRCTag"/>
         /// </summary>
-        public static int icSigGrayTRCTag { get { return LocalClazz.GetField<int>("icSigGrayTRCTag"); } }
+        public static int icSigGrayTRCTag { get { return SGetField<int>(LocalClazz, "icSigGrayTRCTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGreenColorantTag"/>
         /// </summary>
-        public static int icSigGreenColorantTag { get { return LocalClazz.GetField<int>("icSigGreenColorantTag"); } }
+        public static int icSigGreenColorantTag { get { return SGetField<int>(LocalClazz, "icSigGreenColorantTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGreenMatrixColumnTag"/>
         /// </summary>
-        public static int icSigGreenMatrixColumnTag { get { return LocalClazz.GetField<int>("icSigGreenMatrixColumnTag"); } }
+        public static int icSigGreenMatrixColumnTag { get { return SGetField<int>(LocalClazz, "icSigGreenMatrixColumnTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGreenTRCTag"/>
         /// </summary>
-        public static int icSigGreenTRCTag { get { return LocalClazz.GetField<int>("icSigGreenTRCTag"); } }
+        public static int icSigGreenTRCTag { get { return SGetField<int>(LocalClazz, "icSigGreenTRCTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHead"/>
         /// </summary>
-        public static int icSigHead { get { return LocalClazz.GetField<int>("icSigHead"); } }
+        public static int icSigHead { get { return SGetField<int>(LocalClazz, "icSigHead"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHlsData"/>
         /// </summary>
-        public static int icSigHlsData { get { return LocalClazz.GetField<int>("icSigHlsData"); } }
+        public static int icSigHlsData { get { return SGetField<int>(LocalClazz, "icSigHlsData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHsvData"/>
         /// </summary>
-        public static int icSigHsvData { get { return LocalClazz.GetField<int>("icSigHsvData"); } }
+        public static int icSigHsvData { get { return SGetField<int>(LocalClazz, "icSigHsvData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigInputClass"/>
         /// </summary>
-        public static int icSigInputClass { get { return LocalClazz.GetField<int>("icSigInputClass"); } }
+        public static int icSigInputClass { get { return SGetField<int>(LocalClazz, "icSigInputClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLabData"/>
         /// </summary>
-        public static int icSigLabData { get { return LocalClazz.GetField<int>("icSigLabData"); } }
+        public static int icSigLabData { get { return SGetField<int>(LocalClazz, "icSigLabData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLinkClass"/>
         /// </summary>
-        public static int icSigLinkClass { get { return LocalClazz.GetField<int>("icSigLinkClass"); } }
+        public static int icSigLinkClass { get { return SGetField<int>(LocalClazz, "icSigLinkClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLuminanceTag"/>
         /// </summary>
-        public static int icSigLuminanceTag { get { return LocalClazz.GetField<int>("icSigLuminanceTag"); } }
+        public static int icSigLuminanceTag { get { return SGetField<int>(LocalClazz, "icSigLuminanceTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLuvData"/>
         /// </summary>
-        public static int icSigLuvData { get { return LocalClazz.GetField<int>("icSigLuvData"); } }
+        public static int icSigLuvData { get { return SGetField<int>(LocalClazz, "icSigLuvData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigMeasurementTag"/>
         /// </summary>
-        public static int icSigMeasurementTag { get { return LocalClazz.GetField<int>("icSigMeasurementTag"); } }
+        public static int icSigMeasurementTag { get { return SGetField<int>(LocalClazz, "icSigMeasurementTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigMediaBlackPointTag"/>
         /// </summary>
-        public static int icSigMediaBlackPointTag { get { return LocalClazz.GetField<int>("icSigMediaBlackPointTag"); } }
+        public static int icSigMediaBlackPointTag { get { return SGetField<int>(LocalClazz, "icSigMediaBlackPointTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigMediaWhitePointTag"/>
         /// </summary>
-        public static int icSigMediaWhitePointTag { get { return LocalClazz.GetField<int>("icSigMediaWhitePointTag"); } }
+        public static int icSigMediaWhitePointTag { get { return SGetField<int>(LocalClazz, "icSigMediaWhitePointTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigNamedColor2Tag"/>
         /// </summary>
-        public static int icSigNamedColor2Tag { get { return LocalClazz.GetField<int>("icSigNamedColor2Tag"); } }
+        public static int icSigNamedColor2Tag { get { return SGetField<int>(LocalClazz, "icSigNamedColor2Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigNamedColorClass"/>
         /// </summary>
-        public static int icSigNamedColorClass { get { return LocalClazz.GetField<int>("icSigNamedColorClass"); } }
+        public static int icSigNamedColorClass { get { return SGetField<int>(LocalClazz, "icSigNamedColorClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigOutputClass"/>
         /// </summary>
-        public static int icSigOutputClass { get { return LocalClazz.GetField<int>("icSigOutputClass"); } }
+        public static int icSigOutputClass { get { return SGetField<int>(LocalClazz, "icSigOutputClass"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigOutputResponseTag"/>
         /// </summary>
-        public static int icSigOutputResponseTag { get { return LocalClazz.GetField<int>("icSigOutputResponseTag"); } }
+        public static int icSigOutputResponseTag { get { return SGetField<int>(LocalClazz, "icSigOutputResponseTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPreview0Tag"/>
         /// </summary>
-        public static int icSigPreview0Tag { get { return LocalClazz.GetField<int>("icSigPreview0Tag"); } }
+        public static int icSigPreview0Tag { get { return SGetField<int>(LocalClazz, "icSigPreview0Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPreview1Tag"/>
         /// </summary>
-        public static int icSigPreview1Tag { get { return LocalClazz.GetField<int>("icSigPreview1Tag"); } }
+        public static int icSigPreview1Tag { get { return SGetField<int>(LocalClazz, "icSigPreview1Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPreview2Tag"/>
         /// </summary>
-        public static int icSigPreview2Tag { get { return LocalClazz.GetField<int>("icSigPreview2Tag"); } }
+        public static int icSigPreview2Tag { get { return SGetField<int>(LocalClazz, "icSigPreview2Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigProfileDescriptionTag"/>
         /// </summary>
-        public static int icSigProfileDescriptionTag { get { return LocalClazz.GetField<int>("icSigProfileDescriptionTag"); } }
+        public static int icSigProfileDescriptionTag { get { return SGetField<int>(LocalClazz, "icSigProfileDescriptionTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigProfileSequenceDescTag"/>
         /// </summary>
-        public static int icSigProfileSequenceDescTag { get { return LocalClazz.GetField<int>("icSigProfileSequenceDescTag"); } }
+        public static int icSigProfileSequenceDescTag { get { return SGetField<int>(LocalClazz, "icSigProfileSequenceDescTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2CRD0Tag"/>
         /// </summary>
-        public static int icSigPs2CRD0Tag { get { return LocalClazz.GetField<int>("icSigPs2CRD0Tag"); } }
+        public static int icSigPs2CRD0Tag { get { return SGetField<int>(LocalClazz, "icSigPs2CRD0Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2CRD1Tag"/>
         /// </summary>
-        public static int icSigPs2CRD1Tag { get { return LocalClazz.GetField<int>("icSigPs2CRD1Tag"); } }
+        public static int icSigPs2CRD1Tag { get { return SGetField<int>(LocalClazz, "icSigPs2CRD1Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2CRD2Tag"/>
         /// </summary>
-        public static int icSigPs2CRD2Tag { get { return LocalClazz.GetField<int>("icSigPs2CRD2Tag"); } }
+        public static int icSigPs2CRD2Tag { get { return SGetField<int>(LocalClazz, "icSigPs2CRD2Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2CRD3Tag"/>
         /// </summary>
-        public static int icSigPs2CRD3Tag { get { return LocalClazz.GetField<int>("icSigPs2CRD3Tag"); } }
+        public static int icSigPs2CRD3Tag { get { return SGetField<int>(LocalClazz, "icSigPs2CRD3Tag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2CSATag"/>
         /// </summary>
-        public static int icSigPs2CSATag { get { return LocalClazz.GetField<int>("icSigPs2CSATag"); } }
+        public static int icSigPs2CSATag { get { return SGetField<int>(LocalClazz, "icSigPs2CSATag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigPs2RenderingIntentTag"/>
         /// </summary>
-        public static int icSigPs2RenderingIntentTag { get { return LocalClazz.GetField<int>("icSigPs2RenderingIntentTag"); } }
+        public static int icSigPs2RenderingIntentTag { get { return SGetField<int>(LocalClazz, "icSigPs2RenderingIntentTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRedColorantTag"/>
         /// </summary>
-        public static int icSigRedColorantTag { get { return LocalClazz.GetField<int>("icSigRedColorantTag"); } }
+        public static int icSigRedColorantTag { get { return SGetField<int>(LocalClazz, "icSigRedColorantTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRedMatrixColumnTag"/>
         /// </summary>
-        public static int icSigRedMatrixColumnTag { get { return LocalClazz.GetField<int>("icSigRedMatrixColumnTag"); } }
+        public static int icSigRedMatrixColumnTag { get { return SGetField<int>(LocalClazz, "icSigRedMatrixColumnTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRedTRCTag"/>
         /// </summary>
-        public static int icSigRedTRCTag { get { return LocalClazz.GetField<int>("icSigRedTRCTag"); } }
+        public static int icSigRedTRCTag { get { return SGetField<int>(LocalClazz, "icSigRedTRCTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRgbData"/>
         /// </summary>
-        public static int icSigRgbData { get { return LocalClazz.GetField<int>("icSigRgbData"); } }
+        public static int icSigRgbData { get { return SGetField<int>(LocalClazz, "icSigRgbData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigScreeningDescTag"/>
         /// </summary>
-        public static int icSigScreeningDescTag { get { return LocalClazz.GetField<int>("icSigScreeningDescTag"); } }
+        public static int icSigScreeningDescTag { get { return SGetField<int>(LocalClazz, "icSigScreeningDescTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigScreeningTag"/>
         /// </summary>
-        public static int icSigScreeningTag { get { return LocalClazz.GetField<int>("icSigScreeningTag"); } }
+        public static int icSigScreeningTag { get { return SGetField<int>(LocalClazz, "icSigScreeningTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace2CLR"/>
         /// </summary>
-        public static int icSigSpace2CLR { get { return LocalClazz.GetField<int>("icSigSpace2CLR"); } }
+        public static int icSigSpace2CLR { get { return SGetField<int>(LocalClazz, "icSigSpace2CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace3CLR"/>
         /// </summary>
-        public static int icSigSpace3CLR { get { return LocalClazz.GetField<int>("icSigSpace3CLR"); } }
+        public static int icSigSpace3CLR { get { return SGetField<int>(LocalClazz, "icSigSpace3CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace4CLR"/>
         /// </summary>
-        public static int icSigSpace4CLR { get { return LocalClazz.GetField<int>("icSigSpace4CLR"); } }
+        public static int icSigSpace4CLR { get { return SGetField<int>(LocalClazz, "icSigSpace4CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace5CLR"/>
         /// </summary>
-        public static int icSigSpace5CLR { get { return LocalClazz.GetField<int>("icSigSpace5CLR"); } }
+        public static int icSigSpace5CLR { get { return SGetField<int>(LocalClazz, "icSigSpace5CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace6CLR"/>
         /// </summary>
-        public static int icSigSpace6CLR { get { return LocalClazz.GetField<int>("icSigSpace6CLR"); } }
+        public static int icSigSpace6CLR { get { return SGetField<int>(LocalClazz, "icSigSpace6CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace7CLR"/>
         /// </summary>
-        public static int icSigSpace7CLR { get { return LocalClazz.GetField<int>("icSigSpace7CLR"); } }
+        public static int icSigSpace7CLR { get { return SGetField<int>(LocalClazz, "icSigSpace7CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace8CLR"/>
         /// </summary>
-        public static int icSigSpace8CLR { get { return LocalClazz.GetField<int>("icSigSpace8CLR"); } }
+        public static int icSigSpace8CLR { get { return SGetField<int>(LocalClazz, "icSigSpace8CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace9CLR"/>
         /// </summary>
-        public static int icSigSpace9CLR { get { return LocalClazz.GetField<int>("icSigSpace9CLR"); } }
+        public static int icSigSpace9CLR { get { return SGetField<int>(LocalClazz, "icSigSpace9CLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceACLR"/>
         /// </summary>
-        public static int icSigSpaceACLR { get { return LocalClazz.GetField<int>("icSigSpaceACLR"); } }
+        public static int icSigSpaceACLR { get { return SGetField<int>(LocalClazz, "icSigSpaceACLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceBCLR"/>
         /// </summary>
-        public static int icSigSpaceBCLR { get { return LocalClazz.GetField<int>("icSigSpaceBCLR"); } }
+        public static int icSigSpaceBCLR { get { return SGetField<int>(LocalClazz, "icSigSpaceBCLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceCCLR"/>
         /// </summary>
-        public static int icSigSpaceCCLR { get { return LocalClazz.GetField<int>("icSigSpaceCCLR"); } }
+        public static int icSigSpaceCCLR { get { return SGetField<int>(LocalClazz, "icSigSpaceCCLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceDCLR"/>
         /// </summary>
-        public static int icSigSpaceDCLR { get { return LocalClazz.GetField<int>("icSigSpaceDCLR"); } }
+        public static int icSigSpaceDCLR { get { return SGetField<int>(LocalClazz, "icSigSpaceDCLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceECLR"/>
         /// </summary>
-        public static int icSigSpaceECLR { get { return LocalClazz.GetField<int>("icSigSpaceECLR"); } }
+        public static int icSigSpaceECLR { get { return SGetField<int>(LocalClazz, "icSigSpaceECLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceFCLR"/>
         /// </summary>
-        public static int icSigSpaceFCLR { get { return LocalClazz.GetField<int>("icSigSpaceFCLR"); } }
+        public static int icSigSpaceFCLR { get { return SGetField<int>(LocalClazz, "icSigSpaceFCLR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigTechnologyTag"/>
         /// </summary>
-        public static int icSigTechnologyTag { get { return LocalClazz.GetField<int>("icSigTechnologyTag"); } }
+        public static int icSigTechnologyTag { get { return SGetField<int>(LocalClazz, "icSigTechnologyTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigUcrBgTag"/>
         /// </summary>
-        public static int icSigUcrBgTag { get { return LocalClazz.GetField<int>("icSigUcrBgTag"); } }
+        public static int icSigUcrBgTag { get { return SGetField<int>(LocalClazz, "icSigUcrBgTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigViewingCondDescTag"/>
         /// </summary>
-        public static int icSigViewingCondDescTag { get { return LocalClazz.GetField<int>("icSigViewingCondDescTag"); } }
+        public static int icSigViewingCondDescTag { get { return SGetField<int>(LocalClazz, "icSigViewingCondDescTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigViewingConditionsTag"/>
         /// </summary>
-        public static int icSigViewingConditionsTag { get { return LocalClazz.GetField<int>("icSigViewingConditionsTag"); } }
+        public static int icSigViewingConditionsTag { get { return SGetField<int>(LocalClazz, "icSigViewingConditionsTag"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigXYZData"/>
         /// </summary>
-        public static int icSigXYZData { get { return LocalClazz.GetField<int>("icSigXYZData"); } }
+        public static int icSigXYZData { get { return SGetField<int>(LocalClazz, "icSigXYZData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYCbCrData"/>
         /// </summary>
-        public static int icSigYCbCrData { get { return LocalClazz.GetField<int>("icSigYCbCrData"); } }
+        public static int icSigYCbCrData { get { return SGetField<int>(LocalClazz, "icSigYCbCrData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYxyData"/>
         /// </summary>
-        public static int icSigYxyData { get { return LocalClazz.GetField<int>("icSigYxyData"); } }
+        public static int icSigYxyData { get { return SGetField<int>(LocalClazz, "icSigYxyData"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icTagReserved"/>
         /// </summary>
-        public static int icTagReserved { get { return LocalClazz.GetField<int>("icTagReserved"); } }
+        public static int icTagReserved { get { return SGetField<int>(LocalClazz, "icTagReserved"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icTagType"/>
         /// </summary>
-        public static int icTagType { get { return LocalClazz.GetField<int>("icTagType"); } }
+        public static int icTagType { get { return SGetField<int>(LocalClazz, "icTagType"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icXYZNumberX"/>
         /// </summary>
-        public static int icXYZNumberX { get { return LocalClazz.GetField<int>("icXYZNumberX"); } }
+        public static int icXYZNumberX { get { return SGetField<int>(LocalClazz, "icXYZNumberX"); } }
         
         #endregion
 

@@ -404,15 +404,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#NORMAL"/>
             /// </summary>
-            public static Java.Awt.Window.Type NORMAL { get { return LocalClazz.GetField<Java.Awt.Window.Type>("NORMAL"); } }
+            public static Java.Awt.Window.Type NORMAL { get { return SGetField<Java.Awt.Window.Type>(LocalClazz, "NORMAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#POPUP"/>
             /// </summary>
-            public static Java.Awt.Window.Type POPUP { get { return LocalClazz.GetField<Java.Awt.Window.Type>("POPUP"); } }
+            public static Java.Awt.Window.Type POPUP { get { return SGetField<Java.Awt.Window.Type>(LocalClazz, "POPUP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY"/>
             /// </summary>
-            public static Java.Awt.Window.Type UTILITY { get { return LocalClazz.GetField<Java.Awt.Window.Type>("UTILITY"); } }
+            public static Java.Awt.Window.Type UTILITY { get { return SGetField<Java.Awt.Window.Type>(LocalClazz, "UTILITY"); } }
             
             #endregion
 

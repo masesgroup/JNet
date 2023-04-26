@@ -40,11 +40,11 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"/>
         /// </summary>
-        public static string NSDECL { get { return LocalClazz.GetField<string>("NSDECL"); } }
+        public static string NSDECL { get { return SGetField<string>(LocalClazz, "NSDECL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#XMLNS"/>
         /// </summary>
-        public static string XMLNS { get { return LocalClazz.GetField<string>("XMLNS"); } }
+        public static string XMLNS { get { return SGetField<string>(LocalClazz, "XMLNS"); } }
         
         #endregion
 

@@ -40,35 +40,35 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ABORT"/>
         /// </summary>
-        public static int ABORT { get { return LocalClazz.GetField<int>("ABORT"); } }
+        public static int ABORT { get { return SGetField<int>(LocalClazz, "ABORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ALLBITS"/>
         /// </summary>
-        public static int ALLBITS { get { return LocalClazz.GetField<int>("ALLBITS"); } }
+        public static int ALLBITS { get { return SGetField<int>(LocalClazz, "ALLBITS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ERROR"/>
         /// </summary>
-        public static int ERROR { get { return LocalClazz.GetField<int>("ERROR"); } }
+        public static int ERROR { get { return SGetField<int>(LocalClazz, "ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#FRAMEBITS"/>
         /// </summary>
-        public static int FRAMEBITS { get { return LocalClazz.GetField<int>("FRAMEBITS"); } }
+        public static int FRAMEBITS { get { return SGetField<int>(LocalClazz, "FRAMEBITS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#HEIGHT"/>
         /// </summary>
-        public static int HEIGHT { get { return LocalClazz.GetField<int>("HEIGHT"); } }
+        public static int HEIGHT { get { return SGetField<int>(LocalClazz, "HEIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#PROPERTIES"/>
         /// </summary>
-        public static int PROPERTIES { get { return LocalClazz.GetField<int>("PROPERTIES"); } }
+        public static int PROPERTIES { get { return SGetField<int>(LocalClazz, "PROPERTIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#SOMEBITS"/>
         /// </summary>
-        public static int SOMEBITS { get { return LocalClazz.GetField<int>("SOMEBITS"); } }
+        public static int SOMEBITS { get { return SGetField<int>(LocalClazz, "SOMEBITS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#WIDTH"/>
         /// </summary>
-        public static int WIDTH { get { return LocalClazz.GetField<int>("WIDTH"); } }
+        public static int WIDTH { get { return SGetField<int>(LocalClazz, "WIDTH"); } }
         
         #endregion
 

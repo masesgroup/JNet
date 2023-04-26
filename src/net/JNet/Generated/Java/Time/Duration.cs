@@ -52,7 +52,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ZERO"/>
         /// </summary>
-        public static Java.Time.Duration ZERO { get { return LocalClazz.GetField<Java.Time.Duration>("ZERO"); } }
+        public static Java.Time.Duration ZERO { get { return SGetField<Java.Time.Duration>(LocalClazz, "ZERO"); } }
         
         #endregion
 

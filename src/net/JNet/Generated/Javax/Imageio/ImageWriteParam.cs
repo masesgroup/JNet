@@ -48,19 +48,19 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_COPY_FROM_METADATA"/>
         /// </summary>
-        public static int MODE_COPY_FROM_METADATA { get { return LocalClazz.GetField<int>("MODE_COPY_FROM_METADATA"); } }
+        public static int MODE_COPY_FROM_METADATA { get { return SGetField<int>(LocalClazz, "MODE_COPY_FROM_METADATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_DEFAULT"/>
         /// </summary>
-        public static int MODE_DEFAULT { get { return LocalClazz.GetField<int>("MODE_DEFAULT"); } }
+        public static int MODE_DEFAULT { get { return SGetField<int>(LocalClazz, "MODE_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_DISABLED"/>
         /// </summary>
-        public static int MODE_DISABLED { get { return LocalClazz.GetField<int>("MODE_DISABLED"); } }
+        public static int MODE_DISABLED { get { return SGetField<int>(LocalClazz, "MODE_DISABLED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_EXPLICIT"/>
         /// </summary>
-        public static int MODE_EXPLICIT { get { return LocalClazz.GetField<int>("MODE_EXPLICIT"); } }
+        public static int MODE_EXPLICIT { get { return SGetField<int>(LocalClazz, "MODE_EXPLICIT"); } }
         
         #endregion
 

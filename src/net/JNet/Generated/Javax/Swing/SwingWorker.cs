@@ -176,15 +176,15 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#DONE"/>
             /// </summary>
-            public static Javax.Swing.SwingWorker.StateValue DONE { get { return LocalClazz.GetField<Javax.Swing.SwingWorker.StateValue>("DONE"); } }
+            public static Javax.Swing.SwingWorker.StateValue DONE { get { return SGetField<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "DONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#PENDING"/>
             /// </summary>
-            public static Javax.Swing.SwingWorker.StateValue PENDING { get { return LocalClazz.GetField<Javax.Swing.SwingWorker.StateValue>("PENDING"); } }
+            public static Javax.Swing.SwingWorker.StateValue PENDING { get { return SGetField<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "PENDING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#STARTED"/>
             /// </summary>
-            public static Javax.Swing.SwingWorker.StateValue STARTED { get { return LocalClazz.GetField<Javax.Swing.SwingWorker.StateValue>("STARTED"); } }
+            public static Javax.Swing.SwingWorker.StateValue STARTED { get { return SGetField<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "STARTED"); } }
             
             #endregion
 

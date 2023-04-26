@@ -40,7 +40,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS"/>
         /// </summary>
-        public static long NOPOS { get { return LocalClazz.GetField<long>("NOPOS"); } }
+        public static long NOPOS { get { return SGetField<long>(LocalClazz, "NOPOS"); } }
         
         #endregion
 
@@ -133,23 +133,23 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#ERROR"/>
             /// </summary>
-            public static Javax.Tools.Diagnostic.Kind ERROR { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("ERROR"); } }
+            public static Javax.Tools.Diagnostic.Kind ERROR { get { return SGetField<Javax.Tools.Diagnostic.Kind>(LocalClazz, "ERROR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#MANDATORY_WARNING"/>
             /// </summary>
-            public static Javax.Tools.Diagnostic.Kind MANDATORY_WARNING { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("MANDATORY_WARNING"); } }
+            public static Javax.Tools.Diagnostic.Kind MANDATORY_WARNING { get { return SGetField<Javax.Tools.Diagnostic.Kind>(LocalClazz, "MANDATORY_WARNING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#NOTE"/>
             /// </summary>
-            public static Javax.Tools.Diagnostic.Kind NOTE { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("NOTE"); } }
+            public static Javax.Tools.Diagnostic.Kind NOTE { get { return SGetField<Javax.Tools.Diagnostic.Kind>(LocalClazz, "NOTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#OTHER"/>
             /// </summary>
-            public static Javax.Tools.Diagnostic.Kind OTHER { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("OTHER"); } }
+            public static Javax.Tools.Diagnostic.Kind OTHER { get { return SGetField<Javax.Tools.Diagnostic.Kind>(LocalClazz, "OTHER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING"/>
             /// </summary>
-            public static Javax.Tools.Diagnostic.Kind WARNING { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("WARNING"); } }
+            public static Javax.Tools.Diagnostic.Kind WARNING { get { return SGetField<Javax.Tools.Diagnostic.Kind>(LocalClazz, "WARNING"); } }
             
             #endregion
 
@@ -207,7 +207,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS"/>
         /// </summary>
-        public static long NOPOS { get { return LocalClazz.GetField<long>("NOPOS"); } }
+        public static long NOPOS { get { return SGetField<long>(LocalClazz, "NOPOS"); } }
         
         #endregion
 

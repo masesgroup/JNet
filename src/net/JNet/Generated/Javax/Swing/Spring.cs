@@ -40,7 +40,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#UNSET"/>
         /// </summary>
-        public static int UNSET { get { return LocalClazz.GetField<int>("UNSET"); } }
+        public static int UNSET { get { return SGetField<int>(LocalClazz, "UNSET"); } }
         
         #endregion
 

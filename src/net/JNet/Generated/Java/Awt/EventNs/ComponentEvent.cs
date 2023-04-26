@@ -49,27 +49,27 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_FIRST"/>
         /// </summary>
-        public static int COMPONENT_FIRST { get { return LocalClazz.GetField<int>("COMPONENT_FIRST"); } }
+        public static int COMPONENT_FIRST { get { return SGetField<int>(LocalClazz, "COMPONENT_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_HIDDEN"/>
         /// </summary>
-        public static int COMPONENT_HIDDEN { get { return LocalClazz.GetField<int>("COMPONENT_HIDDEN"); } }
+        public static int COMPONENT_HIDDEN { get { return SGetField<int>(LocalClazz, "COMPONENT_HIDDEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_LAST"/>
         /// </summary>
-        public static int COMPONENT_LAST { get { return LocalClazz.GetField<int>("COMPONENT_LAST"); } }
+        public static int COMPONENT_LAST { get { return SGetField<int>(LocalClazz, "COMPONENT_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_MOVED"/>
         /// </summary>
-        public static int COMPONENT_MOVED { get { return LocalClazz.GetField<int>("COMPONENT_MOVED"); } }
+        public static int COMPONENT_MOVED { get { return SGetField<int>(LocalClazz, "COMPONENT_MOVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_RESIZED"/>
         /// </summary>
-        public static int COMPONENT_RESIZED { get { return LocalClazz.GetField<int>("COMPONENT_RESIZED"); } }
+        public static int COMPONENT_RESIZED { get { return SGetField<int>(LocalClazz, "COMPONENT_RESIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_SHOWN"/>
         /// </summary>
-        public static int COMPONENT_SHOWN { get { return LocalClazz.GetField<int>("COMPONENT_SHOWN"); } }
+        public static int COMPONENT_SHOWN { get { return SGetField<int>(LocalClazz, "COMPONENT_SHOWN"); } }
         
         #endregion
 

@@ -78,11 +78,11 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#GET"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType GET { get { return LocalClazz.GetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("GET"); } }
+            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType GET { get { return SGetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalClazz, "GET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#POST"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType POST { get { return LocalClazz.GetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("POST"); } }
+            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType POST { get { return SGetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalClazz, "POST"); } }
             
             #endregion
 

@@ -44,7 +44,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#NO_FIELDS"/>
         /// </summary>
-        public static Java.Io.ObjectStreamField[] NO_FIELDS { get { return LocalClazz.GetField<Java.Io.ObjectStreamField[]>("NO_FIELDS"); } }
+        public static Java.Io.ObjectStreamField[] NO_FIELDS { get { return SGetFieldArray<Java.Io.ObjectStreamField>(LocalClazz, "NO_FIELDS"); } }
         
         #endregion
 

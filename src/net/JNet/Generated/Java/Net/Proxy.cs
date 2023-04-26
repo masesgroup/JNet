@@ -49,7 +49,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#NO_PROXY"/>
         /// </summary>
-        public static Java.Net.Proxy NO_PROXY { get { return LocalClazz.GetField<Java.Net.Proxy>("NO_PROXY"); } }
+        public static Java.Net.Proxy NO_PROXY { get { return SGetField<Java.Net.Proxy>(LocalClazz, "NO_PROXY"); } }
         
         #endregion
 
@@ -93,15 +93,15 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#DIRECT"/>
             /// </summary>
-            public static Java.Net.Proxy.Type DIRECT { get { return LocalClazz.GetField<Java.Net.Proxy.Type>("DIRECT"); } }
+            public static Java.Net.Proxy.Type DIRECT { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "DIRECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#HTTP"/>
             /// </summary>
-            public static Java.Net.Proxy.Type HTTP { get { return LocalClazz.GetField<Java.Net.Proxy.Type>("HTTP"); } }
+            public static Java.Net.Proxy.Type HTTP { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "HTTP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#SOCKS"/>
             /// </summary>
-            public static Java.Net.Proxy.Type SOCKS { get { return LocalClazz.GetField<Java.Net.Proxy.Type>("SOCKS"); } }
+            public static Java.Net.Proxy.Type SOCKS { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "SOCKS"); } }
             
             #endregion
 

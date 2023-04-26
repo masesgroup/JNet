@@ -54,15 +54,15 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#data"/>
         /// </summary>
-        public char[] data { get { return Instance.GetField<char[]>("data"); } set { Instance.SetField("data", value); } }
+        public char[] data { get { return IGetFieldArray<char>("data"); } set { ISetField("data", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#type"/>
         /// </summary>
-        public int type { get { return Instance.GetField<int>("type"); } set { Instance.SetField("type", value); } }
+        public int type { get { return IGetField<int>("type"); } set { ISetField("type", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#name"/>
         /// </summary>
-        public string name { get { return Instance.GetField<string>("name"); } set { Instance.SetField("name", value); } }
+        public string name { get { return IGetField<string>("name"); } set { ISetField("name", value); } }
         
         #endregion
 

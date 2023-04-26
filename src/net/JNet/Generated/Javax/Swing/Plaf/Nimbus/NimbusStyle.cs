@@ -40,27 +40,27 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#LARGE_SCALE"/>
         /// </summary>
-        public static double LARGE_SCALE { get { return LocalClazz.GetField<double>("LARGE_SCALE"); } }
+        public static double LARGE_SCALE { get { return SGetField<double>(LocalClazz, "LARGE_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#MINI_SCALE"/>
         /// </summary>
-        public static double MINI_SCALE { get { return LocalClazz.GetField<double>("MINI_SCALE"); } }
+        public static double MINI_SCALE { get { return SGetField<double>(LocalClazz, "MINI_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#SMALL_SCALE"/>
         /// </summary>
-        public static double SMALL_SCALE { get { return LocalClazz.GetField<double>("SMALL_SCALE"); } }
+        public static double SMALL_SCALE { get { return SGetField<double>(LocalClazz, "SMALL_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#LARGE_KEY"/>
         /// </summary>
-        public static string LARGE_KEY { get { return LocalClazz.GetField<string>("LARGE_KEY"); } }
+        public static string LARGE_KEY { get { return SGetField<string>(LocalClazz, "LARGE_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#MINI_KEY"/>
         /// </summary>
-        public static string MINI_KEY { get { return LocalClazz.GetField<string>("MINI_KEY"); } }
+        public static string MINI_KEY { get { return SGetField<string>(LocalClazz, "MINI_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#SMALL_KEY"/>
         /// </summary>
-        public static string SMALL_KEY { get { return LocalClazz.GetField<string>("SMALL_KEY"); } }
+        public static string SMALL_KEY { get { return SGetField<string>(LocalClazz, "SMALL_KEY"); } }
         
         #endregion
 

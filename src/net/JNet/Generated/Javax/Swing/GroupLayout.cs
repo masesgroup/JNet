@@ -52,11 +52,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#DEFAULT_SIZE"/>
         /// </summary>
-        public static int DEFAULT_SIZE { get { return LocalClazz.GetField<int>("DEFAULT_SIZE"); } }
+        public static int DEFAULT_SIZE { get { return SGetField<int>(LocalClazz, "DEFAULT_SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#PREFERRED_SIZE"/>
         /// </summary>
-        public static int PREFERRED_SIZE { get { return LocalClazz.GetField<int>("PREFERRED_SIZE"); } }
+        public static int PREFERRED_SIZE { get { return SGetField<int>(LocalClazz, "PREFERRED_SIZE"); } }
         
         #endregion
 
@@ -295,19 +295,19 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#BASELINE"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment BASELINE { get { return LocalClazz.GetField<Javax.Swing.GroupLayout.Alignment>("BASELINE"); } }
+            public static Javax.Swing.GroupLayout.Alignment BASELINE { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "BASELINE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#CENTER"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment CENTER { get { return LocalClazz.GetField<Javax.Swing.GroupLayout.Alignment>("CENTER"); } }
+            public static Javax.Swing.GroupLayout.Alignment CENTER { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "CENTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#LEADING"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment LEADING { get { return LocalClazz.GetField<Javax.Swing.GroupLayout.Alignment>("LEADING"); } }
+            public static Javax.Swing.GroupLayout.Alignment LEADING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "LEADING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#TRAILING"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment TRAILING { get { return LocalClazz.GetField<Javax.Swing.GroupLayout.Alignment>("TRAILING"); } }
+            public static Javax.Swing.GroupLayout.Alignment TRAILING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "TRAILING"); } }
             
             #endregion
 

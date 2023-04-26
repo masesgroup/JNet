@@ -63,11 +63,11 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#F0"/>
         /// </summary>
-        public static Java.Math.BigInteger F0 { get { return LocalClazz.GetField<Java.Math.BigInteger>("F0"); } }
+        public static Java.Math.BigInteger F0 { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "F0"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#F4"/>
         /// </summary>
-        public static Java.Math.BigInteger F4 { get { return LocalClazz.GetField<Java.Math.BigInteger>("F4"); } }
+        public static Java.Math.BigInteger F4 { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "F4"); } }
         
         #endregion
 
