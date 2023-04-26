@@ -40,87 +40,87 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_ALWAYS"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_ALWAYS => Clazz.GetField<int>("HORIZONTAL_SCROLLBAR_ALWAYS");
+        public static int HORIZONTAL_SCROLLBAR_ALWAYS => LocalClazz.GetField<int>("HORIZONTAL_SCROLLBAR_ALWAYS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_AS_NEEDED"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_AS_NEEDED => Clazz.GetField<int>("HORIZONTAL_SCROLLBAR_AS_NEEDED");
+        public static int HORIZONTAL_SCROLLBAR_AS_NEEDED => LocalClazz.GetField<int>("HORIZONTAL_SCROLLBAR_AS_NEEDED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_NEVER"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_NEVER => Clazz.GetField<int>("HORIZONTAL_SCROLLBAR_NEVER");
+        public static int HORIZONTAL_SCROLLBAR_NEVER => LocalClazz.GetField<int>("HORIZONTAL_SCROLLBAR_NEVER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_ALWAYS"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_ALWAYS => Clazz.GetField<int>("VERTICAL_SCROLLBAR_ALWAYS");
+        public static int VERTICAL_SCROLLBAR_ALWAYS => LocalClazz.GetField<int>("VERTICAL_SCROLLBAR_ALWAYS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_AS_NEEDED"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_AS_NEEDED => Clazz.GetField<int>("VERTICAL_SCROLLBAR_AS_NEEDED");
+        public static int VERTICAL_SCROLLBAR_AS_NEEDED => LocalClazz.GetField<int>("VERTICAL_SCROLLBAR_AS_NEEDED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_NEVER"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_NEVER => Clazz.GetField<int>("VERTICAL_SCROLLBAR_NEVER");
+        public static int VERTICAL_SCROLLBAR_NEVER => LocalClazz.GetField<int>("VERTICAL_SCROLLBAR_NEVER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#COLUMN_HEADER"/>
         /// </summary>
-        public static string COLUMN_HEADER => Clazz.GetField<string>("COLUMN_HEADER");
+        public static string COLUMN_HEADER => LocalClazz.GetField<string>("COLUMN_HEADER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR"/>
         /// </summary>
-        public static string HORIZONTAL_SCROLLBAR => Clazz.GetField<string>("HORIZONTAL_SCROLLBAR");
+        public static string HORIZONTAL_SCROLLBAR => LocalClazz.GetField<string>("HORIZONTAL_SCROLLBAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_POLICY"/>
         /// </summary>
-        public static string HORIZONTAL_SCROLLBAR_POLICY => Clazz.GetField<string>("HORIZONTAL_SCROLLBAR_POLICY");
+        public static string HORIZONTAL_SCROLLBAR_POLICY => LocalClazz.GetField<string>("HORIZONTAL_SCROLLBAR_POLICY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_LEADING_CORNER"/>
         /// </summary>
-        public static string LOWER_LEADING_CORNER => Clazz.GetField<string>("LOWER_LEADING_CORNER");
+        public static string LOWER_LEADING_CORNER => LocalClazz.GetField<string>("LOWER_LEADING_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_LEFT_CORNER"/>
         /// </summary>
-        public static string LOWER_LEFT_CORNER => Clazz.GetField<string>("LOWER_LEFT_CORNER");
+        public static string LOWER_LEFT_CORNER => LocalClazz.GetField<string>("LOWER_LEFT_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_RIGHT_CORNER"/>
         /// </summary>
-        public static string LOWER_RIGHT_CORNER => Clazz.GetField<string>("LOWER_RIGHT_CORNER");
+        public static string LOWER_RIGHT_CORNER => LocalClazz.GetField<string>("LOWER_RIGHT_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_TRAILING_CORNER"/>
         /// </summary>
-        public static string LOWER_TRAILING_CORNER => Clazz.GetField<string>("LOWER_TRAILING_CORNER");
+        public static string LOWER_TRAILING_CORNER => LocalClazz.GetField<string>("LOWER_TRAILING_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#ROW_HEADER"/>
         /// </summary>
-        public static string ROW_HEADER => Clazz.GetField<string>("ROW_HEADER");
+        public static string ROW_HEADER => LocalClazz.GetField<string>("ROW_HEADER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_LEADING_CORNER"/>
         /// </summary>
-        public static string UPPER_LEADING_CORNER => Clazz.GetField<string>("UPPER_LEADING_CORNER");
+        public static string UPPER_LEADING_CORNER => LocalClazz.GetField<string>("UPPER_LEADING_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_LEFT_CORNER"/>
         /// </summary>
-        public static string UPPER_LEFT_CORNER => Clazz.GetField<string>("UPPER_LEFT_CORNER");
+        public static string UPPER_LEFT_CORNER => LocalClazz.GetField<string>("UPPER_LEFT_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_RIGHT_CORNER"/>
         /// </summary>
-        public static string UPPER_RIGHT_CORNER => Clazz.GetField<string>("UPPER_RIGHT_CORNER");
+        public static string UPPER_RIGHT_CORNER => LocalClazz.GetField<string>("UPPER_RIGHT_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_TRAILING_CORNER"/>
         /// </summary>
-        public static string UPPER_TRAILING_CORNER => Clazz.GetField<string>("UPPER_TRAILING_CORNER");
+        public static string UPPER_TRAILING_CORNER => LocalClazz.GetField<string>("UPPER_TRAILING_CORNER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR"/>
         /// </summary>
-        public static string VERTICAL_SCROLLBAR => Clazz.GetField<string>("VERTICAL_SCROLLBAR");
+        public static string VERTICAL_SCROLLBAR => LocalClazz.GetField<string>("VERTICAL_SCROLLBAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_POLICY"/>
         /// </summary>
-        public static string VERTICAL_SCROLLBAR_POLICY => Clazz.GetField<string>("VERTICAL_SCROLLBAR_POLICY");
+        public static string VERTICAL_SCROLLBAR_POLICY => LocalClazz.GetField<string>("VERTICAL_SCROLLBAR_POLICY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VIEWPORT"/>
         /// </summary>
-        public static string VIEWPORT => Clazz.GetField<string>("VIEWPORT");
+        public static string VIEWPORT => LocalClazz.GetField<string>("VIEWPORT");
         
         #endregion
 

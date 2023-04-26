@@ -52,27 +52,27 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#BadBreakWeight"/>
         /// </summary>
-        public static int BadBreakWeight => Clazz.GetField<int>("BadBreakWeight");
+        public static int BadBreakWeight => LocalClazz.GetField<int>("BadBreakWeight");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ExcellentBreakWeight"/>
         /// </summary>
-        public static int ExcellentBreakWeight => Clazz.GetField<int>("ExcellentBreakWeight");
+        public static int ExcellentBreakWeight => LocalClazz.GetField<int>("ExcellentBreakWeight");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ForcedBreakWeight"/>
         /// </summary>
-        public static int ForcedBreakWeight => Clazz.GetField<int>("ForcedBreakWeight");
+        public static int ForcedBreakWeight => LocalClazz.GetField<int>("ForcedBreakWeight");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#GoodBreakWeight"/>
         /// </summary>
-        public static int GoodBreakWeight => Clazz.GetField<int>("GoodBreakWeight");
+        public static int GoodBreakWeight => LocalClazz.GetField<int>("GoodBreakWeight");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#X_AXIS"/>
         /// </summary>
-        public static int X_AXIS => Clazz.GetField<int>("X_AXIS");
+        public static int X_AXIS => LocalClazz.GetField<int>("X_AXIS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#Y_AXIS"/>
         /// </summary>
-        public static int Y_AXIS => Clazz.GetField<int>("Y_AXIS");
+        public static int Y_AXIS => LocalClazz.GetField<int>("Y_AXIS");
         
         #endregion
 

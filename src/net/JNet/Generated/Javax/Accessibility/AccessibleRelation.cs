@@ -57,99 +57,99 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CHILD_NODE_OF"/>
         /// </summary>
-        public static string CHILD_NODE_OF => Clazz.GetField<string>("CHILD_NODE_OF");
+        public static string CHILD_NODE_OF => LocalClazz.GetField<string>("CHILD_NODE_OF");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CHILD_NODE_OF_PROPERTY"/>
         /// </summary>
-        public static string CHILD_NODE_OF_PROPERTY => Clazz.GetField<string>("CHILD_NODE_OF_PROPERTY");
+        public static string CHILD_NODE_OF_PROPERTY => LocalClazz.GetField<string>("CHILD_NODE_OF_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLED_BY"/>
         /// </summary>
-        public static string CONTROLLED_BY => Clazz.GetField<string>("CONTROLLED_BY");
+        public static string CONTROLLED_BY => LocalClazz.GetField<string>("CONTROLLED_BY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLED_BY_PROPERTY"/>
         /// </summary>
-        public static string CONTROLLED_BY_PROPERTY => Clazz.GetField<string>("CONTROLLED_BY_PROPERTY");
+        public static string CONTROLLED_BY_PROPERTY => LocalClazz.GetField<string>("CONTROLLED_BY_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLER_FOR"/>
         /// </summary>
-        public static string CONTROLLER_FOR => Clazz.GetField<string>("CONTROLLER_FOR");
+        public static string CONTROLLER_FOR => LocalClazz.GetField<string>("CONTROLLER_FOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#CONTROLLER_FOR_PROPERTY"/>
         /// </summary>
-        public static string CONTROLLER_FOR_PROPERTY => Clazz.GetField<string>("CONTROLLER_FOR_PROPERTY");
+        public static string CONTROLLER_FOR_PROPERTY => LocalClazz.GetField<string>("CONTROLLER_FOR_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDDED_BY"/>
         /// </summary>
-        public static string EMBEDDED_BY => Clazz.GetField<string>("EMBEDDED_BY");
+        public static string EMBEDDED_BY => LocalClazz.GetField<string>("EMBEDDED_BY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDDED_BY_PROPERTY"/>
         /// </summary>
-        public static string EMBEDDED_BY_PROPERTY => Clazz.GetField<string>("EMBEDDED_BY_PROPERTY");
+        public static string EMBEDDED_BY_PROPERTY => LocalClazz.GetField<string>("EMBEDDED_BY_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDS"/>
         /// </summary>
-        public static string EMBEDS => Clazz.GetField<string>("EMBEDS");
+        public static string EMBEDS => LocalClazz.GetField<string>("EMBEDS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#EMBEDS_PROPERTY"/>
         /// </summary>
-        public static string EMBEDS_PROPERTY => Clazz.GetField<string>("EMBEDS_PROPERTY");
+        public static string EMBEDS_PROPERTY => LocalClazz.GetField<string>("EMBEDS_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_FROM"/>
         /// </summary>
-        public static string FLOWS_FROM => Clazz.GetField<string>("FLOWS_FROM");
+        public static string FLOWS_FROM => LocalClazz.GetField<string>("FLOWS_FROM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_FROM_PROPERTY"/>
         /// </summary>
-        public static string FLOWS_FROM_PROPERTY => Clazz.GetField<string>("FLOWS_FROM_PROPERTY");
+        public static string FLOWS_FROM_PROPERTY => LocalClazz.GetField<string>("FLOWS_FROM_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_TO"/>
         /// </summary>
-        public static string FLOWS_TO => Clazz.GetField<string>("FLOWS_TO");
+        public static string FLOWS_TO => LocalClazz.GetField<string>("FLOWS_TO");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#FLOWS_TO_PROPERTY"/>
         /// </summary>
-        public static string FLOWS_TO_PROPERTY => Clazz.GetField<string>("FLOWS_TO_PROPERTY");
+        public static string FLOWS_TO_PROPERTY => LocalClazz.GetField<string>("FLOWS_TO_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABEL_FOR"/>
         /// </summary>
-        public static string LABEL_FOR => Clazz.GetField<string>("LABEL_FOR");
+        public static string LABEL_FOR => LocalClazz.GetField<string>("LABEL_FOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABEL_FOR_PROPERTY"/>
         /// </summary>
-        public static string LABEL_FOR_PROPERTY => Clazz.GetField<string>("LABEL_FOR_PROPERTY");
+        public static string LABEL_FOR_PROPERTY => LocalClazz.GetField<string>("LABEL_FOR_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABELED_BY"/>
         /// </summary>
-        public static string LABELED_BY => Clazz.GetField<string>("LABELED_BY");
+        public static string LABELED_BY => LocalClazz.GetField<string>("LABELED_BY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#LABELED_BY_PROPERTY"/>
         /// </summary>
-        public static string LABELED_BY_PROPERTY => Clazz.GetField<string>("LABELED_BY_PROPERTY");
+        public static string LABELED_BY_PROPERTY => LocalClazz.GetField<string>("LABELED_BY_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#MEMBER_OF"/>
         /// </summary>
-        public static string MEMBER_OF => Clazz.GetField<string>("MEMBER_OF");
+        public static string MEMBER_OF => LocalClazz.GetField<string>("MEMBER_OF");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#MEMBER_OF_PROPERTY"/>
         /// </summary>
-        public static string MEMBER_OF_PROPERTY => Clazz.GetField<string>("MEMBER_OF_PROPERTY");
+        public static string MEMBER_OF_PROPERTY => LocalClazz.GetField<string>("MEMBER_OF_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#PARENT_WINDOW_OF"/>
         /// </summary>
-        public static string PARENT_WINDOW_OF => Clazz.GetField<string>("PARENT_WINDOW_OF");
+        public static string PARENT_WINDOW_OF => LocalClazz.GetField<string>("PARENT_WINDOW_OF");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#PARENT_WINDOW_OF_PROPERTY"/>
         /// </summary>
-        public static string PARENT_WINDOW_OF_PROPERTY => Clazz.GetField<string>("PARENT_WINDOW_OF_PROPERTY");
+        public static string PARENT_WINDOW_OF_PROPERTY => LocalClazz.GetField<string>("PARENT_WINDOW_OF_PROPERTY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#SUBWINDOW_OF"/>
         /// </summary>
-        public static string SUBWINDOW_OF => Clazz.GetField<string>("SUBWINDOW_OF");
+        public static string SUBWINDOW_OF => LocalClazz.GetField<string>("SUBWINDOW_OF");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#SUBWINDOW_OF_PROPERTY"/>
         /// </summary>
-        public static string SUBWINDOW_OF_PROPERTY => Clazz.GetField<string>("SUBWINDOW_OF_PROPERTY");
+        public static string SUBWINDOW_OF_PROPERTY => LocalClazz.GetField<string>("SUBWINDOW_OF_PROPERTY");
         
         #endregion
 

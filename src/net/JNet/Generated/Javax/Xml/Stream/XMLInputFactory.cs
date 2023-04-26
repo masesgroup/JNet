@@ -40,39 +40,39 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#ALLOCATOR"/>
         /// </summary>
-        public static string ALLOCATOR => Clazz.GetField<string>("ALLOCATOR");
+        public static string ALLOCATOR => LocalClazz.GetField<string>("ALLOCATOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_COALESCING"/>
         /// </summary>
-        public static string IS_COALESCING => Clazz.GetField<string>("IS_COALESCING");
+        public static string IS_COALESCING => LocalClazz.GetField<string>("IS_COALESCING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_NAMESPACE_AWARE"/>
         /// </summary>
-        public static string IS_NAMESPACE_AWARE => Clazz.GetField<string>("IS_NAMESPACE_AWARE");
+        public static string IS_NAMESPACE_AWARE => LocalClazz.GetField<string>("IS_NAMESPACE_AWARE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_REPLACING_ENTITY_REFERENCES"/>
         /// </summary>
-        public static string IS_REPLACING_ENTITY_REFERENCES => Clazz.GetField<string>("IS_REPLACING_ENTITY_REFERENCES");
+        public static string IS_REPLACING_ENTITY_REFERENCES => LocalClazz.GetField<string>("IS_REPLACING_ENTITY_REFERENCES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_SUPPORTING_EXTERNAL_ENTITIES"/>
         /// </summary>
-        public static string IS_SUPPORTING_EXTERNAL_ENTITIES => Clazz.GetField<string>("IS_SUPPORTING_EXTERNAL_ENTITIES");
+        public static string IS_SUPPORTING_EXTERNAL_ENTITIES => LocalClazz.GetField<string>("IS_SUPPORTING_EXTERNAL_ENTITIES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_VALIDATING"/>
         /// </summary>
-        public static string IS_VALIDATING => Clazz.GetField<string>("IS_VALIDATING");
+        public static string IS_VALIDATING => LocalClazz.GetField<string>("IS_VALIDATING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#REPORTER"/>
         /// </summary>
-        public static string REPORTER => Clazz.GetField<string>("REPORTER");
+        public static string REPORTER => LocalClazz.GetField<string>("REPORTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#RESOLVER"/>
         /// </summary>
-        public static string RESOLVER => Clazz.GetField<string>("RESOLVER");
+        public static string RESOLVER => LocalClazz.GetField<string>("RESOLVER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#SUPPORT_DTD"/>
         /// </summary>
-        public static string SUPPORT_DTD => Clazz.GetField<string>("SUPPORT_DTD");
+        public static string SUPPORT_DTD => LocalClazz.GetField<string>("SUPPORT_DTD");
         
         #endregion
 

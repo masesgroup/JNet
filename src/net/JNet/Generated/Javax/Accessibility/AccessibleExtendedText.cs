@@ -40,11 +40,11 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#ATTRIBUTE_RUN"/>
         /// </summary>
-        public static int ATTRIBUTE_RUN => Clazz.GetField<int>("ATTRIBUTE_RUN");
+        public static int ATTRIBUTE_RUN => LocalClazz.GetField<int>("ATTRIBUTE_RUN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#LINE"/>
         /// </summary>
-        public static int LINE => Clazz.GetField<int>("LINE");
+        public static int LINE => LocalClazz.GetField<int>("LINE");
         
         #endregion
 

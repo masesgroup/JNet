@@ -40,7 +40,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperties.html#TYPE"/>
         /// </summary>
-        public static string TYPE => Clazz.GetField<string>("TYPE");
+        public static string TYPE => LocalClazz.GetField<string>("TYPE");
         
         #endregion
 

@@ -40,575 +40,575 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_CCITT_RLE"/>
         /// </summary>
-        public static int COMPRESSION_CCITT_RLE => Clazz.GetField<int>("COMPRESSION_CCITT_RLE");
+        public static int COMPRESSION_CCITT_RLE => LocalClazz.GetField<int>("COMPRESSION_CCITT_RLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_CCITT_T_4"/>
         /// </summary>
-        public static int COMPRESSION_CCITT_T_4 => Clazz.GetField<int>("COMPRESSION_CCITT_T_4");
+        public static int COMPRESSION_CCITT_T_4 => LocalClazz.GetField<int>("COMPRESSION_CCITT_T_4");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_CCITT_T_6"/>
         /// </summary>
-        public static int COMPRESSION_CCITT_T_6 => Clazz.GetField<int>("COMPRESSION_CCITT_T_6");
+        public static int COMPRESSION_CCITT_T_6 => LocalClazz.GetField<int>("COMPRESSION_CCITT_T_6");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_DEFLATE"/>
         /// </summary>
-        public static int COMPRESSION_DEFLATE => Clazz.GetField<int>("COMPRESSION_DEFLATE");
+        public static int COMPRESSION_DEFLATE => LocalClazz.GetField<int>("COMPRESSION_DEFLATE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_JPEG"/>
         /// </summary>
-        public static int COMPRESSION_JPEG => Clazz.GetField<int>("COMPRESSION_JPEG");
+        public static int COMPRESSION_JPEG => LocalClazz.GetField<int>("COMPRESSION_JPEG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_LZW"/>
         /// </summary>
-        public static int COMPRESSION_LZW => Clazz.GetField<int>("COMPRESSION_LZW");
+        public static int COMPRESSION_LZW => LocalClazz.GetField<int>("COMPRESSION_LZW");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_NONE"/>
         /// </summary>
-        public static int COMPRESSION_NONE => Clazz.GetField<int>("COMPRESSION_NONE");
+        public static int COMPRESSION_NONE => LocalClazz.GetField<int>("COMPRESSION_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_OLD_JPEG"/>
         /// </summary>
-        public static int COMPRESSION_OLD_JPEG => Clazz.GetField<int>("COMPRESSION_OLD_JPEG");
+        public static int COMPRESSION_OLD_JPEG => LocalClazz.GetField<int>("COMPRESSION_OLD_JPEG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_PACKBITS"/>
         /// </summary>
-        public static int COMPRESSION_PACKBITS => Clazz.GetField<int>("COMPRESSION_PACKBITS");
+        public static int COMPRESSION_PACKBITS => LocalClazz.GetField<int>("COMPRESSION_PACKBITS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#COMPRESSION_ZLIB"/>
         /// </summary>
-        public static int COMPRESSION_ZLIB => Clazz.GetField<int>("COMPRESSION_ZLIB");
+        public static int COMPRESSION_ZLIB => LocalClazz.GetField<int>("COMPRESSION_ZLIB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#EXTRA_SAMPLES_ASSOCIATED_ALPHA"/>
         /// </summary>
-        public static int EXTRA_SAMPLES_ASSOCIATED_ALPHA => Clazz.GetField<int>("EXTRA_SAMPLES_ASSOCIATED_ALPHA");
+        public static int EXTRA_SAMPLES_ASSOCIATED_ALPHA => LocalClazz.GetField<int>("EXTRA_SAMPLES_ASSOCIATED_ALPHA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#EXTRA_SAMPLES_UNASSOCIATED_ALPHA"/>
         /// </summary>
-        public static int EXTRA_SAMPLES_UNASSOCIATED_ALPHA => Clazz.GetField<int>("EXTRA_SAMPLES_UNASSOCIATED_ALPHA");
+        public static int EXTRA_SAMPLES_UNASSOCIATED_ALPHA => LocalClazz.GetField<int>("EXTRA_SAMPLES_UNASSOCIATED_ALPHA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#EXTRA_SAMPLES_UNSPECIFIED"/>
         /// </summary>
-        public static int EXTRA_SAMPLES_UNSPECIFIED => Clazz.GetField<int>("EXTRA_SAMPLES_UNSPECIFIED");
+        public static int EXTRA_SAMPLES_UNSPECIFIED => LocalClazz.GetField<int>("EXTRA_SAMPLES_UNSPECIFIED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#FILL_ORDER_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int FILL_ORDER_LEFT_TO_RIGHT => Clazz.GetField<int>("FILL_ORDER_LEFT_TO_RIGHT");
+        public static int FILL_ORDER_LEFT_TO_RIGHT => LocalClazz.GetField<int>("FILL_ORDER_LEFT_TO_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#FILL_ORDER_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int FILL_ORDER_RIGHT_TO_LEFT => Clazz.GetField<int>("FILL_ORDER_RIGHT_TO_LEFT");
+        public static int FILL_ORDER_RIGHT_TO_LEFT => LocalClazz.GetField<int>("FILL_ORDER_RIGHT_TO_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS"/>
         /// </summary>
-        public static int GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS => Clazz.GetField<int>("GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS");
+        public static int GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS => LocalClazz.GetField<int>("GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#GRAY_RESPONSE_UNIT_HUNDREDTHS"/>
         /// </summary>
-        public static int GRAY_RESPONSE_UNIT_HUNDREDTHS => Clazz.GetField<int>("GRAY_RESPONSE_UNIT_HUNDREDTHS");
+        public static int GRAY_RESPONSE_UNIT_HUNDREDTHS => LocalClazz.GetField<int>("GRAY_RESPONSE_UNIT_HUNDREDTHS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS"/>
         /// </summary>
-        public static int GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS => Clazz.GetField<int>("GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS");
+        public static int GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS => LocalClazz.GetField<int>("GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#GRAY_RESPONSE_UNIT_TENTHS"/>
         /// </summary>
-        public static int GRAY_RESPONSE_UNIT_TENTHS => Clazz.GetField<int>("GRAY_RESPONSE_UNIT_TENTHS");
+        public static int GRAY_RESPONSE_UNIT_TENTHS => LocalClazz.GetField<int>("GRAY_RESPONSE_UNIT_TENTHS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#GRAY_RESPONSE_UNIT_THOUSANDTHS"/>
         /// </summary>
-        public static int GRAY_RESPONSE_UNIT_THOUSANDTHS => Clazz.GetField<int>("GRAY_RESPONSE_UNIT_THOUSANDTHS");
+        public static int GRAY_RESPONSE_UNIT_THOUSANDTHS => LocalClazz.GetField<int>("GRAY_RESPONSE_UNIT_THOUSANDTHS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#INK_SET_CMYK"/>
         /// </summary>
-        public static int INK_SET_CMYK => Clazz.GetField<int>("INK_SET_CMYK");
+        public static int INK_SET_CMYK => LocalClazz.GetField<int>("INK_SET_CMYK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#INK_SET_NOT_CMYK"/>
         /// </summary>
-        public static int INK_SET_NOT_CMYK => Clazz.GetField<int>("INK_SET_NOT_CMYK");
+        public static int INK_SET_NOT_CMYK => LocalClazz.GetField<int>("INK_SET_NOT_CMYK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#JPEG_PROC_BASELINE"/>
         /// </summary>
-        public static int JPEG_PROC_BASELINE => Clazz.GetField<int>("JPEG_PROC_BASELINE");
+        public static int JPEG_PROC_BASELINE => LocalClazz.GetField<int>("JPEG_PROC_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#JPEG_PROC_LOSSLESS"/>
         /// </summary>
-        public static int JPEG_PROC_LOSSLESS => Clazz.GetField<int>("JPEG_PROC_LOSSLESS");
+        public static int JPEG_PROC_LOSSLESS => LocalClazz.GetField<int>("JPEG_PROC_LOSSLESS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#NEW_SUBFILE_TYPE_REDUCED_RESOLUTION"/>
         /// </summary>
-        public static int NEW_SUBFILE_TYPE_REDUCED_RESOLUTION => Clazz.GetField<int>("NEW_SUBFILE_TYPE_REDUCED_RESOLUTION");
+        public static int NEW_SUBFILE_TYPE_REDUCED_RESOLUTION => LocalClazz.GetField<int>("NEW_SUBFILE_TYPE_REDUCED_RESOLUTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#NEW_SUBFILE_TYPE_SINGLE_PAGE"/>
         /// </summary>
-        public static int NEW_SUBFILE_TYPE_SINGLE_PAGE => Clazz.GetField<int>("NEW_SUBFILE_TYPE_SINGLE_PAGE");
+        public static int NEW_SUBFILE_TYPE_SINGLE_PAGE => LocalClazz.GetField<int>("NEW_SUBFILE_TYPE_SINGLE_PAGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#NEW_SUBFILE_TYPE_TRANSPARENCY"/>
         /// </summary>
-        public static int NEW_SUBFILE_TYPE_TRANSPARENCY => Clazz.GetField<int>("NEW_SUBFILE_TYPE_TRANSPARENCY");
+        public static int NEW_SUBFILE_TYPE_TRANSPARENCY => LocalClazz.GetField<int>("NEW_SUBFILE_TYPE_TRANSPARENCY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT => Clazz.GetField<int>("ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT");
+        public static int ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT => LocalClazz.GetField<int>("ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT => Clazz.GetField<int>("ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT");
+        public static int ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT => LocalClazz.GetField<int>("ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM => Clazz.GetField<int>("ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM");
+        public static int ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM => LocalClazz.GetField<int>("ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP => Clazz.GetField<int>("ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP");
+        public static int ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP => LocalClazz.GetField<int>("ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM => Clazz.GetField<int>("ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM");
+        public static int ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM => LocalClazz.GetField<int>("ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP => Clazz.GetField<int>("ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP");
+        public static int ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP => LocalClazz.GetField<int>("ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT => Clazz.GetField<int>("ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT");
+        public static int ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT => LocalClazz.GetField<int>("ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT"/>
         /// </summary>
-        public static int ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT => Clazz.GetField<int>("ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT");
+        public static int ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT => LocalClazz.GetField<int>("ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO");
+        public static int PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_CIELAB"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_CIELAB => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_CIELAB");
+        public static int PHOTOMETRIC_INTERPRETATION_CIELAB => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_CIELAB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_CMYK"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_CMYK => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_CMYK");
+        public static int PHOTOMETRIC_INTERPRETATION_CMYK => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_CMYK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_ICCLAB"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_ICCLAB => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_ICCLAB");
+        public static int PHOTOMETRIC_INTERPRETATION_ICCLAB => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_ICCLAB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR");
+        public static int PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_RGB"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_RGB => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_RGB");
+        public static int PHOTOMETRIC_INTERPRETATION_RGB => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_RGB");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK");
+        public static int PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO");
+        public static int PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PHOTOMETRIC_INTERPRETATION_Y_CB_CR"/>
         /// </summary>
-        public static int PHOTOMETRIC_INTERPRETATION_Y_CB_CR => Clazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_Y_CB_CR");
+        public static int PHOTOMETRIC_INTERPRETATION_Y_CB_CR => LocalClazz.GetField<int>("PHOTOMETRIC_INTERPRETATION_Y_CB_CR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PLANAR_CONFIGURATION_CHUNKY"/>
         /// </summary>
-        public static int PLANAR_CONFIGURATION_CHUNKY => Clazz.GetField<int>("PLANAR_CONFIGURATION_CHUNKY");
+        public static int PLANAR_CONFIGURATION_CHUNKY => LocalClazz.GetField<int>("PLANAR_CONFIGURATION_CHUNKY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PLANAR_CONFIGURATION_PLANAR"/>
         /// </summary>
-        public static int PLANAR_CONFIGURATION_PLANAR => Clazz.GetField<int>("PLANAR_CONFIGURATION_PLANAR");
+        public static int PLANAR_CONFIGURATION_PLANAR => LocalClazz.GetField<int>("PLANAR_CONFIGURATION_PLANAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PREDICTOR_HORIZONTAL_DIFFERENCING"/>
         /// </summary>
-        public static int PREDICTOR_HORIZONTAL_DIFFERENCING => Clazz.GetField<int>("PREDICTOR_HORIZONTAL_DIFFERENCING");
+        public static int PREDICTOR_HORIZONTAL_DIFFERENCING => LocalClazz.GetField<int>("PREDICTOR_HORIZONTAL_DIFFERENCING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#PREDICTOR_NONE"/>
         /// </summary>
-        public static int PREDICTOR_NONE => Clazz.GetField<int>("PREDICTOR_NONE");
+        public static int PREDICTOR_NONE => LocalClazz.GetField<int>("PREDICTOR_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#RESOLUTION_UNIT_CENTIMETER"/>
         /// </summary>
-        public static int RESOLUTION_UNIT_CENTIMETER => Clazz.GetField<int>("RESOLUTION_UNIT_CENTIMETER");
+        public static int RESOLUTION_UNIT_CENTIMETER => LocalClazz.GetField<int>("RESOLUTION_UNIT_CENTIMETER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#RESOLUTION_UNIT_INCH"/>
         /// </summary>
-        public static int RESOLUTION_UNIT_INCH => Clazz.GetField<int>("RESOLUTION_UNIT_INCH");
+        public static int RESOLUTION_UNIT_INCH => LocalClazz.GetField<int>("RESOLUTION_UNIT_INCH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#RESOLUTION_UNIT_NONE"/>
         /// </summary>
-        public static int RESOLUTION_UNIT_NONE => Clazz.GetField<int>("RESOLUTION_UNIT_NONE");
+        public static int RESOLUTION_UNIT_NONE => LocalClazz.GetField<int>("RESOLUTION_UNIT_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SAMPLE_FORMAT_FLOATING_POINT"/>
         /// </summary>
-        public static int SAMPLE_FORMAT_FLOATING_POINT => Clazz.GetField<int>("SAMPLE_FORMAT_FLOATING_POINT");
+        public static int SAMPLE_FORMAT_FLOATING_POINT => LocalClazz.GetField<int>("SAMPLE_FORMAT_FLOATING_POINT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SAMPLE_FORMAT_SIGNED_INTEGER"/>
         /// </summary>
-        public static int SAMPLE_FORMAT_SIGNED_INTEGER => Clazz.GetField<int>("SAMPLE_FORMAT_SIGNED_INTEGER");
+        public static int SAMPLE_FORMAT_SIGNED_INTEGER => LocalClazz.GetField<int>("SAMPLE_FORMAT_SIGNED_INTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SAMPLE_FORMAT_UNDEFINED"/>
         /// </summary>
-        public static int SAMPLE_FORMAT_UNDEFINED => Clazz.GetField<int>("SAMPLE_FORMAT_UNDEFINED");
+        public static int SAMPLE_FORMAT_UNDEFINED => LocalClazz.GetField<int>("SAMPLE_FORMAT_UNDEFINED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SAMPLE_FORMAT_UNSIGNED_INTEGER"/>
         /// </summary>
-        public static int SAMPLE_FORMAT_UNSIGNED_INTEGER => Clazz.GetField<int>("SAMPLE_FORMAT_UNSIGNED_INTEGER");
+        public static int SAMPLE_FORMAT_UNSIGNED_INTEGER => LocalClazz.GetField<int>("SAMPLE_FORMAT_UNSIGNED_INTEGER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SUBFILE_TYPE_FULL_RESOLUTION"/>
         /// </summary>
-        public static int SUBFILE_TYPE_FULL_RESOLUTION => Clazz.GetField<int>("SUBFILE_TYPE_FULL_RESOLUTION");
+        public static int SUBFILE_TYPE_FULL_RESOLUTION => LocalClazz.GetField<int>("SUBFILE_TYPE_FULL_RESOLUTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SUBFILE_TYPE_REDUCED_RESOLUTION"/>
         /// </summary>
-        public static int SUBFILE_TYPE_REDUCED_RESOLUTION => Clazz.GetField<int>("SUBFILE_TYPE_REDUCED_RESOLUTION");
+        public static int SUBFILE_TYPE_REDUCED_RESOLUTION => LocalClazz.GetField<int>("SUBFILE_TYPE_REDUCED_RESOLUTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#SUBFILE_TYPE_SINGLE_PAGE"/>
         /// </summary>
-        public static int SUBFILE_TYPE_SINGLE_PAGE => Clazz.GetField<int>("SUBFILE_TYPE_SINGLE_PAGE");
+        public static int SUBFILE_TYPE_SINGLE_PAGE => LocalClazz.GetField<int>("SUBFILE_TYPE_SINGLE_PAGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#T4_OPTIONS_2D_CODING"/>
         /// </summary>
-        public static int T4_OPTIONS_2D_CODING => Clazz.GetField<int>("T4_OPTIONS_2D_CODING");
+        public static int T4_OPTIONS_2D_CODING => LocalClazz.GetField<int>("T4_OPTIONS_2D_CODING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#T4_OPTIONS_EOL_BYTE_ALIGNED"/>
         /// </summary>
-        public static int T4_OPTIONS_EOL_BYTE_ALIGNED => Clazz.GetField<int>("T4_OPTIONS_EOL_BYTE_ALIGNED");
+        public static int T4_OPTIONS_EOL_BYTE_ALIGNED => LocalClazz.GetField<int>("T4_OPTIONS_EOL_BYTE_ALIGNED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#T4_OPTIONS_UNCOMPRESSED"/>
         /// </summary>
-        public static int T4_OPTIONS_UNCOMPRESSED => Clazz.GetField<int>("T4_OPTIONS_UNCOMPRESSED");
+        public static int T4_OPTIONS_UNCOMPRESSED => LocalClazz.GetField<int>("T4_OPTIONS_UNCOMPRESSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#T6_OPTIONS_UNCOMPRESSED"/>
         /// </summary>
-        public static int T6_OPTIONS_UNCOMPRESSED => Clazz.GetField<int>("T6_OPTIONS_UNCOMPRESSED");
+        public static int T6_OPTIONS_UNCOMPRESSED => LocalClazz.GetField<int>("T6_OPTIONS_UNCOMPRESSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_ARTIST"/>
         /// </summary>
-        public static int TAG_ARTIST => Clazz.GetField<int>("TAG_ARTIST");
+        public static int TAG_ARTIST => LocalClazz.GetField<int>("TAG_ARTIST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_BITS_PER_SAMPLE"/>
         /// </summary>
-        public static int TAG_BITS_PER_SAMPLE => Clazz.GetField<int>("TAG_BITS_PER_SAMPLE");
+        public static int TAG_BITS_PER_SAMPLE => LocalClazz.GetField<int>("TAG_BITS_PER_SAMPLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_CELL_LENGTH"/>
         /// </summary>
-        public static int TAG_CELL_LENGTH => Clazz.GetField<int>("TAG_CELL_LENGTH");
+        public static int TAG_CELL_LENGTH => LocalClazz.GetField<int>("TAG_CELL_LENGTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_CELL_WIDTH"/>
         /// </summary>
-        public static int TAG_CELL_WIDTH => Clazz.GetField<int>("TAG_CELL_WIDTH");
+        public static int TAG_CELL_WIDTH => LocalClazz.GetField<int>("TAG_CELL_WIDTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_COLOR_MAP"/>
         /// </summary>
-        public static int TAG_COLOR_MAP => Clazz.GetField<int>("TAG_COLOR_MAP");
+        public static int TAG_COLOR_MAP => LocalClazz.GetField<int>("TAG_COLOR_MAP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_COMPRESSION"/>
         /// </summary>
-        public static int TAG_COMPRESSION => Clazz.GetField<int>("TAG_COMPRESSION");
+        public static int TAG_COMPRESSION => LocalClazz.GetField<int>("TAG_COMPRESSION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_COPYRIGHT"/>
         /// </summary>
-        public static int TAG_COPYRIGHT => Clazz.GetField<int>("TAG_COPYRIGHT");
+        public static int TAG_COPYRIGHT => LocalClazz.GetField<int>("TAG_COPYRIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_DATE_TIME"/>
         /// </summary>
-        public static int TAG_DATE_TIME => Clazz.GetField<int>("TAG_DATE_TIME");
+        public static int TAG_DATE_TIME => LocalClazz.GetField<int>("TAG_DATE_TIME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_DOCUMENT_NAME"/>
         /// </summary>
-        public static int TAG_DOCUMENT_NAME => Clazz.GetField<int>("TAG_DOCUMENT_NAME");
+        public static int TAG_DOCUMENT_NAME => LocalClazz.GetField<int>("TAG_DOCUMENT_NAME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_DOT_RANGE"/>
         /// </summary>
-        public static int TAG_DOT_RANGE => Clazz.GetField<int>("TAG_DOT_RANGE");
+        public static int TAG_DOT_RANGE => LocalClazz.GetField<int>("TAG_DOT_RANGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_EXTRA_SAMPLES"/>
         /// </summary>
-        public static int TAG_EXTRA_SAMPLES => Clazz.GetField<int>("TAG_EXTRA_SAMPLES");
+        public static int TAG_EXTRA_SAMPLES => LocalClazz.GetField<int>("TAG_EXTRA_SAMPLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_FILL_ORDER"/>
         /// </summary>
-        public static int TAG_FILL_ORDER => Clazz.GetField<int>("TAG_FILL_ORDER");
+        public static int TAG_FILL_ORDER => LocalClazz.GetField<int>("TAG_FILL_ORDER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_FREE_BYTE_COUNTS"/>
         /// </summary>
-        public static int TAG_FREE_BYTE_COUNTS => Clazz.GetField<int>("TAG_FREE_BYTE_COUNTS");
+        public static int TAG_FREE_BYTE_COUNTS => LocalClazz.GetField<int>("TAG_FREE_BYTE_COUNTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_FREE_OFFSETS"/>
         /// </summary>
-        public static int TAG_FREE_OFFSETS => Clazz.GetField<int>("TAG_FREE_OFFSETS");
+        public static int TAG_FREE_OFFSETS => LocalClazz.GetField<int>("TAG_FREE_OFFSETS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_GRAY_RESPONSE_CURVE"/>
         /// </summary>
-        public static int TAG_GRAY_RESPONSE_CURVE => Clazz.GetField<int>("TAG_GRAY_RESPONSE_CURVE");
+        public static int TAG_GRAY_RESPONSE_CURVE => LocalClazz.GetField<int>("TAG_GRAY_RESPONSE_CURVE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_GRAY_RESPONSE_UNIT"/>
         /// </summary>
-        public static int TAG_GRAY_RESPONSE_UNIT => Clazz.GetField<int>("TAG_GRAY_RESPONSE_UNIT");
+        public static int TAG_GRAY_RESPONSE_UNIT => LocalClazz.GetField<int>("TAG_GRAY_RESPONSE_UNIT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_HALFTONE_HINTS"/>
         /// </summary>
-        public static int TAG_HALFTONE_HINTS => Clazz.GetField<int>("TAG_HALFTONE_HINTS");
+        public static int TAG_HALFTONE_HINTS => LocalClazz.GetField<int>("TAG_HALFTONE_HINTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_HOST_COMPUTER"/>
         /// </summary>
-        public static int TAG_HOST_COMPUTER => Clazz.GetField<int>("TAG_HOST_COMPUTER");
+        public static int TAG_HOST_COMPUTER => LocalClazz.GetField<int>("TAG_HOST_COMPUTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_ICC_PROFILE"/>
         /// </summary>
-        public static int TAG_ICC_PROFILE => Clazz.GetField<int>("TAG_ICC_PROFILE");
+        public static int TAG_ICC_PROFILE => LocalClazz.GetField<int>("TAG_ICC_PROFILE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_IMAGE_DESCRIPTION"/>
         /// </summary>
-        public static int TAG_IMAGE_DESCRIPTION => Clazz.GetField<int>("TAG_IMAGE_DESCRIPTION");
+        public static int TAG_IMAGE_DESCRIPTION => LocalClazz.GetField<int>("TAG_IMAGE_DESCRIPTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_IMAGE_LENGTH"/>
         /// </summary>
-        public static int TAG_IMAGE_LENGTH => Clazz.GetField<int>("TAG_IMAGE_LENGTH");
+        public static int TAG_IMAGE_LENGTH => LocalClazz.GetField<int>("TAG_IMAGE_LENGTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_IMAGE_WIDTH"/>
         /// </summary>
-        public static int TAG_IMAGE_WIDTH => Clazz.GetField<int>("TAG_IMAGE_WIDTH");
+        public static int TAG_IMAGE_WIDTH => LocalClazz.GetField<int>("TAG_IMAGE_WIDTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_INK_NAMES"/>
         /// </summary>
-        public static int TAG_INK_NAMES => Clazz.GetField<int>("TAG_INK_NAMES");
+        public static int TAG_INK_NAMES => LocalClazz.GetField<int>("TAG_INK_NAMES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_INK_SET"/>
         /// </summary>
-        public static int TAG_INK_SET => Clazz.GetField<int>("TAG_INK_SET");
+        public static int TAG_INK_SET => LocalClazz.GetField<int>("TAG_INK_SET");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_AC_TABLES"/>
         /// </summary>
-        public static int TAG_JPEG_AC_TABLES => Clazz.GetField<int>("TAG_JPEG_AC_TABLES");
+        public static int TAG_JPEG_AC_TABLES => LocalClazz.GetField<int>("TAG_JPEG_AC_TABLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_DC_TABLES"/>
         /// </summary>
-        public static int TAG_JPEG_DC_TABLES => Clazz.GetField<int>("TAG_JPEG_DC_TABLES");
+        public static int TAG_JPEG_DC_TABLES => LocalClazz.GetField<int>("TAG_JPEG_DC_TABLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_INTERCHANGE_FORMAT"/>
         /// </summary>
-        public static int TAG_JPEG_INTERCHANGE_FORMAT => Clazz.GetField<int>("TAG_JPEG_INTERCHANGE_FORMAT");
+        public static int TAG_JPEG_INTERCHANGE_FORMAT => LocalClazz.GetField<int>("TAG_JPEG_INTERCHANGE_FORMAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_INTERCHANGE_FORMAT_LENGTH"/>
         /// </summary>
-        public static int TAG_JPEG_INTERCHANGE_FORMAT_LENGTH => Clazz.GetField<int>("TAG_JPEG_INTERCHANGE_FORMAT_LENGTH");
+        public static int TAG_JPEG_INTERCHANGE_FORMAT_LENGTH => LocalClazz.GetField<int>("TAG_JPEG_INTERCHANGE_FORMAT_LENGTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_LOSSLESS_PREDICTORS"/>
         /// </summary>
-        public static int TAG_JPEG_LOSSLESS_PREDICTORS => Clazz.GetField<int>("TAG_JPEG_LOSSLESS_PREDICTORS");
+        public static int TAG_JPEG_LOSSLESS_PREDICTORS => LocalClazz.GetField<int>("TAG_JPEG_LOSSLESS_PREDICTORS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_POINT_TRANSFORMS"/>
         /// </summary>
-        public static int TAG_JPEG_POINT_TRANSFORMS => Clazz.GetField<int>("TAG_JPEG_POINT_TRANSFORMS");
+        public static int TAG_JPEG_POINT_TRANSFORMS => LocalClazz.GetField<int>("TAG_JPEG_POINT_TRANSFORMS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_PROC"/>
         /// </summary>
-        public static int TAG_JPEG_PROC => Clazz.GetField<int>("TAG_JPEG_PROC");
+        public static int TAG_JPEG_PROC => LocalClazz.GetField<int>("TAG_JPEG_PROC");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_Q_TABLES"/>
         /// </summary>
-        public static int TAG_JPEG_Q_TABLES => Clazz.GetField<int>("TAG_JPEG_Q_TABLES");
+        public static int TAG_JPEG_Q_TABLES => LocalClazz.GetField<int>("TAG_JPEG_Q_TABLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_RESTART_INTERVAL"/>
         /// </summary>
-        public static int TAG_JPEG_RESTART_INTERVAL => Clazz.GetField<int>("TAG_JPEG_RESTART_INTERVAL");
+        public static int TAG_JPEG_RESTART_INTERVAL => LocalClazz.GetField<int>("TAG_JPEG_RESTART_INTERVAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_JPEG_TABLES"/>
         /// </summary>
-        public static int TAG_JPEG_TABLES => Clazz.GetField<int>("TAG_JPEG_TABLES");
+        public static int TAG_JPEG_TABLES => LocalClazz.GetField<int>("TAG_JPEG_TABLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_MAKE"/>
         /// </summary>
-        public static int TAG_MAKE => Clazz.GetField<int>("TAG_MAKE");
+        public static int TAG_MAKE => LocalClazz.GetField<int>("TAG_MAKE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_MAX_SAMPLE_VALUE"/>
         /// </summary>
-        public static int TAG_MAX_SAMPLE_VALUE => Clazz.GetField<int>("TAG_MAX_SAMPLE_VALUE");
+        public static int TAG_MAX_SAMPLE_VALUE => LocalClazz.GetField<int>("TAG_MAX_SAMPLE_VALUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_MIN_SAMPLE_VALUE"/>
         /// </summary>
-        public static int TAG_MIN_SAMPLE_VALUE => Clazz.GetField<int>("TAG_MIN_SAMPLE_VALUE");
+        public static int TAG_MIN_SAMPLE_VALUE => LocalClazz.GetField<int>("TAG_MIN_SAMPLE_VALUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_MODEL"/>
         /// </summary>
-        public static int TAG_MODEL => Clazz.GetField<int>("TAG_MODEL");
+        public static int TAG_MODEL => LocalClazz.GetField<int>("TAG_MODEL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_NEW_SUBFILE_TYPE"/>
         /// </summary>
-        public static int TAG_NEW_SUBFILE_TYPE => Clazz.GetField<int>("TAG_NEW_SUBFILE_TYPE");
+        public static int TAG_NEW_SUBFILE_TYPE => LocalClazz.GetField<int>("TAG_NEW_SUBFILE_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_NUMBER_OF_INKS"/>
         /// </summary>
-        public static int TAG_NUMBER_OF_INKS => Clazz.GetField<int>("TAG_NUMBER_OF_INKS");
+        public static int TAG_NUMBER_OF_INKS => LocalClazz.GetField<int>("TAG_NUMBER_OF_INKS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_ORIENTATION"/>
         /// </summary>
-        public static int TAG_ORIENTATION => Clazz.GetField<int>("TAG_ORIENTATION");
+        public static int TAG_ORIENTATION => LocalClazz.GetField<int>("TAG_ORIENTATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PAGE_NAME"/>
         /// </summary>
-        public static int TAG_PAGE_NAME => Clazz.GetField<int>("TAG_PAGE_NAME");
+        public static int TAG_PAGE_NAME => LocalClazz.GetField<int>("TAG_PAGE_NAME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PAGE_NUMBER"/>
         /// </summary>
-        public static int TAG_PAGE_NUMBER => Clazz.GetField<int>("TAG_PAGE_NUMBER");
+        public static int TAG_PAGE_NUMBER => LocalClazz.GetField<int>("TAG_PAGE_NUMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PHOTOMETRIC_INTERPRETATION"/>
         /// </summary>
-        public static int TAG_PHOTOMETRIC_INTERPRETATION => Clazz.GetField<int>("TAG_PHOTOMETRIC_INTERPRETATION");
+        public static int TAG_PHOTOMETRIC_INTERPRETATION => LocalClazz.GetField<int>("TAG_PHOTOMETRIC_INTERPRETATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PLANAR_CONFIGURATION"/>
         /// </summary>
-        public static int TAG_PLANAR_CONFIGURATION => Clazz.GetField<int>("TAG_PLANAR_CONFIGURATION");
+        public static int TAG_PLANAR_CONFIGURATION => LocalClazz.GetField<int>("TAG_PLANAR_CONFIGURATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PREDICTOR"/>
         /// </summary>
-        public static int TAG_PREDICTOR => Clazz.GetField<int>("TAG_PREDICTOR");
+        public static int TAG_PREDICTOR => LocalClazz.GetField<int>("TAG_PREDICTOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_PRIMARY_CHROMATICITES"/>
         /// </summary>
-        public static int TAG_PRIMARY_CHROMATICITES => Clazz.GetField<int>("TAG_PRIMARY_CHROMATICITES");
+        public static int TAG_PRIMARY_CHROMATICITES => LocalClazz.GetField<int>("TAG_PRIMARY_CHROMATICITES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_REFERENCE_BLACK_WHITE"/>
         /// </summary>
-        public static int TAG_REFERENCE_BLACK_WHITE => Clazz.GetField<int>("TAG_REFERENCE_BLACK_WHITE");
+        public static int TAG_REFERENCE_BLACK_WHITE => LocalClazz.GetField<int>("TAG_REFERENCE_BLACK_WHITE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_RESOLUTION_UNIT"/>
         /// </summary>
-        public static int TAG_RESOLUTION_UNIT => Clazz.GetField<int>("TAG_RESOLUTION_UNIT");
+        public static int TAG_RESOLUTION_UNIT => LocalClazz.GetField<int>("TAG_RESOLUTION_UNIT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_ROWS_PER_STRIP"/>
         /// </summary>
-        public static int TAG_ROWS_PER_STRIP => Clazz.GetField<int>("TAG_ROWS_PER_STRIP");
+        public static int TAG_ROWS_PER_STRIP => LocalClazz.GetField<int>("TAG_ROWS_PER_STRIP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_S_MAX_SAMPLE_VALUE"/>
         /// </summary>
-        public static int TAG_S_MAX_SAMPLE_VALUE => Clazz.GetField<int>("TAG_S_MAX_SAMPLE_VALUE");
+        public static int TAG_S_MAX_SAMPLE_VALUE => LocalClazz.GetField<int>("TAG_S_MAX_SAMPLE_VALUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_S_MIN_SAMPLE_VALUE"/>
         /// </summary>
-        public static int TAG_S_MIN_SAMPLE_VALUE => Clazz.GetField<int>("TAG_S_MIN_SAMPLE_VALUE");
+        public static int TAG_S_MIN_SAMPLE_VALUE => LocalClazz.GetField<int>("TAG_S_MIN_SAMPLE_VALUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_SAMPLE_FORMAT"/>
         /// </summary>
-        public static int TAG_SAMPLE_FORMAT => Clazz.GetField<int>("TAG_SAMPLE_FORMAT");
+        public static int TAG_SAMPLE_FORMAT => LocalClazz.GetField<int>("TAG_SAMPLE_FORMAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_SAMPLES_PER_PIXEL"/>
         /// </summary>
-        public static int TAG_SAMPLES_PER_PIXEL => Clazz.GetField<int>("TAG_SAMPLES_PER_PIXEL");
+        public static int TAG_SAMPLES_PER_PIXEL => LocalClazz.GetField<int>("TAG_SAMPLES_PER_PIXEL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_SOFTWARE"/>
         /// </summary>
-        public static int TAG_SOFTWARE => Clazz.GetField<int>("TAG_SOFTWARE");
+        public static int TAG_SOFTWARE => LocalClazz.GetField<int>("TAG_SOFTWARE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_STRIP_BYTE_COUNTS"/>
         /// </summary>
-        public static int TAG_STRIP_BYTE_COUNTS => Clazz.GetField<int>("TAG_STRIP_BYTE_COUNTS");
+        public static int TAG_STRIP_BYTE_COUNTS => LocalClazz.GetField<int>("TAG_STRIP_BYTE_COUNTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_STRIP_OFFSETS"/>
         /// </summary>
-        public static int TAG_STRIP_OFFSETS => Clazz.GetField<int>("TAG_STRIP_OFFSETS");
+        public static int TAG_STRIP_OFFSETS => LocalClazz.GetField<int>("TAG_STRIP_OFFSETS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_SUBFILE_TYPE"/>
         /// </summary>
-        public static int TAG_SUBFILE_TYPE => Clazz.GetField<int>("TAG_SUBFILE_TYPE");
+        public static int TAG_SUBFILE_TYPE => LocalClazz.GetField<int>("TAG_SUBFILE_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_T4_OPTIONS"/>
         /// </summary>
-        public static int TAG_T4_OPTIONS => Clazz.GetField<int>("TAG_T4_OPTIONS");
+        public static int TAG_T4_OPTIONS => LocalClazz.GetField<int>("TAG_T4_OPTIONS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_T6_OPTIONS"/>
         /// </summary>
-        public static int TAG_T6_OPTIONS => Clazz.GetField<int>("TAG_T6_OPTIONS");
+        public static int TAG_T6_OPTIONS => LocalClazz.GetField<int>("TAG_T6_OPTIONS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TARGET_PRINTER"/>
         /// </summary>
-        public static int TAG_TARGET_PRINTER => Clazz.GetField<int>("TAG_TARGET_PRINTER");
+        public static int TAG_TARGET_PRINTER => LocalClazz.GetField<int>("TAG_TARGET_PRINTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_THRESHHOLDING"/>
         /// </summary>
-        public static int TAG_THRESHHOLDING => Clazz.GetField<int>("TAG_THRESHHOLDING");
+        public static int TAG_THRESHHOLDING => LocalClazz.GetField<int>("TAG_THRESHHOLDING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TILE_BYTE_COUNTS"/>
         /// </summary>
-        public static int TAG_TILE_BYTE_COUNTS => Clazz.GetField<int>("TAG_TILE_BYTE_COUNTS");
+        public static int TAG_TILE_BYTE_COUNTS => LocalClazz.GetField<int>("TAG_TILE_BYTE_COUNTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TILE_LENGTH"/>
         /// </summary>
-        public static int TAG_TILE_LENGTH => Clazz.GetField<int>("TAG_TILE_LENGTH");
+        public static int TAG_TILE_LENGTH => LocalClazz.GetField<int>("TAG_TILE_LENGTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TILE_OFFSETS"/>
         /// </summary>
-        public static int TAG_TILE_OFFSETS => Clazz.GetField<int>("TAG_TILE_OFFSETS");
+        public static int TAG_TILE_OFFSETS => LocalClazz.GetField<int>("TAG_TILE_OFFSETS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TILE_WIDTH"/>
         /// </summary>
-        public static int TAG_TILE_WIDTH => Clazz.GetField<int>("TAG_TILE_WIDTH");
+        public static int TAG_TILE_WIDTH => LocalClazz.GetField<int>("TAG_TILE_WIDTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TRANSFER_FUNCTION"/>
         /// </summary>
-        public static int TAG_TRANSFER_FUNCTION => Clazz.GetField<int>("TAG_TRANSFER_FUNCTION");
+        public static int TAG_TRANSFER_FUNCTION => LocalClazz.GetField<int>("TAG_TRANSFER_FUNCTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_TRANSFER_RANGE"/>
         /// </summary>
-        public static int TAG_TRANSFER_RANGE => Clazz.GetField<int>("TAG_TRANSFER_RANGE");
+        public static int TAG_TRANSFER_RANGE => LocalClazz.GetField<int>("TAG_TRANSFER_RANGE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_WHITE_POINT"/>
         /// </summary>
-        public static int TAG_WHITE_POINT => Clazz.GetField<int>("TAG_WHITE_POINT");
+        public static int TAG_WHITE_POINT => LocalClazz.GetField<int>("TAG_WHITE_POINT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_X_POSITION"/>
         /// </summary>
-        public static int TAG_X_POSITION => Clazz.GetField<int>("TAG_X_POSITION");
+        public static int TAG_X_POSITION => LocalClazz.GetField<int>("TAG_X_POSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_X_RESOLUTION"/>
         /// </summary>
-        public static int TAG_X_RESOLUTION => Clazz.GetField<int>("TAG_X_RESOLUTION");
+        public static int TAG_X_RESOLUTION => LocalClazz.GetField<int>("TAG_X_RESOLUTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_Y_CB_CR_COEFFICIENTS"/>
         /// </summary>
-        public static int TAG_Y_CB_CR_COEFFICIENTS => Clazz.GetField<int>("TAG_Y_CB_CR_COEFFICIENTS");
+        public static int TAG_Y_CB_CR_COEFFICIENTS => LocalClazz.GetField<int>("TAG_Y_CB_CR_COEFFICIENTS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_Y_CB_CR_POSITIONING"/>
         /// </summary>
-        public static int TAG_Y_CB_CR_POSITIONING => Clazz.GetField<int>("TAG_Y_CB_CR_POSITIONING");
+        public static int TAG_Y_CB_CR_POSITIONING => LocalClazz.GetField<int>("TAG_Y_CB_CR_POSITIONING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_Y_CB_CR_SUBSAMPLING"/>
         /// </summary>
-        public static int TAG_Y_CB_CR_SUBSAMPLING => Clazz.GetField<int>("TAG_Y_CB_CR_SUBSAMPLING");
+        public static int TAG_Y_CB_CR_SUBSAMPLING => LocalClazz.GetField<int>("TAG_Y_CB_CR_SUBSAMPLING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_Y_POSITION"/>
         /// </summary>
-        public static int TAG_Y_POSITION => Clazz.GetField<int>("TAG_Y_POSITION");
+        public static int TAG_Y_POSITION => LocalClazz.GetField<int>("TAG_Y_POSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#TAG_Y_RESOLUTION"/>
         /// </summary>
-        public static int TAG_Y_RESOLUTION => Clazz.GetField<int>("TAG_Y_RESOLUTION");
+        public static int TAG_Y_RESOLUTION => LocalClazz.GetField<int>("TAG_Y_RESOLUTION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#THRESHHOLDING_NONE"/>
         /// </summary>
-        public static int THRESHHOLDING_NONE => Clazz.GetField<int>("THRESHHOLDING_NONE");
+        public static int THRESHHOLDING_NONE => LocalClazz.GetField<int>("THRESHHOLDING_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#THRESHHOLDING_ORDERED_DITHER"/>
         /// </summary>
-        public static int THRESHHOLDING_ORDERED_DITHER => Clazz.GetField<int>("THRESHHOLDING_ORDERED_DITHER");
+        public static int THRESHHOLDING_ORDERED_DITHER => LocalClazz.GetField<int>("THRESHHOLDING_ORDERED_DITHER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#THRESHHOLDING_RANDOMIZED_DITHER"/>
         /// </summary>
-        public static int THRESHHOLDING_RANDOMIZED_DITHER => Clazz.GetField<int>("THRESHHOLDING_RANDOMIZED_DITHER");
+        public static int THRESHHOLDING_RANDOMIZED_DITHER => LocalClazz.GetField<int>("THRESHHOLDING_RANDOMIZED_DITHER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#Y_CB_CR_POSITIONING_CENTERED"/>
         /// </summary>
-        public static int Y_CB_CR_POSITIONING_CENTERED => Clazz.GetField<int>("Y_CB_CR_POSITIONING_CENTERED");
+        public static int Y_CB_CR_POSITIONING_CENTERED => LocalClazz.GetField<int>("Y_CB_CR_POSITIONING_CENTERED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#Y_CB_CR_POSITIONING_COSITED"/>
         /// </summary>
-        public static int Y_CB_CR_POSITIONING_COSITED => Clazz.GetField<int>("Y_CB_CR_POSITIONING_COSITED");
+        public static int Y_CB_CR_POSITIONING_COSITED => LocalClazz.GetField<int>("Y_CB_CR_POSITIONING_COSITED");
         
         #endregion
 

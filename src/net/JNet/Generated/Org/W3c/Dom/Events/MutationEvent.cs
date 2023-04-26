@@ -40,15 +40,15 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#ADDITION"/>
         /// </summary>
-        public static short ADDITION => Clazz.GetField<short>("ADDITION");
+        public static short ADDITION => LocalClazz.GetField<short>("ADDITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#MODIFICATION"/>
         /// </summary>
-        public static short MODIFICATION => Clazz.GetField<short>("MODIFICATION");
+        public static short MODIFICATION => LocalClazz.GetField<short>("MODIFICATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#REMOVAL"/>
         /// </summary>
-        public static short REMOVAL => Clazz.GetField<short>("REMOVAL");
+        public static short REMOVAL => LocalClazz.GetField<short>("REMOVAL");
         
         #endregion
 

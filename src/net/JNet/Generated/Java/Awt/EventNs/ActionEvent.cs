@@ -73,31 +73,31 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#ACTION_FIRST"/>
         /// </summary>
-        public static int ACTION_FIRST => Clazz.GetField<int>("ACTION_FIRST");
+        public static int ACTION_FIRST => LocalClazz.GetField<int>("ACTION_FIRST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#ACTION_LAST"/>
         /// </summary>
-        public static int ACTION_LAST => Clazz.GetField<int>("ACTION_LAST");
+        public static int ACTION_LAST => LocalClazz.GetField<int>("ACTION_LAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#ACTION_PERFORMED"/>
         /// </summary>
-        public static int ACTION_PERFORMED => Clazz.GetField<int>("ACTION_PERFORMED");
+        public static int ACTION_PERFORMED => LocalClazz.GetField<int>("ACTION_PERFORMED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#ALT_MASK"/>
         /// </summary>
-        public static int ALT_MASK => Clazz.GetField<int>("ALT_MASK");
+        public static int ALT_MASK => LocalClazz.GetField<int>("ALT_MASK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#CTRL_MASK"/>
         /// </summary>
-        public static int CTRL_MASK => Clazz.GetField<int>("CTRL_MASK");
+        public static int CTRL_MASK => LocalClazz.GetField<int>("CTRL_MASK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#META_MASK"/>
         /// </summary>
-        public static int META_MASK => Clazz.GetField<int>("META_MASK");
+        public static int META_MASK => LocalClazz.GetField<int>("META_MASK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#SHIFT_MASK"/>
         /// </summary>
-        public static int SHIFT_MASK => Clazz.GetField<int>("SHIFT_MASK");
+        public static int SHIFT_MASK => LocalClazz.GetField<int>("SHIFT_MASK");
         
         #endregion
 

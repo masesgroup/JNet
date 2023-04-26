@@ -40,15 +40,15 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#CHORD"/>
         /// </summary>
-        public static int CHORD => Clazz.GetField<int>("CHORD");
+        public static int CHORD => LocalClazz.GetField<int>("CHORD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN"/>
         /// </summary>
-        public static int OPEN => Clazz.GetField<int>("OPEN");
+        public static int OPEN => LocalClazz.GetField<int>("OPEN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#PIE"/>
         /// </summary>
-        public static int PIE => Clazz.GetField<int>("PIE");
+        public static int PIE => LocalClazz.GetField<int>("PIE");
         
         #endregion
 

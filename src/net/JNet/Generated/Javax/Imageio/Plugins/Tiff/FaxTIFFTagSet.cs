@@ -40,27 +40,27 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_CORRECTED"/>
         /// </summary>
-        public static int CLEAN_FAX_DATA_ERRORS_CORRECTED => Clazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_CORRECTED");
+        public static int CLEAN_FAX_DATA_ERRORS_CORRECTED => LocalClazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_CORRECTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_UNCORRECTED"/>
         /// </summary>
-        public static int CLEAN_FAX_DATA_ERRORS_UNCORRECTED => Clazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_UNCORRECTED");
+        public static int CLEAN_FAX_DATA_ERRORS_UNCORRECTED => LocalClazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_UNCORRECTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_NO_ERRORS"/>
         /// </summary>
-        public static int CLEAN_FAX_DATA_NO_ERRORS => Clazz.GetField<int>("CLEAN_FAX_DATA_NO_ERRORS");
+        public static int CLEAN_FAX_DATA_NO_ERRORS => LocalClazz.GetField<int>("CLEAN_FAX_DATA_NO_ERRORS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_BAD_FAX_LINES"/>
         /// </summary>
-        public static int TAG_BAD_FAX_LINES => Clazz.GetField<int>("TAG_BAD_FAX_LINES");
+        public static int TAG_BAD_FAX_LINES => LocalClazz.GetField<int>("TAG_BAD_FAX_LINES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CLEAN_FAX_DATA"/>
         /// </summary>
-        public static int TAG_CLEAN_FAX_DATA => Clazz.GetField<int>("TAG_CLEAN_FAX_DATA");
+        public static int TAG_CLEAN_FAX_DATA => LocalClazz.GetField<int>("TAG_CLEAN_FAX_DATA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CONSECUTIVE_BAD_LINES"/>
         /// </summary>
-        public static int TAG_CONSECUTIVE_BAD_LINES => Clazz.GetField<int>("TAG_CONSECUTIVE_BAD_LINES");
+        public static int TAG_CONSECUTIVE_BAD_LINES => LocalClazz.GetField<int>("TAG_CONSECUTIVE_BAD_LINES");
         
         #endregion
 

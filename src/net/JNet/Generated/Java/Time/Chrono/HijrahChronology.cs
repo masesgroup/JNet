@@ -44,7 +44,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahChronology.html#INSTANCE"/>
         /// </summary>
-        public static Java.Time.Chrono.HijrahChronology INSTANCE => Clazz.GetField<Java.Time.Chrono.HijrahChronology>("INSTANCE");
+        public static Java.Time.Chrono.HijrahChronology INSTANCE => LocalClazz.GetField<Java.Time.Chrono.HijrahChronology>("INSTANCE");
         
         #endregion
 

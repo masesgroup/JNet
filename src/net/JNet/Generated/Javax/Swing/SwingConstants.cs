@@ -40,79 +40,79 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#BOTTOM"/>
         /// </summary>
-        public static int BOTTOM => Clazz.GetField<int>("BOTTOM");
+        public static int BOTTOM => LocalClazz.GetField<int>("BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#CENTER"/>
         /// </summary>
-        public static int CENTER => Clazz.GetField<int>("CENTER");
+        public static int CENTER => LocalClazz.GetField<int>("CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#EAST"/>
         /// </summary>
-        public static int EAST => Clazz.GetField<int>("EAST");
+        public static int EAST => LocalClazz.GetField<int>("EAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#HORIZONTAL"/>
         /// </summary>
-        public static int HORIZONTAL => Clazz.GetField<int>("HORIZONTAL");
+        public static int HORIZONTAL => LocalClazz.GetField<int>("HORIZONTAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#LEADING"/>
         /// </summary>
-        public static int LEADING => Clazz.GetField<int>("LEADING");
+        public static int LEADING => LocalClazz.GetField<int>("LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#LEFT"/>
         /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
+        public static int LEFT => LocalClazz.GetField<int>("LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NEXT"/>
         /// </summary>
-        public static int NEXT => Clazz.GetField<int>("NEXT");
+        public static int NEXT => LocalClazz.GetField<int>("NEXT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH"/>
         /// </summary>
-        public static int NORTH => Clazz.GetField<int>("NORTH");
+        public static int NORTH => LocalClazz.GetField<int>("NORTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH_EAST"/>
         /// </summary>
-        public static int NORTH_EAST => Clazz.GetField<int>("NORTH_EAST");
+        public static int NORTH_EAST => LocalClazz.GetField<int>("NORTH_EAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH_WEST"/>
         /// </summary>
-        public static int NORTH_WEST => Clazz.GetField<int>("NORTH_WEST");
+        public static int NORTH_WEST => LocalClazz.GetField<int>("NORTH_WEST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#PREVIOUS"/>
         /// </summary>
-        public static int PREVIOUS => Clazz.GetField<int>("PREVIOUS");
+        public static int PREVIOUS => LocalClazz.GetField<int>("PREVIOUS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT => Clazz.GetField<int>("RIGHT");
+        public static int RIGHT => LocalClazz.GetField<int>("RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH"/>
         /// </summary>
-        public static int SOUTH => Clazz.GetField<int>("SOUTH");
+        public static int SOUTH => LocalClazz.GetField<int>("SOUTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH_EAST"/>
         /// </summary>
-        public static int SOUTH_EAST => Clazz.GetField<int>("SOUTH_EAST");
+        public static int SOUTH_EAST => LocalClazz.GetField<int>("SOUTH_EAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH_WEST"/>
         /// </summary>
-        public static int SOUTH_WEST => Clazz.GetField<int>("SOUTH_WEST");
+        public static int SOUTH_WEST => LocalClazz.GetField<int>("SOUTH_WEST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#TOP"/>
         /// </summary>
-        public static int TOP => Clazz.GetField<int>("TOP");
+        public static int TOP => LocalClazz.GetField<int>("TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#TRAILING"/>
         /// </summary>
-        public static int TRAILING => Clazz.GetField<int>("TRAILING");
+        public static int TRAILING => LocalClazz.GetField<int>("TRAILING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
+        public static int VERTICAL => LocalClazz.GetField<int>("VERTICAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#WEST"/>
         /// </summary>
-        public static int WEST => Clazz.GetField<int>("WEST");
+        public static int WEST => LocalClazz.GetField<int>("WEST");
         
         #endregion
 

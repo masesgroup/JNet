@@ -104,11 +104,11 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_DELETE"/>
         /// </summary>
-        public static int OPEN_DELETE => Clazz.GetField<int>("OPEN_DELETE");
+        public static int OPEN_DELETE => LocalClazz.GetField<int>("OPEN_DELETE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ"/>
         /// </summary>
-        public static int OPEN_READ => Clazz.GetField<int>("OPEN_READ");
+        public static int OPEN_READ => LocalClazz.GetField<int>("OPEN_READ");
         
         #endregion
 

@@ -92,19 +92,19 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_INTERCHAR"/>
         /// </summary>
-        public static int PRIORITY_INTERCHAR => Clazz.GetField<int>("PRIORITY_INTERCHAR");
+        public static int PRIORITY_INTERCHAR => LocalClazz.GetField<int>("PRIORITY_INTERCHAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_KASHIDA"/>
         /// </summary>
-        public static int PRIORITY_KASHIDA => Clazz.GetField<int>("PRIORITY_KASHIDA");
+        public static int PRIORITY_KASHIDA => LocalClazz.GetField<int>("PRIORITY_KASHIDA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_NONE"/>
         /// </summary>
-        public static int PRIORITY_NONE => Clazz.GetField<int>("PRIORITY_NONE");
+        public static int PRIORITY_NONE => LocalClazz.GetField<int>("PRIORITY_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_WHITESPACE"/>
         /// </summary>
-        public static int PRIORITY_WHITESPACE => Clazz.GetField<int>("PRIORITY_WHITESPACE");
+        public static int PRIORITY_WHITESPACE => LocalClazz.GetField<int>("PRIORITY_WHITESPACE");
         
         #endregion
 

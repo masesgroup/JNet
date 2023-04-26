@@ -40,7 +40,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
-        public static int LOOP_CONTINUOUSLY => Clazz.GetField<int>("LOOP_CONTINUOUSLY");
+        public static int LOOP_CONTINUOUSLY => LocalClazz.GetField<int>("LOOP_CONTINUOUSLY");
         
         #endregion
 

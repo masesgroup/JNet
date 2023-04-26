@@ -40,7 +40,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#RCSID"/>
         /// </summary>
-        public static string RCSID => Clazz.GetField<string>("RCSID");
+        public static string RCSID => LocalClazz.GetField<string>("RCSID");
         
         #endregion
 

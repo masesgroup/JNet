@@ -56,15 +56,15 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#EPOCH"/>
         /// </summary>
-        public static Java.Time.LocalDate EPOCH => Clazz.GetField<Java.Time.LocalDate>("EPOCH");
+        public static Java.Time.LocalDate EPOCH => LocalClazz.GetField<Java.Time.LocalDate>("EPOCH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MAX"/>
         /// </summary>
-        public static Java.Time.LocalDate MAX => Clazz.GetField<Java.Time.LocalDate>("MAX");
+        public static Java.Time.LocalDate MAX => LocalClazz.GetField<Java.Time.LocalDate>("MAX");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MIN"/>
         /// </summary>
-        public static Java.Time.LocalDate MIN => Clazz.GetField<Java.Time.LocalDate>("MIN");
+        public static Java.Time.LocalDate MIN => LocalClazz.GetField<Java.Time.LocalDate>("MIN");
         
         #endregion
 

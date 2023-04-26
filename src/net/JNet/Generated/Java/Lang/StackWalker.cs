@@ -125,15 +125,15 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE => Clazz.GetField<Java.Lang.StackWalker.Option>("RETAIN_CLASS_REFERENCE");
+            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE => LocalClazz.GetField<Java.Lang.StackWalker.Option>("RETAIN_CLASS_REFERENCE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_HIDDEN_FRAMES");
+            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES => LocalClazz.GetField<Java.Lang.StackWalker.Option>("SHOW_HIDDEN_FRAMES");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES");
+            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES => LocalClazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES");
             
             #endregion
 

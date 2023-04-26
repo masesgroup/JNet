@@ -40,31 +40,31 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit DAYS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("DAYS");
+        public static Java.Util.Concurrent.TimeUnit DAYS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("DAYS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit HOURS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("HOURS");
+        public static Java.Util.Concurrent.TimeUnit HOURS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("HOURS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MICROSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MICROSECONDS");
+        public static Java.Util.Concurrent.TimeUnit MICROSECONDS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("MICROSECONDS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MILLISECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MILLISECONDS");
+        public static Java.Util.Concurrent.TimeUnit MILLISECONDS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("MILLISECONDS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MINUTES => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MINUTES");
+        public static Java.Util.Concurrent.TimeUnit MINUTES => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("MINUTES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit NANOSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("NANOSECONDS");
+        public static Java.Util.Concurrent.TimeUnit NANOSECONDS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("NANOSECONDS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit SECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS");
+        public static Java.Util.Concurrent.TimeUnit SECONDS => LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS");
         
         #endregion
 

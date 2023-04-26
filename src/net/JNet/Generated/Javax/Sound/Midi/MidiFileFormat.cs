@@ -65,7 +65,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#UNKNOWN_LENGTH"/>
         /// </summary>
-        public static int UNKNOWN_LENGTH => Clazz.GetField<int>("UNKNOWN_LENGTH");
+        public static int UNKNOWN_LENGTH => LocalClazz.GetField<int>("UNKNOWN_LENGTH");
         
         #endregion
 

@@ -57,47 +57,47 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION"/>
         /// </summary>
-        public static int BEST_COMPRESSION => Clazz.GetField<int>("BEST_COMPRESSION");
+        public static int BEST_COMPRESSION => LocalClazz.GetField<int>("BEST_COMPRESSION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_SPEED"/>
         /// </summary>
-        public static int BEST_SPEED => Clazz.GetField<int>("BEST_SPEED");
+        public static int BEST_SPEED => LocalClazz.GetField<int>("BEST_SPEED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_COMPRESSION"/>
         /// </summary>
-        public static int DEFAULT_COMPRESSION => Clazz.GetField<int>("DEFAULT_COMPRESSION");
+        public static int DEFAULT_COMPRESSION => LocalClazz.GetField<int>("DEFAULT_COMPRESSION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY"/>
         /// </summary>
-        public static int DEFAULT_STRATEGY => Clazz.GetField<int>("DEFAULT_STRATEGY");
+        public static int DEFAULT_STRATEGY => LocalClazz.GetField<int>("DEFAULT_STRATEGY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED"/>
         /// </summary>
-        public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
+        public static int DEFLATED => LocalClazz.GetField<int>("DEFLATED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FILTERED"/>
         /// </summary>
-        public static int FILTERED => Clazz.GetField<int>("FILTERED");
+        public static int FILTERED => LocalClazz.GetField<int>("FILTERED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH"/>
         /// </summary>
-        public static int FULL_FLUSH => Clazz.GetField<int>("FULL_FLUSH");
+        public static int FULL_FLUSH => LocalClazz.GetField<int>("FULL_FLUSH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#HUFFMAN_ONLY"/>
         /// </summary>
-        public static int HUFFMAN_ONLY => Clazz.GetField<int>("HUFFMAN_ONLY");
+        public static int HUFFMAN_ONLY => LocalClazz.GetField<int>("HUFFMAN_ONLY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION"/>
         /// </summary>
-        public static int NO_COMPRESSION => Clazz.GetField<int>("NO_COMPRESSION");
+        public static int NO_COMPRESSION => LocalClazz.GetField<int>("NO_COMPRESSION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_FLUSH"/>
         /// </summary>
-        public static int NO_FLUSH => Clazz.GetField<int>("NO_FLUSH");
+        public static int NO_FLUSH => LocalClazz.GetField<int>("NO_FLUSH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH"/>
         /// </summary>
-        public static int SYNC_FLUSH => Clazz.GetField<int>("SYNC_FLUSH");
+        public static int SYNC_FLUSH => LocalClazz.GetField<int>("SYNC_FLUSH");
         
         #endregion
 

@@ -48,11 +48,11 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#INCH"/>
         /// </summary>
-        public static int INCH => Clazz.GetField<int>("INCH");
+        public static int INCH => LocalClazz.GetField<int>("INCH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#MM"/>
         /// </summary>
-        public static int MM => Clazz.GetField<int>("MM");
+        public static int MM => LocalClazz.GetField<int>("MM");
         
         #endregion
 

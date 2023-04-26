@@ -48,11 +48,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_EVEN_ODD"/>
         /// </summary>
-        public static int WIND_EVEN_ODD => Clazz.GetField<int>("WIND_EVEN_ODD");
+        public static int WIND_EVEN_ODD => LocalClazz.GetField<int>("WIND_EVEN_ODD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_NON_ZERO"/>
         /// </summary>
-        public static int WIND_NON_ZERO => Clazz.GetField<int>("WIND_NON_ZERO");
+        public static int WIND_NON_ZERO => LocalClazz.GetField<int>("WIND_NON_ZERO");
         
         #endregion
 

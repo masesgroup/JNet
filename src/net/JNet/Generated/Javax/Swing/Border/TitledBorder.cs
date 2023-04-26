@@ -101,55 +101,55 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#ABOVE_BOTTOM"/>
         /// </summary>
-        public static int ABOVE_BOTTOM => Clazz.GetField<int>("ABOVE_BOTTOM");
+        public static int ABOVE_BOTTOM => LocalClazz.GetField<int>("ABOVE_BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#ABOVE_TOP"/>
         /// </summary>
-        public static int ABOVE_TOP => Clazz.GetField<int>("ABOVE_TOP");
+        public static int ABOVE_TOP => LocalClazz.GetField<int>("ABOVE_TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BELOW_BOTTOM"/>
         /// </summary>
-        public static int BELOW_BOTTOM => Clazz.GetField<int>("BELOW_BOTTOM");
+        public static int BELOW_BOTTOM => LocalClazz.GetField<int>("BELOW_BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BELOW_TOP"/>
         /// </summary>
-        public static int BELOW_TOP => Clazz.GetField<int>("BELOW_TOP");
+        public static int BELOW_TOP => LocalClazz.GetField<int>("BELOW_TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BOTTOM"/>
         /// </summary>
-        public static int BOTTOM => Clazz.GetField<int>("BOTTOM");
+        public static int BOTTOM => LocalClazz.GetField<int>("BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#CENTER"/>
         /// </summary>
-        public static int CENTER => Clazz.GetField<int>("CENTER");
+        public static int CENTER => LocalClazz.GetField<int>("CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_JUSTIFICATION"/>
         /// </summary>
-        public static int DEFAULT_JUSTIFICATION => Clazz.GetField<int>("DEFAULT_JUSTIFICATION");
+        public static int DEFAULT_JUSTIFICATION => LocalClazz.GetField<int>("DEFAULT_JUSTIFICATION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_POSITION"/>
         /// </summary>
-        public static int DEFAULT_POSITION => Clazz.GetField<int>("DEFAULT_POSITION");
+        public static int DEFAULT_POSITION => LocalClazz.GetField<int>("DEFAULT_POSITION");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#LEADING"/>
         /// </summary>
-        public static int LEADING => Clazz.GetField<int>("LEADING");
+        public static int LEADING => LocalClazz.GetField<int>("LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#LEFT"/>
         /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
+        public static int LEFT => LocalClazz.GetField<int>("LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT => Clazz.GetField<int>("RIGHT");
+        public static int RIGHT => LocalClazz.GetField<int>("RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TOP"/>
         /// </summary>
-        public static int TOP => Clazz.GetField<int>("TOP");
+        public static int TOP => LocalClazz.GetField<int>("TOP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TRAILING"/>
         /// </summary>
-        public static int TRAILING => Clazz.GetField<int>("TRAILING");
+        public static int TRAILING => LocalClazz.GetField<int>("TRAILING");
         
         #endregion
 

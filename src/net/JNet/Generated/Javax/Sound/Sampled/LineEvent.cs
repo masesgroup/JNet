@@ -95,19 +95,19 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type CLOSE => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("CLOSE");
+            public static Javax.Sound.Sampled.LineEvent.Type CLOSE => LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("CLOSE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type OPEN => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN");
+            public static Javax.Sound.Sampled.LineEvent.Type OPEN => LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type START => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("START");
+            public static Javax.Sound.Sampled.LineEvent.Type START => LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("START");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type STOP => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("STOP");
+            public static Javax.Sound.Sampled.LineEvent.Type STOP => LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("STOP");
             
             #endregion
 

@@ -71,67 +71,67 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#MAX_DATATYPE"/>
         /// </summary>
-        public static int MAX_DATATYPE => Clazz.GetField<int>("MAX_DATATYPE");
+        public static int MAX_DATATYPE => LocalClazz.GetField<int>("MAX_DATATYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#MIN_DATATYPE"/>
         /// </summary>
-        public static int MIN_DATATYPE => Clazz.GetField<int>("MIN_DATATYPE");
+        public static int MIN_DATATYPE => LocalClazz.GetField<int>("MIN_DATATYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_ASCII"/>
         /// </summary>
-        public static int TIFF_ASCII => Clazz.GetField<int>("TIFF_ASCII");
+        public static int TIFF_ASCII => LocalClazz.GetField<int>("TIFF_ASCII");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_BYTE"/>
         /// </summary>
-        public static int TIFF_BYTE => Clazz.GetField<int>("TIFF_BYTE");
+        public static int TIFF_BYTE => LocalClazz.GetField<int>("TIFF_BYTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_DOUBLE"/>
         /// </summary>
-        public static int TIFF_DOUBLE => Clazz.GetField<int>("TIFF_DOUBLE");
+        public static int TIFF_DOUBLE => LocalClazz.GetField<int>("TIFF_DOUBLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_FLOAT"/>
         /// </summary>
-        public static int TIFF_FLOAT => Clazz.GetField<int>("TIFF_FLOAT");
+        public static int TIFF_FLOAT => LocalClazz.GetField<int>("TIFF_FLOAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_IFD_POINTER"/>
         /// </summary>
-        public static int TIFF_IFD_POINTER => Clazz.GetField<int>("TIFF_IFD_POINTER");
+        public static int TIFF_IFD_POINTER => LocalClazz.GetField<int>("TIFF_IFD_POINTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_LONG"/>
         /// </summary>
-        public static int TIFF_LONG => Clazz.GetField<int>("TIFF_LONG");
+        public static int TIFF_LONG => LocalClazz.GetField<int>("TIFF_LONG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_RATIONAL"/>
         /// </summary>
-        public static int TIFF_RATIONAL => Clazz.GetField<int>("TIFF_RATIONAL");
+        public static int TIFF_RATIONAL => LocalClazz.GetField<int>("TIFF_RATIONAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SBYTE"/>
         /// </summary>
-        public static int TIFF_SBYTE => Clazz.GetField<int>("TIFF_SBYTE");
+        public static int TIFF_SBYTE => LocalClazz.GetField<int>("TIFF_SBYTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SHORT"/>
         /// </summary>
-        public static int TIFF_SHORT => Clazz.GetField<int>("TIFF_SHORT");
+        public static int TIFF_SHORT => LocalClazz.GetField<int>("TIFF_SHORT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SLONG"/>
         /// </summary>
-        public static int TIFF_SLONG => Clazz.GetField<int>("TIFF_SLONG");
+        public static int TIFF_SLONG => LocalClazz.GetField<int>("TIFF_SLONG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SRATIONAL"/>
         /// </summary>
-        public static int TIFF_SRATIONAL => Clazz.GetField<int>("TIFF_SRATIONAL");
+        public static int TIFF_SRATIONAL => LocalClazz.GetField<int>("TIFF_SRATIONAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SSHORT"/>
         /// </summary>
-        public static int TIFF_SSHORT => Clazz.GetField<int>("TIFF_SSHORT");
+        public static int TIFF_SSHORT => LocalClazz.GetField<int>("TIFF_SSHORT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_UNDEFINED"/>
         /// </summary>
-        public static int TIFF_UNDEFINED => Clazz.GetField<int>("TIFF_UNDEFINED");
+        public static int TIFF_UNDEFINED => LocalClazz.GetField<int>("TIFF_UNDEFINED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#UNKNOWN_TAG_NAME"/>
         /// </summary>
-        public static string UNKNOWN_TAG_NAME => Clazz.GetField<string>("UNKNOWN_TAG_NAME");
+        public static string UNKNOWN_TAG_NAME => LocalClazz.GetField<string>("UNKNOWN_TAG_NAME");
         
         #endregion
 

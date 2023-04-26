@@ -52,203 +52,203 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ALL_STYLES"/>
         /// </summary>
-        public static int ALL_STYLES => Clazz.GetField<int>("ALL_STYLES");
+        public static int ALL_STYLES => LocalClazz.GetField<int>("ALL_STYLES");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM"/>
         /// </summary>
-        public static int AM => Clazz.GetField<int>("AM");
+        public static int AM => LocalClazz.GetField<int>("AM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM_PM"/>
         /// </summary>
-        public static int AM_PM => Clazz.GetField<int>("AM_PM");
+        public static int AM_PM => LocalClazz.GetField<int>("AM_PM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#APRIL"/>
         /// </summary>
-        public static int APRIL => Clazz.GetField<int>("APRIL");
+        public static int APRIL => LocalClazz.GetField<int>("APRIL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AUGUST"/>
         /// </summary>
-        public static int AUGUST => Clazz.GetField<int>("AUGUST");
+        public static int AUGUST => LocalClazz.GetField<int>("AUGUST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DATE"/>
         /// </summary>
-        public static int DATE => Clazz.GetField<int>("DATE");
+        public static int DATE => LocalClazz.GetField<int>("DATE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_MONTH"/>
         /// </summary>
-        public static int DAY_OF_MONTH => Clazz.GetField<int>("DAY_OF_MONTH");
+        public static int DAY_OF_MONTH => LocalClazz.GetField<int>("DAY_OF_MONTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK"/>
         /// </summary>
-        public static int DAY_OF_WEEK => Clazz.GetField<int>("DAY_OF_WEEK");
+        public static int DAY_OF_WEEK => LocalClazz.GetField<int>("DAY_OF_WEEK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH"/>
         /// </summary>
-        public static int DAY_OF_WEEK_IN_MONTH => Clazz.GetField<int>("DAY_OF_WEEK_IN_MONTH");
+        public static int DAY_OF_WEEK_IN_MONTH => LocalClazz.GetField<int>("DAY_OF_WEEK_IN_MONTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_YEAR"/>
         /// </summary>
-        public static int DAY_OF_YEAR => Clazz.GetField<int>("DAY_OF_YEAR");
+        public static int DAY_OF_YEAR => LocalClazz.GetField<int>("DAY_OF_YEAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DECEMBER"/>
         /// </summary>
-        public static int DECEMBER => Clazz.GetField<int>("DECEMBER");
+        public static int DECEMBER => LocalClazz.GetField<int>("DECEMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DST_OFFSET"/>
         /// </summary>
-        public static int DST_OFFSET => Clazz.GetField<int>("DST_OFFSET");
+        public static int DST_OFFSET => LocalClazz.GetField<int>("DST_OFFSET");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ERA"/>
         /// </summary>
-        public static int ERA => Clazz.GetField<int>("ERA");
+        public static int ERA => LocalClazz.GetField<int>("ERA");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FEBRUARY"/>
         /// </summary>
-        public static int FEBRUARY => Clazz.GetField<int>("FEBRUARY");
+        public static int FEBRUARY => LocalClazz.GetField<int>("FEBRUARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FIELD_COUNT"/>
         /// </summary>
-        public static int FIELD_COUNT => Clazz.GetField<int>("FIELD_COUNT");
+        public static int FIELD_COUNT => LocalClazz.GetField<int>("FIELD_COUNT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FRIDAY"/>
         /// </summary>
-        public static int FRIDAY => Clazz.GetField<int>("FRIDAY");
+        public static int FRIDAY => LocalClazz.GetField<int>("FRIDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR"/>
         /// </summary>
-        public static int HOUR => Clazz.GetField<int>("HOUR");
+        public static int HOUR => LocalClazz.GetField<int>("HOUR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR_OF_DAY"/>
         /// </summary>
-        public static int HOUR_OF_DAY => Clazz.GetField<int>("HOUR_OF_DAY");
+        public static int HOUR_OF_DAY => LocalClazz.GetField<int>("HOUR_OF_DAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JANUARY"/>
         /// </summary>
-        public static int JANUARY => Clazz.GetField<int>("JANUARY");
+        public static int JANUARY => LocalClazz.GetField<int>("JANUARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JULY"/>
         /// </summary>
-        public static int JULY => Clazz.GetField<int>("JULY");
+        public static int JULY => LocalClazz.GetField<int>("JULY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JUNE"/>
         /// </summary>
-        public static int JUNE => Clazz.GetField<int>("JUNE");
+        public static int JUNE => LocalClazz.GetField<int>("JUNE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG"/>
         /// </summary>
-        public static int LONG => Clazz.GetField<int>("LONG");
+        public static int LONG => LocalClazz.GetField<int>("LONG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_FORMAT"/>
         /// </summary>
-        public static int LONG_FORMAT => Clazz.GetField<int>("LONG_FORMAT");
+        public static int LONG_FORMAT => LocalClazz.GetField<int>("LONG_FORMAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_STANDALONE"/>
         /// </summary>
-        public static int LONG_STANDALONE => Clazz.GetField<int>("LONG_STANDALONE");
+        public static int LONG_STANDALONE => LocalClazz.GetField<int>("LONG_STANDALONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MARCH"/>
         /// </summary>
-        public static int MARCH => Clazz.GetField<int>("MARCH");
+        public static int MARCH => LocalClazz.GetField<int>("MARCH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MAY"/>
         /// </summary>
-        public static int MAY => Clazz.GetField<int>("MAY");
+        public static int MAY => LocalClazz.GetField<int>("MAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MILLISECOND"/>
         /// </summary>
-        public static int MILLISECOND => Clazz.GetField<int>("MILLISECOND");
+        public static int MILLISECOND => LocalClazz.GetField<int>("MILLISECOND");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MINUTE"/>
         /// </summary>
-        public static int MINUTE => Clazz.GetField<int>("MINUTE");
+        public static int MINUTE => LocalClazz.GetField<int>("MINUTE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONDAY"/>
         /// </summary>
-        public static int MONDAY => Clazz.GetField<int>("MONDAY");
+        public static int MONDAY => LocalClazz.GetField<int>("MONDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONTH"/>
         /// </summary>
-        public static int MONTH => Clazz.GetField<int>("MONTH");
+        public static int MONTH => LocalClazz.GetField<int>("MONTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_FORMAT"/>
         /// </summary>
-        public static int NARROW_FORMAT => Clazz.GetField<int>("NARROW_FORMAT");
+        public static int NARROW_FORMAT => LocalClazz.GetField<int>("NARROW_FORMAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_STANDALONE"/>
         /// </summary>
-        public static int NARROW_STANDALONE => Clazz.GetField<int>("NARROW_STANDALONE");
+        public static int NARROW_STANDALONE => LocalClazz.GetField<int>("NARROW_STANDALONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NOVEMBER"/>
         /// </summary>
-        public static int NOVEMBER => Clazz.GetField<int>("NOVEMBER");
+        public static int NOVEMBER => LocalClazz.GetField<int>("NOVEMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#OCTOBER"/>
         /// </summary>
-        public static int OCTOBER => Clazz.GetField<int>("OCTOBER");
+        public static int OCTOBER => LocalClazz.GetField<int>("OCTOBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#PM"/>
         /// </summary>
-        public static int PM => Clazz.GetField<int>("PM");
+        public static int PM => LocalClazz.GetField<int>("PM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SATURDAY"/>
         /// </summary>
-        public static int SATURDAY => Clazz.GetField<int>("SATURDAY");
+        public static int SATURDAY => LocalClazz.GetField<int>("SATURDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SECOND"/>
         /// </summary>
-        public static int SECOND => Clazz.GetField<int>("SECOND");
+        public static int SECOND => LocalClazz.GetField<int>("SECOND");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SEPTEMBER"/>
         /// </summary>
-        public static int SEPTEMBER => Clazz.GetField<int>("SEPTEMBER");
+        public static int SEPTEMBER => LocalClazz.GetField<int>("SEPTEMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT"/>
         /// </summary>
-        public static int SHORT => Clazz.GetField<int>("SHORT");
+        public static int SHORT => LocalClazz.GetField<int>("SHORT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_FORMAT"/>
         /// </summary>
-        public static int SHORT_FORMAT => Clazz.GetField<int>("SHORT_FORMAT");
+        public static int SHORT_FORMAT => LocalClazz.GetField<int>("SHORT_FORMAT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_STANDALONE"/>
         /// </summary>
-        public static int SHORT_STANDALONE => Clazz.GetField<int>("SHORT_STANDALONE");
+        public static int SHORT_STANDALONE => LocalClazz.GetField<int>("SHORT_STANDALONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SUNDAY"/>
         /// </summary>
-        public static int SUNDAY => Clazz.GetField<int>("SUNDAY");
+        public static int SUNDAY => LocalClazz.GetField<int>("SUNDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#THURSDAY"/>
         /// </summary>
-        public static int THURSDAY => Clazz.GetField<int>("THURSDAY");
+        public static int THURSDAY => LocalClazz.GetField<int>("THURSDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#TUESDAY"/>
         /// </summary>
-        public static int TUESDAY => Clazz.GetField<int>("TUESDAY");
+        public static int TUESDAY => LocalClazz.GetField<int>("TUESDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#UNDECIMBER"/>
         /// </summary>
-        public static int UNDECIMBER => Clazz.GetField<int>("UNDECIMBER");
+        public static int UNDECIMBER => LocalClazz.GetField<int>("UNDECIMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEDNESDAY"/>
         /// </summary>
-        public static int WEDNESDAY => Clazz.GetField<int>("WEDNESDAY");
+        public static int WEDNESDAY => LocalClazz.GetField<int>("WEDNESDAY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_MONTH"/>
         /// </summary>
-        public static int WEEK_OF_MONTH => Clazz.GetField<int>("WEEK_OF_MONTH");
+        public static int WEEK_OF_MONTH => LocalClazz.GetField<int>("WEEK_OF_MONTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_YEAR"/>
         /// </summary>
-        public static int WEEK_OF_YEAR => Clazz.GetField<int>("WEEK_OF_YEAR");
+        public static int WEEK_OF_YEAR => LocalClazz.GetField<int>("WEEK_OF_YEAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#YEAR"/>
         /// </summary>
-        public static int YEAR => Clazz.GetField<int>("YEAR");
+        public static int YEAR => LocalClazz.GetField<int>("YEAR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ZONE_OFFSET"/>
         /// </summary>
-        public static int ZONE_OFFSET => Clazz.GetField<int>("ZONE_OFFSET");
+        public static int ZONE_OFFSET => LocalClazz.GetField<int>("ZONE_OFFSET");
         
         #endregion
 

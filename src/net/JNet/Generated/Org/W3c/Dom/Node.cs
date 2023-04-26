@@ -40,75 +40,75 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ATTRIBUTE_NODE"/>
         /// </summary>
-        public static short ATTRIBUTE_NODE => Clazz.GetField<short>("ATTRIBUTE_NODE");
+        public static short ATTRIBUTE_NODE => LocalClazz.GetField<short>("ATTRIBUTE_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#CDATA_SECTION_NODE"/>
         /// </summary>
-        public static short CDATA_SECTION_NODE => Clazz.GetField<short>("CDATA_SECTION_NODE");
+        public static short CDATA_SECTION_NODE => LocalClazz.GetField<short>("CDATA_SECTION_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#COMMENT_NODE"/>
         /// </summary>
-        public static short COMMENT_NODE => Clazz.GetField<short>("COMMENT_NODE");
+        public static short COMMENT_NODE => LocalClazz.GetField<short>("COMMENT_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_FRAGMENT_NODE"/>
         /// </summary>
-        public static short DOCUMENT_FRAGMENT_NODE => Clazz.GetField<short>("DOCUMENT_FRAGMENT_NODE");
+        public static short DOCUMENT_FRAGMENT_NODE => LocalClazz.GetField<short>("DOCUMENT_FRAGMENT_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_NODE"/>
         /// </summary>
-        public static short DOCUMENT_NODE => Clazz.GetField<short>("DOCUMENT_NODE");
+        public static short DOCUMENT_NODE => LocalClazz.GetField<short>("DOCUMENT_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINED_BY"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_CONTAINED_BY => Clazz.GetField<short>("DOCUMENT_POSITION_CONTAINED_BY");
+        public static short DOCUMENT_POSITION_CONTAINED_BY => LocalClazz.GetField<short>("DOCUMENT_POSITION_CONTAINED_BY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINS"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_CONTAINS => Clazz.GetField<short>("DOCUMENT_POSITION_CONTAINS");
+        public static short DOCUMENT_POSITION_CONTAINS => LocalClazz.GetField<short>("DOCUMENT_POSITION_CONTAINS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_DISCONNECTED"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_DISCONNECTED => Clazz.GetField<short>("DOCUMENT_POSITION_DISCONNECTED");
+        public static short DOCUMENT_POSITION_DISCONNECTED => LocalClazz.GetField<short>("DOCUMENT_POSITION_DISCONNECTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_FOLLOWING"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_FOLLOWING => Clazz.GetField<short>("DOCUMENT_POSITION_FOLLOWING");
+        public static short DOCUMENT_POSITION_FOLLOWING => LocalClazz.GetField<short>("DOCUMENT_POSITION_FOLLOWING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC => Clazz.GetField<short>("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC");
+        public static short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC => LocalClazz.GetField<short>("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_PRECEDING"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_PRECEDING => Clazz.GetField<short>("DOCUMENT_POSITION_PRECEDING");
+        public static short DOCUMENT_POSITION_PRECEDING => LocalClazz.GetField<short>("DOCUMENT_POSITION_PRECEDING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_TYPE_NODE"/>
         /// </summary>
-        public static short DOCUMENT_TYPE_NODE => Clazz.GetField<short>("DOCUMENT_TYPE_NODE");
+        public static short DOCUMENT_TYPE_NODE => LocalClazz.GetField<short>("DOCUMENT_TYPE_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ELEMENT_NODE"/>
         /// </summary>
-        public static short ELEMENT_NODE => Clazz.GetField<short>("ELEMENT_NODE");
+        public static short ELEMENT_NODE => LocalClazz.GetField<short>("ELEMENT_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_NODE"/>
         /// </summary>
-        public static short ENTITY_NODE => Clazz.GetField<short>("ENTITY_NODE");
+        public static short ENTITY_NODE => LocalClazz.GetField<short>("ENTITY_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_REFERENCE_NODE"/>
         /// </summary>
-        public static short ENTITY_REFERENCE_NODE => Clazz.GetField<short>("ENTITY_REFERENCE_NODE");
+        public static short ENTITY_REFERENCE_NODE => LocalClazz.GetField<short>("ENTITY_REFERENCE_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#NOTATION_NODE"/>
         /// </summary>
-        public static short NOTATION_NODE => Clazz.GetField<short>("NOTATION_NODE");
+        public static short NOTATION_NODE => LocalClazz.GetField<short>("NOTATION_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#PROCESSING_INSTRUCTION_NODE"/>
         /// </summary>
-        public static short PROCESSING_INSTRUCTION_NODE => Clazz.GetField<short>("PROCESSING_INSTRUCTION_NODE");
+        public static short PROCESSING_INSTRUCTION_NODE => LocalClazz.GetField<short>("PROCESSING_INSTRUCTION_NODE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#TEXT_NODE"/>
         /// </summary>
-        public static short TEXT_NODE => Clazz.GetField<short>("TEXT_NODE");
+        public static short TEXT_NODE => LocalClazz.GetField<short>("TEXT_NODE");
         
         #endregion
 

@@ -52,23 +52,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT"/>
         /// </summary>
-        public static float BOTTOM_ALIGNMENT => Clazz.GetField<float>("BOTTOM_ALIGNMENT");
+        public static float BOTTOM_ALIGNMENT => LocalClazz.GetField<float>("BOTTOM_ALIGNMENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#CENTER_ALIGNMENT"/>
         /// </summary>
-        public static float CENTER_ALIGNMENT => Clazz.GetField<float>("CENTER_ALIGNMENT");
+        public static float CENTER_ALIGNMENT => LocalClazz.GetField<float>("CENTER_ALIGNMENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#LEFT_ALIGNMENT"/>
         /// </summary>
-        public static float LEFT_ALIGNMENT => Clazz.GetField<float>("LEFT_ALIGNMENT");
+        public static float LEFT_ALIGNMENT => LocalClazz.GetField<float>("LEFT_ALIGNMENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#RIGHT_ALIGNMENT"/>
         /// </summary>
-        public static float RIGHT_ALIGNMENT => Clazz.GetField<float>("RIGHT_ALIGNMENT");
+        public static float RIGHT_ALIGNMENT => LocalClazz.GetField<float>("RIGHT_ALIGNMENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT"/>
         /// </summary>
-        public static float TOP_ALIGNMENT => Clazz.GetField<float>("TOP_ALIGNMENT");
+        public static float TOP_ALIGNMENT => LocalClazz.GetField<float>("TOP_ALIGNMENT");
         
         #endregion
 
@@ -1328,19 +1328,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CENTER_OFFSET");
+            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET => LocalClazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CENTER_OFFSET");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_ASCENT"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_ASCENT");
+            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT => LocalClazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_ASCENT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_DESCENT"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_DESCENT");
+            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT => LocalClazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_DESCENT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior OTHER => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("OTHER");
+            public static Java.Awt.Component.BaselineResizeBehavior OTHER => LocalClazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("OTHER");
             
             #endregion
 

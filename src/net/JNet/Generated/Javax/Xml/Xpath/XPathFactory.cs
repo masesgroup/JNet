@@ -40,11 +40,11 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI"/>
         /// </summary>
-        public static string DEFAULT_OBJECT_MODEL_URI => Clazz.GetField<string>("DEFAULT_OBJECT_MODEL_URI");
+        public static string DEFAULT_OBJECT_MODEL_URI => LocalClazz.GetField<string>("DEFAULT_OBJECT_MODEL_URI");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_PROPERTY_NAME"/>
         /// </summary>
-        public static string DEFAULT_PROPERTY_NAME => Clazz.GetField<string>("DEFAULT_PROPERTY_NAME");
+        public static string DEFAULT_PROPERTY_NAME => LocalClazz.GetField<string>("DEFAULT_PROPERTY_NAME");
         
         #endregion
 

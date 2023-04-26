@@ -40,19 +40,19 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_CUSTOM"/>
         /// </summary>
-        public static short CSS_CUSTOM => Clazz.GetField<short>("CSS_CUSTOM");
+        public static short CSS_CUSTOM => LocalClazz.GetField<short>("CSS_CUSTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_INHERIT"/>
         /// </summary>
-        public static short CSS_INHERIT => Clazz.GetField<short>("CSS_INHERIT");
+        public static short CSS_INHERIT => LocalClazz.GetField<short>("CSS_INHERIT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_PRIMITIVE_VALUE"/>
         /// </summary>
-        public static short CSS_PRIMITIVE_VALUE => Clazz.GetField<short>("CSS_PRIMITIVE_VALUE");
+        public static short CSS_PRIMITIVE_VALUE => LocalClazz.GetField<short>("CSS_PRIMITIVE_VALUE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_VALUE_LIST"/>
         /// </summary>
-        public static short CSS_VALUE_LIST => Clazz.GetField<short>("CSS_VALUE_LIST");
+        public static short CSS_VALUE_LIST => LocalClazz.GetField<short>("CSS_VALUE_LIST");
         
         #endregion
 

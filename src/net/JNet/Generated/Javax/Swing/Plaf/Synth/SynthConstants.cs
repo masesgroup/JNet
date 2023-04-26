@@ -40,31 +40,31 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DEFAULT"/>
         /// </summary>
-        public static int DEFAULT => Clazz.GetField<int>("DEFAULT");
+        public static int DEFAULT => LocalClazz.GetField<int>("DEFAULT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DISABLED"/>
         /// </summary>
-        public static int DISABLED => Clazz.GetField<int>("DISABLED");
+        public static int DISABLED => LocalClazz.GetField<int>("DISABLED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#ENABLED"/>
         /// </summary>
-        public static int ENABLED => Clazz.GetField<int>("ENABLED");
+        public static int ENABLED => LocalClazz.GetField<int>("ENABLED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#FOCUSED"/>
         /// </summary>
-        public static int FOCUSED => Clazz.GetField<int>("FOCUSED");
+        public static int FOCUSED => LocalClazz.GetField<int>("FOCUSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#MOUSE_OVER"/>
         /// </summary>
-        public static int MOUSE_OVER => Clazz.GetField<int>("MOUSE_OVER");
+        public static int MOUSE_OVER => LocalClazz.GetField<int>("MOUSE_OVER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#PRESSED"/>
         /// </summary>
-        public static int PRESSED => Clazz.GetField<int>("PRESSED");
+        public static int PRESSED => LocalClazz.GetField<int>("PRESSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED => Clazz.GetField<int>("SELECTED");
+        public static int SELECTED => LocalClazz.GetField<int>("SELECTED");
         
         #endregion
 

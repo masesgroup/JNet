@@ -60,19 +60,19 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>
-        public static int TT_EOF => Clazz.GetField<int>("TT_EOF");
+        public static int TT_EOF => LocalClazz.GetField<int>("TT_EOF");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOL"/>
         /// </summary>
-        public static int TT_EOL => Clazz.GetField<int>("TT_EOL");
+        public static int TT_EOL => LocalClazz.GetField<int>("TT_EOL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_NUMBER"/>
         /// </summary>
-        public static int TT_NUMBER => Clazz.GetField<int>("TT_NUMBER");
+        public static int TT_NUMBER => LocalClazz.GetField<int>("TT_NUMBER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
-        public static int TT_WORD => Clazz.GetField<int>("TT_WORD");
+        public static int TT_WORD => LocalClazz.GetField<int>("TT_WORD");
         
         #endregion
 

@@ -176,7 +176,7 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html#ARGUMENT"/>
             /// </summary>
-            public static Java.Text.MessageFormat.Field ARGUMENT => Clazz.GetField<Java.Text.MessageFormat.Field>("ARGUMENT");
+            public static Java.Text.MessageFormat.Field ARGUMENT => LocalClazz.GetField<Java.Text.MessageFormat.Field>("ARGUMENT");
             
             #endregion
 

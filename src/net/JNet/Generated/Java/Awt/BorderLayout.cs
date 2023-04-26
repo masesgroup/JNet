@@ -57,55 +57,55 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#AFTER_LAST_LINE"/>
         /// </summary>
-        public static string AFTER_LAST_LINE => Clazz.GetField<string>("AFTER_LAST_LINE");
+        public static string AFTER_LAST_LINE => LocalClazz.GetField<string>("AFTER_LAST_LINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#AFTER_LINE_ENDS"/>
         /// </summary>
-        public static string AFTER_LINE_ENDS => Clazz.GetField<string>("AFTER_LINE_ENDS");
+        public static string AFTER_LINE_ENDS => LocalClazz.GetField<string>("AFTER_LINE_ENDS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_FIRST_LINE"/>
         /// </summary>
-        public static string BEFORE_FIRST_LINE => Clazz.GetField<string>("BEFORE_FIRST_LINE");
+        public static string BEFORE_FIRST_LINE => LocalClazz.GetField<string>("BEFORE_FIRST_LINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_LINE_BEGINS"/>
         /// </summary>
-        public static string BEFORE_LINE_BEGINS => Clazz.GetField<string>("BEFORE_LINE_BEGINS");
+        public static string BEFORE_LINE_BEGINS => LocalClazz.GetField<string>("BEFORE_LINE_BEGINS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#CENTER"/>
         /// </summary>
-        public static string CENTER => Clazz.GetField<string>("CENTER");
+        public static string CENTER => LocalClazz.GetField<string>("CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#EAST"/>
         /// </summary>
-        public static string EAST => Clazz.GetField<string>("EAST");
+        public static string EAST => LocalClazz.GetField<string>("EAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#LINE_END"/>
         /// </summary>
-        public static string LINE_END => Clazz.GetField<string>("LINE_END");
+        public static string LINE_END => LocalClazz.GetField<string>("LINE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#LINE_START"/>
         /// </summary>
-        public static string LINE_START => Clazz.GetField<string>("LINE_START");
+        public static string LINE_START => LocalClazz.GetField<string>("LINE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#NORTH"/>
         /// </summary>
-        public static string NORTH => Clazz.GetField<string>("NORTH");
+        public static string NORTH => LocalClazz.GetField<string>("NORTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_END"/>
         /// </summary>
-        public static string PAGE_END => Clazz.GetField<string>("PAGE_END");
+        public static string PAGE_END => LocalClazz.GetField<string>("PAGE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_START"/>
         /// </summary>
-        public static string PAGE_START => Clazz.GetField<string>("PAGE_START");
+        public static string PAGE_START => LocalClazz.GetField<string>("PAGE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#SOUTH"/>
         /// </summary>
-        public static string SOUTH => Clazz.GetField<string>("SOUTH");
+        public static string SOUTH => LocalClazz.GetField<string>("SOUTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#WEST"/>
         /// </summary>
-        public static string WEST => Clazz.GetField<string>("WEST");
+        public static string WEST => LocalClazz.GetField<string>("WEST");
         
         #endregion
 

@@ -40,19 +40,19 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#OP_ACCEPT"/>
         /// </summary>
-        public static int OP_ACCEPT => Clazz.GetField<int>("OP_ACCEPT");
+        public static int OP_ACCEPT => LocalClazz.GetField<int>("OP_ACCEPT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#OP_CONNECT"/>
         /// </summary>
-        public static int OP_CONNECT => Clazz.GetField<int>("OP_CONNECT");
+        public static int OP_CONNECT => LocalClazz.GetField<int>("OP_CONNECT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#OP_READ"/>
         /// </summary>
-        public static int OP_READ => Clazz.GetField<int>("OP_READ");
+        public static int OP_READ => LocalClazz.GetField<int>("OP_READ");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#OP_WRITE"/>
         /// </summary>
-        public static int OP_WRITE => Clazz.GetField<int>("OP_WRITE");
+        public static int OP_WRITE => LocalClazz.GetField<int>("OP_WRITE");
         
         #endregion
 

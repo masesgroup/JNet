@@ -44,39 +44,39 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#COLOR_CHOOSER_DIALOG"/>
         /// </summary>
-        public static int COLOR_CHOOSER_DIALOG => Clazz.GetField<int>("COLOR_CHOOSER_DIALOG");
+        public static int COLOR_CHOOSER_DIALOG => LocalClazz.GetField<int>("COLOR_CHOOSER_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#ERROR_DIALOG"/>
         /// </summary>
-        public static int ERROR_DIALOG => Clazz.GetField<int>("ERROR_DIALOG");
+        public static int ERROR_DIALOG => LocalClazz.GetField<int>("ERROR_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FILE_CHOOSER_DIALOG"/>
         /// </summary>
-        public static int FILE_CHOOSER_DIALOG => Clazz.GetField<int>("FILE_CHOOSER_DIALOG");
+        public static int FILE_CHOOSER_DIALOG => LocalClazz.GetField<int>("FILE_CHOOSER_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FRAME"/>
         /// </summary>
-        public static int FRAME => Clazz.GetField<int>("FRAME");
+        public static int FRAME => LocalClazz.GetField<int>("FRAME");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#INFORMATION_DIALOG"/>
         /// </summary>
-        public static int INFORMATION_DIALOG => Clazz.GetField<int>("INFORMATION_DIALOG");
+        public static int INFORMATION_DIALOG => LocalClazz.GetField<int>("INFORMATION_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#NONE"/>
         /// </summary>
-        public static int NONE => Clazz.GetField<int>("NONE");
+        public static int NONE => LocalClazz.GetField<int>("NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#PLAIN_DIALOG"/>
         /// </summary>
-        public static int PLAIN_DIALOG => Clazz.GetField<int>("PLAIN_DIALOG");
+        public static int PLAIN_DIALOG => LocalClazz.GetField<int>("PLAIN_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#QUESTION_DIALOG"/>
         /// </summary>
-        public static int QUESTION_DIALOG => Clazz.GetField<int>("QUESTION_DIALOG");
+        public static int QUESTION_DIALOG => LocalClazz.GetField<int>("QUESTION_DIALOG");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#WARNING_DIALOG"/>
         /// </summary>
-        public static int WARNING_DIALOG => Clazz.GetField<int>("WARNING_DIALOG");
+        public static int WARNING_DIALOG => LocalClazz.GetField<int>("WARNING_DIALOG");
         
         #endregion
 

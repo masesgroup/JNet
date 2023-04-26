@@ -84,19 +84,19 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFC"/>
             /// </summary>
-            public static Java.Text.Normalizer.Form NFC => Clazz.GetField<Java.Text.Normalizer.Form>("NFC");
+            public static Java.Text.Normalizer.Form NFC => LocalClazz.GetField<Java.Text.Normalizer.Form>("NFC");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFD"/>
             /// </summary>
-            public static Java.Text.Normalizer.Form NFD => Clazz.GetField<Java.Text.Normalizer.Form>("NFD");
+            public static Java.Text.Normalizer.Form NFD => LocalClazz.GetField<Java.Text.Normalizer.Form>("NFD");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKC"/>
             /// </summary>
-            public static Java.Text.Normalizer.Form NFKC => Clazz.GetField<Java.Text.Normalizer.Form>("NFKC");
+            public static Java.Text.Normalizer.Form NFKC => LocalClazz.GetField<Java.Text.Normalizer.Form>("NFKC");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKD"/>
             /// </summary>
-            public static Java.Text.Normalizer.Form NFKD => Clazz.GetField<Java.Text.Normalizer.Form>("NFKD");
+            public static Java.Text.Normalizer.Form NFKD => LocalClazz.GetField<Java.Text.Normalizer.Form>("NFKD");
             
             #endregion
 

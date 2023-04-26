@@ -44,15 +44,15 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_INCOMPATIBLE"/>
         /// </summary>
-        public static int IMAGE_INCOMPATIBLE => Clazz.GetField<int>("IMAGE_INCOMPATIBLE");
+        public static int IMAGE_INCOMPATIBLE => LocalClazz.GetField<int>("IMAGE_INCOMPATIBLE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_OK"/>
         /// </summary>
-        public static int IMAGE_OK => Clazz.GetField<int>("IMAGE_OK");
+        public static int IMAGE_OK => LocalClazz.GetField<int>("IMAGE_OK");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_RESTORED"/>
         /// </summary>
-        public static int IMAGE_RESTORED => Clazz.GetField<int>("IMAGE_RESTORED");
+        public static int IMAGE_RESTORED => LocalClazz.GetField<int>("IMAGE_RESTORED");
         
         #endregion
 

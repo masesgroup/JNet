@@ -40,35 +40,35 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#CEILING"/>
         /// </summary>
-        public static Java.Math.RoundingMode CEILING => Clazz.GetField<Java.Math.RoundingMode>("CEILING");
+        public static Java.Math.RoundingMode CEILING => LocalClazz.GetField<Java.Math.RoundingMode>("CEILING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#DOWN"/>
         /// </summary>
-        public static Java.Math.RoundingMode DOWN => Clazz.GetField<Java.Math.RoundingMode>("DOWN");
+        public static Java.Math.RoundingMode DOWN => LocalClazz.GetField<Java.Math.RoundingMode>("DOWN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#FLOOR"/>
         /// </summary>
-        public static Java.Math.RoundingMode FLOOR => Clazz.GetField<Java.Math.RoundingMode>("FLOOR");
+        public static Java.Math.RoundingMode FLOOR => LocalClazz.GetField<Java.Math.RoundingMode>("FLOOR");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_DOWN"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_DOWN => Clazz.GetField<Java.Math.RoundingMode>("HALF_DOWN");
+        public static Java.Math.RoundingMode HALF_DOWN => LocalClazz.GetField<Java.Math.RoundingMode>("HALF_DOWN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_EVEN"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_EVEN => Clazz.GetField<Java.Math.RoundingMode>("HALF_EVEN");
+        public static Java.Math.RoundingMode HALF_EVEN => LocalClazz.GetField<Java.Math.RoundingMode>("HALF_EVEN");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_UP"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_UP => Clazz.GetField<Java.Math.RoundingMode>("HALF_UP");
+        public static Java.Math.RoundingMode HALF_UP => LocalClazz.GetField<Java.Math.RoundingMode>("HALF_UP");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#UNNECESSARY"/>
         /// </summary>
-        public static Java.Math.RoundingMode UNNECESSARY => Clazz.GetField<Java.Math.RoundingMode>("UNNECESSARY");
+        public static Java.Math.RoundingMode UNNECESSARY => LocalClazz.GetField<Java.Math.RoundingMode>("UNNECESSARY");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#UP"/>
         /// </summary>
-        public static Java.Math.RoundingMode UP => Clazz.GetField<Java.Math.RoundingMode>("UP");
+        public static Java.Math.RoundingMode UP => LocalClazz.GetField<Java.Math.RoundingMode>("UP");
         
         #endregion
 

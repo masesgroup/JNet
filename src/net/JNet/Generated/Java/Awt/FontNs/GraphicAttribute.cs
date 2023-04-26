@@ -40,23 +40,23 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#BOTTOM_ALIGNMENT"/>
         /// </summary>
-        public static int BOTTOM_ALIGNMENT => Clazz.GetField<int>("BOTTOM_ALIGNMENT");
+        public static int BOTTOM_ALIGNMENT => LocalClazz.GetField<int>("BOTTOM_ALIGNMENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#CENTER_BASELINE"/>
         /// </summary>
-        public static int CENTER_BASELINE => Clazz.GetField<int>("CENTER_BASELINE");
+        public static int CENTER_BASELINE => LocalClazz.GetField<int>("CENTER_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#HANGING_BASELINE"/>
         /// </summary>
-        public static int HANGING_BASELINE => Clazz.GetField<int>("HANGING_BASELINE");
+        public static int HANGING_BASELINE => LocalClazz.GetField<int>("HANGING_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#ROMAN_BASELINE"/>
         /// </summary>
-        public static int ROMAN_BASELINE => Clazz.GetField<int>("ROMAN_BASELINE");
+        public static int ROMAN_BASELINE => LocalClazz.GetField<int>("ROMAN_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#TOP_ALIGNMENT"/>
         /// </summary>
-        public static int TOP_ALIGNMENT => Clazz.GetField<int>("TOP_ALIGNMENT");
+        public static int TOP_ALIGNMENT => LocalClazz.GetField<int>("TOP_ALIGNMENT");
         
         #endregion
 

@@ -110,131 +110,131 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE"/>
         /// </summary>
-        public static int ABOVE_BASELINE => Clazz.GetField<int>("ABOVE_BASELINE");
+        public static int ABOVE_BASELINE => LocalClazz.GetField<int>("ABOVE_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE_LEADING"/>
         /// </summary>
-        public static int ABOVE_BASELINE_LEADING => Clazz.GetField<int>("ABOVE_BASELINE_LEADING");
+        public static int ABOVE_BASELINE_LEADING => LocalClazz.GetField<int>("ABOVE_BASELINE_LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE_TRAILING"/>
         /// </summary>
-        public static int ABOVE_BASELINE_TRAILING => Clazz.GetField<int>("ABOVE_BASELINE_TRAILING");
+        public static int ABOVE_BASELINE_TRAILING => LocalClazz.GetField<int>("ABOVE_BASELINE_TRAILING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE"/>
         /// </summary>
-        public static int BASELINE => Clazz.GetField<int>("BASELINE");
+        public static int BASELINE => LocalClazz.GetField<int>("BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE_LEADING"/>
         /// </summary>
-        public static int BASELINE_LEADING => Clazz.GetField<int>("BASELINE_LEADING");
+        public static int BASELINE_LEADING => LocalClazz.GetField<int>("BASELINE_LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE_TRAILING"/>
         /// </summary>
-        public static int BASELINE_TRAILING => Clazz.GetField<int>("BASELINE_TRAILING");
+        public static int BASELINE_TRAILING => LocalClazz.GetField<int>("BASELINE_TRAILING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE"/>
         /// </summary>
-        public static int BELOW_BASELINE => Clazz.GetField<int>("BELOW_BASELINE");
+        public static int BELOW_BASELINE => LocalClazz.GetField<int>("BELOW_BASELINE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE_LEADING"/>
         /// </summary>
-        public static int BELOW_BASELINE_LEADING => Clazz.GetField<int>("BELOW_BASELINE_LEADING");
+        public static int BELOW_BASELINE_LEADING => LocalClazz.GetField<int>("BELOW_BASELINE_LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE_TRAILING"/>
         /// </summary>
-        public static int BELOW_BASELINE_TRAILING => Clazz.GetField<int>("BELOW_BASELINE_TRAILING");
+        public static int BELOW_BASELINE_TRAILING => LocalClazz.GetField<int>("BELOW_BASELINE_TRAILING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BOTH"/>
         /// </summary>
-        public static int BOTH => Clazz.GetField<int>("BOTH");
+        public static int BOTH => LocalClazz.GetField<int>("BOTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#CENTER"/>
         /// </summary>
-        public static int CENTER => Clazz.GetField<int>("CENTER");
+        public static int CENTER => LocalClazz.GetField<int>("CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#EAST"/>
         /// </summary>
-        public static int EAST => Clazz.GetField<int>("EAST");
+        public static int EAST => LocalClazz.GetField<int>("EAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#FIRST_LINE_END"/>
         /// </summary>
-        public static int FIRST_LINE_END => Clazz.GetField<int>("FIRST_LINE_END");
+        public static int FIRST_LINE_END => LocalClazz.GetField<int>("FIRST_LINE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#FIRST_LINE_START"/>
         /// </summary>
-        public static int FIRST_LINE_START => Clazz.GetField<int>("FIRST_LINE_START");
+        public static int FIRST_LINE_START => LocalClazz.GetField<int>("FIRST_LINE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#HORIZONTAL"/>
         /// </summary>
-        public static int HORIZONTAL => Clazz.GetField<int>("HORIZONTAL");
+        public static int HORIZONTAL => LocalClazz.GetField<int>("HORIZONTAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LAST_LINE_END"/>
         /// </summary>
-        public static int LAST_LINE_END => Clazz.GetField<int>("LAST_LINE_END");
+        public static int LAST_LINE_END => LocalClazz.GetField<int>("LAST_LINE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LAST_LINE_START"/>
         /// </summary>
-        public static int LAST_LINE_START => Clazz.GetField<int>("LAST_LINE_START");
+        public static int LAST_LINE_START => LocalClazz.GetField<int>("LAST_LINE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LINE_END"/>
         /// </summary>
-        public static int LINE_END => Clazz.GetField<int>("LINE_END");
+        public static int LINE_END => LocalClazz.GetField<int>("LINE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LINE_START"/>
         /// </summary>
-        public static int LINE_START => Clazz.GetField<int>("LINE_START");
+        public static int LINE_START => LocalClazz.GetField<int>("LINE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NONE"/>
         /// </summary>
-        public static int NONE => Clazz.GetField<int>("NONE");
+        public static int NONE => LocalClazz.GetField<int>("NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTH"/>
         /// </summary>
-        public static int NORTH => Clazz.GetField<int>("NORTH");
+        public static int NORTH => LocalClazz.GetField<int>("NORTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTHEAST"/>
         /// </summary>
-        public static int NORTHEAST => Clazz.GetField<int>("NORTHEAST");
+        public static int NORTHEAST => LocalClazz.GetField<int>("NORTHEAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTHWEST"/>
         /// </summary>
-        public static int NORTHWEST => Clazz.GetField<int>("NORTHWEST");
+        public static int NORTHWEST => LocalClazz.GetField<int>("NORTHWEST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#PAGE_END"/>
         /// </summary>
-        public static int PAGE_END => Clazz.GetField<int>("PAGE_END");
+        public static int PAGE_END => LocalClazz.GetField<int>("PAGE_END");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#PAGE_START"/>
         /// </summary>
-        public static int PAGE_START => Clazz.GetField<int>("PAGE_START");
+        public static int PAGE_START => LocalClazz.GetField<int>("PAGE_START");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#RELATIVE"/>
         /// </summary>
-        public static int RELATIVE => Clazz.GetField<int>("RELATIVE");
+        public static int RELATIVE => LocalClazz.GetField<int>("RELATIVE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#REMAINDER"/>
         /// </summary>
-        public static int REMAINDER => Clazz.GetField<int>("REMAINDER");
+        public static int REMAINDER => LocalClazz.GetField<int>("REMAINDER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTH"/>
         /// </summary>
-        public static int SOUTH => Clazz.GetField<int>("SOUTH");
+        public static int SOUTH => LocalClazz.GetField<int>("SOUTH");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTHEAST"/>
         /// </summary>
-        public static int SOUTHEAST => Clazz.GetField<int>("SOUTHEAST");
+        public static int SOUTHEAST => LocalClazz.GetField<int>("SOUTHEAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTHWEST"/>
         /// </summary>
-        public static int SOUTHWEST => Clazz.GetField<int>("SOUTHWEST");
+        public static int SOUTHWEST => LocalClazz.GetField<int>("SOUTHWEST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
+        public static int VERTICAL => LocalClazz.GetField<int>("VERTICAL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#WEST"/>
         /// </summary>
-        public static int WEST => Clazz.GetField<int>("WEST");
+        public static int WEST => LocalClazz.GetField<int>("WEST");
         
         #endregion
 

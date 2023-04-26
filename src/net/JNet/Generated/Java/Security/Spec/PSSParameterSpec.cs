@@ -64,11 +64,11 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC"/>
         /// </summary>
-        public static int TRAILER_FIELD_BC => Clazz.GetField<int>("TRAILER_FIELD_BC");
+        public static int TRAILER_FIELD_BC => LocalClazz.GetField<int>("TRAILER_FIELD_BC");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
         /// </summary>
-        public static Java.Security.Spec.PSSParameterSpec DEFAULT => Clazz.GetField<Java.Security.Spec.PSSParameterSpec>("DEFAULT");
+        public static Java.Security.Spec.PSSParameterSpec DEFAULT => LocalClazz.GetField<Java.Security.Spec.PSSParameterSpec>("DEFAULT");
         
         #endregion
 

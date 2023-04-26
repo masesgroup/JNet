@@ -40,11 +40,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StrictMath.html#E"/>
         /// </summary>
-        public static double E => Clazz.GetField<double>("E");
+        public static double E => LocalClazz.GetField<double>("E");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StrictMath.html#PI"/>
         /// </summary>
-        public static double PI => Clazz.GetField<double>("PI");
+        public static double PI => LocalClazz.GetField<double>("PI");
         
         #endregion
 

@@ -44,15 +44,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#LEFT_TO_RIGHT"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation LEFT_TO_RIGHT => Clazz.GetField<Java.Awt.ComponentOrientation>("LEFT_TO_RIGHT");
+        public static Java.Awt.ComponentOrientation LEFT_TO_RIGHT => LocalClazz.GetField<Java.Awt.ComponentOrientation>("LEFT_TO_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#RIGHT_TO_LEFT"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation RIGHT_TO_LEFT => Clazz.GetField<Java.Awt.ComponentOrientation>("RIGHT_TO_LEFT");
+        public static Java.Awt.ComponentOrientation RIGHT_TO_LEFT => LocalClazz.GetField<Java.Awt.ComponentOrientation>("RIGHT_TO_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#UNKNOWN"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation UNKNOWN => Clazz.GetField<Java.Awt.ComponentOrientation>("UNKNOWN");
+        public static Java.Awt.ComponentOrientation UNKNOWN => LocalClazz.GetField<Java.Awt.ComponentOrientation>("UNKNOWN");
         
         #endregion
 

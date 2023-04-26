@@ -51,23 +51,23 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED"/>
         /// </summary>
-        public static int DESELECTED => Clazz.GetField<int>("DESELECTED");
+        public static int DESELECTED => LocalClazz.GetField<int>("DESELECTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_FIRST"/>
         /// </summary>
-        public static int ITEM_FIRST => Clazz.GetField<int>("ITEM_FIRST");
+        public static int ITEM_FIRST => LocalClazz.GetField<int>("ITEM_FIRST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_LAST"/>
         /// </summary>
-        public static int ITEM_LAST => Clazz.GetField<int>("ITEM_LAST");
+        public static int ITEM_LAST => LocalClazz.GetField<int>("ITEM_LAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_STATE_CHANGED"/>
         /// </summary>
-        public static int ITEM_STATE_CHANGED => Clazz.GetField<int>("ITEM_STATE_CHANGED");
+        public static int ITEM_STATE_CHANGED => LocalClazz.GetField<int>("ITEM_STATE_CHANGED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED => Clazz.GetField<int>("SELECTED");
+        public static int SELECTED => LocalClazz.GetField<int>("SELECTED");
         
         #endregion
 

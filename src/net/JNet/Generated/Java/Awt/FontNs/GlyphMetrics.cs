@@ -62,23 +62,23 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMBINING"/>
         /// </summary>
-        public static byte COMBINING => Clazz.GetField<byte>("COMBINING");
+        public static byte COMBINING => LocalClazz.GetField<byte>("COMBINING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMPONENT"/>
         /// </summary>
-        public static byte COMPONENT => Clazz.GetField<byte>("COMPONENT");
+        public static byte COMPONENT => LocalClazz.GetField<byte>("COMPONENT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#LIGATURE"/>
         /// </summary>
-        public static byte LIGATURE => Clazz.GetField<byte>("LIGATURE");
+        public static byte LIGATURE => LocalClazz.GetField<byte>("LIGATURE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#STANDARD"/>
         /// </summary>
-        public static byte STANDARD => Clazz.GetField<byte>("STANDARD");
+        public static byte STANDARD => LocalClazz.GetField<byte>("STANDARD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#WHITESPACE"/>
         /// </summary>
-        public static byte WHITESPACE => Clazz.GetField<byte>("WHITESPACE");
+        public static byte WHITESPACE => LocalClazz.GetField<byte>("WHITESPACE");
         
         #endregion
 

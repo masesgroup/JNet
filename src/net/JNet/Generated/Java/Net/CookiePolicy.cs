@@ -40,15 +40,15 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ALL"/>
         /// </summary>
-        public static Java.Net.CookiePolicy ACCEPT_ALL => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ALL");
+        public static Java.Net.CookiePolicy ACCEPT_ALL => LocalClazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ALL");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_NONE"/>
         /// </summary>
-        public static Java.Net.CookiePolicy ACCEPT_NONE => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_NONE");
+        public static Java.Net.CookiePolicy ACCEPT_NONE => LocalClazz.GetField<Java.Net.CookiePolicy>("ACCEPT_NONE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER"/>
         /// </summary>
-        public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ORIGINAL_SERVER");
+        public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER => LocalClazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ORIGINAL_SERVER");
         
         #endregion
 

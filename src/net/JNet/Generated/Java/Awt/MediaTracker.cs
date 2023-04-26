@@ -52,19 +52,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ABORTED"/>
         /// </summary>
-        public static int ABORTED => Clazz.GetField<int>("ABORTED");
+        public static int ABORTED => LocalClazz.GetField<int>("ABORTED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#COMPLETE"/>
         /// </summary>
-        public static int COMPLETE => Clazz.GetField<int>("COMPLETE");
+        public static int COMPLETE => LocalClazz.GetField<int>("COMPLETE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ERRORED"/>
         /// </summary>
-        public static int ERRORED => Clazz.GetField<int>("ERRORED");
+        public static int ERRORED => LocalClazz.GetField<int>("ERRORED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING"/>
         /// </summary>
-        public static int LOADING => Clazz.GetField<int>("LOADING");
+        public static int LOADING => LocalClazz.GetField<int>("LOADING");
         
         #endregion
 

@@ -40,39 +40,39 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#DEFAULT_VALUE_FIELD"/>
         /// </summary>
-        public static string DEFAULT_VALUE_FIELD => Clazz.GetField<string>("DEFAULT_VALUE_FIELD");
+        public static string DEFAULT_VALUE_FIELD => LocalClazz.GetField<string>("DEFAULT_VALUE_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#IMMUTABLE_INFO_FIELD"/>
         /// </summary>
-        public static string IMMUTABLE_INFO_FIELD => Clazz.GetField<string>("IMMUTABLE_INFO_FIELD");
+        public static string IMMUTABLE_INFO_FIELD => LocalClazz.GetField<string>("IMMUTABLE_INFO_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#INTERFACE_CLASS_NAME_FIELD"/>
         /// </summary>
-        public static string INTERFACE_CLASS_NAME_FIELD => Clazz.GetField<string>("INTERFACE_CLASS_NAME_FIELD");
+        public static string INTERFACE_CLASS_NAME_FIELD => LocalClazz.GetField<string>("INTERFACE_CLASS_NAME_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#LEGAL_VALUES_FIELD"/>
         /// </summary>
-        public static string LEGAL_VALUES_FIELD => Clazz.GetField<string>("LEGAL_VALUES_FIELD");
+        public static string LEGAL_VALUES_FIELD => LocalClazz.GetField<string>("LEGAL_VALUES_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MAX_VALUE_FIELD"/>
         /// </summary>
-        public static string MAX_VALUE_FIELD => Clazz.GetField<string>("MAX_VALUE_FIELD");
+        public static string MAX_VALUE_FIELD => LocalClazz.GetField<string>("MAX_VALUE_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MIN_VALUE_FIELD"/>
         /// </summary>
-        public static string MIN_VALUE_FIELD => Clazz.GetField<string>("MIN_VALUE_FIELD");
+        public static string MIN_VALUE_FIELD => LocalClazz.GetField<string>("MIN_VALUE_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MXBEAN_FIELD"/>
         /// </summary>
-        public static string MXBEAN_FIELD => Clazz.GetField<string>("MXBEAN_FIELD");
+        public static string MXBEAN_FIELD => LocalClazz.GetField<string>("MXBEAN_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#OPEN_TYPE_FIELD"/>
         /// </summary>
-        public static string OPEN_TYPE_FIELD => Clazz.GetField<string>("OPEN_TYPE_FIELD");
+        public static string OPEN_TYPE_FIELD => LocalClazz.GetField<string>("OPEN_TYPE_FIELD");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#ORIGINAL_TYPE_FIELD"/>
         /// </summary>
-        public static string ORIGINAL_TYPE_FIELD => Clazz.GetField<string>("ORIGINAL_TYPE_FIELD");
+        public static string ORIGINAL_TYPE_FIELD => LocalClazz.GetField<string>("ORIGINAL_TYPE_FIELD");
         
         #endregion
 

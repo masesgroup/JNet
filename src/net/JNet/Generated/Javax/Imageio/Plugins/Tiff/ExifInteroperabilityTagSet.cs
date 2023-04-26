@@ -40,15 +40,15 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#TAG_INTEROPERABILITY_INDEX"/>
         /// </summary>
-        public static int TAG_INTEROPERABILITY_INDEX => Clazz.GetField<int>("TAG_INTEROPERABILITY_INDEX");
+        public static int TAG_INTEROPERABILITY_INDEX => LocalClazz.GetField<int>("TAG_INTEROPERABILITY_INDEX");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_R98"/>
         /// </summary>
-        public static string INTEROPERABILITY_INDEX_R98 => Clazz.GetField<string>("INTEROPERABILITY_INDEX_R98");
+        public static string INTEROPERABILITY_INDEX_R98 => LocalClazz.GetField<string>("INTEROPERABILITY_INDEX_R98");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_THM"/>
         /// </summary>
-        public static string INTEROPERABILITY_INDEX_THM => Clazz.GetField<string>("INTEROPERABILITY_INDEX_THM");
+        public static string INTEROPERABILITY_INDEX_THM => LocalClazz.GetField<string>("INTEROPERABILITY_INDEX_THM");
         
         #endregion
 

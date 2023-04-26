@@ -255,15 +255,15 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#DISCARD"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect DISCARD => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("DISCARD");
+            public static Java.Lang.ProcessBuilder.Redirect DISCARD => LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("DISCARD");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#INHERIT"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect INHERIT => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("INHERIT");
+            public static Java.Lang.ProcessBuilder.Redirect INHERIT => LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("INHERIT");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#PIPE"/>
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect PIPE => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("PIPE");
+            public static Java.Lang.ProcessBuilder.Redirect PIPE => LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect>("PIPE");
             
             #endregion
 

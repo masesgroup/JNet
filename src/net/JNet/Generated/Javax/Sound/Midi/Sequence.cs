@@ -61,23 +61,23 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#PPQ"/>
         /// </summary>
-        public static float PPQ => Clazz.GetField<float>("PPQ");
+        public static float PPQ => LocalClazz.GetField<float>("PPQ");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_24"/>
         /// </summary>
-        public static float SMPTE_24 => Clazz.GetField<float>("SMPTE_24");
+        public static float SMPTE_24 => LocalClazz.GetField<float>("SMPTE_24");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_25"/>
         /// </summary>
-        public static float SMPTE_25 => Clazz.GetField<float>("SMPTE_25");
+        public static float SMPTE_25 => LocalClazz.GetField<float>("SMPTE_25");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30"/>
         /// </summary>
-        public static float SMPTE_30 => Clazz.GetField<float>("SMPTE_30");
+        public static float SMPTE_30 => LocalClazz.GetField<float>("SMPTE_30");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP"/>
         /// </summary>
-        public static float SMPTE_30DROP => Clazz.GetField<float>("SMPTE_30DROP");
+        public static float SMPTE_30DROP => LocalClazz.GetField<float>("SMPTE_30DROP");
         
         #endregion
 

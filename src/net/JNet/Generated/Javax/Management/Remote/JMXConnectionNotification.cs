@@ -53,19 +53,19 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#CLOSED"/>
         /// </summary>
-        public static string CLOSED => Clazz.GetField<string>("CLOSED");
+        public static string CLOSED => LocalClazz.GetField<string>("CLOSED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#FAILED"/>
         /// </summary>
-        public static string FAILED => Clazz.GetField<string>("FAILED");
+        public static string FAILED => LocalClazz.GetField<string>("FAILED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#NOTIFS_LOST"/>
         /// </summary>
-        public static string NOTIFS_LOST => Clazz.GetField<string>("NOTIFS_LOST");
+        public static string NOTIFS_LOST => LocalClazz.GetField<string>("NOTIFS_LOST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED"/>
         /// </summary>
-        public static string OPENED => Clazz.GetField<string>("OPENED");
+        public static string OPENED => LocalClazz.GetField<string>("OPENED");
         
         #endregion
 

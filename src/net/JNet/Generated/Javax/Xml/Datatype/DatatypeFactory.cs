@@ -40,11 +40,11 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_IMPLEMENTATION_CLASS"/>
         /// </summary>
-        public static string DATATYPEFACTORY_IMPLEMENTATION_CLASS => Clazz.GetField<string>("DATATYPEFACTORY_IMPLEMENTATION_CLASS");
+        public static string DATATYPEFACTORY_IMPLEMENTATION_CLASS => LocalClazz.GetField<string>("DATATYPEFACTORY_IMPLEMENTATION_CLASS");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_PROPERTY"/>
         /// </summary>
-        public static string DATATYPEFACTORY_PROPERTY => Clazz.GetField<string>("DATATYPEFACTORY_PROPERTY");
+        public static string DATATYPEFACTORY_PROPERTY => LocalClazz.GetField<string>("DATATYPEFACTORY_PROPERTY");
         
         #endregion
 

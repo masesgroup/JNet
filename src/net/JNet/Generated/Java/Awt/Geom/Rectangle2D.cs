@@ -40,19 +40,19 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_BOTTOM"/>
         /// </summary>
-        public static int OUT_BOTTOM => Clazz.GetField<int>("OUT_BOTTOM");
+        public static int OUT_BOTTOM => LocalClazz.GetField<int>("OUT_BOTTOM");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_LEFT"/>
         /// </summary>
-        public static int OUT_LEFT => Clazz.GetField<int>("OUT_LEFT");
+        public static int OUT_LEFT => LocalClazz.GetField<int>("OUT_LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_RIGHT"/>
         /// </summary>
-        public static int OUT_RIGHT => Clazz.GetField<int>("OUT_RIGHT");
+        public static int OUT_RIGHT => LocalClazz.GetField<int>("OUT_RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_TOP"/>
         /// </summary>
-        public static int OUT_TOP => Clazz.GetField<int>("OUT_TOP");
+        public static int OUT_TOP => LocalClazz.GetField<int>("OUT_TOP");
         
         #endregion
 

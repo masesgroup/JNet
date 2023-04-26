@@ -40,43 +40,43 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_TYPE"/>
         /// </summary>
-        public static short ANY_TYPE => Clazz.GetField<short>("ANY_TYPE");
+        public static short ANY_TYPE => LocalClazz.GetField<short>("ANY_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_UNORDERED_NODE_TYPE"/>
         /// </summary>
-        public static short ANY_UNORDERED_NODE_TYPE => Clazz.GetField<short>("ANY_UNORDERED_NODE_TYPE");
+        public static short ANY_UNORDERED_NODE_TYPE => LocalClazz.GetField<short>("ANY_UNORDERED_NODE_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#BOOLEAN_TYPE"/>
         /// </summary>
-        public static short BOOLEAN_TYPE => Clazz.GetField<short>("BOOLEAN_TYPE");
+        public static short BOOLEAN_TYPE => LocalClazz.GetField<short>("BOOLEAN_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#FIRST_ORDERED_NODE_TYPE"/>
         /// </summary>
-        public static short FIRST_ORDERED_NODE_TYPE => Clazz.GetField<short>("FIRST_ORDERED_NODE_TYPE");
+        public static short FIRST_ORDERED_NODE_TYPE => LocalClazz.GetField<short>("FIRST_ORDERED_NODE_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#NUMBER_TYPE"/>
         /// </summary>
-        public static short NUMBER_TYPE => Clazz.GetField<short>("NUMBER_TYPE");
+        public static short NUMBER_TYPE => LocalClazz.GetField<short>("NUMBER_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
-        public static short ORDERED_NODE_ITERATOR_TYPE => Clazz.GetField<short>("ORDERED_NODE_ITERATOR_TYPE");
+        public static short ORDERED_NODE_ITERATOR_TYPE => LocalClazz.GetField<short>("ORDERED_NODE_ITERATOR_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
-        public static short ORDERED_NODE_SNAPSHOT_TYPE => Clazz.GetField<short>("ORDERED_NODE_SNAPSHOT_TYPE");
+        public static short ORDERED_NODE_SNAPSHOT_TYPE => LocalClazz.GetField<short>("ORDERED_NODE_SNAPSHOT_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#STRING_TYPE"/>
         /// </summary>
-        public static short STRING_TYPE => Clazz.GetField<short>("STRING_TYPE");
+        public static short STRING_TYPE => LocalClazz.GetField<short>("STRING_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
-        public static short UNORDERED_NODE_ITERATOR_TYPE => Clazz.GetField<short>("UNORDERED_NODE_ITERATOR_TYPE");
+        public static short UNORDERED_NODE_ITERATOR_TYPE => LocalClazz.GetField<short>("UNORDERED_NODE_ITERATOR_TYPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
-        public static short UNORDERED_NODE_SNAPSHOT_TYPE => Clazz.GetField<short>("UNORDERED_NODE_SNAPSHOT_TYPE");
+        public static short UNORDERED_NODE_SNAPSHOT_TYPE => LocalClazz.GetField<short>("UNORDERED_NODE_SNAPSHOT_TYPE");
         
         #endregion
 

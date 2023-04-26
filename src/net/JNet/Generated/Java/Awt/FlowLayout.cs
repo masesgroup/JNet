@@ -66,23 +66,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#CENTER"/>
         /// </summary>
-        public static int CENTER => Clazz.GetField<int>("CENTER");
+        public static int CENTER => LocalClazz.GetField<int>("CENTER");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEADING"/>
         /// </summary>
-        public static int LEADING => Clazz.GetField<int>("LEADING");
+        public static int LEADING => LocalClazz.GetField<int>("LEADING");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEFT"/>
         /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
+        public static int LEFT => LocalClazz.GetField<int>("LEFT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT => Clazz.GetField<int>("RIGHT");
+        public static int RIGHT => LocalClazz.GetField<int>("RIGHT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#TRAILING"/>
         /// </summary>
-        public static int TRAILING => Clazz.GetField<int>("TRAILING");
+        public static int TRAILING => LocalClazz.GetField<int>("TRAILING");
         
         #endregion
 

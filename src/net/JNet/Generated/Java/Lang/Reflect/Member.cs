@@ -40,11 +40,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#DECLARED"/>
         /// </summary>
-        public static int DECLARED => Clazz.GetField<int>("DECLARED");
+        public static int DECLARED => LocalClazz.GetField<int>("DECLARED");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#PUBLIC"/>
         /// </summary>
-        public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
+        public static int PUBLIC => LocalClazz.GetField<int>("PUBLIC");
         
         #endregion
 

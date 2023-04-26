@@ -60,7 +60,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#EMPTY_DESCRIPTOR"/>
         /// </summary>
-        public static Javax.Management.ImmutableDescriptor EMPTY_DESCRIPTOR => Clazz.GetField<Javax.Management.ImmutableDescriptor>("EMPTY_DESCRIPTOR");
+        public static Javax.Management.ImmutableDescriptor EMPTY_DESCRIPTOR => LocalClazz.GetField<Javax.Management.ImmutableDescriptor>("EMPTY_DESCRIPTOR");
         
         #endregion
 

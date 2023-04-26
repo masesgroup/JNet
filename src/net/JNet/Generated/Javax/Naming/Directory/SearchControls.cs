@@ -57,15 +57,15 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html#OBJECT_SCOPE"/>
         /// </summary>
-        public static int OBJECT_SCOPE => Clazz.GetField<int>("OBJECT_SCOPE");
+        public static int OBJECT_SCOPE => LocalClazz.GetField<int>("OBJECT_SCOPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html#ONELEVEL_SCOPE"/>
         /// </summary>
-        public static int ONELEVEL_SCOPE => Clazz.GetField<int>("ONELEVEL_SCOPE");
+        public static int ONELEVEL_SCOPE => LocalClazz.GetField<int>("ONELEVEL_SCOPE");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html#SUBTREE_SCOPE"/>
         /// </summary>
-        public static int SUBTREE_SCOPE => Clazz.GetField<int>("SUBTREE_SCOPE");
+        public static int SUBTREE_SCOPE => LocalClazz.GetField<int>("SUBTREE_SCOPE");
         
         #endregion
 

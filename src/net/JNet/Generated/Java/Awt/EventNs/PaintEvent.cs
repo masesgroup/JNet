@@ -50,19 +50,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT"/>
         /// </summary>
-        public static int PAINT => Clazz.GetField<int>("PAINT");
+        public static int PAINT => LocalClazz.GetField<int>("PAINT");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_FIRST"/>
         /// </summary>
-        public static int PAINT_FIRST => Clazz.GetField<int>("PAINT_FIRST");
+        public static int PAINT_FIRST => LocalClazz.GetField<int>("PAINT_FIRST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_LAST"/>
         /// </summary>
-        public static int PAINT_LAST => Clazz.GetField<int>("PAINT_LAST");
+        public static int PAINT_LAST => LocalClazz.GetField<int>("PAINT_LAST");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#UPDATE"/>
         /// </summary>
-        public static int UPDATE => Clazz.GetField<int>("UPDATE");
+        public static int UPDATE => LocalClazz.GetField<int>("UPDATE");
         
         #endregion
 

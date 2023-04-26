@@ -51,11 +51,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#BIT_DEPTH_MULTI"/>
         /// </summary>
-        public static int BIT_DEPTH_MULTI => Clazz.GetField<int>("BIT_DEPTH_MULTI");
+        public static int BIT_DEPTH_MULTI => LocalClazz.GetField<int>("BIT_DEPTH_MULTI");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#REFRESH_RATE_UNKNOWN"/>
         /// </summary>
-        public static int REFRESH_RATE_UNKNOWN => Clazz.GetField<int>("REFRESH_RATE_UNKNOWN");
+        public static int REFRESH_RATE_UNKNOWN => LocalClazz.GetField<int>("REFRESH_RATE_UNKNOWN");
         
         #endregion
 
