@@ -484,27 +484,27 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
             /// </summary>
-            public static int MODULE => Clazz.GetField<int>("MODULE");
+            public static int MODULE { get { return LocalClazz.GetField<int>("MODULE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
             /// </summary>
-            public static int PACKAGE => Clazz.GetField<int>("PACKAGE");
+            public static int PACKAGE { get { return LocalClazz.GetField<int>("PACKAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE"/>
             /// </summary>
-            public static int PRIVATE => Clazz.GetField<int>("PRIVATE");
+            public static int PRIVATE { get { return LocalClazz.GetField<int>("PRIVATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED"/>
             /// </summary>
-            public static int PROTECTED => Clazz.GetField<int>("PROTECTED");
+            public static int PROTECTED { get { return LocalClazz.GetField<int>("PROTECTED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC"/>
             /// </summary>
-            public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
+            public static int PUBLIC { get { return LocalClazz.GetField<int>("PUBLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL"/>
             /// </summary>
-            public static int UNCONDITIONAL => Clazz.GetField<int>("UNCONDITIONAL");
+            public static int UNCONDITIONAL { get { return LocalClazz.GetField<int>("UNCONDITIONAL"); } }
             
             #endregion
 

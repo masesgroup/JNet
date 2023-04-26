@@ -286,11 +286,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT"/>
             /// </summary>
-            public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT => Clazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("DECIMAL_FLOAT");
+            public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT { get { return LocalClazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("DECIMAL_FLOAT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC"/>
             /// </summary>
-            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC => Clazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("SCIENTIFIC");
+            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { return LocalClazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("SCIENTIFIC"); } }
             
             #endregion
 

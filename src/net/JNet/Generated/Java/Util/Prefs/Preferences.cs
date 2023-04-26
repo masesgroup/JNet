@@ -40,15 +40,15 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_KEY_LENGTH"/>
         /// </summary>
-        public static int MAX_KEY_LENGTH => Clazz.GetField<int>("MAX_KEY_LENGTH");
+        public static int MAX_KEY_LENGTH { get { return LocalClazz.GetField<int>("MAX_KEY_LENGTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_NAME_LENGTH"/>
         /// </summary>
-        public static int MAX_NAME_LENGTH => Clazz.GetField<int>("MAX_NAME_LENGTH");
+        public static int MAX_NAME_LENGTH { get { return LocalClazz.GetField<int>("MAX_NAME_LENGTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH"/>
         /// </summary>
-        public static int MAX_VALUE_LENGTH => Clazz.GetField<int>("MAX_VALUE_LENGTH");
+        public static int MAX_VALUE_LENGTH { get { return LocalClazz.GetField<int>("MAX_VALUE_LENGTH"); } }
         
         #endregion
 

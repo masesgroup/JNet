@@ -157,15 +157,15 @@ namespace Java.Time.Zone
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#STANDARD"/>
             /// </summary>
-            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition STANDARD => Clazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("STANDARD");
+            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition STANDARD { get { return LocalClazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("STANDARD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#UTC"/>
             /// </summary>
-            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition UTC => Clazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("UTC");
+            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition UTC { get { return LocalClazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("UTC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#WALL"/>
             /// </summary>
-            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition WALL => Clazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("WALL");
+            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition WALL { get { return LocalClazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("WALL"); } }
             
             #endregion
 

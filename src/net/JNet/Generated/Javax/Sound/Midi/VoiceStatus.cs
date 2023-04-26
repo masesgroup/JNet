@@ -40,27 +40,27 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#active"/>
         /// </summary>
-        public bool active => Instance.GetField<bool>("active");
+        public bool active { get { return Instance.GetField<bool>("active"); } set { Instance.SetField("active", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#bank"/>
         /// </summary>
-        public int bank => Instance.GetField<int>("bank");
+        public int bank { get { return Instance.GetField<int>("bank"); } set { Instance.SetField("bank", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#channel"/>
         /// </summary>
-        public int channel => Instance.GetField<int>("channel");
+        public int channel { get { return Instance.GetField<int>("channel"); } set { Instance.SetField("channel", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#note"/>
         /// </summary>
-        public int note => Instance.GetField<int>("note");
+        public int note { get { return Instance.GetField<int>("note"); } set { Instance.SetField("note", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#program"/>
         /// </summary>
-        public int program => Instance.GetField<int>("program");
+        public int program { get { return Instance.GetField<int>("program"); } set { Instance.SetField("program", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#volume"/>
         /// </summary>
-        public int volume => Instance.GetField<int>("volume");
+        public int volume { get { return Instance.GetField<int>("volume"); } set { Instance.SetField("volume", value); } }
         
         #endregion
 

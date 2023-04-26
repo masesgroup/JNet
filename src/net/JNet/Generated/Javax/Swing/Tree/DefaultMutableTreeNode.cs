@@ -69,7 +69,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#EMPTY_ENUMERATION"/>
         /// </summary>
-        public static Java.Util.Enumeration EMPTY_ENUMERATION => Clazz.GetField<Java.Util.Enumeration>("EMPTY_ENUMERATION");
+        public static Java.Util.Enumeration EMPTY_ENUMERATION { get { return LocalClazz.GetField<Java.Util.Enumeration>("EMPTY_ENUMERATION"); } }
         
         #endregion
 

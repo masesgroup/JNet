@@ -40,11 +40,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumHeight"/>
         /// </summary>
-        public static int MinimumHeight => Clazz.GetField<int>("MinimumHeight");
+        public static int MinimumHeight { get { return LocalClazz.GetField<int>("MinimumHeight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumWidth"/>
         /// </summary>
-        public static int MinimumWidth => Clazz.GetField<int>("MinimumWidth");
+        public static int MinimumWidth { get { return LocalClazz.GetField<int>("MinimumWidth"); } }
         
         #endregion
 

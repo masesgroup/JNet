@@ -44,55 +44,55 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#BOLD_ACTION"/>
         /// </summary>
-        public static string BOLD_ACTION => Clazz.GetField<string>("BOLD_ACTION");
+        public static string BOLD_ACTION { get { return LocalClazz.GetField<string>("BOLD_ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#COLOR_ACTION"/>
         /// </summary>
-        public static string COLOR_ACTION => Clazz.GetField<string>("COLOR_ACTION");
+        public static string COLOR_ACTION { get { return LocalClazz.GetField<string>("COLOR_ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#DEFAULT_CSS"/>
         /// </summary>
-        public static string DEFAULT_CSS => Clazz.GetField<string>("DEFAULT_CSS");
+        public static string DEFAULT_CSS { get { return LocalClazz.GetField<string>("DEFAULT_CSS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#FONT_CHANGE_BIGGER"/>
         /// </summary>
-        public static string FONT_CHANGE_BIGGER => Clazz.GetField<string>("FONT_CHANGE_BIGGER");
+        public static string FONT_CHANGE_BIGGER { get { return LocalClazz.GetField<string>("FONT_CHANGE_BIGGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#FONT_CHANGE_SMALLER"/>
         /// </summary>
-        public static string FONT_CHANGE_SMALLER => Clazz.GetField<string>("FONT_CHANGE_SMALLER");
+        public static string FONT_CHANGE_SMALLER { get { return LocalClazz.GetField<string>("FONT_CHANGE_SMALLER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_BOTTOM"/>
         /// </summary>
-        public static string IMG_ALIGN_BOTTOM => Clazz.GetField<string>("IMG_ALIGN_BOTTOM");
+        public static string IMG_ALIGN_BOTTOM { get { return LocalClazz.GetField<string>("IMG_ALIGN_BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_MIDDLE"/>
         /// </summary>
-        public static string IMG_ALIGN_MIDDLE => Clazz.GetField<string>("IMG_ALIGN_MIDDLE");
+        public static string IMG_ALIGN_MIDDLE { get { return LocalClazz.GetField<string>("IMG_ALIGN_MIDDLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_TOP"/>
         /// </summary>
-        public static string IMG_ALIGN_TOP => Clazz.GetField<string>("IMG_ALIGN_TOP");
+        public static string IMG_ALIGN_TOP { get { return LocalClazz.GetField<string>("IMG_ALIGN_TOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_BORDER"/>
         /// </summary>
-        public static string IMG_BORDER => Clazz.GetField<string>("IMG_BORDER");
+        public static string IMG_BORDER { get { return LocalClazz.GetField<string>("IMG_BORDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#ITALIC_ACTION"/>
         /// </summary>
-        public static string ITALIC_ACTION => Clazz.GetField<string>("ITALIC_ACTION");
+        public static string ITALIC_ACTION { get { return LocalClazz.GetField<string>("ITALIC_ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#LOGICAL_STYLE_ACTION"/>
         /// </summary>
-        public static string LOGICAL_STYLE_ACTION => Clazz.GetField<string>("LOGICAL_STYLE_ACTION");
+        public static string LOGICAL_STYLE_ACTION { get { return LocalClazz.GetField<string>("LOGICAL_STYLE_ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_LEFT"/>
         /// </summary>
-        public static string PARA_INDENT_LEFT => Clazz.GetField<string>("PARA_INDENT_LEFT");
+        public static string PARA_INDENT_LEFT { get { return LocalClazz.GetField<string>("PARA_INDENT_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_RIGHT"/>
         /// </summary>
-        public static string PARA_INDENT_RIGHT => Clazz.GetField<string>("PARA_INDENT_RIGHT");
+        public static string PARA_INDENT_RIGHT { get { return LocalClazz.GetField<string>("PARA_INDENT_RIGHT"); } }
         
         #endregion
 
@@ -342,7 +342,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#IMPLIED"/>
             /// </summary>
-            public static object IMPLIED => Clazz.GetField("IMPLIED");
+            public static object IMPLIED { get { return LocalClazz.GetField("IMPLIED"); } }
             
             #endregion
 

@@ -99,11 +99,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#WHEEL_BLOCK_SCROLL"/>
         /// </summary>
-        public static int WHEEL_BLOCK_SCROLL => Clazz.GetField<int>("WHEEL_BLOCK_SCROLL");
+        public static int WHEEL_BLOCK_SCROLL { get { return LocalClazz.GetField<int>("WHEEL_BLOCK_SCROLL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#WHEEL_UNIT_SCROLL"/>
         /// </summary>
-        public static int WHEEL_UNIT_SCROLL => Clazz.GetField<int>("WHEEL_UNIT_SCROLL");
+        public static int WHEEL_UNIT_SCROLL { get { return LocalClazz.GetField<int>("WHEEL_UNIT_SCROLL"); } }
         
         #endregion
 

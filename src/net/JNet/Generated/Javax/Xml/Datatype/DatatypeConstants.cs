@@ -40,147 +40,147 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#APRIL"/>
         /// </summary>
-        public static int APRIL => Clazz.GetField<int>("APRIL");
+        public static int APRIL { get { return LocalClazz.GetField<int>("APRIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#AUGUST"/>
         /// </summary>
-        public static int AUGUST => Clazz.GetField<int>("AUGUST");
+        public static int AUGUST { get { return LocalClazz.GetField<int>("AUGUST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DECEMBER"/>
         /// </summary>
-        public static int DECEMBER => Clazz.GetField<int>("DECEMBER");
+        public static int DECEMBER { get { return LocalClazz.GetField<int>("DECEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#EQUAL"/>
         /// </summary>
-        public static int EQUAL => Clazz.GetField<int>("EQUAL");
+        public static int EQUAL { get { return LocalClazz.GetField<int>("EQUAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#FEBRUARY"/>
         /// </summary>
-        public static int FEBRUARY => Clazz.GetField<int>("FEBRUARY");
+        public static int FEBRUARY { get { return LocalClazz.GetField<int>("FEBRUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#FIELD_UNDEFINED"/>
         /// </summary>
-        public static int FIELD_UNDEFINED => Clazz.GetField<int>("FIELD_UNDEFINED");
+        public static int FIELD_UNDEFINED { get { return LocalClazz.GetField<int>("FIELD_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GREATER"/>
         /// </summary>
-        public static int GREATER => Clazz.GetField<int>("GREATER");
+        public static int GREATER { get { return LocalClazz.GetField<int>("GREATER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#INDETERMINATE"/>
         /// </summary>
-        public static int INDETERMINATE => Clazz.GetField<int>("INDETERMINATE");
+        public static int INDETERMINATE { get { return LocalClazz.GetField<int>("INDETERMINATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JANUARY"/>
         /// </summary>
-        public static int JANUARY => Clazz.GetField<int>("JANUARY");
+        public static int JANUARY { get { return LocalClazz.GetField<int>("JANUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JULY"/>
         /// </summary>
-        public static int JULY => Clazz.GetField<int>("JULY");
+        public static int JULY { get { return LocalClazz.GetField<int>("JULY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JUNE"/>
         /// </summary>
-        public static int JUNE => Clazz.GetField<int>("JUNE");
+        public static int JUNE { get { return LocalClazz.GetField<int>("JUNE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#LESSER"/>
         /// </summary>
-        public static int LESSER => Clazz.GetField<int>("LESSER");
+        public static int LESSER { get { return LocalClazz.GetField<int>("LESSER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MARCH"/>
         /// </summary>
-        public static int MARCH => Clazz.GetField<int>("MARCH");
+        public static int MARCH { get { return LocalClazz.GetField<int>("MARCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MAX_TIMEZONE_OFFSET"/>
         /// </summary>
-        public static int MAX_TIMEZONE_OFFSET => Clazz.GetField<int>("MAX_TIMEZONE_OFFSET");
+        public static int MAX_TIMEZONE_OFFSET { get { return LocalClazz.GetField<int>("MAX_TIMEZONE_OFFSET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MAY"/>
         /// </summary>
-        public static int MAY => Clazz.GetField<int>("MAY");
+        public static int MAY { get { return LocalClazz.GetField<int>("MAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MIN_TIMEZONE_OFFSET"/>
         /// </summary>
-        public static int MIN_TIMEZONE_OFFSET => Clazz.GetField<int>("MIN_TIMEZONE_OFFSET");
+        public static int MIN_TIMEZONE_OFFSET { get { return LocalClazz.GetField<int>("MIN_TIMEZONE_OFFSET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#NOVEMBER"/>
         /// </summary>
-        public static int NOVEMBER => Clazz.GetField<int>("NOVEMBER");
+        public static int NOVEMBER { get { return LocalClazz.GetField<int>("NOVEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#OCTOBER"/>
         /// </summary>
-        public static int OCTOBER => Clazz.GetField<int>("OCTOBER");
+        public static int OCTOBER { get { return LocalClazz.GetField<int>("OCTOBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#SEPTEMBER"/>
         /// </summary>
-        public static int SEPTEMBER => Clazz.GetField<int>("SEPTEMBER");
+        public static int SEPTEMBER { get { return LocalClazz.GetField<int>("SEPTEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DAYS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field DAYS => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("DAYS");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field DAYS { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("DAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#HOURS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field HOURS => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("HOURS");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field HOURS { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("HOURS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MINUTES"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field MINUTES => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("MINUTES");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field MINUTES { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("MINUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MONTHS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field MONTHS => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("MONTHS");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field MONTHS { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("MONTHS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#SECONDS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field SECONDS => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("SECONDS");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field SECONDS { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("SECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#YEARS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field YEARS => Clazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("YEARS");
+        public static Javax.Xml.Datatype.DatatypeConstants.Field YEARS { get { return LocalClazz.GetField<Javax.Xml.Datatype.DatatypeConstants.Field>("YEARS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DATE"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DATE => Clazz.GetField<Javax.Xml.Namespace.QName>("DATE");
+        public static Javax.Xml.Namespace.QName DATE { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DATETIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DATETIME => Clazz.GetField<Javax.Xml.Namespace.QName>("DATETIME");
+        public static Javax.Xml.Namespace.QName DATETIME { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("DATETIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION => Clazz.GetField<Javax.Xml.Namespace.QName>("DURATION");
+        public static Javax.Xml.Namespace.QName DURATION { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("DURATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION_DAYTIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION_DAYTIME => Clazz.GetField<Javax.Xml.Namespace.QName>("DURATION_DAYTIME");
+        public static Javax.Xml.Namespace.QName DURATION_DAYTIME { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("DURATION_DAYTIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION_YEARMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION_YEARMONTH => Clazz.GetField<Javax.Xml.Namespace.QName>("DURATION_YEARMONTH");
+        public static Javax.Xml.Namespace.QName DURATION_YEARMONTH { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("DURATION_YEARMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GDAY"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GDAY => Clazz.GetField<Javax.Xml.Namespace.QName>("GDAY");
+        public static Javax.Xml.Namespace.QName GDAY { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("GDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GMONTH => Clazz.GetField<Javax.Xml.Namespace.QName>("GMONTH");
+        public static Javax.Xml.Namespace.QName GMONTH { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("GMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GMONTHDAY"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GMONTHDAY => Clazz.GetField<Javax.Xml.Namespace.QName>("GMONTHDAY");
+        public static Javax.Xml.Namespace.QName GMONTHDAY { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("GMONTHDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GYEAR"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GYEAR => Clazz.GetField<Javax.Xml.Namespace.QName>("GYEAR");
+        public static Javax.Xml.Namespace.QName GYEAR { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("GYEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GYEARMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GYEARMONTH => Clazz.GetField<Javax.Xml.Namespace.QName>("GYEARMONTH");
+        public static Javax.Xml.Namespace.QName GYEARMONTH { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("GYEARMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#TIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName TIME => Clazz.GetField<Javax.Xml.Namespace.QName>("TIME");
+        public static Javax.Xml.Namespace.QName TIME { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("TIME"); } }
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#PUBLIC_XML_SCHEMA"/>
         /// </summary>
-        public static string PUBLIC_XML_SCHEMA => Clazz.GetField<string>("PUBLIC_XML_SCHEMA");
+        public static string PUBLIC_XML_SCHEMA { get { return LocalClazz.GetField<string>("PUBLIC_XML_SCHEMA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#SCHEMA_SYSTEM_ID"/>
         /// </summary>
-        public static string SCHEMA_SYSTEM_ID => Clazz.GetField<string>("SCHEMA_SYSTEM_ID");
+        public static string SCHEMA_SYSTEM_ID { get { return LocalClazz.GetField<string>("SCHEMA_SYSTEM_ID"); } }
         
         #endregion
 

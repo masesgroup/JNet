@@ -50,11 +50,11 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#FILL"/>
         /// </summary>
-        public static bool FILL => Clazz.GetField<bool>("FILL");
+        public static bool FILL { get { return LocalClazz.GetField<bool>("FILL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#STROKE"/>
         /// </summary>
-        public static bool STROKE => Clazz.GetField<bool>("STROKE");
+        public static bool STROKE { get { return LocalClazz.GetField<bool>("STROKE"); } }
         
         #endregion
 

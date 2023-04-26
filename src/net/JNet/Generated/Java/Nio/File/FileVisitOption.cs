@@ -40,7 +40,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitOption FOLLOW_LINKS => Clazz.GetField<Java.Nio.File.FileVisitOption>("FOLLOW_LINKS");
+        public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { return LocalClazz.GetField<Java.Nio.File.FileVisitOption>("FOLLOW_LINKS"); } }
         
         #endregion
 

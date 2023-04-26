@@ -44,47 +44,47 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_VALUE"/>
         /// </summary>
-        public static float MAX_VALUE => Clazz.GetField<float>("MAX_VALUE");
+        public static float MAX_VALUE { get { return LocalClazz.GetField<float>("MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_NORMAL"/>
         /// </summary>
-        public static float MIN_NORMAL => Clazz.GetField<float>("MIN_NORMAL");
+        public static float MIN_NORMAL { get { return LocalClazz.GetField<float>("MIN_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_VALUE"/>
         /// </summary>
-        public static float MIN_VALUE => Clazz.GetField<float>("MIN_VALUE");
+        public static float MIN_VALUE { get { return LocalClazz.GetField<float>("MIN_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NaN"/>
         /// </summary>
-        public static float NaN => Clazz.GetField<float>("NaN");
+        public static float NaN { get { return LocalClazz.GetField<float>("NaN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NEGATIVE_INFINITY"/>
         /// </summary>
-        public static float NEGATIVE_INFINITY => Clazz.GetField<float>("NEGATIVE_INFINITY");
+        public static float NEGATIVE_INFINITY { get { return LocalClazz.GetField<float>("NEGATIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#POSITIVE_INFINITY"/>
         /// </summary>
-        public static float POSITIVE_INFINITY => Clazz.GetField<float>("POSITIVE_INFINITY");
+        public static float POSITIVE_INFINITY { get { return LocalClazz.GetField<float>("POSITIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#BYTES"/>
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static int BYTES { get { return LocalClazz.GetField<int>("BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_EXPONENT"/>
         /// </summary>
-        public static int MAX_EXPONENT => Clazz.GetField<int>("MAX_EXPONENT");
+        public static int MAX_EXPONENT { get { return LocalClazz.GetField<int>("MAX_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_EXPONENT"/>
         /// </summary>
-        public static int MIN_EXPONENT => Clazz.GetField<int>("MIN_EXPONENT");
+        public static int MIN_EXPONENT { get { return LocalClazz.GetField<int>("MIN_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#SIZE"/>
         /// </summary>
-        public static int SIZE => Clazz.GetField<int>("SIZE");
+        public static int SIZE { get { return LocalClazz.GetField<int>("SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
         
         #endregion
 

@@ -40,123 +40,123 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SC_BLOCK_DATA"/>
         /// </summary>
-        public static byte SC_BLOCK_DATA => Clazz.GetField<byte>("SC_BLOCK_DATA");
+        public static byte SC_BLOCK_DATA { get { return LocalClazz.GetField<byte>("SC_BLOCK_DATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SC_ENUM"/>
         /// </summary>
-        public static byte SC_ENUM => Clazz.GetField<byte>("SC_ENUM");
+        public static byte SC_ENUM { get { return LocalClazz.GetField<byte>("SC_ENUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SC_EXTERNALIZABLE"/>
         /// </summary>
-        public static byte SC_EXTERNALIZABLE => Clazz.GetField<byte>("SC_EXTERNALIZABLE");
+        public static byte SC_EXTERNALIZABLE { get { return LocalClazz.GetField<byte>("SC_EXTERNALIZABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SC_SERIALIZABLE"/>
         /// </summary>
-        public static byte SC_SERIALIZABLE => Clazz.GetField<byte>("SC_SERIALIZABLE");
+        public static byte SC_SERIALIZABLE { get { return LocalClazz.GetField<byte>("SC_SERIALIZABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SC_WRITE_METHOD"/>
         /// </summary>
-        public static byte SC_WRITE_METHOD => Clazz.GetField<byte>("SC_WRITE_METHOD");
+        public static byte SC_WRITE_METHOD { get { return LocalClazz.GetField<byte>("SC_WRITE_METHOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_ARRAY"/>
         /// </summary>
-        public static byte TC_ARRAY => Clazz.GetField<byte>("TC_ARRAY");
+        public static byte TC_ARRAY { get { return LocalClazz.GetField<byte>("TC_ARRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_BASE"/>
         /// </summary>
-        public static byte TC_BASE => Clazz.GetField<byte>("TC_BASE");
+        public static byte TC_BASE { get { return LocalClazz.GetField<byte>("TC_BASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_BLOCKDATA"/>
         /// </summary>
-        public static byte TC_BLOCKDATA => Clazz.GetField<byte>("TC_BLOCKDATA");
+        public static byte TC_BLOCKDATA { get { return LocalClazz.GetField<byte>("TC_BLOCKDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_BLOCKDATALONG"/>
         /// </summary>
-        public static byte TC_BLOCKDATALONG => Clazz.GetField<byte>("TC_BLOCKDATALONG");
+        public static byte TC_BLOCKDATALONG { get { return LocalClazz.GetField<byte>("TC_BLOCKDATALONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_CLASS"/>
         /// </summary>
-        public static byte TC_CLASS => Clazz.GetField<byte>("TC_CLASS");
+        public static byte TC_CLASS { get { return LocalClazz.GetField<byte>("TC_CLASS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_CLASSDESC"/>
         /// </summary>
-        public static byte TC_CLASSDESC => Clazz.GetField<byte>("TC_CLASSDESC");
+        public static byte TC_CLASSDESC { get { return LocalClazz.GetField<byte>("TC_CLASSDESC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_ENDBLOCKDATA"/>
         /// </summary>
-        public static byte TC_ENDBLOCKDATA => Clazz.GetField<byte>("TC_ENDBLOCKDATA");
+        public static byte TC_ENDBLOCKDATA { get { return LocalClazz.GetField<byte>("TC_ENDBLOCKDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_ENUM"/>
         /// </summary>
-        public static byte TC_ENUM => Clazz.GetField<byte>("TC_ENUM");
+        public static byte TC_ENUM { get { return LocalClazz.GetField<byte>("TC_ENUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_EXCEPTION"/>
         /// </summary>
-        public static byte TC_EXCEPTION => Clazz.GetField<byte>("TC_EXCEPTION");
+        public static byte TC_EXCEPTION { get { return LocalClazz.GetField<byte>("TC_EXCEPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_LONGSTRING"/>
         /// </summary>
-        public static byte TC_LONGSTRING => Clazz.GetField<byte>("TC_LONGSTRING");
+        public static byte TC_LONGSTRING { get { return LocalClazz.GetField<byte>("TC_LONGSTRING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_MAX"/>
         /// </summary>
-        public static byte TC_MAX => Clazz.GetField<byte>("TC_MAX");
+        public static byte TC_MAX { get { return LocalClazz.GetField<byte>("TC_MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_NULL"/>
         /// </summary>
-        public static byte TC_NULL => Clazz.GetField<byte>("TC_NULL");
+        public static byte TC_NULL { get { return LocalClazz.GetField<byte>("TC_NULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_OBJECT"/>
         /// </summary>
-        public static byte TC_OBJECT => Clazz.GetField<byte>("TC_OBJECT");
+        public static byte TC_OBJECT { get { return LocalClazz.GetField<byte>("TC_OBJECT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_PROXYCLASSDESC"/>
         /// </summary>
-        public static byte TC_PROXYCLASSDESC => Clazz.GetField<byte>("TC_PROXYCLASSDESC");
+        public static byte TC_PROXYCLASSDESC { get { return LocalClazz.GetField<byte>("TC_PROXYCLASSDESC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_REFERENCE"/>
         /// </summary>
-        public static byte TC_REFERENCE => Clazz.GetField<byte>("TC_REFERENCE");
+        public static byte TC_REFERENCE { get { return LocalClazz.GetField<byte>("TC_REFERENCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_RESET"/>
         /// </summary>
-        public static byte TC_RESET => Clazz.GetField<byte>("TC_RESET");
+        public static byte TC_RESET { get { return LocalClazz.GetField<byte>("TC_RESET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#TC_STRING"/>
         /// </summary>
-        public static byte TC_STRING => Clazz.GetField<byte>("TC_STRING");
+        public static byte TC_STRING { get { return LocalClazz.GetField<byte>("TC_STRING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#baseWireHandle"/>
         /// </summary>
-        public static int baseWireHandle => Clazz.GetField<int>("baseWireHandle");
+        public static int baseWireHandle { get { return LocalClazz.GetField<int>("baseWireHandle"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#PROTOCOL_VERSION_1"/>
         /// </summary>
-        public static int PROTOCOL_VERSION_1 => Clazz.GetField<int>("PROTOCOL_VERSION_1");
+        public static int PROTOCOL_VERSION_1 { get { return LocalClazz.GetField<int>("PROTOCOL_VERSION_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#PROTOCOL_VERSION_2"/>
         /// </summary>
-        public static int PROTOCOL_VERSION_2 => Clazz.GetField<int>("PROTOCOL_VERSION_2");
+        public static int PROTOCOL_VERSION_2 { get { return LocalClazz.GetField<int>("PROTOCOL_VERSION_2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SERIAL_FILTER_PERMISSION"/>
         /// </summary>
-        public static Java.Io.SerializablePermission SERIAL_FILTER_PERMISSION => Clazz.GetField<Java.Io.SerializablePermission>("SERIAL_FILTER_PERMISSION");
+        public static Java.Io.SerializablePermission SERIAL_FILTER_PERMISSION { get { return LocalClazz.GetField<Java.Io.SerializablePermission>("SERIAL_FILTER_PERMISSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SUBCLASS_IMPLEMENTATION_PERMISSION"/>
         /// </summary>
-        public static Java.Io.SerializablePermission SUBCLASS_IMPLEMENTATION_PERMISSION => Clazz.GetField<Java.Io.SerializablePermission>("SUBCLASS_IMPLEMENTATION_PERMISSION");
+        public static Java.Io.SerializablePermission SUBCLASS_IMPLEMENTATION_PERMISSION { get { return LocalClazz.GetField<Java.Io.SerializablePermission>("SUBCLASS_IMPLEMENTATION_PERMISSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#SUBSTITUTION_PERMISSION"/>
         /// </summary>
-        public static Java.Io.SerializablePermission SUBSTITUTION_PERMISSION => Clazz.GetField<Java.Io.SerializablePermission>("SUBSTITUTION_PERMISSION");
+        public static Java.Io.SerializablePermission SUBSTITUTION_PERMISSION { get { return LocalClazz.GetField<Java.Io.SerializablePermission>("SUBSTITUTION_PERMISSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#STREAM_MAGIC"/>
         /// </summary>
-        public static short STREAM_MAGIC => Clazz.GetField<short>("STREAM_MAGIC");
+        public static short STREAM_MAGIC { get { return LocalClazz.GetField<short>("STREAM_MAGIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#STREAM_VERSION"/>
         /// </summary>
-        public static short STREAM_VERSION => Clazz.GetField<short>("STREAM_VERSION");
+        public static short STREAM_VERSION { get { return LocalClazz.GetField<short>("STREAM_VERSION"); } }
         
         #endregion
 

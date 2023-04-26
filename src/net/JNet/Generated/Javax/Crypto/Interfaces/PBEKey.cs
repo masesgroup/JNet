@@ -40,7 +40,7 @@ namespace Javax.Crypto.Interfaces
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID"/>
         /// </summary>
-        public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
+        public static long serialVersionUID { get { return LocalClazz.GetField<long>("serialVersionUID"); } }
         
         #endregion
 

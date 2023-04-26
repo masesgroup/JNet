@@ -67,11 +67,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES"/>
         /// </summary>
-        public static string HONOR_DISPLAY_PROPERTIES => Clazz.GetField<string>("HONOR_DISPLAY_PROPERTIES");
+        public static string HONOR_DISPLAY_PROPERTIES { get { return LocalClazz.GetField<string>("HONOR_DISPLAY_PROPERTIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS"/>
         /// </summary>
-        public static string W3C_LENGTH_UNITS => Clazz.GetField<string>("W3C_LENGTH_UNITS");
+        public static string W3C_LENGTH_UNITS { get { return LocalClazz.GetField<string>("W3C_LENGTH_UNITS"); } }
         
         #endregion
 

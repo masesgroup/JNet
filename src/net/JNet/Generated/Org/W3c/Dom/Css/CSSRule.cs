@@ -40,31 +40,31 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#CHARSET_RULE"/>
         /// </summary>
-        public static short CHARSET_RULE => Clazz.GetField<short>("CHARSET_RULE");
+        public static short CHARSET_RULE { get { return LocalClazz.GetField<short>("CHARSET_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#FONT_FACE_RULE"/>
         /// </summary>
-        public static short FONT_FACE_RULE => Clazz.GetField<short>("FONT_FACE_RULE");
+        public static short FONT_FACE_RULE { get { return LocalClazz.GetField<short>("FONT_FACE_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#IMPORT_RULE"/>
         /// </summary>
-        public static short IMPORT_RULE => Clazz.GetField<short>("IMPORT_RULE");
+        public static short IMPORT_RULE { get { return LocalClazz.GetField<short>("IMPORT_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#MEDIA_RULE"/>
         /// </summary>
-        public static short MEDIA_RULE => Clazz.GetField<short>("MEDIA_RULE");
+        public static short MEDIA_RULE { get { return LocalClazz.GetField<short>("MEDIA_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#PAGE_RULE"/>
         /// </summary>
-        public static short PAGE_RULE => Clazz.GetField<short>("PAGE_RULE");
+        public static short PAGE_RULE { get { return LocalClazz.GetField<short>("PAGE_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#STYLE_RULE"/>
         /// </summary>
-        public static short STYLE_RULE => Clazz.GetField<short>("STYLE_RULE");
+        public static short STYLE_RULE { get { return LocalClazz.GetField<short>("STYLE_RULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#UNKNOWN_RULE"/>
         /// </summary>
-        public static short UNKNOWN_RULE => Clazz.GetField<short>("UNKNOWN_RULE");
+        public static short UNKNOWN_RULE { get { return LocalClazz.GetField<short>("UNKNOWN_RULE"); } }
         
         #endregion
 

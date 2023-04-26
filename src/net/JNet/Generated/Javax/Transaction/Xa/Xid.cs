@@ -40,11 +40,11 @@ namespace Javax.Transaction.Xa
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXBQUALSIZE"/>
         /// </summary>
-        public static int MAXBQUALSIZE => Clazz.GetField<int>("MAXBQUALSIZE");
+        public static int MAXBQUALSIZE { get { return LocalClazz.GetField<int>("MAXBQUALSIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE"/>
         /// </summary>
-        public static int MAXGTRIDSIZE => Clazz.GetField<int>("MAXGTRIDSIZE");
+        public static int MAXGTRIDSIZE { get { return LocalClazz.GetField<int>("MAXGTRIDSIZE"); } }
         
         #endregion
 

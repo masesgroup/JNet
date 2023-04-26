@@ -78,19 +78,19 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#isSelected"/>
             /// </summary>
-            public bool isSelected => Instance.GetField<bool>("isSelected");
+            public bool isSelected { get { return Instance.GetField<bool>("isSelected"); } set { Instance.SetField("isSelected", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#wasFocused"/>
             /// </summary>
-            public Java.Awt.Component wasFocused => Instance.GetField<Java.Awt.Component>("wasFocused");
+            public Java.Awt.Component wasFocused { get { return Instance.GetField<Java.Awt.Component>("wasFocused"); } set { Instance.SetField("wasFocused", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu"/>
             /// </summary>
-            public Javax.Swing.JMenu menu => Instance.GetField<Javax.Swing.JMenu>("menu");
+            public Javax.Swing.JMenu menu { get { return Instance.GetField<Javax.Swing.JMenu>("menu"); } set { Instance.SetField("menu", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui"/>
             /// </summary>
-            public Javax.Swing.Plaf.Basic.BasicMenuUI ui => Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui");
+            public Javax.Swing.Plaf.Basic.BasicMenuUI ui { get { return Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui"); } set { Instance.SetField("ui", value); } }
             
             #endregion
 

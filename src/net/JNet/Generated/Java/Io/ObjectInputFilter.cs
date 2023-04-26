@@ -178,15 +178,15 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#ALLOWED"/>
             /// </summary>
-            public static Java.Io.ObjectInputFilter.Status ALLOWED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("ALLOWED");
+            public static Java.Io.ObjectInputFilter.Status ALLOWED { get { return LocalClazz.GetField<Java.Io.ObjectInputFilter.Status>("ALLOWED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#REJECTED"/>
             /// </summary>
-            public static Java.Io.ObjectInputFilter.Status REJECTED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("REJECTED");
+            public static Java.Io.ObjectInputFilter.Status REJECTED { get { return LocalClazz.GetField<Java.Io.ObjectInputFilter.Status>("REJECTED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED"/>
             /// </summary>
-            public static Java.Io.ObjectInputFilter.Status UNDECIDED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED");
+            public static Java.Io.ObjectInputFilter.Status UNDECIDED { get { return LocalClazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED"); } }
             
             #endregion
 

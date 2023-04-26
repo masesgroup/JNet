@@ -133,19 +133,19 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#DEFER"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("DEFER");
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER { get { return LocalClazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("DEFER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#FILES"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature FILES => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("FILES");
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature FILES { get { return LocalClazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("FILES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#PREFER"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature PREFER => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("PREFER");
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature PREFER { get { return LocalClazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("PREFER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#RESOLVE"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature RESOLVE => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("RESOLVE");
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature RESOLVE { get { return LocalClazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("RESOLVE"); } }
             
             #endregion
 

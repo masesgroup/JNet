@@ -78,19 +78,19 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION"/>
         /// </summary>
-        public static int ACTION => Clazz.GetField<int>("ACTION");
+        public static int ACTION { get { return LocalClazz.GetField<int>("ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION_INFO"/>
         /// </summary>
-        public static int ACTION_INFO => Clazz.GetField<int>("ACTION_INFO");
+        public static int ACTION_INFO { get { return LocalClazz.GetField<int>("ACTION_INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#INFO"/>
         /// </summary>
-        public static int INFO => Clazz.GetField<int>("INFO");
+        public static int INFO { get { return LocalClazz.GetField<int>("INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#UNKNOWN"/>
         /// </summary>
-        public static int UNKNOWN => Clazz.GetField<int>("UNKNOWN");
+        public static int UNKNOWN { get { return LocalClazz.GetField<int>("UNKNOWN"); } }
         
         #endregion
 

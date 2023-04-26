@@ -97,7 +97,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#ROLE_CARDINALITY_INFINITY"/>
         /// </summary>
-        public static int ROLE_CARDINALITY_INFINITY => Clazz.GetField<int>("ROLE_CARDINALITY_INFINITY");
+        public static int ROLE_CARDINALITY_INFINITY { get { return LocalClazz.GetField<int>("ROLE_CARDINALITY_INFINITY"); } }
         
         #endregion
 

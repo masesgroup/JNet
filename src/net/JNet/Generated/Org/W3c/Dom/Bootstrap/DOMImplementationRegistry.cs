@@ -40,7 +40,7 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#PROPERTY"/>
         /// </summary>
-        public static string PROPERTY => Clazz.GetField<string>("PROPERTY");
+        public static string PROPERTY { get { return LocalClazz.GetField<string>("PROPERTY"); } }
         
         #endregion
 

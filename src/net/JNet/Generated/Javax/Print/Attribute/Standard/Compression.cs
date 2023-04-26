@@ -44,19 +44,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#COMPRESS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression COMPRESS => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("COMPRESS");
+        public static Javax.Print.Attribute.Standard.Compression COMPRESS { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Compression>("COMPRESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#DEFLATE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression DEFLATE => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("DEFLATE");
+        public static Javax.Print.Attribute.Standard.Compression DEFLATE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Compression>("DEFLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#GZIP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression GZIP => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("GZIP");
+        public static Javax.Print.Attribute.Standard.Compression GZIP { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Compression>("GZIP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#NONE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression NONE => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("NONE");
+        public static Javax.Print.Attribute.Standard.Compression NONE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Compression>("NONE"); } }
         
         #endregion
 

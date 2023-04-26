@@ -56,11 +56,11 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MAX_VALUE"/>
         /// </summary>
-        public static int MAX_VALUE => Clazz.GetField<int>("MAX_VALUE");
+        public static int MAX_VALUE { get { return LocalClazz.GetField<int>("MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MIN_VALUE"/>
         /// </summary>
-        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
+        public static int MIN_VALUE { get { return LocalClazz.GetField<int>("MIN_VALUE"); } }
         
         #endregion
 

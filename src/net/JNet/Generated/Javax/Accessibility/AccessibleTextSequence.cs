@@ -50,15 +50,15 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#endIndex"/>
         /// </summary>
-        public int endIndex => Instance.GetField<int>("endIndex");
+        public int endIndex { get { return Instance.GetField<int>("endIndex"); } set { Instance.SetField("endIndex", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#startIndex"/>
         /// </summary>
-        public int startIndex => Instance.GetField<int>("startIndex");
+        public int startIndex { get { return Instance.GetField<int>("startIndex"); } set { Instance.SetField("startIndex", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#text"/>
         /// </summary>
-        public string text => Instance.GetField<string>("text");
+        public string text { get { return Instance.GetField<string>("text"); } set { Instance.SetField("text", value); } }
         
         #endregion
 

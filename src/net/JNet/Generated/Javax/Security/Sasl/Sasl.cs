@@ -40,59 +40,59 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#BOUND_SERVER_NAME"/>
         /// </summary>
-        public static string BOUND_SERVER_NAME => Clazz.GetField<string>("BOUND_SERVER_NAME");
+        public static string BOUND_SERVER_NAME { get { return LocalClazz.GetField<string>("BOUND_SERVER_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#CREDENTIALS"/>
         /// </summary>
-        public static string CREDENTIALS => Clazz.GetField<string>("CREDENTIALS");
+        public static string CREDENTIALS { get { return LocalClazz.GetField<string>("CREDENTIALS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#MAX_BUFFER"/>
         /// </summary>
-        public static string MAX_BUFFER => Clazz.GetField<string>("MAX_BUFFER");
+        public static string MAX_BUFFER { get { return LocalClazz.GetField<string>("MAX_BUFFER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_FORWARD_SECRECY"/>
         /// </summary>
-        public static string POLICY_FORWARD_SECRECY => Clazz.GetField<string>("POLICY_FORWARD_SECRECY");
+        public static string POLICY_FORWARD_SECRECY { get { return LocalClazz.GetField<string>("POLICY_FORWARD_SECRECY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOACTIVE"/>
         /// </summary>
-        public static string POLICY_NOACTIVE => Clazz.GetField<string>("POLICY_NOACTIVE");
+        public static string POLICY_NOACTIVE { get { return LocalClazz.GetField<string>("POLICY_NOACTIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOANONYMOUS"/>
         /// </summary>
-        public static string POLICY_NOANONYMOUS => Clazz.GetField<string>("POLICY_NOANONYMOUS");
+        public static string POLICY_NOANONYMOUS { get { return LocalClazz.GetField<string>("POLICY_NOANONYMOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NODICTIONARY"/>
         /// </summary>
-        public static string POLICY_NODICTIONARY => Clazz.GetField<string>("POLICY_NODICTIONARY");
+        public static string POLICY_NODICTIONARY { get { return LocalClazz.GetField<string>("POLICY_NODICTIONARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOPLAINTEXT"/>
         /// </summary>
-        public static string POLICY_NOPLAINTEXT => Clazz.GetField<string>("POLICY_NOPLAINTEXT");
+        public static string POLICY_NOPLAINTEXT { get { return LocalClazz.GetField<string>("POLICY_NOPLAINTEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_PASS_CREDENTIALS"/>
         /// </summary>
-        public static string POLICY_PASS_CREDENTIALS => Clazz.GetField<string>("POLICY_PASS_CREDENTIALS");
+        public static string POLICY_PASS_CREDENTIALS { get { return LocalClazz.GetField<string>("POLICY_PASS_CREDENTIALS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#QOP"/>
         /// </summary>
-        public static string QOP => Clazz.GetField<string>("QOP");
+        public static string QOP { get { return LocalClazz.GetField<string>("QOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#RAW_SEND_SIZE"/>
         /// </summary>
-        public static string RAW_SEND_SIZE => Clazz.GetField<string>("RAW_SEND_SIZE");
+        public static string RAW_SEND_SIZE { get { return LocalClazz.GetField<string>("RAW_SEND_SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#REUSE"/>
         /// </summary>
-        public static string REUSE => Clazz.GetField<string>("REUSE");
+        public static string REUSE { get { return LocalClazz.GetField<string>("REUSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#SERVER_AUTH"/>
         /// </summary>
-        public static string SERVER_AUTH => Clazz.GetField<string>("SERVER_AUTH");
+        public static string SERVER_AUTH { get { return LocalClazz.GetField<string>("SERVER_AUTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#STRENGTH"/>
         /// </summary>
-        public static string STRENGTH => Clazz.GetField<string>("STRENGTH");
+        public static string STRENGTH { get { return LocalClazz.GetField<string>("STRENGTH"); } }
         
         #endregion
 

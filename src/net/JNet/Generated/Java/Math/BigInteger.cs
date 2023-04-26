@@ -118,19 +118,19 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ONE"/>
         /// </summary>
-        public static Java.Math.BigInteger ONE => Clazz.GetField<Java.Math.BigInteger>("ONE");
+        public static Java.Math.BigInteger ONE { get { return LocalClazz.GetField<Java.Math.BigInteger>("ONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN"/>
         /// </summary>
-        public static Java.Math.BigInteger TEN => Clazz.GetField<Java.Math.BigInteger>("TEN");
+        public static Java.Math.BigInteger TEN { get { return LocalClazz.GetField<Java.Math.BigInteger>("TEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TWO"/>
         /// </summary>
-        public static Java.Math.BigInteger TWO => Clazz.GetField<Java.Math.BigInteger>("TWO");
+        public static Java.Math.BigInteger TWO { get { return LocalClazz.GetField<Java.Math.BigInteger>("TWO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO"/>
         /// </summary>
-        public static Java.Math.BigInteger ZERO => Clazz.GetField<Java.Math.BigInteger>("ZERO");
+        public static Java.Math.BigInteger ZERO { get { return LocalClazz.GetField<Java.Math.BigInteger>("ZERO"); } }
         
         #endregion
 

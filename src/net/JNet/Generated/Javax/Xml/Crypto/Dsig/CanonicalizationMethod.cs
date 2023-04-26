@@ -40,19 +40,19 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#EXCLUSIVE"/>
         /// </summary>
-        public static string EXCLUSIVE => Clazz.GetField<string>("EXCLUSIVE");
+        public static string EXCLUSIVE { get { return LocalClazz.GetField<string>("EXCLUSIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#EXCLUSIVE_WITH_COMMENTS"/>
         /// </summary>
-        public static string EXCLUSIVE_WITH_COMMENTS => Clazz.GetField<string>("EXCLUSIVE_WITH_COMMENTS");
+        public static string EXCLUSIVE_WITH_COMMENTS { get { return LocalClazz.GetField<string>("EXCLUSIVE_WITH_COMMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE"/>
         /// </summary>
-        public static string INCLUSIVE => Clazz.GetField<string>("INCLUSIVE");
+        public static string INCLUSIVE { get { return LocalClazz.GetField<string>("INCLUSIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE_WITH_COMMENTS"/>
         /// </summary>
-        public static string INCLUSIVE_WITH_COMMENTS => Clazz.GetField<string>("INCLUSIVE_WITH_COMMENTS");
+        public static string INCLUSIVE_WITH_COMMENTS { get { return LocalClazz.GetField<string>("INCLUSIVE_WITH_COMMENTS"); } }
         
         #endregion
 

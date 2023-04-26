@@ -40,7 +40,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#FOCUS_MANAGER_CLASS_PROPERTY"/>
         /// </summary>
-        public static string FOCUS_MANAGER_CLASS_PROPERTY => Clazz.GetField<string>("FOCUS_MANAGER_CLASS_PROPERTY");
+        public static string FOCUS_MANAGER_CLASS_PROPERTY { get { return LocalClazz.GetField<string>("FOCUS_MANAGER_CLASS_PROPERTY"); } }
         
         #endregion
 

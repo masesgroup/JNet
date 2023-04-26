@@ -44,15 +44,15 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("ERROR");
+        public static Javax.Print.Attribute.Standard.Severity ERROR { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Severity>("ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#REPORT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity REPORT => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("REPORT");
+        public static Javax.Print.Attribute.Standard.Severity REPORT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Severity>("REPORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#WARNING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity WARNING => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("WARNING");
+        public static Javax.Print.Attribute.Standard.Severity WARNING { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Severity>("WARNING"); } }
         
         #endregion
 

@@ -214,15 +214,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType ALL => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL");
+            public static Java.Awt.JobAttributes.DefaultSelectionType ALL { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE");
+            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
+            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION"); } }
             
             #endregion
 
@@ -253,11 +253,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#FILE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DestinationType FILE => Clazz.GetField<Java.Awt.JobAttributes.DestinationType>("FILE");
+            public static Java.Awt.JobAttributes.DestinationType FILE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DestinationType>("FILE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#PRINTER"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DestinationType PRINTER => Clazz.GetField<Java.Awt.JobAttributes.DestinationType>("PRINTER");
+            public static Java.Awt.JobAttributes.DestinationType PRINTER { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DestinationType>("PRINTER"); } }
             
             #endregion
 
@@ -288,15 +288,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#COMMON"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType COMMON => Clazz.GetField<Java.Awt.JobAttributes.DialogType>("COMMON");
+            public static Java.Awt.JobAttributes.DialogType COMMON { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DialogType>("COMMON"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NATIVE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType NATIVE => Clazz.GetField<Java.Awt.JobAttributes.DialogType>("NATIVE");
+            public static Java.Awt.JobAttributes.DialogType NATIVE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DialogType>("NATIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NONE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType NONE => Clazz.GetField<Java.Awt.JobAttributes.DialogType>("NONE");
+            public static Java.Awt.JobAttributes.DialogType NONE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DialogType>("NONE"); } }
             
             #endregion
 
@@ -327,11 +327,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES { get { return LocalClazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES { get { return LocalClazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"); } }
             
             #endregion
 
@@ -362,15 +362,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#ONE_SIDED"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType ONE_SIDED => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("ONE_SIDED");
+            public static Java.Awt.JobAttributes.SidesType ONE_SIDED { get { return LocalClazz.GetField<Java.Awt.JobAttributes.SidesType>("ONE_SIDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_LONG_EDGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_LONG_EDGE");
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_LONG_EDGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_SHORT_EDGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_SHORT_EDGE");
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_SHORT_EDGE"); } }
             
             #endregion
 

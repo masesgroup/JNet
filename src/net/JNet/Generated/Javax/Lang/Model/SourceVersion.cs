@@ -40,51 +40,51 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_0"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_0 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_0");
+        public static Javax.Lang.Model.SourceVersion RELEASE_0 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_0"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_1"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_1 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_1");
+        public static Javax.Lang.Model.SourceVersion RELEASE_1 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_10 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_10");
+        public static Javax.Lang.Model.SourceVersion RELEASE_10 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_10"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_11 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_11");
+        public static Javax.Lang.Model.SourceVersion RELEASE_11 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_11"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_2"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_2 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_2");
+        public static Javax.Lang.Model.SourceVersion RELEASE_2 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_3"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_3 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_3");
+        public static Javax.Lang.Model.SourceVersion RELEASE_3 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_3"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_4"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_4 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_4");
+        public static Javax.Lang.Model.SourceVersion RELEASE_4 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_4"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_5"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_5 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_5");
+        public static Javax.Lang.Model.SourceVersion RELEASE_5 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_5"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_6"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_6 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_6");
+        public static Javax.Lang.Model.SourceVersion RELEASE_6 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_6"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_7"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_7 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_7");
+        public static Javax.Lang.Model.SourceVersion RELEASE_7 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_7"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_8"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_8 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_8");
+        public static Javax.Lang.Model.SourceVersion RELEASE_8 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_8"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_9 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_9");
+        public static Javax.Lang.Model.SourceVersion RELEASE_9 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_9"); } }
         
         #endregion
 

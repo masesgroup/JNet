@@ -40,35 +40,35 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT"/>
         /// </summary>
-        public static int CONCURRENT => Clazz.GetField<int>("CONCURRENT");
+        public static int CONCURRENT { get { return LocalClazz.GetField<int>("CONCURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT"/>
         /// </summary>
-        public static int DISTINCT => Clazz.GetField<int>("DISTINCT");
+        public static int DISTINCT { get { return LocalClazz.GetField<int>("DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE"/>
         /// </summary>
-        public static int IMMUTABLE => Clazz.GetField<int>("IMMUTABLE");
+        public static int IMMUTABLE { get { return LocalClazz.GetField<int>("IMMUTABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL"/>
         /// </summary>
-        public static int NONNULL => Clazz.GetField<int>("NONNULL");
+        public static int NONNULL { get { return LocalClazz.GetField<int>("NONNULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED"/>
         /// </summary>
-        public static int ORDERED => Clazz.GetField<int>("ORDERED");
+        public static int ORDERED { get { return LocalClazz.GetField<int>("ORDERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED"/>
         /// </summary>
-        public static int SIZED => Clazz.GetField<int>("SIZED");
+        public static int SIZED { get { return LocalClazz.GetField<int>("SIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED"/>
         /// </summary>
-        public static int SORTED => Clazz.GetField<int>("SORTED");
+        public static int SORTED { get { return LocalClazz.GetField<int>("SORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
-        public static int SUBSIZED => Clazz.GetField<int>("SUBSIZED");
+        public static int SUBSIZED { get { return LocalClazz.GetField<int>("SUBSIZED"); } }
         
         #endregion
 
@@ -529,35 +529,35 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT"/>
         /// </summary>
-        public static int CONCURRENT => Clazz.GetField<int>("CONCURRENT");
+        public static int CONCURRENT { get { return LocalClazz.GetField<int>("CONCURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT"/>
         /// </summary>
-        public static int DISTINCT => Clazz.GetField<int>("DISTINCT");
+        public static int DISTINCT { get { return LocalClazz.GetField<int>("DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE"/>
         /// </summary>
-        public static int IMMUTABLE => Clazz.GetField<int>("IMMUTABLE");
+        public static int IMMUTABLE { get { return LocalClazz.GetField<int>("IMMUTABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL"/>
         /// </summary>
-        public static int NONNULL => Clazz.GetField<int>("NONNULL");
+        public static int NONNULL { get { return LocalClazz.GetField<int>("NONNULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED"/>
         /// </summary>
-        public static int ORDERED => Clazz.GetField<int>("ORDERED");
+        public static int ORDERED { get { return LocalClazz.GetField<int>("ORDERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED"/>
         /// </summary>
-        public static int SIZED => Clazz.GetField<int>("SIZED");
+        public static int SIZED { get { return LocalClazz.GetField<int>("SIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED"/>
         /// </summary>
-        public static int SORTED => Clazz.GetField<int>("SORTED");
+        public static int SORTED { get { return LocalClazz.GetField<int>("SORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
-        public static int SUBSIZED => Clazz.GetField<int>("SUBSIZED");
+        public static int SUBSIZED { get { return LocalClazz.GetField<int>("SUBSIZED"); } }
         
         #endregion
 

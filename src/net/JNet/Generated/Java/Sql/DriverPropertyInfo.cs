@@ -49,23 +49,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#required"/>
         /// </summary>
-        public bool required => Instance.GetField<bool>("required");
+        public bool required { get { return Instance.GetField<bool>("required"); } set { Instance.SetField("required", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#description"/>
         /// </summary>
-        public string description => Instance.GetField<string>("description");
+        public string description { get { return Instance.GetField<string>("description"); } set { Instance.SetField("description", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#name"/>
         /// </summary>
-        public string name => Instance.GetField<string>("name");
+        public string name { get { return Instance.GetField<string>("name"); } set { Instance.SetField("name", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#value"/>
         /// </summary>
-        public string value => Instance.GetField<string>("value");
+        public string value { get { return Instance.GetField<string>("value"); } set { Instance.SetField("value", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#choices"/>
         /// </summary>
-        public string[] choices => Instance.GetField<string[]>("choices");
+        public string[] choices { get { return Instance.GetField<string[]>("choices"); } set { Instance.SetField("choices", value); } }
         
         #endregion
 

@@ -40,11 +40,11 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#ENGINE_SCOPE"/>
         /// </summary>
-        public static int ENGINE_SCOPE => Clazz.GetField<int>("ENGINE_SCOPE");
+        public static int ENGINE_SCOPE { get { return LocalClazz.GetField<int>("ENGINE_SCOPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#GLOBAL_SCOPE"/>
         /// </summary>
-        public static int GLOBAL_SCOPE => Clazz.GetField<int>("GLOBAL_SCOPE");
+        public static int GLOBAL_SCOPE { get { return LocalClazz.GetField<int>("GLOBAL_SCOPE"); } }
         
         #endregion
 

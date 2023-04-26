@@ -102,47 +102,47 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#CONTENT_PANE_PROPERTY"/>
         /// </summary>
-        public static string CONTENT_PANE_PROPERTY => Clazz.GetField<string>("CONTENT_PANE_PROPERTY");
+        public static string CONTENT_PANE_PROPERTY { get { return LocalClazz.GetField<string>("CONTENT_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#FRAME_ICON_PROPERTY"/>
         /// </summary>
-        public static string FRAME_ICON_PROPERTY => Clazz.GetField<string>("FRAME_ICON_PROPERTY");
+        public static string FRAME_ICON_PROPERTY { get { return LocalClazz.GetField<string>("FRAME_ICON_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#GLASS_PANE_PROPERTY"/>
         /// </summary>
-        public static string GLASS_PANE_PROPERTY => Clazz.GetField<string>("GLASS_PANE_PROPERTY");
+        public static string GLASS_PANE_PROPERTY { get { return LocalClazz.GetField<string>("GLASS_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_CLOSED_PROPERTY"/>
         /// </summary>
-        public static string IS_CLOSED_PROPERTY => Clazz.GetField<string>("IS_CLOSED_PROPERTY");
+        public static string IS_CLOSED_PROPERTY { get { return LocalClazz.GetField<string>("IS_CLOSED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_ICON_PROPERTY"/>
         /// </summary>
-        public static string IS_ICON_PROPERTY => Clazz.GetField<string>("IS_ICON_PROPERTY");
+        public static string IS_ICON_PROPERTY { get { return LocalClazz.GetField<string>("IS_ICON_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_MAXIMUM_PROPERTY"/>
         /// </summary>
-        public static string IS_MAXIMUM_PROPERTY => Clazz.GetField<string>("IS_MAXIMUM_PROPERTY");
+        public static string IS_MAXIMUM_PROPERTY { get { return LocalClazz.GetField<string>("IS_MAXIMUM_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_SELECTED_PROPERTY"/>
         /// </summary>
-        public static string IS_SELECTED_PROPERTY => Clazz.GetField<string>("IS_SELECTED_PROPERTY");
+        public static string IS_SELECTED_PROPERTY { get { return LocalClazz.GetField<string>("IS_SELECTED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#LAYERED_PANE_PROPERTY"/>
         /// </summary>
-        public static string LAYERED_PANE_PROPERTY => Clazz.GetField<string>("LAYERED_PANE_PROPERTY");
+        public static string LAYERED_PANE_PROPERTY { get { return LocalClazz.GetField<string>("LAYERED_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#MENU_BAR_PROPERTY"/>
         /// </summary>
-        public static string MENU_BAR_PROPERTY => Clazz.GetField<string>("MENU_BAR_PROPERTY");
+        public static string MENU_BAR_PROPERTY { get { return LocalClazz.GetField<string>("MENU_BAR_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#ROOT_PANE_PROPERTY"/>
         /// </summary>
-        public static string ROOT_PANE_PROPERTY => Clazz.GetField<string>("ROOT_PANE_PROPERTY");
+        public static string ROOT_PANE_PROPERTY { get { return LocalClazz.GetField<string>("ROOT_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY"/>
         /// </summary>
-        public static string TITLE_PROPERTY => Clazz.GetField<string>("TITLE_PROPERTY");
+        public static string TITLE_PROPERTY { get { return LocalClazz.GetField<string>("TITLE_PROPERTY"); } }
         
         #endregion
 

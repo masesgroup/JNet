@@ -44,7 +44,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html#INSTANCE"/>
         /// </summary>
-        public static Java.Time.Chrono.IsoChronology INSTANCE => Clazz.GetField<Java.Time.Chrono.IsoChronology>("INSTANCE");
+        public static Java.Time.Chrono.IsoChronology INSTANCE { get { return LocalClazz.GetField<Java.Time.Chrono.IsoChronology>("INSTANCE"); } }
         
         #endregion
 

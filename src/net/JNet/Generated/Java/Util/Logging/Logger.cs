@@ -40,7 +40,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#GLOBAL_LOGGER_NAME"/>
         /// </summary>
-        public static string GLOBAL_LOGGER_NAME => Clazz.GetField<string>("GLOBAL_LOGGER_NAME");
+        public static string GLOBAL_LOGGER_NAME { get { return LocalClazz.GetField<string>("GLOBAL_LOGGER_NAME"); } }
         
         #endregion
 

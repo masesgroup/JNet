@@ -40,15 +40,15 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#DELETE"/>
         /// </summary>
-        public static int DELETE => Clazz.GetField<int>("DELETE");
+        public static int DELETE { get { return LocalClazz.GetField<int>("DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#INSERT"/>
         /// </summary>
-        public static int INSERT => Clazz.GetField<int>("INSERT");
+        public static int INSERT { get { return LocalClazz.GetField<int>("INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#UPDATE"/>
         /// </summary>
-        public static int UPDATE => Clazz.GetField<int>("UPDATE");
+        public static int UPDATE { get { return LocalClazz.GetField<int>("UPDATE"); } }
         
         #endregion
 

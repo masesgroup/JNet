@@ -40,15 +40,15 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#CLASS"/>
         /// </summary>
-        public static Java.Lang.Annotation.RetentionPolicy CLASS => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("CLASS");
+        public static Java.Lang.Annotation.RetentionPolicy CLASS { get { return LocalClazz.GetField<Java.Lang.Annotation.RetentionPolicy>("CLASS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME"/>
         /// </summary>
-        public static Java.Lang.Annotation.RetentionPolicy RUNTIME => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("RUNTIME");
+        public static Java.Lang.Annotation.RetentionPolicy RUNTIME { get { return LocalClazz.GetField<Java.Lang.Annotation.RetentionPolicy>("RUNTIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#SOURCE"/>
         /// </summary>
-        public static Java.Lang.Annotation.RetentionPolicy SOURCE => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("SOURCE");
+        public static Java.Lang.Annotation.RetentionPolicy SOURCE { get { return LocalClazz.GetField<Java.Lang.Annotation.RetentionPolicy>("SOURCE"); } }
         
         #endregion
 

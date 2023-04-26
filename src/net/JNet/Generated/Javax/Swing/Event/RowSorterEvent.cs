@@ -105,11 +105,11 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORT_ORDER_CHANGED"/>
             /// </summary>
-            public static Javax.Swing.Event.RowSorterEvent.Type SORT_ORDER_CHANGED => Clazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORT_ORDER_CHANGED");
+            public static Javax.Swing.Event.RowSorterEvent.Type SORT_ORDER_CHANGED { get { return LocalClazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORT_ORDER_CHANGED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORTED"/>
             /// </summary>
-            public static Javax.Swing.Event.RowSorterEvent.Type SORTED => Clazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORTED");
+            public static Javax.Swing.Event.RowSorterEvent.Type SORTED { get { return LocalClazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORTED"); } }
             
             #endregion
 

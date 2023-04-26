@@ -40,239 +40,239 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#BACKGROUND"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute BACKGROUND => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("BACKGROUND");
+        public static Java.Awt.FontNs.TextAttribute BACKGROUND { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("BACKGROUND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#BIDI_EMBEDDING"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute BIDI_EMBEDDING => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("BIDI_EMBEDDING");
+        public static Java.Awt.FontNs.TextAttribute BIDI_EMBEDDING { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("BIDI_EMBEDDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#CHAR_REPLACEMENT"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute CHAR_REPLACEMENT => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("CHAR_REPLACEMENT");
+        public static Java.Awt.FontNs.TextAttribute CHAR_REPLACEMENT { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("CHAR_REPLACEMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#FAMILY"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute FAMILY => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("FAMILY");
+        public static Java.Awt.FontNs.TextAttribute FAMILY { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("FAMILY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#FONT"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute FONT => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("FONT");
+        public static Java.Awt.FontNs.TextAttribute FONT { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("FONT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#FOREGROUND"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute FOREGROUND => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("FOREGROUND");
+        public static Java.Awt.FontNs.TextAttribute FOREGROUND { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("FOREGROUND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#INPUT_METHOD_HIGHLIGHT"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute INPUT_METHOD_HIGHLIGHT => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("INPUT_METHOD_HIGHLIGHT");
+        public static Java.Awt.FontNs.TextAttribute INPUT_METHOD_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("INPUT_METHOD_HIGHLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#INPUT_METHOD_UNDERLINE"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute INPUT_METHOD_UNDERLINE => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("INPUT_METHOD_UNDERLINE");
+        public static Java.Awt.FontNs.TextAttribute INPUT_METHOD_UNDERLINE { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("INPUT_METHOD_UNDERLINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#JUSTIFICATION"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute JUSTIFICATION => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("JUSTIFICATION");
+        public static Java.Awt.FontNs.TextAttribute JUSTIFICATION { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("JUSTIFICATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#KERNING"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute KERNING => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("KERNING");
+        public static Java.Awt.FontNs.TextAttribute KERNING { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("KERNING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#LIGATURES"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute LIGATURES => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("LIGATURES");
+        public static Java.Awt.FontNs.TextAttribute LIGATURES { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("LIGATURES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#NUMERIC_SHAPING"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute NUMERIC_SHAPING => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("NUMERIC_SHAPING");
+        public static Java.Awt.FontNs.TextAttribute NUMERIC_SHAPING { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("NUMERIC_SHAPING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#POSTURE"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute POSTURE => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("POSTURE");
+        public static Java.Awt.FontNs.TextAttribute POSTURE { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("POSTURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#RUN_DIRECTION"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute RUN_DIRECTION => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("RUN_DIRECTION");
+        public static Java.Awt.FontNs.TextAttribute RUN_DIRECTION { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("RUN_DIRECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SIZE"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute SIZE => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("SIZE");
+        public static Java.Awt.FontNs.TextAttribute SIZE { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#STRIKETHROUGH"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute STRIKETHROUGH => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("STRIKETHROUGH");
+        public static Java.Awt.FontNs.TextAttribute STRIKETHROUGH { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("STRIKETHROUGH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SUPERSCRIPT"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute SUPERSCRIPT => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("SUPERSCRIPT");
+        public static Java.Awt.FontNs.TextAttribute SUPERSCRIPT { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("SUPERSCRIPT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SWAP_COLORS"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute SWAP_COLORS => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("SWAP_COLORS");
+        public static Java.Awt.FontNs.TextAttribute SWAP_COLORS { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("SWAP_COLORS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#TRACKING"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute TRACKING => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("TRACKING");
+        public static Java.Awt.FontNs.TextAttribute TRACKING { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("TRACKING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#TRANSFORM"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute TRANSFORM => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("TRANSFORM");
+        public static Java.Awt.FontNs.TextAttribute TRANSFORM { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("TRANSFORM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute UNDERLINE => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("UNDERLINE");
+        public static Java.Awt.FontNs.TextAttribute UNDERLINE { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("UNDERLINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute WEIGHT => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("WEIGHT");
+        public static Java.Awt.FontNs.TextAttribute WEIGHT { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("WEIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH"/>
         /// </summary>
-        public static Java.Awt.FontNs.TextAttribute WIDTH => Clazz.GetField<Java.Awt.FontNs.TextAttribute>("WIDTH");
+        public static Java.Awt.FontNs.TextAttribute WIDTH { get { return LocalClazz.GetField<Java.Awt.FontNs.TextAttribute>("WIDTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#RUN_DIRECTION_LTR"/>
         /// </summary>
-        public static bool? RUN_DIRECTION_LTR => Clazz.GetField<bool?>("RUN_DIRECTION_LTR");
+        public static bool? RUN_DIRECTION_LTR { get { return LocalClazz.GetField<bool?>("RUN_DIRECTION_LTR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#RUN_DIRECTION_RTL"/>
         /// </summary>
-        public static bool? RUN_DIRECTION_RTL => Clazz.GetField<bool?>("RUN_DIRECTION_RTL");
+        public static bool? RUN_DIRECTION_RTL { get { return LocalClazz.GetField<bool?>("RUN_DIRECTION_RTL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#STRIKETHROUGH_ON"/>
         /// </summary>
-        public static bool? STRIKETHROUGH_ON => Clazz.GetField<bool?>("STRIKETHROUGH_ON");
+        public static bool? STRIKETHROUGH_ON { get { return LocalClazz.GetField<bool?>("STRIKETHROUGH_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SWAP_COLORS_ON"/>
         /// </summary>
-        public static bool? SWAP_COLORS_ON => Clazz.GetField<bool?>("SWAP_COLORS_ON");
+        public static bool? SWAP_COLORS_ON { get { return LocalClazz.GetField<bool?>("SWAP_COLORS_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#JUSTIFICATION_FULL"/>
         /// </summary>
-        public static float? JUSTIFICATION_FULL => Clazz.GetField<float?>("JUSTIFICATION_FULL");
+        public static float? JUSTIFICATION_FULL { get { return LocalClazz.GetField<float?>("JUSTIFICATION_FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#JUSTIFICATION_NONE"/>
         /// </summary>
-        public static float? JUSTIFICATION_NONE => Clazz.GetField<float?>("JUSTIFICATION_NONE");
+        public static float? JUSTIFICATION_NONE { get { return LocalClazz.GetField<float?>("JUSTIFICATION_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#POSTURE_OBLIQUE"/>
         /// </summary>
-        public static float? POSTURE_OBLIQUE => Clazz.GetField<float?>("POSTURE_OBLIQUE");
+        public static float? POSTURE_OBLIQUE { get { return LocalClazz.GetField<float?>("POSTURE_OBLIQUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#POSTURE_REGULAR"/>
         /// </summary>
-        public static float? POSTURE_REGULAR => Clazz.GetField<float?>("POSTURE_REGULAR");
+        public static float? POSTURE_REGULAR { get { return LocalClazz.GetField<float?>("POSTURE_REGULAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#TRACKING_LOOSE"/>
         /// </summary>
-        public static float? TRACKING_LOOSE => Clazz.GetField<float?>("TRACKING_LOOSE");
+        public static float? TRACKING_LOOSE { get { return LocalClazz.GetField<float?>("TRACKING_LOOSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#TRACKING_TIGHT"/>
         /// </summary>
-        public static float? TRACKING_TIGHT => Clazz.GetField<float?>("TRACKING_TIGHT");
+        public static float? TRACKING_TIGHT { get { return LocalClazz.GetField<float?>("TRACKING_TIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_BOLD"/>
         /// </summary>
-        public static float? WEIGHT_BOLD => Clazz.GetField<float?>("WEIGHT_BOLD");
+        public static float? WEIGHT_BOLD { get { return LocalClazz.GetField<float?>("WEIGHT_BOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_DEMIBOLD"/>
         /// </summary>
-        public static float? WEIGHT_DEMIBOLD => Clazz.GetField<float?>("WEIGHT_DEMIBOLD");
+        public static float? WEIGHT_DEMIBOLD { get { return LocalClazz.GetField<float?>("WEIGHT_DEMIBOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_DEMILIGHT"/>
         /// </summary>
-        public static float? WEIGHT_DEMILIGHT => Clazz.GetField<float?>("WEIGHT_DEMILIGHT");
+        public static float? WEIGHT_DEMILIGHT { get { return LocalClazz.GetField<float?>("WEIGHT_DEMILIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_EXTRA_LIGHT"/>
         /// </summary>
-        public static float? WEIGHT_EXTRA_LIGHT => Clazz.GetField<float?>("WEIGHT_EXTRA_LIGHT");
+        public static float? WEIGHT_EXTRA_LIGHT { get { return LocalClazz.GetField<float?>("WEIGHT_EXTRA_LIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_EXTRABOLD"/>
         /// </summary>
-        public static float? WEIGHT_EXTRABOLD => Clazz.GetField<float?>("WEIGHT_EXTRABOLD");
+        public static float? WEIGHT_EXTRABOLD { get { return LocalClazz.GetField<float?>("WEIGHT_EXTRABOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_HEAVY"/>
         /// </summary>
-        public static float? WEIGHT_HEAVY => Clazz.GetField<float?>("WEIGHT_HEAVY");
+        public static float? WEIGHT_HEAVY { get { return LocalClazz.GetField<float?>("WEIGHT_HEAVY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_LIGHT"/>
         /// </summary>
-        public static float? WEIGHT_LIGHT => Clazz.GetField<float?>("WEIGHT_LIGHT");
+        public static float? WEIGHT_LIGHT { get { return LocalClazz.GetField<float?>("WEIGHT_LIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_MEDIUM"/>
         /// </summary>
-        public static float? WEIGHT_MEDIUM => Clazz.GetField<float?>("WEIGHT_MEDIUM");
+        public static float? WEIGHT_MEDIUM { get { return LocalClazz.GetField<float?>("WEIGHT_MEDIUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_REGULAR"/>
         /// </summary>
-        public static float? WEIGHT_REGULAR => Clazz.GetField<float?>("WEIGHT_REGULAR");
+        public static float? WEIGHT_REGULAR { get { return LocalClazz.GetField<float?>("WEIGHT_REGULAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_SEMIBOLD"/>
         /// </summary>
-        public static float? WEIGHT_SEMIBOLD => Clazz.GetField<float?>("WEIGHT_SEMIBOLD");
+        public static float? WEIGHT_SEMIBOLD { get { return LocalClazz.GetField<float?>("WEIGHT_SEMIBOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WEIGHT_ULTRABOLD"/>
         /// </summary>
-        public static float? WEIGHT_ULTRABOLD => Clazz.GetField<float?>("WEIGHT_ULTRABOLD");
+        public static float? WEIGHT_ULTRABOLD { get { return LocalClazz.GetField<float?>("WEIGHT_ULTRABOLD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH_CONDENSED"/>
         /// </summary>
-        public static float? WIDTH_CONDENSED => Clazz.GetField<float?>("WIDTH_CONDENSED");
+        public static float? WIDTH_CONDENSED { get { return LocalClazz.GetField<float?>("WIDTH_CONDENSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH_EXTENDED"/>
         /// </summary>
-        public static float? WIDTH_EXTENDED => Clazz.GetField<float?>("WIDTH_EXTENDED");
+        public static float? WIDTH_EXTENDED { get { return LocalClazz.GetField<float?>("WIDTH_EXTENDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH_REGULAR"/>
         /// </summary>
-        public static float? WIDTH_REGULAR => Clazz.GetField<float?>("WIDTH_REGULAR");
+        public static float? WIDTH_REGULAR { get { return LocalClazz.GetField<float?>("WIDTH_REGULAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH_SEMI_CONDENSED"/>
         /// </summary>
-        public static float? WIDTH_SEMI_CONDENSED => Clazz.GetField<float?>("WIDTH_SEMI_CONDENSED");
+        public static float? WIDTH_SEMI_CONDENSED { get { return LocalClazz.GetField<float?>("WIDTH_SEMI_CONDENSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#WIDTH_SEMI_EXTENDED"/>
         /// </summary>
-        public static float? WIDTH_SEMI_EXTENDED => Clazz.GetField<float?>("WIDTH_SEMI_EXTENDED");
+        public static float? WIDTH_SEMI_EXTENDED { get { return LocalClazz.GetField<float?>("WIDTH_SEMI_EXTENDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#KERNING_ON"/>
         /// </summary>
-        public static int? KERNING_ON => Clazz.GetField<int?>("KERNING_ON");
+        public static int? KERNING_ON { get { return LocalClazz.GetField<int?>("KERNING_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#LIGATURES_ON"/>
         /// </summary>
-        public static int? LIGATURES_ON => Clazz.GetField<int?>("LIGATURES_ON");
+        public static int? LIGATURES_ON { get { return LocalClazz.GetField<int?>("LIGATURES_ON"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SUPERSCRIPT_SUB"/>
         /// </summary>
-        public static int? SUPERSCRIPT_SUB => Clazz.GetField<int?>("SUPERSCRIPT_SUB");
+        public static int? SUPERSCRIPT_SUB { get { return LocalClazz.GetField<int?>("SUPERSCRIPT_SUB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#SUPERSCRIPT_SUPER"/>
         /// </summary>
-        public static int? SUPERSCRIPT_SUPER => Clazz.GetField<int?>("SUPERSCRIPT_SUPER");
+        public static int? SUPERSCRIPT_SUPER { get { return LocalClazz.GetField<int?>("SUPERSCRIPT_SUPER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_LOW_DASHED"/>
         /// </summary>
-        public static int? UNDERLINE_LOW_DASHED => Clazz.GetField<int?>("UNDERLINE_LOW_DASHED");
+        public static int? UNDERLINE_LOW_DASHED { get { return LocalClazz.GetField<int?>("UNDERLINE_LOW_DASHED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_LOW_DOTTED"/>
         /// </summary>
-        public static int? UNDERLINE_LOW_DOTTED => Clazz.GetField<int?>("UNDERLINE_LOW_DOTTED");
+        public static int? UNDERLINE_LOW_DOTTED { get { return LocalClazz.GetField<int?>("UNDERLINE_LOW_DOTTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_LOW_GRAY"/>
         /// </summary>
-        public static int? UNDERLINE_LOW_GRAY => Clazz.GetField<int?>("UNDERLINE_LOW_GRAY");
+        public static int? UNDERLINE_LOW_GRAY { get { return LocalClazz.GetField<int?>("UNDERLINE_LOW_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_LOW_ONE_PIXEL"/>
         /// </summary>
-        public static int? UNDERLINE_LOW_ONE_PIXEL => Clazz.GetField<int?>("UNDERLINE_LOW_ONE_PIXEL");
+        public static int? UNDERLINE_LOW_ONE_PIXEL { get { return LocalClazz.GetField<int?>("UNDERLINE_LOW_ONE_PIXEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_LOW_TWO_PIXEL"/>
         /// </summary>
-        public static int? UNDERLINE_LOW_TWO_PIXEL => Clazz.GetField<int?>("UNDERLINE_LOW_TWO_PIXEL");
+        public static int? UNDERLINE_LOW_TWO_PIXEL { get { return LocalClazz.GetField<int?>("UNDERLINE_LOW_TWO_PIXEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_ON"/>
         /// </summary>
-        public static int? UNDERLINE_ON => Clazz.GetField<int?>("UNDERLINE_ON");
+        public static int? UNDERLINE_ON { get { return LocalClazz.GetField<int?>("UNDERLINE_ON"); } }
         
         #endregion
 

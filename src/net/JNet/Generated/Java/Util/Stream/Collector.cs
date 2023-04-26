@@ -126,15 +126,15 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#CONCURRENT"/>
             /// </summary>
-            public static Java.Util.Stream.Collector.Characteristics CONCURRENT => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("CONCURRENT");
+            public static Java.Util.Stream.Collector.Characteristics CONCURRENT { get { return LocalClazz.GetField<Java.Util.Stream.Collector.Characteristics>("CONCURRENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH"/>
             /// </summary>
-            public static Java.Util.Stream.Collector.Characteristics IDENTITY_FINISH => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("IDENTITY_FINISH");
+            public static Java.Util.Stream.Collector.Characteristics IDENTITY_FINISH { get { return LocalClazz.GetField<Java.Util.Stream.Collector.Characteristics>("IDENTITY_FINISH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED"/>
             /// </summary>
-            public static Java.Util.Stream.Collector.Characteristics UNORDERED => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("UNORDERED");
+            public static Java.Util.Stream.Collector.Characteristics UNORDERED { get { return LocalClazz.GetField<Java.Util.Stream.Collector.Characteristics>("UNORDERED"); } }
             
             #endregion
 

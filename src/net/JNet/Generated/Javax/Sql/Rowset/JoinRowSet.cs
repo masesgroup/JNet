@@ -40,23 +40,23 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#CROSS_JOIN"/>
         /// </summary>
-        public static int CROSS_JOIN => Clazz.GetField<int>("CROSS_JOIN");
+        public static int CROSS_JOIN { get { return LocalClazz.GetField<int>("CROSS_JOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#FULL_JOIN"/>
         /// </summary>
-        public static int FULL_JOIN => Clazz.GetField<int>("FULL_JOIN");
+        public static int FULL_JOIN { get { return LocalClazz.GetField<int>("FULL_JOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#INNER_JOIN"/>
         /// </summary>
-        public static int INNER_JOIN => Clazz.GetField<int>("INNER_JOIN");
+        public static int INNER_JOIN { get { return LocalClazz.GetField<int>("INNER_JOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#LEFT_OUTER_JOIN"/>
         /// </summary>
-        public static int LEFT_OUTER_JOIN => Clazz.GetField<int>("LEFT_OUTER_JOIN");
+        public static int LEFT_OUTER_JOIN { get { return LocalClazz.GetField<int>("LEFT_OUTER_JOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#RIGHT_OUTER_JOIN"/>
         /// </summary>
-        public static int RIGHT_OUTER_JOIN => Clazz.GetField<int>("RIGHT_OUTER_JOIN");
+        public static int RIGHT_OUTER_JOIN { get { return LocalClazz.GetField<int>("RIGHT_OUTER_JOIN"); } }
         
         #endregion
 

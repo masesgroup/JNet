@@ -48,7 +48,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#ZERO"/>
         /// </summary>
-        public static Java.Time.Period ZERO => Clazz.GetField<Java.Time.Period>("ZERO");
+        public static Java.Time.Period ZERO { get { return LocalClazz.GetField<Java.Time.Period>("ZERO"); } }
         
         #endregion
 

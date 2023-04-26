@@ -40,7 +40,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
         /// </summary>
-        public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION => Clazz.GetField<Java.Security.PermissionCollection>("UNSUPPORTED_EMPTY_COLLECTION");
+        public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION { get { return LocalClazz.GetField<Java.Security.PermissionCollection>("UNSUPPORTED_EMPTY_COLLECTION"); } }
         
         #endregion
 

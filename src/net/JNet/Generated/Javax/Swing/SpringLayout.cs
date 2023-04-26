@@ -44,39 +44,39 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE"/>
         /// </summary>
-        public static string BASELINE => Clazz.GetField<string>("BASELINE");
+        public static string BASELINE { get { return LocalClazz.GetField<string>("BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST"/>
         /// </summary>
-        public static string EAST => Clazz.GetField<string>("EAST");
+        public static string EAST { get { return LocalClazz.GetField<string>("EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT"/>
         /// </summary>
-        public static string HEIGHT => Clazz.GetField<string>("HEIGHT");
+        public static string HEIGHT { get { return LocalClazz.GetField<string>("HEIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER"/>
         /// </summary>
-        public static string HORIZONTAL_CENTER => Clazz.GetField<string>("HORIZONTAL_CENTER");
+        public static string HORIZONTAL_CENTER { get { return LocalClazz.GetField<string>("HORIZONTAL_CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#NORTH"/>
         /// </summary>
-        public static string NORTH => Clazz.GetField<string>("NORTH");
+        public static string NORTH { get { return LocalClazz.GetField<string>("NORTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#SOUTH"/>
         /// </summary>
-        public static string SOUTH => Clazz.GetField<string>("SOUTH");
+        public static string SOUTH { get { return LocalClazz.GetField<string>("SOUTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER"/>
         /// </summary>
-        public static string VERTICAL_CENTER => Clazz.GetField<string>("VERTICAL_CENTER");
+        public static string VERTICAL_CENTER { get { return LocalClazz.GetField<string>("VERTICAL_CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WEST"/>
         /// </summary>
-        public static string WEST => Clazz.GetField<string>("WEST");
+        public static string WEST { get { return LocalClazz.GetField<string>("WEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH"/>
         /// </summary>
-        public static string WIDTH => Clazz.GetField<string>("WIDTH");
+        public static string WIDTH { get { return LocalClazz.GetField<string>("WIDTH"); } }
         
         #endregion
 

@@ -40,19 +40,19 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#ALARM"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType ALARM => Clazz.GetField<Java.Nio.File.Attribute.AclEntryType>("ALARM");
+        public static Java.Nio.File.Attribute.AclEntryType ALARM { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryType>("ALARM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#ALLOW"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType ALLOW => Clazz.GetField<Java.Nio.File.Attribute.AclEntryType>("ALLOW");
+        public static Java.Nio.File.Attribute.AclEntryType ALLOW { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryType>("ALLOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#AUDIT"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType AUDIT => Clazz.GetField<Java.Nio.File.Attribute.AclEntryType>("AUDIT");
+        public static Java.Nio.File.Attribute.AclEntryType AUDIT { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryType>("AUDIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#DENY"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType DENY => Clazz.GetField<Java.Nio.File.Attribute.AclEntryType>("DENY");
+        public static Java.Nio.File.Attribute.AclEntryType DENY { get { return LocalClazz.GetField<Java.Nio.File.Attribute.AclEntryType>("DENY"); } }
         
         #endregion
 

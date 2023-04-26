@@ -40,35 +40,35 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#ABOUT_UIROLE"/>
         /// </summary>
-        public static int ABOUT_UIROLE => Clazz.GetField<int>("ABOUT_UIROLE");
+        public static int ABOUT_UIROLE { get { return LocalClazz.GetField<int>("ABOUT_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#ADMIN_UIROLE"/>
         /// </summary>
-        public static int ADMIN_UIROLE => Clazz.GetField<int>("ADMIN_UIROLE");
+        public static int ADMIN_UIROLE { get { return LocalClazz.GetField<int>("ADMIN_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#MAIN_UIROLE"/>
         /// </summary>
-        public static int MAIN_UIROLE => Clazz.GetField<int>("MAIN_UIROLE");
+        public static int MAIN_UIROLE { get { return LocalClazz.GetField<int>("MAIN_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#RESERVED_UIROLE"/>
         /// </summary>
-        public static int RESERVED_UIROLE => Clazz.GetField<int>("RESERVED_UIROLE");
+        public static int RESERVED_UIROLE { get { return LocalClazz.GetField<int>("RESERVED_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#DIALOG_UI"/>
         /// </summary>
-        public static string DIALOG_UI => Clazz.GetField<string>("DIALOG_UI");
+        public static string DIALOG_UI { get { return LocalClazz.GetField<string>("DIALOG_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JCOMPONENT_UI"/>
         /// </summary>
-        public static string JCOMPONENT_UI => Clazz.GetField<string>("JCOMPONENT_UI");
+        public static string JCOMPONENT_UI { get { return LocalClazz.GetField<string>("JCOMPONENT_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JDIALOG_UI"/>
         /// </summary>
-        public static string JDIALOG_UI => Clazz.GetField<string>("JDIALOG_UI");
+        public static string JDIALOG_UI { get { return LocalClazz.GetField<string>("JDIALOG_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI"/>
         /// </summary>
-        public static string PANEL_UI => Clazz.GetField<string>("PANEL_UI");
+        public static string PANEL_UI { get { return LocalClazz.GetField<string>("PANEL_UI"); } }
         
         #endregion
 

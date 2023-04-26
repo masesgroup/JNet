@@ -183,7 +183,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#NO_PROXY"/>
             /// </summary>
-            public static Java.Net.ProxySelector NO_PROXY => Clazz.GetField<Java.Net.ProxySelector>("NO_PROXY");
+            public static Java.Net.ProxySelector NO_PROXY { get { return LocalClazz.GetField<Java.Net.ProxySelector>("NO_PROXY"); } }
             
             #endregion
 
@@ -311,15 +311,15 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS"/>
             /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect ALWAYS => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS");
+            public static Java.Net.Http.HttpClient.Redirect ALWAYS { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER"/>
             /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
+            public static Java.Net.Http.HttpClient.Redirect NEVER { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL"/>
             /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect NORMAL => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL");
+            public static Java.Net.Http.HttpClient.Redirect NORMAL { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL"); } }
             
             #endregion
 
@@ -366,11 +366,11 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_1_1"/>
             /// </summary>
-            public static Java.Net.Http.HttpClient.Version HTTP_1_1 => Clazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_1_1");
+            public static Java.Net.Http.HttpClient.Version HTTP_1_1 { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_1_1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_2"/>
             /// </summary>
-            public static Java.Net.Http.HttpClient.Version HTTP_2 => Clazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_2");
+            public static Java.Net.Http.HttpClient.Version HTTP_2 { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_2"); } }
             
             #endregion
 

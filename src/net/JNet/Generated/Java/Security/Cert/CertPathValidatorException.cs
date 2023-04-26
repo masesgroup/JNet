@@ -64,31 +64,31 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#ALGORITHM_CONSTRAINED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason ALGORITHM_CONSTRAINED => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("ALGORITHM_CONSTRAINED");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason ALGORITHM_CONSTRAINED { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("ALGORITHM_CONSTRAINED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#EXPIRED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason EXPIRED => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("EXPIRED");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason EXPIRED { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("EXPIRED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#INVALID_SIGNATURE"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason INVALID_SIGNATURE => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("INVALID_SIGNATURE");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason INVALID_SIGNATURE { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("INVALID_SIGNATURE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#NOT_YET_VALID"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason NOT_YET_VALID => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("NOT_YET_VALID");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason NOT_YET_VALID { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("NOT_YET_VALID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#REVOKED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason REVOKED => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("REVOKED");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason REVOKED { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("REVOKED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNDETERMINED_REVOCATION_STATUS"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNDETERMINED_REVOCATION_STATUS => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("UNDETERMINED_REVOCATION_STATUS");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNDETERMINED_REVOCATION_STATUS { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("UNDETERMINED_REVOCATION_STATUS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNSPECIFIED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED => Clazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("UNSPECIFIED");
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("UNSPECIFIED"); } }
             
             #endregion
 

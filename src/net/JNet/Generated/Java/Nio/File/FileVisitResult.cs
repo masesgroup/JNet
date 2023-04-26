@@ -40,19 +40,19 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#CONTINUE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult CONTINUE => Clazz.GetField<Java.Nio.File.FileVisitResult>("CONTINUE");
+        public static Java.Nio.File.FileVisitResult CONTINUE { get { return LocalClazz.GetField<Java.Nio.File.FileVisitResult>("CONTINUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SIBLINGS");
+        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS { get { return LocalClazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SIBLINGS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult SKIP_SUBTREE => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SUBTREE");
+        public static Java.Nio.File.FileVisitResult SKIP_SUBTREE { get { return LocalClazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SUBTREE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult TERMINATE => Clazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE");
+        public static Java.Nio.File.FileVisitResult TERMINATE { get { return LocalClazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE"); } }
         
         #endregion
 

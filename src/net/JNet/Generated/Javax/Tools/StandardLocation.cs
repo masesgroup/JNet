@@ -40,55 +40,55 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_MODULE_PATH");
+        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_PATH");
+        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation CLASS_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("CLASS_OUTPUT");
+        public static Javax.Tools.StandardLocation CLASS_OUTPUT { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("CLASS_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation CLASS_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("CLASS_PATH");
+        public static Javax.Tools.StandardLocation CLASS_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("CLASS_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("MODULE_PATH");
+        public static Javax.Tools.StandardLocation MODULE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_SOURCE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation MODULE_SOURCE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("MODULE_SOURCE_PATH");
+        public static Javax.Tools.StandardLocation MODULE_SOURCE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("MODULE_SOURCE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#NATIVE_HEADER_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation NATIVE_HEADER_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("NATIVE_HEADER_OUTPUT");
+        public static Javax.Tools.StandardLocation NATIVE_HEADER_OUTPUT { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("NATIVE_HEADER_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PATCH_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation PATCH_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("PATCH_MODULE_PATH");
+        public static Javax.Tools.StandardLocation PATCH_MODULE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("PATCH_MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PLATFORM_CLASS_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation PLATFORM_CLASS_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("PLATFORM_CLASS_PATH");
+        public static Javax.Tools.StandardLocation PLATFORM_CLASS_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("PLATFORM_CLASS_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SOURCE_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("SOURCE_OUTPUT");
+        public static Javax.Tools.StandardLocation SOURCE_OUTPUT { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("SOURCE_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SOURCE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("SOURCE_PATH");
+        public static Javax.Tools.StandardLocation SOURCE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("SOURCE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SYSTEM_MODULES"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SYSTEM_MODULES => Clazz.GetField<Javax.Tools.StandardLocation>("SYSTEM_MODULES");
+        public static Javax.Tools.StandardLocation SYSTEM_MODULES { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("SYSTEM_MODULES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#UPGRADE_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("UPGRADE_MODULE_PATH");
+        public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("UPGRADE_MODULE_PATH"); } }
         
         #endregion
 

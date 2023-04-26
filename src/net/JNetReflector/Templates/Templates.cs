@@ -27,23 +27,24 @@ namespace MASES.JNetReflector.Templates
     {
         static readonly string[] templateStrings = new string[]
         {
-                AllPackageClassesTemplate,
-                AllPackageClassesStubClassTemplate,
-                AllPackageClassesStubClassListenerTemplate,
-                AllPackageClassesStubClassMainClassTemplate,
-                AllPackageClassesStubExceptionTemplate,
-                AllPackageClassesStubNestedClassTemplate,
-                AllPackageClassesStubNestedClassListenerTemplate,
-                AllPackageClassesStubNestedClassMainClassTemplate,
-                AllPackageClassesStubNestedExceptionTemplate,
+            AllPackageClassesTemplate,
+            AllPackageClassesStubClassTemplate,
+            AllPackageClassesStubClassListenerTemplate,
+            AllPackageClassesStubClassMainClassTemplate,
+            AllPackageClassesStubExceptionTemplate,
+            AllPackageClassesStubNestedClassTemplate,
+            AllPackageClassesStubNestedClassListenerTemplate,
+            AllPackageClassesStubNestedClassMainClassTemplate,
+            AllPackageClassesStubNestedExceptionTemplate,
 
-                SingleClassTemplate,
-                SingleClassFileTemplate,
-                SingleConstructorTemplate,
-                SingleFieldTemplate,
-                SingleMethodTemplate,
-                SinglePropertyTemplate,
-                SingleNestedClassTemplate,
+            SingleClassTemplate,
+            SingleClassFileTemplate,
+
+            SingleConstructorTemplate,
+            SingleFieldTemplate,
+            SingleMethodTemplate,
+            SinglePropertyTemplate,
+            SingleNestedClassTemplate,
         };
 
         static Template()
@@ -209,7 +210,8 @@ namespace MASES.JNetReflector.Templates
                 public const string TYPE = "FIELD_STUB_TYPE_PLACEHOLDER";
                 public const string NAME = "FIELD_STUB_FIELD_NAME_PLACEHOLDER";
                 public const string EXECUTION = "FIELD_STUB_EXECUTION_PLACEHOLDER";
-                public const string EXECUTION_FORMAT = "{0}.GetField{1}(\"{2}\");";
+                public const string GET_EXECUTION_FORMAT = "get {{ return {0}.GetField{1}(\"{2}\"); }}";
+                public const string SET_EXECUTION_FORMAT = "set {{ {0}.SetField(\"{1}\", value); }}";
 
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// FIELD_STUB_FIELD_HELP_PLACEHOLDER" + Environment.NewLine

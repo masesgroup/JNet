@@ -117,107 +117,107 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#black"/>
         /// </summary>
-        public static Java.Awt.Color black => Clazz.GetField<Java.Awt.Color>("black");
+        public static Java.Awt.Color black { get { return LocalClazz.GetField<Java.Awt.Color>("black"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#BLACK"/>
         /// </summary>
-        public static Java.Awt.Color BLACK => Clazz.GetField<Java.Awt.Color>("BLACK");
+        public static Java.Awt.Color BLACK { get { return LocalClazz.GetField<Java.Awt.Color>("BLACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#blue"/>
         /// </summary>
-        public static Java.Awt.Color blue => Clazz.GetField<Java.Awt.Color>("blue");
+        public static Java.Awt.Color blue { get { return LocalClazz.GetField<Java.Awt.Color>("blue"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#BLUE"/>
         /// </summary>
-        public static Java.Awt.Color BLUE => Clazz.GetField<Java.Awt.Color>("BLUE");
+        public static Java.Awt.Color BLUE { get { return LocalClazz.GetField<Java.Awt.Color>("BLUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#cyan"/>
         /// </summary>
-        public static Java.Awt.Color cyan => Clazz.GetField<Java.Awt.Color>("cyan");
+        public static Java.Awt.Color cyan { get { return LocalClazz.GetField<Java.Awt.Color>("cyan"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#CYAN"/>
         /// </summary>
-        public static Java.Awt.Color CYAN => Clazz.GetField<Java.Awt.Color>("CYAN");
+        public static Java.Awt.Color CYAN { get { return LocalClazz.GetField<Java.Awt.Color>("CYAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#DARK_GRAY"/>
         /// </summary>
-        public static Java.Awt.Color DARK_GRAY => Clazz.GetField<Java.Awt.Color>("DARK_GRAY");
+        public static Java.Awt.Color DARK_GRAY { get { return LocalClazz.GetField<Java.Awt.Color>("DARK_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darkGray"/>
         /// </summary>
-        public static Java.Awt.Color darkGray => Clazz.GetField<Java.Awt.Color>("darkGray");
+        public static Java.Awt.Color darkGray { get { return LocalClazz.GetField<Java.Awt.Color>("darkGray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#gray"/>
         /// </summary>
-        public static Java.Awt.Color gray => Clazz.GetField<Java.Awt.Color>("gray");
+        public static Java.Awt.Color gray { get { return LocalClazz.GetField<Java.Awt.Color>("gray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#GRAY"/>
         /// </summary>
-        public static Java.Awt.Color GRAY => Clazz.GetField<Java.Awt.Color>("GRAY");
+        public static Java.Awt.Color GRAY { get { return LocalClazz.GetField<Java.Awt.Color>("GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#green"/>
         /// </summary>
-        public static Java.Awt.Color green => Clazz.GetField<Java.Awt.Color>("green");
+        public static Java.Awt.Color green { get { return LocalClazz.GetField<Java.Awt.Color>("green"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#GREEN"/>
         /// </summary>
-        public static Java.Awt.Color GREEN => Clazz.GetField<Java.Awt.Color>("GREEN");
+        public static Java.Awt.Color GREEN { get { return LocalClazz.GetField<Java.Awt.Color>("GREEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#LIGHT_GRAY"/>
         /// </summary>
-        public static Java.Awt.Color LIGHT_GRAY => Clazz.GetField<Java.Awt.Color>("LIGHT_GRAY");
+        public static Java.Awt.Color LIGHT_GRAY { get { return LocalClazz.GetField<Java.Awt.Color>("LIGHT_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#lightGray"/>
         /// </summary>
-        public static Java.Awt.Color lightGray => Clazz.GetField<Java.Awt.Color>("lightGray");
+        public static Java.Awt.Color lightGray { get { return LocalClazz.GetField<Java.Awt.Color>("lightGray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#magenta"/>
         /// </summary>
-        public static Java.Awt.Color magenta => Clazz.GetField<Java.Awt.Color>("magenta");
+        public static Java.Awt.Color magenta { get { return LocalClazz.GetField<Java.Awt.Color>("magenta"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#MAGENTA"/>
         /// </summary>
-        public static Java.Awt.Color MAGENTA => Clazz.GetField<Java.Awt.Color>("MAGENTA");
+        public static Java.Awt.Color MAGENTA { get { return LocalClazz.GetField<Java.Awt.Color>("MAGENTA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#orange"/>
         /// </summary>
-        public static Java.Awt.Color orange => Clazz.GetField<Java.Awt.Color>("orange");
+        public static Java.Awt.Color orange { get { return LocalClazz.GetField<Java.Awt.Color>("orange"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#ORANGE"/>
         /// </summary>
-        public static Java.Awt.Color ORANGE => Clazz.GetField<Java.Awt.Color>("ORANGE");
+        public static Java.Awt.Color ORANGE { get { return LocalClazz.GetField<Java.Awt.Color>("ORANGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#pink"/>
         /// </summary>
-        public static Java.Awt.Color pink => Clazz.GetField<Java.Awt.Color>("pink");
+        public static Java.Awt.Color pink { get { return LocalClazz.GetField<Java.Awt.Color>("pink"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#PINK"/>
         /// </summary>
-        public static Java.Awt.Color PINK => Clazz.GetField<Java.Awt.Color>("PINK");
+        public static Java.Awt.Color PINK { get { return LocalClazz.GetField<Java.Awt.Color>("PINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#red"/>
         /// </summary>
-        public static Java.Awt.Color red => Clazz.GetField<Java.Awt.Color>("red");
+        public static Java.Awt.Color red { get { return LocalClazz.GetField<Java.Awt.Color>("red"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#RED"/>
         /// </summary>
-        public static Java.Awt.Color RED => Clazz.GetField<Java.Awt.Color>("RED");
+        public static Java.Awt.Color RED { get { return LocalClazz.GetField<Java.Awt.Color>("RED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#white"/>
         /// </summary>
-        public static Java.Awt.Color white => Clazz.GetField<Java.Awt.Color>("white");
+        public static Java.Awt.Color white { get { return LocalClazz.GetField<Java.Awt.Color>("white"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#WHITE"/>
         /// </summary>
-        public static Java.Awt.Color WHITE => Clazz.GetField<Java.Awt.Color>("WHITE");
+        public static Java.Awt.Color WHITE { get { return LocalClazz.GetField<Java.Awt.Color>("WHITE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#yellow"/>
         /// </summary>
-        public static Java.Awt.Color yellow => Clazz.GetField<Java.Awt.Color>("yellow");
+        public static Java.Awt.Color yellow { get { return LocalClazz.GetField<Java.Awt.Color>("yellow"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#YELLOW"/>
         /// </summary>
-        public static Java.Awt.Color YELLOW => Clazz.GetField<Java.Awt.Color>("YELLOW");
+        public static Java.Awt.Color YELLOW { get { return LocalClazz.GetField<Java.Awt.Color>("YELLOW"); } }
         
         #endregion
 

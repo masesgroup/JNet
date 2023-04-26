@@ -220,63 +220,63 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CLASS_PATH"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name CLASS_PATH => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CLASS_PATH");
+            public static Java.Util.Jar.Attributes.Name CLASS_PATH { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("CLASS_PATH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CONTENT_TYPE");
+            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("CONTENT_TYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name EXTENSION_LIST => Clazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_LIST");
+            public static Java.Util.Jar.Attributes.Name EXTENSION_LIST { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_LIST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_NAME"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name EXTENSION_NAME => Clazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_NAME");
+            public static Java.Util.Jar.Attributes.Name EXTENSION_NAME { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_NAME"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_TITLE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_TITLE");
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VENDOR");
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VENDOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VERSION");
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MAIN_CLASS => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MAIN_CLASS");
+            public static Java.Util.Jar.Attributes.Name MAIN_CLASS { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("MAIN_CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MANIFEST_VERSION");
+            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("MANIFEST_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MULTI_RELEASE");
+            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("MULTI_RELEASE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SEALED => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SEALED");
+            public static Java.Util.Jar.Attributes.Name SEALED { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SEALED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SIGNATURE_VERSION");
+            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SIGNATURE_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_TITLE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_TITLE");
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VENDOR"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VENDOR");
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VENDOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION");
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION"); } }
             
             #endregion
 

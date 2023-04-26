@@ -57,7 +57,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#AdditionalComments"/>
         /// </summary>
-        public static string AdditionalComments => Clazz.GetField<string>("AdditionalComments");
+        public static string AdditionalComments { get { return LocalClazz.GetField<string>("AdditionalComments"); } }
         
         #endregion
 

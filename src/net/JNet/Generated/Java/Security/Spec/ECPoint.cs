@@ -49,7 +49,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#POINT_INFINITY"/>
         /// </summary>
-        public static Java.Security.Spec.ECPoint POINT_INFINITY => Clazz.GetField<Java.Security.Spec.ECPoint>("POINT_INFINITY");
+        public static Java.Security.Spec.ECPoint POINT_INFINITY { get { return LocalClazz.GetField<Java.Security.Spec.ECPoint>("POINT_INFINITY"); } }
         
         #endregion
 

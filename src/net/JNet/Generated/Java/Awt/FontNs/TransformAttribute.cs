@@ -52,7 +52,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TransformAttribute.html#IDENTITY"/>
         /// </summary>
-        public static Java.Awt.FontNs.TransformAttribute IDENTITY => Clazz.GetField<Java.Awt.FontNs.TransformAttribute>("IDENTITY");
+        public static Java.Awt.FontNs.TransformAttribute IDENTITY { get { return LocalClazz.GetField<Java.Awt.FontNs.TransformAttribute>("IDENTITY"); } }
         
         #endregion
 

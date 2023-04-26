@@ -40,7 +40,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#DONE"/>
         /// </summary>
-        public static char DONE => Clazz.GetField<char>("DONE");
+        public static char DONE { get { return LocalClazz.GetField<char>("DONE"); } }
         
         #endregion
 

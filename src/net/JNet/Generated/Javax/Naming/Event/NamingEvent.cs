@@ -52,19 +52,19 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_ADDED"/>
         /// </summary>
-        public static int OBJECT_ADDED => Clazz.GetField<int>("OBJECT_ADDED");
+        public static int OBJECT_ADDED { get { return LocalClazz.GetField<int>("OBJECT_ADDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_CHANGED"/>
         /// </summary>
-        public static int OBJECT_CHANGED => Clazz.GetField<int>("OBJECT_CHANGED");
+        public static int OBJECT_CHANGED { get { return LocalClazz.GetField<int>("OBJECT_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_REMOVED"/>
         /// </summary>
-        public static int OBJECT_REMOVED => Clazz.GetField<int>("OBJECT_REMOVED");
+        public static int OBJECT_REMOVED { get { return LocalClazz.GetField<int>("OBJECT_REMOVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_RENAMED"/>
         /// </summary>
-        public static int OBJECT_RENAMED => Clazz.GetField<int>("OBJECT_RENAMED");
+        public static int OBJECT_RENAMED { get { return LocalClazz.GetField<int>("OBJECT_RENAMED"); } }
         
         #endregion
 

@@ -44,7 +44,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#DEFAULT_STYLE"/>
         /// </summary>
-        public static string DEFAULT_STYLE => Clazz.GetField<string>("DEFAULT_STYLE");
+        public static string DEFAULT_STYLE { get { return LocalClazz.GetField<string>("DEFAULT_STYLE"); } }
         
         #endregion
 

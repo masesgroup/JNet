@@ -44,159 +44,159 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#ARRAY"/>
         /// </summary>
-        public static Java.Sql.JDBCType ARRAY => Clazz.GetField<Java.Sql.JDBCType>("ARRAY");
+        public static Java.Sql.JDBCType ARRAY { get { return LocalClazz.GetField<Java.Sql.JDBCType>("ARRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BIGINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType BIGINT => Clazz.GetField<Java.Sql.JDBCType>("BIGINT");
+        public static Java.Sql.JDBCType BIGINT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("BIGINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType BINARY => Clazz.GetField<Java.Sql.JDBCType>("BINARY");
+        public static Java.Sql.JDBCType BINARY { get { return LocalClazz.GetField<Java.Sql.JDBCType>("BINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BIT"/>
         /// </summary>
-        public static Java.Sql.JDBCType BIT => Clazz.GetField<Java.Sql.JDBCType>("BIT");
+        public static Java.Sql.JDBCType BIT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("BIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType BLOB => Clazz.GetField<Java.Sql.JDBCType>("BLOB");
+        public static Java.Sql.JDBCType BLOB { get { return LocalClazz.GetField<Java.Sql.JDBCType>("BLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BOOLEAN"/>
         /// </summary>
-        public static Java.Sql.JDBCType BOOLEAN => Clazz.GetField<Java.Sql.JDBCType>("BOOLEAN");
+        public static Java.Sql.JDBCType BOOLEAN { get { return LocalClazz.GetField<Java.Sql.JDBCType>("BOOLEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#CHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType CHAR => Clazz.GetField<Java.Sql.JDBCType>("CHAR");
+        public static Java.Sql.JDBCType CHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("CHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#CLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType CLOB => Clazz.GetField<Java.Sql.JDBCType>("CLOB");
+        public static Java.Sql.JDBCType CLOB { get { return LocalClazz.GetField<Java.Sql.JDBCType>("CLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DATALINK"/>
         /// </summary>
-        public static Java.Sql.JDBCType DATALINK => Clazz.GetField<Java.Sql.JDBCType>("DATALINK");
+        public static Java.Sql.JDBCType DATALINK { get { return LocalClazz.GetField<Java.Sql.JDBCType>("DATALINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DATE"/>
         /// </summary>
-        public static Java.Sql.JDBCType DATE => Clazz.GetField<Java.Sql.JDBCType>("DATE");
+        public static Java.Sql.JDBCType DATE { get { return LocalClazz.GetField<Java.Sql.JDBCType>("DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DECIMAL"/>
         /// </summary>
-        public static Java.Sql.JDBCType DECIMAL => Clazz.GetField<Java.Sql.JDBCType>("DECIMAL");
+        public static Java.Sql.JDBCType DECIMAL { get { return LocalClazz.GetField<Java.Sql.JDBCType>("DECIMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DISTINCT"/>
         /// </summary>
-        public static Java.Sql.JDBCType DISTINCT => Clazz.GetField<Java.Sql.JDBCType>("DISTINCT");
+        public static Java.Sql.JDBCType DISTINCT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DOUBLE"/>
         /// </summary>
-        public static Java.Sql.JDBCType DOUBLE => Clazz.GetField<Java.Sql.JDBCType>("DOUBLE");
+        public static Java.Sql.JDBCType DOUBLE { get { return LocalClazz.GetField<Java.Sql.JDBCType>("DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#FLOAT"/>
         /// </summary>
-        public static Java.Sql.JDBCType FLOAT => Clazz.GetField<Java.Sql.JDBCType>("FLOAT");
+        public static Java.Sql.JDBCType FLOAT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#INTEGER"/>
         /// </summary>
-        public static Java.Sql.JDBCType INTEGER => Clazz.GetField<Java.Sql.JDBCType>("INTEGER");
+        public static Java.Sql.JDBCType INTEGER { get { return LocalClazz.GetField<Java.Sql.JDBCType>("INTEGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#JAVA_OBJECT"/>
         /// </summary>
-        public static Java.Sql.JDBCType JAVA_OBJECT => Clazz.GetField<Java.Sql.JDBCType>("JAVA_OBJECT");
+        public static Java.Sql.JDBCType JAVA_OBJECT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("JAVA_OBJECT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGNVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGNVARCHAR => Clazz.GetField<Java.Sql.JDBCType>("LONGNVARCHAR");
+        public static Java.Sql.JDBCType LONGNVARCHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("LONGNVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGVARBINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGVARBINARY => Clazz.GetField<Java.Sql.JDBCType>("LONGVARBINARY");
+        public static Java.Sql.JDBCType LONGVARBINARY { get { return LocalClazz.GetField<Java.Sql.JDBCType>("LONGVARBINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGVARCHAR => Clazz.GetField<Java.Sql.JDBCType>("LONGVARCHAR");
+        public static Java.Sql.JDBCType LONGVARCHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("LONGVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType NCHAR => Clazz.GetField<Java.Sql.JDBCType>("NCHAR");
+        public static Java.Sql.JDBCType NCHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("NCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NCLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType NCLOB => Clazz.GetField<Java.Sql.JDBCType>("NCLOB");
+        public static Java.Sql.JDBCType NCLOB { get { return LocalClazz.GetField<Java.Sql.JDBCType>("NCLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NULL"/>
         /// </summary>
-        public static Java.Sql.JDBCType NULL => Clazz.GetField<Java.Sql.JDBCType>("NULL");
+        public static Java.Sql.JDBCType NULL { get { return LocalClazz.GetField<Java.Sql.JDBCType>("NULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NUMERIC"/>
         /// </summary>
-        public static Java.Sql.JDBCType NUMERIC => Clazz.GetField<Java.Sql.JDBCType>("NUMERIC");
+        public static Java.Sql.JDBCType NUMERIC { get { return LocalClazz.GetField<Java.Sql.JDBCType>("NUMERIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType NVARCHAR => Clazz.GetField<Java.Sql.JDBCType>("NVARCHAR");
+        public static Java.Sql.JDBCType NVARCHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("NVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#OTHER"/>
         /// </summary>
-        public static Java.Sql.JDBCType OTHER => Clazz.GetField<Java.Sql.JDBCType>("OTHER");
+        public static Java.Sql.JDBCType OTHER { get { return LocalClazz.GetField<Java.Sql.JDBCType>("OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REAL"/>
         /// </summary>
-        public static Java.Sql.JDBCType REAL => Clazz.GetField<Java.Sql.JDBCType>("REAL");
+        public static Java.Sql.JDBCType REAL { get { return LocalClazz.GetField<Java.Sql.JDBCType>("REAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REF"/>
         /// </summary>
-        public static Java.Sql.JDBCType REF => Clazz.GetField<Java.Sql.JDBCType>("REF");
+        public static Java.Sql.JDBCType REF { get { return LocalClazz.GetField<Java.Sql.JDBCType>("REF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REF_CURSOR"/>
         /// </summary>
-        public static Java.Sql.JDBCType REF_CURSOR => Clazz.GetField<Java.Sql.JDBCType>("REF_CURSOR");
+        public static Java.Sql.JDBCType REF_CURSOR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("REF_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#ROWID"/>
         /// </summary>
-        public static Java.Sql.JDBCType ROWID => Clazz.GetField<Java.Sql.JDBCType>("ROWID");
+        public static Java.Sql.JDBCType ROWID { get { return LocalClazz.GetField<Java.Sql.JDBCType>("ROWID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#SMALLINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType SMALLINT => Clazz.GetField<Java.Sql.JDBCType>("SMALLINT");
+        public static Java.Sql.JDBCType SMALLINT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("SMALLINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#SQLXML"/>
         /// </summary>
-        public static Java.Sql.JDBCType SQLXML => Clazz.GetField<Java.Sql.JDBCType>("SQLXML");
+        public static Java.Sql.JDBCType SQLXML { get { return LocalClazz.GetField<Java.Sql.JDBCType>("SQLXML"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#STRUCT"/>
         /// </summary>
-        public static Java.Sql.JDBCType STRUCT => Clazz.GetField<Java.Sql.JDBCType>("STRUCT");
+        public static Java.Sql.JDBCType STRUCT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("STRUCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIME"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIME => Clazz.GetField<Java.Sql.JDBCType>("TIME");
+        public static Java.Sql.JDBCType TIME { get { return LocalClazz.GetField<Java.Sql.JDBCType>("TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIME_WITH_TIMEZONE"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIME_WITH_TIMEZONE => Clazz.GetField<Java.Sql.JDBCType>("TIME_WITH_TIMEZONE");
+        public static Java.Sql.JDBCType TIME_WITH_TIMEZONE { get { return LocalClazz.GetField<Java.Sql.JDBCType>("TIME_WITH_TIMEZONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIMESTAMP"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIMESTAMP => Clazz.GetField<Java.Sql.JDBCType>("TIMESTAMP");
+        public static Java.Sql.JDBCType TIMESTAMP { get { return LocalClazz.GetField<Java.Sql.JDBCType>("TIMESTAMP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIMESTAMP_WITH_TIMEZONE"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIMESTAMP_WITH_TIMEZONE => Clazz.GetField<Java.Sql.JDBCType>("TIMESTAMP_WITH_TIMEZONE");
+        public static Java.Sql.JDBCType TIMESTAMP_WITH_TIMEZONE { get { return LocalClazz.GetField<Java.Sql.JDBCType>("TIMESTAMP_WITH_TIMEZONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TINYINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType TINYINT => Clazz.GetField<Java.Sql.JDBCType>("TINYINT");
+        public static Java.Sql.JDBCType TINYINT { get { return LocalClazz.GetField<Java.Sql.JDBCType>("TINYINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#VARBINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType VARBINARY => Clazz.GetField<Java.Sql.JDBCType>("VARBINARY");
+        public static Java.Sql.JDBCType VARBINARY { get { return LocalClazz.GetField<Java.Sql.JDBCType>("VARBINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#VARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType VARCHAR => Clazz.GetField<Java.Sql.JDBCType>("VARCHAR");
+        public static Java.Sql.JDBCType VARCHAR { get { return LocalClazz.GetField<Java.Sql.JDBCType>("VARCHAR"); } }
         
         #endregion
 

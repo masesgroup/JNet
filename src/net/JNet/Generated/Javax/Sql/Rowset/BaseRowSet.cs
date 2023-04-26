@@ -48,15 +48,15 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#ASCII_STREAM_PARAM"/>
         /// </summary>
-        public static int ASCII_STREAM_PARAM => Clazz.GetField<int>("ASCII_STREAM_PARAM");
+        public static int ASCII_STREAM_PARAM { get { return LocalClazz.GetField<int>("ASCII_STREAM_PARAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#BINARY_STREAM_PARAM"/>
         /// </summary>
-        public static int BINARY_STREAM_PARAM => Clazz.GetField<int>("BINARY_STREAM_PARAM");
+        public static int BINARY_STREAM_PARAM { get { return LocalClazz.GetField<int>("BINARY_STREAM_PARAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#UNICODE_STREAM_PARAM"/>
         /// </summary>
-        public static int UNICODE_STREAM_PARAM => Clazz.GetField<int>("UNICODE_STREAM_PARAM");
+        public static int UNICODE_STREAM_PARAM { get { return LocalClazz.GetField<int>("UNICODE_STREAM_PARAM"); } }
         
         #endregion
 

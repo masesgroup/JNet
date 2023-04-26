@@ -44,23 +44,23 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#BYTES"/>
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static int BYTES { get { return LocalClazz.GetField<int>("BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#MAX_VALUE"/>
         /// </summary>
-        public static int MAX_VALUE => Clazz.GetField<int>("MAX_VALUE");
+        public static int MAX_VALUE { get { return LocalClazz.GetField<int>("MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#MIN_VALUE"/>
         /// </summary>
-        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
+        public static int MIN_VALUE { get { return LocalClazz.GetField<int>("MIN_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#SIZE"/>
         /// </summary>
-        public static int SIZE => Clazz.GetField<int>("SIZE");
+        public static int SIZE { get { return LocalClazz.GetField<int>("SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
         
         #endregion
 

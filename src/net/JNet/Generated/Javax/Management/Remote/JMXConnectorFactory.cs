@@ -40,15 +40,15 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#DEFAULT_CLASS_LOADER"/>
         /// </summary>
-        public static string DEFAULT_CLASS_LOADER => Clazz.GetField<string>("DEFAULT_CLASS_LOADER");
+        public static string DEFAULT_CLASS_LOADER { get { return LocalClazz.GetField<string>("DEFAULT_CLASS_LOADER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER"/>
         /// </summary>
-        public static string PROTOCOL_PROVIDER_CLASS_LOADER => Clazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER");
+        public static string PROTOCOL_PROVIDER_CLASS_LOADER { get { return LocalClazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_PACKAGES"/>
         /// </summary>
-        public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
+        public static string PROTOCOL_PROVIDER_PACKAGES { get { return LocalClazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES"); } }
         
         #endregion
 

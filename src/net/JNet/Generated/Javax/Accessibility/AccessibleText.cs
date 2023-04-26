@@ -40,15 +40,15 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#CHARACTER"/>
         /// </summary>
-        public static int CHARACTER => Clazz.GetField<int>("CHARACTER");
+        public static int CHARACTER { get { return LocalClazz.GetField<int>("CHARACTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#SENTENCE"/>
         /// </summary>
-        public static int SENTENCE => Clazz.GetField<int>("SENTENCE");
+        public static int SENTENCE { get { return LocalClazz.GetField<int>("SENTENCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#WORD"/>
         /// </summary>
-        public static int WORD => Clazz.GetField<int>("WORD");
+        public static int WORD { get { return LocalClazz.GetField<int>("WORD"); } }
         
         #endregion
 

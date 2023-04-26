@@ -40,31 +40,31 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CLOSE"/>
         /// </summary>
-        public static int SEG_CLOSE => Clazz.GetField<int>("SEG_CLOSE");
+        public static int SEG_CLOSE { get { return LocalClazz.GetField<int>("SEG_CLOSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CUBICTO"/>
         /// </summary>
-        public static int SEG_CUBICTO => Clazz.GetField<int>("SEG_CUBICTO");
+        public static int SEG_CUBICTO { get { return LocalClazz.GetField<int>("SEG_CUBICTO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_LINETO"/>
         /// </summary>
-        public static int SEG_LINETO => Clazz.GetField<int>("SEG_LINETO");
+        public static int SEG_LINETO { get { return LocalClazz.GetField<int>("SEG_LINETO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_MOVETO"/>
         /// </summary>
-        public static int SEG_MOVETO => Clazz.GetField<int>("SEG_MOVETO");
+        public static int SEG_MOVETO { get { return LocalClazz.GetField<int>("SEG_MOVETO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_QUADTO"/>
         /// </summary>
-        public static int SEG_QUADTO => Clazz.GetField<int>("SEG_QUADTO");
+        public static int SEG_QUADTO { get { return LocalClazz.GetField<int>("SEG_QUADTO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_EVEN_ODD"/>
         /// </summary>
-        public static int WIND_EVEN_ODD => Clazz.GetField<int>("WIND_EVEN_ODD");
+        public static int WIND_EVEN_ODD { get { return LocalClazz.GetField<int>("WIND_EVEN_ODD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_NON_ZERO"/>
         /// </summary>
-        public static int WIND_NON_ZERO => Clazz.GetField<int>("WIND_NON_ZERO");
+        public static int WIND_NON_ZERO { get { return LocalClazz.GetField<int>("WIND_NON_ZERO"); } }
         
         #endregion
 

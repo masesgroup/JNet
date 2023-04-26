@@ -51,11 +51,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerNotification.html#REGISTRATION_NOTIFICATION"/>
         /// </summary>
-        public static string REGISTRATION_NOTIFICATION => Clazz.GetField<string>("REGISTRATION_NOTIFICATION");
+        public static string REGISTRATION_NOTIFICATION { get { return LocalClazz.GetField<string>("REGISTRATION_NOTIFICATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerNotification.html#UNREGISTRATION_NOTIFICATION"/>
         /// </summary>
-        public static string UNREGISTRATION_NOTIFICATION => Clazz.GetField<string>("UNREGISTRATION_NOTIFICATION");
+        public static string UNREGISTRATION_NOTIFICATION { get { return LocalClazz.GetField<string>("UNREGISTRATION_NOTIFICATION"); } }
         
         #endregion
 

@@ -40,7 +40,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#CPE"/>
         /// </summary>
-        public static string CPE => Clazz.GetField<string>("CPE");
+        public static string CPE { get { return LocalClazz.GetField<string>("CPE"); } }
         
         #endregion
 

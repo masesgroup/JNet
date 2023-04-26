@@ -40,23 +40,23 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#CLICK"/>
         /// </summary>
-        public static string CLICK => Clazz.GetField<string>("CLICK");
+        public static string CLICK { get { return LocalClazz.GetField<string>("CLICK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#DECREMENT"/>
         /// </summary>
-        public static string DECREMENT => Clazz.GetField<string>("DECREMENT");
+        public static string DECREMENT { get { return LocalClazz.GetField<string>("DECREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#INCREMENT"/>
         /// </summary>
-        public static string INCREMENT => Clazz.GetField<string>("INCREMENT");
+        public static string INCREMENT { get { return LocalClazz.GetField<string>("INCREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_EXPAND"/>
         /// </summary>
-        public static string TOGGLE_EXPAND => Clazz.GetField<string>("TOGGLE_EXPAND");
+        public static string TOGGLE_EXPAND { get { return LocalClazz.GetField<string>("TOGGLE_EXPAND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_POPUP"/>
         /// </summary>
-        public static string TOGGLE_POPUP => Clazz.GetField<string>("TOGGLE_POPUP");
+        public static string TOGGLE_POPUP { get { return LocalClazz.GetField<string>("TOGGLE_POPUP"); } }
         
         #endregion
 

@@ -98,43 +98,43 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_FLIP"/>
         /// </summary>
-        public static int TYPE_FLIP => Clazz.GetField<int>("TYPE_FLIP");
+        public static int TYPE_FLIP { get { return LocalClazz.GetField<int>("TYPE_FLIP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_ROTATION"/>
         /// </summary>
-        public static int TYPE_GENERAL_ROTATION => Clazz.GetField<int>("TYPE_GENERAL_ROTATION");
+        public static int TYPE_GENERAL_ROTATION { get { return LocalClazz.GetField<int>("TYPE_GENERAL_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_SCALE"/>
         /// </summary>
-        public static int TYPE_GENERAL_SCALE => Clazz.GetField<int>("TYPE_GENERAL_SCALE");
+        public static int TYPE_GENERAL_SCALE { get { return LocalClazz.GetField<int>("TYPE_GENERAL_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_TRANSFORM"/>
         /// </summary>
-        public static int TYPE_GENERAL_TRANSFORM => Clazz.GetField<int>("TYPE_GENERAL_TRANSFORM");
+        public static int TYPE_GENERAL_TRANSFORM { get { return LocalClazz.GetField<int>("TYPE_GENERAL_TRANSFORM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_IDENTITY"/>
         /// </summary>
-        public static int TYPE_IDENTITY => Clazz.GetField<int>("TYPE_IDENTITY");
+        public static int TYPE_IDENTITY { get { return LocalClazz.GetField<int>("TYPE_IDENTITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_MASK_ROTATION"/>
         /// </summary>
-        public static int TYPE_MASK_ROTATION => Clazz.GetField<int>("TYPE_MASK_ROTATION");
+        public static int TYPE_MASK_ROTATION { get { return LocalClazz.GetField<int>("TYPE_MASK_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_MASK_SCALE"/>
         /// </summary>
-        public static int TYPE_MASK_SCALE => Clazz.GetField<int>("TYPE_MASK_SCALE");
+        public static int TYPE_MASK_SCALE { get { return LocalClazz.GetField<int>("TYPE_MASK_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_QUADRANT_ROTATION"/>
         /// </summary>
-        public static int TYPE_QUADRANT_ROTATION => Clazz.GetField<int>("TYPE_QUADRANT_ROTATION");
+        public static int TYPE_QUADRANT_ROTATION { get { return LocalClazz.GetField<int>("TYPE_QUADRANT_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_TRANSLATION"/>
         /// </summary>
-        public static int TYPE_TRANSLATION => Clazz.GetField<int>("TYPE_TRANSLATION");
+        public static int TYPE_TRANSLATION { get { return LocalClazz.GetField<int>("TYPE_TRANSLATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_UNIFORM_SCALE"/>
         /// </summary>
-        public static int TYPE_UNIFORM_SCALE => Clazz.GetField<int>("TYPE_UNIFORM_SCALE");
+        public static int TYPE_UNIFORM_SCALE { get { return LocalClazz.GetField<int>("TYPE_UNIFORM_SCALE"); } }
         
         #endregion
 

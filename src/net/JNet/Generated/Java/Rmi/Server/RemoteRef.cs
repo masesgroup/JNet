@@ -40,11 +40,11 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#packagePrefix"/>
         /// </summary>
-        public static string packagePrefix => Clazz.GetField<string>("packagePrefix");
+        public static string packagePrefix { get { return LocalClazz.GetField<string>("packagePrefix"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID"/>
         /// </summary>
-        public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
+        public static long serialVersionUID { get { return LocalClazz.GetField<long>("serialVersionUID"); } }
         
         #endregion
 

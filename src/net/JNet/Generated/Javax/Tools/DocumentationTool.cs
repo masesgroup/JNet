@@ -147,15 +147,15 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCLET_PATH"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location DOCLET_PATH => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCLET_PATH");
+            public static Javax.Tools.DocumentationTool.Location DOCLET_PATH { get { return LocalClazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCLET_PATH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCUMENTATION_OUTPUT"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCUMENTATION_OUTPUT");
+            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT { get { return LocalClazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCUMENTATION_OUTPUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#TAGLET_PATH"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location TAGLET_PATH => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("TAGLET_PATH");
+            public static Javax.Tools.DocumentationTool.Location TAGLET_PATH { get { return LocalClazz.GetField<Javax.Tools.DocumentationTool.Location>("TAGLET_PATH"); } }
             
             #endregion
 

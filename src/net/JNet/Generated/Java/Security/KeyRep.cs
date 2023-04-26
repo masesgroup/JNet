@@ -79,15 +79,15 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type PRIVATE => Clazz.GetField<Java.Security.KeyRep.Type>("PRIVATE");
+            public static Java.Security.KeyRep.Type PRIVATE { get { return LocalClazz.GetField<Java.Security.KeyRep.Type>("PRIVATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PUBLIC"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type PUBLIC => Clazz.GetField<Java.Security.KeyRep.Type>("PUBLIC");
+            public static Java.Security.KeyRep.Type PUBLIC { get { return LocalClazz.GetField<Java.Security.KeyRep.Type>("PUBLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type SECRET => Clazz.GetField<Java.Security.KeyRep.Type>("SECRET");
+            public static Java.Security.KeyRep.Type SECRET { get { return LocalClazz.GetField<Java.Security.KeyRep.Type>("SECRET"); } }
             
             #endregion
 

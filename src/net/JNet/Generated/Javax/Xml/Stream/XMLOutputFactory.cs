@@ -40,7 +40,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#IS_REPAIRING_NAMESPACES"/>
         /// </summary>
-        public static string IS_REPAIRING_NAMESPACES => Clazz.GetField<string>("IS_REPAIRING_NAMESPACES");
+        public static string IS_REPAIRING_NAMESPACES { get { return LocalClazz.GetField<string>("IS_REPAIRING_NAMESPACES"); } }
         
         #endregion
 

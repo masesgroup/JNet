@@ -48,19 +48,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MultipleDocumentHandling.html#SEPARATE_DOCUMENTS_COLLATED_COPIES"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
+        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SEPARATE_DOCUMENTS_COLLATED_COPIES { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SEPARATE_DOCUMENTS_COLLATED_COPIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MultipleDocumentHandling.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
+        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SEPARATE_DOCUMENTS_UNCOLLATED_COPIES { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MultipleDocumentHandling.html#SINGLE_DOCUMENT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SINGLE_DOCUMENT => Clazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SINGLE_DOCUMENT");
+        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SINGLE_DOCUMENT { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SINGLE_DOCUMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MultipleDocumentHandling.html#SINGLE_DOCUMENT_NEW_SHEET"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SINGLE_DOCUMENT_NEW_SHEET => Clazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SINGLE_DOCUMENT_NEW_SHEET");
+        public static Javax.Print.Attribute.Standard.MultipleDocumentHandling SINGLE_DOCUMENT_NEW_SHEET { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.MultipleDocumentHandling>("SINGLE_DOCUMENT_NEW_SHEET"); } }
         
         #endregion
 

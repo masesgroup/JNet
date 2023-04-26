@@ -55,7 +55,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#ATTRIBUTE_CHANGE"/>
         /// </summary>
-        public static string ATTRIBUTE_CHANGE => Clazz.GetField<string>("ATTRIBUTE_CHANGE");
+        public static string ATTRIBUTE_CHANGE { get { return LocalClazz.GetField<string>("ATTRIBUTE_CHANGE"); } }
         
         #endregion
 

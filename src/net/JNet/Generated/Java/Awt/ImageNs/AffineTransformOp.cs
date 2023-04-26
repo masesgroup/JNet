@@ -66,15 +66,15 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_BICUBIC"/>
         /// </summary>
-        public static int TYPE_BICUBIC => Clazz.GetField<int>("TYPE_BICUBIC");
+        public static int TYPE_BICUBIC { get { return LocalClazz.GetField<int>("TYPE_BICUBIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_BILINEAR"/>
         /// </summary>
-        public static int TYPE_BILINEAR => Clazz.GetField<int>("TYPE_BILINEAR");
+        public static int TYPE_BILINEAR { get { return LocalClazz.GetField<int>("TYPE_BILINEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_NEAREST_NEIGHBOR"/>
         /// </summary>
-        public static int TYPE_NEAREST_NEIGHBOR => Clazz.GetField<int>("TYPE_NEAREST_NEIGHBOR");
+        public static int TYPE_NEAREST_NEIGHBOR { get { return LocalClazz.GetField<int>("TYPE_NEAREST_NEIGHBOR"); } }
         
         #endregion
 

@@ -40,23 +40,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_UNSUPPORTED"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_UNSUPPORTED => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_UNSUPPORTED");
+        public static Java.Sql.RowIdLifetime ROWID_UNSUPPORTED { get { return LocalClazz.GetField<Java.Sql.RowIdLifetime>("ROWID_UNSUPPORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_FOREVER"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_FOREVER");
+        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER { get { return LocalClazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_FOREVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_OTHER"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_OTHER => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_OTHER");
+        public static Java.Sql.RowIdLifetime ROWID_VALID_OTHER { get { return LocalClazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_SESSION"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_SESSION => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_SESSION");
+        public static Java.Sql.RowIdLifetime ROWID_VALID_SESSION { get { return LocalClazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_SESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_TRANSACTION"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_TRANSACTION");
+        public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION { get { return LocalClazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_TRANSACTION"); } }
         
         #endregion
 

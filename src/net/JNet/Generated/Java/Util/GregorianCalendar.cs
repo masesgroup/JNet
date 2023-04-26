@@ -100,11 +100,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#AD"/>
         /// </summary>
-        public static int AD => Clazz.GetField<int>("AD");
+        public static int AD { get { return LocalClazz.GetField<int>("AD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC"/>
         /// </summary>
-        public static int BC => Clazz.GetField<int>("BC");
+        public static int BC { get { return LocalClazz.GetField<int>("BC"); } }
         
         #endregion
 

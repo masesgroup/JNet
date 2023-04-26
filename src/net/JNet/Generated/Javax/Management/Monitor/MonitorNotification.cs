@@ -40,43 +40,43 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_ERROR"/>
         /// </summary>
-        public static string OBSERVED_ATTRIBUTE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_ERROR");
+        public static string OBSERVED_ATTRIBUTE_ERROR { get { return LocalClazz.GetField<string>("OBSERVED_ATTRIBUTE_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_TYPE_ERROR"/>
         /// </summary>
-        public static string OBSERVED_ATTRIBUTE_TYPE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_TYPE_ERROR");
+        public static string OBSERVED_ATTRIBUTE_TYPE_ERROR { get { return LocalClazz.GetField<string>("OBSERVED_ATTRIBUTE_TYPE_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_OBJECT_ERROR"/>
         /// </summary>
-        public static string OBSERVED_OBJECT_ERROR => Clazz.GetField<string>("OBSERVED_OBJECT_ERROR");
+        public static string OBSERVED_OBJECT_ERROR { get { return LocalClazz.GetField<string>("OBSERVED_OBJECT_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#RUNTIME_ERROR"/>
         /// </summary>
-        public static string RUNTIME_ERROR => Clazz.GetField<string>("RUNTIME_ERROR");
+        public static string RUNTIME_ERROR { get { return LocalClazz.GetField<string>("RUNTIME_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_DIFFERED"/>
         /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_DIFFERED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED");
+        public static string STRING_TO_COMPARE_VALUE_DIFFERED { get { return LocalClazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_MATCHED"/>
         /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_MATCHED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED");
+        public static string STRING_TO_COMPARE_VALUE_MATCHED { get { return LocalClazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_ERROR"/>
         /// </summary>
-        public static string THRESHOLD_ERROR => Clazz.GetField<string>("THRESHOLD_ERROR");
+        public static string THRESHOLD_ERROR { get { return LocalClazz.GetField<string>("THRESHOLD_ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_HIGH_VALUE_EXCEEDED"/>
         /// </summary>
-        public static string THRESHOLD_HIGH_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_HIGH_VALUE_EXCEEDED");
+        public static string THRESHOLD_HIGH_VALUE_EXCEEDED { get { return LocalClazz.GetField<string>("THRESHOLD_HIGH_VALUE_EXCEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_LOW_VALUE_EXCEEDED"/>
         /// </summary>
-        public static string THRESHOLD_LOW_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_LOW_VALUE_EXCEEDED");
+        public static string THRESHOLD_LOW_VALUE_EXCEEDED { get { return LocalClazz.GetField<string>("THRESHOLD_LOW_VALUE_EXCEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED"/>
         /// </summary>
-        public static string THRESHOLD_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED");
+        public static string THRESHOLD_VALUE_EXCEEDED { get { return LocalClazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED"); } }
         
         #endregion
 

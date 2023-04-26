@@ -95,23 +95,23 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#extension"/>
             /// </summary>
-            public string extension => Instance.GetField<string>("extension");
+            public string extension { get { return Instance.GetField<string>("extension"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#CLASS"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind CLASS => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("CLASS");
+            public static Javax.Tools.JavaFileObject.Kind CLASS { get { return LocalClazz.GetField<Javax.Tools.JavaFileObject.Kind>("CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#HTML"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind HTML => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("HTML");
+            public static Javax.Tools.JavaFileObject.Kind HTML { get { return LocalClazz.GetField<Javax.Tools.JavaFileObject.Kind>("HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#OTHER"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind OTHER => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("OTHER");
+            public static Javax.Tools.JavaFileObject.Kind OTHER { get { return LocalClazz.GetField<Javax.Tools.JavaFileObject.Kind>("OTHER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind SOURCE => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE");
+            public static Javax.Tools.JavaFileObject.Kind SOURCE { get { return LocalClazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE"); } }
             
             #endregion
 
