@@ -70,7 +70,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithClassOrNestedClass(this string entry, int nestingLevel, ICollection<Class> classDefinitions)
+        public static bool CollapseWithClassOrNestedClass(this string entry, int nestingLevel, IEnumerable<Class> classDefinitions)
         {
             foreach (var classDefinition in classDefinitions)
             {
@@ -95,7 +95,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithOtherMethods(this string entry, Method methodToCheck, ICollection<Method> methodToBeReflected, ICollection<Class> classDefinitions, bool camel)
+        public static bool CollapseWithOtherMethods(this string entry, Method methodToCheck, IEnumerable<Method> methodToBeReflected, IEnumerable<Class> classDefinitions, bool camel)
         {
             foreach (var method in methodToBeReflected)
             {
@@ -1538,7 +1538,7 @@ namespace MASES.JNetReflector
             return entry.TypeParameters.WhereClauses(camel);
         }
 
-        public static string Name(this Method entry, ICollection<Class> classDefinitions, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
+        public static string Name(this Method entry, IEnumerable<Class> classDefinitions, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -1561,7 +1561,7 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
-        public static string PropertyName(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel)
+        public static string PropertyName(this Method entry, IEnumerable<Class> classDefinitions, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name(classDefinitions, null, null, string.Empty, usedInGenerics, camel);
@@ -1582,7 +1582,7 @@ namespace MASES.JNetReflector
             return methodName2;
         }
 
-        public static string MethodName(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel)
+        public static string MethodName(this Method entry, IEnumerable<Class> classDefinitions, bool usedInGenerics, bool camel)
         {
             string nameToReport = entry.Name(classDefinitions, null, null, string.Empty, usedInGenerics, camel);
             if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(entry.DeclaringClass.JVMNestingLevels(), classDefinitions))
