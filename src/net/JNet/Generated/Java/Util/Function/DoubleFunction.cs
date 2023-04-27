@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             return IExecute("apply", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.DoubleFunction{R}"/> to <see cref="Java.Util.Function.DoubleFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.DoubleFunction(Java.Util.Function.DoubleFunction<R> t) => t.Cast<Java.Util.Function.DoubleFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Util.Function
         {
             return IExecute<R>("apply", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -84,7 +84,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.MessageDigest>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -112,7 +112,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#digest()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         public byte[] Digest()
         {
@@ -180,7 +180,7 @@ namespace Java.Security
         {
             IExecute("update", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

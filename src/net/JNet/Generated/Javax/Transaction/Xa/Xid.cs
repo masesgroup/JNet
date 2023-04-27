@@ -45,7 +45,7 @@ namespace Javax.Transaction.Xa
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE"/>
         /// </summary>
         public static int MAXGTRIDSIZE { get { return LocalClazz.GetField<int>("MAXGTRIDSIZE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -74,7 +74,7 @@ namespace Javax.Transaction.Xa
         {
             get { return IExecuteArray<byte>("getGlobalTransactionId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

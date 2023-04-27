@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
         {
             return IExecute<Javax.Net.Ssl.SSLSession>("getSession", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

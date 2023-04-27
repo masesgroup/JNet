@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Metal
         /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#LIGHT"/>
         /// </summary>
         public static bool LIGHT { get { return LocalClazz.GetField<bool>("LIGHT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -238,7 +238,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             return SExecute<Javax.Swing.Icon>(LocalClazz, "getTreeControlIcon", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -262,7 +262,7 @@ namespace Javax.Swing.Plaf.Metal
             /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -313,7 +313,11 @@ namespace Javax.Swing.Plaf.Metal
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -336,7 +340,7 @@ namespace Javax.Swing.Plaf.Metal
             /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -387,7 +391,11 @@ namespace Javax.Swing.Plaf.Metal
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -414,7 +422,7 @@ namespace Javax.Swing.Plaf.Metal
             /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -451,7 +459,11 @@ namespace Javax.Swing.Plaf.Metal
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -470,7 +482,7 @@ namespace Javax.Swing.Plaf.Metal
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -482,7 +494,7 @@ namespace Javax.Swing.Plaf.Metal
             /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -530,7 +542,11 @@ namespace Javax.Swing.Plaf.Metal
             {
                 IExecute("paintMe", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -557,6 +573,10 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -587,11 +607,15 @@ namespace Javax.Swing.Plaf.Metal
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

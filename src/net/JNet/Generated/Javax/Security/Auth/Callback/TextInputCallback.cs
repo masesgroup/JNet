@@ -46,7 +46,7 @@ namespace Javax.Security.Auth.Callback
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.TextInputCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.TextInputCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -91,7 +91,7 @@ namespace Javax.Security.Auth.Callback
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

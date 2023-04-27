@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JLayeredPane"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayeredPane t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#LAYER_PROPERTY"/>
         /// </summary>
         public static string LAYER_PROPERTY { get { return LocalClazz.GetField<string>("LAYER_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -100,7 +100,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "putLayer", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -207,7 +207,7 @@ namespace Javax.Swing
         {
             IExecute("setPosition", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

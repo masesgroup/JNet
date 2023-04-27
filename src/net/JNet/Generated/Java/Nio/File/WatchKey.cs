@@ -80,7 +80,7 @@ namespace Java.Nio.File
         {
             IExecute("cancel");
         }
-        
+
         #endregion
 
         #region Nested classes

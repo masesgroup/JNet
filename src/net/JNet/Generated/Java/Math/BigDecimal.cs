@@ -171,7 +171,7 @@ namespace Java.Math
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -179,7 +179,7 @@ namespace Java.Math
         /// Converter from <see cref="Java.Math.BigDecimal"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Math.BigDecimal t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -195,7 +195,7 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ZERO"/>
         /// </summary>
         public static Java.Math.BigDecimal ZERO { get { return LocalClazz.GetField<Java.Math.BigDecimal>("ZERO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -227,7 +227,7 @@ namespace Java.Math
         {
             return SExecute<Java.Math.BigDecimal>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -350,7 +350,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#abs()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Abs()
         {
@@ -501,7 +501,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#negate()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Negate()
         {
@@ -519,7 +519,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#plus()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Plus()
         {
@@ -656,7 +656,7 @@ namespace Java.Math
         {
             return IExecuteArray<Java.Math.BigDecimal>("divideAndRemainder", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

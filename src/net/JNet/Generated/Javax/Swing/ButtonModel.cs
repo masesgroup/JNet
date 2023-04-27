@@ -189,7 +189,7 @@ namespace Javax.Swing
         {
             IExecute("setSelected", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

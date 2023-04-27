@@ -101,7 +101,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("uninstallingUI");
         }
-        
+
         #endregion
 
         #region Nested classes

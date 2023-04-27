@@ -53,7 +53,7 @@ namespace Javax.Management
         {
             IExecute("setDescriptor", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

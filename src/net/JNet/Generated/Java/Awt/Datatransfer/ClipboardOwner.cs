@@ -54,7 +54,7 @@ namespace Java.Awt.Datatransfer
         {
             IExecute("lostOwnership", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

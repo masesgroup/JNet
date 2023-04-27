@@ -59,7 +59,7 @@ namespace Javax.Swing.Border
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

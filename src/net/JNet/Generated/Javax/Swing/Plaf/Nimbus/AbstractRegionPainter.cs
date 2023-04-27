@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// Converter from <see cref="Javax.Swing.Plaf.Nimbus.AbstractRegionPainter"/> to <see cref="Javax.Swing.Painter"/>
         /// </summary>
         public static implicit operator Javax.Swing.Painter(Javax.Swing.Plaf.Nimbus.AbstractRegionPainter t) => t.Cast<Javax.Swing.Painter>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Javax.Swing.Plaf.Nimbus
         {
             IExecute("paint", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

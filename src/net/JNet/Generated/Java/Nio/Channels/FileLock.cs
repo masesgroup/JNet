@@ -37,7 +37,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.FileLock"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Nio.Channels.FileLock t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Release()
         {
@@ -113,13 +113,13 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

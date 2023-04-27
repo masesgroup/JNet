@@ -56,7 +56,7 @@ namespace Javax.Naming.Directory
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.BasicAttributes"/> to <see cref="Javax.Naming.Directory.Attributes"/>
         /// </summary>
         public static implicit operator Javax.Naming.Directory.Attributes(Javax.Naming.Directory.BasicAttributes t) => t.Cast<Javax.Naming.Directory.Attributes>();
-        
+
         #endregion
 
         #region Fields
@@ -141,7 +141,7 @@ namespace Javax.Naming.Directory
         {
             return IExecute<Javax.Naming.Directory.Attribute>("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

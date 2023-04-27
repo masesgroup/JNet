@@ -37,7 +37,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractSet"/> to <see cref="Java.Util.Set"/>
         /// </summary>
         public static implicit operator Java.Util.Set(Java.Util.AbstractSet t) => t.Cast<Java.Util.Set>();
-        
+
         #endregion
 
         #region Fields
@@ -76,7 +76,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractSet{E}"/> to <see cref="Java.Util.AbstractSet"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractSet(Java.Util.AbstractSet<E> t) => t.Cast<Java.Util.AbstractSet>();
-        
+
         #endregion
 
         #region Fields

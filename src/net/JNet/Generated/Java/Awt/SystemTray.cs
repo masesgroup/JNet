@@ -55,7 +55,7 @@ namespace Java.Awt
         {
             get { return SExecute<bool>(LocalClazz, "isSupported"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -117,7 +117,7 @@ namespace Java.Awt
         {
             IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

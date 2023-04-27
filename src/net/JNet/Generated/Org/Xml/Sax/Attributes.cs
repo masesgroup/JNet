@@ -154,7 +154,7 @@ namespace Org.Xml.Sax
         {
             return IExecute<string>("getValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

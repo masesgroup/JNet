@@ -87,7 +87,7 @@ namespace Org.W3c.Dom
         {
             get { return IExecute<string>("getXmlVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

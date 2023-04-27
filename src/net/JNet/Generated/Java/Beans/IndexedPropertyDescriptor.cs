@@ -66,7 +66,7 @@ namespace Java.Beans
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -103,7 +103,7 @@ namespace Java.Beans
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getIndexedWriteMethod"); } set { IExecute("setIndexedWriteMethod", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

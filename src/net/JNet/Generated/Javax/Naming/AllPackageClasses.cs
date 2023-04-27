@@ -777,7 +777,7 @@ namespace Javax.Naming
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

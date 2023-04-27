@@ -52,7 +52,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<int>("getOffset"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -76,7 +76,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Forward"/>
             /// </summary>
             public static Javax.Swing.Text.Position.Bias Forward { get { return LocalClazz.GetField<Javax.Swing.Text.Position.Bias>("Forward"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -87,11 +87,15 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

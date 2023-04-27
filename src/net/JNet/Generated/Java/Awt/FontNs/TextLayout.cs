@@ -58,7 +58,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Java.Awt.FontNs
         /// Converter from <see cref="Java.Awt.FontNs.TextLayout"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.TextLayout t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#DEFAULT_CARET_POLICY"/>
         /// </summary>
         public static Java.Awt.FontNs.TextLayout.CaretPolicy DEFAULT_CARET_POLICY { get { return LocalClazz.GetField<Java.Awt.FontNs.TextLayout.CaretPolicy>("DEFAULT_CARET_POLICY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -439,7 +439,7 @@ namespace Java.Awt.FontNs
         {
             IExecute("hitToPoint", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -474,14 +474,18 @@ namespace Java.Awt.FontNs
             {
                 return IExecute<Java.Awt.FontNs.TextHitInfo>("getStrongCaret", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

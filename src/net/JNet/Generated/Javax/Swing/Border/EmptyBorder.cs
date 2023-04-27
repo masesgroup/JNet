@@ -48,7 +48,7 @@ namespace Javax.Swing.Border
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -71,7 +71,7 @@ namespace Javax.Swing.Border
         {
             get { return IExecute<Java.Awt.Insets>("getBorderInsets"); }
         }
-        
+
         #endregion
 
         #region Nested classes

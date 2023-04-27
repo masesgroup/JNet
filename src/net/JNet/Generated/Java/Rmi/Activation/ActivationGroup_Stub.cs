@@ -37,7 +37,7 @@ namespace Java.Rmi.Activation
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Rmi.Activation
         /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup_Stub"/> to <see cref="Java.Rmi.Remote"/>
         /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationGroup_Stub t) => t.Cast<Java.Rmi.Remote>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Rmi.Activation
         {
             return IExecute<Java.Rmi.MarshalledObject>("newInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

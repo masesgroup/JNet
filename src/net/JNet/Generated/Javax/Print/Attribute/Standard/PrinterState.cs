@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterState"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterState t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#UNKNOWN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -79,7 +79,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

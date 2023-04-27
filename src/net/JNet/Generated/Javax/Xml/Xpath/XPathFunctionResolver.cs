@@ -55,7 +55,7 @@ namespace Javax.Xml.Xpath
         {
             return IExecute<Javax.Xml.Xpath.XPathFunction>("resolveFunction", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

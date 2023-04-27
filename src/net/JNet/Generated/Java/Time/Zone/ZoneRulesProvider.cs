@@ -82,7 +82,7 @@ namespace Java.Time.Zone
         {
             SExecute(LocalClazz, "registerProvider", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

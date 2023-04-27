@@ -46,7 +46,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -171,7 +171,7 @@ namespace Java.Text
         {
             IExecute("setParseBigDecimal", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

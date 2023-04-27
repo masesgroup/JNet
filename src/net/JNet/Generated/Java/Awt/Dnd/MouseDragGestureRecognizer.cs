@@ -41,7 +41,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.MouseDragGestureRecognizer"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.Dnd.MouseDragGestureRecognizer t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("mouseReleased", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

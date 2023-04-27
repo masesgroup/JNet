@@ -37,7 +37,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractList"/> to <see cref="Java.Util.List"/>
         /// </summary>
         public static implicit operator Java.Util.List(Java.Util.AbstractList t) => t.Cast<Java.Util.List>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
         {
@@ -142,7 +142,7 @@ namespace Java.Util
         {
             IExecute("add", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -169,7 +169,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractList{E}"/> to <see cref="Java.Util.AbstractList"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractList(Java.Util.AbstractList<E> t) => t.Cast<Java.Util.AbstractList>();
-        
+
         #endregion
 
         #region Fields
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
         {
@@ -274,7 +274,7 @@ namespace Java.Util
         {
             IExecute("add", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

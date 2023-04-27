@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<int>("getStartOffset"); }
         }
-        
+
         #endregion
 
         #region Nested classes

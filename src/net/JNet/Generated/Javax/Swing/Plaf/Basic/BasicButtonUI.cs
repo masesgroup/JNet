@@ -54,7 +54,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             return IExecute<int>("getDefaultTextIconGap", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

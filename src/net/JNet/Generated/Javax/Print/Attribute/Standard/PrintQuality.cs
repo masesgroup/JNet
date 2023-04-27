@@ -45,7 +45,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.PrintQuality"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.PrintQuality t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#NORMAL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrintQuality NORMAL { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.PrintQuality>("NORMAL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -83,7 +83,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

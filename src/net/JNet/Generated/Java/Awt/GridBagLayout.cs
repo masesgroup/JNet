@@ -41,7 +41,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.GridBagLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.GridBagLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowHeights"/>
         /// </summary>
         public int[] rowHeights { get { return Instance.GetField<int[]>("rowHeights"); } set { Instance.SetField("rowHeights", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -205,7 +205,7 @@ namespace Java.Awt
         {
             IExecute("setConstraints", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

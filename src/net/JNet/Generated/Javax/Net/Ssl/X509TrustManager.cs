@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
         {
             IExecute("checkServerTrusted", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

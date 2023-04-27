@@ -58,7 +58,7 @@ namespace Org.W3c.Dom.Xpath
         {
             return IExecute("evaluate", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

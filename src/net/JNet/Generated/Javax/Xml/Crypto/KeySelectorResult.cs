@@ -52,7 +52,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<Java.Security.Key>("getKey"); }
         }
-        
+
         #endregion
 
         #region Nested classes

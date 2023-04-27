@@ -59,7 +59,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<string>("getURI"); }
         }
-        
+
         #endregion
 
         #region Nested classes

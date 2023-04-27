@@ -70,7 +70,7 @@ namespace Javax.Xml.Catalog
         {
             if (arg1.Length == 0) return SExecute<Javax.Xml.Catalog.CatalogResolver>(LocalClazz, "catalogResolver", arg0); else return SExecute<Javax.Xml.Catalog.CatalogResolver>(LocalClazz, "catalogResolver", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

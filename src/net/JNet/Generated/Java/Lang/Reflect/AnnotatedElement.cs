@@ -104,7 +104,7 @@ namespace Java.Lang.Reflect
         {
             return IExecute<bool>("isAnnotationPresent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Javax.Swing.Filechooser
         {
             return IExecute<bool>("accept", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

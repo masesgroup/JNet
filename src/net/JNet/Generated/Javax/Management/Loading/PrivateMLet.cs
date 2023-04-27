@@ -59,7 +59,7 @@ namespace Javax.Management.Loading
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Javax.Management.Loading
         /// Converter from <see cref="Javax.Management.Loading.PrivateMLet"/> to <see cref="Javax.Management.Loading.PrivateClassLoader"/>
         /// </summary>
         public static implicit operator Javax.Management.Loading.PrivateClassLoader(Javax.Management.Loading.PrivateMLet t) => t.Cast<Javax.Management.Loading.PrivateClassLoader>();
-        
+
         #endregion
 
         #region Fields

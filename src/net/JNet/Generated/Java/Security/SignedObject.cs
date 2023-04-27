@@ -42,7 +42,7 @@ namespace Java.Security
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.SignedObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.SignedObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Java.Security
         {
             return IExecute<bool>("verify", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

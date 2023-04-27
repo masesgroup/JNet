@@ -37,7 +37,7 @@ namespace Java.Awt.Dnd
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Awt.Dnd
         {
             get { return IExecute<Java.Awt.Dnd.DropTargetContext>("getDropTargetContext"); }
         }
-        
+
         #endregion
 
         #region Nested classes

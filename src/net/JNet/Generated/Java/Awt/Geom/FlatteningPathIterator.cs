@@ -48,7 +48,7 @@ namespace Java.Awt.Geom
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.FlatteningPathIterator"/> to <see cref="Java.Awt.Geom.PathIterator"/>
         /// </summary>
         public static implicit operator Java.Awt.Geom.PathIterator(Java.Awt.Geom.FlatteningPathIterator t) => t.Cast<Java.Awt.Geom.PathIterator>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Java.Awt.Geom
         {
             IExecute("next");
         }
-        
+
         #endregion
 
         #region Nested classes

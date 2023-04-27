@@ -63,7 +63,7 @@ namespace Java.Awt.Datatransfer
         {
             return IExecute<Java.Util.List<string>>("getNativesForFlavor", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

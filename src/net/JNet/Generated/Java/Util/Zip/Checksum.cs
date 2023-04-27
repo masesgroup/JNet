@@ -93,7 +93,7 @@ namespace Java.Util.Zip
         {
             IExecute("update", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

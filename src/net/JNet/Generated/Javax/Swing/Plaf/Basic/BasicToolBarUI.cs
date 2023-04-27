@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicToolBarUI"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicToolBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("setRolloverBorders", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

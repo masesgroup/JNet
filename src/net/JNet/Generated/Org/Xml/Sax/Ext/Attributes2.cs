@@ -101,7 +101,7 @@ namespace Org.Xml.Sax.Ext
         {
             return IExecute<bool>("isSpecified", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

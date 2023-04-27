@@ -38,7 +38,7 @@ namespace Javax.Swing.Event
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<Javax.Swing.Undo.UndoableEdit>("getEdit"); }
         }
-        
+
         #endregion
 
         #region Nested classes

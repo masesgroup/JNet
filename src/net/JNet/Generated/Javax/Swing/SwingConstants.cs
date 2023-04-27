@@ -113,7 +113,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#WEST"/>
         /// </summary>
         public static int WEST { get { return LocalClazz.GetField<int>("WEST"); } }
-        
+
         #endregion
 
         #region Static methods

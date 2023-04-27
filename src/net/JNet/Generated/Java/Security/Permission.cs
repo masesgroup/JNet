@@ -37,7 +37,7 @@ namespace Java.Security
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.Permission"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Permission t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Java.Security
         {
             IExecute("checkGuard", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

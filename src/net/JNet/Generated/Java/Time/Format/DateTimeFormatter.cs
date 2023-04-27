@@ -97,7 +97,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#RFC_1123_DATE_TIME"/>
         /// </summary>
         public static Java.Time.Format.DateTimeFormatter RFC_1123_DATE_TIME { get { return LocalClazz.GetField<Java.Time.Format.DateTimeFormatter>("RFC_1123_DATE_TIME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -171,7 +171,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofPattern", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -239,7 +239,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#toFormat()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Text.Format"/></returns>
         public Java.Text.Format ToFormat()
         {
@@ -374,7 +374,7 @@ namespace Java.Time.Format
         {
             IExecute("formatTo", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

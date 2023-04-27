@@ -59,7 +59,7 @@ namespace Javax.Swing
         {
             get { return IExecute<bool>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

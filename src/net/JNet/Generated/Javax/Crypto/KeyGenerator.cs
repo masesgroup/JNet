@@ -74,7 +74,7 @@ namespace Javax.Crypto
         {
             return SExecute<Javax.Crypto.KeyGenerator>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -143,7 +143,7 @@ namespace Javax.Crypto
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

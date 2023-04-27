@@ -46,7 +46,7 @@ namespace Java.Lang
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -203,7 +203,7 @@ namespace Java.Lang
         {
             IExecute("uncaughtException", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

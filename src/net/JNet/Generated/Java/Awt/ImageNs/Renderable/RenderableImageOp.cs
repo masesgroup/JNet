@@ -38,7 +38,7 @@ namespace Java.Awt.ImageNs.Renderable
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageOp"/> to <see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.Renderable.RenderableImage(Java.Awt.ImageNs.Renderable.RenderableImageOp t) => t.Cast<Java.Awt.ImageNs.Renderable.RenderableImage>();
-        
+
         #endregion
 
         #region Fields
@@ -159,7 +159,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -93,7 +93,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -112,7 +116,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -120,7 +124,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabbedPaneLayout"/> to <see cref="Java.Awt.LayoutManager"/>
             /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabbedPaneLayout t) => t.Cast<Java.Awt.LayoutManager>();
-            
+
             #endregion
 
             #region Fields
@@ -182,7 +186,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("removeLayoutComponent", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -201,7 +209,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -209,7 +217,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -229,14 +237,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("stateChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

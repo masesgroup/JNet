@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.ContainerOrderFocusTraversalPolicy"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ContainerOrderFocusTraversalPolicy t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Java.Awt
         {
             get { return IExecute<bool>("getImplicitDownCycleTraversal"); } set { IExecute("setImplicitDownCycleTraversal", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("installListeners", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

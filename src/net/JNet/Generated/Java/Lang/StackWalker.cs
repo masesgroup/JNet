@@ -44,7 +44,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance()
         {
@@ -78,7 +78,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.StackWalker>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -106,7 +106,7 @@ namespace Java.Lang
         {
             IExecute("forEach", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -134,7 +134,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES"/>
             /// </summary>
             public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES { get { return LocalClazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -154,10 +154,14 @@ namespace Java.Lang
             {
                 return SExecute<Java.Lang.StackWalker.Option>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -255,14 +259,18 @@ namespace Java.Lang
             {
                 get { return IExecute<Java.Lang.StackTraceElement>("toStackTraceElement"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

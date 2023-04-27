@@ -48,7 +48,7 @@ namespace Java.Nio.Channels
         {
             get { return SExecute<Java.Nio.Channels.Pipe>(LocalClazz, "open"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -66,7 +66,7 @@ namespace Java.Nio.Channels
         {
             get { return IExecute<Java.Nio.Channels.Pipe.SourceChannel>("source"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -86,7 +86,7 @@ namespace Java.Nio.Channels
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SinkChannel"/> to <see cref="Java.Nio.Channels.GatheringByteChannel"/>
             /// </summary>
             public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
-            
+
             #endregion
 
             #region Fields
@@ -98,6 +98,10 @@ namespace Java.Nio.Channels
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -121,7 +125,7 @@ namespace Java.Nio.Channels
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SourceChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
             /// </summary>
             public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
-            
+
             #endregion
 
             #region Fields
@@ -136,11 +140,15 @@ namespace Java.Nio.Channels
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

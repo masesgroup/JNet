@@ -451,7 +451,7 @@ namespace Java.Lang.Reflect
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1176,7 +1176,7 @@ namespace Java.Lang.Reflect
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

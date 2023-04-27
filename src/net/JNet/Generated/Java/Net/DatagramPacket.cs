@@ -92,7 +92,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -160,7 +160,7 @@ namespace Java.Net
         {
             IExecute("setData", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

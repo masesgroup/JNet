@@ -54,7 +54,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute<bool>("contentEquals", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

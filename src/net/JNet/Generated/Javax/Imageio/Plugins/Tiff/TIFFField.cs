@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// Converter from <see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Imageio.Plugins.Tiff.TIFFField t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -124,7 +124,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.TIFFField>(LocalClazz, "createFromMetadataNode", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -311,7 +311,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
         /// <exception cref="Java.Lang.CloneNotSupportedException"/>
         public Javax.Imageio.Plugins.Tiff.TIFFField Clone()
@@ -336,7 +336,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             return IExecuteArray<long>("getAsRational", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

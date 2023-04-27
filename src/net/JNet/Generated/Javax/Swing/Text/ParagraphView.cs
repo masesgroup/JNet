@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.ParagraphView"/> to <see cref="Javax.Swing.Text.TabExpander"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.ParagraphView t) => t.Cast<Javax.Swing.Text.TabExpander>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<Javax.Swing.Text.View>("breakView", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

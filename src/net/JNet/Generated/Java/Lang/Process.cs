@@ -139,7 +139,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#waitFor()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public int WaitFor()
@@ -164,7 +164,7 @@ namespace Java.Lang
         {
             return IExecute<bool>("waitFor", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

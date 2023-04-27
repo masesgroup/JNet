@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService"/> to <see cref="Java.Util.Concurrent.CompletionService"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.ExecutorCompletionService t) => t.Cast<Java.Util.Concurrent.CompletionService>();
-        
+
         #endregion
 
         #region Fields
@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Poll()
         {
@@ -112,7 +112,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService{V}"/> to <see cref="Java.Util.Concurrent.ExecutorCompletionService"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ExecutorCompletionService(Java.Util.Concurrent.ExecutorCompletionService<V> t) => t.Cast<Java.Util.Concurrent.ExecutorCompletionService>();
-        
+
         #endregion
 
         #region Fields
@@ -178,7 +178,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Poll()
         {
@@ -214,7 +214,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

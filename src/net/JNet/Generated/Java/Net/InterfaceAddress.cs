@@ -66,7 +66,7 @@ namespace Java.Net
         {
             get { return IExecute<short>("getNetworkPrefixLength"); }
         }
-        
+
         #endregion
 
         #region Nested classes

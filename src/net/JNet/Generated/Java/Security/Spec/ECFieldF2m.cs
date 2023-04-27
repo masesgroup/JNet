@@ -55,7 +55,7 @@ namespace Java.Security.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.ECFieldF2m"/> to <see cref="Java.Security.Spec.ECField"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.ECField(Java.Security.Spec.ECFieldF2m t) => t.Cast<Java.Security.Spec.ECField>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getReductionPolynomial"); }
         }
-        
+
         #endregion
 
         #region Nested classes

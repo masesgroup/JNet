@@ -54,7 +54,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

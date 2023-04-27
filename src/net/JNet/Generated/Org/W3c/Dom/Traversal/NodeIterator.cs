@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Traversal
         {
             IExecute("detach");
         }
-        
+
         #endregion
 
         #region Nested classes

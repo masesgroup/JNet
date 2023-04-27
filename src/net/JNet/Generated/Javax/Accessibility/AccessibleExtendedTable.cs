@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         {
             return IExecute<int>("getAccessibleRow", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#PROPERTYNAME"/>
         /// </summary>
         public static string PROPERTYNAME { get { return LocalClazz.GetField<string>("PROPERTYNAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -64,7 +64,7 @@ namespace Java.Beans
         {
             IExecute("setDesignTime", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

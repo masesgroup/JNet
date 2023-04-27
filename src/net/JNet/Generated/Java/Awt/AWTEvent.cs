@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -126,7 +126,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_STATE_EVENT_MASK"/>
         /// </summary>
         public static long WINDOW_STATE_EVENT_MASK { get { return LocalClazz.GetField<long>("WINDOW_STATE_EVENT_MASK"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -156,7 +156,7 @@ namespace Java.Awt
         {
             IExecute("setSource", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

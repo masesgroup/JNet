@@ -203,7 +203,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppForegroundListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -259,7 +259,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppHiddenListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -315,7 +315,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppReopenedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -930,7 +930,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class ScreenSleepListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -943,7 +943,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class SystemEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -999,7 +999,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class SystemSleepListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1069,7 +1069,7 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1084,10 +1084,11 @@ namespace Java.Awt.DesktopNs
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1097,7 +1098,7 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class UserSessionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

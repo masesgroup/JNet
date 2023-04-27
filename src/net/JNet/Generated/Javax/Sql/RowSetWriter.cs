@@ -55,7 +55,7 @@ namespace Javax.Sql
         {
             return IExecute<bool>("writeData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

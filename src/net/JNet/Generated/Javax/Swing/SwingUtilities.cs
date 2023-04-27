@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.SwingUtilities"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.SwingUtilities t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -509,7 +509,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "updateComponentTreeUI", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

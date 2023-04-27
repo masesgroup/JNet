@@ -37,7 +37,7 @@ namespace Java.Nio.File.Attribute
         /// Converter from <see cref="Java.Nio.File.Attribute.FileTime"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.File.Attribute.FileTime t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Nio.File.Attribute
         {
             return SExecute<Java.Nio.File.Attribute.FileTime>(LocalClazz, "fromMillis", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -118,7 +118,7 @@ namespace Java.Nio.File.Attribute
         {
             return IExecute<long>("to", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

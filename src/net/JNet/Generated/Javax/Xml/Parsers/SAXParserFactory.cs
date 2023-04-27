@@ -51,7 +51,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance()
         {
@@ -67,7 +67,7 @@ namespace Javax.Xml.Parsers
         {
             return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalClazz, "newInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -154,7 +154,7 @@ namespace Javax.Xml.Parsers
         {
             IExecute("setXIncludeAware", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

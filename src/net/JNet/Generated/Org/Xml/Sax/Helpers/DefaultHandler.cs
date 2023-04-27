@@ -49,7 +49,7 @@ namespace Org.Xml.Sax.Helpers
         /// Converter from <see cref="Org.Xml.Sax.Helpers.DefaultHandler"/> to <see cref="Org.Xml.Sax.ErrorHandler"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.ErrorHandler(Org.Xml.Sax.Helpers.DefaultHandler t) => t.Cast<Org.Xml.Sax.ErrorHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -87,7 +87,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html#endDocument()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
@@ -183,7 +183,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html#startDocument()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {
@@ -232,7 +232,7 @@ namespace Org.Xml.Sax.Helpers
         {
             IExecute("warning", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

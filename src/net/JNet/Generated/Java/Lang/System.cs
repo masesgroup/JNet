@@ -49,7 +49,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out"/>
         /// </summary>
         public static Java.Io.PrintStream outField { get { return LocalClazz.GetField<Java.Io.PrintStream>("out"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -267,7 +267,7 @@ namespace Java.Lang
         {
             SExecute(LocalClazz, "setOut", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -390,7 +390,11 @@ namespace Java.Lang
             {
                 IExecute("log", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -420,7 +424,7 @@ namespace Java.Lang
             {
                 get { return SExecute<Java.Lang.System.LoggerFinder>(LocalClazz, "getLoggerFinder"); }
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -445,14 +449,18 @@ namespace Java.Lang
             {
                 return IExecute<Java.Lang.System.Logger>("getLocalizedLogger", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

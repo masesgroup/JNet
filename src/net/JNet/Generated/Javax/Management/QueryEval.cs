@@ -37,7 +37,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.QueryEval"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.QueryEval t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Javax.Management
         {
             get { return SExecute<Javax.Management.MBeanServer>(LocalClazz, "getMBeanServer"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -64,7 +64,7 @@ namespace Javax.Management
         {
             IExecute("setMBeanServer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

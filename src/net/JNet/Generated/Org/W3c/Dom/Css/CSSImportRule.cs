@@ -66,7 +66,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSStyleSheet>("getStyleSheet"); }
         }
-        
+
         #endregion
 
         #region Nested classes

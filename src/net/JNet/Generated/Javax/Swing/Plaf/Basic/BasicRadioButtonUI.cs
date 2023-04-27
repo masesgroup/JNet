@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             get { return IExecute<Javax.Swing.Icon>("getDefaultIcon"); }
         }
-        
+
         #endregion
 
         #region Nested classes

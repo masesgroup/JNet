@@ -75,7 +75,7 @@ namespace Javax.Sound.Sampled
         {
             IExecute("open", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -60,7 +60,7 @@ namespace Javax.Annotation.Processing
         {
             return SExecute<Javax.Annotation.Processing.Completion>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

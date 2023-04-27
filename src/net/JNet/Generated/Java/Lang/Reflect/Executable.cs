@@ -41,7 +41,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.Executable"/> to <see cref="Java.Lang.Reflect.GenericDeclaration"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.GenericDeclaration(Java.Lang.Reflect.Executable t) => t.Cast<Java.Lang.Reflect.GenericDeclaration>();
-        
+
         #endregion
 
         #region Fields
@@ -179,7 +179,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecute<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
-        
+
         #endregion
 
         #region Nested classes

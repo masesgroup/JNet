@@ -74,7 +74,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.Signature>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -124,7 +124,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#sign()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Security.SignatureException"/>
         public byte[] Sign()
@@ -227,7 +227,7 @@ namespace Java.Security
         {
             IExecute("update", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

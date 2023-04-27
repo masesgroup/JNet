@@ -65,7 +65,7 @@ namespace Javax.Script
         {
             return IExecute<Javax.Script.CompiledScript>("compile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

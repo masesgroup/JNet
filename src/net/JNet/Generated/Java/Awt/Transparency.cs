@@ -49,7 +49,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT"/>
         /// </summary>
         public static int TRANSLUCENT { get { return LocalClazz.GetField<int>("TRANSLUCENT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -64,7 +64,7 @@ namespace Java.Awt
         {
             get { return IExecute<int>("getTransparency"); }
         }
-        
+
         #endregion
 
         #region Nested classes

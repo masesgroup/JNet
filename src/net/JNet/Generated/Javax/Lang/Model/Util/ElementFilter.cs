@@ -194,7 +194,7 @@ namespace Javax.Lang.Model.Util
         {
             return SExecute<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>(LocalClazz, "fieldsIn", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

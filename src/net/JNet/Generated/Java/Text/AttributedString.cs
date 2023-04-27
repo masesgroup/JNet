@@ -75,7 +75,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -148,7 +148,7 @@ namespace Java.Text
         {
             IExecute("addAttributes", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

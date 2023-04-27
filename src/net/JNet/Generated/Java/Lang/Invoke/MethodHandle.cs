@@ -184,7 +184,7 @@ namespace Java.Lang.Invoke
         {
             return IExecute("invokeWithArguments", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

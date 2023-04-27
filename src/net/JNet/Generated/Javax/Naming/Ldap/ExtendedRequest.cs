@@ -72,7 +72,7 @@ namespace Javax.Naming.Ldap
         {
             return IExecute<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

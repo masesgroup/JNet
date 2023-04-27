@@ -57,7 +57,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_ONLY"/>
         /// </summary>
         public static int INITIATE_ONLY { get { return LocalClazz.GetField<int>("INITIATE_ONLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -149,13 +149,13 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {
             IExecute("dispose");
         }
-        
+
         #endregion
 
         #region Nested classes

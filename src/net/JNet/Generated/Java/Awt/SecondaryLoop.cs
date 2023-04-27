@@ -59,7 +59,7 @@ namespace Java.Awt
         {
             get { return IExecute<bool>("exit"); }
         }
-        
+
         #endregion
 
         #region Nested classes

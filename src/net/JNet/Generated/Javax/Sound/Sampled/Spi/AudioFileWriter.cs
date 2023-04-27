@@ -104,7 +104,7 @@ namespace Javax.Sound.Sampled.Spi
         {
             return IExecute<bool>("isFileTypeSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

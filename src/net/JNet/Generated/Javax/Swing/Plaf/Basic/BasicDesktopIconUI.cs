@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("deiconize");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Script
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -139,7 +139,7 @@ namespace Javax.Script
         {
             IExecute("registerEngineName", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

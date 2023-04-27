@@ -37,7 +37,7 @@ namespace Java.Sql
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Java.Sql
         {
             return SExecute<Java.Sql.Timestamp>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -112,7 +112,7 @@ namespace Java.Sql
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

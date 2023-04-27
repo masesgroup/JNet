@@ -109,13 +109,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream.Builder"/></returns>
         public static Java.Util.Stream.DoubleStream.Builder BuilderMethod()
         {
             return SExecute<Java.Util.Stream.DoubleStream.Builder>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -403,7 +403,7 @@ namespace Java.Util.Stream
         {
             return IExecute<Java.Util.Stream.DoubleStream>("takeWhile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

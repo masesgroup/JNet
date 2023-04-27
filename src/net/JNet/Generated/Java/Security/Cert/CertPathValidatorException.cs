@@ -89,7 +89,7 @@ namespace Java.Security.Cert
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNSPECIFIED"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED { get { return LocalClazz.GetField<Java.Security.Cert.CertPathValidatorException.BasicReason>("UNSPECIFIED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -109,10 +109,14 @@ namespace Java.Security.Cert
             {
                 return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -143,11 +147,15 @@ namespace Java.Security.Cert
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

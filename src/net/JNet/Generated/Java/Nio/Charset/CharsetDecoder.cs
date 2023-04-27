@@ -172,7 +172,7 @@ namespace Java.Nio.Charset
         {
             return IExecute<Java.Nio.Charset.CoderResult>("flush", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

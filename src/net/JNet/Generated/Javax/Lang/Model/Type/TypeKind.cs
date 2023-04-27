@@ -125,7 +125,7 @@ namespace Javax.Lang.Model.Type
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#WILDCARD"/>
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind WILDCARD { get { return LocalClazz.GetField<Javax.Lang.Model.Type.TypeKind>("WILDCARD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -145,7 +145,7 @@ namespace Javax.Lang.Model.Type
         {
             return SExecute<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -156,7 +156,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<bool>("isPrimitive"); }
         }
-        
+
         #endregion
 
         #region Nested classes

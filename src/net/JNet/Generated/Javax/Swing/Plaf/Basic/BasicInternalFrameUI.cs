@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -88,7 +88,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             get { return IExecute<Javax.Swing.JComponent>("getWestPane"); } set { IExecute("setWestPane", value); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -104,7 +104,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -112,7 +112,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout"/> to <see cref="Java.Awt.LayoutManager"/>
             /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout t) => t.Cast<Java.Awt.LayoutManager>();
-            
+
             #endregion
 
             #region Fields
@@ -167,14 +167,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("removeLayoutComponent", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

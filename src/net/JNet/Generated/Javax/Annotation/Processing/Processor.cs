@@ -96,7 +96,7 @@ namespace Javax.Annotation.Processing
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

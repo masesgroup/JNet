@@ -73,7 +73,7 @@ namespace Javax.Management
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -132,7 +132,7 @@ namespace Javax.Management
         {
             IExecute("setSource", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

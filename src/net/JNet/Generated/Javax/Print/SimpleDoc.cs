@@ -39,7 +39,7 @@ namespace Javax.Print
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Print
         /// Converter from <see cref="Javax.Print.SimpleDoc"/> to <see cref="Javax.Print.Doc"/>
         /// </summary>
         public static implicit operator Javax.Print.Doc(Javax.Print.SimpleDoc t) => t.Cast<Javax.Print.Doc>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Javax.Print
         {
             get { return IExecute<Java.Io.InputStream>("getStreamForBytes"); }
         }
-        
+
         #endregion
 
         #region Nested classes

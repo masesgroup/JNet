@@ -50,7 +50,7 @@ namespace Javax.Sound.Midi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP"/>
         /// </summary>
         public static float SMPTE_30DROP { get { return LocalClazz.GetField<float>("SMPTE_30DROP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -144,7 +144,7 @@ namespace Javax.Sound.Midi
         {
             return IExecute<bool>("deleteTrack", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

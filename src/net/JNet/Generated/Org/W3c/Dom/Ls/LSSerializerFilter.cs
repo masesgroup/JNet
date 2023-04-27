@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Ls
         {
             get { return IExecute<int>("getWhatToShow"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Security.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.MGF1ParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.MGF1ParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Java.Security.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_256"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA512_256 { get { return LocalClazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA512_256"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -92,7 +92,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<string>("getDigestAlgorithm"); }
         }
-        
+
         #endregion
 
         #region Nested classes

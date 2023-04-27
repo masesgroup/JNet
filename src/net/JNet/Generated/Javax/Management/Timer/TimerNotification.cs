@@ -42,7 +42,7 @@ namespace Javax.Management.Timer
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Management.Timer
         {
             get { return IExecute<int?>("getNotificationID"); }
         }
-        
+
         #endregion
 
         #region Nested classes

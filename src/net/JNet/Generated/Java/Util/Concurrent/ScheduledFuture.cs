@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture"/> to <see cref="Java.Util.Concurrent.Future"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Future>();
-        
+
         #endregion
 
         #region Fields
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.ScheduledFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.ScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
-        
+
         #endregion
 
         #region Fields

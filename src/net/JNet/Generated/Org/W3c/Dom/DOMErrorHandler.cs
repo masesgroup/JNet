@@ -54,7 +54,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<bool>("handleError", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

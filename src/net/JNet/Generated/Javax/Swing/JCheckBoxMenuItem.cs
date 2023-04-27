@@ -81,7 +81,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JCheckBoxMenuItem"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JCheckBoxMenuItem t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -108,7 +108,7 @@ namespace Javax.Swing
         {
             get { return IExecute<bool>("getState"); } set { IExecute("setState", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

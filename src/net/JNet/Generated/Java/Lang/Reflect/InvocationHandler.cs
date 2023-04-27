@@ -57,7 +57,7 @@ namespace Java.Lang.Reflect
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

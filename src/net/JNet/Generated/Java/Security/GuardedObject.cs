@@ -38,7 +38,7 @@ namespace Java.Security
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.GuardedObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.GuardedObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Security
         {
             get { return IExecute("getObject"); }
         }
-        
+
         #endregion
 
         #region Nested classes

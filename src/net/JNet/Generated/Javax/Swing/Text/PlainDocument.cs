@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute"/>
         /// </summary>
         public static string tabSizeAttribute { get { return LocalClazz.GetField<string>("tabSizeAttribute"); } }
-        
+
         #endregion
 
         #region Static methods

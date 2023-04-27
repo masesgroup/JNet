@@ -49,7 +49,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,14 +68,14 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#write()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write()
         {
             IExecute("write");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -89,7 +89,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -105,7 +105,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC"/>
         /// </summary>
         public static int BC { get { return LocalClazz.GetField<int>("BC"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -118,7 +118,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.GregorianCalendar>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -145,7 +145,7 @@ namespace Java.Util
         {
             return IExecute<bool>("isLeapYear", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

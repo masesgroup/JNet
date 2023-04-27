@@ -79,7 +79,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setDot", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -128,14 +128,18 @@ namespace Javax.Swing.Text
             {
                 IExecute("setDot", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

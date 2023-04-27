@@ -69,7 +69,7 @@ namespace Javax.Security.Sasl
         {
             return IExecute<Javax.Security.Sasl.SaslClient>("createSaslClient", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

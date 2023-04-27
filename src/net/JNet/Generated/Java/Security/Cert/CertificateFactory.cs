@@ -74,7 +74,7 @@ namespace Java.Security.Cert
         {
             return SExecute<Java.Security.Cert.CertificateFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -170,7 +170,7 @@ namespace Java.Security.Cert
         {
             return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("generateCRLs", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

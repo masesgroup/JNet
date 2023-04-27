@@ -46,7 +46,7 @@ namespace Org.Ietf.Jgss
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -131,7 +131,7 @@ namespace Org.Ietf.Jgss
         {
             IExecute("setSupplementaryStates", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

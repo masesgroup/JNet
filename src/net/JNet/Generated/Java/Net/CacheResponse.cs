@@ -59,7 +59,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("getHeaders"); }
         }
-        
+
         #endregion
 
         #region Nested classes

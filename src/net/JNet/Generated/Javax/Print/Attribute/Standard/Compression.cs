@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.Compression"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Compression t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#NONE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Compression NONE { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.Compression>("NONE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -79,7 +79,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RecursiveTask{V}"/> to <see cref="Java.Util.Concurrent.RecursiveTask"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RecursiveTask(Java.Util.Concurrent.RecursiveTask<V> t) => t.Cast<Java.Util.Concurrent.RecursiveTask>();
-        
+
         #endregion
 
         #region Fields

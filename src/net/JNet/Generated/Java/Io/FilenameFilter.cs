@@ -55,7 +55,7 @@ namespace Java.Io
         {
             return IExecute<bool>("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

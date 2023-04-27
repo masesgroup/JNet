@@ -52,7 +52,7 @@ namespace Javax.Naming
         {
             get { return IExecute<Javax.Naming.Reference>("getReference"); }
         }
-        
+
         #endregion
 
         #region Nested classes

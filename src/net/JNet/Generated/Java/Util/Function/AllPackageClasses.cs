@@ -107,7 +107,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -193,7 +193,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -279,7 +279,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -365,7 +365,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -494,7 +494,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -666,7 +666,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -967,7 +967,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1139,7 +1139,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1526,7 +1526,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1827,7 +1827,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1913,7 +1913,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1999,7 +1999,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2085,7 +2085,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2171,7 +2171,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2257,7 +2257,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2343,7 +2343,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2429,7 +2429,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2515,7 +2515,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2601,7 +2601,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2687,7 +2687,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2773,7 +2773,7 @@ namespace Java.Util.Function
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

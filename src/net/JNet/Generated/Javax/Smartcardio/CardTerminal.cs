@@ -89,7 +89,7 @@ namespace Javax.Smartcardio
         {
             return IExecute<Javax.Smartcardio.Card>("connect", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

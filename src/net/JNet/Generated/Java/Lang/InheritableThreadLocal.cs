@@ -68,7 +68,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.InheritableThreadLocal{T}"/> to <see cref="Java.Lang.InheritableThreadLocal"/>
         /// </summary>
         public static implicit operator Java.Lang.InheritableThreadLocal(Java.Lang.InheritableThreadLocal<T> t) => t.Cast<Java.Lang.InheritableThreadLocal>();
-        
+
         #endregion
 
         #region Fields

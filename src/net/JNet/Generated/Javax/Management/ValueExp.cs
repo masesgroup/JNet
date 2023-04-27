@@ -58,7 +58,7 @@ namespace Javax.Management
         {
             return IExecute<Javax.Management.ValueExp>("apply", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

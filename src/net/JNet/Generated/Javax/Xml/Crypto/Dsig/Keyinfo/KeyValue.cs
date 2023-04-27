@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#RSA_TYPE"/>
         /// </summary>
         public static string RSA_TYPE { get { return LocalClazz.GetField<string>("RSA_TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -60,7 +60,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
         }
-        
+
         #endregion
 
         #region Nested classes

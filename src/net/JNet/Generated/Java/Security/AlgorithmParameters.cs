@@ -74,7 +74,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.AlgorithmParameters>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -147,7 +147,7 @@ namespace Java.Security
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

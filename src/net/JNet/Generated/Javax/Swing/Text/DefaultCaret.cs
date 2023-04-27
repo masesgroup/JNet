@@ -49,7 +49,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT"/>
         /// </summary>
         public static int UPDATE_WHEN_ON_EDT { get { return LocalClazz.GetField<int>("UPDATE_WHEN_ON_EDT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -313,7 +313,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setVisible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

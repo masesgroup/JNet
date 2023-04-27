@@ -41,7 +41,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.DayOfWeek"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.DayOfWeek t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#WEDNESDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek WEDNESDAY { get { return LocalClazz.GetField<Java.Time.DayOfWeek>("WEDNESDAY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -111,7 +111,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.DayOfWeek>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -204,7 +204,7 @@ namespace Java.Time
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

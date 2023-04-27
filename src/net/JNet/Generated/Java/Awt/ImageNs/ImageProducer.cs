@@ -86,7 +86,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("startProduction", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -62,7 +62,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -98,7 +98,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html#SHIFT_MASK"/>
         /// </summary>
         public static int SHIFT_MASK { get { return LocalClazz.GetField<int>("SHIFT_MASK"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -127,7 +127,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<long>("getWhen"); }
         }
-        
+
         #endregion
 
         #region Nested classes

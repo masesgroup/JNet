@@ -45,7 +45,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.IdentityHashMap"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.IdentityHashMap t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -116,7 +116,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.IdentityHashMap{K, V}"/> to <see cref="Java.Util.IdentityHashMap"/>
         /// </summary>
         public static implicit operator Java.Util.IdentityHashMap(Java.Util.IdentityHashMap<K, V> t) => t.Cast<Java.Util.IdentityHashMap>();
-        
+
         #endregion
 
         #region Fields

@@ -60,7 +60,7 @@ namespace Javax.Imageio.Plugins.Tiff
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -132,7 +132,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#UNKNOWN_TAG_NAME"/>
         /// </summary>
         public static string UNKNOWN_TAG_NAME { get { return LocalClazz.GetField<string>("UNKNOWN_TAG_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -145,7 +145,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             return SExecute<int>(LocalClazz, "getSizeOfType", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -223,7 +223,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             return IExecute<string>("getValueName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

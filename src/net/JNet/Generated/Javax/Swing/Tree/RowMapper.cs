@@ -54,7 +54,7 @@ namespace Javax.Swing.Tree
         {
             return IExecuteArray<int>("getRowsForPaths", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

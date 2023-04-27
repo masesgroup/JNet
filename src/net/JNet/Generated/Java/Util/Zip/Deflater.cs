@@ -46,7 +46,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -98,7 +98,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH"/>
         /// </summary>
         public static int SYNC_FLUSH { get { return LocalClazz.GetField<int>("SYNC_FLUSH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -295,7 +295,7 @@ namespace Java.Util.Zip
         {
             IExecute("setStrategy", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

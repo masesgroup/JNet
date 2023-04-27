@@ -89,7 +89,7 @@ namespace Org.Xml.Sax.Ext
         {
             IExecute("internalEntityDecl", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

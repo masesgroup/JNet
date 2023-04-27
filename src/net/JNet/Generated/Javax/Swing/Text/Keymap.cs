@@ -131,7 +131,7 @@ namespace Javax.Swing.Text
         {
             IExecute("removeKeyStrokeBinding", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -59,7 +59,7 @@ namespace Javax.Swing
         {
             IExecute("show");
         }
-        
+
         #endregion
 
         #region Nested classes

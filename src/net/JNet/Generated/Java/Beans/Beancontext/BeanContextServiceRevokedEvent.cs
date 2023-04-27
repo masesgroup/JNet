@@ -39,7 +39,7 @@ namespace Java.Beans.Beancontext
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -85,7 +85,7 @@ namespace Java.Beans.Beancontext
         {
             return IExecute<bool>("isServiceClass", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

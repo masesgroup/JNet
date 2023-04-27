@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JSpinner"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSpinner t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -110,7 +110,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#commitEdit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
@@ -132,7 +132,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -157,7 +157,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -187,7 +187,11 @@ namespace Javax.Swing
             {
                 get { return IExecute<Javax.Swing.SpinnerDateModel>("getModel"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -206,7 +210,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -222,7 +226,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.JSpinner.DefaultEditor"/> to <see cref="Java.Awt.LayoutManager"/>
             /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.JSpinner.DefaultEditor t) => t.Cast<Java.Awt.LayoutManager>();
-            
+
             #endregion
 
             #region Fields
@@ -278,7 +282,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#commitEdit()"/>
             /// </summary>
-            
+
             /// <exception cref="Java.Text.ParseException"/>
             public void CommitEdit()
             {
@@ -324,7 +328,11 @@ namespace Javax.Swing
             {
                 IExecute("stateChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -343,7 +351,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -366,7 +374,11 @@ namespace Javax.Swing
             {
                 get { return IExecute<Javax.Swing.SpinnerListModel>("getModel"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -394,7 +406,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -424,14 +436,18 @@ namespace Javax.Swing
             {
                 get { return IExecute<Javax.Swing.SpinnerNumberModel>("getModel"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

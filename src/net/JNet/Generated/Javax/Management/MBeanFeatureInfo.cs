@@ -48,7 +48,7 @@ namespace Javax.Management
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.MBeanFeatureInfo"/> to <see cref="Javax.Management.DescriptorRead"/>
         /// </summary>
         public static implicit operator Javax.Management.DescriptorRead(Javax.Management.MBeanFeatureInfo t) => t.Cast<Javax.Management.DescriptorRead>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Javax.Management
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

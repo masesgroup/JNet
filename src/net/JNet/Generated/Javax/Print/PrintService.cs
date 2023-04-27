@@ -171,7 +171,7 @@ namespace Javax.Print
         {
             IExecute("removePrintServiceAttributeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -39,7 +39,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Swing
         {
             get { return IExecute<Javax.Swing.ProgressMonitor>("getProgressMonitor"); }
         }
-        
+
         #endregion
 
         #region Nested classes

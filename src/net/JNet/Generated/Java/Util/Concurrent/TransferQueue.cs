@@ -89,7 +89,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("transfer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -112,7 +112,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.TransferQueue{E}"/> to <see cref="Java.Util.Concurrent.TransferQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.TransferQueue(Java.Util.Concurrent.TransferQueue<E> t) => t.Cast<Java.Util.Concurrent.TransferQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("transfer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -52,7 +52,7 @@ namespace Javax.Sound.Midi
         {
             get { return IExecute<Javax.Sound.Midi.Patch>("getPatch"); }
         }
-        
+
         #endregion
 
         #region Nested classes

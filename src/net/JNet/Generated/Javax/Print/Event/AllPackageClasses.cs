@@ -74,7 +74,7 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -130,7 +130,7 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobAttributeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -186,7 +186,7 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -242,7 +242,7 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintServiceAttributeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

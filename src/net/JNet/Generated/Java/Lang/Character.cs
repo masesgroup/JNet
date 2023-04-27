@@ -41,7 +41,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Character t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -325,7 +325,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -1075,7 +1075,7 @@ namespace Java.Lang
         {
             return SExecute<string>(LocalClazz, "toString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -1104,7 +1104,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -1128,6 +1128,10 @@ namespace Java.Lang
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -2267,7 +2271,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZANABAZAR_SQUARE"/>
             /// </summary>
             public static Java.Lang.Character.UnicodeBlock ZANABAZAR_SQUARE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeBlock>("ZANABAZAR_SQUARE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -2298,10 +2302,14 @@ namespace Java.Lang
             {
                 return SExecute<Java.Lang.Character.UnicodeBlock>(LocalClazz, "of", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -2889,7 +2897,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ZANABAZAR_SQUARE"/>
             /// </summary>
             public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE { get { return LocalClazz.GetField<Java.Lang.Character.UnicodeScript>("ZANABAZAR_SQUARE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -2927,10 +2935,14 @@ namespace Java.Lang
             {
                 return SExecute<Java.Lang.Character.UnicodeScript>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -2938,7 +2950,7 @@ namespace Java.Lang
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

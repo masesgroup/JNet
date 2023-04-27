@@ -108,7 +108,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.PasswordAuthentication>(LocalClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -128,7 +128,7 @@ namespace Java.Net
         {
             return IExecute<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -152,7 +152,7 @@ namespace Java.Net
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#SERVER"/>
             /// </summary>
             public static Java.Net.Authenticator.RequestorType SERVER { get { return LocalClazz.GetField<Java.Net.Authenticator.RequestorType>("SERVER"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -172,10 +172,14 @@ namespace Java.Net
             {
                 return SExecute<Java.Net.Authenticator.RequestorType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -183,7 +187,7 @@ namespace Java.Net
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

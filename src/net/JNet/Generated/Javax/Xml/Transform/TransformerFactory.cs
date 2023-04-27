@@ -51,7 +51,7 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance()
@@ -69,7 +69,7 @@ namespace Javax.Xml.Transform
         {
             return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalClazz, "newInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -131,7 +131,7 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()
@@ -167,7 +167,7 @@ namespace Javax.Xml.Transform
         {
             IExecute("setFeature", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

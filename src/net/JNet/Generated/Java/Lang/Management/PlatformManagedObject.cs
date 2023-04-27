@@ -52,7 +52,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

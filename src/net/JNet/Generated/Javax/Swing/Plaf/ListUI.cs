@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf
         {
             return IExecute<Java.Awt.Rectangle>("getCellBounds", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

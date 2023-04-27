@@ -88,7 +88,7 @@ namespace Javax.Sql
         {
             return IExecute<Javax.Sql.XAConnectionBuilder>("user", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

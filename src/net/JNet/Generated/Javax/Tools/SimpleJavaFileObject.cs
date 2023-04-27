@@ -37,7 +37,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.SimpleJavaFileObject"/> to <see cref="Javax.Tools.JavaFileObject"/>
         /// </summary>
         public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.SimpleJavaFileObject t) => t.Cast<Javax.Tools.JavaFileObject>();
-        
+
         #endregion
 
         #region Fields
@@ -149,7 +149,7 @@ namespace Javax.Tools
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

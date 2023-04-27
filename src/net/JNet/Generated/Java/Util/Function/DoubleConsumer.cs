@@ -62,7 +62,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.DoubleConsumer>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

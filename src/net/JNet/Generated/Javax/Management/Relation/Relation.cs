@@ -163,7 +163,7 @@ namespace Javax.Management.Relation
         {
             IExecute("setRole", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

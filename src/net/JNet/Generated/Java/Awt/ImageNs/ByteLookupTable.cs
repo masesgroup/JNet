@@ -47,7 +47,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -80,7 +80,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecuteArray<byte>("lookupPixel", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

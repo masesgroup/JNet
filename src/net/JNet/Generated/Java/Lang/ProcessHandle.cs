@@ -64,7 +64,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Util.Optional<Java.Lang.ProcessHandle>>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -143,7 +143,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         public Java.Lang.ProcessHandle.Info InfoMethod()
         {
@@ -158,7 +158,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -224,14 +224,18 @@ namespace Java.Lang
             {
                 get { return IExecute<Java.Util.Optional<string>>("user"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

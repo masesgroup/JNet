@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.HashPrintRequestAttributeSet"/> to <see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttributeSet(Javax.Print.Attribute.HashPrintRequestAttributeSet t) => t.Cast<Javax.Print.Attribute.PrintRequestAttributeSet>();
-        
+
         #endregion
 
         #region Fields

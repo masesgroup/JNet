@@ -53,7 +53,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of()
         {
@@ -203,7 +203,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Set>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -310,7 +310,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -323,7 +323,7 @@ namespace Java.Util
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -346,7 +346,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Set{E}"/> to <see cref="Java.Util.Set"/>
         /// </summary>
         public static implicit operator Java.Util.Set(Java.Util.Set<E> t) => t.Cast<Java.Util.Set>();
-        
+
         #endregion
 
         #region Fields
@@ -366,7 +366,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of()
         {
@@ -516,7 +516,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Set<E>>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -623,7 +623,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -636,7 +636,7 @@ namespace Java.Util
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

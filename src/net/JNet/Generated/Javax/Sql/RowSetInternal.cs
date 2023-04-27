@@ -82,7 +82,7 @@ namespace Javax.Sql
         {
             IExecute("setMetaData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

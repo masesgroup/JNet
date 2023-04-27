@@ -54,7 +54,7 @@ namespace Javax.Xml.Stream.Util
         {
             IExecute("add", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

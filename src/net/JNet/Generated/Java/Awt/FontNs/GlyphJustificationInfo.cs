@@ -45,7 +45,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -105,7 +105,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_WHITESPACE"/>
         /// </summary>
         public static int PRIORITY_WHITESPACE { get { return LocalClazz.GetField<int>("PRIORITY_WHITESPACE"); } }
-        
+
         #endregion
 
         #region Static methods

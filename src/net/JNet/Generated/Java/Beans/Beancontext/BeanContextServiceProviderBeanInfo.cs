@@ -52,7 +52,7 @@ namespace Java.Beans.Beancontext
         {
             get { return IExecuteArray<Java.Beans.BeanInfo>("getServicesBeanInfo"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Metal
             /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalComboBoxEditor.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalComboBoxEditor.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -76,11 +76,15 @@ namespace Javax.Swing.Plaf.Metal
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -48,7 +48,7 @@ namespace Java.Security.Cert
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.PKIXParameters"/> to <see cref="Java.Security.Cert.CertPathParameters"/>
         /// </summary>
         public static implicit operator Java.Security.Cert.CertPathParameters(Java.Security.Cert.PKIXParameters t) => t.Cast<Java.Security.Cert.CertPathParameters>();
-        
+
         #endregion
 
         #region Fields
@@ -200,7 +200,7 @@ namespace Java.Security.Cert
         {
             IExecute("setRevocationEnabled", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

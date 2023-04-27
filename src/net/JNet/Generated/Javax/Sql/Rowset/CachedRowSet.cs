@@ -41,7 +41,7 @@ namespace Javax.Sql.Rowset
         /// Converter from <see cref="Javax.Sql.Rowset.CachedRowSet"/> to <see cref="Javax.Sql.Rowset.Joinable"/>
         /// </summary>
         public static implicit operator Javax.Sql.Rowset.Joinable(Javax.Sql.Rowset.CachedRowSet t) => t.Cast<Javax.Sql.Rowset.Joinable>();
-        
+
         #endregion
 
         #region Fields
@@ -181,7 +181,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>()
@@ -211,7 +211,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncProviderException"/>
         public void AcceptChanges()
         {
@@ -229,7 +229,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#commit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -266,7 +266,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#release()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Release()
         {
@@ -275,7 +275,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#restoreOriginal()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void RestoreOriginal()
         {
@@ -284,7 +284,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rollback()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -321,7 +321,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setOriginalRow()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetOriginalRow()
         {
@@ -330,7 +330,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoDelete()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoDelete()
         {
@@ -339,7 +339,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoInsert()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoInsert()
         {
@@ -348,13 +348,13 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoUpdate()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoUpdate()
         {
             IExecute("undoUpdate");
         }
-        
+
         #endregion
 
         #region Nested classes

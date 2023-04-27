@@ -100,7 +100,7 @@ namespace Javax.Accessibility
         {
             IExecute("selectAllAccessibleSelection");
         }
-        
+
         #endregion
 
         #region Nested classes

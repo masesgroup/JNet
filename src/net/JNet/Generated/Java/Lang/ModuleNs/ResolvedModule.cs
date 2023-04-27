@@ -73,7 +73,7 @@ namespace Java.Lang.ModuleNs
         {
             get { return IExecute<Java.Lang.ModuleNs.ModuleReference>("reference"); }
         }
-        
+
         #endregion
 
         #region Nested classes

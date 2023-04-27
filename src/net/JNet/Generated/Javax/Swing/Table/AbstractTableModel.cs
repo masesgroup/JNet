@@ -41,7 +41,7 @@ namespace Javax.Swing.Table
         /// Converter from <see cref="Javax.Swing.Table.AbstractTableModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.AbstractTableModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -190,7 +190,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setValueAt", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

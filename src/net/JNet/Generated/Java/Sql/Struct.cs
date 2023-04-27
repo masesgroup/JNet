@@ -69,7 +69,7 @@ namespace Java.Sql
         {
             return IExecuteArray<object>("getAttributes", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

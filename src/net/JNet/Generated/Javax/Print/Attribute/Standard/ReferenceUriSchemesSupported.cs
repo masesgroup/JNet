@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported"/> to <see cref="Javax.Print.Attribute.Attribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported t) => t.Cast<Javax.Print.Attribute.Attribute>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#WAIS"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported WAIS { get { return LocalClazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("WAIS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -95,7 +95,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

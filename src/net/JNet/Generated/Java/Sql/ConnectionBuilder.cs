@@ -88,7 +88,7 @@ namespace Java.Sql
         {
             return IExecute<Java.Sql.ConnectionBuilder>("user", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

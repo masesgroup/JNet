@@ -37,7 +37,7 @@ namespace Javax.Management.Remote.Rmi
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Management.Remote.Rmi
         /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl_Stub"/> to <see cref="Javax.Management.Remote.Rmi.RMIServer"/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl_Stub t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Javax.Management.Remote.Rmi
         {
             return IExecute<Javax.Management.Remote.Rmi.RMIConnection>("newClient", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

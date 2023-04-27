@@ -52,7 +52,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Net.DatagramSocketImpl>("createDatagramSocketImpl"); }
         }
-        
+
         #endregion
 
         #region Nested classes

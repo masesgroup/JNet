@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Synth
         /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthProgressBarUI"/> to <see cref="Java.Beans.PropertyChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Synth.SynthProgressBarUI t) => t.Cast<Java.Beans.PropertyChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -83,7 +83,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("propertyChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

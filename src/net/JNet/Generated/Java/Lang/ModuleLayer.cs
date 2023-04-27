@@ -88,7 +88,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.ModuleLayer.Controller>(LocalClazz, "defineModulesWithOneLoader", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -161,7 +161,7 @@ namespace Java.Lang
         {
             return IExecute<Java.Util.Optional<Java.Lang.Module>>("findModule", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -224,14 +224,18 @@ namespace Java.Lang
             {
                 return IExecute<Java.Lang.ModuleLayer.Controller>("addReads", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

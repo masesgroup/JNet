@@ -41,7 +41,7 @@ namespace Java.Rmi.Registry
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#REGISTRY_PORT"/>
         /// </summary>
         public static int REGISTRY_PORT { get { return LocalClazz.GetField<int>("REGISTRY_PORT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -102,7 +102,7 @@ namespace Java.Rmi.Registry
         {
             IExecute("unbind", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

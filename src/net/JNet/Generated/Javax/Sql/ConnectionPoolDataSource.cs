@@ -84,7 +84,7 @@ namespace Javax.Sql
         {
             return IExecute<Javax.Sql.PooledConnection>("getPooledConnection", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

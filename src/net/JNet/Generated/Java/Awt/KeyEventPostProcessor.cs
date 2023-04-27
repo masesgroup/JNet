@@ -54,7 +54,7 @@ namespace Java.Awt
         {
             return IExecute<bool>("postProcessKeyEvent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

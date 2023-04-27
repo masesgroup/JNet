@@ -40,7 +40,7 @@ namespace Java.Security
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Java.Security
         {
             get { return IExecute<string>("getUnresolvedType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

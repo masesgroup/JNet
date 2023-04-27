@@ -49,7 +49,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -114,7 +114,7 @@ namespace Java.Awt.FontNs
         {
             get { return IExecute<bool>("usesFractionalMetrics"); }
         }
-        
+
         #endregion
 
         #region Nested classes

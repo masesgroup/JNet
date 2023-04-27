@@ -46,7 +46,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#AdditionalComments"/>
         /// </summary>
         public static string AdditionalComments { get { return LocalClazz.GetField<string>("AdditionalComments"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -225,7 +225,7 @@ namespace Javax.Swing.Text.Html
         {
             IExecute("setOuterHTML", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -243,7 +243,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -259,6 +259,10 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -291,7 +295,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -307,6 +311,10 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -376,7 +384,11 @@ namespace Javax.Swing.Text.Html
             {
                 IExecute("next");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -399,7 +411,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -418,11 +430,15 @@ namespace Javax.Swing.Text.Html
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.InputMapUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.InputMapUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-        
+
         #endregion
 
         #region Fields

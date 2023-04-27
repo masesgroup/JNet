@@ -93,7 +93,7 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#URL_PKG_PREFIXES"/>
         /// </summary>
         public static string URL_PKG_PREFIXES { get { return LocalClazz.GetField<string>("URL_PKG_PREFIXES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -301,7 +301,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
@@ -383,7 +383,7 @@ namespace Javax.Naming
         {
             IExecute("unbind", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

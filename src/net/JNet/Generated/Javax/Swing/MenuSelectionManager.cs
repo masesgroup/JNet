@@ -48,7 +48,7 @@ namespace Javax.Swing
         {
             get { return SExecute<Javax.Swing.MenuSelectionManager>(LocalClazz, "defaultManager"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -124,7 +124,7 @@ namespace Javax.Swing
         {
             IExecute("removeChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

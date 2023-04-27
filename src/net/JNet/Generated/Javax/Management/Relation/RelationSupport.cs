@@ -56,7 +56,7 @@ namespace Javax.Management.Relation
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Management.Relation
         /// Converter from <see cref="Javax.Management.Relation.RelationSupport"/> to <see cref="Javax.Management.MBeanRegistration"/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Relation.RelationSupport t) => t.Cast<Javax.Management.MBeanRegistration>();
-        
+
         #endregion
 
         #region Fields
@@ -220,7 +220,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -249,7 +249,7 @@ namespace Javax.Management.Relation
         {
             IExecute("setRole", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

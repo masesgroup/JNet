@@ -41,7 +41,7 @@ namespace Java.Time.Zone
         /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransition"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneOffsetTransition t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Time.Zone
         {
             return SExecute<Java.Time.Zone.ZoneOffsetTransition>(LocalClazz, "of", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -154,7 +154,7 @@ namespace Java.Time.Zone
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

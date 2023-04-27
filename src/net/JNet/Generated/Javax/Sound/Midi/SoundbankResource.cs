@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         {
             get { return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank"); }
         }
-        
+
         #endregion
 
         #region Nested classes

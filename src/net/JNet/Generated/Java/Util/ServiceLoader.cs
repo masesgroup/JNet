@@ -79,7 +79,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.ServiceLoader>(LocalClazz, "loadInstalled", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -111,7 +111,7 @@ namespace Java.Util
         {
             IExecute("reload");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -134,7 +134,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ServiceLoader{S}"/> to <see cref="Java.Util.ServiceLoader"/>
         /// </summary>
         public static implicit operator Java.Util.ServiceLoader(Java.Util.ServiceLoader<S> t) => t.Cast<Java.Util.ServiceLoader>();
-        
+
         #endregion
 
         #region Fields
@@ -180,7 +180,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.ServiceLoader<S>>(LocalClazz, "loadInstalled", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -212,7 +212,7 @@ namespace Java.Util
         {
             IExecute("reload");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Rmi.Ssl
         /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIClientSocketFactory"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Rmi.Ssl.SslRMIClientSocketFactory t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Rmi.Ssl
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Smartcardio
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Smartcardio
         /// Converter from <see cref="Javax.Smartcardio.ATR"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Smartcardio.ATR t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Javax.Smartcardio
         {
             get { return IExecuteArray<byte>("getHistoricalBytes"); }
         }
-        
+
         #endregion
 
         #region Nested classes

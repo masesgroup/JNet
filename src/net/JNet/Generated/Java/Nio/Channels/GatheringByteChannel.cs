@@ -67,7 +67,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<long>("write", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

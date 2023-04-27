@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
         /// </summary>
         public static int parameterNullableUnknown { get { return LocalClazz.GetField<int>("parameterNullableUnknown"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -160,7 +160,7 @@ namespace Java.Sql
         {
             return IExecute<string>("getParameterTypeName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

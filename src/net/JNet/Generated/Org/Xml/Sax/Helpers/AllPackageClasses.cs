@@ -203,7 +203,7 @@ namespace Org.Xml.Sax.Helpers
     /// </summary>
     public partial class ParserAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -259,7 +259,7 @@ namespace Org.Xml.Sax.Helpers
     /// </summary>
     public partial class XMLReaderAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

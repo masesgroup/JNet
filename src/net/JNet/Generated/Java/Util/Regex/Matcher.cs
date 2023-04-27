@@ -37,7 +37,7 @@ namespace Java.Util.Regex
         /// Converter from <see cref="Java.Util.Regex.Matcher"/> to <see cref="Java.Util.Regex.MatchResult"/>
         /// </summary>
         public static implicit operator Java.Util.Regex.MatchResult(Java.Util.Regex.Matcher t) => t.Cast<Java.Util.Regex.MatchResult>();
-        
+
         #endregion
 
         #region Fields
@@ -54,7 +54,7 @@ namespace Java.Util.Regex
         {
             return SExecute<string>(LocalClazz, "quoteReplacement", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -145,7 +145,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#find()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool Find()
         {
@@ -163,7 +163,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int End()
         {
@@ -190,7 +190,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int Start()
         {
@@ -217,7 +217,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string Group()
         {
@@ -328,7 +328,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#reset()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Reset()
         {
@@ -370,7 +370,7 @@ namespace Java.Util.Regex
         {
             return IExecute<Java.Util.Regex.Matcher>("useTransparentBounds", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

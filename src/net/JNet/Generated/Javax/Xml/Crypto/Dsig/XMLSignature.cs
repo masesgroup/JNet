@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#XMLNS"/>
         /// </summary>
         public static string XMLNS { get { return LocalClazz.GetField<string>("XMLNS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -111,7 +111,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             IExecute("sign", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -159,14 +159,18 @@ namespace Javax.Xml.Crypto.Dsig
             {
                 return IExecute<bool>("validate", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

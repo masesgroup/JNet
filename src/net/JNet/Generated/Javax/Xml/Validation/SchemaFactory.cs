@@ -68,7 +68,7 @@ namespace Javax.Xml.Validation
         {
             return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalClazz, "newInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -98,7 +98,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema()
@@ -189,7 +189,7 @@ namespace Javax.Xml.Validation
         {
             IExecute("setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

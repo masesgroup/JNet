@@ -52,7 +52,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -68,7 +68,7 @@ namespace Javax.Crypto.Spec
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -80,7 +80,7 @@ namespace Javax.Crypto.Spec
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#DEFAULT"/>
             /// </summary>
             public static Javax.Crypto.Spec.PSource.PSpecified DEFAULT { get { return LocalClazz.GetField<Javax.Crypto.Spec.PSource.PSpecified>("DEFAULT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -95,14 +95,18 @@ namespace Javax.Crypto.Spec
             {
                 get { return IExecuteArray<byte>("getValue"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

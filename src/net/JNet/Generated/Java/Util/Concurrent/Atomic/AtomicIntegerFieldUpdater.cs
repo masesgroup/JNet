@@ -51,7 +51,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalClazz, "newUpdater", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -212,7 +212,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute<int>("incrementAndGet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater{T}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater(Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<T> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>();
-        
+
         #endregion
 
         #region Fields
@@ -253,7 +253,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalClazz, "newUpdater", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -414,7 +414,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute<int>("incrementAndGet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

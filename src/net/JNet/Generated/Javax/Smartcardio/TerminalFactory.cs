@@ -91,7 +91,7 @@ namespace Javax.Smartcardio
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>(LocalClazz, "getInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -116,7 +116,7 @@ namespace Javax.Smartcardio
         {
             get { return IExecute<string>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

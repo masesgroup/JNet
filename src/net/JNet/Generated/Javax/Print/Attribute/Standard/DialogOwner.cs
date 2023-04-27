@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.DialogOwner"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.DialogOwner t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<Java.Awt.Window>("getOwner"); }
         }
-        
+
         #endregion
 
         #region Nested classes

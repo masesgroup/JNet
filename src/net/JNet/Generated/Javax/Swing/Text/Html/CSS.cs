@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
         /// Converter from <see cref="Javax.Swing.Text.Html.CSS"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.CSS t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Swing.Text.Html
         {
             return SExecute<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "getAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -325,7 +325,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING { get { return LocalClazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WORD_SPACING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -347,14 +347,18 @@ namespace Javax.Swing.Text.Html
             {
                 get { return IExecute<bool>("isInherited"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

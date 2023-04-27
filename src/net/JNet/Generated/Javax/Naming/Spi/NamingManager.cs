@@ -41,7 +41,7 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#CPE"/>
         /// </summary>
         public static string CPE { get { return LocalClazz.GetField<string>("CPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -127,7 +127,7 @@ namespace Javax.Naming.Spi
         {
             SExecute(LocalClazz, "setObjectFactoryBuilder", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

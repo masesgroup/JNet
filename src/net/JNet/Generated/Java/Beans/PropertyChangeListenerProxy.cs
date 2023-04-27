@@ -38,7 +38,7 @@ namespace Java.Beans
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.PropertyChangeListenerProxy"/> to <see cref="Java.Beans.PropertyChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.PropertyChangeListenerProxy t) => t.Cast<Java.Beans.PropertyChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Beans
         {
             IExecute("propertyChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

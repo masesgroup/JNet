@@ -37,7 +37,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Cursor"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Cursor t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR"/>
         /// </summary>
         public static int WAIT_CURSOR { get { return LocalClazz.GetField<int>("WAIT_CURSOR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -140,7 +140,7 @@ namespace Java.Awt
         {
             return SExecute<Java.Awt.Cursor>(LocalClazz, "getSystemCustomCursor", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -158,7 +158,7 @@ namespace Java.Awt
         {
             get { return IExecute<int>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

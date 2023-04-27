@@ -80,7 +80,7 @@ namespace Javax.Sql.Rowset
         {
             get { return IExecute<Javax.Sql.Rowset.WebRowSet>("createWebRowSet"); }
         }
-        
+
         #endregion
 
         #region Nested classes

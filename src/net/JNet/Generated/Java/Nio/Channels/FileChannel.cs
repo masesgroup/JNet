@@ -45,7 +45,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -76,7 +76,7 @@ namespace Java.Nio.Channels
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>(LocalClazz, "open", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -168,7 +168,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#position()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Position()
@@ -235,7 +235,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#lock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock Lock()
@@ -245,7 +245,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#tryLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock()
@@ -292,7 +292,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.SeekableByteChannel>("truncate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -320,7 +320,7 @@ namespace Java.Nio.Channels
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#READ_WRITE"/>
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE { get { return LocalClazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("READ_WRITE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -331,11 +331,15 @@ namespace Java.Nio.Channels
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

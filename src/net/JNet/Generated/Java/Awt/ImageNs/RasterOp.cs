@@ -90,7 +90,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("filter", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

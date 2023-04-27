@@ -37,7 +37,7 @@ namespace Javax.Swing.Table
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setModel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Javax.Swing.Table
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -99,7 +99,7 @@ namespace Javax.Swing.Table
         /// Converter from <see cref="Javax.Swing.Table.TableRowSorter{M}"/> to <see cref="Javax.Swing.Table.TableRowSorter"/>
         /// </summary>
         public static implicit operator Javax.Swing.Table.TableRowSorter(Javax.Swing.Table.TableRowSorter<M> t) => t.Cast<Javax.Swing.Table.TableRowSorter>();
-        
+
         #endregion
 
         #region Fields
@@ -126,7 +126,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setModel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

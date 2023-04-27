@@ -62,13 +62,13 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.NamingEnumeration{T}"/> to <see cref="Javax.Naming.NamingEnumeration"/>
         /// </summary>
         public static implicit operator Javax.Naming.NamingEnumeration(Javax.Naming.NamingEnumeration<T> t) => t.Cast<Javax.Naming.NamingEnumeration>();
-        
+
         #endregion
 
         #region Fields
@@ -120,13 +120,13 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Management.Remote
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

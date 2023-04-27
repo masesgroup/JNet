@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Multi
         {
             return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalClazz, "createUIs", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

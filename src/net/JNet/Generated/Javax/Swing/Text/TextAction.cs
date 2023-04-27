@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         {
             return SExecuteArray<Javax.Swing.Action>(LocalClazz, "augmentList", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

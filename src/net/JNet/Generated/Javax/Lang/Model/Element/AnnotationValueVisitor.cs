@@ -204,7 +204,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute("visit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -227,7 +227,7 @@ namespace Javax.Lang.Model.Element
         /// Converter from <see cref="Javax.Lang.Model.Element.AnnotationValueVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.AnnotationValueVisitor(Javax.Lang.Model.Element.AnnotationValueVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Element.AnnotationValueVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -398,7 +398,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute<R>("visit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

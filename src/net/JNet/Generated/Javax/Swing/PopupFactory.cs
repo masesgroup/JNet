@@ -48,7 +48,7 @@ namespace Javax.Swing
         {
             get { return SExecute<Javax.Swing.PopupFactory>(LocalClazz, "getSharedInstance"); } set { SExecute(LocalClazz, "setSharedInstance", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -65,7 +65,7 @@ namespace Javax.Swing
         {
             return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Security
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Java.Security
         {
             get { return IExecute<Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -53,7 +53,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of()
         {
@@ -268,7 +268,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Map.Entry>(LocalClazz, "entry", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -476,7 +476,7 @@ namespace Java.Util
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -499,7 +499,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator ComparingByKey()
             {
@@ -517,7 +517,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator ComparingByValue()
             {
@@ -532,7 +532,7 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Comparator>(LocalClazz, "comparingByValue", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -559,7 +559,11 @@ namespace Java.Util
             {
                 return IExecute("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -578,7 +582,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.Map.Entry{K, V}"/> to <see cref="Java.Util.Map.Entry"/>
             /// </summary>
             public static implicit operator Java.Util.Map.Entry(Java.Util.Map.Entry<K, V> t) => t.Cast<Java.Util.Map.Entry>();
-            
+
             #endregion
 
             #region Fields
@@ -589,7 +593,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey()
             {
@@ -607,7 +611,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue()
             {
@@ -622,7 +626,7 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalClazz, "comparingByValue", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -649,14 +653,18 @@ namespace Java.Util
             {
                 return IExecute<V>("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -675,7 +683,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Map{K, V}"/> to <see cref="Java.Util.Map"/>
         /// </summary>
         public static implicit operator Java.Util.Map(Java.Util.Map<K, V> t) => t.Cast<Java.Util.Map>();
-        
+
         #endregion
 
         #region Fields
@@ -695,7 +703,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of()
         {
@@ -910,7 +918,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Map.Entry<K, V>>(LocalClazz, "entry", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -1118,7 +1126,7 @@ namespace Java.Util
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.Dimension2D"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Dimension2D t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Awt.Geom
         {
             IExecute("setSize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

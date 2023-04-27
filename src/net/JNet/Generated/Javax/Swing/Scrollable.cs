@@ -88,7 +88,7 @@ namespace Javax.Swing
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

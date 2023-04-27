@@ -45,7 +45,7 @@ namespace Java.Awt.DesktopNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#NORMAL_EXIT"/>
         /// </summary>
         public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT { get { return LocalClazz.GetField<Java.Awt.DesktopNs.QuitStrategy>("NORMAL_EXIT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -65,7 +65,7 @@ namespace Java.Awt.DesktopNs
         {
             return SExecute<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

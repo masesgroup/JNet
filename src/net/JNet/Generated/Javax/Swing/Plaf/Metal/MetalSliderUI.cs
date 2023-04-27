@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             get { return IExecute<int>("getTickLength"); }
         }
-        
+
         #endregion
 
         #region Nested classes

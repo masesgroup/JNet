@@ -47,7 +47,7 @@ namespace Java.Awt.ImageNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.ConvolveOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.ConvolveOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#EDGE_ZERO_FILL"/>
         /// </summary>
         public static int EDGE_ZERO_FILL { get { return LocalClazz.GetField<int>("EDGE_ZERO_FILL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -167,7 +167,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

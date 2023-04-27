@@ -64,7 +64,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -130,7 +130,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -138,7 +138,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.LinkedHashMap{K, V}"/> to <see cref="Java.Util.LinkedHashMap"/>
         /// </summary>
         public static implicit operator Java.Util.LinkedHashMap(Java.Util.LinkedHashMap<K, V> t) => t.Cast<Java.Util.LinkedHashMap>();
-        
+
         #endregion
 
         #region Fields

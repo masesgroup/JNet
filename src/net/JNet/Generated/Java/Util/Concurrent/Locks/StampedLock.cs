@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Locks
         /// Converter from <see cref="Java.Util.Concurrent.Locks.StampedLock"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.StampedLock t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Java.Util.Concurrent.Locks
         {
             return SExecute<bool>(LocalClazz, "isWriteLockStamp", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         public long TryReadLock()
         {
@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         public long TryWriteLock()
         {
@@ -276,7 +276,7 @@ namespace Java.Util.Concurrent.Locks
         {
             IExecute("unlockWrite", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -91,7 +91,7 @@ namespace Java.Util
         {
             return IExecute<bool>("offer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -114,7 +114,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Queue{E}"/> to <see cref="Java.Util.Queue"/>
         /// </summary>
         public static implicit operator Java.Util.Queue(Java.Util.Queue<E> t) => t.Cast<Java.Util.Queue>();
-        
+
         #endregion
 
         #region Fields
@@ -172,7 +172,7 @@ namespace Java.Util
         {
             return IExecute<bool>("offer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

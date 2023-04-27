@@ -47,7 +47,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Font"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Font t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF"/>
         /// </summary>
         public static string SERIF { get { return LocalClazz.GetField<string>("SERIF"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -225,7 +225,7 @@ namespace Java.Awt
         {
             return SExecuteArray<Java.Awt.Font>(LocalClazz, "createFonts", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -648,7 +648,7 @@ namespace Java.Awt
         {
             return IExecute<string>("getFontName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

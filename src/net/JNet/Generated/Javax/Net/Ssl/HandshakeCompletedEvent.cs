@@ -38,7 +38,7 @@ namespace Javax.Net.Ssl
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -103,7 +103,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<Javax.Net.Ssl.SSLSocket>("getSocket"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -301,7 +301,7 @@ namespace Javax.Swing
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -324,7 +324,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultListModel{E}"/> to <see cref="Javax.Swing.DefaultListModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.DefaultListModel(Javax.Swing.DefaultListModel<E> t) => t.Cast<Javax.Swing.DefaultListModel>();
-        
+
         #endregion
 
         #region Fields
@@ -592,7 +592,7 @@ namespace Javax.Swing
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes

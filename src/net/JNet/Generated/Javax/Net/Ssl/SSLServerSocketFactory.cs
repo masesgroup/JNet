@@ -59,7 +59,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecuteArray<string>("getSupportedCipherSuites"); }
         }
-        
+
         #endregion
 
         #region Nested classes

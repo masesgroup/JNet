@@ -134,7 +134,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute("visitModule", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -157,7 +157,7 @@ namespace Javax.Lang.Model.Element
         /// Converter from <see cref="Javax.Lang.Model.Element.ElementVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Element.ElementVisitor"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.ElementVisitor(Javax.Lang.Model.Element.ElementVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Element.ElementVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -258,7 +258,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute<R>("visitModule", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

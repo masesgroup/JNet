@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.MediaPrintableArea"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.MediaPrintableArea t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#MM"/>
         /// </summary>
         public static int MM { get { return LocalClazz.GetField<int>("MM"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -158,7 +158,7 @@ namespace Javax.Print.Attribute.Standard
         {
             return IExecute<string>("toString", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

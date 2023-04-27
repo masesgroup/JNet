@@ -46,7 +46,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -161,7 +161,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -193,7 +193,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JLayer{V}"/> to <see cref="Javax.Swing.JLayer"/>
         /// </summary>
         public static implicit operator Javax.Swing.JLayer(Javax.Swing.JLayer<V> t) => t.Cast<Javax.Swing.JLayer>();
-        
+
         #endregion
 
         #region Fields
@@ -312,7 +312,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

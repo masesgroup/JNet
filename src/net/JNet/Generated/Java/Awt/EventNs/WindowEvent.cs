@@ -71,7 +71,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -127,7 +127,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_STATE_CHANGED"/>
         /// </summary>
         public static int WINDOW_STATE_CHANGED { get { return LocalClazz.GetField<int>("WINDOW_STATE_CHANGED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -163,7 +163,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<Java.Awt.Window>("getWindow"); }
         }
-        
+
         #endregion
 
         #region Nested classes

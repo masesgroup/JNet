@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque"/> to <see cref="Java.Util.Deque"/>
         /// </summary>
         public static implicit operator Java.Util.Deque(Java.Util.Concurrent.BlockingDeque t) => t.Cast<Java.Util.Deque>();
-        
+
         #endregion
 
         #region Fields
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -255,7 +255,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -312,7 +312,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("putLast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -343,7 +343,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.BlockingDeque"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingDeque(Java.Util.Concurrent.BlockingDeque<E> t) => t.Cast<Java.Util.Concurrent.BlockingDeque>();
-        
+
         #endregion
 
         #region Fields
@@ -515,7 +515,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
-        
+
         /// <returns><see cref="E"/></returns>
         public E Poll()
         {
@@ -557,7 +557,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="E"/></returns>
         public E Remove()
         {
@@ -614,7 +614,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("putLast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

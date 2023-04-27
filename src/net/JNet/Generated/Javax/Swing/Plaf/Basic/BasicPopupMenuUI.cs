@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("installDefaults");
         }
-        
+
         #endregion
 
         #region Nested classes

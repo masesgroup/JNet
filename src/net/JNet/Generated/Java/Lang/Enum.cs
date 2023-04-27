@@ -41,7 +41,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Enum"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Enum t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -59,7 +59,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.Enum>(LocalClazz, "valueOf", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -102,7 +102,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -133,7 +133,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Lang.Enum"/>
         /// </summary>
         public static implicit operator Java.Lang.Enum(Java.Lang.Enum<E> t) => t.Cast<Java.Lang.Enum>();
-        
+
         #endregion
 
         #region Fields
@@ -151,7 +151,7 @@ namespace Java.Lang
         {
             return SExecute<T>(LocalClazz, "valueOf", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -194,7 +194,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

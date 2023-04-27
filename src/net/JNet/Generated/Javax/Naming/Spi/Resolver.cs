@@ -67,7 +67,7 @@ namespace Javax.Naming.Spi
         {
             return IExecute<Javax.Naming.Spi.ResolveResult>("resolveToClass", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

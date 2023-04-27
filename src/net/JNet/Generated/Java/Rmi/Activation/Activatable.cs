@@ -145,7 +145,7 @@ namespace Java.Rmi.Activation
         {
             SExecute(LocalClazz, "unregister", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -340,7 +340,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("addCustomEntriesToTable", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

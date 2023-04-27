@@ -49,7 +49,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.PSSParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.PSSParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Java.Security.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static Java.Security.Spec.PSSParameterSpec DEFAULT { get { return LocalClazz.GetField<Java.Security.Spec.PSSParameterSpec>("DEFAULT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -112,7 +112,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<int>("getTrailerField"); }
         }
-        
+
         #endregion
 
         #region Nested classes

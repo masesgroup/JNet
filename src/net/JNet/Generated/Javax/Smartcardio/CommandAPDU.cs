@@ -132,7 +132,7 @@ namespace Javax.Smartcardio
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -140,7 +140,7 @@ namespace Javax.Smartcardio
         /// Converter from <see cref="Javax.Smartcardio.CommandAPDU"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Smartcardio.CommandAPDU t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -208,7 +208,7 @@ namespace Javax.Smartcardio
         {
             get { return IExecute<int>("getP2"); }
         }
-        
+
         #endregion
 
         #region Nested classes

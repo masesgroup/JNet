@@ -38,7 +38,7 @@ namespace Java.Awt.DesktopNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Java.Awt.DesktopNs
         {
             get { return IExecute<string>("getSearchTerm"); }
         }
-        
+
         #endregion
 
         #region Nested classes

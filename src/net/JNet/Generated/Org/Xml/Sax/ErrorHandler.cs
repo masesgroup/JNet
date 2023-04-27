@@ -72,7 +72,7 @@ namespace Org.Xml.Sax
         {
             IExecute("warning", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

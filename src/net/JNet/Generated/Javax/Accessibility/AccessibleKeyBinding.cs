@@ -61,7 +61,7 @@ namespace Javax.Accessibility
         {
             return IExecute("getAccessibleKeyBinding", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

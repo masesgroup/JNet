@@ -66,7 +66,7 @@ namespace Javax.Accessibility
         {
             get { return IExecute<string>("getToolTipText"); }
         }
-        
+
         #endregion
 
         #region Nested classes

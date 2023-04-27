@@ -38,7 +38,7 @@ namespace Javax.Print
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Javax.Print
         /// Converter from <see cref="Javax.Print.DocFlavor"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.DocFlavor t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -58,7 +58,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#hostEncoding"/>
         /// </summary>
         public static string hostEncoding { get { return LocalClazz.GetField<string>("hostEncoding"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -103,7 +103,7 @@ namespace Javax.Print
         {
             return IExecute<string>("getParameter", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -119,7 +119,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -203,7 +203,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
             public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_8 { get { return LocalClazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_8"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -211,6 +211,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -230,7 +234,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -246,7 +250,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#TEXT_PLAIN"/>
             /// </summary>
             public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_PLAIN { get { return LocalClazz.GetField<Javax.Print.DocFlavor.CHAR_ARRAY>("TEXT_PLAIN"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -254,6 +258,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -273,7 +281,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -357,7 +365,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
             public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_8 { get { return LocalClazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_8"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -365,6 +373,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -384,7 +396,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -400,7 +412,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_PLAIN"/>
             /// </summary>
             public static Javax.Print.DocFlavor.READER TEXT_PLAIN { get { return LocalClazz.GetField<Javax.Print.DocFlavor.READER>("TEXT_PLAIN"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -408,6 +420,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -427,7 +443,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -447,7 +463,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#RENDERABLE_IMAGE"/>
             /// </summary>
             public static Javax.Print.DocFlavor.SERVICE_FORMATTED RENDERABLE_IMAGE { get { return LocalClazz.GetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>("RENDERABLE_IMAGE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -455,6 +471,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -474,7 +494,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -490,7 +510,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html#TEXT_PLAIN"/>
             /// </summary>
             public static Javax.Print.DocFlavor.STRING TEXT_PLAIN { get { return LocalClazz.GetField<Javax.Print.DocFlavor.STRING>("TEXT_PLAIN"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -498,6 +518,10 @@ namespace Javax.Print
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -517,7 +541,7 @@ namespace Javax.Print
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -601,7 +625,7 @@ namespace Javax.Print
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
             public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_8 { get { return LocalClazz.GetField<Javax.Print.DocFlavor.URL>("TEXT_PLAIN_UTF_8"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -612,11 +636,15 @@ namespace Javax.Print
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#TEXT_FOREGROUND"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType TEXT_FOREGROUND { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("TEXT_FOREGROUND"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             get { return IExecute<int>("getID"); }
         }
-        
+
         #endregion
 
         #region Nested classes

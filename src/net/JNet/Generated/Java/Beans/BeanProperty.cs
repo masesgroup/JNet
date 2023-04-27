@@ -101,7 +101,7 @@ namespace Java.Beans
         {
             get { return IExecute<bool>("visualUpdate"); }
         }
-        
+
         #endregion
 
         #region Nested classes

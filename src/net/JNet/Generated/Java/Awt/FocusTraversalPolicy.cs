@@ -101,7 +101,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.Component>("getInitialComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

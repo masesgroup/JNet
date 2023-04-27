@@ -67,7 +67,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Dom.DOMSignContext"/> to <see cref="Javax.Xml.Crypto.Dsig.XMLSignContext"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.XMLSignContext(Javax.Xml.Crypto.Dsig.Dom.DOMSignContext t) => t.Cast<Javax.Xml.Crypto.Dsig.XMLSignContext>();
-        
+
         #endregion
 
         #region Fields
@@ -101,7 +101,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         {
             get { return IExecute<Org.W3c.Dom.Node>("getParent"); } set { IExecute("setParent", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#LITTLE_ENDIAN"/>
         /// </summary>
         public static Java.Nio.ByteOrder LITTLE_ENDIAN { get { return LocalClazz.GetField<Java.Nio.ByteOrder>("LITTLE_ENDIAN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -56,7 +56,7 @@ namespace Java.Nio
         {
             get { return SExecute<Java.Nio.ByteOrder>(LocalClazz, "nativeOrder"); }
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -55,7 +55,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             return IExecute<Java.Awt.ImageNs.RenderedImage>("create", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

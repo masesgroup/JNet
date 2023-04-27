@@ -58,7 +58,7 @@ namespace Javax.Xml.Stream
         {
             return IExecute("resolveEntity", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

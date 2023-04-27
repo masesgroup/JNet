@@ -55,7 +55,7 @@ namespace Java.Net.Http
         {
             get { return SExecute<Java.Net.Http.HttpClient>(LocalClazz, "newHttpClient"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -158,13 +158,13 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#version()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
         public Java.Net.Http.HttpClient.Version VersionMethod()
         {
             return IExecute<Java.Net.Http.HttpClient.Version>("version");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -184,7 +184,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#NO_PROXY"/>
             /// </summary>
             public static Java.Net.ProxySelector NO_PROXY { get { return LocalClazz.GetField<Java.Net.ProxySelector>("NO_PROXY"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -289,7 +289,11 @@ namespace Java.Net.Http
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("version", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -320,7 +324,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Redirect NORMAL { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -340,10 +344,14 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpClient.Redirect>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -371,7 +379,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_2"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Version HTTP_2 { get { return LocalClazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_2"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -391,10 +399,14 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpClient.Version>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -402,7 +414,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -79,7 +79,7 @@ namespace Javax.Xml.Transform.Stream
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -87,7 +87,7 @@ namespace Javax.Xml.Transform.Stream
         /// Converter from <see cref="Javax.Xml.Transform.Stream.StreamSource"/> to <see cref="Javax.Xml.Transform.Source"/>
         /// </summary>
         public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Stream.StreamSource t) => t.Cast<Javax.Xml.Transform.Source>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Javax.Xml.Transform.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#FEATURE"/>
         /// </summary>
         public static string FEATURE { get { return LocalClazz.GetField<string>("FEATURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -154,7 +154,7 @@ namespace Javax.Xml.Transform.Stream
         {
             IExecute("setSystemId", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

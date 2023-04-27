@@ -37,7 +37,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -214,7 +214,7 @@ namespace Java.Util.Zip
         {
             IExecute("setInput", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Security.Cert
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -74,7 +74,7 @@ namespace Java.Security.Cert
         {
             return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("engineGetCRLs", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

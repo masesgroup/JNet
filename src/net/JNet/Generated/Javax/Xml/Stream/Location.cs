@@ -80,7 +80,7 @@ namespace Javax.Xml.Stream
         {
             get { return IExecute<string>("getSystemId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

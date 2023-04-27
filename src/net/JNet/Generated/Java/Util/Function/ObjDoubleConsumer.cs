@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ObjDoubleConsumer{T}"/> to <see cref="Java.Util.Function.ObjDoubleConsumer"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ObjDoubleConsumer(Java.Util.Function.ObjDoubleConsumer<T> t) => t.Cast<Java.Util.Function.ObjDoubleConsumer>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

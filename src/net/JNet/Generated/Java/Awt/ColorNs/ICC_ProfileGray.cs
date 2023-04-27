@@ -66,7 +66,7 @@ namespace Java.Awt.ColorNs
         {
             get { return IExecuteArray<short>("getTRC"); }
         }
-        
+
         #endregion
 
         #region Nested classes

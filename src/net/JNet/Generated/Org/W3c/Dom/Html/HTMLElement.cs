@@ -88,7 +88,7 @@ namespace Org.W3c.Dom.Html
         {
             IExecute("setClassName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

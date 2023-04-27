@@ -46,7 +46,7 @@ namespace Java.Lang.Reflect
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

@@ -39,7 +39,7 @@ namespace Javax.Swing.Text
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.Segment"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Javax.Swing.Text.Segment t) => t.Cast<Java.Lang.CharSequence>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#offset"/>
         /// </summary>
         public int offset { get { return Instance.GetField<int>("offset"); } set { Instance.SetField("offset", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setPartialReturn", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

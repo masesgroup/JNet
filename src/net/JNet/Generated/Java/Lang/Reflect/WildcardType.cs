@@ -59,7 +59,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecuteArray<Java.Lang.Reflect.Type>("getUpperBounds"); }
         }
-        
+
         #endregion
 
         #region Nested classes

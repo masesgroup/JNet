@@ -58,7 +58,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ListCellRenderer{E}"/> to <see cref="Javax.Swing.ListCellRenderer"/>
         /// </summary>
         public static implicit operator Javax.Swing.ListCellRenderer(Javax.Swing.ListCellRenderer<E> t) => t.Cast<Javax.Swing.ListCellRenderer>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

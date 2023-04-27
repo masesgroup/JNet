@@ -75,7 +75,7 @@ namespace Javax.Accessibility
         {
             return IExecute<bool>("setCurrentAccessibleValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

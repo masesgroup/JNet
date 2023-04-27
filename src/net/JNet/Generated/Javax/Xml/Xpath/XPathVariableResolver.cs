@@ -54,7 +54,7 @@ namespace Javax.Xml.Xpath
         {
             return IExecute("resolveVariable", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

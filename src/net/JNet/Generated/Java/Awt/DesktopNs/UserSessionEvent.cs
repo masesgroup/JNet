@@ -37,7 +37,7 @@ namespace Java.Awt.DesktopNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Awt.DesktopNs
         {
             get { return IExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>("getReason"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -92,7 +92,7 @@ namespace Java.Awt.DesktopNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED"/>
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED { get { return LocalClazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("UNSPECIFIED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -112,10 +112,14 @@ namespace Java.Awt.DesktopNs
             {
                 return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -123,7 +127,7 @@ namespace Java.Awt.DesktopNs
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

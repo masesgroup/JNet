@@ -37,7 +37,7 @@ namespace Javax.Management.Openmbean
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.Openmbean.CompositeDataInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -76,7 +76,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

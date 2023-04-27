@@ -48,7 +48,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -129,7 +129,7 @@ namespace Java.Awt.FontNs
         {
             IExecute("insertChar", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

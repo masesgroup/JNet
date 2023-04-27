@@ -87,7 +87,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<string>("getVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

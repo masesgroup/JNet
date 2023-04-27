@@ -41,7 +41,7 @@ namespace Java.Sql
         /// Converter from <see cref="Java.Sql.Statement"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Statement t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#SUCCESS_NO_INFO"/>
         /// </summary>
         public static int SUCCESS_NO_INFO { get { return LocalClazz.GetField<int>("SUCCESS_NO_INFO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -346,7 +346,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#cancel()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Cancel()
         {
@@ -355,7 +355,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearBatch()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearBatch()
         {
@@ -364,7 +364,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearWarnings()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
@@ -373,7 +373,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
@@ -382,7 +382,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#closeOnCompletion()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void CloseOnCompletion()
         {
@@ -499,7 +499,7 @@ namespace Java.Sql
         {
             return IExecute<long>("executeLargeUpdate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

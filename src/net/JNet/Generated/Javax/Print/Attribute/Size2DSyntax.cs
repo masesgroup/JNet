@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.Size2DSyntax"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.Size2DSyntax t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#MM"/>
         /// </summary>
         public static int MM { get { return LocalClazz.GetField<int>("MM"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Javax.Print.Attribute
         {
             return IExecute<string>("toString", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

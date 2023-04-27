@@ -37,7 +37,7 @@ namespace Java.Awt.FontNs
         /// Converter from <see cref="Java.Awt.FontNs.NumericShaper"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.FontNs.NumericShaper t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#TIBETAN"/>
         /// </summary>
         public static int TIBETAN { get { return LocalClazz.GetField<int>("TIBETAN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -181,7 +181,7 @@ namespace Java.Awt.FontNs
         {
             return SExecute<Java.Awt.FontNs.NumericShaper>(LocalClazz, "getShaper", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -238,7 +238,7 @@ namespace Java.Awt.FontNs
         {
             IExecute("shape", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -402,7 +402,7 @@ namespace Java.Awt.FontNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#VAI"/>
             /// </summary>
             public static Java.Awt.FontNs.NumericShaper.Range VAI { get { return LocalClazz.GetField<Java.Awt.FontNs.NumericShaper.Range>("VAI"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -422,10 +422,14 @@ namespace Java.Awt.FontNs
             {
                 return SExecute<Java.Awt.FontNs.NumericShaper.Range>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -433,7 +437,7 @@ namespace Java.Awt.FontNs
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -66,7 +66,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecute<bool>("isWritable"); }
         }
-        
+
         #endregion
 
         #region Nested classes

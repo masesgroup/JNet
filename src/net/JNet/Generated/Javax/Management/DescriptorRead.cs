@@ -52,7 +52,7 @@ namespace Javax.Management
         {
             get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
         public static int LOOP_CONTINUOUSLY { get { return LocalClazz.GetField<int>("LOOP_CONTINUOUSLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -118,7 +118,7 @@ namespace Javax.Sound.Sampled
         {
             IExecute("setMicrosecondPosition", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

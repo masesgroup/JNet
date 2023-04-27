@@ -55,7 +55,7 @@ namespace Java.Rmi.Server
         {
             get { return SExecute<Java.Io.PrintStream>(LocalClazz, "getLog"); } set { SExecute(LocalClazz, "setLog", value); }
         }
-        
+
         #endregion
 
         #region Instance methods

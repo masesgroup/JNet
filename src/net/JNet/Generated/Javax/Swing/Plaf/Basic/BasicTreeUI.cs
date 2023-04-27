@@ -90,7 +90,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -106,7 +106,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -114,7 +114,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.CellEditorHandler"/> to <see cref="Javax.Swing.Event.CellEditorListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.CellEditorListener(Javax.Swing.Plaf.Basic.BasicTreeUI.CellEditorHandler t) => t.Cast<Javax.Swing.Event.CellEditorListener>();
-            
+
             #endregion
 
             #region Fields
@@ -142,7 +142,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("editingStopped", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -161,7 +165,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -169,7 +173,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicTreeUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-            
+
             #endregion
 
             #region Fields
@@ -197,7 +201,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("focusLost", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -219,7 +227,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -227,7 +235,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTreeUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
-            
+
             #endregion
 
             #region Fields
@@ -295,7 +303,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("mouseReleased", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -314,7 +326,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -330,6 +342,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -349,7 +365,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -357,7 +373,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTreeUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -377,7 +393,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -396,7 +416,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -404,7 +424,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.SelectionModelPropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTreeUI.SelectionModelPropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -424,7 +444,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -444,7 +468,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -460,6 +484,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -479,7 +507,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -487,7 +515,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.TreeExpansionHandler"/> to <see cref="Javax.Swing.Event.TreeExpansionListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.TreeExpansionListener(Javax.Swing.Plaf.Basic.BasicTreeUI.TreeExpansionHandler t) => t.Cast<Javax.Swing.Event.TreeExpansionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -515,7 +543,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("treeExpanded", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -536,7 +568,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -552,6 +584,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -573,7 +609,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -589,6 +625,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -608,7 +648,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -616,7 +656,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.TreeModelHandler"/> to <see cref="Javax.Swing.Event.TreeModelListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.TreeModelListener(Javax.Swing.Plaf.Basic.BasicTreeUI.TreeModelHandler t) => t.Cast<Javax.Swing.Event.TreeModelListener>();
-            
+
             #endregion
 
             #region Fields
@@ -660,7 +700,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("treeStructureChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -681,7 +725,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -697,6 +741,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -716,7 +764,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -724,7 +772,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTreeUI.TreeSelectionHandler"/> to <see cref="Javax.Swing.Event.TreeSelectionListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.TreeSelectionListener(Javax.Swing.Plaf.Basic.BasicTreeUI.TreeSelectionHandler t) => t.Cast<Javax.Swing.Event.TreeSelectionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -744,7 +792,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("valueChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -764,7 +816,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -780,6 +832,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -801,7 +857,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -820,11 +876,15 @@ namespace Javax.Swing.Plaf.Basic
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

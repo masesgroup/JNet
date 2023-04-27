@@ -81,7 +81,7 @@ namespace Java.Lang.Management
         {
             IExecute("setVerbose", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

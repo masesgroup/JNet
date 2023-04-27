@@ -50,7 +50,7 @@ namespace Javax.Sound.Sampled
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -110,7 +110,7 @@ namespace Javax.Sound.Sampled
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -127,7 +127,7 @@ namespace Javax.Sound.Sampled
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -155,7 +155,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#WAVE"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFileFormat.Type WAVE { get { return LocalClazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("WAVE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -170,14 +170,18 @@ namespace Javax.Sound.Sampled
             {
                 get { return IExecute<string>("getExtension"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

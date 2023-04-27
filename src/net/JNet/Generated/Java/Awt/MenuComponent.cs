@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.MenuComponent"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.MenuComponent t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Java.Awt
         {
             IExecute("removeNotify");
         }
-        
+
         #endregion
 
         #region Nested classes

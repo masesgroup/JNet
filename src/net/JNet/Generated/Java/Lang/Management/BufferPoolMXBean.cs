@@ -73,7 +73,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<long>("getTotalCapacity"); }
         }
-        
+
         #endregion
 
         #region Nested classes

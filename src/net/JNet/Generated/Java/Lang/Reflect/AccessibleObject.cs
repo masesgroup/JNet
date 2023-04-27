@@ -37,7 +37,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.AccessibleObject"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.AccessibleObject t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
-        
+
         #endregion
 
         #region Fields
@@ -54,7 +54,7 @@ namespace Java.Lang.Reflect
         {
             SExecute(LocalClazz, "setAccessible", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -141,7 +141,7 @@ namespace Java.Lang.Reflect
         {
             IExecute("setAccessible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

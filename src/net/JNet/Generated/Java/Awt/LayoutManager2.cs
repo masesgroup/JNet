@@ -89,7 +89,7 @@ namespace Java.Awt
         {
             IExecute("invalidateLayout", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

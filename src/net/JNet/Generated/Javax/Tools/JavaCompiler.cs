@@ -41,7 +41,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.JavaCompiler"/> to <see cref="Javax.Tools.OptionChecker"/>
         /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.OptionChecker>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Javax.Tools
         {
             return IExecute<Javax.Tools.StandardJavaFileManager>("getStandardFileManager", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -133,14 +133,18 @@ namespace Javax.Tools
             {
                 IExecute("setProcessors", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

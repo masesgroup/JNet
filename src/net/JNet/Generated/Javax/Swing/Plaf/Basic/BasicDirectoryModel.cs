@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicDirectoryModel"/> to <see cref="Java.Beans.PropertyChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicDirectoryModel t) => t.Cast<Java.Beans.PropertyChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -167,7 +167,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("validateFileCache");
         }
-        
+
         #endregion
 
         #region Nested classes

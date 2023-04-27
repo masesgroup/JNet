@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.UIManager"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.UIManager t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -391,7 +391,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "setLookAndFeel", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -412,7 +412,7 @@ namespace Javax.Swing
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -442,14 +442,18 @@ namespace Javax.Swing
             {
                 get { return IExecute<string>("getName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

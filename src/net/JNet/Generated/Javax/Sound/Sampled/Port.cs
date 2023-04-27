@@ -63,7 +63,7 @@ namespace Javax.Sound.Sampled
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#SPEAKER"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info SPEAKER { get { return LocalClazz.GetField<Javax.Sound.Sampled.Port.Info>("SPEAKER"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -117,14 +117,18 @@ namespace Javax.Sound.Sampled
             {
                 get { return IExecute<string>("getName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

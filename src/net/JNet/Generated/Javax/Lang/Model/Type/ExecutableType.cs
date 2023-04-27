@@ -80,7 +80,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Java.Util.List>("getTypeVariables"); }
         }
-        
+
         #endregion
 
         #region Nested classes

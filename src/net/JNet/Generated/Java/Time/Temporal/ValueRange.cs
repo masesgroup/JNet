@@ -37,7 +37,7 @@ namespace Java.Time.Temporal
         /// Converter from <see cref="Java.Time.Temporal.ValueRange"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Temporal.ValueRange t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Java.Time.Temporal
         {
             return SExecute<Java.Time.Temporal.ValueRange>(LocalClazz, "of", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -162,7 +162,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<long>("checkValidValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

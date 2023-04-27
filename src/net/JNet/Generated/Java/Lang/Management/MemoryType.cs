@@ -45,7 +45,7 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#NON_HEAP"/>
         /// </summary>
         public static Java.Lang.Management.MemoryType NON_HEAP { get { return LocalClazz.GetField<Java.Lang.Management.MemoryType>("NON_HEAP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -65,7 +65,7 @@ namespace Java.Lang.Management
         {
             return SExecute<Java.Lang.Management.MemoryType>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

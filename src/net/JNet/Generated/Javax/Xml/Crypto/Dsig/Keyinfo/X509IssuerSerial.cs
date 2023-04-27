@@ -59,7 +59,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
         }
-        
+
         #endregion
 
         #region Nested classes

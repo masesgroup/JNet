@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Lang.Thread>("newThread", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

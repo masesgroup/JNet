@@ -52,7 +52,7 @@ namespace Javax.Management.Remote
         {
             get { return IExecute<Javax.Management.Remote.JMXServiceURL>("getAddress"); }
         }
-        
+
         #endregion
 
         #region Nested classes

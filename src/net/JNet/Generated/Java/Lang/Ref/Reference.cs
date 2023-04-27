@@ -49,7 +49,7 @@ namespace Java.Lang.Ref
         {
             SExecute(LocalClazz, "reachabilityFence", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -81,7 +81,7 @@ namespace Java.Lang.Ref
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -104,7 +104,7 @@ namespace Java.Lang.Ref
         /// Converter from <see cref="Java.Lang.Ref.Reference{T}"/> to <see cref="Java.Lang.Ref.Reference"/>
         /// </summary>
         public static implicit operator Java.Lang.Ref.Reference(Java.Lang.Ref.Reference<T> t) => t.Cast<Java.Lang.Ref.Reference>();
-        
+
         #endregion
 
         #region Fields
@@ -120,7 +120,7 @@ namespace Java.Lang.Ref
         {
             SExecute(LocalClazz, "reachabilityFence", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -152,7 +152,7 @@ namespace Java.Lang.Ref
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

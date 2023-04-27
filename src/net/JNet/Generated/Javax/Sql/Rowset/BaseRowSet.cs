@@ -41,7 +41,7 @@ namespace Javax.Sql.Rowset
         /// Converter from <see cref="Javax.Sql.Rowset.BaseRowSet"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.BaseRowSet t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#UNICODE_STREAM_PARAM"/>
         /// </summary>
         public static int UNICODE_STREAM_PARAM { get { return LocalClazz.GetField<int>("UNICODE_STREAM_PARAM"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -202,7 +202,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#clearParameters()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
@@ -1102,7 +1102,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("setURL", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

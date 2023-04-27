@@ -254,7 +254,7 @@ namespace Javax.Sound.Midi
         {
             return SExecute<Javax.Sound.Midi.Soundbank>(LocalClazz, "getSoundbank", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

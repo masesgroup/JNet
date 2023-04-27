@@ -37,7 +37,7 @@ namespace Javax.Imageio.Plugins.Jpeg
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Div2Chrominance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Div2Chrominance { get { return LocalClazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Div2Chrominance"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -86,7 +86,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             return IExecute<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getScaledInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -58,7 +58,7 @@ namespace Java.Lang.Reflect
         {
             if (arg0.Length == 0) return IExecute("newInstance", new object[] { arg0 }); else return IExecute("newInstance", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -81,7 +81,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.Constructor{T}"/> to <see cref="Java.Lang.Reflect.Constructor"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.Constructor(Java.Lang.Reflect.Constructor<T> t) => t.Cast<Java.Lang.Reflect.Constructor>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Java.Lang.Reflect
         {
             if (arg0.Length == 0) return IExecute<T>("newInstance", new object[] { arg0 }); else return IExecute<T>("newInstance", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.LinkedList"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.LinkedList t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#descendingIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIteratorMethod()
         {
@@ -238,7 +238,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -261,7 +261,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -285,7 +285,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.LinkedList{E}"/> to <see cref="Java.Util.LinkedList"/>
         /// </summary>
         public static implicit operator Java.Util.LinkedList(Java.Util.LinkedList<E> t) => t.Cast<Java.Util.LinkedList>();
-        
+
         #endregion
 
         #region Fields
@@ -436,7 +436,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#descendingIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIteratorMethod()
         {
@@ -466,7 +466,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

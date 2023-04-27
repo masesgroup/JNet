@@ -38,7 +38,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#NO_PROXY"/>
         /// </summary>
         public static Java.Net.Proxy NO_PROXY { get { return LocalClazz.GetField<Java.Net.Proxy>("NO_PROXY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -68,13 +68,13 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#type()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
         public Java.Net.Proxy.Type TypeMethod()
         {
             return IExecute<Java.Net.Proxy.Type>("type");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -102,7 +102,7 @@ namespace Java.Net
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#SOCKS"/>
             /// </summary>
             public static Java.Net.Proxy.Type SOCKS { get { return LocalClazz.GetField<Java.Net.Proxy.Type>("SOCKS"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -122,10 +122,14 @@ namespace Java.Net
             {
                 return SExecute<Java.Net.Proxy.Type>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -133,7 +137,7 @@ namespace Java.Net
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

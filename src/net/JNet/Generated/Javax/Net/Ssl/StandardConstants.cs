@@ -41,7 +41,7 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME"/>
         /// </summary>
         public static int SNI_HOST_NAME { get { return LocalClazz.GetField<int>("SNI_HOST_NAME"); } }
-        
+
         #endregion
 
         #region Static methods

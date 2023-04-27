@@ -75,7 +75,7 @@ namespace Java.Rmi.Activation
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Java.Rmi.Activation
         /// Converter from <see cref="Java.Rmi.Activation.ActivationDesc"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationDesc t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -130,7 +130,7 @@ namespace Java.Rmi.Activation
         {
             get { return IExecute<bool>("getRestartMode"); }
         }
-        
+
         #endregion
 
         #region Nested classes

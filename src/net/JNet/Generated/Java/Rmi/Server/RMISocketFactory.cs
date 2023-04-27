@@ -41,7 +41,7 @@ namespace Java.Rmi.Server
         /// Converter from <see cref="Java.Rmi.Server.RMISocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
         /// </summary>
         public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
         {
             get { return SExecute<Java.Rmi.Server.RMISocketFactory>(LocalClazz, "getSocketFactory"); } set { SExecute(LocalClazz, "setSocketFactory", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -95,7 +95,7 @@ namespace Java.Rmi.Server
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

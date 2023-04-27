@@ -166,7 +166,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("unloadInstruments", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

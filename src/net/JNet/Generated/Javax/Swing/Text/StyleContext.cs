@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.StyleContext"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#DEFAULT_STYLE"/>
         /// </summary>
         public static string DEFAULT_STYLE { get { return LocalClazz.GetField<string>("DEFAULT_STYLE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -103,7 +103,7 @@ namespace Javax.Swing.Text
         {
             SExecute(LocalClazz, "writeAttributeSet", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -298,7 +298,7 @@ namespace Javax.Swing.Text
         {
             IExecute("writeAttributes", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -333,7 +333,7 @@ namespace Javax.Swing.Text
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.StyleContext.NamedStyle"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext.NamedStyle t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -511,7 +511,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("removeChangeListener", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -531,7 +535,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -539,7 +543,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.StyleContext.SmallAttributeSet"/> to <see cref="Javax.Swing.Text.AttributeSet"/>
             /// </summary>
             public static implicit operator Javax.Swing.Text.AttributeSet(Javax.Swing.Text.StyleContext.SmallAttributeSet t) => t.Cast<Javax.Swing.Text.AttributeSet>();
-            
+
             #endregion
 
             #region Fields
@@ -625,14 +629,18 @@ namespace Javax.Swing.Text
             {
                 return IExecute("getAttribute", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

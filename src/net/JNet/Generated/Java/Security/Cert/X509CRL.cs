@@ -37,7 +37,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.X509CRL"/> to <see cref="Java.Security.Cert.X509Extension"/>
         /// </summary>
         public static implicit operator Java.Security.Cert.X509Extension(Java.Security.Cert.X509CRL t) => t.Cast<Java.Security.Cert.X509Extension>();
-        
+
         #endregion
 
         #region Fields
@@ -191,7 +191,7 @@ namespace Java.Security.Cert
         {
             IExecute("verify", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -59,7 +59,7 @@ namespace Java.Lang
         {
             get { return IExecute<string>("since"); }
         }
-        
+
         #endregion
 
         #region Nested classes

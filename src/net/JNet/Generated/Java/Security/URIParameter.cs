@@ -37,7 +37,7 @@ namespace Java.Security
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Security
         {
             get { return IExecute<Java.Net.URI>("getURI"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -40,7 +40,7 @@ namespace Java.Security.Cert
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.PKIXCertPathBuilderResult"/> to <see cref="Java.Security.Cert.CertPathBuilderResult"/>
         /// </summary>
         public static implicit operator Java.Security.Cert.CertPathBuilderResult(Java.Security.Cert.PKIXCertPathBuilderResult t) => t.Cast<Java.Security.Cert.CertPathBuilderResult>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getCertPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

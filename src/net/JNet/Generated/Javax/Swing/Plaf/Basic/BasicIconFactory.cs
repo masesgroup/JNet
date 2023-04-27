@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicIconFactory"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicIconFactory t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -101,7 +101,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             get { return SExecute<Javax.Swing.Icon>(LocalClazz, "getRadioButtonMenuItemIcon"); }
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -84,7 +84,7 @@ namespace Javax.Management.Monitor
         {
             return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#NOT_SPECIFIED"/>
         /// </summary>
         public static int NOT_SPECIFIED { get { return LocalClazz.GetField<int>("NOT_SPECIFIED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -350,7 +350,7 @@ namespace Javax.Sound.Sampled
         {
             return SExecute<Javax.Sound.Sampled.TargetDataLine>(LocalClazz, "getTargetDataLine", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

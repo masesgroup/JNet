@@ -82,7 +82,7 @@ namespace Javax.Swing
         {
             IExecute("selectAll");
         }
-        
+
         #endregion
 
         #region Nested classes

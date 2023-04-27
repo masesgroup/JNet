@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ButtonGroup"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.ButtonGroup t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -111,7 +111,7 @@ namespace Javax.Swing
         {
             IExecute("setSelected", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

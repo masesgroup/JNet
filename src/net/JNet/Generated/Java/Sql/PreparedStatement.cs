@@ -90,7 +90,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#addBatch()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddBatch()
         {
@@ -99,7 +99,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#clearParameters()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
@@ -615,7 +615,7 @@ namespace Java.Sql
         {
             IExecute("setObject", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

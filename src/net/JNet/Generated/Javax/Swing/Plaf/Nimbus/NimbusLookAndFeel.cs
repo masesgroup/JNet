@@ -68,7 +68,7 @@ namespace Javax.Swing.Plaf.Nimbus
         {
             IExecute("register", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

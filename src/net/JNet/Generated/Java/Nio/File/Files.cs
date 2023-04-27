@@ -800,7 +800,7 @@ namespace Java.Nio.File
         {
             SExecute(LocalClazz, "delete", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

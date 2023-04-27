@@ -53,7 +53,7 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.StringBuffer"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.StringBuffer t) => t.Cast<Java.Lang.CharSequence>();
-        
+
         #endregion
 
         #region Fields
@@ -99,7 +99,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER"/>
         /// </summary>
         public static int TAG_GPS_INFO_IFD_POINTER { get { return LocalClazz.GetField<int>("TAG_GPS_INFO_IFD_POINTER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -56,7 +56,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

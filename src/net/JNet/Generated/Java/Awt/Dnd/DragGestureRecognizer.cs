@@ -37,7 +37,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.DragGestureRecognizer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragGestureRecognizer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -101,7 +101,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("resetRecognizer");
         }
-        
+
         #endregion
 
         #region Nested classes

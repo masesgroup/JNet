@@ -122,7 +122,7 @@ namespace Java.Awt.FontNs
         {
             get { return IExecute<float>("getUnderlineThickness"); }
         }
-        
+
         #endregion
 
         #region Nested classes

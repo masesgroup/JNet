@@ -111,7 +111,7 @@ namespace Javax.Sound.Sampled.Spi
         {
             return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

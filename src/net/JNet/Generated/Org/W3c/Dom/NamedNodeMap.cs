@@ -122,7 +122,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<Org.W3c.Dom.Node>("setNamedItemNS", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

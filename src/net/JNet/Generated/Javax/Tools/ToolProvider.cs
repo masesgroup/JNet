@@ -55,7 +55,7 @@ namespace Javax.Tools
         {
             get { return SExecute<Javax.Tools.JavaCompiler>(LocalClazz, "getSystemJavaCompiler"); }
         }
-        
+
         #endregion
 
         #region Instance methods

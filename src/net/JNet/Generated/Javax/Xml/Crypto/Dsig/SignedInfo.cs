@@ -80,7 +80,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.SignatureMethod>("getSignatureMethod"); }
         }
-        
+
         #endregion
 
         #region Nested classes

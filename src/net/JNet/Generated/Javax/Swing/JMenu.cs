@@ -54,7 +54,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -272,7 +272,7 @@ namespace Javax.Swing
         {
             IExecute("setPopupMenuVisible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

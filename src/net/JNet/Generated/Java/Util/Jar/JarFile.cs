@@ -90,7 +90,7 @@ namespace Java.Util.Jar
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -102,7 +102,7 @@ namespace Java.Util.Jar
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#MANIFEST_NAME"/>
         /// </summary>
         public static string MANIFEST_NAME { get { return LocalClazz.GetField<string>("MANIFEST_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -120,7 +120,7 @@ namespace Java.Util.Jar
         {
             get { return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "runtimeVersion"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -161,7 +161,7 @@ namespace Java.Util.Jar
         {
             return IExecute<Java.Util.Jar.JarEntry>("getJarEntry", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

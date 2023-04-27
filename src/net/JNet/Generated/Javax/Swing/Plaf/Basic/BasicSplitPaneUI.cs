@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("setContinuousLayout", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -127,7 +127,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager"/> to <see cref="Java.Awt.LayoutManager2"/>
             /// </summary>
             public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager t) => t.Cast<Java.Awt.LayoutManager2>();
-            
+
             #endregion
 
             #region Fields
@@ -233,7 +233,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("resetToPreferredSizes");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -252,7 +256,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -268,6 +272,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -287,7 +295,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -295,7 +303,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -315,7 +323,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("actionPerformed", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -334,7 +346,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -342,7 +354,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -362,7 +374,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("actionPerformed", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -381,7 +397,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -389,7 +405,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -409,7 +425,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("actionPerformed", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -428,7 +448,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -436,7 +456,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -456,7 +476,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("actionPerformed", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -475,7 +499,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -483,7 +507,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardUpLeftHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardUpLeftHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
+
             #endregion
 
             #region Fields
@@ -503,7 +527,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("actionPerformed", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -522,7 +550,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -530,7 +558,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.PropertyHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.PropertyHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -550,14 +578,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

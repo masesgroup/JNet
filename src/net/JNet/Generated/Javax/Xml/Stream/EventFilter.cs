@@ -54,7 +54,7 @@ namespace Javax.Xml.Stream
         {
             return IExecute<bool>("accept", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -49,7 +49,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.MonthDay"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.MonthDay t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now()
         {
@@ -132,7 +132,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.MonthDay>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -301,7 +301,7 @@ namespace Java.Time
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

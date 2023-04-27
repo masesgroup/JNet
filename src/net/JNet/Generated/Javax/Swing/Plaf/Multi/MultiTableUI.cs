@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Multi
         {
             get { return IExecuteArray<Javax.Swing.Plaf.ComponentUI>("getUIs"); }
         }
-        
+
         #endregion
 
         #region Nested classes

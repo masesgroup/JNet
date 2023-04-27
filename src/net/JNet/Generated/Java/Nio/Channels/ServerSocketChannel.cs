@@ -37,7 +37,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.ServerSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.ServerSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Java.Nio.Channels
         {
             get { return SExecute<Java.Nio.Channels.ServerSocketChannel>(LocalClazz, "open"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -109,7 +109,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -40,7 +40,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -52,7 +52,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Insets"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Insets t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#top"/>
         /// </summary>
         public int top { get { return Instance.GetField<int>("top"); } set { Instance.SetField("top", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -91,7 +91,7 @@ namespace Java.Awt
         {
             IExecute("set", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

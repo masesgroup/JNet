@@ -37,7 +37,7 @@ namespace Javax.Swing.Table
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Javax.Swing.Table
         /// Converter from <see cref="Javax.Swing.Table.JTableHeader"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Table.JTableHeader t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -197,7 +197,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -58,7 +58,7 @@ namespace Javax.Crypto
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -148,7 +148,7 @@ namespace Javax.Crypto
         {
             return IExecute<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

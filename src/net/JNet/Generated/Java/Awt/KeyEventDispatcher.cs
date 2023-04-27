@@ -54,7 +54,7 @@ namespace Java.Awt
         {
             return IExecute<bool>("dispatchKeyEvent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Boolean"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Boolean t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return LocalClazz.GetField<Java.Lang.Class>("TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -155,7 +155,7 @@ namespace Java.Lang
         {
             return SExecute<string>(LocalClazz, "toString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -184,7 +184,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

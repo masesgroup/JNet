@@ -48,7 +48,7 @@ namespace Javax.Imageio.Spi
         {
             get { return SExecute<Javax.Imageio.Spi.IIORegistry>(LocalClazz, "getDefaultInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -59,7 +59,7 @@ namespace Javax.Imageio.Spi
         {
             IExecute("registerApplicationClasspathSpis");
         }
-        
+
         #endregion
 
         #region Nested classes

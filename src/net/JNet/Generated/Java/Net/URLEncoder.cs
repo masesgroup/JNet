@@ -62,7 +62,7 @@ namespace Java.Net
         {
             return SExecute<string>(LocalClazz, "encode", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

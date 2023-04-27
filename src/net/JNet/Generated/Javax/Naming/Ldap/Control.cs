@@ -45,7 +45,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#NONCRITICAL"/>
         /// </summary>
         public static bool NONCRITICAL { get { return LocalClazz.GetField<bool>("NONCRITICAL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -74,7 +74,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecute<bool>("isCritical"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -65,7 +65,7 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#UNKNOWN_RULE"/>
         /// </summary>
         public static short UNKNOWN_RULE { get { return LocalClazz.GetField<short>("UNKNOWN_RULE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -101,7 +101,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<short>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

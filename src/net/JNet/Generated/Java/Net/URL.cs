@@ -95,7 +95,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -103,7 +103,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.URL"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.URL t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -119,7 +119,7 @@ namespace Java.Net
         {
             SExecute(LocalClazz, "setURLStreamHandlerFactory", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -243,7 +243,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Net.URLConnection"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.URLConnection OpenConnection()
@@ -260,7 +260,7 @@ namespace Java.Net
         {
             return IExecute<Java.Net.URLConnection>("openConnection", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

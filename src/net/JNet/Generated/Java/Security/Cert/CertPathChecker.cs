@@ -70,7 +70,7 @@ namespace Java.Security.Cert
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -81,7 +81,7 @@ namespace Java.Lang.Annotation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE_USE"/>
         /// </summary>
         public static Java.Lang.Annotation.ElementType TYPE_USE { get { return LocalClazz.GetField<Java.Lang.Annotation.ElementType>("TYPE_USE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -101,7 +101,7 @@ namespace Java.Lang.Annotation
         {
             return SExecute<Java.Lang.Annotation.ElementType>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

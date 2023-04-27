@@ -86,7 +86,7 @@ namespace Java.Awt.Im.Spi
         {
             IExecute("enableClientWindowNotification", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

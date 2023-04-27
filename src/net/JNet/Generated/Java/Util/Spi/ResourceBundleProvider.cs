@@ -55,7 +55,7 @@ namespace Java.Util.Spi
         {
             return IExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

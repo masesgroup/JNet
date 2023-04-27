@@ -46,7 +46,7 @@ namespace Javax.Net.Ssl
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -146,7 +146,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<bool>("getWantClientAuth"); } set { IExecute("setWantClientAuth", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

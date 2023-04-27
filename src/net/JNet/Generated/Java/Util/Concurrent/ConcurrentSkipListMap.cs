@@ -53,7 +53,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentSkipListMap t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -214,7 +214,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap Clone()
         {
@@ -292,7 +292,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -331,7 +331,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -351,7 +351,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentSkipListMap(Java.Util.Concurrent.ConcurrentSkipListMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentSkipListMap>();
-        
+
         #endregion
 
         #region Fields
@@ -496,7 +496,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap<K, V> Clone()
         {
@@ -574,7 +574,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<K>("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -39,7 +39,7 @@ namespace Javax.Imageio.Spi
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -98,7 +98,7 @@ namespace Javax.Imageio.Spi
         {
             return IExecute<Javax.Imageio.Stream.ImageInputStream>("createInputStreamInstance", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

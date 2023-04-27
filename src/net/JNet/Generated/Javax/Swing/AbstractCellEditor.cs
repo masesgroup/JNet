@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.AbstractCellEditor"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractCellEditor t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -108,7 +108,7 @@ namespace Javax.Swing
         {
             IExecute("removeCellEditorListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

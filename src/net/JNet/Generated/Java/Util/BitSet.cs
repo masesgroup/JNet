@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.BitSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.BitSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.BitSet>(LocalClazz, "valueOf", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -319,7 +319,7 @@ namespace Java.Util
         {
             IExecute("xor", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

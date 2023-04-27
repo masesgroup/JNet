@@ -52,7 +52,7 @@ namespace Java.Lang
         {
             get { return IExecuteArray<string>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

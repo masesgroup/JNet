@@ -107,7 +107,7 @@ namespace Javax.Management
         {
             IExecute("setAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

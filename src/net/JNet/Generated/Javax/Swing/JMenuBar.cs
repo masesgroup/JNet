@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JMenuBar"/> to <see cref="Javax.Swing.MenuElement"/>
         /// </summary>
         public static implicit operator Javax.Swing.MenuElement(Javax.Swing.JMenuBar t) => t.Cast<Javax.Swing.MenuElement>();
-        
+
         #endregion
 
         #region Fields
@@ -188,7 +188,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

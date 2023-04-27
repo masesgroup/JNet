@@ -49,7 +49,7 @@ namespace Javax.Management.Openmbean
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -80,7 +80,7 @@ namespace Javax.Management.Openmbean
         {
             return SExecute<Javax.Management.Openmbean.ArrayType>(LocalClazz, "getPrimitiveArrayType", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -105,7 +105,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecute<bool>("isPrimitiveArray"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -140,7 +140,7 @@ namespace Javax.Management.Openmbean
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -148,7 +148,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.ArrayType{T}"/> to <see cref="Javax.Management.Openmbean.ArrayType"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.ArrayType(Javax.Management.Openmbean.ArrayType<T> t) => t.Cast<Javax.Management.Openmbean.ArrayType>();
-        
+
         #endregion
 
         #region Fields
@@ -175,7 +175,7 @@ namespace Javax.Management.Openmbean
         {
             return SExecute<Javax.Management.Openmbean.ArrayType<T>>(LocalClazz, "getPrimitiveArrayType", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -200,7 +200,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecute<bool>("isPrimitiveArray"); }
         }
-        
+
         #endregion
 
         #region Nested classes

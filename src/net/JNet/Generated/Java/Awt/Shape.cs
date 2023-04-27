@@ -139,7 +139,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

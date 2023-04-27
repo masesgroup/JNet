@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Reference"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Reference t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
-        
+
         #endregion
 
         #region Fields
@@ -112,7 +112,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             return IExecute<bool>("validate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

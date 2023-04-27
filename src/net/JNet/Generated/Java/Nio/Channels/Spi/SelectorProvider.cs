@@ -48,7 +48,7 @@ namespace Java.Nio.Channels.Spi
         {
             get { return SExecute<Java.Nio.Channels.Spi.SelectorProvider>(LocalClazz, "provider"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -90,7 +90,7 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel OpenDatagramChannel()
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels.Spi
         {
             return IExecute<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

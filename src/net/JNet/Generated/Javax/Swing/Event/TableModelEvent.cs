@@ -79,7 +79,7 @@ namespace Javax.Swing.Event
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -107,7 +107,7 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE"/>
         /// </summary>
         public static int UPDATE { get { return LocalClazz.GetField<int>("UPDATE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -143,7 +143,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<int>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -39,7 +39,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getPrime"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -81,7 +81,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#UNUSED"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason UNUSED { get { return LocalClazz.GetField<Java.Security.Cert.CRLReason>("UNUSED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -101,7 +101,7 @@ namespace Java.Security.Cert
         {
             return SExecute<Java.Security.Cert.CRLReason>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

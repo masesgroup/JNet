@@ -102,7 +102,7 @@ namespace Javax.Print
         {
             IExecute("removePrintJobListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

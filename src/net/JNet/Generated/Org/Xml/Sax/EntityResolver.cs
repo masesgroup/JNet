@@ -57,7 +57,7 @@ namespace Org.Xml.Sax
         {
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

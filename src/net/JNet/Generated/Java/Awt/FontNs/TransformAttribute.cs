@@ -37,7 +37,7 @@ namespace Java.Awt.FontNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Awt.FontNs
         /// Converter from <see cref="Java.Awt.FontNs.TransformAttribute"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.FontNs.TransformAttribute t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TransformAttribute.html#IDENTITY"/>
         /// </summary>
         public static Java.Awt.FontNs.TransformAttribute IDENTITY { get { return LocalClazz.GetField<Java.Awt.FontNs.TransformAttribute>("IDENTITY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Java.Awt.FontNs
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
         }
-        
+
         #endregion
 
         #region Nested classes

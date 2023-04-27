@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.DateTimeSyntax"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.DateTimeSyntax t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Javax.Print.Attribute
         {
             get { return IExecute<Java.Util.Date>("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

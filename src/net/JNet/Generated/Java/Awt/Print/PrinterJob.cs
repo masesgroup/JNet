@@ -64,7 +64,7 @@ namespace Java.Awt.Print
         {
             return SExecuteArray<Javax.Print.StreamPrintServiceFactory>(LocalClazz, "lookupStreamPrintServices", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -106,7 +106,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog()
@@ -151,7 +151,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public void Print()
         {
@@ -196,7 +196,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat DefaultPage()
         {
@@ -230,7 +230,7 @@ namespace Java.Awt.Print
         {
             IExecute("print", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

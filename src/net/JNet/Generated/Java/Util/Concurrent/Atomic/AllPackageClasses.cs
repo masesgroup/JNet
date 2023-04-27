@@ -236,7 +236,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -408,7 +408,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -494,7 +494,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -580,7 +580,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -666,7 +666,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -752,7 +752,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -838,7 +838,7 @@ namespace Java.Util.Concurrent.Atomic
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

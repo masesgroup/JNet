@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Number"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Number t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -91,7 +91,7 @@ namespace Java.Lang
         {
             get { return IExecute<short>("shortValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#TOPDOWNLEFTRIGHT"/>
         /// </summary>
         public static int TOPDOWNLEFTRIGHT { get { return LocalClazz.GetField<int>("TOPDOWNLEFTRIGHT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -152,7 +152,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setProperties", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

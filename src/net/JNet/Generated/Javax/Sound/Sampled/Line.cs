@@ -102,7 +102,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open()
         {
@@ -116,7 +116,7 @@ namespace Javax.Sound.Sampled
         {
             IExecute("removeLineListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -132,7 +132,7 @@ namespace Javax.Sound.Sampled
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -164,14 +164,18 @@ namespace Javax.Sound.Sampled
             {
                 return IExecute<bool>("matches", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

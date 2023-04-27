@@ -74,7 +74,7 @@ namespace Javax.Crypto
         {
             return SExecute<Javax.Crypto.ExemptionMechanism>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -105,7 +105,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html#genExemptionBlob()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         /// <exception cref="Javax.Crypto.ExemptionMechanismException"/>
@@ -182,7 +182,7 @@ namespace Javax.Crypto
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

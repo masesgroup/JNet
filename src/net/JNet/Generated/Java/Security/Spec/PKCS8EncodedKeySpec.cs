@@ -46,7 +46,7 @@ namespace Java.Security.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

@@ -59,7 +59,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<long>("getCollectionTime"); }
         }
-        
+
         #endregion
 
         #region Nested classes

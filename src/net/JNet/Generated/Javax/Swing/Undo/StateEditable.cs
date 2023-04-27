@@ -41,7 +41,7 @@ namespace Javax.Swing.Undo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#RCSID"/>
         /// </summary>
         public static string RCSID { get { return LocalClazz.GetField<string>("RCSID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -65,7 +65,7 @@ namespace Javax.Swing.Undo
         {
             IExecute("storeState", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

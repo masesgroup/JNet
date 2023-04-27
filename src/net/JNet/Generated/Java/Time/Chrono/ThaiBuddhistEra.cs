@@ -37,7 +37,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ThaiBuddhistEra"/> to <see cref="Java.Time.Chrono.Era"/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.ThaiBuddhistEra t) => t.Cast<Java.Time.Chrono.Era>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE"/>
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE { get { return LocalClazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BEFORE_BE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -78,7 +78,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.ThaiBuddhistEra>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -99,7 +99,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -108,7 +108,7 @@ namespace Javax.Management.Monitor
         {
             IExecute("setThresholds", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

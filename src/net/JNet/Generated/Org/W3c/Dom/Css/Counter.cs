@@ -66,7 +66,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<string>("getSeparator"); }
         }
-        
+
         #endregion
 
         #region Nested classes

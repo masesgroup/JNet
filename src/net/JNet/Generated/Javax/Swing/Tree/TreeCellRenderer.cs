@@ -60,7 +60,7 @@ namespace Javax.Swing.Tree
         {
             return IExecute<Java.Awt.Component>("getTreeCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-        
+
         #endregion
 
         #region Nested classes

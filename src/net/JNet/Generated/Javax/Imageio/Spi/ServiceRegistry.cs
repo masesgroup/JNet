@@ -37,7 +37,7 @@ namespace Javax.Imageio.Spi
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Imageio.Spi
         {
             return SExecute<Java.Util.Iterator<T>>(LocalClazz, "lookupProviders", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -199,7 +199,7 @@ namespace Javax.Imageio.Spi
         {
             IExecute("registerServiceProviders", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -232,14 +232,18 @@ namespace Javax.Imageio.Spi
             {
                 return IExecute<bool>("filter", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

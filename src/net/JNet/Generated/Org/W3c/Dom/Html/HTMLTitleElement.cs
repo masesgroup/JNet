@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -47,7 +47,7 @@ namespace Javax.Xml.Crypto
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Xml.Crypto
         /// Converter from <see cref="Javax.Xml.Crypto.OctetStreamData"/> to <see cref="Javax.Xml.Crypto.Data"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.OctetStreamData t) => t.Cast<Javax.Xml.Crypto.Data>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<string>("getURI"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -83,7 +83,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Util.Enumeration<Java.Net.URL>>(LocalClazz, "getSystemResources", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -211,7 +211,7 @@ namespace Java.Lang
         {
             IExecute("setPackageAssertionStatus", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

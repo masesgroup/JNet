@@ -123,7 +123,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setValueAt", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

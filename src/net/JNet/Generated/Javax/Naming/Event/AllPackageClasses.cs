@@ -117,7 +117,7 @@ namespace Javax.Naming.Event
     /// </summary>
     public partial class NamespaceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -216,7 +216,7 @@ namespace Javax.Naming.Event
     /// </summary>
     public partial class NamingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -229,7 +229,7 @@ namespace Javax.Naming.Event
     /// </summary>
     public partial class ObjectChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

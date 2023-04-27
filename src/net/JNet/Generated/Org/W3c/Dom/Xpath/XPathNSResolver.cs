@@ -54,7 +54,7 @@ namespace Org.W3c.Dom.Xpath
         {
             return IExecute<string>("lookupNamespaceURI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

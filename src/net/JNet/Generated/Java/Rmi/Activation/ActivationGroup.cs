@@ -37,7 +37,7 @@ namespace Java.Rmi.Activation
         /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup"/> to <see cref="Java.Rmi.Activation.ActivationInstantiator"/>
         /// </summary>
         public static implicit operator Java.Rmi.Activation.ActivationInstantiator(Java.Rmi.Activation.ActivationGroup t) => t.Cast<Java.Rmi.Activation.ActivationInstantiator>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Java.Rmi.Activation
         {
             return SExecute<Java.Rmi.Activation.ActivationGroup>(LocalClazz, "createGroup", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -99,7 +99,7 @@ namespace Java.Rmi.Activation
         {
             return IExecute<bool>("inactiveObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

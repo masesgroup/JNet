@@ -45,7 +45,7 @@ namespace Javax.Net.Ssl
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Javax.Net.Ssl
         {
             return SExecute<Javax.Net.Ssl.SNIMatcher>(LocalClazz, "createSNIMatcher", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -77,7 +77,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<string>("getAsciiName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

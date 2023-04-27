@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -149,7 +149,7 @@ namespace Javax.Swing
         {
             IExecute("setParagraphAttributes", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
         public static int LOOP_CONTINUOUSLY { get { return LocalClazz.GetField<int>("LOOP_CONTINUOUSLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -305,7 +305,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("stopRecording");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -337,7 +337,7 @@ namespace Javax.Sound.Midi
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#NO_SYNC"/>
             /// </summary>
             public static Javax.Sound.Midi.Sequencer.SyncMode NO_SYNC { get { return LocalClazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("NO_SYNC"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -348,11 +348,15 @@ namespace Javax.Sound.Midi
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

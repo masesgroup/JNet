@@ -45,7 +45,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JComboBox"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JComboBox t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -433,7 +433,7 @@ namespace Javax.Swing
         {
             IExecute("showPopup");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -467,14 +467,18 @@ namespace Javax.Swing
             {
                 return IExecute<int>("selectionForKey", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -509,7 +513,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -533,7 +537,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JComboBox{E}"/> to <see cref="Javax.Swing.JComboBox"/>
         /// </summary>
         public static implicit operator Javax.Swing.JComboBox(Javax.Swing.JComboBox<E> t) => t.Cast<Javax.Swing.JComboBox>();
-        
+
         #endregion
 
         #region Fields
@@ -901,7 +905,7 @@ namespace Javax.Swing
         {
             IExecute("showPopup");
         }
-        
+
         #endregion
 
         #region Nested classes

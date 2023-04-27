@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<bool>("isWhiteSpace"); }
         }
-        
+
         #endregion
 
         #region Nested classes

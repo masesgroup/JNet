@@ -67,7 +67,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "setCurrentManager", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -203,7 +203,7 @@ namespace Javax.Swing
         {
             IExecute("validateInvalidComponents");
         }
-        
+
         #endregion
 
         #region Nested classes

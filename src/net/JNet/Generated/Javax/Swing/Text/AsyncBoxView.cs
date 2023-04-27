@@ -38,7 +38,7 @@ namespace Javax.Swing.Text
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -96,7 +96,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<float>("getTopInset"); } set { IExecute("setTopInset", value); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -112,7 +112,7 @@ namespace Javax.Swing.Text
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -165,7 +165,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("paintChildren", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -185,7 +189,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -193,7 +197,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/> to <see cref="Java.Lang.Runnable"/>
             /// </summary>
             public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
-            
+
             #endregion
 
             #region Fields
@@ -263,14 +267,18 @@ namespace Javax.Swing.Text
             {
                 IExecute("run");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

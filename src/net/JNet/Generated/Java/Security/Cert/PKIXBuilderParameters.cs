@@ -50,7 +50,7 @@ namespace Java.Security.Cert
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<int>("getMaxPathLength"); } set { IExecute("setMaxPathLength", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

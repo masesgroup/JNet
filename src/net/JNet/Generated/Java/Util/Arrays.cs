@@ -2294,7 +2294,7 @@ namespace Java.Util
         {
             SExecute(LocalClazz, "sort", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods

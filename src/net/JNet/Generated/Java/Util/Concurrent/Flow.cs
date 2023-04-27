@@ -48,7 +48,7 @@ namespace Java.Util.Concurrent
         {
             get { return SExecute<int>(LocalClazz, "defaultBufferSize"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -79,6 +79,10 @@ namespace Java.Util.Concurrent
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -95,7 +99,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.Flow.Processor{T, R}"/> to <see cref="Java.Util.Concurrent.Flow.Processor"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.Flow.Processor(Java.Util.Concurrent.Flow.Processor<T, R> t) => t.Cast<Java.Util.Concurrent.Flow.Processor>();
-            
+
             #endregion
 
             #region Fields
@@ -107,6 +111,10 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -142,7 +150,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("subscribe", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -161,7 +173,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.Flow.Publisher{T}"/> to <see cref="Java.Util.Concurrent.Flow.Publisher"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.Flow.Publisher(Java.Util.Concurrent.Flow.Publisher<T> t) => t.Cast<Java.Util.Concurrent.Flow.Publisher>();
-            
+
             #endregion
 
             #region Fields
@@ -181,7 +193,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("subscribe", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -239,7 +255,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("onSubscribe", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -258,7 +278,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.Flow.Subscriber{T}"/> to <see cref="Java.Util.Concurrent.Flow.Subscriber"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.Flow.Subscriber(Java.Util.Concurrent.Flow.Subscriber<T> t) => t.Cast<Java.Util.Concurrent.Flow.Subscriber>();
-            
+
             #endregion
 
             #region Fields
@@ -301,7 +321,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("onSubscribe", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -343,14 +367,18 @@ namespace Java.Util.Concurrent
             {
                 IExecute("request", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EventListenerProxy"/> to <see cref="Java.Util.EventListener"/>
         /// </summary>
         public static implicit operator Java.Util.EventListener(Java.Util.EventListenerProxy t) => t.Cast<Java.Util.EventListener>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Java.Util
         {
             get { return IExecute<Java.Util.EventListener>("getListener"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -87,7 +87,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -99,7 +99,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EventListenerProxy{T}"/> to <see cref="Java.Util.EventListenerProxy"/>
         /// </summary>
         public static implicit operator Java.Util.EventListenerProxy(Java.Util.EventListenerProxy<T> t) => t.Cast<Java.Util.EventListenerProxy>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Util
         {
             get { return IExecute<T>("getListener"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Javax.Sound.Midi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Sound.Midi
         {
             get { return IExecute<int>("getProgram"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Imageio.Metadata
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Javax.Imageio.Metadata
         /// Converter from <see cref="Javax.Imageio.Metadata.IIOMetadataNode"/> to <see cref="Org.W3c.Dom.NodeList"/>
         /// </summary>
         public static implicit operator Org.W3c.Dom.NodeList(Javax.Imageio.Metadata.IIOMetadataNode t) => t.Cast<Org.W3c.Dom.NodeList>();
-        
+
         #endregion
 
         #region Fields
@@ -552,7 +552,7 @@ namespace Javax.Imageio.Metadata
         {
             IExecute("setIdAttributeNS", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

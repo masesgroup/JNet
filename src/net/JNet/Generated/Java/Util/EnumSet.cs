@@ -41,7 +41,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EnumSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.EnumSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -169,20 +169,20 @@ namespace Java.Util
         {
             return SExecute<Java.Util.EnumSet>(LocalClazz, "range", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet Clone()
         {
             return IExecute<Java.Util.EnumSet>("clone");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -213,7 +213,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EnumSet{E}"/> to <see cref="Java.Util.EnumSet"/>
         /// </summary>
         public static implicit operator Java.Util.EnumSet(Java.Util.EnumSet<E> t) => t.Cast<Java.Util.EnumSet>();
-        
+
         #endregion
 
         #region Fields
@@ -341,20 +341,20 @@ namespace Java.Util
         {
             return SExecute<Java.Util.EnumSet<E>>(LocalClazz, "range", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet<E> Clone()
         {
             return IExecute<Java.Util.EnumSet<E>>("clone");
         }
-        
+
         #endregion
 
         #region Nested classes

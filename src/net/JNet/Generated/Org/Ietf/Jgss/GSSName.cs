@@ -61,7 +61,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_USER_NAME { get { return LocalClazz.GetField<Org.Ietf.Jgss.Oid>("NT_USER_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -107,7 +107,7 @@ namespace Org.Ietf.Jgss
         {
             return IExecute<Org.Ietf.Jgss.GSSName>("canonicalize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -65,7 +65,7 @@ namespace Java.Awt.FontNs
         {
             IExecute("pathToPoint", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

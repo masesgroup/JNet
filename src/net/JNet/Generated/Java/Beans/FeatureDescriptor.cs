@@ -136,7 +136,7 @@ namespace Java.Beans
         {
             IExecute("setValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

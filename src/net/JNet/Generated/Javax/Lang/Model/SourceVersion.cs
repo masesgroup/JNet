@@ -85,7 +85,7 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_9 { get { return LocalClazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_9"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -166,7 +166,7 @@ namespace Javax.Lang.Model
         {
             return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

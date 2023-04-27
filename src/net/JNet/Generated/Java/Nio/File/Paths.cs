@@ -60,7 +60,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.Path>(LocalClazz, "get", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -66,7 +66,7 @@ namespace Javax.Accessibility
         {
             get { return IExecute<int>("getAccessibleIconWidth"); }
         }
-        
+
         #endregion
 
         #region Nested classes

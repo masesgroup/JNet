@@ -66,7 +66,7 @@ namespace Java.Security.Interfaces
         {
             get { return IExecute<Java.Math.BigInteger>("getQ"); }
         }
-        
+
         #endregion
 
         #region Nested classes

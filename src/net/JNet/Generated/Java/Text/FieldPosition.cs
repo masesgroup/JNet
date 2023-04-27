@@ -54,7 +54,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -98,7 +98,7 @@ namespace Java.Text
         {
             get { return IExecute<Java.Text.Format.Field>("getFieldAttribute"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text.Html
         /// Converter from <see cref="Javax.Swing.Text.Html.FormView"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Text.Html.FormView t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Swing.Text.Html
         {
             IExecute("actionPerformed", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

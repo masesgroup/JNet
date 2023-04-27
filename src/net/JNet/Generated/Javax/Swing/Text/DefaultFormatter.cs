@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.DefaultFormatter"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.DefaultFormatter t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<Java.Lang.Class>("getValueClass"); } set { IExecute("setValueClass", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

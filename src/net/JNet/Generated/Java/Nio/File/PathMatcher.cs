@@ -54,7 +54,7 @@ namespace Java.Nio.File
         {
             return IExecute<bool>("matches", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

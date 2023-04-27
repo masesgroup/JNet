@@ -59,7 +59,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int DIRECTION_RIGHT_TO_LEFT { get { return LocalClazz.GetField<int>("DIRECTION_RIGHT_TO_LEFT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -110,7 +110,7 @@ namespace Java.Text
         {
             SExecute(LocalClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -209,7 +209,7 @@ namespace Java.Text
         {
             return IExecute<Java.Text.Bidi>("createLineBidi", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

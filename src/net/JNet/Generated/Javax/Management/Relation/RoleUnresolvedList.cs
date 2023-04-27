@@ -46,7 +46,7 @@ namespace Javax.Management.Relation
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -122,7 +122,7 @@ namespace Javax.Management.Relation
         {
             IExecute("set", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.ElementScanner9{R, P}"/> to <see cref="Javax.Lang.Model.Util.ElementScanner9"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.ElementScanner9(Javax.Lang.Model.Util.ElementScanner9<R, P> t) => t.Cast<Javax.Lang.Model.Util.ElementScanner9>();
-        
+
         #endregion
 
         #region Fields

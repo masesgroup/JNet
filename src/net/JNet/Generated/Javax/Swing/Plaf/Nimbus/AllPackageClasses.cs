@@ -236,7 +236,7 @@ namespace Javax.Swing.Plaf.Nimbus
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

@@ -70,7 +70,7 @@ namespace Javax.Management.Relation
         {
             return IExecute<Javax.Management.Relation.RoleInfo>("getRoleInfo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -59,7 +59,7 @@ namespace Javax.Xml.Transform
         {
             get { return IExecute<Java.Util.Properties>("getOutputProperties"); }
         }
-        
+
         #endregion
 
         #region Nested classes

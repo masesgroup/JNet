@@ -52,7 +52,7 @@ namespace Javax.Sql.Rowset
         {
             get { return IExecute<Javax.Sql.Rowset.Predicate>("getFilter"); } set { IExecute("setFilter", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

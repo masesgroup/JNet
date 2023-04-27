@@ -41,7 +41,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open()
@@ -69,7 +69,7 @@ namespace Java.Nio.Channels
         {
             return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>(LocalClazz, "open", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -238,7 +238,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

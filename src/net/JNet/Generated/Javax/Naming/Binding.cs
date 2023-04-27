@@ -69,7 +69,7 @@ namespace Javax.Naming
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -92,7 +92,7 @@ namespace Javax.Naming
         {
             get { return IExecute("getObject"); } set { IExecute("setObject", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

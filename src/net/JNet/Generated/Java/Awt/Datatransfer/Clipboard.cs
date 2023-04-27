@@ -37,7 +37,7 @@ namespace Java.Awt.Datatransfer
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -128,7 +128,7 @@ namespace Java.Awt.Datatransfer
         {
             IExecute("setContents", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup"/> to <see cref="Javax.Swing.Plaf.Basic.ComboPopup"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.Basic.ComboPopup(Javax.Swing.Plaf.Basic.BasicComboPopup t) => t.Cast<Javax.Swing.Plaf.Basic.ComboPopup>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("uninstallingUI");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -116,7 +116,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
-            
+
             #endregion
 
             #region Fields
@@ -152,14 +152,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("intervalRemoved", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

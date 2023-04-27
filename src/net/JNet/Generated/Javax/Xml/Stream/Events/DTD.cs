@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute("getProcessedDTD"); }
         }
-        
+
         #endregion
 
         #region Nested classes

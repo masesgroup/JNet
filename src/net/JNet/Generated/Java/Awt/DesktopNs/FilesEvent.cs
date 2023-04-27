@@ -52,7 +52,7 @@ namespace Java.Awt.DesktopNs
         {
             get { return IExecute<Java.Util.List<Java.Io.File>>("getFiles"); }
         }
-        
+
         #endregion
 
         #region Nested classes

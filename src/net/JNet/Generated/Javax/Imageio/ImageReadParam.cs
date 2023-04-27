@@ -103,7 +103,7 @@ namespace Javax.Imageio
         {
             IExecute("setSourceProgressivePasses", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

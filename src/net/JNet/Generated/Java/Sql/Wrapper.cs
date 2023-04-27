@@ -65,7 +65,7 @@ namespace Java.Sql
         {
             return IExecute<bool>("isWrapperFor", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

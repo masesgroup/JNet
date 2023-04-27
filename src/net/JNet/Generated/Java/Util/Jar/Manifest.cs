@@ -46,7 +46,7 @@ namespace Java.Util.Jar
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Util.Jar
         /// Converter from <see cref="Java.Util.Jar.Manifest"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Manifest t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -114,7 +114,7 @@ namespace Java.Util.Jar
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

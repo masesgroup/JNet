@@ -87,7 +87,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("dispose");
         }
-        
+
         #endregion
 
         #region Nested classes

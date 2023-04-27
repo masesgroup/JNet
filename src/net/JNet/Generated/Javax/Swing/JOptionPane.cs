@@ -67,7 +67,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JOptionPane"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JOptionPane t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WANTS_INPUT_PROPERTY"/>
         /// </summary>
         public static string WANTS_INPUT_PROPERTY { get { return LocalClazz.GetField<string>("WANTS_INPUT_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -523,7 +523,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "showMessageDialog", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -657,7 +657,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.Field"/> to <see cref="Java.Lang.Reflect.Member"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.Member(Java.Lang.Reflect.Field t) => t.Cast<Java.Lang.Reflect.Member>();
-        
+
         #endregion
 
         #region Fields
@@ -310,7 +310,7 @@ namespace Java.Lang.Reflect
         {
             IExecute("setShort", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

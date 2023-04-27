@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.NumberUp"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.NumberUp t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -79,7 +79,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

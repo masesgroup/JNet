@@ -37,7 +37,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectStreamClass"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Io.ObjectStreamClass t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#NO_FIELDS"/>
         /// </summary>
         public static Java.Io.ObjectStreamField[] NO_FIELDS { get { return LocalClazz.GetField<Java.Io.ObjectStreamField[]>("NO_FIELDS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -67,7 +67,7 @@ namespace Java.Io
         {
             return SExecute<Java.Io.ObjectStreamClass>(LocalClazz, "lookupAny", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -108,7 +108,7 @@ namespace Java.Io
         {
             return IExecute<Java.Io.ObjectStreamField>("getField", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

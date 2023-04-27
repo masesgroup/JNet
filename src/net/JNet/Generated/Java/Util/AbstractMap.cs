@@ -37,7 +37,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractMap"/> to <see cref="Java.Util.Map"/>
         /// </summary>
         public static implicit operator Java.Util.Map(Java.Util.AbstractMap t) => t.Cast<Java.Util.Map>();
-        
+
         #endregion
 
         #region Fields
@@ -145,7 +145,7 @@ namespace Java.Util
         {
             IExecute("putAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -170,7 +170,7 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -178,7 +178,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -213,7 +213,11 @@ namespace Java.Util
             {
                 return IExecute("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -241,7 +245,7 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -253,7 +257,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleEntry"/>
             /// </summary>
             public static implicit operator Java.Util.AbstractMap.SimpleEntry(Java.Util.AbstractMap.SimpleEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleEntry>();
-            
+
             #endregion
 
             #region Fields
@@ -288,7 +292,11 @@ namespace Java.Util
             {
                 return IExecute<V>("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -316,7 +324,7 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -324,7 +332,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -359,7 +367,11 @@ namespace Java.Util
             {
                 return IExecute("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -387,7 +399,7 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -399,7 +411,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/>
             /// </summary>
             public static implicit operator Java.Util.AbstractMap.SimpleImmutableEntry(Java.Util.AbstractMap.SimpleImmutableEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleImmutableEntry>();
-            
+
             #endregion
 
             #region Fields
@@ -434,14 +446,18 @@ namespace Java.Util
             {
                 return IExecute<V>("setValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -464,7 +480,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.AbstractMap"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractMap(Java.Util.AbstractMap<K, V> t) => t.Cast<Java.Util.AbstractMap>();
-        
+
         #endregion
 
         #region Fields
@@ -572,7 +588,7 @@ namespace Java.Util
         {
             IExecute("putAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

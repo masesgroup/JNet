@@ -39,7 +39,7 @@ namespace Javax.Management.Openmbean
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -51,7 +51,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataSupport"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.CompositeDataSupport t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -113,7 +113,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecuteArray<object>("getAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

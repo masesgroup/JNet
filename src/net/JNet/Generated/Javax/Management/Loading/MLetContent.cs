@@ -40,7 +40,7 @@ namespace Javax.Management.Loading
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -126,7 +126,7 @@ namespace Javax.Management.Loading
         {
             get { return IExecute<string>("getVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

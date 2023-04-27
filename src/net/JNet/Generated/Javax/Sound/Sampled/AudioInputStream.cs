@@ -47,7 +47,7 @@ namespace Javax.Sound.Sampled
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -77,7 +77,7 @@ namespace Javax.Sound.Sampled
         {
             get { return IExecute<long>("getFrameLength"); }
         }
-        
+
         #endregion
 
         #region Nested classes

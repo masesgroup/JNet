@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.LinkedBlockingDeque t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollFirst()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollLast()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
@@ -346,7 +346,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("putLast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -377,7 +377,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -393,7 +393,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.LinkedBlockingDeque"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.LinkedBlockingDeque(Java.Util.Concurrent.LinkedBlockingDeque<E> t) => t.Cast<Java.Util.Concurrent.LinkedBlockingDeque>();
-        
+
         #endregion
 
         #region Fields
@@ -575,7 +575,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollFirst()"/>
         /// </summary>
-        
+
         /// <returns><see cref="E"/></returns>
         public E PollFirst()
         {
@@ -595,7 +595,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollLast()"/>
         /// </summary>
-        
+
         /// <returns><see cref="E"/></returns>
         public E PollLast()
         {
@@ -682,7 +682,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("putLast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

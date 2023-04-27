@@ -73,7 +73,7 @@ namespace Java.Awt.Im
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#TRADITIONAL_HANZI"/>
         /// </summary>
         public static Java.Awt.Im.InputSubset TRADITIONAL_HANZI { get { return LocalClazz.GetField<Java.Awt.Im.InputSubset>("TRADITIONAL_HANZI"); } }
-        
+
         #endregion
 
         #region Static methods

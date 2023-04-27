@@ -37,7 +37,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.StandardCopyOption"/> to <see cref="Java.Nio.File.CopyOption"/>
         /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.StandardCopyOption t) => t.Cast<Java.Nio.File.CopyOption>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#REPLACE_EXISTING"/>
         /// </summary>
         public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING { get { return LocalClazz.GetField<Java.Nio.File.StandardCopyOption>("REPLACE_EXISTING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.StandardCopyOption>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

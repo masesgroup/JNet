@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Locks
         /// Converter from <see cref="Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields

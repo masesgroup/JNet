@@ -37,7 +37,7 @@ namespace Javax.Accessibility
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -118,7 +118,7 @@ namespace Javax.Accessibility
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

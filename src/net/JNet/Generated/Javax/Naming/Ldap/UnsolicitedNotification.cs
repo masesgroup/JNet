@@ -41,7 +41,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.UnsolicitedNotification"/> to <see cref="Javax.Naming.Ldap.HasControls"/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.HasControls(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.HasControls>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecuteArray<string>("getReferrals"); }
         }
-        
+
         #endregion
 
         #region Nested classes

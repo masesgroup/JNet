@@ -73,7 +73,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic"/>
         /// </summary>
         public static int REF_putStatic { get { return LocalClazz.GetField<int>("REF_putStatic"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Java.Lang.Invoke
         {
             return SExecute<string>(LocalClazz, "toString", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -154,7 +154,7 @@ namespace Java.Lang.Invoke
         {
             return IExecute<T>("reflectAs", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

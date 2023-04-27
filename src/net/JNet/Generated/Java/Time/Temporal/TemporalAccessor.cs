@@ -90,7 +90,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

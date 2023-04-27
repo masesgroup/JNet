@@ -88,7 +88,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -104,7 +104,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#WHEEL_UNIT_SCROLL"/>
         /// </summary>
         public static int WHEEL_UNIT_SCROLL { get { return LocalClazz.GetField<int>("WHEEL_UNIT_SCROLL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -147,7 +147,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<int>("getWheelRotation"); }
         }
-        
+
         #endregion
 
         #region Nested classes

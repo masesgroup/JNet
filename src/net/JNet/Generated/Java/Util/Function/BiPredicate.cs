@@ -80,7 +80,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiPredicate>("or", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -103,7 +103,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.BiPredicate{T, U}"/> to <see cref="Java.Util.Function.BiPredicate"/>
         /// </summary>
         public static implicit operator Java.Util.Function.BiPredicate(Java.Util.Function.BiPredicate<T, U> t) => t.Cast<Java.Util.Function.BiPredicate>();
-        
+
         #endregion
 
         #region Fields
@@ -150,7 +150,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiPredicate<T, U>>("or", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

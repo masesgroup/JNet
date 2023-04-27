@@ -40,7 +40,7 @@ namespace Javax.Swing.Event
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED"/>
         /// </summary>
         public static int ANCESTOR_REMOVED { get { return LocalClazz.GetField<int>("ANCESTOR_REMOVED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -89,7 +89,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<Javax.Swing.JComponent>("getComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

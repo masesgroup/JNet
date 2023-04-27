@@ -49,7 +49,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE"/>
         /// </summary>
         public static int FLAG_SERIALIZABLE { get { return LocalClazz.GetField<int>("FLAG_SERIALIZABLE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -81,7 +81,7 @@ namespace Java.Lang.Invoke
         {
             return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "metafactory", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Instance methods

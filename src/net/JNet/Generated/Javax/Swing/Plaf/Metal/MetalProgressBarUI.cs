@@ -63,7 +63,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("paintIndeterminate", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

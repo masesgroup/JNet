@@ -55,7 +55,7 @@ namespace Java.Lang
         {
             return IExecute<int>("read", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

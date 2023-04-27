@@ -49,7 +49,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormattableFlags.html#UPPERCASE"/>
         /// </summary>
         public static int UPPERCASE { get { return LocalClazz.GetField<int>("UPPERCASE"); } }
-        
+
         #endregion
 
         #region Static methods

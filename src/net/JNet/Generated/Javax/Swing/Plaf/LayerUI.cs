@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.LayerUI"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.LayerUI t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("updateUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -187,7 +187,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.LayerUI{V}"/> to <see cref="Javax.Swing.Plaf.LayerUI"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.LayerUI(Javax.Swing.Plaf.LayerUI<V> t) => t.Cast<Javax.Swing.Plaf.LayerUI>();
-        
+
         #endregion
 
         #region Fields
@@ -310,7 +310,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("updateUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

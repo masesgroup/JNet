@@ -41,7 +41,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.ScrollPaneAdjustable"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ScrollPaneAdjustable t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -139,7 +139,7 @@ namespace Java.Awt
         {
             IExecute("removeAdjustmentListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

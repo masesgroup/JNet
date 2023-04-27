@@ -160,7 +160,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragGestureListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -259,7 +259,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -444,7 +444,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -457,7 +457,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceMotionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -513,7 +513,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DropTargetAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -698,7 +698,7 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DropTargetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

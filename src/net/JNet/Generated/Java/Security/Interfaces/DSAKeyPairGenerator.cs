@@ -66,7 +66,7 @@ namespace Java.Security.Interfaces
         {
             IExecute("initialize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

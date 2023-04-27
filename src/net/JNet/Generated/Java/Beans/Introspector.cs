@@ -49,7 +49,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO"/>
         /// </summary>
         public static int USE_ALL_BEANINFO { get { return LocalClazz.GetField<int>("USE_ALL_BEANINFO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -128,7 +128,7 @@ namespace Java.Beans
         {
             SExecute(LocalClazz, "flushFromCaches", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

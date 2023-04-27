@@ -52,7 +52,7 @@ namespace Java.Lang
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes

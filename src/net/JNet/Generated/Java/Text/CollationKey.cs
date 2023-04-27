@@ -37,7 +37,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.CollationKey"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Text.CollationKey t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Java.Text
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

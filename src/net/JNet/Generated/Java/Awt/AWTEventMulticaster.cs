@@ -101,7 +101,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseWheelListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseWheelListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseWheelListener>();
-        
+
         #endregion
 
         #region Fields
@@ -459,7 +459,7 @@ namespace Java.Awt
         {
             return SExecute<Java.Awt.EventNs.WindowStateListener>(LocalClazz, "remove", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -767,7 +767,7 @@ namespace Java.Awt
         {
             IExecute("windowStateChanged", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Security.Auth.Kerberos
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Security.Auth.Kerberos
         /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosPrincipal t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -86,7 +86,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UNKNOWN"/>
         /// </summary>
         public static int KRB_NT_UNKNOWN { get { return LocalClazz.GetField<int>("KRB_NT_UNKNOWN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -115,7 +115,7 @@ namespace Javax.Security.Auth.Kerberos
         {
             get { return IExecute<string>("getRealm"); }
         }
-        
+
         #endregion
 
         #region Nested classes

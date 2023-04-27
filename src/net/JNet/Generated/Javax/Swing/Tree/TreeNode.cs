@@ -98,7 +98,7 @@ namespace Javax.Swing.Tree
         {
             return IExecute<Javax.Swing.Tree.TreeNode>("getChildAt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

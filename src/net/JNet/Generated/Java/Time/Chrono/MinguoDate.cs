@@ -41,7 +41,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.MinguoDate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.MinguoDate t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now()
         {
@@ -87,7 +87,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.MinguoDate>(LocalClazz, "of", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -102,7 +102,7 @@ namespace Java.Rmi.Server
         {
             return SExecute<Java.Rmi.Remote>(LocalClazz, "exportObject", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

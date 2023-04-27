@@ -94,7 +94,7 @@ namespace Java.Net
         {
             IExecute("add", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

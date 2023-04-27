@@ -109,7 +109,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.KeyStore>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -349,7 +349,7 @@ namespace Java.Security
         {
             IExecute("store", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -412,7 +412,7 @@ namespace Java.Security
             {
                 return SExecute<Java.Security.KeyStore.Builder>(LocalClazz, "newInstance", arg0, arg1);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -433,7 +433,11 @@ namespace Java.Security
             {
                 return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -452,7 +456,7 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -475,7 +479,11 @@ namespace Java.Security
             {
                 get { return IExecute<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -509,7 +517,11 @@ namespace Java.Security
             {
                 get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -543,7 +555,11 @@ namespace Java.Security
             {
                 get { return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -572,7 +588,7 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -580,7 +596,7 @@ namespace Java.Security
             /// Converter from <see cref="Java.Security.KeyStore.PasswordProtection"/> to <see cref="Javax.Security.Auth.Destroyable"/>
             /// </summary>
             public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.KeyStore.PasswordProtection t) => t.Cast<Javax.Security.Auth.Destroyable>();
-            
+
             #endregion
 
             #region Fields
@@ -623,13 +639,17 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>
             /// </summary>
-            
+
             /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
             public void Destroy()
             {
                 IExecute("destroy");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -659,7 +679,7 @@ namespace Java.Security
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -703,7 +723,11 @@ namespace Java.Security
             {
                 get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -733,6 +757,10 @@ namespace Java.Security
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -758,7 +786,7 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -788,7 +816,11 @@ namespace Java.Security
             {
                 get { return IExecute<Javax.Crypto.SecretKey>("getSecretKey"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -816,7 +848,7 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -846,14 +878,18 @@ namespace Java.Security
             {
                 get { return IExecute<Java.Security.Cert.Certificate>("getTrustedCertificate"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

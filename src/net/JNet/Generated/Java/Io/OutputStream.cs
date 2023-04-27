@@ -41,7 +41,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.OutputStream"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.OutputStream t) => t.Cast<Java.Io.Flushable>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Java.Io
         {
             get { return SExecute<Java.Io.OutputStream>(LocalClazz, "nullOutputStream"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -72,7 +72,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -81,7 +81,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -107,7 +107,7 @@ namespace Java.Io
         {
             IExecute("write", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

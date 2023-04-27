@@ -59,7 +59,7 @@ namespace Javax.Xml.Transform.Sax
         {
             get { return IExecute<Javax.Xml.Transform.Templates>("getTemplates"); }
         }
-        
+
         #endregion
 
         #region Nested classes

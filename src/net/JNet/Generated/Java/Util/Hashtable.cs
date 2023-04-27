@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Hashtable t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -101,7 +101,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySetMethod()
         {
@@ -110,7 +110,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySetMethod()
         {
@@ -257,7 +257,7 @@ namespace Java.Util
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -297,7 +297,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -317,7 +317,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Hashtable{K, V}"/> to <see cref="Java.Util.Hashtable"/>
         /// </summary>
         public static implicit operator Java.Util.Hashtable(Java.Util.Hashtable<K, V> t) => t.Cast<Java.Util.Hashtable>();
-        
+
         #endregion
 
         #region Fields
@@ -348,7 +348,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySetMethod()
         {
@@ -357,7 +357,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySetMethod()
         {
@@ -504,7 +504,7 @@ namespace Java.Util
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

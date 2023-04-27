@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -110,7 +110,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -118,7 +118,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.WeakHashMap{K, V}"/> to <see cref="Java.Util.WeakHashMap"/>
         /// </summary>
         public static implicit operator Java.Util.WeakHashMap(Java.Util.WeakHashMap<K, V> t) => t.Cast<Java.Util.WeakHashMap>();
-        
+
         #endregion
 
         #region Fields

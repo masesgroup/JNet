@@ -86,7 +86,7 @@ namespace Javax.Management.Loading
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -102,7 +102,7 @@ namespace Javax.Management.Loading
         /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Java.Io.Externalizable"/>
         /// </summary>
         public static implicit operator Java.Io.Externalizable(Javax.Management.Loading.MLet t) => t.Cast<Java.Io.Externalizable>();
-        
+
         #endregion
 
         #region Fields
@@ -198,7 +198,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -225,7 +225,7 @@ namespace Javax.Management.Loading
         {
             IExecute("writeExternal", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

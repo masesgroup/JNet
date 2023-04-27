@@ -67,7 +67,7 @@ namespace Java.Lang
         {
             IExecute("forEach", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Iterable{T}"/> to <see cref="Java.Lang.Iterable"/>
         /// </summary>
         public static implicit operator Java.Lang.Iterable(Java.Lang.Iterable<T> t) => t.Cast<Java.Lang.Iterable>();
-        
+
         #endregion
 
         #region Fields
@@ -124,7 +124,7 @@ namespace Java.Lang
         {
             IExecute("forEach", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

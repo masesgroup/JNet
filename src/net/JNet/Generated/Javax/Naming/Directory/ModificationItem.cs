@@ -38,7 +38,7 @@ namespace Javax.Naming.Directory
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.ModificationItem"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.ModificationItem t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Javax.Naming.Directory
         {
             get { return IExecute<int>("getModificationOp"); }
         }
-        
+
         #endregion
 
         #region Nested classes

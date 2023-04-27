@@ -56,7 +56,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,13 +75,13 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html#finish()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Finish()
         {
             IExecute("finish");
         }
-        
+
         #endregion
 
         #region Nested classes

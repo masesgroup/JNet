@@ -59,7 +59,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<int>("getMask", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

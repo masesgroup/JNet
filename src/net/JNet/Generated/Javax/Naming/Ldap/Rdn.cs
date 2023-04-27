@@ -65,7 +65,7 @@ namespace Javax.Naming.Ldap
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -77,7 +77,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.Rdn"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Javax.Naming.Ldap.Rdn t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Javax.Naming.Ldap
         {
             return SExecute<string>(LocalClazz, "escapeValue", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -144,7 +144,7 @@ namespace Javax.Naming.Ldap
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

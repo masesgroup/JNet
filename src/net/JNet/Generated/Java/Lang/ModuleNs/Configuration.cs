@@ -72,7 +72,7 @@ namespace Java.Lang.ModuleNs
         {
             return SExecute<Java.Lang.ModuleNs.Configuration>(LocalClazz, "resolveAndBind", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -121,7 +121,7 @@ namespace Java.Lang.ModuleNs
         {
             return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ResolvedModule>>("findModule", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

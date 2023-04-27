@@ -73,7 +73,7 @@ namespace Java.Nio.Channels
         {
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalClazz, "withThreadPool", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -119,13 +119,13 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownNow()
         {
             IExecute("shutdownNow");
         }
-        
+
         #endregion
 
         #region Nested classes

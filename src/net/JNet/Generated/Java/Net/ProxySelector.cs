@@ -57,7 +57,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.ProxySelector>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -80,7 +80,7 @@ namespace Java.Net
         {
             IExecute("connectFailed", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

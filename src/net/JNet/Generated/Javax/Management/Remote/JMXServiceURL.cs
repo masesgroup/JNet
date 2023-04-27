@@ -61,7 +61,7 @@ namespace Javax.Management.Remote
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Management.Remote
         /// Converter from <see cref="Javax.Management.Remote.JMXServiceURL"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.JMXServiceURL t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Javax.Management.Remote
         {
             get { return IExecute<string>("getURLPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

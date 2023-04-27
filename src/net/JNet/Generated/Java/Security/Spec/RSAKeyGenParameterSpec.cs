@@ -48,7 +48,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.RSAKeyGenParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.RSAKeyGenParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -68,7 +68,7 @@ namespace Java.Security.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#F4"/>
         /// </summary>
         public static Java.Math.BigInteger F4 { get { return LocalClazz.GetField<Java.Math.BigInteger>("F4"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -97,7 +97,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getPublicExponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.PKIXCertPathChecker"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Java.Security.Cert
         {
             IExecute("check", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

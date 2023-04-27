@@ -72,7 +72,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -80,7 +80,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.PixelGrabber"/> to <see cref="Java.Awt.ImageNs.ImageConsumer"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.PixelGrabber t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
-        
+
         #endregion
 
         #region Fields
@@ -130,7 +130,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels()
@@ -150,7 +150,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int GetStatus()
         {
@@ -233,7 +233,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setProperties", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -63,7 +63,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiConsumer>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.BiConsumer{T, U}"/> to <see cref="Java.Util.Function.BiConsumer"/>
         /// </summary>
         public static implicit operator Java.Util.Function.BiConsumer(Java.Util.Function.BiConsumer<T, U> t) => t.Cast<Java.Util.Function.BiConsumer>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiConsumer<T, U>>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

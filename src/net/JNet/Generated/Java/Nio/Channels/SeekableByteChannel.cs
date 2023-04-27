@@ -95,14 +95,14 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#position()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Position()
         {
             return IExecute<long>("position");
         }
-        
+
         #endregion
 
         #region Nested classes

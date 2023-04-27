@@ -160,7 +160,7 @@ namespace Javax.Print.Attribute
         {
             SExecute(LocalClazz, "verifyCategoryForValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

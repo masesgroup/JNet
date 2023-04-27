@@ -37,7 +37,7 @@ namespace Javax.Xml.Datatype
         /// Converter from <see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Xml.Datatype.XMLGregorianCalendar t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -166,7 +166,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public Java.Util.GregorianCalendar ToGregorianCalendar()
         {
@@ -262,7 +262,7 @@ namespace Javax.Xml.Datatype
         {
             IExecute("setTime", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

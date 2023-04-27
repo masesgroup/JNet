@@ -39,7 +39,7 @@ namespace Javax.Naming
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.CompoundName"/> to <see cref="Javax.Naming.Name"/>
         /// </summary>
         public static implicit operator Javax.Naming.Name(Javax.Naming.CompoundName t) => t.Cast<Javax.Naming.Name>();
-        
+
         #endregion
 
         #region Fields
@@ -186,7 +186,7 @@ namespace Javax.Naming
         {
             return IExecute<Javax.Naming.Name>("getSuffix", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

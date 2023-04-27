@@ -213,7 +213,7 @@ namespace Java.Awt.ImageNs
         {
             return SExecute<Java.Awt.ImageNs.WritableRaster>(LocalClazz, "createWritableRaster", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -483,7 +483,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster()
         {
@@ -544,7 +544,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute("getDataElements", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

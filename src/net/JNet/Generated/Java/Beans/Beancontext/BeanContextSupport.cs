@@ -67,7 +67,7 @@ namespace Java.Beans.Beancontext
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Java.Beans.Beancontext
         /// Converter from <see cref="Java.Beans.Beancontext.BeanContextSupport"/> to <see cref="Java.Beans.VetoableChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.VetoableChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -273,7 +273,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -360,7 +360,7 @@ namespace Java.Beans.Beancontext
         {
             IExecute("vetoableChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

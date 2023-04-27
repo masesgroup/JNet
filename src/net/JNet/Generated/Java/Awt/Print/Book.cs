@@ -37,7 +37,7 @@ namespace Java.Awt.Print
         /// Converter from <see cref="Java.Awt.Print.Book"/> to <see cref="Java.Awt.Print.Pageable"/>
         /// </summary>
         public static implicit operator Java.Awt.Print.Pageable(Java.Awt.Print.Book t) => t.Cast<Java.Awt.Print.Pageable>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Java.Awt.Print
         {
             IExecute("setPage", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

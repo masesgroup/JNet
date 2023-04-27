@@ -45,7 +45,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#LINE"/>
         /// </summary>
         public static int LINE { get { return LocalClazz.GetField<int>("LINE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -103,7 +103,7 @@ namespace Javax.Accessibility
         {
             return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceBefore", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

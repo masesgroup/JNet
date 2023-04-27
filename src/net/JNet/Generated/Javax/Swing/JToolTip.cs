@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JToolTip"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JToolTip t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Javax.Swing
         {
             get { return IExecute<string>("getTipText"); } set { IExecute("setTipText", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

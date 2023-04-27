@@ -47,7 +47,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -72,7 +72,7 @@ namespace Java.Util
         {
             return IExecute("handleGetObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

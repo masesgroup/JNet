@@ -61,7 +61,7 @@ namespace Java.Util.Spi
         {
             return IExecute<bool>("isSupportedLocale", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

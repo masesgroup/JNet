@@ -66,7 +66,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedUpperBounds"); }
         }
-        
+
         #endregion
 
         #region Nested classes

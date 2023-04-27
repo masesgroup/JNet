@@ -113,7 +113,7 @@ namespace Javax.Management.Monitor
         {
             IExecute("stop");
         }
-        
+
         #endregion
 
         #region Nested classes

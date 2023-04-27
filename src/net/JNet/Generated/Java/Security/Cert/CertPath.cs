@@ -37,7 +37,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.CertPath"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Cert.CertPath t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -87,7 +87,7 @@ namespace Java.Security.Cert
         {
             return IExecuteArray<byte>("getEncoded", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -162,7 +162,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -193,7 +193,7 @@ namespace Java.Util
         {
             return IExecute<bool>("removeIf", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -216,7 +216,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Collection{E}"/> to <see cref="Java.Util.Collection"/>
         /// </summary>
         public static implicit operator Java.Util.Collection(Java.Util.Collection<E> t) => t.Cast<Java.Util.Collection>();
-        
+
         #endregion
 
         #region Fields
@@ -345,7 +345,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -376,7 +376,7 @@ namespace Java.Util
         {
             return IExecute<bool>("removeIf", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

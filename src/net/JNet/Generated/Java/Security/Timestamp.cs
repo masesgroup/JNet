@@ -38,7 +38,7 @@ namespace Java.Security
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.Timestamp"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Timestamp t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Java.Security
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getSignerCertPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

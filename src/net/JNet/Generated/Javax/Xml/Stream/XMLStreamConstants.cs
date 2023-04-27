@@ -97,7 +97,7 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_ELEMENT"/>
         /// </summary>
         public static int START_ELEMENT { get { return LocalClazz.GetField<int>("START_ELEMENT"); } }
-        
+
         #endregion
 
         #region Static methods

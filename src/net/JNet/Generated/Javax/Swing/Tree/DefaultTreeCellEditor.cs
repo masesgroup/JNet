@@ -48,7 +48,7 @@ namespace Javax.Swing.Tree
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/> to <see cref="Javax.Swing.Event.TreeSelectionListener"/>
         /// </summary>
         public static implicit operator Javax.Swing.Event.TreeSelectionListener(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Javax.Swing.Event.TreeSelectionListener>();
-        
+
         #endregion
 
         #region Fields
@@ -182,7 +182,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("valueChanged", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -199,7 +199,7 @@ namespace Javax.Swing.Tree
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -215,6 +215,10 @@ namespace Javax.Swing.Tree
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -234,7 +238,7 @@ namespace Javax.Swing.Tree
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -257,14 +261,18 @@ namespace Javax.Swing.Tree
             {
                 IExecute("EditorContainer");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

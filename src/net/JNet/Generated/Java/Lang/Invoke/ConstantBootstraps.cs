@@ -149,7 +149,7 @@ namespace Java.Lang.Invoke
         {
             return SExecute(LocalClazz, "nullConstant", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -89,7 +89,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#UPGRADE_MODULE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH { get { return LocalClazz.GetField<Javax.Tools.StandardLocation>("UPGRADE_MODULE_PATH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -118,7 +118,7 @@ namespace Javax.Tools
         {
             return SExecute<Javax.Tools.StandardLocation>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -143,7 +143,7 @@ namespace Javax.Tools
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -49,7 +49,7 @@ namespace Javax.Management
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.StandardMBean"/> to <see cref="Javax.Management.MBeanRegistration"/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.StandardMBean t) => t.Cast<Javax.Management.MBeanRegistration>();
-        
+
         #endregion
 
         #region Fields
@@ -173,7 +173,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -191,7 +191,7 @@ namespace Javax.Management
         {
             IExecute("setAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

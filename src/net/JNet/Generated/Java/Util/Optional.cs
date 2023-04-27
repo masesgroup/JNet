@@ -66,7 +66,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Optional>(LocalClazz, "ofNullable", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -165,7 +165,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object OrElseThrow()
         {
@@ -188,7 +188,7 @@ namespace Java.Util
         {
             IExecute("ifPresentOrElse", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -211,7 +211,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Optional{T}"/> to <see cref="Java.Util.Optional"/>
         /// </summary>
         public static implicit operator Java.Util.Optional(Java.Util.Optional<T> t) => t.Cast<Java.Util.Optional>();
-        
+
         #endregion
 
         #region Fields
@@ -244,7 +244,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Optional<T>>(LocalClazz, "ofNullable", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -343,7 +343,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="T"/></returns>
         public T OrElseThrow()
         {
@@ -366,7 +366,7 @@ namespace Java.Util
         {
             IExecute("ifPresentOrElse", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

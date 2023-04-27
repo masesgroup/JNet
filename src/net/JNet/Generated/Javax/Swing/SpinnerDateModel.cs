@@ -40,7 +40,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Javax.Swing
         {
             get { return IExecute<Java.Lang.Comparable<Java.Util.Date>>("getStart"); } set { IExecute("setStart", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

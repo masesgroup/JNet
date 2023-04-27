@@ -53,7 +53,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_UNION"/>
         /// </summary>
         public static int DERIVATION_UNION { get { return LocalClazz.GetField<int>("DERIVATION_UNION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -86,7 +86,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<bool>("isDerivedFrom", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

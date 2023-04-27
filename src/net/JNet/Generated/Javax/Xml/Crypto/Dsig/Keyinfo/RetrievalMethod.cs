@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             return IExecute<Javax.Xml.Crypto.Data>("dereference", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

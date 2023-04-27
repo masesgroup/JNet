@@ -52,7 +52,7 @@ namespace Java.Beans
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

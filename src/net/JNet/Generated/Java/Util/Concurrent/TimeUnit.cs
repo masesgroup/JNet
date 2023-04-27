@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit SECONDS { get { return LocalClazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -94,7 +94,7 @@ namespace Java.Util.Concurrent
         {
             return SExecute<Java.Util.Concurrent.TimeUnit>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -216,7 +216,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("timedWait", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

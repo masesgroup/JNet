@@ -37,7 +37,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.ForwardingFileObject"/> to <see cref="Javax.Tools.FileObject"/>
         /// </summary>
         public static implicit operator Javax.Tools.FileObject(Javax.Tools.ForwardingFileObject t) => t.Cast<Javax.Tools.FileObject>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Javax.Tools
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -145,7 +145,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.ForwardingFileObject{F}"/> to <see cref="Javax.Tools.ForwardingFileObject"/>
         /// </summary>
         public static implicit operator Javax.Tools.ForwardingFileObject(Javax.Tools.ForwardingFileObject<F> t) => t.Cast<Javax.Tools.ForwardingFileObject>();
-        
+
         #endregion
 
         #region Fields
@@ -226,7 +226,7 @@ namespace Javax.Tools
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -59,7 +59,7 @@ namespace Javax.Accessibility
         {
             IExecute("activate");
         }
-        
+
         #endregion
 
         #region Nested classes

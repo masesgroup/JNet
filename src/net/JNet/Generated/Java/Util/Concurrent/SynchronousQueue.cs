@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.SynchronousQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.SynchronousQueue t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -149,7 +149,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.SynchronousQueue{E}"/> to <see cref="Java.Util.Concurrent.SynchronousQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.SynchronousQueue(Java.Util.Concurrent.SynchronousQueue<E> t) => t.Cast<Java.Util.Concurrent.SynchronousQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
