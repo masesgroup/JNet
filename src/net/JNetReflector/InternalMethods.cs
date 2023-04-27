@@ -51,7 +51,6 @@ namespace MASES.JNetReflector
         {
             TraceReportHandler = traceReport;
             Level = level;
-            JNetReflectorHelper.EnableLogging = Level >= (int)ReflectionTraceLevel.Debug;
         }
 
         static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
@@ -191,6 +190,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeNamespaces()
         {
+            JNetReflectorHelper.EnableLogging = Level >= (int)ReflectionTraceLevel.Debug;
             SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
             foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
@@ -373,6 +373,8 @@ namespace MASES.JNetReflector
 
             foreach (var entry in nestedClasses)
             {
+                if (entry.JVMNestingLevels() > 1) continue; // till now remove classes with high nesting
+
                 string nestedClassBlock;
                 string singleNestedClassStr;
                 entry.PrepareSingleClass(classDefinitions, false, out nestedClassBlock, out singleNestedClassStr);
@@ -472,6 +474,7 @@ namespace MASES.JNetReflector
 
         static void PrepareSingleClass(this Class jClass, ICollection<Class> classDefinitions, bool isGeneric, out string classBlock, out string singleClassStr)
         {
+            int nestingLevel = jClass.JVMNestingLevels();
             string stubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
             string stubListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
             string stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
@@ -939,6 +942,7 @@ namespace MASES.JNetReflector
             {
                 if (staticMethods ^ method.IsStatic()) continue;
 
+                int nestingLevel = classDefinition.JVMNestingLevels();
                 var genString = method.GenericString;
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
@@ -947,7 +951,7 @@ namespace MASES.JNetReflector
                 {
                     var propertyName = method.PropertyName(classDefinitions, false, JNetReflectorCore.UseCamel);
                     if (propertyName.IsReservedName()
-                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
+                        || propertyName.CollapseWithClassOrNestedClass(nestingLevel, classDefinitions)
                         || propertyName.CollapseWithOtherMethods(method, prefilteredMethods, classDefinitions, JNetReflectorCore.UseCamel))
                     {
                         methods.Add(genString, method);
@@ -1462,6 +1466,7 @@ namespace MASES.JNetReflector
                 sortedFilteredFields.Add(field.GenericString, field);
             }
 
+            int nestingLevel = classDefinition.JVMNestingLevels();
             StringBuilder subClassBlock = new StringBuilder();
             foreach (var field in sortedFilteredFields.Values)
             {
@@ -1476,7 +1481,7 @@ namespace MASES.JNetReflector
                 string fieldType = field.Type(genArguments, genClause, isGeneric, JNetReflectorCore.UseCamel);
                 string fieldName = field.Name(false);
 
-                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
+                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(nestingLevel, classDefinitions))
                 {
                     fieldName += "Field";
                 }

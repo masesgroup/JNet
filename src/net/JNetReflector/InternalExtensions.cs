@@ -70,14 +70,21 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithClassOrNestedClass(this string entry, ICollection<Class> classDefinitions)
+        public static bool CollapseWithClassOrNestedClass(this string entry, int nestingLevel, ICollection<Class> classDefinitions)
         {
             foreach (var classDefinition in classDefinitions)
             {
-                bool collpase;
+                bool collpase = false;
                 if (classDefinition.IsJVMNestedClass())
                 {
-                    collpase = entry == classDefinition.JVMNestedClassName(null, false);
+                    if (classDefinition.JVMNestingLevels() == nestingLevel) // same level of requester
+                    {
+                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel, null, false);
+                    }
+                    else if (classDefinition.JVMNestingLevels() > nestingLevel) // more levels then requester
+                    {
+                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel + 1, null, false);
+                    }
                 }
                 else
                 {
@@ -753,6 +760,12 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static int JVMNestingLevels(this Class entry)
+        {
+            var result = entry.TypeName.Split(SpecialNames.NestedClassSeparator);
+            return result.Length - 1;
+        }
+
         public static bool IsJVMClass(this Class entry)
         {
             if (!entry.TypeName.Contains(SpecialNames.NestedClassSeparator)) return true;
@@ -761,7 +774,7 @@ namespace MASES.JNetReflector
 
         public static string JVMClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics)
         {
-            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(genClause, usedInGenerics);
+            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(entry.JVMNestingLevels(), genClause, usedInGenerics);
             var cName = entry.SimpleName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
             if (usedInGenerics) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
@@ -771,13 +784,17 @@ namespace MASES.JNetReflector
         public static string JVMMainClassName(this Class entry)
         {
             var cName = entry.TypeName;
-            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.IndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
-        static string JVMNestedClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool onlyName = false)
+        static string JVMNestedClassName(this Class entry, int nestingLevel, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool onlyName = false)
         {
             var cName = entry.TypeName;
-            cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1) : cName;
+            if (cName.Contains(SpecialNames.NestedClassSeparator))
+            {
+                var names = cName.Split(SpecialNames.NestedClassSeparator);
+                cName = names[nestingLevel];
+            }
             if (!onlyName) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
@@ -971,7 +988,7 @@ namespace MASES.JNetReflector
                 return true;
             }
 
-            string className = entry.JVMNestedClassName(null, true);
+            string className = entry.JVMNestedClassName(entry.JVMNestingLevels(), null, true);
 
             if (entry.IsJVMNestedClass()
                 && SpecialNames.SpecialNumberedNames.Any((o) => className.StartsWith(o))) return true;
@@ -1558,7 +1575,7 @@ namespace MASES.JNetReflector
             }
 
             if (camel) methodName2 = methodName2.Camel();
-            if (methodName2.IsReservedName() || methodName2.CollapseWithClassOrNestedClass(classDefinitions))
+            if (methodName2.IsReservedName() || methodName2.CollapseWithClassOrNestedClass(entry.DeclaringClass.JVMNestingLevels(), classDefinitions))
             {
                 return methodName;
             }
@@ -1568,7 +1585,7 @@ namespace MASES.JNetReflector
         public static string MethodName(this Method entry, ICollection<Class> classDefinitions, bool usedInGenerics, bool camel)
         {
             string nameToReport = entry.Name(classDefinitions, null, null, string.Empty, usedInGenerics, camel);
-            if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(classDefinitions))
+            if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(entry.DeclaringClass.JVMNestingLevels(), classDefinitions))
             {
                 nameToReport += SpecialNames.MethodSuffix;
             }
