@@ -221,7 +221,50 @@ namespace Java.Lang.ModuleNs
             public override bool IsStatic => true;
 
             // TODO: complete the class
+            #region Modifier
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Java.Lang.Enum
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Modifier() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Modifier(params object[] args) : base(args) { }
 
+                private static IJavaType LocalClazz = ClazzOf("java.lang.module.ModuleDescriptor$Exports$Modifier");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Exports$Modifier";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
         }
         #endregion
 
@@ -307,7 +350,50 @@ namespace Java.Lang.ModuleNs
             public override bool IsStatic => true;
 
             // TODO: complete the class
+            #region Modifier
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Java.Lang.Enum
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Modifier() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Modifier(params object[] args) : base(args) { }
 
+                private static IJavaType LocalClazz = ClazzOf("java.lang.module.ModuleDescriptor$Opens$Modifier");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Opens$Modifier";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
         }
         #endregion
 
@@ -393,7 +479,50 @@ namespace Java.Lang.ModuleNs
             public override bool IsStatic => true;
 
             // TODO: complete the class
+            #region Modifier
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
+            /// </summary>
+            public partial class Modifier : Java.Lang.Enum
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Modifier() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Modifier(params object[] args) : base(args) { }
 
+                private static IJavaType LocalClazz = ClazzOf("java.lang.module.ModuleDescriptor$Requires$Modifier");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.lang.module.ModuleDescriptor$Requires$Modifier";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
         }
         #endregion
 

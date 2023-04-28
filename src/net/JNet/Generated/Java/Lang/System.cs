@@ -394,7 +394,96 @@ namespace Java.Lang
             #endregion
 
             #region Nested classes
+            #region Level
+            public partial class Level
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#ALL"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level ALL { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("ALL"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#DEBUG"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level DEBUG { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("DEBUG"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#ERROR"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level ERROR { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("ERROR"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#INFO"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level INFO { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("INFO"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#OFF"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level OFF { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("OFF"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#TRACE"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level TRACE { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("TRACE"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#WARNING"/>
+                /// </summary>
+                public static Java.Lang.System.Logger.Level WARNING { get { return LocalClazz.GetField<Java.Lang.System.Logger.Level>("WARNING"); } }
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/> 
+                /// </summary>
+                public static Java.Lang.System.Logger.Level[] Values
+                {
+                    get { return SExecuteArray<Java.Lang.System.Logger.Level>(LocalClazz, "values"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="string"/></param>
+                /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
+                public static Java.Lang.System.Logger.Level ValueOf(string arg0)
+                {
+                    return SExecute<Java.Lang.System.Logger.Level>(LocalClazz, "valueOf", arg0);
+                }
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#getName()"/> 
+                /// </summary>
+                public string Name
+                {
+                    get { return IExecute<string>("getName"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#getSeverity()"/> 
+                /// </summary>
+                public int Severity
+                {
+                    get { return IExecute<int>("getSeverity"); }
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

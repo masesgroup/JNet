@@ -521,7 +521,52 @@ namespace Java.Security
             #endregion
 
             #region Nested classes
+            #region Attribute
+            public partial class Attribute
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html#getName()"/> 
+                /// </summary>
+                public string Name
+                {
+                    get { return IExecute<string>("getName"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html#getValue()"/> 
+                /// </summary>
+                public string Value
+                {
+                    get { return IExecute<string>("getValue"); }
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

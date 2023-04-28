@@ -317,7 +317,74 @@ namespace Java.Lang
             #endregion
 
             #region Nested classes
+            #region Type
+            public partial class Type
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#APPEND"/>
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type APPEND { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect.Type>("APPEND"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#INHERIT"/>
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type INHERIT { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect.Type>("INHERIT"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#PIPE"/>
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type PIPE { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect.Type>("PIPE"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#READ"/>
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type READ { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect.Type>("READ"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#WRITE"/>
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type WRITE { get { return LocalClazz.GetField<Java.Lang.ProcessBuilder.Redirect.Type>("WRITE"); } }
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#values()"/> 
+                /// </summary>
+                public static Java.Lang.ProcessBuilder.Redirect.Type[] Values
+                {
+                    get { return SExecuteArray<Java.Lang.ProcessBuilder.Redirect.Type>(LocalClazz, "values"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="string"/></param>
+                /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
+                public static Java.Lang.ProcessBuilder.Redirect.Type ValueOf(string arg0)
+                {
+                    return SExecute<Java.Lang.ProcessBuilder.Redirect.Type>(LocalClazz, "valueOf", arg0);
+                }
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

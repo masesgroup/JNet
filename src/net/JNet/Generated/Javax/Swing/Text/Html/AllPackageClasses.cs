@@ -576,7 +576,394 @@ namespace Javax.Swing.Text.Html
             public override bool IsStatic => false;
 
             // TODO: complete the class
+            #region FormAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.FormAction.html"/>
+            /// </summary>
+            public partial class FormAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.SpecialAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public FormAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public FormAction(params object[] args) : base(args) { }
 
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$FormAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$FormAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region CharacterAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.CharacterAction.html"/>
+            /// </summary>
+            public partial class CharacterAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.TagAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public CharacterAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public CharacterAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$CharacterAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$CharacterAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region PreAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.PreAction.html"/>
+            /// </summary>
+            public partial class PreAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.BlockAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public PreAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public PreAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$PreAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$PreAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region HiddenAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.HiddenAction.html"/>
+            /// </summary>
+            public partial class HiddenAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.TagAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public HiddenAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public HiddenAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$HiddenAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$HiddenAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region IsindexAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.IsindexAction.html"/>
+            /// </summary>
+            public partial class IsindexAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.TagAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public IsindexAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public IsindexAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$IsindexAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$IsindexAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region SpecialAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.SpecialAction.html"/>
+            /// </summary>
+            public partial class SpecialAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.TagAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public SpecialAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public SpecialAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$SpecialAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$SpecialAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region ParagraphAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.ParagraphAction.html"/>
+            /// </summary>
+            public partial class ParagraphAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.BlockAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public ParagraphAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public ParagraphAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$ParagraphAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$ParagraphAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region BlockAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.BlockAction.html"/>
+            /// </summary>
+            public partial class BlockAction : Javax.Swing.Text.Html.HTMLDocument.HTMLReader.TagAction
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public BlockAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public BlockAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$BlockAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$BlockAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region TagAction
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html"/>
+            /// </summary>
+            public partial class TagAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TagAction>
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public TagAction() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public TagAction(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("javax.swing.text.html.HTMLDocument$HTMLReader$TagAction");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "javax.swing.text.html.HTMLDocument$HTMLReader$TagAction";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => false;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
         }
         #endregion
 

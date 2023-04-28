@@ -315,7 +315,375 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Nested classes
+            #region FormAction
+            public partial class FormAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.FormAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public FormAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region CharacterAction
+            public partial class CharacterAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.CharacterAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public CharacterAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region PreAction
+            public partial class PreAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.PreAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public PreAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region HiddenAction
+            public partial class HiddenAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.HiddenAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public HiddenAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region IsindexAction
+            public partial class IsindexAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.IsindexAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public IsindexAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region SpecialAction
+            public partial class SpecialAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.SpecialAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public SpecialAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region ParagraphAction
+            public partial class ParagraphAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.ParagraphAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public ParagraphAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region BlockAction
+            public partial class BlockAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.BlockAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public BlockAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region TagAction
+            public partial class TagAction
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument.HTMLReader)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument.HTMLReader"/></param>
+                public TagAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html#end(javax.swing.text.html.HTML.Tag)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+                public void End(Javax.Swing.Text.Html.HTML.Tag arg0)
+                {
+                    IExecute("end", arg0);
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html#start(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+                /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
+                public void Start(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1)
+                {
+                    IExecute("start", arg0, arg1);
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class
