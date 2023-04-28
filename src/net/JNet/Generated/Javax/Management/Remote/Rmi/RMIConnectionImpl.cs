@@ -41,7 +41,7 @@ namespace Javax.Management.Remote.Rmi
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Management.Remote.Rmi
         /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnectionImpl"/> to <see cref="Java.Rmi.Server.Unreferenced"/>
         /// </summary>
         public static implicit operator Java.Rmi.Server.Unreferenced(Javax.Management.Remote.Rmi.RMIConnectionImpl t) => t.Cast<Java.Rmi.Server.Unreferenced>();
-        
+
         #endregion
 
         #region Fields
@@ -355,7 +355,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -437,7 +437,7 @@ namespace Javax.Management.Remote.Rmi
         {
             IExecute("unregisterMBean", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

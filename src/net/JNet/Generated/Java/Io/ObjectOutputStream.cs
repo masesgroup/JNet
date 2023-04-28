@@ -38,7 +38,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectOutputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
         /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#defaultWriteObject()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void DefaultWriteObject()
         {
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#reset()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
@@ -162,7 +162,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeFields()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFields()
         {
@@ -222,7 +222,7 @@ namespace Java.Io
         {
             IExecute("writeUTF", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -327,14 +327,18 @@ namespace Java.Io
             {
                 IExecute("put", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

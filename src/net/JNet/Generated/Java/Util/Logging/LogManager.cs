@@ -41,7 +41,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#LOGGING_MXBEAN_NAME"/>
         /// </summary>
         public static string LOGGING_MXBEAN_NAME { get { return LocalClazz.GetField<string>("LOGGING_MXBEAN_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -52,7 +52,7 @@ namespace Java.Util.Logging
         {
             get { return SExecute<Java.Util.Logging.LogManager>(LocalClazz, "getLogManager"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -102,7 +102,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.SecurityException"/>
         public void CheckAccess()
         {
@@ -111,7 +111,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
         public void ReadConfiguration()
@@ -139,7 +139,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#reset()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.SecurityException"/>
         public void Reset()
         {
@@ -164,7 +164,7 @@ namespace Java.Util.Logging
         {
             IExecute("updateConfiguration", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

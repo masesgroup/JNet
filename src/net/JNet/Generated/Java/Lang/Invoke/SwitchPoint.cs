@@ -49,7 +49,7 @@ namespace Java.Lang.Invoke
         {
             SExecute(LocalClazz, "invalidateAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("guardWithTest", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

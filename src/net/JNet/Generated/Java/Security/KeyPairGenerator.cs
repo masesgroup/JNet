@@ -74,7 +74,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.KeyPairGenerator>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -116,7 +116,7 @@ namespace Java.Security
         {
             IExecute("initialize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

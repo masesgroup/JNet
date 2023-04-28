@@ -49,7 +49,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_SET"/>
         /// </summary>
         public static Java.Util.Set EMPTY_SET { get { return LocalClazz.GetField<Java.Util.Set>("EMPTY_SET"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -319,7 +319,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public static Java.Util.Comparator<T> ReverseOrder<T>()
         {
@@ -337,7 +337,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> EmptyEnumerationMethod<T>()
         {
@@ -355,7 +355,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
         {
@@ -401,7 +401,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public static Java.Util.ListIterator<T> EmptyListIteratorMethod<T>()
         {
@@ -565,7 +565,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> EmptyMapMethod<K, V>()
         {
@@ -574,7 +574,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> EmptyListMethod<T>()
         {
@@ -583,7 +583,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> EmptySetMethod<T>()
         {
@@ -663,7 +663,7 @@ namespace Java.Util
         {
             SExecute(LocalClazz, "swap", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

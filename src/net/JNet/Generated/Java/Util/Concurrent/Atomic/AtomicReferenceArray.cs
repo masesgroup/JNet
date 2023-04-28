@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.AtomicReferenceArray t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -285,7 +285,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("setRelease", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -316,7 +316,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -328,7 +328,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray{E}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceArray(Java.Util.Concurrent.Atomic.AtomicReferenceArray<E> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceArray>();
-        
+
         #endregion
 
         #region Fields
@@ -568,7 +568,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("setRelease", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

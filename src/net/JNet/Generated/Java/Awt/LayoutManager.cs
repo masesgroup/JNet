@@ -88,7 +88,7 @@ namespace Java.Awt
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -75,7 +75,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.Chronology>(LocalClazz, "ofLocale", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -229,7 +229,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow()
         {
@@ -334,7 +334,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-        
+
         #endregion
 
         #region Nested classes

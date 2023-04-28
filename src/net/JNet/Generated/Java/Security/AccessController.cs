@@ -162,7 +162,7 @@ namespace Java.Security
         {
             SExecute(LocalClazz, "checkPermission", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

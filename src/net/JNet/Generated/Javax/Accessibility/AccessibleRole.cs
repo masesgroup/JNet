@@ -289,7 +289,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#WINDOW"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleRole WINDOW { get { return LocalClazz.GetField<Javax.Accessibility.AccessibleRole>("WINDOW"); } }
-        
+
         #endregion
 
         #region Static methods

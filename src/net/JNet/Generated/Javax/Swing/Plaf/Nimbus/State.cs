@@ -68,7 +68,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// Converter from <see cref="Javax.Swing.Plaf.Nimbus.State{T}"/> to <see cref="Javax.Swing.Plaf.Nimbus.State"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.Nimbus.State(Javax.Swing.Plaf.Nimbus.State<T> t) => t.Cast<Javax.Swing.Plaf.Nimbus.State>();
-        
+
         #endregion
 
         #region Fields

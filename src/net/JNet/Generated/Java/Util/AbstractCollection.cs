@@ -141,7 +141,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -154,7 +154,7 @@ namespace Java.Util
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -177,7 +177,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractCollection{E}"/> to <see cref="Java.Util.AbstractCollection"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractCollection(Java.Util.AbstractCollection<E> t) => t.Cast<Java.Util.AbstractCollection>();
-        
+
         #endregion
 
         #region Fields
@@ -285,7 +285,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -298,7 +298,7 @@ namespace Java.Util
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

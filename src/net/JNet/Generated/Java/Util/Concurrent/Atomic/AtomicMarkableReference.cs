@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("set", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicMarkableReference{V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicMarkableReference"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicMarkableReference(Java.Util.Concurrent.Atomic.AtomicMarkableReference<V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicMarkableReference>();
-        
+
         #endregion
 
         #region Fields
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("set", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

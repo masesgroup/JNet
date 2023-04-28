@@ -59,7 +59,7 @@ namespace Javax.Print
         {
             get { return IExecuteArray<Javax.Print.Attribute.Attribute>("getUnsupportedValues"); }
         }
-        
+
         #endregion
 
         #region Nested classes

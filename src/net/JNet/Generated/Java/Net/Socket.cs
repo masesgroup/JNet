@@ -82,7 +82,7 @@ namespace Java.Net
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -90,7 +90,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.Socket"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.Socket t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Java.Net
         {
             SExecute(LocalClazz, "setSocketImplFactory", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -303,7 +303,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -369,7 +369,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownInput()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownInput()
         {
@@ -378,13 +378,13 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownOutput()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownOutput()
         {
             IExecute("shutdownOutput");
         }
-        
+
         #endregion
 
         #region Nested classes

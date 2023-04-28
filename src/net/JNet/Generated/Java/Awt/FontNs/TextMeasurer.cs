@@ -38,7 +38,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt.FontNs
         /// Converter from <see cref="Java.Awt.FontNs.TextMeasurer"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.TextMeasurer t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Java.Awt.FontNs
         {
             IExecute("insertChar", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

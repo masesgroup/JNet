@@ -54,7 +54,7 @@ namespace Java.Text.Spi
         {
             return IExecute<Java.Text.DecimalFormatSymbols>("getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

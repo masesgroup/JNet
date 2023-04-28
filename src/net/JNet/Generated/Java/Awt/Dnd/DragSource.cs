@@ -37,7 +37,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.DragSource"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragSource t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveNoDrop"/>
         /// </summary>
         public static Java.Awt.Cursor DefaultMoveNoDrop { get { return LocalClazz.GetField<Java.Awt.Cursor>("DefaultMoveNoDrop"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Java.Awt.Dnd
         {
             get { return SExecute<bool>(LocalClazz, "isDragImageSupported"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -233,7 +233,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("startDrag", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -56,7 +56,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -201,7 +201,7 @@ namespace Java.Awt
         {
             IExecute("setImageAutoSize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -233,7 +233,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING"/>
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType WARNING { get { return LocalClazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -253,10 +253,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.TrayIcon.MessageType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -264,7 +268,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

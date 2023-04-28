@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultListCellRenderer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultListCellRenderer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -82,7 +82,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.DefaultListCellRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.DefaultListCellRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -97,11 +97,15 @@ namespace Javax.Swing
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

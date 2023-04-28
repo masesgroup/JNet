@@ -48,7 +48,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Menu"/> to <see cref="Java.Awt.MenuContainer"/>
         /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.Menu t) => t.Cast<Java.Awt.MenuContainer>();
-        
+
         #endregion
 
         #region Fields
@@ -164,7 +164,7 @@ namespace Java.Awt
         {
             IExecute("removeAll");
         }
-        
+
         #endregion
 
         #region Nested classes

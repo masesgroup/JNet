@@ -74,7 +74,7 @@ namespace Javax.Crypto
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -123,7 +123,7 @@ namespace Javax.Crypto
         {
             return IExecute<Javax.Crypto.SecretKey>("translateKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

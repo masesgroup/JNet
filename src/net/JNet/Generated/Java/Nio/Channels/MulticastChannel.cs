@@ -71,13 +71,13 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -76,7 +76,7 @@ namespace Javax.Tools
         {
             return IExecute<bool>("isNameCompatible", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -112,7 +112,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE"/>
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind SOURCE { get { return LocalClazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -132,10 +132,14 @@ namespace Javax.Tools
             {
                 return SExecute<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -143,7 +147,7 @@ namespace Javax.Tools
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

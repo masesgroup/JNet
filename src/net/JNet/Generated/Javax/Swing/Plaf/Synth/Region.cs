@@ -265,7 +265,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#VIEWPORT"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region VIEWPORT { get { return LocalClazz.GetField<Javax.Swing.Plaf.Synth.Region>("VIEWPORT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -287,7 +287,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

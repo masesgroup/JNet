@@ -93,7 +93,7 @@ namespace Java.Lang.Reflect
         {
             if (arg1.Length == 0) return IExecute("invoke", arg0); else return IExecute("invoke", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

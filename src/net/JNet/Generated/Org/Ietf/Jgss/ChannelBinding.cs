@@ -47,7 +47,7 @@ namespace Org.Ietf.Jgss
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Org.Ietf.Jgss
         {
             get { return IExecute<Java.Net.InetAddress>("getInitiatorAddress"); }
         }
-        
+
         #endregion
 
         #region Nested classes

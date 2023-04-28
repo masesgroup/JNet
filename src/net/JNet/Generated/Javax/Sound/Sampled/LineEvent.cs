@@ -39,7 +39,7 @@ namespace Javax.Sound.Sampled
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Javax.Sound.Sampled
         {
             get { return IExecute<Javax.Sound.Sampled.Line>("getLine"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -108,7 +108,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP"/>
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type STOP { get { return LocalClazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("STOP"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -119,11 +119,15 @@ namespace Javax.Sound.Sampled
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

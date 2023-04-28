@@ -59,7 +59,7 @@ namespace Javax.Management
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.MBeanConstructorInfo"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanConstructorInfo t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -86,7 +86,7 @@ namespace Javax.Management
         {
             get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
         }
-        
+
         #endregion
 
         #region Nested classes

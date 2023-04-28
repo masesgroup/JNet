@@ -48,7 +48,7 @@ namespace Java.Awt
         {
             get { return SExecute<Java.Awt.SplashScreen>(LocalClazz, "getSplashScreen"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Close()
         {
@@ -99,13 +99,13 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update()
         {
             IExecute("update");
         }
-        
+
         #endregion
 
         #region Nested classes

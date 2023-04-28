@@ -65,7 +65,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -99,7 +99,7 @@ namespace Java.Lang.ModuleNs
         {
             IExecute("release", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

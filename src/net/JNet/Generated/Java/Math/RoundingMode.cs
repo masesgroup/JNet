@@ -69,7 +69,7 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#UP"/>
         /// </summary>
         public static Java.Math.RoundingMode UP { get { return LocalClazz.GetField<Java.Math.RoundingMode>("UP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Java.Math
         {
             return SExecute<Java.Math.RoundingMode>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

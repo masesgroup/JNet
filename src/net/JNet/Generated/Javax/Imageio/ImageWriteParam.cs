@@ -37,7 +37,7 @@ namespace Javax.Imageio
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_EXPLICIT"/>
         /// </summary>
         public static int MODE_EXPLICIT { get { return LocalClazz.GetField<int>("MODE_EXPLICIT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -243,7 +243,7 @@ namespace Javax.Imageio
         {
             IExecute("unsetTiling");
         }
-        
+
         #endregion
 
         #region Nested classes

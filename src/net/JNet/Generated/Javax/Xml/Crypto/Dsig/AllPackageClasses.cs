@@ -577,7 +577,7 @@ namespace Javax.Xml.Crypto.Dsig
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -592,10 +592,11 @@ namespace Javax.Xml.Crypto.Dsig
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 

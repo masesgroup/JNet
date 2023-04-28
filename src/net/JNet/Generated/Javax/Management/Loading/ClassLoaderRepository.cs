@@ -77,7 +77,7 @@ namespace Javax.Management.Loading
         {
             return IExecute<Java.Lang.Class>("loadClassWithout", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

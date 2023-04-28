@@ -55,7 +55,7 @@ namespace Java.Awt
         {
             get { return SExecute<Java.Awt.GraphicsEnvironment>(LocalClazz, "getLocalGraphicsEnvironment"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -149,7 +149,7 @@ namespace Java.Awt
         {
             IExecute("preferProportionalFonts");
         }
-        
+
         #endregion
 
         #region Nested classes

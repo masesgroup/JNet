@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf
         {
             return IExecute<Javax.Swing.JButton>("getDefaultButton", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

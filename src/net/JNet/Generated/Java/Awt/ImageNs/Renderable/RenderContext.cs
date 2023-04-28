@@ -65,7 +65,7 @@ namespace Java.Awt.ImageNs.Renderable
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderContext"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.RenderContext t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             IExecute("preConcatenateTransform", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

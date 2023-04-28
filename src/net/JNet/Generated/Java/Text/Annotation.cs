@@ -37,7 +37,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Text
         {
             get { return IExecute("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

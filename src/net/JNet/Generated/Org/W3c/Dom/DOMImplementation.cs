@@ -89,7 +89,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<Org.W3c.Dom.DocumentType>("createDocumentType", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

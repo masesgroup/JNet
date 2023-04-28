@@ -609,7 +609,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html#Y_CB_CR_POSITIONING_COSITED"/>
         /// </summary>
         public static int Y_CB_CR_POSITIONING_COSITED { get { return LocalClazz.GetField<int>("Y_CB_CR_POSITIONING_COSITED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -620,7 +620,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.BaselineTIFFTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedDeque"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentLinkedDeque t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -251,7 +251,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -267,7 +267,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedDeque{E}"/> to <see cref="Java.Util.Concurrent.ConcurrentLinkedDeque"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentLinkedDeque(Java.Util.Concurrent.ConcurrentLinkedDeque<E> t) => t.Cast<Java.Util.Concurrent.ConcurrentLinkedDeque>();
-        
+
         #endregion
 
         #region Fields
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

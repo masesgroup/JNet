@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.SwingWorker"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RunnableFuture(Javax.Swing.SwingWorker t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -96,7 +96,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -185,7 +185,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#STARTED"/>
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue STARTED { get { return LocalClazz.GetField<Javax.Swing.SwingWorker.StateValue>("STARTED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -205,10 +205,14 @@ namespace Javax.Swing
             {
                 return SExecute<Javax.Swing.SwingWorker.StateValue>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -216,7 +220,7 @@ namespace Javax.Swing
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -239,7 +243,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.SwingWorker{T, V}"/> to <see cref="Javax.Swing.SwingWorker"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingWorker(Javax.Swing.SwingWorker<T, V> t) => t.Cast<Javax.Swing.SwingWorker>();
-        
+
         #endregion
 
         #region Fields
@@ -298,7 +302,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -359,7 +363,7 @@ namespace Javax.Swing
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -123,7 +123,7 @@ namespace Org.W3c.Dom.Css
         {
             IExecute("setProperty", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Swing.Tree
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#EMPTY_ENUMERATION"/>
         /// </summary>
         public static Java.Util.Enumeration EMPTY_ENUMERATION { get { return LocalClazz.GetField<Java.Util.Enumeration>("EMPTY_ENUMERATION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -310,7 +310,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#breadthFirstEnumeration()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> BreadthFirstEnumerationMethod()
         {
@@ -328,7 +328,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#postorderEnumeration()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> PostorderEnumerationMethod()
         {
@@ -337,7 +337,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#preorderEnumeration()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> PreorderEnumerationMethod()
         {
@@ -426,7 +426,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("removeFromParent");
         }
-        
+
         #endregion
 
         #region Nested classes

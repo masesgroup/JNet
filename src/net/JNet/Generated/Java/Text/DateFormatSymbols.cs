@@ -37,7 +37,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.DateFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.DateFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
         public static Java.Text.DateFormatSymbols GetInstance()
         {
@@ -82,7 +82,7 @@ namespace Java.Text
         {
             return SExecute<Java.Text.DateFormatSymbols>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -142,7 +142,7 @@ namespace Java.Text
         {
             get { return IExecuteArray<string>("getZoneStrings"); } set { IExecute("setZoneStrings", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

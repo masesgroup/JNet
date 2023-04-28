@@ -84,7 +84,7 @@ namespace Java.Util
         {
             return IExecute<int>("search", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -107,7 +107,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Stack{E}"/> to <see cref="Java.Util.Stack"/>
         /// </summary>
         public static implicit operator Java.Util.Stack(Java.Util.Stack<E> t) => t.Cast<Java.Util.Stack>();
-        
+
         #endregion
 
         #region Fields
@@ -158,7 +158,7 @@ namespace Java.Util
         {
             return IExecute<int>("search", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -84,7 +84,7 @@ namespace Javax.Net.Ssl
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -57,7 +57,7 @@ namespace Java.Net
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.DatagramSocket"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.DatagramSocket t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -82,7 +82,7 @@ namespace Java.Net
         {
             SExecute(LocalClazz, "setDatagramSocketImplFactory", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -285,7 +285,7 @@ namespace Java.Net
         {
             IExecute("send", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

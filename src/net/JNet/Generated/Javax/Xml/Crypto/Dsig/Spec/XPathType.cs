@@ -48,7 +48,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -85,7 +85,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             get { return IExecute<Java.Util.Map<string, string>>("getNamespaceMap"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -113,7 +113,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#UNION"/>
             /// </summary>
             public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter UNION { get { return LocalClazz.GetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("UNION"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -124,11 +124,15 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

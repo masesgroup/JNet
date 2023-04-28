@@ -166,7 +166,7 @@ namespace Javax.Swing
         {
             IExecute("removeRowSorterListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -183,7 +183,7 @@ namespace Javax.Swing
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -213,14 +213,18 @@ namespace Javax.Swing
             {
                 get { return IExecute<Javax.Swing.SortOrder>("getSortOrder"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -239,7 +243,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.RowSorter{M}"/> to <see cref="Javax.Swing.RowSorter"/>
         /// </summary>
         public static implicit operator Javax.Swing.RowSorter(Javax.Swing.RowSorter<M> t) => t.Cast<Javax.Swing.RowSorter>();
-        
+
         #endregion
 
         #region Fields
@@ -372,7 +376,7 @@ namespace Javax.Swing
         {
             IExecute("removeRowSorterListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

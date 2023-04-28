@@ -153,7 +153,7 @@ namespace Javax.Sound.Sampled
         {
             IExecute("unsynchronize", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -205,14 +205,18 @@ namespace Javax.Sound.Sampled
             {
                 get { return IExecute<string>("getVersion"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

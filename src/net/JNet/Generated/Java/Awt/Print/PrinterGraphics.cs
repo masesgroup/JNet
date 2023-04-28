@@ -52,7 +52,7 @@ namespace Java.Awt.Print
         {
             get { return IExecute<Java.Awt.Print.PrinterJob>("getPrinterJob"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Rmi.Server
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Rmi.Server
         /// Converter from <see cref="Java.Rmi.Server.ObjID"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.ObjID t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID"/>
         /// </summary>
         public static int REGISTRY_ID { get { return LocalClazz.GetField<int>("REGISTRY_ID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Java.Rmi.Server
         {
             return SExecute<Java.Rmi.Server.ObjID>(LocalClazz, "read", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -88,7 +88,7 @@ namespace Java.Rmi.Server
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

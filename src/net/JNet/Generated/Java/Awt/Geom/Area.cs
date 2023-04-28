@@ -37,7 +37,7 @@ namespace Java.Awt.Geom
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.Area"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Area t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -239,7 +239,7 @@ namespace Java.Awt.Geom
         {
             IExecute("transform", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

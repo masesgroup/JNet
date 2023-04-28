@@ -177,7 +177,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#SYSTEM"/>
         /// </summary>
         public static int SYSTEM { get { return LocalClazz.GetField<int>("SYSTEM"); } }
-        
+
         #endregion
 
         #region Static methods

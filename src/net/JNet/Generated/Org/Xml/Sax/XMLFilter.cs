@@ -52,7 +52,7 @@ namespace Org.Xml.Sax
         {
             get { return IExecute<Org.Xml.Sax.XMLReader>("getParent"); } set { IExecute("setParent", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

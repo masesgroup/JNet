@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType>>("getXPathList"); }
         }
-        
+
         #endregion
 
         #region Nested classes

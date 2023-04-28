@@ -90,7 +90,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

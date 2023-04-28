@@ -170,7 +170,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("uninstallDefaults", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

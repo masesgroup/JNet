@@ -79,7 +79,7 @@ namespace Javax.Xml.Validation
         {
             return IExecute<Org.W3c.Dom.TypeInfo>("getAttributeTypeInfo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

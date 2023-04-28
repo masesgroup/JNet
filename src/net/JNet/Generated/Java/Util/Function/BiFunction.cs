@@ -64,7 +64,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiFunction>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -87,7 +87,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.BiFunction{T, U, R}"/> to <see cref="Java.Util.Function.BiFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.BiFunction(Java.Util.Function.BiFunction<T, U, R> t) => t.Cast<Java.Util.Function.BiFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

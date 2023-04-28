@@ -63,7 +63,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.File"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Io.File t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separator"/>
         /// </summary>
         public static string separator { get { return LocalClazz.GetField<string>("separator"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -129,7 +129,7 @@ namespace Java.Io
         {
             return SExecute<Java.Io.File>(LocalClazz, "createTempFile", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -425,7 +425,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listFiles()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File[] ListFiles()
         {
@@ -452,7 +452,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#list()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string[] List()
         {
@@ -474,7 +474,7 @@ namespace Java.Io
         {
             IExecute("deleteOnExit");
         }
-        
+
         #endregion
 
         #region Nested classes

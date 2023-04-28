@@ -37,7 +37,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.StartTlsResponse"/> to <see cref="Javax.Naming.Ldap.ExtendedResponse"/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.StartTlsResponse t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#OID"/>
         /// </summary>
         public static string OID { get { return LocalClazz.GetField<string>("OID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -70,7 +70,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Net.Ssl.SSLSession Negotiate()
@@ -90,7 +90,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -112,7 +112,7 @@ namespace Javax.Naming.Ldap
         {
             IExecute("setHostnameVerifier", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

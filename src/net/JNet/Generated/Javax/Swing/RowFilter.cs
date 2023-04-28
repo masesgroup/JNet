@@ -100,7 +100,7 @@ namespace Javax.Swing
         {
             if (arg1.Length == 0) return SExecute<Javax.Swing.RowFilter>(LocalClazz, "regexFilter", arg0); else return SExecute<Javax.Swing.RowFilter>(LocalClazz, "regexFilter", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -113,7 +113,7 @@ namespace Javax.Swing
         {
             return IExecute<bool>("include", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -145,7 +145,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL"/>
             /// </summary>
             public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL { get { return LocalClazz.GetField<Javax.Swing.RowFilter.ComparisonType>("NOT_EQUAL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -165,10 +165,14 @@ namespace Javax.Swing
             {
                 return SExecute<Javax.Swing.RowFilter.ComparisonType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -235,7 +239,11 @@ namespace Javax.Swing
             {
                 return IExecute<string>("getStringValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -254,7 +262,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.RowFilter.Entry{M, I}"/> to <see cref="Javax.Swing.RowFilter.Entry"/>
             /// </summary>
             public static implicit operator Javax.Swing.RowFilter.Entry(Javax.Swing.RowFilter.Entry<M, I> t) => t.Cast<Javax.Swing.RowFilter.Entry>();
-            
+
             #endregion
 
             #region Fields
@@ -305,14 +313,18 @@ namespace Javax.Swing
             {
                 return IExecute<string>("getStringValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -331,7 +343,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.RowFilter{M, I}"/> to <see cref="Javax.Swing.RowFilter"/>
         /// </summary>
         public static implicit operator Javax.Swing.RowFilter(Javax.Swing.RowFilter<M, I> t) => t.Cast<Javax.Swing.RowFilter>();
-        
+
         #endregion
 
         #region Fields
@@ -398,7 +410,7 @@ namespace Javax.Swing
         {
             if (arg1.Length == 0) return SExecute<Javax.Swing.RowFilter<M, I>>(LocalClazz, "regexFilter", arg0); else return SExecute<Javax.Swing.RowFilter<M, I>>(LocalClazz, "regexFilter", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -411,7 +423,7 @@ namespace Javax.Swing
         {
             return IExecute<bool>("include", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

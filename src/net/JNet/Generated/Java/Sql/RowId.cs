@@ -52,7 +52,7 @@ namespace Java.Sql
         {
             get { return IExecuteArray<byte>("getBytes"); }
         }
-        
+
         #endregion
 
         #region Nested classes

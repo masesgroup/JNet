@@ -40,7 +40,7 @@ namespace Javax.Management
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerNotification.html#UNREGISTRATION_NOTIFICATION"/>
         /// </summary>
         public static string UNREGISTRATION_NOTIFICATION { get { return LocalClazz.GetField<string>("UNREGISTRATION_NOTIFICATION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -71,7 +71,7 @@ namespace Javax.Management
         {
             get { return IExecute<Javax.Management.ObjectName>("getMBeanName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Java.Security
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Java.Security
         {
             IExecute("checkPermission", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

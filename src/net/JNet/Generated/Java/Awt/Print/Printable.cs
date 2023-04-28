@@ -45,7 +45,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS"/>
         /// </summary>
         public static int PAGE_EXISTS { get { return LocalClazz.GetField<int>("PAGE_EXISTS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -65,7 +65,7 @@ namespace Java.Awt.Print
         {
             return IExecute<int>("print", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

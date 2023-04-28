@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Random"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Random t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
         {
@@ -152,7 +152,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
         {
@@ -191,7 +191,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
         {
@@ -243,7 +243,7 @@ namespace Java.Util
         {
             IExecute("nextBytes", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Nio.File.Attribute
         /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.FileOwnerAttributeView"/>
         /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileOwnerAttributeView(Java.Nio.File.Attribute.PosixFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.FileOwnerAttributeView>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Java.Nio.File.Attribute
         {
             IExecute("setPermissions", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

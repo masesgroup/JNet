@@ -52,7 +52,7 @@ namespace Java.Lang.Annotation
         {
             get { return IExecute<Java.Lang.Class>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

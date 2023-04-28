@@ -37,7 +37,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.InetAddress"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.InetAddress t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Java.Net
         {
             return SExecuteArray<Java.Net.InetAddress>(LocalClazz, "getAllByName", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -224,7 +224,7 @@ namespace Java.Net
         {
             return IExecute<bool>("isReachable", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

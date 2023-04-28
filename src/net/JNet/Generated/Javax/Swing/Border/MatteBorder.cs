@@ -79,7 +79,7 @@ namespace Javax.Swing.Border
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -109,7 +109,7 @@ namespace Javax.Swing.Border
         {
             get { return IExecute<Javax.Swing.Icon>("getTileIcon"); }
         }
-        
+
         #endregion
 
         #region Nested classes

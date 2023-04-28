@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             return IExecute<long>("applyAsLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ToLongFunction{T}"/> to <see cref="Java.Util.Function.ToLongFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ToLongFunction(Java.Util.Function.ToLongFunction<T> t) => t.Cast<Java.Util.Function.ToLongFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Util.Function
         {
             return IExecute<long>("applyAsLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

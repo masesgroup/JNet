@@ -45,7 +45,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_PROPERTY"/>
         /// </summary>
         public static string DATATYPEFACTORY_PROPERTY { get { return LocalClazz.GetField<string>("DATATYPEFACTORY_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -59,7 +59,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance()
@@ -77,7 +77,7 @@ namespace Javax.Xml.Datatype
         {
             return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalClazz, "newInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -117,7 +117,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar()
         {
@@ -322,7 +322,7 @@ namespace Javax.Xml.Datatype
         {
             return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

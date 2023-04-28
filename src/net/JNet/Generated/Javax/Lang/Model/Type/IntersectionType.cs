@@ -52,7 +52,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Java.Util.List>("getBounds"); }
         }
-        
+
         #endregion
 
         #region Nested classes

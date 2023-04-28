@@ -45,7 +45,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayDeque t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque Clone()
         {
@@ -221,7 +221,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIteratorMethod()
         {
@@ -251,7 +251,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -282,7 +282,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -302,7 +302,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ArrayDeque{E}"/> to <see cref="Java.Util.ArrayDeque"/>
         /// </summary>
         public static implicit operator Java.Util.ArrayDeque(Java.Util.ArrayDeque<E> t) => t.Cast<Java.Util.ArrayDeque>();
-        
+
         #endregion
 
         #region Fields
@@ -453,7 +453,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque<E> Clone()
         {
@@ -462,7 +462,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIteratorMethod()
         {
@@ -492,7 +492,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

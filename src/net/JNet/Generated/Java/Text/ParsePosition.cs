@@ -37,7 +37,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Java.Text
         {
             get { return IExecute<int>("getIndex"); } set { IExecute("setIndex", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

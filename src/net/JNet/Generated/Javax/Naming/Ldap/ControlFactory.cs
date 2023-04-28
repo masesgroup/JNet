@@ -53,7 +53,7 @@ namespace Javax.Naming.Ldap
         {
             return SExecute<Javax.Naming.Ldap.Control>(LocalClazz, "getControlInstance", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -67,7 +67,7 @@ namespace Javax.Naming.Ldap
         {
             return IExecute<Javax.Naming.Ldap.Control>("getControlInstance", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

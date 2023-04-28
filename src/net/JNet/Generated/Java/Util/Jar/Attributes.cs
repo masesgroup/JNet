@@ -45,7 +45,7 @@ namespace Java.Util.Jar
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Java.Util.Jar
         /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Attributes t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -193,7 +193,7 @@ namespace Java.Util.Jar
         {
             IExecute("putAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -209,7 +209,7 @@ namespace Java.Util.Jar
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -277,7 +277,7 @@ namespace Java.Util.Jar
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION { get { return LocalClazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -288,11 +288,15 @@ namespace Java.Util.Jar
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

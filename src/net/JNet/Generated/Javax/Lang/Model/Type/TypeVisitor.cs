@@ -184,7 +184,7 @@ namespace Javax.Lang.Model.Type
         {
             return IExecute("visit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -207,7 +207,7 @@ namespace Javax.Lang.Model.Type
         /// Converter from <see cref="Javax.Lang.Model.Type.TypeVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Type.TypeVisitor"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeVisitor(Javax.Lang.Model.Type.TypeVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Type.TypeVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -358,7 +358,7 @@ namespace Javax.Lang.Model.Type
         {
             return IExecute<R>("visit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

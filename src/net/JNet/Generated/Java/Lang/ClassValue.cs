@@ -62,7 +62,7 @@ namespace Java.Lang
         {
             IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -85,7 +85,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.ClassValue{T}"/> to <see cref="Java.Lang.ClassValue"/>
         /// </summary>
         public static implicit operator Java.Lang.ClassValue(Java.Lang.ClassValue<T> t) => t.Cast<Java.Lang.ClassValue>();
-        
+
         #endregion
 
         #region Fields
@@ -114,7 +114,7 @@ namespace Java.Lang
         {
             IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

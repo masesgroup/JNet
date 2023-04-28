@@ -61,7 +61,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty"/>
         /// </summary>
         public static object UndefinedProperty { get { return LocalClazz.GetField("UndefinedProperty"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -145,7 +145,7 @@ namespace Java.Awt
         {
             IExecute("flush");
         }
-        
+
         #endregion
 
         #region Nested classes

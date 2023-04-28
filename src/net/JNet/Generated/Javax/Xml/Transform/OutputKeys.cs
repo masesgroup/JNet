@@ -77,7 +77,7 @@ namespace Javax.Xml.Transform
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#VERSION"/>
         /// </summary>
         public static string VERSION { get { return LocalClazz.GetField<string>("VERSION"); } }
-        
+
         #endregion
 
         #region Static methods

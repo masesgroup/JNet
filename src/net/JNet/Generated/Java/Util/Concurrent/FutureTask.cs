@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.FutureTask"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.FutureTask t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.FutureTask{V}"/> to <see cref="Java.Util.Concurrent.FutureTask"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.FutureTask(Java.Util.Concurrent.FutureTask<V> t) => t.Cast<Java.Util.Concurrent.FutureTask>();
-        
+
         #endregion
 
         #region Fields
@@ -202,7 +202,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -85,7 +85,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#VOLATILE"/>
         /// </summary>
         public static int VOLATILE { get { return LocalClazz.GetField<int>("VOLATILE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -248,7 +248,7 @@ namespace Java.Lang.Reflect
         {
             return SExecute<string>(LocalClazz, "toString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

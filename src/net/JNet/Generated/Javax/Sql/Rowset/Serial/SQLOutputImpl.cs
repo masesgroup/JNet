@@ -39,7 +39,7 @@ namespace Javax.Sql.Rowset.Serial
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Sql.Rowset.Serial
         /// Converter from <see cref="Javax.Sql.Rowset.Serial.SQLOutputImpl"/> to <see cref="Java.Sql.SQLOutput"/>
         /// </summary>
         public static implicit operator Java.Sql.SQLOutput(Javax.Sql.Rowset.Serial.SQLOutputImpl t) => t.Cast<Java.Sql.SQLOutput>();
-        
+
         #endregion
 
         #region Fields
@@ -302,7 +302,7 @@ namespace Javax.Sql.Rowset.Serial
         {
             IExecute("writeURL", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

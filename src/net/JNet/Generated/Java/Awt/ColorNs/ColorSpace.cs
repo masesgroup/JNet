@@ -37,7 +37,7 @@ namespace Java.Awt.ColorNs
         /// Converter from <see cref="Java.Awt.ColorNs.ColorSpace"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ColorNs.ColorSpace t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -161,7 +161,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Yxy"/>
         /// </summary>
         public static int TYPE_Yxy { get { return LocalClazz.GetField<int>("TYPE_Yxy"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -174,7 +174,7 @@ namespace Java.Awt.ColorNs
         {
             return SExecute<Java.Awt.ColorNs.ColorSpace>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -262,7 +262,7 @@ namespace Java.Awt.ColorNs
         {
             return IExecute<string>("getName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -62,7 +62,7 @@ namespace Java.Beans
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -145,7 +145,7 @@ namespace Java.Beans
         {
             IExecute("setConstrained", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

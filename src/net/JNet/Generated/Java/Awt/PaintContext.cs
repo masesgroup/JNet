@@ -71,7 +71,7 @@ namespace Java.Awt
         {
             IExecute("dispose");
         }
-        
+
         #endregion
 
         #region Nested classes

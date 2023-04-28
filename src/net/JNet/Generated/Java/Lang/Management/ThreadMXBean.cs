@@ -280,7 +280,7 @@ namespace Java.Lang.Management
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

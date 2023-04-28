@@ -37,7 +37,7 @@ namespace Javax.Crypto
         /// Converter from <see cref="Javax.Crypto.Mac"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Crypto.Mac t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Javax.Crypto
         {
             return SExecute<Javax.Crypto.Mac>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -106,7 +106,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] DoFinal()
@@ -198,7 +198,7 @@ namespace Javax.Crypto
         {
             IExecute("update", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

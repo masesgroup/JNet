@@ -62,13 +62,13 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind KindMethod()
         {
             return IExecute<Java.Nio.File.WatchEvent.Kind>("kind");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -106,7 +106,11 @@ namespace Java.Nio.File
             {
                 get { return IExecute<Java.Lang.Class>("type"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -125,7 +129,7 @@ namespace Java.Nio.File
             /// Converter from <see cref="Java.Nio.File.WatchEvent.Kind{T}"/> to <see cref="Java.Nio.File.WatchEvent.Kind"/>
             /// </summary>
             public static implicit operator Java.Nio.File.WatchEvent.Kind(Java.Nio.File.WatchEvent.Kind<T> t) => t.Cast<Java.Nio.File.WatchEvent.Kind>();
-            
+
             #endregion
 
             #region Fields
@@ -151,7 +155,11 @@ namespace Java.Nio.File
             {
                 get { return IExecute<Java.Lang.Class>("type"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -185,14 +193,18 @@ namespace Java.Nio.File
             {
                 get { return IExecute<string>("name"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -211,7 +223,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.WatchEvent{T}"/> to <see cref="Java.Nio.File.WatchEvent"/>
         /// </summary>
         public static implicit operator Java.Nio.File.WatchEvent(Java.Nio.File.WatchEvent<T> t) => t.Cast<Java.Nio.File.WatchEvent>();
-        
+
         #endregion
 
         #region Fields
@@ -240,13 +252,13 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind<T> KindMethod()
         {
             return IExecute<Java.Nio.File.WatchEvent.Kind<T>>("kind");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -49,7 +49,7 @@ namespace Org.W3c.Dom.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#REMOVAL"/>
         /// </summary>
         public static short REMOVAL { get { return LocalClazz.GetField<short>("REMOVAL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -107,7 +107,7 @@ namespace Org.W3c.Dom.Events
         {
             IExecute("initMutationEvent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -56,7 +56,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Locale"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Locale t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -168,7 +168,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#US"/>
         /// </summary>
         public static Java.Util.Locale US { get { return LocalClazz.GetField<Java.Util.Locale>("US"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -298,7 +298,7 @@ namespace Java.Util
         {
             SExecute(LocalClazz, "setDefault", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -484,7 +484,7 @@ namespace Java.Util
         {
             return IExecute<string>("getUnicodeLocaleType", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -621,7 +621,11 @@ namespace Java.Util
             {
                 return IExecute<Java.Util.Locale.Builder>("setVariant", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -648,7 +652,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT"/>
             /// </summary>
             public static Java.Util.Locale.Category FORMAT { get { return LocalClazz.GetField<Java.Util.Locale.Category>("FORMAT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -668,10 +672,14 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Locale.Category>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -711,7 +719,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#REJECT_EXTENDED_RANGES"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode REJECT_EXTENDED_RANGES { get { return LocalClazz.GetField<Java.Util.Locale.FilteringMode>("REJECT_EXTENDED_RANGES"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -731,10 +739,14 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Locale.FilteringMode>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -766,7 +778,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3"/>
             /// </summary>
             public static Java.Util.Locale.IsoCountryCode PART3 { get { return LocalClazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -786,10 +798,14 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Locale.IsoCountryCode>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -818,7 +834,7 @@ namespace Java.Util
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -834,7 +850,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT"/>
             /// </summary>
             public static double MIN_WEIGHT { get { return LocalClazz.GetField<double>("MIN_WEIGHT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -867,7 +883,7 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalClazz, "parse", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -885,14 +901,18 @@ namespace Java.Util
             {
                 get { return IExecute<double>("getWeight"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

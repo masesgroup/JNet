@@ -38,7 +38,7 @@ namespace Javax.Naming
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

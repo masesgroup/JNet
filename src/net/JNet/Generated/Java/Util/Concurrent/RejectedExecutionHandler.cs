@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("rejectedExecution", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

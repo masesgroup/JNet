@@ -67,7 +67,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

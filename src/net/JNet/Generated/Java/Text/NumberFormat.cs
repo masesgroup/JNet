@@ -45,7 +45,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD"/>
         /// </summary>
         public static int INTEGER_FIELD { get { return LocalClazz.GetField<int>("INTEGER_FIELD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -87,7 +87,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetInstance()
         {
@@ -138,7 +138,7 @@ namespace Java.Text
         {
             return SExecute<Java.Text.NumberFormat>(LocalClazz, "getPercentInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -274,7 +274,7 @@ namespace Java.Text
         {
             IExecute("setParseIntegerOnly", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -334,7 +334,7 @@ namespace Java.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field SIGN { get { return LocalClazz.GetField<Java.Text.NumberFormat.Field>("SIGN"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -345,11 +345,15 @@ namespace Java.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

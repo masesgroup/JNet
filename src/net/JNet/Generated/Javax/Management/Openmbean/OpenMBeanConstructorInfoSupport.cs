@@ -50,7 +50,7 @@ namespace Javax.Management.Openmbean
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanConstructorInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanConstructorInfo"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanConstructorInfo(Javax.Management.Openmbean.OpenMBeanConstructorInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanConstructorInfo>();
-        
+
         #endregion
 
         #region Fields

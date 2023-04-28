@@ -41,7 +41,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#NULL_ATTRIBUTE_VALUE"/>
         /// </summary>
         public static string NULL_ATTRIBUTE_VALUE { get { return LocalClazz.GetField<string>("NULL_ATTRIBUTE_VALUE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text.Html
         {
             return SExecute<Javax.Swing.Text.Html.HTML.Tag>(LocalClazz, "getTag", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -428,7 +428,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html#WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.HTML.Attribute WIDTH { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Attribute>("WIDTH"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -436,6 +436,10 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -759,7 +763,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#VAR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.HTML.Tag VAR { get { return LocalClazz.GetField<Javax.Swing.Text.Html.HTML.Tag>("VAR"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -788,7 +792,11 @@ namespace Javax.Swing.Text.Html
             {
                 get { return IExecute<bool>("isPreformatted"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -807,7 +815,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -815,7 +823,7 @@ namespace Javax.Swing.Text.Html
             /// Converter from <see cref="Javax.Swing.Text.Html.HTML.UnknownTag"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.HTML.UnknownTag t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -830,11 +838,15 @@ namespace Javax.Swing.Text.Html
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

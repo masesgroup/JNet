@@ -131,7 +131,7 @@ namespace Javax.Xml.Crypto
         {
             return IExecute<string>("putNamespacePrefix", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

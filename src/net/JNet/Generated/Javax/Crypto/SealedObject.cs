@@ -40,7 +40,7 @@ namespace Javax.Crypto
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Javax.Crypto
         /// Converter from <see cref="Javax.Crypto.SealedObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Crypto.SealedObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -108,7 +108,7 @@ namespace Javax.Crypto
         {
             return IExecute("getObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

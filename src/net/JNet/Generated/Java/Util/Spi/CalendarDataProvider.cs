@@ -63,7 +63,7 @@ namespace Java.Util.Spi
         {
             return IExecute<int>("getMinimalDaysInFirstWeek", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

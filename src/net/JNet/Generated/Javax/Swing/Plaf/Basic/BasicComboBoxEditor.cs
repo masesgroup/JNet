@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxEditor"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxEditor t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("selectAll");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -122,7 +122,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxEditor.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicComboBoxEditor.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -137,11 +137,15 @@ namespace Javax.Swing.Plaf.Basic
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

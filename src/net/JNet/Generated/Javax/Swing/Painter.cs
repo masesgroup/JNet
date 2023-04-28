@@ -56,7 +56,7 @@ namespace Javax.Swing
         {
             IExecute("paint", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.Painter{T}"/> to <see cref="Javax.Swing.Painter"/>
         /// </summary>
         public static implicit operator Javax.Swing.Painter(Javax.Swing.Painter<T> t) => t.Cast<Javax.Swing.Painter>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Javax.Swing
         {
             IExecute("paint", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

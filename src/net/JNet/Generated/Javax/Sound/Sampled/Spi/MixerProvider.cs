@@ -70,7 +70,7 @@ namespace Javax.Sound.Sampled.Spi
         {
             return IExecute<bool>("isMixerSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

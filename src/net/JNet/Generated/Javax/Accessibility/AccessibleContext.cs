@@ -125,7 +125,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VISIBLE_DATA_PROPERTY"/>
         /// </summary>
         public static string ACCESSIBLE_VISIBLE_DATA_PROPERTY { get { return LocalClazz.GetField<string>("ACCESSIBLE_VISIBLE_DATA_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -287,7 +287,7 @@ namespace Javax.Accessibility
         {
             IExecute("removePropertyChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

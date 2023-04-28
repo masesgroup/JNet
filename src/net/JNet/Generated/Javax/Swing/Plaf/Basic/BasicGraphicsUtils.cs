@@ -213,7 +213,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             SExecute(LocalClazz, "drawStringUnderlineCharAt", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Instance methods

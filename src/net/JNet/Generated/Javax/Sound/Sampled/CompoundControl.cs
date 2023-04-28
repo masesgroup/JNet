@@ -52,7 +52,7 @@ namespace Javax.Sound.Sampled
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Control>("getMemberControls"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -79,11 +79,15 @@ namespace Javax.Sound.Sampled
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

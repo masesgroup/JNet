@@ -37,7 +37,7 @@ namespace Java.Security
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -134,7 +134,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -200,7 +200,7 @@ namespace Java.Security
         {
             IExecute("setSeed", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

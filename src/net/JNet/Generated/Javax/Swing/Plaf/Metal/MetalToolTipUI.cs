@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#padSpaceBetweenStrings"/>
         /// </summary>
         public static int padSpaceBetweenStrings { get { return LocalClazz.GetField<int>("padSpaceBetweenStrings"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -56,7 +56,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             get { return IExecute<string>("getAcceleratorString"); }
         }
-        
+
         #endregion
 
         #region Nested classes

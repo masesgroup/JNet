@@ -52,7 +52,7 @@ namespace Javax.Sound.Midi
         {
             get { return IExecute<Javax.Sound.Midi.MidiDevice>("getMidiDevice"); }
         }
-        
+
         #endregion
 
         #region Nested classes

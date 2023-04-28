@@ -45,7 +45,7 @@ namespace Javax.Management
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.ImmutableDescriptor"/> to <see cref="Javax.Management.Descriptor"/>
         /// </summary>
         public static implicit operator Javax.Management.Descriptor(Javax.Management.ImmutableDescriptor t) => t.Cast<Javax.Management.Descriptor>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#EMPTY_DESCRIPTOR"/>
         /// </summary>
         public static Javax.Management.ImmutableDescriptor EMPTY_DESCRIPTOR { get { return LocalClazz.GetField<Javax.Management.ImmutableDescriptor>("EMPTY_DESCRIPTOR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -74,7 +74,7 @@ namespace Javax.Management
         {
             if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union", new object[] { arg0 }); else return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -145,7 +145,7 @@ namespace Javax.Management
         {
             IExecute("setFields", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

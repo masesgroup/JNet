@@ -80,7 +80,7 @@ namespace Java.Awt
         {
             SExecute(LocalClazz, "invokeLater", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -101,7 +101,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent()
         {
@@ -132,7 +132,7 @@ namespace Java.Awt
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

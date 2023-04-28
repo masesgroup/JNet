@@ -65,7 +65,7 @@ namespace Javax.Xml.Transform.Dom
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Dom
         /// Converter from <see cref="Javax.Xml.Transform.Dom.DOMResult"/> to <see cref="Javax.Xml.Transform.Result"/>
         /// </summary>
         public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Dom.DOMResult t) => t.Cast<Javax.Xml.Transform.Result>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Javax.Xml.Transform.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#FEATURE"/>
         /// </summary>
         public static string FEATURE { get { return LocalClazz.GetField<string>("FEATURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -110,7 +110,7 @@ namespace Javax.Xml.Transform.Dom
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

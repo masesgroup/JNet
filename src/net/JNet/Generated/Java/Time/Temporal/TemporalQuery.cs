@@ -54,7 +54,7 @@ namespace Java.Time.Temporal
         {
             return IExecute("queryFrom", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Time.Temporal
         /// Converter from <see cref="Java.Time.Temporal.TemporalQuery{R}"/> to <see cref="Java.Time.Temporal.TemporalQuery"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalQuery(Java.Time.Temporal.TemporalQuery<R> t) => t.Cast<Java.Time.Temporal.TemporalQuery>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<R>("queryFrom", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

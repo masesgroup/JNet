@@ -103,7 +103,7 @@ namespace Java.Math
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -111,7 +111,7 @@ namespace Java.Math
         /// Converter from <see cref="Java.Math.BigInteger"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Math.BigInteger t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -131,7 +131,7 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO"/>
         /// </summary>
         public static Java.Math.BigInteger ZERO { get { return LocalClazz.GetField<Java.Math.BigInteger>("ZERO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -154,7 +154,7 @@ namespace Java.Math
         {
             return SExecute<Java.Math.BigInteger>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -507,7 +507,7 @@ namespace Java.Math
         {
             return IExecuteArray<Java.Math.BigInteger>("divideAndRemainder", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

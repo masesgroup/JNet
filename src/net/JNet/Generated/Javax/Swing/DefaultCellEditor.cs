@@ -53,7 +53,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultCellEditor"/> to <see cref="Javax.Swing.Tree.TreeCellEditor"/>
         /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeCellEditor(Javax.Swing.DefaultCellEditor t) => t.Cast<Javax.Swing.Tree.TreeCellEditor>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getTreeCellEditorComponent", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

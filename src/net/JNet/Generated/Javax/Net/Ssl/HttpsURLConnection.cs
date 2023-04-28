@@ -63,7 +63,7 @@ namespace Javax.Net.Ssl
         {
             SExecute(LocalClazz, "setDefaultHostnameVerifier", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -116,7 +116,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<Javax.Net.Ssl.SSLSocketFactory>("getSSLSocketFactory"); } set { IExecute("setSSLSocketFactory", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

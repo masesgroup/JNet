@@ -195,7 +195,7 @@ namespace Javax.Accessibility
         {
             IExecute("setVisible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

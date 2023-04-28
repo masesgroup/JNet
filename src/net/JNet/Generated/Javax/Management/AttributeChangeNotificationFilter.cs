@@ -37,7 +37,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.AttributeChangeNotificationFilter"/> to <see cref="Javax.Management.NotificationFilter"/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationFilter(Javax.Management.AttributeChangeNotificationFilter t) => t.Cast<Javax.Management.NotificationFilter>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Javax.Management
         {
             IExecute("enableAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

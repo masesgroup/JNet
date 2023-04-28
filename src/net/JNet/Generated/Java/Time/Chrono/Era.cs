@@ -41,7 +41,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.Era"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Chrono.Era t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
-        
+
         #endregion
 
         #region Fields
@@ -124,7 +124,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

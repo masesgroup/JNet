@@ -39,7 +39,7 @@ namespace Javax.Security.Auth.Kerberos
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Security.Auth.Kerberos
         /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosCredMessage"/> to <see cref="Javax.Security.Auth.Destroyable"/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosCredMessage t) => t.Cast<Javax.Security.Auth.Destroyable>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Javax.Security.Auth.Kerberos
         {
             IExecute("destroy");
         }
-        
+
         #endregion
 
         #region Nested classes

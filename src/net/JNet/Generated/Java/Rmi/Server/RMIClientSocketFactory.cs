@@ -56,7 +56,7 @@ namespace Java.Rmi.Server
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

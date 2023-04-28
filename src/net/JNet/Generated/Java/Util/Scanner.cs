@@ -155,7 +155,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -167,7 +167,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Scanner"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Scanner t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -301,7 +301,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNext()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
@@ -328,7 +328,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextBigInteger()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBigInteger()
         {
@@ -346,7 +346,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextByte()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNextByte()
         {
@@ -364,7 +364,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextInt()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNextInt()
         {
@@ -382,7 +382,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextLong()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNextLong()
         {
@@ -400,7 +400,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextShort()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool HasNextShort()
         {
@@ -418,7 +418,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextByte()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         public byte NextByte()
         {
@@ -436,7 +436,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextInt()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
@@ -454,7 +454,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#next()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object Next()
         {
@@ -519,7 +519,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextBigInteger()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextBigInteger()
         {
@@ -609,7 +609,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLong()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         public long NextLong()
         {
@@ -627,7 +627,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextShort()"/>
         /// </summary>
-        
+
         /// <returns><see cref="short"/></returns>
         public short NextShort()
         {
@@ -656,7 +656,7 @@ namespace Java.Util
         {
             IExecute("remove");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -23,30 +23,7 @@ namespace Java.Security
     #region KeyStore
     public partial class KeyStore
     {
-        #region Nested classes
-
-        #region Entry
-        public partial class Entry
-        {
-            #region Nested classes
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html"/>
-            /// </summary>
-            public partial class Attribute : JVMBridgeBase<Attribute>
-            {
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-                /// </summary>
-                public override string ClassName => "java.security.KeyStore$Entry$Attribute";
-            }
-
-            #endregion
-        }
-        #endregion
-
-        #endregion
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java
     }
     #endregion
 }

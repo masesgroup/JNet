@@ -66,7 +66,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getGenericElement"); }
         }
-        
+
         #endregion
 
         #region Nested classes

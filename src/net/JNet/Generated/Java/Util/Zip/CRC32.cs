@@ -37,7 +37,7 @@ namespace Java.Util.Zip
         /// Converter from <see cref="Java.Util.Zip.CRC32"/> to <see cref="Java.Util.Zip.Checksum"/>
         /// </summary>
         public static implicit operator Java.Util.Zip.Checksum(Java.Util.Zip.CRC32 t) => t.Cast<Java.Util.Zip.Checksum>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Java.Util.Zip
         {
             IExecute("update", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

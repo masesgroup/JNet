@@ -72,7 +72,7 @@ namespace Javax.Xml.Stream.Util
         {
             IExecute("allocate", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

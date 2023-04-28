@@ -52,7 +52,7 @@ namespace Java.Util.Function
         {
             get { return IExecute<double>("getAsDouble"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.HttpCookie"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Net.HttpCookie t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Net
         {
             return SExecute<Java.Util.List<Java.Net.HttpCookie>>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -176,7 +176,7 @@ namespace Java.Net
         {
             IExecute("setHttpOnly", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

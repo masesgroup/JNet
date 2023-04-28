@@ -131,7 +131,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("unsetMatchColumn", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

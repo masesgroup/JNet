@@ -224,7 +224,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<Javax.Lang.Model.Type.WildcardType>("getWildcardType", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

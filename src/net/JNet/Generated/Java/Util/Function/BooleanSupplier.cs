@@ -52,7 +52,7 @@ namespace Java.Util.Function
         {
             get { return IExecute<bool>("getAsBoolean"); }
         }
-        
+
         #endregion
 
         #region Nested classes

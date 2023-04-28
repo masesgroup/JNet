@@ -45,7 +45,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeSelectionModel"/> to <see cref="Javax.Swing.Tree.TreeSelectionModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeSelectionModel(Javax.Swing.Tree.DefaultTreeSelectionModel t) => t.Cast<Javax.Swing.Tree.TreeSelectionModel>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#SELECTION_MODE_PROPERTY"/>
         /// </summary>
         public static string SELECTION_MODE_PROPERTY { get { return LocalClazz.GetField<string>("SELECTION_MODE_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -257,7 +257,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("resetRowSelection");
         }
-        
+
         #endregion
 
         #region Nested classes

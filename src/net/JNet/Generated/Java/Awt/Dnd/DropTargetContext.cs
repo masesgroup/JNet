@@ -37,7 +37,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.DropTargetContext"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DropTargetContext t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("dropComplete", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

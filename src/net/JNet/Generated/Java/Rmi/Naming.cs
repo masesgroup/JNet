@@ -98,7 +98,7 @@ namespace Java.Rmi
         {
             SExecute(LocalClazz, "unbind", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

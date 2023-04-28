@@ -59,7 +59,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<Java.Nio.File.Attribute.UserPrincipal>("getOwner"); } set { IExecute("setOwner", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Java.Awt
         {
             IExecute("show", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

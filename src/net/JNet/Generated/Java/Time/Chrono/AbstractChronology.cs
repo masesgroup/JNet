@@ -37,7 +37,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.AbstractChronology"/> to <see cref="Java.Time.Chrono.Chronology"/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.Chronology(Java.Time.Chrono.AbstractChronology t) => t.Cast<Java.Time.Chrono.Chronology>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

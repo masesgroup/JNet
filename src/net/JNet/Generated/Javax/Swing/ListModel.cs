@@ -77,7 +77,7 @@ namespace Javax.Swing
         {
             IExecute("removeListDataListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -100,7 +100,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ListModel{E}"/> to <see cref="Javax.Swing.ListModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.ListModel(Javax.Swing.ListModel<E> t) => t.Cast<Javax.Swing.ListModel>();
-        
+
         #endregion
 
         #region Fields
@@ -144,7 +144,7 @@ namespace Javax.Swing
         {
             IExecute("removeListDataListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

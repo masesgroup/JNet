@@ -66,7 +66,7 @@ namespace Java.Lang.Invoke
         {
             get { return IExecute<Java.Lang.Invoke.MethodType>("type"); }
         }
-        
+
         #endregion
 
         #region Nested classes

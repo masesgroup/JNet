@@ -241,7 +241,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VMTX"/>
         /// </summary>
         public static int TAG_VMTX { get { return LocalClazz.GetField<int>("TAG_VMTX"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -314,7 +314,7 @@ namespace Java.Awt.FontNs
         {
             return IExecute<int>("getFontTableSize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

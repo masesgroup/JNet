@@ -52,7 +52,7 @@ namespace Javax.Swing
         {
             get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ComboBoxModel{E}"/> to <see cref="Javax.Swing.ComboBoxModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.ComboBoxModel(Javax.Swing.ComboBoxModel<E> t) => t.Cast<Javax.Swing.ComboBoxModel>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Javax.Swing
         {
             get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

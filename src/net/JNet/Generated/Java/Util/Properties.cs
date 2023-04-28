@@ -45,7 +45,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -200,7 +200,7 @@ namespace Java.Util
         {
             IExecute("storeToXML", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

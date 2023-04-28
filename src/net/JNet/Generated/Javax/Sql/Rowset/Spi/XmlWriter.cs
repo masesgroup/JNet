@@ -55,7 +55,7 @@ namespace Javax.Sql.Rowset.Spi
         {
             IExecute("writeXML", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

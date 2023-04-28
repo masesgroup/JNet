@@ -47,7 +47,7 @@ namespace Javax.Crypto.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.IvParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.IvParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecuteArray<byte>("getIV"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.LayoutFocusTraversalPolicy"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.LayoutFocusTraversalPolicy t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields

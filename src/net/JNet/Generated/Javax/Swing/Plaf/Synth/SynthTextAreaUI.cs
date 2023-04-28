@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Synth
         /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthTextAreaUI"/> to <see cref="Javax.Swing.Plaf.Synth.SynthUI"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.Synth.SynthUI(Javax.Swing.Plaf.Synth.SynthTextAreaUI t) => t.Cast<Javax.Swing.Plaf.Synth.SynthUI>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

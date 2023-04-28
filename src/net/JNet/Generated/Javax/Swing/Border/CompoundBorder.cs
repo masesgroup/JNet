@@ -38,7 +38,7 @@ namespace Javax.Swing.Border
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Swing.Border
         {
             get { return IExecute<Javax.Swing.Border.Border>("getOutsideBorder"); }
         }
-        
+
         #endregion
 
         #region Nested classes

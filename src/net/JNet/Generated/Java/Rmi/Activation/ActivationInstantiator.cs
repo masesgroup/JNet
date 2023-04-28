@@ -57,7 +57,7 @@ namespace Java.Rmi.Activation
         {
             return IExecute<Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote>>("newInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -140,7 +140,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.ResourceBundle>(LocalClazz, "getBundle", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -208,7 +208,7 @@ namespace Java.Util
         {
             return IExecuteArray<string>("getStringArray", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -244,7 +244,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#TTL_NO_EXPIRATION_CONTROL"/>
             /// </summary>
             public static long TTL_NO_EXPIRATION_CONTROL { get { return LocalClazz.GetField<long>("TTL_NO_EXPIRATION_CONTROL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -266,7 +266,7 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.ResourceBundle.Control>(LocalClazz, "getNoFallbackControl", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -359,14 +359,18 @@ namespace Java.Util
             {
                 return IExecute<long>("getTimeToLive", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

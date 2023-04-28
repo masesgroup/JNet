@@ -101,7 +101,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Util.Jar.Manifest>("getManifest"); }
         }
-        
+
         #endregion
 
         #region Nested classes

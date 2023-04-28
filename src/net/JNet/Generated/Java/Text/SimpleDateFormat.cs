@@ -55,7 +55,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -123,7 +123,7 @@ namespace Java.Text
         {
             IExecute("set2DigitYearStart", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

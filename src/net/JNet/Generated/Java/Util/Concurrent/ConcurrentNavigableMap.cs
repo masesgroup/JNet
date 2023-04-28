@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/> to <see cref="Java.Util.NavigableMap"/>
         /// </summary>
         public static implicit operator Java.Util.NavigableMap(Java.Util.Concurrent.ConcurrentNavigableMap t) => t.Cast<Java.Util.NavigableMap>();
-        
+
         #endregion
 
         #region Fields
@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentNavigableMap(Java.Util.Concurrent.ConcurrentNavigableMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentNavigableMap>();
-        
+
         #endregion
 
         #region Fields
@@ -272,7 +272,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

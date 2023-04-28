@@ -38,7 +38,7 @@ namespace Javax.Imageio.Spi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Imageio.Spi
         /// Converter from <see cref="Javax.Imageio.Spi.IIOServiceProvider"/> to <see cref="Javax.Imageio.Spi.RegisterableService"/>
         /// </summary>
         public static implicit operator Javax.Imageio.Spi.RegisterableService(Javax.Imageio.Spi.IIOServiceProvider t) => t.Cast<Javax.Imageio.Spi.RegisterableService>();
-        
+
         #endregion
 
         #region Fields
@@ -99,7 +99,7 @@ namespace Javax.Imageio.Spi
         {
             IExecute("onRegistration", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

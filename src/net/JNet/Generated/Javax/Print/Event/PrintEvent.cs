@@ -37,7 +37,7 @@ namespace Javax.Print.Event
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

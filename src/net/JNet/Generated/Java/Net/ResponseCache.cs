@@ -48,7 +48,7 @@ namespace Java.Net
         {
             get { return SExecute<Java.Net.ResponseCache>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -75,7 +75,7 @@ namespace Java.Net
         {
             return IExecute<Java.Net.CacheResponse>("get", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -81,7 +81,7 @@ namespace Java.Util.Logging
         {
             return IExecute<string>("getTail", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

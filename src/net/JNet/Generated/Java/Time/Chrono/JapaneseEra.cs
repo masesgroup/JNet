@@ -41,7 +41,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.JapaneseEra"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.JapaneseEra t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra TAISHO { get { return LocalClazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.JapaneseEra>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -120,7 +120,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

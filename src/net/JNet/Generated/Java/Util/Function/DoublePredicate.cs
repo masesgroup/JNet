@@ -79,7 +79,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.DoublePredicate>("or", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

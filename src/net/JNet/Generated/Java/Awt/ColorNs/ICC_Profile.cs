@@ -37,7 +37,7 @@ namespace Java.Awt.ColorNs
         /// Converter from <see cref="Java.Awt.ColorNs.ICC_Profile"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ColorNs.ICC_Profile t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -517,7 +517,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icXYZNumberX"/>
         /// </summary>
         public static int icXYZNumberX { get { return LocalClazz.GetField<int>("icXYZNumberX"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -559,7 +559,7 @@ namespace Java.Awt.ColorNs
         {
             return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -648,7 +648,7 @@ namespace Java.Awt.ColorNs
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

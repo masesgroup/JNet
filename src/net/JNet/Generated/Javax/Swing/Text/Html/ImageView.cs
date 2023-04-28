@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Javax.Swing.Text.Html
         {
             get { return IExecute<Javax.Swing.Icon>("getNoImageIcon"); }
         }
-        
+
         #endregion
 
         #region Nested classes

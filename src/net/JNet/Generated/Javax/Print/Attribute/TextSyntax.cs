@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.TextSyntax"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.TextSyntax t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Javax.Print.Attribute
         {
             get { return IExecute<string>("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

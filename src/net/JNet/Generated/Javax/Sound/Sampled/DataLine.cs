@@ -136,7 +136,7 @@ namespace Javax.Sound.Sampled
         {
             IExecute("stop");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -174,7 +174,7 @@ namespace Javax.Sound.Sampled
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -220,14 +220,18 @@ namespace Javax.Sound.Sampled
             {
                 return IExecute<bool>("isFormatSupported", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ObjLongConsumer{T}"/> to <see cref="Java.Util.Function.ObjLongConsumer"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ObjLongConsumer(Java.Util.Function.ObjLongConsumer<T> t) => t.Cast<Java.Util.Function.ObjLongConsumer>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Java.Text
         {
             return SExecute<string>(LocalClazz, "normalize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -97,7 +97,7 @@ namespace Java.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKD"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFKD { get { return LocalClazz.GetField<Java.Text.Normalizer.Form>("NFKD"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -117,10 +117,14 @@ namespace Java.Text
             {
                 return SExecute<Java.Text.Normalizer.Form>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -128,7 +132,7 @@ namespace Java.Text
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

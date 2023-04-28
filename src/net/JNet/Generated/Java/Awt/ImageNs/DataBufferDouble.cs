@@ -84,7 +84,7 @@ namespace Java.Awt.ImageNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecuteArray<double>("getData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

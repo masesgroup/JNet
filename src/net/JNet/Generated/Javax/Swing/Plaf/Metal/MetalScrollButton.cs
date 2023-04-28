@@ -39,7 +39,7 @@ namespace Javax.Swing.Plaf.Metal
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("setFreeStanding", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

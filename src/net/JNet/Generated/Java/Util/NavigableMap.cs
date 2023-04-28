@@ -226,7 +226,7 @@ namespace Java.Util
         {
             return IExecute("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -249,7 +249,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.NavigableMap{K, V}"/> to <see cref="Java.Util.NavigableMap"/>
         /// </summary>
         public static implicit operator Java.Util.NavigableMap(Java.Util.NavigableMap<K, V> t) => t.Cast<Java.Util.NavigableMap>();
-        
+
         #endregion
 
         #region Fields
@@ -442,7 +442,7 @@ namespace Java.Util
         {
             return IExecute<K>("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

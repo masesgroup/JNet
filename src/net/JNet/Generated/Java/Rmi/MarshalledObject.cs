@@ -38,7 +38,7 @@ namespace Java.Rmi
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Rmi
         /// Converter from <see cref="Java.Rmi.MarshalledObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.MarshalledObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Rmi
         {
             get { return IExecute("get"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -89,7 +89,7 @@ namespace Java.Rmi
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -101,7 +101,7 @@ namespace Java.Rmi
         /// Converter from <see cref="Java.Rmi.MarshalledObject{T}"/> to <see cref="Java.Rmi.MarshalledObject"/>
         /// </summary>
         public static implicit operator Java.Rmi.MarshalledObject(Java.Rmi.MarshalledObject<T> t) => t.Cast<Java.Rmi.MarshalledObject>();
-        
+
         #endregion
 
         #region Fields
@@ -120,7 +120,7 @@ namespace Java.Rmi
         {
             get { return IExecute<T>("get"); }
         }
-        
+
         #endregion
 
         #region Nested classes

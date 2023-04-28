@@ -52,7 +52,7 @@ namespace Java.Security
         {
             get { return IExecute("run"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -75,7 +75,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.PrivilegedAction{T}"/> to <see cref="Java.Security.PrivilegedAction"/>
         /// </summary>
         public static implicit operator Java.Security.PrivilegedAction(Java.Security.PrivilegedAction<T> t) => t.Cast<Java.Security.PrivilegedAction>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Java.Security
         {
             get { return IExecute<T>("run"); }
         }
-        
+
         #endregion
 
         #region Nested classes

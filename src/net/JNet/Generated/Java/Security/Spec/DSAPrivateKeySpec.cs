@@ -40,7 +40,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.DSAPrivateKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.DSAPrivateKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getX"); }
         }
-        
+
         #endregion
 
         #region Nested classes

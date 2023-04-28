@@ -37,7 +37,7 @@ namespace Javax.Xml.Stream.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Stream.Util
         /// Converter from <see cref="Javax.Xml.Stream.Util.EventReaderDelegate"/> to <see cref="Javax.Xml.Stream.XMLEventReader"/>
         /// </summary>
         public static implicit operator Javax.Xml.Stream.XMLEventReader(Javax.Xml.Stream.Util.EventReaderDelegate t) => t.Cast<Javax.Xml.Stream.XMLEventReader>();
-        
+
         #endregion
 
         #region Fields
@@ -119,7 +119,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
@@ -132,7 +132,7 @@ namespace Javax.Xml.Stream.Util
         {
             IExecute("remove");
         }
-        
+
         #endregion
 
         #region Nested classes

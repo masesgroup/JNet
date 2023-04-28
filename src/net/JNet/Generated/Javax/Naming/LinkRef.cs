@@ -45,7 +45,7 @@ namespace Javax.Naming
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Naming
         {
             get { return IExecute<string>("getLinkName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

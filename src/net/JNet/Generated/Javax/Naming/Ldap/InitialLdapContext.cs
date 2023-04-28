@@ -39,7 +39,7 @@ namespace Javax.Naming.Ldap
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.InitialLdapContext"/> to <see cref="Javax.Naming.Ldap.LdapContext"/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.LdapContext(Javax.Naming.Ldap.InitialLdapContext t) => t.Cast<Javax.Naming.Ldap.LdapContext>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Javax.Naming.Ldap
         {
             IExecute("reconnect", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

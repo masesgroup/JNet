@@ -132,7 +132,7 @@ namespace Javax.Swing.Plaf
         {
             return IExecute<string>("getToolTipText2D", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

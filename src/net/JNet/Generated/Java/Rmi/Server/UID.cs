@@ -37,7 +37,7 @@ namespace Java.Rmi.Server
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Rmi.Server
         /// Converter from <see cref="Java.Rmi.Server.UID"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.UID t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Java.Rmi.Server
         {
             return SExecute<Java.Rmi.Server.UID>(LocalClazz, "read", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -76,7 +76,7 @@ namespace Java.Rmi.Server
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

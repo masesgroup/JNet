@@ -37,7 +37,7 @@ namespace Java.Awt.ColorNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Awt.ColorNs
         {
             get { return IExecute<Java.Awt.ColorNs.ICC_Profile>("getProfile"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Java.Nio.File
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

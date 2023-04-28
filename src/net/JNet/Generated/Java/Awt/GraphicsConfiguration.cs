@@ -177,7 +177,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

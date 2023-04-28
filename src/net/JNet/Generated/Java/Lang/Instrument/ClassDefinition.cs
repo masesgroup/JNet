@@ -38,7 +38,7 @@ namespace Java.Lang.Instrument
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Lang.Instrument
         {
             get { return IExecuteArray<byte>("getDefinitionClassFile"); }
         }
-        
+
         #endregion
 
         #region Nested classes

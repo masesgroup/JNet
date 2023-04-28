@@ -56,7 +56,7 @@ namespace Javax.Swing.Border
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -82,7 +82,7 @@ namespace Javax.Swing.Border
         {
             get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "createGrayLineBorder"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -107,7 +107,7 @@ namespace Javax.Swing.Border
         {
             get { return IExecute<int>("getThickness"); }
         }
-        
+
         #endregion
 
         #region Nested classes

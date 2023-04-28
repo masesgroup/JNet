@@ -37,7 +37,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.SecureRandomSpi"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.SecureRandomSpi t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields

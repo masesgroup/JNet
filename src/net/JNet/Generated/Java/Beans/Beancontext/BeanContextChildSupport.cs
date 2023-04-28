@@ -37,7 +37,7 @@ namespace Java.Beans.Beancontext
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Java.Beans.Beancontext
         /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#beanContextChildPeer"/>
         /// </summary>
         public Java.Beans.Beancontext.BeanContextChild beanContextChildPeer { get { return Instance.GetField<Java.Beans.Beancontext.BeanContextChild>("beanContextChildPeer"); } set { Instance.SetField("beanContextChildPeer", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -172,7 +172,7 @@ namespace Java.Beans.Beancontext
         {
             IExecute("serviceRevoked", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

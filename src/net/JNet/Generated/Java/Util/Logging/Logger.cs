@@ -41,7 +41,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#GLOBAL_LOGGER_NAME"/>
         /// </summary>
         public static string GLOBAL_LOGGER_NAME { get { return LocalClazz.GetField<string>("GLOBAL_LOGGER_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -87,7 +87,7 @@ namespace Java.Util.Logging
         {
             return SExecute<Java.Util.Logging.Logger>(LocalClazz, "getLogger", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -528,7 +528,7 @@ namespace Java.Util.Logging
         {
             IExecute("warning", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Java.Awt.ImageNs.Renderable
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// Converter from <see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ImageNs.Renderable.ParameterBlock t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -396,7 +396,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             IExecute("removeSources");
         }
-        
+
         #endregion
 
         #region Nested classes

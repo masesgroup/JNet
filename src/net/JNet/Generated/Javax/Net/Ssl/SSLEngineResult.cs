@@ -52,7 +52,7 @@ namespace Javax.Net.Ssl
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -103,7 +103,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<long>("sequenceNumber"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -143,7 +143,7 @@ namespace Javax.Net.Ssl
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NOT_HANDSHAKING"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NOT_HANDSHAKING { get { return LocalClazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NOT_HANDSHAKING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -163,10 +163,14 @@ namespace Javax.Net.Ssl
             {
                 return SExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -202,7 +206,7 @@ namespace Javax.Net.Ssl
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#OK"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status OK { get { return LocalClazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("OK"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -222,10 +226,14 @@ namespace Javax.Net.Ssl
             {
                 return SExecute<Javax.Net.Ssl.SSLEngineResult.Status>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -233,7 +241,7 @@ namespace Javax.Net.Ssl
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

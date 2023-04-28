@@ -48,7 +48,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -57,7 +57,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -72,7 +72,7 @@ namespace Javax.Sql.Rowset.Spi
         {
             IExecute("rollback", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

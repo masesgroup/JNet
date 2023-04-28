@@ -504,7 +504,7 @@ namespace Java.Beans
     /// </summary>
     public partial class ExceptionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -963,7 +963,7 @@ namespace Java.Beans
     /// </summary>
     public partial class PropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1379,7 +1379,7 @@ namespace Java.Beans
     /// </summary>
     public partial class VetoableChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

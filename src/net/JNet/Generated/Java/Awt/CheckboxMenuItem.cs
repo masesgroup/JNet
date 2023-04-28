@@ -48,7 +48,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.CheckboxMenuItem"/> to <see cref="Java.Awt.ItemSelectable"/>
         /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Java.Awt.CheckboxMenuItem t) => t.Cast<Java.Awt.ItemSelectable>();
-        
+
         #endregion
 
         #region Fields
@@ -105,7 +105,7 @@ namespace Java.Awt
         {
             IExecute("removeItemListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

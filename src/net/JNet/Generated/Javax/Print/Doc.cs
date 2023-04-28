@@ -80,7 +80,7 @@ namespace Javax.Print
         {
             get { return IExecute<Java.Io.InputStream>("getStreamForBytes"); }
         }
-        
+
         #endregion
 
         #region Nested classes

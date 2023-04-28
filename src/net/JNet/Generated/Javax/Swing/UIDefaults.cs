@@ -38,7 +38,7 @@ namespace Javax.Swing
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -317,7 +317,7 @@ namespace Javax.Swing
         {
             IExecute("putDefaults", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -350,7 +350,11 @@ namespace Javax.Swing
             {
                 return IExecute("createValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -386,7 +390,11 @@ namespace Javax.Swing
             {
                 return IExecute("createValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -422,7 +430,11 @@ namespace Javax.Swing
             {
                 return IExecute("createValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -450,7 +462,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -475,14 +487,18 @@ namespace Javax.Swing
             {
                 return IExecute("createValue", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -37,7 +37,7 @@ namespace Javax.Imageio.Plugins.Bmp
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Imageio.Plugins.Bmp
         {
             IExecute("setTopDown", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

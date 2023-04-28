@@ -54,7 +54,7 @@ namespace Java.Util
         {
             return IExecute("handleGetObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

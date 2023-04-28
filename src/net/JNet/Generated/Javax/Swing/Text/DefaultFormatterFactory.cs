@@ -67,7 +67,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.DefaultFormatterFactory"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultFormatterFactory t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -115,7 +115,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getNullFormatter"); } set { IExecute("setNullFormatter", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

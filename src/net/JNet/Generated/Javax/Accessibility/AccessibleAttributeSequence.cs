@@ -39,7 +39,7 @@ namespace Javax.Accessibility
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#attributes"/>
         /// </summary>
         public Javax.Swing.Text.AttributeSet attributes { get { return Instance.GetField<Javax.Swing.Text.AttributeSet>("attributes"); } set { Instance.SetField("attributes", value); } }
-        
+
         #endregion
 
         #region Static methods

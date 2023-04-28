@@ -46,7 +46,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -72,13 +72,13 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html#closeEntry()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void CloseEntry()
         {
             IExecute("closeEntry");
         }
-        
+
         #endregion
 
         #region Nested classes

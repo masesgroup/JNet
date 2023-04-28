@@ -177,7 +177,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_VERSION"/>
         /// </summary>
         public static int HTTP_VERSION { get { return LocalClazz.GetField<int>("HTTP_VERSION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -188,7 +188,7 @@ namespace Java.Net
         {
             get { return SExecute<bool>(LocalClazz, "getFollowRedirects"); } set { SExecute(LocalClazz, "setFollowRedirects", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -273,7 +273,7 @@ namespace Java.Net
         {
             IExecute("setFixedLengthStreamingMode", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

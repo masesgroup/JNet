@@ -81,7 +81,7 @@ namespace Javax.Net.Ssl
         {
             return SExecute<Javax.Net.Ssl.SSLContext>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -144,7 +144,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine()
         {
@@ -171,7 +171,7 @@ namespace Javax.Net.Ssl
         {
             IExecute("init", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

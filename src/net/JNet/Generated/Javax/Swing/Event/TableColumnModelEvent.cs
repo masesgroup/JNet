@@ -39,7 +39,7 @@ namespace Javax.Swing.Event
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<int>("getToIndex"); }
         }
-        
+
         #endregion
 
         #region Nested classes

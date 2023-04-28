@@ -38,7 +38,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Security.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#POINT_INFINITY"/>
         /// </summary>
         public static Java.Security.Spec.ECPoint POINT_INFINITY { get { return LocalClazz.GetField<Java.Security.Spec.ECPoint>("POINT_INFINITY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -72,7 +72,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getAffineY"); }
         }
-        
+
         #endregion
 
         #region Nested classes

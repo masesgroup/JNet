@@ -61,7 +61,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { return LocalClazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS"); } }
-        
+
         #endregion
 
         #region Static methods

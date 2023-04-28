@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("installDefaults", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

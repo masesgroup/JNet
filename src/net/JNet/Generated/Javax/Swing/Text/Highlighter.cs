@@ -114,7 +114,7 @@ namespace Javax.Swing.Text
         {
             IExecute("removeHighlight", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -159,7 +159,11 @@ namespace Javax.Swing.Text
             {
                 get { return IExecute<int>("getStartOffset"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -198,14 +202,18 @@ namespace Javax.Swing.Text
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

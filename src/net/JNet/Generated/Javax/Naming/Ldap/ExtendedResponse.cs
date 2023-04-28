@@ -59,7 +59,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecute<string>("getID"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -53,7 +53,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -109,7 +109,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<int>("getOffset", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

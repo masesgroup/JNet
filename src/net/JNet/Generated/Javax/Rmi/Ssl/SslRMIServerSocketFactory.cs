@@ -52,7 +52,7 @@ namespace Javax.Rmi.Ssl
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Javax.Rmi.Ssl
         /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIServerSocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
         /// </summary>
         public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Javax.Rmi.Ssl.SslRMIServerSocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Javax.Rmi.Ssl
         {
             return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

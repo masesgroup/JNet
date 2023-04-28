@@ -106,7 +106,7 @@ namespace Java.Util.Spi
         {
             return IExecute<string>("getDisplayUnicodeExtensionType", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

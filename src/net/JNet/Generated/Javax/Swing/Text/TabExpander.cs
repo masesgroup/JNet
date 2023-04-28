@@ -55,7 +55,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<float>("nextTabStop", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

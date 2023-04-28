@@ -173,7 +173,7 @@ namespace Java.Io
         {
             IExecute("writeUTF", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

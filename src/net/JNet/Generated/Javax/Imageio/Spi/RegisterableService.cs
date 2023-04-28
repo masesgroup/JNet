@@ -63,7 +63,7 @@ namespace Javax.Imageio.Spi
         {
             IExecute("onRegistration", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

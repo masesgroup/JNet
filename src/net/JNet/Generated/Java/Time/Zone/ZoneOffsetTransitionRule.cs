@@ -37,7 +37,7 @@ namespace Java.Time.Zone
         /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneOffsetTransitionRule t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -62,7 +62,7 @@ namespace Java.Time.Zone
         {
             return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -138,7 +138,7 @@ namespace Java.Time.Zone
         {
             return IExecute<Java.Time.Zone.ZoneOffsetTransition>("createTransition", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -166,7 +166,7 @@ namespace Java.Time.Zone
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#WALL"/>
             /// </summary>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition WALL { get { return LocalClazz.GetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("WALL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -186,7 +186,7 @@ namespace Java.Time.Zone
             {
                 return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -201,14 +201,18 @@ namespace Java.Time.Zone
             {
                 return IExecute<Java.Time.LocalDateTime>("createDateTime", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

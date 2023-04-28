@@ -45,7 +45,7 @@ namespace Javax.Management.Modelmbean
         /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster"/>
         /// </summary>
         public static implicit operator Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Management.Modelmbean
         {
             IExecute("setModelMBeanInfo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Javax.Accessibility
         {
             return IExecute<Java.Io.InputStream>("getStream", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

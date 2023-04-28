@@ -290,7 +290,7 @@ namespace Java.Lang.Reflect
         {
             SExecute(LocalClazz, "setShort", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

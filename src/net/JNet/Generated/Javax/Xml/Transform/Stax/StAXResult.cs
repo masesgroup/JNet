@@ -45,7 +45,7 @@ namespace Javax.Xml.Transform.Stax
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Xml.Transform.Stax
         /// Converter from <see cref="Javax.Xml.Transform.Stax.StAXResult"/> to <see cref="Javax.Xml.Transform.Result"/>
         /// </summary>
         public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Stax.StAXResult t) => t.Cast<Javax.Xml.Transform.Result>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Xml.Transform.Stax
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXResult.html#FEATURE"/>
         /// </summary>
         public static string FEATURE { get { return LocalClazz.GetField<string>("FEATURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Javax.Xml.Transform.Stax
         {
             get { return IExecute<Javax.Xml.Stream.XMLStreamWriter>("getXMLStreamWriter"); }
         }
-        
+
         #endregion
 
         #region Nested classes

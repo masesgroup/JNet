@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             get { return IExecuteArray<Javax.Swing.MenuElement>("getPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

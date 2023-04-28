@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.TransformService"/> to <see cref="Javax.Xml.Crypto.Dsig.Transform"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Transform(Javax.Xml.Crypto.Dsig.TransformService t) => t.Cast<Javax.Xml.Crypto.Dsig.Transform>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalClazz, "getInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -135,7 +135,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             IExecute("marshalParams", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

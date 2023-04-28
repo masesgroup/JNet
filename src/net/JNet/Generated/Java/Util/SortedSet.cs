@@ -101,7 +101,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -124,7 +124,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.SortedSet{E}"/> to <see cref="Java.Util.SortedSet"/>
         /// </summary>
         public static implicit operator Java.Util.SortedSet(Java.Util.SortedSet<E> t) => t.Cast<Java.Util.SortedSet>();
-        
+
         #endregion
 
         #region Fields
@@ -192,7 +192,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedSet<E>>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

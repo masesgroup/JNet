@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.Semaphore"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Semaphore t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool TryAcquire()
         {
@@ -145,7 +145,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquire()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Acquire()
         {
@@ -190,7 +190,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("release", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

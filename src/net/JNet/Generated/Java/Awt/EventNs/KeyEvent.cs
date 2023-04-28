@@ -56,7 +56,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -864,7 +864,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Z"/>
         /// </summary>
         public static int VK_Z { get { return LocalClazz.GetField<int>("VK_Z"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -886,7 +886,7 @@ namespace Java.Awt.EventNs
         {
             return SExecute<string>(LocalClazz, "getKeyText", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -925,7 +925,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<int>("getKeyLocation"); }
         }
-        
+
         #endregion
 
         #region Nested classes

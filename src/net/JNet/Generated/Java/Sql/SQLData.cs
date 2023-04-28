@@ -71,7 +71,7 @@ namespace Java.Sql
         {
             IExecute("writeSQL", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

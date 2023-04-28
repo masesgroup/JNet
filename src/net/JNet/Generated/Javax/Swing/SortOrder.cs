@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#UNSORTED"/>
         /// </summary>
         public static Javax.Swing.SortOrder UNSORTED { get { return LocalClazz.GetField<Javax.Swing.SortOrder>("UNSORTED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Javax.Swing
         {
             return SExecute<Javax.Swing.SortOrder>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

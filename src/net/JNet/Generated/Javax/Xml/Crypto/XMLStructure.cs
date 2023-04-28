@@ -54,7 +54,7 @@ namespace Javax.Xml.Crypto
         {
             return IExecute<bool>("isFeatureSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

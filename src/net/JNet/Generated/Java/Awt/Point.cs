@@ -46,7 +46,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Point"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Point t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#y"/>
         /// </summary>
         public int y { get { return Instance.GetField<int>("y"); } set { Instance.SetField("y", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -108,7 +108,7 @@ namespace Java.Awt
         {
             IExecute("translate", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

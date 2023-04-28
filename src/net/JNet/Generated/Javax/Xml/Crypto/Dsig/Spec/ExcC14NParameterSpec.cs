@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec(Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static string DEFAULT { get { return LocalClazz.GetField<string>("DEFAULT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -68,7 +68,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             get { return IExecute<Java.Util.List<string>>("getPrefixList"); }
         }
-        
+
         #endregion
 
         #region Nested classes

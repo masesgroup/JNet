@@ -107,7 +107,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -193,7 +193,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -260,7 +260,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -275,6 +275,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -302,7 +303,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -317,6 +318,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -344,7 +346,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -359,6 +361,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -386,7 +389,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -401,10 +404,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -447,7 +451,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -533,7 +537,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -619,7 +623,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -705,7 +709,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -791,7 +795,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -877,7 +881,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -987,7 +991,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1002,6 +1006,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1029,7 +1034,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1044,10 +1049,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1157,7 +1163,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1172,10 +1178,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1261,7 +1268,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1314,7 +1321,7 @@ namespace Java.Util
     /// </summary>
     public partial class Comparator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1327,10 +1334,10 @@ namespace Java.Util
     /// </summary>
     public partial class Comparator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1518,7 +1525,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1604,7 +1611,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1765,7 +1772,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1851,7 +1858,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1937,7 +1944,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -1947,7 +1954,7 @@ namespace Java.Util
     /// </summary>
     public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -2036,7 +2043,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2248,7 +2255,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -2263,10 +2270,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -2411,7 +2419,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2497,7 +2505,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2583,7 +2591,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2669,7 +2677,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2942,7 +2950,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3028,7 +3036,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3114,7 +3122,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3200,7 +3208,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3286,7 +3294,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3372,7 +3380,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -3482,7 +3490,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3497,6 +3505,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -3524,7 +3533,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3539,6 +3548,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -3566,7 +3576,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3581,6 +3591,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -3608,7 +3619,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3623,6 +3634,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -3650,7 +3662,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3665,10 +3677,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -3778,7 +3791,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3793,6 +3806,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -3820,7 +3834,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -3835,10 +3849,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -3881,7 +3896,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4015,7 +4030,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4101,7 +4116,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4246,7 +4261,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4442,7 +4457,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -4457,6 +4472,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -4484,7 +4500,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -4499,6 +4515,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -4526,7 +4543,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -4541,10 +4558,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -4587,7 +4605,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4673,7 +4691,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -4888,7 +4906,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5041,7 +5059,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5056,10 +5074,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -5167,7 +5186,10 @@ namespace Java.Util
         /// </summary>
         public partial class Provider : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
-#warning Remember to build the body class for event listener
+        #warning Remember to build the body class for event listener
+
+            // TODO: complete the class
+
         }
         #endregion
 
@@ -5177,11 +5199,14 @@ namespace Java.Util
         /// </summary>
         public partial class Provider<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
-#warning Remember to build the body class for event listener
+        #warning Remember to build the body class for event listener
+
+            // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -5224,7 +5249,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5310,7 +5335,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5439,7 +5464,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5525,7 +5550,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5592,7 +5617,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5607,6 +5632,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5634,7 +5660,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5649,6 +5675,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5676,7 +5703,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5691,6 +5718,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5718,7 +5746,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5733,6 +5761,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5760,7 +5789,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5775,10 +5804,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -5821,7 +5851,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -5888,7 +5918,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5903,6 +5933,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5930,7 +5961,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5945,6 +5976,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -5972,7 +6004,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -5987,6 +6019,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -6014,7 +6047,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -6029,6 +6062,7 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -6056,7 +6090,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -6071,10 +6105,11 @@ namespace Java.Util
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -6203,7 +6238,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -6520,7 +6555,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -6606,7 +6641,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -6767,7 +6802,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -6853,7 +6888,7 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

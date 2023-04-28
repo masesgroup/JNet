@@ -41,7 +41,7 @@ namespace Javax.Sql
         /// Converter from <see cref="Javax.Sql.DataSource"/> to <see cref="Java.Sql.Wrapper"/>
         /// </summary>
         public static implicit operator Java.Sql.Wrapper(Javax.Sql.DataSource t) => t.Cast<Java.Sql.Wrapper>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Javax.Sql
         {
             return IExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

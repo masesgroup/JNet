@@ -108,7 +108,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -116,7 +116,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.MemoryImageSource"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.MemoryImageSource t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
-        
+
         #endregion
 
         #region Fields
@@ -237,7 +237,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("startProduction", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

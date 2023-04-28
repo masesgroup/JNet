@@ -47,7 +47,7 @@ namespace Javax.Naming.Ldap
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.BasicControl"/> to <see cref="Javax.Naming.Ldap.Control"/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.Control(Javax.Naming.Ldap.BasicControl t) => t.Cast<Javax.Naming.Ldap.Control>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecute<bool>("isCritical"); }
         }
-        
+
         #endregion
 
         #region Nested classes

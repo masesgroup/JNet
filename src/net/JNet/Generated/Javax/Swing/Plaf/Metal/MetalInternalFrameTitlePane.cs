@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Metal
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("setPalette", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

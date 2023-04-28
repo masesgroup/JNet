@@ -38,7 +38,7 @@ namespace Javax.Swing.Text
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<int>("getMaxZonesLoaded"); } set { IExecute("setMaxZonesLoaded", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

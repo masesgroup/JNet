@@ -99,7 +99,7 @@ namespace Javax.Swing
         {
             return SExecute<Javax.Swing.KeyStroke>(LocalClazz, "getKeyStrokeForEvent", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

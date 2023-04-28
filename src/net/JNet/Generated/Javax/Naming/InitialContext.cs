@@ -38,7 +38,7 @@ namespace Javax.Naming
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.InitialContext"/> to <see cref="Javax.Naming.Context"/>
         /// </summary>
         public static implicit operator Javax.Naming.Context(Javax.Naming.InitialContext t) => t.Cast<Javax.Naming.Context>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Javax.Naming
         {
             return SExecute<T>(LocalClazz, "doLookup", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -278,7 +278,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
@@ -360,7 +360,7 @@ namespace Javax.Naming
         {
             IExecute("unbind", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

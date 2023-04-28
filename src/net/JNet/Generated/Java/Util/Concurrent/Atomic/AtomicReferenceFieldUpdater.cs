@@ -52,7 +52,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>(LocalClazz, "newUpdater", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute("getAndSet", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater{T, V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater(Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<T, V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>();
-        
+
         #endregion
 
         #region Fields
@@ -199,7 +199,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>(LocalClazz, "newUpdater", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute<V>("getAndSet", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

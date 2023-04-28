@@ -41,7 +41,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.DocumentationTool"/> to <see cref="Javax.Tools.OptionChecker"/>
         /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.DocumentationTool t) => t.Cast<Javax.Tools.OptionChecker>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Javax.Tools
         {
             return IExecute<Javax.Tools.StandardJavaFileManager>("getStandardFileManager", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -125,7 +125,11 @@ namespace Javax.Tools
             {
                 IExecute("setLocale", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -156,7 +160,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#TAGLET_PATH"/>
             /// </summary>
             public static Javax.Tools.DocumentationTool.Location TAGLET_PATH { get { return LocalClazz.GetField<Javax.Tools.DocumentationTool.Location>("TAGLET_PATH"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -176,7 +180,7 @@ namespace Javax.Tools
             {
                 return SExecute<Javax.Tools.DocumentationTool.Location>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -194,14 +198,18 @@ namespace Javax.Tools
             {
                 get { return IExecute<string>("getName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

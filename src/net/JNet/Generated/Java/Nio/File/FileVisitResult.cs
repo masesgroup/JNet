@@ -53,7 +53,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult TERMINATE { get { return LocalClazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.FileVisitResult>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

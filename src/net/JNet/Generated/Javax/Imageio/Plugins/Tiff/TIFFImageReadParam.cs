@@ -75,7 +75,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             IExecute("removeAllowedTagSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

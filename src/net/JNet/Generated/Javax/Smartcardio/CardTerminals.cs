@@ -68,7 +68,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Java.Util.List<Javax.Smartcardio.CardTerminal> List()
@@ -87,13 +87,13 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void WaitForChange()
         {
             IExecute("waitForChange");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -129,7 +129,7 @@ namespace Javax.Smartcardio
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_REMOVAL"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_REMOVAL { get { return LocalClazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_REMOVAL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -149,10 +149,14 @@ namespace Javax.Smartcardio
             {
                 return SExecute<Javax.Smartcardio.CardTerminals.State>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -160,7 +164,7 @@ namespace Javax.Smartcardio
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

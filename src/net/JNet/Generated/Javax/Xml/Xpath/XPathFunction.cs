@@ -55,7 +55,7 @@ namespace Javax.Xml.Xpath
         {
             return IExecute("evaluate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

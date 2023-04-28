@@ -40,7 +40,7 @@ namespace Javax.Security.Auth.Callback
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -52,7 +52,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.ChoiceCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.ChoiceCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Javax.Security.Auth.Callback
         {
             IExecute("setSelectedIndex", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

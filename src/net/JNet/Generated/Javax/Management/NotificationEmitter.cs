@@ -56,7 +56,7 @@ namespace Javax.Management
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

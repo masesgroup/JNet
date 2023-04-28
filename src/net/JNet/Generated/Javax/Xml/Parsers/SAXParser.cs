@@ -165,7 +165,7 @@ namespace Javax.Xml.Parsers
         {
             IExecute("reset");
         }
-        
+
         #endregion
 
         #region Nested classes

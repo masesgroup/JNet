@@ -181,7 +181,7 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#TIME"/>
         /// </summary>
         public static Javax.Xml.Namespace.QName TIME { get { return LocalClazz.GetField<Javax.Xml.Namespace.QName>("TIME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -220,14 +220,18 @@ namespace Javax.Xml.Datatype
             {
                 get { return IExecute<int>("getId"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

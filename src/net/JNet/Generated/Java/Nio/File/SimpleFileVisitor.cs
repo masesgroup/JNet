@@ -37,7 +37,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor"/> to <see cref="Java.Nio.File.FileVisitor"/>
         /// </summary>
         public static implicit operator Java.Nio.File.FileVisitor(Java.Nio.File.SimpleFileVisitor t) => t.Cast<Java.Nio.File.FileVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Java.Nio.File
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -120,7 +120,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.SimpleFileVisitor"/>
         /// </summary>
         public static implicit operator Java.Nio.File.SimpleFileVisitor(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.SimpleFileVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -176,7 +176,7 @@ namespace Java.Nio.File
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

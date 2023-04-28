@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Metal
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("paintComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

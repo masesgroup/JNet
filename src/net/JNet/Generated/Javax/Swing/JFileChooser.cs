@@ -71,7 +71,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JFileChooser"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JFileChooser t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILES_CHANGED_PROPERTY"/>
         /// </summary>
         public static string SELECTED_FILES_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("SELECTED_FILES_CHANGED_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -569,7 +569,7 @@ namespace Javax.Swing
         {
             IExecute("setMultiSelectionEnabled", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

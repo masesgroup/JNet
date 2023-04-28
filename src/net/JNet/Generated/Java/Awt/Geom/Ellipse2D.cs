@@ -64,7 +64,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -72,7 +72,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Double"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -92,7 +92,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#y"/>
             /// </summary>
             public double y { get { return Instance.GetField<double>("y"); } set { Instance.SetField("y", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -100,6 +100,10 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -122,7 +126,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -130,7 +134,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Float"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Float t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -150,7 +154,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#y"/>
             /// </summary>
             public float y { get { return Instance.GetField<float>("y"); } set { Instance.SetField("y", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -169,14 +173,18 @@ namespace Java.Awt.Geom
             {
                 IExecute("setFrame", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

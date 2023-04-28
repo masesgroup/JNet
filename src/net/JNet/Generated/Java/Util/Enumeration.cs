@@ -66,7 +66,7 @@ namespace Java.Util
         {
             get { return IExecute("nextElement"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -89,7 +89,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Enumeration{E}"/> to <see cref="Java.Util.Enumeration"/>
         /// </summary>
         public static implicit operator Java.Util.Enumeration(Java.Util.Enumeration<E> t) => t.Cast<Java.Util.Enumeration>();
-        
+
         #endregion
 
         #region Fields
@@ -122,7 +122,7 @@ namespace Java.Util
         {
             get { return IExecute<E>("nextElement"); }
         }
-        
+
         #endregion
 
         #region Nested classes

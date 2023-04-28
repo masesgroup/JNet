@@ -249,7 +249,7 @@ namespace Javax.Management.Timer
         {
             IExecute("stop");
         }
-        
+
         #endregion
 
         #region Nested classes

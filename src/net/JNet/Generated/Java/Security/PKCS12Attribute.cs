@@ -46,7 +46,7 @@ namespace Java.Security
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Java.Security
         {
             get { return IExecute<string>("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

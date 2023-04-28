@@ -41,7 +41,7 @@ namespace Javax.Sql.Rowset
         /// Converter from <see cref="Javax.Sql.Rowset.RowSetMetaDataImpl"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.RowSetMetaDataImpl t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -440,7 +440,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("setTableName", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -48,7 +48,7 @@ namespace Java.Util.Function
         {
             get { return SExecute<Java.Util.Function.Function>(LocalClazz, "identity"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -79,7 +79,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Function>("compose", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -102,7 +102,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.Function{T, R}"/> to <see cref="Java.Util.Function.Function"/>
         /// </summary>
         public static implicit operator Java.Util.Function.Function(Java.Util.Function.Function<T, R> t) => t.Cast<Java.Util.Function.Function>();
-        
+
         #endregion
 
         #region Fields
@@ -117,7 +117,7 @@ namespace Java.Util.Function
         {
             get { return SExecute<Java.Util.Function.Function<T, T>>(LocalClazz, "identity"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -148,7 +148,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Function<V, R>>("compose", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

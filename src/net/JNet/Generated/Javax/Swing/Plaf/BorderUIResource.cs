@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.BorderUIResource t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Javax.Swing.Plaf
         {
             get { return SExecute<Javax.Swing.Border.Border>(LocalClazz, "getRaisedBevelBorderUIResource"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -122,7 +122,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -168,7 +168,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.BevelBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.BevelBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -180,6 +180,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -200,7 +204,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -208,7 +212,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.CompoundBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.CompoundBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -220,6 +224,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -250,7 +258,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -258,7 +266,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.EmptyBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EmptyBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -270,6 +278,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -308,7 +320,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -316,7 +328,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.EtchedBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EtchedBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -328,6 +340,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -356,7 +372,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -364,7 +380,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.LineBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.LineBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -376,6 +392,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -419,7 +439,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -427,7 +447,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.MatteBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.MatteBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -439,6 +459,10 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -511,7 +535,7 @@ namespace Javax.Swing.Plaf
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -519,7 +543,7 @@ namespace Javax.Swing.Plaf
             /// Converter from <see cref="Javax.Swing.Plaf.BorderUIResource.TitledBorderUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.TitledBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -534,11 +558,15 @@ namespace Javax.Swing.Plaf
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

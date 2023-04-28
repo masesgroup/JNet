@@ -50,7 +50,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -94,7 +94,7 @@ namespace Java.Security.Spec
         {
             get { return IExecuteArray<byte>("getSeed"); }
         }
-        
+
         #endregion
 
         #region Nested classes

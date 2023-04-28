@@ -58,7 +58,7 @@ namespace Javax.Swing.Table
         {
             return IExecute<Java.Awt.Component>("getTableCellEditorComponent", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

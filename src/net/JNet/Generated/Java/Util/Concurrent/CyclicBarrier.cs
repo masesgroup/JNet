@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,7 +86,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("reset");
         }
-        
+
         #endregion
 
         #region Nested classes

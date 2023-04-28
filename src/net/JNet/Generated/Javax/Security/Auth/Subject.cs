@@ -40,7 +40,7 @@ namespace Javax.Security.Auth
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Javax.Security.Auth
         /// Converter from <see cref="Javax.Security.Auth.Subject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Subject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Javax.Security.Auth
         {
             return SExecute<Javax.Security.Auth.Subject>(LocalClazz, "getSubject", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -175,7 +175,7 @@ namespace Javax.Security.Auth
         {
             IExecute("setReadOnly");
         }
-        
+
         #endregion
 
         #region Nested classes

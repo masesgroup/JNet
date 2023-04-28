@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.HMACParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec(Javax.Xml.Crypto.Dsig.Spec.HMACParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             get { return IExecute<int>("getOutputLength"); }
         }
-        
+
         #endregion
 
         #region Nested classes

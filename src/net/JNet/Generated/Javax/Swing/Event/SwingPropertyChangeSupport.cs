@@ -46,7 +46,7 @@ namespace Javax.Swing.Event
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<bool>("isNotifyOnEDT"); }
         }
-        
+
         #endregion
 
         #region Nested classes

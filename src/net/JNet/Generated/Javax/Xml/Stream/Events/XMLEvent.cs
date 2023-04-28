@@ -159,7 +159,7 @@ namespace Javax.Xml.Stream.Events
         {
             IExecute("writeAsEncodedUnicode", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

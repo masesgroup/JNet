@@ -118,13 +118,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
         public static Java.Util.Stream.Stream.Builder BuilderMethod()
         {
             return SExecute<Java.Util.Stream.Stream.Builder>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -244,7 +244,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -370,7 +370,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Sorted()
         {
@@ -429,7 +429,7 @@ namespace Java.Util.Stream
         {
             return IExecute<Java.Util.Stream.Stream>("takeWhile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -452,7 +452,7 @@ namespace Java.Util.Stream
         /// Converter from <see cref="Java.Util.Stream.Stream{T}"/> to <see cref="Java.Util.Stream.Stream"/>
         /// </summary>
         public static implicit operator Java.Util.Stream.Stream(Java.Util.Stream.Stream<T> t) => t.Cast<Java.Util.Stream.Stream>();
-        
+
         #endregion
 
         #region Fields
@@ -537,13 +537,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
         public static Java.Util.Stream.Stream.Builder<T> BuilderMethod()
         {
             return SExecute<Java.Util.Stream.Stream.Builder<T>>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -663,7 +663,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -789,7 +789,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Sorted()
         {
@@ -848,7 +848,7 @@ namespace Java.Util.Stream
         {
             return IExecute<Java.Util.Stream.Stream<T>>("takeWhile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -54,7 +54,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

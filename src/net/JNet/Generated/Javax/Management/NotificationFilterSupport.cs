@@ -37,7 +37,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.NotificationFilterSupport"/> to <see cref="Javax.Management.NotificationFilter"/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationFilter(Javax.Management.NotificationFilterSupport t) => t.Cast<Javax.Management.NotificationFilter>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Javax.Management
         {
             IExecute("enableType", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

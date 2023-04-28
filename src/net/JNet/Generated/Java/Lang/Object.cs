@@ -64,7 +64,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Wait()
         {
@@ -80,7 +80,7 @@ namespace Java.Lang
         {
             IExecute("wait", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

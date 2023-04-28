@@ -48,7 +48,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.XMLEncoder"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLEncoder t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -97,7 +97,7 @@ namespace Java.Beans
         {
             IExecute("writeObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

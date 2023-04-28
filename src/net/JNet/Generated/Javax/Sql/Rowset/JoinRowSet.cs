@@ -57,7 +57,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#RIGHT_OUTER_JOIN"/>
         /// </summary>
         public static int RIGHT_OUTER_JOIN { get { return LocalClazz.GetField<int>("RIGHT_OUTER_JOIN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -184,7 +184,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("addRowSet", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

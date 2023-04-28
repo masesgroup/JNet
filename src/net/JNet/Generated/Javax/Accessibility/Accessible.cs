@@ -52,7 +52,7 @@ namespace Javax.Accessibility
         {
             get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
-        
+
         #endregion
 
         #region Nested classes

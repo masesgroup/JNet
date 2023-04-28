@@ -41,7 +41,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.AbstractDocument"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.AbstractDocument t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName"/>
         /// </summary>
         public static string SectionElementName { get { return LocalClazz.GetField<string>("SectionElementName"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -313,7 +313,7 @@ namespace Javax.Swing.Text
         {
             IExecute("replace", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -331,7 +331,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -351,7 +351,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.AbstractElement"/> to <see cref="Javax.Swing.Tree.TreeNode"/>
             /// </summary>
             public static implicit operator Javax.Swing.Tree.TreeNode(Javax.Swing.Text.AbstractDocument.AbstractElement t) => t.Cast<Javax.Swing.Tree.TreeNode>();
-            
+
             #endregion
 
             #region Fields
@@ -607,7 +607,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("removeAttributes", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -700,7 +704,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("reclaim", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -721,7 +729,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -756,7 +764,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("replace", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -844,7 +856,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("getChars", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -866,7 +882,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -874,7 +890,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/> to <see cref="Javax.Swing.Event.DocumentEvent"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.DocumentEvent(Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent t) => t.Cast<Javax.Swing.Event.DocumentEvent>();
-            
+
             #endregion
 
             #region Fields
@@ -923,7 +939,11 @@ namespace Javax.Swing.Text
             {
                 return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -945,7 +965,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -989,7 +1009,11 @@ namespace Javax.Swing.Text
             {
                 get { return IExecute<int>("getIndex"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -1012,7 +1036,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -1031,11 +1055,15 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

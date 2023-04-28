@@ -102,7 +102,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<bool>("isSupportedBy", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

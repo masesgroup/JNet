@@ -48,7 +48,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Label"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Label t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#RIGHT"/>
         /// </summary>
         public static int RIGHT { get { return LocalClazz.GetField<int>("RIGHT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -94,7 +94,7 @@ namespace Java.Awt
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Swing.Undo
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Swing.Undo
         {
             IExecute("end");
         }
-        
+
         #endregion
 
         #region Nested classes

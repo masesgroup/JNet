@@ -41,7 +41,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Nio.File.Watchable"/>
         /// </summary>
         public static implicit operator Java.Nio.File.Watchable(Java.Nio.File.Path t) => t.Cast<Java.Nio.File.Watchable>();
-        
+
         #endregion
 
         #region Fields
@@ -68,7 +68,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.Path>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -300,7 +300,7 @@ namespace Java.Nio.File
         {
             if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

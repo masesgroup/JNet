@@ -50,7 +50,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.ThreadLocal>(LocalClazz, "withInitial", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -76,7 +76,7 @@ namespace Java.Lang
         {
             IExecute("set", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -99,7 +99,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.ThreadLocal{T}"/> to <see cref="Java.Lang.ThreadLocal"/>
         /// </summary>
         public static implicit operator Java.Lang.ThreadLocal(Java.Lang.ThreadLocal<T> t) => t.Cast<Java.Lang.ThreadLocal>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.ThreadLocal<S>>(LocalClazz, "withInitial", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -142,7 +142,7 @@ namespace Java.Lang
         {
             IExecute("set", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

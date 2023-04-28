@@ -37,7 +37,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Currency"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Currency t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Currency>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -134,7 +134,7 @@ namespace Java.Util
         {
             return IExecute<string>("getSymbol", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicTableUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-            
+
             #endregion
 
             #region Fields
@@ -97,7 +97,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("focusLost", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -116,7 +120,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -124,7 +128,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.KeyHandler"/> to <see cref="Java.Awt.EventNs.KeyListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.KeyListener(Javax.Swing.Plaf.Basic.BasicTableUI.KeyHandler t) => t.Cast<Java.Awt.EventNs.KeyListener>();
-            
+
             #endregion
 
             #region Fields
@@ -160,7 +164,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("keyTyped", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -179,7 +187,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -187,7 +195,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
-            
+
             #endregion
 
             #region Fields
@@ -255,14 +263,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("mouseReleased", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

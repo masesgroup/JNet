@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -189,7 +189,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("uninstallComponents", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

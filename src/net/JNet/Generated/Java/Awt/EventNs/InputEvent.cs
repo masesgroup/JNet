@@ -69,7 +69,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_DOWN_MASK"/>
         /// </summary>
         public static int SHIFT_DOWN_MASK { get { return LocalClazz.GetField<int>("SHIFT_DOWN_MASK"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -91,7 +91,7 @@ namespace Java.Awt.EventNs
         {
             return SExecute<string>(LocalClazz, "getModifiersExText", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -158,7 +158,7 @@ namespace Java.Awt.EventNs
         {
             IExecute("consume");
         }
-        
+
         #endregion
 
         #region Nested classes

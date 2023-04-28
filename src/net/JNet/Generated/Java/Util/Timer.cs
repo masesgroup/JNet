@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -142,7 +142,7 @@ namespace Java.Util
         {
             IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

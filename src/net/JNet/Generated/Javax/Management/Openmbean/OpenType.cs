@@ -37,7 +37,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.OpenType"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.OpenType t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
         public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { return LocalClazz.GetField<Java.Util.List>("ALLOWED_CLASSNAMES_LIST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<bool>("isValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -117,7 +117,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.OpenType{T}"/> to <see cref="Javax.Management.Openmbean.OpenType"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenType(Javax.Management.Openmbean.OpenType<T> t) => t.Cast<Javax.Management.Openmbean.OpenType>();
-        
+
         #endregion
 
         #region Fields
@@ -125,7 +125,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
         public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { return LocalClazz.GetField<Java.Util.List<string>>("ALLOWED_CLASSNAMES_LIST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -170,7 +170,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<bool>("isValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -93,7 +93,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Base64.Encoder>(LocalClazz, "getMimeEncoder", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -167,7 +167,11 @@ namespace Java.Util
             {
                 return IExecute<Java.Nio.ByteBuffer>("decode", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -247,14 +251,18 @@ namespace Java.Util
             {
                 return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

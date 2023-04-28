@@ -101,7 +101,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getTarget"); } set { IExecute("setTarget", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -57,7 +57,7 @@ namespace Javax.Swing.Table
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Swing.Table
         /// Converter from <see cref="Javax.Swing.Table.TableColumn"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.TableColumn t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_VALUE_PROPERTY"/>
         /// </summary>
         public static string HEADER_VALUE_PROPERTY { get { return LocalClazz.GetField<string>("HEADER_VALUE_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -200,7 +200,7 @@ namespace Javax.Swing.Table
         {
             IExecute("sizeWidthToFit");
         }
-        
+
         #endregion
 
         #region Nested classes

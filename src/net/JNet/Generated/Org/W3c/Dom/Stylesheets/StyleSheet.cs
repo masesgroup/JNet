@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Stylesheets
         {
             get { return IExecute<string>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

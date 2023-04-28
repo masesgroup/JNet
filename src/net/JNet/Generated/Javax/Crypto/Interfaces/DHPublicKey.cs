@@ -41,7 +41,7 @@ namespace Javax.Crypto.Interfaces
         /// Converter from <see cref="Javax.Crypto.Interfaces.DHPublicKey"/> to <see cref="Java.Security.PublicKey"/>
         /// </summary>
         public static implicit operator Java.Security.PublicKey(Javax.Crypto.Interfaces.DHPublicKey t) => t.Cast<Java.Security.PublicKey>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Crypto.Interfaces
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return LocalClazz.GetField<long>("serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -64,7 +64,7 @@ namespace Javax.Crypto.Interfaces
         {
             get { return IExecute<Java.Math.BigInteger>("getY"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedTransferQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.LinkedTransferQueue t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("transfer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -191,7 +191,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -207,7 +207,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedTransferQueue{E}"/> to <see cref="Java.Util.Concurrent.LinkedTransferQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.LinkedTransferQueue(Java.Util.Concurrent.LinkedTransferQueue<E> t) => t.Cast<Java.Util.Concurrent.LinkedTransferQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -326,7 +326,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("transfer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

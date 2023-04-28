@@ -51,7 +51,7 @@ namespace Java.Awt.FontNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#WHITESPACE"/>
         /// </summary>
         public static byte WHITESPACE { get { return LocalClazz.GetField<byte>("WHITESPACE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -171,7 +171,7 @@ namespace Java.Awt.FontNs
         {
             get { return IExecute<int>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

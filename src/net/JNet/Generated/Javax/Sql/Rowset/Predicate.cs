@@ -76,7 +76,7 @@ namespace Javax.Sql.Rowset
         {
             return IExecute<bool>("evaluate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

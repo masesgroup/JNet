@@ -38,7 +38,7 @@ namespace Java.Beans.Beancontext
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Java.Beans.Beancontext
         {
             return IExecute<bool>("contains", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -40,7 +40,7 @@ namespace Javax.Management.Relation
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Javax.Management.Relation
         /// Converter from <see cref="Javax.Management.Relation.RelationTypeSupport"/> to <see cref="Javax.Management.Relation.RelationType"/>
         /// </summary>
         public static implicit operator Javax.Management.Relation.RelationType(Javax.Management.Relation.RelationTypeSupport t) => t.Cast<Javax.Management.Relation.RelationType>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Management.Relation
         {
             return IExecute<Javax.Management.Relation.RoleInfo>("getRoleInfo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

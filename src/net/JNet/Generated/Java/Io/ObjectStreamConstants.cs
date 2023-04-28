@@ -157,7 +157,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html#STREAM_VERSION"/>
         /// </summary>
         public static short STREAM_VERSION { get { return LocalClazz.GetField<short>("STREAM_VERSION"); } }
-        
+
         #endregion
 
         #region Static methods

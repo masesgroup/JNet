@@ -115,7 +115,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("valueForPathChanged", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

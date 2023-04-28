@@ -204,7 +204,7 @@ namespace Org.W3c.Dom.Html
         {
             IExecute("deleteTHead");
         }
-        
+
         #endregion
 
         #region Nested classes

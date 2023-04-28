@@ -59,7 +59,7 @@ namespace Java.Util.Prefs
         {
             get { return IExecute<Java.Util.Prefs.Preferences>("userRoot"); }
         }
-        
+
         #endregion
 
         #region Nested classes

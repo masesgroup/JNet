@@ -41,7 +41,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.Attributes"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.Attributes t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Javax.Naming.Directory
         {
             return IExecute<Javax.Naming.Directory.Attribute>("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

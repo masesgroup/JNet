@@ -49,7 +49,7 @@ namespace Java.Lang.Annotation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#SOURCE"/>
         /// </summary>
         public static Java.Lang.Annotation.RetentionPolicy SOURCE { get { return LocalClazz.GetField<Java.Lang.Annotation.RetentionPolicy>("SOURCE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Java.Lang.Annotation
         {
             return SExecute<Java.Lang.Annotation.RetentionPolicy>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

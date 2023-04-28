@@ -41,7 +41,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.KeyboardFocusManager"/> to <see cref="Java.Awt.KeyEventPostProcessor"/>
         /// </summary>
         public static implicit operator Java.Awt.KeyEventPostProcessor(Java.Awt.KeyboardFocusManager t) => t.Cast<Java.Awt.KeyEventPostProcessor>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#UP_CYCLE_TRAVERSAL_KEYS"/>
         /// </summary>
         public static int UP_CYCLE_TRAVERSAL_KEYS { get { return LocalClazz.GetField<int>("UP_CYCLE_TRAVERSAL_KEYS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -72,7 +72,7 @@ namespace Java.Awt
         {
             get { return SExecute<Java.Awt.KeyboardFocusManager>(LocalClazz, "getCurrentKeyboardFocusManager"); } set { SExecute(LocalClazz, "setCurrentKeyboardFocusManager", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -324,7 +324,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#clearGlobalFocusOwner()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.SecurityException"/>
         public void ClearGlobalFocusOwner()
         {
@@ -398,7 +398,7 @@ namespace Java.Awt
         {
             IExecute("setGlobalCurrentFocusCycleRoot", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

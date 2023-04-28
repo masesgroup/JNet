@@ -93,7 +93,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getLastComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

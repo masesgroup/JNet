@@ -37,7 +37,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.StandardProtocolFamily"/> to <see cref="Java.Net.ProtocolFamily"/>
         /// </summary>
         public static implicit operator Java.Net.ProtocolFamily(Java.Net.StandardProtocolFamily t) => t.Cast<Java.Net.ProtocolFamily>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET6"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily INET6 { get { return LocalClazz.GetField<Java.Net.StandardProtocolFamily>("INET6"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.StandardProtocolFamily>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

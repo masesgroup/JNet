@@ -37,7 +37,7 @@ namespace Javax.Imageio
         /// Converter from <see cref="Javax.Imageio.ImageWriter"/> to <see cref="Javax.Imageio.ImageTranscoder"/>
         /// </summary>
         public static implicit operator Javax.Imageio.ImageTranscoder(Javax.Imageio.ImageWriter t) => t.Cast<Javax.Imageio.ImageTranscoder>();
-        
+
         #endregion
 
         #region Fields
@@ -270,7 +270,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endInsertEmpty()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void EndInsertEmpty()
         {
@@ -279,7 +279,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endReplacePixels()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void EndReplacePixels()
         {
@@ -288,7 +288,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteEmpty()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteEmpty()
         {
@@ -297,7 +297,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteSequence()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteSequence()
         {
@@ -476,7 +476,7 @@ namespace Javax.Imageio
         {
             IExecute("writeToSequence", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

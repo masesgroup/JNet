@@ -48,7 +48,7 @@ namespace Java.Util.Concurrent
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.SubmissionPublisher"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Util.Concurrent.SubmissionPublisher t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -203,7 +203,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("subscribe", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -237,7 +237,7 @@ namespace Java.Util.Concurrent
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.SubmissionPublisher{T}"/> to <see cref="Java.Util.Concurrent.SubmissionPublisher"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.SubmissionPublisher(Java.Util.Concurrent.SubmissionPublisher<T> t) => t.Cast<Java.Util.Concurrent.SubmissionPublisher>();
-        
+
         #endregion
 
         #region Fields
@@ -396,7 +396,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("subscribe", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -101,7 +101,7 @@ namespace Java.Util
         {
             return IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -124,7 +124,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Dictionary{K, V}"/> to <see cref="Java.Util.Dictionary"/>
         /// </summary>
         public static implicit operator Java.Util.Dictionary(Java.Util.Dictionary<K, V> t) => t.Cast<Java.Util.Dictionary>();
-        
+
         #endregion
 
         #region Fields
@@ -192,7 +192,7 @@ namespace Java.Util
         {
             return IExecute<V>("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

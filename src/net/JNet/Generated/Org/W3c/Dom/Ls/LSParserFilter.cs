@@ -53,7 +53,7 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP"/>
         /// </summary>
         public static short FILTER_SKIP { get { return LocalClazz.GetField<short>("FILTER_SKIP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -86,7 +86,7 @@ namespace Org.W3c.Dom.Ls
         {
             return IExecute<short>("startElement", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

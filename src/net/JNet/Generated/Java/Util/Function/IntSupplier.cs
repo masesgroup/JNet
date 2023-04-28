@@ -52,7 +52,7 @@ namespace Java.Util.Function
         {
             get { return IExecute<int>("getAsInt"); }
         }
-        
+
         #endregion
 
         #region Nested classes

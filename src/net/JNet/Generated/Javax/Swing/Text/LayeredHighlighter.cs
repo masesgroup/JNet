@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.LayeredHighlighter"/> to <see cref="Javax.Swing.Text.Highlighter"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Highlighter(Javax.Swing.Text.LayeredHighlighter t) => t.Cast<Javax.Swing.Text.Highlighter>();
-        
+
         #endregion
 
         #region Fields
@@ -62,7 +62,7 @@ namespace Javax.Swing.Text
         {
             IExecute("paintLayeredHighlights", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -100,14 +100,18 @@ namespace Javax.Swing.Text
             {
                 return IExecute<Java.Awt.Shape>("paintLayer", arg0, arg1, arg2, arg3, arg4, arg5);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getStyle"); }
         }
-        
+
         #endregion
 
         #region Nested classes

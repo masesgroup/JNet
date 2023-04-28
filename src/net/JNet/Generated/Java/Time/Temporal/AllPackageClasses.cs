@@ -580,7 +580,7 @@ namespace Java.Time.Temporal
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

@@ -81,7 +81,7 @@ namespace Java.Security.Cert
         {
             return SExecute<Java.Security.Cert.CertPathBuilder>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -117,7 +117,7 @@ namespace Java.Security.Cert
         {
             return IExecute<Java.Security.Cert.CertPathBuilderResult>("build", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

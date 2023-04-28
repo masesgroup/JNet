@@ -73,7 +73,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<bool>("isSystem"); }
         }
-        
+
         #endregion
 
         #region Nested classes

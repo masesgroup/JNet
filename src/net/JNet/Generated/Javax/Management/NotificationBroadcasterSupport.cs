@@ -54,7 +54,7 @@ namespace Javax.Management
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.NotificationBroadcasterSupport"/> to <see cref="Javax.Management.NotificationEmitter"/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.NotificationBroadcasterSupport t) => t.Cast<Javax.Management.NotificationEmitter>();
-        
+
         #endregion
 
         #region Fields
@@ -119,7 +119,7 @@ namespace Javax.Management
         {
             IExecute("sendNotification", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

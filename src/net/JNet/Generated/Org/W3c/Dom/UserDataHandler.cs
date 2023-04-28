@@ -57,7 +57,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#NODE_RENAMED"/>
         /// </summary>
         public static short NODE_RENAMED { get { return LocalClazz.GetField<short>("NODE_RENAMED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -77,7 +77,7 @@ namespace Org.W3c.Dom
         {
             IExecute("handle", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

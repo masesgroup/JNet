@@ -72,7 +72,7 @@ namespace Java.Awt.Datatransfer
         {
             return IExecute("getTransferData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

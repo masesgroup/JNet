@@ -46,7 +46,7 @@ namespace Javax.Naming.Ldap
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.LdapName"/> to <see cref="Javax.Naming.Name"/>
         /// </summary>
         public static implicit operator Javax.Naming.Name(Javax.Naming.Ldap.LdapName t) => t.Cast<Javax.Naming.Name>();
-        
+
         #endregion
 
         #region Fields
@@ -265,7 +265,7 @@ namespace Javax.Naming.Ldap
         {
             return IExecute<Javax.Naming.Name>("getSuffix", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

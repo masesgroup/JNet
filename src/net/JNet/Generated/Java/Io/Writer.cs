@@ -45,7 +45,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.Writer t) => t.Cast<Java.Io.Flushable>();
-        
+
         #endregion
 
         #region Fields
@@ -60,14 +60,14 @@ namespace Java.Io
         {
             get { return SExecute<Java.Io.Writer>(LocalClazz, "nullWriter"); }
         }
-        
+
         #endregion
 
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -163,7 +163,7 @@ namespace Java.Io
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

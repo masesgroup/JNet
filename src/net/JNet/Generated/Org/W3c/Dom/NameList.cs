@@ -89,7 +89,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<string>("getNamespaceURI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

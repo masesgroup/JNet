@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI"/> to <see cref="Javax.Swing.Text.ViewFactory"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Plaf.Basic.BasicTextUI t) => t.Cast<Javax.Swing.Text.ViewFactory>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             return IExecute<Javax.Swing.Text.View>("create", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -85,7 +85,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -97,6 +97,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -116,7 +120,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -131,11 +135,15 @@ namespace Javax.Swing.Plaf.Basic
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

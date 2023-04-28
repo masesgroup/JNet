@@ -46,7 +46,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Java.Beans
         {
             get { return IExecute<Java.Lang.Class>("getCustomizerClass"); }
         }
-        
+
         #endregion
 
         #region Nested classes

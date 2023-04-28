@@ -52,7 +52,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getCertPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

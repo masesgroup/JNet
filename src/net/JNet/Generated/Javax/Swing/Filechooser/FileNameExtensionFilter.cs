@@ -38,7 +38,7 @@ namespace Javax.Swing.Filechooser
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Swing.Filechooser
         {
             get { return IExecuteArray<string>("getExtensions"); }
         }
-        
+
         #endregion
 
         #region Nested classes

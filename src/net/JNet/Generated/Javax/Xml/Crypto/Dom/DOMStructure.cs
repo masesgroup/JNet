@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dom
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dom
         /// Converter from <see cref="Javax.Xml.Crypto.Dom.DOMStructure"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dom.DOMStructure t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Xml.Crypto.Dom
         {
             return IExecute<bool>("isFeatureSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

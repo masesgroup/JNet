@@ -59,7 +59,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Java.Util.Map>("getElementValues"); }
         }
-        
+
         #endregion
 
         #region Nested classes

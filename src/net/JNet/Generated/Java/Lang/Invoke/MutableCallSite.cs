@@ -45,7 +45,7 @@ namespace Java.Lang.Invoke
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Java.Lang.Invoke
         {
             SExecute(LocalClazz, "syncAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods

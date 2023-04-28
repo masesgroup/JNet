@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             IExecute("uninstallDefaults", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

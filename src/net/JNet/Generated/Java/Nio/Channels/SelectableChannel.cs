@@ -122,7 +122,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.SelectionKey>("register", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

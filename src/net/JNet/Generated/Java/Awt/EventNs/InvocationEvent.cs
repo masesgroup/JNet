@@ -60,7 +60,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Awt.EventNs
         /// Converter from <see cref="Java.Awt.EventNs.InvocationEvent"/> to <see cref="Java.Awt.ActiveEvent"/>
         /// </summary>
         public static implicit operator Java.Awt.ActiveEvent(Java.Awt.EventNs.InvocationEvent t) => t.Cast<Java.Awt.ActiveEvent>();
-        
+
         #endregion
 
         #region Fields
@@ -84,7 +84,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_LAST"/>
         /// </summary>
         public static int INVOCATION_LAST { get { return LocalClazz.GetField<int>("INVOCATION_LAST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -127,7 +127,7 @@ namespace Java.Awt.EventNs
         {
             IExecute("dispatch");
         }
-        
+
         #endregion
 
         #region Nested classes

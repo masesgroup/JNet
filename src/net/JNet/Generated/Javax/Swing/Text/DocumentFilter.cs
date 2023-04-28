@@ -81,7 +81,7 @@ namespace Javax.Swing.Text
         {
             IExecute("replace", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -145,14 +145,18 @@ namespace Javax.Swing.Text
             {
                 IExecute("replace", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

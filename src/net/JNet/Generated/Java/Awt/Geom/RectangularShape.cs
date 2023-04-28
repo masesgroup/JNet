@@ -41,7 +41,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.RectangularShape"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.RectangularShape t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -241,7 +241,7 @@ namespace Java.Awt.Geom
         {
             IExecute("setFrameFromDiagonal", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Org.W3c.Dom.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html#XPATH_NAMESPACE_NODE"/>
         /// </summary>
         public static short XPATH_NAMESPACE_NODE { get { return LocalClazz.GetField<short>("XPATH_NAMESPACE_NODE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -56,7 +56,7 @@ namespace Org.W3c.Dom.Xpath
         {
             get { return IExecute<Org.W3c.Dom.Element>("getOwnerElement"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -70,7 +70,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -94,7 +94,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT"/>
         /// </summary>
         public static int REVERT { get { return LocalClazz.GetField<int>("REVERT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -140,13 +140,13 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
             IExecute("commitEdit");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -162,7 +162,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.JFormattedTextField.AbstractFormatter t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -209,7 +209,11 @@ namespace Javax.Swing
             {
                 IExecute("uninstall");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -245,14 +249,18 @@ namespace Javax.Swing
             {
                 return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

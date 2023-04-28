@@ -98,7 +98,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("setDividerLocation", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.TexturePaint"/> to <see cref="Java.Awt.Paint"/>
         /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.TexturePaint t) => t.Cast<Java.Awt.Paint>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.PaintContext>("createContext", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

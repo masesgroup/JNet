@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.IconUIResource"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.IconUIResource t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -90,7 +90,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

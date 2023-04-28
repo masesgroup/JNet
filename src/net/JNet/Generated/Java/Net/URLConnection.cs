@@ -100,7 +100,7 @@ namespace Java.Net
         {
             SExecute(LocalClazz, "setDefaultUseCaches", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -261,7 +261,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#connect()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
@@ -361,7 +361,7 @@ namespace Java.Net
         {
             IExecute("setRequestProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

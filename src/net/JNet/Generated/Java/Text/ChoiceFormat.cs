@@ -46,7 +46,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,7 +86,7 @@ namespace Java.Text
         {
             return SExecute<double>(LocalClazz, "previousDouble", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -128,7 +128,7 @@ namespace Java.Text
         {
             IExecute("setChoices", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

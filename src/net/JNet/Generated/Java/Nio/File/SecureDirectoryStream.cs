@@ -117,7 +117,7 @@ namespace Java.Nio.File
         {
             IExecute("move", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -140,7 +140,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.SecureDirectoryStream{T}"/> to <see cref="Java.Nio.File.SecureDirectoryStream"/>
         /// </summary>
         public static implicit operator Java.Nio.File.SecureDirectoryStream(Java.Nio.File.SecureDirectoryStream<T> t) => t.Cast<Java.Nio.File.SecureDirectoryStream>();
-        
+
         #endregion
 
         #region Fields
@@ -224,7 +224,7 @@ namespace Java.Nio.File
         {
             IExecute("move", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

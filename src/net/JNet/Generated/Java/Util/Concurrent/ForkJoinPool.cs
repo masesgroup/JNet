@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -77,7 +77,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#defaultForkJoinWorkerThreadFactory"/>
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory { get { return LocalClazz.GetField<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("defaultForkJoinWorkerThreadFactory"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent
         {
             SExecute(LocalClazz, "managedBlock", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("execute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -268,7 +268,11 @@ namespace Java.Util.Concurrent
             {
                 return IExecute<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -309,14 +313,18 @@ namespace Java.Util.Concurrent
             {
                 get { return IExecute<bool>("isReleasable"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

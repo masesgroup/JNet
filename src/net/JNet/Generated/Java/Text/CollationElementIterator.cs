@@ -41,7 +41,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#NULLORDER"/>
         /// </summary>
         public static int NULLORDER { get { return LocalClazz.GetField<int>("NULLORDER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -72,7 +72,7 @@ namespace Java.Text
         {
             return SExecute<short>(LocalClazz, "tertiaryOrder", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -129,7 +129,7 @@ namespace Java.Text
         {
             IExecute("setText", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

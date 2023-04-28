@@ -71,7 +71,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
@@ -93,7 +93,7 @@ namespace Javax.Sql
         {
             IExecute("removeStatementEventListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

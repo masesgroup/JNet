@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute("exchange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.Exchanger{V}"/> to <see cref="Java.Util.Concurrent.Exchanger"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Exchanger(Java.Util.Concurrent.Exchanger<V> t) => t.Cast<Java.Util.Concurrent.Exchanger>();
-        
+
         #endregion
 
         #region Fields
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<V>("exchange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

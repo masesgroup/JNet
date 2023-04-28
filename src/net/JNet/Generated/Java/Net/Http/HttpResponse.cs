@@ -101,7 +101,7 @@ namespace Java.Net.Http
         {
             get { return IExecute<Java.Net.Http.HttpClient.Version>("version"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -134,7 +134,11 @@ namespace Java.Net.Http
             {
                 return IExecute<Java.Net.Http.HttpResponse.BodySubscriber>("apply", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -153,7 +157,7 @@ namespace Java.Net.Http
             /// Converter from <see cref="Java.Net.Http.HttpResponse.BodyHandler{T}"/> to <see cref="Java.Net.Http.HttpResponse.BodyHandler"/>
             /// </summary>
             public static implicit operator Java.Net.Http.HttpResponse.BodyHandler(Java.Net.Http.HttpResponse.BodyHandler<T> t) => t.Cast<Java.Net.Http.HttpResponse.BodyHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -174,7 +178,11 @@ namespace Java.Net.Http
             {
                 return IExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>("apply", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -275,7 +283,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofString()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<string> OfString()
             {
@@ -346,10 +354,14 @@ namespace Java.Net.Http
             {
                 if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalClazz, "ofFileDownload", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalClazz, "ofFileDownload", arg0, arg1);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -384,7 +396,11 @@ namespace Java.Net.Http
             {
                 get { return IExecute<Java.Util.Concurrent.CompletionStage>("getBody"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -403,7 +419,7 @@ namespace Java.Net.Http
             /// Converter from <see cref="Java.Net.Http.HttpResponse.BodySubscriber{T}"/> to <see cref="Java.Net.Http.HttpResponse.BodySubscriber"/>
             /// </summary>
             public static implicit operator Java.Net.Http.HttpResponse.BodySubscriber(Java.Net.Http.HttpResponse.BodySubscriber<T> t) => t.Cast<Java.Net.Http.HttpResponse.BodySubscriber>();
-            
+
             #endregion
 
             #region Fields
@@ -422,7 +438,11 @@ namespace Java.Net.Http
             {
                 get { return IExecute<Java.Util.Concurrent.CompletionStage<T>>("getBody"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -588,10 +608,14 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<Java.Util.Stream.Stream<string>>>(LocalClazz, "ofLines", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -625,7 +649,7 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpResponse.PushPromiseHandler>(LocalClazz, "of", arg0, arg1);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -639,7 +663,11 @@ namespace Java.Net.Http
             {
                 IExecute("applyPushPromise", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -658,7 +686,7 @@ namespace Java.Net.Http
             /// Converter from <see cref="Java.Net.Http.HttpResponse.PushPromiseHandler{T}"/> to <see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/>
             /// </summary>
             public static implicit operator Java.Net.Http.HttpResponse.PushPromiseHandler(Java.Net.Http.HttpResponse.PushPromiseHandler<T> t) => t.Cast<Java.Net.Http.HttpResponse.PushPromiseHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -676,7 +704,7 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpResponse.PushPromiseHandler<T>>(LocalClazz, "of", arg0, arg1);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -690,7 +718,11 @@ namespace Java.Net.Http
             {
                 IExecute("applyPushPromise", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -738,14 +770,18 @@ namespace Java.Net.Http
             {
                 get { return IExecute<Java.Net.Http.HttpClient.Version>("version"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -764,7 +800,7 @@ namespace Java.Net.Http
         /// Converter from <see cref="Java.Net.Http.HttpResponse{T}"/> to <see cref="Java.Net.Http.HttpResponse"/>
         /// </summary>
         public static implicit operator Java.Net.Http.HttpResponse(Java.Net.Http.HttpResponse<T> t) => t.Cast<Java.Net.Http.HttpResponse>();
-        
+
         #endregion
 
         #region Fields
@@ -832,7 +868,7 @@ namespace Java.Net.Http
         {
             get { return IExecute<Java.Net.Http.HttpClient.Version>("version"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.AbstractMultiResolutionImage"/> to <see cref="Java.Awt.ImageNs.MultiResolutionImage"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.MultiResolutionImage(Java.Awt.ImageNs.AbstractMultiResolutionImage t) => t.Cast<Java.Awt.ImageNs.MultiResolutionImage>();
-        
+
         #endregion
 
         #region Fields

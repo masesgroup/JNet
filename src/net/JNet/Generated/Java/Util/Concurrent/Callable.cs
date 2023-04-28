@@ -52,7 +52,7 @@ namespace Java.Util.Concurrent
         {
             get { return IExecute("call"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.Callable{V}"/> to <see cref="Java.Util.Concurrent.Callable"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Callable(Java.Util.Concurrent.Callable<V> t) => t.Cast<Java.Util.Concurrent.Callable>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Java.Util.Concurrent
         {
             get { return IExecute<V>("call"); }
         }
-        
+
         #endregion
 
         #region Nested classes

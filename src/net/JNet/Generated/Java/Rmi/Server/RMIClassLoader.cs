@@ -118,7 +118,7 @@ namespace Java.Rmi.Server
         {
             return SExecute<string>(LocalClazz, "getClassAnnotation", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

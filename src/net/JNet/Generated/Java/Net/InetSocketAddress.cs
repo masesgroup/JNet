@@ -55,7 +55,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -77,7 +77,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.InetSocketAddress>(LocalClazz, "createUnresolved", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -116,7 +116,7 @@ namespace Java.Net
         {
             get { return IExecute<int>("getPort"); }
         }
-        
+
         #endregion
 
         #region Nested classes

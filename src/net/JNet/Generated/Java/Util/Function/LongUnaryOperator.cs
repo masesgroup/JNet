@@ -48,7 +48,7 @@ namespace Java.Util.Function
         {
             get { return SExecute<Java.Util.Function.LongUnaryOperator>(LocalClazz, "identity"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -79,7 +79,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.LongUnaryOperator>("compose", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

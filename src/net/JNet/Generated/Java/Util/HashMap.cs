@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.HashMap"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.HashMap t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -134,7 +134,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.HashMap{K, V}"/> to <see cref="Java.Util.HashMap"/>
         /// </summary>
         public static implicit operator Java.Util.HashMap(Java.Util.HashMap<K, V> t) => t.Cast<Java.Util.HashMap>();
-        
+
         #endregion
 
         #region Fields

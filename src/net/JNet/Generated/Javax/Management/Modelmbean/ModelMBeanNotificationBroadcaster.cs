@@ -111,7 +111,7 @@ namespace Javax.Management.Modelmbean
         {
             IExecute("sendNotification", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

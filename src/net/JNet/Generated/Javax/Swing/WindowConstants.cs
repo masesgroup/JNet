@@ -53,7 +53,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/WindowConstants.html#HIDE_ON_CLOSE"/>
         /// </summary>
         public static int HIDE_ON_CLOSE { get { return LocalClazz.GetField<int>("HIDE_ON_CLOSE"); } }
-        
+
         #endregion
 
         #region Static methods

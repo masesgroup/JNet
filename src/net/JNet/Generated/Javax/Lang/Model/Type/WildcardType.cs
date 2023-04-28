@@ -59,7 +59,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getSuperBound"); }
         }
-        
+
         #endregion
 
         #region Nested classes

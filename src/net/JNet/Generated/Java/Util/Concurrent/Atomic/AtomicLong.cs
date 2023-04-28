@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -278,7 +278,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("setRelease", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

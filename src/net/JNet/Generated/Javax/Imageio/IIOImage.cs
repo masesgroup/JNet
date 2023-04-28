@@ -49,7 +49,7 @@ namespace Javax.Imageio
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -116,7 +116,7 @@ namespace Javax.Imageio
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("getThumbnail", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

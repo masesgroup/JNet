@@ -100,7 +100,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             return IExecute("getProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

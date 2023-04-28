@@ -240,7 +240,7 @@ namespace Org.W3c.Dom
         {
             IExecute("setIdAttributeNS", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

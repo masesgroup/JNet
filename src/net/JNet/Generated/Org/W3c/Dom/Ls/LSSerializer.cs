@@ -99,7 +99,7 @@ namespace Org.W3c.Dom.Ls
         {
             return IExecute<string>("writeToString", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

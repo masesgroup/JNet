@@ -87,7 +87,7 @@ namespace Org.W3c.Dom
         {
             get { return IExecute<int>("getUtf16Offset"); }
         }
-        
+
         #endregion
 
         #region Nested classes

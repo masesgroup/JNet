@@ -41,7 +41,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.JTextComponent"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.JTextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY"/>
         /// </summary>
         public static string FOCUS_ACCELERATOR_KEY { get { return LocalClazz.GetField<string>("FOCUS_ACCELERATOR_KEY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -95,7 +95,7 @@ namespace Javax.Swing.Text
         {
             SExecute(LocalClazz, "loadKeymap", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -277,7 +277,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
@@ -476,7 +476,7 @@ namespace Javax.Swing.Text
         {
             IExecute("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -492,7 +492,7 @@ namespace Javax.Swing.Text
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -520,7 +520,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Accessibility.AccessibleExtendedText"/>
             /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleExtendedText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedText>();
-            
+
             #endregion
 
             #region Fields
@@ -803,7 +803,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("setTextContents", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -844,7 +848,11 @@ namespace Javax.Swing.Text
             {
                 get { return IExecute<int>("getIndex"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -864,7 +872,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -880,7 +888,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key"/>
             /// </summary>
             public Javax.Swing.KeyStroke key { get { return Instance.GetField<Javax.Swing.KeyStroke>("key"); } set { Instance.SetField("key", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -891,11 +899,15 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

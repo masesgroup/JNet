@@ -77,7 +77,7 @@ namespace Java.Beans.Beancontext
         {
             IExecute("releaseService", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

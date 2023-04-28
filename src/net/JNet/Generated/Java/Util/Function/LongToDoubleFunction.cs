@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             return IExecute<double>("applyAsDouble", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

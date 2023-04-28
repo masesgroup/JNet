@@ -82,7 +82,7 @@ namespace Org.W3c.Dom
         {
             IExecute("setParameter", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

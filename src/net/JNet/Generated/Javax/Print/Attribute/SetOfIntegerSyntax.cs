@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.SetOfIntegerSyntax"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.SetOfIntegerSyntax t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -87,7 +87,7 @@ namespace Javax.Print.Attribute
         {
             return IExecute<int>("next", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

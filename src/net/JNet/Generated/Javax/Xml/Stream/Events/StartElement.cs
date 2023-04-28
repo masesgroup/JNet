@@ -91,7 +91,7 @@ namespace Javax.Xml.Stream.Events
         {
             return IExecute<Javax.Xml.Stream.Events.Attribute>("getAttributeByName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

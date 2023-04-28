@@ -37,7 +37,7 @@ namespace Java.Awt.ImageNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Awt.ImageNs
         {
             get { return IExecute<Java.Awt.ImageNs.BufferedImageOp>("getBufferedImageOp"); }
         }
-        
+
         #endregion
 
         #region Nested classes

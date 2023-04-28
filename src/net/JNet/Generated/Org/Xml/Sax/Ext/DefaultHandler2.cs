@@ -45,7 +45,7 @@ namespace Org.Xml.Sax.Ext
         /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.EntityResolver2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.EntityResolver2(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.EntityResolver2>();
-        
+
         #endregion
 
         #region Fields
@@ -120,7 +120,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
@@ -129,7 +129,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
@@ -168,7 +168,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {
@@ -194,7 +194,7 @@ namespace Org.Xml.Sax.Ext
         {
             IExecute("startEntity", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

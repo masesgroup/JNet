@@ -93,7 +93,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("setUserObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

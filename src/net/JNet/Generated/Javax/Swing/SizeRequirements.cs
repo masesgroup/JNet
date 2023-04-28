@@ -40,7 +40,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.SizeRequirements"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.SizeRequirements t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#preferred"/>
         /// </summary>
         public int preferred { get { return Instance.GetField<int>("preferred"); } set { Instance.SetField("preferred", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -150,7 +150,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "calculateTiledPositions", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Instance methods

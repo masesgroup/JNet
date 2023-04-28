@@ -55,7 +55,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.JobAttributes"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.JobAttributes t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -195,7 +195,7 @@ namespace Java.Awt
         {
             IExecute("setSidesToDefault");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -223,7 +223,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION"/>
             /// </summary>
             public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -231,6 +231,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -258,7 +262,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#PRINTER"/>
             /// </summary>
             public static Java.Awt.JobAttributes.DestinationType PRINTER { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DestinationType>("PRINTER"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -266,6 +270,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -297,7 +305,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NONE"/>
             /// </summary>
             public static Java.Awt.JobAttributes.DialogType NONE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.DialogType>("NONE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -305,6 +313,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -332,7 +344,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"/>
             /// </summary>
             public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES { get { return LocalClazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -340,6 +352,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -371,7 +387,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_SHORT_EDGE"/>
             /// </summary>
             public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE { get { return LocalClazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_SHORT_EDGE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -382,11 +398,15 @@ namespace Java.Awt
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -87,7 +87,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<Java.Util.List<Java.Security.Cert.CertPathValidatorException>>("getSoftFailExceptions"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -119,7 +119,7 @@ namespace Java.Security.Cert
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#SOFT_FAIL"/>
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL { get { return LocalClazz.GetField<Java.Security.Cert.PKIXRevocationChecker.Option>("SOFT_FAIL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -139,10 +139,14 @@ namespace Java.Security.Cert
             {
                 return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -150,7 +154,7 @@ namespace Java.Security.Cert
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

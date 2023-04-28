@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.GraphicsConfigTemplate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.GraphicsConfigTemplate t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#UNNECESSARY"/>
         /// </summary>
         public static int UNNECESSARY { get { return LocalClazz.GetField<int>("UNNECESSARY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -79,7 +79,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

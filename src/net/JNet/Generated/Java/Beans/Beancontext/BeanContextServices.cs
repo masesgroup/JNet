@@ -41,7 +41,7 @@ namespace Java.Beans.Beancontext
         /// Converter from <see cref="Java.Beans.Beancontext.BeanContextServices"/> to <see cref="Java.Beans.Beancontext.BeanContextServicesListener"/>
         /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextServicesListener(Java.Beans.Beancontext.BeanContextServices t) => t.Cast<Java.Beans.Beancontext.BeanContextServicesListener>();
-        
+
         #endregion
 
         #region Fields
@@ -138,7 +138,7 @@ namespace Java.Beans.Beancontext
         {
             IExecute("revokeService", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

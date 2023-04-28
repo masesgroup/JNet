@@ -284,7 +284,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -312,7 +312,7 @@ namespace Javax.Lang.Model.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#SYNTHETIC"/>
             /// </summary>
             public static Javax.Lang.Model.Util.Elements.Origin SYNTHETIC { get { return LocalClazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("SYNTHETIC"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -332,7 +332,7 @@ namespace Javax.Lang.Model.Util
             {
                 return SExecute<Javax.Lang.Model.Util.Elements.Origin>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -343,14 +343,18 @@ namespace Javax.Lang.Model.Util
             {
                 get { return IExecute<bool>("isDeclared"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

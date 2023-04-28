@@ -82,7 +82,7 @@ namespace Javax.Management.Relation
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -90,7 +90,7 @@ namespace Javax.Management.Relation
         /// Converter from <see cref="Javax.Management.Relation.RoleInfo"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Relation.RoleInfo t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#ROLE_CARDINALITY_INFINITY"/>
         /// </summary>
         public static int ROLE_CARDINALITY_INFINITY { get { return LocalClazz.GetField<int>("ROLE_CARDINALITY_INFINITY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -173,7 +173,7 @@ namespace Javax.Management.Relation
         {
             return IExecute<bool>("checkMinDegree", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

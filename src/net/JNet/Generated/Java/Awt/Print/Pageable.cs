@@ -41,7 +41,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#UNKNOWN_NUMBER_OF_PAGES"/>
         /// </summary>
         public static int UNKNOWN_NUMBER_OF_PAGES { get { return LocalClazz.GetField<int>("UNKNOWN_NUMBER_OF_PAGES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -76,7 +76,7 @@ namespace Java.Awt.Print
         {
             return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

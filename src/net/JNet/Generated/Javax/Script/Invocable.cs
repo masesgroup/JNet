@@ -89,7 +89,7 @@ namespace Javax.Script
         {
             if (arg2.Length == 0) return IExecute("invokeMethod", arg0, arg1); else return IExecute("invokeMethod", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

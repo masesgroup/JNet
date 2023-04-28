@@ -40,7 +40,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#REFRESH_RATE_UNKNOWN"/>
         /// </summary>
         public static int REFRESH_RATE_UNKNOWN { get { return LocalClazz.GetField<int>("REFRESH_RATE_UNKNOWN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -92,7 +92,7 @@ namespace Java.Awt
         {
             get { return IExecute<int>("getWidth"); }
         }
-        
+
         #endregion
 
         #region Nested classes

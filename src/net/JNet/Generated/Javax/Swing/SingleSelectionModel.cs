@@ -82,7 +82,7 @@ namespace Javax.Swing
         {
             IExecute("removeChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

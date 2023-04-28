@@ -37,7 +37,7 @@ namespace Java.Util.Spi
         /// Converter from <see cref="Java.Util.Spi.AbstractResourceBundleProvider"/> to <see cref="Java.Util.Spi.ResourceBundleProvider"/>
         /// </summary>
         public static implicit operator Java.Util.Spi.ResourceBundleProvider(Java.Util.Spi.AbstractResourceBundleProvider t) => t.Cast<Java.Util.Spi.ResourceBundleProvider>();
-        
+
         #endregion
 
         #region Fields
@@ -59,7 +59,7 @@ namespace Java.Util.Spi
         {
             return IExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

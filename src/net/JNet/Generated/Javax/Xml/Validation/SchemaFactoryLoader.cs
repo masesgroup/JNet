@@ -54,7 +54,7 @@ namespace Javax.Xml.Validation
         {
             return IExecute<Javax.Xml.Validation.SchemaFactory>("newFactory", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

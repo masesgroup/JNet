@@ -55,7 +55,7 @@ namespace Javax.Security.Auth.Callback
         {
             IExecute("handle", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

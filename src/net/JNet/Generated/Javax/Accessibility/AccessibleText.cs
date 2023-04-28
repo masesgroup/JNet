@@ -49,7 +49,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#WORD"/>
         /// </summary>
         public static int WORD { get { return LocalClazz.GetField<int>("WORD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -149,7 +149,7 @@ namespace Javax.Accessibility
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

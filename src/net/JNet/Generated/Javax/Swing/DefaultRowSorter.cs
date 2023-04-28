@@ -109,7 +109,7 @@ namespace Javax.Swing
         {
             IExecute("sort");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -132,7 +132,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultRowSorter{M, I}"/> to <see cref="Javax.Swing.DefaultRowSorter"/>
         /// </summary>
         public static implicit operator Javax.Swing.DefaultRowSorter(Javax.Swing.DefaultRowSorter<M, I> t) => t.Cast<Javax.Swing.DefaultRowSorter>();
-        
+
         #endregion
 
         #region Fields
@@ -208,7 +208,7 @@ namespace Javax.Swing
         {
             IExecute("sort");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -197,7 +197,7 @@ namespace Javax.Swing.Text
         {
             return SExecute<Javax.Swing.Text.Element>(LocalClazz, "getParagraphElement", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

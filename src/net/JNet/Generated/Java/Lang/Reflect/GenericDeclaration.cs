@@ -52,7 +52,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecute<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
-        
+
         #endregion
 
         #region Nested classes

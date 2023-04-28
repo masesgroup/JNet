@@ -54,7 +54,7 @@ namespace Java.Awt.DesktopNs
         {
             IExecute("handleQuitRequestWith", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

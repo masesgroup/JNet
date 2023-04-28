@@ -40,7 +40,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.ECParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.ECParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getOrder"); }
         }
-        
+
         #endregion
 
         #region Nested classes

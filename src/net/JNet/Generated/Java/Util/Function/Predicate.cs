@@ -59,7 +59,7 @@ namespace Java.Util.Function
         {
             return SExecute<Java.Util.Function.Predicate>(LocalClazz, "not", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -97,7 +97,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Predicate>("or", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -120,7 +120,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.Predicate{T}"/> to <see cref="Java.Util.Function.Predicate"/>
         /// </summary>
         public static implicit operator Java.Util.Function.Predicate(Java.Util.Function.Predicate<T> t) => t.Cast<Java.Util.Function.Predicate>();
-        
+
         #endregion
 
         #region Fields
@@ -146,7 +146,7 @@ namespace Java.Util.Function
         {
             return SExecute<Java.Util.Function.Predicate<T>>(LocalClazz, "not", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -184,7 +184,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Predicate<T>>("or", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

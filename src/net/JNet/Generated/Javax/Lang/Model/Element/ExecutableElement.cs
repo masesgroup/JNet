@@ -41,7 +41,7 @@ namespace Javax.Lang.Model.Element
         /// Converter from <see cref="Javax.Lang.Model.Element.ExecutableElement"/> to <see cref="Javax.Lang.Model.Element.Parameterizable"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.ExecutableElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Java.Util.List>("getTypeParameters"); }
         }
-        
+
         #endregion
 
         #region Nested classes

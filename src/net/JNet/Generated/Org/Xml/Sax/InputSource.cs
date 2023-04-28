@@ -53,7 +53,7 @@ namespace Org.Xml.Sax
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -111,7 +111,7 @@ namespace Org.Xml.Sax
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

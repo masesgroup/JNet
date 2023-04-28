@@ -55,7 +55,7 @@ namespace Java.Awt
         {
             get { return SExecute<bool>(LocalClazz, "isTaskbarSupported"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -142,7 +142,7 @@ namespace Java.Awt
         {
             IExecute("setWindowProgressValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -198,7 +198,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION_WINDOW"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature USER_ATTENTION_WINDOW { get { return LocalClazz.GetField<Java.Awt.Taskbar.Feature>("USER_ATTENTION_WINDOW"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -218,10 +218,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Taskbar.Feature>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -261,7 +265,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED"/>
             /// </summary>
             public static Java.Awt.Taskbar.State PAUSED { get { return LocalClazz.GetField<Java.Awt.Taskbar.State>("PAUSED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -281,10 +285,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Taskbar.State>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -292,7 +300,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

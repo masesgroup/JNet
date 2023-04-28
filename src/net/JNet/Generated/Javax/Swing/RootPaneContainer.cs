@@ -73,7 +73,7 @@ namespace Javax.Swing
         {
             get { return IExecute<Javax.Swing.JRootPane>("getRootPane"); }
         }
-        
+
         #endregion
 
         #region Nested classes

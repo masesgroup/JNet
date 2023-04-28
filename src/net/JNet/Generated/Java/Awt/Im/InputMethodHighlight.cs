@@ -59,7 +59,7 @@ namespace Java.Awt.Im
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Awt.Im
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT"/>
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT { get { return LocalClazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_RAW_TEXT_HIGHLIGHT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -127,7 +127,7 @@ namespace Java.Awt.Im
         {
             get { return IExecute<int>("getVariation"); }
         }
-        
+
         #endregion
 
         #region Nested classes

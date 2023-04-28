@@ -50,7 +50,7 @@ namespace Javax.Sound.Midi
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SYSTEM_EXCLUSIVE"/>
         /// </summary>
         public static int SYSTEM_EXCLUSIVE { get { return LocalClazz.GetField<int>("SYSTEM_EXCLUSIVE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -102,7 +102,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("setMessage", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Component"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Component t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT"/>
         /// </summary>
         public static float TOP_ALIGNMENT { get { return LocalClazz.GetField<float>("TOP_ALIGNMENT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -603,7 +603,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool RequestFocusInWindow()
         {
@@ -1309,7 +1309,7 @@ namespace Java.Awt
         {
             IExecute("validate");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -1341,7 +1341,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER"/>
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior OTHER { get { return LocalClazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("OTHER"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -1361,10 +1361,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -1372,7 +1376,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

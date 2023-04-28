@@ -93,7 +93,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -123,7 +123,7 @@ namespace Java.Awt
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getStartPoint"); }
         }
-        
+
         #endregion
 
         #region Nested classes

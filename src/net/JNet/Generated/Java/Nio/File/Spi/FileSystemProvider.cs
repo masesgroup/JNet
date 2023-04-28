@@ -48,7 +48,7 @@ namespace Java.Nio.File.Spi
         {
             get { return SExecute<Java.Util.List<Java.Nio.File.Spi.FileSystemProvider>>(LocalClazz, "installedProviders"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -339,7 +339,7 @@ namespace Java.Nio.File.Spi
         {
             if (arg2.Length == 0) IExecute("createSymbolicLink", arg0, arg1); else IExecute("createSymbolicLink", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

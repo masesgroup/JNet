@@ -103,7 +103,7 @@ namespace Java.Util.Stream
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -126,7 +126,7 @@ namespace Java.Util.Stream
         /// Converter from <see cref="Java.Util.Stream.BaseStream{T, S}"/> to <see cref="Java.Util.Stream.BaseStream"/>
         /// </summary>
         public static implicit operator Java.Util.Stream.BaseStream(Java.Util.Stream.BaseStream<T, S> t) => t.Cast<Java.Util.Stream.BaseStream>();
-        
+
         #endregion
 
         #region Fields
@@ -196,7 +196,7 @@ namespace Java.Util.Stream
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

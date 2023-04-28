@@ -37,7 +37,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.DiagnosticCollector"/> to <see cref="Javax.Tools.DiagnosticListener"/>
         /// </summary>
         public static implicit operator Javax.Tools.DiagnosticListener(Javax.Tools.DiagnosticCollector t) => t.Cast<Javax.Tools.DiagnosticListener>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Tools
         {
             IExecute("report", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.DiagnosticCollector{S}"/> to <see cref="Javax.Tools.DiagnosticCollector"/>
         /// </summary>
         public static implicit operator Javax.Tools.DiagnosticCollector(Javax.Tools.DiagnosticCollector<S> t) => t.Cast<Javax.Tools.DiagnosticCollector>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Javax.Tools
         {
             IExecute("report", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -40,7 +40,7 @@ namespace Javax.Swing.Plaf.Synth
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             get { return IExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle"); }
         }
-        
+
         #endregion
 
         #region Nested classes

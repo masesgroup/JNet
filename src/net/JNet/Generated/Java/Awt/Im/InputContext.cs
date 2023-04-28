@@ -48,7 +48,7 @@ namespace Java.Awt.Im
         {
             get { return SExecute<Java.Awt.Im.InputContext>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -135,7 +135,7 @@ namespace Java.Awt.Im
         {
             IExecute("setCompositionEnabled", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

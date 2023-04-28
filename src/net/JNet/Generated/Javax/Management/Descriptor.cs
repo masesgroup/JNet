@@ -41,7 +41,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.Descriptor"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.Descriptor t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Javax.Management
         {
             IExecute("setFields", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

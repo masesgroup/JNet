@@ -81,7 +81,7 @@ namespace Java.Text.Spi
         {
             return IExecute<Java.Text.BreakIterator>("getWordInstance", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

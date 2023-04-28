@@ -41,7 +41,7 @@ namespace Java.Nio.Channels.Spi
         /// Converter from <see cref="Java.Nio.Channels.Spi.AbstractInterruptibleChannel"/> to <see cref="Java.Nio.Channels.InterruptibleChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.InterruptibleChannel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.InterruptibleChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -63,13 +63,13 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

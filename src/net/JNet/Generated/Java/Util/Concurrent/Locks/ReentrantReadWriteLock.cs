@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Locks
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent.Locks
         /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLockMethod()
         {
@@ -156,13 +156,13 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLockMethod()
         {
             return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent.Locks
             /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()"/>
             /// </summary>
-            
+
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
             {
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly()"/>
             /// </summary>
-            
+
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
             {
@@ -244,7 +244,11 @@ namespace Java.Util.Concurrent.Locks
             {
                 IExecute("unlock");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -267,7 +271,7 @@ namespace Java.Util.Concurrent.Locks
             /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -303,7 +307,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock()"/>
             /// </summary>
-            
+
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
             {
@@ -330,7 +334,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lockInterruptibly()"/>
             /// </summary>
-            
+
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
             {
@@ -343,14 +347,18 @@ namespace Java.Util.Concurrent.Locks
             {
                 IExecute("unlock");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

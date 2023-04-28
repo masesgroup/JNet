@@ -39,7 +39,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.Kernel"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Kernel t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -96,7 +96,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecuteArray<float>("getKernelData", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

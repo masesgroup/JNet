@@ -66,7 +66,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getUpperBound"); }
         }
-        
+
         #endregion
 
         #region Nested classes

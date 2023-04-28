@@ -66,7 +66,7 @@ namespace Java.Beans
         {
             SExecute(LocalClazz, "registerEditor", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -59,7 +59,7 @@ namespace Java.Awt
         {
             get { return IExecute<Java.Awt.Point>("getLocation"); }
         }
-        
+
         #endregion
 
         #region Nested classes

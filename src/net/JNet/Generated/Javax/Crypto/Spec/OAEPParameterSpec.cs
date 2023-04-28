@@ -40,7 +40,7 @@ namespace Javax.Crypto.Spec
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.OAEPParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.OAEPParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static Javax.Crypto.Spec.OAEPParameterSpec DEFAULT { get { return LocalClazz.GetField<Javax.Crypto.Spec.OAEPParameterSpec>("DEFAULT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -92,7 +92,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecute<Javax.Crypto.Spec.PSource>("getPSource"); }
         }
-        
+
         #endregion
 
         #region Nested classes

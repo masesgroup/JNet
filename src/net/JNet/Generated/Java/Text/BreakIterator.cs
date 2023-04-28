@@ -37,7 +37,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.BreakIterator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.BreakIterator t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#DONE"/>
         /// </summary>
         public static int DONE { get { return LocalClazz.GetField<int>("DONE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -120,7 +120,7 @@ namespace Java.Text
         {
             return SExecute<Java.Text.BreakIterator>(LocalClazz, "getWordInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -171,7 +171,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int Next()
         {
@@ -220,7 +220,7 @@ namespace Java.Text
         {
             IExecute("setText", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

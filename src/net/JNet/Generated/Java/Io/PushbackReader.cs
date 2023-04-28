@@ -46,7 +46,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Io
         {
             IExecute("unread", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

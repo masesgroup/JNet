@@ -41,7 +41,7 @@ namespace Java.Sql
         /// Converter from <see cref="Java.Sql.Connection"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Connection t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_SERIALIZABLE"/>
         /// </summary>
         public static int TRANSACTION_SERIALIZABLE { get { return LocalClazz.GetField<int>("TRANSACTION_SERIALIZABLE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -332,7 +332,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Savepoint SetSavepoint()
@@ -352,7 +352,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Sql.Statement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement()
@@ -405,7 +405,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
@@ -414,7 +414,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
@@ -423,7 +423,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#commit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -441,7 +441,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -511,7 +511,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void BeginRequest()
         {
@@ -520,7 +520,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#endRequest()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void EndRequest()
         {
@@ -545,7 +545,7 @@ namespace Java.Sql
         {
             IExecute("setShardingKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

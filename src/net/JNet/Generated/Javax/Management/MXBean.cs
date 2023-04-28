@@ -52,7 +52,7 @@ namespace Javax.Management
         {
             get { return IExecute<bool>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

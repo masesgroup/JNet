@@ -195,7 +195,7 @@ namespace Javax.Accessibility
         {
             IExecute("setAccessibleRowDescription", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

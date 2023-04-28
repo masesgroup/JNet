@@ -107,7 +107,7 @@ namespace Javax.Management.Openmbean
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -902,7 +902,7 @@ namespace Javax.Management.Openmbean
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -988,7 +988,7 @@ namespace Javax.Management.Openmbean
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

@@ -46,7 +46,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Java.Io
         {
             get { return IExecute<string>("readLine"); }
         }
-        
+
         #endregion
 
         #region Nested classes

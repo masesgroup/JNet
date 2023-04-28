@@ -41,7 +41,7 @@ namespace Javax.Swing.Table
         /// Converter from <see cref="Javax.Swing.Table.DefaultTableCellRenderer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableCellRenderer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Javax.Swing.Table
         {
             return IExecute<Java.Awt.Component>("getTableCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -83,7 +83,7 @@ namespace Javax.Swing.Table
             /// Converter from <see cref="Javax.Swing.Table.DefaultTableCellRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Table.DefaultTableCellRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -98,11 +98,15 @@ namespace Javax.Swing.Table
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

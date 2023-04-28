@@ -53,7 +53,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED { get { return LocalClazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_TRUNCATED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Sql
         {
             return SExecute<Java.Sql.ClientInfoStatus>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

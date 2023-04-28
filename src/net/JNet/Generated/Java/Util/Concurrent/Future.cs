@@ -71,7 +71,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute("get", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.Future{V}"/> to <see cref="Java.Util.Concurrent.Future"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.Future<V> t) => t.Cast<Java.Util.Concurrent.Future>();
-        
+
         #endregion
 
         #region Fields
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -174,7 +174,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<V>("get", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

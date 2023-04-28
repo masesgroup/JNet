@@ -65,7 +65,7 @@ namespace Javax.Management.Relation
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -97,7 +97,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE"/>
         /// </summary>
         public static string RELATION_MBEAN_UPDATE { get { return LocalClazz.GetField<string>("RELATION_MBEAN_UPDATE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -154,7 +154,7 @@ namespace Javax.Management.Relation
         {
             get { return IExecute<string>("getRoleName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

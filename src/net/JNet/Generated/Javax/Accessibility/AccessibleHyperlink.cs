@@ -37,7 +37,7 @@ namespace Javax.Accessibility
         /// Converter from <see cref="Javax.Accessibility.AccessibleHyperlink"/> to <see cref="Javax.Accessibility.AccessibleAction"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.AccessibleAction(Javax.Accessibility.AccessibleHyperlink t) => t.Cast<Javax.Accessibility.AccessibleAction>();
-        
+
         #endregion
 
         #region Fields
@@ -113,7 +113,7 @@ namespace Javax.Accessibility
         {
             return IExecute<string>("getAccessibleActionDescription", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

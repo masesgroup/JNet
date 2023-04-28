@@ -90,7 +90,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -102,7 +102,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#BORDER_PAINTED_FLAT_CHANGED_PROPERTY"/>
         /// </summary>
         public static string BORDER_PAINTED_FLAT_CHANGED_PROPERTY { get { return LocalClazz.GetField<string>("BORDER_PAINTED_FLAT_CHANGED_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -125,7 +125,7 @@ namespace Javax.Swing
         {
             IExecute("setBorderPaintedFlat", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

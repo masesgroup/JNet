@@ -57,7 +57,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NOT_NEGATIVE"/>
         /// </summary>
         public static Java.Time.Format.SignStyle NOT_NEGATIVE { get { return LocalClazz.GetField<Java.Time.Format.SignStyle>("NOT_NEGATIVE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -77,7 +77,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.SignStyle>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.ElementIterator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.ElementIterator t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<Javax.Swing.Text.Element>("previous"); }
         }
-        
+
         #endregion
 
         #region Nested classes

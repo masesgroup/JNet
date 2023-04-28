@@ -41,7 +41,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.Reader t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Java.Io
         {
             get { return SExecute<Java.Io.Reader>(LocalClazz, "nullReader"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -89,7 +89,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -98,7 +98,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -157,13 +157,13 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
             IExecute("reset");
         }
-        
+
         #endregion
 
         #region Nested classes

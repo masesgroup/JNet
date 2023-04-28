@@ -63,7 +63,7 @@ namespace Javax.Print.Attribute
         {
             return IExecute<bool>("addAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

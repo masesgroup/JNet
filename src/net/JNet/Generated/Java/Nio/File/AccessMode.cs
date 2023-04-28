@@ -49,7 +49,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#WRITE"/>
         /// </summary>
         public static Java.Nio.File.AccessMode WRITE { get { return LocalClazz.GetField<Java.Nio.File.AccessMode>("WRITE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.AccessMode>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

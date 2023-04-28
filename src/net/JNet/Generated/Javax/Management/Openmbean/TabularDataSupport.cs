@@ -47,7 +47,7 @@ namespace Javax.Management.Openmbean
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.TabularDataSupport"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -243,7 +243,7 @@ namespace Javax.Management.Openmbean
         {
             IExecute("putAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

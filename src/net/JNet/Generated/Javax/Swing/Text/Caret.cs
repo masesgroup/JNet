@@ -151,7 +151,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setVisible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

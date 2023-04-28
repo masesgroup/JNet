@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#SUPPORT_DTD"/>
         /// </summary>
         public static string SUPPORT_DTD { get { return LocalClazz.GetField<string>("SUPPORT_DTD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -94,7 +94,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory()
@@ -112,7 +112,7 @@ namespace Javax.Xml.Stream
         {
             return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalClazz, "newFactory", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -324,7 +324,7 @@ namespace Javax.Xml.Stream
         {
             IExecute("setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

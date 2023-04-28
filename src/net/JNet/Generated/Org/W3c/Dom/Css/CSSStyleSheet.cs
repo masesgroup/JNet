@@ -79,7 +79,7 @@ namespace Org.W3c.Dom.Css
         {
             IExecute("deleteRule", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

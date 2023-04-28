@@ -49,7 +49,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#STRICT"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle STRICT { get { return LocalClazz.GetField<Java.Time.Format.ResolverStyle>("STRICT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.ResolverStyle>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

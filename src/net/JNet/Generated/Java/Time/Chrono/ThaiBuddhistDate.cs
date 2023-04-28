@@ -41,7 +41,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ThaiBuddhistDate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.ThaiBuddhistDate t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistDate"/></returns>
         public static Java.Time.Chrono.ThaiBuddhistDate Now()
         {
@@ -87,7 +87,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.ThaiBuddhistDate>(LocalClazz, "of", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

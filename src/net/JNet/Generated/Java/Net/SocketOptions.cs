@@ -97,7 +97,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#TCP_NODELAY"/>
         /// </summary>
         public static int TCP_NODELAY { get { return LocalClazz.GetField<int>("TCP_NODELAY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -125,7 +125,7 @@ namespace Java.Net
         {
             IExecute("setOption", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

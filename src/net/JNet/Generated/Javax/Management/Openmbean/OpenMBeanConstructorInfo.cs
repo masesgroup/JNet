@@ -66,7 +66,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
         }
-        
+
         #endregion
 
         #region Nested classes

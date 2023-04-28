@@ -55,7 +55,7 @@ namespace Javax.Swing.Colorchooser
         {
             get { return SExecute<Javax.Swing.JComponent>(LocalClazz, "getPreviewPanel"); }
         }
-        
+
         #endregion
 
         #region Instance methods

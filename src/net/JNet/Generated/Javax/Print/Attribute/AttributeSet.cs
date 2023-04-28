@@ -136,7 +136,7 @@ namespace Javax.Print.Attribute
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

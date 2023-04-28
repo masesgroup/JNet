@@ -40,7 +40,7 @@ namespace Java.Lang.Management
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Java.Lang.Management
         {
             return SExecute<Java.Lang.Management.MemoryUsage>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -93,7 +93,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<long>("getUsed"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Imageio.Plugins.Tiff
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -85,7 +85,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

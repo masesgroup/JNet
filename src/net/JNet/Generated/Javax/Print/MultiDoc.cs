@@ -59,7 +59,7 @@ namespace Javax.Print
         {
             get { return IExecute<Javax.Print.MultiDoc>("next"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.JobPrioritySupported"/> to <see cref="Javax.Print.Attribute.SupportedValuesAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.SupportedValuesAttribute(Javax.Print.Attribute.Standard.JobPrioritySupported t) => t.Cast<Javax.Print.Attribute.SupportedValuesAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

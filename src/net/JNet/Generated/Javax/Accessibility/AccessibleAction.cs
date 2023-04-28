@@ -57,7 +57,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_POPUP"/>
         /// </summary>
         public static string TOGGLE_POPUP { get { return LocalClazz.GetField<string>("TOGGLE_POPUP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Javax.Accessibility
         {
             return IExecute<string>("getAccessibleActionDescription", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

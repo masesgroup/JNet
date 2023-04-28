@@ -37,7 +37,7 @@ namespace Javax.Print
         /// Converter from <see cref="Javax.Print.StreamPrintService"/> to <see cref="Javax.Print.PrintService"/>
         /// </summary>
         public static implicit operator Javax.Print.PrintService(Javax.Print.StreamPrintService t) => t.Cast<Javax.Print.PrintService>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Print
         {
             IExecute("dispose");
         }
-        
+
         #endregion
 
         #region Nested classes

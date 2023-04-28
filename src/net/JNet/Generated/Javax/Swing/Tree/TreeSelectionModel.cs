@@ -49,7 +49,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#SINGLE_TREE_SELECTION"/>
         /// </summary>
         public static int SINGLE_TREE_SELECTION { get { return LocalClazz.GetField<int>("SINGLE_TREE_SELECTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -230,7 +230,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("resetRowSelection");
         }
-        
+
         #endregion
 
         #region Nested classes

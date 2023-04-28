@@ -73,7 +73,7 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#THREAD_MXBEAN_NAME"/>
         /// </summary>
         public static string THREAD_MXBEAN_NAME { get { return LocalClazz.GetField<string>("THREAD_MXBEAN_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -206,7 +206,7 @@ namespace Java.Lang.Management
         {
             return SExecute<T>(LocalClazz, "newPlatformMXBeanProxy", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods

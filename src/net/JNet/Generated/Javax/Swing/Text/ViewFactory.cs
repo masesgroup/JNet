@@ -54,7 +54,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<Javax.Swing.Text.View>("create", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

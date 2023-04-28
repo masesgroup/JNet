@@ -55,7 +55,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference Remove()
@@ -73,7 +73,7 @@ namespace Java.Lang.Ref
         {
             return IExecute<Java.Lang.Ref.Reference>("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -96,7 +96,7 @@ namespace Java.Lang.Ref
         /// Converter from <see cref="Java.Lang.Ref.ReferenceQueue{T}"/> to <see cref="Java.Lang.Ref.ReferenceQueue"/>
         /// </summary>
         public static implicit operator Java.Lang.Ref.ReferenceQueue(Java.Lang.Ref.ReferenceQueue<T> t) => t.Cast<Java.Lang.Ref.ReferenceQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT: T
@@ -136,7 +136,7 @@ namespace Java.Lang.Ref
         {
             return IExecute<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

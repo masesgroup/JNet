@@ -48,7 +48,7 @@ namespace Javax.Sql
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Javax.Sql
         {
             get { return IExecute<Java.Sql.PreparedStatement>("getStatement"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Text
         {
             if (arg1.Length == 0) return SExecute<string>(LocalClazz, "format", arg0); else return SExecute<string>(LocalClazz, "format", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -157,7 +157,7 @@ namespace Java.Text
         {
             IExecute("setFormatByArgumentIndex", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -177,7 +177,7 @@ namespace Java.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html#ARGUMENT"/>
             /// </summary>
             public static Java.Text.MessageFormat.Field ARGUMENT { get { return LocalClazz.GetField<Java.Text.MessageFormat.Field>("ARGUMENT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -188,11 +188,15 @@ namespace Java.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

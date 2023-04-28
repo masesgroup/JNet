@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("setPopupVisible", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

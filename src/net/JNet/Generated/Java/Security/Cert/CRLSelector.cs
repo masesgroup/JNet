@@ -54,7 +54,7 @@ namespace Java.Security.Cert
         {
             return IExecute<bool>("match", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

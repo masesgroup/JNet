@@ -37,7 +37,7 @@ namespace Java.Lang.Invoke
         /// Converter from <see cref="Java.Lang.Invoke.SerializedLambda"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Invoke.SerializedLambda t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -128,7 +128,7 @@ namespace Java.Lang.Invoke
         {
             return IExecute("getCapturedArg", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

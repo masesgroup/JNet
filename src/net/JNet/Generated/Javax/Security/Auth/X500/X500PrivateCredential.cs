@@ -48,7 +48,7 @@ namespace Javax.Security.Auth.X500
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Javax.Security.Auth.X500
         /// Converter from <see cref="Javax.Security.Auth.X500.X500PrivateCredential"/> to <see cref="Javax.Security.Auth.Destroyable"/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.X500.X500PrivateCredential t) => t.Cast<Javax.Security.Auth.Destroyable>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Javax.Security.Auth.X500
         {
             IExecute("destroy");
         }
-        
+
         #endregion
 
         #region Nested classes

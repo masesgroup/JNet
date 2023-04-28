@@ -48,7 +48,7 @@ namespace Java.Net
         {
             get { return SExecute<Java.Net.CookieHandler>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -73,7 +73,7 @@ namespace Java.Net
         {
             IExecute("put", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

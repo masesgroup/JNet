@@ -52,7 +52,7 @@ namespace Java.Awt
         {
             IExecute("dispatch");
         }
-        
+
         #endregion
 
         #region Nested classes

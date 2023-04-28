@@ -88,7 +88,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("substituteColorModel", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

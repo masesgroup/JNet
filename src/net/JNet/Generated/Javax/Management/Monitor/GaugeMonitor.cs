@@ -37,7 +37,7 @@ namespace Javax.Management.Monitor
         /// Converter from <see cref="Javax.Management.Monitor.GaugeMonitor"/> to <see cref="Javax.Management.Monitor.GaugeMonitorMBean"/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.GaugeMonitorMBean(Javax.Management.Monitor.GaugeMonitor t) => t.Cast<Javax.Management.Monitor.GaugeMonitorMBean>();
-        
+
         #endregion
 
         #region Fields
@@ -112,7 +112,7 @@ namespace Javax.Management.Monitor
         {
             IExecute("setThresholds", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

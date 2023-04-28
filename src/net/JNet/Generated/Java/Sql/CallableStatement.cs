@@ -1280,7 +1280,7 @@ namespace Java.Sql
         {
             IExecute("setObject", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

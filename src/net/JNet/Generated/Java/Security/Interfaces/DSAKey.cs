@@ -52,7 +52,7 @@ namespace Java.Security.Interfaces
         {
             get { return IExecute<Java.Security.Interfaces.DSAParams>("getParams"); }
         }
-        
+
         #endregion
 
         #region Nested classes

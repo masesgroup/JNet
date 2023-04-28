@@ -38,7 +38,7 @@ namespace Javax.Swing.Event
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -82,7 +82,7 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_OPENED"/>
         /// </summary>
         public static int INTERNAL_FRAME_OPENED { get { return LocalClazz.GetField<int>("INTERNAL_FRAME_OPENED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -97,7 +97,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecute<Javax.Swing.JInternalFrame>("getInternalFrame"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -54,7 +54,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<Javax.Management.Openmbean.CompositeData>("toCompositeData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

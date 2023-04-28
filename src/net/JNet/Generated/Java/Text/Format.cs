@@ -41,7 +41,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.Format"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Format t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Java.Text
         {
             return IExecute<Java.Text.AttributedCharacterIterator>("formatToCharacterIterator", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -129,11 +129,15 @@ namespace Java.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -65,7 +65,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval()
@@ -82,7 +82,7 @@ namespace Javax.Script
         {
             return IExecute("eval", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

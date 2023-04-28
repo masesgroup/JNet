@@ -201,7 +201,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

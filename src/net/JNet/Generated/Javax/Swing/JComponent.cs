@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JComponent"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.JComponent t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#TOOL_TIP_TEXT_KEY"/>
         /// </summary>
         public static string TOOL_TIP_TEXT_KEY { get { return LocalClazz.GetField<string>("TOOL_TIP_TEXT_KEY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -81,7 +81,7 @@ namespace Javax.Swing
         {
             return SExecute<bool>(LocalClazz, "isLightweightComponent", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -537,7 +537,7 @@ namespace Javax.Swing
         {
             IExecute("updateUI");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -553,7 +553,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.JComponent.AccessibleJComponent"/> to <see cref="Javax.Accessibility.AccessibleExtendedComponent"/>
             /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleExtendedComponent(Javax.Swing.JComponent.AccessibleJComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedComponent>();
-            
+
             #endregion
 
             #region Fields
@@ -586,14 +586,18 @@ namespace Javax.Swing
             {
                 get { return IExecute<string>("getToolTipText"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -69,7 +69,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI"/>
         /// </summary>
         public static string PANEL_UI { get { return LocalClazz.GetField<string>("PANEL_UI"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -96,7 +96,7 @@ namespace Javax.Print
         {
             return IExecuteArray<string>("getUIClassNamesForRole", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

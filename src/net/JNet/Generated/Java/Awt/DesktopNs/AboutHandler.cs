@@ -53,7 +53,7 @@ namespace Java.Awt.DesktopNs
         {
             IExecute("handleAbout", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -118,7 +118,7 @@ namespace Java.Beans
         {
             SExecute(LocalClazz, "setGuiAvailable", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

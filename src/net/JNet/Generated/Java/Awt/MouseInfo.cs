@@ -55,7 +55,7 @@ namespace Java.Awt
         {
             get { return SExecute<Java.Awt.PointerInfo>(LocalClazz, "getPointerInfo"); }
         }
-        
+
         #endregion
 
         #region Instance methods

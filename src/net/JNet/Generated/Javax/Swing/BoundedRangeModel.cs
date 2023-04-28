@@ -108,7 +108,7 @@ namespace Javax.Swing
         {
             IExecute("setRangeProperties", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

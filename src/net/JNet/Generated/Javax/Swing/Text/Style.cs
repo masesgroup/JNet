@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         {
             IExecute("removeChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

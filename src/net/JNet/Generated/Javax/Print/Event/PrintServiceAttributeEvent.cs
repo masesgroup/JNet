@@ -38,7 +38,7 @@ namespace Javax.Print.Event
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Print.Event
         {
             get { return IExecute<Javax.Print.PrintService>("getPrintService"); }
         }
-        
+
         #endregion
 
         #region Nested classes

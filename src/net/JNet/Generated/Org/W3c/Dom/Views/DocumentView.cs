@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Views
         {
             get { return IExecute<Org.W3c.Dom.Views.AbstractView>("getDefaultView"); }
         }
-        
+
         #endregion
 
         #region Nested classes

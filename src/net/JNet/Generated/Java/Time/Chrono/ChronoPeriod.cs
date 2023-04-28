@@ -51,7 +51,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.ChronoPeriod>(LocalClazz, "between", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -151,7 +151,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<long>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

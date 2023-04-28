@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentMap"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentMap(Java.Util.Concurrent.ConcurrentMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentMap>();
-        
+
         #endregion
 
         #region Fields
@@ -296,7 +296,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("replaceAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

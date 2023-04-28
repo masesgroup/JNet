@@ -130,6 +130,10 @@ namespace MASES.JNetReflector
             {
                 var jClass = item.JVMClass(true);
                 if (jClass != null) resultingArguments.AddItem(jClass);
+                foreach (var jSubClass in jClass.Classes)
+                {
+                    resultingArguments.AddItem(jSubClass);
+                }
             }
             JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion);
             JarOrModuleName = "CustomSelection";
@@ -138,7 +142,7 @@ namespace MASES.JNetReflector
 
         public static void AddItem(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> data, Class cls)
         {
-            if (cls == null) return;
+            if (cls == null || cls.JVMNestingLevels() > 1) return;
             ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", cls.Name);
             if (cls.IsSpecialClass()) return; // do not reflect this classes
             if (cls.IsNamespaceToAvoid()) return; // do not reflect this classes
@@ -190,6 +194,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeNamespaces()
         {
+            JNetReflectorHelper.EnableLogging = Level >= (int)ReflectionTraceLevel.Debug;
             SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, Class>>>();
             foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
@@ -293,7 +298,7 @@ namespace MASES.JNetReflector
             WriteFile(path, itemPackage);
         }
 
-        static string AnalyzeClass(string jarOrModuleName, ICollection<Class> classDefinitions, string rootDesinationFolder)
+        static string AnalyzeClass(string jarOrModuleName, IEnumerable<Class> classDefinitions, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* AnalyzeClass {0} *******************", jarOrModuleName);
 
@@ -365,70 +370,39 @@ namespace MASES.JNetReflector
                 return string.Empty;
             }
 
-            StringBuilder subClassBlock = new StringBuilder();
-            StringBuilder subClassAutonoumous = new StringBuilder();
-            StringBuilder subClassGenericBlock = new StringBuilder();
-            StringBuilder subClassGenericAutonoumous = new StringBuilder();
-
-            foreach (var entry in nestedClasses)
-            {
-                string nestedClassBlock;
-                string singleNestedClassStr;
-                entry.PrepareSingleClass(classDefinitions, true, false, 3, out nestedClassBlock, out singleNestedClassStr);
-
-                if (!string.IsNullOrEmpty(nestedClassBlock))
-                {
-                    subClassBlock.AppendLine(nestedClassBlock);
-                    subClassBlock.AppendLine();
-                }
-
-                if (!string.IsNullOrEmpty(singleNestedClassStr))
-                {
-                    subClassAutonoumous.AppendLine(singleNestedClassStr);
-                    subClassAutonoumous.AppendLine();
-                }
-
-                if (!JNetReflectorCore.AvoidCSharpGenericDefinition && entry.IsJVMGenericClass() && !entry.IsClassToAvoidInGenerics())
-                {
-                    entry.PrepareSingleClass(classDefinitions, true, true, 3, out nestedClassBlock, out singleNestedClassStr);
-
-                    if (!string.IsNullOrEmpty(nestedClassBlock))
-                    {
-                        subClassBlock.AppendLine(nestedClassBlock);
-                        subClassBlock.AppendLine();
-                    }
-
-                    if (!string.IsNullOrEmpty(singleNestedClassStr))
-                    {
-                        subClassAutonoumous.AppendLine(singleNestedClassStr);
-                        subClassAutonoumous.AppendLine();
-                    }
-                }
-            }
-
-            StringBuilder allClassBlock = new StringBuilder();
-            StringBuilder singleFileBlock = new StringBuilder();
+            string nestedBlock;
+            string subClassStr;
+            AnalyzeNestedClasses(nestedClasses, classDefinitions, out subClassStr, out nestedBlock);
 
             string classBlock;
             string singleClassStr;
-            jClass.PrepareSingleClass(classDefinitions, false, false, 2, out classBlock, out singleClassStr);
-            singleClassStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
-            singleFileBlock.Append(singleClassStr);
-            var subClassStr = subClassBlock.ToString();
-            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassStr.Length != 0 ? subClassStr : string.Empty);
-            allClassBlock.Append(classBlock);
+            jClass.PrepareSingleClass(classDefinitions, false, out classBlock, out singleClassStr);
+
+            singleClassStr = singleClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(nestedBlock) ? string.Empty : nestedBlock);
+            singleClassStr = singleClassStr.AddTabLevel(1);
+            StringBuilder singleFileBlock = new StringBuilder(singleClassStr);
+
+            classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(subClassStr) ? string.Empty : subClassStr);
+            classBlock = classBlock.AddTabLevel(1);
+            StringBuilder allClassBlock = new StringBuilder(classBlock);
 
             string classGenericBlock;
             string singleClassGenericStr;
+            StringBuilder subClassGenericBlock = new StringBuilder();
+            StringBuilder subClassGenericAutonoumous = new StringBuilder();
             if (!JNetReflectorCore.AvoidCSharpGenericDefinition && jClass.IsJVMGenericClass() && !jClass.IsClassToAvoidInGenerics())
             {
-                jClass.PrepareSingleClass(classDefinitions, false, true, 2, out classGenericBlock, out singleClassGenericStr);
-                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericAutonoumous.ToString());
+                jClass.PrepareSingleClass(classDefinitions, true, out classGenericBlock, out singleClassGenericStr);
+                string nestedGenericBlock = subClassGenericAutonoumous.ToString();
+                singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(nestedGenericBlock) ? string.Empty : nestedGenericBlock);
+                classGenericBlock = classGenericBlock.AddTabLevel(1);
+                singleClassGenericStr = singleClassGenericStr.AddTabLevel(1);
+
                 singleFileBlock.AppendLine();
                 singleFileBlock.AppendLine();
                 singleFileBlock.Append(singleClassGenericStr);
                 var subClassGenericStr = subClassGenericBlock.ToString();
-                classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassGenericStr.Length != 0 ? subClassGenericStr : string.Empty);
+                classGenericBlock = classGenericBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(subClassGenericStr) ? string.Empty : subClassGenericStr);
                 allClassBlock.AppendLine();
                 allClassBlock.AppendLine();
                 allClassBlock.Append(classGenericBlock);
@@ -452,12 +426,90 @@ namespace MASES.JNetReflector
             return allClassBlock.ToString();
         }
 
-        static void PrepareSingleClass(this Class jClass, ICollection<Class> classDefinitions, bool isNested, bool isGeneric, int tabLevel, out string classBlock, out string singleClassStr)
+        static void AnalyzeNestedClasses(IEnumerable<Class> nestedClasses, IEnumerable<Class> classDefinitions, out string allPackagesNestedClassBlock, out string singleClassNestedBlock)
         {
-            string stubException = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate) : Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
-            string stubListener = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassListenerTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
-            string stubClass = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
-            string singleClass = isNested ? Template.GetTemplate(Template.SingleNestedClassTemplate) : Template.GetTemplate(Template.SingleClassTemplate);
+            StringBuilder subClassBlock = new StringBuilder();
+            StringBuilder subClassAutonoumous = new StringBuilder();
+
+            foreach (var entry in nestedClasses)
+            {
+                string innerNestedClassBlock = string.Empty;
+                string innerSingleNestedClassStr = string.Empty;
+                // filter only classes with nesting level higher than current: e.g. java.awt.geom.Arc2D$Double reports in Classes the same nested classes of java.awt.geom.Arc2D
+                List<Class> nesting = new List<Class>();
+                foreach (var item in entry.Classes)
+                {
+                    if (item.JVMNestingLevels() > entry.JVMNestingLevels()) nesting.Add(item);
+                }
+                if (nesting.Count > 0)
+                {
+                    AnalyzeNestedClasses(nesting, classDefinitions.Concat(nesting), out innerNestedClassBlock, out innerSingleNestedClassStr);
+                }
+                string nestedClassBlock;
+                string singleNestedClassStr;
+                entry.PrepareSingleClass(classDefinitions, false, out nestedClassBlock, out singleNestedClassStr);
+                nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerNestedClassBlock) ? string.Empty : innerNestedClassBlock);
+                singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerSingleNestedClassStr) ? string.Empty : innerSingleNestedClassStr);
+                nestedClassBlock = nestedClassBlock.AddTabLevel(1);
+                singleNestedClassStr = singleNestedClassStr.AddTabLevel(1);
+
+                if (!string.IsNullOrEmpty(nestedClassBlock))
+                {
+                    subClassBlock.AppendLine(nestedClassBlock);
+                    subClassBlock.AppendLine();
+                }
+
+                if (!string.IsNullOrEmpty(singleNestedClassStr))
+                {
+                    subClassAutonoumous.AppendLine(singleNestedClassStr);
+                    subClassAutonoumous.AppendLine();
+                }
+
+                if (!JNetReflectorCore.AvoidCSharpGenericDefinition && entry.IsJVMGenericClass() && !entry.IsClassToAvoidInGenerics())
+                {
+                    innerNestedClassBlock = string.Empty;
+                    innerSingleNestedClassStr = string.Empty;
+                    // filter only classes with nesting level higher than current: e.g. java.awt.geom.Arc2D$Double reports in Classes the same nested classes of java.awt.geom.Arc2D
+                    nesting = new List<Class>();
+                    foreach (var item in entry.Classes)
+                    {
+                        if (item.JVMNestingLevels() > entry.JVMNestingLevels()) nesting.Add(item);
+                    }
+                    if (nesting.Count > 0)
+                    {
+                        AnalyzeNestedClasses(nesting, classDefinitions.Concat(nesting), out innerNestedClassBlock, out innerSingleNestedClassStr);
+                    }
+                    entry.PrepareSingleClass(classDefinitions, true, out nestedClassBlock, out singleNestedClassStr);
+                    nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerNestedClassBlock) ? string.Empty : innerNestedClassBlock);
+                    singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerSingleNestedClassStr) ? string.Empty : innerSingleNestedClassStr);
+                    nestedClassBlock = nestedClassBlock.AddTabLevel(1);
+                    singleNestedClassStr = singleNestedClassStr.AddTabLevel(1);
+
+                    if (!string.IsNullOrEmpty(nestedClassBlock))
+                    {
+                        subClassBlock.AppendLine(nestedClassBlock);
+                        subClassBlock.AppendLine();
+                    }
+
+                    if (!string.IsNullOrEmpty(singleNestedClassStr))
+                    {
+                        subClassAutonoumous.AppendLine(singleNestedClassStr);
+                        subClassAutonoumous.AppendLine();
+                    }
+                }
+            }
+
+            allPackagesNestedClassBlock = subClassBlock.ToString();
+            singleClassNestedBlock = subClassAutonoumous.ToString();
+        }
+
+        static void PrepareSingleClass(this Class jClass, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr)
+        {
+            int nestingLevel = jClass.JVMNestingLevels();
+            string stubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
+            string stubListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
+            string stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
+            string singleClass = Template.GetTemplate(Template.SingleClassTemplate);
             string constructorBlock = string.Empty;
             string operatorBlock = string.Empty;
             string fieldBlock = string.Empty;
@@ -475,7 +527,7 @@ namespace MASES.JNetReflector
                 methodPrefilter = jClass.PrefilterMethods(isGeneric, out isMainClass);
                 if (isMainClass)
                 {
-                    template = isNested ? Template.GetTemplate(Template.AllPackageClassesStubNestedClassMainClassTemplate) : Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
+                    template = Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
                 }
             }
             bool classCantBeAnalyzed = jClassIsListener || isMainClass;
@@ -484,12 +536,12 @@ namespace MASES.JNetReflector
 
             if (jClass.IsJVMException())
             {
-                classBlock = stubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                          .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
-                                          .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
-                                          .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                          .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
-                                          .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
+                allPackagesClassBlock = stubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
+                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
+                                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
+                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
+                                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
             }
             else
             {
@@ -499,24 +551,24 @@ namespace MASES.JNetReflector
                 bool isClassStatic = jClass.IsStatic();
                 List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(genClause, false))
-                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
-                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel))
-                                     .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
-                                     .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
+                allPackagesClassBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                                                .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(genClause, false))
+                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
+                                                .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
+                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel))
+                                                .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
+                                                .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
+                                                .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
+                                                .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
+                                                .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
 
                 if (!classCantBeAnalyzed)
                 {
-                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
-                    operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(tabLevel);
-                    fieldBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(tabLevel);
-                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, true).AddTabLevel(tabLevel);
-                    methodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, false).AddTabLevel(tabLevel);
+                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    fieldBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
+                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, true).AddTabLevel(1);
+                    methodBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, false).AddTabLevel(1);
                 }
             }
 
@@ -526,11 +578,11 @@ namespace MASES.JNetReflector
             {
                 List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION.AddTabLevel(tabLevel - 1));
+                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
                 if (jClassIsDepracated)
                 {
                     jClassDecoration.AppendLine();
-                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION.AddTabLevel(tabLevel - 1));
+                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
                 }
 
                 singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
@@ -543,7 +595,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric, bool isNested)
+        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -712,7 +764,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeOperators(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric, bool isNested)
+        static string AnalyzeOperators(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
 
@@ -901,7 +953,7 @@ namespace MASES.JNetReflector
             return prefilteredMethods;
         }
 
-        static string AnalyzeMethods(this Class classDefinition, ICollection<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool isNested, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, IEnumerable<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool isNested, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
@@ -921,6 +973,7 @@ namespace MASES.JNetReflector
             {
                 if (staticMethods ^ method.IsStatic()) continue;
 
+                int nestingLevel = classDefinition.JVMNestingLevels();
                 var genString = method.GenericString;
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
@@ -929,7 +982,7 @@ namespace MASES.JNetReflector
                 {
                     var propertyName = method.PropertyName(classDefinitions, false, JNetReflectorCore.UseCamel);
                     if (propertyName.IsReservedName()
-                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
+                        || propertyName.CollapseWithClassOrNestedClass(nestingLevel, classDefinitions)
                         || propertyName.CollapseWithOtherMethods(method, prefilteredMethods, classDefinitions, JNetReflectorCore.UseCamel))
                     {
                         methods.Add(genString, method);
@@ -1093,7 +1146,7 @@ namespace MASES.JNetReflector
                     else
                     {
                         var execFormat = getMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_GET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT;
-                        executionStub.AppendFormat(execFormat, execStub, 
+                        executionStub.AppendFormat(execFormat, execStub,
                                                                getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                getMethod.Name);
                     }
@@ -1415,7 +1468,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeFields(this Class classDefinition, ICollection<Class> classDefinitions, bool isGeneric)
+        static string AnalyzeFields(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Fields of {0} *******************", classDefinition.GenericString);
 
@@ -1444,6 +1497,7 @@ namespace MASES.JNetReflector
                 sortedFilteredFields.Add(field.GenericString, field);
             }
 
+            int nestingLevel = classDefinition.JVMNestingLevels();
             StringBuilder subClassBlock = new StringBuilder();
             foreach (var field in sortedFilteredFields.Values)
             {
@@ -1458,7 +1512,7 @@ namespace MASES.JNetReflector
                 string fieldType = field.Type(genArguments, genClause, isGeneric, JNetReflectorCore.UseCamel);
                 string fieldName = field.Name(false);
 
-                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
+                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(nestingLevel, classDefinitions))
                 {
                     fieldName += "Field";
                 }

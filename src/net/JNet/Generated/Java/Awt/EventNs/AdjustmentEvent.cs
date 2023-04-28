@@ -52,7 +52,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT"/>
         /// </summary>
         public static int UNIT_INCREMENT { get { return LocalClazz.GetField<int>("UNIT_INCREMENT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -128,7 +128,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<bool>("getValueIsAdjusting"); }
         }
-        
+
         #endregion
 
         #region Nested classes

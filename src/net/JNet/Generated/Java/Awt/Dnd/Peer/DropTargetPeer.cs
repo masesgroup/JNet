@@ -61,7 +61,7 @@ namespace Java.Awt.Dnd.Peer
         {
             IExecute("removeDropTarget", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

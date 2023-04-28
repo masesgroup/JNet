@@ -118,7 +118,7 @@ namespace Java.Text
         {
             return IExecute("getAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -134,7 +134,7 @@ namespace Java.Text
             /// Converter from <see cref="Java.Text.AttributedCharacterIterator.Attribute"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Text.AttributedCharacterIterator.Attribute t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -150,7 +150,7 @@ namespace Java.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute READING { get { return LocalClazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("READING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -161,11 +161,15 @@ namespace Java.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

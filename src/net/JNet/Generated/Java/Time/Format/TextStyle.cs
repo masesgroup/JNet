@@ -61,7 +61,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT_STANDALONE"/>
         /// </summary>
         public static Java.Time.Format.TextStyle SHORT_STANDALONE { get { return LocalClazz.GetField<Java.Time.Format.TextStyle>("SHORT_STANDALONE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -81,7 +81,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.TextStyle>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -106,7 +106,7 @@ namespace Java.Time.Format
         {
             get { return IExecute<bool>("isStandalone"); }
         }
-        
+
         #endregion
 
         #region Nested classes

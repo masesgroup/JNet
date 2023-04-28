@@ -56,7 +56,7 @@ namespace Javax.Swing.Text.Html.Parser
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// Converter from <see cref="Javax.Swing.Text.Html.Parser.ContentModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.ContentModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#next"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.ContentModel next { get { return Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("next"); } set { Instance.SetField("next", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -107,7 +107,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element First()
         {
@@ -121,7 +121,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             IExecute("getElements", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

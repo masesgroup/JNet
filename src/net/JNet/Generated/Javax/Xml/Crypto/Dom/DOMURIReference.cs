@@ -52,7 +52,7 @@ namespace Javax.Xml.Crypto.Dom
         {
             get { return IExecute<Org.W3c.Dom.Node>("getHere"); }
         }
-        
+
         #endregion
 
         #region Nested classes

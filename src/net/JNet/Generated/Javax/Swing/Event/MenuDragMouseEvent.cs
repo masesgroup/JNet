@@ -65,7 +65,7 @@ namespace Javax.Swing.Event
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Javax.Swing.Event
         {
             get { return IExecuteArray<Javax.Swing.MenuElement>("getPath"); }
         }
-        
+
         #endregion
 
         #region Nested classes

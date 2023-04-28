@@ -54,7 +54,7 @@ namespace Java.Net
         {
             return IExecute<string>("getContentTypeFor", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

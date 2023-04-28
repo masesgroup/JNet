@@ -79,7 +79,7 @@ namespace Javax.Xml.Catalog
         {
             return IExecute<string>("matchURI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

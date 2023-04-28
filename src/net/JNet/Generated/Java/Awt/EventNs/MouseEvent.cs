@@ -78,7 +78,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -142,7 +142,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#NOBUTTON"/>
         /// </summary>
         public static int NOBUTTON { get { return LocalClazz.GetField<int>("NOBUTTON"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -155,7 +155,7 @@ namespace Java.Awt.EventNs
         {
             return SExecute<string>(LocalClazz, "getMouseModifiersText", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -231,7 +231,7 @@ namespace Java.Awt.EventNs
         {
             IExecute("translatePoint", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

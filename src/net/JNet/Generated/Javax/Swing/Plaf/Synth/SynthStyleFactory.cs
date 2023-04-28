@@ -55,7 +55,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             return IExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

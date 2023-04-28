@@ -57,7 +57,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -135,7 +135,7 @@ namespace Java.Awt
         {
             IExecute("removeActionListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

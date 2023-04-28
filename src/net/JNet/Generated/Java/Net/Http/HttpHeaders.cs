@@ -51,7 +51,7 @@ namespace Java.Net.Http
         {
             return SExecute<Java.Net.Http.HttpHeaders>(LocalClazz, "of", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -89,7 +89,7 @@ namespace Java.Net.Http
         {
             return IExecute<Java.Util.OptionalLong>("firstValueAsLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html.Parser
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             IExecute("parse", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

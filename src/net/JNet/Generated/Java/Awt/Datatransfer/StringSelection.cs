@@ -37,7 +37,7 @@ namespace Java.Awt.Datatransfer
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Awt.Datatransfer
         /// Converter from <see cref="Java.Awt.Datatransfer.StringSelection"/> to <see cref="Java.Awt.Datatransfer.ClipboardOwner"/>
         /// </summary>
         public static implicit operator Java.Awt.Datatransfer.ClipboardOwner(Java.Awt.Datatransfer.StringSelection t) => t.Cast<Java.Awt.Datatransfer.ClipboardOwner>();
-        
+
         #endregion
 
         #region Fields
@@ -97,7 +97,7 @@ namespace Java.Awt.Datatransfer
         {
             IExecute("lostOwnership", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

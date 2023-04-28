@@ -74,7 +74,7 @@ namespace Java.Util
         {
             IExecute("remove");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -97,7 +97,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Iterator{E}"/> to <see cref="Java.Util.Iterator"/>
         /// </summary>
         public static implicit operator Java.Util.Iterator(Java.Util.Iterator<E> t) => t.Cast<Java.Util.Iterator>();
-        
+
         #endregion
 
         #region Fields
@@ -138,7 +138,7 @@ namespace Java.Util
         {
             IExecute("remove");
         }
-        
+
         #endregion
 
         #region Nested classes

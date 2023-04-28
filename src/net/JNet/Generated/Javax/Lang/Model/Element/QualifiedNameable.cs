@@ -52,7 +52,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

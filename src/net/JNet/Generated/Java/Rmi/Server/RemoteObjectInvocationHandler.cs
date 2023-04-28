@@ -37,7 +37,7 @@ namespace Java.Rmi.Server
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Rmi.Server
         /// Converter from <see cref="Java.Rmi.Server.RemoteObjectInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Rmi.Server.RemoteObjectInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Java.Rmi.Server
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

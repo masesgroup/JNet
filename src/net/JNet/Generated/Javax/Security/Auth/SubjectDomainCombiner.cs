@@ -37,7 +37,7 @@ namespace Javax.Security.Auth
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Security.Auth
         /// Converter from <see cref="Javax.Security.Auth.SubjectDomainCombiner"/> to <see cref="Java.Security.DomainCombiner"/>
         /// </summary>
         public static implicit operator Java.Security.DomainCombiner(Javax.Security.Auth.SubjectDomainCombiner t) => t.Cast<Java.Security.DomainCombiner>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Javax.Security.Auth
         {
             return IExecuteArray<Java.Security.ProtectionDomain>("combine", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -62,7 +62,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -127,7 +127,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getPublicExponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

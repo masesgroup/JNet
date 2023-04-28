@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
         {
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
         {
             IExecute("signalAll");
         }
-        
+
         #endregion
 
         #region Nested classes

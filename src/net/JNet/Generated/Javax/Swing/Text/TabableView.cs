@@ -65,7 +65,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<float>("getTabbedSpan", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

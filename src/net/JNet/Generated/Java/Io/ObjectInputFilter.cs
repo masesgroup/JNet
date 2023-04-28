@@ -54,7 +54,7 @@ namespace Java.Io
         {
             return IExecute<Java.Io.ObjectInputFilter.Status>("checkInput", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -90,10 +90,14 @@ namespace Java.Io
             {
                 return SExecute<Java.Io.ObjectInputFilter>(LocalClazz, "createFilter", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -156,7 +160,11 @@ namespace Java.Io
             {
                 get { return IExecute<long>("streamBytes"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -187,7 +195,7 @@ namespace Java.Io
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED"/>
             /// </summary>
             public static Java.Io.ObjectInputFilter.Status UNDECIDED { get { return LocalClazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -207,10 +215,14 @@ namespace Java.Io
             {
                 return SExecute<Java.Io.ObjectInputFilter.Status>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -218,7 +230,7 @@ namespace Java.Io
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

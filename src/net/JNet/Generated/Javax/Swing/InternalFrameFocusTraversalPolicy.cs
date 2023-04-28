@@ -54,7 +54,7 @@ namespace Javax.Swing
         {
             return IExecute<Java.Awt.Component>("getInitialComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

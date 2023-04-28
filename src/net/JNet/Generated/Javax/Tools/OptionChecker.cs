@@ -54,7 +54,7 @@ namespace Javax.Tools
         {
             return IExecute<int>("isSupportedOption", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Javax.Xml.Transform.Sax
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE_XMLFILTER"/>
         /// </summary>
         public static string FEATURE_XMLFILTER { get { return LocalClazz.GetField<string>("FEATURE_XMLFILTER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -63,7 +63,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler()
@@ -110,7 +110,7 @@ namespace Javax.Xml.Transform.Sax
         {
             return IExecute<Org.Xml.Sax.XMLFilter>("newXMLFilter", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

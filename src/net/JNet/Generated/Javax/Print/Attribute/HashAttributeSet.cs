@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.HashAttributeSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashAttributeSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -168,7 +168,7 @@ namespace Javax.Print.Attribute
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

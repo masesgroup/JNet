@@ -50,7 +50,7 @@ namespace Java.Lang.Management
         {
             return SExecute<Java.Lang.Management.ThreadInfo>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -180,7 +180,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<long>("getWaitedTime"); }
         }
-        
+
         #endregion
 
         #region Nested classes

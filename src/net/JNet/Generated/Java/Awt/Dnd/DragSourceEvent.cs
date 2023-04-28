@@ -47,7 +47,7 @@ namespace Java.Awt.Dnd
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Awt.Dnd
         {
             get { return IExecute<int>("getY"); }
         }
-        
+
         #endregion
 
         #region Nested classes

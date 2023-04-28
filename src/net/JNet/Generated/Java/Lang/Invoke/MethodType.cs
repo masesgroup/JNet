@@ -37,7 +37,7 @@ namespace Java.Lang.Invoke
         /// Converter from <see cref="Java.Lang.Invoke.MethodType"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Invoke.MethodType t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -136,7 +136,7 @@ namespace Java.Lang.Invoke
         {
             return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -300,7 +300,7 @@ namespace Java.Lang.Invoke
         {
             return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

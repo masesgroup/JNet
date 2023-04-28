@@ -59,7 +59,7 @@ namespace Javax.Naming.Spi
         {
             return IExecute<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -76,7 +76,7 @@ namespace Javax.Naming.Spi
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -106,14 +106,18 @@ namespace Javax.Naming.Spi
             {
                 get { return IExecute("getObject"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

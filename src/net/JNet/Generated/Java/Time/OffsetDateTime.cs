@@ -49,7 +49,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.OffsetDateTime"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.OffsetDateTime t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MIN"/>
         /// </summary>
         public static Java.Time.OffsetDateTime MIN { get { return LocalClazz.GetField<Java.Time.OffsetDateTime>("MIN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -84,7 +84,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now()
         {
@@ -174,7 +174,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -749,7 +749,7 @@ namespace Java.Time
         {
             return IExecute<long>("until", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

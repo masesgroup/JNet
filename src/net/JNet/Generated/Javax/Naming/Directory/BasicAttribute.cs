@@ -65,7 +65,7 @@ namespace Javax.Naming.Directory
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.BasicAttribute"/> to <see cref="Javax.Naming.Directory.Attribute"/>
         /// </summary>
         public static implicit operator Javax.Naming.Directory.Attribute(Javax.Naming.Directory.BasicAttribute t) => t.Cast<Javax.Naming.Directory.Attribute>();
-        
+
         #endregion
 
         #region Fields
@@ -157,7 +157,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Get()
@@ -209,7 +209,7 @@ namespace Javax.Naming.Directory
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

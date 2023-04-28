@@ -47,7 +47,7 @@ namespace Javax.Swing.Event
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,7 +86,7 @@ namespace Javax.Swing.Event
         {
             return IExecute<int>("convertPreviousRowIndexToModel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -110,7 +110,7 @@ namespace Javax.Swing.Event
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORTED"/>
             /// </summary>
             public static Javax.Swing.Event.RowSorterEvent.Type SORTED { get { return LocalClazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORTED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -130,10 +130,14 @@ namespace Javax.Swing.Event
             {
                 return SExecute<Javax.Swing.Event.RowSorterEvent.Type>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -141,7 +145,7 @@ namespace Javax.Swing.Event
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

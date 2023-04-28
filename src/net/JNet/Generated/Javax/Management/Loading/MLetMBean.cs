@@ -124,7 +124,7 @@ namespace Javax.Management.Loading
         {
             IExecute("addURL", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

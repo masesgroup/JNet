@@ -112,7 +112,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

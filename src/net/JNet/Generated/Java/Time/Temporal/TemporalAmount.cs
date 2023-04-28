@@ -79,7 +79,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<long>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

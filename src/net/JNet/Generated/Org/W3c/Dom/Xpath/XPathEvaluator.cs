@@ -81,7 +81,7 @@ namespace Org.W3c.Dom.Xpath
         {
             return IExecute<Org.W3c.Dom.Xpath.XPathNSResolver>("createNSResolver", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

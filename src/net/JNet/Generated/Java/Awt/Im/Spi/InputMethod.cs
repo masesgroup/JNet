@@ -165,7 +165,7 @@ namespace Java.Awt.Im.Spi
         {
             IExecute("setInputMethodContext", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

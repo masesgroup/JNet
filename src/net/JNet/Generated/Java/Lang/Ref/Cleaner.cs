@@ -44,7 +44,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create()
         {
@@ -59,7 +59,7 @@ namespace Java.Lang.Ref
         {
             return SExecute<Java.Lang.Ref.Cleaner>(LocalClazz, "create", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -73,7 +73,7 @@ namespace Java.Lang.Ref
         {
             return IExecute<Java.Lang.Ref.Cleaner.Cleanable>("register", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -104,14 +104,18 @@ namespace Java.Lang.Ref
             {
                 IExecute("clean");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

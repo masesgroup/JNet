@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JPopupMenu"/> to <see cref="Javax.Swing.MenuElement"/>
         /// </summary>
         public static implicit operator Javax.Swing.MenuElement(Javax.Swing.JPopupMenu t) => t.Cast<Javax.Swing.MenuElement>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Swing
         {
             get { return SExecute<bool>(LocalClazz, "getDefaultLightWeightPopupEnabled"); } set { SExecute(LocalClazz, "setDefaultLightWeightPopupEnabled", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -334,7 +334,7 @@ namespace Javax.Swing
         {
             IExecute("show", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -361,11 +361,15 @@ namespace Javax.Swing
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

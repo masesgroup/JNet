@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.LongAdder"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.LongAdder t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("reset");
         }
-        
+
         #endregion
 
         #region Nested classes

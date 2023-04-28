@@ -75,7 +75,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -190,7 +190,7 @@ namespace Javax.Swing
         {
             IExecute("replaceRange", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

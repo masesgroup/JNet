@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CompletableFuture"/> to <see cref="Java.Util.Concurrent.CompletionStage"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CompletionStage(Java.Util.Concurrent.CompletableFuture t) => t.Cast<Java.Util.Concurrent.CompletionStage>();
-        
+
         #endregion
 
         #region Fields
@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent
         {
             return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -669,7 +669,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -715,7 +715,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("obtrudeValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -742,11 +742,15 @@ namespace Java.Util.Concurrent
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -773,7 +777,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CompletableFuture{T}"/> to <see cref="Java.Util.Concurrent.CompletableFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CompletableFuture(Java.Util.Concurrent.CompletableFuture<T> t) => t.Cast<Java.Util.Concurrent.CompletableFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -894,7 +898,7 @@ namespace Java.Util.Concurrent
         {
             return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -1401,7 +1405,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -1447,7 +1451,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("obtrudeValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

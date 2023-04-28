@@ -101,7 +101,7 @@ namespace Org.W3c.Dom.Ls
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

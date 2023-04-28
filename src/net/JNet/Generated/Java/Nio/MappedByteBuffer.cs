@@ -66,7 +66,7 @@ namespace Java.Nio
         {
             get { return IExecute<Java.Nio.MappedByteBuffer>("load"); }
         }
-        
+
         #endregion
 
         #region Nested classes

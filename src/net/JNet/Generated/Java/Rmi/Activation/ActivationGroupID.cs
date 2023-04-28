@@ -37,7 +37,7 @@ namespace Java.Rmi.Activation
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Rmi.Activation
         /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupID"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupID t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Java.Rmi.Activation
         {
             get { return IExecute<Java.Rmi.Activation.ActivationSystem>("getSystem"); }
         }
-        
+
         #endregion
 
         #region Nested classes

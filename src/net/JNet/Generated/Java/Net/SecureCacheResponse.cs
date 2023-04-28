@@ -80,7 +80,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain"); }
         }
-        
+
         #endregion
 
         #region Nested classes

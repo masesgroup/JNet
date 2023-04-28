@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Button"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Button t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -95,7 +95,7 @@ namespace Java.Awt
         {
             IExecute("removeActionListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

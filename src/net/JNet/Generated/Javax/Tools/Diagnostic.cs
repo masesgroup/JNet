@@ -41,7 +41,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS"/>
         /// </summary>
         public static long NOPOS { get { return LocalClazz.GetField<long>("NOPOS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -114,7 +114,7 @@ namespace Javax.Tools
         {
             return IExecute<string>("getMessage", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -150,7 +150,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind WARNING { get { return LocalClazz.GetField<Javax.Tools.Diagnostic.Kind>("WARNING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -170,10 +170,14 @@ namespace Javax.Tools
             {
                 return SExecute<Javax.Tools.Diagnostic.Kind>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -181,7 +185,7 @@ namespace Javax.Tools
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -200,7 +204,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.Diagnostic{S}"/> to <see cref="Javax.Tools.Diagnostic"/>
         /// </summary>
         public static implicit operator Javax.Tools.Diagnostic(Javax.Tools.Diagnostic<S> t) => t.Cast<Javax.Tools.Diagnostic>();
-        
+
         #endregion
 
         #region Fields
@@ -208,7 +212,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS"/>
         /// </summary>
         public static long NOPOS { get { return LocalClazz.GetField<long>("NOPOS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -281,7 +285,7 @@ namespace Javax.Tools
         {
             return IExecute<string>("getMessage", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

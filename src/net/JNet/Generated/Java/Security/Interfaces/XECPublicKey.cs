@@ -41,7 +41,7 @@ namespace Java.Security.Interfaces
         /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
         /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.PublicKey>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Security.Interfaces
         {
             get { return IExecute<Java.Math.BigInteger>("getU"); }
         }
-        
+
         #endregion
 
         #region Nested classes

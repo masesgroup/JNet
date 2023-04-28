@@ -50,7 +50,7 @@ namespace Javax.Swing.Text.Html
         {
             return SExecute<int>(LocalClazz, "getIndexOfSize", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -238,7 +238,7 @@ namespace Javax.Swing.Text.Html
         {
             IExecute("setBaseFontSize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -254,7 +254,7 @@ namespace Javax.Swing.Text.Html
             /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.BoxPainter"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.BoxPainter t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -289,7 +289,11 @@ namespace Javax.Swing.Text.Html
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -308,7 +312,7 @@ namespace Javax.Swing.Text.Html
             /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.ListPainter"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -334,14 +338,18 @@ namespace Javax.Swing.Text.Html
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

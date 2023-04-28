@@ -84,7 +84,7 @@ namespace Javax.Security.Auth.Spi
         {
             IExecute("initialize", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

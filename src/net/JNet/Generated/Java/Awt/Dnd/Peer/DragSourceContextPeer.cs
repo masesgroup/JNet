@@ -71,7 +71,7 @@ namespace Java.Awt.Dnd.Peer
         {
             IExecute("transferablesFlavorsChanged");
         }
-        
+
         #endregion
 
         #region Nested classes

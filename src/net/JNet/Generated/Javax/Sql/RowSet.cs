@@ -140,7 +140,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#clearParameters()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
@@ -149,7 +149,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#execute()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Execute()
         {
@@ -1068,7 +1068,7 @@ namespace Javax.Sql
         {
             IExecute("setURL", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

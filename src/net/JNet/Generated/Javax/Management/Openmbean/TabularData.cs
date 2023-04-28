@@ -148,7 +148,7 @@ namespace Javax.Management.Openmbean
         {
             IExecute("putAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes
