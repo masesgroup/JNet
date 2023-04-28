@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf
         {
             return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalClazz, "createUI", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -165,7 +165,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("update", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

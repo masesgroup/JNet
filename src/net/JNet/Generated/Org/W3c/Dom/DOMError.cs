@@ -49,7 +49,7 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING"/>
         /// </summary>
         public static short SEVERITY_WARNING { get { return SGetField<short>(LocalClazz, "SEVERITY_WARNING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -99,7 +99,7 @@ namespace Org.W3c.Dom
         {
             get { return IExecute<string>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

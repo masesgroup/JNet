@@ -101,7 +101,7 @@ namespace Org.W3c.Dom.Traversal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#FILTER_SKIP"/>
         /// </summary>
         public static short FILTER_SKIP { get { return SGetField<short>(LocalClazz, "FILTER_SKIP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -118,7 +118,7 @@ namespace Org.W3c.Dom.Traversal
         {
             return IExecute<short>("acceptNode", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

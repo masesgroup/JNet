@@ -55,7 +55,7 @@ namespace Java.Util.Function
         {
             return IExecute<int>("applyAsInt", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -78,7 +78,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ToIntBiFunction{T, U}"/> to <see cref="Java.Util.Function.ToIntBiFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ToIntBiFunction(Java.Util.Function.ToIntBiFunction<T, U> t) => t.Cast<Java.Util.Function.ToIntBiFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Java.Util.Function
         {
             return IExecute<int>("applyAsInt", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

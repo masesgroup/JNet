@@ -329,7 +329,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSizeName.html#TABLOID"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaSizeName TABLOID { get { return SGetField<Javax.Print.Attribute.Standard.MediaSizeName>(LocalClazz, "TABLOID"); } }
-        
+
         #endregion
 
         #region Static methods

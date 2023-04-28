@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Byte"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Byte t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -182,7 +182,7 @@ namespace Java.Lang
         {
             return SExecute<long>(LocalClazz, "toUnsignedLong", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -204,7 +204,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

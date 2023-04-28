@@ -38,7 +38,7 @@ namespace Javax.Naming.Directory
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.InitialDirContext"/> to <see cref="Javax.Naming.Directory.DirContext"/>
         /// </summary>
         public static implicit operator Javax.Naming.Directory.DirContext(Javax.Naming.Directory.InitialDirContext t) => t.Cast<Javax.Naming.Directory.DirContext>();
-        
+
         #endregion
 
         #region Fields
@@ -344,7 +344,7 @@ namespace Javax.Naming.Directory
         {
             IExecute("rebind", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

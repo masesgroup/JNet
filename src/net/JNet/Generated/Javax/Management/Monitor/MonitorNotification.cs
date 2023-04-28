@@ -77,7 +77,7 @@ namespace Javax.Management.Monitor
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED"/>
         /// </summary>
         public static string THRESHOLD_VALUE_EXCEEDED { get { return SGetField<string>(LocalClazz, "THRESHOLD_VALUE_EXCEEDED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -113,7 +113,7 @@ namespace Javax.Management.Monitor
         {
             get { return IExecute("getTrigger"); }
         }
-        
+
         #endregion
 
         #region Nested classes

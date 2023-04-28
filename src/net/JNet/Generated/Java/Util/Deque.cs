@@ -234,7 +234,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -264,7 +264,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -287,7 +287,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Deque{E}"/> to <see cref="Java.Util.Deque"/>
         /// </summary>
         public static implicit operator Java.Util.Deque(Java.Util.Deque<E> t) => t.Cast<Java.Util.Deque>();
-        
+
         #endregion
 
         #region Fields
@@ -488,7 +488,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
-        
+
         /// <returns><see cref="E"/></returns>
         public E Remove()
         {
@@ -518,7 +518,7 @@ namespace Java.Util
         {
             IExecute("push", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

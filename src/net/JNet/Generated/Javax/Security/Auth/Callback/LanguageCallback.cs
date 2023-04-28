@@ -41,7 +41,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.LanguageCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.LanguageCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Javax.Security.Auth.Callback
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

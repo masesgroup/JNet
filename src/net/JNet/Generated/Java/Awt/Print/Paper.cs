@@ -37,7 +37,7 @@ namespace Java.Awt.Print
         /// Converter from <see cref="Java.Awt.Print.Paper"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Print.Paper t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -111,7 +111,7 @@ namespace Java.Awt.Print
         {
             IExecute("setSize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -56,7 +56,7 @@ namespace Javax.Xml.Crypto
         {
             return IExecute<Javax.Xml.Crypto.Data>("dereference", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

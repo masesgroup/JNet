@@ -38,7 +38,7 @@ namespace Javax.Security.Auth.Callback
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.TextOutputCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.TextOutputCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Javax.Security.Auth.Callback
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#WARNING"/>
         /// </summary>
         public static int WARNING { get { return SGetField<int>(LocalClazz, "WARNING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -88,7 +88,7 @@ namespace Javax.Security.Auth.Callback
         {
             get { return IExecute<int>("getMessageType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

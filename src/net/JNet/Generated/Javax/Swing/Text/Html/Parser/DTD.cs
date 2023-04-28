@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// Converter from <see cref="Javax.Swing.Text.Html.Parser.DTD"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.DTD t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -105,7 +105,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION"/>
         /// </summary>
         public static int FILE_VERSION { get { return SGetField<int>(LocalClazz, "FILE_VERSION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -128,7 +128,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             SExecute(LocalClazz, "putDTDHash", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -231,7 +231,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             IExecute("read", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

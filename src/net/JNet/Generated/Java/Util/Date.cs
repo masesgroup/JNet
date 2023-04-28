@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Date"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Util.Date t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Date>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -124,7 +124,7 @@ namespace Java.Util
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

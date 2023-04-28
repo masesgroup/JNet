@@ -73,7 +73,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getValueType"); } set { IExecute("setValueType", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

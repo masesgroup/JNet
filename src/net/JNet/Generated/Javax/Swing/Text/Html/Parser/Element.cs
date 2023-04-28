@@ -41,7 +41,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// Converter from <see cref="Javax.Swing.Text.Html.Parser.Element"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.Element t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#content"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.ContentModel content { get { return IGetField<Javax.Swing.Text.Html.Parser.ContentModel>("content"); } set { ISetField("content", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             return SExecute<int>(LocalClazz, "name2type", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -176,7 +176,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             return IExecute<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributeByValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

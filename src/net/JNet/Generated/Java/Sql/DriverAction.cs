@@ -52,7 +52,7 @@ namespace Java.Sql
         {
             IExecute("deregister");
         }
-        
+
         #endregion
 
         #region Nested classes

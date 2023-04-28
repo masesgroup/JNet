@@ -93,7 +93,7 @@ namespace Java.Util
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#WALL_TIME"/>
         /// </summary>
         public static int WALL_TIME { get { return SGetField<int>(LocalClazz, "WALL_TIME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -203,7 +203,7 @@ namespace Java.Util
         {
             IExecute("setStartYear", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

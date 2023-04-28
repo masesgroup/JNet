@@ -46,7 +46,7 @@ namespace Java.Lang.Ref
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -94,7 +94,7 @@ namespace Java.Lang.Ref
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -102,7 +102,7 @@ namespace Java.Lang.Ref
         /// Converter from <see cref="Java.Lang.Ref.SoftReference{T}"/> to <see cref="Java.Lang.Ref.SoftReference"/>
         /// </summary>
         public static implicit operator Java.Lang.Ref.SoftReference(Java.Lang.Ref.SoftReference<T> t) => t.Cast<Java.Lang.Ref.SoftReference>();
-        
+
         #endregion
 
         #region Fields

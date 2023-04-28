@@ -78,7 +78,7 @@ namespace Javax.Swing
         {
             IExecute("removeElementAt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -101,7 +101,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.MutableComboBoxModel{E}"/> to <see cref="Javax.Swing.MutableComboBoxModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.MutableComboBoxModel(Javax.Swing.MutableComboBoxModel<E> t) => t.Cast<Javax.Swing.MutableComboBoxModel>();
-        
+
         #endregion
 
         #region Fields
@@ -146,7 +146,7 @@ namespace Javax.Swing
         {
             IExecute("removeElementAt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Naming.Ldap
         /// Converter from <see cref="Javax.Naming.Ldap.StartTlsRequest"/> to <see cref="Javax.Naming.Ldap.ExtendedRequest"/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedRequest(Javax.Naming.Ldap.StartTlsRequest t) => t.Cast<Javax.Naming.Ldap.ExtendedRequest>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#OID"/>
         /// </summary>
         public static string OID { get { return SGetField<string>(LocalClazz, "OID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -80,7 +80,7 @@ namespace Javax.Naming.Ldap
         {
             return IExecute<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

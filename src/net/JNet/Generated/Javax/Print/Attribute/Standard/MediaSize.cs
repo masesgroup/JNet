@@ -71,7 +71,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.MediaSize"/> to <see cref="Javax.Print.Attribute.Attribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.MediaSize t) => t.Cast<Javax.Print.Attribute.Attribute>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Javax.Print.Attribute.Standard
         {
             return SExecute<Javax.Print.Attribute.Standard.MediaSizeName>(LocalClazz, "findMedia", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -132,7 +132,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -168,7 +168,7 @@ namespace Javax.Print.Attribute.Standard
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#E"/>
             /// </summary>
             public static Javax.Print.Attribute.Standard.MediaSize E { get { return SGetField<Javax.Print.Attribute.Standard.MediaSize>(LocalClazz, "E"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -176,6 +176,10 @@ namespace Javax.Print.Attribute.Standard
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -303,7 +307,7 @@ namespace Javax.Print.Attribute.Standard
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#DESIGNATED_LONG"/>
             /// </summary>
             public static Javax.Print.Attribute.Standard.MediaSize DESIGNATED_LONG { get { return SGetField<Javax.Print.Attribute.Standard.MediaSize>(LocalClazz, "DESIGNATED_LONG"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -311,6 +315,10 @@ namespace Javax.Print.Attribute.Standard
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -470,7 +478,7 @@ namespace Javax.Print.Attribute.Standard
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.JIS.html#YOU_7"/>
             /// </summary>
             public static Javax.Print.Attribute.Standard.MediaSize YOU_7 { get { return SGetField<Javax.Print.Attribute.Standard.MediaSize>(LocalClazz, "YOU_7"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -478,6 +486,10 @@ namespace Javax.Print.Attribute.Standard
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -561,7 +573,7 @@ namespace Javax.Print.Attribute.Standard
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.NA.html#NA_NUMBER_9_ENVELOPE"/>
             /// </summary>
             public static Javax.Print.Attribute.Standard.MediaSize NA_NUMBER_9_ENVELOPE { get { return SGetField<Javax.Print.Attribute.Standard.MediaSize>(LocalClazz, "NA_NUMBER_9_ENVELOPE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -569,6 +581,10 @@ namespace Javax.Print.Attribute.Standard
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -632,7 +648,7 @@ namespace Javax.Print.Attribute.Standard
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#TABLOID"/>
             /// </summary>
             public static Javax.Print.Attribute.Standard.MediaSize TABLOID { get { return SGetField<Javax.Print.Attribute.Standard.MediaSize>(LocalClazz, "TABLOID"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -643,11 +659,15 @@ namespace Javax.Print.Attribute.Standard
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

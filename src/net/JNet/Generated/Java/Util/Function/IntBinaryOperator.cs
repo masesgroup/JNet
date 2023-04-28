@@ -55,7 +55,7 @@ namespace Java.Util.Function
         {
             return IExecute<int>("applyAsInt", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -40,7 +40,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED"/>
         /// </summary>
         public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -97,7 +97,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<int>("getStateChange"); }
         }
-        
+
         #endregion
 
         #region Nested classes

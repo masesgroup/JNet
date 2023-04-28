@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.SignatureMethod t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
-        
+
         #endregion
 
         #region Fields
@@ -133,7 +133,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA512_RSA_MGF1"/>
         /// </summary>
         public static string SHA512_RSA_MGF1 { get { return SGetField<string>(LocalClazz, "SHA512_RSA_MGF1"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -148,7 +148,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
         }
-        
+
         #endregion
 
         #region Nested classes

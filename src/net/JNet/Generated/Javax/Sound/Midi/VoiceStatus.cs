@@ -61,7 +61,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#volume"/>
         /// </summary>
         public int volume { get { return IGetField<int>("volume"); } set { ISetField("volume", value); } }
-        
+
         #endregion
 
         #region Static methods

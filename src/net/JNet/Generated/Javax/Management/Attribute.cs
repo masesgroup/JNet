@@ -38,7 +38,7 @@ namespace Javax.Management
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.Attribute"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Attribute t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Javax.Management
         {
             get { return IExecute("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

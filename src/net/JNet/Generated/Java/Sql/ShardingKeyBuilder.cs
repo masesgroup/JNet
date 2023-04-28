@@ -62,7 +62,7 @@ namespace Java.Sql
         {
             return IExecute<Java.Sql.ShardingKeyBuilder>("subkey", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

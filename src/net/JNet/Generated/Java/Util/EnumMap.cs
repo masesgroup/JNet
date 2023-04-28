@@ -53,7 +53,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EnumMap"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.EnumMap t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {
@@ -96,7 +96,7 @@ namespace Java.Util
         {
             return IExecute("put", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -135,7 +135,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -151,7 +151,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EnumMap{K, V}"/> to <see cref="Java.Util.EnumMap"/>
         /// </summary>
         public static implicit operator Java.Util.EnumMap(Java.Util.EnumMap<K, V> t) => t.Cast<Java.Util.EnumMap>();
-        
+
         #endregion
 
         #region Fields
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {
@@ -182,7 +182,7 @@ namespace Java.Util
         {
             return IExecute<V>("put", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

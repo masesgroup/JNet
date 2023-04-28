@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent.Atomic
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.LongAccumulator"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.LongAccumulator t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -87,7 +87,7 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("reset");
         }
-        
+
         #endregion
 
         #region Nested classes

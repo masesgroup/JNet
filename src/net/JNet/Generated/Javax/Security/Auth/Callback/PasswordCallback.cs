@@ -38,7 +38,7 @@ namespace Javax.Security.Auth.Callback
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.PasswordCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.PasswordCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.Callback
         {
             IExecute("clearPassword");
         }
-        
+
         #endregion
 
         #region Nested classes

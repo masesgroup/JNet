@@ -54,7 +54,7 @@ namespace Java.Util.Logging
         {
             return IExecute<bool>("isLoggable", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

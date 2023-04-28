@@ -77,7 +77,7 @@ namespace Org.W3c.Dom.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
         public static short UNORDERED_NODE_SNAPSHOT_TYPE { get { return SGetField<short>(LocalClazz, "UNORDERED_NODE_SNAPSHOT_TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -151,7 +151,7 @@ namespace Org.W3c.Dom.Xpath
         {
             return IExecute<Org.W3c.Dom.Node>("snapshotItem", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

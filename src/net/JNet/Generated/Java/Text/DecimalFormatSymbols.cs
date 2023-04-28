@@ -37,7 +37,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.DecimalFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.DecimalFormatSymbols t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
         public static Java.Text.DecimalFormatSymbols GetInstance()
         {
@@ -82,7 +82,7 @@ namespace Java.Text
         {
             return SExecute<Java.Text.DecimalFormatSymbols>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -191,7 +191,7 @@ namespace Java.Text
         {
             get { return IExecute<char>("getZeroDigit"); } set { IExecute("setZeroDigit", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

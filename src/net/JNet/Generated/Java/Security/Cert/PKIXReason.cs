@@ -69,7 +69,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT { get { return SGetField<Java.Security.Cert.PKIXReason>(LocalClazz, "UNRECOGNIZED_CRIT_EXT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -89,7 +89,7 @@ namespace Java.Security.Cert
         {
             return SExecute<Java.Security.Cert.PKIXReason>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

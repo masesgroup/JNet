@@ -41,7 +41,7 @@ namespace Javax.Management.Remote.Rmi
         /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnection"/> to <see cref="Java.Rmi.Remote"/>
         /// </summary>
         public static implicit operator Java.Rmi.Remote(Javax.Management.Remote.Rmi.RMIConnection t) => t.Cast<Java.Rmi.Remote>();
-        
+
         #endregion
 
         #region Fields
@@ -343,7 +343,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -418,7 +418,7 @@ namespace Javax.Management.Remote.Rmi
         {
             IExecute("unregisterMBean", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

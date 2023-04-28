@@ -55,7 +55,7 @@ namespace Java.Security
         {
             return IExecuteArray<Java.Security.ProtectionDomain>("combine", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

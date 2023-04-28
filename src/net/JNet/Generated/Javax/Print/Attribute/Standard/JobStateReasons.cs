@@ -54,7 +54,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.JobStateReasons"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobStateReasons t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -97,7 +97,7 @@ namespace Javax.Print.Attribute.Standard
         {
             return IExecute<bool>("add", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

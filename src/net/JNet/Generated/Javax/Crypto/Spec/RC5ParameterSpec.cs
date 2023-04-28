@@ -62,7 +62,7 @@ namespace Javax.Crypto.Spec
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.RC5ParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.RC5ParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -110,7 +110,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecute<int>("getWordSize"); }
         }
-        
+
         #endregion
 
         #region Nested classes

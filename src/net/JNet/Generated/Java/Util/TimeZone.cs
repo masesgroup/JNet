@@ -41,7 +41,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TimeZone"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.TimeZone t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#SHORT"/>
         /// </summary>
         public static int SHORT { get { return SGetField<int>(LocalClazz, "SHORT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.TimeZone>(LocalClazz, "getTimeZone", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -222,7 +222,7 @@ namespace Java.Util
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

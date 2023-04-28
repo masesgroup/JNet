@@ -41,7 +41,7 @@ namespace Java.Rmi.Server
         /// Converter from <see cref="Java.Rmi.Server.RemoteObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.RemoteObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -59,7 +59,7 @@ namespace Java.Rmi.Server
         {
             return SExecute<Java.Rmi.Remote>(LocalClazz, "toStub", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
         {
             get { return IExecute<Java.Rmi.Server.RemoteRef>("getRef"); }
         }
-        
+
         #endregion
 
         #region Nested classes

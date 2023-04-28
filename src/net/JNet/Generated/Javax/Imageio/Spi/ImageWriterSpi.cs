@@ -54,7 +54,7 @@ namespace Javax.Imageio.Spi
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -131,14 +131,14 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance()
         {
             return IExecute<Javax.Imageio.ImageWriter>("createWriterInstance");
         }
-        
+
         #endregion
 
         #region Nested classes

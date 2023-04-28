@@ -415,7 +415,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -438,7 +438,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CompletionStage{T}"/> to <see cref="Java.Util.Concurrent.CompletionStage"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CompletionStage(Java.Util.Concurrent.CompletionStage<T> t) => t.Cast<Java.Util.Concurrent.CompletionStage>();
-        
+
         #endregion
 
         #region Fields
@@ -820,7 +820,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<T>>("whenCompleteAsync", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

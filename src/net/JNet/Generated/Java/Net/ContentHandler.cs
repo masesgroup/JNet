@@ -66,7 +66,7 @@ namespace Java.Net
         {
             return IExecute("getContent", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

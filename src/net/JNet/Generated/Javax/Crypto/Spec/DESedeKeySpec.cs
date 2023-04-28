@@ -48,7 +48,7 @@ namespace Javax.Crypto.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.DESedeKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.DESedeKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESedeKeySpec.html#DES_EDE_KEY_LEN"/>
         /// </summary>
         public static int DES_EDE_KEY_LEN { get { return SGetField<int>(LocalClazz, "DES_EDE_KEY_LEN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -79,7 +79,7 @@ namespace Javax.Crypto.Spec
         {
             return SExecute<bool>(LocalClazz, "isParityAdjusted", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -90,7 +90,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecuteArray<byte>("getKey"); }
         }
-        
+
         #endregion
 
         #region Nested classes

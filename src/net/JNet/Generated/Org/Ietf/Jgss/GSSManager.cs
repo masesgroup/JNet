@@ -48,7 +48,7 @@ namespace Org.Ietf.Jgss
         {
             get { return SExecute<Org.Ietf.Jgss.GSSManager>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -213,7 +213,7 @@ namespace Org.Ietf.Jgss
         {
             IExecute("addProviderAtFront", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

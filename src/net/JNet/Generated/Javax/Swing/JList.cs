@@ -45,7 +45,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JList"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JList t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL_WRAP"/>
         /// </summary>
         public static int VERTICAL_WRAP { get { return SGetField<int>(LocalClazz, "VERTICAL_WRAP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -452,7 +452,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -490,14 +490,18 @@ namespace Javax.Swing
             {
                 get { return IExecute<bool>("isInsert"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -532,7 +536,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -548,7 +552,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JList{E}"/> to <see cref="Javax.Swing.JList"/>
         /// </summary>
         public static implicit operator Javax.Swing.JList(Javax.Swing.JList<E> t) => t.Cast<Javax.Swing.JList>();
-        
+
         #endregion
 
         #region Fields
@@ -564,7 +568,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL_WRAP"/>
         /// </summary>
         public static int VERTICAL_WRAP { get { return SGetField<int>(LocalClazz, "VERTICAL_WRAP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -943,7 +947,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

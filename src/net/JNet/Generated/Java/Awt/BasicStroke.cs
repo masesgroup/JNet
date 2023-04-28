@@ -71,7 +71,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.BasicStroke"/> to <see cref="Java.Awt.Stroke"/>
         /// </summary>
         public static implicit operator Java.Awt.Stroke(Java.Awt.BasicStroke t) => t.Cast<Java.Awt.Stroke>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND"/>
         /// </summary>
         public static int JOIN_ROUND { get { return SGetField<int>(LocalClazz, "JOIN_ROUND"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -166,7 +166,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

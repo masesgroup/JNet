@@ -94,7 +94,7 @@ namespace Javax.Annotation.Processing
         {
             get { return IExecute<Javax.Lang.Model.Util.Types>("getTypeUtils"); }
         }
-        
+
         #endregion
 
         #region Nested classes

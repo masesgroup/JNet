@@ -38,7 +38,7 @@ namespace Javax.Swing
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.Timer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Timer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Swing
         {
             get { return SExecute<bool>(LocalClazz, "getLogTimers"); } set { SExecute(LocalClazz, "setLogTimers", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -176,7 +176,7 @@ namespace Javax.Swing
         {
             IExecute("stop");
         }
-        
+
         #endregion
 
         #region Nested classes

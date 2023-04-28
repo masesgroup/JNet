@@ -57,7 +57,7 @@ namespace Java.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.StringCharacterIterator"/> to <see cref="Java.Text.CharacterIterator"/>
         /// </summary>
         public static implicit operator Java.Text.CharacterIterator(Java.Text.StringCharacterIterator t) => t.Cast<Java.Text.CharacterIterator>();
-        
+
         #endregion
 
         #region Fields
@@ -150,7 +150,7 @@ namespace Java.Text
         {
             IExecute("setText", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -273,7 +273,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html#UNDERLINE_ON"/>
         /// </summary>
         public static int? UNDERLINE_ON { get { return SGetField<int?>(LocalClazz, "UNDERLINE_ON"); } }
-        
+
         #endregion
 
         #region Static methods

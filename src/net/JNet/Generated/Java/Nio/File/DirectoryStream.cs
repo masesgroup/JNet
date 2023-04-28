@@ -37,7 +37,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.DirectoryStream"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Java.Nio.File
         {
             get { return IExecute<Java.Util.Iterator>("iterator"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -90,7 +90,11 @@ namespace Java.Nio.File
             {
                 return IExecute<bool>("accept", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -109,7 +113,7 @@ namespace Java.Nio.File
             /// Converter from <see cref="Java.Nio.File.DirectoryStream.Filter{T}"/> to <see cref="Java.Nio.File.DirectoryStream.Filter"/>
             /// </summary>
             public static implicit operator Java.Nio.File.DirectoryStream.Filter(Java.Nio.File.DirectoryStream.Filter<T> t) => t.Cast<Java.Nio.File.DirectoryStream.Filter>();
-            
+
             #endregion
 
             #region Fields
@@ -131,14 +135,18 @@ namespace Java.Nio.File
             {
                 return IExecute<bool>("accept", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -161,7 +169,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.DirectoryStream{T}"/> to <see cref="Java.Nio.File.DirectoryStream"/>
         /// </summary>
         public static implicit operator Java.Nio.File.DirectoryStream(Java.Nio.File.DirectoryStream<T> t) => t.Cast<Java.Nio.File.DirectoryStream>();
-        
+
         #endregion
 
         #region Fields
@@ -180,7 +188,7 @@ namespace Java.Nio.File
         {
             get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
         }
-        
+
         #endregion
 
         #region Nested classes

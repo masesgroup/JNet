@@ -46,7 +46,7 @@ namespace Javax.Swing.Tree
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeModel"/> to <see cref="Javax.Swing.Tree.TreeModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeModel(Javax.Swing.Tree.DefaultTreeModel t) => t.Cast<Javax.Swing.Tree.TreeModel>();
-        
+
         #endregion
 
         #region Fields
@@ -257,7 +257,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("valueForPathChanged", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

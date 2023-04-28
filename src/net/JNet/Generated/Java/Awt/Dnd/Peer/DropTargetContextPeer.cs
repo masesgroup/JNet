@@ -118,7 +118,7 @@ namespace Java.Awt.Dnd.Peer
         {
             IExecute("rejectDrop");
         }
-        
+
         #endregion
 
         #region Nested classes

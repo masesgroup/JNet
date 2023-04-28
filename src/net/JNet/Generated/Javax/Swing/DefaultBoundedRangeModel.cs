@@ -40,7 +40,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -52,7 +52,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultBoundedRangeModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultBoundedRangeModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -143,7 +143,7 @@ namespace Javax.Swing
         {
             IExecute("setRangeProperties", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

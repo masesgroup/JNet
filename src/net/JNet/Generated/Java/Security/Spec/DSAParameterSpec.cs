@@ -39,7 +39,7 @@ namespace Java.Security.Spec
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -51,7 +51,7 @@ namespace Java.Security.Spec
         /// Converter from <see cref="Java.Security.Spec.DSAParameterSpec"/> to <see cref="Java.Security.Interfaces.DSAParams"/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.DSAParams(Java.Security.Spec.DSAParameterSpec t) => t.Cast<Java.Security.Interfaces.DSAParams>();
-        
+
         #endregion
 
         #region Fields
@@ -84,7 +84,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<Java.Math.BigInteger>("getQ"); }
         }
-        
+
         #endregion
 
         #region Nested classes

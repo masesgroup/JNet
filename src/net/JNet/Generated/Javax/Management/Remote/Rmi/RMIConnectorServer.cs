@@ -62,7 +62,7 @@ namespace Javax.Management.Remote.Rmi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -90,7 +90,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#SERIAL_FILTER_PATTERN"/>
         /// </summary>
         public static string SERIAL_FILTER_PATTERN { get { return SGetField<string>(LocalClazz, "SERIAL_FILTER_PATTERN"); } }
-        
+
         #endregion
 
         #region Static methods

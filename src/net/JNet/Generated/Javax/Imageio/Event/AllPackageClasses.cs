@@ -31,7 +31,7 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -44,7 +44,7 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadUpdateListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -57,7 +57,7 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadWarningListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOWriteProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -83,7 +83,7 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOWriteWarningListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

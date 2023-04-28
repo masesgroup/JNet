@@ -59,7 +59,7 @@ namespace Javax.Swing.Undo
         {
             IExecute("end");
         }
-        
+
         #endregion
 
         #region Nested classes

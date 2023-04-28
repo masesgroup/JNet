@@ -57,7 +57,7 @@ namespace Javax.Management.Remote
         {
             return IExecute<Javax.Management.Remote.JMXConnectorServer>("newJMXConnectorServer", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

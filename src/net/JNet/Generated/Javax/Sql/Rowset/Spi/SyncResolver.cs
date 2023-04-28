@@ -53,7 +53,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT"/>
         /// </summary>
         public static int UPDATE_ROW_CONFLICT { get { return SGetField<int>(LocalClazz, "UPDATE_ROW_CONFLICT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -122,7 +122,7 @@ namespace Javax.Sql.Rowset.Spi
         {
             IExecute("setResolvedValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -91,7 +91,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.FileSystem>(LocalClazz, "newFileSystem", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

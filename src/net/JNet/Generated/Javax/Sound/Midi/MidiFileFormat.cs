@@ -54,7 +54,7 @@ namespace Javax.Sound.Midi
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#UNKNOWN_LENGTH"/>
         /// </summary>
         public static int UNKNOWN_LENGTH { get { return SGetField<int>(LocalClazz, "UNKNOWN_LENGTH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -125,7 +125,7 @@ namespace Javax.Sound.Midi
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

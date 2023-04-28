@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VIEWPORT"/>
         /// </summary>
         public static string VIEWPORT { get { return SGetField<string>(LocalClazz, "VIEWPORT"); } }
-        
+
         #endregion
 
         #region Static methods

@@ -37,7 +37,7 @@ namespace Java.Nio
         /// Converter from <see cref="Java.Nio.ByteBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.ByteBuffer t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -83,7 +83,7 @@ namespace Java.Nio
         {
             return SExecute<Java.Nio.ByteBuffer>(LocalClazz, "wrap", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -188,7 +188,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="byte"/></returns>
         public byte Get()
         {
@@ -430,7 +430,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
         {
@@ -503,7 +503,7 @@ namespace Java.Nio
         {
             return IExecute<Java.Nio.ByteBuffer>("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

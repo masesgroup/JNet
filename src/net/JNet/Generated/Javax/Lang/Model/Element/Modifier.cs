@@ -85,7 +85,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#VOLATILE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier VOLATILE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "VOLATILE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -105,7 +105,7 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.Modifier>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -53,7 +53,7 @@ namespace Java.Time.Format
         {
             return SExecute<string>(LocalClazz, "getLocalizedDateTimePattern", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -137,7 +137,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public Java.Time.Format.DateTimeFormatter ToFormatter()
         {
@@ -204,7 +204,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendInstant()
         {
@@ -416,7 +416,7 @@ namespace Java.Time.Format
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseDefaulting", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -49,7 +49,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER { get { return SGetField<Java.Net.CookiePolicy>(LocalClazz, "ACCEPT_ORIGINAL_SERVER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -67,7 +67,7 @@ namespace Java.Net
         {
             return IExecute<bool>("shouldAccept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

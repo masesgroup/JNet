@@ -137,7 +137,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

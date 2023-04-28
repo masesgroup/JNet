@@ -75,7 +75,7 @@ namespace Java.Security.Cert
         {
             IExecute("encode", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

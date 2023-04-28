@@ -105,7 +105,7 @@ namespace Java.Lang
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -113,7 +113,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
-        
+
         #endregion
 
         #region Fields
@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY"/>
         /// </summary>
         public static int NORM_PRIORITY { get { return SGetField<int>(LocalClazz, "NORM_PRIORITY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -226,7 +226,7 @@ namespace Java.Lang
         {
             SExecute(LocalClazz, "sleep", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -336,7 +336,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join()
         {
@@ -379,7 +379,7 @@ namespace Java.Lang
         {
             IExecute("setUncaughtExceptionHandler", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -419,7 +419,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
             public static Java.Lang.Thread.State WAITING { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "WAITING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -439,10 +439,14 @@ namespace Java.Lang
             {
                 return SExecute<Java.Lang.Thread.State>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -479,14 +483,18 @@ namespace Java.Lang
             {
                 IExecute("uncaughtException", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

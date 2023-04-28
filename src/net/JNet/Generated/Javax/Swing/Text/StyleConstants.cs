@@ -173,7 +173,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconElementName"/>
         /// </summary>
         public static string IconElementName { get { return SGetField<string>(LocalClazz, "IconElementName"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -555,7 +555,7 @@ namespace Javax.Swing.Text
         {
             SExecute(LocalClazz, "setUnderline", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -586,6 +586,10 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -610,6 +614,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -640,6 +648,10 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -667,11 +679,15 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

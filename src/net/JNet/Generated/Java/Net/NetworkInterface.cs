@@ -81,14 +81,14 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getNetworkInterfaces()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Util.Enumeration<Java.Net.NetworkInterface> GetNetworkInterfaces()
         {
             return SExecute<Java.Util.Enumeration<Java.Net.NetworkInterface>>(LocalClazz, "getNetworkInterfaces");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -193,7 +193,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInetAddresses()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.InetAddress> GetInetAddresses()
         {
@@ -202,13 +202,13 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getSubInterfaces()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.NetworkInterface> GetSubInterfaces()
         {
             return IExecute<Java.Util.Enumeration<Java.Net.NetworkInterface>>("getSubInterfaces");
         }
-        
+
         #endregion
 
         #region Nested classes

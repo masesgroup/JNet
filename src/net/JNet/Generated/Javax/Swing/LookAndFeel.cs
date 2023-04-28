@@ -146,7 +146,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "uninstallBorder", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -248,7 +248,7 @@ namespace Javax.Swing
         {
             IExecute("uninitialize");
         }
-        
+
         #endregion
 
         #region Nested classes

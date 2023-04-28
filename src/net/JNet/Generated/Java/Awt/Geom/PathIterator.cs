@@ -65,7 +65,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_NON_ZERO"/>
         /// </summary>
         public static int WIND_NON_ZERO { get { return SGetField<int>(LocalClazz, "WIND_NON_ZERO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -112,7 +112,7 @@ namespace Java.Awt.Geom
         {
             IExecute("next");
         }
-        
+
         #endregion
 
         #region Nested classes

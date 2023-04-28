@@ -119,7 +119,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -159,7 +159,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#isValid()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
@@ -224,7 +224,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("convertToIntDiscrete", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

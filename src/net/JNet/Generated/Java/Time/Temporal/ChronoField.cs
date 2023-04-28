@@ -37,7 +37,7 @@ namespace Java.Time.Temporal
         /// Converter from <see cref="Java.Time.Temporal.ChronoField"/> to <see cref="Java.Time.Temporal.TemporalField"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalField(Java.Time.Temporal.ChronoField t) => t.Cast<Java.Time.Temporal.TemporalField>();
-        
+
         #endregion
 
         #region Fields
@@ -161,7 +161,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#YEAR_OF_ERA"/>
         /// </summary>
         public static Java.Time.Temporal.ChronoField YEAR_OF_ERA { get { return SGetField<Java.Time.Temporal.ChronoField>(LocalClazz, "YEAR_OF_ERA"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -181,7 +181,7 @@ namespace Java.Time.Temporal
         {
             return SExecute<Java.Time.Temporal.ChronoField>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -284,7 +284,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<long>("getFrom", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

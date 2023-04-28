@@ -37,7 +37,7 @@ namespace Javax.Management.Monitor
         /// Converter from <see cref="Javax.Management.Monitor.StringMonitor"/> to <see cref="Javax.Management.Monitor.StringMonitorMBean"/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.StringMonitorMBean(Javax.Management.Monitor.StringMonitor t) => t.Cast<Javax.Management.Monitor.StringMonitorMBean>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Javax.Management.Monitor
         {
             return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

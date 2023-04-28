@@ -55,7 +55,7 @@ namespace Java.Util.Function
         {
             return IExecute<long>("applyAsLong", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

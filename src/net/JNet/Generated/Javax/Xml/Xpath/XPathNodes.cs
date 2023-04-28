@@ -69,7 +69,7 @@ namespace Javax.Xml.Xpath
         {
             return IExecute<Org.W3c.Dom.Node>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

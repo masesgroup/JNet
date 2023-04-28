@@ -55,7 +55,7 @@ namespace Javax.Naming
         {
             return IExecute<Javax.Naming.Name>("parse", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Java.Nio.Charset.Spi
         {
             return IExecute<Java.Nio.Charset.Charset>("charsetForName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

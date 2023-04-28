@@ -63,7 +63,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -71,7 +71,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicMenuUI.ChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicMenuUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -91,7 +91,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui"/>
             /// </summary>
             public Javax.Swing.Plaf.Basic.BasicMenuUI ui { get { return IGetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui"); } set { ISetField("ui", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -107,14 +107,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("stateChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -78,7 +78,7 @@ namespace Javax.Sound.Midi.Spi
         {
             return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

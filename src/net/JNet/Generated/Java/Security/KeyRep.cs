@@ -40,7 +40,7 @@ namespace Java.Security
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.KeyRep"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.KeyRep t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET"/>
             /// </summary>
             public static Java.Security.KeyRep.Type SECRET { get { return SGetField<Java.Security.KeyRep.Type>(LocalClazz, "SECRET"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -108,10 +108,14 @@ namespace Java.Security
             {
                 return SExecute<Java.Security.KeyRep.Type>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -119,7 +123,7 @@ namespace Java.Security
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

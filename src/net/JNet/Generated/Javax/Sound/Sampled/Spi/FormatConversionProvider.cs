@@ -136,7 +136,7 @@ namespace Javax.Sound.Sampled.Spi
         {
             return IExecute<bool>("isTargetEncodingSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

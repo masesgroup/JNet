@@ -59,7 +59,7 @@ namespace Javax.Xml.Xpath
         {
             get { return IExecute("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -99,7 +99,7 @@ namespace Javax.Xml.Xpath
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "STRING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -128,10 +128,14 @@ namespace Javax.Xml.Xpath
             {
                 return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -139,7 +143,7 @@ namespace Javax.Xml.Xpath
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -158,7 +162,7 @@ namespace Javax.Xml.Xpath
         /// Converter from <see cref="Javax.Xml.Xpath.XPathEvaluationResult{T}"/> to <see cref="Javax.Xml.Xpath.XPathEvaluationResult"/>
         /// </summary>
         public static implicit operator Javax.Xml.Xpath.XPathEvaluationResult(Javax.Xml.Xpath.XPathEvaluationResult<T> t) => t.Cast<Javax.Xml.Xpath.XPathEvaluationResult>();
-        
+
         #endregion
 
         #region Fields
@@ -184,7 +188,7 @@ namespace Javax.Xml.Xpath
         {
             get { return IExecute<T>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

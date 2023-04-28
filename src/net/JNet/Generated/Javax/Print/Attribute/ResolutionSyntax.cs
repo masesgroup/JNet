@@ -39,7 +39,7 @@ namespace Javax.Print.Attribute
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -51,7 +51,7 @@ namespace Javax.Print.Attribute
         /// Converter from <see cref="Javax.Print.Attribute.ResolutionSyntax"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.ResolutionSyntax t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Javax.Print.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#DPI"/>
         /// </summary>
         public static int DPI { get { return SGetField<int>(LocalClazz, "DPI"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -117,7 +117,7 @@ namespace Javax.Print.Attribute
         {
             return IExecute<string>("toString", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

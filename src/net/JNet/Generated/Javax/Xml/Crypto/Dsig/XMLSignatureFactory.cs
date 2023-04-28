@@ -44,7 +44,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance()
         {
@@ -80,7 +80,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -363,7 +363,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

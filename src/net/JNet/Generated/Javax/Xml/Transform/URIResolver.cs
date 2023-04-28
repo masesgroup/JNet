@@ -56,7 +56,7 @@ namespace Javax.Xml.Transform
         {
             return IExecute<Javax.Xml.Transform.Source>("resolve", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

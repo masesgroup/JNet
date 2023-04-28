@@ -55,7 +55,7 @@ namespace Java.Awt
         {
             get { return SExecute<bool>(LocalClazz, "isDesktopSupported"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -128,7 +128,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Mail()
         {
@@ -248,7 +248,7 @@ namespace Java.Awt
         {
             IExecute("setQuitStrategy", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -360,7 +360,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT"/>
             /// </summary>
             public static Java.Awt.Desktop.Action PRINT { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "PRINT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -380,10 +380,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Desktop.Action>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -391,7 +395,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

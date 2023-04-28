@@ -47,7 +47,7 @@ namespace Javax.Naming.Ldap
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecute<string>("getMatchingRuleID"); }
         }
-        
+
         #endregion
 
         #region Nested classes

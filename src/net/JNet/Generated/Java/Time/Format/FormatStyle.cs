@@ -53,7 +53,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#SHORT"/>
         /// </summary>
         public static Java.Time.Format.FormatStyle SHORT { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "SHORT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.FormatStyle>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

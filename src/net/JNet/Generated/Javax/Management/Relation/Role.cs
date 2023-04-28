@@ -39,7 +39,7 @@ namespace Javax.Management.Relation
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Management.Relation
         /// Converter from <see cref="Javax.Management.Relation.Role"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Relation.Role t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Management.Relation
         {
             return SExecute<string>(LocalClazz, "roleValueToString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -83,7 +83,7 @@ namespace Javax.Management.Relation
         {
             get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue"); } set { IExecute("setRoleValue", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

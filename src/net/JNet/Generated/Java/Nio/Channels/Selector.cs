@@ -37,7 +37,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.Selector"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.Channels.Selector t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -52,7 +52,7 @@ namespace Java.Nio.Channels
         {
             get { return SExecute<Java.Nio.Channels.Selector>(LocalClazz, "open"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -94,7 +94,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Select()
@@ -114,7 +114,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectNow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int SelectNow()
@@ -124,7 +124,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -161,7 +161,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<int>("selectNow", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

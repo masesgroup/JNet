@@ -61,7 +61,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_TRANSFORMATION"/>
         /// </summary>
         public static int TAG_MODEL_TRANSFORMATION { get { return SGetField<int>(LocalClazz, "TAG_MODEL_TRANSFORMATION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

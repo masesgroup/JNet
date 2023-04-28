@@ -87,7 +87,7 @@ namespace Javax.Sound.Sampled
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

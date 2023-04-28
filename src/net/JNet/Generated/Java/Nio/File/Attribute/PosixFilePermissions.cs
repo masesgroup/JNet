@@ -68,7 +68,7 @@ namespace Java.Nio.File.Attribute
         {
             return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalClazz, "fromString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

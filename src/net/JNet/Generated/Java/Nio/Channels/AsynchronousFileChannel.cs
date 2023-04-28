@@ -37,7 +37,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousFileChannel"/> to <see cref="Java.Nio.Channels.AsynchronousChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousChannel(Java.Nio.Channels.AsynchronousFileChannel t) => t.Cast<Java.Nio.Channels.AsynchronousChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Java.Nio.Channels
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalClazz, "open", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -188,7 +188,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock()
@@ -198,13 +198,13 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock> Lock()
         {
             return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock");
         }
-        
+
         #endregion
 
         #region Nested classes

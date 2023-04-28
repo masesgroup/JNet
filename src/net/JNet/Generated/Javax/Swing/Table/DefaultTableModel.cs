@@ -56,7 +56,7 @@ namespace Javax.Swing.Table
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -239,7 +239,7 @@ namespace Javax.Swing.Table
         {
             IExecute("setRowCount", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

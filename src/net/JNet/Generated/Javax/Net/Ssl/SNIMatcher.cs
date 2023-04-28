@@ -61,7 +61,7 @@ namespace Javax.Net.Ssl
         {
             return IExecute<bool>("matches", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

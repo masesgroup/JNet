@@ -52,7 +52,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#SHOWING_CHANGED"/>
         /// </summary>
         public static int SHOWING_CHANGED { get { return SGetField<int>(LocalClazz, "SHOWING_CHANGED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -128,7 +128,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

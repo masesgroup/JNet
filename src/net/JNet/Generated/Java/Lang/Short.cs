@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Short"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Short t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MIN_VALUE"/>
         /// </summary>
         public static short MIN_VALUE { get { return SGetField<short>(LocalClazz, "MIN_VALUE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -191,7 +191,7 @@ namespace Java.Lang
         {
             return SExecute<short>(LocalClazz, "reverseBytes", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -213,7 +213,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

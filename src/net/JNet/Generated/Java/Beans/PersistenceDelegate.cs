@@ -54,7 +54,7 @@ namespace Java.Beans
         {
             IExecute("writeObject", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

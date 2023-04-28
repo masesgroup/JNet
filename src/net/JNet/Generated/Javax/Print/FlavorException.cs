@@ -52,7 +52,7 @@ namespace Javax.Print
         {
             get { return IExecuteArray<Javax.Print.DocFlavor>("getUnsupportedFlavors"); }
         }
-        
+
         #endregion
 
         #region Nested classes

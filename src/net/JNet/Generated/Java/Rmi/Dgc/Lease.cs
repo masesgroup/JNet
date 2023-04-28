@@ -38,7 +38,7 @@ namespace Java.Rmi.Dgc
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Rmi.Dgc
         /// Converter from <see cref="Java.Rmi.Dgc.Lease"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Dgc.Lease t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -72,7 +72,7 @@ namespace Java.Rmi.Dgc
         {
             get { return IExecute<Java.Rmi.Dgc.VMID>("getVMID"); }
         }
-        
+
         #endregion
 
         #region Nested classes

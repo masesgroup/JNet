@@ -54,7 +54,7 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterStateReasons"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterStateReasons t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Javax.Print.Attribute.Standard
         {
             return IExecute<Javax.Print.Attribute.Standard.Severity>("put", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

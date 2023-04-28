@@ -367,7 +367,7 @@ namespace Javax.Management
         {
             IExecute("unregisterMBean", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Util.Logging
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Util.Logging
         /// Converter from <see cref="Java.Util.Logging.LogRecord"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Logging.LogRecord t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -149,7 +149,7 @@ namespace Java.Util.Logging
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrown"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); } set { IExecute("setThrown", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

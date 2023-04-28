@@ -59,7 +59,7 @@ namespace Org.Xml.Sax.Ext
         {
             get { return IExecute<string>("getXMLVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

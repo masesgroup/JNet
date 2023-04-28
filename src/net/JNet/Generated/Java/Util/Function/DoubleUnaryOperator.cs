@@ -48,7 +48,7 @@ namespace Java.Util.Function
         {
             get { return SExecute<Java.Util.Function.DoubleUnaryOperator>(LocalClazz, "identity"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -79,7 +79,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.DoubleUnaryOperator>("compose", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

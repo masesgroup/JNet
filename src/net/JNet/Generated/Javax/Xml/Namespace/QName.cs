@@ -56,7 +56,7 @@ namespace Javax.Xml.Namespace
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Javax.Xml.Namespace
         /// Converter from <see cref="Javax.Xml.Namespace.QName"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Xml.Namespace.QName t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Javax.Xml.Namespace
         {
             return SExecute<Javax.Xml.Namespace.QName>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -106,7 +106,7 @@ namespace Javax.Xml.Namespace
         {
             get { return IExecute<string>("getPrefix"); }
         }
-        
+
         #endregion
 
         #region Nested classes

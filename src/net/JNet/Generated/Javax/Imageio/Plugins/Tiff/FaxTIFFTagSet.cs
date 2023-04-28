@@ -61,7 +61,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CONSECUTIVE_BAD_LINES"/>
         /// </summary>
         public static int TAG_CONSECUTIVE_BAD_LINES { get { return SGetField<int>(LocalClazz, "TAG_CONSECUTIVE_BAD_LINES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

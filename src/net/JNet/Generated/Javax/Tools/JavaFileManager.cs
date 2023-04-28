@@ -45,7 +45,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.JavaFileManager"/> to <see cref="Javax.Tools.OptionChecker"/>
         /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaFileManager t) => t.Cast<Javax.Tools.OptionChecker>();
-        
+
         #endregion
 
         #region Fields
@@ -171,7 +171,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -180,7 +180,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -250,7 +250,7 @@ namespace Javax.Tools
         {
             return IExecute<Javax.Tools.JavaFileManager.Location>("getLocationForModule", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -295,14 +295,18 @@ namespace Javax.Tools
             {
                 get { return IExecute<string>("getName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

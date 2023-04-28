@@ -41,7 +41,7 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#NORMAL_CLOSURE"/>
         /// </summary>
         public static int NORMAL_CLOSURE { get { return SGetField<int>(LocalClazz, "NORMAL_CLOSURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -133,7 +133,7 @@ namespace Java.Net.Http
         {
             IExecute("request", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -196,14 +196,18 @@ namespace Java.Net.Http
             {
                 return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("buildAsync", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

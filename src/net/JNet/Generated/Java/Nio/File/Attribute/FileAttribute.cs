@@ -59,7 +59,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -82,7 +82,7 @@ namespace Java.Nio.File.Attribute
         /// Converter from <see cref="Java.Nio.File.Attribute.FileAttribute{T}"/> to <see cref="Java.Nio.File.Attribute.FileAttribute"/>
         /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileAttribute(Java.Nio.File.Attribute.FileAttribute<T> t) => t.Cast<Java.Nio.File.Attribute.FileAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -108,7 +108,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<T>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

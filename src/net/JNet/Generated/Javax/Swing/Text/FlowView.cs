@@ -38,7 +38,7 @@ namespace Javax.Swing.Text
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<int>("getFlowStart", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -141,14 +141,18 @@ namespace Javax.Swing.Text
             {
                 IExecute("removeUpdate", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

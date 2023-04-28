@@ -49,7 +49,7 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_PACKAGES"/>
         /// </summary>
         public static string PROTOCOL_PROVIDER_PACKAGES { get { return SGetField<string>(LocalClazz, "PROTOCOL_PROVIDER_PACKAGES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -85,7 +85,7 @@ namespace Javax.Management.Remote
         {
             return SExecute<Javax.Management.Remote.JMXConnector>(LocalClazz, "newJMXConnector", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

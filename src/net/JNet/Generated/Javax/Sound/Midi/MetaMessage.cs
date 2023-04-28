@@ -40,7 +40,7 @@ namespace Javax.Sound.Midi
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -52,7 +52,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaMessage.html#META"/>
         /// </summary>
         public static int META { get { return SGetField<int>(LocalClazz, "META"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -85,7 +85,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("setMessage", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

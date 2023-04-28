@@ -110,7 +110,7 @@ namespace Java.Util
         {
             IExecute("set", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -133,7 +133,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ListIterator{E}"/> to <see cref="Java.Util.ListIterator"/>
         /// </summary>
         public static implicit operator Java.Util.ListIterator(Java.Util.ListIterator<E> t) => t.Cast<Java.Util.ListIterator>();
-        
+
         #endregion
 
         #region Fields
@@ -210,7 +210,7 @@ namespace Java.Util
         {
             IExecute("set", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

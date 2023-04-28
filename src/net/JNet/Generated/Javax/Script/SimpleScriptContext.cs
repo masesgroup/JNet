@@ -37,7 +37,7 @@ namespace Javax.Script
         /// Converter from <see cref="Javax.Script.SimpleScriptContext"/> to <see cref="Javax.Script.ScriptContext"/>
         /// </summary>
         public static implicit operator Javax.Script.ScriptContext(Javax.Script.SimpleScriptContext t) => t.Cast<Javax.Script.ScriptContext>();
-        
+
         #endregion
 
         #region Fields
@@ -143,7 +143,7 @@ namespace Javax.Script
         {
             IExecute("setBindings", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -281,7 +281,7 @@ namespace Org.W3c.Dom
         {
             IExecute("normalizeDocument");
         }
-        
+
         #endregion
 
         #region Nested classes

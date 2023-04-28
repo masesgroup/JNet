@@ -67,7 +67,7 @@ namespace Java.Awt.Datatransfer
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -79,7 +79,7 @@ namespace Java.Awt.Datatransfer
         /// Converter from <see cref="Java.Awt.Datatransfer.DataFlavor"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Datatransfer.DataFlavor t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -119,7 +119,7 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor"/>
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "selectionHtmlFlavor"); } set { SSetField(LocalClazz, "selectionHtmlFlavor", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -139,7 +139,7 @@ namespace Java.Awt.Datatransfer
         {
             return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "selectBestTextFlavor", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -335,7 +335,7 @@ namespace Java.Awt.Datatransfer
         {
             IExecute("writeExternal", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

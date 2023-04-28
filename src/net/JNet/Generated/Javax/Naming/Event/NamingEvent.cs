@@ -41,7 +41,7 @@ namespace Javax.Naming.Event
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Naming.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_RENAMED"/>
         /// </summary>
         public static int OBJECT_RENAMED { get { return SGetField<int>(LocalClazz, "OBJECT_RENAMED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -116,7 +116,7 @@ namespace Javax.Naming.Event
         {
             IExecute("dispatch", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

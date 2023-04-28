@@ -75,7 +75,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.XMLDecoder"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLDecoder t) => t.Cast<Java.Lang.AutoCloseable>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Java.Beans
         {
             return SExecute<Org.Xml.Sax.Helpers.DefaultHandler>(LocalClazz, "createHandler", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -134,7 +134,7 @@ namespace Java.Beans
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

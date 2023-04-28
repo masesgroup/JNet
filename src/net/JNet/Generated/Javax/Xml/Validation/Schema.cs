@@ -59,7 +59,7 @@ namespace Javax.Xml.Validation
         {
             get { return IExecute<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler"); }
         }
-        
+
         #endregion
 
         #region Nested classes

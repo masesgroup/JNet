@@ -141,7 +141,7 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -157,7 +157,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.String t) => t.Cast<Java.Lang.CharSequence>();
-        
+
         #endregion
 
         #region Fields
@@ -165,7 +165,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#CASE_INSENSITIVE_ORDER"/>
         /// </summary>
         public static Java.Util.Comparator CASE_INSENSITIVE_ORDER { get { return SGetField<Java.Util.Comparator>(LocalClazz, "CASE_INSENSITIVE_ORDER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -313,7 +313,7 @@ namespace Java.Lang
         {
             return SExecute<string>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -765,7 +765,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toLowerCase()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string ToLowerCase()
         {
@@ -783,7 +783,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toUpperCase()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string ToUpperCase()
         {
@@ -828,7 +828,7 @@ namespace Java.Lang
         {
             IExecute("getChars", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ChronoZonedDateTime"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Time.Chrono.ChronoZonedDateTime t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.ChronoZonedDateTime>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -322,7 +322,7 @@ namespace Java.Time.Chrono
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

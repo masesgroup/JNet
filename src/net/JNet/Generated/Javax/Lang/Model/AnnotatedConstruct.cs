@@ -70,7 +70,7 @@ namespace Javax.Lang.Model
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

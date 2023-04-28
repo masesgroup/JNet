@@ -63,7 +63,7 @@ namespace Javax.Management
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -71,7 +71,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.MBeanOperationInfo"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanOperationInfo t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -91,7 +91,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#UNKNOWN"/>
         /// </summary>
         public static int UNKNOWN { get { return SGetField<int>(LocalClazz, "UNKNOWN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -120,7 +120,7 @@ namespace Javax.Management
         {
             get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
         }
-        
+
         #endregion
 
         #region Nested classes

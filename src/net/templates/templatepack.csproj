@@ -3,9 +3,9 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageId>MASES.JNet.Templates</PackageId>
-    <Title>JNet Templates - Templates to use the JNet</Title>
-    <Summary>Ready made templates to create applications based on JNet</Summary>
-    <Description>Ready made templates to create applications based on JNet. The templates are ready made starting points, all information and APIs are available in the official website https://masesgroup.github.io/JNet</Description>
+    <Title>JNet Templates - Templates to use the JNet (Java/JVM suite for .NET)</Title>
+    <Summary>Ready made templates to create applications based on JNet (Java/JVM suite for .NET)</Summary>
+    <Description>Ready made templates to create applications based on JNet (Java/JVM suite for .NET). The templates are ready made starting points, all information and APIs are available in the official website https://masesgroup.github.io/JNet</Description>
     <OutputPath>..\..\..\bin\</OutputPath>
     <PackageTags>template jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge</PackageTags>
     <Product>JNet Templates</Product>

@@ -55,7 +55,7 @@ namespace Javax.Naming.Spi
         {
             return IExecute<Javax.Naming.Spi.InitialContextFactory>("createInitialContextFactory", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

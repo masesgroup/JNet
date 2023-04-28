@@ -53,7 +53,7 @@ namespace Java.Awt.DesktopNs
         {
             IExecute("openURI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

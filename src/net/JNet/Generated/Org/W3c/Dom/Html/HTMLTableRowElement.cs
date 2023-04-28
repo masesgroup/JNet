@@ -120,7 +120,7 @@ namespace Org.W3c.Dom.Html
         {
             IExecute("deleteCell", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

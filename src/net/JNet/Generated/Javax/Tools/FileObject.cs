@@ -114,7 +114,7 @@ namespace Javax.Tools
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

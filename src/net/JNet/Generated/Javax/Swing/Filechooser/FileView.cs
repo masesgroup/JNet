@@ -90,7 +90,7 @@ namespace Javax.Swing.Filechooser
         {
             return IExecute<Javax.Swing.Icon>("getIcon", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

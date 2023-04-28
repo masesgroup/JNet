@@ -52,7 +52,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getComponentType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

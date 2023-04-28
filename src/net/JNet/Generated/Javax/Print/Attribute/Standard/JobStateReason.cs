@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.JobStateReason"/> to <see cref="Javax.Print.Attribute.Attribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.JobStateReason t) => t.Cast<Javax.Print.Attribute.Attribute>();
-        
+
         #endregion
 
         #region Fields
@@ -157,7 +157,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReason.html#UNSUPPORTED_DOCUMENT_FORMAT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobStateReason UNSUPPORTED_DOCUMENT_FORMAT { get { return SGetField<Javax.Print.Attribute.Standard.JobStateReason>(LocalClazz, "UNSUPPORTED_DOCUMENT_FORMAT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -179,7 +179,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

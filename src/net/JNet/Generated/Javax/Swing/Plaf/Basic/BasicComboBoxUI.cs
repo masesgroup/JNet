@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("unconfigureArrowButton");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -109,7 +109,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -117,7 +117,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.ComboBoxLayoutManager"/> to <see cref="Java.Awt.LayoutManager"/>
             /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ComboBoxLayoutManager t) => t.Cast<Java.Awt.LayoutManager>();
-            
+
             #endregion
 
             #region Fields
@@ -172,7 +172,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("removeLayoutComponent", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -191,7 +195,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -199,7 +203,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-            
+
             #endregion
 
             #region Fields
@@ -227,7 +231,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("focusLost", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -246,7 +254,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -254,7 +262,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler"/> to <see cref="Java.Awt.EventNs.ItemListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ItemListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler t) => t.Cast<Java.Awt.EventNs.ItemListener>();
-            
+
             #endregion
 
             #region Fields
@@ -274,7 +282,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("itemStateChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -293,7 +305,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -301,7 +313,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
-            
+
             #endregion
 
             #region Fields
@@ -337,7 +349,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("intervalRemoved", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -356,7 +372,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -364,7 +380,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -384,14 +400,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

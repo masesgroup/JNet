@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ScrollPaneLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.ScrollPaneLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -166,7 +166,7 @@ namespace Javax.Swing
         {
             IExecute("syncWithScrollPane", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -182,7 +182,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.ScrollPaneLayout.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.ScrollPaneLayout.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -197,11 +197,15 @@ namespace Javax.Swing
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

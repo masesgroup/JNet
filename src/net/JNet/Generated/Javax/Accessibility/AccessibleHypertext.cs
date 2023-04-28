@@ -70,7 +70,7 @@ namespace Javax.Accessibility
         {
             return IExecute<Javax.Accessibility.AccessibleHyperlink>("getLink", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

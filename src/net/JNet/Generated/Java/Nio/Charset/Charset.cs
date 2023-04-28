@@ -37,7 +37,7 @@ namespace Java.Nio.Charset
         /// Converter from <see cref="Java.Nio.Charset.Charset"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.Charset.Charset t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Java.Nio.Charset
         {
             return SExecute<Java.Nio.Charset.Charset>(LocalClazz, "forName", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -180,7 +180,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string DisplayName()
         {
@@ -195,7 +195,7 @@ namespace Java.Nio.Charset
         {
             return IExecute<string>("displayName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

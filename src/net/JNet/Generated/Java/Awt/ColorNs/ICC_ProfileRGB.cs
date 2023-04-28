@@ -49,7 +49,7 @@ namespace Java.Awt.ColorNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#REDCOMPONENT"/>
         /// </summary>
         public static int REDCOMPONENT { get { return SGetField<int>(LocalClazz, "REDCOMPONENT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -89,7 +89,7 @@ namespace Java.Awt.ColorNs
         {
             return IExecuteArray<short>("getTRC", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

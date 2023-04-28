@@ -45,7 +45,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StrictMath.html#PI"/>
         /// </summary>
         public static double PI { get { return SGetField<double>(LocalClazz, "PI"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -750,7 +750,7 @@ namespace Java.Lang
         {
             return SExecute<double>(LocalClazz, "toRadians", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

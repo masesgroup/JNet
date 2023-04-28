@@ -39,7 +39,7 @@ namespace Java.Lang.Management
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_THRESHOLD_EXCEEDED"/>
         /// </summary>
         public static string MEMORY_THRESHOLD_EXCEEDED { get { return SGetField<string>(LocalClazz, "MEMORY_THRESHOLD_EXCEEDED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -68,7 +68,7 @@ namespace Java.Lang.Management
         {
             return SExecute<Java.Lang.Management.MemoryNotificationInfo>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -93,7 +93,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<Java.Lang.Management.MemoryUsage>("getUsage"); }
         }
-        
+
         #endregion
 
         #region Nested classes

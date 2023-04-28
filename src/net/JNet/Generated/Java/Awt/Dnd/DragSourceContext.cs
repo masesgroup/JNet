@@ -42,7 +42,7 @@ namespace Java.Awt.Dnd
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.DragSourceContext"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragSourceContext t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -184,7 +184,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("transferablesFlavorsChanged");
         }
-        
+
         #endregion
 
         #region Nested classes

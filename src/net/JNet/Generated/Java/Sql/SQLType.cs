@@ -66,7 +66,7 @@ namespace Java.Sql
         {
             get { return IExecute<int?>("getVendorTypeNumber"); }
         }
-        
+
         #endregion
 
         #region Nested classes

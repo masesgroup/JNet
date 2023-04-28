@@ -84,7 +84,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             SExecute(LocalClazz, "updateStyles", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("load", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Time.Temporal
         /// Converter from <see cref="Java.Time.Temporal.ChronoUnit"/> to <see cref="Java.Time.Temporal.TemporalUnit"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalUnit(Java.Time.Temporal.ChronoUnit t) => t.Cast<Java.Time.Temporal.TemporalUnit>();
-        
+
         #endregion
 
         #region Fields
@@ -105,7 +105,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.ChronoUnit YEARS { get { return SGetField<Java.Time.Temporal.ChronoUnit>(LocalClazz, "YEARS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -125,7 +125,7 @@ namespace Java.Time.Temporal
         {
             return SExecute<Java.Time.Temporal.ChronoUnit>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -186,7 +186,7 @@ namespace Java.Time.Temporal
         {
             return IExecute<long>("between", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

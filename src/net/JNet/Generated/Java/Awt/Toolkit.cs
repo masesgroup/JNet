@@ -58,7 +58,7 @@ namespace Java.Awt
         {
             return SExecute<string>(LocalClazz, "getProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -455,7 +455,7 @@ namespace Java.Awt
         {
             IExecute("setLockingKeyState", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

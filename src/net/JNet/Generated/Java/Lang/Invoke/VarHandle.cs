@@ -76,7 +76,7 @@ namespace Java.Lang.Invoke
         {
             SExecute(LocalClazz, "storeStoreFence");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -396,7 +396,7 @@ namespace Java.Lang.Invoke
         {
             if (arg0.Length == 0) IExecute("setVolatile", new object[] { arg0 }); else IExecute("setVolatile", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -536,7 +536,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_RELEASE { get { return SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalClazz, "WEAK_COMPARE_AND_SET_RELEASE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -565,7 +565,7 @@ namespace Java.Lang.Invoke
             {
                 return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -576,14 +576,18 @@ namespace Java.Lang.Invoke
             {
                 get { return IExecute<string>("methodName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

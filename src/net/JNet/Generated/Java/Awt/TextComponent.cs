@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.TextComponent"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.TextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -138,7 +138,7 @@ namespace Java.Awt
         {
             IExecute("setEditable", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -127,7 +127,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -139,7 +139,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.PrintStream"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.PrintStream t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -383,7 +383,7 @@ namespace Java.Io
         {
             IExecute("println", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

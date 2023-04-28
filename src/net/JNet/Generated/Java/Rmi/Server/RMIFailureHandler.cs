@@ -54,7 +54,7 @@ namespace Java.Rmi.Server
         {
             return IExecute<bool>("failure", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Imageio.Stream
         /// Converter from <see cref="Javax.Imageio.Stream.ImageInputStream"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Javax.Imageio.Stream.ImageInputStream t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -210,7 +210,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#read()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -272,7 +272,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -281,7 +281,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -402,7 +402,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#reset()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
@@ -417,7 +417,7 @@ namespace Javax.Imageio.Stream
         {
             IExecute("seek", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -71,7 +71,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LOST"/>
         /// </summary>
         public static int FOCUS_LOST { get { return SGetField<int>(LocalClazz, "FOCUS_LOST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -124,7 +124,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<Java.Awt.Component>("getOppositeComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -184,7 +184,7 @@ namespace Java.Awt.EventNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNKNOWN"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "UNKNOWN"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -204,10 +204,14 @@ namespace Java.Awt.EventNs
             {
                 return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -215,7 +219,7 @@ namespace Java.Awt.EventNs
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

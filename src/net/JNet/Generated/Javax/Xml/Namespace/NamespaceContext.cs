@@ -72,7 +72,7 @@ namespace Javax.Xml.Namespace
         {
             return IExecute<Java.Util.Iterator<string>>("getPrefixes", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

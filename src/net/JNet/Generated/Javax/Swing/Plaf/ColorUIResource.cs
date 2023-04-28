@@ -65,7 +65,7 @@ namespace Javax.Swing.Plaf
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.ColorUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.ColorUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-        
+
         #endregion
 
         #region Fields

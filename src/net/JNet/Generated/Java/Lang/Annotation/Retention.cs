@@ -52,7 +52,7 @@ namespace Java.Lang.Annotation
         {
             get { return IExecute<Java.Lang.Annotation.RetentionPolicy>("value"); }
         }
-        
+
         #endregion
 
         #region Nested classes

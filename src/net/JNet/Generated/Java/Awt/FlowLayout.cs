@@ -47,7 +47,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.FlowLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.FlowLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -83,7 +83,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#TRAILING"/>
         /// </summary>
         public static int TRAILING { get { return SGetField<int>(LocalClazz, "TRAILING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -162,7 +162,7 @@ namespace Java.Awt
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

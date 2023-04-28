@@ -53,7 +53,7 @@ namespace Org.W3c.Dom.Ranges
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START"/>
         /// </summary>
         public static short START_TO_START { get { return SGetField<short>(LocalClazz, "START_TO_START"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -147,7 +147,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteContents()
         {
@@ -156,7 +156,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Detach()
         {
@@ -264,7 +264,7 @@ namespace Org.W3c.Dom.Ranges
         {
             IExecute("surroundContents", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -59,7 +59,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

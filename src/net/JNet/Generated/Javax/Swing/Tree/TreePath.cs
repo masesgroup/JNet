@@ -37,7 +37,7 @@ namespace Javax.Swing.Tree
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.TreePath"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.TreePath t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -112,7 +112,7 @@ namespace Javax.Swing.Tree
         {
             return IExecute<Javax.Swing.Tree.TreePath>("pathByAddingChild", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

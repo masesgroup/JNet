@@ -41,7 +41,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#DONE"/>
         /// </summary>
         public static char DONE { get { return SGetField<char>(LocalClazz, "DONE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -114,7 +114,7 @@ namespace Java.Text
         {
             return IExecute<char>("setIndex", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

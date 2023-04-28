@@ -45,7 +45,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Time.ZoneOffset t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC"/>
         /// </summary>
         public static Java.Time.ZoneOffset UTC { get { return SGetField<Java.Time.ZoneOffset>(LocalClazz, "UTC"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -104,7 +104,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.ZoneOffset>(LocalClazz, "ofTotalSeconds", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -187,7 +187,7 @@ namespace Java.Time
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

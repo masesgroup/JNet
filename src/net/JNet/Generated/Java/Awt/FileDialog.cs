@@ -83,7 +83,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -99,7 +99,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#SAVE"/>
         /// </summary>
         public static int SAVE { get { return SGetField<int>(LocalClazz, "SAVE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -157,7 +157,7 @@ namespace Java.Awt
         {
             IExecute("setMultipleMode", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

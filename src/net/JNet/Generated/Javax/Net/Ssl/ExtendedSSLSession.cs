@@ -37,7 +37,7 @@ namespace Javax.Net.Ssl
         /// Converter from <see cref="Javax.Net.Ssl.ExtendedSSLSession"/> to <see cref="Javax.Net.Ssl.SSLSession"/>
         /// </summary>
         public static implicit operator Javax.Net.Ssl.SSLSession(Javax.Net.Ssl.ExtendedSSLSession t) => t.Cast<Javax.Net.Ssl.SSLSession>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<Java.Util.List<byte[]>>("getStatusResponses"); }
         }
-        
+
         #endregion
 
         #region Nested classes

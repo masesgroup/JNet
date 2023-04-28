@@ -37,7 +37,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.EventObject"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.EventObject t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Java.Util
         {
             get { return IExecute("getSource"); }
         }
-        
+
         #endregion
 
         #region Nested classes

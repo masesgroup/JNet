@@ -58,7 +58,7 @@ namespace Org.W3c.Dom.Ls
         {
             return IExecute<Org.W3c.Dom.Ls.LSInput>("resolveResource", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

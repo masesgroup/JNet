@@ -37,7 +37,7 @@ namespace Java.Lang.ModuleNs
         /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -122,7 +122,7 @@ namespace Java.Lang.ModuleNs
         {
             return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalClazz, "newOpenModule", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -210,7 +210,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#version()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version> VersionMethod()
         {
@@ -219,7 +219,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#exports()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports> ExportsMethod()
         {
@@ -228,7 +228,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#opens()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens> OpensMethod()
         {
@@ -237,7 +237,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#provides()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Provides> ProvidesMethod()
         {
@@ -246,13 +246,13 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#requires()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires> RequiresMethod()
         {
             return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires>>("requires");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -484,7 +484,11 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -503,7 +507,7 @@ namespace Java.Lang.ModuleNs
             /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Exports t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -561,7 +565,66 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<int>("compareTo", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+            #region Modifier
+            public partial class Modifier
+            {
+                #region Constructors
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#MANDATED"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier MANDATED { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalClazz, "MANDATED"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#SYNTHETIC"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier SYNTHETIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalClazz, "SYNTHETIC"); } }
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#values()"/> 
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier[] Values
+                {
+                    get { return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalClazz, "values"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="string"/></param>
+                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier ValueOf(string arg0)
+                {
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalClazz, "valueOf", arg0);
+                }
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class
@@ -596,7 +659,7 @@ namespace Java.Lang.ModuleNs
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC"/>
             /// </summary>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "SYNTHETIC"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -616,10 +679,14 @@ namespace Java.Lang.ModuleNs
             {
                 return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -639,7 +706,7 @@ namespace Java.Lang.ModuleNs
             /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Opens t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -697,7 +764,66 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<int>("compareTo", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+            #region Modifier
+            public partial class Modifier
+            {
+                #region Constructors
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#MANDATED"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier MANDATED { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalClazz, "MANDATED"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#SYNTHETIC"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier SYNTHETIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalClazz, "SYNTHETIC"); } }
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#values()"/> 
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier[] Values
+                {
+                    get { return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalClazz, "values"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="string"/></param>
+                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier ValueOf(string arg0)
+                {
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalClazz, "valueOf", arg0);
+                }
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class
@@ -716,7 +842,7 @@ namespace Java.Lang.ModuleNs
             /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Provides"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Provides t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -760,7 +886,11 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<int>("compareTo", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -779,7 +909,7 @@ namespace Java.Lang.ModuleNs
             /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Requires t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -837,7 +967,74 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<int>("compareTo", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+            #region Modifier
+            public partial class Modifier
+            {
+                #region Constructors
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#MANDATED"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier MANDATED { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "MANDATED"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#STATIC"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier STATIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "STATIC"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#SYNTHETIC"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier SYNTHETIC { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "SYNTHETIC"); } }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#TRANSITIVE"/>
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier TRANSITIVE { get { return SGetField<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "TRANSITIVE"); } }
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#values()"/> 
+                /// </summary>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier[] Values
+                {
+                    get { return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "values"); }
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="string"/></param>
+                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
+                public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier ValueOf(string arg0)
+                {
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalClazz, "valueOf", arg0);
+                }
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class
@@ -856,7 +1053,7 @@ namespace Java.Lang.ModuleNs
             /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Version t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -873,7 +1070,7 @@ namespace Java.Lang.ModuleNs
             {
                 return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Version>(LocalClazz, "parse", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -895,14 +1092,18 @@ namespace Java.Lang.ModuleNs
             {
                 return IExecute<int>("compareTo", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

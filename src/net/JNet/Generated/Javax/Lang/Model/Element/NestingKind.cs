@@ -53,7 +53,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL"/>
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "TOP_LEVEL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -84,7 +84,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<bool>("isNested"); }
         }
-        
+
         #endregion
 
         #region Nested classes

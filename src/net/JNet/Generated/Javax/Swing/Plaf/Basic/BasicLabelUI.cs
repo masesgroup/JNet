@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicLabelUI"/> to <see cref="Java.Beans.PropertyChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicLabelUI t) => t.Cast<Java.Beans.PropertyChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("propertyChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

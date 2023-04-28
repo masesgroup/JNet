@@ -68,7 +68,7 @@ namespace Java.Nio.File
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

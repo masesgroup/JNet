@@ -47,7 +47,7 @@ namespace Javax.Management.Remote.Rmi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Javax.Management.Remote.Rmi
         /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnector"/> to <see cref="Javax.Management.Remote.JMXAddressable"/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.JMXAddressable(Javax.Management.Remote.Rmi.RMIConnector t) => t.Cast<Javax.Management.Remote.JMXAddressable>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -137,7 +137,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
@@ -163,7 +163,7 @@ namespace Javax.Management.Remote.Rmi
         {
             IExecute("removeConnectionNotificationListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

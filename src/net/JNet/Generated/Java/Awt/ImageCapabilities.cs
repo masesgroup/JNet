@@ -37,7 +37,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.ImageCapabilities"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageCapabilities t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Java.Awt
         {
             get { return IExecute<bool>("isTrueVolatile"); }
         }
-        
+
         #endregion
 
         #region Nested classes

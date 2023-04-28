@@ -131,7 +131,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -168,7 +168,7 @@ namespace Java.Awt
         {
             get { return IExecute<float>("getRadius"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -65,7 +65,7 @@ namespace Javax.Swing.Plaf
         {
             return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

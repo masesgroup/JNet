@@ -46,7 +46,7 @@ namespace Javax.Sql
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Javax.Sql
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
         }
-        
+
         #endregion
 
         #region Nested classes

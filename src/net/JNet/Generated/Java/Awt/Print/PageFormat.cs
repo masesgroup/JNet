@@ -37,7 +37,7 @@ namespace Java.Awt.Print
         /// Converter from <see cref="Java.Awt.Print.PageFormat"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Print.PageFormat t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Awt.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#REVERSE_LANDSCAPE"/>
         /// </summary>
         public static int REVERSE_LANDSCAPE { get { return SGetField<int>(LocalClazz, "REVERSE_LANDSCAPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -124,7 +124,7 @@ namespace Java.Awt.Print
         {
             get { return IExecute<double>("getWidth"); }
         }
-        
+
         #endregion
 
         #region Nested classes

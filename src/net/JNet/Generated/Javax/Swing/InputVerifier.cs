@@ -73,7 +73,7 @@ namespace Javax.Swing
         {
             return IExecute<bool>("verifyTarget", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

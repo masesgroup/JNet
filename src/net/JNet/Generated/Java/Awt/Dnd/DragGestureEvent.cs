@@ -40,7 +40,7 @@ namespace Java.Awt.Dnd
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -108,7 +108,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -157,7 +157,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("startDrag", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes

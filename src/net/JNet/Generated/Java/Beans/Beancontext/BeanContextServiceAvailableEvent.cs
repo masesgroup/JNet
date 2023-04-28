@@ -38,7 +38,7 @@ namespace Java.Beans.Beancontext
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Java.Beans.Beancontext
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
         }
-        
+
         #endregion
 
         #region Nested classes

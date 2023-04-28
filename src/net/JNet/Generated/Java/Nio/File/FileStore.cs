@@ -131,7 +131,7 @@ namespace Java.Nio.File
         {
             return IExecute("getAttribute", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

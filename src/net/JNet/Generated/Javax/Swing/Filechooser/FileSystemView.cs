@@ -48,7 +48,7 @@ namespace Javax.Swing.Filechooser
         {
             get { return SExecute<Javax.Swing.Filechooser.FileSystemView>(LocalClazz, "getFileSystemView"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -266,7 +266,7 @@ namespace Javax.Swing.Filechooser
         {
             return IExecute<Javax.Swing.Icon>("getSystemIcon", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

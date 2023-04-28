@@ -39,7 +39,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST"/>
         /// </summary>
         public static int CONTAINER_LAST { get { return SGetField<int>(LocalClazz, "CONTAINER_LAST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -85,7 +85,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<Java.Awt.Container>("getContainer"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -66,7 +66,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecute<Java.Lang.Reflect.Type>("getRawType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

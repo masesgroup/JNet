@@ -143,7 +143,7 @@ namespace Org.W3c.Dom.Html
         {
             IExecute("focus");
         }
-        
+
         #endregion
 
         #region Nested classes

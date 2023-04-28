@@ -37,7 +37,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.VolatileImage"/> to <see cref="Java.Awt.Transparency"/>
         /// </summary>
         public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.VolatileImage t) => t.Cast<Java.Awt.Transparency>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_RESTORED"/>
         /// </summary>
         public static int IMAGE_RESTORED { get { return SGetField<int>(LocalClazz, "IMAGE_RESTORED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -119,7 +119,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<int>("validate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

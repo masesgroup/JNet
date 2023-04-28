@@ -203,7 +203,7 @@ namespace Javax.Sound.Midi
         {
             IExecute("setPolyPressure", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

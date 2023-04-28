@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.FontMetrics"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.FontMetrics t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -276,7 +276,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

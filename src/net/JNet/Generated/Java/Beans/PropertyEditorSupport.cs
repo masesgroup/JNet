@@ -37,7 +37,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.PropertyEditorSupport"/> to <see cref="Java.Beans.PropertyEditor"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyEditor(Java.Beans.PropertyEditorSupport t) => t.Cast<Java.Beans.PropertyEditor>();
-        
+
         #endregion
 
         #region Fields
@@ -145,7 +145,7 @@ namespace Java.Beans
         {
             IExecute("paintValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

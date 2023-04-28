@@ -53,7 +53,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_TOP"/>
         /// </summary>
         public static int OUT_TOP { get { return SGetField<int>(LocalClazz, "OUT_TOP"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -77,7 +77,7 @@ namespace Java.Awt.Geom
         {
             SExecute(LocalClazz, "union", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -183,7 +183,7 @@ namespace Java.Awt.Geom
         {
             IExecute("setRect", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -202,7 +202,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -210,7 +210,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Rectangle2D.Double"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Rectangle2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -230,7 +230,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Double.html#y"/>
             /// </summary>
             public double y { get { return IGetField<double>("y"); } set { ISetField("y", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -238,6 +238,10 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -260,7 +264,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -268,7 +272,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Rectangle2D.Float"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Rectangle2D.Float t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -288,7 +292,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html#y"/>
             /// </summary>
             public float y { get { return IGetField<float>("y"); } set { ISetField("y", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -307,14 +311,18 @@ namespace Java.Awt.Geom
             {
                 IExecute("setRect", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

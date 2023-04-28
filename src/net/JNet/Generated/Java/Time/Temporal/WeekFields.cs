@@ -37,7 +37,7 @@ namespace Java.Time.Temporal
         /// Converter from <see cref="Java.Time.Temporal.WeekFields"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Temporal.WeekFields t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#SUNDAY_START"/>
         /// </summary>
         public static Java.Time.Temporal.WeekFields SUNDAY_START { get { return SGetField<Java.Time.Temporal.WeekFields>(LocalClazz, "SUNDAY_START"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -76,7 +76,7 @@ namespace Java.Time.Temporal
         {
             return SExecute<Java.Time.Temporal.WeekFields>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -129,7 +129,7 @@ namespace Java.Time.Temporal
         {
             get { return IExecute<Java.Time.Temporal.TemporalField>("weekOfYear"); }
         }
-        
+
         #endregion
 
         #region Nested classes

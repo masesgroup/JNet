@@ -342,7 +342,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowTitleInactiveForeground"); }
         }
-        
+
         #endregion
 
         #region Instance methods

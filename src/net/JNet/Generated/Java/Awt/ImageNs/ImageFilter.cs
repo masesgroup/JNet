@@ -41,7 +41,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.ImageFilter"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.ImageFilter t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -141,7 +141,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setProperties", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

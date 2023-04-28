@@ -101,7 +101,7 @@ namespace Javax.Xml
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XMLNS_ATTRIBUTE_NS_URI"/>
         /// </summary>
         public static string XMLNS_ATTRIBUTE_NS_URI { get { return SGetField<string>(LocalClazz, "XMLNS_ATTRIBUTE_NS_URI"); } }
-        
+
         #endregion
 
         #region Static methods

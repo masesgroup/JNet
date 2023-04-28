@@ -48,7 +48,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#load()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -59,7 +59,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
@@ -67,7 +67,7 @@ namespace Javax.Management
         {
             IExecute("store");
         }
-        
+
         #endregion
 
         #region Nested classes

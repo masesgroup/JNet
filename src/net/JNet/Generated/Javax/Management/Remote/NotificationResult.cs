@@ -39,7 +39,7 @@ namespace Javax.Management.Remote
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Javax.Management.Remote
         /// Converter from <see cref="Javax.Management.Remote.NotificationResult"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.NotificationResult t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Management.Remote
         {
             get { return IExecuteArray<Javax.Management.Remote.TargetedNotification>("getTargetedNotifications"); }
         }
-        
+
         #endregion
 
         #region Nested classes

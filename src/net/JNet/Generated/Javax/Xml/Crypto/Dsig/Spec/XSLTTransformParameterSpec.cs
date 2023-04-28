@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XSLTTransformParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XSLTTransformParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             get { return IExecute<Javax.Xml.Crypto.XMLStructure>("getStylesheet"); }
         }
-        
+
         #endregion
 
         #region Nested classes

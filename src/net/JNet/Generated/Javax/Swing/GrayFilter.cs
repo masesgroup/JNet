@@ -38,7 +38,7 @@ namespace Javax.Swing
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Javax.Swing
         {
             return SExecute<Java.Awt.Image>(LocalClazz, "createDisabledImage", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

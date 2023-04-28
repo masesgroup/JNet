@@ -87,7 +87,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getVLink"); } set { IExecute("setVLink", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

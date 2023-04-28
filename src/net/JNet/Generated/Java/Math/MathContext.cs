@@ -54,7 +54,7 @@ namespace Java.Math
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Java.Math
         /// Converter from <see cref="Java.Math.MathContext"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Math.MathContext t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -82,7 +82,7 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#UNLIMITED"/>
         /// </summary>
         public static Java.Math.MathContext UNLIMITED { get { return SGetField<Java.Math.MathContext>(LocalClazz, "UNLIMITED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -104,7 +104,7 @@ namespace Java.Math
         {
             get { return IExecute<Java.Math.RoundingMode>("getRoundingMode"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Imageio.Stream
         /// Converter from <see cref="Javax.Imageio.Stream.ImageInputStreamImpl"/> to <see cref="Javax.Imageio.Stream.ImageInputStream"/>
         /// </summary>
         public static implicit operator Javax.Imageio.Stream.ImageInputStream(Javax.Imageio.Stream.ImageInputStreamImpl t) => t.Cast<Javax.Imageio.Stream.ImageInputStream>();
-        
+
         #endregion
 
         #region Fields
@@ -206,7 +206,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#read()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -268,7 +268,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -277,7 +277,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -398,7 +398,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#reset()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
@@ -413,7 +413,7 @@ namespace Javax.Imageio.Stream
         {
             IExecute("seek", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

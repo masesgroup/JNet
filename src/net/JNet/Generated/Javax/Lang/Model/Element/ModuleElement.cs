@@ -41,7 +41,7 @@ namespace Javax.Lang.Model.Element
         /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -143,7 +143,11 @@ namespace Javax.Lang.Model.Element
             {
                 return IExecute<R>("accept", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -182,7 +186,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "USES"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -202,10 +206,14 @@ namespace Javax.Lang.Model.Element
             {
                 return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -312,7 +320,11 @@ namespace Javax.Lang.Model.Element
             {
                 return IExecute("visitUnknown", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -331,7 +343,7 @@ namespace Javax.Lang.Model.Element
             /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor"/>
             /// </summary>
             public static implicit operator Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor>();
-            
+
             #endregion
 
             #region Fields
@@ -422,7 +434,11 @@ namespace Javax.Lang.Model.Element
             {
                 return IExecute<R>("visitUnknown", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -463,7 +479,11 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Java.Util.List>("getTargetModules"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -504,7 +524,11 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Java.Util.List>("getTargetModules"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -545,7 +569,11 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -589,13 +617,17 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
             /// </summary>
-            
+
             /// <returns><see cref="bool"/></returns>
             public bool IsStaticMethod()
             {
                 return IExecute<bool>("isStatic");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -629,14 +661,18 @@ namespace Javax.Lang.Model.Element
             {
                 get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

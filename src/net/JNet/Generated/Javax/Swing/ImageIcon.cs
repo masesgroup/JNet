@@ -97,7 +97,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -113,7 +113,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ImageIcon"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.ImageIcon t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -185,7 +185,7 @@ namespace Javax.Swing
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -49,7 +49,7 @@ namespace Org.W3c.Dom.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#CAPTURING_PHASE"/>
         /// </summary>
         public static short CAPTURING_PHASE { get { return SGetField<short>(LocalClazz, "CAPTURING_PHASE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -130,7 +130,7 @@ namespace Org.W3c.Dom.Events
         {
             IExecute("stopPropagation");
         }
-        
+
         #endregion
 
         #region Nested classes

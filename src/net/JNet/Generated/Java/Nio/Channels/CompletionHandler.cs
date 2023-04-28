@@ -63,7 +63,7 @@ namespace Java.Nio.Channels
         {
             IExecute("failed", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -86,7 +86,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.CompletionHandler{V, A}"/> to <see cref="Java.Nio.Channels.CompletionHandler"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.CompletionHandler(Java.Nio.Channels.CompletionHandler<V, A> t) => t.Cast<Java.Nio.Channels.CompletionHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Java.Nio.Channels
         {
             IExecute("failed", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

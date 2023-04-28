@@ -37,7 +37,7 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.IsoChronology"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.IsoChronology t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Java.Time.Chrono
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html#INSTANCE"/>
         /// </summary>
         public static Java.Time.Chrono.IsoChronology INSTANCE { get { return SGetField<Java.Time.Chrono.IsoChronology>(LocalClazz, "INSTANCE"); } }
-        
+
         #endregion
 
         #region Static methods

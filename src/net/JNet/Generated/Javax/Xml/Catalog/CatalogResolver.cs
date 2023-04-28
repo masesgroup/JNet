@@ -49,7 +49,7 @@ namespace Javax.Xml.Catalog
         /// Converter from <see cref="Javax.Xml.Catalog.CatalogResolver"/> to <see cref="Org.W3c.Dom.Ls.LSResourceResolver"/>
         /// </summary>
         public static implicit operator Org.W3c.Dom.Ls.LSResourceResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Org.W3c.Dom.Ls.LSResourceResolver>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Javax.Xml.Catalog
         {
             return IExecute("resolveEntity", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

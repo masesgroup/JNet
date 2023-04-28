@@ -90,7 +90,7 @@ namespace Java.Rmi.Server
         {
             return IExecute<string>("getClassAnnotation", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

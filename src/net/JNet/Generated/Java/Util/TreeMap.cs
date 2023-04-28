@@ -53,7 +53,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeMap"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.TreeMap t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -283,7 +283,7 @@ namespace Java.Util
         {
             return IExecute("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -322,7 +322,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -342,7 +342,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeMap{K, V}"/> to <see cref="Java.Util.TreeMap"/>
         /// </summary>
         public static implicit operator Java.Util.TreeMap(Java.Util.TreeMap<K, V> t) => t.Cast<Java.Util.TreeMap>();
-        
+
         #endregion
 
         #region Fields
@@ -556,7 +556,7 @@ namespace Java.Util
         {
             return IExecute<K>("lowerKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

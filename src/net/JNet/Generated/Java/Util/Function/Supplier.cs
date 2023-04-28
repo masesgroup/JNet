@@ -52,7 +52,7 @@ namespace Java.Util.Function
         {
             get { return IExecute("get"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -75,7 +75,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.Supplier{T}"/> to <see cref="Java.Util.Function.Supplier"/>
         /// </summary>
         public static implicit operator Java.Util.Function.Supplier(Java.Util.Function.Supplier<T> t) => t.Cast<Java.Util.Function.Supplier>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Java.Util.Function
         {
             get { return IExecute<T>("get"); }
         }
-        
+
         #endregion
 
         #region Nested classes

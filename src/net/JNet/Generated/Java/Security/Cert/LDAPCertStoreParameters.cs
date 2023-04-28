@@ -46,7 +46,7 @@ namespace Java.Security.Cert
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.LDAPCertStoreParameters"/> to <see cref="Java.Security.Cert.CertStoreParameters"/>
         /// </summary>
         public static implicit operator Java.Security.Cert.CertStoreParameters(Java.Security.Cert.LDAPCertStoreParameters t) => t.Cast<Java.Security.Cert.CertStoreParameters>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<string>("getServerName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

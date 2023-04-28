@@ -41,7 +41,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -70,7 +70,7 @@ namespace Java.Security
         {
             get { return IExecute<string>("getFormat"); }
         }
-        
+
         #endregion
 
         #region Nested classes

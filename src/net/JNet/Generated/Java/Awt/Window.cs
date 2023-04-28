@@ -54,7 +54,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Window"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Window t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -84,7 +84,7 @@ namespace Java.Awt
         {
             get { return SExecuteArray<Java.Awt.Window>(LocalClazz, "getWindows"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -385,7 +385,7 @@ namespace Java.Awt
         {
             IExecute("toFront");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -413,7 +413,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY"/>
             /// </summary>
             public static Java.Awt.Window.Type UTILITY { get { return SGetField<Java.Awt.Window.Type>(LocalClazz, "UTILITY"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -433,10 +433,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Window.Type>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -444,7 +448,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

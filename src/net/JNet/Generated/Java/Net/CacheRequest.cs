@@ -59,7 +59,7 @@ namespace Java.Net
         {
             IExecute("abort");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#TitleProperty"/>
         /// </summary>
         public static string TitleProperty { get { return SGetField<string>(LocalClazz, "TitleProperty"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -199,7 +199,7 @@ namespace Javax.Swing.Text
         {
             IExecute("render", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

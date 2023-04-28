@@ -59,7 +59,7 @@ namespace Java.Util.Concurrent
         {
             get { return IExecute<int>("getPoolIndex"); }
         }
-        
+
         #endregion
 
         #region Nested classes

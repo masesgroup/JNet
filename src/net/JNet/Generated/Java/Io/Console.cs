@@ -37,7 +37,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.Console"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.Console t) => t.Cast<Java.Io.Flushable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()"/>
         /// </summary>
-        
+
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword()
         {
@@ -105,7 +105,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string ReadLine()
         {
@@ -128,7 +128,7 @@ namespace Java.Io
         {
             IExecute("flush");
         }
-        
+
         #endregion
 
         #region Nested classes

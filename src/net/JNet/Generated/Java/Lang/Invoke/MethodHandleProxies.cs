@@ -78,7 +78,7 @@ namespace Java.Lang.Invoke
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalClazz, "wrapperInstanceTarget", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

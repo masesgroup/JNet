@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#TIMES"/>
         /// </summary>
         public static int TIMES { get { return SGetField<int>(LocalClazz, "TIMES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -355,7 +355,7 @@ namespace Javax.Management
         {
             return SExecute<Javax.Management.ValueExp>(LocalClazz, "value", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

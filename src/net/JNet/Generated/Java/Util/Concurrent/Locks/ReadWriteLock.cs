@@ -59,7 +59,7 @@ namespace Java.Util.Concurrent.Locks
         {
             get { return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock"); }
         }
-        
+
         #endregion
 
         #region Nested classes

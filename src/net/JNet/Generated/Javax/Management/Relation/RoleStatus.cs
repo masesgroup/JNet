@@ -65,7 +65,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_WRITABLE"/>
         /// </summary>
         public static int ROLE_NOT_WRITABLE { get { return SGetField<int>(LocalClazz, "ROLE_NOT_WRITABLE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -78,7 +78,7 @@ namespace Javax.Management.Relation
         {
             return SExecute<bool>(LocalClazz, "isRoleStatus", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

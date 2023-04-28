@@ -113,7 +113,7 @@ namespace Java.Rmi.Registry
         {
             return SExecute<Java.Rmi.Registry.Registry>(LocalClazz, "getRegistry", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

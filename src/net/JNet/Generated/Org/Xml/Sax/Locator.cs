@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
         {
             get { return IExecute<string>("getSystemId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

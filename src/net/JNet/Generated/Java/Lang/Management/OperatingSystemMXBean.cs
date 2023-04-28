@@ -80,7 +80,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<string>("getVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

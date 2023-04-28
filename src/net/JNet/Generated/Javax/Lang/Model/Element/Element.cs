@@ -113,7 +113,7 @@ namespace Javax.Lang.Model.Element
         {
             return IExecute<R>("accept", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

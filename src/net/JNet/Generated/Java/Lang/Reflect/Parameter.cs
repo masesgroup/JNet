@@ -37,7 +37,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.Parameter"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.Parameter t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
-        
+
         #endregion
 
         #region Fields
@@ -169,7 +169,7 @@ namespace Java.Lang.Reflect
         {
             return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

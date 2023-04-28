@@ -37,7 +37,7 @@ namespace Javax.Swing.Event
         /// Converter from <see cref="Javax.Swing.Event.EventListenerList"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Event.EventListenerList t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -99,7 +99,7 @@ namespace Javax.Swing.Event
         {
             IExecute("remove", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Swing.Undo
         /// Converter from <see cref="Javax.Swing.Undo.AbstractUndoableEdit"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Undo.AbstractUndoableEdit t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -123,7 +123,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#redo()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
         public void Redo()
         {
@@ -132,13 +132,13 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#undo()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void Undo()
         {
             IExecute("undo");
         }
-        
+
         #endregion
 
         #region Nested classes

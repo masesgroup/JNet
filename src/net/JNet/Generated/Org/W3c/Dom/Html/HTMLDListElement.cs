@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<bool>("getCompact"); } set { IExecute("setCompact", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

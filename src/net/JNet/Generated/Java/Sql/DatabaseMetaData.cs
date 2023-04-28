@@ -281,7 +281,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexStatistic"/>
         /// </summary>
         public static short tableIndexStatistic { get { return SGetField<short>(LocalClazz, "tableIndexStatistic"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -1359,7 +1359,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsConvert()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsConvert()
@@ -1694,7 +1694,7 @@ namespace Java.Sql
         {
             return IExecute<Java.Sql.ResultSet>("getVersionColumns", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

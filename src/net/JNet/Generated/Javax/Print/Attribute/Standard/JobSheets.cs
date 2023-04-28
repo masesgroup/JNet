@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.JobSheets"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobSheets t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#STANDARD"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobSheets STANDARD { get { return SGetField<Javax.Print.Attribute.Standard.JobSheets>(LocalClazz, "STANDARD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

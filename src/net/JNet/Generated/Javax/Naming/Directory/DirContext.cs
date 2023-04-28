@@ -49,7 +49,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REPLACE_ATTRIBUTE"/>
         /// </summary>
         public static int REPLACE_ATTRIBUTE { get { return SGetField<int>(LocalClazz, "REPLACE_ATTRIBUTE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -343,7 +343,7 @@ namespace Javax.Naming.Directory
         {
             IExecute("rebind", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

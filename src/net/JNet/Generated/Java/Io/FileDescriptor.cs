@@ -49,7 +49,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#out"/>
         /// </summary>
         public static Java.Io.FileDescriptor outField { get { return SGetField<Java.Io.FileDescriptor>(LocalClazz, "out"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -67,13 +67,13 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {
             IExecute("sync");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -52,7 +52,7 @@ namespace Java.Rmi.Server
         {
             IExecute("unreferenced");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -87,7 +87,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<string>("getSystemId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

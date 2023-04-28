@@ -73,7 +73,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.DrbgParameters.Reseed>(LocalClazz, "reseed", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -105,7 +105,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY"/>
             /// </summary>
             public static Java.Security.DrbgParameters.Capability RESEED_ONLY { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalClazz, "RESEED_ONLY"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -125,7 +125,7 @@ namespace Java.Security
             {
                 return SExecute<Java.Security.DrbgParameters.Capability>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -143,7 +143,11 @@ namespace Java.Security
             {
                 get { return IExecute<bool>("supportsReseeding"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -162,7 +166,7 @@ namespace Java.Security
             /// Converter from <see cref="Java.Security.DrbgParameters.Instantiation"/> to <see cref="Java.Security.SecureRandomParameters"/>
             /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Instantiation t) => t.Cast<Java.Security.SecureRandomParameters>();
-            
+
             #endregion
 
             #region Fields
@@ -195,7 +199,11 @@ namespace Java.Security
             {
                 get { return IExecute<int>("getStrength"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -214,7 +222,7 @@ namespace Java.Security
             /// Converter from <see cref="Java.Security.DrbgParameters.NextBytes"/> to <see cref="Java.Security.SecureRandomParameters"/>
             /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.NextBytes t) => t.Cast<Java.Security.SecureRandomParameters>();
-            
+
             #endregion
 
             #region Fields
@@ -247,7 +255,11 @@ namespace Java.Security
             {
                 get { return IExecute<int>("getStrength"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -266,7 +278,7 @@ namespace Java.Security
             /// Converter from <see cref="Java.Security.DrbgParameters.Reseed"/> to <see cref="Java.Security.SecureRandomParameters"/>
             /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Reseed t) => t.Cast<Java.Security.SecureRandomParameters>();
-            
+
             #endregion
 
             #region Fields
@@ -292,14 +304,18 @@ namespace Java.Security
             {
                 get { return IExecute<bool>("getPredictionResistance"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

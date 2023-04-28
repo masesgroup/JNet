@@ -94,7 +94,7 @@ namespace Javax.Management
         {
             get { return IExecute<string>("getSpecificationVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

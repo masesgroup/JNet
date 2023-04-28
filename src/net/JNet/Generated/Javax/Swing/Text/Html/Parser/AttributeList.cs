@@ -50,7 +50,7 @@ namespace Javax.Swing.Text.Html.Parser
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// Converter from <see cref="Javax.Swing.Text.Html.Parser.AttributeList"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.AttributeList t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#next"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.AttributeList next { get { return IGetField<Javax.Swing.Text.Html.Parser.AttributeList>("next"); } set { ISetField("next", value); } }
-        
+
         #endregion
 
         #region Static methods
@@ -112,7 +112,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             return SExecute<string>(LocalClazz, "type2name", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -158,7 +158,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             get { return IExecute<Java.Util.Enumeration>("getValues"); }
         }
-        
+
         #endregion
 
         #region Nested classes

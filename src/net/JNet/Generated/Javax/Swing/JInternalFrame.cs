@@ -79,7 +79,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JInternalFrame"/> to <see cref="Javax.Swing.RootPaneContainer"/>
         /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Swing.RootPaneContainer>();
-        
+
         #endregion
 
         #region Fields
@@ -143,7 +143,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY"/>
         /// </summary>
         public static string TITLE_PROPERTY { get { return SGetField<string>(LocalClazz, "TITLE_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -483,7 +483,7 @@ namespace Javax.Swing
         {
             IExecute("toFront");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -499,7 +499,7 @@ namespace Javax.Swing
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -507,7 +507,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.JInternalFrame.JDesktopIcon"/> to <see cref="Javax.Accessibility.Accessible"/>
             /// </summary>
             public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JInternalFrame.JDesktopIcon t) => t.Cast<Javax.Accessibility.Accessible>();
-            
+
             #endregion
 
             #region Fields
@@ -541,14 +541,18 @@ namespace Javax.Swing
             {
                 IExecute("setUI", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

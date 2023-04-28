@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#TYPE"/>
         /// </summary>
         public static string TYPE { get { return SGetField<string>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -77,7 +77,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<string>("getMimeType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

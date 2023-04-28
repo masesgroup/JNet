@@ -37,7 +37,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Io
         {
             get { return IExecute<Java.Lang.StringBuffer>("getBuffer"); }
         }
-        
+
         #endregion
 
         #region Nested classes

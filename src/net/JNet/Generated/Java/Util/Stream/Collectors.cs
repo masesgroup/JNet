@@ -423,7 +423,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>()
         {
@@ -449,7 +449,7 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalClazz, "joining", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -41,7 +41,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Month"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Month t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#SEPTEMBER"/>
         /// </summary>
         public static Java.Time.Month SEPTEMBER { get { return SGetField<Java.Time.Month>(LocalClazz, "SEPTEMBER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -131,7 +131,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Month>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -263,7 +263,7 @@ namespace Java.Time
         {
             return IExecute<long>("getLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

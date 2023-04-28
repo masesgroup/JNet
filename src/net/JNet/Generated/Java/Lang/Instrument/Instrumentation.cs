@@ -192,7 +192,7 @@ namespace Java.Lang.Instrument
         {
             IExecute("setNativeMethodPrefix", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

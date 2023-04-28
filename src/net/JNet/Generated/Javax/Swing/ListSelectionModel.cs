@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION"/>
         /// </summary>
         public static int SINGLE_SELECTION { get { return SGetField<int>(LocalClazz, "SINGLE_SELECTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -198,7 +198,7 @@ namespace Javax.Swing
         {
             IExecute("setSelectionInterval", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

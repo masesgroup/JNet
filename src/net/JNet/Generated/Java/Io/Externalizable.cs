@@ -64,7 +64,7 @@ namespace Java.Io
         {
             IExecute("writeExternal", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

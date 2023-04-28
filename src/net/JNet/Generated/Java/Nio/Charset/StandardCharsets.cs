@@ -61,7 +61,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_8"/>
         /// </summary>
         public static Java.Nio.Charset.Charset UTF_8 { get { return SGetField<Java.Nio.Charset.Charset>(LocalClazz, "UTF_8"); } }
-        
+
         #endregion
 
         #region Static methods

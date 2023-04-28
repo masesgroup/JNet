@@ -90,7 +90,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             IExecute("unsetDecodeTables");
         }
-        
+
         #endregion
 
         #region Nested classes

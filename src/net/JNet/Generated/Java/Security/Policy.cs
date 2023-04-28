@@ -41,7 +41,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
         /// </summary>
         public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION { get { return SGetField<Java.Security.PermissionCollection>(LocalClazz, "UNSUPPORTED_EMPTY_COLLECTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -96,7 +96,7 @@ namespace Java.Security
         {
             SExecute(LocalClazz, "setPolicy", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -156,7 +156,7 @@ namespace Java.Security
         {
             IExecute("refresh");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -183,11 +183,15 @@ namespace Java.Security
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

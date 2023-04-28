@@ -164,7 +164,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<string>("getVmVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

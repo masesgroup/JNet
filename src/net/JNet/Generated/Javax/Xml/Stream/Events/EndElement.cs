@@ -59,7 +59,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces"); }
         }
-        
+
         #endregion
 
         #region Nested classes

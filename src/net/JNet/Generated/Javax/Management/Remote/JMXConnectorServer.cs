@@ -37,7 +37,7 @@ namespace Javax.Management.Remote
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Management.Remote
         /// Converter from <see cref="Javax.Management.Remote.JMXConnectorServer"/> to <see cref="Javax.Management.Remote.JMXAddressable"/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.JMXAddressable(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.Remote.JMXAddressable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#AUTHENTICATOR"/>
         /// </summary>
         public static string AUTHENTICATOR { get { return SGetField<string>(LocalClazz, "AUTHENTICATOR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -106,7 +106,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -135,7 +135,7 @@ namespace Javax.Management.Remote
         {
             IExecute("postRegister", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

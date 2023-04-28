@@ -66,7 +66,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Java.Util.List>("getTypeArguments"); }
         }
-        
+
         #endregion
 
         #region Nested classes

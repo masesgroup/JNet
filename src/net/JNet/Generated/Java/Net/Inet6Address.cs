@@ -65,7 +65,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.Inet6Address>(LocalClazz, "getByAddress", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -90,7 +90,7 @@ namespace Java.Net
         {
             get { return IExecute<int>("getScopeId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

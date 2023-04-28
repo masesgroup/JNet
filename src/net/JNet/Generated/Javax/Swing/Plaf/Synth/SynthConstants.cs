@@ -65,7 +65,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#SELECTED"/>
         /// </summary>
         public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
-        
+
         #endregion
 
         #region Static methods

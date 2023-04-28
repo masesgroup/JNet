@@ -41,7 +41,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.CopyOption"/>
         /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.CopyOption>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#NOFOLLOW_LINKS"/>
         /// </summary>
         public static Java.Nio.File.LinkOption NOFOLLOW_LINKS { get { return SGetField<Java.Nio.File.LinkOption>(LocalClazz, "NOFOLLOW_LINKS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -69,7 +69,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.LinkOption>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

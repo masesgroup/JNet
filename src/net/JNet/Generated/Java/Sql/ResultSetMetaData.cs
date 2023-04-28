@@ -49,7 +49,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#columnNullableUnknown"/>
         /// </summary>
         public static int columnNullableUnknown { get { return SGetField<int>(LocalClazz, "columnNullableUnknown"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -264,7 +264,7 @@ namespace Java.Sql
         {
             return IExecute<string>("getTableName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

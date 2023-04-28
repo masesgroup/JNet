@@ -54,7 +54,7 @@ namespace Javax.Sql
         {
             IExecute("readData", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

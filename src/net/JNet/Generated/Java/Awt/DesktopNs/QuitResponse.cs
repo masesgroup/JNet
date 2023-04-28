@@ -59,7 +59,7 @@ namespace Java.Awt.DesktopNs
         {
             IExecute("performQuit");
         }
-        
+
         #endregion
 
         #region Nested classes

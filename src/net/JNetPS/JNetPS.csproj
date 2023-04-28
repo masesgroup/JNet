@@ -5,8 +5,8 @@
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<AssemblyName>MASES.JNetPS</AssemblyName>
 		<RootNamespace>MASES.JNetPS</RootNamespace>
-		<Title>JNetPS - PowerShell command line interface for JNet</Title>
-		<Description>JNetPS - PowerShell command line interface for JNet</Description>
+		<Title>JNetPS - JNet (Java/JVM suite for .NET) PowerShell command line interface</Title>
+		<Description>JNetPS - JNet (Java/JVM suite for .NET) PowerShell command line interface</Description>
 		<Product>JNetPS</Product>
 		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
 		<TargetFrameworks>net462;net6.0</TargetFrameworks>

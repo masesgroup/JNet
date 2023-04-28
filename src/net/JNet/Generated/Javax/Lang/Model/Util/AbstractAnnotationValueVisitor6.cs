@@ -37,7 +37,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6"/> to <see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.AnnotationValueVisitor(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6 t) => t.Cast<Javax.Lang.Model.Element.AnnotationValueVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -78,7 +78,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute("visitUnknown", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -105,7 +105,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6>();
-        
+
         #endregion
 
         #region Fields
@@ -146,7 +146,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<R>("visitUnknown", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

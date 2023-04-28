@@ -45,7 +45,7 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#INDEFINITE_LIFETIME"/>
         /// </summary>
         public static int INDEFINITE_LIFETIME { get { return SGetField<int>(LocalClazz, "INDEFINITE_LIFETIME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -250,7 +250,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#dispose()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {
@@ -352,7 +352,7 @@ namespace Org.Ietf.Jgss
         {
             IExecute("verifyMIC", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-        
+
         #endregion
 
         #region Nested classes

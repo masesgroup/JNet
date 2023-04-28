@@ -81,7 +81,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#UPDATABLE_VIEW_SYNC"/>
         /// </summary>
         public static int UPDATABLE_VIEW_SYNC { get { return SGetField<int>(LocalClazz, "UPDATABLE_VIEW_SYNC"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -145,7 +145,7 @@ namespace Javax.Sql.Rowset.Spi
         {
             get { return IExecute<string>("getVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

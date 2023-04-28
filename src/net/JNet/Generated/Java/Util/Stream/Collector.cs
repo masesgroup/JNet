@@ -66,7 +66,7 @@ namespace Java.Util.Stream
         {
             if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -101,13 +101,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set CharacteristicsMethod()
         {
             return IExecute<Java.Util.Set>("characteristics");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -135,7 +135,7 @@ namespace Java.Util.Stream
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics UNORDERED { get { return SGetField<Java.Util.Stream.Collector.Characteristics>(LocalClazz, "UNORDERED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -155,10 +155,14 @@ namespace Java.Util.Stream
             {
                 return SExecute<Java.Util.Stream.Collector.Characteristics>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -166,7 +170,7 @@ namespace Java.Util.Stream
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -185,7 +189,7 @@ namespace Java.Util.Stream
         /// Converter from <see cref="Java.Util.Stream.Collector{T, A, R}"/> to <see cref="Java.Util.Stream.Collector"/>
         /// </summary>
         public static implicit operator Java.Util.Stream.Collector(Java.Util.Stream.Collector<T, A, R> t) => t.Cast<Java.Util.Stream.Collector>();
-        
+
         #endregion
 
         #region Fields
@@ -218,7 +222,7 @@ namespace Java.Util.Stream
         {
             if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalClazz, "of", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -253,13 +257,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod()
         {
             return IExecute<Java.Util.Set<Java.Util.Stream.Collector.Characteristics>>("characteristics");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -44,7 +44,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
         public static Java.Net.Http.HttpRequest.Builder NewBuilder()
         {
@@ -59,7 +59,7 @@ namespace Java.Net.Http
         {
             return SExecute<Java.Net.Http.HttpRequest.Builder>(LocalClazz, "newBuilder", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -108,13 +108,13 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#bodyPublisher()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Net.Http.HttpRequest.BodyPublisher> BodyPublisherMethod()
         {
             return IExecute<Java.Util.Optional<Java.Net.Http.HttpRequest.BodyPublisher>>("bodyPublisher");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -145,7 +145,11 @@ namespace Java.Net.Http
             {
                 get { return IExecute<long>("contentLength"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -261,10 +265,14 @@ namespace Java.Net.Http
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalClazz, "ofString", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -413,14 +421,18 @@ namespace Java.Net.Http
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("version", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -53,7 +53,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#WHERE_CLAUSE_ONLY"/>
         /// </summary>
         public static Java.Sql.PseudoColumnUsage WHERE_CLAUSE_ONLY { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalClazz, "WHERE_CLAUSE_ONLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Sql
         {
             return SExecute<Java.Sql.PseudoColumnUsage>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

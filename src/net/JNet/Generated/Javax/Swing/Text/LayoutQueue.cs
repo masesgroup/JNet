@@ -48,7 +48,7 @@ namespace Javax.Swing.Text
         {
             get { return SExecute<Javax.Swing.Text.LayoutQueue>(LocalClazz, "getDefaultQueue"); } set { SExecute(LocalClazz, "setDefaultQueue", value); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -60,7 +60,7 @@ namespace Javax.Swing.Text
         {
             IExecute("addTask", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

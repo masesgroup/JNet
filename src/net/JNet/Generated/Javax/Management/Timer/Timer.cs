@@ -41,7 +41,7 @@ namespace Javax.Management.Timer
         /// Converter from <see cref="Javax.Management.Timer.Timer"/> to <see cref="Javax.Management.MBeanRegistration"/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Timer.Timer t) => t.Cast<Javax.Management.MBeanRegistration>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_WEEK"/>
         /// </summary>
         public static long ONE_WEEK { get { return SGetField<long>(LocalClazz, "ONE_WEEK"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -306,13 +306,13 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");
         }
-        
+
         #endregion
 
         #region Nested classes

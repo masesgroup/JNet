@@ -230,7 +230,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readObject()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object ReadObject()
@@ -247,7 +247,7 @@ namespace Java.Sql
         {
             return IExecute<T>("readObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

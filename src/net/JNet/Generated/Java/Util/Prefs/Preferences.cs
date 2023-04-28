@@ -49,7 +49,7 @@ namespace Java.Util.Prefs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH"/>
         /// </summary>
         public static int MAX_VALUE_LENGTH { get { return SGetField<int>(LocalClazz, "MAX_VALUE_LENGTH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -95,7 +95,7 @@ namespace Java.Util.Prefs
         {
             SExecute(LocalClazz, "importPreferences", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -249,7 +249,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#clear()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Clear()
         {
@@ -278,7 +278,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#flush()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Flush()
         {
@@ -358,7 +358,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNode()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void RemoveNode()
         {
@@ -383,13 +383,13 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#sync()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Sync()
         {
             IExecute("sync");
         }
-        
+
         #endregion
 
         #region Nested classes

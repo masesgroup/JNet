@@ -41,7 +41,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#DefaultPainter"/>
         /// </summary>
         public static Javax.Swing.Text.LayeredHighlighter.LayerPainter DefaultPainter { get { return SGetField<Javax.Swing.Text.LayeredHighlighter.LayerPainter>(LocalClazz, "DefaultPainter"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -56,7 +56,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<bool>("getDrawsLayeredHighlights"); } set { IExecute("setDrawsLayeredHighlights", value); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -72,7 +72,7 @@ namespace Javax.Swing.Text
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -95,14 +95,18 @@ namespace Javax.Swing.Text
             {
                 get { return IExecute<Java.Awt.Color>("getColor"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

@@ -38,7 +38,7 @@ namespace Javax.Security.Auth
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Javax.Security.Auth
         {
             get { return IExecuteArray<string>("getPrincipals"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#ORIGINAL_TYPE_FIELD"/>
         /// </summary>
         public static string ORIGINAL_TYPE_FIELD { get { return SGetField<string>(LocalClazz, "ORIGINAL_TYPE_FIELD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -132,7 +132,7 @@ namespace Javax.Management
         {
             return SExecute<bool>(LocalClazz, "isMXBeanInterface", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

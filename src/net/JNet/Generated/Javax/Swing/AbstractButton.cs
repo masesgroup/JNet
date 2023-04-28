@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.AbstractButton"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.AbstractButton t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"/>
         /// </summary>
         public static string VERTICAL_TEXT_POSITION_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -466,7 +466,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

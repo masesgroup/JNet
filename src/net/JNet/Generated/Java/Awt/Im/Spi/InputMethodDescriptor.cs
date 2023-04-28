@@ -85,7 +85,7 @@ namespace Java.Awt.Im.Spi
         {
             return IExecute<string>("getInputMethodDisplayName", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

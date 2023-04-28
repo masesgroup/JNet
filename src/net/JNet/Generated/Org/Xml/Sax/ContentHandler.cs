@@ -59,7 +59,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#endDocument()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
@@ -126,7 +126,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#startDocument()"/>
         /// </summary>
-        
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {
@@ -154,7 +154,7 @@ namespace Org.Xml.Sax
         {
             IExecute("startPrefixMapping", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

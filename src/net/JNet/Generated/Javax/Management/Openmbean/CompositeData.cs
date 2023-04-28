@@ -95,7 +95,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecuteArray<object>("getAll", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

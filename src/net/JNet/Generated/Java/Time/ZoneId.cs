@@ -37,7 +37,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.ZoneId"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.ZoneId t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -45,7 +45,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#SHORT_IDS"/>
         /// </summary>
         public static Java.Util.Map SHORT_IDS { get { return SGetField<Java.Util.Map>(LocalClazz, "SHORT_IDS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -101,7 +101,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.ZoneId>(LocalClazz, "ofOffset", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -136,7 +136,7 @@ namespace Java.Time
         {
             return IExecute<string>("getDisplayName", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

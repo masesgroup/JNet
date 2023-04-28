@@ -66,7 +66,7 @@ namespace Java.Beans.Beancontext
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getPropagatedFrom"); } set { IExecute("setPropagatedFrom", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -52,7 +52,7 @@ namespace Javax.Lang.Model.Type
         {
             get { return IExecute<Java.Util.List>("getAlternatives"); }
         }
-        
+
         #endregion
 
         #region Nested classes

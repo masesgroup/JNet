@@ -157,7 +157,7 @@ namespace Java.Lang.Management
         {
             IExecute("resetPeakUsage");
         }
-        
+
         #endregion
 
         #region Nested classes

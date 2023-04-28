@@ -48,7 +48,7 @@ namespace Java.Util.Jar
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Java.Util.Jar
         {
             get { return IExecute<Java.Util.Jar.JarEntry>("getNextJarEntry"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -38,7 +38,7 @@ namespace Java.Net
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Net
         {
             get { return IExecute<string>("getUserName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

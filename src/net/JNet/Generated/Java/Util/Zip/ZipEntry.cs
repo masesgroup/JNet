@@ -45,7 +45,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Java.Util.Zip
         /// Converter from <see cref="Java.Util.Zip.ZipEntry"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Zip.ZipEntry t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#STORED"/>
         /// </summary>
         public static int STORED { get { return SGetField<int>(LocalClazz, "STORED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -191,7 +191,7 @@ namespace Java.Util.Zip
         {
             return IExecute<Java.Util.Zip.ZipEntry>("setLastModifiedTime", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

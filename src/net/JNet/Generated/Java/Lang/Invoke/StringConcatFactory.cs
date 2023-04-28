@@ -67,7 +67,7 @@ namespace Java.Lang.Invoke
         {
             if (arg4.Length == 0) return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "makeConcatWithConstants", arg0, arg1, arg2, arg3); else return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "makeConcatWithConstants", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Instance methods

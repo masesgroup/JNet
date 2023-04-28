@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class AncestorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -130,7 +130,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class CaretListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -143,7 +143,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class CellEditorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -199,7 +199,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class ChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -269,7 +269,7 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -284,6 +284,7 @@ namespace Javax.Swing.Event
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -311,7 +312,7 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -326,10 +327,11 @@ namespace Javax.Swing.Event
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -339,7 +341,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class DocumentListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -452,7 +454,7 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -467,10 +469,11 @@ namespace Javax.Swing.Event
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -480,7 +483,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class HyperlinkListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -493,7 +496,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class InternalFrameAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -549,7 +552,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class InternalFrameListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -605,7 +608,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class ListDataListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -661,7 +664,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class ListSelectionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -717,7 +720,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MenuDragMouseListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -816,7 +819,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MenuKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -829,7 +832,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MenuListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -842,7 +845,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MouseInputAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -855,7 +858,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MouseInputListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -911,7 +914,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class PopupMenuListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -981,7 +984,7 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -996,10 +999,11 @@ namespace Javax.Swing.Event
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1009,7 +1013,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class RowSorterListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1108,7 +1112,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TableColumnModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1164,7 +1168,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TableModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1220,7 +1224,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TreeExpansionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1276,7 +1280,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TreeModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1332,7 +1336,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TreeSelectionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1345,7 +1349,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class TreeWillExpandListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1401,7 +1405,7 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class UndoableEditListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

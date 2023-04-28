@@ -47,7 +47,7 @@ namespace Javax.Naming.Spi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Naming.Spi
         /// Converter from <see cref="Javax.Naming.Spi.ResolveResult"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Spi.ResolveResult t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -97,7 +97,7 @@ namespace Javax.Naming.Spi
         {
             IExecute("appendRemainingName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

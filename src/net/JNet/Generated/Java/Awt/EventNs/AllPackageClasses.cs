@@ -74,7 +74,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ActionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -130,7 +130,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class AdjustmentListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -143,7 +143,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class AWTEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -199,7 +199,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ComponentAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -255,7 +255,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ComponentListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -268,7 +268,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ContainerAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -324,7 +324,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ContainerListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -337,7 +337,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class FocusAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -407,7 +407,7 @@ namespace Java.Awt.EventNs
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -422,10 +422,11 @@ namespace Java.Awt.EventNs
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -435,7 +436,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class FocusListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -448,7 +449,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyBoundsAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -461,7 +462,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyBoundsListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -517,7 +518,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -616,7 +617,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class InputMethodListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -715,7 +716,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ItemListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -728,7 +729,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class KeyAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -784,7 +785,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class KeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -797,7 +798,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -853,7 +854,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -866,7 +867,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseMotionAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -879,7 +880,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseMotionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -935,7 +936,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseWheelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1034,7 +1035,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class TextListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1047,7 +1048,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1103,7 +1104,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowFocusListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1116,7 +1117,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -1129,7 +1130,7 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowStateListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

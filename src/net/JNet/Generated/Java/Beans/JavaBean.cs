@@ -66,7 +66,7 @@ namespace Java.Beans
         {
             get { return IExecute<string>("description"); }
         }
-        
+
         #endregion
 
         #region Nested classes

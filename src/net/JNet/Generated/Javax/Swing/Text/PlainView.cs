@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.PlainView"/> to <see cref="Javax.Swing.Text.TabExpander"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.PlainView t) => t.Cast<Javax.Swing.Text.TabExpander>();
-        
+
         #endregion
 
         #region Fields
@@ -67,7 +67,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<float>("nextTabStop", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

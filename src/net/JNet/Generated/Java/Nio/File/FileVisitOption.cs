@@ -41,7 +41,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
         /// </summary>
         public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { return SGetField<Java.Nio.File.FileVisitOption>(LocalClazz, "FOLLOW_LINKS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -61,7 +61,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.FileVisitOption>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.View"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Text.View t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#Y_AXIS"/>
         /// </summary>
         public static int Y_AXIS { get { return SGetField<int>(LocalClazz, "Y_AXIS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -439,7 +439,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setSize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

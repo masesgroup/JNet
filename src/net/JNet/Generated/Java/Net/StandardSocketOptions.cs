@@ -85,7 +85,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardSocketOptions.html#IP_MULTICAST_IF"/>
         /// </summary>
         public static Java.Net.SocketOption IP_MULTICAST_IF { get { return SGetField<Java.Net.SocketOption>(LocalClazz, "IP_MULTICAST_IF"); } }
-        
+
         #endregion
 
         #region Static methods

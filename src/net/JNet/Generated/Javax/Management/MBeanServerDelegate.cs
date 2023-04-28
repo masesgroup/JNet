@@ -41,7 +41,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.MBeanServerDelegate"/> to <see cref="Javax.Management.NotificationEmitter"/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.NotificationEmitter>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#DELEGATE_NAME"/>
         /// </summary>
         public static Javax.Management.ObjectName DELEGATE_NAME { get { return SGetField<Javax.Management.ObjectName>(LocalClazz, "DELEGATE_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -152,7 +152,7 @@ namespace Javax.Management
         {
             IExecute("sendNotification", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

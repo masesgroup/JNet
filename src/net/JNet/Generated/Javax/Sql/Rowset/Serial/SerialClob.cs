@@ -49,7 +49,7 @@ namespace Javax.Sql.Rowset.Serial
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -65,7 +65,7 @@ namespace Javax.Sql.Rowset.Serial
         /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialClob"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialClob t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -193,7 +193,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#free()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
@@ -208,7 +208,7 @@ namespace Javax.Sql.Rowset.Serial
         {
             IExecute("truncate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

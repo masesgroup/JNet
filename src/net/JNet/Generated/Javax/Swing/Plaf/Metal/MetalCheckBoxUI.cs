@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Metal
         {
             get { return IExecute<string>("getPropertyPrefix"); }
         }
-        
+
         #endregion
 
         #region Nested classes

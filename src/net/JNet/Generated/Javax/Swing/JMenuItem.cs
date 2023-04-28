@@ -71,7 +71,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JMenuItem"/> to <see cref="Javax.Swing.MenuElement"/>
         /// </summary>
         public static implicit operator Javax.Swing.MenuElement(Javax.Swing.JMenuItem t) => t.Cast<Javax.Swing.MenuElement>();
-        
+
         #endregion
 
         #region Fields
@@ -229,7 +229,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

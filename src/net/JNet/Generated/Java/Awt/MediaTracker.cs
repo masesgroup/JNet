@@ -37,7 +37,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.MediaTracker"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.MediaTracker t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING"/>
         /// </summary>
         public static int LOADING { get { return SGetField<int>(LocalClazz, "LOADING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkAll()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool CheckAll()
         {
@@ -233,7 +233,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForAll()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void WaitForAll()
         {
@@ -248,7 +248,7 @@ namespace Java.Awt
         {
             IExecute("waitForID", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

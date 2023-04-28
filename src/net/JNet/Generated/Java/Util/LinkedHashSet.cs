@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -110,7 +110,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -118,7 +118,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.LinkedHashSet{E}"/> to <see cref="Java.Util.LinkedHashSet"/>
         /// </summary>
         public static implicit operator Java.Util.LinkedHashSet(Java.Util.LinkedHashSet<E> t) => t.Cast<Java.Util.LinkedHashSet>();
-        
+
         #endregion
 
         #region Fields

@@ -57,7 +57,7 @@ namespace Javax.Print
         {
             return SExecute<Javax.Print.PrintService>(LocalClazz, "printDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -49,7 +49,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.LocalDate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.LocalDate t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,14 +65,14 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MIN"/>
         /// </summary>
         public static Java.Time.LocalDate MIN { get { return SGetField<Java.Time.LocalDate>(LocalClazz, "MIN"); } }
-        
+
         #endregion
 
         #region Static methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Now()
         {
@@ -166,7 +166,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.LocalDate>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -473,7 +473,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atStartOfDay()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtStartOfDay()
         {
@@ -596,7 +596,7 @@ namespace Java.Time
         {
             return IExecute<long>("until", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

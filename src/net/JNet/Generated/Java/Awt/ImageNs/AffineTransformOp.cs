@@ -47,7 +47,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.AffineTransformOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.AffineTransformOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
-        
+
         #endregion
 
         #region Fields
@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_NEAREST_NEIGHBOR"/>
         /// </summary>
         public static int TYPE_NEAREST_NEIGHBOR { get { return SGetField<int>(LocalClazz, "TYPE_NEAREST_NEIGHBOR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -171,7 +171,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

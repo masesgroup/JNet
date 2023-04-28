@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

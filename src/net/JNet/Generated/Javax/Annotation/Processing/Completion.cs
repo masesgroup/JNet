@@ -59,7 +59,7 @@ namespace Javax.Annotation.Processing
         {
             get { return IExecute<string>("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

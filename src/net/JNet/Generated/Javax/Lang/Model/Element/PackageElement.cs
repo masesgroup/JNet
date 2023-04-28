@@ -41,7 +41,7 @@ namespace Javax.Lang.Model.Element
         /// Converter from <see cref="Javax.Lang.Model.Element.PackageElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.PackageElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

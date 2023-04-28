@@ -37,7 +37,7 @@ namespace Java.Util.Logging
         /// Converter from <see cref="Java.Util.Logging.Level"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Logging.Level t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING"/>
         /// </summary>
         public static Java.Util.Logging.Level WARNING { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "WARNING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -91,7 +91,7 @@ namespace Java.Util.Logging
         {
             return SExecute<Java.Util.Logging.Level>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -123,7 +123,7 @@ namespace Java.Util.Logging
         {
             get { return IExecute<string>("getResourceBundleName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

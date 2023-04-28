@@ -56,7 +56,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.CompositeContext>("createContext", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

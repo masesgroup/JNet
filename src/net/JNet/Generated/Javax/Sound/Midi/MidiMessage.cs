@@ -37,7 +37,7 @@ namespace Javax.Sound.Midi
         /// Converter from <see cref="Javax.Sound.Midi.MidiMessage"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sound.Midi.MidiMessage t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
         {
             get { return IExecute<int>("getStatus"); }
         }
-        
+
         #endregion
 
         #region Nested classes

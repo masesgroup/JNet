@@ -41,7 +41,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.CubicCurve2D t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -143,7 +143,7 @@ namespace Java.Awt.Geom
         {
             SExecute(LocalClazz, "subdivide", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -393,7 +393,7 @@ namespace Java.Awt.Geom
         {
             IExecute("subdivide", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -416,7 +416,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -424,7 +424,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D.Double"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -460,7 +460,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2"/>
             /// </summary>
             public double y2 { get { return IGetField<double>("y2"); } set { ISetField("y2", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -468,6 +468,10 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -494,7 +498,7 @@ namespace Java.Awt.Geom
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -502,7 +506,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D.Float"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Float t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -538,7 +542,7 @@ namespace Java.Awt.Geom
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y2"/>
             /// </summary>
             public float y2 { get { return IGetField<float>("y2"); } set { ISetField("y2", value); } }
-            
+
             #endregion
 
             #region Static methods
@@ -561,14 +565,18 @@ namespace Java.Awt.Geom
             {
                 IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

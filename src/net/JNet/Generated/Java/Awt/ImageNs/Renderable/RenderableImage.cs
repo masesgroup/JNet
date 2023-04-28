@@ -41,7 +41,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#HINTS_OBSERVED"/>
         /// </summary>
         public static string HINTS_OBSERVED { get { return SGetField<string>(LocalClazz, "HINTS_OBSERVED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -134,7 +134,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

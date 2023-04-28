@@ -45,7 +45,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Duration"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Duration t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ZERO"/>
         /// </summary>
         public static Java.Time.Duration ZERO { get { return SGetField<Java.Time.Duration>(LocalClazz, "ZERO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -159,7 +159,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Duration>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -541,7 +541,7 @@ namespace Java.Time
         {
             return IExecute<long>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

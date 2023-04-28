@@ -59,7 +59,7 @@ namespace Javax.Print.Attribute
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

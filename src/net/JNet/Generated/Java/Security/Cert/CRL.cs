@@ -61,7 +61,7 @@ namespace Java.Security.Cert
         {
             return IExecute<bool>("isRevoked", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

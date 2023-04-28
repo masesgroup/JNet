@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<Javax.Swing.Text.MutableAttributeSet>("getInputAttributes"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -76,7 +76,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -92,6 +92,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -122,6 +126,10 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -139,7 +147,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -155,6 +163,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -175,7 +187,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -191,6 +203,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -211,7 +227,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -227,6 +243,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -257,6 +277,10 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
@@ -273,7 +297,7 @@ namespace Javax.Swing.Text
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -289,6 +313,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -319,11 +347,15 @@ namespace Javax.Swing.Text
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

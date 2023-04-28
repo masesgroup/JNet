@@ -52,7 +52,7 @@ namespace Java.Security.Spec
         {
             get { return IExecute<int>("getFieldSize"); }
         }
-        
+
         #endregion
 
         #region Nested classes

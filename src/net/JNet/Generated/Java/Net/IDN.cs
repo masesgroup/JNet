@@ -45,7 +45,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
         /// </summary>
         public static int USE_STD3_ASCII_RULES { get { return SGetField<int>(LocalClazz, "USE_STD3_ASCII_RULES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -87,7 +87,7 @@ namespace Java.Net
         {
             return SExecute<string>(LocalClazz, "toUnicode", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

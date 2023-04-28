@@ -69,7 +69,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#WIDTH"/>
         /// </summary>
         public static int WIDTH { get { return SGetField<int>(LocalClazz, "WIDTH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

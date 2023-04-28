@@ -37,7 +37,7 @@ namespace Javax.Sql.Rowset.Serial
         /// Converter from <see cref="Javax.Sql.Rowset.Serial.SQLInputImpl"/> to <see cref="Java.Sql.SQLInput"/>
         /// </summary>
         public static implicit operator Java.Sql.SQLInput(Javax.Sql.Rowset.Serial.SQLInputImpl t) => t.Cast<Java.Sql.SQLInput>();
-        
+
         #endregion
 
         #region Fields
@@ -238,7 +238,7 @@ namespace Javax.Sql.Rowset.Serial
         {
             get { return IExecute<bool>("wasNull"); }
         }
-        
+
         #endregion
 
         #region Nested classes

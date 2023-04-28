@@ -37,7 +37,7 @@ namespace Java.Security.Cert
         /// Converter from <see cref="Java.Security.Cert.X509Certificate"/> to <see cref="Java.Security.Cert.X509Extension"/>
         /// </summary>
         public static implicit operator Java.Security.Cert.X509Extension(Java.Security.Cert.X509Certificate t) => t.Cast<Java.Security.Cert.X509Extension>();
-        
+
         #endregion
 
         #region Fields
@@ -192,7 +192,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Security.Cert.CertificateExpiredException"/>
         /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
         public void CheckValidity()
@@ -209,7 +209,7 @@ namespace Java.Security.Cert
         {
             IExecute("checkValidity", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -125,7 +125,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE"/>
         /// </summary>
         public static int VALUE_RANGE_MIN_MAX_INCLUSIVE { get { return SGetField<int>(LocalClazz, "VALUE_RANGE_MIN_MAX_INCLUSIVE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -378,7 +378,7 @@ namespace Javax.Imageio.Metadata
         {
             return IExecuteArray<string>("getChildNames", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

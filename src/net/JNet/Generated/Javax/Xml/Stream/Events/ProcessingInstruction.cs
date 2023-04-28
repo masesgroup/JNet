@@ -59,7 +59,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<string>("getTarget"); }
         }
-        
+
         #endregion
 
         #region Nested classes

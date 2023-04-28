@@ -55,7 +55,7 @@ namespace Java.Nio.File.Spi
         {
             return IExecute<string>("probeContentType", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

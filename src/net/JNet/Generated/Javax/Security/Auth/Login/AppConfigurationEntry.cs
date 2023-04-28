@@ -39,7 +39,7 @@ namespace Javax.Security.Auth.Login
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Javax.Security.Auth.Login
         {
             get { return IExecute<Java.Util.Map>("getOptions"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -108,7 +108,7 @@ namespace Javax.Security.Auth.Login
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#SUFFICIENT"/>
             /// </summary>
             public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag SUFFICIENT { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalClazz, "SUFFICIENT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -119,11 +119,15 @@ namespace Javax.Security.Auth.Login
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

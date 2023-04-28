@@ -45,7 +45,7 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.Name"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Javax.Naming.Name t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -188,7 +188,7 @@ namespace Javax.Naming
         {
             return IExecute<Javax.Naming.Name>("getSuffix", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

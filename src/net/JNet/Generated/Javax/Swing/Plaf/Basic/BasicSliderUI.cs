@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#POSITIVE_SCROLL"/>
         /// </summary>
         public static int POSITIVE_SCROLL { get { return SGetField<int>(LocalClazz, "POSITIVE_SCROLL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -180,7 +180,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("setThumbLocation", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -199,7 +199,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -215,6 +215,10 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -234,7 +238,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -242,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.ChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -262,7 +266,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("stateChanged", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -281,7 +289,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -289,7 +297,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicSliderUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-            
+
             #endregion
 
             #region Fields
@@ -317,7 +325,11 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("focusLost", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -336,7 +348,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -344,7 +356,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -364,14 +376,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

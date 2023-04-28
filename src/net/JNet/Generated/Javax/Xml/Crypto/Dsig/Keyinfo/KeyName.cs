@@ -52,7 +52,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

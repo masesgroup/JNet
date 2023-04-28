@@ -38,7 +38,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_SHOWN"/>
         /// </summary>
         public static int COMPONENT_SHOWN { get { return SGetField<int>(LocalClazz, "COMPONENT_SHOWN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -85,7 +85,7 @@ namespace Java.Awt.EventNs
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

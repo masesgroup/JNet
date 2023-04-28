@@ -52,7 +52,7 @@ namespace Java.Beans.Beancontext
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

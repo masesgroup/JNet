@@ -38,7 +38,7 @@ namespace Java.Util.Zip
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Java.Util.Zip
         {
             get { return IExecute<Java.Util.Zip.Checksum>("getChecksum"); }
         }
-        
+
         #endregion
 
         #region Nested classes

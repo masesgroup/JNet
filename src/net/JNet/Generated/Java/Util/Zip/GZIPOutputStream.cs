@@ -69,7 +69,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

@@ -119,7 +119,7 @@ namespace Javax.Swing.Text
         {
             return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

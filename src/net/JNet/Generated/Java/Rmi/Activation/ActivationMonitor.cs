@@ -77,7 +77,7 @@ namespace Java.Rmi.Activation
         {
             IExecute("inactiveObject", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

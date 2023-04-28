@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             get { return IExecute<string>("getPropertyPrefix"); }
         }
-        
+
         #endregion
 
         #region Nested classes

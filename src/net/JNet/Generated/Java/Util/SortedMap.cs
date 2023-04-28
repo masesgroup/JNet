@@ -115,7 +115,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -138,7 +138,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.SortedMap{K, V}"/> to <see cref="Java.Util.SortedMap"/>
         /// </summary>
         public static implicit operator Java.Util.SortedMap(Java.Util.SortedMap<K, V> t) => t.Cast<Java.Util.SortedMap>();
-        
+
         #endregion
 
         #region Fields
@@ -220,7 +220,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedMap<K, V>>("tailMap", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

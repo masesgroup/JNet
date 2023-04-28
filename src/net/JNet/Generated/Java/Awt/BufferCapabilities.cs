@@ -39,7 +39,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -47,7 +47,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.BufferCapabilities"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.BufferCapabilities t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -101,7 +101,7 @@ namespace Java.Awt
         {
             get { return IExecute<bool>("isPageFlipping"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -133,7 +133,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED"/>
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED { get { return SGetField<Java.Awt.BufferCapabilities.FlipContents>(LocalClazz, "UNDEFINED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -144,11 +144,15 @@ namespace Java.Awt
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

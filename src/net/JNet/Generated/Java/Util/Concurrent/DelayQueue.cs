@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.DelayQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.DelayQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -194,7 +194,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.DelayQueue{E}"/> to <see cref="Java.Util.Concurrent.DelayQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.DelayQueue(Java.Util.Concurrent.DelayQueue<E> t) => t.Cast<Java.Util.Concurrent.DelayQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

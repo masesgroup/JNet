@@ -47,7 +47,7 @@ namespace Javax.Security.Auth.Kerberos
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Javax.Security.Auth.Kerberos
         /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosTicket"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -218,7 +218,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#destroy()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
@@ -227,13 +227,13 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#refresh()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         public void Refresh()
         {
             IExecute("refresh");
         }
-        
+
         #endregion
 
         #region Nested classes

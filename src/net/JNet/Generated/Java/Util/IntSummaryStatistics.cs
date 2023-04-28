@@ -41,7 +41,7 @@ namespace Java.Util
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.IntSummaryStatistics"/> to <see cref="Java.Util.Function.IntConsumer"/>
         /// </summary>
         public static implicit operator Java.Util.Function.IntConsumer(Java.Util.IntSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
-        
+
         #endregion
 
         #region Fields
@@ -112,7 +112,7 @@ namespace Java.Util
         {
             IExecute("combine", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

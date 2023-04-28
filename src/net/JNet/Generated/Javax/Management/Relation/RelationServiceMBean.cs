@@ -325,7 +325,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#isActive()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void IsActive()
         {
@@ -334,7 +334,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#purgeRelations()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void PurgeRelations()
         {
@@ -423,7 +423,7 @@ namespace Javax.Management.Relation
         {
             IExecute("updateRoleMap", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

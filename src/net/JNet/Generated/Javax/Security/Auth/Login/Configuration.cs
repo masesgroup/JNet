@@ -92,7 +92,7 @@ namespace Javax.Security.Auth.Login
         {
             SExecute(LocalClazz, "setConfiguration", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -133,7 +133,7 @@ namespace Javax.Security.Auth.Login
         {
             IExecute("refresh");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -160,11 +160,15 @@ namespace Javax.Security.Auth.Login
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

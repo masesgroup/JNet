@@ -89,7 +89,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -97,7 +97,7 @@ namespace Java.Util.Zip
         /// Converter from <see cref="Java.Util.Zip.ZipFile"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Zip.ZipFile t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -109,7 +109,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ"/>
         /// </summary>
         public static int OPEN_READ { get { return SGetField<int>(LocalClazz, "OPEN_READ"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -174,13 +174,13 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
-        
+
         #endregion
 
         #region Nested classes

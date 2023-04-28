@@ -37,7 +37,7 @@ namespace Javax.Xml.Validation
         /// Converter from <see cref="Javax.Xml.Validation.ValidatorHandler"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Validation.ValidatorHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -121,7 +121,7 @@ namespace Javax.Xml.Validation
         {
             IExecute("setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

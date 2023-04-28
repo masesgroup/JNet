@@ -94,7 +94,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<string>("getValidPolicy"); }
         }
-        
+
         #endregion
 
         #region Nested classes

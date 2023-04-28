@@ -41,7 +41,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.MenuBar"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.MenuBar t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -132,7 +132,7 @@ namespace Java.Awt
         {
             IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -66,7 +66,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>("permissions"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Awt.Datatransfer
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

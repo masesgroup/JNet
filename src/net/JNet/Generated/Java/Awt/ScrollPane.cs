@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.ScrollPane"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.ScrollPane t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -62,7 +62,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_NEVER"/>
         /// </summary>
         public static int SCROLLBARS_NEVER { get { return SGetField<int>(LocalClazz, "SCROLLBARS_NEVER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -150,7 +150,7 @@ namespace Java.Awt
         {
             IExecute("setWheelScrollingEnabled", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

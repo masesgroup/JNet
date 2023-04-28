@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JViewport"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JViewport t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#SIMPLE_SCROLL_MODE"/>
         /// </summary>
         public static int SIMPLE_SCROLL_MODE { get { return SGetField<int>(LocalClazz, "SIMPLE_SCROLL_MODE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -152,7 +152,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

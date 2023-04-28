@@ -62,7 +62,7 @@ namespace Javax.Security.Auth.X500
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -74,7 +74,7 @@ namespace Javax.Security.Auth.X500
         /// Converter from <see cref="Javax.Security.Auth.X500.X500Principal"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.X500
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#RFC2253"/>
         /// </summary>
         public static string RFC2253 { get { return SGetField<string>(LocalClazz, "RFC2253"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -131,7 +131,7 @@ namespace Javax.Security.Auth.X500
         {
             return IExecute<string>("getName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -81,7 +81,7 @@ namespace Javax.Transaction.Xa
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY"/>
         /// </summary>
         public static int XA_RDONLY { get { return SGetField<int>(LocalClazz, "XA_RDONLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -184,7 +184,7 @@ namespace Javax.Transaction.Xa
         {
             IExecute("start", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

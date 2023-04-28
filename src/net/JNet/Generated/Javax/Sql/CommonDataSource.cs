@@ -73,7 +73,7 @@ namespace Javax.Sql
         {
             get { return IExecute<Java.Util.Logging.Logger>("getParentLogger"); }
         }
-        
+
         #endregion
 
         #region Nested classes

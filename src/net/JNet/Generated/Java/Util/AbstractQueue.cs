@@ -37,7 +37,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractQueue"/> to <see cref="Java.Util.Queue"/>
         /// </summary>
         public static implicit operator Java.Util.Queue(Java.Util.AbstractQueue t) => t.Cast<Java.Util.Queue>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Java.Util
         {
             get { return IExecute("remove"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -90,7 +90,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractQueue{E}"/> to <see cref="Java.Util.AbstractQueue"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractQueue(Java.Util.AbstractQueue<E> t) => t.Cast<Java.Util.AbstractQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Java.Util
         {
             get { return IExecute<E>("remove"); }
         }
-        
+
         #endregion
 
         #region Nested classes

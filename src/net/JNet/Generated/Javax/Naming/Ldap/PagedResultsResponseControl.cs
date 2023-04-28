@@ -40,7 +40,7 @@ namespace Javax.Naming.Ldap
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -52,7 +52,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#OID"/>
         /// </summary>
         public static string OID { get { return SGetField<string>(LocalClazz, "OID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -74,7 +74,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecute<int>("getResultSize"); }
         }
-        
+
         #endregion
 
         #region Nested classes

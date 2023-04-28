@@ -53,7 +53,7 @@ namespace Java.Awt.DesktopNs
         {
             IExecute("openFiles", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

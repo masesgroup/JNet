@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.MediaTray"/> to <see cref="Javax.Print.Attribute.Attribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.MediaTray t) => t.Cast<Javax.Print.Attribute.Attribute>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#TOP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaTray TOP { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "TOP"); } }
-        
+
         #endregion
 
         #region Static methods

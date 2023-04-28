@@ -73,7 +73,7 @@ namespace Javax.Naming.Directory
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -96,7 +96,7 @@ namespace Javax.Naming.Directory
         {
             get { return IExecute<Javax.Naming.Directory.Attributes>("getAttributes"); } set { IExecute("setAttributes", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

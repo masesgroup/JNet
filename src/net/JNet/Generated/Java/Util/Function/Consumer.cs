@@ -62,7 +62,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Consumer>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -85,7 +85,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.Consumer{T}"/> to <see cref="Java.Util.Function.Consumer"/>
         /// </summary>
         public static implicit operator Java.Util.Function.Consumer(Java.Util.Function.Consumer<T> t) => t.Cast<Java.Util.Function.Consumer>();
-        
+
         #endregion
 
         #region Fields
@@ -114,7 +114,7 @@ namespace Java.Util.Function
         {
             return IExecute<Java.Util.Function.Consumer<T>>("andThen", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

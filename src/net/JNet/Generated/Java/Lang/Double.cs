@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Double"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Double t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -239,14 +239,14 @@ namespace Java.Lang
         {
             return SExecute<long>(LocalClazz, "doubleToRawLongBits", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isInfinite()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
@@ -255,7 +255,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isNaN()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
@@ -279,7 +279,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

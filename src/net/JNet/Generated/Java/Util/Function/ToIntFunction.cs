@@ -54,7 +54,7 @@ namespace Java.Util.Function
         {
             return IExecute<int>("applyAsInt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -77,7 +77,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ToIntFunction{T}"/> to <see cref="Java.Util.Function.ToIntFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ToIntFunction(Java.Util.Function.ToIntFunction<T> t) => t.Cast<Java.Util.Function.ToIntFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Java.Util.Function
         {
             return IExecute<int>("applyAsInt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -105,7 +105,7 @@ namespace Javax.Net.Ssl
         {
             return IExecute<Java.Security.PrivateKey>("getPrivateKey", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

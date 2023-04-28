@@ -54,7 +54,7 @@ namespace Java.Lang
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.StackTraceElement"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.StackTraceElement t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -130,7 +130,7 @@ namespace Java.Lang
         {
             get { return IExecute<string>("getModuleVersion"); }
         }
-        
+
         #endregion
 
         #region Nested classes

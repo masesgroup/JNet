@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE"/>
         /// </summary>
         public static int OUTLINE_DRAG_MODE { get { return SGetField<int>(LocalClazz, "OUTLINE_DRAG_MODE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -107,7 +107,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

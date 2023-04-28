@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicScrollBarUI"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicScrollBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -126,7 +126,7 @@ namespace Javax.Swing.Plaf.Basic
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -134,7 +134,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicScrollBarUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicScrollBarUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
+
             #endregion
 
             #region Fields
@@ -154,14 +154,18 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("propertyChange", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

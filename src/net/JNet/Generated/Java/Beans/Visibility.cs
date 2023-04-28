@@ -73,7 +73,7 @@ namespace Java.Beans
         {
             IExecute("okToUseGui");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -45,7 +45,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#SCHEMA_SYSTEM_ID"/>
         /// </summary>
         public static string SCHEMA_SYSTEM_ID { get { return SGetField<string>(LocalClazz, "SCHEMA_SYSTEM_ID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -112,7 +112,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("writeXml", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

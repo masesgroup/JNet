@@ -45,7 +45,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayList t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -88,7 +88,7 @@ namespace Java.Util
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -119,7 +119,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -139,7 +139,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.ArrayList{E}"/> to <see cref="Java.Util.ArrayList"/>
         /// </summary>
         public static implicit operator Java.Util.ArrayList(Java.Util.ArrayList<E> t) => t.Cast<Java.Util.ArrayList>();
-        
+
         #endregion
 
         #region Fields
@@ -166,7 +166,7 @@ namespace Java.Util
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes

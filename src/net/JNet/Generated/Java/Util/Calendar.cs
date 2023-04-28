@@ -45,7 +45,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Util.Calendar t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -249,7 +249,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ZONE_OFFSET"/>
         /// </summary>
         public static int ZONE_OFFSET { get { return SGetField<int>(LocalClazz, "ZONE_OFFSET"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -270,7 +270,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance()
         {
@@ -304,7 +304,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -619,7 +619,7 @@ namespace Java.Util
         {
             IExecute("setWeekDate", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -778,14 +778,18 @@ namespace Java.Util
             {
                 return IExecute<Java.Util.Calendar.Builder>("setWeekDefinition", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

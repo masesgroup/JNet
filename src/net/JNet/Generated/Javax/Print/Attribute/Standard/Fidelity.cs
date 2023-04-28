@@ -41,7 +41,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.Fidelity"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Fidelity t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE { get { return SGetField<Javax.Print.Attribute.Standard.Fidelity>(LocalClazz, "FIDELITY_TRUE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

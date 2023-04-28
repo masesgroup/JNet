@@ -49,7 +49,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR"/>
         /// </summary>
         public static string ROWSET_SYNC_VENDOR { get { return SGetField<string>(LocalClazz, "ROWSET_SYNC_VENDOR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -120,7 +120,7 @@ namespace Javax.Sql.Rowset.Spi
         {
             SExecute(LocalClazz, "setLogger", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

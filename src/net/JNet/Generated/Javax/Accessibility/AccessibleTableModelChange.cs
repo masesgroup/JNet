@@ -49,7 +49,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#UPDATE"/>
         /// </summary>
         public static int UPDATE { get { return SGetField<int>(LocalClazz, "UPDATE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -92,7 +92,7 @@ namespace Javax.Accessibility
         {
             get { return IExecute<int>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

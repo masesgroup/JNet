@@ -53,7 +53,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_MONO_32x32"/>
         /// </summary>
         public static int ICON_MONO_32x32 { get { return SGetField<int>(LocalClazz, "ICON_MONO_32x32"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -119,7 +119,7 @@ namespace Java.Beans
         {
             return IExecute<Java.Awt.Image>("getIcon", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

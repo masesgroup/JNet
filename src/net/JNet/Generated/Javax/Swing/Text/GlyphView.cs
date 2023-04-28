@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.GlyphView"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.GlyphView t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setGlyphPainter", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -302,14 +302,18 @@ namespace Javax.Swing.Text
             {
                 return IExecute<Javax.Swing.Text.GlyphView.GlyphPainter>("getPainter", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

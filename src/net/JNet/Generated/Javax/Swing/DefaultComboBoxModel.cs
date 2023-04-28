@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultComboBoxModel"/> to <see cref="Javax.Swing.MutableComboBoxModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.MutableComboBoxModel(Javax.Swing.DefaultComboBoxModel t) => t.Cast<Javax.Swing.MutableComboBoxModel>();
-        
+
         #endregion
 
         #region Fields
@@ -130,7 +130,7 @@ namespace Javax.Swing
         {
             IExecute("removeElementAt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -161,7 +161,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultComboBoxModel{E}"/> to <see cref="Javax.Swing.DefaultComboBoxModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.DefaultComboBoxModel(Javax.Swing.DefaultComboBoxModel<E> t) => t.Cast<Javax.Swing.DefaultComboBoxModel>();
-        
+
         #endregion
 
         #region Fields
@@ -258,7 +258,7 @@ namespace Javax.Swing
         {
             IExecute("removeElementAt", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

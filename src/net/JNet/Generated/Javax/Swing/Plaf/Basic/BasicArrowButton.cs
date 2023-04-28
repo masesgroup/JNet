@@ -49,7 +49,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -57,7 +57,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicArrowButton"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicArrowButton t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("paintTriangle", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

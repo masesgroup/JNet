@@ -95,7 +95,7 @@ namespace Java.Awt.FontNs
         {
             return IExecute<Java.Awt.Font>("deriveMMFont", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -68,7 +68,7 @@ namespace Java.Util.Spi
         {
             return IExecute<string>("getGenericDisplayName", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

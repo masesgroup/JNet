@@ -61,7 +61,7 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_REFERENCE"/>
         /// </summary>
         public static int ACTION_REFERENCE { get { return SGetField<int>(LocalClazz, "ACTION_REFERENCE"); } }
-        
+
         #endregion
 
         #region Static methods

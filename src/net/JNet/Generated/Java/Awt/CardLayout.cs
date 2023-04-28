@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.CardLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.CardLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -195,7 +195,7 @@ namespace Java.Awt
         {
             IExecute("show", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

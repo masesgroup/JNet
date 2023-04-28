@@ -153,7 +153,7 @@ namespace Javax.Imageio.Metadata
         {
             IExecute("setFromTree", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Swing.Text.Html.Parser
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -97,7 +97,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             get { return IExecute<bool>("isPreformatted"); }
         }
-        
+
         #endregion
 
         #region Nested classes

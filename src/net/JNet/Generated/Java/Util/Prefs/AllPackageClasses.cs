@@ -149,7 +149,7 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class NodeChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -205,7 +205,7 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class PreferenceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

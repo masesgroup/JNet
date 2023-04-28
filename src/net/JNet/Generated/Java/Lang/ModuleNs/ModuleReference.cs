@@ -66,7 +66,7 @@ namespace Java.Lang.ModuleNs
         {
             get { return IExecute<Java.Lang.ModuleNs.ModuleReader>("open"); }
         }
-        
+
         #endregion
 
         #region Nested classes

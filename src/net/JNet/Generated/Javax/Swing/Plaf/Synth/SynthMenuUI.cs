@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Synth
         /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthMenuUI"/> to <see cref="Javax.Swing.Plaf.Synth.SynthUI"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.Synth.SynthUI(Javax.Swing.Plaf.Synth.SynthMenuUI t) => t.Cast<Javax.Swing.Plaf.Synth.SynthUI>();
-        
+
         #endregion
 
         #region Fields
@@ -83,7 +83,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("propertyChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

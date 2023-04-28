@@ -37,7 +37,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.SpringLayout"/> to <see cref="Java.Awt.LayoutManager2"/>
         /// </summary>
         public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.SpringLayout t) => t.Cast<Java.Awt.LayoutManager2>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH"/>
         /// </summary>
         public static string WIDTH { get { return SGetField<string>(LocalClazz, "WIDTH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -215,7 +215,7 @@ namespace Javax.Swing
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -251,7 +251,7 @@ namespace Javax.Swing
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -313,14 +313,18 @@ namespace Javax.Swing
             {
                 IExecute("setConstraint", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

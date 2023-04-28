@@ -86,7 +86,7 @@ namespace Javax.Print
         {
             return SExecuteArray<Javax.Print.PrintService>(LocalClazz, "lookupPrintServices", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -124,7 +124,7 @@ namespace Javax.Print
         {
             return IExecuteArray<Javax.Print.PrintService>("getPrintServices", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

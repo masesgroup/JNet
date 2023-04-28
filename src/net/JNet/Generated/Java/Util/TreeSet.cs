@@ -53,7 +53,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.TreeSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -226,7 +226,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -265,7 +265,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -285,7 +285,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeSet{E}"/> to <see cref="Java.Util.TreeSet"/>
         /// </summary>
         public static implicit operator Java.Util.TreeSet(Java.Util.TreeSet<E> t) => t.Cast<Java.Util.TreeSet>();
-        
+
         #endregion
 
         #region Fields
@@ -442,7 +442,7 @@ namespace Java.Util
         {
             return IExecute<Java.Util.SortedSet<E>>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -50,7 +50,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.PageAttributes"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.PageAttributes t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -196,7 +196,7 @@ namespace Java.Awt
         {
             IExecute("setPrintQualityToDefault");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -220,7 +220,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#MONOCHROME"/>
             /// </summary>
             public static Java.Awt.PageAttributes.ColorType MONOCHROME { get { return SGetField<Java.Awt.PageAttributes.ColorType>(LocalClazz, "MONOCHROME"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -228,6 +228,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -835,7 +839,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#TABLOID"/>
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType TABLOID { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "TABLOID"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -843,6 +847,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -870,7 +878,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT"/>
             /// </summary>
             public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT { get { return SGetField<Java.Awt.PageAttributes.OrientationRequestedType>(LocalClazz, "PORTRAIT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -878,6 +886,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -905,7 +917,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE"/>
             /// </summary>
             public static Java.Awt.PageAttributes.OriginType PRINTABLE { get { return SGetField<Java.Awt.PageAttributes.OriginType>(LocalClazz, "PRINTABLE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -913,6 +925,10 @@ namespace Java.Awt
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -944,7 +960,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL"/>
             /// </summary>
             public static Java.Awt.PageAttributes.PrintQualityType NORMAL { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalClazz, "NORMAL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -955,11 +971,15 @@ namespace Java.Awt
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

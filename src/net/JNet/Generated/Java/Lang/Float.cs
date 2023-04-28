@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Float"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Float t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -239,14 +239,14 @@ namespace Java.Lang
         {
             return SExecute<int>(LocalClazz, "floatToRawIntBits", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
@@ -255,7 +255,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
@@ -279,7 +279,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

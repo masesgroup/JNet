@@ -53,7 +53,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_MODIFY { get { return SGetField<Java.Nio.File.WatchEvent.Kind>(LocalClazz, "ENTRY_MODIFY"); } }
-        
+
         #endregion
 
         #region Static methods

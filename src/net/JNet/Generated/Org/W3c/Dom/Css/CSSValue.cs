@@ -53,7 +53,7 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_VALUE_LIST"/>
         /// </summary>
         public static short CSS_VALUE_LIST { get { return SGetField<short>(LocalClazz, "CSS_VALUE_LIST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Org.W3c.Dom.Css
         {
             get { return IExecute<short>("getCssValueType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

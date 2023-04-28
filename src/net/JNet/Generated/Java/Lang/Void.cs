@@ -41,7 +41,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods

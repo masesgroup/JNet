@@ -51,13 +51,13 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#version()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
         public static Java.Lang.Runtime.Version VersionMethod()
         {
             return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "version");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -218,7 +218,7 @@ namespace Java.Lang
         {
             IExecute("runFinalization");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -234,7 +234,7 @@ namespace Java.Lang
             /// Converter from <see cref="Java.Lang.Runtime.Version"/> to <see cref="Java.Lang.Comparable"/>
             /// </summary>
             public static implicit operator Java.Lang.Comparable(Java.Lang.Runtime.Version t) => t.Cast<Java.Lang.Comparable>();
-            
+
             #endregion
 
             #region Fields
@@ -251,7 +251,7 @@ namespace Java.Lang
             {
                 return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "parse", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -343,20 +343,24 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#version()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List<int?> VersionMethod()
             {
                 return IExecute<Java.Util.List<int?>>("version");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

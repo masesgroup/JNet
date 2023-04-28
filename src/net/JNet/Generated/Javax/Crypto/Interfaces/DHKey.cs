@@ -52,7 +52,7 @@ namespace Javax.Crypto.Interfaces
         {
             get { return IExecute<Javax.Crypto.Spec.DHParameterSpec>("getParams"); }
         }
-        
+
         #endregion
 
         #region Nested classes

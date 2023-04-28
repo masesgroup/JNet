@@ -59,7 +59,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
         }
-        
+
         #endregion
 
         #region Nested classes

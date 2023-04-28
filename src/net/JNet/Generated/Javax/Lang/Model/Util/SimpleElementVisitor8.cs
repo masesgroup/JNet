@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.SimpleElementVisitor8{R, P}"/> to <see cref="Javax.Lang.Model.Util.SimpleElementVisitor8"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.SimpleElementVisitor8(Javax.Lang.Model.Util.SimpleElementVisitor8<R, P> t) => t.Cast<Javax.Lang.Model.Util.SimpleElementVisitor8>();
-        
+
         #endregion
 
         #region Fields

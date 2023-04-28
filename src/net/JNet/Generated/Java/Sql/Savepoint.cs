@@ -59,7 +59,7 @@ namespace Java.Sql
         {
             get { return IExecute<string>("getSavepointName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

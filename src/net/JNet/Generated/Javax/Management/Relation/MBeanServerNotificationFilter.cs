@@ -91,7 +91,7 @@ namespace Javax.Management.Relation
         {
             IExecute("enableObjectName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

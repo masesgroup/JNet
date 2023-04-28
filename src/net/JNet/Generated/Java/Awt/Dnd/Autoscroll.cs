@@ -60,7 +60,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("autoscroll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

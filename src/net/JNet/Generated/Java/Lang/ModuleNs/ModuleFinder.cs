@@ -66,7 +66,7 @@ namespace Java.Lang.ModuleNs
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "of", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -86,7 +86,7 @@ namespace Java.Lang.ModuleNs
         {
             return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

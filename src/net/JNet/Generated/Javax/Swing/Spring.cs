@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#UNSET"/>
         /// </summary>
         public static int UNSET { get { return SGetField<int>(LocalClazz, "UNSET"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -122,7 +122,7 @@ namespace Javax.Swing
         {
             return SExecute<Javax.Swing.Spring>(LocalClazz, "width", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -154,7 +154,7 @@ namespace Javax.Swing
         {
             get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -86,7 +86,7 @@ namespace Org.W3c.Dom.Stylesheets
         {
             IExecute("deleteMedium", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

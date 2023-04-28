@@ -185,7 +185,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute("visitVariableAsResourceVariable", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -208,7 +208,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.ElementKindVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.ElementKindVisitor6"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.ElementKindVisitor6(Javax.Lang.Model.Util.ElementKindVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.ElementKindVisitor6>();
-        
+
         #endregion
 
         #region Fields
@@ -360,7 +360,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<R>("visitVariableAsResourceVariable", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

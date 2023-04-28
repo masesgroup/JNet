@@ -156,7 +156,7 @@ namespace Java.Time.Temporal
         {
             return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalClazz, "previousOrSame", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

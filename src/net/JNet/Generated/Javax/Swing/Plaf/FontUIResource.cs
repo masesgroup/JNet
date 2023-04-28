@@ -47,7 +47,7 @@ namespace Javax.Swing.Plaf
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,7 +55,7 @@ namespace Javax.Swing.Plaf
         /// Converter from <see cref="Javax.Swing.Plaf.FontUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.FontUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-        
+
         #endregion
 
         #region Fields

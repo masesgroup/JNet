@@ -46,7 +46,7 @@ namespace Javax.Management
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

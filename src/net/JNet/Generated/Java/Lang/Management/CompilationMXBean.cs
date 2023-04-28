@@ -66,7 +66,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<long>("getTotalCompilationTime"); }
         }
-        
+
         #endregion
 
         #region Nested classes

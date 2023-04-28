@@ -64,7 +64,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -72,7 +72,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JTextField"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JTextField t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#notifyAction"/>
         /// </summary>
         public static string notifyAction { get { return SGetField<string>(LocalClazz, "notifyAction"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -161,7 +161,7 @@ namespace Javax.Swing
         {
             IExecute("setActionCommand", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

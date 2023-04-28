@@ -37,7 +37,7 @@ namespace Javax.Swing.Undo
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -105,7 +105,7 @@ namespace Javax.Swing.Undo
         {
             IExecute("removeUndoableEditListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

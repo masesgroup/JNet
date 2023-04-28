@@ -52,7 +52,7 @@ namespace Java.Net
         {
             get { return IExecute<string>("name"); }
         }
-        
+
         #endregion
 
         #region Nested classes

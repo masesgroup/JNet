@@ -187,7 +187,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -199,7 +199,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Formatter"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Util.Formatter t) => t.Cast<Java.Io.Flushable>();
-        
+
         #endregion
 
         #region Fields
@@ -267,7 +267,7 @@ namespace Java.Util
         {
             IExecute("flush");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -291,7 +291,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC"/>
             /// </summary>
             public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { return SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "SCIENTIFIC"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -311,10 +311,14 @@ namespace Java.Util
             {
                 return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -322,7 +326,7 @@ namespace Java.Util
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

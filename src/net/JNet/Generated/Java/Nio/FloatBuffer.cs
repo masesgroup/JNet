@@ -37,7 +37,7 @@ namespace Java.Nio
         /// Converter from <see cref="Java.Nio.FloatBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.FloatBuffer t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Java.Nio
         {
             return SExecute<Java.Nio.FloatBuffer>(LocalClazz, "wrap", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -102,7 +102,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="float"/></returns>
         public float Get()
         {
@@ -212,7 +212,7 @@ namespace Java.Nio
         {
             return IExecute<Java.Nio.FloatBuffer>("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

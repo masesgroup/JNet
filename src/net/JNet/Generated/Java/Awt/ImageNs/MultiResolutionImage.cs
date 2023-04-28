@@ -62,7 +62,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.Image>("getResolutionVariant", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

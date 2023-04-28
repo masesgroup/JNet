@@ -38,7 +38,7 @@ namespace Java.Awt
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.BorderLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.BorderLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#WEST"/>
         /// </summary>
         public static string WEST { get { return SGetField<string>(LocalClazz, "WEST"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -234,7 +234,7 @@ namespace Java.Awt
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

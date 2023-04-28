@@ -161,7 +161,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#DEFAULT_MODALITY_TYPE"/>
         /// </summary>
         public static Java.Awt.Dialog.ModalityType DEFAULT_MODALITY_TYPE { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "DEFAULT_MODALITY_TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -248,7 +248,7 @@ namespace Java.Awt
         {
             IExecute("setUndecorated", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -276,7 +276,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#TOOLKIT_EXCLUDE"/>
             /// </summary>
             public static Java.Awt.Dialog.ModalExclusionType TOOLKIT_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "TOOLKIT_EXCLUDE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -296,10 +296,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -335,7 +339,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#TOOLKIT_MODAL"/>
             /// </summary>
             public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "TOOLKIT_MODAL"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -355,10 +359,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.Dialog.ModalityType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -366,7 +374,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

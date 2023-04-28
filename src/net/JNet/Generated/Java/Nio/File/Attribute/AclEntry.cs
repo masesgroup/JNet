@@ -44,7 +44,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder()
         {
@@ -59,7 +59,7 @@ namespace Java.Nio.File.Attribute
         {
             return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>(LocalClazz, "newBuilder", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -91,7 +91,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<Java.Nio.File.Attribute.AclEntryType>("type"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -176,14 +176,18 @@ namespace Java.Nio.File.Attribute
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setType", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

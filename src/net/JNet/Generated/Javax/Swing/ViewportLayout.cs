@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.ViewportLayout"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.ViewportLayout t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -96,7 +96,7 @@ namespace Javax.Swing
         {
             IExecute("removeLayoutComponent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

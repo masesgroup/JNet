@@ -52,7 +52,7 @@ namespace Javax.Print
         {
             get { return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob"); }
         }
-        
+
         #endregion
 
         #region Nested classes

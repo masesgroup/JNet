@@ -37,7 +37,7 @@ namespace Javax.Swing.Tree
         /// Converter from <see cref="Javax.Swing.Tree.AbstractLayoutCache"/> to <see cref="Javax.Swing.Tree.RowMapper"/>
         /// </summary>
         public static implicit operator Javax.Swing.Tree.RowMapper(Javax.Swing.Tree.AbstractLayoutCache t) => t.Cast<Javax.Swing.Tree.RowMapper>();
-        
+
         #endregion
 
         #region Fields
@@ -262,7 +262,7 @@ namespace Javax.Swing.Tree
         {
             IExecute("setRootVisible", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -299,14 +299,18 @@ namespace Javax.Swing.Tree
             {
                 return IExecute<Java.Awt.Rectangle>("getNodeDimensions", arg0, arg1, arg2, arg3, arg4);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

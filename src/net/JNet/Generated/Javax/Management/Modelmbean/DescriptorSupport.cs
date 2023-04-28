@@ -66,7 +66,7 @@ namespace Javax.Management.Modelmbean
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -74,7 +74,7 @@ namespace Javax.Management.Modelmbean
         /// Converter from <see cref="Javax.Management.Modelmbean.DescriptorSupport"/> to <see cref="Javax.Management.Descriptor"/>
         /// </summary>
         public static implicit operator Javax.Management.Descriptor(Javax.Management.Modelmbean.DescriptorSupport t) => t.Cast<Javax.Management.Descriptor>();
-        
+
         #endregion
 
         #region Fields
@@ -161,7 +161,7 @@ namespace Javax.Management.Modelmbean
         {
             IExecute("setFields", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Java.Awt.Datatransfer
         /// Converter from <see cref="Java.Awt.Datatransfer.SystemFlavorMap"/> to <see cref="Java.Awt.Datatransfer.FlavorTable"/>
         /// </summary>
         public static implicit operator Java.Awt.Datatransfer.FlavorTable(Java.Awt.Datatransfer.SystemFlavorMap t) => t.Cast<Java.Awt.Datatransfer.FlavorTable>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Java.Awt.Datatransfer
         {
             return SExecute<string>(LocalClazz, "encodeJavaMIMEType", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -178,7 +178,7 @@ namespace Java.Awt.Datatransfer
         {
             IExecute("setNativesForFlavor", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

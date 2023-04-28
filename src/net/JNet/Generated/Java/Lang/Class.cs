@@ -49,7 +49,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Class"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Class t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
-        
+
         #endregion
 
         #region Fields
@@ -89,7 +89,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -585,7 +585,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInterfaceMethod()
         {
@@ -600,7 +600,7 @@ namespace Java.Lang
         {
             return IExecute("cast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -639,7 +639,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Class{T}"/> to <see cref="Java.Lang.Class"/>
         /// </summary>
         public static implicit operator Java.Lang.Class(Java.Lang.Class<T> t) => t.Cast<Java.Lang.Class>();
-        
+
         #endregion
 
         #region Fields
@@ -679,7 +679,7 @@ namespace Java.Lang
         {
             return SExecute<Java.Lang.Class>(LocalClazz, "forName", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -1175,7 +1175,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInterfaceMethod()
         {
@@ -1190,7 +1190,7 @@ namespace Java.Lang
         {
             return IExecute<T>("cast", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

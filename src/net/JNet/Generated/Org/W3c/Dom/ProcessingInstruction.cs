@@ -59,7 +59,7 @@ namespace Org.W3c.Dom
         {
             get { return IExecute<string>("getTarget"); }
         }
-        
+
         #endregion
 
         #region Nested classes

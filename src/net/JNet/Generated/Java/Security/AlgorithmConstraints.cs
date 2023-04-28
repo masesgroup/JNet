@@ -78,7 +78,7 @@ namespace Java.Security
         {
             return IExecute<bool>("permits", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

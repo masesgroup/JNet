@@ -76,7 +76,7 @@ namespace Javax.Management.Openmbean
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -84,7 +84,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanParameterInfo(Javax.Management.Openmbean.OpenMBeanParameterInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanParameterInfo>();
-        
+
         #endregion
 
         #region Fields
@@ -168,7 +168,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<bool>("isValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

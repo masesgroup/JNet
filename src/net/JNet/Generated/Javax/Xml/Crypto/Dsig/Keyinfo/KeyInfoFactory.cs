@@ -44,7 +44,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance()
         {
@@ -80,7 +80,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             return SExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -231,7 +231,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial>("newX509IssuerSerial", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

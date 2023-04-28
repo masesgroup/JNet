@@ -37,7 +37,7 @@ namespace Javax.Management.Relation
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Management.Relation
         /// Converter from <see cref="Javax.Management.Relation.RelationService"/> to <see cref="Javax.Management.NotificationListener"/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationListener(Javax.Management.Relation.RelationService t) => t.Cast<Javax.Management.NotificationListener>();
-        
+
         #endregion
 
         #region Fields
@@ -365,7 +365,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#isActive()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void IsActive()
         {
@@ -389,7 +389,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -398,7 +398,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#purgeRelations()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void PurgeRelations()
         {
@@ -486,7 +486,7 @@ namespace Javax.Management.Relation
         {
             IExecute("updateRoleMap", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

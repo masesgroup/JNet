@@ -39,7 +39,7 @@ namespace Javax.Imageio.Stream
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Javax.Imageio.Stream
         {
             get { return IExecute<int>("getOffset"); } set { IExecute("setOffset", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

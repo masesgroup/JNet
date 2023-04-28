@@ -45,7 +45,7 @@ namespace Javax.Xml.Transform.Sax
         /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.DTDHandler"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.DTDHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.DTDHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Xml.Transform.Sax
         {
             IExecute("setResult", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

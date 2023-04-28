@@ -37,7 +37,7 @@ namespace Javax.Imageio.Stream
         /// Converter from <see cref="Javax.Imageio.Stream.ImageOutputStreamImpl"/> to <see cref="Javax.Imageio.Stream.ImageOutputStream"/>
         /// </summary>
         public static implicit operator Javax.Imageio.Stream.ImageOutputStream(Javax.Imageio.Stream.ImageOutputStreamImpl t) => t.Cast<Javax.Imageio.Stream.ImageOutputStream>();
-        
+
         #endregion
 
         #region Fields
@@ -262,7 +262,7 @@ namespace Javax.Imageio.Stream
         {
             IExecute("writeUTF", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

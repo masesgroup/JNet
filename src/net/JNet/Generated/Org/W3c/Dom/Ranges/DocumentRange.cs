@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Ranges
         {
             get { return IExecute<Org.W3c.Dom.Ranges.Range>("createRange"); }
         }
-        
+
         #endregion
 
         #region Nested classes

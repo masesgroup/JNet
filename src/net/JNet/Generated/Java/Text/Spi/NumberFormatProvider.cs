@@ -81,7 +81,7 @@ namespace Java.Text.Spi
         {
             return IExecute<Java.Text.NumberFormat>("getPercentInstance", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

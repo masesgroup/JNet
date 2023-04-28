@@ -46,7 +46,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.MenuShortcut"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.MenuShortcut t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Awt
         {
             get { return IExecute<bool>("usesShiftModifier"); }
         }
-        
+
         #endregion
 
         #region Nested classes

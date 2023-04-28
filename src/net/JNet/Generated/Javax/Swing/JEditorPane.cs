@@ -56,7 +56,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -72,7 +72,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS"/>
         /// </summary>
         public static string W3C_LENGTH_UNITS { get { return SGetField<string>(LocalClazz, "W3C_LENGTH_UNITS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -113,7 +113,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "registerEditorKitForContentType", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -223,7 +223,7 @@ namespace Javax.Swing
         {
             IExecute("setPage", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

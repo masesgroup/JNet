@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Vector t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -220,7 +220,7 @@ namespace Java.Util
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -260,7 +260,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -280,7 +280,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Util.Vector"/>
         /// </summary>
         public static implicit operator Java.Util.Vector(Java.Util.Vector<E> t) => t.Cast<Java.Util.Vector>();
-        
+
         #endregion
 
         #region Fields
@@ -430,7 +430,7 @@ namespace Java.Util
         {
             IExecute("trimToSize");
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -51,13 +51,13 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures.Builder BuilderMethod()
         {
             return SExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -70,7 +70,7 @@ namespace Javax.Xml.Catalog
         {
             return IExecute<string>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -111,7 +111,11 @@ namespace Javax.Xml.Catalog
             {
                 return IExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>("with", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -146,7 +150,7 @@ namespace Javax.Xml.Catalog
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#RESOLVE"/>
             /// </summary>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature RESOLVE { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "RESOLVE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -166,7 +170,7 @@ namespace Javax.Xml.Catalog
             {
                 return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -184,14 +188,18 @@ namespace Javax.Xml.Catalog
             {
                 get { return IExecute<string>("getPropertyName"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

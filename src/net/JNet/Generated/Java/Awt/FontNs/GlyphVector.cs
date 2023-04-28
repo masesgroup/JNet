@@ -37,7 +37,7 @@ namespace Java.Awt.FontNs
         /// Converter from <see cref="Java.Awt.FontNs.GlyphVector"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.GlyphVector t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_RUN_RTL"/>
         /// </summary>
         public static int FLAG_RUN_RTL { get { return SGetField<int>(LocalClazz, "FLAG_RUN_RTL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -301,7 +301,7 @@ namespace Java.Awt.FontNs
         {
             return IExecute<Java.Awt.Shape>("getGlyphOutline", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

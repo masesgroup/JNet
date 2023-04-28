@@ -54,7 +54,7 @@ namespace Javax.Imageio.Metadata
         {
             return IExecute<bool>("activate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

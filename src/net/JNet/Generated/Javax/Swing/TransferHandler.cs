@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.TransferHandler"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.TransferHandler t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE"/>
         /// </summary>
         public static int NONE { get { return SGetField<int>(LocalClazz, "NONE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -94,7 +94,7 @@ namespace Javax.Swing
         {
             get { return SExecute<Javax.Swing.Action>(LocalClazz, "getPasteAction"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -189,7 +189,7 @@ namespace Javax.Swing
         {
             IExecute("exportToClipboard", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -220,7 +220,11 @@ namespace Javax.Swing
             {
                 get { return IExecute<Java.Awt.Point>("getDropPoint"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -240,7 +244,7 @@ namespace Javax.Swing
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -329,14 +333,18 @@ namespace Javax.Swing
             {
                 IExecute("setShowDropLocation", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

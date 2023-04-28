@@ -46,7 +46,7 @@ namespace Javax.Accessibility
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -150,7 +150,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#SUBWINDOW_OF_PROPERTY"/>
         /// </summary>
         public static string SUBWINDOW_OF_PROPERTY { get { return SGetField<string>(LocalClazz, "SUBWINDOW_OF_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -188,7 +188,7 @@ namespace Javax.Accessibility
         {
             IExecute("setTarget", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

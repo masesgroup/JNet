@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArraySet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.CopyOnWriteArraySet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArraySet{E}"/> to <see cref="Java.Util.Concurrent.CopyOnWriteArraySet"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CopyOnWriteArraySet(Java.Util.Concurrent.CopyOnWriteArraySet<E> t) => t.Cast<Java.Util.Concurrent.CopyOnWriteArraySet>();
-        
+
         #endregion
 
         #region Fields

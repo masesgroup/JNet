@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent.Locks
         {
             IExecute("acquireSharedInterruptibly", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -236,7 +236,7 @@ namespace Java.Util.Concurrent.Locks
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -248,7 +248,7 @@ namespace Java.Util.Concurrent.Locks
             /// Converter from <see cref="Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html#await()"/>
             /// </summary>
-            
+
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void Await()
             {
@@ -321,14 +321,18 @@ namespace Java.Util.Concurrent.Locks
             {
                 IExecute("signalAll");
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

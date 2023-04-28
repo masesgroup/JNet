@@ -59,7 +59,7 @@ namespace Javax.Management
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -71,7 +71,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.ObjectName"/> to <see cref="Javax.Management.QueryExp"/>
         /// </summary>
         public static implicit operator Javax.Management.QueryExp(Javax.Management.ObjectName t) => t.Cast<Javax.Management.QueryExp>();
-        
+
         #endregion
 
         #region Fields
@@ -79,7 +79,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#WILDCARD"/>
         /// </summary>
         public static Javax.Management.ObjectName WILDCARD { get { return SGetField<Javax.Management.ObjectName>(LocalClazz, "WILDCARD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -144,7 +144,7 @@ namespace Javax.Management
         {
             return SExecute<Javax.Management.ObjectName>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -223,7 +223,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyValuePattern()
         {
@@ -273,7 +273,7 @@ namespace Javax.Management
         {
             IExecute("setMBeanServer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

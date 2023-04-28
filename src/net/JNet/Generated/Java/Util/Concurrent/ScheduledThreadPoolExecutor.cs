@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ScheduledThreadPoolExecutor"/> to <see cref="Java.Util.Concurrent.ScheduledExecutorService"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledExecutorService(Java.Util.Concurrent.ScheduledThreadPoolExecutor t) => t.Cast<Java.Util.Concurrent.ScheduledExecutorService>();
-        
+
         #endregion
 
         #region Fields
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

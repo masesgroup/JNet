@@ -57,7 +57,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_TRANSACTION"/>
         /// </summary>
         public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_VALID_TRANSACTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -77,7 +77,7 @@ namespace Java.Sql
         {
             return SExecute<Java.Sql.RowIdLifetime>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

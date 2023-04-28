@@ -65,7 +65,7 @@ namespace Java.Nio.File.Attribute
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("lookupPrincipalByName", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -57,7 +57,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.OptionalLong>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -120,7 +120,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow()"/>
         /// </summary>
-        
+
         /// <returns><see cref="long"/></returns>
         public long OrElseThrow()
         {
@@ -143,7 +143,7 @@ namespace Java.Util
         {
             IExecute("ifPresentOrElse", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

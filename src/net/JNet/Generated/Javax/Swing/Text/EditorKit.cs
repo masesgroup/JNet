@@ -41,7 +41,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.EditorKit"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.EditorKit t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -154,7 +154,7 @@ namespace Javax.Swing.Text
         {
             IExecute("install", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

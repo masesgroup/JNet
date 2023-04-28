@@ -54,7 +54,7 @@ namespace Javax.Management.Remote
         {
             return IExecute<Javax.Security.Auth.Subject>("authenticate", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

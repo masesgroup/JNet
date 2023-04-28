@@ -55,7 +55,7 @@ namespace Java.Util.Function
         {
             return IExecute<long>("applyAsLong", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -78,7 +78,7 @@ namespace Java.Util.Function
         /// Converter from <see cref="Java.Util.Function.ToLongBiFunction{T, U}"/> to <see cref="Java.Util.Function.ToLongBiFunction"/>
         /// </summary>
         public static implicit operator Java.Util.Function.ToLongBiFunction(Java.Util.Function.ToLongBiFunction<T, U> t) => t.Cast<Java.Util.Function.ToLongBiFunction>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Java.Util.Function
         {
             return IExecute<long>("applyAsLong", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

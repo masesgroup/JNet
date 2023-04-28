@@ -41,7 +41,7 @@ namespace Javax.Sql.Rowset
         /// Converter from <see cref="Javax.Sql.Rowset.JdbcRowSet"/> to <see cref="Javax.Sql.Rowset.Joinable"/>
         /// </summary>
         public static implicit operator Javax.Sql.Rowset.Joinable(Javax.Sql.Rowset.JdbcRowSet t) => t.Cast<Javax.Sql.Rowset.Joinable>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#commit()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -86,7 +86,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -101,7 +101,7 @@ namespace Javax.Sql.Rowset
         {
             IExecute("rollback", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -129,7 +129,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#YEAR_FIELD"/>
         /// </summary>
         public static int YEAR_FIELD { get { return SGetField<int>(LocalClazz, "YEAR_FIELD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -227,7 +227,7 @@ namespace Java.Text
         {
             return SExecute<Java.Text.DateFormat>(LocalClazz, "getTimeInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -307,7 +307,7 @@ namespace Java.Text
         {
             IExecute("setLenient", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -395,7 +395,7 @@ namespace Java.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#YEAR"/>
             /// </summary>
             public static Java.Text.DateFormat.Field YEAR { get { return SGetField<Java.Text.DateFormat.Field>(LocalClazz, "YEAR"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -408,7 +408,7 @@ namespace Java.Text
             {
                 return SExecute<Java.Text.DateFormat.Field>(LocalClazz, "ofCalendarField", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
@@ -419,14 +419,18 @@ namespace Java.Text
             {
                 get { return IExecute<int>("getCalendarField"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

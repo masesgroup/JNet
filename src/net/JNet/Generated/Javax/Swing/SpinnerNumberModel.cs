@@ -62,7 +62,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -106,7 +106,7 @@ namespace Javax.Swing
         {
             get { return IExecute<Java.Lang.Number>("getStepSize"); } set { IExecute("setStepSize", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

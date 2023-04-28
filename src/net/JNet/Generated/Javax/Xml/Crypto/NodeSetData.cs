@@ -37,7 +37,7 @@ namespace Javax.Xml.Crypto
         /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData"/> to <see cref="Javax.Xml.Crypto.Data"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.Data>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<Java.Util.Iterator>("iterator"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -83,7 +83,7 @@ namespace Javax.Xml.Crypto
         /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData{T}"/> to <see cref="Javax.Xml.Crypto.NodeSetData"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.NodeSetData(Javax.Xml.Crypto.NodeSetData<T> t) => t.Cast<Javax.Xml.Crypto.NodeSetData>();
-        
+
         #endregion
 
         #region Fields
@@ -102,7 +102,7 @@ namespace Javax.Xml.Crypto
         {
             get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
         }
-        
+
         #endregion
 
         #region Nested classes

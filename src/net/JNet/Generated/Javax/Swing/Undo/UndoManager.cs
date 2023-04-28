@@ -37,7 +37,7 @@ namespace Javax.Swing.Undo
         /// Converter from <see cref="Javax.Swing.Undo.UndoManager"/> to <see cref="Javax.Swing.Event.UndoableEditListener"/>
         /// </summary>
         public static implicit operator Javax.Swing.Event.UndoableEditListener(Javax.Swing.Undo.UndoManager t) => t.Cast<Javax.Swing.Event.UndoableEditListener>();
-        
+
         #endregion
 
         #region Fields
@@ -88,14 +88,14 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoOrRedo()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
         /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void UndoOrRedo()
         {
             IExecute("undoOrRedo");
         }
-        
+
         #endregion
 
         #region Nested classes

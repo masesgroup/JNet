@@ -37,7 +37,7 @@ namespace Javax.Annotation.Processing
         /// Converter from <see cref="Javax.Annotation.Processing.AbstractProcessor"/> to <see cref="Javax.Annotation.Processing.Processor"/>
         /// </summary>
         public static implicit operator Javax.Annotation.Processing.Processor(Javax.Annotation.Processing.AbstractProcessor t) => t.Cast<Javax.Annotation.Processing.Processor>();
-        
+
         #endregion
 
         #region Fields
@@ -100,7 +100,7 @@ namespace Javax.Annotation.Processing
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

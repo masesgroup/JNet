@@ -38,7 +38,7 @@ namespace Java.Lang.Management
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Java.Lang.Management
         {
             return SExecute<Java.Lang.Management.LockInfo>(LocalClazz, "from", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -77,7 +77,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<int>("getIdentityHashCode"); }
         }
-        
+
         #endregion
 
         #region Nested classes

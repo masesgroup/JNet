@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
         /// Converter from <see cref="Javax.Swing.Text.Html.HTMLEditorKit"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.Html.HTMLEditorKit t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_RIGHT"/>
         /// </summary>
         public static string PARA_INDENT_RIGHT { get { return SGetField<string>(LocalClazz, "PARA_INDENT_RIGHT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -159,7 +159,7 @@ namespace Javax.Swing.Text.Html
         {
             IExecute("setAutoFormSubmission", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -175,7 +175,7 @@ namespace Javax.Swing.Text.Html
             /// Converter from <see cref="Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory"/> to <see cref="Javax.Swing.Text.ViewFactory"/>
             /// </summary>
             public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory t) => t.Cast<Javax.Swing.Text.ViewFactory>();
-            
+
             #endregion
 
             #region Fields
@@ -196,7 +196,11 @@ namespace Javax.Swing.Text.Html
             {
                 return IExecute<Javax.Swing.Text.View>("create", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -215,7 +219,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -231,6 +235,10 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -266,7 +274,7 @@ namespace Javax.Swing.Text.Html
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -282,6 +290,10 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -320,7 +332,11 @@ namespace Javax.Swing.Text.Html
             {
                 IExecute("parse", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -343,7 +359,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#IMPLIED"/>
             /// </summary>
             public static object IMPLIED { get { return SGetField(LocalClazz, "IMPLIED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -354,7 +370,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#flush()"/>
             /// </summary>
-            
+
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void Flush()
             {
@@ -424,14 +440,18 @@ namespace Javax.Swing.Text.Html
             {
                 IExecute("handleText", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

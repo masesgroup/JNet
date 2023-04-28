@@ -38,7 +38,7 @@ namespace Java.Beans
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.VetoableChangeListenerProxy"/> to <see cref="Java.Beans.VetoableChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.VetoableChangeListenerProxy t) => t.Cast<Java.Beans.VetoableChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -74,7 +74,7 @@ namespace Java.Beans
         {
             IExecute("vetoableChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

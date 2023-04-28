@@ -48,7 +48,7 @@ namespace Javax.Management
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.MBeanServerInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.MBeanServerInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -76,7 +76,7 @@ namespace Javax.Management
         {
             return SExecute<T>(LocalClazz, "newProxyInstance", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -113,7 +113,7 @@ namespace Javax.Management
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

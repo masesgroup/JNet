@@ -108,7 +108,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<bool>("getWantClientAuth"); } set { IExecute("setWantClientAuth", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

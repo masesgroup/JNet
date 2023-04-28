@@ -37,7 +37,7 @@ namespace Javax.Script
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Script
         /// Converter from <see cref="Javax.Script.SimpleBindings"/> to <see cref="Javax.Script.Bindings"/>
         /// </summary>
         public static implicit operator Javax.Script.Bindings(Javax.Script.SimpleBindings t) => t.Cast<Javax.Script.Bindings>();
-        
+
         #endregion
 
         #region Fields
@@ -163,7 +163,7 @@ namespace Javax.Script
         {
             IExecute("putAll", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

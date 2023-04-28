@@ -49,7 +49,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_RASTER_SCREEN"/>
         /// </summary>
         public static int TYPE_RASTER_SCREEN { get { return SGetField<int>(LocalClazz, "TYPE_RASTER_SCREEN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -145,7 +145,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -173,7 +173,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#TRANSLUCENT"/>
             /// </summary>
             public static Java.Awt.GraphicsDevice.WindowTranslucency TRANSLUCENT { get { return SGetField<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalClazz, "TRANSLUCENT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -193,10 +193,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -204,7 +208,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

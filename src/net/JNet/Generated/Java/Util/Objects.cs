@@ -208,7 +208,7 @@ namespace Java.Util
         {
             return SExecute<string>(LocalClazz, "toString", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

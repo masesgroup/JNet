@@ -59,7 +59,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getDateTime"); } set { IExecute("setDateTime", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

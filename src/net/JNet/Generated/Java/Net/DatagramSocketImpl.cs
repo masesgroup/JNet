@@ -37,7 +37,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.DatagramSocketImpl"/> to <see cref="Java.Net.SocketOptions"/>
         /// </summary>
         public static implicit operator Java.Net.SocketOptions(Java.Net.DatagramSocketImpl t) => t.Cast<Java.Net.SocketOptions>();
-        
+
         #endregion
 
         #region Fields

@@ -46,7 +46,7 @@ namespace Javax.Security.Auth
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

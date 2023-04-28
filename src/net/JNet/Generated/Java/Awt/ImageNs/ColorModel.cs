@@ -37,7 +37,7 @@ namespace Java.Awt.ImageNs
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.ColorModel"/> to <see cref="Java.Awt.Transparency"/>
         /// </summary>
         public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.ColorModel t) => t.Cast<Java.Awt.Transparency>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Awt.ImageNs
         {
             get { return SExecute<Java.Awt.ImageNs.ColorModel>(LocalClazz, "getRGBdefault"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -392,7 +392,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute("getDataElements", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

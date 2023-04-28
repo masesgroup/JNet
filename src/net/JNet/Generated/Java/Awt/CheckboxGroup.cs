@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.CheckboxGroup"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.CheckboxGroup t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -56,7 +56,7 @@ namespace Java.Awt
         {
             get { return IExecute<Java.Awt.Checkbox>("getSelectedCheckbox"); } set { IExecute("setSelectedCheckbox", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

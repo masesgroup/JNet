@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ForkJoinTask t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -138,7 +138,7 @@ namespace Java.Util.Concurrent
         {
             if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -315,7 +315,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("reinitialize");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -346,7 +346,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask{V}"/> to <see cref="Java.Util.Concurrent.ForkJoinTask"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ForkJoinTask(Java.Util.Concurrent.ForkJoinTask<V> t) => t.Cast<Java.Util.Concurrent.ForkJoinTask>();
-        
+
         #endregion
 
         #region Fields
@@ -443,7 +443,7 @@ namespace Java.Util.Concurrent
         {
             if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -555,7 +555,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -620,7 +620,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("reinitialize");
         }
-        
+
         #endregion
 
         #region Nested classes

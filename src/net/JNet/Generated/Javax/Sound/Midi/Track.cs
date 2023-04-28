@@ -87,7 +87,7 @@ namespace Javax.Sound.Midi
         {
             return IExecute<Javax.Sound.Midi.MidiEvent>("get", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

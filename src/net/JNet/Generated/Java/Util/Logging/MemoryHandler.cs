@@ -39,7 +39,7 @@ namespace Java.Util.Logging
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Util.Logging
         {
             IExecute("push");
         }
-        
+
         #endregion
 
         #region Nested classes

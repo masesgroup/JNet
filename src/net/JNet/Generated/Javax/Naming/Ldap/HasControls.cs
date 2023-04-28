@@ -52,7 +52,7 @@ namespace Javax.Naming.Ldap
         {
             get { return IExecuteArray<Javax.Naming.Ldap.Control>("getControls"); }
         }
-        
+
         #endregion
 
         #region Nested classes

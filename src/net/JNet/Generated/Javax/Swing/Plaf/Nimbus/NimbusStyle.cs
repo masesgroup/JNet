@@ -61,7 +61,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#SMALL_KEY"/>
         /// </summary>
         public static string SMALL_KEY { get { return SGetField<string>(LocalClazz, "SMALL_KEY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -96,7 +96,7 @@ namespace Javax.Swing.Plaf.Nimbus
         {
             return IExecute<Javax.Swing.Painter<object>>("getForegroundPainter", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

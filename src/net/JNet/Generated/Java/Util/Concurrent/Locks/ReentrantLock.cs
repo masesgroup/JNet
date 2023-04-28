@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent.Locks
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent.Locks
         /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantLock"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantLock t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -122,7 +122,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
         {
@@ -167,7 +167,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#lockInterruptibly()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
         {
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent.Locks
         {
             IExecute("unlock");
         }
-        
+
         #endregion
 
         #region Nested classes

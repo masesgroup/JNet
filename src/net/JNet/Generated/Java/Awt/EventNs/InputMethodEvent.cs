@@ -67,7 +67,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED"/>
         /// </summary>
         public static int INPUT_METHOD_TEXT_CHANGED { get { return SGetField<int>(LocalClazz, "INPUT_METHOD_TEXT_CHANGED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -148,7 +148,7 @@ namespace Java.Awt.EventNs
         {
             IExecute("consume");
         }
-        
+
         #endregion
 
         #region Nested classes

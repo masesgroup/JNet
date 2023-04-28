@@ -41,7 +41,7 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#CREDENTIALS"/>
         /// </summary>
         public static string CREDENTIALS { get { return SGetField<string>(LocalClazz, "CREDENTIALS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -86,7 +86,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -95,7 +95,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
@@ -130,7 +130,7 @@ namespace Javax.Management.Remote
         {
             IExecute("removeConnectionNotificationListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

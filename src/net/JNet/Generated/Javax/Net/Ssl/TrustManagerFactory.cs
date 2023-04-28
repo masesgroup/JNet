@@ -81,7 +81,7 @@ namespace Javax.Net.Ssl
         {
             return SExecute<Javax.Net.Ssl.TrustManagerFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -124,7 +124,7 @@ namespace Javax.Net.Ssl
         {
             IExecute("init", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

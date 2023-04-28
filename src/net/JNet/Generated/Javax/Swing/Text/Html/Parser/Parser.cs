@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html.Parser
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// Converter from <see cref="Javax.Swing.Text.Html.Parser.Parser"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.Parser t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html.Parser
         {
             IExecute("parse", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

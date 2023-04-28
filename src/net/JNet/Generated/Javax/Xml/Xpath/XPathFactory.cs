@@ -45,7 +45,7 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_PROPERTY_NAME"/>
         /// </summary>
         public static string DEFAULT_PROPERTY_NAME { get { return SGetField<string>(LocalClazz, "DEFAULT_PROPERTY_NAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -59,7 +59,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewInstance()
         {
@@ -87,7 +87,7 @@ namespace Javax.Xml.Xpath
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalClazz, "newInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -143,7 +143,7 @@ namespace Javax.Xml.Xpath
         {
             IExecute("setXPathVariableResolver", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

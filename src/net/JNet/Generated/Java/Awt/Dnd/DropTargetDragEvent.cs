@@ -40,7 +40,7 @@ namespace Java.Awt.Dnd
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -122,7 +122,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("rejectDrag");
         }
-        
+
         #endregion
 
         #region Nested classes

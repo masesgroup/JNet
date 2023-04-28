@@ -37,7 +37,7 @@ namespace Org.Xml.Sax.Ext
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Org.Xml.Sax.Ext
         /// Converter from <see cref="Org.Xml.Sax.Ext.Attributes2Impl"/> to <see cref="Org.Xml.Sax.Ext.Attributes2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Attributes2(Org.Xml.Sax.Ext.Attributes2Impl t) => t.Cast<Org.Xml.Sax.Ext.Attributes2>();
-        
+
         #endregion
 
         #region Fields
@@ -131,7 +131,7 @@ namespace Org.Xml.Sax.Ext
         {
             IExecute("setSpecified", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

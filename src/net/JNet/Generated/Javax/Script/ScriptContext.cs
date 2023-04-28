@@ -45,7 +45,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#GLOBAL_SCOPE"/>
         /// </summary>
         public static int GLOBAL_SCOPE { get { return SGetField<int>(LocalClazz, "GLOBAL_SCOPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -147,7 +147,7 @@ namespace Javax.Script
         {
             IExecute("setBindings", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

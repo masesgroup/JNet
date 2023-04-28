@@ -38,7 +38,7 @@ namespace Java.Lang.Ref
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -78,7 +78,7 @@ namespace Java.Lang.Ref
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,7 +86,7 @@ namespace Java.Lang.Ref
         /// Converter from <see cref="Java.Lang.Ref.PhantomReference{T}"/> to <see cref="Java.Lang.Ref.PhantomReference"/>
         /// </summary>
         public static implicit operator Java.Lang.Ref.PhantomReference(Java.Lang.Ref.PhantomReference<T> t) => t.Cast<Java.Lang.Ref.PhantomReference>();
-        
+
         #endregion
 
         #region Fields

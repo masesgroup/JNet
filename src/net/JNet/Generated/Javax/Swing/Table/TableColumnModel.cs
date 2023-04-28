@@ -169,7 +169,7 @@ namespace Javax.Swing.Table
         {
             IExecute("removeColumnModelListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

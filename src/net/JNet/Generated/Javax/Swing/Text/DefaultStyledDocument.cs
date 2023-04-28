@@ -46,7 +46,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -54,7 +54,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.DefaultStyledDocument"/> to <see cref="Javax.Swing.Text.StyledDocument"/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.StyledDocument(Javax.Swing.Text.DefaultStyledDocument t) => t.Cast<Javax.Swing.Text.StyledDocument>();
-        
+
         #endregion
 
         #region Fields
@@ -62,7 +62,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#BUFFER_SIZE_DEFAULT"/>
         /// </summary>
         public static int BUFFER_SIZE_DEFAULT { get { return SGetField<int>(LocalClazz, "BUFFER_SIZE_DEFAULT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -188,7 +188,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setParagraphAttributes", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -206,7 +206,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -222,6 +222,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -242,7 +246,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -250,7 +254,7 @@ namespace Javax.Swing.Text
             /// Converter from <see cref="Javax.Swing.Text.DefaultStyledDocument.ElementBuffer"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultStyledDocument.ElementBuffer t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -310,7 +314,11 @@ namespace Javax.Swing.Text
             {
                 IExecute("remove", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -352,7 +360,7 @@ namespace Javax.Swing.Text
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -388,7 +396,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType"/>
             /// </summary>
             public static short StartTagType { get { return SGetField<short>(LocalClazz, "StartTagType"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -438,14 +446,18 @@ namespace Javax.Swing.Text
             {
                 get { return IExecute<short>("getType"); } set { IExecute("setType", value); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

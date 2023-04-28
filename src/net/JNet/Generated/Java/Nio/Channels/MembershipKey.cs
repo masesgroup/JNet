@@ -106,7 +106,7 @@ namespace Java.Nio.Channels
         {
             IExecute("drop");
         }
-        
+
         #endregion
 
         #region Nested classes

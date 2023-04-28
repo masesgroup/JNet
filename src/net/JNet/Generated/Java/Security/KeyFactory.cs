@@ -74,7 +74,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.KeyFactory>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -133,7 +133,7 @@ namespace Java.Security
         {
             return IExecute<Java.Security.PublicKey>("generatePublic", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

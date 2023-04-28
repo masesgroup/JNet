@@ -59,7 +59,7 @@ namespace Org.W3c.Dom.Ls
         {
             get { return IExecute<Org.W3c.Dom.Document>("getNewDocument"); }
         }
-        
+
         #endregion
 
         #region Nested classes

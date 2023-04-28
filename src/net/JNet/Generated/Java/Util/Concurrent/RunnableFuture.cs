@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture"/> to <see cref="Java.Util.Concurrent.Future"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Util.Concurrent.Future>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture{V}"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableFuture<V> t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes

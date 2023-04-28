@@ -66,7 +66,7 @@ namespace Javax.Imageio
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadata>("convertStreamMetadata", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

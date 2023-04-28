@@ -55,7 +55,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -63,7 +63,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.Frame"/> to <see cref="Java.Awt.MenuContainer"/>
         /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.Frame t) => t.Cast<Java.Awt.MenuContainer>();
-        
+
         #endregion
 
         #region Fields
@@ -87,7 +87,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL"/>
         /// </summary>
         public static int NORMAL { get { return SGetField<int>(LocalClazz, "NORMAL"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -98,7 +98,7 @@ namespace Java.Awt
         {
             get { return SExecuteArray<Java.Awt.Frame>(LocalClazz, "getFrames"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -174,7 +174,7 @@ namespace Java.Awt
         {
             IExecute("setUndecorated", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

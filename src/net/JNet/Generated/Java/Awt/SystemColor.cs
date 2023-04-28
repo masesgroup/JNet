@@ -249,7 +249,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemColor.html#windowText"/>
         /// </summary>
         public static Java.Awt.SystemColor windowText { get { return SGetField<Java.Awt.SystemColor>(LocalClazz, "windowText"); } }
-        
+
         #endregion
 
         #region Static methods

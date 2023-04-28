@@ -146,7 +146,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.BlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.BlockingQueue<E> t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -282,7 +282,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

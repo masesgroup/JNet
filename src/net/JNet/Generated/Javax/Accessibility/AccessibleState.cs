@@ -153,7 +153,7 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#VISIBLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState VISIBLE { get { return SGetField<Javax.Accessibility.AccessibleState>(LocalClazz, "VISIBLE"); } }
-        
+
         #endregion
 
         #region Static methods

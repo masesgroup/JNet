@@ -66,7 +66,7 @@ namespace Javax.Management
         {
             IExecute("setMBeanServer", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

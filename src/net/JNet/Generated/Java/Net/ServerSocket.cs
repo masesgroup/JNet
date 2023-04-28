@@ -59,7 +59,7 @@ namespace Java.Net
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -67,7 +67,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.ServerSocket"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.ServerSocket t) => t.Cast<Java.Io.Closeable>();
-        
+
         #endregion
 
         #region Fields
@@ -84,7 +84,7 @@ namespace Java.Net
         {
             SExecute(LocalClazz, "setSocketFactory", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -208,7 +208,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#close()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -224,7 +224,7 @@ namespace Java.Net
         {
             IExecute("setPerformancePreferences", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -94,7 +94,7 @@ namespace Javax.Swing.Text
         {
             IExecute("setResolveParent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

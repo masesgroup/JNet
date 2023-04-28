@@ -53,7 +53,7 @@ namespace Java.Util
         {
             IExecute("forEachRemaining", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -115,7 +115,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -180,7 +184,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -245,14 +253,18 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -271,7 +283,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.PrimitiveIterator{T, T_CONS}"/> to <see cref="Java.Util.PrimitiveIterator"/>
         /// </summary>
         public static implicit operator Java.Util.PrimitiveIterator(Java.Util.PrimitiveIterator<T, T_CONS> t) => t.Cast<Java.Util.PrimitiveIterator>();
-        
+
         #endregion
 
         #region Fields
@@ -291,7 +303,7 @@ namespace Java.Util
         {
             IExecute("forEachRemaining", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

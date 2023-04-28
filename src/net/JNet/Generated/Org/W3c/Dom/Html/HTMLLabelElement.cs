@@ -66,7 +66,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<string>("getHtmlFor"); } set { IExecute("setHtmlFor", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

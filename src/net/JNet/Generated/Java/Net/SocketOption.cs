@@ -59,7 +59,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Lang.Class>("type"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -82,7 +82,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.SocketOption{T}"/> to <see cref="Java.Net.SocketOption"/>
         /// </summary>
         public static implicit operator Java.Net.SocketOption(Java.Net.SocketOption<T> t) => t.Cast<Java.Net.SocketOption>();
-        
+
         #endregion
 
         #region Fields
@@ -108,7 +108,7 @@ namespace Java.Net
         {
             get { return IExecute<Java.Lang.Class>("type"); }
         }
-        
+
         #endregion
 
         #region Nested classes

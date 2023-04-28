@@ -61,7 +61,7 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE"/>
         /// </summary>
         public static int WRITE_FAILURE { get { return SGetField<int>(LocalClazz, "WRITE_FAILURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -79,7 +79,7 @@ namespace Java.Util.Logging
         {
             IExecute("error", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

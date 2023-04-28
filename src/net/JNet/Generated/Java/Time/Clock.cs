@@ -121,7 +121,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Clock>(LocalClazz, "tickSeconds", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -155,7 +155,7 @@ namespace Java.Time
         {
             return IExecute<Java.Time.Clock>("withZone", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

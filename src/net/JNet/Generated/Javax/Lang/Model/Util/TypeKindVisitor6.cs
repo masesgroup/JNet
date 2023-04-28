@@ -165,7 +165,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute("visitPrimitiveAsShort", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -188,7 +188,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.TypeKindVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.TypeKindVisitor6"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.TypeKindVisitor6(Javax.Lang.Model.Util.TypeKindVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.TypeKindVisitor6>();
-        
+
         #endregion
 
         #region Fields
@@ -320,7 +320,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<R>("visitPrimitiveAsShort", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

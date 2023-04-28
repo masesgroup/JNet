@@ -80,7 +80,7 @@ namespace Org.W3c.Dom
         {
             get { return IExecute<Org.W3c.Dom.Element>("getPreviousElementSibling"); }
         }
-        
+
         #endregion
 
         #region Nested classes

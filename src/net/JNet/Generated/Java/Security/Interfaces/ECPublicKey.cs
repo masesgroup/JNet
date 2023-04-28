@@ -41,7 +41,7 @@ namespace Java.Security.Interfaces
         /// Converter from <see cref="Java.Security.Interfaces.ECPublicKey"/> to <see cref="Java.Security.Interfaces.ECKey"/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Java.Security.Interfaces
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -64,7 +64,7 @@ namespace Java.Security.Interfaces
         {
             get { return IExecute<Java.Security.Spec.ECPoint>("getW"); }
         }
-        
+
         #endregion
 
         #region Nested classes

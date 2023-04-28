@@ -69,7 +69,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
         public static int SUBSIZED { get { return SGetField<int>(LocalClazz, "SUBSIZED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -138,7 +138,7 @@ namespace Java.Util
         {
             IExecute("forEachRemaining", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -220,7 +220,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -305,7 +309,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -390,7 +398,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -441,7 +453,11 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -460,7 +476,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.Spliterator.OfPrimitive{T, T_CONS, T_SPLITR}"/> to <see cref="Java.Util.Spliterator.OfPrimitive"/>
             /// </summary>
             public static implicit operator Java.Util.Spliterator.OfPrimitive(Java.Util.Spliterator.OfPrimitive<T, T_CONS, T_SPLITR> t) => t.Cast<Java.Util.Spliterator.OfPrimitive>();
-            
+
             #endregion
 
             #region Fields
@@ -496,14 +512,18 @@ namespace Java.Util
             {
                 IExecute("forEachRemaining", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class
@@ -522,7 +542,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Spliterator{T}"/> to <see cref="Java.Util.Spliterator"/>
         /// </summary>
         public static implicit operator Java.Util.Spliterator(Java.Util.Spliterator<T> t) => t.Cast<Java.Util.Spliterator>();
-        
+
         #endregion
 
         #region Fields
@@ -558,7 +578,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
         public static int SUBSIZED { get { return SGetField<int>(LocalClazz, "SUBSIZED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -627,7 +647,7 @@ namespace Java.Util
         {
             IExecute("forEachRemaining", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

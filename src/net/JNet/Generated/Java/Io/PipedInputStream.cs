@@ -56,7 +56,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -81,7 +81,7 @@ namespace Java.Io
         {
             IExecute("connect", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

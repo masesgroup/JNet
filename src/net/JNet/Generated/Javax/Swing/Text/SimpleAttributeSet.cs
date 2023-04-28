@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing.Text
         /// Converter from <see cref="Javax.Swing.Text.SimpleAttributeSet"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#EMPTY"/>
         /// </summary>
         public static Javax.Swing.Text.AttributeSet EMPTY { get { return SGetField<Javax.Swing.Text.AttributeSet>(LocalClazz, "EMPTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -191,7 +191,7 @@ namespace Javax.Swing.Text
         {
             IExecute("removeAttributes", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

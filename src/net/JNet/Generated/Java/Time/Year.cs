@@ -49,7 +49,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Year"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Year t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MIN_VALUE"/>
         /// </summary>
         public static int MIN_VALUE { get { return SGetField<int>(LocalClazz, "MIN_VALUE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -86,7 +86,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Now()
         {
@@ -138,7 +138,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Year>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -186,7 +186,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#isLeap()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLeap()
         {
@@ -403,7 +403,7 @@ namespace Java.Time
         {
             return IExecute<long>("until", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

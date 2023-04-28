@@ -49,7 +49,7 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Instant"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Instant t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MIN"/>
         /// </summary>
         public static Java.Time.Instant MIN { get { return SGetField<Java.Time.Instant>(LocalClazz, "MIN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -81,7 +81,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now()
         {
@@ -133,7 +133,7 @@ namespace Java.Time
         {
             return SExecute<Java.Time.Instant>(LocalClazz, "parse", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -405,7 +405,7 @@ namespace Java.Time
         {
             return IExecute<long>("until", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

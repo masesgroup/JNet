@@ -49,7 +49,7 @@ namespace Javax.Crypto.Spec
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,7 +61,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.SecretKeySpec"/> to <see cref="Javax.Crypto.SecretKey"/>
         /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Crypto.Spec.SecretKeySpec t) => t.Cast<Javax.Crypto.SecretKey>();
-        
+
         #endregion
 
         #region Fields
@@ -94,7 +94,7 @@ namespace Javax.Crypto.Spec
         {
             get { return IExecute<string>("getFormat"); }
         }
-        
+
         #endregion
 
         #region Nested classes

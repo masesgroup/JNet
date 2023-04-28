@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterIsAcceptingJobs"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterIsAcceptingJobs t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterIsAcceptingJobs.html#NOT_ACCEPTING_JOBS"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterIsAcceptingJobs NOT_ACCEPTING_JOBS { get { return SGetField<Javax.Print.Attribute.Standard.PrinterIsAcceptingJobs>(LocalClazz, "NOT_ACCEPTING_JOBS"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -71,7 +71,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

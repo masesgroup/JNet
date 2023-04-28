@@ -157,7 +157,7 @@ namespace Java.Nio.Channels
         {
             return SExecute<Java.Nio.Channels.WritableByteChannel>(LocalClazz, "newChannel", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

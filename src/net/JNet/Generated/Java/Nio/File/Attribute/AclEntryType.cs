@@ -53,7 +53,7 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#DENY"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType DENY { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "DENY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -73,7 +73,7 @@ namespace Java.Nio.File.Attribute
         {
             return SExecute<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

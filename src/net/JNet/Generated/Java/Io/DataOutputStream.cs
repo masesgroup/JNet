@@ -37,7 +37,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.DataOutputStream"/> to <see cref="Java.Io.DataOutput"/>
         /// </summary>
         public static implicit operator Java.Io.DataOutput(Java.Io.DataOutputStream t) => t.Cast<Java.Io.DataOutput>();
-        
+
         #endregion
 
         #region Fields
@@ -163,7 +163,7 @@ namespace Java.Io
         {
             IExecute("writeUTF", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

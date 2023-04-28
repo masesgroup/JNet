@@ -38,7 +38,7 @@ namespace Java.Sql
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#choices"/>
         /// </summary>
         public string[] choices { get { return IGetFieldArray<string>("choices"); } set { ISetField("choices", value); } }
-        
+
         #endregion
 
         #region Static methods

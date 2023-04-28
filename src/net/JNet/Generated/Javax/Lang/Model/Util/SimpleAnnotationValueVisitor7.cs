@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7{R, P}"/> to <see cref="Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7(Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7<R, P> t) => t.Cast<Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7>();
-        
+
         #endregion
 
         #region Fields

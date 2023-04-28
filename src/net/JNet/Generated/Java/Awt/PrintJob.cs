@@ -80,7 +80,7 @@ namespace Java.Awt
         {
             IExecute("end");
         }
-        
+
         #endregion
 
         #region Nested classes

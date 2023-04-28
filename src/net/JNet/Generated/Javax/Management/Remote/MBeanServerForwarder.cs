@@ -52,7 +52,7 @@ namespace Javax.Management.Remote
         {
             get { return IExecute<Javax.Management.MBeanServer>("getMBeanServer"); } set { IExecute("setMBeanServer", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -93,7 +93,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#OBJECTNAME"/>
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType OBJECTNAME { get { return SGetField<Javax.Management.Openmbean.SimpleType>(LocalClazz, "OBJECTNAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -108,7 +108,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecute("readResolve"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -131,7 +131,7 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.SimpleType{T}"/> to <see cref="Javax.Management.Openmbean.SimpleType"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.SimpleType(Javax.Management.Openmbean.SimpleType<T> t) => t.Cast<Javax.Management.Openmbean.SimpleType>();
-        
+
         #endregion
 
         #region Fields
@@ -191,7 +191,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#OBJECTNAME"/>
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName> OBJECTNAME { get { return SGetField<Javax.Management.Openmbean.SimpleType<Javax.Management.ObjectName>>(LocalClazz, "OBJECTNAME"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -206,7 +206,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecute("readResolve"); }
         }
-        
+
         #endregion
 
         #region Nested classes

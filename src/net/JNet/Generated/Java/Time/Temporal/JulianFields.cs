@@ -49,7 +49,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#RATA_DIE"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField RATA_DIE { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalClazz, "RATA_DIE"); } }
-        
+
         #endregion
 
         #region Static methods

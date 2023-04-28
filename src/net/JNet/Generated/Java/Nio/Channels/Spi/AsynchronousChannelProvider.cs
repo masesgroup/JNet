@@ -48,7 +48,7 @@ namespace Java.Nio.Channels.Spi
         {
             get { return SExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>(LocalClazz, "provider"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -94,7 +94,7 @@ namespace Java.Nio.Channels.Spi
         {
             return IExecute<Java.Nio.Channels.AsynchronousSocketChannel>("openAsynchronousSocketChannel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -50,7 +50,7 @@ namespace Javax.Xml.Crypto
         {
             return SExecute<Javax.Xml.Crypto.KeySelector>(LocalClazz, "singletonKeySelector", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -67,7 +67,7 @@ namespace Javax.Xml.Crypto
         {
             return IExecute<Javax.Xml.Crypto.KeySelectorResult>("select", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -99,7 +99,7 @@ namespace Javax.Xml.Crypto
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY"/>
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "VERIFY"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -110,11 +110,15 @@ namespace Javax.Xml.Crypto
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

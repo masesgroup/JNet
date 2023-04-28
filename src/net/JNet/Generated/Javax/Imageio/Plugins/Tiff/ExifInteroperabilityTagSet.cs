@@ -49,7 +49,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_THM"/>
         /// </summary>
         public static string INTEROPERABILITY_INDEX_THM { get { return SGetField<string>(LocalClazz, "INTEROPERABILITY_INDEX_THM"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -60,7 +60,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

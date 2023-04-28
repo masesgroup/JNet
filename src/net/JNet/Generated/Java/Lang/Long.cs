@@ -37,7 +37,7 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Long t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -61,7 +61,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE"/>
         /// </summary>
         public static long MIN_VALUE { get { return SGetField<long>(LocalClazz, "MIN_VALUE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -438,7 +438,7 @@ namespace Java.Lang
         {
             return SExecute<long>(LocalClazz, "sum", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -460,7 +460,7 @@ namespace Java.Lang
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

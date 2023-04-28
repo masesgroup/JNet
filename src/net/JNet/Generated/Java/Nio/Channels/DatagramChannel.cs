@@ -49,7 +49,7 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.DatagramChannel"/> to <see cref="Java.Nio.Channels.MulticastChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.MulticastChannel(Java.Nio.Channels.DatagramChannel t) => t.Cast<Java.Nio.Channels.MulticastChannel>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#open()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open()
@@ -77,7 +77,7 @@ namespace Java.Nio.Channels
         {
             return SExecute<Java.Nio.Channels.DatagramChannel>(LocalClazz, "open", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -232,7 +232,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

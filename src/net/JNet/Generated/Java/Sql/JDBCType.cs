@@ -37,7 +37,7 @@ namespace Java.Sql
         /// Converter from <see cref="Java.Sql.JDBCType"/> to <see cref="Java.Sql.SQLType"/>
         /// </summary>
         public static implicit operator Java.Sql.SQLType(Java.Sql.JDBCType t) => t.Cast<Java.Sql.SQLType>();
-        
+
         #endregion
 
         #region Fields
@@ -197,7 +197,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#VARCHAR"/>
         /// </summary>
         public static Java.Sql.JDBCType VARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "VARCHAR"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -226,7 +226,7 @@ namespace Java.Sql
         {
             return SExecute<Java.Sql.JDBCType>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -251,7 +251,7 @@ namespace Java.Sql
         {
             get { return IExecute<int?>("getVendorTypeNumber"); }
         }
-        
+
         #endregion
 
         #region Nested classes

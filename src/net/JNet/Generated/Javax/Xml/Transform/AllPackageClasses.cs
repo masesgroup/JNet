@@ -31,7 +31,7 @@ namespace Javax.Xml.Transform
     /// </summary>
     public partial class ErrorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-#warning Remember to build the body class for event listener
+    #warning Remember to build the body class for event listener
 
         // TODO: complete the class
 

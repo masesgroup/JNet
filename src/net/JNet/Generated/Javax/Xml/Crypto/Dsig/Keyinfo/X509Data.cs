@@ -45,7 +45,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#TYPE"/>
         /// </summary>
         public static string TYPE { get { return SGetField<string>(LocalClazz, "TYPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -60,7 +60,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         {
             get { return IExecute<Java.Util.List>("getContent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

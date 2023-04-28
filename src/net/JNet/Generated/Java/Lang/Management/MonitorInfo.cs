@@ -40,7 +40,7 @@ namespace Java.Lang.Management
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<Java.Lang.StackTraceElement>("getLockedStackFrame"); }
         }
-        
+
         #endregion
 
         #region Nested classes

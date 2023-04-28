@@ -74,13 +74,13 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");
         }
-        
+
         #endregion
 
         #region Nested classes

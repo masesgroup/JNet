@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#USE_SELECTION"/>
         /// </summary>
         public static Javax.Swing.DropMode USE_SELECTION { get { return SGetField<Javax.Swing.DropMode>(LocalClazz, "USE_SELECTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -89,7 +89,7 @@ namespace Javax.Swing
         {
             return SExecute<Javax.Swing.DropMode>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

@@ -269,7 +269,7 @@ namespace Java.Lang
         {
             IExecute("checkWrite", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

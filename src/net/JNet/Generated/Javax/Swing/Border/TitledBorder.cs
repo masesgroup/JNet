@@ -90,7 +90,7 @@ namespace Javax.Swing.Border
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -150,7 +150,7 @@ namespace Javax.Swing.Border
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TRAILING"/>
         /// </summary>
         public static int TRAILING { get { return SGetField<int>(LocalClazz, "TRAILING"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -209,7 +209,7 @@ namespace Javax.Swing.Border
         {
             return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

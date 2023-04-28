@@ -61,7 +61,7 @@ namespace Org.W3c.Dom.Css
         {
             return IExecute<Org.W3c.Dom.Css.CSSRule>("item", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

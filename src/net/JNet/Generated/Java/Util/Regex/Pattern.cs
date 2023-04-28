@@ -37,7 +37,7 @@ namespace Java.Util.Regex
         /// Converter from <see cref="Java.Util.Regex.Pattern"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Regex.Pattern t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES"/>
         /// </summary>
         public static int UNIX_LINES { get { return SGetField<int>(LocalClazz, "UNIX_LINES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -119,7 +119,7 @@ namespace Java.Util.Regex
         {
             return SExecute<Java.Util.Regex.Pattern>(LocalClazz, "compile", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -188,7 +188,7 @@ namespace Java.Util.Regex
         {
             return IExecute<Java.Util.Stream.Stream<string>>("splitAsStream", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

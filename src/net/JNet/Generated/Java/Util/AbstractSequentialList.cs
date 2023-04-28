@@ -68,7 +68,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractSequentialList{E}"/> to <see cref="Java.Util.AbstractSequentialList"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractSequentialList(Java.Util.AbstractSequentialList<E> t) => t.Cast<Java.Util.AbstractSequentialList>();
-        
+
         #endregion
 
         #region Fields

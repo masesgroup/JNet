@@ -109,7 +109,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#TYPE_PARAMETER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind TYPE_PARAMETER { get { return SGetField<Javax.Lang.Model.Element.ElementKind>(LocalClazz, "TYPE_PARAMETER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -129,7 +129,7 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.ElementKind>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -150,13 +150,13 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
         /// </summary>
-        
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInterfaceMethod()
         {
             return IExecute<bool>("isInterface");
         }
-        
+
         #endregion
 
         #region Nested classes

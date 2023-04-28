@@ -75,7 +75,7 @@ namespace Java.Awt.Dnd
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -87,7 +87,7 @@ namespace Java.Awt.Dnd
         /// Converter from <see cref="Java.Awt.Dnd.DropTarget"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DropTarget t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -213,7 +213,7 @@ namespace Java.Awt.Dnd
         {
             IExecute("removeNotify");
         }
-        
+
         #endregion
 
         #region Nested classes

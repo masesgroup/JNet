@@ -38,7 +38,7 @@ namespace Javax.Print.Event
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Javax.Print.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#REQUIRES_ATTENTION"/>
         /// </summary>
         public static int REQUIRES_ATTENTION { get { return SGetField<int>(LocalClazz, "REQUIRES_ATTENTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -92,7 +92,7 @@ namespace Javax.Print.Event
         {
             get { return IExecute<Javax.Print.DocPrintJob>("getPrintJob"); }
         }
-        
+
         #endregion
 
         #region Nested classes

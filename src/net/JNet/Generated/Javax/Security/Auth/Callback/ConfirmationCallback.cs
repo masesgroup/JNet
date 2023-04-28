@@ -71,7 +71,7 @@ namespace Javax.Security.Auth.Callback
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.ConfirmationCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.ConfirmationCallback t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -131,7 +131,7 @@ namespace Javax.Security.Auth.Callback
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION"/>
         /// </summary>
         public static int YES_NO_OPTION { get { return SGetField<int>(LocalClazz, "YES_NO_OPTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -181,7 +181,7 @@ namespace Javax.Security.Auth.Callback
         {
             get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

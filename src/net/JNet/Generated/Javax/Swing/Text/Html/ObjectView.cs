@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

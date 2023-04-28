@@ -129,13 +129,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
         public static Java.Util.Stream.IntStream.Builder BuilderMethod()
         {
             return SExecute<Java.Util.Stream.IntStream.Builder>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -437,7 +437,7 @@ namespace Java.Util.Stream
         {
             return IExecute<Java.Util.Stream.IntStream>("takeWhile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

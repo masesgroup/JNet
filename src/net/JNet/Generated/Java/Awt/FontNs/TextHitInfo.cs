@@ -77,7 +77,7 @@ namespace Java.Awt.FontNs
         {
             return SExecute<Java.Awt.FontNs.TextHitInfo>(LocalClazz, "trailing", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -118,7 +118,7 @@ namespace Java.Awt.FontNs
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getOffsetHit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

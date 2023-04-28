@@ -41,7 +41,7 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#STANDARD"/>
         /// </summary>
         public static Java.Time.Format.DecimalStyle STANDARD { get { return SGetField<Java.Time.Format.DecimalStyle>(LocalClazz, "STANDARD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -68,7 +68,7 @@ namespace Java.Time.Format
         {
             return SExecute<Java.Time.Format.DecimalStyle>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -136,7 +136,7 @@ namespace Java.Time.Format
         {
             return IExecute<Java.Time.Format.DecimalStyle>("withZeroDigit", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

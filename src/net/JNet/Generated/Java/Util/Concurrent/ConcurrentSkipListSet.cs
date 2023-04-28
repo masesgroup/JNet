@@ -53,7 +53,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentSkipListSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet Clone()
         {
@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListSet{E}"/> to <see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentSkipListSet(Java.Util.Concurrent.ConcurrentSkipListSet<E> t) => t.Cast<Java.Util.Concurrent.ConcurrentSkipListSet>();
-        
+
         #endregion
 
         #region Fields
@@ -394,7 +394,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet<E> Clone()
         {
@@ -460,7 +460,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

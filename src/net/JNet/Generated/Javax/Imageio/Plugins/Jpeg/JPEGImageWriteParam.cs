@@ -37,7 +37,7 @@ namespace Javax.Imageio.Plugins.Jpeg
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -105,7 +105,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             IExecute("unsetEncodeTables");
         }
-        
+
         #endregion
 
         #region Nested classes

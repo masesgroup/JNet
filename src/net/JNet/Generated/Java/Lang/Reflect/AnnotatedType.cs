@@ -59,7 +59,7 @@ namespace Java.Lang.Reflect
         {
             get { return IExecute<Java.Lang.Reflect.Type>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

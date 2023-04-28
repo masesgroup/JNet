@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultButtonModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultButtonModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#SELECTED"/>
         /// </summary>
         public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -254,7 +254,7 @@ namespace Javax.Swing
         {
             IExecute("setSelected", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

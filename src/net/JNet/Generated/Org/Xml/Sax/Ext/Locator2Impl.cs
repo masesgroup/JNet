@@ -37,7 +37,7 @@ namespace Org.Xml.Sax.Ext
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Org.Xml.Sax.Ext
         /// Converter from <see cref="Org.Xml.Sax.Ext.Locator2Impl"/> to <see cref="Org.Xml.Sax.Ext.Locator2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Locator2(Org.Xml.Sax.Ext.Locator2Impl t) => t.Cast<Org.Xml.Sax.Ext.Locator2>();
-        
+
         #endregion
 
         #region Fields
@@ -71,7 +71,7 @@ namespace Org.Xml.Sax.Ext
         {
             get { return IExecute<string>("getXMLVersion"); } set { IExecute("setXMLVersion", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -91,7 +91,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -114,7 +114,7 @@ namespace Javax.Swing.Text.Html
         {
             get { return IExecute<string>("getTarget"); }
         }
-        
+
         #endregion
 
         #region Nested classes

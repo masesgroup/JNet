@@ -37,7 +37,7 @@ namespace Javax.Print.Attribute.Standard
         /// Converter from <see cref="Javax.Print.Attribute.Standard.PDLOverrideSupported"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PDLOverrideSupported t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PDLOverrideSupported.html#NOT_ATTEMPTED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PDLOverrideSupported NOT_ATTEMPTED { get { return SGetField<Javax.Print.Attribute.Standard.PDLOverrideSupported>(LocalClazz, "NOT_ATTEMPTED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -71,7 +71,7 @@ namespace Javax.Print.Attribute.Standard
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -61,7 +61,7 @@ namespace Javax.Management.Relation
         {
             IExecute("setRelationServiceManagementFlag", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -89,7 +89,7 @@ namespace Java.Net
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -101,7 +101,7 @@ namespace Java.Net
         /// Converter from <see cref="Java.Net.URI"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.URI t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Net
         {
             return SExecute<Java.Net.URI>(LocalClazz, "create", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -314,7 +314,7 @@ namespace Java.Net
         {
             return IExecute<Java.Net.URI>("resolve", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

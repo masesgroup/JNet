@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Basic
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/> to <see cref="Java.Beans.PropertyChangeListener"/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSplitPaneDivider t) => t.Cast<Java.Beans.PropertyChangeListener>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             IExecute("propertyChange", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

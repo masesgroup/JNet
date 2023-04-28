@@ -41,7 +41,7 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY"/>
         /// </summary>
         public static int TERTIARY { get { return SGetField<int>(LocalClazz, "TERTIARY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -96,13 +96,13 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance()
         {
             return SExecute<Java.Text.Collator>(LocalClazz, "getInstance");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -159,7 +159,7 @@ namespace Java.Text
         {
             return IExecute<int>("compare", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

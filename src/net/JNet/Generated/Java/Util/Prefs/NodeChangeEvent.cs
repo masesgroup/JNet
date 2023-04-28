@@ -38,7 +38,7 @@ namespace Java.Util.Prefs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -68,7 +68,7 @@ namespace Java.Util.Prefs
         {
             get { return IExecute<Java.Util.Prefs.Preferences>("getParent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

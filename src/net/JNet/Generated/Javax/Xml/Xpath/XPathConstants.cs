@@ -61,7 +61,7 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#STRING"/>
         /// </summary>
         public static Javax.Xml.Namespace.QName STRING { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "STRING"); } }
-        
+
         #endregion
 
         #region Static methods

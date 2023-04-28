@@ -45,7 +45,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +53,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JColorChooser"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JColorChooser t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY"/>
         /// </summary>
         public static string SELECTION_MODEL_PROPERTY { get { return SGetField<string>(LocalClazz, "SELECTION_MODEL_PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -113,7 +113,7 @@ namespace Javax.Swing
         {
             return SExecute<Javax.Swing.JDialog>(LocalClazz, "createDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -203,7 +203,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

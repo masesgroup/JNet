@@ -58,7 +58,7 @@ namespace Javax.Crypto.Spec
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Javax.Crypto.Spec
         /// Converter from <see cref="Javax.Crypto.Spec.PBEKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
         /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.PBEKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
-        
+
         #endregion
 
         #region Fields
@@ -113,7 +113,7 @@ namespace Javax.Crypto.Spec
         {
             IExecute("clearPassword");
         }
-        
+
         #endregion
 
         #region Nested classes

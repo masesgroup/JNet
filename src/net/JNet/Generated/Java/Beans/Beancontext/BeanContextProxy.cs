@@ -52,7 +52,7 @@ namespace Java.Beans.Beancontext
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextProxy"); }
         }
-        
+
         #endregion
 
         #region Nested classes

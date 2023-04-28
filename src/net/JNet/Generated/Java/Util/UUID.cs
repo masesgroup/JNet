@@ -38,7 +38,7 @@ namespace Java.Util
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.UUID"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Util.UUID t) => t.Cast<Java.Lang.Comparable>();
-        
+
         #endregion
 
         #region Fields
@@ -83,7 +83,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.UUID>(LocalClazz, "nameUUIDFromBytes", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -154,7 +154,7 @@ namespace Java.Util
         {
             return IExecute<int>("compareTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

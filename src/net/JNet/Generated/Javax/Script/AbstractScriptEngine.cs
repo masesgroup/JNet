@@ -37,7 +37,7 @@ namespace Javax.Script
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Script
         /// Converter from <see cref="Javax.Script.AbstractScriptEngine"/> to <see cref="Javax.Script.ScriptEngine"/>
         /// </summary>
         public static implicit operator Javax.Script.ScriptEngine(Javax.Script.AbstractScriptEngine t) => t.Cast<Javax.Script.ScriptEngine>();
-        
+
         #endregion
 
         #region Fields
@@ -142,7 +142,7 @@ namespace Javax.Script
         {
             IExecute("setBindings", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

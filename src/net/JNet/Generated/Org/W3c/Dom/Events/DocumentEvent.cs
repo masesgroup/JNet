@@ -55,7 +55,7 @@ namespace Org.W3c.Dom.Events
         {
             return IExecute<Org.W3c.Dom.Events.Event>("createEvent", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

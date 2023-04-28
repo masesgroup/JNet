@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("onCompletion", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CountedCompleter{T}"/> to <see cref="Java.Util.Concurrent.CountedCompleter"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CountedCompleter(Java.Util.Concurrent.CountedCompleter<T> t) => t.Cast<Java.Util.Concurrent.CountedCompleter>();
-        
+
         #endregion
 
         #region Fields
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("onCompletion", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

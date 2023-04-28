@@ -37,7 +37,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,7 +73,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
         public static int TT_WORD { get { return SGetField<int>(LocalClazz, "TT_WORD"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -199,7 +199,7 @@ namespace Java.Io
         {
             IExecute("wordChars", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

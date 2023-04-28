@@ -58,7 +58,7 @@ namespace Java.Security.Cert
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -109,7 +109,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<Java.Security.Cert.X509Certificate>("getTrustedCert"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -41,7 +41,7 @@ namespace Javax.Swing.Border
         /// Converter from <see cref="Javax.Swing.Border.AbstractBorder"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Border.AbstractBorder t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Javax.Swing.Border
         {
             return SExecute<Java.Awt.Rectangle>(LocalClazz, "getInteriorRectangle", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -139,7 +139,7 @@ namespace Javax.Swing.Border
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

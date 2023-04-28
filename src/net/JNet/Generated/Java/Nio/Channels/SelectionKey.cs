@@ -53,7 +53,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#OP_WRITE"/>
         /// </summary>
         public static int OP_WRITE { get { return SGetField<int>(LocalClazz, "OP_WRITE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -127,7 +127,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOps()"/>
         /// </summary>
-        
+
         /// <returns><see cref="int"/></returns>
         public int InterestOps()
         {
@@ -176,7 +176,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<int>("interestOpsOr", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

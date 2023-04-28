@@ -79,7 +79,7 @@ namespace Java.Lang.Management
         {
             IExecute("setLoggerLevel", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

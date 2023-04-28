@@ -70,7 +70,7 @@ namespace Javax.Sound.Sampled
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -160,7 +160,7 @@ namespace Javax.Sound.Sampled
         {
             return IExecute("getProperty", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -176,7 +176,7 @@ namespace Javax.Sound.Sampled
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -204,7 +204,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "ULAW"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -215,11 +215,15 @@ namespace Javax.Sound.Sampled
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

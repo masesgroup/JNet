@@ -52,7 +52,7 @@ namespace Javax.Xml.Transform.Dom
         {
             get { return IExecute<Org.W3c.Dom.Node>("getOriginatingNode"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Net.Ssl
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Net.Ssl
         /// Converter from <see cref="Javax.Net.Ssl.CertPathTrustManagerParameters"/> to <see cref="Javax.Net.Ssl.ManagerFactoryParameters"/>
         /// </summary>
         public static implicit operator Javax.Net.Ssl.ManagerFactoryParameters(Javax.Net.Ssl.CertPathTrustManagerParameters t) => t.Cast<Javax.Net.Ssl.ManagerFactoryParameters>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Net.Ssl
         {
             get { return IExecute<Java.Security.Cert.CertPathParameters>("getParameters"); }
         }
-        
+
         #endregion
 
         #region Nested classes

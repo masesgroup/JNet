@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<long>("getDelay", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

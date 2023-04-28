@@ -81,7 +81,7 @@ namespace Java.Util.Concurrent
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -237,7 +237,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("setKeepAliveTime", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -253,7 +253,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -274,7 +274,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("rejectedExecution", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -293,7 +297,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -314,7 +318,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("rejectedExecution", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -333,7 +341,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -354,7 +362,11 @@ namespace Java.Util.Concurrent
             {
                 IExecute("rejectedExecution", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -373,7 +385,7 @@ namespace Java.Util.Concurrent
             /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
-            
+
             #endregion
 
             #region Fields
@@ -394,14 +406,18 @@ namespace Java.Util.Concurrent
             {
                 IExecute("rejectedExecution", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

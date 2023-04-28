@@ -232,7 +232,7 @@ namespace Javax.Xml.Datatype
         {
             IExecute("addTo", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

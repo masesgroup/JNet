@@ -37,7 +37,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentLinkedQueue t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue{E}"/> to <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentLinkedQueue(Java.Util.Concurrent.ConcurrentLinkedQueue<E> t) => t.Cast<Java.Util.Concurrent.ConcurrentLinkedQueue>();
-        
+
         #endregion
 
         #region Fields

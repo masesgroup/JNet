@@ -74,7 +74,7 @@ namespace Java.Lang.Instrument
         {
             return IExecuteArray<byte>("transform", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        
+
         #endregion
 
         #region Nested classes

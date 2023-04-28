@@ -38,7 +38,7 @@ namespace Javax.Imageio.Spi
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Javax.Imageio.Spi
         {
             get { return IExecute<string>("getWriterServiceProviderName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

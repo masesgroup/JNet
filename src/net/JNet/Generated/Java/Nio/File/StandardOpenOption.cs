@@ -37,7 +37,7 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.StandardOpenOption"/> to <see cref="Java.Nio.File.OpenOption"/>
         /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.StandardOpenOption t) => t.Cast<Java.Nio.File.OpenOption>();
-        
+
         #endregion
 
         #region Fields
@@ -81,7 +81,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#WRITE"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption WRITE { get { return SGetField<Java.Nio.File.StandardOpenOption>(LocalClazz, "WRITE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -101,7 +101,7 @@ namespace Java.Nio.File
         {
             return SExecute<Java.Nio.File.StandardOpenOption>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

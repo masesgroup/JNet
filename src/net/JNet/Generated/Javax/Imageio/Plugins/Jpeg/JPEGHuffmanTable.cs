@@ -38,7 +38,7 @@ namespace Javax.Imageio.Plugins.Jpeg
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,7 +62,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalClazz, "StdDCLuminance"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -84,7 +84,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             get { return IExecuteArray<short>("getValues"); }
         }
-        
+
         #endregion
 
         #region Nested classes

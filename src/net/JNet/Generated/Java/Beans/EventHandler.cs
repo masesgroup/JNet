@@ -40,7 +40,7 @@ namespace Java.Beans
             : base(arg0, arg1, arg2, arg3)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -48,7 +48,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.EventHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Beans.EventHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
-        
+
         #endregion
 
         #region Fields
@@ -92,7 +92,7 @@ namespace Java.Beans
         {
             return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -135,7 +135,7 @@ namespace Java.Beans
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

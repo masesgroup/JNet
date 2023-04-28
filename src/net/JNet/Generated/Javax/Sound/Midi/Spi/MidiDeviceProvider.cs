@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi.Spi
         {
             return IExecute<bool>("isDeviceSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

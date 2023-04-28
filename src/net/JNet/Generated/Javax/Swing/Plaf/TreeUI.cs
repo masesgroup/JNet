@@ -139,7 +139,7 @@ namespace Javax.Swing.Plaf
         {
             IExecute("startEditingAtPath", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.DataInputStream"/> to <see cref="Java.Io.DataInput"/>
         /// </summary>
         public static implicit operator Java.Io.DataInput(Java.Io.DataInputStream t) => t.Cast<Java.Io.DataInput>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Java.Io
         {
             return SExecute<string>(LocalClazz, "readUTF", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public string ReadUTF()
@@ -177,7 +177,7 @@ namespace Java.Io
         {
             IExecute("readFully", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

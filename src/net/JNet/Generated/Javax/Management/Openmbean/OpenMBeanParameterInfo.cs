@@ -131,7 +131,7 @@ namespace Javax.Management.Openmbean
         {
             return IExecute<bool>("isValue", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

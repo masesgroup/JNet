@@ -107,7 +107,7 @@ namespace Java.Awt.Im
         {
             return IExecute<Java.Text.AttributedCharacterIterator>("getSelectedText", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

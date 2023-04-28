@@ -41,7 +41,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxRenderer"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicComboBoxRenderer t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -82,7 +82,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicComboBoxRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
+
             #endregion
 
             #region Fields
@@ -97,11 +97,15 @@ namespace Javax.Swing.Plaf.Basic
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

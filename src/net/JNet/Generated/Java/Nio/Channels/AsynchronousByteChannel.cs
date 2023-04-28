@@ -83,7 +83,7 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Util.Concurrent.Future<int?>>("write", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

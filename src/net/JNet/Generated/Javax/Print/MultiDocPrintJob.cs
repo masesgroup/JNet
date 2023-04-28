@@ -55,7 +55,7 @@ namespace Javax.Print
         {
             IExecute("print", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute("scan", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -97,7 +97,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.ElementScanner6{R, P}"/> to <see cref="Javax.Lang.Model.Util.ElementScanner6"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.ElementScanner6(Javax.Lang.Model.Util.ElementScanner6<R, P> t) => t.Cast<Javax.Lang.Model.Util.ElementScanner6>();
-        
+
         #endregion
 
         #region Fields
@@ -138,7 +138,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<R>("scan", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

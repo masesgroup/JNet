@@ -38,7 +38,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectInputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
         /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectInputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -180,7 +180,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#defaultReadObject()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void DefaultReadObject()
@@ -218,7 +218,7 @@ namespace Java.Io
         {
             IExecute("registerValidation", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -358,14 +358,18 @@ namespace Java.Io
             {
                 return IExecute<short>("get", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

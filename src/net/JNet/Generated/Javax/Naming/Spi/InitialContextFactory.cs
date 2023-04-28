@@ -55,7 +55,7 @@ namespace Javax.Naming.Spi
         {
             return IExecute<Javax.Naming.Context>("getInitialContext", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

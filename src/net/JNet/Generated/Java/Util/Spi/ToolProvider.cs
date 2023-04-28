@@ -50,7 +50,7 @@ namespace Java.Util.Spi
         {
             return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalClazz, "findFirst", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -83,7 +83,7 @@ namespace Java.Util.Spi
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -37,7 +37,7 @@ namespace Javax.Xml.Transform.Sax
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Xml.Transform.Sax
         /// Converter from <see cref="Javax.Xml.Transform.Sax.SAXResult"/> to <see cref="Javax.Xml.Transform.Result"/>
         /// </summary>
         public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Sax.SAXResult t) => t.Cast<Javax.Xml.Transform.Result>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Javax.Xml.Transform.Sax
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
         /// </summary>
         public static string FEATURE { get { return SGetField<string>(LocalClazz, "FEATURE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -82,7 +82,7 @@ namespace Javax.Xml.Transform.Sax
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

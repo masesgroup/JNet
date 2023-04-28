@@ -41,7 +41,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.Attribute"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.Attribute t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -129,7 +129,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Get()
@@ -181,7 +181,7 @@ namespace Javax.Naming.Directory
         {
             IExecute("clear");
         }
-        
+
         #endregion
 
         #region Nested classes

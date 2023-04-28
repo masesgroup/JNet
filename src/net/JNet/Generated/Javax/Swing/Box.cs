@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.Box"/> to <see cref="Javax.Accessibility.Accessible"/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Box t) => t.Cast<Javax.Accessibility.Accessible>();
-        
+
         #endregion
 
         #region Fields
@@ -115,7 +115,7 @@ namespace Javax.Swing
         {
             return SExecute<Java.Awt.Component>(LocalClazz, "createVerticalStrut", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -137,7 +137,7 @@ namespace Javax.Swing
                 : base(arg0, arg1, arg2)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -145,7 +145,7 @@ namespace Javax.Swing
             /// Converter from <see cref="Javax.Swing.Box.Filler"/> to <see cref="Javax.Accessibility.Accessible"/>
             /// </summary>
             public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Box.Filler t) => t.Cast<Javax.Accessibility.Accessible>();
-            
+
             #endregion
 
             #region Fields
@@ -167,14 +167,18 @@ namespace Javax.Swing
             {
                 IExecute("changeShape", arg0, arg1, arg2);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

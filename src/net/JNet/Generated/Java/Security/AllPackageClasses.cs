@@ -851,7 +851,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -866,6 +866,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -893,7 +894,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -908,6 +909,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -935,7 +937,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -950,6 +952,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -977,7 +980,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -992,10 +995,11 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1502,7 +1506,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1517,10 +1521,11 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -1587,7 +1592,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1602,6 +1607,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1629,7 +1635,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1644,6 +1650,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1671,7 +1678,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1686,6 +1693,50 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+            #region Attribute
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html"/>
+            /// </summary>
+            public partial class Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attribute>
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Attribute() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Attribute(params object[] args) : base(args) { }
+
+                private static IJavaType LocalClazz = ClazzOf("java.security.KeyStore$Entry$Attribute");
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+                /// </summary>
+                public override string ClassName => "java.security.KeyStore$Entry$Attribute";
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+                /// </summary>
+                public override bool IsAbstract => true;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+                /// </summary>
+                public override bool IsCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+                /// </summary>
+                public override bool IsInterface => true;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+                /// </summary>
+                public override bool IsStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
         }
         #endregion
 
@@ -1713,7 +1764,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1728,6 +1779,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1755,7 +1807,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1770,6 +1822,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1797,7 +1850,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1812,6 +1865,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1839,7 +1893,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1854,6 +1908,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1881,7 +1936,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1896,6 +1951,7 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
@@ -1923,7 +1979,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -1938,10 +1994,11 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -2357,7 +2414,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;         
+            public override bool IsAbstract => true;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -2372,10 +2429,11 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 
@@ -2590,7 +2648,7 @@ namespace Java.Security
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2692,7 +2750,7 @@ namespace Java.Security
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -2802,7 +2860,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;         
+            public override bool IsAbstract => false;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             /// </summary>
@@ -2817,10 +2875,11 @@ namespace Java.Security
             public override bool IsStatic => true;
 
             // TODO: complete the class
+
         }
         #endregion
 
-
+    
     }
     #endregion
 

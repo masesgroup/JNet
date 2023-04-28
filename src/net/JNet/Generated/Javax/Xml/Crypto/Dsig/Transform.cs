@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Transform"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
-        
+
         #endregion
 
         #region Fields
@@ -65,7 +65,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XSLT"/>
         /// </summary>
         public static string XSLT { get { return SGetField<string>(LocalClazz, "XSLT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -103,7 +103,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             return IExecute<Javax.Xml.Crypto.Data>("transform", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

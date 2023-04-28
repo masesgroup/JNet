@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.MultipleGradientPaint"/> to <see cref="Java.Awt.Paint"/>
         /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.MultipleGradientPaint t) => t.Cast<Java.Awt.Paint>();
-        
+
         #endregion
 
         #region Fields
@@ -91,7 +91,7 @@ namespace Java.Awt
         {
             get { return IExecute<int>("getTransparency"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -115,7 +115,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB { get { return SGetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalClazz, "SRGB"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -135,10 +135,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -170,7 +174,7 @@ namespace Java.Awt
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REPEAT"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.CycleMethod REPEAT { get { return SGetField<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalClazz, "REPEAT"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -190,10 +194,14 @@ namespace Java.Awt
             {
                 return SExecute<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -201,7 +209,7 @@ namespace Java.Awt
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

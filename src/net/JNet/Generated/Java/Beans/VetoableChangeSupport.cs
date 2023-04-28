@@ -37,7 +37,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.VetoableChangeSupport"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Beans.VetoableChangeSupport t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -158,7 +158,7 @@ namespace Java.Beans
         {
             IExecute("removeVetoableChangeListener", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

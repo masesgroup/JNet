@@ -41,7 +41,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.Path2D"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Path2D t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -53,7 +53,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_NON_ZERO"/>
         /// </summary>
         public static int WIND_NON_ZERO { get { return SGetField<int>(LocalClazz, "WIND_NON_ZERO"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -124,7 +124,7 @@ namespace Java.Awt.Geom
         {
             return SExecute<bool>(LocalClazz, "intersects", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -318,7 +318,7 @@ namespace Java.Awt.Geom
         {
             IExecute("append", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -360,7 +360,7 @@ namespace Java.Awt.Geom
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -368,7 +368,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Path2D.Double"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -380,6 +380,10 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -425,7 +429,7 @@ namespace Java.Awt.Geom
                 : base(arg0)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -433,7 +437,7 @@ namespace Java.Awt.Geom
             /// Converter from <see cref="Java.Awt.Geom.Path2D.Float"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Float t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -487,14 +491,18 @@ namespace Java.Awt.Geom
             {
                 IExecute("quadTo", arg0, arg1, arg2, arg3);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

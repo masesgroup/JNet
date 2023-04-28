@@ -54,7 +54,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.HashSet"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.HashSet t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -134,7 +134,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.HashSet{E}"/> to <see cref="Java.Util.HashSet"/>
         /// </summary>
         public static implicit operator Java.Util.HashSet(Java.Util.HashSet<E> t) => t.Cast<Java.Util.HashSet>();
-        
+
         #endregion
 
         #region Fields

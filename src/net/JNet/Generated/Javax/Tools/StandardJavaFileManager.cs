@@ -175,7 +175,7 @@ namespace Javax.Tools
         {
             IExecute("setPathFactory", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -209,14 +209,18 @@ namespace Javax.Tools
             {
                 if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

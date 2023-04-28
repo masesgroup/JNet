@@ -50,7 +50,7 @@ namespace Java.Rmi.Activation
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Java.Rmi.Activation
         /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -105,7 +105,7 @@ namespace Java.Rmi.Activation
         {
             get { return IExecute<Java.Util.Properties>("getPropertyOverrides"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -122,7 +122,7 @@ namespace Java.Rmi.Activation
                 : base(arg0, arg1)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -130,7 +130,7 @@ namespace Java.Rmi.Activation
             /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment t) => t.Cast<Java.Io.Serializable>();
-            
+
             #endregion
 
             #region Fields
@@ -156,14 +156,18 @@ namespace Java.Rmi.Activation
             {
                 get { return IExecute<string>("getCommandPath"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

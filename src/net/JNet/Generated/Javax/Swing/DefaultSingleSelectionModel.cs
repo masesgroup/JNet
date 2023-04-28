@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.DefaultSingleSelectionModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultSingleSelectionModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Javax.Swing
         {
             IExecute("removeChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

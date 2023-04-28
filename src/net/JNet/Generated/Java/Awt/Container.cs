@@ -306,7 +306,7 @@ namespace Java.Awt
         {
             IExecute("transferFocusDownCycle");
         }
-        
+
         #endregion
 
         #region Nested classes

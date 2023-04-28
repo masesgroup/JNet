@@ -64,7 +64,7 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -101,7 +101,7 @@ namespace Javax.Swing
         {
             get { return IExecuteArray<char>("getPassword"); }
         }
-        
+
         #endregion
 
         #region Nested classes

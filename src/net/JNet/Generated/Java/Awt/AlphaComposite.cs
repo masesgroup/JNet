@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.AlphaComposite"/> to <see cref="Java.Awt.Composite"/>
         /// </summary>
         public static implicit operator Java.Awt.Composite(Java.Awt.AlphaComposite t) => t.Cast<Java.Awt.Composite>();
-        
+
         #endregion
 
         #region Fields
@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Xor"/>
         /// </summary>
         public static Java.Awt.AlphaComposite Xor { get { return SGetField<Java.Awt.AlphaComposite>(LocalClazz, "Xor"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -160,7 +160,7 @@ namespace Java.Awt
         {
             return SExecute<Java.Awt.AlphaComposite>(LocalClazz, "getInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -207,7 +207,7 @@ namespace Java.Awt
         {
             return IExecute<Java.Awt.CompositeContext>("createContext", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

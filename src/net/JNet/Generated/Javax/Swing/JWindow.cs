@@ -62,7 +62,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JWindow"/> to <see cref="Javax.Swing.RootPaneContainer"/>
         /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JWindow t) => t.Cast<Javax.Swing.RootPaneContainer>();
-        
+
         #endregion
 
         #region Fields
@@ -117,7 +117,7 @@ namespace Javax.Swing
         {
             get { return IExecute<Javax.Swing.TransferHandler>("getTransferHandler"); } set { IExecute("setTransferHandler", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

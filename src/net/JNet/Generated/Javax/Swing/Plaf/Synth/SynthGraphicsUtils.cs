@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             SExecute(LocalClazz, "paintIcon", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Synth
         {
             IExecute("paintText", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
-        
+
         #endregion
 
         #region Nested classes

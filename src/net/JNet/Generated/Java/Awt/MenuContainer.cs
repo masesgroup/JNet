@@ -60,7 +60,7 @@ namespace Java.Awt
         {
             IExecute("remove", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

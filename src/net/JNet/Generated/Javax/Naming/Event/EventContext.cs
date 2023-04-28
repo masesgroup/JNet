@@ -49,7 +49,7 @@ namespace Javax.Naming.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#SUBTREE_SCOPE"/>
         /// </summary>
         public static int SUBTREE_SCOPE { get { return SGetField<int>(LocalClazz, "SUBTREE_SCOPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -95,7 +95,7 @@ namespace Javax.Naming.Event
         {
             IExecute("removeNamingListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

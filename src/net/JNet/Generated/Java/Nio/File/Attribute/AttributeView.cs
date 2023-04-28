@@ -52,7 +52,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<string>("name"); }
         }
-        
+
         #endregion
 
         #region Nested classes

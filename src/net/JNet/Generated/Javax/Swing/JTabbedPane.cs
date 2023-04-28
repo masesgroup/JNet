@@ -46,7 +46,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.JTabbedPane"/> to <see cref="Javax.Swing.SwingConstants"/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JTabbedPane t) => t.Cast<Javax.Swing.SwingConstants>();
-        
+
         #endregion
 
         #region Fields
@@ -70,7 +70,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#WRAP_TAB_LAYOUT"/>
         /// </summary>
         public static int WRAP_TAB_LAYOUT { get { return SGetField<int>(LocalClazz, "WRAP_TAB_LAYOUT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -461,7 +461,7 @@ namespace Javax.Swing
         {
             IExecute("setUI", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

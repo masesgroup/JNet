@@ -37,7 +37,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.ForwardingJavaFileObject"/> to <see cref="Javax.Tools.JavaFileObject"/>
         /// </summary>
         public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.ForwardingJavaFileObject t) => t.Cast<Javax.Tools.JavaFileObject>();
-        
+
         #endregion
 
         #region Fields
@@ -80,7 +80,7 @@ namespace Javax.Tools
         {
             return IExecute<bool>("isNameCompatible", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -107,7 +107,7 @@ namespace Javax.Tools
         /// Converter from <see cref="Javax.Tools.ForwardingJavaFileObject{F}"/> to <see cref="Javax.Tools.ForwardingJavaFileObject"/>
         /// </summary>
         public static implicit operator Javax.Tools.ForwardingJavaFileObject(Javax.Tools.ForwardingJavaFileObject<F> t) => t.Cast<Javax.Tools.ForwardingJavaFileObject>();
-        
+
         #endregion
 
         #region Fields
@@ -150,7 +150,7 @@ namespace Javax.Tools
         {
             return IExecute<bool>("isNameCompatible", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

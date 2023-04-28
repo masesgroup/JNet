@@ -37,7 +37,7 @@ namespace Javax.Net.Ssl
         /// Converter from <see cref="Javax.Net.Ssl.X509ExtendedTrustManager"/> to <see cref="Javax.Net.Ssl.X509TrustManager"/>
         /// </summary>
         public static implicit operator Javax.Net.Ssl.X509TrustManager(Javax.Net.Ssl.X509ExtendedTrustManager t) => t.Cast<Javax.Net.Ssl.X509TrustManager>();
-        
+
         #endregion
 
         #region Fields
@@ -93,7 +93,7 @@ namespace Javax.Net.Ssl
         {
             IExecute("checkServerTrusted", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -125,7 +125,7 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "longStream", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

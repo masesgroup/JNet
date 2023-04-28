@@ -32,10 +32,6 @@ namespace MASES.JNetReflector.Templates
             AllPackageClassesStubClassListenerTemplate,
             AllPackageClassesStubClassMainClassTemplate,
             AllPackageClassesStubExceptionTemplate,
-            AllPackageClassesStubNestedClassTemplate,
-            AllPackageClassesStubNestedClassListenerTemplate,
-            AllPackageClassesStubNestedClassMainClassTemplate,
-            AllPackageClassesStubNestedExceptionTemplate,
 
             SingleClassTemplate,
             SingleClassFileTemplate,
@@ -44,7 +40,6 @@ namespace MASES.JNetReflector.Templates
             SingleFieldTemplate,
             SingleMethodTemplate,
             SinglePropertyTemplate,
-            SingleNestedClassTemplate,
         };
 
         static Template()
@@ -79,10 +74,10 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesStubClassListenerTemplate = "AllPackageClassesStubClassListener.template";
         public const string AllPackageClassesStubClassMainClassTemplate = "AllPackageClassesStubClassMainClass.template";
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
-        public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
-        public const string AllPackageClassesStubNestedClassListenerTemplate = "AllPackageClassesStubNestedClassListener.template";
-        public const string AllPackageClassesStubNestedClassMainClassTemplate = "AllPackageClassesStubNestedClassMainClass.template";
-        public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
+        //public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
+        //public const string AllPackageClassesStubNestedClassListenerTemplate = "AllPackageClassesStubNestedClassListener.template";
+        //public const string AllPackageClassesStubNestedClassMainClassTemplate = "AllPackageClassesStubNestedClassMainClass.template";
+        //public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
         public const string SingleClassFileTemplate = "SingleClassFile.template";
@@ -90,7 +85,7 @@ namespace MASES.JNetReflector.Templates
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
         public const string SinglePropertyTemplate = "SingleProperty.template";
-        public const string SingleNestedClassTemplate = "SingleNestedClass.template";
+        //public const string SingleNestedClassTemplate = "SingleNestedClass.template";
     }
 
     public class AllPackageClasses

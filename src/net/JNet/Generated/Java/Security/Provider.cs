@@ -99,7 +99,7 @@ namespace Java.Security
         {
             return IExecute<Java.Security.Provider.Service>("getService", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -120,7 +120,7 @@ namespace Java.Security
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
-            
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -192,14 +192,18 @@ namespace Java.Security
             {
                 return IExecute("newInstance", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

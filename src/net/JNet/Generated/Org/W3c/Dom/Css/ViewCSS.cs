@@ -55,7 +55,7 @@ namespace Org.W3c.Dom.Css
         {
             return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getComputedStyle", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

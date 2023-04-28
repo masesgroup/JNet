@@ -127,7 +127,7 @@ namespace Javax.Accessibility
         {
             IExecute("setTextContents", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

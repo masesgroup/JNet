@@ -59,7 +59,7 @@ namespace Javax.Swing.Text.Html
         {
             get { return IExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#POST"/>
             /// </summary>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType POST { get { return SGetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalClazz, "POST"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -103,10 +103,14 @@ namespace Javax.Swing.Text.Html
             {
                 return SExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -114,7 +118,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

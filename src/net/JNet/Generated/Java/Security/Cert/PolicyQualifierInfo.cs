@@ -38,7 +38,7 @@ namespace Java.Security.Cert
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -75,7 +75,7 @@ namespace Java.Security.Cert
         {
             get { return IExecute<string>("getPolicyQualifierId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -78,7 +78,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,7 +86,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.PriorityQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.PriorityQueue t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -105,7 +105,7 @@ namespace Java.Util
         {
             get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -169,7 +169,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -181,7 +181,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.PriorityQueue{E}"/> to <see cref="Java.Util.PriorityQueue"/>
         /// </summary>
         public static implicit operator Java.Util.PriorityQueue(Java.Util.PriorityQueue<E> t) => t.Cast<Java.Util.PriorityQueue>();
-        
+
         #endregion
 
         #region Fields
@@ -200,7 +200,7 @@ namespace Java.Util
         {
             get { return IExecute<Java.Util.Comparator>("comparator"); }
         }
-        
+
         #endregion
 
         #region Nested classes

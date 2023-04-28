@@ -193,7 +193,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Types.html#VARCHAR"/>
         /// </summary>
         public static int VARCHAR { get { return SGetField<int>(LocalClazz, "VARCHAR"); } }
-        
+
         #endregion
 
         #region Static methods

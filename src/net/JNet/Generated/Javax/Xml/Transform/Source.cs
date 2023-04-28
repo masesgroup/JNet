@@ -59,7 +59,7 @@ namespace Javax.Xml.Transform
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

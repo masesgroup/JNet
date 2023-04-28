@@ -41,7 +41,7 @@ namespace Org.W3c.Dom.Bootstrap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#PROPERTY"/>
         /// </summary>
         public static string PROPERTY { get { return SGetField<string>(LocalClazz, "PROPERTY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Bootstrap
         {
             get { return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>(LocalClazz, "newInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -82,7 +82,7 @@ namespace Org.W3c.Dom.Bootstrap
         {
             IExecute("addSource", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,7 +70,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION"/>
         /// </summary>
         public static int NONE_OPTION { get { return SGetField<int>(LocalClazz, "NONE_OPTION"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -134,7 +134,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "setLogStream", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -152,7 +152,7 @@ namespace Javax.Swing
         {
             get { return IExecute<bool>("isDrawingBuffer"); }
         }
-        
+
         #endregion
 
         #region Nested classes

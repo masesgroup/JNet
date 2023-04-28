@@ -62,7 +62,7 @@ namespace Javax.Management.Remote.Rmi
         {
             return IExecute<Javax.Management.Remote.Rmi.RMIConnection>("newClient", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

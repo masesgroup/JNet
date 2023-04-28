@@ -54,7 +54,7 @@ namespace Java.Net
         {
             return IExecute<Java.Net.URLStreamHandler>("createURLStreamHandler", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

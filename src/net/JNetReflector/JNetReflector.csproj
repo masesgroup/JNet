@@ -5,8 +5,8 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>MASES.JNetReflector</AssemblyName>
     <RootNamespace>MASES.JNetReflector</RootNamespace>
-    <Title>JNetReflector - JNet class reflection utility command line interface</Title>
-    <Description>JNetReflector - JNet class reflection utility command line interface</Description>
+    <Title>JNetReflector - JNet  (Java/JVM suite for .NET) class reflection utility command line interface</Title>
+    <Description>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Description>
     <Product>JNetReflector</Product>
     <OutputPath>..\..\..\binReflector\</OutputPath>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -31,14 +31,10 @@
     <None Remove="Templates\AllPackageClassesStubClassListener.template" />
     <None Remove="Templates\AllPackageClassesStubClassMainClass.template" />
     <None Remove="Templates\AllPackageClassesStubException.template" />
-    <None Remove="Templates\AllPackageClassesStubNestedClassListener.template" />
-    <None Remove="Templates\AllPackageClassesStubNestedClassMainClass.template" />
-    <None Remove="Templates\AllPackageClassesStubNestedException.template" />
     <None Remove="Templates\SingleClassFile.template" />
     <None Remove="Templates\SingleConstructor.template" />
     <None Remove="Templates\SingleField.template" />
     <None Remove="Templates\SingleMethod.template" />
-    <None Remove="Templates\SingleNestedClass.template" />
     <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
   <ItemGroup>
@@ -125,17 +121,12 @@
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClassMainClass.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClassListener.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedException.template" />
     <EmbeddedResource Include="Templates\SingleClassFile.template" />
     <EmbeddedResource Include="Templates\SingleConstructor.template" />
     <EmbeddedResource Include="Templates\SingleField.template" />
     <EmbeddedResource Include="Templates\SingleProperty.template" />
     <EmbeddedResource Include="Templates\SingleMethod.template" />
-    <EmbeddedResource Include="Templates\SingleNestedClass.template" />
     <EmbeddedResource Include="Templates\SingleClass.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClasses.template" />
   </ItemGroup>

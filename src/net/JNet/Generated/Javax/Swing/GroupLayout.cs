@@ -37,7 +37,7 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.GroupLayout"/> to <see cref="Java.Awt.LayoutManager2"/>
         /// </summary>
         public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.GroupLayout t) => t.Cast<Java.Awt.LayoutManager2>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#PREFERRED_SIZE"/>
         /// </summary>
         public static int PREFERRED_SIZE { get { return SGetField<int>(LocalClazz, "PREFERRED_SIZE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -158,7 +158,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createParallelGroup()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
         public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup()
         {
@@ -276,7 +276,7 @@ namespace Javax.Swing
         {
             IExecute("setVerticalGroup", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -308,7 +308,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#TRAILING"/>
             /// </summary>
             public static Javax.Swing.GroupLayout.Alignment TRAILING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "TRAILING"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -328,10 +328,14 @@ namespace Javax.Swing
             {
                 return SExecute<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -409,7 +413,11 @@ namespace Javax.Swing
             {
                 return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -469,7 +477,11 @@ namespace Javax.Swing
             {
                 return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("addGroup", arg0, arg1);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -522,7 +534,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap()"/>
             /// </summary>
-            
+
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap()
             {
@@ -592,14 +604,18 @@ namespace Javax.Swing
             {
                 return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0);
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

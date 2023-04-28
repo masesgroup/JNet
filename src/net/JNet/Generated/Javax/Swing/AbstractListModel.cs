@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Swing
         {
             IExecute("removeListDataListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -116,7 +116,7 @@ namespace Javax.Swing
         /// Converter from <see cref="Javax.Swing.AbstractListModel{E}"/> to <see cref="Javax.Swing.AbstractListModel"/>
         /// </summary>
         public static implicit operator Javax.Swing.AbstractListModel(Javax.Swing.AbstractListModel<E> t) => t.Cast<Javax.Swing.AbstractListModel>();
-        
+
         #endregion
 
         #region Fields
@@ -160,7 +160,7 @@ namespace Javax.Swing
         {
             IExecute("removeListDataListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

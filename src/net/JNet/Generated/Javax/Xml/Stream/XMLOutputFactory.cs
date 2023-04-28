@@ -41,7 +41,7 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#IS_REPAIRING_NAMESPACES"/>
         /// </summary>
         public static string IS_REPAIRING_NAMESPACES { get { return SGetField<string>(LocalClazz, "IS_REPAIRING_NAMESPACES"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -62,7 +62,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory()
@@ -80,7 +80,7 @@ namespace Javax.Xml.Stream
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalClazz, "newFactory", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -195,7 +195,7 @@ namespace Javax.Xml.Stream
         {
             IExecute("setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

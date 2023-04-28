@@ -68,7 +68,7 @@ namespace Javax.Swing.Colorchooser
         {
             IExecute("removeChangeListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

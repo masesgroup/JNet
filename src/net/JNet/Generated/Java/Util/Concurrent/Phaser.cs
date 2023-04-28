@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent
         {
             IExecute("forceTermination");
         }
-        
+
         #endregion
 
         #region Nested classes

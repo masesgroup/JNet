@@ -693,7 +693,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXIF_VERSION_2_2"/>
         /// </summary>
         public static string EXIF_VERSION_2_2 { get { return SGetField<string>(LocalClazz, "EXIF_VERSION_2_2"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -704,7 +704,7 @@ namespace Javax.Imageio.Plugins.Tiff
         {
             get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalClazz, "getInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods

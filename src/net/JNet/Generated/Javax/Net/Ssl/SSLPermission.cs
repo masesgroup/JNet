@@ -46,7 +46,7 @@ namespace Javax.Net.Ssl
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

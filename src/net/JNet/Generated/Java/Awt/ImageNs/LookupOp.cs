@@ -38,7 +38,7 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Awt.ImageNs
         /// Converter from <see cref="Java.Awt.ImageNs.LookupOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.LookupOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
-        
+
         #endregion
 
         #region Fields
@@ -143,7 +143,7 @@ namespace Java.Awt.ImageNs
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

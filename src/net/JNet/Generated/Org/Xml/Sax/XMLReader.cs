@@ -137,7 +137,7 @@ namespace Org.Xml.Sax
         {
             IExecute("setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

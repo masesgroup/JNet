@@ -56,7 +56,7 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -64,7 +64,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.StringTokenizer"/> to <see cref="Java.Util.Enumeration"/>
         /// </summary>
         public static implicit operator Java.Util.Enumeration(Java.Util.StringTokenizer t) => t.Cast<Java.Util.Enumeration>();
-        
+
         #endregion
 
         #region Fields
@@ -107,7 +107,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()"/>
         /// </summary>
-        
+
         /// <returns><see cref="string"/></returns>
         public string NextToken()
         {
@@ -122,7 +122,7 @@ namespace Java.Util
         {
             return IExecute<string>("nextToken", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

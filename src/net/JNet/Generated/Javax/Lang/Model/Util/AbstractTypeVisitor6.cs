@@ -37,7 +37,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6"/> to <see cref="Javax.Lang.Model.Type.TypeVisitor"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeVisitor(Javax.Lang.Model.Util.AbstractTypeVisitor6 t) => t.Cast<Javax.Lang.Model.Type.TypeVisitor>();
-        
+
         #endregion
 
         #region Fields
@@ -98,7 +98,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute("visitUnknown", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -125,7 +125,7 @@ namespace Javax.Lang.Model.Util
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6"/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Util.AbstractTypeVisitor6(Javax.Lang.Model.Util.AbstractTypeVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.AbstractTypeVisitor6>();
-        
+
         #endregion
 
         #region Fields
@@ -186,7 +186,7 @@ namespace Javax.Lang.Model.Util
         {
             return IExecute<R>("visitUnknown", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

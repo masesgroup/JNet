@@ -38,7 +38,7 @@ namespace Javax.Sql.Rowset.Serial
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Javax.Sql.Rowset.Serial
         /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialDatalink"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialDatalink t) => t.Cast<Java.Lang.Cloneable>();
-        
+
         #endregion
 
         #region Fields
@@ -69,7 +69,7 @@ namespace Javax.Sql.Rowset.Serial
         {
             get { return IExecute<Java.Net.URL>("getDatalink"); }
         }
-        
+
         #endregion
 
         #region Nested classes

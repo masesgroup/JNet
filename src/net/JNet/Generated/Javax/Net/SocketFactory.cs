@@ -48,7 +48,7 @@ namespace Javax.Net
         {
             get { return SExecute<Javax.Net.SocketFactory>(LocalClazz, "getDefault"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -105,14 +105,14 @@ namespace Javax.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket()
         {
             return IExecute<Java.Net.Socket>("createSocket");
         }
-        
+
         #endregion
 
         #region Nested classes

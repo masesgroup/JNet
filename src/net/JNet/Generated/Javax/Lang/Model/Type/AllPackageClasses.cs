@@ -655,7 +655,7 @@ namespace Javax.Lang.Model.Type
         public override bool IsStatic => false;
 
         // TODO: complete the class
-
+    
     }
     #endregion
 

@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Javax.Naming.Directory
         /// Converter from <see cref="Javax.Naming.Directory.SearchControls"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.SearchControls t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -66,7 +66,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html#SUBTREE_SCOPE"/>
         /// </summary>
         public static int SUBTREE_SCOPE { get { return SGetField<int>(LocalClazz, "SUBTREE_SCOPE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -116,7 +116,7 @@ namespace Javax.Naming.Directory
         {
             get { return IExecute<int>("getTimeLimit"); } set { IExecute("setTimeLimit", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

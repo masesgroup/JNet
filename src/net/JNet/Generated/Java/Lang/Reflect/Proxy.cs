@@ -37,7 +37,7 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.Proxy"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Reflect.Proxy t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -75,7 +75,7 @@ namespace Java.Lang.Reflect
         {
             return SExecute<Java.Lang.Reflect.InvocationHandler>(LocalClazz, "getInvocationHandler", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

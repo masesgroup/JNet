@@ -37,7 +37,7 @@ namespace Javax.Management
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Management
         /// Converter from <see cref="Javax.Management.AttributeValueExp"/> to <see cref="Javax.Management.ValueExp"/>
         /// </summary>
         public static implicit operator Javax.Management.ValueExp(Javax.Management.AttributeValueExp t) => t.Cast<Javax.Management.ValueExp>();
-        
+
         #endregion
 
         #region Fields
@@ -77,7 +77,7 @@ namespace Javax.Management
         {
             return IExecute<Javax.Management.ValueExp>("apply", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

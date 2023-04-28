@@ -46,7 +46,7 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -69,7 +69,7 @@ namespace Java.Io
         {
             get { return IExecute<int>("getLineNumber"); } set { IExecute("setLineNumber", value); }
         }
-        
+
         #endregion
 
         #region Nested classes

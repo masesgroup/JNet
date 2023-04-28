@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
         {
             return IExecuteArray<Java.Text.Format.Field>("getFields", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -46,7 +46,7 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -76,7 +76,7 @@ namespace Java.Beans
         {
             get { return IExecuteArray<Java.Beans.ParameterDescriptor>("getParameterDescriptors"); }
         }
-        
+
         #endregion
 
         #region Nested classes

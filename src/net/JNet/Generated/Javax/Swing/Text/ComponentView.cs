@@ -37,7 +37,7 @@ namespace Javax.Swing.Text
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Javax.Swing.Text
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
-        
+
         #endregion
 
         #region Nested classes

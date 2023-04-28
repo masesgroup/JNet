@@ -48,7 +48,7 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -60,7 +60,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#GZIP_MAGIC"/>
         /// </summary>
         public static int GZIP_MAGIC { get { return SGetField<int>(LocalClazz, "GZIP_MAGIC"); } }
-        
+
         #endregion
 
         #region Static methods

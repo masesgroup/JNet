@@ -90,7 +90,7 @@ namespace Java.Time.Temporal
         {
             get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId>>(LocalClazz, "zoneId"); }
         }
-        
+
         #endregion
 
         #region Instance methods

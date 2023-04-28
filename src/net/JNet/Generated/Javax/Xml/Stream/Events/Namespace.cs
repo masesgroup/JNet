@@ -66,7 +66,7 @@ namespace Javax.Xml.Stream.Events
         {
             get { return IExecute<string>("getPrefix"); }
         }
-        
+
         #endregion
 
         #region Nested classes

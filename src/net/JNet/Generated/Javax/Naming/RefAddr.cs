@@ -37,7 +37,7 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.RefAddr"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.RefAddr t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -63,7 +63,7 @@ namespace Javax.Naming
         {
             get { return IExecute<string>("getType"); }
         }
-        
+
         #endregion
 
         #region Nested classes

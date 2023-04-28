@@ -41,7 +41,7 @@ namespace Javax.Management.Monitor
         /// Converter from <see cref="Javax.Management.Monitor.Monitor"/> to <see cref="Javax.Management.MBeanRegistration"/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Monitor.Monitor t) => t.Cast<Javax.Management.MBeanRegistration>();
-        
+
         #endregion
 
         #region Fields
@@ -150,13 +150,13 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preDeregister()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");
         }
-        
+
         #endregion
 
         #region Nested classes

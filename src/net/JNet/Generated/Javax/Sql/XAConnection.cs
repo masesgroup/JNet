@@ -52,7 +52,7 @@ namespace Javax.Sql
         {
             get { return IExecute<Javax.Transaction.Xa.XAResource>("getXAResource"); }
         }
-        
+
         #endregion
 
         #region Nested classes

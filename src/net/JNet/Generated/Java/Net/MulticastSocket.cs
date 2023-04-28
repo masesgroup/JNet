@@ -47,7 +47,7 @@ namespace Java.Net
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -129,7 +129,7 @@ namespace Java.Net
         {
             IExecute("leaveGroup", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

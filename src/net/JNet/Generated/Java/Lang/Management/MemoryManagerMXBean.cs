@@ -66,7 +66,7 @@ namespace Java.Lang.Management
         {
             get { return IExecute<string>("getName"); }
         }
-        
+
         #endregion
 
         #region Nested classes

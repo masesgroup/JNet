@@ -46,7 +46,7 @@ namespace Javax.Imageio
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -155,7 +155,7 @@ namespace Javax.Imageio
         {
             return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalClazz, "createPacked", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -223,7 +223,7 @@ namespace Javax.Imageio
         {
             return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

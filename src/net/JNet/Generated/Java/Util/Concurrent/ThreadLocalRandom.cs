@@ -48,7 +48,7 @@ namespace Java.Util.Concurrent
         {
             get { return SExecute<Java.Util.Concurrent.ThreadLocalRandom>(LocalClazz, "current"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         {
             return IExecute<long>("nextLong", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

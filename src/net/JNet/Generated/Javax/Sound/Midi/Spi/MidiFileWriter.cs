@@ -104,7 +104,7 @@ namespace Javax.Sound.Midi.Spi
         {
             return IExecute<bool>("isFileTypeSupported", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

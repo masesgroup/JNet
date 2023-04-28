@@ -77,7 +77,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#STREAM_CIPHER"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive STREAM_CIPHER { get { return SGetField<Java.Security.CryptoPrimitive>(LocalClazz, "STREAM_CIPHER"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -97,7 +97,7 @@ namespace Java.Security
         {
             return SExecute<Java.Security.CryptoPrimitive>(LocalClazz, "valueOf", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods

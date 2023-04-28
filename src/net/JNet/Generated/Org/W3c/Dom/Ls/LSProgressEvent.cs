@@ -66,7 +66,7 @@ namespace Org.W3c.Dom.Ls
         {
             get { return IExecute<int>("getTotalSize"); }
         }
-        
+
         #endregion
 
         #region Nested classes

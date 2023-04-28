@@ -76,7 +76,7 @@ namespace Java.Text.Spi
         {
             return IExecute<Java.Text.DateFormat>("getTimeInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

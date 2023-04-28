@@ -93,7 +93,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#STRENGTH"/>
         /// </summary>
         public static string STRENGTH { get { return SGetField<string>(LocalClazz, "STRENGTH"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -140,7 +140,7 @@ namespace Javax.Security.Sasl
         {
             return SExecute<Javax.Security.Sasl.SaslServer>(LocalClazz, "createSaslServer", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Instance methods

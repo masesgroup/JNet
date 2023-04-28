@@ -38,7 +38,7 @@ namespace Java.Awt.EventNs
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,7 +46,7 @@ namespace Java.Awt.EventNs
         /// Converter from <see cref="Java.Awt.EventNs.AWTEventListenerProxy"/> to <see cref="Java.Awt.EventNs.AWTEventListener"/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.AWTEventListener(Java.Awt.EventNs.AWTEventListenerProxy t) => t.Cast<Java.Awt.EventNs.AWTEventListener>();
-        
+
         #endregion
 
         #region Fields
@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         {
             IExecute("eventDispatched", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

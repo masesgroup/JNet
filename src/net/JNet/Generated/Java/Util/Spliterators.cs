@@ -74,7 +74,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptySpliterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> EmptySpliteratorMethod<T>()
         {
@@ -289,7 +289,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliteratorUnknownSize", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -338,7 +338,11 @@ namespace Java.Util
             {
                 get { return IExecute<Java.Util.Spliterator.OfDouble>("trySplit"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -386,7 +390,11 @@ namespace Java.Util
             {
                 get { return IExecute<Java.Util.Spliterator.OfInt>("trySplit"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -434,7 +442,11 @@ namespace Java.Util
             {
                 get { return IExecute<Java.Util.Spliterator.OfLong>("trySplit"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -453,7 +465,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator"/> to <see cref="Java.Util.Spliterator"/>
             /// </summary>
             public static implicit operator Java.Util.Spliterator(Java.Util.Spliterators.AbstractSpliterator t) => t.Cast<Java.Util.Spliterator>();
-            
+
             #endregion
 
             #region Fields
@@ -486,7 +498,11 @@ namespace Java.Util
             {
                 get { return IExecute<Java.Util.Spliterator>("trySplit"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
@@ -509,7 +525,7 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator{T}"/> to <see cref="Java.Util.Spliterators.AbstractSpliterator"/>
             /// </summary>
             public static implicit operator Java.Util.Spliterators.AbstractSpliterator(Java.Util.Spliterators.AbstractSpliterator<T> t) => t.Cast<Java.Util.Spliterators.AbstractSpliterator>();
-            
+
             #endregion
 
             #region Fields
@@ -542,14 +558,18 @@ namespace Java.Util
             {
                 get { return IExecute<Java.Util.Spliterator<T>>("trySplit"); }
             }
-            
+
+            #endregion
+
+            #region Nested classes
+
             #endregion
 
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

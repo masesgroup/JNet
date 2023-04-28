@@ -37,7 +37,7 @@ namespace Java.Beans
         /// Converter from <see cref="Java.Beans.SimpleBeanInfo"/> to <see cref="Java.Beans.BeanInfo"/>
         /// </summary>
         public static implicit operator Java.Beans.BeanInfo(Java.Beans.SimpleBeanInfo t) => t.Cast<Java.Beans.BeanInfo>();
-        
+
         #endregion
 
         #region Fields
@@ -116,7 +116,7 @@ namespace Java.Beans
         {
             return IExecute<Java.Awt.Image>("loadImage", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

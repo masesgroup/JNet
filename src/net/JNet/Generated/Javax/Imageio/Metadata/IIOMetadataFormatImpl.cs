@@ -48,7 +48,7 @@ namespace Javax.Imageio.Metadata
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -56,7 +56,7 @@ namespace Javax.Imageio.Metadata
         /// Converter from <see cref="Javax.Imageio.Metadata.IIOMetadataFormatImpl"/> to <see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/>
         /// </summary>
         public static implicit operator Javax.Imageio.Metadata.IIOMetadataFormat(Javax.Imageio.Metadata.IIOMetadataFormatImpl t) => t.Cast<Javax.Imageio.Metadata.IIOMetadataFormat>();
-        
+
         #endregion
 
         #region Fields
@@ -64,7 +64,7 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#standardMetadataFormatName"/>
         /// </summary>
         public static string standardMetadataFormatName { get { return SGetField<string>(LocalClazz, "standardMetadataFormatName"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -75,7 +75,7 @@ namespace Javax.Imageio.Metadata
         {
             get { return SExecute<Javax.Imageio.Metadata.IIOMetadataFormat>(LocalClazz, "getStandardFormatInstance"); }
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -324,7 +324,7 @@ namespace Javax.Imageio.Metadata
         {
             return IExecuteArray<string>("getChildNames", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

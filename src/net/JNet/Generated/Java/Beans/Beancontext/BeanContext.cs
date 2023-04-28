@@ -49,7 +49,7 @@ namespace Java.Beans.Beancontext
         /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Beans.Visibility"/>
         /// </summary>
         public static implicit operator Java.Beans.Visibility(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Visibility>();
-        
+
         #endregion
 
         #region Fields
@@ -57,7 +57,7 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#globalHierarchyLock"/>
         /// </summary>
         public static object globalHierarchyLock { get { return SGetField(LocalClazz, "globalHierarchyLock"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -114,7 +114,7 @@ namespace Java.Beans.Beancontext
         {
             IExecute("removeBeanContextMembershipListener", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

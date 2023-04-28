@@ -38,7 +38,7 @@ namespace Java.Awt.ImageNs.Renderable
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -50,7 +50,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageProducer"/> to <see cref="Java.Lang.Runnable"/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Awt.ImageNs.Renderable.RenderableImageProducer t) => t.Cast<Java.Lang.Runnable>();
-        
+
         #endregion
 
         #region Fields
@@ -118,7 +118,7 @@ namespace Java.Awt.ImageNs.Renderable
         {
             IExecute("run");
         }
-        
+
         #endregion
 
         #region Nested classes

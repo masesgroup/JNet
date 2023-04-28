@@ -108,7 +108,7 @@ namespace Java.Nio.File.Attribute
         {
             get { return IExecute<long>("size"); }
         }
-        
+
         #endregion
 
         #region Nested classes

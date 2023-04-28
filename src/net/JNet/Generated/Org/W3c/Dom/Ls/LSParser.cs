@@ -57,7 +57,7 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
         /// </summary>
         public static short ACTION_REPLACE_CHILDREN { get { return SGetField<short>(LocalClazz, "ACTION_REPLACE_CHILDREN"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -135,7 +135,7 @@ namespace Org.W3c.Dom.Ls
         {
             IExecute("abort");
         }
-        
+
         #endregion
 
         #region Nested classes

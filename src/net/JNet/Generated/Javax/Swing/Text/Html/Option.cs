@@ -37,7 +37,7 @@ namespace Javax.Swing.Text.Html
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +45,7 @@ namespace Javax.Swing.Text.Html
         /// Converter from <see cref="Javax.Swing.Text.Html.Option"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Option t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Swing.Text.Html
         {
             get { return IExecute<string>("getValue"); }
         }
-        
+
         #endregion
 
         #region Nested classes

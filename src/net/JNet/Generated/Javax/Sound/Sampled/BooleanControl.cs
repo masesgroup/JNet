@@ -61,7 +61,7 @@ namespace Javax.Sound.Sampled
         {
             return IExecute<string>("getStateLabel", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -85,7 +85,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#MUTE"/>
             /// </summary>
             public static Javax.Sound.Sampled.BooleanControl.Type MUTE { get { return SGetField<Javax.Sound.Sampled.BooleanControl.Type>(LocalClazz, "MUTE"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -96,11 +96,15 @@ namespace Javax.Sound.Sampled
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

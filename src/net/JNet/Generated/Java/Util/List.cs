@@ -53,7 +53,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of()
         {
@@ -203,7 +203,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.List>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -366,7 +366,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -385,7 +385,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
         {
@@ -432,7 +432,7 @@ namespace Java.Util
         {
             IExecute("sort", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -455,7 +455,7 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.List{E}"/> to <see cref="Java.Util.List"/>
         /// </summary>
         public static implicit operator Java.Util.List(Java.Util.List<E> t) => t.Cast<Java.Util.List>();
-        
+
         #endregion
 
         #region Fields
@@ -475,7 +475,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of()
         {
@@ -625,7 +625,7 @@ namespace Java.Util
         {
             return SExecute<Java.Util.List<E>>(LocalClazz, "of", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -788,7 +788,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray()"/>
         /// </summary>
-        
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -807,7 +807,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
         {
@@ -854,7 +854,7 @@ namespace Java.Util
         {
             IExecute("sort", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

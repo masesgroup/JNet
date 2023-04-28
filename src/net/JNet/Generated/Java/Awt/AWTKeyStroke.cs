@@ -37,7 +37,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.AWTKeyStroke"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.AWTKeyStroke t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Java.Awt
         {
             return SExecute<Java.Awt.AWTKeyStroke>(LocalClazz, "getAWTKeyStrokeForEvent", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -142,7 +142,7 @@ namespace Java.Awt
         {
             get { return IExecute<int>("getModifiers"); }
         }
-        
+
         #endregion
 
         #region Nested classes

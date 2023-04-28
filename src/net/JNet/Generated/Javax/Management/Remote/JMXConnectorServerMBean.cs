@@ -94,7 +94,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#start()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Start()
         {
@@ -103,13 +103,13 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#stop()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Io.IOException"/>
         public void Stop()
         {
             IExecute("stop");
         }
-        
+
         #endregion
 
         #region Nested classes

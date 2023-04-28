@@ -77,7 +77,7 @@ namespace Java.Lang
         {
             return IExecute<Java.Lang.Appendable>("append", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

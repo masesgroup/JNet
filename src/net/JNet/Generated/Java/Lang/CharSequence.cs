@@ -51,7 +51,7 @@ namespace Java.Lang
         {
             return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -95,7 +95,7 @@ namespace Java.Lang
         {
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

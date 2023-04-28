@@ -38,7 +38,7 @@ namespace Java.Util.Logging
             : base(arg0, arg1)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators

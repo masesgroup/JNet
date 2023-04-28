@@ -51,7 +51,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance()
         {
@@ -94,7 +94,7 @@ namespace Javax.Security.Auth.Kerberos
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getUnboundInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -128,7 +128,7 @@ namespace Javax.Security.Auth.Kerberos
         {
             return IExecuteArray<Javax.Security.Auth.Kerberos.KerberosKey>("getKeys", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

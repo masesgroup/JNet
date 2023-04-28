@@ -41,7 +41,7 @@ namespace Javax.Naming.Event
         /// Converter from <see cref="Javax.Naming.Event.EventDirContext"/> to <see cref="Javax.Naming.Directory.DirContext"/>
         /// </summary>
         public static implicit operator Javax.Naming.Directory.DirContext(Javax.Naming.Event.EventDirContext t) => t.Cast<Javax.Naming.Directory.DirContext>();
-        
+
         #endregion
 
         #region Fields
@@ -103,7 +103,7 @@ namespace Javax.Naming.Event
         {
             IExecute("addNamingListener", arg0, arg1, arg2, arg3);
         }
-        
+
         #endregion
 
         #region Nested classes

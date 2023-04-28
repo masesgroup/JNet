@@ -129,7 +129,7 @@ namespace Org.W3c.Dom.Traversal
         {
             get { return IExecute<int>("getWhatToShow"); }
         }
-        
+
         #endregion
 
         #region Nested classes

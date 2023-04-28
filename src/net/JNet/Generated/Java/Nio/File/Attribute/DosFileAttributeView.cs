@@ -95,7 +95,7 @@ namespace Java.Nio.File.Attribute
         {
             IExecute("setSystem", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

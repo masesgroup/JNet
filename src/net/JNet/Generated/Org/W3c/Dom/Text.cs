@@ -79,7 +79,7 @@ namespace Org.W3c.Dom
         {
             return IExecute<Org.W3c.Dom.Text>("splitText", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

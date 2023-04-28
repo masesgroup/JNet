@@ -49,7 +49,7 @@ namespace Java.Nio
         /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Readable"/>
         /// </summary>
         public static implicit operator Java.Lang.Readable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Readable>();
-        
+
         #endregion
 
         #region Fields
@@ -106,7 +106,7 @@ namespace Java.Nio
         {
             return SExecute<Java.Nio.CharBuffer>(LocalClazz, "wrap", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -148,7 +148,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get()"/>
         /// </summary>
-        
+
         /// <returns><see cref="char"/></returns>
         public char Get()
         {
@@ -339,7 +339,7 @@ namespace Java.Nio
         {
             return IExecute<Java.Nio.CharBuffer>("put", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

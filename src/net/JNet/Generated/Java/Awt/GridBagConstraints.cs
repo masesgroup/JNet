@@ -47,7 +47,7 @@ namespace Java.Awt
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -59,7 +59,7 @@ namespace Java.Awt
         /// Converter from <see cref="Java.Awt.GridBagConstraints"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.GridBagConstraints t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -235,7 +235,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#WEST"/>
         /// </summary>
         public static int WEST { get { return SGetField<int>(LocalClazz, "WEST"); } }
-        
+
         #endregion
 
         #region Static methods

@@ -129,7 +129,7 @@ namespace Java.Security
         {
             SExecute(LocalClazz, "setProperty", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods

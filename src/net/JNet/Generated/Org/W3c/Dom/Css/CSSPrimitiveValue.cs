@@ -141,7 +141,7 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_URI"/>
         /// </summary>
         public static short CSS_URI { get { return SGetField<short>(LocalClazz, "CSS_URI"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -214,7 +214,7 @@ namespace Org.W3c.Dom.Css
         {
             IExecute("setStringValue", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

@@ -129,13 +129,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#builder()"/>
         /// </summary>
-        
+
         /// <returns><see cref="Java.Util.Stream.LongStream.Builder"/></returns>
         public static Java.Util.Stream.LongStream.Builder BuilderMethod()
         {
             return SExecute<Java.Util.Stream.LongStream.Builder>(LocalClazz, "builder");
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -430,7 +430,7 @@ namespace Java.Util.Stream
         {
             return IExecute<Java.Util.Stream.LongStream>("takeWhile", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

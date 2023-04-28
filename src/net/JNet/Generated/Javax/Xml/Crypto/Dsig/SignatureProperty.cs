@@ -66,7 +66,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<string>("getTarget"); }
         }
-        
+
         #endregion
 
         #region Nested classes

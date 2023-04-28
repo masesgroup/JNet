@@ -57,7 +57,7 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#TOP_ALIGNMENT"/>
         /// </summary>
         public static int TOP_ALIGNMENT { get { return SGetField<int>(LocalClazz, "TOP_ALIGNMENT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -126,7 +126,7 @@ namespace Java.Awt.FontNs
         {
             return IExecute<Java.Awt.Shape>("getOutline", arg0);
         }
-        
+
         #endregion
 
         #region Nested classes

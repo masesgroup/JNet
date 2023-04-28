@@ -45,7 +45,7 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW"/>
         /// </summary>
         public static Java.Nio.Charset.CoderResult UNDERFLOW { get { return SGetField<Java.Nio.Charset.CoderResult>(LocalClazz, "UNDERFLOW"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -67,7 +67,7 @@ namespace Java.Nio.Charset
         {
             return SExecute<Java.Nio.Charset.CoderResult>(LocalClazz, "unmappableForLength", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -116,13 +116,13 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#throwException()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public void ThrowException()
         {
             IExecute("throwException");
         }
-        
+
         #endregion
 
         #region Nested classes

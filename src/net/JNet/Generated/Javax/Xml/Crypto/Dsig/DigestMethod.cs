@@ -41,7 +41,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// Converter from <see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.DigestMethod t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
-        
+
         #endregion
 
         #region Fields
@@ -85,7 +85,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA512"/>
         /// </summary>
         public static string SHA512 { get { return SGetField<string>(LocalClazz, "SHA512"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -100,7 +100,7 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
         }
-        
+
         #endregion
 
         #region Nested classes

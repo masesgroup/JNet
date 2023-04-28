@@ -79,7 +79,7 @@ namespace Java.Awt.Geom
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -91,7 +91,7 @@ namespace Java.Awt.Geom
         /// Converter from <see cref="Java.Awt.Geom.AffineTransform"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Geom.AffineTransform t) => t.Cast<Java.Io.Serializable>();
-        
+
         #endregion
 
         #region Fields
@@ -135,7 +135,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_UNIFORM_SCALE"/>
         /// </summary>
         public static int TYPE_UNIFORM_SCALE { get { return SGetField<int>(LocalClazz, "TYPE_UNIFORM_SCALE"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -231,7 +231,7 @@ namespace Java.Awt.Geom
         {
             return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getTranslateInstance", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -389,7 +389,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#invert()"/>
         /// </summary>
-        
+
         /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
         public void Invert()
         {
@@ -657,7 +657,7 @@ namespace Java.Awt.Geom
         {
             IExecute("translate", arg0, arg1);
         }
-        
+
         #endregion
 
         #region Nested classes

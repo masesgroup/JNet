@@ -59,7 +59,7 @@ namespace Javax.Sound.Sampled
         {
             get { return IExecuteArray<object>("getValues"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -79,7 +79,7 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.Type.html#REVERB"/>
             /// </summary>
             public static Javax.Sound.Sampled.EnumControl.Type REVERB { get { return SGetField<Javax.Sound.Sampled.EnumControl.Type>(LocalClazz, "REVERB"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -90,11 +90,15 @@ namespace Javax.Sound.Sampled
 
             #endregion
 
+            #region Nested classes
+
+            #endregion
+
             // TODO: complete the class
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

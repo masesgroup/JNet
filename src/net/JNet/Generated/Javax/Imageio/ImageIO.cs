@@ -301,7 +301,7 @@ namespace Javax.Imageio
         {
             SExecute(LocalClazz, "scanForPlugins");
         }
-        
+
         #endregion
 
         #region Instance methods

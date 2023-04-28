@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/> to <see cref="Java.Util.Concurrent.ScheduledFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         {
             get { return IExecute<bool>("isPeriodic"); }
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -91,7 +91,7 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RunnableScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.RunnableScheduledFuture>();
-        
+
         #endregion
 
         #region Fields
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         {
             get { return IExecute<bool>("isPeriodic"); }
         }
-        
+
         #endregion
 
         #region Nested classes

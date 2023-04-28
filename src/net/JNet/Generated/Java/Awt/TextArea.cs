@@ -71,7 +71,7 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -95,7 +95,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY"/>
         /// </summary>
         public static int SCROLLBARS_VERTICAL_ONLY { get { return SGetField<int>(LocalClazz, "SCROLLBARS_VERTICAL_ONLY"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -171,7 +171,7 @@ namespace Java.Awt
         {
             IExecute("replaceRange", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

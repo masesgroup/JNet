@@ -171,7 +171,7 @@ namespace Javax.Management.Modelmbean
         {
             IExecute("setDescriptors", new object[] { arg0 });
         }
-        
+
         #endregion
 
         #region Nested classes

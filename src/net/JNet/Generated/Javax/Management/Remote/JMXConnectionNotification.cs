@@ -42,7 +42,7 @@ namespace Javax.Management.Remote
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -66,7 +66,7 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED"/>
         /// </summary>
         public static string OPENED { get { return SGetField<string>(LocalClazz, "OPENED"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -81,7 +81,7 @@ namespace Javax.Management.Remote
         {
             get { return IExecute<string>("getConnectionId"); }
         }
-        
+
         #endregion
 
         #region Nested classes

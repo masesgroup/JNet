@@ -56,7 +56,7 @@ namespace Javax.Swing
         {
             SExecute(LocalClazz, "setInstance", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -84,7 +84,7 @@ namespace Javax.Swing
         {
             return IExecute<int>("getPreferredGap", arg0, arg1, arg2, arg3, arg4);
         }
-        
+
         #endregion
 
         #region Nested classes
@@ -112,7 +112,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED"/>
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "UNRELATED"); } }
-            
+
             #endregion
 
             #region Static methods
@@ -132,10 +132,14 @@ namespace Javax.Swing
             {
                 return SExecute<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "valueOf", arg0);
             }
-            
+
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
 
             #endregion
 
@@ -143,7 +147,7 @@ namespace Javax.Swing
         }
         #endregion
 
-
+    
         #endregion
 
         // TODO: complete the class

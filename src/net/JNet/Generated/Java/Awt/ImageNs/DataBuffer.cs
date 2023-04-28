@@ -65,7 +65,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_USHORT"/>
         /// </summary>
         public static int TYPE_USHORT { get { return SGetField<int>(LocalClazz, "TYPE_USHORT"); } }
-        
+
         #endregion
 
         #region Static methods
@@ -78,7 +78,7 @@ namespace Java.Awt.ImageNs
         {
             return SExecute<int>(LocalClazz, "getDataTypeSize", arg0);
         }
-        
+
         #endregion
 
         #region Instance methods
@@ -231,7 +231,7 @@ namespace Java.Awt.ImageNs
         {
             IExecute("setElemFloat", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

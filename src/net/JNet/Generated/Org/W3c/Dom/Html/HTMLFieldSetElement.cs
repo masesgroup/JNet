@@ -52,7 +52,7 @@ namespace Org.W3c.Dom.Html
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
-        
+
         #endregion
 
         #region Nested classes

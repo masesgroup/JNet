@@ -87,7 +87,7 @@ namespace Javax.Management.Openmbean
         {
             get { return IExecuteArray<Javax.Management.MBeanOperationInfo>("getOperations"); }
         }
-        
+
         #endregion
 
         #region Nested classes

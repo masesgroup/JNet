@@ -41,7 +41,7 @@ namespace Java.Security
         /// Converter from <see cref="Java.Security.PrivateKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.PrivateKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
-        
+
         #endregion
 
         #region Fields
@@ -49,7 +49,7 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
-        
+
         #endregion
 
         #region Static methods

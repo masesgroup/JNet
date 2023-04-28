@@ -56,7 +56,7 @@ namespace Javax.Swing.Table
         {
             return IExecute<string>("toString", arg0, arg1, arg2);
         }
-        
+
         #endregion
 
         #region Nested classes

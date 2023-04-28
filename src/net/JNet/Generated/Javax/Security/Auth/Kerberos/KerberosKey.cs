@@ -50,7 +50,7 @@ namespace Javax.Security.Auth.Kerberos
             : base(arg0, arg1, arg2)
         {
         }
-        
+
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,7 +58,7 @@ namespace Javax.Security.Auth.Kerberos
         /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosKey"/> to <see cref="Javax.Crypto.SecretKey"/>
         /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.KerberosKey t) => t.Cast<Javax.Crypto.SecretKey>();
-        
+
         #endregion
 
         #region Fields
@@ -122,13 +122,13 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#destroy()"/>
         /// </summary>
-        
+
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
             IExecute("destroy");
         }
-        
+
         #endregion
 
         #region Nested classes
