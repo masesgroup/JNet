@@ -51,7 +51,7 @@ jobs:
           submodules: 'true'
 
       - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src/net/JNet/JNet.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src/net/JNet/JNet.csproj
         
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v3
