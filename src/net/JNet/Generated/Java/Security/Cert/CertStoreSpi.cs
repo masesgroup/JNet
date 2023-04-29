@@ -58,6 +58,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
@@ -68,6 +69,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL

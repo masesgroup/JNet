@@ -144,6 +144,8 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void AddAttributes<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0, int arg1, int arg2) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             IExecute("addAttributes", arg0, arg1, arg2);

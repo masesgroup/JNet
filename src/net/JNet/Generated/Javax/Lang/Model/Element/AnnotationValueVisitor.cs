@@ -243,8 +243,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
             return IExecute<R>("visit", arg0, arg1);
@@ -253,8 +253,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror arg0, P arg1)
         {
             return IExecute<R>("visitAnnotation", arg0, arg1);
@@ -263,8 +263,9 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitArray<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue>(Java.Util.List<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue: Javax.Lang.Model.Element.AnnotationValue
         {
             return IExecute<R>("visitArray", arg0, arg1);
@@ -273,8 +274,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitBoolean(bool arg0, P arg1)
         {
             return IExecute<R>("visitBoolean", arg0, arg1);
@@ -283,8 +284,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitByte(byte arg0, P arg1)
         {
             return IExecute<R>("visitByte", arg0, arg1);
@@ -293,8 +294,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitChar(char arg0, P arg1)
         {
             return IExecute<R>("visitChar", arg0, arg1);
@@ -303,8 +304,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitDouble(double arg0, P arg1)
         {
             return IExecute<R>("visitDouble", arg0, arg1);
@@ -313,8 +314,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitEnumConstant(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitEnumConstant", arg0, arg1);
@@ -323,8 +324,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitFloat(float arg0, P arg1)
         {
             return IExecute<R>("visitFloat", arg0, arg1);
@@ -333,8 +334,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitInt(int arg0, P arg1)
         {
             return IExecute<R>("visitInt", arg0, arg1);
@@ -343,8 +344,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitLong(long arg0, P arg1)
         {
             return IExecute<R>("visitLong", arg0, arg1);
@@ -353,8 +354,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitShort(short arg0, P arg1)
         {
             return IExecute<R>("visitShort", arg0, arg1);
@@ -363,8 +364,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitString(string arg0, P arg1)
         {
             return IExecute<R>("visitString", arg0, arg1);
@@ -373,8 +374,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitType(Javax.Lang.Model.Type.TypeMirror arg0, P arg1)
         {
             return IExecute<R>("visitType", arg0, arg1);
@@ -383,8 +384,8 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
             return IExecute<R>("visitUnknown", arg0, arg1);
@@ -393,7 +394,7 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecute<R>("visit", arg0);

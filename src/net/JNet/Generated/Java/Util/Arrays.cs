@@ -44,10 +44,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="U"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOf<T, U>(U arg0, int arg1, Java.Lang.Class arg2)
         {
             return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1, arg2);
@@ -55,11 +57,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="U"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOfRange<T, U>(U arg0, int arg1, int arg2, Java.Lang.Class arg3)
         {
             return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2, arg3);
@@ -67,13 +71,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="T"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public static bool Equals<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
@@ -82,9 +88,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public static bool Equals<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
@@ -93,11 +101,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="T"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
         /// <param name="arg4"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg4objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<T, Arg4objectSuperT>(T arg0, int arg1, int arg2, T arg3, Java.Util.Comparator<Arg4objectSuperT> arg4) where Arg4objectSuperT: T
         {
@@ -106,9 +116,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
@@ -117,13 +129,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="T"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
@@ -132,12 +146,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="T"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Compare<T>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5)
         {
@@ -146,9 +161,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
@@ -157,8 +174,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Compare<T>(T arg0, T arg1)
         {
@@ -167,13 +185,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="T"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Mismatch<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
@@ -182,9 +202,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Mismatch<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
@@ -193,7 +215,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#asList(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> AsList<T>(params T[] arg0)
         {
@@ -202,9 +225,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(java.lang.Object[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(T arg0, int arg1, int arg2)
         {
@@ -213,7 +237,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(T arg0)
         {
@@ -222,9 +247,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(T arg0, int arg1, int arg2)
         {
@@ -233,7 +259,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(T arg0)
         {
@@ -242,9 +269,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOf<T>(T arg0, int arg1)
         {
             return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1);
@@ -252,10 +280,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOfRange<T>(T arg0, int arg1, int arg2)
         {
             return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
@@ -263,10 +292,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],int,int,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
         public static void ParallelPrefix<T>(T arg0, int arg1, int arg2, Java.Util.Function.BinaryOperator<T> arg3)
         {
             SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
@@ -274,8 +304,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
         public static void ParallelPrefix<T>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
             SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
@@ -283,8 +314,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(java.lang.Object[],java.util.function.IntFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         public static void ParallelSetAll<T, Arg1ExtendsT>(T arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
             SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
@@ -292,10 +325,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],int,int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         public static void ParallelSort<T, Arg3objectSuperT>(T arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2, arg3);
@@ -303,9 +338,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
         public static void ParallelSort<T>(T arg0, int arg1, int arg2)
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
@@ -313,8 +349,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void ParallelSort<T, Arg1objectSuperT>(T arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1);
@@ -322,7 +360,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         public static void ParallelSort<T>(T arg0)
         {
             SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
@@ -330,8 +369,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         public static void SetAll<T, Arg1ExtendsT>(T arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
             SExecute(LocalClazz, "setAll", arg0, arg1);
@@ -339,10 +380,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg3objectSuperT>(T arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
             SExecute(LocalClazz, "sort", arg0, arg1, arg2, arg3);
@@ -350,8 +393,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg1objectSuperT>(T arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
             SExecute(LocalClazz, "sort", arg0, arg1);

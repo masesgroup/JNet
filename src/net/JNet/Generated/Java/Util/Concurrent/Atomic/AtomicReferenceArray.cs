@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public AtomicReferenceArray(E arg0)
             : base(arg0)
         {
@@ -351,8 +351,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(int arg0, E arg1, E arg2)
         {
@@ -362,8 +362,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetAcquire(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(int arg0, E arg1, E arg2)
         {
@@ -373,8 +373,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetPlain(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(int arg0, E arg1, E arg2)
         {
@@ -384,8 +384,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetRelease(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(int arg0, E arg1, E arg2)
         {
@@ -395,8 +395,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetVolatile(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(int arg0, E arg1, E arg2)
         {
@@ -406,9 +406,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#accumulateAndGet(int,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E AccumulateAndGet(int arg0, E arg1, Java.Util.Function.BinaryOperator<E> arg2)
         {
             return IExecute<E>("accumulateAndGet", arg0, arg1, arg2);
@@ -417,9 +417,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchange(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E CompareAndExchange(int arg0, E arg1, E arg2)
         {
             return IExecute<E>("compareAndExchange", arg0, arg1, arg2);
@@ -428,9 +428,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeAcquire(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E CompareAndExchangeAcquire(int arg0, E arg1, E arg2)
         {
             return IExecute<E>("compareAndExchangeAcquire", arg0, arg1, arg2);
@@ -439,9 +439,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeRelease(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E CompareAndExchangeRelease(int arg0, E arg1, E arg2)
         {
             return IExecute<E>("compareAndExchangeRelease", arg0, arg1, arg2);
@@ -450,7 +450,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
             return IExecute<E>("get", arg0);
@@ -459,7 +459,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAcquire(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetAcquire(int arg0)
         {
             return IExecute<E>("getAcquire", arg0);
@@ -468,9 +468,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetAndAccumulate(int arg0, E arg1, Java.Util.Function.BinaryOperator<E> arg2)
         {
             return IExecute<E>("getAndAccumulate", arg0, arg1, arg2);
@@ -479,8 +479,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndSet(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetAndSet(int arg0, E arg1)
         {
             return IExecute<E>("getAndSet", arg0, arg1);
@@ -490,7 +490,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetAndUpdate(int arg0, Java.Util.Function.UnaryOperator<E> arg1)
         {
             return IExecute<E>("getAndUpdate", arg0, arg1);
@@ -499,7 +499,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getOpaque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetOpaque(int arg0)
         {
             return IExecute<E>("getOpaque", arg0);
@@ -508,7 +508,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getPlain(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetPlain(int arg0)
         {
             return IExecute<E>("getPlain", arg0);
@@ -518,7 +518,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E UpdateAndGet(int arg0, Java.Util.Function.UnaryOperator<E> arg1)
         {
             return IExecute<E>("updateAndGet", arg0, arg1);
@@ -527,7 +527,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void LazySet(int arg0, E arg1)
         {
             IExecute("lazySet", arg0, arg1);
@@ -536,7 +536,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void Set(int arg0, E arg1)
         {
             IExecute("set", arg0, arg1);
@@ -545,7 +545,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setOpaque(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void SetOpaque(int arg0, E arg1)
         {
             IExecute("setOpaque", arg0, arg1);
@@ -554,7 +554,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setPlain(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void SetPlain(int arg0, E arg1)
         {
             IExecute("setPlain", arg0, arg1);
@@ -563,7 +563,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setRelease(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void SetRelease(int arg0, E arg1)
         {
             IExecute("setRelease", arg0, arg1);

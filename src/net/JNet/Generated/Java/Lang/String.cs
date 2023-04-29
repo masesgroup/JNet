@@ -225,6 +225,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="string"/></returns>
         public static string Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
         {

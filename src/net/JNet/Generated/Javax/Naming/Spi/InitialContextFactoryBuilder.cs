@@ -49,6 +49,7 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactoryBuilder.html#createInitialContextFactory(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Spi.InitialContextFactory"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)

@@ -101,7 +101,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#get(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <returns><typeparamref name="T"/></returns>
         public T Get(Java.Lang.Class arg0)
         {
             return IExecute<T>("get", arg0);

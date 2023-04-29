@@ -587,6 +587,8 @@ namespace Java.Nio.Channels
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
+    /// <typeparam name="A"></typeparam>
     public partial class CompletionHandler<V, A> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler<V, A>>
     {
         /// <summary>

@@ -230,6 +230,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttributes<Arg1Extendsobject>(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<Arg1Extendsobject> arg1)
         {
@@ -403,7 +404,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getListeners(java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <returns><see cref="T"/></returns>
+            /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+            /// <returns><typeparamref name="T"/></returns>
             public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
             {
                 return IExecuteArray<T>("getListeners", arg0);
@@ -491,6 +493,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(java.util.Enumeration)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+            /// <typeparam name="Arg0Extendsobject"></typeparam>
             public void RemoveAttributes<Arg0Extendsobject>(Java.Util.Enumeration<Arg0Extendsobject> arg0)
             {
                 IExecute("removeAttributes", arg0);

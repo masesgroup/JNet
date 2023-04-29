@@ -224,8 +224,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitExecutableAsConstructor(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitExecutableAsConstructor(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1)
         {
             return IExecute<R>("visitExecutableAsConstructor", arg0, arg1);
@@ -234,8 +234,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitExecutableAsInstanceInit(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitExecutableAsInstanceInit(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1)
         {
             return IExecute<R>("visitExecutableAsInstanceInit", arg0, arg1);
@@ -244,8 +244,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitExecutableAsMethod(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitExecutableAsMethod(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1)
         {
             return IExecute<R>("visitExecutableAsMethod", arg0, arg1);
@@ -254,8 +254,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitExecutableAsStaticInit(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitExecutableAsStaticInit(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1)
         {
             return IExecute<R>("visitExecutableAsStaticInit", arg0, arg1);
@@ -264,8 +264,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsAnnotationType(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitTypeAsAnnotationType(Javax.Lang.Model.Element.TypeElement arg0, P arg1)
         {
             return IExecute<R>("visitTypeAsAnnotationType", arg0, arg1);
@@ -274,8 +274,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsClass(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitTypeAsClass(Javax.Lang.Model.Element.TypeElement arg0, P arg1)
         {
             return IExecute<R>("visitTypeAsClass", arg0, arg1);
@@ -284,8 +284,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsEnum(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitTypeAsEnum(Javax.Lang.Model.Element.TypeElement arg0, P arg1)
         {
             return IExecute<R>("visitTypeAsEnum", arg0, arg1);
@@ -294,8 +294,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsInterface(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitTypeAsInterface(Javax.Lang.Model.Element.TypeElement arg0, P arg1)
         {
             return IExecute<R>("visitTypeAsInterface", arg0, arg1);
@@ -304,8 +304,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsEnumConstant(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsEnumConstant", arg0, arg1);
@@ -314,8 +314,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsExceptionParameter(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsExceptionParameter(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsExceptionParameter", arg0, arg1);
@@ -324,8 +324,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsField(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsField(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsField", arg0, arg1);
@@ -334,8 +334,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsLocalVariable(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsLocalVariable(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsLocalVariable", arg0, arg1);
@@ -344,8 +344,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsParameter(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsParameter(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsParameter", arg0, arg1);
@@ -354,8 +354,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsResourceVariable(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R VisitVariableAsResourceVariable(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecute<R>("visitVariableAsResourceVariable", arg0, arg1);

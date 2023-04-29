@@ -72,6 +72,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     public partial class BiConsumer<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BiConsumer<T, U>>
     {
         /// <summary>
@@ -158,6 +160,9 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
+    /// <typeparam name="R"></typeparam>
     public partial class BiFunction<T, U, R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BiFunction<T, U, R>>
     {
         /// <summary>
@@ -244,6 +249,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class BinaryOperator<T> : Java.Util.Function.BiFunction<T, T, T>
     {
         /// <summary>
@@ -330,6 +336,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     public partial class BiPredicate<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BiPredicate<T, U>>
     {
         /// <summary>
@@ -459,6 +467,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Consumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Consumer<T>>
     {
         /// <summary>
@@ -631,6 +640,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
     public partial class DoubleFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DoubleFunction<R>>
     {
         /// <summary>
@@ -932,6 +942,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="R"></typeparam>
     public partial class Function<T, R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Function<T, R>>
     {
         /// <summary>
@@ -1104,6 +1116,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
     public partial class IntFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IntFunction<R>>
     {
         /// <summary>
@@ -1491,6 +1504,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
     public partial class LongFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LongFunction<R>>
     {
         /// <summary>
@@ -1792,6 +1806,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ObjDoubleConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjDoubleConsumer<T>>
     {
         /// <summary>
@@ -1878,6 +1893,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ObjIntConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjIntConsumer<T>>
     {
         /// <summary>
@@ -1964,6 +1980,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ObjLongConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjLongConsumer<T>>
     {
         /// <summary>
@@ -2050,6 +2067,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Predicate<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Predicate<T>>
     {
         /// <summary>
@@ -2136,6 +2154,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Supplier<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Supplier<T>>
     {
         /// <summary>
@@ -2222,6 +2241,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     public partial class ToDoubleBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToDoubleBiFunction<T, U>>
     {
         /// <summary>
@@ -2308,6 +2329,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ToDoubleFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToDoubleFunction<T>>
     {
         /// <summary>
@@ -2394,6 +2416,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     public partial class ToIntBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToIntBiFunction<T, U>>
     {
         /// <summary>
@@ -2480,6 +2504,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ToIntFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToIntFunction<T>>
     {
         /// <summary>
@@ -2566,6 +2591,8 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     public partial class ToLongBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToLongBiFunction<T, U>>
     {
         /// <summary>
@@ -2652,6 +2679,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ToLongFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ToLongFunction<T>>
     {
         /// <summary>
@@ -2738,6 +2766,7 @@ namespace Java.Util.Function
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class UnaryOperator<T> : Java.Util.Function.Function<T, T>
     {
         /// <summary>

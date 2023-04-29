@@ -459,6 +459,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Class<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Class<T>>
     {
         /// <summary>
@@ -588,6 +589,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ClassValue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassValue<T>>
     {
         /// <summary>
@@ -717,6 +719,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Comparable<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comparable<T>>
     {
         /// <summary>
@@ -889,6 +892,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html"/>
     /// </summary>
+    /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
     public partial class Enum<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum<E>> where E: Java.Lang.Enum<E>
     {
         /// <summary>
@@ -1077,6 +1081,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class InheritableThreadLocal<T> : Java.Lang.ThreadLocal<T>
     {
         /// <summary>
@@ -1206,6 +1211,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Iterable<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterable<T>>
     {
         /// <summary>
@@ -3044,6 +3050,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ThreadLocal<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadLocal<T>>
     {
         /// <summary>

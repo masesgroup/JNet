@@ -394,9 +394,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <param name="arg2"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg2"><typeparamref name="V"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
@@ -405,9 +405,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
         public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
         {
             return IExecute<V>("compute", arg0, arg1);
@@ -415,9 +418,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
         {
             return IExecute<V>("computeIfAbsent", arg0, arg1);
@@ -425,9 +430,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
         {
             return IExecute<V>("computeIfPresent", arg0, arg1);
@@ -436,8 +444,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
             return IExecute<V>("getOrDefault", arg0, arg1);
@@ -445,10 +453,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
         public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV: V where Arg2ExtendsV: V
         {
             return IExecute<V>("merge", arg0, arg1, arg2);
@@ -456,9 +466,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
             return IExecute<V>("putIfAbsent", arg0, arg1);
@@ -466,9 +476,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         public V Replace(K arg0, V arg1)
         {
             return IExecute<V>("replace", arg0, arg1);
@@ -484,6 +494,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"></typeparam>
         public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K
         {
             IExecute("forEach", arg0);
@@ -492,6 +504,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
         {
             IExecute("putAll", arg0);
@@ -500,6 +514,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"></typeparam>
         public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K
         {
             IExecute("replaceAll", arg0);

@@ -534,9 +534,45 @@ namespace MASES.JNetReflector
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
+            StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
+            if (isGeneric && jClass.IsJVMGenericClass())
+            {
+                List<string> classGenerics = new List<string>();
+                List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
+                jClass.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+
+                if (classClauses.Count != 0)
+                {
+                    StringBuilder typeParamHelp = new StringBuilder();
+                    foreach (var classClause in classClauses)
+                    {
+                        var typeParamContent = string.Empty;
+                        if (!string.IsNullOrWhiteSpace(classClause.Value))
+                        {
+                            typeParamContent = string.Format(AllPackageClasses.ClassStub.HELP_PARAM_SEE_DECORATION, classClause.Value.ConvertToJavadoc());
+                        }
+                        var singleTypeParam = string.Format(AllPackageClasses.ClassStub.HELP_TYPEPARAM_DECORATION, classClause.Key, typeParamContent);
+                        typeParamHelp.AppendLine(singleTypeParam);
+                    }
+                    var typeParamHelpStr = typeParamHelp.ToString();
+                    if (!string.IsNullOrWhiteSpace(typeParamHelpStr))
+                    {
+                        jClassDecoration.AppendLine();
+                        typeParamHelpStr = typeParamHelpStr.Substring(0, typeParamHelpStr.LastIndexOf(Environment.NewLine));
+                        jClassDecoration.Append(typeParamHelpStr);
+                    }
+                }
+            }
+            if (jClassIsDepracated)
+            {
+                jClassDecoration.AppendLine();
+                jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
+            }
+
             if (jClass.IsJVMException())
             {
-                allPackagesClassBlock = stubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                allPackagesClassBlock = stubException.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
+                                                     .Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
                                                      .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
                                                      .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
@@ -551,7 +587,8 @@ namespace MASES.JNetReflector
                 bool isClassStatic = jClass.IsStatic();
                 List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                allPackagesClassBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                allPackagesClassBlock = template.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
+                                                .Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
                                                 .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(genClause, false))
                                                 .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
@@ -578,15 +615,7 @@ namespace MASES.JNetReflector
             {
                 List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
 
-                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
-                if (jClassIsDepracated)
-                {
-                    jClassDecoration.AppendLine();
-                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
-                }
-
-                singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
-                                            .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
+                singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
                                             .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
                                             .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
                                             .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
@@ -700,8 +729,14 @@ namespace MASES.JNetReflector
                             typeStr = typeStrForDoc;
                         }
                     }
-                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name,
-                                                                                                                                       typeStrForDoc.ConvertToJavadoc()));
+
+                    var helpFormat = AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_SEE_DECORATION;
+                    if (paramGenArguments.Contains(typeStrForDoc.ConvertToJavadoc()) || classGenerics.Contains(typeStrForDoc.ConvertToJavadoc()))
+                    {
+                        helpFormat = AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
+                    }
+                    var content = string.Format(helpFormat, typeStrForDoc.ConvertToJavadoc());
+                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name, content));
                     if (item.IsVarArgs)
                     {
                         constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
@@ -1245,8 +1280,8 @@ namespace MASES.JNetReflector
                 foreach (var parameter in parameters)
                 {
                     List<string> paramGenArguments = new List<string>();
-                    List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
-                    var typeStr = parameter.Type(paramGenArguments, paramGenClause, parameter.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    List<KeyValuePair<string, string>> paramGenClauses = new List<KeyValuePair<string, string>>();
+                    var typeStr = parameter.Type(paramGenArguments, paramGenClauses, parameter.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
                     var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
                     if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
                     {
@@ -1264,12 +1299,17 @@ namespace MASES.JNetReflector
                         if (usableGenStrings && !typeStr.IsNetNativeType())
                         {
                             genericArguments.AddRange(paramGenArguments);
-                            genericClauses.AddRange(paramGenClause);
+                            genericClauses.AddRange(paramGenClauses);
                         }
                     }
 
-                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                  typeStrForDoc.ConvertToJavadoc()));
+                    var helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_SEE_DECORATION;
+                    if (paramGenArguments.Contains(typeStrForDoc.ConvertToJavadoc()) || classGenerics.Contains(typeStrForDoc.ConvertToJavadoc()))
+                    {
+                        helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
+                    }
+                    var content = string.Format(helpFormat, typeStrForDoc.ConvertToJavadoc());
+                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name, content));
                     if (parameter.IsVarArgs)
                     {
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
@@ -1418,10 +1458,41 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
+                if (genericClauses.Count != 0)
+                {
+                    StringBuilder typeParamHelp = new StringBuilder();
+                    foreach (var genericClause in genericClauses)
+                    {
+                        if (!classGenerics.Contains(genericClause.Key))
+                        {
+                            var typeParamContent = string.Empty;
+                            if (!string.IsNullOrWhiteSpace(genericClause.Value))
+                            {
+                                var helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_SEE_DECORATION;
+                                if (genericArguments.Contains(genericClause.Value.ConvertToJavadoc()) || classGenerics.Contains(genericClause.Value.ConvertToJavadoc()))
+                                {
+                                    helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
+                                }
+                                typeParamContent = string.Format(helpFormat, genericClause.Value.ConvertToJavadoc());
+                            }
+                            var singleTypeParam = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_TYPEPARAM_DECORATION, genericClause.Key, typeParamContent);
+                            typeParamHelp.AppendLine(singleTypeParam);
+                        }
+                    }
+                    if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
+                    methodHelpBuilder.Append(typeParamHelp.ToString());
+                }
+
                 if (!isVoidMethod)
                 {
                     var returnTypeForDocs = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
-                    string strReturn = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_RETURN_DECORATION, returnTypeForDocs.ConvertToJavadoc());
+                    var helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_SEE_DECORATION;
+                    if (genericArguments.Contains(returnTypeForDocs.ConvertToJavadoc()) || classGenerics.Contains(returnTypeForDocs.ConvertToJavadoc()))
+                    {
+                        helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
+                    }
+                    var returnContent = string.Format(helpFormat, returnTypeForDocs.ConvertToJavadoc());
+                    string strReturn = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_RETURN_DECORATION, returnContent);
                     if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
                     methodHelpBuilder.Append(strReturn);
                 }

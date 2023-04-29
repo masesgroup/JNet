@@ -51,6 +51,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<V> Schedule<V>(Java.Util.Concurrent.Callable<V> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
@@ -62,6 +63,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> Schedule<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
@@ -74,6 +76,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleAtFixedRate<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
@@ -86,6 +89,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleWithFixedDelay<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {

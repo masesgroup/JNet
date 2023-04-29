@@ -185,7 +185,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
             return IExecute<E>("get", arg0);
@@ -195,6 +195,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
         {
@@ -204,7 +205,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E Remove(int arg0)
         {
             return IExecute<E>("remove", arg0);
@@ -213,8 +214,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Set(int arg0, E arg1)
         {
             return IExecute<E>("set", arg0, arg1);
@@ -269,7 +270,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void Add(int arg0, E arg1)
         {
             IExecute("add", arg0, arg1);

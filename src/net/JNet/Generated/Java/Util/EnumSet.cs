@@ -269,11 +269,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4)
         {
@@ -282,10 +282,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0, E arg1, E arg2, E arg3)
         {
@@ -294,9 +294,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0, E arg1, E arg2)
         {
@@ -305,8 +305,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0, params E[] arg1)
         {
@@ -315,8 +315,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0, E arg1)
         {
@@ -325,7 +325,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0)
         {
@@ -334,8 +334,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#range(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Range(E arg0, E arg1)
         {

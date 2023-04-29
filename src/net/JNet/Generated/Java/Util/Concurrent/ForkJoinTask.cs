@@ -386,6 +386,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> InvokeAll<T>(Java.Util.Collection<T> arg0)
         {
@@ -395,7 +396,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T>(Java.Lang.Runnable arg0, T arg1)
         {
@@ -405,6 +407,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T, Arg0ExtendsT>(Java.Util.Concurrent.Callable<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -414,6 +418,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject> Adapt<ReturnExtendsobject>(Java.Lang.Runnable arg0)
         {
@@ -431,6 +436,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         public static void InvokeAll<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject> arg0, Java.Util.Concurrent.ForkJoinTask<Arg1Extendsobject> arg1)
         {
             SExecute(LocalClazz, "invokeAll", arg0, arg1);
@@ -439,6 +446,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void InvokeAll<Arg0Extendsobject>(params Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject>[] arg0)
         {
             if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
@@ -556,7 +564,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#get()"/>
         /// </summary>
 
-        /// <returns><see cref="V"/></returns>
+        /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public V Get()
@@ -568,7 +576,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
@@ -600,7 +608,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#complete(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="V"/></param>
         public void Complete(V arg0)
         {
             IExecute("complete", arg0);

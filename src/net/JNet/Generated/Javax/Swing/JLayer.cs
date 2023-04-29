@@ -179,7 +179,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
         public JLayer(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
             : base(arg0, arg1)
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="V"/></param>
         public JLayer(V arg0)
             : base(arg0)
         {
@@ -308,6 +308,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         public void SetUI<Arg0objectSuperV>(Javax.Swing.Plaf.LayerUI<Arg0objectSuperV> arg0) where Arg0objectSuperV: V
         {
             IExecute("setUI", arg0);

@@ -545,6 +545,7 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
     public partial class TemporalQuery<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery<R>>
     {
         /// <summary>

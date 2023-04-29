@@ -93,8 +93,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><see cref="int"/></returns>
         public int ApplyAsInt(T arg0, U arg1)
         {

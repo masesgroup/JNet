@@ -122,7 +122,8 @@ namespace Java.Awt.Dnd
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T CreateDragGestureRecognizer<T>(Java.Lang.Class arg0, Java.Awt.Component arg1, int arg2, Java.Awt.Dnd.DragGestureListener arg3) where T: Java.Awt.Dnd.DragGestureRecognizer
         {
             return IExecute<T>("createDragGestureRecognizer", arg0, arg1, arg2, arg3);
@@ -131,7 +132,8 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
             return IExecuteArray<T>("getListeners", arg0);

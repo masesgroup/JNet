@@ -184,6 +184,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
             /// <param name="arg1"><see cref="long"/></param>
+            /// <typeparam name="Arg0ExtendsJava_Nio_ByteBuffer"><see cref="Java.Nio.ByteBuffer"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
@@ -193,6 +194,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow.Publisher)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
+            /// <typeparam name="Arg0ExtendsJava_Nio_ByteBuffer"><see cref="Java.Nio.ByteBuffer"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
             {
@@ -241,6 +243,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofInputStream(java.util.function.Supplier)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+            /// <typeparam name="Arg0ExtendsJava_Io_InputStream"><see cref="Java.Io.InputStream"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream<Arg0ExtendsJava_Io_InputStream>(Java.Util.Function.Supplier<Arg0ExtendsJava_Io_InputStream> arg0) where Arg0ExtendsJava_Io_InputStream: Java.Io.InputStream
             {

@@ -103,7 +103,8 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getParameterSpec(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
         public T GetParameterSpec<T>(Java.Lang.Class arg0) where T: Java.Security.Spec.AlgorithmParameterSpec
         {

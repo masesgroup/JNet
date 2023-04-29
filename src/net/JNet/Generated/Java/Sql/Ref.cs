@@ -63,6 +63,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)

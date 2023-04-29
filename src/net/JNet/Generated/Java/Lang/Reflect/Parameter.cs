@@ -137,7 +137,8 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
             return IExecute<T>("getAnnotation", arg0);
@@ -146,7 +147,8 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
             return IExecute<T>("getDeclaredAnnotation", arg0);
@@ -155,7 +157,8 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
             return IExecuteArray<T>("getAnnotationsByType", arg0);
@@ -164,7 +167,8 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
             return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);

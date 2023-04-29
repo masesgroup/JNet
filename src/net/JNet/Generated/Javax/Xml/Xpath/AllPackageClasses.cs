@@ -201,6 +201,7 @@ namespace Javax.Xml.Xpath
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class XPathEvaluationResult<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathEvaluationResult<T>>
     {
         /// <summary>

@@ -54,6 +54,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
@@ -63,6 +64,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#lookupProviders(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0)
         {
@@ -82,8 +84,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool DeregisterServiceProvider<T>(T arg0, Java.Lang.Class arg1)
         {
@@ -92,8 +95,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProvider(java.lang.Object,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool RegisterServiceProvider<T>(T arg0, Java.Lang.Class arg1)
         {
@@ -103,8 +107,9 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#setOrdering(java.lang.Class,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
-        /// <param name="arg2"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool SetOrdering<T>(Java.Lang.Class arg0, T arg1, T arg2)
         {
@@ -114,8 +119,9 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#unsetOrdering(java.lang.Class,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
-        /// <param name="arg2"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool UnsetOrdering<T>(Java.Lang.Class arg0, T arg1, T arg2)
         {
@@ -126,6 +132,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> GetServiceProviders<T>(Java.Lang.Class arg0, bool arg1)
         {
@@ -137,6 +144,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.Spi.ServiceRegistry.Filter"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> GetServiceProviders<T>(Java.Lang.Class arg0, Javax.Imageio.Spi.ServiceRegistry.Filter arg1, bool arg2)
         {
@@ -146,7 +154,8 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviderByClass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T GetServiceProviderByClass<T>(Java.Lang.Class arg0)
         {
             return IExecute<T>("getServiceProviderByClass", arg0);
@@ -195,6 +204,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProviders(java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void RegisterServiceProviders<Arg0Extendsobject>(Java.Util.Iterator<Arg0Extendsobject> arg0)
         {
             IExecute("registerServiceProviders", arg0);

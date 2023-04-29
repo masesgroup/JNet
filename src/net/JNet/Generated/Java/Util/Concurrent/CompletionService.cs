@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1)
         {

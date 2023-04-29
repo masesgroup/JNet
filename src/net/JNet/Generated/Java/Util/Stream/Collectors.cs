@@ -81,6 +81,10 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.Collector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="RR"></typeparam>
+        /// <typeparam name="R"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, A, RR> CollectingAndThen<T, A, RR, R>(Java.Util.Stream.Collector<T, A, R> arg0, Java.Util.Function.Function<R, RR> arg1)
         {
@@ -91,6 +95,12 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Filtering<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT: T
         {
@@ -100,6 +110,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toCollection(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="C"><see cref="Java.Util.Collection{T}"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, C> ToCollection<T, ReturnExtendsobject, C>(Java.Util.Function.Supplier<C> arg0) where C: Java.Util.Collection<T>
         {
@@ -110,6 +123,12 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="D"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>> PartitioningBy<T, ReturnExtendsobject, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
@@ -121,6 +140,15 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg2"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="M"><see cref="Java.Util.Concurrent.ConcurrentMap{K, D}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><see cref="Java.Util.Concurrent.ConcurrentMap{K, D}"/></typeparam>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingByConcurrent<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Concurrent.ConcurrentMap<K, D>
         {
@@ -131,6 +159,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="D"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
@@ -141,6 +177,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="D"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>> GroupingBy<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
@@ -152,6 +196,15 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg2"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="M"><see cref="Java.Util.Map{K, D}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><see cref="Java.Util.Map{K, D}"/></typeparam>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingBy<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Map<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Map<K, D>
         {
@@ -164,6 +217,15 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="M"><see cref="Java.Util.Concurrent.ConcurrentMap{K, U}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToConcurrentMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT: T
         {
@@ -176,6 +238,15 @@ namespace Java.Util.Stream
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="M"><see cref="Java.Util.Map{K, U}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Map<K, U> where Arg0objectSuperT: T
         {
@@ -187,6 +258,14 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
@@ -197,6 +276,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
@@ -208,6 +295,14 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
@@ -218,6 +313,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
@@ -229,6 +332,14 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
@@ -239,6 +350,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
@@ -248,6 +367,11 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
@@ -257,6 +381,11 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
@@ -267,6 +396,15 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><see cref="Java.Util.Stream.Stream{Arg0ExtendsU}"/></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> FlatMapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsU: Java.Util.Stream.Stream<Arg0ExtendsU>
         {
@@ -277,6 +415,14 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Mapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T
         {
@@ -285,9 +431,14 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.Function,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="U"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, U> Reducing<T, ReturnExtendsobject, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T
         {
@@ -297,6 +448,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -306,6 +460,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -315,6 +472,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -324,6 +484,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> SummingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -333,6 +496,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, int?> SummingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -342,6 +508,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, long?> SummingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -351,6 +520,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics> SummarizingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -360,6 +532,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics> SummarizingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -369,6 +544,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics> SummarizingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -378,6 +556,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>> PartitioningBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -387,6 +568,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MaxBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -396,6 +580,9 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MinBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -405,6 +592,8 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> Reducing<T, ReturnExtendsobject>(Java.Util.Function.BinaryOperator<T> arg0)
         {
@@ -413,8 +602,10 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, T> Reducing<T, ReturnExtendsobject>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
@@ -424,6 +615,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()"/>
         /// </summary>
 
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>()
         {
@@ -435,6 +627,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
@@ -444,6 +637,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0)
         {

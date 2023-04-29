@@ -64,7 +64,8 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#unwrap(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public T Unwrap<T>(Java.Lang.Class arg0)
         {

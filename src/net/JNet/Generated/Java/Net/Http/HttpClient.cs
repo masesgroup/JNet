@@ -127,6 +127,7 @@ namespace Java.Net.Http
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
         /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Net.Http.HttpResponse"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -140,6 +141,7 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
         /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
         /// <param name="arg2"><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1, Java.Net.Http.HttpResponse.PushPromiseHandler<T> arg2)
         {
@@ -150,6 +152,7 @@ namespace Java.Net.Http
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
         /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
         {

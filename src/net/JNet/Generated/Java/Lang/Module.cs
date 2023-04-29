@@ -109,7 +109,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
         {
             return IExecute<T>("getAnnotation", arg0);

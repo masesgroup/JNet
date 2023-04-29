@@ -95,7 +95,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         public void Paint(Java.Awt.Graphics2D arg0, T arg1, int arg2, int arg3)

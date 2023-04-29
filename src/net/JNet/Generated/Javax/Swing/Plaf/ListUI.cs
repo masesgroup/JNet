@@ -50,6 +50,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
         public int LocationToIndex<Arg0Extendsobject>(Javax.Swing.JList<Arg0Extendsobject> arg0, Java.Awt.Point arg1)
         {
@@ -60,6 +61,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point IndexToLocation<Arg0Extendsobject>(Javax.Swing.JList<Arg0Extendsobject> arg0, int arg1)
         {
@@ -71,6 +73,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCellBounds<Arg0Extendsobject>(Javax.Swing.JList<Arg0Extendsobject> arg0, int arg1, int arg2)
         {

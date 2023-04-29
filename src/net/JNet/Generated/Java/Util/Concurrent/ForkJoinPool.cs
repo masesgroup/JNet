@@ -203,6 +203,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public Java.Util.Concurrent.ForkJoinTask<T> Submit<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
@@ -212,7 +213,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T Invoke<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
             return IExecute<T>("invoke", arg0);
@@ -231,6 +233,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void Execute<Arg0Extendsobject>(Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject> arg0)
         {
             IExecute("execute", arg0);

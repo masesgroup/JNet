@@ -73,6 +73,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableModel.html#getColumnClass(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetColumnClass<ReturnExtendsobject>(int arg0)
         {

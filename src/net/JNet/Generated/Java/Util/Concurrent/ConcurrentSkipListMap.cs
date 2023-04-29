@@ -436,7 +436,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> HeadMap(K arg0, bool arg1)
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> HeadMap(K arg0)
         {
@@ -455,9 +455,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="K"/></param>
+        /// <param name="arg2"><typeparamref name="K"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> SubMapMethod(K arg0, bool arg1, K arg2, bool arg3)
@@ -467,8 +467,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> SubMapMethod(K arg0, K arg1)
         {
@@ -477,7 +477,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> TailMap(K arg0, bool arg1)
@@ -487,7 +487,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> TailMap(K arg0)
         {
@@ -505,7 +505,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> CeilingEntry(K arg0)
         {
@@ -514,7 +514,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FloorEntry(K arg0)
         {
@@ -523,7 +523,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> HigherEntry(K arg0)
         {
@@ -532,7 +532,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LowerEntry(K arg0)
         {
@@ -541,8 +541,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <returns><see cref="K"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><typeparamref name="K"/></returns>
         public K CeilingKey(K arg0)
         {
             return IExecute<K>("ceilingKey", arg0);
@@ -550,8 +550,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <returns><see cref="K"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><typeparamref name="K"/></returns>
         public K FloorKey(K arg0)
         {
             return IExecute<K>("floorKey", arg0);
@@ -559,8 +559,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <returns><see cref="K"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><typeparamref name="K"/></returns>
         public K HigherKey(K arg0)
         {
             return IExecute<K>("higherKey", arg0);
@@ -568,8 +568,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <returns><see cref="K"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><typeparamref name="K"/></returns>
         public K LowerKey(K arg0)
         {
             return IExecute<K>("lowerKey", arg0);

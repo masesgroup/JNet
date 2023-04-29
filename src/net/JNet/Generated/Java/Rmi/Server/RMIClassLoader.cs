@@ -54,6 +54,7 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -66,6 +67,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -78,6 +80,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -91,6 +94,7 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>

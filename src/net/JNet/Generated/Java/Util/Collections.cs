@@ -86,6 +86,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<E> CheckedCollectionMethod<E>(Java.Util.Collection<E> arg0, Java.Lang.Class arg1)
         {
@@ -96,6 +97,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> CheckedListMethod<E>(Java.Util.List<E> arg0, Java.Lang.Class arg1)
         {
@@ -106,6 +108,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<E> CheckedNavigableSetMethod<E>(Java.Util.NavigableSet<E> arg0, Java.Lang.Class arg1)
         {
@@ -116,6 +119,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Queue"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.Queue"/></returns>
         public static Java.Util.Queue<E> CheckedQueueMethod<E>(Java.Util.Queue<E> arg0, Java.Lang.Class arg1)
         {
@@ -126,6 +130,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> CheckedSetMethod<E>(Java.Util.Set<E> arg0, Java.Lang.Class arg1)
         {
@@ -135,6 +140,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#newSetFromMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> NewSetFromMap<E>(Java.Util.Map<E, bool?> arg0)
         {
@@ -145,6 +151,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<E> CheckedSortedSetMethod<E>(Java.Util.SortedSet<E> arg0, Java.Lang.Class arg1)
         {
@@ -156,6 +163,8 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> CheckedMapMethod<K, V>(Java.Util.Map<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
@@ -164,8 +173,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> SingletonMapMethod<K, V>(K arg0, V arg1)
         {
@@ -175,6 +186,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> SynchronizedMapMethod<K, V>(Java.Util.Map<K, V> arg0)
         {
@@ -184,6 +197,10 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> UnmodifiableMapMethod<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
         {
@@ -195,6 +212,8 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> CheckedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
@@ -204,6 +223,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> SynchronizedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0)
         {
@@ -213,6 +234,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMapMethod<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
         {
@@ -224,6 +248,8 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> CheckedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
@@ -233,6 +259,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> SynchronizedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0)
         {
@@ -242,6 +270,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> UnmodifiableSortedMapMethod<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
         {
@@ -251,7 +282,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT: T
         {
@@ -261,8 +294,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#replaceAll(java.util.List,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
-        /// <param name="arg2"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public static bool ReplaceAll<T>(Java.Util.List<T> arg0, T arg1, T arg2)
         {
@@ -272,7 +306,10 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_"><see cref="Java.Lang.Comparable{Arg0objectSuperT}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_: Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT: T
         {
@@ -282,8 +319,11 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<Arg0ExtendsT, T, Arg2objectSuperT>(Java.Util.List<Arg0ExtendsT> arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg0ExtendsT: T where Arg2objectSuperT: T
         {
@@ -293,6 +333,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
         public static Java.Util.ArrayList<T> List<T>(Java.Util.Enumeration<T> arg0)
         {
@@ -302,6 +343,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> SynchronizedCollectionMethod<T>(Java.Util.Collection<T> arg0)
         {
@@ -311,6 +353,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -320,6 +364,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public static Java.Util.Comparator<T> ReverseOrder<T>()
         {
@@ -329,6 +374,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public static Java.Util.Comparator<T> ReverseOrder<T>(Java.Util.Comparator<T> arg0)
         {
@@ -338,6 +384,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> EmptyEnumerationMethod<T>()
         {
@@ -347,6 +394,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> Enumeration<T>(Java.Util.Collection<T> arg0)
         {
@@ -356,6 +404,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
         {
@@ -365,7 +414,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> NCopies<T>(int arg0, T arg1)
         {
@@ -374,7 +424,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> SingletonListMethod<T>(T arg0)
         {
@@ -384,6 +435,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> SynchronizedListMethod<T>(Java.Util.List<T> arg0)
         {
@@ -393,6 +445,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> UnmodifiableListMethod<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -402,6 +456,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public static Java.Util.ListIterator<T> EmptyListIteratorMethod<T>()
         {
@@ -411,6 +466,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<T> SynchronizedNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
         {
@@ -420,6 +476,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<T> UnmodifiableNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
         {
@@ -429,6 +486,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Deque"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Queue"/></returns>
         public static Java.Util.Queue<T> AsLifoQueue<T>(Java.Util.Deque<T> arg0)
         {
@@ -437,7 +495,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> Singleton<T>(T arg0)
         {
@@ -447,6 +506,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> SynchronizedSetMethod<T>(Java.Util.Set<T> arg0)
         {
@@ -456,6 +516,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> UnmodifiableSetMethod<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -465,6 +527,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<T> SynchronizedSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
         {
@@ -474,6 +537,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<T> UnmodifiableSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
         {
@@ -484,7 +548,10 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Max<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
             return SExecute<T>(LocalClazz, "max", arg0, arg1);
@@ -493,7 +560,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
             return SExecute<T>(LocalClazz, "max", arg0);
@@ -503,7 +572,10 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Min<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
             return SExecute<T>(LocalClazz, "min", arg0, arg1);
@@ -512,7 +584,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
             return SExecute<T>(LocalClazz, "min", arg0);
@@ -522,6 +596,9 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1ExtendsT"></typeparam>
         public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT: T
         {
             SExecute(LocalClazz, "copy", arg0, arg1);
@@ -530,7 +607,9 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
         public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT: T
         {
             SExecute(LocalClazz, "fill", arg0, arg1);
@@ -540,6 +619,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg1objectSuperT>(Java.Util.List<T> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
             SExecute(LocalClazz, "sort", arg0, arg1);
@@ -548,6 +629,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"></typeparam>
         public static void Sort<T>(Java.Util.List<T> arg0)
         {
             SExecute(LocalClazz, "sort", arg0);
@@ -557,6 +639,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public static bool Disjoint<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0, Java.Util.Collection<Arg1Extendsobject> arg1)
         {
@@ -566,6 +650,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()"/>
         /// </summary>
 
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> EmptyMapMethod<K, V>()
         {
@@ -575,6 +661,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> EmptyListMethod<T>()
         {
@@ -584,6 +671,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
         /// </summary>
 
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> EmptySetMethod<T>()
         {
@@ -594,6 +682,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="object"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Frequency<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0, object arg1)
         {
@@ -604,6 +693,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int IndexOfSubList<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.List<Arg1Extendsobject> arg1)
         {
@@ -614,6 +705,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int LastIndexOfSubList<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.List<Arg1Extendsobject> arg1)
         {
@@ -623,6 +716,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void Reverse<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
         {
             SExecute(LocalClazz, "reverse", arg0);
@@ -632,6 +726,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void Rotate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, int arg1)
         {
             SExecute(LocalClazz, "rotate", arg0, arg1);
@@ -641,6 +736,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void Shuffle<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.Random arg1)
         {
             SExecute(LocalClazz, "shuffle", arg0, arg1);
@@ -649,6 +745,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void Shuffle<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
         {
             SExecute(LocalClazz, "shuffle", arg0);
@@ -659,6 +756,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void Swap<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, int arg1, int arg2)
         {
             SExecute(LocalClazz, "swap", arg0, arg1, arg2);

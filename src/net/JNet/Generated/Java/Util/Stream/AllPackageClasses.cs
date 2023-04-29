@@ -72,6 +72,8 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="S"><see cref="Java.Util.Stream.BaseStream{T, S}"/></typeparam>
     public partial class BaseStream<T, S> : Java.Lang.AutoCloseable where S: Java.Util.Stream.BaseStream<T, S>
     {
         /// <summary>
@@ -201,6 +203,9 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="A"></typeparam>
+    /// <typeparam name="R"></typeparam>
     public partial class Collector<T, A, R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Collector<T, A, R>>
     {
         /// <summary>
@@ -507,6 +512,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
         #warning Remember to build the body class for event listener
@@ -524,6 +530,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Stream<T> : Java.Util.Stream.BaseStream<T, Java.Util.Stream.Stream<T>>
     {
         /// <summary>

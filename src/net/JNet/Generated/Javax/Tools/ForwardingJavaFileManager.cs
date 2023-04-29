@@ -295,6 +295,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="S"></typeparam>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.ServiceLoader<S> GetServiceLoader<S>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Class arg1)

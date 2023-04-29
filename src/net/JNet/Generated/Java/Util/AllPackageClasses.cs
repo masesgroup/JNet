@@ -72,6 +72,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractCollection<E> : Java.Util.Collection<E>
     {
         /// <summary>
@@ -158,6 +159,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractList<E> : Java.Util.AbstractCollection<E>
     {
         /// <summary>
@@ -283,6 +285,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html"/>
         /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         public partial class SimpleEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleEntry<K, V>>
         {
             /// <summary>
@@ -369,6 +373,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html"/>
         /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         public partial class SimpleImmutableEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry<K, V>>
         {
             /// <summary>
@@ -416,6 +422,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class AbstractMap<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractMap<K, V>>
     {
         /// <summary>
@@ -502,6 +510,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractQueue<E> : Java.Util.AbstractCollection<E>
     {
         /// <summary>
@@ -588,6 +597,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSequentialList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractSequentialList<E> : Java.Util.AbstractList<E>
     {
         /// <summary>
@@ -674,6 +684,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractSet<E> : Java.Util.AbstractCollection<E>
     {
         /// <summary>
@@ -760,6 +771,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ArrayDeque<E> : Java.Util.AbstractCollection<E>
     {
         /// <summary>
@@ -846,6 +858,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ArrayList<E> : Java.Util.AbstractList<E>
     {
         /// <summary>
@@ -1233,6 +1246,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Collection<E> : Java.Lang.Iterable<E>
     {
         /// <summary>
@@ -1332,6 +1346,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Comparator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
     #warning Remember to build the body class for event listener
@@ -1490,6 +1505,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Deque<E> : Java.Util.Queue<E>
     {
         /// <summary>
@@ -1576,6 +1592,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class Dictionary<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Dictionary<K, V>>
     {
         /// <summary>
@@ -1737,6 +1755,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Enumeration<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enumeration<E>>
     {
         /// <summary>
@@ -1823,6 +1842,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html"/>
     /// </summary>
+    /// <typeparam name="K"><see cref="Java.Lang.Enum{K}"/></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class EnumMap<K, V> : Java.Util.AbstractMap<K, V> where K: Java.Lang.Enum<K>
     {
         /// <summary>
@@ -1909,6 +1930,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html"/>
     /// </summary>
+    /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
     public partial class EnumSet<E> : Java.Util.AbstractSet<E> where E: Java.Lang.Enum<E>
     {
         /// <summary>
@@ -2008,6 +2030,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html"/>
     /// </summary>
+    /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
     public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T: Java.Util.EventListener
     {
         /// <summary>
@@ -2384,6 +2407,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class HashMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>
@@ -2470,6 +2495,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class HashSet<E> : Java.Util.AbstractSet<E>
     {
         /// <summary>
@@ -2556,6 +2582,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class Hashtable<K, V> : Java.Util.Dictionary<K, V>
     {
         /// <summary>
@@ -2642,6 +2670,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class IdentityHashMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>
@@ -2915,6 +2945,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Iterator<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator<E>>
     {
         /// <summary>
@@ -3001,6 +3032,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class LinkedHashMap<K, V> : Java.Util.HashMap<K, V>
     {
         /// <summary>
@@ -3087,6 +3120,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class LinkedHashSet<E> : Java.Util.HashSet<E>
     {
         /// <summary>
@@ -3173,6 +3207,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class LinkedList<E> : Java.Util.AbstractSequentialList<E>
     {
         /// <summary>
@@ -3259,6 +3294,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class List<E> : Java.Util.Collection<E>
     {
         /// <summary>
@@ -3345,6 +3381,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ListIterator<E> : Java.Util.Iterator<E>
     {
         /// <summary>
@@ -3814,6 +3851,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html"/>
         /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         public partial class Entry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<K, V>>
         {
             /// <summary>
@@ -3861,6 +3900,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class Map<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Map<K, V>>
     {
         /// <summary>
@@ -3995,6 +4036,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class NavigableMap<K, V> : Java.Util.SortedMap<K, V>
     {
         /// <summary>
@@ -4081,6 +4124,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class NavigableSet<E> : Java.Util.SortedSet<E>
     {
         /// <summary>
@@ -4226,6 +4270,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Optional<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Optional<T>>
     {
         /// <summary>
@@ -4570,6 +4615,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T_CONS"></typeparam>
     public partial class PrimitiveIterator<T, T_CONS> : Java.Util.Iterator<T>
     {
         /// <summary>
@@ -4656,6 +4703,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class PriorityQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -4871,6 +4919,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Queue<E> : Java.Util.Collection<E>
     {
         /// <summary>
@@ -5197,6 +5246,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html"/>
         /// </summary>
+        /// <typeparam name="S"></typeparam>
         public partial class Provider<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
         #warning Remember to build the body class for event listener
@@ -5214,6 +5264,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html"/>
     /// </summary>
+    /// <typeparam name="S"></typeparam>
     public partial class ServiceLoader<S> : Java.Lang.Iterable<S>
     {
         /// <summary>
@@ -5300,6 +5351,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Set<E> : Java.Util.Collection<E>
     {
         /// <summary>
@@ -5429,6 +5481,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class SortedMap<K, V> : Java.Util.Map<K, V>
     {
         /// <summary>
@@ -5515,6 +5569,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class SortedSet<E> : Java.Util.Set<E>
     {
         /// <summary>
@@ -5769,6 +5824,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T_CONS"></typeparam>
+        /// <typeparam name="T_SPLITR"><see cref="Java.Util.Spliterator.OfPrimitive{T, T_CONS, T_SPLITR}"/></typeparam>
         public partial class OfPrimitive<T, T_CONS, T_SPLITR> : Java.Util.Spliterator<T> where T_SPLITR: Java.Util.Spliterator.OfPrimitive<T, T_CONS, T_SPLITR>
         {
             /// <summary>
@@ -5816,6 +5874,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Spliterator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Spliterator<T>>
     {
         /// <summary>
@@ -6070,6 +6129,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class AbstractSpliterator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractSpliterator<T>>
         {
             /// <summary>
@@ -6203,6 +6263,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Stack<E> : Java.Util.Vector<E>
     {
         /// <summary>
@@ -6520,6 +6581,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class TreeMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>
@@ -6606,6 +6669,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class TreeSet<E> : Java.Util.AbstractSet<E>
     {
         /// <summary>
@@ -6767,6 +6831,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class Vector<E> : Java.Util.AbstractList<E>
     {
         /// <summary>
@@ -6853,6 +6918,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class WeakHashMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>

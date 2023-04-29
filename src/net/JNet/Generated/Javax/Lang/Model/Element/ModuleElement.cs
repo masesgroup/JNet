@@ -137,8 +137,10 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement.DirectiveVisitor,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <typeparam name="R"></typeparam>
+            /// <typeparam name="P"></typeparam>
+            /// <returns><typeparamref name="R"/></returns>
             public R Accept<R, P>(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<R, P> arg0, P arg1)
             {
                 return IExecute<R>("accept", arg0, arg1);
@@ -359,8 +361,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement.ExportsDirective,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ExportsDirective"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitExports(Javax.Lang.Model.Element.ModuleElement.ExportsDirective arg0, P arg1)
             {
                 return IExecute<R>("visitExports", arg0, arg1);
@@ -369,8 +371,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement.OpensDirective,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.OpensDirective"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitOpens(Javax.Lang.Model.Element.ModuleElement.OpensDirective arg0, P arg1)
             {
                 return IExecute<R>("visitOpens", arg0, arg1);
@@ -379,8 +381,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement.ProvidesDirective,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitProvides(Javax.Lang.Model.Element.ModuleElement.ProvidesDirective arg0, P arg1)
             {
                 return IExecute<R>("visitProvides", arg0, arg1);
@@ -389,8 +391,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement.RequiresDirective,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.RequiresDirective"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitRequires(Javax.Lang.Model.Element.ModuleElement.RequiresDirective arg0, P arg1)
             {
                 return IExecute<R>("visitRequires", arg0, arg1);
@@ -399,8 +401,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement.UsesDirective,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.UsesDirective"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitUses(Javax.Lang.Model.Element.ModuleElement.UsesDirective arg0, P arg1)
             {
                 return IExecute<R>("visitUses", arg0, arg1);
@@ -409,8 +411,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0, P arg1)
             {
                 return IExecute<R>("visit", arg0, arg1);
@@ -419,7 +421,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <returns><typeparamref name="R"/></returns>
             public R Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
                 return IExecute<R>("visit", arg0);
@@ -428,8 +430,8 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see cref="P"/></param>
-            /// <returns><see cref="R"/></returns>
+            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <returns><typeparamref name="R"/></returns>
             public R VisitUnknown(Javax.Lang.Model.Element.ModuleElement.Directive arg0, P arg1)
             {
                 return IExecute<R>("visitUnknown", arg0, arg1);

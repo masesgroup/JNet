@@ -175,9 +175,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         public V Put(K arg0, V arg1)
         {
             return IExecute<V>("put", arg0, arg1);
