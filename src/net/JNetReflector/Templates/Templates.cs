@@ -121,7 +121,12 @@ namespace MASES.JNetReflector.Templates
             public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
             public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
 
-            public const string DEFAULT_DECORATION = "#region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public static readonly string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
+            public static readonly string HELP_TYPEPARAM_DECORATION = "/// <typeparam name=\"{0}\">{1}</typeparam>";
+
+            public static string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                    + "/// ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER" + Environment.NewLine
+                                                    + "/// </summary>";
             public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
             public class ConstructorStub
@@ -136,7 +141,9 @@ namespace MASES.JNetReflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// CONSTRUCTOR_STUB_CONSTRUCTOR_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
-                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see cref=\"{1}\"/></param>";
+                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\">{1}</param>";
+                public static readonly string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
+                public static readonly string HELP_PARAM_TYPEPARAMREF_DECORATION = "<typeparamref name=\"{0}\"/>";
                 public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
@@ -167,8 +174,11 @@ namespace MASES.JNetReflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
-                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see cref=\"{1}\"/></param>";
-                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see cref=\"{0}\"/></returns>";
+                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\">{1}</param>";
+                public static readonly string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
+                public static readonly string HELP_PARAM_TYPEPARAMREF_DECORATION = "<typeparamref name=\"{0}\"/>";
+                public static readonly string HELP_TYPEPARAM_DECORATION = "/// <typeparam name=\"{0}\">{1}</typeparam>";
+                public static readonly string HELP_RETURN_DECORATION = "/// <returns>{0}</returns>";
                 public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
