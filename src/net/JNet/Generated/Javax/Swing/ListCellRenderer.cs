@@ -97,10 +97,11 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE: E
         {

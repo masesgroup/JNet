@@ -157,6 +157,7 @@ namespace Javax.Management.Loading
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.Loading.ClassLoaderRepository"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, Javax.Management.Loading.ClassLoaderRepository arg1)

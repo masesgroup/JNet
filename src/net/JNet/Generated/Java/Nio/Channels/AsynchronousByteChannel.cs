@@ -49,8 +49,10 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="A"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2);
@@ -59,8 +61,10 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="A"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2);

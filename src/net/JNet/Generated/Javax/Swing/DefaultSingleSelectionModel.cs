@@ -78,7 +78,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
             return IExecuteArray<T>("getListeners", arg0);

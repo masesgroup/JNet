@@ -80,6 +80,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetArray<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
@@ -92,6 +93,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetArray<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
@@ -113,6 +115,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetResultSet<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
@@ -125,6 +128,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetResultSet<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)

@@ -313,6 +313,7 @@ namespace Javax.Imageio
         /// <param name="arg4"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
         /// <param name="arg5"><see cref="Java.Util.List"/></param>
         /// <param name="arg6"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <typeparam name="Arg5ExtendsJava_Awt_ImageNs_BufferedImage"><see cref="Java.Awt.ImageNs.BufferedImage"/></typeparam>
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareInsertEmpty<Arg5ExtendsJava_Awt_ImageNs_BufferedImage>(int arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List<Arg5ExtendsJava_Awt_ImageNs_BufferedImage> arg5, Javax.Imageio.ImageWriteParam arg6) where Arg5ExtendsJava_Awt_ImageNs_BufferedImage: Java.Awt.ImageNs.BufferedImage
         {
@@ -338,6 +339,7 @@ namespace Javax.Imageio
         /// <param name="arg4"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
         /// <param name="arg5"><see cref="Java.Util.List"/></param>
         /// <param name="arg6"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <typeparam name="Arg5ExtendsJava_Awt_ImageNs_BufferedImage"><see cref="Java.Awt.ImageNs.BufferedImage"/></typeparam>
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareWriteEmpty<Arg5ExtendsJava_Awt_ImageNs_BufferedImage>(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List<Arg5ExtendsJava_Awt_ImageNs_BufferedImage> arg5, Javax.Imageio.ImageWriteParam arg6) where Arg5ExtendsJava_Awt_ImageNs_BufferedImage: Java.Awt.ImageNs.BufferedImage
         {

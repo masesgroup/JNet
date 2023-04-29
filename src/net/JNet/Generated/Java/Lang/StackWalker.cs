@@ -93,7 +93,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#walk(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_"><see cref="Java.Util.Stream.Stream{Java.Lang.StackWalker.StackFrame}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T Walk<T, Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT> arg0) where Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_: Java.Util.Stream.Stream<Java.Lang.StackWalker.StackFrame> where Arg0ExtendsT: T
         {
             return IExecute<T>("walk", arg0);
@@ -102,6 +105,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#forEach(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperJava_Lang_StackWalker_StackFrame"><see cref="Java.Lang.StackWalker.StackFrame"/></typeparam>
         public void ForEach<Arg0objectSuperJava_Lang_StackWalker_StackFrame>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_StackWalker_StackFrame> arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame: Java.Lang.StackWalker.StackFrame
         {
             IExecute("forEach", arg0);

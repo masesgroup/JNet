@@ -191,6 +191,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperdouble"></typeparam>
             /// <returns><see cref="bool"/></returns>
             public bool TryAdvance<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
             {
@@ -208,6 +209,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperdouble"></typeparam>
             public void ForEachRemaining<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -280,6 +282,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperint"></typeparam>
             /// <returns><see cref="bool"/></returns>
             public bool TryAdvance<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
             {
@@ -297,6 +300,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperint"></typeparam>
             public void ForEachRemaining<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -369,6 +373,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperlong"></typeparam>
             /// <returns><see cref="bool"/></returns>
             public bool TryAdvance<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
             {
@@ -386,6 +391,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <typeparam name="Arg0objectSuperlong"></typeparam>
             public void ForEachRemaining<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -498,7 +504,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="T_CONS"/></param>
+            /// <param name="arg0"><typeparamref name="T_CONS"/></param>
             /// <returns><see cref="bool"/></returns>
             public bool TryAdvance(T_CONS arg0)
             {
@@ -507,7 +513,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="T_CONS"/></param>
+            /// <param name="arg0"><typeparamref name="T_CONS"/></param>
             public void ForEachRemaining(T_CONS arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -625,6 +631,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -643,6 +650,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             IExecute("forEachRemaining", arg0);

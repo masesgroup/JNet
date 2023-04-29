@@ -243,9 +243,13 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="S"/></param>
+            /// <param name="arg0"><typeparamref name="S"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
             /// <param name="arg2"><see cref="string"/></param>
+            /// <typeparam name="T"></typeparam>
+            /// <typeparam name="S"></typeparam>
+            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, string arg2) where Arg1objectSuperS: S
             {
@@ -254,8 +258,12 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="S"/></param>
+            /// <param name="arg0"><typeparamref name="S"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <typeparam name="T"></typeparam>
+            /// <typeparam name="S"></typeparam>
+            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS: S
             {
@@ -266,6 +274,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
             /// <param name="arg1"><see cref="int"/></param>
+            /// <typeparam name="T"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<T> Buffering<T>(Java.Net.Http.HttpResponse.BodyHandler<T> arg0, int arg1)
             {
@@ -274,7 +283,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#replacing(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="U"/></param>
+            /// <param name="arg0"><typeparamref name="U"/></param>
+            /// <typeparam name="U"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<U> Replacing<U>(U arg0)
             {
@@ -302,6 +312,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <typeparam name="Arg0objectSuperstring"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperstring>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperstring> arg0)
             {
@@ -311,6 +322,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_: Java.Util.List<Java.Nio.ByteBuffer>
             {
@@ -496,10 +508,14 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function,java.nio.charset.Charset,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="S"/></param>
+            /// <param name="arg0"><typeparamref name="S"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
             /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
             /// <param name="arg3"><see cref="string"/></param>
+            /// <typeparam name="T"></typeparam>
+            /// <typeparam name="S"></typeparam>
+            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Nio.Charset.Charset arg2, string arg3) where Arg1objectSuperS: S
             {
@@ -508,8 +524,12 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="S"/></param>
+            /// <param name="arg0"><typeparamref name="S"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <typeparam name="T"></typeparam>
+            /// <typeparam name="S"></typeparam>
+            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS: S
             {
@@ -520,6 +540,10 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <typeparam name="U"></typeparam>
+            /// <typeparam name="T"></typeparam>
+            /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+            /// <typeparam name="Arg1ExtendsU"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<U> Mapping<U, T, Arg1objectSuperT, Arg1ExtendsU>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg1objectSuperT: T
             {
@@ -530,6 +554,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
             /// <param name="arg1"><see cref="int"/></param>
+            /// <typeparam name="T"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<T> Buffering<T>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, int arg1)
             {
@@ -538,7 +563,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#replacing(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="U"/></param>
+            /// <param name="arg0"><typeparamref name="U"/></param>
+            /// <typeparam name="U"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<U> Replacing<U>(U arg0)
             {
@@ -557,6 +583,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <typeparam name="Arg0objectSuperstring"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperstring>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperstring> arg0)
             {
@@ -566,6 +593,7 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_: Java.Util.List<Java.Nio.ByteBuffer>
             {

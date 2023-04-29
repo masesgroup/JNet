@@ -309,6 +309,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class Filter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter<T>>
         {
             /// <summary>
@@ -356,6 +357,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class DirectoryStream<T> : Java.Lang.Iterable<T>
     {
         /// <summary>
@@ -737,6 +739,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class FileVisitor<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileVisitor<T>>
     {
         /// <summary>
@@ -1236,6 +1239,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class SecureDirectoryStream<T> : Java.Nio.File.DirectoryStream<T>
     {
         /// <summary>
@@ -1322,6 +1326,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class SimpleFileVisitor<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleFileVisitor<T>>
     {
         /// <summary>
@@ -1619,6 +1624,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class Kind<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kind<T>>
         {
             /// <summary>
@@ -1709,6 +1715,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class WatchEvent<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchEvent<T>>
     {
         /// <summary>

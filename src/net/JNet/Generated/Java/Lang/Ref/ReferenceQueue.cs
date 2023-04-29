@@ -119,6 +119,7 @@ namespace Java.Lang.Ref
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
 
+        /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT: T
@@ -129,6 +130,7 @@ namespace Java.Lang.Ref
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
+        /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>

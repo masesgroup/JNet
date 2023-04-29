@@ -416,6 +416,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Constructor<T> : Java.Lang.Reflect.Executable
     {
         /// <summary>
@@ -1141,6 +1142,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
+    /// <typeparam name="D"><see cref="Java.Lang.Reflect.GenericDeclaration"/></typeparam>
     public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable<D>> where D: Java.Lang.Reflect.GenericDeclaration
     {
         /// <summary>

@@ -158,6 +158,7 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class PhantomReference<T> : Java.Lang.Ref.Reference<T>
     {
         /// <summary>
@@ -244,6 +245,7 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Reference<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference<T>>
     {
         /// <summary>
@@ -330,6 +332,7 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ReferenceQueue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue<T>>
     {
         /// <summary>
@@ -416,6 +419,7 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/SoftReference.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class SoftReference<T> : Java.Lang.Ref.Reference<T>
     {
         /// <summary>
@@ -502,6 +506,7 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class WeakReference<T> : Java.Lang.Ref.Reference<T>
     {
         /// <summary>

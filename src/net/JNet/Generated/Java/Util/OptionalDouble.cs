@@ -93,6 +93,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
+        /// <typeparam name="X"></typeparam>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
         public double OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X

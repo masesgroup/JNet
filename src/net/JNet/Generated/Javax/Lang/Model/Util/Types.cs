@@ -106,6 +106,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#directSupertypes(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Type_TypeMirror"><see cref="Javax.Lang.Model.Type.TypeMirror"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<ReturnExtendsJavax_Lang_Model_Type_TypeMirror> DirectSupertypes<ReturnExtendsJavax_Lang_Model_Type_TypeMirror>(Javax.Lang.Model.Type.TypeMirror arg0) where ReturnExtendsJavax_Lang_Model_Type_TypeMirror: Javax.Lang.Model.Type.TypeMirror
         {

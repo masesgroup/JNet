@@ -135,7 +135,8 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(string arg0, object arg1, Java.Lang.Class arg2)
         {
@@ -147,7 +148,8 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(string arg0, Org.Xml.Sax.InputSource arg1, Java.Lang.Class arg2)
         {
@@ -158,6 +160,7 @@ namespace Javax.Xml.Xpath
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<ReturnExtendsobject> EvaluateExpression<ReturnExtendsobject>(string arg0, object arg1)
@@ -169,6 +172,7 @@ namespace Javax.Xml.Xpath
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<ReturnExtendsobject> EvaluateExpression<ReturnExtendsobject>(string arg0, Org.Xml.Sax.InputSource arg1)

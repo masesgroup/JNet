@@ -115,6 +115,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html"/>
     /// </summary>
+    /// <typeparam name="S"></typeparam>
     public partial class Diagnostic<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Diagnostic<S>>
     {
         /// <summary>
@@ -201,6 +202,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
+    /// <typeparam name="S"></typeparam>
     public partial class DiagnosticCollector<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiagnosticCollector<S>>
     {
         /// <summary>
@@ -257,6 +259,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html"/>
     /// </summary>
+    /// <typeparam name="S"></typeparam>
     public partial class DiagnosticListener<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
     #warning Remember to build the body class for event listener
@@ -485,6 +488,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
+    /// <typeparam name="F"><see cref="Javax.Tools.FileObject"/></typeparam>
     public partial class ForwardingFileObject<F> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingFileObject<F>> where F: Javax.Tools.FileObject
     {
         /// <summary>
@@ -571,6 +575,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html"/>
     /// </summary>
+    /// <typeparam name="M"><see cref="Javax.Tools.JavaFileManager"/></typeparam>
     public partial class ForwardingJavaFileManager<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingJavaFileManager<M>> where M: Javax.Tools.JavaFileManager
     {
         /// <summary>
@@ -657,6 +662,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
+    /// <typeparam name="F"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
     public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F: Javax.Tools.JavaFileObject
     {
         /// <summary>

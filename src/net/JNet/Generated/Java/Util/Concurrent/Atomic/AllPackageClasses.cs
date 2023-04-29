@@ -201,6 +201,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class AtomicIntegerFieldUpdater<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicIntegerFieldUpdater<T>>
     {
         /// <summary>
@@ -373,6 +374,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class AtomicLongFieldUpdater<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicLongFieldUpdater<T>>
     {
         /// <summary>
@@ -459,6 +461,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class AtomicMarkableReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicMarkableReference<V>>
     {
         /// <summary>
@@ -545,6 +548,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class AtomicReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReference<V>>
     {
         /// <summary>
@@ -631,6 +635,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AtomicReferenceArray<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceArray<E>>
     {
         /// <summary>
@@ -717,6 +722,8 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class AtomicReferenceFieldUpdater<T, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceFieldUpdater<T, V>>
     {
         /// <summary>
@@ -803,6 +810,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class AtomicStampedReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference<V>>
     {
         /// <summary>

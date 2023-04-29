@@ -158,6 +158,7 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBeans(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> GetPlatformMXBeans<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.PlatformManagedObject
         {
@@ -168,6 +169,7 @@ namespace Java.Lang.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.List<T> GetPlatformMXBeans<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.PlatformManagedObject
@@ -178,7 +180,8 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBean(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T GetPlatformMXBean<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.PlatformManagedObject
         {
             return SExecute<T>(LocalClazz, "getPlatformMXBean", arg0);
@@ -188,7 +191,8 @@ namespace Java.Lang.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static T GetPlatformMXBean<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.PlatformManagedObject
         {
@@ -200,7 +204,8 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static T NewPlatformMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, string arg1, Java.Lang.Class arg2)
         {

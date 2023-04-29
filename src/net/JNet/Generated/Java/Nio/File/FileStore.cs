@@ -98,7 +98,8 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileStoreAttributeView"/></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
         public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.FileStoreAttributeView
         {
             return IExecute<V>("getFileStoreAttributeView", arg0);

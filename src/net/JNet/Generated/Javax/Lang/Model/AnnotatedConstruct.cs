@@ -56,7 +56,8 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecute<A>("getAnnotation", arg0);
@@ -65,7 +66,8 @@ namespace Javax.Lang.Model
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);

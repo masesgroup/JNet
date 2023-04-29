@@ -229,6 +229,7 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject> arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
@@ -294,6 +295,7 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject>[] arg1)

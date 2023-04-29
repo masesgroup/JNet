@@ -87,6 +87,7 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
         public Javax.Management.Openmbean.OpenType<ReturnExtendsobject> GetType<ReturnExtendsobject>(string arg0)
         {

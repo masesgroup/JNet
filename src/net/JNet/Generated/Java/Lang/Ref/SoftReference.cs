@@ -80,7 +80,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/SoftReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
         public SoftReference(T arg0, Java.Lang.Ref.ReferenceQueue arg1)
             : base(arg0, arg1)
@@ -89,7 +89,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/SoftReference.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         public SoftReference(T arg0)
             : base(arg0)
         {

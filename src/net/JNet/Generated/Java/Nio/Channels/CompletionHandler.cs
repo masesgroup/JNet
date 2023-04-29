@@ -101,8 +101,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
-        /// <param name="arg1"><see cref="A"/></param>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
         public void Completed(V arg0, A arg1)
         {
             IExecute("completed", arg0, arg1);
@@ -111,7 +111,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg1"><see cref="A"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
         public void Failed(Java.Lang.Throwable arg0, A arg1)
         {
             IExecute("failed", arg0, arg1);

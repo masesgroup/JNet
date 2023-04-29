@@ -115,6 +115,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ArrayBlockingQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -201,6 +202,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class BlockingDeque<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BlockingDeque<E>>
     {
         /// <summary>
@@ -287,6 +289,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class BlockingQueue<E> : Java.Util.Queue<E>
     {
         /// <summary>
@@ -389,6 +392,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class Callable<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callable<V>>
     {
         /// <summary>
@@ -534,6 +538,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class CompletableFuture<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletableFuture<T>>
     {
         /// <summary>
@@ -636,6 +641,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class CompletionService<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionService<V>>
     {
         /// <summary>
@@ -722,6 +728,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class CompletionStage<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionStage<T>>
     {
         /// <summary>
@@ -847,6 +854,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
         /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
         public partial class KeySetView<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeySetView<K, V>>
         {
             /// <summary>
@@ -894,6 +903,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class ConcurrentHashMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>
@@ -980,6 +991,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ConcurrentLinkedDeque<E> : Java.Util.AbstractCollection<E>
     {
         /// <summary>
@@ -1066,6 +1078,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ConcurrentLinkedQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -1152,6 +1165,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class ConcurrentMap<K, V> : Java.Util.Map<K, V>
     {
         /// <summary>
@@ -1238,6 +1253,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class ConcurrentNavigableMap<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConcurrentNavigableMap<K, V>>
     {
         /// <summary>
@@ -1324,6 +1341,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html"/>
     /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class ConcurrentSkipListMap<K, V> : Java.Util.AbstractMap<K, V>
     {
         /// <summary>
@@ -1410,6 +1429,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ConcurrentSkipListSet<E> : Java.Util.AbstractSet<E>
     {
         /// <summary>
@@ -1496,6 +1516,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class CopyOnWriteArrayList<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOnWriteArrayList<E>>
     {
         /// <summary>
@@ -1582,6 +1603,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArraySet.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class CopyOnWriteArraySet<E> : Java.Util.AbstractSet<E>
     {
         /// <summary>
@@ -1711,6 +1733,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class CountedCompleter<T> : Java.Util.Concurrent.ForkJoinTask<T>
     {
         /// <summary>
@@ -1883,6 +1906,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"><see cref="Java.Util.Concurrent.Delayed"/></typeparam>
     public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.Delayed
     {
         /// <summary>
@@ -1969,6 +1993,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class Exchanger<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exchanger<V>>
     {
         /// <summary>
@@ -2114,6 +2139,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class ExecutorCompletionService<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExecutorCompletionService<V>>
     {
         /// <summary>
@@ -2325,6 +2351,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="R"></typeparam>
         public partial class Processor<T, R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor<T, R>>
         {
             /// <summary>
@@ -2411,6 +2439,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class Publisher<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Publisher<T>>
         {
             /// <summary>
@@ -2497,6 +2526,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class Subscriber<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber<T>>
         {
             /// <summary>
@@ -2759,6 +2789,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class ForkJoinTask<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForkJoinTask<V>>
     {
         /// <summary>
@@ -2888,6 +2919,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class Future<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Future<V>>
     {
         /// <summary>
@@ -2974,6 +3006,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class FutureTask<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FutureTask<V>>
     {
         /// <summary>
@@ -3060,6 +3093,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class LinkedBlockingDeque<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -3146,6 +3180,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class LinkedBlockingQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -3232,6 +3267,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class LinkedTransferQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -3361,6 +3397,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class PriorityBlockingQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -3490,6 +3527,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class RecursiveTask<V> : Java.Util.Concurrent.ForkJoinTask<V>
     {
         /// <summary>
@@ -3635,6 +3673,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class RunnableFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableFuture<V>>
     {
         /// <summary>
@@ -3721,6 +3760,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class RunnableScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableScheduledFuture<V>>
     {
         /// <summary>
@@ -3850,6 +3890,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
+    /// <typeparam name="V"></typeparam>
     public partial class ScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScheduledFuture<V>>
     {
         /// <summary>
@@ -4022,6 +4063,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class SubmissionPublisher<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SubmissionPublisher<T>>
     {
         /// <summary>
@@ -4108,6 +4150,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SynchronousQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class SynchronousQueue<E> : Java.Util.AbstractQueue<E>
     {
         /// <summary>
@@ -4554,6 +4597,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class TransferQueue<E> : Java.Util.Concurrent.BlockingQueue<E>
     {
         /// <summary>

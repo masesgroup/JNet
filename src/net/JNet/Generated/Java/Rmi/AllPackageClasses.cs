@@ -152,6 +152,7 @@ namespace Java.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class MarshalledObject<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MarshalledObject<T>>
     {
         /// <summary>

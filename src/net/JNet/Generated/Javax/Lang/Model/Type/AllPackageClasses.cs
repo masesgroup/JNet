@@ -620,6 +620,8 @@ namespace Javax.Lang.Model.Type
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class TypeVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVisitor<R, P>>
     {
         /// <summary>

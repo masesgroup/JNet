@@ -50,6 +50,7 @@ namespace Java.Rmi.Activation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
         /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>

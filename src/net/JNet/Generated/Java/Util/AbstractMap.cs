@@ -239,8 +239,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="K"/></param>
-            /// <param name="arg1"><see cref="V"/></param>
+            /// <param name="arg0"><typeparamref name="K"/></param>
+            /// <param name="arg1"><typeparamref name="V"/></param>
             public SimpleEntry(K arg0, V arg1)
                 : base(arg0, arg1)
             {
@@ -286,8 +286,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="V"/></param>
-            /// <returns><see cref="V"/></returns>
+            /// <param name="arg0"><typeparamref name="V"/></param>
+            /// <returns><typeparamref name="V"/></returns>
             public V SetValue(V arg0)
             {
                 return IExecute<V>("setValue", arg0);
@@ -393,8 +393,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="K"/></param>
-            /// <param name="arg1"><see cref="V"/></param>
+            /// <param name="arg0"><typeparamref name="K"/></param>
+            /// <param name="arg1"><typeparamref name="V"/></param>
             public SimpleImmutableEntry(K arg0, V arg1)
                 : base(arg0, arg1)
             {
@@ -440,8 +440,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="V"/></param>
-            /// <returns><see cref="V"/></returns>
+            /// <param name="arg0"><typeparamref name="V"/></param>
+            /// <returns><typeparamref name="V"/></returns>
             public V SetValue(V arg0)
             {
                 return IExecute<V>("setValue", arg0);
@@ -549,7 +549,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <returns><typeparamref name="V"/></returns>
         public V Get(object arg0)
         {
             return IExecute<V>("get", arg0);
@@ -557,9 +557,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         public V Put(K arg0, V arg1)
         {
             return IExecute<V>("put", arg0, arg1);
@@ -568,7 +568,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <returns><typeparamref name="V"/></returns>
         public V Remove(object arg0)
         {
             return IExecute<V>("remove", arg0);
@@ -584,6 +584,8 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
         {
             IExecute("putAll", arg0);

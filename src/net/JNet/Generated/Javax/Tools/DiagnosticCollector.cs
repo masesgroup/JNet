@@ -114,6 +114,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
         public void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
         {
             IExecute("report", arg0);

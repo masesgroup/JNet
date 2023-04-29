@@ -195,7 +195,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> HeadMap(K arg0)
         {
@@ -204,8 +204,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
-        /// <param name="arg1"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> SubMap(K arg0, K arg1)
         {
@@ -214,7 +214,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="K"/></param>
+        /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> TailMap(K arg0)
         {

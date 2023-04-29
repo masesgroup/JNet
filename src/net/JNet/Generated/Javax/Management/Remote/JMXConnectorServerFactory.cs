@@ -63,6 +63,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Remote.JMXConnectorServer"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnectorServer NewJMXConnectorServer<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1, Javax.Management.MBeanServer arg2)

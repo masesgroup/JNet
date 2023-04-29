@@ -59,6 +59,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public static object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
@@ -72,6 +73,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static object GetStateToBind<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
@@ -92,6 +94,7 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getInitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
@@ -103,6 +106,7 @@ namespace Javax.Naming.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Context GetURLContext<Arg1Extendsobject>(string arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1)

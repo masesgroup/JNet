@@ -1147,6 +1147,7 @@ namespace Javax.Swing.Plaf
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html"/>
     /// </summary>
+    /// <typeparam name="V"><see cref="Java.Awt.Component"/></typeparam>
     public partial class LayerUI<V> : Javax.Swing.Plaf.ComponentUI where V: Java.Awt.Component
     {
         /// <summary>

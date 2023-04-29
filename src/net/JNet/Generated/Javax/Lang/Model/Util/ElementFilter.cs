@@ -45,6 +45,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#constructorsIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -54,6 +55,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -63,6 +65,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -72,6 +75,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#exportsIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective> ExportsIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
@@ -81,6 +85,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#opensIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective> OpensIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
@@ -90,6 +95,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#providesIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective> ProvidesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
@@ -99,6 +105,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#requiresIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective> RequiresIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
@@ -108,6 +115,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#usesIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective> UsesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
         {
@@ -117,6 +125,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -126,6 +135,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -135,6 +145,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -144,6 +155,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#constructorsIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -153,6 +165,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -162,6 +175,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -171,6 +185,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -180,6 +195,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
@@ -189,6 +205,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {

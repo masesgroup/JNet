@@ -355,6 +355,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#andFilter(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
+        /// <typeparam name="Arg0objectSuperI"></typeparam>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter<M, I> AndFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M
         {
@@ -395,6 +398,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
+        /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
+        /// <typeparam name="Arg0objectSuperI"></typeparam>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter<M, I> OrFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M
         {
@@ -418,6 +424,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#include(javax.swing.RowFilter.Entry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.Entry"/></param>
+        /// <typeparam name="Arg0ExtendsM"><typeparamref name="M"/></typeparam>
+        /// <typeparam name="Arg0ExtendsI"><typeparamref name="I"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool Include<Arg0ExtendsM, Arg0ExtendsI>(Javax.Swing.RowFilter.Entry<Arg0ExtendsM, Arg0ExtendsI> arg0) where Arg0ExtendsM: M where Arg0ExtendsI: I
         {

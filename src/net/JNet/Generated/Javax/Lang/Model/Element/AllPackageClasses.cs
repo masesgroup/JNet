@@ -158,6 +158,8 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AnnotationValueVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotationValueVisitor<R, P>>
     {
         /// <summary>
@@ -330,6 +332,8 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementVisitor<R, P>>
     {
         /// <summary>
@@ -627,6 +631,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html"/>
         /// </summary>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="P"></typeparam>
         public partial class DirectiveVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectiveVisitor<R, P>>
         {
             /// <summary>

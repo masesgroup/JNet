@@ -143,8 +143,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Push(E arg0)
         {
             return IExecute<E>("push", arg0);

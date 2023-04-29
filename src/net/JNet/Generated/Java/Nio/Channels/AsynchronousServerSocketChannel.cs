@@ -90,8 +90,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="A"/></param>
+        /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
         public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
         {
             IExecute("accept", arg0, arg1);

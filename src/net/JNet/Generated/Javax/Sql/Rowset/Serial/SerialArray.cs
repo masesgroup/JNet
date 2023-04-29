@@ -110,6 +110,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
@@ -122,6 +123,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
@@ -143,6 +145,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public Java.Sql.ResultSet GetResultSet<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
@@ -155,6 +158,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public Java.Sql.ResultSet GetResultSet<Arg2Extendsobject>(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)

@@ -61,7 +61,8 @@ namespace Javax.Security.Auth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1)
         {
             return SExecute<T>(LocalClazz, "doAs", arg0, arg1);
@@ -71,7 +72,8 @@ namespace Javax.Security.Auth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1)
         {
@@ -83,7 +85,8 @@ namespace Javax.Security.Auth
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute<T>(LocalClazz, "doAsPrivileged", arg0, arg1, arg2);
@@ -94,7 +97,8 @@ namespace Javax.Security.Auth
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
@@ -145,6 +149,7 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Security.Principal"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T: Java.Security.Principal
         {
@@ -154,6 +159,7 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPrivateCredentials<T>(Java.Lang.Class arg0)
         {
@@ -163,6 +169,7 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPublicCredentials<T>(Java.Lang.Class arg0)
         {

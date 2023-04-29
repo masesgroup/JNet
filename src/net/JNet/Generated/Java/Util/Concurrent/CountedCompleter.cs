@@ -248,6 +248,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool OnExceptionalCompletion<Arg1Extendsobject>(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter<Arg1Extendsobject> arg1)
         {
@@ -304,6 +305,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void OnCompletion<Arg0Extendsobject>(Java.Util.Concurrent.CountedCompleter<Arg0Extendsobject> arg0)
         {
             IExecute("onCompletion", arg0);

@@ -64,7 +64,8 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
         {
             return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2, arg3, arg4);
@@ -76,7 +77,8 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
         {
             return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2, arg3);
@@ -87,7 +89,8 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2)
         {
             return SExecute<T>(LocalClazz, "create", arg0, arg1, arg2);
