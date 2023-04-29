@@ -106,10 +106,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
+        /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public V Exchange(V arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
@@ -119,8 +119,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="V"/></param>
-        /// <returns><see cref="V"/></returns>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public V Exchange(V arg0)
         {

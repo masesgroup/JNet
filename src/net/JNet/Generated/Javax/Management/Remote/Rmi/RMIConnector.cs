@@ -119,6 +119,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Io.IOException"/>
         public void Connect<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
         {

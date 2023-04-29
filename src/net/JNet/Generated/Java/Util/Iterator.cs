@@ -127,6 +127,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         public void ForEachRemaining<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
         {
             IExecute("forEachRemaining", arg0);

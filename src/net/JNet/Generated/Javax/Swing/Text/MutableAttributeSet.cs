@@ -74,6 +74,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void RemoveAttributes<Arg0Extendsobject>(Java.Util.Enumeration<Arg0Extendsobject> arg0)
         {
             IExecute("removeAttributes", arg0);

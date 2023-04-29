@@ -113,8 +113,9 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(java.lang.Iterable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
         public R Scan<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
         {
             return IExecute<R>("scan", arg0, arg1);
@@ -123,7 +124,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <returns><typeparamref name="R"/></returns>
         public R Scan(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<R>("scan", arg0);
@@ -132,8 +133,8 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
         public R Scan(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
             return IExecute<R>("scan", arg0, arg1);

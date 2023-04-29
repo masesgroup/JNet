@@ -56,8 +56,10 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html#accept(javax.lang.model.element.AnnotationValueVisitor,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/></param>
-        /// <param name="arg1"><see cref="P"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="P"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
         public R Accept<R, P>(Javax.Lang.Model.Element.AnnotationValueVisitor<R, P> arg0, P arg1)
         {
             return IExecute<R>("accept", arg0, arg1);

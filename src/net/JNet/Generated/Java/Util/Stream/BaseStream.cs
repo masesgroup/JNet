@@ -184,7 +184,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="S"/></returns>
+        /// <returns><typeparamref name="S"/></returns>
         public S OnClose(Java.Lang.Runnable arg0)
         {
             return IExecute<S>("onClose", arg0);

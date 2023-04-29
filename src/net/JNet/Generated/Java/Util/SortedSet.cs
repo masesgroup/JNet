@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> HeadSet(E arg0)
         {
@@ -176,8 +176,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
         {
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> TailSet(E arg0)
         {

@@ -58,7 +58,8 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static T DoLookup<T>(string arg0)
         {
@@ -68,7 +69,8 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static T DoLookup<T>(Javax.Naming.Name arg0)
         {

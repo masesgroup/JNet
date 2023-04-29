@@ -53,7 +53,8 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Lang.Reflect.Member"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T: Java.Lang.Reflect.Member
         {
             return SExecute<T>(LocalClazz, "reflectAs", arg0, arg1);
@@ -170,6 +171,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DropArguments<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Class[] arg2)
         {
@@ -181,6 +183,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DropArguments<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List<Java.Lang.Class> arg2)
         {
@@ -193,6 +196,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <param name="arg3"><see cref="int"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DropArgumentsToMatch<Arg2Extendsobject>(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List<Java.Lang.Class> arg2, int arg3)
         {
@@ -538,6 +542,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Class AccessClass<ReturnExtendsobject>(Java.Lang.Class arg0)
@@ -548,6 +553,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
+            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Class DefineClass<ReturnExtendsobject>(byte[] arg0)
@@ -558,6 +564,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
+            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.ClassNotFoundException"/>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
@@ -696,6 +703,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectConstructor(java.lang.reflect.Constructor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Constructor"/></param>
+            /// <typeparam name="Arg0Extendsobject"></typeparam>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.MethodHandle UnreflectConstructor<Arg0Extendsobject>(Java.Lang.Reflect.Constructor<Arg0Extendsobject> arg0)

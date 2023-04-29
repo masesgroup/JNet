@@ -80,6 +80,8 @@ namespace Javax.Security.Auth.Spi
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
         public void Initialize<Arg2Extendsobject, Arg3Extendsobject>(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, Arg2Extendsobject> arg2, Java.Util.Map<string, Arg3Extendsobject> arg3)
         {
             IExecute("initialize", arg0, arg1, arg2, arg3);

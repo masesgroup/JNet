@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool TryTransfer(E arg0)
         {
@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(E arg0)
         {

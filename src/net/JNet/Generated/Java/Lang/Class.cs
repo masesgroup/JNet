@@ -652,6 +652,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
         /// <param name="arg1"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(Java.Lang.Module arg0, string arg1)
         {
@@ -663,6 +664,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0, bool arg1, Java.Lang.ClassLoader arg2)
@@ -673,6 +675,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0)
@@ -1009,7 +1012,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecute<A>("getAnnotation", arg0);
@@ -1018,7 +1022,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecute<A>("getDeclaredAnnotation", arg0);
@@ -1027,7 +1032,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
@@ -1036,7 +1042,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="A"/></returns>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
         public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
         {
             return IExecuteArray<A>("getDeclaredAnnotationsByType", arg0);
@@ -1045,6 +1052,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#asSubclass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="ReturnExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class AsSubclass<ReturnExtendsU, U>(Java.Lang.Class arg0) where ReturnExtendsU: U
         {
@@ -1081,6 +1090,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
@@ -1092,6 +1102,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
@@ -1126,6 +1137,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
@@ -1138,6 +1150,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
@@ -1185,7 +1198,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <returns><typeparamref name="T"/></returns>
         public T Cast(object arg0)
         {
             return IExecute<T>("cast", arg0);

@@ -101,8 +101,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
         public void Accept(T arg0, U arg1)
         {
             IExecute("accept", arg0, arg1);
@@ -111,6 +111,8 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
         {

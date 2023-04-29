@@ -187,6 +187,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
@@ -196,6 +197,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {

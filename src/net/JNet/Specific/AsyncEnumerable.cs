@@ -46,7 +46,9 @@ namespace MASES.JNet.Specific
             _cancellationToken = cancellationToken;
             enumeratorBase = this;
         }
-        /// <inheritdoc cref="JVMBridgeBasePrefetchEnumerator.DoWorkCycle"/>
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm"/>
+        /// </summary>
         protected override bool DoWorkCycle()
         {
             _sync.WaitOne();

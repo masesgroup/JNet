@@ -119,6 +119,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="string"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, string arg1) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
@@ -128,6 +129,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyInfo(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
@@ -168,6 +170,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg2ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, byte[] arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_XMLStructure> arg2) where Arg2ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
@@ -178,6 +181,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg1ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg1ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, Java.Util.List<Arg1ExtendsJavax_Xml_Crypto_XMLStructure> arg1) where Arg1ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
         {
@@ -198,6 +202,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(string arg0, string arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform
         {
@@ -216,6 +221,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newX509Data(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509Data"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.X509Data NewX509Data<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
         {

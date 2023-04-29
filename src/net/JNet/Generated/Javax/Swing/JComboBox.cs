@@ -462,6 +462,7 @@ namespace Javax.Swing
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.ComboBoxModel"/></param>
+            /// <typeparam name="Arg1Extendsobject"></typeparam>
             /// <returns><see cref="int"/></returns>
             public int SelectionForKey<Arg1Extendsobject>(char arg0, Javax.Swing.ComboBoxModel<Arg1Extendsobject> arg1)
             {
@@ -492,7 +493,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public JComboBox(E arg0)
             : base(arg0)
         {
@@ -688,7 +689,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetItemAt(int arg0)
         {
             return IExecute<E>("getItemAt", arg0);
@@ -712,7 +713,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addItem(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddItem(E arg0)
         {
             IExecute("addItem", arg0);
@@ -781,7 +782,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#insertItemAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertItemAt(E arg0, int arg1)
         {

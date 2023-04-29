@@ -72,6 +72,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class ArrayType<T> : Javax.Management.Openmbean.OpenType<T>
     {
         /// <summary>
@@ -867,6 +868,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class OpenType<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenType<T>>
     {
         /// <summary>
@@ -953,6 +955,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class SimpleType<T> : Javax.Management.Openmbean.OpenType<T>
     {
         /// <summary>

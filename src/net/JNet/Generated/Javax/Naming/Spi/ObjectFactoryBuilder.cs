@@ -50,6 +50,7 @@ namespace Javax.Naming.Spi
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Spi.ObjectFactory"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.ObjectFactory CreateObjectFactory<Arg1Extendsobject>(object arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1)

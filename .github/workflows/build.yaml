@@ -58,7 +58,7 @@ jobs:
           submodules: 'true'
 
       - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src/net/JNet/JNet.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src/net/JNet/JNet.csproj
         
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v3
@@ -118,10 +118,10 @@ jobs:
           submodules: 'true'
 
       - name: Pre compile templates
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetTemplates.sln
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNetTemplates.sln
 
       - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet\JNet.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNet\JNet.csproj
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v3
@@ -147,16 +147,16 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
       - name: Compile JNetCLI
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetCLI\JNetCLI.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNetCLI\JNetCLI.csproj
  
       - name: Compile JNetReflector
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetReflector\JNetReflector.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNetReflector\JNetReflector.csproj
  
       - name: Compile JNetPSCore
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPSCore\JNetPSCore.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNetPSCore\JNetPSCore.csproj
         
       - name: Compile JNetPS
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPS\JNetPS.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNetPS\JNetPS.csproj
  
       - uses: nuget/setup-nuget@v1.1.1
         with:
@@ -180,7 +180,7 @@ jobs:
         shell: pwsh
 
       - name: Recompile to create nuget packages
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet.sln
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNet.sln
 
       - name: Clear documentation folder 
         run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml

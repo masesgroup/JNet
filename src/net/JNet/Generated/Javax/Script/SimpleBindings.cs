@@ -159,6 +159,8 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsstring"></typeparam>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         public void PutAll<Arg0Extendsstring, Arg0Extendsobject>(Java.Util.Map<Arg0Extendsstring, Arg0Extendsobject> arg0)
         {
             IExecute("putAll", arg0);

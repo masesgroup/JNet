@@ -135,7 +135,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -146,7 +146,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -157,7 +157,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -168,7 +168,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>

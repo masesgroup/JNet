@@ -72,6 +72,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractAnnotationValueVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractAnnotationValueVisitor6<R, P>>
     {
         /// <summary>
@@ -158,6 +160,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractAnnotationValueVisitor7<R, P> : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P>
     {
         /// <summary>
@@ -244,6 +248,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractAnnotationValueVisitor8<R, P> : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor7<R, P>
     {
         /// <summary>
@@ -330,6 +336,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractAnnotationValueVisitor9<R, P> : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor8<R, P>
     {
         /// <summary>
@@ -416,6 +424,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractElementVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElementVisitor6<R, P>>
     {
         /// <summary>
@@ -502,6 +512,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractElementVisitor7<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor6<R, P>
     {
         /// <summary>
@@ -588,6 +600,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractElementVisitor8<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor7<R, P>
     {
         /// <summary>
@@ -674,6 +688,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractElementVisitor9<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor8<R, P>
     {
         /// <summary>
@@ -760,6 +776,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractTypeVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractTypeVisitor6<R, P>>
     {
         /// <summary>
@@ -846,6 +864,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractTypeVisitor7<R, P> : Javax.Lang.Model.Util.AbstractTypeVisitor6<R, P>
     {
         /// <summary>
@@ -932,6 +952,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractTypeVisitor8<R, P> : Javax.Lang.Model.Util.AbstractTypeVisitor7<R, P>
     {
         /// <summary>
@@ -1018,6 +1040,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class AbstractTypeVisitor9<R, P> : Javax.Lang.Model.Util.AbstractTypeVisitor8<R, P>
     {
         /// <summary>
@@ -1147,6 +1171,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementKindVisitor6<R, P> : Javax.Lang.Model.Util.SimpleElementVisitor6<R, P>
     {
         /// <summary>
@@ -1233,6 +1259,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementKindVisitor7<R, P> : Javax.Lang.Model.Util.ElementKindVisitor6<R, P>
     {
         /// <summary>
@@ -1319,6 +1347,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementKindVisitor8<R, P> : Javax.Lang.Model.Util.ElementKindVisitor7<R, P>
     {
         /// <summary>
@@ -1405,6 +1435,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementKindVisitor9<R, P> : Javax.Lang.Model.Util.ElementKindVisitor8<R, P>
     {
         /// <summary>
@@ -1577,6 +1609,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementScanner6<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor6<R, P>
     {
         /// <summary>
@@ -1663,6 +1697,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementScanner7<R, P> : Javax.Lang.Model.Util.ElementScanner6<R, P>
     {
         /// <summary>
@@ -1749,6 +1785,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementScanner8<R, P> : Javax.Lang.Model.Util.ElementScanner7<R, P>
     {
         /// <summary>
@@ -1835,6 +1873,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class ElementScanner9<R, P> : Javax.Lang.Model.Util.ElementScanner8<R, P>
     {
         /// <summary>
@@ -1921,6 +1961,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleAnnotationValueVisitor6<R, P> : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P>
     {
         /// <summary>
@@ -2007,6 +2049,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleAnnotationValueVisitor7<R, P> : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6<R, P>
     {
         /// <summary>
@@ -2093,6 +2137,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleAnnotationValueVisitor8<R, P> : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7<R, P>
     {
         /// <summary>
@@ -2179,6 +2225,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleAnnotationValueVisitor9<R, P> : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor8<R, P>
     {
         /// <summary>
@@ -2265,6 +2313,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleElementVisitor6<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor6<R, P>
     {
         /// <summary>
@@ -2351,6 +2401,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleElementVisitor7<R, P> : Javax.Lang.Model.Util.SimpleElementVisitor6<R, P>
     {
         /// <summary>
@@ -2437,6 +2489,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleElementVisitor8<R, P> : Javax.Lang.Model.Util.SimpleElementVisitor7<R, P>
     {
         /// <summary>
@@ -2523,6 +2577,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleElementVisitor9<R, P> : Javax.Lang.Model.Util.SimpleElementVisitor8<R, P>
     {
         /// <summary>
@@ -2609,6 +2665,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleTypeVisitor6<R, P> : Javax.Lang.Model.Util.AbstractTypeVisitor6<R, P>
     {
         /// <summary>
@@ -2695,6 +2753,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleTypeVisitor7<R, P> : Javax.Lang.Model.Util.SimpleTypeVisitor6<R, P>
     {
         /// <summary>
@@ -2781,6 +2841,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleTypeVisitor8<R, P> : Javax.Lang.Model.Util.SimpleTypeVisitor7<R, P>
     {
         /// <summary>
@@ -2867,6 +2929,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class SimpleTypeVisitor9<R, P> : Javax.Lang.Model.Util.SimpleTypeVisitor8<R, P>
     {
         /// <summary>
@@ -2953,6 +3017,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class TypeKindVisitor6<R, P> : Javax.Lang.Model.Util.SimpleTypeVisitor6<R, P>
     {
         /// <summary>
@@ -3039,6 +3105,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class TypeKindVisitor7<R, P> : Javax.Lang.Model.Util.TypeKindVisitor6<R, P>
     {
         /// <summary>
@@ -3125,6 +3193,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor8.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class TypeKindVisitor8<R, P> : Javax.Lang.Model.Util.TypeKindVisitor7<R, P>
     {
         /// <summary>
@@ -3211,6 +3281,8 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor9.html"/>
     /// </summary>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="P"></typeparam>
     public partial class TypeKindVisitor9<R, P> : Javax.Lang.Model.Util.TypeKindVisitor8<R, P>
     {
         /// <summary>

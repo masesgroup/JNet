@@ -82,6 +82,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg2Extendsobject>(Java.Lang.Class arg0, Java.Lang.Class arg1, params Java.Lang.Class[] arg2)
         {
@@ -102,6 +103,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg1Extendsobject>(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
@@ -122,6 +124,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg1Extendsobject>(Java.Lang.Class arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
@@ -228,6 +231,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#parameterType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class ParameterType<ReturnExtendsobject>(int arg0)
         {
@@ -237,6 +241,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType AppendParameterTypes<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
@@ -246,6 +251,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType AppendParameterTypes<Arg0Extendsobject>(Java.Util.List<Java.Lang.Class> arg0)
         {
@@ -285,6 +291,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes<Arg1Extendsobject>(int arg0, params Java.Lang.Class[] arg1)
         {
@@ -295,6 +302,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes<Arg1Extendsobject>(int arg0, Java.Util.List<Java.Lang.Class> arg1)
         {

@@ -100,7 +100,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         public void Accept(T arg0)
         {
             IExecute("accept", arg0);
@@ -109,6 +109,7 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {

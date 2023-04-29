@@ -162,7 +162,8 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
             return IExecute<R>("query", arg0);

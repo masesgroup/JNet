@@ -788,7 +788,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completedFuture(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="U"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> CompletedFuture<U>(U arg0)
         {
@@ -798,6 +799,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> FailedFuture<U>(Java.Lang.Throwable arg0)
         {
@@ -808,6 +810,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> SupplyAsync<U>(Java.Util.Function.Supplier<U> arg0, Java.Util.Concurrent.Executor arg1)
         {
@@ -817,6 +820,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> SupplyAsync<U>(Java.Util.Function.Supplier<U> arg0)
         {
@@ -825,7 +829,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="U"/></param>
+        /// <param name="arg0"><typeparamref name="U"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage<U> CompletedStage<U>(U arg0)
         {
@@ -835,6 +840,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage<U> FailedStage<U>(Java.Lang.Throwable arg0)
         {
@@ -844,6 +850,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
@@ -853,6 +860,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
@@ -984,7 +992,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#complete(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Complete(T arg0)
         {
@@ -1004,6 +1012,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT: T
         {
@@ -1013,6 +1022,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -1021,7 +1031,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completeOnTimeout(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -1406,7 +1416,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
 
-        /// <returns><see cref="T"/></returns>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public T Get()
@@ -1418,7 +1428,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
@@ -1429,8 +1439,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#getNow(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><typeparamref name="T"/></returns>
         public T GetNow(T arg0)
         {
             return IExecute<T>("getNow", arg0);
@@ -1446,7 +1456,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         public void ObtrudeValue(T arg0)
         {
             IExecute("obtrudeValue", arg0);

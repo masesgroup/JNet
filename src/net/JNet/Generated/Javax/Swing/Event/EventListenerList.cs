@@ -67,7 +67,8 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
         {
             return IExecuteArray<T>("getListeners", arg0);
@@ -85,7 +86,8 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#add(java.lang.Class,java.util.EventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
         public void Add<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
         {
             IExecute("add", arg0, arg1);
@@ -94,7 +96,8 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#remove(java.lang.Class,java.util.EventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
         public void Remove<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
         {
             IExecute("remove", arg0, arg1);

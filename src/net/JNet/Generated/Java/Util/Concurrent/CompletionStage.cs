@@ -462,6 +462,12 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombine<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -473,6 +479,12 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombineAsync<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -483,6 +495,12 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombineAsync<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -493,6 +511,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBoth<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -504,6 +526,10 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBothAsync<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -514,6 +540,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBothAsync<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1) where Arg0ExtendsU: U where Arg1objectSuperT: T
         {
@@ -524,6 +554,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEither<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -535,6 +568,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEitherAsync<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -545,6 +581,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEitherAsync<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -554,6 +593,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handle(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> Handle<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.BiFunction<Arg0objectSuperT, Java.Lang.Throwable, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
         {
@@ -564,6 +606,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> HandleAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.BiFunction<Arg0objectSuperT, Java.Lang.Throwable, Arg0ExtendsU> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT: T
         {
@@ -573,6 +618,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> HandleAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.BiFunction<Arg0objectSuperT, Java.Lang.Throwable, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
         {
@@ -582,6 +630,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenApply(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenApply<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
         {
@@ -592,6 +643,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenApplyAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT: T
         {
@@ -601,6 +655,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenApplyAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
         {
@@ -610,6 +667,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCompose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenCompose<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_> arg0) where Arg0objectSuperT: T
         {
@@ -620,6 +680,9 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenComposeAsync<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT: T
         {
@@ -629,6 +692,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenComposeAsync<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_> arg0) where Arg0objectSuperT: T
         {
@@ -639,6 +705,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEither<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -650,6 +718,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEitherAsync<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -660,6 +730,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEitherAsync<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1) where Arg0ExtendsT: T where Arg1objectSuperT: T
         {
@@ -670,6 +742,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
         {
@@ -681,6 +754,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
@@ -691,6 +765,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
         {
@@ -701,6 +776,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
         {
@@ -712,6 +788,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
@@ -722,6 +799,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
         {
@@ -731,6 +809,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAccept<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -741,6 +820,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptAsync<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT: T
         {
@@ -750,6 +830,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptAsync<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -787,6 +868,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#exceptionally(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> Exceptionally<Arg0ExtendsT>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
@@ -796,6 +878,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#whenComplete(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Lang_Throwable"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> WhenComplete<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable> arg0) where Arg0objectSuperT: T
         {
@@ -806,6 +890,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Lang_Throwable"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> WhenCompleteAsync<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT: T
         {
@@ -815,6 +901,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Lang_Throwable"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> WhenCompleteAsync<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable> arg0) where Arg0objectSuperT: T
         {

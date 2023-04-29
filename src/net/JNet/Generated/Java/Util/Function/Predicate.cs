@@ -141,6 +141,7 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public static Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -160,7 +161,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Test(T arg0)
         {
@@ -170,6 +171,7 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
@@ -179,6 +181,7 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {

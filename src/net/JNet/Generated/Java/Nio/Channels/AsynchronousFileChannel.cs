@@ -63,6 +63,8 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption, Arg3Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<Arg3Extendsobject>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
@@ -86,8 +88,10 @@ namespace Java.Nio.Channels
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="A"/></param>
+        /// <param name="arg3"><typeparamref name="A"/></param>
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
         public void Lock<A, Arg4objectSuperA>(long arg0, long arg1, bool arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
         {
             IExecute("lock", arg0, arg1, arg2, arg3, arg4);
@@ -97,8 +101,10 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="A"/></param>
+        /// <param name="arg2"><typeparamref name="A"/></param>
         /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<int?, Arg3objectSuperA> arg3) where Arg3objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2, arg3);
@@ -108,8 +114,10 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="A"/></param>
+        /// <param name="arg2"><typeparamref name="A"/></param>
         /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<int?, Arg3objectSuperA> arg3) where Arg3objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2, arg3);
@@ -179,8 +187,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="A"/></param>
+        /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
         public void Lock<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
         {
             IExecute("lock", arg0, arg1);

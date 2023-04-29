@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E GetElementAt(int arg0)
         {
             return IExecute<E>("getElementAt", arg0);

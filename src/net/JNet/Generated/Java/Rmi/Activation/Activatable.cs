@@ -74,6 +74,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
         /// <param name="arg6"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
@@ -89,6 +90,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="int"/></param>
+        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>

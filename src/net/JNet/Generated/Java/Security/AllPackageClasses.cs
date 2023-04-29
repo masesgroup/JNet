@@ -2613,6 +2613,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class PrivilegedAction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedAction<T>>
     {
         /// <summary>
@@ -2715,6 +2716,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class PrivilegedExceptionAction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedExceptionAction<T>>
     {
         /// <summary>

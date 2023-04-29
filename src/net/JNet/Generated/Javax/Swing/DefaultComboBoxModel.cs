@@ -148,7 +148,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public DefaultComboBoxModel(E arg0)
             : base(arg0)
         {
@@ -206,6 +206,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
         {
             IExecute("addAll", arg0, arg1);
@@ -214,6 +215,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
             IExecute("addAll", arg0);
@@ -221,7 +223,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddElement(E arg0)
         {
             IExecute("addElement", arg0);
@@ -229,7 +231,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {

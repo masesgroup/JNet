@@ -358,6 +358,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
@@ -375,16 +376,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
-        /// <param name="arg5"><see cref="E"/></param>
-        /// <param name="arg6"><see cref="E"/></param>
-        /// <param name="arg7"><see cref="E"/></param>
-        /// <param name="arg8"><see cref="E"/></param>
-        /// <param name="arg9"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
+        /// <param name="arg5"><typeparamref name="E"/></param>
+        /// <param name="arg6"><typeparamref name="E"/></param>
+        /// <param name="arg7"><typeparamref name="E"/></param>
+        /// <param name="arg8"><typeparamref name="E"/></param>
+        /// <param name="arg9"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8, E arg9)
         {
@@ -393,15 +394,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
-        /// <param name="arg5"><see cref="E"/></param>
-        /// <param name="arg6"><see cref="E"/></param>
-        /// <param name="arg7"><see cref="E"/></param>
-        /// <param name="arg8"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
+        /// <param name="arg5"><typeparamref name="E"/></param>
+        /// <param name="arg6"><typeparamref name="E"/></param>
+        /// <param name="arg7"><typeparamref name="E"/></param>
+        /// <param name="arg8"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8)
         {
@@ -410,14 +411,14 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
-        /// <param name="arg5"><see cref="E"/></param>
-        /// <param name="arg6"><see cref="E"/></param>
-        /// <param name="arg7"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
+        /// <param name="arg5"><typeparamref name="E"/></param>
+        /// <param name="arg6"><typeparamref name="E"/></param>
+        /// <param name="arg7"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7)
         {
@@ -426,13 +427,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
-        /// <param name="arg5"><see cref="E"/></param>
-        /// <param name="arg6"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
+        /// <param name="arg5"><typeparamref name="E"/></param>
+        /// <param name="arg6"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6)
         {
@@ -441,12 +442,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
-        /// <param name="arg5"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
+        /// <param name="arg5"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5)
         {
@@ -455,11 +456,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
-        /// <param name="arg4"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
+        /// <param name="arg4"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4)
         {
@@ -468,10 +469,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
-        /// <param name="arg3"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
+        /// <param name="arg3"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3)
         {
@@ -480,9 +481,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2)
         {
@@ -491,8 +492,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1)
         {
@@ -501,7 +502,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(params E[] arg0)
         {
@@ -510,7 +511,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0)
         {
@@ -551,8 +552,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T[] ToArray<T>(T arg0)
         {
             return IExecuteArray<T>("toArray", arg0);
@@ -560,7 +562,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
@@ -570,6 +572,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
@@ -588,6 +591,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
         {
@@ -606,6 +610,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
         {
@@ -615,6 +620,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
         {

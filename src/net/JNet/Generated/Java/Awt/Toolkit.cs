@@ -161,7 +161,8 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public T CreateDragGestureRecognizer<T>(Java.Lang.Class arg0, Java.Awt.Dnd.DragSource arg1, Java.Awt.Component arg2, int arg3, Java.Awt.Dnd.DragGestureListener arg4) where T: Java.Awt.Dnd.DragGestureRecognizer
         {
             return IExecute<T>("createDragGestureRecognizer", arg0, arg1, arg2, arg3, arg4);
@@ -279,6 +280,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#mapInputMethodHighlight(java.awt.im.InputMethodHighlight)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Im.InputMethodHighlight"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Util.Map<Java.Awt.FontNs.TextAttribute, ReturnExtendsobject> MapInputMethodHighlight<ReturnExtendsobject>(Java.Awt.Im.InputMethodHighlight arg0)

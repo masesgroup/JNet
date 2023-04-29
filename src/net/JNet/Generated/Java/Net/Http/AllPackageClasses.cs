@@ -514,6 +514,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class BodyHandler<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandler<T>>
         {
             /// <summary>
@@ -643,6 +644,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class BodySubscriber<T> : Java.Util.Concurrent.Flow.Subscriber<Java.Util.List<Java.Nio.ByteBuffer>>
         {
             /// <summary>
@@ -772,6 +774,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html"/>
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         public partial class PushPromiseHandler<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PushPromiseHandler<T>>
         {
             /// <summary>
@@ -862,6 +865,7 @@ namespace Java.Net.Http
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class HttpResponse<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpResponse<T>>
     {
         /// <summary>

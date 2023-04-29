@@ -407,7 +407,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E ElementAt(int arg0)
         {
             return IExecute<E>("elementAt", arg0);
@@ -416,7 +416,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
             return IExecute<E>("get", arg0);
@@ -425,7 +425,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <returns><typeparamref name="E"/></returns>
         public E Remove(int arg0)
         {
             return IExecute<E>("remove", arg0);
@@ -434,8 +434,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Set(int arg0, E arg1)
         {
             return IExecute<E>("set", arg0, arg1);
@@ -482,7 +482,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         public void Add(int arg0, E arg1)
         {
             IExecute("add", arg0, arg1);
@@ -492,6 +492,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
         {
             IExecute("addAll", arg0, arg1);
@@ -500,6 +501,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
             IExecute("addAll", arg0);
@@ -507,7 +509,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddElement(E arg0)
         {
             IExecute("addElement", arg0);
@@ -538,7 +540,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
@@ -571,7 +573,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElementAt(E arg0, int arg1)
         {

@@ -201,6 +201,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class AbstractListModel<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractListModel<E>>
     {
         /// <summary>
@@ -816,6 +817,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ComboBoxModel<E> : Javax.Swing.ListModel<E>
     {
         /// <summary>
@@ -1117,6 +1119,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class DefaultComboBoxModel<E> : Javax.Swing.AbstractListModel<E>
     {
         /// <summary>
@@ -1375,6 +1378,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class DefaultListModel<E> : Javax.Swing.AbstractListModel<E>
     {
         /// <summary>
@@ -1504,6 +1508,8 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html"/>
     /// </summary>
+    /// <typeparam name="M"></typeparam>
+    /// <typeparam name="I"></typeparam>
     public partial class DefaultRowSorter<M, I> : Javax.Swing.RowSorter<M>
     {
         /// <summary>
@@ -2450,6 +2456,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class JComboBox<E> : Javax.Swing.JComponent
     {
         /// <summary>
@@ -3095,6 +3102,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html"/>
     /// </summary>
+    /// <typeparam name="V"><see cref="Java.Awt.Component"/></typeparam>
     public partial class JLayer<V> : Javax.Swing.JComponent where V: Java.Awt.Component
     {
         /// <summary>
@@ -3267,6 +3275,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class JList<E> : Javax.Swing.JComponent
     {
         /// <summary>
@@ -5202,6 +5211,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ListCellRenderer<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListCellRenderer<E>>
     {
         /// <summary>
@@ -5288,6 +5298,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class ListModel<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListModel<E>>
     {
         /// <summary>
@@ -5546,6 +5557,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html"/>
     /// </summary>
+    /// <typeparam name="E"></typeparam>
     public partial class MutableComboBoxModel<E> : Javax.Swing.ComboBoxModel<E>
     {
         /// <summary>
@@ -5675,6 +5687,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public partial class Painter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Painter<T>>
     {
         /// <summary>
@@ -6144,6 +6157,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html"/>
         /// </summary>
+        /// <typeparam name="M"></typeparam>
+        /// <typeparam name="I"></typeparam>
         public partial class Entry<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<M, I>>
         {
             /// <summary>
@@ -6191,6 +6206,8 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html"/>
     /// </summary>
+    /// <typeparam name="M"></typeparam>
+    /// <typeparam name="I"></typeparam>
     public partial class RowFilter<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowFilter<M, I>>
     {
         /// <summary>
@@ -6320,6 +6337,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html"/>
     /// </summary>
+    /// <typeparam name="M"></typeparam>
     public partial class RowSorter<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSorter<M>>
     {
         /// <summary>
@@ -7266,6 +7284,8 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html"/>
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public partial class SwingWorker<T, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwingWorker<T, V>>
     {
         /// <summary>

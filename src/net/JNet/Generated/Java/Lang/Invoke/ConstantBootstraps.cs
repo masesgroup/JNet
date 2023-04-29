@@ -47,7 +47,8 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
+        /// <returns><typeparamref name="E"/></returns>
         public static E EnumConstant<E>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2) where E: Java.Lang.Enum<E>
         {
             return SExecute<E>(LocalClazz, "enumConstant", arg0, arg1, arg2);
@@ -58,6 +59,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class PrimitiveClass<ReturnExtendsobject>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {

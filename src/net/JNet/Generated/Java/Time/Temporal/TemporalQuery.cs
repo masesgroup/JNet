@@ -93,7 +93,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <returns><typeparamref name="R"/></returns>
         public R QueryFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecute<R>("queryFrom", arg0);

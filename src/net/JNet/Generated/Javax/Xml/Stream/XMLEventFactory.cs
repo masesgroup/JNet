@@ -180,6 +180,7 @@ namespace Javax.Xml.Stream
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg3ExtendsJavax_Xml_Stream_Events_Namespace"><see cref="Javax.Xml.Stream.Events.Namespace"/></typeparam>
         /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
         public Javax.Xml.Stream.Events.EndElement CreateEndElement<Arg3ExtendsJavax_Xml_Stream_Events_Namespace>(string arg0, string arg1, string arg2, Java.Util.Iterator<Arg3ExtendsJavax_Xml_Stream_Events_Namespace> arg3) where Arg3ExtendsJavax_Xml_Stream_Events_Namespace: Javax.Xml.Stream.Events.Namespace
         {
@@ -201,6 +202,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
         /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg1ExtendsJavax_Xml_Stream_Events_Namespace"><see cref="Javax.Xml.Stream.Events.Namespace"/></typeparam>
         /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
         public Javax.Xml.Stream.Events.EndElement CreateEndElement<Arg1ExtendsJavax_Xml_Stream_Events_Namespace>(Javax.Xml.Namespace.QName arg0, Java.Util.Iterator<Arg1ExtendsJavax_Xml_Stream_Events_Namespace> arg1) where Arg1ExtendsJavax_Xml_Stream_Events_Namespace: Javax.Xml.Stream.Events.Namespace
         {
@@ -293,6 +295,8 @@ namespace Javax.Xml.Stream
         /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
         /// <param name="arg4"><see cref="Java.Util.Iterator"/></param>
         /// <param name="arg5"><see cref="Javax.Xml.Namespace.NamespaceContext"/></param>
+        /// <typeparam name="Arg3ExtendsJavax_Xml_Stream_Events_Attribute"><see cref="Javax.Xml.Stream.Events.Attribute"/></typeparam>
+        /// <typeparam name="Arg4ExtendsJavax_Xml_Stream_Events_Namespace"><see cref="Javax.Xml.Stream.Events.Namespace"/></typeparam>
         /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement CreateStartElement<Arg3ExtendsJavax_Xml_Stream_Events_Attribute, Arg4ExtendsJavax_Xml_Stream_Events_Namespace>(string arg0, string arg1, string arg2, Java.Util.Iterator<Arg3ExtendsJavax_Xml_Stream_Events_Attribute> arg3, Java.Util.Iterator<Arg4ExtendsJavax_Xml_Stream_Events_Namespace> arg4, Javax.Xml.Namespace.NamespaceContext arg5) where Arg3ExtendsJavax_Xml_Stream_Events_Attribute: Javax.Xml.Stream.Events.Attribute where Arg4ExtendsJavax_Xml_Stream_Events_Namespace: Javax.Xml.Stream.Events.Namespace
         {
@@ -306,6 +310,8 @@ namespace Javax.Xml.Stream
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
         /// <param name="arg4"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg3ExtendsJavax_Xml_Stream_Events_Attribute"><see cref="Javax.Xml.Stream.Events.Attribute"/></typeparam>
+        /// <typeparam name="Arg4ExtendsJavax_Xml_Stream_Events_Namespace"><see cref="Javax.Xml.Stream.Events.Namespace"/></typeparam>
         /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement CreateStartElement<Arg3ExtendsJavax_Xml_Stream_Events_Attribute, Arg4ExtendsJavax_Xml_Stream_Events_Namespace>(string arg0, string arg1, string arg2, Java.Util.Iterator<Arg3ExtendsJavax_Xml_Stream_Events_Attribute> arg3, Java.Util.Iterator<Arg4ExtendsJavax_Xml_Stream_Events_Namespace> arg4) where Arg3ExtendsJavax_Xml_Stream_Events_Attribute: Javax.Xml.Stream.Events.Attribute where Arg4ExtendsJavax_Xml_Stream_Events_Namespace: Javax.Xml.Stream.Events.Namespace
         {
@@ -328,6 +334,8 @@ namespace Javax.Xml.Stream
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
         /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
         /// <param name="arg2"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg1ExtendsJavax_Xml_Stream_Events_Attribute"><see cref="Javax.Xml.Stream.Events.Attribute"/></typeparam>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Stream_Events_Namespace"><see cref="Javax.Xml.Stream.Events.Namespace"/></typeparam>
         /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement CreateStartElement<Arg1ExtendsJavax_Xml_Stream_Events_Attribute, Arg2ExtendsJavax_Xml_Stream_Events_Namespace>(Javax.Xml.Namespace.QName arg0, Java.Util.Iterator<Arg1ExtendsJavax_Xml_Stream_Events_Attribute> arg1, Java.Util.Iterator<Arg2ExtendsJavax_Xml_Stream_Events_Namespace> arg2) where Arg1ExtendsJavax_Xml_Stream_Events_Attribute: Javax.Xml.Stream.Events.Attribute where Arg2ExtendsJavax_Xml_Stream_Events_Namespace: Javax.Xml.Stream.Events.Namespace
         {

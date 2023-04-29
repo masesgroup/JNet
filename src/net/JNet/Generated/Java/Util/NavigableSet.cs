@@ -249,8 +249,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Ceiling(E arg0)
         {
             return IExecute<E>("ceiling", arg0);
@@ -258,8 +258,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#floor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Floor(E arg0)
         {
             return IExecute<E>("floor", arg0);
@@ -267,8 +267,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#higher(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Higher(E arg0)
         {
             return IExecute<E>("higher", arg0);
@@ -276,8 +276,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#lower(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <returns><see cref="E"/></returns>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><typeparamref name="E"/></returns>
         public E Lower(E arg0)
         {
             return IExecute<E>("lower", arg0);
@@ -285,7 +285,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> HeadSet(E arg0, bool arg1)
@@ -295,9 +295,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="E"/></param>
+        /// <param name="arg2"><typeparamref name="E"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> SubSet(E arg0, bool arg1, E arg2, bool arg3)
@@ -307,7 +307,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> TailSet(E arg0, bool arg1)
@@ -317,7 +317,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> HeadSet(E arg0)
         {
@@ -326,8 +326,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
-        /// <param name="arg1"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
         {
@@ -336,7 +336,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="E"/></param>
+        /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> TailSet(E arg0)
         {

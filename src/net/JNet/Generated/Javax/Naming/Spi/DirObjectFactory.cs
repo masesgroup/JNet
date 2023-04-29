@@ -53,6 +53,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4)

@@ -44,9 +44,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#compare(java.lang.Object,java.lang.Object,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
         /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
@@ -55,9 +57,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, string arg1)
         {
             return SExecute<T>(LocalClazz, "requireNonNull", arg0, arg1);
@@ -65,9 +68,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<string> arg1)
         {
             return SExecute<T>(LocalClazz, "requireNonNull", arg0, arg1);
@@ -75,8 +79,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0)
         {
             return SExecute<T>(LocalClazz, "requireNonNull", arg0);
@@ -84,9 +89,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElse(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElse<T>(T arg0, T arg1)
         {
             return SExecute<T>(LocalClazz, "requireNonNullElse", arg0, arg1);
@@ -94,9 +100,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="T"/></param>
+        /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="T"/></returns>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
             return SExecute<T>(LocalClazz, "requireNonNullElseGet", arg0, arg1);

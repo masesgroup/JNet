@@ -373,6 +373,7 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Imageio_ImageReadParam"><see cref="Javax.Imageio.ImageReadParam"/></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam: Javax.Imageio.ImageReadParam

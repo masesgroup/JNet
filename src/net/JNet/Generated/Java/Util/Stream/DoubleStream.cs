@@ -237,7 +237,8 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjDoubleConsumer"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="R"/></returns>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjDoubleConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
             return IExecute<R>("collect", arg0, arg1, arg2);
@@ -246,6 +247,8 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
         {
@@ -310,6 +313,7 @@ namespace Java.Util.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
         {

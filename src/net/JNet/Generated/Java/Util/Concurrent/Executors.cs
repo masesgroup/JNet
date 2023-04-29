@@ -45,7 +45,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> Callable<T>(Java.Lang.Runnable arg0, T arg1)
         {
@@ -55,6 +56,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> PrivilegedCallableMethod<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
@@ -64,6 +66,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> PrivilegedCallableUsingCurrentClassLoaderMethod<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
@@ -82,6 +85,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<object> Callable<Arg0Extendsobject>(Java.Security.PrivilegedAction<Arg0Extendsobject> arg0)
         {
@@ -91,6 +95,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<object> Callable<Arg0Extendsobject>(Java.Security.PrivilegedExceptionAction<Arg0Extendsobject> arg0)
         {
