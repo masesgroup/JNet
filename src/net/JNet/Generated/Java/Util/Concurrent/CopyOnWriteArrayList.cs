@@ -368,7 +368,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
-        public CopyOnWriteArrayList(E arg0)
+        public CopyOnWriteArrayList(E[] arg0)
             : base(arg0)
         {
         }
@@ -450,9 +450,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] ToArray<T>(T arg0)
+        public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteArray<T>("toArray", arg0);
+            return IExecuteArray<T>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>

@@ -129,7 +129,7 @@ namespace Java.Nio.File.Attribute
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
             public Java.Nio.File.Attribute.AclEntry.Builder SetFlags(params Java.Nio.File.Attribute.AclEntryFlag[] arg0)
             {
-                if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", new object[] { arg0 }); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", new object[] { arg0 }, arg0);
+                if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.util.Set)"/>
@@ -147,7 +147,7 @@ namespace Java.Nio.File.Attribute
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
             public Java.Nio.File.Attribute.AclEntry.Builder SetPermissions(params Java.Nio.File.Attribute.AclEntryPermission[] arg0)
             {
-                if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", new object[] { arg0 }); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", new object[] { arg0 }, arg0);
+                if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.util.Set)"/>

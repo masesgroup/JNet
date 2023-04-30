@@ -95,7 +95,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Of(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of"); else return SExecute<Java.Util.Stream.Stream>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object)"/>

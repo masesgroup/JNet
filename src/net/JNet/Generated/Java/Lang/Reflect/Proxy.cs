@@ -60,9 +60,8 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.InvocationHandler"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
-        public static object NewProxyInstance<Arg1Extendsobject>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1, Java.Lang.Reflect.InvocationHandler arg2)
+        public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
             return SExecute(LocalClazz, "newProxyInstance", arg0, arg1, arg2);
         }

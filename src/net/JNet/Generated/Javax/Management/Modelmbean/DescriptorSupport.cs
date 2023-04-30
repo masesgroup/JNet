@@ -131,7 +131,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params string[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues", new object[] { arg0 }); else return IExecuteArray<object>("getFieldValues", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>

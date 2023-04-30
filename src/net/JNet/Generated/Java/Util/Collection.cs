@@ -276,9 +276,9 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] ToArray<T>(T arg0)
+        public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteArray<T>("toArray", arg0);
+            return IExecuteArray<T>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(java.lang.Object)"/>

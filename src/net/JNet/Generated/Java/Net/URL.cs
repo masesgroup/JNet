@@ -234,10 +234,9 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public object GetContent<Arg0Extendsobject>(Java.Lang.Class arg0)
+        public object GetContent(Java.Lang.Class[] arg0)
         {
             return IExecute("getContent", new object[] { arg0 });
         }

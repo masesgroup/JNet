@@ -137,7 +137,7 @@ namespace Javax.Script
         /// <returns><see cref="string"/></returns>
         public string GetProgram(params string[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<string>("getProgram", new object[] { arg0 }); else return IExecute<string>("getProgram", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<string>("getProgram"); else return IExecute<string>("getProgram", arg0);
         }
 
         #endregion

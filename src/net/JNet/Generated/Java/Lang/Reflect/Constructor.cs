@@ -56,7 +56,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public object NewInstance(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("newInstance", new object[] { arg0 }); else return IExecute("newInstance", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("newInstance"); else return IExecute("newInstance", arg0);
         }
 
         #endregion
@@ -104,7 +104,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public T NewInstance(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<T>("newInstance", new object[] { arg0 }); else return IExecute<T>("newInstance", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<T>("newInstance"); else return IExecute<T>("newInstance", arg0);
         }
 
         #endregion

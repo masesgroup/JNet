@@ -66,7 +66,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject> arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
+        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
         }
