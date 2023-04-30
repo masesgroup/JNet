@@ -128,7 +128,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<bool>("compareAndSet", new object[] { arg0 }); else return IExecute<bool>("compareAndSet", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<bool>("compareAndSet"); else return IExecute<bool>("compareAndSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object[])"/>
@@ -137,7 +137,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSet", new object[] { arg0 }); else return IExecute<bool>("weakCompareAndSet", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSet"); else return IExecute<bool>("weakCompareAndSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object[])"/>
@@ -146,7 +146,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetAcquire", new object[] { arg0 }); else return IExecute<bool>("weakCompareAndSetAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetAcquire"); else return IExecute<bool>("weakCompareAndSetAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object[])"/>
@@ -155,7 +155,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetPlain", new object[] { arg0 }); else return IExecute<bool>("weakCompareAndSetPlain", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetPlain"); else return IExecute<bool>("weakCompareAndSetPlain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object[])"/>
@@ -164,7 +164,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetRelease", new object[] { arg0 }); else return IExecute<bool>("weakCompareAndSetRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetRelease"); else return IExecute<bool>("weakCompareAndSetRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object[])"/>
@@ -173,7 +173,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchange(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("compareAndExchange", new object[] { arg0 }); else return IExecute("compareAndExchange", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("compareAndExchange"); else return IExecute("compareAndExchange", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object[])"/>
@@ -182,7 +182,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("compareAndExchangeAcquire", new object[] { arg0 }); else return IExecute("compareAndExchangeAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("compareAndExchangeAcquire"); else return IExecute("compareAndExchangeAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object[])"/>
@@ -191,7 +191,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("compareAndExchangeRelease", new object[] { arg0 }); else return IExecute("compareAndExchangeRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("compareAndExchangeRelease"); else return IExecute("compareAndExchangeRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#get(java.lang.Object[])"/>
@@ -200,7 +200,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object Get(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("get", new object[] { arg0 }); else return IExecute("get", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("get"); else return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object[])"/>
@@ -209,7 +209,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAcquire", new object[] { arg0 }); else return IExecute("getAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAcquire"); else return IExecute("getAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object[])"/>
@@ -218,7 +218,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAdd(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndAdd", new object[] { arg0 }); else return IExecute("getAndAdd", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndAdd"); else return IExecute("getAndAdd", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object[])"/>
@@ -227,7 +227,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAddAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndAddAcquire", new object[] { arg0 }); else return IExecute("getAndAddAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndAddAcquire"); else return IExecute("getAndAddAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object[])"/>
@@ -236,7 +236,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAddRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndAddRelease", new object[] { arg0 }); else return IExecute("getAndAddRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndAddRelease"); else return IExecute("getAndAddRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object[])"/>
@@ -245,7 +245,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAnd(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseAnd", new object[] { arg0 }); else return IExecute("getAndBitwiseAnd", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseAnd"); else return IExecute("getAndBitwiseAnd", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object[])"/>
@@ -254,7 +254,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAndAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseAndAcquire", new object[] { arg0 }); else return IExecute("getAndBitwiseAndAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseAndAcquire"); else return IExecute("getAndBitwiseAndAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object[])"/>
@@ -263,7 +263,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAndRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseAndRelease", new object[] { arg0 }); else return IExecute("getAndBitwiseAndRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseAndRelease"); else return IExecute("getAndBitwiseAndRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object[])"/>
@@ -272,7 +272,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOr(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseOr", new object[] { arg0 }); else return IExecute("getAndBitwiseOr", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseOr"); else return IExecute("getAndBitwiseOr", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object[])"/>
@@ -281,7 +281,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOrAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseOrAcquire", new object[] { arg0 }); else return IExecute("getAndBitwiseOrAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseOrAcquire"); else return IExecute("getAndBitwiseOrAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object[])"/>
@@ -290,7 +290,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOrRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseOrRelease", new object[] { arg0 }); else return IExecute("getAndBitwiseOrRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseOrRelease"); else return IExecute("getAndBitwiseOrRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object[])"/>
@@ -299,7 +299,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXor(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseXor", new object[] { arg0 }); else return IExecute("getAndBitwiseXor", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseXor"); else return IExecute("getAndBitwiseXor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object[])"/>
@@ -308,7 +308,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXorAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseXorAcquire", new object[] { arg0 }); else return IExecute("getAndBitwiseXorAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseXorAcquire"); else return IExecute("getAndBitwiseXorAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object[])"/>
@@ -317,7 +317,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXorRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndBitwiseXorRelease", new object[] { arg0 }); else return IExecute("getAndBitwiseXorRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndBitwiseXorRelease"); else return IExecute("getAndBitwiseXorRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object[])"/>
@@ -326,7 +326,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndSet", new object[] { arg0 }); else return IExecute("getAndSet", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndSet"); else return IExecute("getAndSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object[])"/>
@@ -335,7 +335,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndSetAcquire", new object[] { arg0 }); else return IExecute("getAndSetAcquire", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndSetAcquire"); else return IExecute("getAndSetAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object[])"/>
@@ -344,7 +344,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getAndSetRelease", new object[] { arg0 }); else return IExecute("getAndSetRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getAndSetRelease"); else return IExecute("getAndSetRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object[])"/>
@@ -353,7 +353,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetOpaque(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getOpaque", new object[] { arg0 }); else return IExecute("getOpaque", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getOpaque"); else return IExecute("getOpaque", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object[])"/>
@@ -362,7 +362,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetVolatile(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("getVolatile", new object[] { arg0 }); else return IExecute("getVolatile", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("getVolatile"); else return IExecute("getVolatile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#set(java.lang.Object[])"/>
@@ -370,7 +370,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecute("set", new object[] { arg0 }); else IExecute("set", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) IExecute("set"); else IExecute("set", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object[])"/>
@@ -378,7 +378,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetOpaque(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecute("setOpaque", new object[] { arg0 }); else IExecute("setOpaque", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) IExecute("setOpaque"); else IExecute("setOpaque", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object[])"/>
@@ -386,7 +386,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecute("setRelease", new object[] { arg0 }); else IExecute("setRelease", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) IExecute("setRelease"); else IExecute("setRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object[])"/>
@@ -394,7 +394,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetVolatile(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecute("setVolatile", new object[] { arg0 }); else IExecute("setVolatile", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) IExecute("setVolatile"); else IExecute("setVolatile", arg0);
         }
 
         #endregion

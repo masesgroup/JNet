@@ -117,7 +117,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder Command(params string[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.ProcessBuilder>("command", new object[] { arg0 }); else return IExecute<Java.Lang.ProcessBuilder>("command", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.ProcessBuilder>("command"); else return IExecute<Java.Lang.ProcessBuilder>("command", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.util.List)"/>

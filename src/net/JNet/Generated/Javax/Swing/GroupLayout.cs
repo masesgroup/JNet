@@ -232,7 +232,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(params Java.Awt.Component[] arg0)
         {
-            if (arg0.Length == 0) IExecute("linkSize", new object[] { arg0 }); else IExecute("linkSize", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) IExecute("linkSize"); else IExecute("linkSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#removeLayoutComponent(java.awt.Component)"/>

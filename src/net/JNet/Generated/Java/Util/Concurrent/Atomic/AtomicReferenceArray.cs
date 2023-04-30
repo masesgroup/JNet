@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
-        public AtomicReferenceArray(E arg0)
+        public AtomicReferenceArray(E[] arg0)
             : base(arg0)
         {
         }

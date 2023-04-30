@@ -221,7 +221,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Path ToRealPath(params Java.Nio.File.LinkOption[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Nio.File.Path>("toRealPath", new object[] { arg0 }); else return IExecute<Java.Nio.File.Path>("toRealPath", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<Java.Nio.File.Path>("toRealPath"); else return IExecute<Java.Nio.File.Path>("toRealPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
@@ -232,7 +232,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject> arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
+        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
         }
