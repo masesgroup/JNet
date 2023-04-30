@@ -1886,8 +1886,8 @@ namespace MASES.JNetReflector
                 var entryType = entry.Type.ToNetType(camel);
                 if (entry.ParameterizedType.IsGenerics() && (entryType == "object" || entryType == "object[]"))
                 {
-                    entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
-                    var retVal = genArguments.ConvertGenerics();
+                    var retVal = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
+                    //var retVal = genArguments.ConvertGenerics();
                     return retVal;
                 }
                 else

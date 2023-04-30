@@ -1287,7 +1287,7 @@ namespace MASES.JNetReflector
                     {
                         bool usableGenStrings = true;
                         if (typeStr.IsNetNativeType()) usableGenStrings = false;
-                        else if (typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
+                        else if (parameter.IsVarArgs && typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
                         {
                             typeStr = typeStr.Substring(0, typeStr.IndexOf(SpecialNames.ArrayTypeTrailer));
                         }
@@ -1405,7 +1405,7 @@ namespace MASES.JNetReflector
                     isArrayReturnType = true;
                 }
 
-                if (paramCount == 1 && parameters[0].Type(null, null, parameters[0].Name().Camel(), isGeneric, JNetReflectorCore.UseCamel).EndsWith(SpecialNames.ArrayTypeTrailer))
+                if (paramCount == 1 && !parameters[0].IsVarArgs && parameters[0].Type(null, null, parameters[0].Name().Camel(), isGeneric, JNetReflectorCore.UseCamel).EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     executionParamsString = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_ARRAY_EXECUTION_FORMAT, parameters[0].Name);
                 }
