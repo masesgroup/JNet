@@ -494,7 +494,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
-        public JComboBox(E arg0)
+        public JComboBox(E[] arg0)
             : base(arg0)
         {
         }

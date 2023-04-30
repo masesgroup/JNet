@@ -186,7 +186,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Hash(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<int>(LocalClazz, "hash", new object[] { arg0 }); else return SExecute<int>(LocalClazz, "hash", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return SExecute<int>(LocalClazz, "hash"); else return SExecute<int>(LocalClazz, "hash", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#hashCode(java.lang.Object)"/>

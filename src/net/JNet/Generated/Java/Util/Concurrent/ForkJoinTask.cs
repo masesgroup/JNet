@@ -136,7 +136,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask[] arg0)
         {
-            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll"); else SExecute(LocalClazz, "invokeAll", arg0);
         }
 
         #endregion
@@ -449,7 +449,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0Extendsobject"></typeparam>
         public static void InvokeAll<Arg0Extendsobject>(params Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll", new object[] { arg0 }); else SExecute(LocalClazz, "invokeAll", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) SExecute(LocalClazz, "invokeAll"); else SExecute(LocalClazz, "invokeAll", arg0);
         }
 
         #endregion

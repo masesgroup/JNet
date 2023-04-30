@@ -103,9 +103,8 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
-        public static Java.Lang.Invoke.MethodType MethodTypeMethod<Arg1Extendsobject>(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class[] arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodType>(LocalClazz, "methodType", arg0, arg1);
         }
@@ -245,7 +244,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType AppendParameterTypes<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", new object[] { arg0 }); else return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes"); else return IExecute<Java.Lang.Invoke.MethodType>("appendParameterTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.util.List)"/>

@@ -50,7 +50,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOf<T, U>(U arg0, int arg1, Java.Lang.Class arg2)
+        public static T[] CopyOf<T, U>(U[] arg0, int arg1, Java.Lang.Class arg2)
         {
             return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1, arg2);
         }
@@ -64,7 +64,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOfRange<T, U>(U arg0, int arg1, int arg2, Java.Lang.Class arg3)
+        public static T[] CopyOfRange<T, U>(U[] arg0, int arg1, int arg2, Java.Lang.Class arg3)
         {
             return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2, arg3);
         }
@@ -81,7 +81,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public static bool Equals<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
+        public static bool Equals<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
             return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public static bool Equals<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
+        public static bool Equals<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
             return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2);
         }
@@ -109,7 +109,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg4objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<T, Arg4objectSuperT>(T arg0, int arg1, int arg2, T arg3, Java.Util.Comparator<Arg4objectSuperT> arg4) where Arg4objectSuperT: T
+        public static int BinarySearch<T, Arg4objectSuperT>(T[] arg0, int arg1, int arg2, T arg3, Java.Util.Comparator<Arg4objectSuperT> arg4) where Arg4objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3, arg4);
         }
@@ -122,7 +122,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
+        public static int BinarySearch<T, Arg2objectSuperT>(T[] arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Compare<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
+        public static int Compare<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <param name="arg5"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Compare<T>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5)
+        public static int Compare<T>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5)
         {
             return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
+        public static int Compare<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2);
         }
@@ -178,7 +178,7 @@ namespace Java.Util
         /// <param name="arg1"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Compare<T>(T arg0, T arg1)
+        public static int Compare<T>(T[] arg0, T[] arg1)
         {
             return SExecute<int>(LocalClazz, "compare", arg0, arg1);
         }
@@ -195,7 +195,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Mismatch<T, Arg6objectSuperT>(T arg0, int arg1, int arg2, T arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
+        public static int Mismatch<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Mismatch<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
+        public static int Mismatch<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
             return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2);
         }
@@ -230,7 +230,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> Spliterator<T>(T arg0, int arg1, int arg2)
+        public static Java.Util.Spliterator<T> Spliterator<T>(T[] arg0, int arg1, int arg2)
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1, arg2);
         }
@@ -240,9 +240,9 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> Spliterator<T>(T arg0)
+        public static Java.Util.Spliterator<T> Spliterator<T>(T[] arg0)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0);
+            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
@@ -252,7 +252,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Stream<T>(T arg0, int arg1, int arg2)
+        public static Java.Util.Stream.Stream<T> Stream<T>(T[] arg0, int arg1, int arg2)
         {
             return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "stream", arg0, arg1, arg2);
         }
@@ -262,9 +262,9 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Stream<T>(T arg0)
+        public static Java.Util.Stream.Stream<T> Stream<T>(T[] arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "stream", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
@@ -273,7 +273,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOf<T>(T arg0, int arg1)
+        public static T[] CopyOf<T>(T[] arg0, int arg1)
         {
             return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1);
         }
@@ -285,7 +285,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOfRange<T>(T arg0, int arg1, int arg2)
+        public static T[] CopyOfRange<T>(T[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
         }
@@ -297,7 +297,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <typeparam name="T"></typeparam>
-        public static void ParallelPrefix<T>(T arg0, int arg1, int arg2, Java.Util.Function.BinaryOperator<T> arg3)
+        public static void ParallelPrefix<T>(T[] arg0, int arg1, int arg2, Java.Util.Function.BinaryOperator<T> arg3)
         {
             SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
@@ -307,7 +307,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
         /// <typeparam name="T"></typeparam>
-        public static void ParallelPrefix<T>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
+        public static void ParallelPrefix<T>(T[] arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
             SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
         }
@@ -318,7 +318,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void ParallelSetAll<T, Arg1ExtendsT>(T arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
             SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
         }
@@ -331,7 +331,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
-        public static void ParallelSort<T, Arg3objectSuperT>(T arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
+        public static void ParallelSort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2, arg3);
         }
@@ -342,7 +342,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T arg0, int arg1, int arg2)
+        public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
         }
@@ -353,7 +353,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        public static void ParallelSort<T, Arg1objectSuperT>(T arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
+        public static void ParallelSort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
             SExecute(LocalClazz, "parallelSort", arg0, arg1);
         }
@@ -362,7 +362,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T arg0)
+        public static void ParallelSort<T>(T[] arg0)
         {
             SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
         }
@@ -373,7 +373,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void SetAll<T, Arg1ExtendsT>(T arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
             SExecute(LocalClazz, "setAll", arg0, arg1);
         }
@@ -386,7 +386,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
-        public static void Sort<T, Arg3objectSuperT>(T arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
+        public static void Sort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
             SExecute(LocalClazz, "sort", arg0, arg1, arg2, arg3);
         }
@@ -397,7 +397,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        public static void Sort<T, Arg1objectSuperT>(T arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
+        public static void Sort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
             SExecute(LocalClazz, "sort", arg0, arg1);
         }

@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("invoke", new object[] { arg0 }); else return IExecute("invoke", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("invoke"); else return IExecute("invoke", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeExact(java.lang.Object[])"/>
@@ -84,7 +84,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeExact(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("invokeExact", new object[] { arg0 }); else return IExecute("invokeExact", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("invokeExact"); else return IExecute("invokeExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(int,java.lang.Class,int)"/>
@@ -172,7 +172,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeWithArguments(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecute("invokeWithArguments", new object[] { arg0 }); else return IExecute("invokeWithArguments", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return IExecute("invokeWithArguments"); else return IExecute("invokeWithArguments", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.util.List)"/>

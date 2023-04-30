@@ -192,7 +192,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Set>(LocalClazz, "of", new object[] { arg0 }); else return SExecute<Java.Util.Set>(LocalClazz, "of", new object[] { arg0 }, arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Set>(LocalClazz, "of"); else return SExecute<Java.Util.Set>(LocalClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object)"/>
@@ -555,9 +555,9 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] ToArray<T>(T arg0)
+        public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteArray<T>("toArray", arg0);
+            return IExecuteArray<T>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#add(java.lang.Object)"/>
